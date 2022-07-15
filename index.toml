@@ -1121,6 +1121,10 @@ file = "kubejs/data/cabricality/recipes/mixing/polished_rose_quartz.json"
 hash = "aed159ba2d58dc5aee16483f0dcaa33ac4808f855af93af9d3ab0d7d6c72770e"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/mixing/powered_water.json"
+hash = "f416d1a79de01edd4c9c39e4b4c1ee0bf71d26a660bd59c76e8fec1322154b2c"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/mixing/redstone_fluid.json"
 hash = "5e08708401cd861ead8368e4dd733c56bb1fa9252d29c42bca2018fd63e04d68"
 
@@ -1251,6 +1255,14 @@ hash = "091193e6e6afbe506d1ebe655091819c3a9a6ec4900fa5bef63c901eaaa4eee5"
 [[files]]
 file = "kubejs/data/cabricality/recipes/splashing/crushed_nickel_ore.json"
 hash = "f6d4c39446fbbd9863be18a871daf55e72b6af24df94c858e9efc46465af56e9"
+
+[[files]]
+file = "kubejs/data/create/loot_tables/blocks/deepslate_zinc_ore.json"
+hash = "2b6d40271460191c60106c5cd56462f56448a2c0cf4a067e213c290d71f8afa0"
+
+[[files]]
+file = "kubejs/data/create/loot_tables/blocks/zinc_ore.json"
+hash = "8e028c51098016a09a54a6c8ac1ff6bbefc10dd8d4a716acaf18d411166e95c2"
 
 [[files]]
 file = "kubejs/data/create/recipes/crushing/asurine.json"
@@ -2081,6 +2093,30 @@ file = "kubejs/data/fabric/tags/items/saws.json"
 hash = "b05c64c4407118520cb0e167a7a4186b0e2bbb99b84cbeec7a0e268a3a877866"
 
 [[files]]
+file = "kubejs/data/indrev/loot_tables/blocks/deepslate_lead_ore.json"
+hash = "eabf3e33be2f262d0bb051c44cfb387bbeada9b88643955838173cd49aea2992"
+
+[[files]]
+file = "kubejs/data/indrev/loot_tables/blocks/deepslate_silver_ore.json"
+hash = "9d274fdfd390abdd9aa176316c47696c5d2663cb22edc6c1f329e8e83fd6d0cf"
+
+[[files]]
+file = "kubejs/data/indrev/loot_tables/blocks/deepslate_tin_ore.json"
+hash = "722b1bedc3c8e5ea0678307ada3f93263cac27d68d20d37b39e7a909b0135bd0"
+
+[[files]]
+file = "kubejs/data/indrev/loot_tables/blocks/lead_ore.json"
+hash = "605a5b958387de0823ee8ad64fd3c21b45f01bac0fc04ae9871fe9b576124d0f"
+
+[[files]]
+file = "kubejs/data/indrev/loot_tables/blocks/silver_ore.json"
+hash = "58379b8befa4189b4b0a5f87e2f4cad7dd7035f59414b324c0b1c8b2f7883a68"
+
+[[files]]
+file = "kubejs/data/indrev/loot_tables/blocks/tin_ore.json"
+hash = "1c65f324672173f86cca1e0735b4f18f470ae51b0b74ec62ecdcb4820f3bbda9"
+
+[[files]]
 file = "kubejs/data/minecraft/loot_tables/blocks/copper_ore.json"
 hash = "46790c3b195bf3dbca959bbc62817ad29b0b141bf943c155ea3ed43088c1b92c"
 
@@ -2105,6 +2141,22 @@ file = "kubejs/data/minecraft/loot_tables/blocks/iron_ore.json"
 hash = "3f3b9646ed2cad040df7d840c5523659c572ab764d13262f900ad802461df328"
 
 [[files]]
+file = "kubejs/data/minecraft/loot_tables/blocks/twisting_vines.json"
+hash = "167bd10f9497808d890da397203048cc1b5d13c6ad773582eaf13e6cda8ed6d6"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_tables/blocks/twisting_vines_plant.json"
+hash = "167bd10f9497808d890da397203048cc1b5d13c6ad773582eaf13e6cda8ed6d6"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_tables/blocks/weeping_vines.json"
+hash = "74603d5d72632fd835ae23d8b11e4af0a7ee326b4f3290cd064297c20b2e2521"
+
+[[files]]
+file = "kubejs/data/minecraft/loot_tables/blocks/weeping_vines_plant.json"
+hash = "74603d5d72632fd835ae23d8b11e4af0a7ee326b4f3290cd064297c20b2e2521"
+
+[[files]]
 file = "kubejs/server_scripts/catalyst.js"
 hash = "59a41f3c7aa960c978e59868f1614a35152e4f4bd780a401bdcca6b76dcd28be"
 
@@ -2118,7 +2170,7 @@ hash = "1d72844caa963aedf7c05768e8d1be9444570d701e5cfddd9a84b4736cfc9f8e"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "3d07482573bd0261e6bc7d65b995d97854e623fa6201312e7c81b1d6a79e74ce"
+hash = "0dc73f3c10a23a3f5771a23f03141cf7ca0934b78f865dffd271ab6b6c877576"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen.js"
@@ -2179,6 +2231,11 @@ hash = "5b8610235d8c0d15f363cf29f83f5156296aa09273321374d18c6235754e6781"
 [[files]]
 file = "mods/createplus-1.0.0.jar"
 hash = "f690888f36320c2e1ff2a2e175288ca8d7d4ec47e257df4bdc93d704a54f5bd0"
+
+[[files]]
+file = "mods/customskinloader.pw.toml"
+hash = "ecbd5ca9971a690954e4aa8e4ab991c9b64ddce59442519478bf376226fcf4d8"
+metafile = true
 
 [[files]]
 file = "mods/dawn.pw.toml"
@@ -2281,6 +2338,11 @@ hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
 metafile = true
 
 [[files]]
+file = "mods/mcwifipnp.pw.toml"
+hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
+metafile = true
+
+[[files]]
 file = "mods/modmenu.pw.toml"
 hash = "37b69a71c010cb7e4d10a84a7c0e44373566ddb19aaaf4428ff2bb9ade0692e1"
 metafile = true
@@ -2293,6 +2355,11 @@ metafile = true
 [[files]]
 file = "mods/notenoughcrashes.pw.toml"
 hash = "22ead426c002828d3d2f4da9caf5454fabae689bbf4291020919da7909095794"
+metafile = true
+
+[[files]]
+file = "mods/ok-zoomer.pw.toml"
+hash = "7bb446109174fb831ced527d41df13962b1c46677f7001557b7211e54e5d3e34"
 metafile = true
 
 [[files]]

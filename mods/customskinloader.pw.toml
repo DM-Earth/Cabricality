@@ -1,0 +1,13 @@
+name = "CustomSkinLoader"
+filename = "CustomSkinLoader_Fabric-14.14-SNAPSHOT-325.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/idMHQ4n2/versions/14.14-SNAPSHOT-325-Fabric/CustomSkinLoader_Fabric-14.14-SNAPSHOT-325.jar"
+hash-format = "sha1"
+hash = "84c9b0ccbd9bf546aea86bb4427519ccc3b99095"
+
+[update]
+[update.modrinth]
+mod-id = "idMHQ4n2"
+version = "TPRGzk1a"
