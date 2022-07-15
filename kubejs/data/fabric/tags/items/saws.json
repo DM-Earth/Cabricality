@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "kubejs:stone_saw",
+        "kubejs:iron_saw",
+        "kubejs:diamond_saw",
+        "kubejs:netherite_saw"
+    ]
+}

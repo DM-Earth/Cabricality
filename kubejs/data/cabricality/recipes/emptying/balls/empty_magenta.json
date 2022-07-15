@@ -1,0 +1,18 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "ae2:magenta_paint_ball"
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:black_paint_ball"
+    },
+    {
+      "fluid": "kubejs:waste",
+      
+      "amount": 20250
+    }
+  ]
+}

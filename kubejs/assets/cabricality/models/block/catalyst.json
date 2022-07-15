@@ -1,0 +1,7 @@
+{
+  "parent": "cabricality:block/substrate",
+  "textures": {
+    "particle": "minecraft:block/glass",
+    "0": "cabricality:block/catalyst_glass"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  //Default Generators
+  //{
+  //  "id": "mod_id:block_id",
+  //  "weight": 95.5,
+  //  "dimensions": [
+  //    "mod_id:dimension_id",
+  //    "mod_id:dimension_id"
+  //  ],
+  //  "excludedDimensions": [
+  //    "mod_id:dimension_id",
+  //    "mod_id:dimension_id"
+  //  ],
+  //  "minY": 0,
+  //  "maxY": 69
+  //}
+  "cobbleGen": [
+    {
+      "id": "minecraft:cobblestone",
+      "weight": 100.0,
+      "minY": 0
+    },
+    {
+      "id": "minecraft:cobbled_deepslate",
+      "weight": 100.0,
+      "maxY": 0
+    }
+  ],
+  "stoneGen": [
+    {
+      "id": "minecraft:stone",
+      "weight": 100.0,
+      "minY": 0
+    },
+    {
+      "id": "minecraft:deepslate",
+      "weight": 100.0,
+      "maxY": 0
+    }
+  ],
+  "basaltGen": [
+    {
+      "id": "minecraft:basalt",
+      "weight": 100.0
+    }
+  ],
+  //Custom Generators
+  //<stoneGen|cobbleGen|basaltGen>: {
+  //  "mod_id:modifier_block_id": [
+  //    {
+  //      "id": "mod_id:block_id",
+  //      "weight": 95.5,
+  //      "dimensions": [
+  //        "mod_id:dimension_id",
+  //        "mod_id:dimension_id"
+  //      ],
+  //      "excludedDimensions": [
+  //        "mod_id:dimension_id",
+  //        "mod_id:dimension_id"
+  //      ],
+  //      "minY": 0,
+  //      "maxY": 69
+  //    },
+  //    ...
+  //  ]
+  //}
+  "customGen": {
+    //Default Generators
+    //{
+    //  "id": "mod_id:block_id",
+    //  "weight": 95.5,
+    //  "dimensions": [
+    //    "mod_id:dimension_id",
+    //    "mod_id:dimension_id"
+    //  ],
+    //  "excludedDimensions": [
+    //    "mod_id:dimension_id",
+    //    "mod_id:dimension_id"
+    //  ],
+    //  "minY": 0,
+    //  "maxY": 69
+    //}
+    "cobbleGen": {
+      "minecraft:bedrock": [
+        {
+          "id": "minecraft:diorite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:granite",
+          "weight": 1.0
+        },
+        {
+          "id": "create:limestone",
+          "weight": 1.0
+        }
+      ]
+    },
+    "stoneGen": {
+      "minecraft:bedrock": [
+        {
+          "id": "minecraft:diorite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:granite",
+          "weight": 1.0
+        },
+        {
+          "id": "create:limestone",
+          "weight": 1.0
+        }
+      ]
+    },
+    "basaltGen": {
+      "minecraft:bedrock": [
+        {
+          "id": "minecraft:basalt",
+          "weight": 100.0
+        }
+      ]
+    }
+  }
+}

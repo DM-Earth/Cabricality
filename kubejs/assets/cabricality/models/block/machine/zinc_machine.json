@@ -1,0 +1,13 @@
+{
+  "parent": "cabricality:block/frame_template",
+  "textures": {
+    "particle": "cabricality:block/machine/zinc/zinc_machine_top",
+    "down": "cabricality:block/machine/zinc/zinc_machine_bottom",
+    "up": "cabricality:block/machine/zinc/zinc_machine_top",
+    "north": "cabricality:block/machine/zinc/zinc_machine_side",
+    "east": "cabricality:block/machine/zinc/zinc_machine_side",
+    "south": "cabricality:block/machine/zinc/zinc_machine_side",
+    "west": "cabricality:block/machine/zinc/zinc_machine_side",
+    "inner": "cabricality:block/machine/zinc/zinc_machine_inner"
+  }
+}

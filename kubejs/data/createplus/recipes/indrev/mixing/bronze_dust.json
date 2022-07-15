@@ -1,0 +1,26 @@
+{
+  "fabric:load_conditions": [
+		{
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "indrev"
+      ]
+		}
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "c:tin_dusts"
+    },
+    {
+      "tag": "c:copper_dusts"
+    }
+  ],
+  "results": [
+    {
+      "item": "indrev:bronze_ingot",
+      "count": 2
+    }
+  ],
+  "heatRequirement": "none"
+}

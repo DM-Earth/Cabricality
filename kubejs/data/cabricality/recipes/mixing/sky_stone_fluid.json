@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      
+      "amount": 20250
+    },
+    {
+      "item": "ae2:sky_dust"
+    },
+    {
+      "item": "ae2:sky_dust"
+    },
+    {
+      "item": "ae2:sky_dust"
+    },
+    {
+      "item": "ae2:sky_dust"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:sky_stone",
+      
+      "amount": 20250
+    }
+  ]
+}

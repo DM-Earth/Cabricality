@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "minecraft:glass"
+  },
+  "fluidOutput": {
+    "fluid": "kubejs:molten_glass",
+    "amount": 81000
+  },
+  "processTime": 600
+}

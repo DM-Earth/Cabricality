@@ -1,0 +1,66 @@
+{
+  "credit": "thermal series",
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down": {"texture": "#down", "cullface": "down"},
+        "up": {"texture": "#up", "cullface": "up"},
+        "north": {"texture": "#north", "cullface": "north"},
+        "south": {"texture": "#south", "cullface": "south"},
+        "west": {"texture": "#west", "cullface": "west"},
+        "east": {"texture": "#east", "cullface": "east"}
+      }
+    },
+    {
+      "from": [0, 3.9375, 0],
+      "to": [16, 12.0625, 16],
+      "faces": {
+        "down": {"texture": "#inner"},
+        "up": {"texture": "#inner"}
+      }
+    },
+    {
+      "from": [0, 0, 3.9375],
+      "to": [16, 16, 12.0625],
+      "faces": {
+        "north": {"texture": "#inner"},
+        "south": {"texture": "#inner"}
+      }
+    },
+    {
+      "from": [3.9375, 0, 0],
+      "to": [12.0625, 16, 16],
+      "faces": {
+        "west": {"texture": "#inner"},
+        "east": {"texture": "#inner"}
+      }
+    },
+    {
+      "from": [16, 12.0625, 16],
+      "to": [0, 3.9375, 0],
+      "faces": {
+        "down": {"texture": "#inner"},
+        "up": {"texture": "#inner"}
+      }
+    },
+    {
+      "from": [16, 16, 12.0625],
+      "to": [0, 0, 3.9375],
+      "faces": {
+        "north": {"texture": "#inner"},
+        "south": {"texture": "#inner"}
+      }
+    },
+    {
+      "from": [12.0625, 16, 16],
+      "to": [3.9375, 0, 0],
+      "faces": {
+        "west": {"texture": "#inner"},
+        "east": {"texture": "#inner"}
+      }
+    }
+  ]
+}

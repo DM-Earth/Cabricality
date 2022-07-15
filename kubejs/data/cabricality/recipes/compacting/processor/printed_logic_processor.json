@@ -1,0 +1,20 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "indrev:molten_gold_still",
+      "amount": 11664
+    },
+    {
+      "item": "ae2:logic_processor_press"
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:logic_processor_press"
+    },
+    {
+      "item": "ae2:printed_logic_processor"
+    }
+  ]
+}

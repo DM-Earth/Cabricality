@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "minecraft:redstone_block"
+  },
+  "fluidOutput": {
+    "fluid": "kubejs:redstone",
+    "amount": 81000
+  },
+  "processTime": 600
+}

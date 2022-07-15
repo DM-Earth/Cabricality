@@ -1,0 +1,12 @@
+{
+  "type": "indrev:pulverize",
+  "ingredients": {
+    "item": "minecraft:obsidian"
+  },
+  "output":
+    {
+      "item": "create:powdered_obsidian",
+      "count": 1
+    },
+  "processTime": 1000
+}

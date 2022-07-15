@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+        "condition": "fabric:item_tags_populated",
+        "values": [
+            "createplus:regular_sand"
+        ]
+    }
+  ],
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "tag": "createplus:regular_sand"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:clay_ball",
+      "chance": 0.25
+    }
+  ]
+}

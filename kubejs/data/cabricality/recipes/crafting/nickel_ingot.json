@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "kubejs:nickel_nugget"
+    }
+  },
+  "result": {
+    "item": "kubejs:nickel_ingot"
+  }
+}

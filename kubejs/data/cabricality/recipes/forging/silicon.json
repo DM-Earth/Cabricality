@@ -1,0 +1,17 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "kubejs:silicon_compound"
+    },
+    {
+      "item": "kubejs:ice_charge"
+    }
+  ],
+  "output": {
+    "id": "ae2:silicon",
+    "count": 1
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 25
+}

@@ -1,0 +1,17 @@
+{
+  "type": "indrev:fluid_infuse",
+  "ingredients": [
+    {
+      "item": "create:zinc_ingot"
+    }
+  ],
+  "fluidInput": {
+    "fluid": "indrev:molten_copper_still",
+    "amount": 9000
+  },
+  "output": {
+    "item": "create:brass_ingot",
+    "count": 2
+  },
+  "processTime": 420
+}

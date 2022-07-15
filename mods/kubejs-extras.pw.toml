@@ -1,0 +1,13 @@
+name = "KubeJS Extras"
+filename = "kjsextras-3.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "28b9658a913b93c965b11b364deeedb0e97ecca5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3783101
+project-id = 504045

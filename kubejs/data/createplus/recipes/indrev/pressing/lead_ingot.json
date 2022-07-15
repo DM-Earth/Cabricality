@@ -1,0 +1,1 @@
+{"fabric:load_conditions":[{"condition":"fabric:all_mods_loaded","values":["indrev"]}],"results":[{"item":"indrev:lead_plate"}],"type":"create:pressing","ingredients":[{"tag":"c:lead_ingots"}]}

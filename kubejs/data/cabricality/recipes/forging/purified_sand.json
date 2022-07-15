@@ -1,0 +1,17 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "kubejs:rough_sand"
+    },
+    {
+      "item": "kubejs:earth_charge"
+    }
+  ],
+  "output": {
+    "id": "kubejs:purified_sand",
+    "count": 1
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 25
+}

@@ -1,0 +1,13 @@
+name = "Here be no Dragons!"
+filename = "here-be-no-dragons-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0564401b5be9b9e510dee00faa0979ea8a822ac0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3147277
+project-id = 429291

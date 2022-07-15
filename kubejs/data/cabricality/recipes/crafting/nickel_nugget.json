@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kubejs:nickel_ingot"
+    }
+  ],
+  "result": {
+    "item": "kubejs:nickel_nugget",
+    "count": 9
+  }
+}

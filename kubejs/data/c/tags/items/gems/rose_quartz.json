@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "create:rose_quartz",
+        {"id":"ce:rose_quartz","required":false}
+    ]
+}

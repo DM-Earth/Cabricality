@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cabricality:block/casing/invar/invar_casing_top",
+    "side": "cabricality:block/casing/invar/invar_casing_side"
+  }
+}

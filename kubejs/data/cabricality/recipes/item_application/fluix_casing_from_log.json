@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone"
+    },
+    {
+      "item": "indrev:lead_plate"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:fluix_casing"
+    }
+  ]
+}

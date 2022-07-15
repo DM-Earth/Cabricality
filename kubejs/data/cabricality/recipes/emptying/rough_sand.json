@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "kubejs:sand_ball"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:rough_sand"
+    },
+    {
+      "fluid": "kubejs:fine_sand",
+      "amount": 40500
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:precision_mechanism"
+  },
+  "transitionalItem": {
+    "item": "kubejs:incomplete_infernal_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        },
+        {
+          "fluid": "kubejs:liquid_soul",
+          
+          "amount": 40500
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        },
+        {
+          "fluid": "minecraft:lava",
+          
+          "amount": 81000
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        },
+        {
+          "fluid": "minecraft:lava",
+          
+          "amount": 81000
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        },
+        {
+          "fluid": "minecraft:lava",
+          
+          "amount": 81000
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_infernal_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:infernal_mechanism",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

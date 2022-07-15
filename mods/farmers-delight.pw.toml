@@ -1,0 +1,13 @@
+name = "Farmer's Delight"
+filename = "farmers-delight-fabric-1.18.2-0.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4EakbH8e/versions/0.2.1/farmers-delight-fabric-1.18.2-0.2.1.jar"
+hash-format = "sha1"
+hash = "3abc9a207f8f6e6f7d9c0f41ecb0d2a68d8ab593"
+
+[update]
+[update.modrinth]
+mod-id = "4EakbH8e"
+version = "EpdWyovh"

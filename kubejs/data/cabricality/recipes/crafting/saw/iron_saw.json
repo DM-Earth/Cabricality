@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SRR",
+    "SMR"
+  ],
+  "key": {
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "R": {
+      "tag": "c:rods/stone"
+    },
+    "M": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "kubejs:iron_saw"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "cabricality:block/frame_template",
+  "textures": {
+    "particle": "cabricality:block/casing/invar/invar_casing_top",
+    "down": "cabricality:block/casing/invar/invar_casing_top",
+    "up": "cabricality:block/casing/invar/invar_casing_top",
+    "north": "cabricality:block/casing/invar/invar_casing_side",
+    "east": "cabricality:block/casing/invar/invar_casing_side",
+    "south": "cabricality:block/casing/invar/invar_casing_side",
+    "west": "cabricality:block/casing/invar/invar_casing_side",
+    "inner": "cabricality:block/casing/invar/invar_casing_side"
+  }
+}

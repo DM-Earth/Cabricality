@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "createplus:zinc_dust"
+  },
+  "fluidOutput": {
+    "fluid": "kubejs:molten_zinc",
+    "amount": 9000
+  },
+  "processTime": 600
+}

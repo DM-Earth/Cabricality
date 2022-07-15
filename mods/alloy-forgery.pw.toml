@@ -1,0 +1,13 @@
+name = "Alloy Forgery"
+filename = "wraith-alloy-forgery-2.0.13+1.18.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jhl28YkY/versions/2.0.13+1.18/wraith-alloy-forgery-2.0.13%2B1.18.jar"
+hash-format = "sha1"
+hash = "1ced07990224e175037ce081f8b8e12b00793f66"
+
+[update]
+[update.modrinth]
+mod-id = "jhl28YkY"
+version = "RnZ1rNwY"

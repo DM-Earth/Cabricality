@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:fern"
+    },
+    {
+      "fluid": "kubejs:slime",
+      
+      "amount": 9720
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:slimy_fern"
+    }
+  ]
+}

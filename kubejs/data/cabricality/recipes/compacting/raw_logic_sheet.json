@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:raw_logic",
+      "amount": 81
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:raw_logic_sheet"
+    }
+  ]
+}

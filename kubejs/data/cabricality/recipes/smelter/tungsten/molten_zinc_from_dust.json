@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "indrev:tungsten_dust"
+  },
+  "fluidOutput": {
+    "fluid": "kubejs:molten_tungsten",
+    "amount": 9000
+  },
+  "processTime": 600
+}

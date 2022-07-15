@@ -1,0 +1,20 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:fine_sand",
+      "amount": 40500
+    },
+    {
+      "item": "kubejs:purified_sand"
+    },
+    {
+      "item": "kubejs:coke_chunk"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:silicon_compound"
+    }
+  ]
+}

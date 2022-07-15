@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:matrix",
+      "amount": 81000
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:computation_matrix"
+    }
+  ]
+}

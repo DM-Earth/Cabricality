@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "fluid": "kubejs:coke",
+      "amount": 45000
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:coal_coke"
+    }
+  ]
+}

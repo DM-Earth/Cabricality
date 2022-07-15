@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "kubejs:calculation_mechanism"
+  },
+  "fluidOutput": {
+    "fluid": "kubejs:raw_logic",
+    "amount": 2430
+  },
+  "processTime": 25
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:twisting_vines"
+    },
+    {
+      "item": "minecraft:weeping_vines"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:liquid_soul",
+      
+      "amount": 40500
+    }
+  ],
+  "heatRequirement":"heated"
+}

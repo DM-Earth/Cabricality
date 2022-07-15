@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "kubejs:zinc_sheet"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:zinc_casing"
+    }
+  ]
+}

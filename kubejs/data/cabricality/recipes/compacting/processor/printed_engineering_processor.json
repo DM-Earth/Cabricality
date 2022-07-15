@@ -1,0 +1,20 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "kubejs:molten_diamond",
+      "amount": 11664
+    },
+    {
+      "item": "ae2:engineering_processor_press"
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:printed_engineering_processor"
+    },
+    {
+      "item": "ae2:engineering_processor_press"
+    }
+  ]
+}
