@@ -154,7 +154,7 @@ function initAndesiteMachine(event) {
 	]).transitionalItem(transitional)
 		.loops(1)
 		.id('kubejs:kinetic_mechanism')
-	event.shapeless(KJ('kinetic_mechanism'), [CR('cogwheel'), CR('andesite_alloy'), CR('andesite_alloy'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")//.damageIngredient(1)
+	event.shapeless(KJ('kinetic_mechanism'), [CR('cogwheel'), CR('andesite_alloy'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")//.damageIngredient(1)
 	event.shaped(KJ('andesite_machine'), [
 		'SSS',
 		'SCS',
@@ -271,19 +271,6 @@ function oreProcessing(event) {
 		event.recipes.createMilling([Item.of(dust, 3)], crushed)
 		event.recipes.createCrushing([Item.of(dust, 3), Item.of(dust, 3).withChance(0.5)], crushed)
 		event.recipes.createSplashing([Item.of(nugget, 2)], dust)
-	}
-	let metalsVanilla = ['iron', 'gold']
-	metalsVanilla.forEach(e => {
-		let ingot = 'minecraft:' + e + '_ingot'
-		let nugget = 'minecraft:' + e + '_nugget'
-		let raw = 'minecraft:raw_' + e
-		let crushed = 'create:crushed_' + e + '_ore'
-		let dust = 'indrev:' + e + '_dust'
-		let ores = '#minecraft:' + e + '_ores'
-		process(ingot, nugget, raw, crushed, dust, ores)
-
-		event.remove({ id: 'alloy_forgery:' + e + '_from_ores' })
-		event.remove({ id: 'alloy_forgery:' + e + '_from_raw_ores' })
 		event.custom({
 			"type": "alloy_forgery:forging",
 			"inputs": [
@@ -298,6 +285,20 @@ function oreProcessing(event) {
 			"min_forge_tier": 1,
 			"fuel_per_tick": 3
 		})
+	}
+	let metalsVanilla = ['iron', 'gold']
+	metalsVanilla.forEach(e => {
+		let ingot = 'minecraft:' + e + '_ingot'
+		let nugget = 'minecraft:' + e + '_nugget'
+		let raw = 'minecraft:raw_' + e
+		let crushed = 'create:crushed_' + e + '_ore'
+		let dust = 'indrev:' + e + '_dust'
+		let ores = '#minecraft:' + e + '_ores'
+		process(ingot, nugget, raw, crushed, dust, ores)
+
+		event.remove({ id: 'alloy_forgery:' + e + '_from_ores' })
+		event.remove({ id: 'alloy_forgery:' + e + '_from_raw_ores' })
+		
 	})
 	let metalsVanillaCreate = ['copper']
 	metalsVanillaCreate.forEach(e => {
