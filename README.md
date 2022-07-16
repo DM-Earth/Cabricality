@@ -9,3 +9,4 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 ## Missing Features
 
 * [ ] Trading
+* [ ] Quest
