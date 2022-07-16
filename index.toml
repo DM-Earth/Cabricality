@@ -1,20 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".DS_Store"
-hash = "f219952bea4122a6a0a2642aa289cef160b931dec0a88e5b6c0213259cda0788"
-
-[[files]]
 file = "LICENSE"
 hash = "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
-
-[[files]]
-file = "README.md"
-hash = "d7ee6be057c50f1c0f3550a7fd61b4174ab9aa45e8c1821a2bf934d0d3178f88"
-
-[[files]]
-file = "config/.DS_Store"
-hash = "9a428f2d2066875dd6f7d59d0da323b27d44e58f771d96d2c40b19b7cff4f942"
 
 [[files]]
 file = "config/cobblegen.json5"
@@ -25,40 +13,16 @@ file = "config/entityculling.json"
 hash = "7a0a5ca3cacd4075ad1ab78f13fff25e5e607fb193cfc6a7a0f04b7c1c5a835a"
 
 [[files]]
-file = "config/inventoryprofilesnext/.DS_Store"
-hash = "8e98ffccb218c122c6aacdd76129a8f4d18f8ca30e8b5b1daad17e83bde6c699"
-
-[[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "c0f24436bee0c7f30378d90f0ebf5a5ad10b12440d22e7cfc6863ad10c8851e0"
-
-[[files]]
-file = "config/roughlyenoughitems/.DS_Store"
-hash = "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
 hash = "bc6d2c29dfecec7334bcd107cbf025b6635c316e6ebaca46cf40fed8494bdae2"
 
 [[files]]
-file = "config/waila/.DS_Store"
-hash = "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3"
-
-[[files]]
 file = "config/waila/waila.json"
 hash = "4597fde5d576f236df3cdb1e9049601e766780ca9b245263a0fc0aa886286624"
-
-[[files]]
-file = "kubejs/.DS_Store"
-hash = "4cc5111ede9fe940d4acf605b47a6635bc37c485e3ad045f0b6cf8740e2f3279"
-
-[[files]]
-file = "kubejs/assets/cabricality/.DS_Store"
-hash = "8b4482bb2057b582fafe426ad9a8cc6cd2571c9ce1dd14c8b6ba7a2b657d997b"
-
-[[files]]
-file = "kubejs/assets/cabricality/models/.DS_Store"
-hash = "5b4fc738d2509496147cd9c58597828df03cf2e31333e587f03268945daf2bbf"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/accellerator.json"
@@ -70,7 +34,7 @@ hash = "a43035c5093253c63016d9f281851925dbdd90abfb46e5807f6586d8c0ecd752"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/casing/fluix_casing.json"
-hash = "09f9de3550bb03cc828be1333401351a2dfe2f6bdf80f598f406832dd2c1b95f"
+hash = "4b2e0d2e7d697bea6e0c8d527b0f411e46a5df066057fbebdf8bb8c3d6e7283e"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/casing/invar_casing.json"
@@ -78,7 +42,7 @@ hash = "4805edac70cf7529394c274f7d3c77c5534f9f0fdcc9e14111fe1cc8b0a5ed48"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/casing/zinc_casing.json"
-hash = "474466f0e38b77d6b74eaef8789083b70c0000db7eda234fbe23f36807acb924"
+hash = "11de30b2f391f4fd3806885a889209e003a79a6eae4f414a2c5f2fbb1aaf07db"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/catalyst.json"
@@ -145,48 +109,72 @@ file = "kubejs/assets/cabricality/models/item/trading/trade_card.json"
 hash = "ada86d1570e9b9e16bb8984f1a85fadf3d6e771bd6ab3df7b3d9de2b2095fa8a"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/.DS_Store"
-hash = "6537291dd1387fa17db43e1ce7c94cacce37110dda5f64be079d83f77ac2ae15"
-
-[[files]]
 file = "kubejs/assets/cabricality/textures/block/accellerator_glass.png"
 hash = "3af027e294d37f3b8ed0d240bc3c4a257570a6d4ca3836974e8696570ffb83ff"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/block/casing/.DS_Store"
-hash = "3e2b7986531497c817f6509760aa6c8d999f8f8b623b6648ce3fe62cb7211f41"
+file = "kubejs/assets/cabricality/textures/block/casing/enderium/enderium_casing_ctm.png"
+hash = "fae8d1444d718f718f9af32943d8fb20a662027800a3662c01c4f51379dd6a54"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/block/casing/enderium/enderium_casing_side.png"
-hash = "8aa80131c7247a3948b74df34f2203e0d0b915a5a2cf3adff947b6475bb6e363"
+hash = "e6b17db8c380cbd1a05c187d30c466324735ee6e14b15b3c2b27a4f22bbb5076"
+
+[[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/enderium/enderium_casing_side.png.mcmeta"
+hash = "647ff268b4963fe5d333741c56c1224e517852b34093ea08a14e9f9821926f45"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/block/casing/enderium/enderium_casing_top.png"
 hash = "b2085ce5b46506fb48dc0ffbb5523e37000533c71f00b9ec84b2e3ecd9c5f346"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/block/casing/fluix/fluix_casing_side.png"
-hash = "3bf0a12d2f3f258d534e401e191c7e9e0b782a00b23aefdf10952fd3ad8da3e5"
+file = "kubejs/assets/cabricality/textures/block/casing/enderium/enderium_casing_top.png.mcmeta"
+hash = "7df24e3d2b26297c3cc800136121a3e10ae368302c8d18585bb0f716f41e7ffd"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/block/casing/fluix/fluix_casing_top.png"
+file = "kubejs/assets/cabricality/textures/block/casing/enderium/enderium_casing_top_ctm.png"
+hash = "cb072f3f122b0b3870187aca55f76f85a9cbc4a9d9fe5b85e1ab3ec3bf45f872"
+
+[[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/fluix/fluix_casing.png"
 hash = "53ac09714a087ad0cefa54e2005ab483e50dba747587174973fc40dba4b82c17"
 
 [[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/fluix/fluix_casing.png.mcmeta"
+hash = "bd7246be89b68ebac7a219e548d24478502dc6d42d936741e4deba6fcf6f009b"
+
+[[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/fluix/fluix_casing_ctm.png"
+hash = "b90d6379dcab2df62ed206f5fc570c3d644e5f715ed86f61fbc95f007d08426d"
+
+[[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/invar/invar_casing_ctm.png"
+hash = "aeb4b70309f5fd832648f47653c613b59e9ffb3208238d95d32931f92de61e8e"
+
+[[files]]
 file = "kubejs/assets/cabricality/textures/block/casing/invar/invar_casing_side.png"
-hash = "7523f86b6e20b7141bc0a5d1a13a413ac17dd0306120e080d9d69f558b78c011"
+hash = "2620b642f41f82c2b3e2e71dd1f6a14cbb474400a5863777b627c04bc46fbb96"
+
+[[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/invar/invar_casing_side.png.mcmeta"
+hash = "507c0e4cdcadcb2cbf20b7281f652b2bc35e076f23e5903187d0baa9292337c7"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/block/casing/invar/invar_casing_top.png"
 hash = "56ee50026903fb313ca6275f324854660c252bad9ba3894f46b7c0bb947c9c59"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/block/casing/zinc/zinc_casing_side.png"
-hash = "200594220905deabdd971fbbf7db822a7be021f9ba18e76ef690d09eefaa55fc"
+file = "kubejs/assets/cabricality/textures/block/casing/zinc/zinc_casing_ctm.png"
+hash = "79ddd25d16102cf71fcac59c129a22a57dd626852c279ddbe4d04fec26b9d255"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/block/casing/zinc/zinc_casing_top.png"
+file = "kubejs/assets/cabricality/textures/block/casing/zinc/zinc_casing_side.png"
 hash = "064d093c0cac59b65bb6b8cb3bedfd160908c9ad6c6b1480c33c604e9e807157"
+
+[[files]]
+file = "kubejs/assets/cabricality/textures/block/casing/zinc/zinc_casing_side.png.mcmeta"
+hash = "48c88cc501f14f7521af6ccc4dca2ebd06c9db071d482c0645cf9eed6225ec1f"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/block/catalyst_glass.png"
@@ -259,10 +247,6 @@ hash = "c053fe68d34f50433beaa5f4aec4dbc58a2351c877807886f6654976c7920000"
 [[files]]
 file = "kubejs/assets/cabricality/textures/block/reagent_glass.png"
 hash = "ccab82557e43343126ce3ad49e10aac67c7a71bfac471640b09d03cd3c22f82e"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/.DS_Store"
-hash = "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/item/basalz_powder.png"
@@ -661,20 +645,12 @@ file = "kubejs/assets/cabricality/textures/item/zinc_sheet.png"
 hash = "0b09a3cf07b366b1d34563e3469e1b9052768235a1f73c08be745cc894778abc"
 
 [[files]]
-file = "kubejs/assets/indrev/.DS_Store"
-hash = "d712c73daa9d9f8bc84ab79643cffc427d5c7cdff60278c1e2caac9c53e5511f"
-
-[[files]]
 file = "kubejs/assets/indrev/lang/en_us.json"
 hash = "1e14fe1eba253b0771d832851f35dcddb96fe0021355317c81417675d1ad8c39"
 
 [[files]]
 file = "kubejs/assets/indrev/lang/zh_cn.json"
 hash = "90d465da3adf4d6e3de428127c43fff7cac4c3923d23ffb20ca1f51b5d9bcb84"
-
-[[files]]
-file = "kubejs/assets/indrev/textures/.DS_Store"
-hash = "8f6ac66128aba84130d28e3cd60c242bc0b8cfcf02c769087d9325f82e82c73f"
 
 [[files]]
 file = "kubejs/assets/indrev/textures/block/solid_infuser.png"
@@ -690,7 +666,7 @@ hash = "f7e1cb9a750ad8266c0d313f4bc8207ca0fc4c02f824f2a1cb7ab56d2c995f94"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
-hash = "110de7ee80c96508fd02d52a6c15f326419a0c3705ea98acc0d061362a263a15"
+hash = "aeddcb4159342df851c0e24d9aec7190a11e28b832384231d9d3eb999df5b1dd"
 
 [[files]]
 file = "kubejs/data/c/tags/items/barrels/wooden.json"
@@ -1033,8 +1009,12 @@ file = "kubejs/data/cabricality/recipes/filling/electron_tube.json"
 hash = "b2c1d7f94aad233a1bdad8beeee7cdd1397acb0f0d1b3d6ee7b6bedb8650d5a1"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/filling/nickel_compound.json"
+hash = "504a555bf36bc921c48d2770f01d017e57390c24855872c13505c2d0cae94c97"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/filling/slimy_fern.json"
-hash = "d6d2d0b86258391d26fbb73c152ecf903f71b7c78646ac4e3fa58072319285d4"
+hash = "7a8317c161858753f729ccc6c2dcfcece9703b6aa2f24f8f34f498afa6f1423a"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/abstruse_mechanism.json"
@@ -2157,32 +2137,24 @@ file = "kubejs/data/minecraft/loot_tables/blocks/weeping_vines_plant.json"
 hash = "74603d5d72632fd835ae23d8b11e4af0a7ee326b4f3290cd064297c20b2e2521"
 
 [[files]]
-file = "kubejs/server_scripts/catalyst.js"
-hash = "59a41f3c7aa960c978e59868f1614a35152e4f4bd780a401bdcca6b76dcd28be"
-
-[[files]]
 file = "kubejs/server_scripts/extractor.js"
 hash = "12823b98e7a59c514d75b86561bc753c1bbbc3a93f8f64bf82030214c28cf1c7"
 
 [[files]]
 file = "kubejs/server_scripts/laser.js"
-hash = "1d72844caa963aedf7c05768e8d1be9444570d701e5cfddd9a84b4736cfc9f8e"
+hash = "e4c8e6372dc6ce1f83c9a31de32911c80f4ffeeb5a5acf1eeb9c79de6a4e104f"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "0dc73f3c10a23a3f5771a23f03141cf7ca0934b78f865dffd271ab6b6c877576"
+hash = "f4bd358c71e9d218d38a55d6a49c444f244e1d39559fbee7cb5b1091e5add446"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen.js"
-hash = "ba6a31be6fdff02b7c1eb48fc4139174158415fb3e88baaf1e046a6dcbb40a0f"
+hash = "aae81dc22ed853355c95609970cdaf2803643782e6648a274f6e6c8ac36cb9a6"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
 hash = "254aff164eead133516031f11bd617cb15a47569a6f3d8a63fcfd9c2d9b1d48d"
-
-[[files]]
-file = "mods/.DS_Store"
-hash = "d49700547bb7cf3164ea099c6399369a97abeb4c912112a9ba5cf7e1f2e7cf57"
 
 [[files]]
 file = "mods/ae2.pw.toml"
@@ -2311,6 +2283,10 @@ metafile = true
 file = "mods/inventory-profiles-next.pw.toml"
 hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
 metafile = true
+
+[[files]]
+file = "mods/iris-mc1.18.2-1.2.4-build.38.jar"
+hash = "45c00e3a58688440af95698c6ce4b57128b1a6a201285718c3770c3a50331bbb"
 
 [[files]]
 file = "mods/kibe.pw.toml"
