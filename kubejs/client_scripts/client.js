@@ -4,7 +4,7 @@ console.info('Hello, World! (You will see this line every time client resources 
 
 onEvent('rei.remove.categories', event => {
 	event.yeet('minecraft:plugins/tag')
-	event.yeet('alloy_forgery:forging')
+//	event.yeet('alloy_forgery:forging')
 	event.yeet('minecraft:plugins/stripping')
 	event.yeet('minecraft:plugins/beacon_base')
 	event.yeet('minecraft:plugins/beacon_payment')

@@ -2195,6 +2195,11 @@ hash = "28f3a330db6ec489843622d1c0eeb6a40a92f2892073934e8ed3f974276f3519"
 metafile = true
 
 [[files]]
+file = "mods/amecs.pw.toml"
+hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
+metafile = true
+
+[[files]]
 file = "mods/architects-palette-fabric.pw.toml"
 hash = "5d068ee053bfe3b7815d9b28b12144aaf65f9253247eff40480aacf3c2a8e02e"
 metafile = true
@@ -2315,11 +2320,6 @@ metafile = true
 [[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "07431087764d1ec78878ab0dea140cd8627fd7e1948cd46e76ff159429711c9b"
-metafile = true
-
-[[files]]
-file = "mods/kubejs-extras.pw.toml"
-hash = "70faccf96e3ad847131a22bf1b326c2e8e969ad91585a8b5cdcea7fc861a7d14"
 metafile = true
 
 [[files]]

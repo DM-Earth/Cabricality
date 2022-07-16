@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:nickel_ingot"
+    },
+    {
+      "fluid": "indrev:molten_iron_still",
+      "amount": 40500
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:nickel_compound"
+    }
+  ]
+}

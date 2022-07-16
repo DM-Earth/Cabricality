@@ -1,3 +1,6 @@
+//0.4 or 0.5, choose your way! (don't type 0.4.1 or it will bugged)
+let createVersion = 0.5
+
 let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith('#') ? '#' : "") + domain + ":" + id.replace('#', '')
 let CR = (id, x) => MOD("create", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
@@ -13,7 +16,7 @@ let AP = (id, x) => MOD("architects_palette", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 let ED = (id, x) => MOD("extended_drawers", id, x)
 
-let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), PMD('dark_amaranth'), PMD('palm')]
+let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), PMD('dark_amaranth'), PMD('palm'), AP('twisted')]
 
 function ifiniDeploying(output, input, tool) {
 	return {
@@ -67,6 +70,10 @@ function tweaks(event) {
 	event.remove({ output: KB("placer") })
 	event.remove({ output: KB("breaker") })
 	event.remove({ output: ED("shadow_drawer") })
+	event.remove({ output: IV("wrench") })
+	event.remove({ output: KB("regular_conveyor_belt") })
+	event.remove({ output: KB("fast_conveyor_belt") })
+	event.remove({ output: KB("express_conveyor_belt") })
 
 	event.remove({ output: IV("hammer") })
 	event.remove({ input: IV("hammer") })
@@ -390,6 +397,7 @@ function initCopperMachine(event) {
 	copper_machine('create:item_drain', 1, MC("iron_bars"))
 	copper_machine('indrev:heat_generator_mk4', 1, IV('heat_coil'))
 	copper_machine('indrev:fisher_mk2', 1, MC('bucket'))
+	if (createVersion >= 0.5)	copper_machine('create:steam_engine', 2, MC('piston'))
 	copper_machine('create:smart_fluid_pipe', 2)
 }
 
@@ -640,7 +648,7 @@ function alchemy(event) {
 	event.recipes.createCrushing([Item.of(basalz, 1), Item.of(basalz, 1).withChance(.5)], KJ("basalz_shard"))
 	event.recipes.createCompacting(KJ("ice_charge"), [blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz])
 	event.recipes.createCompacting(KJ("earth_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
-	event.recipes.createCompacting(KJ("lightning_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
+//	event.recipes.createCompacting(KJ("lightning_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
 
 	event.remove({ id: CR("crushing/obsidian") })
 	//	event.remove({ output: 'ae2:silicon', type: 'minecraft:smelting' })
@@ -720,7 +728,7 @@ function alchemy(event) {
 				"item": KJ(`failed_alchemy_${id}`)
 			},
 			"output": jsonOut,
-			"processTime": 250
+			"processTime": 64
 		})
 	}
 
@@ -772,7 +780,7 @@ function alchemy(event) {
 				"type": "indrev:sawmill",
 				"ingredients": { "item": e.id },
 				"output": [{ "item": e.outputItem ? e.outputItem : typeof e.ingredient == "string" ? e.ingredient : e.ingredient[0], "chance": 0.75 }],
-				"processTime": 400
+				"processTime": 64
 			})
 		})
 	})
@@ -781,14 +789,14 @@ function alchemy(event) {
 		"type": "indrev:sawmill",
 		"ingredients": { "item": "kubejs:substrate_silicon" },
 		"output": [{ "item": "ae2:silicon", "count": 1 }],
-		"processTime": 325
+		"processTime": 64
 	})
 
 	event.custom({
 		"type": "indrev:sawmill",
-		"ingredient": { "item": "kubejs:substrate_silver" },
+		"ingredients": { "item": "kubejs:substrate_silver" },
 		"output": [{ "item": "indrev:silver_dust", "count": 1 }],
-		"processTime": 325
+		"processTime": 64
 	})
 
 	event.custom({
@@ -814,7 +822,7 @@ function alchemy(event) {
 	event.custom({
 		"type": "indrev:fluid_infuse",
 		"ingredients": [
-			{ "item": "indrev:sulfur_dust" }
+			{ "item": "minecraft:glowstone_dust" }
 		],
 		"fluidInput": { "fluid": "kubejs:molten_glass", "amount": 8100 },
 		"output": { "item": "kubejs:accellerator_glowstone", "count": 1 },
