@@ -9,7 +9,8 @@
     "create:carriage_contraption"
   ],
   "entityWhitelist": [
-    "botania:mana_burst"
+    "botania:mana_burst",
+    "create:carriage_contraption"
   ],
   "tracingDistance": 128,
   "debugMode": false,
