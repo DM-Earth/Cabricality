@@ -1,3 +1,4 @@
+let debug = false
 onEvent('block.right_click', event => {
   var isNextToLog = false
   if (event.block.id == "kubejs:extractor_machine") {
@@ -26,7 +27,7 @@ onEvent('block.right_click', event => {
       if (event.block.north.id == "minecraft:water") smeltSpeed = smeltSpeed - 0.15
       if (event.block.east.id == "minecraft:water") smeltSpeed = smeltSpeed - 0.15
       if (event.block.south.id == "minecraft:water") smeltSpeed = smeltSpeed - 0.15
-      
+
       //vanilla metal
       if (event.block.down.id == "minecraft:iron_ore") {
         downBlock = "indrev:molten_iron"
@@ -43,7 +44,7 @@ onEvent('block.right_click', event => {
         smeltChance = 1.0
         smeltSpeed = 0.5
       }
-      
+
       if (event.block.down.id == "minecraft:gold_ore") {
         downBlock = "indrev:molten_gold"
         smeltChance = 0.125
@@ -59,7 +60,7 @@ onEvent('block.right_click', event => {
         smeltChance = 1.0
         smeltSpeed = 0.5
       }
-      
+
       if (event.block.down.id == "minecraft:copper_ore") {
         downBlock = "indrev:molten_copper"
         smeltChance = 0.25
@@ -108,7 +109,7 @@ onEvent('block.right_click', event => {
         smeltChance = 1.0
         smeltSpeed = 0.5
       }
-      
+
       if (event.block.down.id == "indrev:tin_ore") {
         downBlock = "indrev:molten_tin"
         smeltChance = 0.125
@@ -227,7 +228,27 @@ onEvent('block.right_click', event => {
       }
     }
 
-    if (downBlock != event.block.down.id && Math.random() <= smeltSpeed) {
+    let isFluidSource = false
+    if (debug == true){
+      event.server.runCommandSilent('say start')
+      event.server.runCommandSilent('say ' + event.block.down.getBlockState().toString())
+      event.server.runCommandSilent('say ' + event.block.down.getBlockState().toString().indexOf('[level=').toString())
+      event.server.runCommandSilent('say ' + event.block.down.getBlockState().toString().indexOf('[level=0]').toString())
+      event.server.runCommandSilent('say end')
+    }
+    if (!event.block.down.getBlockState().toString().includes('[level=') || event.block.down.getBlockState().toString().includes('[level=0]')) isFluidSource = true
+    if (!event.block.up.getBlockState().toString().includes('[level=0]')) isFluidSource = false
+
+    if (downBlock != event.block.down.id && Math.random() <= smeltSpeed
+      /*
+        && event.block.down.east.id != event.block.down.id &&
+        event.block.down.west.id != event.block.down.id &&
+        event.block.down.north.id != event.block.down.id &&
+        event.block.down.south.id != event.block.down.id
+        */
+      && isFluidSource == true
+    ) {
+      if (debug == true) event.server.runCommandSilent('say ' + event.block.down.getBlockState().toString())
       x = event.block.x
       y = event.block.y - 1
       yup = event.block.y + 1
@@ -243,28 +264,6 @@ onEvent('block.right_click', event => {
       }
       smeltSpeed2 = 1.05 - smeltSpeed
       if (Math.random() <= smeltSpeed2) event.server.runCommandSilent("setblock " + upPos + " minecraft:air")
-    }
-  }
-})
-onEvent('block.left_click', event => {
-  if (event.block.id == "kubejs:extractor_machine" && Math.random() > 0.25 && event.block.down.id == "minecraft:air") {
-    x = event.block.x
-    yUp = event.block.y + 1
-    yDown = event.block.y - 1
-    z = event.block.z
-
-    posUp = x + " " + yUp + " " + z
-    posDown = x + " " + yDown + " " + z
-    if (
-      event.block.up.id == "minecraft:water" ||
-      event.block.up.id == "minecraft:lava" ||
-      event.block.up.id == "create:chocolate" ||
-      event.block.up.id == "milk:milk" ||
-      event.block.up.id == "kubejs:resin" ||
-      event.block.up.id == "kubejs:redstone"
-    ) {
-      event.server.runCommandSilent("clone " + posUp + " " + posUp + " " + posDown)
-      event.server.runCommandSilent("setblock " + posUp + " minecraft:air")
     }
   }
 })

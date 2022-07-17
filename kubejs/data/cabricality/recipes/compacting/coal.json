@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:coal_coke"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 8100
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:coal"
+    }
+  ]
+}

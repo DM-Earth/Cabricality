@@ -7,7 +7,7 @@
   ],
   "fluidInput": {
     "fluid": "minecraft:water",
-    "amount": 81000
+    "amount": 0
   },
   "output": {
     "item": "promenade:dark_amaranth_wart_block"

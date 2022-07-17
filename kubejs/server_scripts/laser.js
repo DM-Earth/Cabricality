@@ -1,6 +1,6 @@
 let outputItem = ''
 let length = 16
-let debug = true
+let debug = false
 
 function rnd(seed) {
   let seedO = (seed * 9301 + 49297) % 233280 //toxic, don't touch it
@@ -62,7 +62,7 @@ function chaosT(subs, seed, event) {
 
 onEvent('block.left_click', event => {
   let seedL = event.getEntity().getServer().getOverworld().getSeed()
-  if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == "kubejs:powered_water") {
+  if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == "kubejs:powered_water" && event.block.up.getBlockState().toString().includes('[level=0]')) {
     let block = event.block
     x = block.x
     y = block.y

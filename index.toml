@@ -10,7 +10,7 @@ hash = "e627745061c9d44685adcfb5962eeecbe9ef99ff4698062fc7af3224cbdb9e55"
 
 [[files]]
 file = "config/entityculling.json"
-hash = "7a0a5ca3cacd4075ad1ab78f13fff25e5e607fb193cfc6a7a0f04b7c1c5a835a"
+hash = "0e4bcec50b38febb2bf051cdac70bd7e86375913198442af10be8db1fbf59849"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
@@ -881,6 +881,14 @@ file = "kubejs/data/cabricality/recipes/blasting/nickel_ingot_from_crushed.json"
 hash = "2f18ebaea23e7f382a60c16f119e0aa2d6ef64b875ef2d7bb4748e0f5739aa5b"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/compacting/coal.json"
+hash = "d7dbcb3163fafd2bcabf43cac0428c91b62761dc5977e5ba6626fe1175a4a0b3"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/compacting/coke.json"
+hash = "499b5fca94153c4c5f92f7502ce2076dfc1cfa12df7192a0274a76ea8d2fefa9"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/compacting/dripstone_block.json"
 hash = "2ca296d81bc15115b9b2ae1175c3d505743bd1d555f6618744f1d05c60430ccc"
 
@@ -1026,15 +1034,15 @@ hash = "48d224dea728fba8c233d63193806f28bbbe596956a5ab7be7dce286f610077d"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/dark_amaranth_fungus.json"
-hash = "302f7099367955249475075735784c7c42c5d6a3e9a5abb44ba4eac4f6209728"
+hash = "d4793f57b58d2edf030b30e4e4fd564478e39cf97b7237075b42e26ecda9ca37"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/dark_amaranth_roots.json"
-hash = "6aaba14c973bae70312c2c111f5ca4d70490f88af4e5b8183568059ff348d310"
+hash = "4a2de84f9f3f3d91e304ce8ea5cffea0c29fae2d04dc791504f5671e60812a0e"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/dark_amaranth_wart_block.json"
-hash = "3c6d38e6cb6764eb3fe42479482deca462879230729fe048349f94cf2039c459"
+hash = "96caaab91256b38ba45968e40c93c41aa0ef479e48188069466cb6cc5eb2f6db"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/nickel_compound.json"
@@ -2142,11 +2150,11 @@ hash = "74603d5d72632fd835ae23d8b11e4af0a7ee326b4f3290cd064297c20b2e2521"
 
 [[files]]
 file = "kubejs/server_scripts/extractor.js"
-hash = "12823b98e7a59c514d75b86561bc753c1bbbc3a93f8f64bf82030214c28cf1c7"
+hash = "68301bbbc08e9234624235c3180d05c95d97fe1c7289b577253c8b8f2c65cf7b"
 
 [[files]]
 file = "kubejs/server_scripts/laser.js"
-hash = "e4c8e6372dc6ce1f83c9a31de32911c80f4ffeeb5a5acf1eeb9c79de6a4e104f"
+hash = "1f383f1cf613d8084f254c1dbbd8292663f40dfa795a456fd4f3f0275a44d370"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
@@ -2321,6 +2329,11 @@ hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
 metafile = true
 
 [[files]]
+file = "mods/logical-zoom.pw.toml"
+hash = "ceb6914dc615c4af05e942bb82011dc7d69f8a5051d35ddbaf958419d04b18a3"
+metafile = true
+
+[[files]]
 file = "mods/mcwifipnp.pw.toml"
 hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
 metafile = true
@@ -2338,11 +2351,6 @@ metafile = true
 [[files]]
 file = "mods/notenoughcrashes.pw.toml"
 hash = "22ead426c002828d3d2f4da9caf5454fabae689bbf4291020919da7909095794"
-metafile = true
-
-[[files]]
-file = "mods/ok-zoomer.pw.toml"
-hash = "7bb446109174fb831ced527d41df13962b1c46677f7001557b7211e54e5d3e34"
 metafile = true
 
 [[files]]
