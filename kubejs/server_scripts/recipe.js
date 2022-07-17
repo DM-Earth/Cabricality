@@ -16,7 +16,7 @@ let AP = (id, x) => MOD("architects_palette", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 let ED = (id, x) => MOD("extended_drawers", id, x)
 
-let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), PMD('dark_amaranth'), PMD('palm'), AP('twisted')]
+let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), PMD('dark_amaranth'), PMD('palm'), PMD('cherry_oak'), AP('twisted')]
 
 function ifiniDeploying(output, input, tool) {
 	return {
@@ -45,7 +45,6 @@ function tweaks(event) {
 	event.remove({ type: IV("sawmill") })
 	event.remove({ type: IV("compress") })
 	event.remove({ type: AE2('inscriber') })
-	event.remove({ type: IV("infuse") })
 	event.shaped(KJ("circuit_scrap", 2), [" A ", "ABA", " A "], { A: KJ("invar_ingot"), B: C("#circuit_press") })
 	event.stonecutting(AE2("silicon_press"), KJ("circuit_scrap"))
 	event.stonecutting(AE2("engineering_processor_press"), KJ("circuit_scrap"))
@@ -78,8 +77,27 @@ function tweaks(event) {
 	event.remove({ output: IV("hammer") })
 	event.remove({ input: IV("hammer") })
 
+	event.replaceInput('#c:gold_plates', 'create:golden_sheet')
+	event.replaceInput('#c:iron_plates', 'create:iron_sheet')
+	event.replaceInput('#c:copper_plates', 'create:copper_sheet')
+	event.replaceInput('#c:plates/gold', 'create:golden_sheet')
+	event.replaceInput('#c:plates/iron', 'create:iron_sheet')
+	event.replaceInput('#c:plates/copper', 'create:copper_sheet')
 
 	event.blasting(IV('steel_ingot'), MC('iron_ingot')).cookingTime(400)
+	event.stonecutting(AR('netherite_gear'), MC('netherite_ingot'))
+
+	event.remove({ id: CR('splashing/gravel') })
+	event.recipes.createSplashing([
+		Item.of(MC('iron_nugget', 2)).withChance(0.125),
+		Item.of(MC('flint')).withChance(0.25)
+	], 'minecraft:gravel')
+
+	event.remove({ id: CR('splashing/red_sand') })
+	event.recipes.createSplashing([
+		Item.of(MC('gold_nugget', 2)).withChance(0.125),
+		Item.of(MC('dead_bush')).withChance(0.05)
+	], 'minecraft:red_sand')
 
 	event.shaped("8x indrev:cable_mk1", [
 		'PMP'
@@ -967,7 +985,7 @@ function trading(event) {
 }
 
 function spaceCraft(event) {
-	event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
+	event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).heated()
 	let gear = AR("netherite_gear")
 	let plastic = KJ("matter_plastics")
 	let machine = AE2("controller")

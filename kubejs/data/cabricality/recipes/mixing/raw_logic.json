@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "kubejs:calculation_mechanism"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:raw_logic",
+      "amount": 2430
+    }
+  ],
+  "heatRequirement":"heated"
+}

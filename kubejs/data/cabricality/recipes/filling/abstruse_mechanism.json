@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:inductive_mechanism"
+    },
+    {
+      "fluid": "kubejs:molten_enderium",
+      "amount": 9000
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:abstruse_mechanism"
+    }
+  ]
+}

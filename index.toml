@@ -617,28 +617,12 @@ file = "kubejs/assets/cabricality/textures/item/tool/saw/stone_saw.png"
 hash = "feb5c92ab7f2efe08fa40b7d13b5f1237ee40f106ef3b4bff1580f537697a2cd"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/profession_card_0.png"
-hash = "3a49959040293c7a3cf9620b3c05871938849a6eb84e8064c93646052e3fe3ce"
+file = "kubejs/assets/cabricality/textures/item/trading/profession_card.png"
+hash = "3c5792c801f80f63b7344e90517ce51df2ff92856c3c5035d5ef5efaddb363b8"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/profession_card_1.png"
-hash = "b03e0600c6678cdb6caae8f87a067157e990f6cb13061e0a4c3d244446e80d7c"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/profession_card_2.png"
-hash = "7d18fbee32013bc932f162a84d615beae80b99145916cbeeb401db4e50dfa8c2"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/trade_card_0.png"
-hash = "221e83e9247ad084c7beeb201a238e738e5808d7eeab62f60c85e9458b965116"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/trade_card_1.png"
-hash = "f46dba0e09d5f2385e9aebf24d62967289ead927fc80d7fd8d8f9a6dd2b4c9de"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/trade_card_2.png"
-hash = "f5b93cb86004d2a3323b92091fffec2f72d5543d29e88a5e201b86b5ee58b632"
+file = "kubejs/assets/cabricality/textures/item/trading/trade_card.png"
+hash = "5721d741782ac1f39de082d8da74b9a824ecfab2cad9199ae56bdbb5bdb98a1b"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/item/zinc_sheet.png"
@@ -897,6 +881,10 @@ file = "kubejs/data/cabricality/recipes/blasting/nickel_ingot_from_crushed.json"
 hash = "2f18ebaea23e7f382a60c16f119e0aa2d6ef64b875ef2d7bb4748e0f5739aa5b"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/compacting/dripstone_block.json"
+hash = "2ca296d81bc15115b9b2ae1175c3d505743bd1d555f6618744f1d05c60430ccc"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/compacting/matrix.json"
 hash = "ac5757a3b37ac3ed04958ccd32a9eaa18c23e1542cb661d76b168ae530935a2d"
 
@@ -1001,6 +989,10 @@ file = "kubejs/data/cabricality/recipes/emptying/rough_sand.json"
 hash = "7e2750cb741df29cb0a1692d656780ba4b42d482b360aa8fb9178f17f72a4519"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/filling/abstruse_mechanism.json"
+hash = "0d35633d13fb0f0fbee4e4986fd489a9b31f0e57a4bd3775e24062eb9328af28"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/filling/coke.json"
 hash = "b299992d054f2b3a3166e43ffdd0ab8e5210b90a1e9f72571c9c7f463490de29"
 
@@ -1054,11 +1046,11 @@ hash = "5d7984724c7e0cfe7d948468e34e87695f1c68c1109c88a6d16b7a2a3057da15"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/forging/enderium_from_ender_dust.json"
-hash = "b40faaacc6468c1a246161d2d938d0fe503224678f07b4b586acc6e0ecc5741f"
+hash = "88e720315b299be8e4ff4c90ef1b95eb62f5a98d19b623cedfb1c1408c6f803f"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/forging/enderium_from_ender_pearl.json"
-hash = "96e57591963e151de8129ad6cd913f0f71059cfb3f40e9337a31dadcd7d72c54"
+hash = "18b6a4c088d940ce1a8a7661069eefe5cee883122b3c4e374383f530ffa6dfc9"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/forging/purified_sand.json"
@@ -1085,16 +1077,16 @@ file = "kubejs/data/cabricality/recipes/item_application/zinc_casing_from_log.js
 hash = "bcaabdf5960d6be941c3a39cc763b5e8796ddce9b3831e6bb31d3db9aca8e622"
 
 [[files]]
-file = "kubejs/data/cabricality/recipes/mixing/gold_coin.json"
-hash = "baa33357d821aedf67bde8cbbeba87a1c8949bdbdfb61003b0fa0d0947d8b10d"
-
-[[files]]
 file = "kubejs/data/cabricality/recipes/mixing/liquid_soul.json"
 hash = "817ae6c2b515ab2541c39cc8cc6cf77922a97281cb1d0cc1f33183cbb99b56a8"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/mixing/molten_brass.json"
 hash = "f4eb4caf8bfff1a798de73068e81d56c8e4417bec2ec11ff0feeda23890e3c66"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/mixing/number_array.json"
+hash = "efa31ad9ac332cf5b7a772920b4f6112760846abea8f86ff2149c6d3111b1708"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/mixing/polished_rose_quartz.json"
@@ -1105,16 +1097,16 @@ file = "kubejs/data/cabricality/recipes/mixing/powered_water.json"
 hash = "f416d1a79de01edd4c9c39e4b4c1ee0bf71d26a660bd59c76e8fec1322154b2c"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/mixing/raw_logic.json"
+hash = "0ee72bd938dd53a95db4bf5220b877679645bb07aff1c8603ddd8435e001ec4c"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/mixing/redstone_fluid.json"
 hash = "5e08708401cd861ead8368e4dd733c56bb1fa9252d29c42bca2018fd63e04d68"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/mixing/shard_power.json"
-hash = "fa1a0494f30551c9d45085de494100871cb1ed9144e9d1dbd39d1562ab6fba15"
-
-[[files]]
-file = "kubejs/data/cabricality/recipes/mixing/silver_coin.json"
-hash = "28914ea84741fc3c018d2eea170099bae7c71944788c517b8888626b8610dbcb"
+hash = "8cf21f4c6849b4f763ed6393033ca951dbd5bc316c353c023d0d3b40bd10f66c"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/mixing/sky_stone_fluid.json"
@@ -1123,6 +1115,18 @@ hash = "d2746d82155f631d353c3019805857c605d7f0d801f9f0bb63192ad9f982d4b9"
 [[files]]
 file = "kubejs/data/cabricality/recipes/mixing/slime_fluid.json"
 hash = "41ee82faf74c583b09b034631dab076574cdc73908300af98d15145a8a1545b8"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/mixing/smelting/gold_coin.json"
+hash = "baa33357d821aedf67bde8cbbeba87a1c8949bdbdfb61003b0fa0d0947d8b10d"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/mixing/smelting/iron_nugget.json"
+hash = "2ce0563d875f216127bb38b04cc69b955e35c34c28375a543faff038203e6f90"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/mixing/smelting/silver_coin.json"
+hash = "28914ea84741fc3c018d2eea170099bae7c71944788c517b8888626b8610dbcb"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/mixing/water.json"
@@ -2146,7 +2150,11 @@ hash = "e4c8e6372dc6ce1f83c9a31de32911c80f4ffeeb5a5acf1eeb9c79de6a4e104f"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "f4bd358c71e9d218d38a55d6a49c444f244e1d39559fbee7cb5b1091e5add446"
+hash = "53d6306422da847b8a0c386db64ce4c6630802558b959cb4755c4ca031164c31"
+
+[[files]]
+file = "kubejs/server_scripts/trader.js"
+hash = "242ac2cf71e1bf4eaa4df792e561b70accefe511ecaad1581183ebe023f32c97"
 
 [[files]]
 file = "kubejs/server_scripts/worldgen.js"
@@ -2154,7 +2162,11 @@ hash = "aae81dc22ed853355c95609970cdaf2803643782e6648a274f6e6c8ac36cb9a6"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
-hash = "254aff164eead133516031f11bd617cb15a47569a6f3d8a63fcfd9c2d9b1d48d"
+hash = "7fad4c4d795d5a320990c4b54c6b7daf55998f2ea9a7851f52e51a49fce2c72b"
+
+[[files]]
+file = "kubejs/startup_scripts/trading.js"
+hash = "491c10ff208191c87d20b98bd0eaddc3d567e1ee8b25c2d695f7e6bf5b557fdf"
 
 [[files]]
 file = "mods/ae2.pw.toml"
@@ -2164,11 +2176,6 @@ metafile = true
 [[files]]
 file = "mods/alloy-forgery.pw.toml"
 hash = "28f3a330db6ec489843622d1c0eeb6a40a92f2892073934e8ed3f974276f3519"
-metafile = true
-
-[[files]]
-file = "mods/amecs.pw.toml"
-hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
 metafile = true
 
 [[files]]
@@ -2300,7 +2307,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "e5c1deaa89032a056907c12ce59f87bbd96c0987a3c2ae1920c6189732379354"
+hash = "f83da0f65edc0dce8660b3493867469a69fd64ffc09223304a847dc374dbeb1e"
 metafile = true
 
 [[files]]

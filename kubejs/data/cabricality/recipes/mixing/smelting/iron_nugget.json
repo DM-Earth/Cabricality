@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "indrev:molten_iron_still",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement":"heated"
+}
