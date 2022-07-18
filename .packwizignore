@@ -1,3 +1,5 @@
 /README.md
 *.DS_Store
 *.mrpack
+/LICENSE
+*.zip
