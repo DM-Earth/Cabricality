@@ -223,7 +223,7 @@
 		}
 		{
 			title: "..to a Spacefarer"
-			icon: "advancedrocketry:moonturf"
+			icon: "agape_space:moon_soil"
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
@@ -243,7 +243,7 @@
 					id: "058AEB3EF218C7D2"
 					type: "stat"
 					title: "Complete Chapter 5"
-					icon: "advancedrocketry:guidancecomputer"
+					icon: "agape_space:starship_control"
 					disable_toast: true
 					stat: "minecraft:play_one_minute"
 					value: 1
@@ -251,7 +251,7 @@
 				{
 					id: "68543E92A6B517DC"
 					type: "item"
-					item: "advancedrocketry:moonturf"
+					item: "agape_space:moon_soil"
 					consume_items: false
 				}
 			]
@@ -362,7 +362,7 @@
 		}
 		{
 			title: "Rubber Tycoon"
-			icon: "thermal:cured_rubber"
+			icon: "kubejs:cured_rubber"
 			x: -9.5d
 			y: 1.5d
 			shape: "circle"
@@ -404,7 +404,7 @@
 		}
 		{
 			title: "Melting the Funds"
-			icon: "thermal:enderium_ingot"
+			icon: "kubejs:enderium_ingot"
 			x: -3.5d
 			y: 1.5d
 			shape: "circle"
@@ -492,7 +492,7 @@
 				{
 					id: "1900BA945C62D0CC"
 					type: "item"
-					item: "tconstruct:seared_melter"
+					item: "alloy_forgery:deepslate_bricks_forge_controller"
 					consume_items: false
 				}
 				{

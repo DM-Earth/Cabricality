@@ -4,7 +4,7 @@
 	order_index: 4
 	filename: "stage_4"
 	title: "&f4&r Into the Box"
-	icon: "chisel:futura/controller_purple"
+	icon: "minecraft:purple_shulker_box"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -75,7 +75,7 @@
 			tasks: [{
 				id: "3E607053D3B0C552"
 				type: "item"
-				item: "appliedenergistics2:controller"
+				item: "ae2:controller"
 				consume_items: false
 			}]
 			rewards: [
@@ -88,13 +88,13 @@
 				{
 					id: "1825E20FFD3BEBFF"
 					type: "item"
-					item: "appliedenergistics2:fluix_crystal"
+					item: "ae2:fluix_crystal"
 					random_bonus: 4
 				}
 				{
 					id: "3FD881040347300A"
 					type: "item"
-					item: "thermal:lead_plate"
+					item: "indrev:lead_plate"
 					random_bonus: 4
 				}
 			]
@@ -237,7 +237,7 @@
 		}
 		{
 			title: "Pyrolyzer Round II"
-			icon: "thermal:coal_coke"
+			icon: "kubejs:coal_coke"
 			x: 3.0d
 			y: 1.5d
 			subtitle: "Contraption 34-3"
@@ -248,7 +248,7 @@
 				{
 					id: "7AFFEF4014CE671C"
 					type: "item"
-					item: "thermal:coal_coke"
+					item: "kubejs:coal_coke"
 					consume_items: false
 				}
 				{
@@ -310,7 +310,7 @@
 		}
 		{
 			title: "Concentrated Heat"
-			icon: "thermal:earth_charge"
+			icon: "kubejs:earth_charge"
 			x: -3.0d
 			y: 3.0d
 			subtitle: "Contraption 33-2"
@@ -321,7 +321,7 @@
 				{
 					id: "2C3C495C9B18005A"
 					type: "item"
-					item: "thermal:earth_charge"
+					item: "kubejs:earth_charge"
 					consume_items: false
 				}
 				{
@@ -333,7 +333,7 @@
 		}
 		{
 			title: "Basalz Mill"
-			icon: "thermal:basalz_powder"
+			icon: "kubejs:basalz_powder"
 			x: -3.0d
 			y: 2.0d
 			subtitle: "Contraption 33-1"
@@ -344,7 +344,7 @@
 				{
 					id: "54F29099D9D81837"
 					type: "item"
-					item: "thermal:basalz_powder"
+					item: "kubejs:basalz_powder"
 					consume_items: false
 				}
 				{
@@ -356,14 +356,13 @@
 		}
 		{
 			title: "Hot Laser"
-			icon: "thermal:basalz_rod"
+			icon: "kubejs:basalz_shard"
 			x: -3.0d
 			y: 0.5d
 			subtitle: "Contraption 32-2"
 			description: [
-				"The first Alchemical Laser forms activated basalz essence from Basalt. This works only if a charged FluxoMagnet is present alongside it in the Hopper Cart."
+				"The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper."
 				""
-				"A reliable way to automate the Laser is to use two Cart Loaders, one to place a magnet, one to fill the remaining slots with Basalt Blocks. Move the cart under the laser and activate it. From here you can use one Unloader to extract the worn magnet as well as the desired output."
 			]
 			dependencies: ["0B602ED47A0195A4"]
 			id: "6C4CB8F616A9C3DF"
@@ -371,7 +370,7 @@
 				{
 					id: "712E7C4EEB4BCF55"
 					type: "item"
-					item: "thermal:basalz_rod"
+					item: "kubejs:basalz_shard"
 					consume_items: false
 				}
 				{
@@ -406,43 +405,8 @@
 			]
 		}
 		{
-			title: "Flux Charger"
-			icon: {
-				id: "thermal:flux_magnet"
-				Count: 1b
-				tag: { }
-			}
-			x: -4.0d
-			y: 1.0d
-			subtitle: "Contraption 32-3"
-			description: [
-				"In order for the basalz essence to form, the FluxoMagnet present in the cart has to be charged."
-				""
-				"Therefore, the contraption will have to route the magnets from the cart unloader through an Energetic Infuser before passing it back into the circuit."
-			]
-			dependencies: ["0B602ED47A0195A4"]
-			id: "58B534C4AEB4139D"
-			tasks: [
-				{
-					id: "7538F2E8CFAF69F6"
-					type: "item"
-					item: {
-						id: "thermal:flux_magnet"
-						Count: 1b
-						tag: { }
-					}
-					consume_items: false
-				}
-				{
-					id: "11A074DF1CA99AD3"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Snowball Machine"
-			icon: "minecraft:snowball"
+			title: "Snow Machine"
+			icon: "minecraft:snow_block"
 			x: 5.0d
 			y: -1.0d
 			subtitle: "Contraption 37"
@@ -454,7 +418,7 @@
 				{
 					id: "56F4F1F21FE5FB17"
 					type: "item"
-					item: "minecraft:snowball"
+					item: "minecraft:snow_block"
 					consume_items: false
 				}
 				{
@@ -465,48 +429,13 @@
 			]
 		}
 		{
-			title: "Entropy Charger"
-			icon: {
-				id: "appliedenergistics2:entropy_manipulator"
-				Count: 1b
-				tag: { }
-			}
-			x: 6.0d
-			y: 3.0d
-			subtitle: "Contraption 38-2"
-			description: [
-				"In order for the blizz essence to form, the Entropy Manipulator present in the cart has to be charged."
-				""
-				"Ensure the charge in it restored before its next use."
-			]
-			dependencies: ["4B34B52092BA32BE"]
-			id: "6D1519B746E032FB"
-			tasks: [
-				{
-					id: "641183133CA49CCA"
-					type: "item"
-					item: {
-						id: "appliedenergistics2:entropy_manipulator"
-						Count: 1b
-						tag: { }
-					}
-					consume_items: false
-				}
-				{
-					id: "49EAB67814570219"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			title: "Cool Laser"
-			icon: "thermal:blizz_rod"
+			icon: "kubejs:blizz_cube"
 			x: 5.0d
 			y: 2.5d
 			subtitle: "Contraption 38-1"
 			description: [
-				"The second Alchemical Laser forms activated blizz essence from Snowballs. This works only if a charged Entropy Manipulator is present alongside it in the Hopper Cart."
+				"The second Alchemical Laser forms activated blizz essence from Snow Blocks."
 				""
 				"Your automation strategy from Contraption 32 will perform just as effective here."
 			]
@@ -516,7 +445,7 @@
 				{
 					id: "11B1248ECFCD2F26"
 					type: "item"
-					item: "thermal:blizz_rod"
+					item: "kubejs:blizz_cube"
 					consume_items: false
 				}
 				{
@@ -528,7 +457,7 @@
 		}
 		{
 			title: "Blizz Mill"
-			icon: "thermal:blizz_powder"
+			icon: "kubejs:blizz_powder"
 			x: 5.0d
 			y: 4.0d
 			subtitle: "Contraption 39-1"
@@ -539,7 +468,7 @@
 				{
 					id: "7EA6D73F7A49EBAF"
 					type: "item"
-					item: "thermal:blizz_powder"
+					item: "kubejs:blizz_powder"
 					consume_items: false
 				}
 				{
@@ -551,7 +480,7 @@
 		}
 		{
 			title: "Concentrated Cold"
-			icon: "thermal:ice_charge"
+			icon: "kubejs:ice_charge"
 			x: 5.0d
 			y: 5.0d
 			subtitle: "Contraption 39-2"
@@ -562,7 +491,7 @@
 				{
 					id: "3DFF735C19CE82A5"
 					type: "item"
-					item: "thermal:ice_charge"
+					item: "kubejs:ice_charge"
 					consume_items: false
 				}
 				{
@@ -574,7 +503,7 @@
 		}
 		{
 			title: "Final Induction"
-			icon: "appliedenergistics2:silicon"
+			icon: "ae2:silicon"
 			x: 3.0d
 			y: 5.0d
 			subtitle: "Contraption 39-3"
@@ -588,7 +517,7 @@
 				{
 					id: "263459FBEC9F9868"
 					type: "item"
-					item: "appliedenergistics2:silicon"
+					item: "ae2:silicon"
 					consume_items: false
 				}
 				{
@@ -600,7 +529,7 @@
 		}
 		{
 			title: "Circuit Stamper"
-			icon: "appliedenergistics2:printed_silicon"
+			icon: "ae2:printed_silicon"
 			x: 1.0d
 			y: 6.0d
 			subtitle: "Contraption 40-1"
@@ -615,7 +544,7 @@
 				{
 					id: "12C1BB8D09D664B4"
 					type: "item"
-					item: "appliedenergistics2:printed_silicon"
+					item: "ae2:printed_silicon"
 					consume_items: false
 				}
 				{
@@ -648,20 +577,12 @@
 			}]
 		}
 		{
-			title: "The Alchemical Laser"
-			icon: "projectred-illumination:lime_inverted_cage_light"
+			title: "The Alchemical Laser BOOM"
+			icon: "indrev:laser_emitter_mk4"
 			x: 3.0d
 			y: -2.5d
 			shape: "circle"
-			description: [
-				"A central role in this age of technology is played by the Alchemical Laser."
-				""
-				"It usually involves converting one material into another, using a high-energy beam and a catalyst or tool of some kind."
-				""
-				"Inventors can familiarise themselves with the necessary machinery components via JEI or via entering"
-				""
-				" &6/c ponder kubejs:alchemical_laser"
-			]
+			description: ["A central role in this age of technology is played by the Alchemical Laser."]
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "6D26DAB7D0FF6E90"
 			tasks: [{
@@ -669,19 +590,10 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "14F213F493035F9B"
-				type: "command"
-				title: "Open Ponder Scene"
-				icon: {
-					id: "occultism:book_of_calling_djinni_manage_machine"
-					Count: 1b
-					tag: {
-						spiritName: "Rayarces"
-					}
-				}
-				team_reward: false
-				command: "/create ponder kubejs:alchemical_laser"
-				player_command: true
+				id: "24B631E93DB0C8F7"
+				type: "item"
+				team_reward: true
+				item: "kubejs:powered_water_bucket"
 			}]
 		}
 		{
@@ -744,7 +656,7 @@
 		}
 		{
 			title: "Unboxing"
-			icon: "appliedenergistics2:silicon"
+			icon: "ae2:silicon"
 			x: -1.0d
 			y: 5.0d
 			subtitle: "Contraption 39-A"
@@ -755,7 +667,7 @@
 				{
 					id: "6FCB9E7E2CC10348"
 					type: "item"
-					item: "appliedenergistics2:silicon"
+					item: "ae2:silicon"
 					consume_items: false
 				}
 				{
@@ -764,20 +676,6 @@
 					title: "Automated"
 				}
 			]
-		}
-		{
-			title: "Coal Juice"
-			icon: "thermal:creosote_bucket"
-			x: 4.0d
-			y: 1.0d
-			shape: "circle"
-			description: ["Creosote is created as a by-product. It can be used as an additional Fuel Source."]
-			dependencies: ["3249CD08992F2BCD"]
-			id: "33674138F4866C18"
-			tasks: [{
-				id: "224ACB0727C6F84E"
-				type: "checkmark"
-			}]
 		}
 		{
 			title: "Express Circuitry I"
@@ -791,19 +689,19 @@
 				{
 					id: "10D5C1E5071B1B53"
 					type: "item"
-					item: "appliedenergistics2:printed_calculation_processor"
+					item: "ae2:printed_calculation_processor"
 					consume_items: false
 				}
 				{
 					id: "32F50DF8BD6E3927"
 					type: "item"
-					item: "appliedenergistics2:printed_logic_processor"
+					item: "ae2:printed_logic_processor"
 					consume_items: false
 				}
 				{
 					id: "2E5AD5026FDB28CB"
 					type: "item"
-					item: "appliedenergistics2:printed_engineering_processor"
+					item: "ae2:printed_engineering_processor"
 					consume_items: false
 				}
 			]
@@ -820,26 +718,26 @@
 				{
 					id: "186FEC9FE047828F"
 					type: "item"
-					item: "appliedenergistics2:calculation_processor"
+					item: "ae2:calculation_processor"
 					consume_items: false
 				}
 				{
 					id: "2DCA8F3CB7884170"
 					type: "item"
-					item: "appliedenergistics2:logic_processor"
+					item: "ae2:logic_processor"
 					consume_items: false
 				}
 				{
 					id: "75950A3A22C9DC8E"
 					type: "item"
-					item: "appliedenergistics2:engineering_processor"
+					item: "ae2:engineering_processor"
 					consume_items: false
 				}
 			]
 		}
 		{
 			title: "New Capacity"
-			icon: "thermal:dynamo_magmatic"
+			icon: "indrev:heat_generator_mk4"
 			x: -1.0d
 			y: -2.5d
 			shape: "circle"

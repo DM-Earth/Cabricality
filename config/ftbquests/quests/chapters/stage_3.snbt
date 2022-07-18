@@ -4,7 +4,7 @@
 	order_index: 3
 	filename: "stage_3"
 	title: "&f3&r The Catharsis"
-	icon: "thermal:machine_frame"
+	icon: "indrev:machine_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -161,7 +161,7 @@
 			tasks: [{
 				id: "26CA0A31856D4445"
 				type: "item"
-				item: "appliedenergistics2:red_paint_ball"
+				item: "ae2:red_paint_ball"
 				consume_items: false
 			}]
 		}
@@ -183,7 +183,7 @@
 			tasks: [{
 				id: "629CDAD0644963F4"
 				type: "item"
-				item: "appliedenergistics2:yellow_paint_ball"
+				item: "ae2:yellow_paint_ball"
 				consume_items: false
 			}]
 		}
@@ -201,7 +201,7 @@
 			tasks: [{
 				id: "4BBF150A1DD3A0AF"
 				type: "item"
-				item: "appliedenergistics2:green_paint_ball"
+				item: "ae2:green_paint_ball"
 				consume_items: false
 			}]
 		}
@@ -219,13 +219,13 @@
 			tasks: [{
 				id: "16C40B4F7D56B9C9"
 				type: "item"
-				item: "appliedenergistics2:blue_paint_ball"
+				item: "ae2:blue_paint_ball"
 				consume_items: false
 			}]
 		}
 		{
 			title: "Spectral Correction (Magenta)"
-			icon: "appliedenergistics2:magenta_paint_ball"
+			icon: "ae2:magenta_paint_ball"
 			x: -3.5d
 			y: 6.35d
 			subtitle: "Contraption 26-2"
@@ -239,7 +239,7 @@
 				{
 					id: "5DF1A84700EB5D15"
 					type: "item"
-					item: "appliedenergistics2:magenta_paint_ball"
+					item: "ae2:magenta_paint_ball"
 					consume_items: false
 				}
 				{
@@ -356,7 +356,7 @@
 						id: "itemfilters:tag"
 						Count: 1b
 						tag: {
-							value: "forge:cobblestone"
+							value: "c:cobblestone"
 						}
 					}
 					consume_items: false
@@ -410,7 +410,7 @@
 			tasks: [{
 				id: "6F268D7B84CB1DB7"
 				type: "item"
-				item: "thermal:machine_frame"
+				item: "indrev:machine_block"
 				consume_items: false
 			}]
 			rewards: [
@@ -429,14 +429,14 @@
 				{
 					id: "5E5F5C257C45D344"
 					type: "item"
-					item: "thermal:invar_ingot"
+					item: "kubejs:invar_ingot"
 					random_bonus: 4
 				}
 			]
 		}
 		{
 			title: "Inception"
-			icon: "appliedenergistics2:singularity"
+			icon: "ae2:singularity"
 			x: -1.5d
 			y: 4.0d
 			subtitle: "Contraption 20-3"
@@ -447,7 +447,7 @@
 				{
 					id: "5BF8BF7A24029B57"
 					type: "item"
-					item: "appliedenergistics2:singularity"
+					item: "ae2:singularity"
 					consume_items: false
 				}
 				{
@@ -459,7 +459,7 @@
 		}
 		{
 			title: "The Reactor"
-			icon: "appliedenergistics2:quantum_entangled_singularity"
+			icon: "ae2:quantum_entangled_singularity"
 			x: -1.5d
 			y: 5.5d
 			subtitle: "Contraption 24"
@@ -480,7 +480,7 @@
 				{
 					id: "63C5611154B9B124"
 					type: "item"
-					item: "appliedenergistics2:quantum_entangled_singularity"
+					item: "ae2:quantum_entangled_singularity"
 					consume_items: false
 				}
 				{
@@ -573,7 +573,7 @@
 		}
 		{
 			title: "Cooking up some Ender Dust"
-			icon: "appliedenergistics2:ender_dust"
+			icon: "ae2:ender_dust"
 			x: 1.5d
 			y: 5.5d
 			subtitle: "Contraption 22-3"
@@ -592,7 +592,7 @@
 				{
 					id: "74E8DBEBD9AA5D72"
 					type: "item"
-					item: "appliedenergistics2:ender_dust"
+					item: "ae2:ender_dust"
 					consume_items: false
 				}
 				{
@@ -659,7 +659,7 @@
 				{
 					id: "1383A8E9F3AC725D"
 					type: "item"
-					item: "thermal:enderium_ingot"
+					item: "kubejs:enderium_ingot"
 					random_bonus: 4
 				}
 			]
@@ -694,13 +694,13 @@
 			tasks: [{
 				id: "7E7DF9C3DCFF0724"
 				type: "item"
-				item: "endergetic:tall_poise_bush"
+				item: "promenade:dark_amaranth_fungus"
 				consume_items: false
 			}]
 		}
 		{
 			title: "The Poise Cycle"
-			icon: "endergetic:poise_cluster"
+			icon: "promenade:dark_amaranth_wart_block"
 			x: 0.0d
 			y: 19.5d
 			shape: "circle"
@@ -710,13 +710,13 @@
 			tasks: [{
 				id: "05F0DE924816E7F5"
 				type: "item"
-				item: "thermal:machine_insolator"
+				item: "indrev:fluid_infuser_mk1"
 				consume_items: false
 			}]
 			rewards: [{
 				id: "6B1ECF8BD760D03E"
 				type: "item"
-				item: "thermal:phytogro"
+				item: "create:tree_fertilizer"
 				count: 16
 			}]
 		}
@@ -726,7 +726,7 @@
 			y: 18.0d
 			shape: "circle"
 			description: [
-				"Fire up your Induction Smelter for two rounds of processing:"
+				"Fire up your End Stone Alloy Smelter for two rounds of processing:"
 				""
 				"First off, refine your Silver Ingots with Ender Dust and Poise Bushes."
 			]
@@ -739,7 +739,7 @@
 			tasks: [{
 				id: "0EC104535857B542"
 				type: "item"
-				item: "thermal:enderium_ingot"
+				item: "kubejs:enderium_ingot"
 				consume_items: false
 			}]
 		}
@@ -763,7 +763,7 @@
 			tasks: [{
 				id: "3B8AF2614A9EE681"
 				type: "item"
-				item: "thermal:silver_coin"
+				item: "kubejs:silver_coin"
 				consume_items: false
 			}]
 		}
@@ -779,13 +779,7 @@
 				id: "1E9F96D2152F7384"
 				type: "item"
 				title: "Copper Can (Molten Silver)"
-				item: {
-					id: "tconstruct:copper_can"
-					Count: 1b
-					tag: {
-						fluid: "tconstruct:molten_silver"
-					}
-				}
+				item: "indrev:molten_silver_bucket"
 			}]
 		}
 		{
@@ -890,12 +884,19 @@
 		}
 		{
 			title: "Toxic Byproducts"
-			icon: "tconstruct:molten_ender_bucket"
+			icon: "kubejs:waste_bucket"
 			x: 0.5d
 			y: 9.0d
-			shape: "circle"
+			shape: "square"
 			description: ["Draining paint balls creates a significant amount of liquid byproduct, which has to be disposed of before it starts clogging up the production line."]
-			dependencies: ["3B421C8F7947E542"]
+			dependencies: [
+				"3B421C8F7947E542"
+				"302FCD205CC2F708"
+				"6A76E65324F0ACC0"
+				"381F8F373605BB97"
+				"3BE15AA5C237AB80"
+			]
+			dependency_requirement: "one_completed"
 			id: "2C40901DB42DD8F8"
 			tasks: [{
 				id: "7058D1CE264D6769"
@@ -935,7 +936,7 @@
 		}
 		{
 			title: "Mysterious Biomass"
-			icon: "kubejs:sky_slime_fern_paste"
+			icon: "kubejs:earth_slimy_fern_paste"
 			x: 3.5d
 			y: 4.0d
 			subtitle: "Contraption 22-1"
@@ -946,19 +947,19 @@
 				{
 					id: "3EB8C2219D74126B"
 					type: "item"
-					item: "kubejs:ender_slime_fern_paste"
+					item: "kubejs:earth_slimy_fern_paste"
 					consume_items: false
 				}
 				{
 					id: "4CB87BE063DACC5F"
 					type: "item"
-					item: "kubejs:earth_slime_fern_paste"
+					item: "kubejs:ender_slimy_fern_paste"
 					consume_items: false
 				}
 				{
 					id: "1F0B0F9D72A6F611"
 					type: "item"
-					item: "kubejs:sky_slime_fern_paste"
+					item: "kubejs:sky_slimy_fern_paste"
 					consume_items: false
 				}
 				{
@@ -969,7 +970,7 @@
 			]
 		}
 		{
-			title: "The Spirit Cycle"
+			title: "The Haunted Cycle"
 			icon: "kubejs:sky_slimy_fern_leaf"
 			x: 3.5d
 			y: 2.5d
@@ -977,9 +978,8 @@
 			description: [
 				"Slimy Ferns have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply."
 				""
-				"The cycle is simple: Cut the fern plant into halves using a Deployer, then throw one of the leaves into Spirit Fire. It is recommended to ensure that all colours of fern are duplicated at similar rates."
+				"The cycle is simple: Cut the fern plant into halves using a Deployer, then haunt one of the leaves in the soul flame. It is recommended to ensure that all colours of fern are duplicated at similar rates."
 				""
-				"Create Spirit Fire by tossing a Demon's Dream Fruit on the floor and then setting a fire in its space."
 				""
 				"Oh, and keep a backup of each fern somewhere safe."
 			]
@@ -1040,26 +1040,35 @@
 		}
 		{
 			title: "Expensive Bricks"
+			icon: "indrev:silver_block"
 			x: -1.5d
 			y: 16.5d
 			shape: "circle"
-			description: ["Cast the molten silver into an Ingot and admire how shiny it is."]
+			description: ["Cool down the molten silver into a Block and admire how shiny it is."]
 			dependencies: ["0C11EC34D5FA508B"]
 			id: "0D146AD9FE774F8B"
-			tasks: [{
-				id: "7A7EE0DF809CEDC8"
-				type: "item"
-				title: "Silver Ingot"
-				icon: "thermal:silver_ingot"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:ingots/silver"
+			tasks: [
+				{
+					id: "7A7EE0DF809CEDC8"
+					type: "item"
+					title: "Silver Ingot"
+					icon: "indrev:silver_block"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/silver"
+						}
 					}
+					consume_items: false
 				}
-				consume_items: false
-			}]
+				{
+					id: "21EC8A60BEC82284"
+					type: "item"
+					item: "indrev:silver_ingot"
+					consume_items: false
+				}
+			]
 		}
 		{
 			title: "Ender for Garnish"
@@ -1077,13 +1086,13 @@
 			tasks: [{
 				id: "56C6D2D683E35E74"
 				type: "item"
-				item: "appliedenergistics2:ender_dust"
+				item: "ae2:ender_dust"
 				consume_items: false
 			}]
 		}
 		{
 			title: "Slimy Ferns"
-			icon: "tconstruct:sky_slime_fern"
+			icon: "kubejs:earth_slimy_fern"
 			x: 3.5d
 			y: 1.0d
 			shape: "circle"
@@ -1099,26 +1108,26 @@
 				{
 					id: "2967A771F32C223D"
 					type: "item"
-					item: "tconstruct:earth_slime_fern"
+					item: "kubejs:earth_slimy_fern"
 					consume_items: false
 				}
 				{
 					id: "2A559C5996DF8E69"
 					type: "item"
-					item: "tconstruct:sky_slime_fern"
+					item: "kubejs:sky_slimy_fern"
 					consume_items: false
 				}
 				{
 					id: "1EE76BAC230B9232"
 					type: "item"
-					item: "tconstruct:ender_slime_fern"
+					item: "kubejs:ender_slimy_fern"
 					consume_items: false
 				}
 			]
 		}
 		{
 			title: "Overcorrection"
-			icon: "appliedenergistics2:black_paint_ball"
+			icon: "ae2:black_paint_ball"
 			x: -3.5d
 			y: 5.0d
 			shape: "circle"
@@ -1180,7 +1189,7 @@
 		}
 		{
 			title: "Mechanical Auto Hammer"
-			icon: "thermal:invar_ingot"
+			icon: "kubejs:invar_ingot"
 			x: 0.5d
 			y: -1.0d
 			shape: "circle"

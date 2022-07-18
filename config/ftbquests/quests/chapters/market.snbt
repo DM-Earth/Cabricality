@@ -1,7 +1,7 @@
 {
 	id: "44F68408CAD025B8"
 	group: "0810E42B2DD79973"
-	order_index: 1
+	order_index: 0
 	filename: "market"
 	title: "&a The Market"
 	icon: "minecraft:chest"
@@ -11,16 +11,16 @@
 		{
 			title: "Sleepless"
 			icon: "minecraft:cyan_bed"
-			x: -9.5d
-			y: -1.5d
+			x: -10.0d
+			y: -1.0d
 			subtitle: "10 Silver"
 			description: ["Your last resort in case the sundown beat you to it."]
 			id: "5D17CB247942013A"
 			tasks: [{
 				id: "0783860FB502A201"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 10b }
+				item: "kubejs:silver_coin"
 				count: 10L
 			}]
 			rewards: [{
@@ -40,8 +40,8 @@
 			tasks: [{
 				id: "5345AA8760A95127"
 				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 2b }
-				item: "thermal:gold_coin"
+				icon: { id: "kubejs:gold_coin", Count: 2b }
+				item: "kubejs:gold_coin"
 				count: 2L
 			}]
 			rewards: [{
@@ -59,15 +59,15 @@
 		{
 			title: "Saw everything"
 			icon: {
-				id: "cb_microblock:diamond_saw"
+				id: "kubejs:netherite_saw"
 				Count: 1b
 				tag: {
 					RepairCost: 0
-					Damage: 0
 					Enchantments: [{
 						lvl: 3s
 						id: "minecraft:unbreaking"
 					}]
+					Damage: 0
 					display: {
 						Name: "{\"text\":\"Enchanted Saw\"}"
 					}
@@ -84,7 +84,7 @@
 					id: "4C77B71D0EC3B2EA"
 					type: "item"
 					item: {
-						id: "cb_microblock:diamond_saw"
+						id: "kubejs:netherite_saw"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -94,8 +94,8 @@
 				{
 					id: "3EE8736C08EF80F4"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 5b }
-					item: "thermal:gold_coin"
+					icon: { id: "kubejs:gold_coin", Count: 5b }
+					item: "kubejs:gold_coin"
 					count: 5L
 				}
 			]
@@ -103,21 +103,21 @@
 				id: "56DB21D18FB1FF64"
 				type: "item"
 				item: {
-					id: "cb_microblock:diamond_saw"
+					id: "kubejs:netherite_saw"
 					Count: 1b
 					tag: {
-						Unbreakable: 1
 						RepairCost: 0
-						HideFlags: 1
+						Damage: 0
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
+						Unbreakable: 1
 						display: {
-							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
 							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
 						}
-						Damage: 0
+						HideFlags: 1
 					}
 				}
 			}]
@@ -125,7 +125,7 @@
 		{
 			title: "Never Screwed"
 			icon: {
-				id: "projectred-core:screwdriver"
+				id: "kubejs:screwdriver"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -145,7 +145,7 @@
 					id: "1E25EB2883C9A960"
 					type: "item"
 					item: {
-						id: "projectred-core:screwdriver"
+						id: "kubejs:screwdriver"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -155,8 +155,8 @@
 				{
 					id: "74585BB7E80CF010"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 5b }
-					item: "thermal:gold_coin"
+					icon: { id: "kubejs:gold_coin", Count: 5b }
+					item: "kubejs:gold_coin"
 					count: 5L
 				}
 			]
@@ -164,19 +164,19 @@
 				id: "743730BBE32A0875"
 				type: "item"
 				item: {
-					id: "projectred-core:screwdriver"
+					id: "kubejs:screwdriver"
 					Count: 1b
 					tag: {
-						Unbreakable: 1
-						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
-						display: {
-							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
-						}
+						Unbreakable: 1
+						Damage: 0
+						HideFlags: 1
 					}
 				}
 			}]
@@ -214,8 +214,8 @@
 				{
 					id: "5B31A98B9EFCCFAB"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 7b }
-					item: "thermal:gold_coin"
+					icon: { id: "kubejs:gold_coin", Count: 7b }
+					item: "kubejs:gold_coin"
 					count: 7L
 				}
 			]
@@ -226,13 +226,13 @@
 					id: "kubejs:chromatic_resonator"
 					Count: 1b
 					tag: {
-						Unbreakable: 1
-						Damage: 0
 						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
+						Unbreakable: 1
+						Damage: 0
 						display: {
 							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
 						}
@@ -260,7 +260,7 @@
 		}
 		{
 			title: "Manual Exchange"
-			icon: { id: "thermal:silver_coin", Count: 16b }
+			icon: { id: "kubejs:silver_coin", Count: 16b }
 			x: -4.0d
 			y: -4.0d
 			shape: "circle"
@@ -271,15 +271,15 @@
 			tasks: [{
 				id: "772821832EE93341"
 				type: "item"
-				item: "thermal:gold_coin"
+				item: "kubejs:gold_coin"
 			}]
 			rewards: [
 				{
 					id: "26512E93CE404069"
 					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 64b }
+					icon: { id: "kubejs:silver_coin", Count: 64b }
 					auto: "enabled"
-					item: "thermal:silver_coin"
+					item: "kubejs:silver_coin"
 					count: 64
 				}
 				{
@@ -294,7 +294,7 @@
 		}
 		{
 			title: "Manual Exchange"
-			icon: { id: "thermal:gold_coin", Count: 2b }
+			icon: { id: "kubejs:gold_coin", Count: 2b }
 			x: -8.0d
 			y: -4.0d
 			shape: "circle"
@@ -305,8 +305,8 @@
 			tasks: [{
 				id: "2387D852CA97AD1A"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 64b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 64b }
+				item: "kubejs:silver_coin"
 				count: 64L
 			}]
 			rewards: [
@@ -314,7 +314,7 @@
 					id: "66BE3DDEC92812C4"
 					type: "item"
 					auto: "enabled"
-					item: "thermal:gold_coin"
+					item: "kubejs:gold_coin"
 				}
 				{
 					id: "6E78A95786CA5B28"
@@ -337,8 +337,8 @@
 			tasks: [{
 				id: "6235F365D702DF2B"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 10b }
+				item: "kubejs:silver_coin"
 				count: 10L
 			}]
 			rewards: [
@@ -385,8 +385,8 @@
 			tasks: [{
 				id: "188BEC2BA245DB13"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 15b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 15b }
+				item: "kubejs:silver_coin"
 				count: 15L
 			}]
 			rewards: [
@@ -430,8 +430,8 @@
 			tasks: [{
 				id: "3EA558277444F605"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 50b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 50b }
+				item: "kubejs:silver_coin"
 				count: 50L
 			}]
 			rewards: [{
@@ -441,7 +441,10 @@
 					id: "minecraft:barrel"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						Enchantments: [{
+							lvl: 1s
+							id: "minecraft:unbreaking"
+						}]
 						BlockEntityTag: {
 							Items: [
 								{
@@ -451,8 +454,8 @@
 									tag: {
 										RepairCost: 0
 										display: {
-											bold: 0b
 											Name: "{\"italic\": false, \"text\":\"Welcome, Challenger\"}"
+											bold: 0b
 										}
 									}
 								}
@@ -461,6 +464,9 @@
 									id: "minecraft:barrel"
 									Count: 1b
 									tag: {
+										display: {
+											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
+										}
 										BlockEntityTag: {
 											Items: [
 												{
@@ -479,6 +485,9 @@
 													id: "minecraft:barrel"
 													Count: 1b
 													tag: {
+														display: {
+															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
+														}
 														BlockEntityTag: {
 															Items: [
 																{
@@ -486,11 +495,11 @@
 																	id: "minecraft:barrel"
 																	Count: 1b
 																	tag: {
-																		BlockEntityTag: {
-																			LootTable: "custom:chests/patience_1"
-																		}
 																		display: {
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
+																		}
+																		BlockEntityTag: {
+																			LootTable: "custom:chests/patience_1"
 																		}
 																	}
 																}
@@ -518,30 +527,21 @@
 															]
 															id: "minecraft:barrel"
 														}
-														display: {
-															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
-														}
 													}
 												}
 											]
 											id: "minecraft:barrel"
-										}
-										display: {
-											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
 										}
 									}
 								}
 							]
 							id: "minecraft:barrel"
 						}
+						HideFlags: 1
 						display: {
-							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
+							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
-						Enchantments: [{
-							lvl: 1s
-							id: "minecraft:unbreaking"
-						}]
 					}
 				}
 			}]
@@ -557,8 +557,8 @@
 			tasks: [{
 				id: "709557A517B0143F"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 55b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 55b }
+				item: "kubejs:silver_coin"
 				count: 55L
 			}]
 			rewards: [
@@ -580,46 +580,6 @@
 			]
 		}
 		{
-			title: "The Tinkerbox"
-			icon: {
-				id: "tconstruct:creative_slot"
-				Count: 1b
-				tag: {
-					slot: "upgrades"
-				}
-			}
-			x: -2.5d
-			y: 1.5d
-			subtitle: "25 Silver"
-			description: ["\"I found this in an abandoned Workshop down the road; would you like to buy it?\""]
-			id: "0CCF34BF1C5829AE"
-			tasks: [{
-				id: "32ACF7B1C0BD9D97"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 25b }
-				item: "thermal:silver_coin"
-				count: 25L
-			}]
-			rewards: [{
-				id: "37DBD1EF724A42D9"
-				type: "item"
-				item: {
-					id: "minecraft:chest"
-					Count: 1b
-					tag: {
-						BlockEntityTag: {
-							LootTable: "custom:chests/tinker"
-							id: "minecraft:chest"
-						}
-						display: {
-							Lore: ["{\"text\":\"Contains Loot\",\"color\":\"gray\",\"italic\":\"false\"}"]
-							Name: "{\"text\":\"Tinkerbox\",\"italic\":false}"
-						}
-					}
-				}
-			}]
-		}
-		{
 			title: "1-Up!"
 			icon: "minecraft:totem_of_undying"
 			x: -3.0d
@@ -629,8 +589,8 @@
 			tasks: [{
 				id: "165B9A886A26BCC8"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 60b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 60b }
+				item: "kubejs:silver_coin"
 				count: 60L
 			}]
 			rewards: [{
@@ -642,16 +602,16 @@
 		{
 			title: "Where mob ?"
 			icon: "create:haunted_bell"
-			x: -4.0d
-			y: 2.0d
+			x: -2.0d
+			y: 1.0d
 			subtitle: "45 Silver"
 			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
 			id: "4B52A04818075900"
 			tasks: [{
 				id: "4FB1B4787D648565"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 35b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 35b }
+				item: "kubejs:silver_coin"
 				count: 45L
 			}]
 			rewards: [
@@ -674,13 +634,13 @@
 				Count: 1b
 				tag: {
 					Damage: 0
+					display: {
+						Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
+					}
 					Enchantments: [{
 						lvl: 10s
 						id: "minecraft:unbreaking"
 					}]
-					display: {
-						Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-					}
 				}
 			}
 			x: -3.5d
@@ -703,8 +663,8 @@
 				{
 					id: "04FA9389D991556D"
 					type: "item"
-					icon: { id: "thermal:gold_coin", Count: 11b }
-					item: "thermal:gold_coin"
+					icon: { id: "kubejs:gold_coin", Count: 11b }
+					item: "kubejs:gold_coin"
 					count: 7L
 				}
 			]
@@ -715,13 +675,13 @@
 					id: "kubejs:flash_drive"
 					Count: 1b
 					tag: {
-						Unbreakable: 1
-						Damage: 0
 						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
+						Unbreakable: 1
+						Damage: 0
 						display: {
 							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
 						}
@@ -731,17 +691,17 @@
 		}
 		{
 			title: "Press Express"
-			icon: "appliedenergistics2:silicon_press"
-			x: -1.0d
-			y: 2.0d
+			icon: "ae2:silicon_press"
+			x: 0.0d
+			y: 1.0d
 			subtitle: "6 Gold"
 			description: ["True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!"]
 			id: "4BAC95CCC72369AD"
 			tasks: [{
 				id: "3D328A6D69E64EDA"
 				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 12b }
-				item: "thermal:gold_coin"
+				icon: { id: "kubejs:gold_coin", Count: 12b }
+				item: "kubejs:gold_coin"
 				count: 6L
 			}]
 			rewards: [{
@@ -754,8 +714,8 @@
 		{
 			title: "Adopt a Duck"
 			icon: "minecraft:egg"
-			x: -11.0d
-			y: -2.0d
+			x: -12.0d
+			y: -1.0d
 			subtitle: "5 Silver"
 			description: ["Quack"]
 			id: "6C00F2935F27C2AD"
@@ -763,8 +723,8 @@
 				{
 					id: "491FF95EFE8DCB67"
 					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 5b }
-					item: "thermal:silver_coin"
+					icon: { id: "kubejs:silver_coin", Count: 5b }
+					item: "kubejs:silver_coin"
 					count: 5L
 				}
 				{
@@ -791,82 +751,8 @@
 			]
 		}
 		{
-			title: "Expensive Hobby"
-			icon: "buddycards:mystery_pack"
-			x: 0.5d
-			y: 1.5d
-			subtitle: "2 Gold"
-			description: ["Ah the joy of gambling."]
-			id: "093FB7B7FEC6B886"
-			tasks: [{
-				id: "30B16CC21946FE8E"
-				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 2b }
-				item: "thermal:gold_coin"
-				count: 2L
-			}]
-			rewards: [
-				{
-					id: "198DC310752F341F"
-					type: "item"
-					auto: "enabled"
-					item: "buddycards:mystery_pack"
-				}
-				{
-					id: "423CFA69329BD06E"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "Playing with Fire"
-			icon: "thermal:explosive_grenade"
-			x: -12.5d
-			y: -1.5d
-			subtitle: "32 Silver"
-			description: ["A little testing selection of Thermal Weaponry."]
-			id: "1CC29991D5F248CA"
-			tasks: [{
-				id: "2BF8F9E5070C6122"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 32b }
-				item: "thermal:silver_coin"
-				count: 32L
-			}]
-			rewards: [
-				{
-					id: "1C6218230C6D71A0"
-					type: "item"
-					item: "thermal:explosive_grenade"
-					count: 8
-				}
-				{
-					id: "2D1A3F35DF8894FF"
-					type: "item"
-					item: "thermal:glowstone_grenade"
-					count: 8
-				}
-				{
-					id: "093F58649A1E0DD6"
-					type: "item"
-					item: "thermal:ice_grenade"
-					count: 8
-				}
-				{
-					id: "71BB0C93A4A7BC04"
-					type: "item"
-					item: "thermal:earth_grenade"
-					count: 8
-				}
-			]
-		}
-		{
 			title: "Gardener's Starter Pack"
-			icon: "biomesoplenty:glowflower"
+			icon: "minecraft:sunflower"
 			x: -2.5d
 			y: -1.5d
 			subtitle: "24 Silver"
@@ -874,8 +760,8 @@
 			tasks: [{
 				id: "05BB5DFA82280C0C"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 24b }
+				item: "kubejs:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -886,22 +772,10 @@
 					count: 8
 				}
 				{
-					id: "68B1199F9AE6B8FE"
-					type: "item"
-					item: "supplementaries:planter_rich"
-					count: 16
-				}
-				{
 					id: "5DEDD7BBA8A712AA"
 					type: "item"
 					item: "minecraft:flower_pot"
 					count: 8
-				}
-				{
-					id: "01196A417139EA21"
-					type: "item"
-					item: "supplementaries:flower_box"
-					count: 4
 				}
 				{
 					id: "648B819C1B484A3F"
@@ -921,8 +795,8 @@
 			tasks: [{
 				id: "6404722100F1DEF7"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 24b }
+				item: "kubejs:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -986,8 +860,8 @@
 			tasks: [{
 				id: "06C835DB602D6F9F"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 24b }
+				item: "kubejs:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -1027,14 +901,14 @@
 			title: "Pet Owner's Starter Pack"
 			icon: "minecraft:tropical_fish"
 			x: -13.0d
-			y: 0.0d
+			y: 1.0d
 			subtitle: "24 Silver"
 			id: "2D75D1864FB1EF75"
 			tasks: [{
 				id: "3AA788B63B6A73EF"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 24b }
+				item: "kubejs:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -1073,22 +947,22 @@
 			title: "Instant Aesthetics"
 			icon: "minecraft:oak_leaves"
 			x: 1.0d
-			y: 0.0d
+			y: -1.0d
 			subtitle: "24 Silver"
 			description: ["Not too stoked with your facade? Not a problem! Foliage solves everything."]
 			id: "7D93DAB3E8ACF953"
 			tasks: [{
 				id: "06028A67C6DCCD00"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 24b }
-				item: "thermal:silver_coin"
+				icon: { id: "kubejs:silver_coin", Count: 24b }
+				item: "kubejs:silver_coin"
 				count: 24L
 			}]
 			rewards: [
 				{
 					id: "1BA12452E9A090EC"
 					type: "item"
-					item: "biomesoplenty:flowering_oak_leaves"
+					item: "minecraft:flowering_azalea_leaves"
 					count: 32
 				}
 				{
@@ -1134,8 +1008,8 @@
 				{
 					id: "6837BEE1075CC785"
 					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 48b }
-					item: "thermal:silver_coin"
+					icon: { id: "kubejs:silver_coin", Count: 48b }
+					item: "kubejs:silver_coin"
 					count: 48L
 				}
 				{

@@ -75,53 +75,8 @@
 			]
 		}
 		{
-			title: "Catching Sediment"
-			icon: "minecraft:sand"
-			x: 3.0d
-			y: 1.0d
-			subtitle: "Contraption 2"
-			description: ["A good way to automate Sand at this moment is to build Strainers."]
-			hide_dependency_lines: true
-			dependencies: ["5799D55BB26BA52C"]
-			id: "4CC420A6B673176A"
-			tasks: [
-				{
-					id: "72FE446F5BB1A93E"
-					type: "item"
-					title: "Sand"
-					icon: "minecraft:sand"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "biomesoplenty:white_sand"
-									Count: 1b
-								}
-								{
-									id: "minecraft:sand"
-									Count: 1b
-								}
-								{
-									id: "biomesoplenty:orange_sand"
-									Count: 1b
-								}
-							]
-						}
-					}
-					consume_items: false
-				}
-				{
-					id: "4208FAAC229CACA6"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			title: "Bedrock's Bounty"
-			icon: "create:andesite_cobblestone"
+			icon: "minecraft:bedrock"
 			x: 1.0d
 			y: 1.0d
 			subtitle: "Contraption 4"
@@ -138,11 +93,17 @@
 				{
 					id: "5E14AA73F8E1AFE4"
 					type: "item"
-					item: "create:andesite_cobblestone"
+					item: "minecraft:andesite"
 					consume_items: false
 				}
 				{
-					id: "29B78BB983BE39FC"
+					id: "47CF3EE00FB2DD4F"
+					type: "item"
+					item: "create:limestone"
+					consume_items: false
+				}
+				{
+					id: "0E1DA643781577E1"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -165,13 +126,14 @@
 			}]
 		}
 		{
-			title: "Clay Washer"
+			title: "Clay Miller"
 			icon: "minecraft:clay_ball"
-			x: 3.5d
-			y: 2.5d
+			x: 4.0d
+			y: 3.0d
 			subtitle: "Contraption 6-1"
-			description: ["With the help of Encased Fans, sand can be refined into clay."]
-			dependencies: ["4CC420A6B673176A"]
+			description: ["With the help of Millstone, Dripstone Blocks can be milled into Clay Balls."]
+			dependencies: ["31A0FFA3DFEB3D7D"]
+			dependency_requirement: "one_completed"
 			id: "729FB5DD07C234E8"
 			tasks: [
 				{
@@ -494,7 +456,7 @@
 		{
 			title: "Arming the Deployer"
 			icon: {
-				id: "cb_microblock:stone_saw"
+				id: "kubejs:stone_saw"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -521,7 +483,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:saws"
+						value: "fabric:saws"
 					}
 				}
 				consume_items: false
@@ -597,12 +559,12 @@
 		}
 		{
 			title: "Ah wait, don't chop"
-			icon: "thermal:resin_bucket"
+			icon: "kubejs:resin_bucket"
 			x: 0.0d
 			y: 10.0d
 			shape: "square"
 			subtitle: "Contraption 9-1"
-			description: ["Liquid resin can be extracted from healthy Trees using Arboreal Extractors. The more the merrier."]
+			description: ["Liquid resin can be extracted from healthy Trees by right-clicking Extractor Machines next to the logs."]
 			dependencies: [
 				"3F45DFEF31838A00"
 				"681DACF11F193771"
@@ -613,7 +575,7 @@
 				{
 					id: "52B181D406A5AC67"
 					type: "item"
-					item: "thermal:device_tree_extractor"
+					item: "kubejs:extractor_machine"
 					count: 4L
 					consume_items: false
 				}
@@ -626,7 +588,7 @@
 		}
 		{
 			title: "Rubber Stamper"
-			icon: "thermal:rubber"
+			icon: "kubejs:rubber"
 			x: 1.0d
 			y: 10.5d
 			subtitle: "Contraption 9-2"
@@ -637,7 +599,7 @@
 				{
 					id: "0F98BACE3B940BC9"
 					type: "item"
-					item: "thermal:rubber"
+					item: "kubejs:rubber"
 					consume_items: false
 				}
 				{
@@ -649,7 +611,7 @@
 		}
 		{
 			title: "Curing by Flame"
-			icon: "thermal:cured_rubber"
+			icon: "kubejs:cured_rubber"
 			x: 2.0d
 			y: 11.0d
 			shape: "square"
@@ -665,7 +627,7 @@
 				{
 					id: "7D328EB34500FE28"
 					type: "item"
-					item: "thermal:cured_rubber"
+					item: "kubejs:cured_rubber"
 					consume_items: false
 				}
 				{
@@ -715,20 +677,20 @@
 				{
 					id: "200F3D1A04E713EF"
 					type: "item"
-					item: "thermal:cured_rubber"
+					item: "kubejs:cured_rubber"
 					random_bonus: 4
 				}
 				{
 					id: "38E1B6571EDAA96B"
 					type: "item"
-					item: "create:copper_ingot"
+					item: "minecraft:copper_ingot"
 					random_bonus: 4
 				}
 			]
 		}
 		{
 			title: "Speedrun"
-			icon: "appliedenergistics2:speed_card"
+			icon: "ae2:speed_card"
 			x: 0.0d
 			y: -1.0d
 			shape: "circle"
@@ -743,6 +705,27 @@
 				id: "4DC18CB3A19686E5"
 				type: "checkmark"
 			}]
+		}
+		{
+			title: "Water Infuser"
+			icon: "minecraft:dripstone_block"
+			x: 3.0d
+			y: 1.0d
+			description: ["Compat Limestone with Water to make Dripstone Blocks, which can be milled into Clay Balls."]
+			dependencies: ["106C6DFDCB97327C"]
+			id: "31A0FFA3DFEB3D7D"
+			tasks: [
+				{
+					id: "6AE23275EC35C356"
+					type: "item"
+					item: "minecraft:dripstone_block"
+				}
+				{
+					id: "523839D341188A71"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 	]
 }

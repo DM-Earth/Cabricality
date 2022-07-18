@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "welcome"
 	title: "Welcome"
-	icon: "biomesoplenty:wildflower"
+	icon: "minecraft:spore_blossom"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -137,7 +137,7 @@
 		}
 		{
 			title: "IV"
-			icon: "thermal:machine_press"
+			icon: "indrev:solid_infuser_mk1"
 			disable_toast: true
 			x: -0.5d
 			y: 0.5d
@@ -161,16 +161,16 @@
 			rewards: [{
 				id: "583C35BA7A7B9004"
 				type: "item"
-				item: "thermal:silver_coin"
+				item: "kubejs:silver_coin"
 			}]
 		}
 		{
 			title: "Quest Content Overwiew"
 			icon: {
-				id: "occultism:book_of_calling_djinni_manage_machine"
+				id: "patchouli:guide_book"
 				Count: 1b
 				tag: {
-					spiritName: "Marredaeus"
+					"patchouli:book": "agape_space:space_guide"
 				}
 			}
 			disable_toast: true

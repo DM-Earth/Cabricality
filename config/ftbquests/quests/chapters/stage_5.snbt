@@ -36,7 +36,7 @@
 		}
 		{
 			title: "We have lift off!"
-			icon: "advancedrocketry:guidancecomputer"
+			icon: "agape_space:starship_control"
 			x: 2.0d
 			y: 7.75d
 			shape: "hexagon"
@@ -49,151 +49,17 @@
 			]
 			dependencies: [
 				"6BA9A176EDA001A3"
-				"1AE7B6CA4D1DBA6F"
-				"462CE0A4C80442FB"
 				"69311E02A8B3451D"
 				"3AD7553F3C8593F9"
-				"4800892E1E70648D"
-				"25B76A897D97C9F1"
 				"73473DC7269EC5B0"
 			]
 			size: 2.0d
 			id: "47965C310D9847DC"
-			tasks: [
-				{
-					id: "05BDC7ACF64D13C2"
-					type: "item"
-					item: "advancedrocketry:guidancecomputer"
-					consume_items: false
-				}
-				{
-					id: "4418C7A289B17158"
-					type: "item"
-					title: "Any Flag"
-					icon: {
-						id: "supplementaries:flag_gray"
-						Count: 1b
-						tag: {
-							BlockEntityTag: {
-								Patterns: [
-									{
-										Pattern: "gra"
-										Color: 0
-									}
-									{
-										Pattern: "bo"
-										Color: 15
-									}
-									{
-										Pattern: "bs"
-										Color: 15
-									}
-									{
-										Pattern: "ts"
-										Color: 15
-									}
-									{
-										Pattern: "rs"
-										Color: 15
-									}
-									{
-										Pattern: "ls"
-										Color: 11
-									}
-								]
-							}
-						}
-					}
-					disable_toast: true
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "supplementaries:flag_orange"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_magenta"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_light_blue"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_lime"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_gray"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_cyan"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_green"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_red"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_white"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_light_gray"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_yellow"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_pink"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_purple"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_blue"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_brown"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_black"
-									Count: 1b
-								}
-							]
-						}
-					}
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "7F4FDBDE58C30C3A"
+			tasks: [{
+				id: "05BDC7ACF64D13C2"
 				type: "item"
-				item: {
-					id: "desolation:charred_fence"
-					Count: 1b
-					tag: {
-						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"Flag Pole\",\"italic\":false,\"color\":\"aqua\"}"
-						}
-					}
-				}
-				count: 3
+				item: "agape_space:starship_control"
+				consume_items: false
 			}]
 		}
 		{
@@ -235,31 +101,7 @@
 		}
 		{
 			title: "Processing Power"
-			icon: {
-				id: "thermal:fluid_cell"
-				Count: 1b
-				tag: {
-					Properties: { }
-					BlockEntityTag: {
-						RSControl: {
-							RSThreshold: 0b
-							RSMode: 0b
-						}
-						AmountOut: 1000
-						Xfer: {
-							XferOut: 1b
-							XferIn: 0b
-						}
-						TankInv: [{
-							FluidName: "kubejs:raw_logic"
-							Capacity: 32000
-							Tank: 0b
-							Amount: 32000
-						}]
-						AmountIn: 1000
-					}
-				}
-			}
+			icon: "kubejs:raw_logic_bucket"
 			x: 2.0d
 			y: 15.5d
 			shape: "square"
@@ -544,7 +386,7 @@
 		}
 		{
 			title: "Upcycle Bin"
-			icon: "appliedenergistics2:matter_ball"
+			icon: "ae2:matter_ball"
 			x: 2.0d
 			y: 3.0d
 			subtitle: "Contraption 47"
@@ -560,7 +402,7 @@
 				{
 					id: "245415CFAEFCA7ED"
 					type: "item"
-					item: "appliedenergistics2:matter_ball"
+					item: "ae2:matter_ball"
 					consume_items: false
 				}
 				{
@@ -575,11 +417,8 @@
 			x: 2.0d
 			y: 4.5d
 			shape: "circle"
-			description: ["Create bars of Matter Plastics in a Super-Heated Compacter. You'll need a couple of these."]
-			dependencies: [
-				"6F750A66D0A559DE"
-				"3CBED6B591BCEDEA"
-			]
+			description: ["Create bars of Matter Plastics in a Heated Compacter. You'll need a couple of these."]
+			dependencies: ["3CBED6B591BCEDEA"]
 			id: "6A156D11D983661D"
 			tasks: [{
 				id: "25532A2369192051"
@@ -589,108 +428,15 @@
 			}]
 		}
 		{
-			title: "Black Gold"
-			icon: "thermal:crude_oil_bucket"
-			x: -2.5d
-			y: 8.0d
-			shape: "circle"
-			description: ["For powering our Rocket, we will require some very potent fuel. Search some of the warmer biomes for a source of Crude Oil. You cannot miss it."]
-			hide_dependency_lines: true
-			dependencies: ["5D0454F977C4F080"]
-			id: "4761DAE59CDD93AF"
-			tasks: [{
-				id: "69EE10F8CDFF7980"
-				type: "item"
-				title: "Any Crude Oil Bucket"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "kubejs:crude_oil_bucket"
-								Count: 1b
-							}
-							{
-								id: "thermal:crude_oil_bucket"
-								Count: 1b
-							}
-						]
-					}
-				}
-				consume_items: false
-			}]
-		}
-		{
-			title: "Hydrocarbon Sorter I"
-			x: -1.0d
-			y: 8.0d
-			shape: "circle"
-			description: ["Crude Oil can be refined into Heavy Oil using a Fractionating Still."]
-			dependencies: ["4761DAE59CDD93AF"]
-			id: "2BD76CB3F8BC215E"
-			tasks: [{
-				id: "0F12D5A3157F61C4"
-				type: "item"
-				item: "thermal:heavy_oil_bucket"
-				consume_items: false
-			}]
-		}
-		{
-			title: "Hydrocarbon Sorter II"
-			x: -1.0d
-			y: 9.0d
-			shape: "circle"
-			description: ["Refining Crude Oil into Heavy Oil creates a by-product of Light Oil."]
-			dependencies: ["4761DAE59CDD93AF"]
-			id: "26DD1CA6A8D4E249"
-			tasks: [{
-				id: "2EA66D1B4EEBFA62"
-				type: "item"
-				item: "thermal:light_oil_bucket"
-				consume_items: false
-			}]
-		}
-		{
-			title: "Hydrocarbon Sorter III"
-			x: 0.5d
-			y: 9.0d
-			shape: "circle"
-			subtitle: "Contraption 46"
-			description: ["Both Heavy and Light Oil can be further refined into suitable Rocket Fuel."]
-			dependencies: [
-				"2BD76CB3F8BC215E"
-				"26DD1CA6A8D4E249"
-			]
-			dependency_requirement: "one_completed"
-			id: "25B76A897D97C9F1"
-			tasks: [{
-				id: "5CAC7E6BDD460233"
-				type: "item"
-				item: "thermal:refined_fuel_bucket"
-				consume_items: false
-			}]
-		}
-		{
-			title: "Treat for Heat"
-			x: 3.5d
-			y: 3.5d
-			shape: "circle"
-			description: ["To form Matter Plastics, we need temperatures unreachable by even the most overclocked Invar Machines. However, your little Blaze friend will be happy to trade..."]
-			hide_dependency_lines: true
-			dependencies: ["5D0454F977C4F080"]
-			id: "6F750A66D0A559DE"
-			tasks: [{
-				id: "588732AF86BA6A8D"
-				type: "item"
-				item: "create:blaze_cake"
-				consume_items: false
-			}]
-		}
-		{
 			title: "Attire"
-			icon: "advancedrocketry:spacehelmet"
-			x: -1.0d
+			icon: {
+				id: "agape_space:enviro_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
 			y: 6.0d
 			shape: "circle"
 			description: ["If you intend to survive past the landing, a special set of armour will be required."]
@@ -700,56 +446,63 @@
 				{
 					id: "7E45D4E589606928"
 					type: "item"
-					item: "advancedrocketry:spacehelmet"
+					item: {
+						id: "agape_space:enviro_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 					consume_items: false
 				}
 				{
 					id: "00E67717F76ABA56"
 					type: "item"
-					item: "advancedrocketry:spacechest"
+					item: {
+						id: "agape_space:enviro_armor"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 					consume_items: false
 				}
 				{
 					id: "3D1FB475F19FB099"
 					type: "item"
-					item: "advancedrocketry:spaceleggings"
+					item: {
+						id: "agape_space:enviro_legs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 					consume_items: false
 				}
 				{
 					id: "29F72399D75E555C"
 					type: "item"
-					item: "advancedrocketry:spaceboots"
+					item: {
+						id: "agape_space:enviro_feet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 					consume_items: false
 				}
 			]
 		}
 		{
-			title: "Where to?"
-			x: 3.5d
-			y: 9.0d
-			shape: "circle"
-			description: ["In order for your Guidance Computer to know its Destination, a Planet Id Chip has to be inserted."]
-			hide_dependency_lines: true
-			dependencies: ["5D0454F977C4F080"]
-			id: "462CE0A4C80442FB"
-			tasks: [{
-				id: "4036EE2984EFEA1A"
-				type: "item"
-				item: {
-					id: "advancedrocketry:planet_id_chip"
-					Count: 1b
-					tag: {
-						dimId: "custommoon:moon"
-						DimensionName: " The Moon "
-					}
-				}
-				consume_items: false
-			}]
-		}
-		{
 			title: "Electrolysis"
-			icon: "advancedrocketry:oxygencharger"
-			x: 0.5d
+			icon: {
+				id: "agape_space:oxygen_tank"
+				Count: 1b
+				tag: {
+					oxygen: { }
+				}
+			}
+			x: 2.0d
 			y: 6.0d
 			shape: "circle"
 			subtitle: "Contraption 48"
@@ -764,90 +517,19 @@
 				{
 					id: "045DB251DB8BB97F"
 					type: "item"
-					item: "advancedrocketry:oxygencharger"
+					item: "agape_space:oxy_gen"
 					consume_items: false
 				}
 				{
 					id: "23140AC17E9BE946"
 					type: "item"
-					item: "advancedrocketry:bucketoxygen"
-					count: 4L
-					consume_items: false
-				}
-			]
-		}
-		{
-			title: "Launch Pad Structure"
-			icon: "advancedrocketry:launchpad"
-			x: 2.0d
-			y: 6.0d
-			shape: "circle"
-			subtitle: "Contraption 49"
-			description: [
-				"The Launch Pad for your Rocket requires special surface materials and reinforcement structures."
-				""
-				"In order to learn about the specific guidelines, locate the ponder scene of the Guidance Computer, or use the command"
-				""
-				"&6/c ponder advancedrocketry:guidancecomputer"
-			]
-			dependencies: ["6A156D11D983661D"]
-			id: "4800892E1E70648D"
-			tasks: [
-				{
-					id: "1F86655043929A18"
-					type: "item"
-					item: "advancedrocketry:launchpad"
-					consume_items: false
-				}
-				{
-					id: "2BC9E126D403902B"
-					type: "item"
-					item: "advancedrocketry:structuretower"
-					consume_items: false
-				}
-				{
-					id: "3D2474BE8BAE28D1"
-					type: "item"
-					item: "advancedrocketry:rocketassembler"
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "6023AC8699FE1451"
-				type: "command"
-				title: "Open Ponder Scene"
-				icon: {
-					id: "occultism:book_of_calling_djinni_manage_machine"
-					Count: 1b
-					tag: {
-						spiritName: "Zedzeraeus"
+					item: {
+						id: "agape_space:oxygen_tank"
+						Count: 1b
+						tag: {
+							oxygen: { }
+						}
 					}
-				}
-				team_reward: false
-				command: "/c ponder advancedrocketry:guidancecomputer"
-				player_command: true
-			}]
-		}
-		{
-			title: "Pipeless Loading"
-			icon: "libvulpes:linker"
-			x: 5.0d
-			y: 6.0d
-			shape: "circle"
-			description: ["A couple of additional Gadgets are required in order to load the rocket with fuel. For usages refer to the Ponder Scene of the Guidance Computer."]
-			dependencies: ["6A156D11D983661D"]
-			id: "1AE7B6CA4D1DBA6F"
-			tasks: [
-				{
-					id: "4D0D4FCDA84500F4"
-					type: "item"
-					item: "advancedrocketry:fuelingstation"
-					consume_items: false
-				}
-				{
-					id: "0CA84D5F0130C60E"
-					type: "item"
-					item: "libvulpes:linker"
 					consume_items: false
 				}
 			]
@@ -895,8 +577,8 @@
 		}
 		{
 			title: "The Spaceship"
-			icon: "advancedrocketry:fueltank"
-			x: 3.5d
+			icon: "agape_space:starship_powersource"
+			x: 4.0d
 			y: 6.0d
 			shape: "circle"
 			subtitle: "Contraption &b50"
@@ -906,28 +588,25 @@
 				"Give it your best, after all this is the final Contraption you've been working towards. "
 				"&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating."
 			]
-			dependencies: [
-				"6A156D11D983661D"
-				"4800892E1E70648D"
-			]
+			dependencies: ["6A156D11D983661D"]
 			id: "73473DC7269EC5B0"
 			tasks: [
 				{
 					id: "5A1CC7C1BAFFABBC"
 					type: "item"
-					item: "advancedrocketry:rocketmotor"
+					item: "agape_space:starship_conduit"
 					consume_items: false
 				}
 				{
 					id: "303C6C7B357D47D9"
 					type: "item"
-					item: "advancedrocketry:fueltank"
+					item: "agape_space:starship_engine"
 					consume_items: false
 				}
 				{
 					id: "5140EF835413E2FC"
 					type: "item"
-					item: "advancedrocketry:seat"
+					item: "agape_space:starship_powersource"
 					consume_items: false
 				}
 			]

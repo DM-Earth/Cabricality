@@ -46,8 +46,6 @@
 				"- The Fluid Encapsulator uses Molten Glass to create Reagents from resources."
 				""
 				"- The Reagent Extractor can reverse this process."
-				""
-				"- The Centrifugal Separator is required to analyse alchemical blends for clues. A vital routine when researching the recipe of Catalysts."
 			]
 			dependencies: ["05446225038D260A"]
 			id: "42B615F7BECA6E58"
@@ -55,19 +53,13 @@
 				{
 					id: "39000CC22827EE50"
 					type: "item"
-					item: "thermal:machine_bottler"
+					item: "indrev:fluid_infuser_mk1"
 					consume_items: false
 				}
 				{
 					id: "6485567EC6630BF2"
 					type: "item"
-					item: "thermal:machine_sawmill"
-					consume_items: false
-				}
-				{
-					id: "75F82E2858B93DBD"
-					type: "item"
-					item: "thermal:machine_centrifuge"
+					item: "indrev:sawmill_mk1"
 					consume_items: false
 				}
 			]
@@ -134,19 +126,6 @@
 				id: "2F714B82CD1A3FDD"
 				type: "item"
 				item: "kubejs:substrate_basalt"
-				consume_items: false
-			}]
-		}
-		{
-			x: -5.0d
-			y: 5.5d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "560F2995CE2862D7"
-			tasks: [{
-				id: "6F2432F797A27549"
-				type: "item"
-				item: "kubejs:substrate_gabbro"
 				consume_items: false
 			}]
 		}
@@ -307,32 +286,6 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "421E285B7D642676"
-			tasks: [{
-				id: "10EF9D8072B539A4"
-				type: "item"
-				item: "kubejs:substrate_arcane"
-				consume_items: false
-			}]
-		}
-		{
-			x: 2.5d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "6E154A8C81D8DD5F"
-			tasks: [{
-				id: "0E7911464600ABEC"
-				type: "item"
-				item: "kubejs:substrate_apatite"
-				consume_items: false
-			}]
-		}
-		{
 			x: 4.5d
 			y: 5.0d
 			hide_dependency_lines: true
@@ -347,19 +300,6 @@
 		}
 		{
 			x: 3.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "2C6EE5BEB945F154"
-			tasks: [{
-				id: "665D6D91F09233AE"
-				type: "item"
-				item: "kubejs:substrate_niter"
-				consume_items: false
-			}]
-		}
-		{
-			x: 3.5d
 			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
@@ -368,19 +308,6 @@
 				id: "6C839FAE45EC2AB4"
 				type: "item"
 				item: "kubejs:substrate_certus"
-				consume_items: false
-			}]
-		}
-		{
-			x: 4.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "40FDCF626F5EBB08"
-			tasks: [{
-				id: "55AA2EC101DB9047"
-				type: "item"
-				item: "kubejs:substrate_quartz"
 				consume_items: false
 			}]
 		}
@@ -425,19 +352,6 @@
 		}
 		{
 			x: 6.0d
-			y: 3.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "285F815678D5F32A"
-			tasks: [{
-				id: "0EFBC080DFC4F106"
-				type: "item"
-				item: "kubejs:substrate_nickel"
-				consume_items: false
-			}]
-		}
-		{
-			x: 6.0d
 			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
@@ -472,19 +386,6 @@
 				id: "2D94A57470F15112"
 				type: "item"
 				item: "kubejs:substrate_lapis"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 0.5d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "33B3AB3394DD012A"
-			tasks: [{
-				id: "01253AF4C04D6EE2"
-				type: "item"
-				item: "kubejs:substrate_cinnabar"
 				consume_items: false
 			}]
 		}
@@ -558,7 +459,6 @@
 				"35406FED565B7EFF"
 				"0F688EAF792BAE96"
 				"6CBB7512CDFF4C2E"
-				"560F2995CE2862D7"
 			]
 			id: "3EB5CD9776DF0E63"
 			tasks: [{
@@ -632,11 +532,7 @@
 			hide_dependency_lines: true
 			dependencies: [
 				"58A0EA80BB3A3262"
-				"2C6EE5BEB945F154"
 				"7CA6AC3B07E07D81"
-				"40FDCF626F5EBB08"
-				"421E285B7D642676"
-				"6E154A8C81D8DD5F"
 			]
 			id: "549D7F67A97CD2CE"
 			tasks: [{
@@ -662,7 +558,6 @@
 				"5A957C9B5D8DE1A1"
 				"22F0C935130ADCF4"
 				"394A502BD8B5B1A0"
-				"285F815678D5F32A"
 			]
 			id: "0CC92E94D10E681D"
 			tasks: [{
@@ -688,7 +583,6 @@
 				"2FD7D312EE63EA53"
 				"58A6D5414035EEA1"
 				"2EECFBC4E2BF1F37"
-				"33B3AB3394DD012A"
 			]
 			id: "5200AD3B32D219C6"
 			tasks: [{
@@ -747,45 +641,8 @@
 			}]
 		}
 		{
-			title: "The Alchemical Laser"
-			icon: "projectred-illumination:lime_inverted_cage_light"
-			x: 3.75d
-			y: 2.0d
-			shape: "circle"
-			description: [
-				"A central role in your Laboratory is played by the Alchemical Laser."
-				""
-				"The Laser is the only way to obtain Catalysts or to find the necessary clues toward their recipe. Another use is the actual application of the Chaos Catalyst to a specific Reagent, causing the Transmutation."
-				""
-				"Inventors can familiarise themselves with the necessary machinery components via JEI or via entering"
-				""
-				" &6/c ponder kubejs:alchemical_laser"
-			]
-			dependencies: ["05446225038D260A"]
-			id: "1D1D1FEAF49C5E11"
-			tasks: [{
-				id: "04CC23968DBD8CC9"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "5F8758212BE89602"
-				type: "command"
-				title: "Open Ponder Scene"
-				icon: {
-					id: "occultism:book_of_calling_djinni_manage_machine"
-					Count: 1b
-					tag: {
-						spiritName: "Zedzeraeus"
-					}
-				}
-				team_reward: false
-				command: "/create ponder kubejs:alchemical_laser"
-				player_command: true
-			}]
-		}
-		{
 			title: "Automatic Chaos"
-			icon: "minecraft:hopper_minecart"
+			icon: "indrev:laser_emitter_mk4"
 			x: 2.5d
 			y: 9.0d
 			subtitle: "Contraption 31-A"

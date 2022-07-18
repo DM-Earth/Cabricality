@@ -36,7 +36,7 @@
 		{
 			title: "Temporary Sand"
 			x: -5.0d
-			y: 4.0d
+			y: 5.0d
 			shape: "circle"
 			description: ["Initially, Certus Quartz Seeds require sand to be crafted. However, for full automation it might be worthwhile to bypass that requirement with the help of Mechanical Crafters."]
 			hide_dependency_lines: true
@@ -51,8 +51,8 @@
 		}
 		{
 			title: "Quartz Seeds"
-			x: -6.0d
-			y: 6.5d
+			x: -4.0d
+			y: 7.0d
 			shape: "circle"
 			subtitle: "Contraption 12-1"
 			description: [
@@ -69,54 +69,24 @@
 			tasks: [{
 				id: "4D592B701A2AE0BC"
 				type: "item"
-				item: "appliedenergistics2:certus_crystal_seed"
+				item: "ae2:certus_crystal_seed"
 				consume_items: false
 			}]
 		}
 		{
-			title: "Growth Started"
-			icon: "kubejs:tiny_certus_crystal"
-			x: -5.5d
-			y: 8.0d
-			shape: "circle"
-			subtitle: "Contraption 12-2"
-			description: ["Needs more Water."]
-			dependencies: ["345B94F6D17605CD"]
-			id: "34A1D176C78FB64E"
-			tasks: [{
-				id: "28DDF51DB85DCF7D"
-				type: "checkmark"
-			}]
-		}
-		{
-			title: "Growth Continued"
-			icon: "kubejs:small_certus_crystal"
-			x: -4.0d
-			y: 8.5d
-			shape: "circle"
-			subtitle: "Contraption 12-3"
-			description: ["Just keep spouting it."]
-			dependencies: ["34A1D176C78FB64E"]
-			id: "1642A27606A34984"
-			tasks: [{
-				id: "30E8BB6958ED4A44"
-				type: "checkmark"
-			}]
-		}
-		{
-			title: "Growth Completed"
-			icon: "appliedenergistics2:purified_certus_quartz_crystal"
+			title: "The Greate Growth"
+			icon: "ae2:certus_quartz_crystal"
 			x: -2.5d
 			y: 8.0d
 			subtitle: "Contraption 12-4"
 			description: ["Finally, a fully grown crystal. Don't forget to send every second one back around for seed production!"]
-			dependencies: ["1642A27606A34984"]
+			dependencies: ["345B94F6D17605CD"]
 			id: "1861E583C9DAA0BA"
 			tasks: [
 				{
 					id: "68D808533C34AB5C"
 					type: "item"
-					item: "appliedenergistics2:purified_certus_quartz_crystal"
+					item: "ae2:certus_quartz_crystal"
 					consume_items: false
 				}
 				{
@@ -151,7 +121,7 @@
 		}
 		{
 			title: "Skystone Infini-mill"
-			icon: "appliedenergistics2:sky_dust"
+			icon: "ae2:sky_dust"
 			x: -1.0d
 			y: 4.0d
 			subtitle: "Contraption 11"
@@ -167,7 +137,7 @@
 				{
 					id: "69C6513B25BB6ABA"
 					type: "item"
-					item: "appliedenergistics2:sky_dust"
+					item: "ae2:sky_dust"
 					consume_items: false
 				}
 				{
@@ -179,7 +149,7 @@
 		}
 		{
 			title: "Skystone Mixer"
-			icon: "tconstruct:molten_obsidian_bucket"
+			icon: "kubejs:sky_stone_bucket"
 			x: -1.0d
 			y: 5.5d
 			subtitle: "Contraption 13-1"
@@ -193,7 +163,7 @@
 				{
 					id: "36E36D584FCBC358"
 					type: "item"
-					item: "tconstruct:molten_obsidian_bucket"
+					item: "kubejs:sky_stone_bucket"
 					consume_items: false
 				}
 				{
@@ -205,7 +175,7 @@
 		}
 		{
 			title: "Charged Mixer"
-			icon: "thermal:redstone_bucket"
+			icon: "kubejs:redstone_bucket"
 			x: -0.5d
 			y: 7.0d
 			subtitle: "Contraption 13-2"
@@ -224,7 +194,7 @@
 				{
 					id: "5F47790124641B2D"
 					type: "item"
-					item: "thermal:redstone_bucket"
+					item: "kubejs:redstone_bucket"
 					consume_items: false
 				}
 				{
@@ -236,13 +206,7 @@
 		}
 		{
 			title: "Get Melted"
-			icon: {
-				id: "tconstruct:copper_can"
-				Count: 1b
-				tag: {
-					fluid: "tconstruct:molten_iron"
-				}
-			}
+			icon: "indrev:molten_iron_bucket"
 			x: 1.0d
 			y: 9.5d
 			subtitle: "Contraption 15-4"
@@ -254,13 +218,7 @@
 					id: "611F921F94FAE142"
 					type: "item"
 					title: "Copper Can (Molten Iron)"
-					item: {
-						id: "tconstruct:copper_can"
-						Count: 1b
-						tag: {
-							fluid: "tconstruct:molten_iron"
-						}
-					}
+					item: "indrev:molten_iron_bucket"
 					consume_items: false
 				}
 				{
@@ -298,7 +256,7 @@
 		}
 		{
 			title: "The (Re-)Charger"
-			icon: "appliedenergistics2:charged_certus_quartz_crystal"
+			icon: "ae2:charged_certus_quartz_crystal"
 			x: 1.0d
 			y: 6.0d
 			subtitle: "Contraption 14"
@@ -314,7 +272,7 @@
 				{
 					id: "23DAE14596F025DF"
 					type: "item"
-					item: "appliedenergistics2:charged_certus_quartz_crystal"
+					item: "ae2:charged_certus_quartz_crystal"
 					consume_items: false
 				}
 				{
@@ -407,7 +365,7 @@
 				{
 					id: "7A797A069B28AE89"
 					type: "item"
-					item: "appliedenergistics2:certus_quartz_crystal"
+					item: "ae2:certus_quartz_crystal"
 					random_bonus: 4
 				}
 				{
@@ -550,7 +508,7 @@
 		}
 		{
 			title: "Soul Distillery"
-			icon: "tconstruct:liquid_soul_bucket"
+			icon: "kubejs:liquid_soul_bucket"
 			x: -1.0d
 			y: 16.0d
 			subtitle: "Contraption 17-3"
@@ -565,7 +523,7 @@
 				{
 					id: "7BBC2AAED0A77FDC"
 					type: "item"
-					item: "tconstruct:liquid_soul_bucket"
+					item: "kubejs:liquid_soul_bucket"
 					consume_items: false
 				}
 				{
@@ -655,7 +613,7 @@
 				id: "7DF53EF0CF55B5D7"
 				type: "item"
 				item: {
-					id: "projectred-core:screwdriver"
+					id: "kubejs:screwdriver"
 					Count: 1b
 					tag: {
 						Damage: 0
