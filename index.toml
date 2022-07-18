@@ -1,16 +1,72 @@
 hash-format = "sha256"
 
 [[files]]
-file = "LICENSE"
-hash = "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
-
-[[files]]
 file = "config/cobblegen.json5"
 hash = "e627745061c9d44685adcfb5962eeecbe9ef99ff4698062fc7af3224cbdb9e55"
 
 [[files]]
 file = "config/entityculling.json"
 hash = "0e4bcec50b38febb2bf051cdac70bd7e86375913198442af10be8db1fbf59849"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "64a0c8e2354c1ccdbb66db1a779414e4579ee95d775f7ad3aaade02a41c0025d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/lifesavers.snbt"
+hash = "018b4c947a8c25e37739533440f8a0fbe7e75bdefdba5ad2aa59c76faebdab80"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/market.snbt"
+hash = "8daf0e5f9bf87e69b1956ee38081ea48dd4383afbde0a5f0dd88f45778fb2e00"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/metallurgy.snbt"
+hash = "cd3e95ef4bded86ed66926795493c21f0785b05bb397fd6e6eb8b43543282bf9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/overview.snbt"
+hash = "2f9f5dd9d431f82d872aae5f22f109bada59c93e5e0d452ab3d052d081c47842"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/professions.snbt"
+hash = "87e7de89a7a49da61752c4cfc1c07c2773459c5a72c7540e6bf0177ccac9976e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/shipments.snbt"
+hash = "6359b89e722e7e0ac950e02b060f470f725983d3c449c849460159e25fa2572b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stage_1.snbt"
+hash = "f3cac145ef91cbf60271d3e21190026e90788983be4b792795fa69193a945104"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stage_2.snbt"
+hash = "5453c441b9b938c07d63c2a41819525b8227f1c71997ac4710d99d1a22d141f6"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stage_3.snbt"
+hash = "67fed798661e95bbc9867ccbbbd73fe3b2ee33f513fba0ad7e6d2016ceaa0ed2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stage_4.snbt"
+hash = "779a99f7acc5e19724612e8dcd1174dd84a8e59a827afa320a40d0f09035e306"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stage_4b.snbt"
+hash = "614900c98ace59e45187710e0ac98a382f23521f5be371f74250f67edfab8d3f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stage_5.snbt"
+hash = "c66be97c287027ba6e6f129e59a726d9ad07fdb533f82b262b92e046c9ba1137"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/welcome.snbt"
+hash = "ab8608fc8b39154657b01bb3f2ab885bceebdae2a79ad6ea5f163d75a56046ab"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "8f43b84ed4a64baa333c8fec1f9b2286abaa31fd67537045682709a9ee4a5bbc"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
@@ -2275,6 +2331,11 @@ hash = "1ccfd677a7cb6b2f5ab58f7b4b631f3c4974bf597111d3a8700036a811518b4c"
 metafile = true
 
 [[files]]
+file = "mods/ftb-quests-fabric.pw.toml"
+hash = "5faffccc8307b532b3e32f0e80aa72a7661785344e72759bb8c6c67048ce1b9d"
+metafile = true
+
+[[files]]
 file = "mods/ftb-teams-fabric.pw.toml"
 hash = "03f6d4651da69de498d2033f9cec972d59878abbef08131eb8f0d9b1ab5d2dba"
 metafile = true
@@ -2302,6 +2363,11 @@ metafile = true
 [[files]]
 file = "mods/iris-mc1.18.2-1.2.4-build.38.jar"
 hash = "45c00e3a58688440af95698c6ce4b57128b1a6a201285718c3770c3a50331bbb"
+
+[[files]]
+file = "mods/item-filters.pw.toml"
+hash = "34c3d305cba253298133e2f9da0da457b2d353cef6bcdd80707a3acfc75bfaf9"
+metafile = true
 
 [[files]]
 file = "mods/kibe.pw.toml"
