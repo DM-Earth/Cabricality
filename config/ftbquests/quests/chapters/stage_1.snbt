@@ -719,6 +719,7 @@
 					id: "6AE23275EC35C356"
 					type: "item"
 					item: "minecraft:dripstone_block"
+					consume_items: false
 				}
 				{
 					id: "523839D341188A71"

@@ -14,19 +14,19 @@ hash = "aa1b8a6b154e64078d91784c47ced8b9e3848aa4f762946cf2f108fa95c89bb6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "279b13a28a2e6d5d3df19738412c9acbdcc9926b86f7901247f05589aaf47c80"
+hash = "43054a25719f100902f8b0d36307360f15ffe58839b985d1c50ea81955bf5f80"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "fa2c1cf0f395729bc2793f64fc8e05a7259f02ef1ccb29ffb60caae8c39f8e41"
+hash = "733c4a143e05548a5fb510d70c343fb5aec99b7b52f90373748b2a6531c27c17"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "853f6d3983b48d13abf80739d088f68305a2f2fe068b3a7fa917b5cb2f443e91"
+hash = "82b547955c6d3a43cc7701ba08600b05f8dd80225d21c875af8e769b55397230"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
-hash = "0aab0fbc18edecfcf2201597b4bb7e95d956a38fb90bbd5044ac79d618e71242"
+hash = "2f03b916146148ba250468dcf1fa68338eb036deabac7868f06032b5dee49d5c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_2.snbt"
@@ -34,7 +34,7 @@ hash = "0afa60e76dd2842a413eb5ab4250cd7560c4f36970cc5248447e3dd9226bca48"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_3.snbt"
-hash = "e55ff4b465ced8fd8c2b275ed799555475661a5ce22a81566ea627e751388f82"
+hash = "07ddd228bc593f05815f702b897a79c6e079475a83e60b59d5954e8bbccab834"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
@@ -50,7 +50,7 @@ hash = "2b6b2d99cdc40a06020e008de918462630b7feddaff453c8d45eef4e4184b850"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "09ae9026d610b59df5fbe33b989843db57680180b21494a0bf07e8d3d9a3c6f0"
+hash = "6b193fea4f67e45b9e7d9e3a27cd3ea4f944ebd22c0e8bddfe5f7a423030adb6"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -673,12 +673,140 @@ file = "kubejs/assets/cabricality/textures/item/zinc_sheet.png"
 hash = "0b09a3cf07b366b1d34563e3469e1b9052768235a1f73c08be745cc894778abc"
 
 [[files]]
+file = "kubejs/assets/createplus/textures/item/brass_double_ingot.png"
+hash = "5993d2200de5ae7bcc9ec1f9abcb46ee4f71ae63a420d652e3035027ea97da09"
+
+[[files]]
+file = "kubejs/assets/createplus/textures/item/brass_dust.png"
+hash = "c988e43cd7ce0835b517625f39da74df0c2a37c7e8bbd370da54d5caf14e7586"
+
+[[files]]
+file = "kubejs/assets/createplus/textures/item/zinc_double_ingot.png"
+hash = "ad1d25d91122e57df9cb2c65a6c9857f18b12c36ff07f9823e859db02545eb01"
+
+[[files]]
+file = "kubejs/assets/createplus/textures/item/zinc_dust.png"
+hash = "70835d98bb7a98a6cc95813b0fde02263cc27e38c9ba05ccc75b0b0fa1808618"
+
+[[files]]
 file = "kubejs/assets/indrev/lang/en_us.json"
 hash = "1e14fe1eba253b0771d832851f35dcddb96fe0021355317c81417675d1ad8c39"
 
 [[files]]
 file = "kubejs/assets/indrev/lang/zh_cn.json"
 hash = "90d465da3adf4d6e3de428127c43fff7cac4c3923d23ffb20ca1f51b5d9bcb84"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/biomass_generator.png"
+hash = "510cbaabf0e81916da047196a49a3eec59169285c721cfdf35bc096316e585e4"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/biomass_generator_on.png"
+hash = "d3682c301eba81e136de532cf9f5886906fdc2981bd926926bb46a937112cdb5"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/coal_generator.png"
+hash = "1a4a31bea133c8b3d48921d2de73445839ba69f229a7e105e896d55a19a4d916"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/coal_generator_on.png"
+hash = "06b9f479c32439e313ac9d4f8da7406fbe1489ef0ca282af03226ee5ad5b6f66"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/condenser.png"
+hash = "1a9efa59927d40a71221e9da3bdecd5fdc794f66a355567d6a456e8b97d58a05"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/condenser_on.png"
+hash = "a9c037a01dff080b1e53db68ff7fa207ddcf671429166e4f89ffcb961ba8b106"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/condenser_on.png.mcmeta"
+hash = "54035f6387d4b752a9ddb8bf4745bf81bea294c945682ec5ed1c3713aa6ea20c"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/electric_furnace.png"
+hash = "00715a97c077453c4d9b21152dbc60e5145ead21b8c235dd69f6532a6f3af884"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/electric_furnace_emissive_on.png"
+hash = "44f56f76e1be09977d53a9b14e39e53c56abf01053f5b07a2ba2757b3753dd4d"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/electric_furnace_emissive_on.png.mcmeta"
+hash = "bdb8af017a9d021aded58ac7a4c5239cae1b347d3d17fb56e7c87124543a976c"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/fluid_infuser.png"
+hash = "deb0d562e69066dbd66d7b5dfd7ce150ab1ffed009be455452d98f0c3fb030d3"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/fluid_infuser_on.png"
+hash = "c0c6a3d12b0130025c22d3cdc7adb654b7630e1fb95a619b4f7785c2257cf1ae"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/fluid_infuser_on.png.mcmeta"
+hash = "e398dcf3541e20e30d18a44ef7b290e24794659bb9fcca5e87ceb64b41725ab5"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/heat_generator.png"
+hash = "f96d7dd219c2fe15bb73cbc8ff5374dc28922956a364a6ffdff4a3d146f127ab"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/heat_generator_inside.png"
+hash = "eb44514a1a521b998ef8e996cea12a89a6807f6f7b3fc3eb8d6ce9b047e7b4db"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/machine_block.png"
+hash = "c97eed58b43e2952f2fab4bbc49760b5007dd19574a5f65c37a3c1591efde259"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/pulverizer.png"
+hash = "cfb47fb0771a2922337f7768128766aba6452540fe824ab8298e4a6e9b98bc37"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/pulverizer_on.png"
+hash = "0099ab7da26bec9b4787fd1474a53e1bd3167ff2fdd5a7312e920bb7d63b971b"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/pulverizer_on.png.mcmeta"
+hash = "dd4daf530182769d858f750edd3da2a2a839361ad8c506399528b0c27675b044"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/recycler.png"
+hash = "8947f3738b754352f0532b3f0fda59e8353c98e6bd74644879fae62d8464af2e"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/recycler_on.png"
+hash = "aeafd1be9004972dca5eb3a72581292361b7db4e1ac45c7cc9ff1ff6ee68cea1"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/recycler_on.png.mcmeta"
+hash = "140ab363f11e07bf955a319ca2d14ff2711308a37a38d914366c69a38e85b2bf"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/sawmill.png"
+hash = "61e7ee37be8e9861f4af729bc52a44c4a81f6d234c6e0ea6398fc158a0b0ef8a"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/sawmill_on.png"
+hash = "8fa0cedd2b4e22981dc4c1e588587713b878d5025b524dde95165fb1f6abcebe"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/sawmill_on.png.mcmeta"
+hash = "4bf16a0077b6e44f1d891a3ca585790ec0f22f65a75150be6b7d525b2ec816f4"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/smelter.png"
+hash = "f9c8463036e90ade367ae96f2ddec59e58ecb7bf2d65a055f01db04d8303be28"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/solar_generator.png"
+hash = "f94262e75c567750db0518b3d44f5a22dc187ea15eee50bcee1fb2ac3432eab5"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/solar_generator_on.png"
+hash = "ac9efe42c18bdaadcf743215faa30aff6f1fa3d1488e84388f842c46ee6ba9a0"
 
 [[files]]
 file = "kubejs/assets/indrev/textures/block/solid_infuser.png"
@@ -691,6 +819,106 @@ hash = "6740f174f90400c297b407d1bb7b7406b19552e95d130a52b8e8da883a5b8217"
 [[files]]
 file = "kubejs/assets/indrev/textures/block/solid_infuser_emissive_on.png.mcmeta"
 hash = "f7e1cb9a750ad8266c0d313f4bc8207ca0fc4c02f824f2a1cb7ab56d2c995f94"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/bronze_dust.png"
+hash = "097bfc34ddbfcc7a590ad0d44358fbc6aca68cbf710a72a76947ba670b7228f6"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/bronze_ingot.png"
+hash = "894c7b28abb7abb0a70e9c3e9abb2b442d3947b24c202e54afd1b55a2b523bfd"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/bronze_plate.png"
+hash = "a22a1def2d19892bd11c78dd1042083b20c47e6e417a911e0c2496d70d362ebc"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/coal_dust.png"
+hash = "e9a4484c60a87f33326aede854ebc33856d48ef543cc904ca4aeadad9398e8d6"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/copper_dust.png"
+hash = "dca10c2a914b0d32fc35b1863ef4ec0d3e536610d7c9849c79d09743037efa72"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/diamond_dust.png"
+hash = "25d45ab3d9ba8ff840ab7cb978b3f96178c41856597619693baf96b785583cde"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/electrum_dust.png"
+hash = "80d54b0e8c2c834cf0ebcdb15377a574b1bb7e5dae4332ebe07fb74a8d202b70"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/electrum_ingot.png"
+hash = "bf967187deff58b2e6197f38524a08bcb2e4c54524620df50139afa97b1ec495"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/electrum_plate.png"
+hash = "d5d0f859f4a1cd3915ac734674cd0e91849790bb674d9d97f506c54c4101625f"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/gold_dust.png"
+hash = "ae5fa345c32a56d85d3a0566e2b27a94d954766cbd6e2e9dc087d3409ecba080"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/iron_dust.png"
+hash = "1a3e142eb84d49026cde833b30d439395512e2dee0c262df1c8e89459a242003"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/lead_dust.png"
+hash = "8c71232c62f17e18fa0c62465fb4364558e03c40a23877f7cc91f55406ce7e13"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/lead_ingot.png"
+hash = "8bb6aab116034d3ec62ef199a4c03eaf467b6250b7b0183190d7c9a0942c024e"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/lead_plate.png"
+hash = "c5ef4d088f74c8423689c31b6ac1786f4cc4fd5a9b5365afc719540fa1e2e3c9"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/netherite_scrap_dust.png"
+hash = "ddcb0acbd2b49ee7e1372bedc13969aa38cbb0e10acfb50e5ac06e33a245ac8a"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/silver_dust.png"
+hash = "54143077a150c0769a45109fb9aad8bf515b06216342f99c8caf436e9c80826a"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/silver_ingot.png"
+hash = "99bde5bb4657c889a34cc2d656ef953577bd30f12fb1cfb680e9b48b7834e20a"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/silver_plate.png"
+hash = "c423c9b58151951658de6c31e927dd0c22912c00afb69fa21fff007267bc664b"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/steel_dust.png"
+hash = "e05beb9b24d51c616fb02beb1807c440f6a62e86e02e5229b6f591e194ab4399"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/steel_ingot.png"
+hash = "e4d53d9ebbf68182b2e7b7d1ffe75ac3806c49fd2cd6e8cb21cd5881ae73074a"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/steel_plate.png"
+hash = "5e3a1842d316e00e7285346dbc7b9674e2c6d45f027c630ea92079949c7cebbf"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/sulfur_dust.png"
+hash = "ffae60a56e7e765ed5cab9e55571ba26a01f8212c675c05ad3a8283b71ce1ff7"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/tin_dust.png"
+hash = "9a7c5ab3e9ba80535299ec1d54cd94336961d74ec660239dc4eb3f2291cadd23"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/tin_ingot.png"
+hash = "b6c0c377601177c98baea25499c4b3634b4bbaab0242d5294a33a0de0ea657a1"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/item/tin_plate.png"
+hash = "326923296bf29d6b38281604f0fe2701f792f575513c6f4dcbe605d46824d0ef"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
@@ -2202,7 +2430,7 @@ hash = "1f383f1cf613d8084f254c1dbbd8292663f40dfa795a456fd4f3f0275a44d370"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "53d6306422da847b8a0c386db64ce4c6630802558b959cb4755c4ca031164c31"
+hash = "5f7b247155a167ab2bf250cec6561eda0bb603c7897619b14e95fcc61755d695"
 
 [[files]]
 file = "kubejs/server_scripts/trader.js"

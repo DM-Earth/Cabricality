@@ -107,16 +107,16 @@
 					Count: 1b
 					tag: {
 						RepairCost: 0
-						Damage: 0
+						display: {
+							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
-						display: {
-							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
-						}
+						Damage: 0
 						HideFlags: 1
 					}
 				}
@@ -1039,14 +1039,6 @@
 					auto: "no_toast"
 					item: "minecraft:bee_spawn_egg"
 					count: 2
-				}
-				{
-					id: "6D5E00890DAB64DB"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
 				}
 			]
 		}

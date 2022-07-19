@@ -28,14 +28,14 @@
 			}]
 			rewards: [
 				{
-					id: "732AA66A91BA5C2B"
-					type: "item"
-					item: "biomesoplenty:wildflower"
-				}
-				{
 					id: "1EE277823ACFB886"
 					type: "item"
 					item: "minecraft:flower_pot"
+				}
+				{
+					id: "5C2CE7A2FA929728"
+					type: "item"
+					item: "minecraft:cornflower"
 				}
 			]
 		}

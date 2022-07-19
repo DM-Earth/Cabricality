@@ -1044,7 +1044,10 @@
 			x: -1.5d
 			y: 16.5d
 			shape: "circle"
-			description: ["Cool down the molten silver into a Block and admire how shiny it is."]
+			description: [
+				"Cool down the molten silver into a Block and admire how shiny it is."
+				"How to cool a molten block: put it under a Extractor Machine, and put a bucket of water above the machine. Right-click the machine and collect it!"
+			]
 			dependencies: ["0C11EC34D5FA508B"]
 			id: "0D146AD9FE774F8B"
 			tasks: [
@@ -1053,13 +1056,7 @@
 					type: "item"
 					title: "Silver Ingot"
 					icon: "indrev:silver_block"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:ingots/silver"
-						}
-					}
+					item: "indrev:silver_block"
 					consume_items: false
 				}
 				{

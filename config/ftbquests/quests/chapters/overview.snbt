@@ -216,9 +216,9 @@
 				consume_items: false
 			}]
 			rewards: [{
-				id: "619E1006A9C31AE1"
+				id: "149668A9603D545F"
 				type: "item"
-				item: "farmersdelight:apple_cider"
+				item: "farmersdelight:hot_cocoa"
 			}]
 		}
 		{

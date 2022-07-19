@@ -4,7 +4,7 @@
 	order_index: 7
 	filename: "metallurgy"
 	title: " Metallurgy"
-	icon: "create:zinc_ingot"
+	icon: "indrev:silver_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
