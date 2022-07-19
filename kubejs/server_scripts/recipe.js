@@ -83,6 +83,7 @@ function tweaks(event) {
 	event.replaceInput('#c:plates/gold', 'create:golden_sheet')
 	event.replaceInput('#c:plates/iron', 'create:iron_sheet')
 	event.replaceInput('#c:plates/copper', 'create:copper_sheet')
+	event.replaceInput('indrev:nikolite_dust', 'minecraft:redstone')
 
 	event.blasting(IV('steel_ingot'), MC('iron_ingot')).cookingTime(400)
 	event.stonecutting(AR('netherite_gear'), MC('netherite_ingot'))
