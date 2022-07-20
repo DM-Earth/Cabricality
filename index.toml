@@ -2609,7 +2609,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-backups-2.pw.toml"
-hash = "86f7ebbf039ae2ce5bbd35a6fb51c80e39b07efca3a2ebb1520bfe111cb85e41"
+hash = "fd29a7a199fe15c4bd64b65f3dad1afc5ab4f6ef706b42d3169e470d769a954d"
 metafile = true
 
 [[files]]
@@ -2673,7 +2673,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "f83da0f65edc0dce8660b3493867469a69fd64ffc09223304a847dc374dbeb1e"
+hash = "855e0719b4197d739e61461e3be8bebf9a660d7db272bf2881582e16ca217fa1"
 metafile = true
 
 [[files]]
