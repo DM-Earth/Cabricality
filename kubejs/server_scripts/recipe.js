@@ -432,16 +432,19 @@ function initBrassMachine(event) {
 
 	event.remove({ id: CR("sequenced_assembly/precision_mechanism") })
 	event.shapeless(KJ("screwdriver"), [IV("screwdriver"), MC("iron_ingot"), MC("blue_dye")])
+
+	/*
 	let transition = CR('incomplete_precision_mechanism')
 	event.recipes.createSequencedAssembly([
 		CR('precision_mechanism'),
 	], KJ('kinetic_mechanism'), [
 		event.recipes.createDeploying(transition, [transition, CR('electron_tube')]),
 		event.recipes.createDeploying(transition, [transition, CR('electron_tube')]),
-		event.recipes.createDeploying(transition, [transition, KJ('screwdriver')])
+		event.recipes.createDeploying(transition, [transition, 'kubejs:screwdriver'])
 	]).transitionalItem(transition)
 		.loops(1)
 		.id('kubejs:precision_mechanism')
+	*/
 	event.shaped(KJ('brass_machine'), [
 		'SSS',
 		'SCS',
@@ -580,7 +583,7 @@ function initInvarMachine(event) {
 		L: IV('lead_ingot'),
 		S: KJ('sapphire')
 	})
-
+	/*
 	let t = KJ('incomplete_inductive_mechanism')
 	event.recipes.createSequencedAssembly([
 		KJ('inductive_mechanism'),
@@ -591,7 +594,7 @@ function initInvarMachine(event) {
 	]).transitionalItem(t)
 		.loops(1)
 		.id('kubejs:inductive_mechanism')
-
+	*/
 	event.remove({ output: IV('machine_block') })
 	event.shaped(IV('machine_block'), [
 		'SSS',
@@ -859,6 +862,7 @@ function initFluixMachine(event) {
 		C: AE2('logic_processor'),
 		S: MC('iron_ingot')
 	})
+	/*
 	let t = KJ('incomplete_calculation_mechanism')
 	event.recipes.createSequencedAssembly([
 		KJ('calculation_mechanism'),
@@ -869,7 +873,7 @@ function initFluixMachine(event) {
 	]).transitionalItem(t)
 		.loops(1)
 		.id('kubejs:calculation_mechanism')
-
+	*/
 	event.remove({ output: AE2('controller') })
 	event.shaped(AE2('controller'), [
 		'SSS',

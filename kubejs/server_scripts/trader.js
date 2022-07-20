@@ -156,7 +156,7 @@ onEvent('recipes', event => {
     let itemCount = trade[4]
     let coin = 'kubejs:silver_coin'
     let coinCount = trade[5]
-    event.recipes.createCompacting('2x ' + tradeCard, tradeCard)
+    event.shapeless('2x ' + tradeCard, [tradeCard])
     if (coinCount >= 64) {
       coin = 'kubejs:gold_coin'
       coinCount = Math.floor(coinCount / 64.0)

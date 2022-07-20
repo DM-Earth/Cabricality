@@ -14,11 +14,11 @@ hash = "aa1b8a6b154e64078d91784c47ced8b9e3848aa4f762946cf2f108fa95c89bb6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "43054a25719f100902f8b0d36307360f15ffe58839b985d1c50ea81955bf5f80"
+hash = "2c1ada59de342ff6e42d5ae26734441d881c6dbf53e3d69e8fddae85b674dbdb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "733c4a143e05548a5fb510d70c343fb5aec99b7b52f90373748b2a6531c27c17"
+hash = "908d75108f87ff368ba4d3fd427da885c3958bd8b17e671df5b8dfff6348b0ad"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
@@ -57,8 +57,20 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "f5fff6bed43b5f063c8cbf03a82aac8186bab58cf8bb4d5f1c172c75c4718ff6"
 
 [[files]]
+file = "config/ftbquests/quests/reward_tables/1_gold_coin.snbt"
+hash = "6c4d3b5f0536fc34295f9ae8b6b043ee93a833c5189b6fa227241a2fb22de73e"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/64_silver_coin.snbt"
+hash = "efaf58dfc6de07703e0ff0344177aada3348619bd55270b8e0f5fc6d5279909e"
+
+[[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "c0f24436bee0c7f30378d90f0ebf5a5ad10b12440d22e7cfc6863ad10c8851e0"
+
+[[files]]
+file = "config/modmenu.json"
+hash = "7ddcfd9d74337936e78b4c2feaf06e62c1584a72ab1e5e725004207711bba0ad"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
@@ -67,6 +79,14 @@ hash = "bc6d2c29dfecec7334bcd107cbf025b6635c316e6ebaca46cf40fed8494bdae2"
 [[files]]
 file = "config/waila/waila.json"
 hash = "4597fde5d576f236df3cdb1e9049601e766780ca9b245263a0fc0aa886286624"
+
+[[files]]
+file = "kubejs/assets/ae2/textures/item/calculation_processor.png"
+hash = "e806ab2ae269f7f6644764c7517fece648823ee9babc9b2519a95b6ad84f0853"
+
+[[files]]
+file = "kubejs/assets/ae2/textures/item/printed_calculation_processor.png"
+hash = "ef36d793d83335c4bcbcb31b6f1d48c5a2c3b909023c0e630801e1dd0019f268"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/accellerator.json"
@@ -673,6 +693,22 @@ file = "kubejs/assets/cabricality/textures/item/zinc_sheet.png"
 hash = "0b09a3cf07b366b1d34563e3469e1b9052768235a1f73c08be745cc894778abc"
 
 [[files]]
+file = "kubejs/assets/create/textures/item/incomplete_precision_mechanism.png"
+hash = "2b7803d1723b455200000939f56c794bb8b989dc136f62bdb1ed61df1387221a"
+
+[[files]]
+file = "kubejs/assets/create/textures/item/lang/en_us.json"
+hash = "b1973c78b4f7a668abab9435b80f124a82c59d9dbb9fe637f13cc11cd64aa872"
+
+[[files]]
+file = "kubejs/assets/create/textures/item/lang/zh_cn.json"
+hash = "f495ee1aa31878a895b325ab5b1f960593bbd2eb4de1226f958b6f40fd337bb7"
+
+[[files]]
+file = "kubejs/assets/create/textures/item/precision_mechanism.png"
+hash = "8e9715f8fa338203d543640ad39fbc25fb89d9efea55c5d317513ecbcc78f562"
+
+[[files]]
 file = "kubejs/assets/createplus/textures/item/brass_double_ingot.png"
 hash = "5993d2200de5ae7bcc9ec1f9abcb46ee4f71ae63a420d652e3035027ea97da09"
 
@@ -921,6 +957,34 @@ file = "kubejs/assets/indrev/textures/item/tin_plate.png"
 hash = "326923296bf29d6b38281604f0fe2701f792f575513c6f4dcbe605d46824d0ef"
 
 [[files]]
+file = "kubejs/assets/minecraft/texts/splashes.txt"
+hash = "e01f17f085acd760898e6181d50f8903f3080ddaddc891e41e4565e54433c389"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_0.png"
+hash = "469cfba2b5e089e0aafabb4c4ee912f453dd149b90273fb155493bbea758f566"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_1.png"
+hash = "a815b4ab8f39525a84cf427a1da3fdfdd427c32f072efe6ae20de3a9d04f900a"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_2.png"
+hash = "a82c51ef5cc31d31a9b5560d73f48fe4ee06436e98dae5a77a449690bdf7ca8f"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_3.png"
+hash = "a25b967d212cf23ac4b3909cfe0600f70b0a47b93c1a02d1def4ab8aa7ef12bf"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_4.png"
+hash = "ab9124635d718408f6bdeadabc6ff7667f11f3093866d6bb25ecf046d645b8b5"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_5.png"
+hash = "2f5d101242feb1a1c9b3dd77c68cb718846c8afefce0d5b4b6f1b2ed32e3677a"
+
+[[files]]
 file = "kubejs/client_scripts/client.js"
 hash = "aeddcb4159342df851c0e24d9aec7190a11e28b832384231d9d3eb999df5b1dd"
 
@@ -1134,7 +1198,7 @@ hash = "2251c601dce583655703597b70208c135aa2df39389289b5124606df2d3f1fcf"
 
 [[files]]
 file = "kubejs/data/c/tags/items/wrenches.json"
-hash = "82ca41991cdf3dc51dfc25b44cb1c7199da1920b99a24ea9c4a0fa4fc9c2fa7a"
+hash = "cc0d0f5d44047b7ec7f60f1495d1505a41096fc7c6b8a7955398942146552727"
 
 [[files]]
 file = "kubejs/data/c/tags/items/zinc_blocks.json"
@@ -1413,12 +1477,24 @@ file = "kubejs/data/cabricality/recipes/mixing/water.json"
 hash = "1689b0dd1818b60d2ff5884045970fa450ee9f8414506bbcf9e04814ee57d454"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/sequenced_assembly/calculation_mechanism.json"
+hash = "fd88b520a564b339633a7f12e061591a3e3e93c2d5d0a090a63459ac000e3a4a"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/sequenced_assembly/coke_chunk.json"
 hash = "ea957f297ac628c14cb3d2370e8c7fc671d508212ee7d3b055b1187f368bb7a1"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/sequenced_assembly/inductive_mechanism.json"
+hash = "139123b324cfd725bf75b2a7fa49a8aee24e50a1b16c43bb85b475cc85be5ecd"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/sequenced_assembly/infernal_mechanism.json"
 hash = "2e62f5b876717b23b22f7fea938baea215cd7d528a33f9791f3246ab8d7c2081"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/sequenced_assembly/precision_mechanism.json"
+hash = "e2c2ea10624a0c046b91c7cdc3d5e6d1d34bfc5f265ab412332d681ad20e0ba5"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/sequenced_assembly/processor/calculation_processor.json"
@@ -2430,23 +2506,23 @@ hash = "1f383f1cf613d8084f254c1dbbd8292663f40dfa795a456fd4f3f0275a44d370"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "5f7b247155a167ab2bf250cec6561eda0bb603c7897619b14e95fcc61755d695"
+hash = "ed049b13fbb4bc8d531cb959dae383f5f50f5583575b2af99217340727259131"
 
 [[files]]
 file = "kubejs/server_scripts/trader.js"
-hash = "242ac2cf71e1bf4eaa4df792e561b70accefe511ecaad1581183ebe023f32c97"
-
-[[files]]
-file = "kubejs/server_scripts/worldgen.js"
-hash = "aae81dc22ed853355c95609970cdaf2803643782e6648a274f6e6c8ac36cb9a6"
+hash = "5fe66306920043d30b033276f91cf770202fe20220a43d9803f63050141668d7"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
-hash = "7fad4c4d795d5a320990c4b54c6b7daf55998f2ea9a7851f52e51a49fce2c72b"
+hash = "c26d274324795f843875a58763a48cf5fa8ed8566d554c432feab33e779733cc"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
 hash = "491c10ff208191c87d20b98bd0eaddc3d567e1ee8b25c2d695f7e6bf5b557fdf"
+
+[[files]]
+file = "kubejs/startup_scripts/worldgen.js"
+hash = "fe4f757e2e0874a0e0e7cc369e8e7e0ea6528054aa12721b0add2ef696ae3dc2"
 
 [[files]]
 file = "mods/ae2.pw.toml"
@@ -2648,6 +2724,11 @@ metafile = true
 [[files]]
 file = "mods/promenade.pw.toml"
 hash = "90c566f04f86546c14ac20a35e45c593a623b862d26e70ad64f3568b3029acb1"
+metafile = true
+
+[[files]]
+file = "mods/quests-additions-fabric.pw.toml"
+hash = "9643c63d770414995cac83623ed26aefcccbb575d54865b06d18ac4af5b08d73"
 metafile = true
 
 [[files]]

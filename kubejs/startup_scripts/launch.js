@@ -270,12 +270,12 @@ onEvent("block.registry", event => {
 	reagent(0x32333D, 0x5C5C5C, "basalt", "Basalt", "minecraft:basalt")
 	reagent(0x6B5D4F, 0x7D6B5A, "limestone", "Limestone", "create:limestone")
 	category()
-	reagent(0xD30000, 0xB80F0A, "red", "Crimson", ["minecraft:rose_bush", "minecraft:poppy", "minecraft:red_tulip"], "minecraft:red_dye")
-	reagent(0xFC6600, 0xb1560f, "orange", "Orange", ["minecraft:orange_tulip", "minecraft:pumpkin"], "minecraft:orange_dye")  //biomesoplenty:burning_blossom
-	reagent(0xFFF200, 0xdba520, "yellow", "Goldenrod", ["minecraft:sunflower", "minecraft:dandelion"], "minecraft:yellow_dye") //biomesoplenty:goldenrod
-	reagent(0x9dc183, 0x708238, "green", "Olive", ["minecraft:fern", "minecraft:cactus"], "minecraft:green_dye") //biomesoplenty:watergrass
-	reagent(0x57a0d2, 0x0080fe, "blue", "Azure", ["minecraft:cornflower", "minecraft:blue_orchid"], "minecraft:light_blue_dye") //biomesoplenty:blue_hydrangea
-	reagent(0xb200ed, 0xff66cc, "magenta", "Fuchsia", ["minecraft:lilac", "minecraft:allium", "minecraft:pink_tulip"], "minecraft:magenta_dye")
+	reagent(0xD30000, 0xB80F0A, "red", "Crimson", "minecraft:red_dye")
+	reagent(0xFC6600, 0xb1560f, "orange", "Orange", "minecraft:orange_dye")  //biomesoplenty:burning_blossom
+	reagent(0xFFF200, 0xdba520, "yellow", "Goldenrod", "minecraft:yellow_dye") //biomesoplenty:goldenrod
+	reagent(0x9dc183, 0x708238, "green", "Olive", "minecraft:green_dye") //biomesoplenty:watergrass
+	reagent(0x57a0d2, 0x0080fe, "blue", "Azure", "minecraft:light_blue_dye") //biomesoplenty:blue_hydrangea
+	reagent(0xb200ed, 0xff66cc, "magenta", "Fuchsia", "minecraft:magenta_dye")
 	category()
 	reagent(0xAC3B00, 0xD5AC26, "blaze", "Blazing", "minecraft:blaze_powder")
 	reagent(0x4F7E48, 0x8AD480, "slime", "Slime", "minecraft:slime_ball")

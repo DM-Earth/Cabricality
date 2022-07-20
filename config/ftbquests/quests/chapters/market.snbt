@@ -273,24 +273,13 @@
 				type: "item"
 				item: "kubejs:gold_coin"
 			}]
-			rewards: [
-				{
-					id: "26512E93CE404069"
-					type: "item"
-					icon: { id: "kubejs:silver_coin", Count: 64b }
-					auto: "enabled"
-					item: "kubejs:silver_coin"
-					count: 64
-				}
-				{
-					id: "6FA6A9A201CA27BE"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
+			rewards: [{
+				id: "73CB9C5EC1BED6EC"
+				type: "questsadditions:repeat"
+				icon: "kubejs:silver_coin"
+				auto: "disabled"
+				table_id: 477886174531820947L
+			}]
 		}
 		{
 			title: "Manual Exchange"
@@ -309,22 +298,12 @@
 				item: "kubejs:silver_coin"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "66BE3DDEC92812C4"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:gold_coin"
-				}
-				{
-					id: "6E78A95786CA5B28"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
+			rewards: [{
+				id: "341C8CC09CDE7DE6"
+				type: "questsadditions:repeat"
+				icon: "kubejs:gold_coin"
+				table_id: 6372636554880692939L
+			}]
 		}
 		{
 			title: "Corporate Dinner"
@@ -712,45 +691,6 @@
 			}]
 		}
 		{
-			title: "Adopt a Duck"
-			icon: "minecraft:egg"
-			x: -12.0d
-			y: -1.0d
-			subtitle: "5 Silver"
-			description: ["Quack"]
-			id: "6C00F2935F27C2AD"
-			tasks: [
-				{
-					id: "491FF95EFE8DCB67"
-					type: "item"
-					icon: { id: "kubejs:silver_coin", Count: 5b }
-					item: "kubejs:silver_coin"
-					count: 5L
-				}
-				{
-					id: "5F58BA2473FD6DDA"
-					type: "item"
-					item: "rubber_duck:rubber_duck_item"
-				}
-			]
-			rewards: [
-				{
-					id: "500098FD4762A38F"
-					type: "item"
-					auto: "enabled"
-					item: "exoticbirds:duck_spawn_egg"
-				}
-				{
-					id: "79C8307ED8450347"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
 			title: "Gardener's Starter Pack"
 			icon: "minecraft:sunflower"
 			x: -2.5d
@@ -852,8 +792,8 @@
 		}
 		{
 			title: "Railway Starter Pack"
-			icon: "minecraft:minecart"
-			x: -11.0d
+			icon: "create:track"
+			x: -12.0d
 			y: 2.0d
 			subtitle: "24 Silver"
 			id: "117587D824D23D69"
@@ -866,42 +806,35 @@
 			}]
 			rewards: [
 				{
-					id: "738387AED344C59B"
+					id: "1C2E41E36F025E51"
 					type: "item"
-					item: "moreminecarts:powered_locking_rail"
-					count: 8
+					item: "create:track"
+					count: 24
 				}
 				{
-					id: "4D33B3525FF09C68"
+					id: "10B6545937A8E8C2"
 					type: "item"
-					item: "minecraft:powered_rail"
-					count: 8
+					item: "create:railway_casing"
+					count: 32
 				}
 				{
-					id: "0A214A7B25C331F6"
+					id: "1D27EE55ACB76A42"
 					type: "item"
-					item: "minecraft:lever"
-					count: 8
+					item: "create:track_station"
+					count: 2
 				}
 				{
-					id: "3F0919FBED64778C"
+					id: "25E9F955D055C901"
 					type: "item"
-					item: "minecraft:rail"
-					count: 64
-				}
-				{
-					id: "6D3CCD1BF0BFD7D6"
-					type: "item"
-					item: "minecraft:rail"
-					count: 64
+					item: "create:controls"
 				}
 			]
 		}
 		{
 			title: "Pet Owner's Starter Pack"
 			icon: "minecraft:tropical_fish"
-			x: -13.0d
-			y: 1.0d
+			x: -12.0d
+			y: 0.0d
 			subtitle: "24 Silver"
 			id: "2D75D1864FB1EF75"
 			tasks: [{

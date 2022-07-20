@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "Build-a-Processing:"
-			icon: "minecraft:gold_ore"
+			icon: "create:deepslate_zinc_ore"
 			x: -9.0d
 			y: -4.0d
 			shape: "circle"
@@ -46,7 +46,7 @@
 		}
 		{
 			title: "I: Crushed"
-			icon: "create:crushed_gold_ore"
+			icon: "create:crushed_zinc_ore"
 			x: -9.0d
 			y: -2.0d
 			shape: "circle"
@@ -99,7 +99,7 @@
 		}
 		{
 			title: "II: Dust"
-			icon: "indrev:gold_dust"
+			icon: "createplus:zinc_dust"
 			x: -9.0d
 			y: 0.0d
 			shape: "circle"
@@ -117,12 +117,12 @@
 		}
 		{
 			title: "IIIb: Liquid"
-			icon: "indrev:molten_gold_bucket"
+			icon: "kubejs:molten_zinc_bucket"
 			x: -8.5d
 			y: 2.0d
 			shape: "circle"
 			subtitle: "[in Nuggets]"
-			dependencies: ["715BBD0DF0136FF1"]
+			dependencies: ["1A5A81CA749DAB2A"]
 			dependency_requirement: "one_completed"
 			id: "6509024553997AB0"
 			tasks: [{
@@ -132,7 +132,7 @@
 		}
 		{
 			title: "IIIa: Nugget"
-			icon: "minecraft:gold_nugget"
+			icon: "create:zinc_nugget"
 			x: -9.5d
 			y: 2.0d
 			shape: "circle"
@@ -202,13 +202,14 @@
 		}
 		{
 			title: "IV: Ingot"
-			icon: "minecraft:gold_ingot"
+			icon: "create:zinc_ingot"
 			x: -9.0d
 			y: 4.0d
 			shape: "circle"
 			dependencies: [
 				"1A5A81CA749DAB2A"
 				"2D33D7864925BFF9"
+				"715BBD0DF0136FF1"
 			]
 			dependency_requirement: "one_completed"
 			id: "2BE033F631A778D9"
@@ -218,12 +219,12 @@
 			}]
 		}
 		{
-			title: "Block Cooling"
+			title: "Block Cooling \\& Smelting"
 			icon: "kubejs:extractor_machine"
-			x: -7.0d
-			y: 3.0d
+			x: -6.0d
+			y: 0.0d
 			subtitle: "9 to 1"
-			dependencies: ["6509024553997AB0"]
+			dependencies: ["6B03056FA21424C0"]
 			id: "1A5A81CA749DAB2A"
 			tasks: [{
 				id: "7B5CAD7F1C63A9EC"
