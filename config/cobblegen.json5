@@ -29,13 +29,7 @@
   "stoneGen": [
     {
       "id": "minecraft:stone",
-      "weight": 100.0,
-      "minY": 0
-    },
-    {
-      "id": "minecraft:deepslate",
-      "weight": 100.0,
-      "maxY": 0
+      "weight": 100.0
     }
   ],
   "basaltGen": [
@@ -120,13 +114,6 @@
         }
       ]
     },
-    "basaltGen": {
-      "minecraft:bedrock": [
-        {
-          "id": "minecraft:basalt",
-          "weight": 100.0
-        }
-      ]
-    }
+    "basaltGen": {}
   }
 }
