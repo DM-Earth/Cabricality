@@ -2550,6 +2550,11 @@ hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
 metafile = true
 
 [[files]]
+file = "mods/bits-and-chisels.pw.toml"
+hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "c7db587d0799043490a1cdc144bbcc7a3ddaaff13e2f5ebbb145b796c1ce7115"
 metafile = true
@@ -2565,8 +2570,8 @@ hash = "7c95c7eb827be20a2ea98e9a5924e43c8123bfd2bcb01fdcc5a538d37faabe8f"
 metafile = true
 
 [[files]]
-file = "mods/create-mc1.18.2_v0.5.0+653.jar"
-hash = "5b8610235d8c0d15f363cf29f83f5156296aa09273321374d18c6235754e6781"
+file = "mods/create-mc1.18.2_v0.5.0+664.jar"
+hash = "8de202b80294726080cf0064824bd59b726ee2ae2a021cd6d171e504804b2c67"
 
 [[files]]
 file = "mods/createplus-1.0.0.jar"
