@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/cobblegen.json5"
-hash = "e627745061c9d44685adcfb5962eeecbe9ef99ff4698062fc7af3224cbdb9e55"
+hash = "f8b0cedb7dcafb5dc54d8c4e4941337df0ab8027b3c46482cbd1cbb8af0d15cd"
 
 [[files]]
 file = "config/entityculling.json"
@@ -761,6 +761,14 @@ file = "kubejs/assets/indrev/textures/block/condenser_on.png.mcmeta"
 hash = "54035f6387d4b752a9ddb8bf4745bf81bea294c945682ec5ed1c3713aa6ea20c"
 
 [[files]]
+file = "kubejs/assets/indrev/textures/block/deepslate_lead_ore.png"
+hash = "d0c2c5a727a6fc913b544d53a2c9d28acaec1fccaf03556ab8414a909f997555"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/deepslate_tin_ore.png"
+hash = "2d3d2460767c27dc70ba1578dfe8800848f6cd022b3010df7a73511e89285f01"
+
+[[files]]
 file = "kubejs/assets/indrev/textures/block/electric_furnace.png"
 hash = "00715a97c077453c4d9b21152dbc60e5145ead21b8c235dd69f6532a6f3af884"
 
@@ -791,6 +799,10 @@ hash = "f96d7dd219c2fe15bb73cbc8ff5374dc28922956a364a6ffdff4a3d146f127ab"
 [[files]]
 file = "kubejs/assets/indrev/textures/block/heat_generator_inside.png"
 hash = "eb44514a1a521b998ef8e996cea12a89a6807f6f7b3fc3eb8d6ce9b047e7b4db"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/lead_ore.png"
+hash = "0ddaf4c24aa3848ab7e9c92c6d0298bf9c45fb66d5a7b93a567a4bd1307b290d"
 
 [[files]]
 file = "kubejs/assets/indrev/textures/block/machine_block.png"
@@ -855,6 +867,10 @@ hash = "6740f174f90400c297b407d1bb7b7406b19552e95d130a52b8e8da883a5b8217"
 [[files]]
 file = "kubejs/assets/indrev/textures/block/solid_infuser_emissive_on.png.mcmeta"
 hash = "f7e1cb9a750ad8266c0d313f4bc8207ca0fc4c02f824f2a1cb7ab56d2c995f94"
+
+[[files]]
+file = "kubejs/assets/indrev/textures/block/tin_ore.png"
+hash = "ec771b76d757c4f965830a1517c51027c3daebb6a72979166d2ce745fc09d048"
 
 [[files]]
 file = "kubejs/assets/indrev/textures/item/bronze_dust.png"
@@ -983,10 +999,6 @@ hash = "ab9124635d718408f6bdeadabc6ff7667f11f3093866d6bb25ecf046d645b8b5"
 [[files]]
 file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_5.png"
 hash = "2f5d101242feb1a1c9b3dd77c68cb718846c8afefce0d5b4b6f1b2ed32e3677a"
-
-[[files]]
-file = "kubejs/client_scripts/client.js"
-hash = "aeddcb4159342df851c0e24d9aec7190a11e28b832384231d9d3eb999df5b1dd"
 
 [[files]]
 file = "kubejs/data/c/tags/items/barrels/wooden.json"
