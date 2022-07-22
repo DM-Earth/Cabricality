@@ -2690,7 +2690,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "855e0719b4197d739e61461e3be8bebf9a660d7db272bf2881582e16ca217fa1"
+hash = "5952e18d068484d328dccf4a99dad06e3d40298b7c7e675982561454f861b083"
 metafile = true
 
 [[files]]
@@ -2755,7 +2755,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "cfd4496517e58bb2406164c9b598879d7f835484564109bf14352f618f891b43"
+hash = "c601cd083d37884b735b5e9b2750a6ddec4482061f49884b72bce95e708b6654"
 metafile = true
 
 [[files]]
