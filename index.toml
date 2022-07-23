@@ -1001,6 +1001,18 @@ file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_5.png"
 hash = "2f5d101242feb1a1c9b3dd77c68cb718846c8afefce0d5b4b6f1b2ed32e3677a"
 
 [[files]]
+file = "kubejs/client_scripts/client.js"
+hash = "b23450c2db9f352efdc8a999fbc2b8c8479f3c3bd6d69908e1c0932348c26baa"
+
+[[files]]
+file = "kubejs/data/ae2/loot_tables/blocks/deepslate_quartz_ore.json"
+hash = "b27b5a034c714019905215f80118222cc57d00dfcb6ffa94e8f82409722eb18d"
+
+[[files]]
+file = "kubejs/data/ae2/loot_tables/blocks/quartz_ore.json"
+hash = "156b3cf474636e95bf1b95bf27b3b0e7c2eb543460ac96c07991f59047b0c90f"
+
+[[files]]
 file = "kubejs/data/c/tags/items/barrels/wooden.json"
 hash = "cc11f9251b5a741fe67f14bde23a27b3b612add973ba5c6cfdb2a44e2ff901b2"
 
