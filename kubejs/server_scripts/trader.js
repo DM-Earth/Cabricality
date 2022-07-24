@@ -210,7 +210,7 @@ onEvent('recipes', event => {
         ],
         "key": {
           "S": {
-            "item": "create:golden_sheet"
+            "item": "create:brass_sheet"
           },
           "P": {
             "item": "minecraft:paper"

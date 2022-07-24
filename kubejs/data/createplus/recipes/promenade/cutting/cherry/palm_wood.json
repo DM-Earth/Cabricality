@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+		{
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "promenade"
+      ]
+		}
+  ],
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "promenade:cherry_oak_wood"
+    }
+  ],
+  "results": [
+    {
+      "item": "promenade:stripped_cherry_oak_wood"
+    }
+  ],
+  "processingTime": 50
+}

@@ -25,3 +25,38 @@ onEvent('rei.remove.categories', event => {
 	event.yeet('create:item_application')
 	event.yeet('create:mystery_conversation')
 })
+
+onEvent('rei.add.items', event => {
+  event.add('create:crushed_silver_ore')
+	event.add('create:crushed_lead_ore')
+	event.add('create:crushed_nickel_ore')
+	event.add('create:crushed_tin_ore')
+})
+onEvent('rei.hide.items', event => {
+  event.hide('indrev:raw_silver_block')
+	event.hide('indrev:raw_silver')
+	event.hide('indrev:silver_ore')
+	event.hide('indrev:deepslate_silver_ore')
+	event.hide('indrev:silver_purified_ore')
+
+	event.hide('indrev:raw_tungsten_block')
+	event.hide('indrev:tungsten_ore')
+	event.hide('indrev:deepslate_tungsten_ore')
+	event.hide('indrev:tungsten_purified_ore')
+	event.hide('indrev:tungsten_ingot')
+	event.hide('indrev:tungsten_plate')
+	event.hide('indrev:tungsten_block')
+	event.hide('indrev:tungsten_nugget')
+	event.hide('indrev:tungsten_dust')
+	event.hide('indrev:raw_tungsten')
+	event.hide('indrev:molten_tungsten_bucket')
+
+	event.hide('indrev:copper_plate')
+	event.hide('indrev:iron_plate')
+	event.hide('indrev:gold_plate')
+
+	event.hide('agape_space:copper_plate')
+	event.hide('agape_space:iron_plate')
+	event.hide('agape_space:gold_plate')
+	event.hide('agape_space:aluminum_plate')
+})

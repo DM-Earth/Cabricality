@@ -15,6 +15,7 @@ let AR = (id, x) => MOD("agape_space", id, x)
 let AP = (id, x) => MOD("architects_palette", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 let ED = (id, x) => MOD("extended_drawers", id, x)
+let BC = (id, x) => MOD("bitsandchisels", id, x)
 
 let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), PMD('dark_amaranth'), PMD('palm'), PMD('cherry_oak'), AP('twisted')]
 
@@ -148,6 +149,88 @@ function tweaks(event) {
 	upgradeAll(IV('pulverizer_mkTL'), 1, 4, 4)
 	upgradeAll(IV('electric_furnace_mkTL'), 1, 4, 4)
 	upgradeAll(IV('lazuli_flux_container_mkTL'), 1, 4, 4)
+
+	event.remove({ output: MC("hopper") })
+	event.shaped(MC('hopper'), [
+		'T T',
+		'S S',
+		' S '
+	], {
+		T: IV('tin_ingot'),
+		S: IV('steel_plate')
+	})
+	event.remove({ output: KB("fluid_hopper") })
+	event.shaped(KB('fluid_hopper'), [
+		'T T',
+		'C C',
+		' C '
+	], {
+		T: IV('lead_ingot'),
+		C: CR('copper_sheet')
+	})
+	event.remove({ output: IV("planks") })
+	event.recipes.createPressing(IV("planks"), MC('#wooden_slabs'))
+	event.remove({ output: ED("single_drawer") })
+	event.shaped(ED('single_drawer'), [
+		'P',
+		'B',
+		'P'
+	], {
+		B: MC('barrel'),
+		P: IV('planks')
+	})
+	event.remove({ output: ED("connector") })
+	event.shaped(ED('connector'), [
+		'P',
+		'W',
+		'P'
+	], {
+		W: MC('#planks'),
+		P: IV('planks')
+	})
+	event.remove({ output: ED("double_drawer") })
+	event.shaped(ED('double_drawer', 2), [
+		'PP'
+	], {
+		P: ED('single_drawer')
+	})
+	event.remove({ output: ED("quad_drawer") })
+	event.shaped(ED('quad_drawer', 4), [
+		'PP',
+		'PP'
+	], {
+		P: ED('single_drawer')
+	})
+	event.remove({ output: ED("quad_drawer") })
+	event.shaped(ED('quad_drawer', 2), [
+		'P',
+		'P'
+	], {
+		P: ED('double_drawer')
+	})
+	event.remove({ output: ED("t4_upgrade") })
+	event.remove({ output: ED("upgrade_frame") })
+	event.stonecutting(ED('upgrade_frame'), IV('planks'))
+	upgrade(ED('upgrade_frame'), ED('t1_upgrade'), 2)
+	upgrade(ED('t1_upgrade'), ED('t2_upgrade'), 3)
+	upgrade(ED('t2_upgrade'), ED('t3_upgrade'), 4)
+	event.remove({ output: ED("lock") })
+	event.shaped(ED('lock', 1), [
+		'B',
+		'G'
+	], {
+		B: CR('brass_nugget'),
+		G: CR('golden_sheet')
+	})
+	event.replaceInput({ output: AP('nether_brass_blend') }, MC('copper_ingot'), IV('copper_dust'))
+
+	event.remove({ output: BC("smart_chisel") })
+	event.shaped(ED('lock', 1), [
+		'SB'
+	], {
+		S: MC('stick'),
+		B: CR('polished_rose_quartz')
+	})
 }
 
 function trickierWindmills(event) {
@@ -363,7 +446,7 @@ function oreProcessing(event) {
 		let ores = '#c:ores/' + e
 		process(ingot, nugget, raw, crushed, dust, ores)
 	})
-	let metalsIndrev = ['tin', 'silver', 'lead']
+	let metalsIndrev = ['tin', 'lead']
 	metalsIndrev.forEach(e => {
 		let ingot = 'indrev:' + e + '_ingot'
 		let nugget = 'indrev:' + e + '_nugget'
@@ -410,7 +493,7 @@ function initCopperMachine(event) {
 	}
 	copper_machine('create:copper_backtank', 1, MC("copper_block"))
 	copper_machine('create:portable_fluid_interface', 2)
-	copper_machine('create:spout', 1, MC('hopper'))
+	copper_machine('create:spout', 1, KB('fluid_hopper'))
 	copper_machine('indrev:tier_upgrade_mk2', 1, MC('redstone'))
 	copper_machine('create:hose_pulley', 1)
 	copper_machine('create:item_drain', 1, MC("iron_bars"))
@@ -990,7 +1073,7 @@ function trading(event) {
 }
 
 function spaceCraft(event) {
-	event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).heated()
+	event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
 	let gear = AR("netherite_gear")
 	let plastic = KJ("matter_plastics")
 	let machine = AE2("controller")
