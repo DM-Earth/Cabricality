@@ -1,25 +1,29 @@
 {
 	id: "44F68408CAD025B8"
 	group: "0810E42B2DD79973"
-	order_index: 0
+	order_index: 1
 	filename: "market"
-	title: "&a The Market"
+	title: "&6▶ 市集"
 	icon: "minecraft:chest"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Sleepless"
+			title: "梦游"
 			icon: "minecraft:cyan_bed"
 			x: -10.0d
 			y: -1.0d
-			subtitle: "10 Silver"
-			description: ["Your last resort in case the sundown beat you to it."]
+			subtitle: "10 银币 - 毋有梦魇"
+			description: [
+				"面对日落，我们并非无计可施..."
+				""
+				"至少，假装有地方睡觉能够理所当然地赐予你时间去做更多事。"
+			]
 			id: "5D17CB247942013A"
 			tasks: [{
 				id: "0783860FB502A201"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 10b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 10L
 			}]
@@ -30,17 +34,17 @@
 			}]
 		}
 		{
-			title: "Fortress Locator"
+			title: "自找上门"
 			icon: "create:blaze_burner"
 			x: -7.5d
-			y: 0.5d
-			subtitle: "2 Gold"
-			description: ["Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times."]
+			y: -0.4821428571428612d
+			subtitle: "2 金币 - 你真的要买？"
+			description: ["如果你不想在下界漫无目的地散步，买它就对了。"]
 			id: "252B9DD5BFB8184A"
 			tasks: [{
 				id: "5345AA8760A95127"
 				type: "item"
-				icon: { id: "kubejs:gold_coin", Count: 2b }
+				icon: "kubejs:gold_coin"
 				item: "kubejs:gold_coin"
 				count: 2L
 			}]
@@ -57,15 +61,15 @@
 			}]
 		}
 		{
-			title: "Saw everything"
+			title: "锯我所知"
 			icon: {
 				id: "kubejs:netherite_saw"
 				Count: 1b
 				tag: {
 					RepairCost: 0
 					Enchantments: [{
-						lvl: 3s
 						id: "minecraft:unbreaking"
+						lvl: 3s
 					}]
 					Damage: 0
 					display: {
@@ -75,8 +79,8 @@
 			}
 			x: -8.5d
 			y: -6.5d
-			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
+			subtitle: "5 金币 - 锯不接受！"
+			description: ["购买它以在组装&6动力构件&r时最小化工具磨损。"]
 			hide_dependency_lines: true
 			id: "4F953BACF4D1C151"
 			tasks: [
@@ -94,9 +98,9 @@
 				{
 					id: "3EE8736C08EF80F4"
 					type: "item"
-					icon: { id: "kubejs:gold_coin", Count: 5b }
+					icon: "kubejs:gold_coin"
 					item: "kubejs:gold_coin"
-					count: 5L
+					count: 3L
 				}
 			]
 			rewards: [{
@@ -107,38 +111,38 @@
 					Count: 1b
 					tag: {
 						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
+						}
 					}
 				}
 			}]
 		}
 		{
-			title: "Never Screwed"
+			title: "从不螺"
 			icon: {
 				id: "kubejs:screwdriver"
 				Count: 1b
 				tag: {
 					Damage: 0
 					Enchantments: [{
-						lvl: 3s
 						id: "minecraft:unbreaking"
+						lvl: 3s
 					}]
 				}
 			}
 			x: -7.0d
 			y: -6.5d
-			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
+			subtitle: "5 金币 - 高级打工人必备"
+			description: ["购买它以在组装&6精密构件&r时最小化工具磨损。"]
 			id: "72CACE8F0E4701B1"
 			tasks: [
 				{
@@ -167,37 +171,37 @@
 					id: "kubejs:screwdriver"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+						}
 					}
 				}
 			}]
 		}
 		{
-			title: "Magnetic Energetic"
+			title: "永久磁铁"
 			icon: {
 				id: "kubejs:chromatic_resonator"
 				Count: 1b
 				tag: {
 					Damage: 0
 					Enchantments: [{
-						lvl: 3s
 						id: "minecraft:unbreaking"
+						lvl: 3s
 					}]
 				}
 			}
 			x: -5.0d
 			y: -6.5d
-			subtitle: "7 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms&r."]
+			subtitle: "7 金币 - 贴贴！"
+			description: ["购买它以在组装&6超频构件&r时最小化工具磨损。"]
 			id: "43FC566E833BE834"
 			tasks: [
 				{
@@ -214,9 +218,10 @@
 				{
 					id: "5B31A98B9EFCCFAB"
 					type: "item"
-					icon: { id: "kubejs:gold_coin", Count: 7b }
+					icon: "kubejs:gold_coin"
 					item: "kubejs:gold_coin"
 					count: 7L
+					consume_items: false
 				}
 			]
 			rewards: [{
@@ -226,30 +231,31 @@
 					id: "kubejs:chromatic_resonator"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 					}
 				}
 			}]
 		}
 		{
-			title: "The Market"
+			title: "&6&l市集"
 			icon: "minecraft:chest"
 			x: -6.0d
 			y: -4.0d
 			shape: "hexagon"
+			subtitle: "你甚至可以买到..."
 			description: [
-				"&6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
+				"在&6市集，&r你可以买到许多有趣的商品和小部件。它们有的能助你完成任务，还有的能帮你打发时间。"
 				""
-				"Have a look around. I'm sure you'll find something of use."
+				"四处逛逛吧，我相信你会爱上这里的！"
 			]
 			size: 2.0d
 			id: "0F870BEA235D662D"
@@ -259,13 +265,13 @@
 			}]
 		}
 		{
-			title: "Manual Exchange"
-			icon: { id: "kubejs:silver_coin", Count: 16b }
+			title: "货币兑换"
+			icon: { id: "kubejs:silver_coin", Count: 64b }
 			x: -4.0d
 			y: -4.0d
 			shape: "circle"
-			subtitle: "Gold -> Silver"
-			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
+			subtitle: "金 -> 银   汇率 1:64"
+			description: ["在这里，你可以用一枚金币换回一组银币。"]
 			dependencies: ["0F870BEA235D662D"]
 			id: "5326F6482C45D22A"
 			tasks: [{
@@ -282,19 +288,19 @@
 			}]
 		}
 		{
-			title: "Manual Exchange"
-			icon: { id: "kubejs:gold_coin", Count: 2b }
+			title: "货币兑换"
+			icon: "kubejs:gold_coin"
 			x: -8.0d
 			y: -4.0d
 			shape: "circle"
-			subtitle: "Silver -> Gold"
-			description: ["Some trades require you to hand in Gold Coins. These are worth a stack of Silver each."]
+			subtitle: "银 -> 金   汇率 64:1"
+			description: ["有些交易需要用金币支付。每一枚金币价值一组银币。"]
 			dependencies: ["0F870BEA235D662D"]
 			id: "1A566C74B1F7F050"
 			tasks: [{
 				id: "2387D852CA97AD1A"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 64b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 64L
 			}]
@@ -306,17 +312,17 @@
 			}]
 		}
 		{
-			title: "Corporate Dinner"
+			title: "聚餐"
 			icon: "farmersdelight:steak_and_potatoes"
 			x: -8.0d
 			y: -2.0d
-			subtitle: "10 Silver"
-			description: ["Sometimes you have to treat yourself and the co-workers to a nice meal."]
+			subtitle: "10 银币 - 横扫饥饿"
+			description: ["一般情况下，聚餐可以增进友谊，顺带帮助你饱餐一顿。"]
 			id: "09DC2E2BE2BE32F4"
 			tasks: [{
 				id: "6235F365D702DF2B"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 10b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 10L
 			}]
@@ -354,17 +360,17 @@
 			]
 		}
 		{
-			title: "Landfill Pickup"
+			title: "填海造陆工程 III期"
 			icon: "minecraft:dirt"
 			x: -6.0d
-			y: 0.0d
-			subtitle: "15 Silver"
-			description: ["Early on it might help to import some dirt for base building."]
+			y: -0.9821428571428541d
+			subtitle: "15 银币 - 只是些泥土⁈"
+			description: ["来自大地的馈赠，当然，要花钱。"]
 			id: "4B01606CE7AF3121"
 			tasks: [{
 				id: "188BEC2BA245DB13"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 15b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 15L
 			}]
@@ -390,26 +396,28 @@
 			]
 		}
 		{
-			title: "Test of Patience"
+			title: "请求超时"
 			icon: {
 				id: "minecraft:barrel"
 				Count: 1b
 				tag: {
 					Enchantments: [{
-						lvl: 1s
 						id: "minecraft:unbreaking"
+						lvl: 1s
 					}]
 				}
 			}
 			x: -9.0d
 			y: 0.0d
-			subtitle: "50 Silver"
-			description: ["This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite. But what will await you at the bottom?"]
+			subtitle: "50 银币 - 刷新一遍试试..."
+			description: [
+				"这看似平平无奇的盒子却有几乎无限层。而你能做的，就是一层层把它亲手打开，再如此重复..."
+				"&7这神秘的盒子并不廉价，最深处又会有着什么呢？"
+			]
 			id: "09EA580B3D32FEEB"
 			tasks: [{
 				id: "3EA558277444F605"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 50b }
 				item: "kubejs:silver_coin"
 				count: 50L
 			}]
@@ -428,8 +436,6 @@
 							Items: [
 								{
 									Slot: 11b
-									id: "minecraft:paper"
-									Count: 1b
 									tag: {
 										RepairCost: 0
 										display: {
@@ -437,11 +443,11 @@
 											bold: 0b
 										}
 									}
+									Count: 1b
+									id: "minecraft:paper"
 								}
 								{
 									Slot: 15b
-									id: "minecraft:barrel"
-									Count: 1b
 									tag: {
 										display: {
 											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -450,19 +456,17 @@
 											Items: [
 												{
 													Slot: 3b
-													id: "minecraft:paper"
-													Count: 1b
 													tag: {
 														RepairCost: 0
 														display: {
 															Name: "{\"italic\": false, \"text\":\"You'll have to unbox a few of these\"}"
 														}
 													}
+													Count: 1b
+													id: "minecraft:paper"
 												}
 												{
 													Slot: 23b
-													id: "minecraft:barrel"
-													Count: 1b
 													tag: {
 														display: {
 															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -471,8 +475,6 @@
 															Items: [
 																{
 																	Slot: 11b
-																	id: "minecraft:barrel"
-																	Count: 1b
 																	tag: {
 																		display: {
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
@@ -481,62 +483,68 @@
 																			LootTable: "custom:chests/patience_1"
 																		}
 																	}
+																	Count: 1b
+																	id: "minecraft:barrel"
 																}
 																{
 																	Slot: 13b
-																	id: "minecraft:paper"
-																	Count: 1b
 																	tag: {
 																		RepairCost: 0
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Good luck, see you at the bottom!\"}"
 																		}
 																	}
+																	Count: 1b
+																	id: "minecraft:paper"
 																}
 																{
 																	Slot: 14b
-																	id: "minecraft:apple"
-																	Count: 1b
 																	tag: {
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
 																		}
 																	}
+																	Count: 1b
+																	id: "minecraft:apple"
 																}
 															]
 															id: "minecraft:barrel"
 														}
 													}
+													Count: 1b
+													id: "minecraft:barrel"
 												}
 											]
 											id: "minecraft:barrel"
 										}
 									}
+									Count: 1b
+									id: "minecraft:barrel"
 								}
 							]
 							id: "minecraft:barrel"
 						}
-						HideFlags: 1
 						display: {
 							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
 							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
+						HideFlags: 1
 					}
 				}
 			}]
 		}
 		{
-			title: "Enderpack"
+			title: "史蒂夫的负重旅行"
 			icon: "minecraft:shulker_box"
 			x: -4.5d
 			y: -0.5d
-			subtitle: "55 Silver"
-			description: ["It's like a backpack but classy."]
+			subtitle: "55 银币 - 再往他肩膀上加点东西！"
+			description: ["便携背包，古典款。易用。不试试吗？"]
 			id: "4FD46F841CCD59F8"
 			tasks: [{
 				id: "709557A517B0143F"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 55b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 55L
 			}]
@@ -559,16 +567,17 @@
 			]
 		}
 		{
-			title: "1-Up!"
+			title: "半条命！"
 			icon: "minecraft:totem_of_undying"
 			x: -3.0d
 			y: 0.0d
-			subtitle: "60 Silver"
+			subtitle: "60 银币 - 嘿，快把你的VR头显摘下来！"
+			description: ["我担心原主回来索命。"]
 			id: "6D9F2FBEB7CC5195"
 			tasks: [{
 				id: "165B9A886A26BCC8"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 60b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 60L
 			}]
@@ -579,17 +588,22 @@
 			}]
 		}
 		{
-			title: "Where mob ?"
+			title: "妖魔鬼怪快离开"
 			icon: "create:haunted_bell"
-			x: -2.0d
+			x: -5.0d
 			y: 1.0d
-			subtitle: "45 Silver"
-			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
+			subtitle: "45 银币 - 看我老爹施法"
+			description: [
+				"如你所见，这一罩蕴含着魔法的钟可以驱散它周围无光环境中潜藏着的鬼怪！现场试用，七天无理由退货！购买捆绑包并置于随附灵魂火上更能响上加响！保证你此生不再有异变之患！"
+				"&7温馨提示：广告创意，请以实物为准。"
+				""
+				"&4灵梦：谁抢我活"
+			]
 			id: "4B52A04818075900"
 			tasks: [{
 				id: "4FB1B4787D648565"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 35b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 45L
 			}]
@@ -607,7 +621,7 @@
 			]
 		}
 		{
-			title: "Windows Update"
+			title: "Windows 更新"
 			icon: {
 				id: "kubejs:flash_drive"
 				Count: 1b
@@ -617,15 +631,15 @@
 						Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
 					}
 					Enchantments: [{
-						lvl: 10s
 						id: "minecraft:unbreaking"
+						lvl: 10s
 					}]
 				}
 			}
 			x: -3.5d
 			y: -6.5d
-			subtitle: "7 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms&r."]
+			subtitle: "11 金币 - 是时候升级你的 XP 啦！"
+			description: ["购买它以在组装&6智能构件&r时最小化工具磨损。"]
 			id: "00D6DD6AE8E3C014"
 			tasks: [
 				{
@@ -642,9 +656,9 @@
 				{
 					id: "04FA9389D991556D"
 					type: "item"
-					icon: { id: "kubejs:gold_coin", Count: 11b }
+					icon: "kubejs:gold_coin"
 					item: "kubejs:gold_coin"
-					count: 7L
+					count: 11L
 				}
 			]
 			rewards: [{
@@ -654,32 +668,32 @@
 					id: "kubejs:flash_drive"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 					}
 				}
 			}]
 		}
 		{
-			title: "Press Express"
+			title: "快压紧"
 			icon: "ae2:silicon_press"
-			x: 0.0d
-			y: 1.0d
-			subtitle: "6 Gold"
-			description: ["True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!"]
+			x: -1.0d
+			y: -2.0d
+			subtitle: "6 金币 - 马上就到你家门口"
+			description: ["技术人员们一般不太喜欢出门，当然，宅们也不喜欢。庆幸的是，这几份板件现在可以直接派送到你的包里。"]
 			id: "4BAC95CCC72369AD"
 			tasks: [{
 				id: "3D328A6D69E64EDA"
 				type: "item"
-				icon: { id: "kubejs:gold_coin", Count: 12b }
+				icon: "kubejs:gold_coin"
 				item: "kubejs:gold_coin"
 				count: 6L
 			}]
@@ -691,16 +705,17 @@
 			}]
 		}
 		{
-			title: "Gardener's Starter Pack"
+			title: "你的永恒花园"
 			icon: "minecraft:sunflower"
-			x: -2.5d
-			y: -1.5d
-			subtitle: "24 Silver"
+			x: -4.0d
+			y: -1.9821428571428612d
+			subtitle: "24 银币 - 这里可没有迷迭香！"
+			description: ["当个守林人也不是不行。"]
 			id: "42384DE39AA48976"
 			tasks: [{
 				id: "05BB5DFA82280C0C"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 24b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -726,16 +741,17 @@
 			]
 		}
 		{
-			title: "Painter's Starter Kit"
+			title: "绘师养成记"
 			icon: "minecraft:painting"
-			x: -9.5d
-			y: 1.5d
-			subtitle: "24 Silver"
+			x: -7.0d
+			y: 1.0d
+			subtitle: "24 银币 - 不赠送入门课程"
+			description: ["嘶哈嘶哈"]
 			id: "61B040CD0832EFC0"
 			tasks: [{
 				id: "6404722100F1DEF7"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 24b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -791,16 +807,17 @@
 			]
 		}
 		{
-			title: "Railway Starter Pack"
+			title: "铁轨专家养成记"
 			icon: "create:track"
-			x: -12.0d
-			y: 2.0d
-			subtitle: "24 Silver"
+			x: -11.0d
+			y: -2.0d
+			subtitle: "24 银币 - 学开车，啊不，学开火车"
+			description: ["火车来喽！"]
 			id: "117587D824D23D69"
 			tasks: [{
 				id: "06C835DB602D6F9F"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 24b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -831,16 +848,17 @@
 			]
 		}
 		{
-			title: "Pet Owner's Starter Pack"
+			title: "铲屎官的成长之路"
 			icon: "minecraft:tropical_fish"
-			x: -12.0d
-			y: 0.0d
-			subtitle: "24 Silver"
+			x: -11.0d
+			y: 1.0d
+			subtitle: "24 银币 - 不只是因为寂寞"
+			description: ["都给我变！"]
 			id: "2D75D1864FB1EF75"
 			tasks: [{
 				id: "3AA788B63B6A73EF"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 24b }
+				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -877,17 +895,19 @@
 			]
 		}
 		{
-			title: "Instant Aesthetics"
+			title: "土木工程入门"
 			icon: "minecraft:oak_leaves"
-			x: 1.0d
-			y: -1.0d
-			subtitle: "24 Silver"
-			description: ["Not too stoked with your facade? Not a problem! Foliage solves everything."]
+			x: -1.0d
+			y: 1.0d
+			subtitle: "24 银币 - 记得带桶"
+			description: [
+				"用树叶盖满你的机器！"
+				"&7不用担心结构问题，你和机器其中一个能跑就行。"
+			]
 			id: "7D93DAB3E8ACF953"
 			tasks: [{
 				id: "06028A67C6DCCD00"
 				type: "item"
-				icon: { id: "kubejs:silver_coin", Count: 24b }
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -931,17 +951,18 @@
 			]
 		}
 		{
-			title: "No, not the bees!"
+			title: "蜂窝移动网络"
 			icon: "minecraft:bee_nest"
-			x: -1.0d
-			y: -2.0d
-			subtitle: "48 Silver"
+			x: -2.0d
+			y: -1.0d
+			subtitle: "48 银币 - 我打赌你的信号不好"
+			description: ["随附蜜蜂刷怪蛋，小心使用。"]
 			id: "003E0D1CE60B166A"
 			tasks: [
 				{
 					id: "6837BEE1075CC785"
 					type: "item"
-					icon: { id: "kubejs:silver_coin", Count: 48b }
+					icon: "kubejs:silver_coin"
 					item: "kubejs:silver_coin"
 					count: 48L
 				}

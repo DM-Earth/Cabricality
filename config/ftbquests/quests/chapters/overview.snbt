@@ -3,33 +3,32 @@
 	group: "331B6409EF6A7840"
 	order_index: 0
 	filename: "overview"
-	title: " Overview"
+	title: "&a▶ 纵览"
 	icon: "minecraft:oak_sapling"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Andesite Machinery"
+			title: "&f&l安山时代"
 			disable_toast: true
 			x: -10.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "Milestone"
+			subtitle: "里程碑"
 			description: [
-				"With Kinetic Mechanisms automated, many new possibilities unfold. Most of Create's machinery can now be crafted without much hassle. The early game just got a bit less early!"
+				"现在你已经完成了&6动力构件&r的自动化！这样一来，机械动力的很多机器都可以手工制作了。"
 				""
-				"You can now continue, or choose to spend some time in the bonus section of Chapter 1. After all, a stronger supply of Copper Machines will come to be quite useful, too!"
+				"你现在可以选择继续发展&6第二章：初入门道&r的内容，或转而攻克&4第一章支线：橡胶垄断&r的挑战。无论如何，保证&4铜机器&r的充足供应总不会是件坏事！"
 			]
 			dependencies: [
 				"61147823CC87F711"
 				"675C395B2074C24C"
 			]
-			hide_text_until_complete: true
 			id: "0E98B4D2BBF55308"
 			tasks: [{
 				id: "36F8C3CAF6FC3FB2"
 				type: "stat"
-				title: "Complete Chapter 1"
+				title: "&6完成第一章"
 				icon: "kubejs:kinetic_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_one_minute"
@@ -37,15 +36,15 @@
 			}]
 		}
 		{
-			title: "Brass Machinery"
+			title: "&f&l黄铜时代"
 			disable_toast: true
 			x: -7.0d
 			y: 0.0d
-			subtitle: "Milestone"
+			subtitle: "里程碑"
 			description: [
-				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life."
+				"这么快你就能够自动生产&6精密构件&r了，真是令人惊讶！这下你已经解锁机械动力的几乎全部内容了。现在，从改进生产方式到改善生活环境的工具你应有尽有。&6黄铜色...&r多么好看的颜色！"
 				""
-				"It also opens the gate leading towards the Invar Age- potentially after a quick stop by the bonus section.."
+				"当然不能懈怠！等你在&2第二章支线：流动产业&r稍作休整后，就该向着&6第三章：钢铁洪流&r进发了！"
 			]
 			dependencies: [
 				"1E263994D4883A08"
@@ -55,7 +54,7 @@
 			tasks: [{
 				id: "0FF38BBE3B19D9C2"
 				type: "stat"
-				title: "Complete Chapter 2"
+				title: "&6完成第二章"
 				icon: "create:precision_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_one_minute"
@@ -63,15 +62,16 @@
 			}]
 		}
 		{
-			title: "Invar Machinery"
+			title: "&f&l合金时代"
 			disable_toast: true
 			x: -4.0d
 			y: 0.0d
-			subtitle: "Milestone"
+			subtitle: "里程碑"
 			description: [
-				"A completely different age of Technology. Some machines are suddenly powered by some hardly observable magical energy."
+				"科技发展的终点是&6魔法。&r现在你的一些机器已经被一些不是科学而是玄学的奇妙能量控制住了，&6不是吗？&r"
 				""
-				"The Launch feels very close now. While there still lie challenges ahead, the solution footprint will shrink again thanks to the new Appliances."
+				"好吧，先不谈这些...放眼望去，你马上就能踏出历史性的一步了！&6新技术的合理运用&r能够继续推动你前进。"
+				"&7一小步，还是一大步？"
 			]
 			dependencies: [
 				"780E8AE86250C73D"
@@ -81,7 +81,7 @@
 			tasks: [{
 				id: "7FEEF6BED2C3F31B"
 				type: "stat"
-				title: "Complete Chapter 3"
+				title: "&6完成第三章"
 				icon: "kubejs:inductive_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_one_minute"
@@ -89,15 +89,16 @@
 			}]
 		}
 		{
-			title: "Fluix Machinery"
+			title: "&f&l智能时代"
 			disable_toast: true
 			x: -1.0d
 			y: 0.0d
-			subtitle: "Milestone"
+			subtitle: "里程碑"
 			description: [
-				"With Calculation Mechanisms, the Factory enters the Digital Age. Instant Material-Energy conversion (ME) revolutionises item and fluid logistics for both the assembly lines and personal use."
+				"在&6智能构件&r的帮助下，你的工厂将会全面数字化！&6即时物能转换（ME转换）&r将会带来前所未有的技术革新！无论是对你的工厂还是你自己，意义同样重大。"
 				""
-				"At this point, all of the tools necessary to facilitate space travel have become accessible. Might as well start a countdown."
+				"现在，你已经可以制造&6所有&r探索深空所需的材料和零件了。也许，可以提前开始安排倒计时了？"
+				"&710, 9, 8..."
 			]
 			min_required_dependencies: 3
 			dependencies: [
@@ -111,7 +112,7 @@
 			tasks: [{
 				id: "79AB928A6C8E21DA"
 				type: "stat"
-				title: "Complete Chapter 4"
+				title: "&6完成第四章"
 				icon: "kubejs:calculation_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_one_minute"
@@ -119,15 +120,14 @@
 			}]
 		}
 		{
-			title: "Copper Machinery"
+			title: "&4&l铜时代"
 			disable_toast: true
 			x: -8.0d
 			y: 2.5d
-			subtitle: "Utility"
+			subtitle: "&4挑战"
 			description: [
-				"Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
-				""
-				"Note that Sealed Mechanisms are an ingredient to nothing else. The main assembly line will continue with Kinetic Mechanisms."
+				"&4铜机器&r将会满足你对流体处理的所有需求。无论是释放还是抽取、交互、过滤...你现在可以向你的工厂中引入全自动流体处理系统了！"
+				"&7气密构件仅会在&4第一章支线：橡胶垄断&7中使用。"
 			]
 			dependencies: [
 				"7D872F933F45809B"
@@ -137,7 +137,7 @@
 			tasks: [{
 				id: "27B07858A6018539"
 				type: "stat"
-				title: "Complete Bonus 1A"
+				title: "&4完成第一章 &7支线"
 				icon: "kubejs:sealed_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_one_minute"
@@ -145,13 +145,13 @@
 			}]
 		}
 		{
-			title: "Zinc Machinery"
+			title: "&2&l锌时代"
 			disable_toast: true
 			x: -5.0d
 			y: -2.5d
-			subtitle: "Utility"
+			subtitle: "&2挑战"
 			description: [
-				"Zinc Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
+				"&2锌机器&r不可置信地强大！从高效刷石到物品收集，它全都能胜任！是时候好好利用这些&2酷热的强大机器&r来为你的工厂添砖加瓦了。"
 				""
 				"Note that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms."
 			]
@@ -163,7 +163,7 @@
 			tasks: [{
 				id: "12CFC84D3F01F49F"
 				type: "stat"
-				title: "Complete Bonus 2A"
+				title: "&2完成第二章 &7支线"
 				icon: "kubejs:infernal_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_one_minute"
@@ -171,12 +171,12 @@
 			}]
 		}
 		{
-			title: "Ender Machinery"
+			title: "&3&l末影时代"
 			disable_toast: true
 			x: -2.0d
 			y: 2.5d
-			subtitle: "Utility"
-			description: ["Ender Machines provide not only access to instant Teleportation, but also to the most powerful upgrades for your machines."]
+			subtitle: "&3挑战"
+			description: ["&3传...传送！&r有了&3末影合金机器&r后，你不仅能在眨眼间移动物品和流体，还能给你的工厂全面安装上史上最强的升级..."]
 			dependencies: [
 				"2BB2C7B95E3C89AE"
 				"6DBEF7A11890ADF8"
@@ -193,12 +193,13 @@
 			}]
 		}
 		{
-			title: "From a Tree Puncher..."
+			title: "&a&l一切都要从那棵树说起..."
 			icon: "minecraft:grass_block"
 			x: -13.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["Welcome to the Overview. You can always come back here to catch up on your current position in the Progression of Technology. If you look closely, your Journey to the Moon completes the final step of the way on the right side."]
+			subtitle: "砍伐一棵树"
+			description: ["&a欢迎来到纵览。&r你可以随时在这里查看团队的科技树发展进度并解锁全新任务。如你所见，我会一直指引着你们直到你们离开这里走向更远——你们对大陆的探索将会在那时告一段落，但等着你们的远不止这些。旅途开始了！向着Minecraft科技时代的绝巘之峰勇敢地攀登吧！"]
 			size: 2.0d
 			id: "75FB28B253B14876"
 			tasks: [{
@@ -222,15 +223,17 @@
 			}]
 		}
 		{
-			title: "..to a Spacefarer"
+			title: "&9&l&o..还要走得更远"
 			icon: "agape_space:moon_soil"
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"The Dream of walking the Moon's surface finally came to fruition."
+				"&o这也许只是你的一小步，却是&9全人类&r的一大步。"
 				""
-				"With that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!"
+				"&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r"
+				""
+				"&9&l&o世界很大，生活更大。"
 			]
 			dependencies: [
 				"5E62059675895213"
@@ -242,7 +245,7 @@
 				{
 					id: "058AEB3EF218C7D2"
 					type: "stat"
-					title: "Complete Chapter 5"
+					title: "&6完成第五章"
 					icon: "agape_space:starship_control"
 					disable_toast: true
 					stat: "minecraft:play_one_minute"
@@ -257,142 +260,143 @@
 			]
 		}
 		{
-			title: "High Aspirations"
+			title: "&6&l扬帆起航"
 			icon: "create:andesite_alloy"
 			x: -11.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "Chapter 1"
+			subtitle: "&6第一章"
 			description: [
-				"The earliest inventions reveal ones resourcefulness with low level equipment: Auto-Crafting? None. Filtering? Not cheap! Item Transport? May the Belt Spaghetti mesh in your favour."
+				"我们的事业刚刚起步！早期的工程真可谓是开荒垦地一般。自动合成？别想了。智能过滤？那东西可不便宜。自动化运输？嘿，找边儿站着去吧。现在只有自己动手才能丰衣足食。而这时你最需要的正是——&6安山机器！&r"
 				""
-				"After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"单击上方复选框以解锁&6第一章：扬帆起航。&r"
+				"&7具体任务细节可以在左侧边栏选择查看。"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "61147823CC87F711"
 			tasks: [{
 				id: "5A8DF2D8553904BF"
 				type: "checkmark"
-				title: "Unlock Chapter 1"
+				title: "&6解锁第一章"
 			}]
 		}
 		{
-			title: "Alluring Expedience"
+			title: "&6&l初入门道"
 			icon: "create:electron_tube"
 			x: -8.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "Chapter 2"
+			subtitle: "&6第二章"
 			description: [
-				"The chicken and egg problem remains: in order to automate precision mechanisms for brass equipment more conveniently, having more brass equipment would be really useful!"
+				"我们都知道机旦悖论：一旦要想更方便地自动化生产&6黄铜机器，&r你就首先需要更多的&6黄铜机器！&r"
 				""
-				"After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"单击上方复选框以解锁&6第二章：初入门道。&r"
+				"&7具体任务细节可以在左侧边栏选择查看。"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "1E263994D4883A08"
 			tasks: [{
 				id: "28C41C062843C2CA"
 				type: "checkmark"
-				title: "Unlock Chapter 2"
+				title: "&6解锁第二章"
 			}]
 		}
 		{
-			title: "The Catharsis"
+			title: "&6&l钢铁洪流"
 			icon: "kubejs:radiant_coil"
 			x: -5.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "Chapter 3"
+			subtitle: "&6第三章"
 			description: [
-				"The Groundwork has been laid with all that has been created so far. The pace should really pick up from here."
+				"嗬，我们终于打下了坚实的基础。是时候快步前进了！"
 				""
-				"Producing components for inductive technology relies on very peculiar techniques. Though with all the new equipment ready, automating even the more convoluted interactions should become a cakewalk."
+				"在&6新工业时代，&r你会结出许多奇怪的技术，学到神奇的技巧。有了一定功底之后，无论多么错综复杂的交互生产也将会变得小菜一碟。"
 				""
-				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"点击上方复选框以解锁&6第三章：钢铁洪流。&r"
+				"&7具体任务细节可以在左侧边栏选择查看。"
 			]
 			dependencies: ["69275ECFC147E15B"]
 			id: "780E8AE86250C73D"
 			tasks: [{
 				id: "2F6FEDBB1BDCB36C"
 				type: "checkmark"
-				title: "Unlock Chapter 3"
+				title: "&6解锁第三章"
 			}]
 		}
 		{
-			title: "Into the Box"
+			title: "&6&l靶向药物"
 			icon: "kubejs:silicon_compound"
 			x: -2.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "Chapter 4"
+			subtitle: "&6第四章"
 			description: [
-				"A new Energy Unit joins the ranks: the production facility for silicon will involve an interplay of thermal induction machinery and the familiar kinetic components. "
+				"你需要了解一些全新的动力组合方式！只有弄清楚&6热力系统&r和&6传统动力结构&r间的相互作用，才能够高效生产&6硅。&r你很快就将步入&6智能时代&r了！"
 				""
-				"Between Flux and Stress, a peculiar innovation in Laser technology will be required to produce some of the ingredients involved."
+				"一个奇怪的研究发现，&6激光&r能够高效地在上述两种能级间不断跃迁。只要能够利用它，那么这一创新将会是划时代的！"
 				""
-				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"点击上方复选框以解锁&6第四章：靶向药物。&r"
+				"&7具体任务细节可以在左侧边栏选择查看。"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "26173D4777F439B1"
 			tasks: [{
 				id: "74CFD83C501C4952"
 				type: "checkmark"
-				title: "Unlock Chapter 4"
+				title: "&6解锁第四章"
 			}]
 		}
 		{
-			title: "Divide by Digital"
+			title: "&6&l意识上传"
 			icon: "kubejs:divide"
 			x: 0.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "Finale"
+			subtitle: "&5最终章"
 			description: [
-				"The entire factory is started back up for one final sprint. With a steady supply of Calculation Mechanisms, the Digital Infrastucture performs the necessary operations to put together an ideal Trajectory."
+				"整个工厂都在为最后一段冲刺而全速运转。在&5智能构件&r的稳定供应下，所有智能化的&5基建平台&r都将会完美地在轨运行。"
 				""
-				"While this Data Center visibly crunches the numbers, the designated Astronaut starts getting themselves and the spaceship prepared for launch."
+				"当你的工厂正狼吞虎咽五颜六色的数字时，&5先驱者们&r已经随时准备着登上勇气之梯了！"
 			]
 			dependencies: ["08716DBF9C882623"]
 			id: "5E62059675895213"
 			tasks: [{
 				id: "251A91F6C21AEAFB"
 				type: "checkmark"
-				title: "Unlock the Final Chapter"
+				title: "&6解锁&5最终章"
 			}]
 		}
 		{
-			title: "Rubber Tycoon"
+			title: "&f&l橡胶垄断"
 			icon: "kubejs:cured_rubber"
 			x: -9.5d
 			y: 1.5d
 			shape: "circle"
-			subtitle: "Bonus 1A"
+			subtitle: "第一章 支线"
 			description: [
 				""
-				"While Copper Machines will definitely be required going forward; full automation of their ingredients is completely optional."
-				""
-				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+				"&4铜机器&r的需求并没有那么大。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？"
+				"&7单击上方复选框，揭幕第一章的额外支线内容。"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "7D872F933F45809B"
 			tasks: [{
 				id: "681DACF11F193771"
 				type: "checkmark"
-				title: "Unlock Bonus 1A"
+				title: "&4解锁第一章 &7支线"
 			}]
 		}
 		{
-			title: "Magmatic Exploits"
+			title: "&f&l流动产业"
 			icon: "minecraft:lava_bucket"
 			x: -6.5d
 			y: -1.5d
 			shape: "circle"
-			subtitle: "Bonus 2A"
+			subtitle: "第二章 支线"
 			description: [
-				"We need to go Deeper!"
-				"Access to Zinc Machines will require for some engineering in another dimension. Even if it's literally Hell, a change of scene will always bring forth new ideas and inspiration."
-				""
-				"After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed."
+				"我们必须更加深入！&2酷热构件&r的生产需要在另一个维度进行。尽管它简直和地狱别无二样，但在新的环境中工作总是能带来些全新的灵感和脑洞&2...也许吧？&r"
+				"&7单击上方复选框，揭幕第二章的额外支线内容。"
 			]
 			dependencies: ["69275ECFC147E15B"]
 			id: "7888F9129E9FE517"
@@ -403,17 +407,15 @@
 			}]
 		}
 		{
-			title: "Melting the Funds"
+			title: "&f&l资金回转"
 			icon: "kubejs:enderium_ingot"
 			x: -3.5d
 			y: 1.5d
 			shape: "circle"
-			subtitle: "Bonus 3A"
+			subtitle: "第三章 支线"
 			description: [
-				"The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
-				"In researching the required technologies, you will find that your hard earned silver suddenly finds a second use.."
-				""
-				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."
+				"被个体传送的魅力所震撼从而寄希望于研究向往的&3第三维度&r的你还不如在&3量子力学领域&r放手一搏...在研究新材料的过程中，你发现辛苦挣来的&3银币&r竟能提供莫大帮助！"
+				"&7单击上方复选框，揭幕第三章的额外支线内容。"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "2BB2C7B95E3C89AE"
@@ -424,37 +426,39 @@
 			}]
 		}
 		{
-			title: "Chaotic Alchemy"
+			title: "&6&l混沌炼金"
 			icon: "kubejs:substrate_chaos"
 			x: -2.5d
 			y: -1.25d
 			shape: "circle"
-			subtitle: "Alternative Path"
+			subtitle: "→ 备用路线"
 			description: [
-				"You'll find that the newly discovered Laser setup has other interesting capabilities."
+				"你费心研究的&6激光装备&r并非派不上用场。它们可是炼金好手！"
 				""
-				"Behind a bit of science and experimentation lies a way to transmute seemingly unrelated materials between another. The demanded Silicon element is one of them, but which is its counterpart?"
+				"在科学和炼金术的奇妙联动下，你发现了一些&6几乎毫无关系的物质&r间相互转换的奥秘。继续发展科技所必须的原料&6硅&r也在其中。什么？&6炼金术&r怎么就不能炼硅了？"
+				"&7温馨提示：不要品尝失败品。"
 				""
-				"After hitting the Checkmark above, the alternative fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar. It will still be possible to return to the other chapter."
+				"单击上方复选框以解锁&7备用路线：&6混沌炼金。"
+				"&7具体任务细节可以在左侧边栏选择查看。"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "3934AD57122B6FFE"
 			tasks: [{
 				id: "5DF206B1738D08A0"
 				type: "checkmark"
-				title: "Unlock Chapter 4a"
+				title: "&6解锁第四章 &7备用路线"
 			}]
 		}
 		{
-			title: "Preparations"
+			title: "&f&l准备得当"
 			icon: "minecraft:cobblestone_stairs"
 			x: -12.5d
 			y: -1.5d
 			shape: "circle"
+			subtitle: "没有这些你可上不了路"
 			description: [
-				"Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first."
-				""
-				"Here are some recommendations for a successful start."
+				"在你急着开始之前，先准备些东西！一个完备的初始工作流能够使你的后续探索更加轻松。"
+				"&7横着省下的路就会变成竖着的坑，早晚都要经过。"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "7D6BC99CCCB29924"
