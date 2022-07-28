@@ -34,11 +34,11 @@ function ifiniDeploying(output, input, tool) {
 }
 
 onEvent("item.tags", event => {
-//		Get the #forge:cobblestone tag collection and add Diamond Ore to it
-//		event.get("forge:cobblestone").add("minecraft:diamond_ore")
+	//		Get the #forge:cobblestone tag collection and add Diamond Ore to it
+	//		event.get("forge:cobblestone").add("minecraft:diamond_ore")
 
-//		Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-//		event.get("forge:cobblestone").remove("minecraft:mossy_cobblestone")
+	//		Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
+	//		event.get("forge:cobblestone").remove("minecraft:mossy_cobblestone")
 })
 //	recipes
 function tweaks(event) {
@@ -407,7 +407,7 @@ function oreProcessing(event) {
 
 		event.remove({ id: "alloy_forgery:" + e + "_from_ores" })
 		event.remove({ id: "alloy_forgery:" + e + "_from_raw_ores" })
-		
+
 	})
 	let metalsVanillaCreate = ["copper"]
 	metalsVanillaCreate.forEach(e => {
@@ -499,7 +499,7 @@ function initCopperMachine(event) {
 	copper_machine("create:item_drain", 1, MC("iron_bars"))
 	copper_machine("indrev:heat_generator_mk4", 1, IV("heat_coil"))
 	copper_machine("indrev:fisher_mk2", 1, MC("bucket"))
-	if (createVersion >= 0.5)	copper_machine("create:steam_engine", 2, MC("piston"))
+	if (createVersion >= 0.5) copper_machine("create:steam_engine", 2, MC("piston"))
 	copper_machine("create:smart_fluid_pipe", 2)
 }
 
@@ -516,16 +516,16 @@ function initBrassMachine(event) {
 	event.remove({ id: CR("sequenced_assembly/precision_mechanism") })
 	event.shapeless(KJ("screwdriver"), [IV("screwdriver"), MC("iron_ingot"), MC("blue_dye")])
 
-/*	let transition = CR("incomplete_precision_mechanism")
-	event.recipes.createSequencedAssembly([
-		CR("precision_mechanism"),
-	], KJ("kinetic_mechanism"), [
-		event.recipes.createDeploying(transition, [transition, CR("electron_tube")]),
-		event.recipes.createDeploying(transition, [transition, CR("electron_tube")]),
-		event.recipes.createDeploying(transition, [transition, "kubejs:screwdriver"])
-	]).transitionalItem(transition)
-		.loops(1)
-		.id("kubejs:precision_mechanism")	*/
+	/*	let transition = CR("incomplete_precision_mechanism")
+		event.recipes.createSequencedAssembly([
+			CR("precision_mechanism"),
+		], KJ("kinetic_mechanism"), [
+			event.recipes.createDeploying(transition, [transition, CR("electron_tube")]),
+			event.recipes.createDeploying(transition, [transition, CR("electron_tube")]),
+			event.recipes.createDeploying(transition, [transition, "kubejs:screwdriver"])
+		]).transitionalItem(transition)
+			.loops(1)
+			.id("kubejs:precision_mechanism")	*/
 
 	event.shaped(KJ("brass_machine"), [
 		"SSS",
@@ -610,7 +610,7 @@ function initInvarMachine(event) {
 
 	event.campfireCooking(MC("torch"), MC("stick")).cookingTime(20)
 
-//	event.shapeless(KJ("nickel_compound"), [KJ("nickel_ingot"), IV("iron_dust"), IV("iron_dust"), IV("iron_dust"), IV("iron_dust")])
+	//	event.shapeless(KJ("nickel_compound"), [KJ("nickel_ingot"), IV("iron_dust"), IV("iron_dust"), IV("iron_dust"), IV("iron_dust")])
 
 	event.blasting(KJ("invar_compound"), KJ("nickel_compound"))
 	let s = KJ("invar_compound")
@@ -667,16 +667,16 @@ function initInvarMachine(event) {
 		S: KJ("sapphire")
 	})
 
-/*	let t = KJ("incomplete_inductive_mechanism")
-	event.recipes.createSequencedAssembly([
-		KJ("inductive_mechanism"),
-	], CR("precision_mechanism"), [
-		event.recipes.createDeploying(t, [t, KJ("radiant_coil")]),
-		event.recipes.createDeploying(t, [t, KJ("radiant_coil")]),
-		event.recipes.createDeploying(t, [t, KJ("chromatic_resonator")])
-	]).transitionalItem(t)
-		.loops(1)
-		.id("kubejs:inductive_mechanism")	*/
+	/*	let t = KJ("incomplete_inductive_mechanism")
+		event.recipes.createSequencedAssembly([
+			KJ("inductive_mechanism"),
+		], CR("precision_mechanism"), [
+			event.recipes.createDeploying(t, [t, KJ("radiant_coil")]),
+			event.recipes.createDeploying(t, [t, KJ("radiant_coil")]),
+			event.recipes.createDeploying(t, [t, KJ("chromatic_resonator")])
+		]).transitionalItem(t)
+			.loops(1)
+			.id("kubejs:inductive_mechanism")	*/
 
 	event.remove({ output: IV("machine_block") })
 	event.shaped(IV("machine_block"), [
@@ -753,11 +753,11 @@ function alchemy(event) {
 	event.recipes.createCrushing([Item.of(basalz, 1), Item.of(basalz, 1).withChance(.5)], KJ("basalz_shard"))
 	event.recipes.createCompacting(KJ("ice_charge"), [blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz])
 	event.recipes.createCompacting(KJ("earth_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
-//	event.recipes.createCompacting(KJ("lightning_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
+	//	event.recipes.createCompacting(KJ("lightning_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
 
 	event.remove({ id: CR("crushing/obsidian") })
-//	event.remove({ output: "ae2:silicon", type: "minecraft:smelting" })
-//	event.remove({ output: "ae2:silicon", type: "minecraft:blasting" })
+	//	event.remove({ output: "ae2:silicon", type: "minecraft:smelting" })
+	//	event.remove({ output: "ae2:silicon", type: "minecraft:blasting" })
 	event.remove({ id: AE2("blasting/silicon_from_certus_quartz_dust") })
 	event.remove({ id: AE2("smelting/silicon_from_certus_quartz_dust") })
 
@@ -946,16 +946,16 @@ function initFluixMachine(event) {
 		S: MC("iron_ingot")
 	})
 
-/*	let t = KJ("incomplete_calculation_mechanism")
-	event.recipes.createSequencedAssembly([
-		KJ("calculation_mechanism"),
-	], KJ("inductive_mechanism"), [
-		event.recipes.createDeploying(t, [t, AE2("printed_silicon")]),
-		event.recipes.createDeploying(t, [t, AE2("printed_silicon")]),
-		event.recipes.createDeploying(t, [t, KJ("flash_drive")])
-	]).transitionalItem(t)
-		.loops(1)
-		.id("kubejs:calculation_mechanism")	*/
+	/*	let t = KJ("incomplete_calculation_mechanism")
+		event.recipes.createSequencedAssembly([
+			KJ("calculation_mechanism"),
+		], KJ("inductive_mechanism"), [
+			event.recipes.createDeploying(t, [t, AE2("printed_silicon")]),
+			event.recipes.createDeploying(t, [t, AE2("printed_silicon")]),
+			event.recipes.createDeploying(t, [t, KJ("flash_drive")])
+		]).transitionalItem(t)
+			.loops(1)
+			.id("kubejs:calculation_mechanism")	*/
 
 	event.remove({ output: AE2("controller") })
 	event.shaped(AE2("controller"), [
@@ -984,8 +984,8 @@ function initFluixMachine(event) {
 
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, C("#redstone_dusts"), KJ("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("redstone"))
-//	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, MC("green_dye"), KJ("calculation_mechanism"))
-//	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("green_dye"))
+	//	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, MC("green_dye"), KJ("calculation_mechanism"))
+	//	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("green_dye"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, C("#glowstone_dusts"), KJ("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, AE2("engineering_processor"), MC("glowstone_dust"))
 	event.replaceInput({ id: AE2("network/crafting/patterns_blank") }, C("#glowstone_dusts"), KJ("calculation_mechanism"))
@@ -1078,8 +1078,8 @@ function spaceCraft(event) {
 	let plastic = KJ("matter_plastics")
 	let machine = AE2("controller")
 	let matrix = KJ("computation_matrix")
-	event.remove({output: AR("starship_control")})
-	event.remove({output: AR("starship_powersource")})
+	event.remove({ output: AR("starship_control") })
+	event.remove({ output: AR("starship_powersource") })
 	event.recipes.createMechanicalCrafting(AR("starship_control"), [
 		"AAAAA",
 		"ASSSA",
@@ -1093,11 +1093,11 @@ function spaceCraft(event) {
 		S: matrix
 	})
 	let smithAndMechCraft = (r, i1, i2) => {
-		event.remove({output: r})
+		event.remove({ output: r })
 		event.smithing(r, i1, i2)
 		event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
 	}
-//	smithAndMechCraft("advancedrocketry:seat", CR("#seats"), plastic)
+	//	smithAndMechCraft("advancedrocketry:seat", CR("#seats"), plastic)
 	smithAndMechCraft(AR("starship_powersource"), CR("fluid_tank"), plastic)
 	smithAndMechCraft(AR("starship_engine"), CR("blaze_burner"), plastic)
 	smithAndMechCraft(AR("rocket_ship_box_cargo"), MC("scaffolding"), plastic)
@@ -1118,7 +1118,7 @@ onEvent("recipes", event => {
 	initFluixMachine(event)
 	initMath(event)
 	spaceCraft(event)
-//	trading(event)
+	//	trading(event)
 })
 
 onEvent("item.tags", event => {

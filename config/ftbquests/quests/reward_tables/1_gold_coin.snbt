@@ -1,7 +1,7 @@
 {
 	id: "5870272ED85532CB"
 	order_index: 1
-	title: "1 金币"
+	title: "1 Gold Coin"
 	icon: "create:crushed_gold_ore"
 	loot_size: 1
 	rewards: [{ item: "kubejs:gold_coin" }]

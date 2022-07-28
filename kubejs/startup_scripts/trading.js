@@ -152,7 +152,7 @@ onEvent("item.registry", event => {
 		if (trade[1] == "tag") isTag = "#"
 		event.create("trade_card_" + trade[3])
 			.texture(modpackId + ":/item/trading/trade_card")
-			.displayName("§6交易铭牌")
+			.displayName("§6Trade Card")
 			.tooltip(`§7${isTag}${trade[2]}:${trade[3]}`)
 		if (professions.includes(trade[0]) != true) {
 			professions.push(trade[0])
@@ -161,7 +161,7 @@ onEvent("item.registry", event => {
 	professions.forEach(profession => {
 		event.create("profession_card_" + profession)
 			.texture(modpackId + ":/item/trading/profession_card")
-			.displayName("§d职业铭牌")
+			.displayName("§dProfession Card")
 			.tooltip(`${modpackId}:${profession}`)
 	})
 })

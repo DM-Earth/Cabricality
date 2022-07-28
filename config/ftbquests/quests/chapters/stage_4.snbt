@@ -3,7 +3,7 @@
 	group: "331B6409EF6A7840"
 	order_index: 4
 	filename: "stage_4"
-	title: "&f&l4&r 靶向药物"
+	title: "&f&l4&r Into the Box"
 	icon: "minecraft:purple_shulker_box"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

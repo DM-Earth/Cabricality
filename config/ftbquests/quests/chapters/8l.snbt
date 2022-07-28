@@ -3,7 +3,7 @@
 	group: "331B6409EF6A7840"
 	order_index: 8
 	filename: "8l"
-	title: "&8▶ 特别感谢"
+	title: "&8> Special Thanks"
 	icon: {
 		id: "minecraft:writable_book"
 		Count: 1b
@@ -17,12 +17,12 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [{
-		title: "&l&c感&a谢&b游&f玩！"
+		title: "Thanks for playing!"
 		x: -9.0d
 		y: -7.0d
 		shape: "circle"
-		subtitle: "&l&n制作人员表"
-		description: ["&7原作   &fSimibubi"]
+		subtitle: "Stuff"
+		description: ["Original Author: Simibubi"]
 		dependencies: ["4D94E2619DDAADC4"]
 		hide: true
 		size: 2.2d

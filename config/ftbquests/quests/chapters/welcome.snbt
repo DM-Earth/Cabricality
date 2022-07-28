@@ -3,23 +3,23 @@
 	group: ""
 	order_index: 0
 	filename: "welcome"
-	title: "&8 向着星辰与深渊"
+	title: "&8 Welcome"
 	icon: "minecraft:spore_blossom"
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "&f&l无限潜能"
+			title: "&f&lLimitless Potential"
 			icon: "minecraft:gold_ore"
 			disable_toast: true
 			x: -3.5d
 			y: -5.0d
 			shape: "hexagon"
-			subtitle: "一路顺风"
 			description: [
-				"这是为你准备的世界。我们希望你能徜徉在机械动力等模组的无限可能中，更希望你能玩得开心！"
-				"&7尽情挥洒创意吧！The World Awaits!"
+				"This pack is for you."
+				"We hope you'll have a good time with it."
+				""
 			]
 			size: 2.0d
 			id: "09356B3BEF298E06"
@@ -41,17 +41,16 @@
 			]
 		}
 		{
-			title: "&f&l按需供应"
+			title: "&f&lCompletely Optional"
 			icon: "minecraft:grass_block"
 			disable_toast: true
 			x: -3.5d
 			y: -2.5d
 			shape: "hexagon"
-			subtitle: "图灵测试"
 			description: [
-				"任务系统可以帮助你使用&3交易&r模组和&6科技线&r模组对你的工厂进行深度定制。"
+				"The Questing system helps you with the primary customisations of the Modpack: &3Trades&r and the &6Progression of Tech&r"
 				""
-				"当然，这完全不是必要的——你可以随意创造和发挥，但任务系统也许能在你每次迷失的时候将你拉回正轨，并给你些小奖励。"
+				"Completing Quests is not required to progress through the game."
 			]
 			hide_dependency_lines: true
 			dependencies: ["09356B3BEF298E06"]
@@ -63,7 +62,7 @@
 			}]
 		}
 		{
-			title: "&f&l壹"
+			title: "&f&lI"
 			icon: "create:cogwheel"
 			disable_toast: true
 			x: -4.0d
@@ -71,8 +70,9 @@
 			shape: "hexagon"
 			subtitle: "简介"
 			description: [
-				"世界天翻地覆！准备创造最完美的机械工厂吧！"
-				"&7如果你没有足够的勇气的话，不要冲太快。"
+				"Modpack Description:"
+				"The sandbox has been turned upside down - be ready to invent your best Create Contraptions yet. "
+				"&7(Or the first, if you are that brave!)"
 			]
 			dependencies: ["69D55492A8F42A94"]
 			size: 1.5d
@@ -88,18 +88,16 @@
 			}]
 		}
 		{
-			title: "&f&l贰"
+			title: "&f&lII"
 			icon: "create:large_cogwheel"
 			disable_toast: true
 			x: -3.5d
 			y: 0.5d
 			shape: "hexagon"
-			subtitle: "有志者事竟成"
 			description: [
-				"走向深空的路上，有几近半百的全新发明等着你。"
+				"About fifty inventions lie between you and the moon. "
 				""
-				"你将会解锁成千上万用途各异的零件，并需要把它们组装成精密而又庞大的机器。不要害怕失败，否则你将一事无成。"
-				"&7你也可以成为工业革命的先驱！"
+				"Thousands of components will flow through the ever-growing sequence of your machines, providing the means to explore the next level of technology. "
 			]
 			dependencies: ["407236D2B1D2257D"]
 			size: 1.5d
@@ -115,18 +113,16 @@
 			}]
 		}
 		{
-			title: "&f&l叁"
+			title: "&f&lIII"
 			icon: "kubejs:andesite_machine"
 			disable_toast: true
 			x: -2.0d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "技术爆炸"
 			description: [
-				"你的工厂将会制造出精密的智能构件并组装出惊人的航天器，一飞冲天！"
+				"Your entire factory will be put to the test as final products flow into the Data Centre, programming the Guidance computer of your Spaceship."
 				""
-				"每个人的每一步都会是不同的，但它们同样重要。如果你恰好有个优秀的世界生成种子，有些事可能会事半功倍！"
-				"&7尽兴的同时也要保持自信。"
+				"Every step is different, some may even differ depending on the generation seed of your World."
 			]
 			dependencies: ["2C7ADB6C11B918B1"]
 			size: 1.5d
@@ -142,19 +138,20 @@
 			}]
 		}
 		{
-			title: "&f&l肆"
+			title: "&f&lIV"
 			icon: "indrev:solid_infuser_mk1"
 			disable_toast: true
 			x: -0.5d
 			y: 0.5d
 			shape: "hexagon"
-			subtitle: "换种口味"
 			description: [
-				"不想总被死板的科技束缚？"
+				"Tired of the grind?"
 				""
-				"在这里，你还可以通过完成任务募集资金，还可以寻求其他玩家的帮助。"
+				"Fund the operation with coin provided either from various errands, or your chosen professions. "
 				""
-				"你获得的银币可以在&6市集&r购买许多东西，例如资源、特殊物品和建筑方块...也许合理使用它们能加快进度！"
+				"Automatically ship produce from your farms or gather other players to aid you in your mission."
+				""
+				"Then you can purchase all manner of resources, artifacts and building blocks from the market, making your life just a little bit easier."
 			]
 			dependencies: ["1947C6CE179EBAC6"]
 			size: 1.5d
@@ -170,7 +167,7 @@
 			}]
 		}
 		{
-			title: "&6&l任务内容"
+			title: "&6&lQuest Content Overwiew"
 			icon: {
 				id: "patchouli:guide_book"
 				Count: 1b
@@ -183,17 +180,18 @@
 			y: -1.5d
 			shape: "hexagon"
 			description: [
-				"&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！"
+				"- &6The Bulletin Board&r provides means to earn currency for Trading."
+				"Here you can complete various errands or buy a profession permit for use in the Trading Machine."
 				""
-				"&5这些成就和Minecraft的成就不太一样。他们会更加困难，也更加...奇怪。"
+				"- &6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
 				""
-				"&6&l「市集」&r     你可以在&6市集&r购物。"
+				"- &6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine."
 				""
-				"&6就和逛商场一样，不过我们包邮。"
+				"- The &3Factory Guide&r provides useful information for the path of Technology and Automation. All challenges to be overcome have been neatly organised into chapters and tasks. It is entirely optional to follow this Guide."
 				""
-				"&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。"
+				"- The Section on &3Metallurgy&r gives an overview of the ways to turn your ore into refined metal. Different paths yield differently."
 				""
-				"&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！"
+				"- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you."
 			]
 			dependencies: ["58E38BA6D927409F"]
 			size: 1.5d
@@ -209,13 +207,13 @@
 			}]
 		}
 		{
-			title: "&f&l走你！"
+			title: "&f&lOff you go!"
 			icon: "minecraft:gold_block"
 			disable_toast: true
 			x: 2.0d
 			y: -1.5d
 			shape: "hexagon"
-			description: ["现在你对你的任务目标有了清楚的了解。从这里你将开始你全新的征程，祝好运！"]
+			description: ["Now that you have an idea of what is new and what is not, settle in and start your Journey."]
 			dependencies: ["00003FCBB33E62C4"]
 			size: 2.0d
 			id: "31EDFA6D2FF86CB0"

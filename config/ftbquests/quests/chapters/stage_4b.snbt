@@ -3,7 +3,7 @@
 	group: "331B6409EF6A7840"
 	order_index: 5
 	filename: "stage_4b"
-	title: "&l↓&r 混沌炼金"
+	title: "&l↓&r Chaotic Alchemy"
 	icon: "kubejs:substrate_chaos"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
