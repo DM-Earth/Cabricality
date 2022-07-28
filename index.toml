@@ -10,47 +10,55 @@ hash = "0e4bcec50b38febb2bf051cdac70bd7e86375913198442af10be8db1fbf59849"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "aa1b8a6b154e64078d91784c47ced8b9e3848aa4f762946cf2f108fa95c89bb6"
+hash = "ee8ba7197ec11ca14e2de279ca37b0226508fd97ba10b54d8bf18cf37fab6080"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/8l.snbt"
+hash = "3367a8e5bc4f087987f8351f35fda6eca0ed220444d2678c325e197bf817f928"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/dl.snbt"
+hash = "97d7673dafb790ad02211246ac028f04190e14e0826f8a08a8ff381875b20395"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "2c1ada59de342ff6e42d5ae26734441d881c6dbf53e3d69e8fddae85b674dbdb"
+hash = "84f19d3fd258b4997f160cdef00218e3ea6650a141676092cea3b556770cc79e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "908d75108f87ff368ba4d3fd427da885c3958bd8b17e671df5b8dfff6348b0ad"
+hash = "05123dce75d25ea19b2dac2bf98ed63df6cf9c4c6de67d7057d81b9490c6cc59"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "82b547955c6d3a43cc7701ba08600b05f8dd80225d21c875af8e769b55397230"
+hash = "d5d63785ad407860b90459ff0741e3418a6365df83254cdc5f301eb4545d43fa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
-hash = "2f03b916146148ba250468dcf1fa68338eb036deabac7868f06032b5dee49d5c"
+hash = "0b48caabaa4f2dc8da10a2ddf428de1130ed64738e3980340d7e2b9dfa5a9dff"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_2.snbt"
-hash = "0afa60e76dd2842a413eb5ab4250cd7560c4f36970cc5248447e3dd9226bca48"
+hash = "f4b4db11431e065ab2ccfbd0a06586f208de6bc68b88d9bffca713782498ea47"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_3.snbt"
-hash = "07ddd228bc593f05815f702b897a79c6e079475a83e60b59d5954e8bbccab834"
+hash = "5d3c1189241f97381316ae9867a9d3f3c0895cbe3c21a1c0fc2ba50bc28a0185"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
-hash = "6ad79b5297bbb8a944aba44dc57953dc57c460691b7a96774de65dc92710442b"
+hash = "30a55fe268837a8a7388194ff3652aa8b02623f87cc33537260e8768050e9aab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4b.snbt"
-hash = "223bdb2d1fe1ae5e77840d7db6713ef42c5ea2c46a5f2d9cf579ee9b8fd41ffd"
+hash = "8fa1a4de5897517df6ba184c7f8523d148b7f6dfee1626b6841c07de45af6345"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "2b6b2d99cdc40a06020e008de918462630b7feddaff453c8d45eef4e4184b850"
+hash = "906338dbd9765ada7dd20e33b53dddc56888e94202816650b9e4c5bce0783087"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "6b193fea4f67e45b9e7d9e3a27cd3ea4f944ebd22c0e8bddfe5f7a423030adb6"
+hash = "4210fee201d4f9c988f4fae6ae253cef9823395b17dd58b60ae3728d57787e1e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -87,6 +95,10 @@ hash = "e806ab2ae269f7f6644764c7517fece648823ee9babc9b2519a95b6ad84f0853"
 [[files]]
 file = "kubejs/assets/ae2/textures/item/printed_calculation_processor.png"
 hash = "ef36d793d83335c4bcbcb31b6f1d48c5a2c3b909023c0e630801e1dd0019f268"
+
+[[files]]
+file = "kubejs/assets/agape_space/models/item/laser_pistol.json"
+hash = "84290e6ffd6da9be99f371de97b785a3269c7020df406163f323cf1fc11ff4cb"
 
 [[files]]
 file = "kubejs/assets/bitsandchisels/textures/item/smart_chisel.png"
@@ -134,7 +146,7 @@ hash = "595db6babe9c1fc354978f6a339c3637f0b4922736740cc909b6f8d81c4d5c39"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/machine/brass_machine.json"
-hash = "11921f9d0c666401cd51d15c641a8c06f0359cbb6525262f4462ff00eb84c49c"
+hash = "0a76a8aa1fc400980d73186a41466e570886e8852e1a5df6fb34ad714fee80d4"
 
 [[files]]
 file = "kubejs/assets/cabricality/models/block/machine/copper_machine.json"
@@ -729,14 +741,6 @@ file = "kubejs/assets/createplus/textures/item/zinc_dust.png"
 hash = "70835d98bb7a98a6cc95813b0fde02263cc27e38c9ba05ccc75b0b0fa1808618"
 
 [[files]]
-file = "kubejs/assets/indrev/lang/en_us.json"
-hash = "1e14fe1eba253b0771d832851f35dcddb96fe0021355317c81417675d1ad8c39"
-
-[[files]]
-file = "kubejs/assets/indrev/lang/zh_cn.json"
-hash = "90d465da3adf4d6e3de428127c43fff7cac4c3923d23ffb20ca1f51b5d9bcb84"
-
-[[files]]
 file = "kubejs/assets/indrev/textures/block/biomass_generator.png"
 hash = "510cbaabf0e81916da047196a49a3eec59169285c721cfdf35bc096316e585e4"
 
@@ -978,7 +982,7 @@ hash = "326923296bf29d6b38281604f0fe2701f792f575513c6f4dcbe605d46824d0ef"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
-hash = "e01f17f085acd760898e6181d50f8903f3080ddaddc891e41e4565e54433c389"
+hash = "1818c6eb3efca1bb8deb4cf4e27fc0279d5ae3ef2ba69b269c208b30148a805b"
 
 [[files]]
 file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_0.png"
@@ -1006,7 +1010,7 @@ hash = "2f5d101242feb1a1c9b3dd77c68cb718846c8afefce0d5b4b6f1b2ed32e3677a"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
-hash = "7c30b84a7295164c1df7d9f9191d1edd870615089f73c98658316a3195f6d631"
+hash = "2dc06efdb5607230c447dd18056170edd81a236090c69fa39f8df163d5d3cd52"
 
 [[files]]
 file = "kubejs/data/ae2/loot_tables/blocks/deepslate_quartz_ore.json"
@@ -2546,31 +2550,31 @@ hash = "74603d5d72632fd835ae23d8b11e4af0a7ee326b4f3290cd064297c20b2e2521"
 
 [[files]]
 file = "kubejs/server_scripts/extractor.js"
-hash = "68301bbbc08e9234624235c3180d05c95d97fe1c7289b577253c8b8f2c65cf7b"
+hash = "14e75af1f6d25cb6f5329c9a8d3f5925b311ed05e1702c69af5ec44caa9c6ed9"
 
 [[files]]
 file = "kubejs/server_scripts/laser.js"
-hash = "1f383f1cf613d8084f254c1dbbd8292663f40dfa795a456fd4f3f0275a44d370"
+hash = "a75cac640a7dd1ba9976ade5396a26087f89536ccd091c8fc7e6c93a1c297d75"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "639c14c90c6500b40d52d8a01b021dadfe045c5074700b26b4302cc301eda685"
+hash = "5e66554ca481db9034df9fed8b88037f16bd15430d28e9e423edcd9a91e7a2bc"
 
 [[files]]
 file = "kubejs/server_scripts/trader.js"
-hash = "760e0d085d0c976a4305108309b8842e41643a53fd5ef0aa535bc7996ff21f7b"
+hash = "5dd6589c5b7fe51ca647975e8cb58fa3a80bdb71cc25b545d23bc0a743c27cd0"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
-hash = "c26d274324795f843875a58763a48cf5fa8ed8566d554c432feab33e779733cc"
+hash = "dfcd033d0effa11dda1e253fbd520e1b9b3321f60111ca08acc85230af923475"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "491c10ff208191c87d20b98bd0eaddc3d567e1ee8b25c2d695f7e6bf5b557fdf"
+hash = "5bccf798baff347cee4b2627d196b6d304d93ae0840561d34af17d131a5e565e"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
-hash = "fe4f757e2e0874a0e0e7cc369e8e7e0ea6528054aa12721b0add2ef696ae3dc2"
+hash = "acebe8742d845e416d450d4a9bd36db74db2dd061387b5289ea463fef3055e63"
 
 [[files]]
 file = "mods/ae2.pw.toml"
@@ -2617,8 +2621,8 @@ hash = "7c95c7eb827be20a2ea98e9a5924e43c8123bfd2bcb01fdcc5a538d37faabe8f"
 metafile = true
 
 [[files]]
-file = "mods/create-1.18.2-0.5.0c-683.jar"
-hash = "d45a9de74fef66b58bf3db2b6833432b2a3ef6913bd5c47bd8b79a570b73afe7"
+file = "mods/create-1.18.2-0.5.0c-701.jar"
+hash = "4c699471dfc827b338e6f283005101f62c7ab7ccbfa97d4ff47e0228575b9464"
 
 [[files]]
 file = "mods/createplus-1.0.0.jar"
