@@ -32,12 +32,12 @@
 			x: 3.0d
 			y: -6.0d
 			shape: "rsquare"
-			subtitle: "But how to get down?"
+			subtitle: "But how literally can I get down?"
 			id: "48B93059B325B230"
 			tasks: [{
 				id: "169EFAAAE095C621"
 				type: "location"
-				title: "Get to Y 255"
+				title: "Reach the Hight of 255 Blocks"
 				icon: "minecraft:ladder"
 				dimension: "minecraft:overworld"
 				ignore_dimension: true
@@ -117,7 +117,7 @@
 			x: 1.0d
 			y: -7.0d
 			shape: "rsquare"
-			subtitle: "Remember to go home!"
+			subtitle: "Don't forget the place called home!"
 			id: "769CAC17CA1366FD"
 			tasks: [
 				{
@@ -300,7 +300,7 @@
 			tasks: [{
 				id: "0F86A9C202CADA8B"
 				type: "questsadditions:days"
-				title: "Playing for 5000 Days"
+				title: "Playing for 5000 days"
 				icon: "minecraft:clock"
 				days: 5000
 			}]

@@ -1,9 +1,9 @@
 {
 	id: "545A50FD910B4077"
-	group: "331B6409EF6A7840"
-	order_index: 8
+	group: ""
+	order_index: 1
 	filename: "thanks"
-	title: "&8> Special Thanks"
+	title: "&8 Special Thanks"
 	icon: {
 		id: "minecraft:writable_book"
 		Count: 1b
