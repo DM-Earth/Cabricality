@@ -2,7 +2,7 @@
 	id: "130377393DA7AF6B"
 	group: "0810E42B2DD79973"
 	order_index: 0
-	filename: "dl"
+	filename: "advancements"
 	title: "&d> Advancements"
 	icon: "minecraft:enchanting_table"
 	default_quest_shape: ""
@@ -215,7 +215,7 @@
 		}
 		{
 			title: "&lComplete Cabricality"
-			icon: "minecraft:grass_block"
+			icon: "minecraft:red_glazed_terracotta"
 			x: 1.5714285714285836d
 			y: -5.4642857142857295d
 			shape: "circle"
@@ -291,15 +291,16 @@
 			}]
 		}
 		{
-			title: "&6&lThanks for Accompany"
+			title: "&6&lA Long Tour"
 			x: 0.0d
 			y: -3.0d
 			shape: "circle"
+			secret: true
 			id: "38DCB9AD8BBDEA34"
 			tasks: [{
 				id: "0F86A9C202CADA8B"
 				type: "questsadditions:days"
-				title: "Playing for Days"
+				title: "Playing for 5000 Days"
 				icon: "minecraft:clock"
 				days: 5000
 			}]

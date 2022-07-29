@@ -42,7 +42,7 @@
 			y: 0.0d
 			subtitle: "Milestone"
 			description: [
-				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life.
+				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life."
 				""
 				"It also opens the gate leading towards the Invar Age- potentially after a quick stop by the bonus section.."
 			]
@@ -410,7 +410,7 @@
 			shape: "circle"
 			subtitle: "Bonus 3A"
 			description: [
-				The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
+				"The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
 				"In researching the required technologies, you will find that your hard earned silver suddenly finds a second use.."
 				""
 				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."

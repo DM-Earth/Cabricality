@@ -14,9 +14,7 @@
 			x: -10.0d
 			y: -1.0d
 			subtitle: "10 Silver"
-			description: [
-				"Your last resort in case the sundown beat you to it."
-			]
+			description: ["Your last resort in case the sundown beat you to it."]
 			id: "5D17CB247942013A"
 			tasks: [{
 				id: "0783860FB502A201"
@@ -78,7 +76,7 @@
 			x: -8.5d
 			y: -6.5d
 			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of    &6Kinetic Mechanisms.&r"]
 			hide_dependency_lines: true
 			id: "4F953BACF4D1C151"
 			tasks: [
@@ -109,17 +107,17 @@
 					Count: 1b
 					tag: {
 						RepairCost: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
-						}
+						HideFlags: 1
 					}
 				}
 			}]
@@ -140,7 +138,7 @@
 			x: -7.0d
 			y: -6.5d
 			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms.&r"]
 			id: "72CACE8F0E4701B1"
 			tasks: [
 				{
@@ -169,16 +167,16 @@
 					id: "kubejs:screwdriver"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 					}
 				}
 			}]
@@ -199,7 +197,7 @@
 			x: -5.0d
 			y: -6.5d
 			subtitle: "7 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms&r."]
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms.&r"]
 			id: "43FC566E833BE834"
 			tasks: [
 				{
@@ -229,16 +227,16 @@
 					id: "kubejs:chromatic_resonator"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
+						}
 					}
 				}
 			}]
@@ -433,6 +431,8 @@
 							Items: [
 								{
 									Slot: 11b
+									id: "minecraft:paper"
+									Count: 1b
 									tag: {
 										RepairCost: 0
 										display: {
@@ -440,11 +440,11 @@
 											bold: 0b
 										}
 									}
-									Count: 1b
-									id: "minecraft:paper"
 								}
 								{
 									Slot: 15b
+									id: "minecraft:barrel"
+									Count: 1b
 									tag: {
 										display: {
 											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -453,17 +453,19 @@
 											Items: [
 												{
 													Slot: 3b
+													id: "minecraft:paper"
+													Count: 1b
 													tag: {
 														RepairCost: 0
 														display: {
 															Name: "{\"italic\": false, \"text\":\"You'll have to unbox a few of these\"}"
 														}
 													}
-													Count: 1b
-													id: "minecraft:paper"
 												}
 												{
 													Slot: 23b
+													id: "minecraft:barrel"
+													Count: 1b
 													tag: {
 														display: {
 															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -472,6 +474,8 @@
 															Items: [
 																{
 																	Slot: 11b
+																	id: "minecraft:barrel"
+																	Count: 1b
 																	tag: {
 																		display: {
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
@@ -480,52 +484,46 @@
 																			LootTable: "custom:chests/patience_1"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:barrel"
 																}
 																{
 																	Slot: 13b
+																	id: "minecraft:paper"
+																	Count: 1b
 																	tag: {
 																		RepairCost: 0
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Good luck, see you at the bottom!\"}"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:paper"
 																}
 																{
 																	Slot: 14b
+																	id: "minecraft:apple"
+																	Count: 1b
 																	tag: {
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:apple"
 																}
 															]
 															id: "minecraft:barrel"
 														}
 													}
-													Count: 1b
-													id: "minecraft:barrel"
 												}
 											]
 											id: "minecraft:barrel"
 										}
 									}
-									Count: 1b
-									id: "minecraft:barrel"
 								}
 							]
 							id: "minecraft:barrel"
 						}
+						HideFlags: 1
 						display: {
 							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
 							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
-						HideFlags: 1
 					}
 				}
 			}]
@@ -589,9 +587,7 @@
 			x: -5.0d
 			y: 1.0d
 			subtitle: "45 Silver"
-			description: [
-				"As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"
-			]
+			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
 			id: "4B52A04818075900"
 			tasks: [{
 				id: "4FB1B4787D648565"
@@ -632,7 +628,7 @@
 			x: -3.5d
 			y: -6.5d
 			subtitle: "11 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms&r."]
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms.&r"]
 			id: "00D6DD6AE8E3C014"
 			tasks: [
 				{
@@ -661,16 +657,16 @@
 					id: "kubejs:flash_drive"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
+						}
 					}
 				}
 			}]
@@ -889,9 +885,7 @@
 			x: -1.0d
 			y: 1.0d
 			subtitle: "24 Silver"
-			description: [
-				"Not too stoked with your facade? Not a problem! Foliage solves everything."
-			]
+			description: ["Not too stoked with your facade? Not a problem! Foliage solves everything."]
 			id: "7D93DAB3E8ACF953"
 			tasks: [{
 				id: "06028A67C6DCCD00"
