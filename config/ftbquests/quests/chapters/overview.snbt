@@ -123,7 +123,7 @@
 			disable_toast: true
 			x: -8.0d
 			y: 2.5d
-			subtitle: "&4挑战"
+			subtitle: "&4Challenge"
 			description: [
 				"Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
 				""
@@ -410,7 +410,7 @@
 			shape: "circle"
 			subtitle: "Bonus 3A"
 			description: [
-				The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
+				"The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
 				"In researching the required technologies, you will find that your hard earned silver suddenly finds a second use.."
 				""
 				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."
@@ -429,7 +429,7 @@
 			x: -2.5d
 			y: -1.25d
 			shape: "circle"
-			subtitle: "→ Alternative Path"
+			subtitle: "Alternative Path"
 			description: [
 				"You'll find that the newly discovered Laser setup has other interesting capabilities."
 				""
