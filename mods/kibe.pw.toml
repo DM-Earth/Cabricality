@@ -1,13 +1,13 @@
 name = "Kibe Utilities"
-filename = "kibe-1.9.8-BETA+1.18.jar"
+filename = "kibe-1.9.9-BETA+1.18.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "da42656eae425d95637cff1dc1c26c0e274bb01c"
+hash = "08fb19887eb6fcfd3eb0ca3f10276cfd50ff964f"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 3842007
+file-id = 3899479
 project-id = 388832

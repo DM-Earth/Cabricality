@@ -2593,7 +2593,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "2fdcd8eb8a2e5ae247fad3b5a44d4a3cdf9228e999ecfd5949648d5d1554f345"
+hash = "49a22647b2ec0cf9c7ededb6d4a4655f064a6d1ebbadaff3bf544e201bbea5a1"
 metafile = true
 
 [[files]]
@@ -2630,12 +2630,17 @@ hash = "f690888f36320c2e1ff2a2e175288ca8d7d4ec47e257df4bdc93d704a54f5bd0"
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "ecbd5ca9971a690954e4aa8e4ab991c9b64ddce59442519478bf376226fcf4d8"
+hash = "faf7cfa6298ebfb08a272b5eee7312819def03e00edd16d9242f1e81632f9f8b"
 metafile = true
 
 [[files]]
 file = "mods/dawn.pw.toml"
 hash = "b60fc5c154d6ca0e07406638d53bfbaa751e3ef517ff553fcec8543847844728"
+metafile = true
+
+[[files]]
+file = "mods/debugify.pw.toml"
+hash = "4595621a88c273e5d0ab70dae5866d323122f449c668a667640ee79fbc6063f2"
 metafile = true
 
 [[files]]
@@ -2645,17 +2650,17 @@ metafile = true
 
 [[files]]
 file = "mods/extended-drawers.pw.toml"
-hash = "5b4dd59f41be14c79701338a53e3b277c7ad9ead099b5d200450c05ae0ccbf7f"
+hash = "3a565b98448d458ccd46b050d112272d21df9eb12ffbd56a134db2fdaf3f5982"
 metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "42e2da7f33977bfa2bb411e1443723a857276cc460717573ef9f8f861076ad64"
+hash = "d95379da217fbae889dc9b9e66a55d484ee63a28da2ffc9d79bd020cc4e2cc8d"
 metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "31b8ee3e8f34273e2989381dde65b8b13e128b6fed0c244f46af62bb47ac354f"
+hash = "91520be992ba24e8b7a4e5d5b9dc3f20ad2807d1c789f20eb0583c5fdfaa0401"
 metafile = true
 
 [[files]]
@@ -2719,7 +2724,7 @@ metafile = true
 
 [[files]]
 file = "mods/kibe.pw.toml"
-hash = "defe36330eab9fc6d45a5bcdbd5b20b67ad79b9ee599f086683172fc129be5de"
+hash = "508dd3ddc4a4d7880b80a3806b24002a1bdf90dd608da1e51b58e845bcc66fce"
 metafile = true
 
 [[files]]
@@ -2788,7 +2793,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "c704ab1b78607e345633f54f6f0d3a4ffa9fdb37600c87a794bd67fab3ec9b54"
+hash = "b17d25b273caec976c340d196d09482b908d8ae43e389132c787714100ea8186"
 metafile = true
 
 [[files]]
@@ -2801,17 +2806,17 @@ hash = "06a95f12b39edadcd918e9dd0135b6aea7972107e2317831e57e033af6776c6b"
 
 [[files]]
 file = "mods/roughly-enough-characters.pw.toml"
-hash = "65e0853c28d1fee1b16c986100c45c5d69e56f8b1a5ed12d978cf9d33529aaca"
+hash = "86c4ef056d5d2a56d0f69cd988b656a1201651845e40a7027726fec7c9f090b6"
 metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "261c6f1cddd8eb3e4bdab72d2787bbc462007ab169844767bdf38ca1917c6b1d"
+hash = "53128f525532c2dd8927f8ca23f67a357c0e84d3907f86b99274092f14b76625"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "696826932a2a382de68f7c843847b6c8c8d5319c022503681494e3cff03e18ff"
+hash = "f234a8e383d2145966b28900ca77012c1fe916e4c599c65a7f0f68acd4efbca1"
 metafile = true
 
 [[files]]

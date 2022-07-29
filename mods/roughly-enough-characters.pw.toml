@@ -1,13 +1,13 @@
 name = "Roughly Enough Characters [REC][RECH][JECH for fabric]"
-filename = "roughly-enough-characters-0.0.5+1.18.2-fabric0.13.3.jar"
+filename = "roughly-enough-characters-0.0.6+1.18.2-fabric0.13.3.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/y6h3fkEO/versions/0.0.5+1.18.2-fabric0.13.3/roughly-enough-characters-0.0.5%2B1.18.2-fabric0.13.3.jar"
+url = "https://cdn.modrinth.com/data/y6h3fkEO/versions/0.0.6+1.18.2fabric0.13.3/roughly-enough-characters-0.0.6%2B1.18.2-fabric0.13.3.jar"
 hash-format = "sha1"
-hash = "521884ca5c020442214161012e209d994b20ea93"
+hash = "678534548f1ae3dbe61aa28cb4dcbcd860766f9e"
 
 [update]
 [update.modrinth]
 mod-id = "y6h3fkEO"
-version = "LPbGpRAG"
+version = "3zlgsgf5"
