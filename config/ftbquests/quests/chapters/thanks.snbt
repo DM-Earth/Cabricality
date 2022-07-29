@@ -1,9 +1,9 @@
 {
-	id: "4958836B3A14899C"
-	group: "331B6409EF6A7840"
-	order_index: 8
-	filename: "8l"
-	title: "&8> Special Thanks"
+	id: "545A50FD910B4077"
+	group: ""
+	order_index: 1
+	filename: "thanks"
+	title: "&8 Special Thanks"
 	icon: {
 		id: "minecraft:writable_book"
 		Count: 1b
@@ -17,23 +17,23 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [{
-		title: "Thanks for playing!"
+		title: "&cThanks &afor &bplaying&f!"
 		x: -9.0d
 		y: -7.0d
 		shape: "circle"
-		subtitle: "Stuff"
+		subtitle: "Staff"
 		description: ["Original Author: Simibubi"]
 		dependencies: ["4D94E2619DDAADC4"]
 		hide: true
 		size: 2.2d
-		id: "09842CDC7A331BEE"
+		id: "349ABBDAFC65B803"
 		tasks: [{
-			id: "7C16EA0DB0F54BCB"
+			id: "142B8B8667581557"
 			type: "item"
 			item: "minecraft:stick"
 		}]
 		rewards: [{
-			id: "70BC5824FF4A3B74"
+			id: "52BAF3A6E866F4C7"
 			type: "item"
 			team_reward: true
 			auto: "enabled"
