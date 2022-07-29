@@ -13,11 +13,7 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "ee8ba7197ec11ca14e2de279ca37b0226508fd97ba10b54d8bf18cf37fab6080"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/8l.snbt"
-hash = "3367a8e5bc4f087987f8351f35fda6eca0ed220444d2678c325e197bf817f928"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/dl.snbt"
+file = "config/ftbquests/quests/chapters/advancements.snbt"
 hash = "97d7673dafb790ad02211246ac028f04190e14e0826f8a08a8ff381875b20395"
 
 [[files]]
@@ -55,6 +51,10 @@ hash = "8fa1a4de5897517df6ba184c7f8523d148b7f6dfee1626b6841c07de45af6345"
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
 hash = "906338dbd9765ada7dd20e33b53dddc56888e94202816650b9e4c5bce0783087"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/thanks.snbt"
+hash = "3367a8e5bc4f087987f8351f35fda6eca0ed220444d2678c325e197bf817f928"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
@@ -982,7 +982,7 @@ hash = "326923296bf29d6b38281604f0fe2701f792f575513c6f4dcbe605d46824d0ef"
 
 [[files]]
 file = "kubejs/assets/minecraft/texts/splashes.txt"
-hash = "1818c6eb3efca1bb8deb4cf4e27fc0279d5ae3ef2ba69b269c208b30148a805b"
+hash = "92cb12094a3aa2bed143ac86aae3d2aa30d6bd705ac0702f58dd6093cfcb4c9b"
 
 [[files]]
 file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_0.png"
