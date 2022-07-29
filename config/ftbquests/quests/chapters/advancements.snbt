@@ -17,13 +17,20 @@
 			subtitle: "Remember to plant it back!"
 			id: "3D46F5872613C87A"
 			tasks: [{
-				id: "6D6F425DA3A7435B"
-				type: "observation"
-				title: "Punch any log"
-				icon: "minecraft:birch_log"
-				timer: 170L
-				observe_type: 1
-				to_observe: "minecraft:logs"
+				id: "305B8665F7A566F1"
+				type: "item"
+				title: "Craft 4096 planks"
+				icon: "minecraft:oak_planks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				count: 4096L
+				consume_items: false
+				only_from_crafting: true
 			}]
 		}
 		{

@@ -1,11 +1,7 @@
 {
 	"basics": {
 		"favorites": [
-			"{mode:\"NOON\",type:\"roughlyenoughitems:time\"}",
-			"{type:\"roughlyenoughitems:weather\",weather:\"CLEAR\"}",
-			"{mode:\"MORN\",type:\"roughlyenoughitems:time\"}",
-			"{data:{Count:1b,id:\"indrev:tungsten_ore\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
-			"{data:{Count:1b,id:\"kibe:igniter\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+			"{id:\"ftbteams:my_team\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbteams:textures/teams.png\",\"x\":0,\"click\":\"ftbteams:open_gui\",\"loading_screen\":true}',type:\"ftblibrary:sidebar_button\"}"
 		],
 		"hiddenFavorites": [],
 		"displayHistory": [

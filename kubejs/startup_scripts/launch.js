@@ -86,7 +86,7 @@ onEvent("item.registry", event => {
 		event.create("screwdriver")
 			.texture(modpackId + ":item/screwdriver")
 			.displayName("Reinforced Screwdriver")
-			.maxDamage(64)
+			.maxDamage(512)
 
 		registerTypicalItem("Invar Ingot", "Invar Ingot")
 		registerTypicalItem("Nickel Ingot", "Nickel Ingot")

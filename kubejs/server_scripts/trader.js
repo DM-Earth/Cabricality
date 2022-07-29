@@ -2,7 +2,7 @@ function tradeList() {
 	//	sync needed
 	//	profession, modId, item, =itemCount, =silverCoinCount
 	let tl = [
-		//	Farming
+		//		Farming
 		["farming", "item", "farmersdelight", "carrot_crate", 1, 1],
 		["farming", "item", "farmersdelight", "beetroot_crate", 1, 1],
 		["farming", "item", "farmersdelight", "cabbage_crate", 1, 1],
@@ -24,7 +24,7 @@ function tradeList() {
 		["farming", "item", "minecraft", "pumpkin", 9, 1],
 		["farming", "tag", "minecraft", "wool", 16, 1],
 		["farming", "item", "minecraft", "melon", 3, 1],
-		//	Carpentry
+		//		Carpentry
 		["carpentry", "item", "minecraft", "oak_log", 64, 1],
 		["carpentry", "item", "minecraft", "spruce_log", 64, 1],
 		["carpentry", "item", "minecraft", "jungle_log", 64, 1],
@@ -36,13 +36,14 @@ function tradeList() {
 		["carpentry", "item", "promenade", "palm_log", 64, 1],
 		["carpentry", "item", "promenade", "cherry_oak_log", 64, 1],
 		["carpentry", "item", "promenade", "dark_amaranth_stem", 64, 1],
-		//	Mining
+		//		Mining
 		["mining", "item", "create", "crushed_iron_ore", 16, 8],
 		["mining", "item", "create", "crushed_copper_ore", 16, 8],
 		["mining", "item", "create", "crushed_zinc_ore", 16, 8],
 		["mining", "item", "create", "crushed_gold_ore", 16, 10],
 		["mining", "item", "create", "crushed_nickel_ore", 16, 12],
 		["mining", "item", "create", "crushed_lead_ore", 16, 12],
+		["mining", "item", "create", "crushed_tin_ore", 16, 12],
 		["mining", "item", "minecraft", "andesite", 64, 1],
 		["mining", "item", "minecraft", "granite", 64, 1],
 		["mining", "item", "minecraft", "diorite", 64, 1],
@@ -53,7 +54,7 @@ function tradeList() {
 		["mining", "item", "minecraft", "lapis_lazuli", 16, 6],
 		["mining", "item", "minecraft", "diamond", 1, 14],
 		["mining", "item", "minecraft", "coal", 16, 2],
-		//	Masonry
+		//      Masonry
 		["masonry", "item", "architects_palette", "basalt_tiles", 64, 6],
 		["masonry", "item", "architects_palette", "sunmetal_block", 64, 8],
 		["masonry", "item", "architects_palette", "osseous_bricks", 64, 6],
@@ -68,14 +69,14 @@ function tradeList() {
 		["masonry", "item", "create", "ornate_iron_window", 64, 10],
 		["masonry", "item", "minecraft", "mossy_cobblestone", 64, 6],
 		["masonry", "tag", "c", "glazed_terracotta", 64, 6],
-		//	Hunting
+		//		Hunting
 		["hunting", "item", "minecraft", "phantom_membrane", 1, 8],
 		["hunting", "item", "minecraft", "rabbit_foot", 1, 8],
 		["hunting", "item", "minecraft", "nether_star", 1, 64],
 		["hunting", "item", "minecraft", "dragon_breath", 1, 1],
 		["hunting", "item", "minecraft", "ghast_tear", 1, 10],
 		["hunting", "item", "minecraft", "dragon_egg", 1, 128],
-		//	Cooking
+		//		Cooking
 		["cooking", "item", "create", "bar_of_chocolate", 16, 4],
 		["cooking", "item", "create", "honeyed_apple", 16, 4],
 		["cooking", "item", "create", "builders_tea", 16, 4],
@@ -123,12 +124,12 @@ function tradeList() {
 		["cooking", "item", "farmersdelight", "honey_glazed_ham", 16, 7],
 		["cooking", "item", "farmersdelight", "shepherds_pie", 16, 7],
 		["cooking", "item", "create", "sweet_roll", 16, 4],
-		//	Fishing
+		//		Fishing
 		["fishing", "item", "minecraft", "cod", 8, 1],
 		["fishing", "item", "minecraft", "salmon", 8, 1],
 		["fishing", "item", "minecraft", "pufferfish", 8, 1],
 		["fishing", "item", "minecraft", "tropical_fish", 8, 1],
-		//	Smithing
+		//		Smithing
 		["smithing", "item", "minecraft", "iron_boots", 1, 2],
 		["smithing", "item", "minecraft", "iron_leggings", 1, 4],
 		["smithing", "item", "minecraft", "iron_chestplate", 1, 4],

@@ -91,7 +91,7 @@ function tweaks(event) {
 
 	event.remove({ id: CR("splashing/gravel") })
 	event.recipes.createSplashing([
-		Item.of(MC("iron_nugget", 2)).withChance(0.125),
+		Item.of(MC("iron_nugget", 3)).withChance(0.25),
 		Item.of(MC("flint")).withChance(0.25)
 	], "minecraft:gravel")
 
@@ -210,6 +210,7 @@ function tweaks(event) {
 	})
 	event.remove({ output: ED("t4_upgrade") })
 	event.remove({ output: ED("upgrade_frame") })
+	event.remove({ output: CR("propeller") })
 	event.stonecutting(ED("upgrade_frame"), IV("planks"))
 	upgrade(ED("upgrade_frame"), ED("t1_upgrade"), 2)
 	upgrade(ED("t1_upgrade"), ED("t2_upgrade"), 3)
@@ -225,12 +226,56 @@ function tweaks(event) {
 	event.replaceInput({ output: AP("nether_brass_blend") }, MC("copper_ingot"), IV("copper_dust"))
 
 	event.remove({ output: BC("smart_chisel") })
-	event.shaped(ED("lock", 1), [
+	event.shaped(BC("smart_chisel", 1), [
 		"SB"
 	], {
 		S: MC("stick"),
 		B: CR("polished_rose_quartz")
 	})
+
+	event.remove({ output: IV("solid_infuser_factory_mk4") })
+	event.remove({ output: IV("compressor_factory_mk4") })
+	event.remove({ output: IV("pulverizer_factory_mk4") })
+	event.remove({ output: IV("electric_furnace_factory_mk4") })
+
+	event.remove({ output: CR("item_vault") })
+	event.shaped(CR("item_vault"), [
+		"L",
+		"B",
+		"L"
+	], {
+		L: IV("lead_plate"),
+		B: MC("barrel")
+	})
+	event.remove({ output: MC("shulker_box") })
+	event.shaped(CR("item_vault"), [
+		"L",
+		"B",
+		"L"
+	], {
+		L: MC("shulker_shell"),
+		B: MC("barrel")
+	})
+	event.remove({ output: IV("cabinet") })
+	event.shaped(IV("cabinet"), [
+		"L",
+		"B",
+		"L"
+	], {
+		L: CR("iron_sheet"),
+		B: MC("barrel")
+	})
+	event.remove({ output: IV("fan") })
+	event.shaped(IV("fan"), [
+		" T ",
+		"TIT",
+		" T "
+	], {
+		T: IV("tin_plate"),
+		I: MC("iron_ingot")
+	})
+	event.remove({ output: AP("plating_block") })
+	event.stonecutting(AP("plating_block", 2), IV("steel_plate"))
 }
 
 function trickierWindmills(event) {
@@ -304,7 +349,7 @@ function initAndesiteMachine(event) {
 	})
 
 	andesite_machine("create:portable_storage_interface", 2)
-	andesite_machine("create:encased_fan", 1, CR("propeller"))
+	andesite_machine("create:encased_fan", 1, IV("fan"))
 	andesite_machine("create:mechanical_press", 1, MC("iron_block"))
 	andesite_machine("create:mechanical_mixer", 1, CR("whisk"))
 	andesite_machine("create:mechanical_drill", 1, IV("iron_drill_head"))

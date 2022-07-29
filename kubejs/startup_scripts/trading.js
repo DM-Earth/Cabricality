@@ -44,6 +44,7 @@ function tradeList() {
 		["mining", "item", "create", "crushed_gold_ore", 16, 10],
 		["mining", "item", "create", "crushed_nickel_ore", 16, 12],
 		["mining", "item", "create", "crushed_lead_ore", 16, 12],
+		["mining", "item", "create", "crushed_tin_ore", 16, 12],
 		["mining", "item", "minecraft", "andesite", 64, 1],
 		["mining", "item", "minecraft", "granite", 64, 1],
 		["mining", "item", "minecraft", "diorite", 64, 1],
