@@ -34,6 +34,30 @@
 			}]
 		}
 		{
+			title: "The Alloy Mixer"
+			icon: "create:brass_ingot"
+			x: 1.0d
+			y: 2.0d
+			shape: "circle"
+			subtitle: "Contraption 10"
+			description: [
+				"Not part of the Mechanism Chain, yet very important for creating relevant machines."
+				""
+				"Using Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them."
+				""
+				"Pumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots."
+				""
+				"For less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above."
+			]
+			hide_dependency_lines: false
+			dependencies: ["727B43FD95C4A512"]
+			id: "174E3A810535CAAC"
+			tasks: [{
+				id: "4418A795B9FB076D"
+				type: "checkmark"
+			}]
+		}
+		{
 			title: "Temporary Sand"
 			x: -5.0d
 			y: 5.0d
@@ -48,53 +72,6 @@
 				item: "minecraft:sand"
 				consume_items: false
 			}]
-		}
-		{
-			title: "Quartz Seeds"
-			x: -4.0d
-			y: 7.0d
-			shape: "circle"
-			subtitle: "Contraption 12-1"
-			description: [
-				"This piece of quartz is too small. With enough water we might get somewhere."
-				""
-				"If you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accellerate the process. "
-			]
-			dependencies: [
-				"0AF5F19F5D9FB5C9"
-				"2FFFE1C5366930BB"
-			]
-			dependency_requirement: "one_completed"
-			id: "345B94F6D17605CD"
-			tasks: [{
-				id: "4D592B701A2AE0BC"
-				type: "item"
-				item: "ae2:certus_crystal_seed"
-				consume_items: false
-			}]
-		}
-		{
-			title: "The Greate Growth"
-			icon: "ae2:certus_quartz_crystal"
-			x: -2.5d
-			y: 8.0d
-			subtitle: "Contraption 12-4"
-			description: ["Finally, a fully grown crystal. Don't forget to send every second one back around for seed production!"]
-			dependencies: ["345B94F6D17605CD"]
-			id: "1861E583C9DAA0BA"
-			tasks: [
-				{
-					id: "68D808533C34AB5C"
-					type: "item"
-					item: "ae2:certus_quartz_crystal"
-					consume_items: false
-				}
-				{
-					id: "5143762A67B81B7E"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
 		}
 		{
 			title: "Water Supply"
@@ -148,11 +125,86 @@
 			]
 		}
 		{
+			title: "Quartz Seeds"
+			x: -4.0d
+			y: 7.0d
+			shape: "circle"
+			subtitle: "Contraption 12-1"
+			description: [
+				"This piece of quartz is too small. With enough water we might get somewhere."
+				""
+				"If you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accellerate the process. "
+			]
+			dependencies: [
+				"0AF5F19F5D9FB5C9"
+				"2FFFE1C5366930BB"
+			]
+			dependency_requirement: "one_completed"
+			id: "345B94F6D17605CD"
+			tasks: [{
+				id: "4D592B701A2AE0BC"
+				type: "item"
+				item: "ae2:certus_crystal_seed"
+				consume_items: false
+			}]
+		}
+		{
+			title: "The Greate Growth"
+			icon: "ae2:certus_quartz_crystal"
+			x: -2.5d
+			y: 8.0d
+			subtitle: "Contraption 12-2"
+			description: ["Finally, a fully grown crystal. Don't forget to send every second one back around for seed production!"]
+			dependencies: ["345B94F6D17605CD"]
+			id: "1861E583C9DAA0BA"
+			tasks: [
+				{
+					id: "68D808533C34AB5C"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+					consume_items: false
+				}
+				{
+					id: "5143762A67B81B7E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "The (Re-)Charger"
+			icon: "ae2:charged_certus_quartz_crystal"
+			x: 1.0d
+			y: 6.0d
+			subtitle: "Contraption 13"
+			description: [
+				"Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2."
+				""
+				"The Charger from AE2 can be used here, along with the Item Trasportation of choice."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1256352748B93449"]
+			id: "24FFFE0FC9EAEF8D"
+			tasks: [
+				{
+					id: "23DAE14596F025DF"
+					type: "item"
+					item: "ae2:charged_certus_quartz_crystal"
+					consume_items: false
+				}
+				{
+					id: "56F78EAD35D1046E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
 			title: "Skystone Mixer"
 			icon: "kubejs:sky_stone_bucket"
 			x: -1.0d
 			y: 5.5d
-			subtitle: "Contraption 13-1"
+			subtitle: "Contraption 14-1"
 			description: ["Dissolving this strange reactive powder in water creates a fun and useful liquid."]
 			dependencies: [
 				"2FFFE1C5366930BB"
@@ -178,7 +230,7 @@
 			icon: "kubejs:redstone_bucket"
 			x: -0.5d
 			y: 7.0d
-			subtitle: "Contraption 13-2"
+			subtitle: "Contraption 14-2"
 			description: [
 				"Discharging an Energized Certus Quartz Crystal into the liquid creates a solution that reminds you of liquid redstone."
 				""
@@ -199,6 +251,109 @@
 				}
 				{
 					id: "4B98217B670ECA57"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Painted Quartz Mixer"
+			icon: "create:polished_rose_quartz"
+			x: -1.0d
+			y: 8.5d
+			subtitle: "Contraption 14-3"
+			description: [
+				"In a third and final Mixer, our freshly grown Crystals will be treated to a nice and energetic re-design."
+				"(Sorry to all Mineralogists.)"
+			]
+			dependencies: [
+				"1861E583C9DAA0BA"
+				"619E34A7DE48B991"
+			]
+			id: "06B061C0EE94BC90"
+			tasks: [
+				{
+					id: "0AD0021818A0BB33"
+					type: "item"
+					item: "create:polished_rose_quartz"
+					consume_items: false
+				}
+				{
+					id: "0F6DB8FCC5C16A94"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Iron for Days"
+			icon: "minecraft:cobblestone"
+			x: 3.5d
+			y: 7.0d
+			subtitle: "Contraption 15-1"
+			description: [
+				"Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone."
+				""
+				"Start with some Drills hooked up to regenerating Cobblestone blocks."
+			]
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "0E46C1FCE5AEB1DF"
+			tasks: [
+				{
+					id: "7E68B8C4958FB0B5"
+					type: "item"
+					item: "minecraft:cobblestone"
+					consume_items: false
+				}
+				{
+					id: "5E676D2CC5975AEA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "De-Chunkify"
+			icon: "minecraft:gravel"
+			x: 4.0d
+			y: 9.0d
+			subtitle: "Contraption 15-2"
+			description: ["The Cobblestone first needs to be milled down into Gravel."]
+			dependencies: ["0E46C1FCE5AEB1DF"]
+			id: "1139F2E4E6FCFE29"
+			tasks: [
+				{
+					id: "517441AE19EF30E2"
+					type: "item"
+					item: "minecraft:gravel"
+					consume_items: false
+				}
+				{
+					id: "63F3877902E01590"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Ferric Traces"
+			icon: "minecraft:iron_nugget"
+			x: 2.5d
+			y: 10.0d
+			subtitle: "Contraption 15-3"
+			description: ["Washing the Gravel with an Encased Fan leaves you with Iron Nuggets and Flint."]
+			dependencies: ["1139F2E4E6FCFE29"]
+			id: "53735DC4231AB566"
+			tasks: [
+				{
+					id: "591D709D1E4EE97A"
+					type: "item"
+					item: "minecraft:iron_nugget"
+					consume_items: false
+				}
+				{
+					id: "64B405696E96FFCD"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -255,62 +410,6 @@
 			]
 		}
 		{
-			title: "The (Re-)Charger"
-			icon: "ae2:charged_certus_quartz_crystal"
-			x: 1.0d
-			y: 6.0d
-			subtitle: "Contraption 14"
-			description: [
-				"Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2."
-				""
-				"The Charger from AE2 can be used here, along with the Item Trasportation of choice."
-			]
-			hide_dependency_lines: true
-			dependencies: ["1256352748B93449"]
-			id: "24FFFE0FC9EAEF8D"
-			tasks: [
-				{
-					id: "23DAE14596F025DF"
-					type: "item"
-					item: "ae2:charged_certus_quartz_crystal"
-					consume_items: false
-				}
-				{
-					id: "56F78EAD35D1046E"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Iron for Days"
-			icon: "minecraft:cobblestone"
-			x: 3.5d
-			y: 7.0d
-			subtitle: "Contraption 15-1"
-			description: [
-				"Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone."
-				""
-				"Start with some Drills hooked up to regenerating Cobblestone blocks."
-			]
-			hide_dependency_lines: true
-			dependencies: ["727B43FD95C4A512"]
-			id: "0E46C1FCE5AEB1DF"
-			tasks: [
-				{
-					id: "7E68B8C4958FB0B5"
-					type: "item"
-					item: "minecraft:cobblestone"
-					consume_items: false
-				}
-				{
-					id: "5E676D2CC5975AEA"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			title: "Keep on Deploying"
 			icon: "create:precision_mechanism"
 			x: -1.0d
@@ -335,6 +434,31 @@
 					title: "Automated"
 				}
 			]
+		}
+		{
+			title: "Arming the Deployer II"
+			x: -2.5d
+			y: 11.5d
+			shape: "circle"
+			description: [
+				"It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly."
+				"Just like last time, the requirement does not necessarily call for automation."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5351AF6CA73CB8E0"]
+			id: "6D8BB2D6A75ABB16"
+			tasks: [{
+				id: "7DF53EF0CF55B5D7"
+				type: "item"
+				item: {
+					id: "kubejs:screwdriver"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
 		}
 		{
 			title: "Chapter 2 Complete!"
@@ -377,161 +501,24 @@
 			]
 		}
 		{
-			title: "De-Chunkify"
-			icon: "minecraft:gravel"
-			x: 4.0d
-			y: 9.0d
-			subtitle: "Contraption 15-2"
-			description: ["The Cobblestone first needs to be milled down into Gravel."]
-			dependencies: ["0E46C1FCE5AEB1DF"]
-			id: "1139F2E4E6FCFE29"
-			tasks: [
-				{
-					id: "517441AE19EF30E2"
-					type: "item"
-					item: "minecraft:gravel"
-					consume_items: false
-				}
-				{
-					id: "63F3877902E01590"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Ferric Traces"
-			icon: "minecraft:iron_nugget"
-			x: 2.5d
-			y: 10.0d
-			subtitle: "Contraption 15-3"
-			description: ["Washing the Gravel with an Encased Fan leaves you with Iron Nuggets and Flint."]
-			dependencies: ["1139F2E4E6FCFE29"]
-			id: "53735DC4231AB566"
-			tasks: [
-				{
-					id: "591D709D1E4EE97A"
-					type: "item"
-					item: "minecraft:iron_nugget"
-					consume_items: false
-				}
-				{
-					id: "64B405696E96FFCD"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Painted Quartz Mixer"
-			icon: "create:polished_rose_quartz"
-			x: -1.0d
-			y: 8.5d
-			subtitle: "Contraption 13-3"
-			description: [
-				"In a third and final Mixer, our freshly grown Crystals will be treated to a nice and energetic re-design."
-				"(Sorry to all Mineralogists.)"
-			]
-			dependencies: [
-				"1861E583C9DAA0BA"
-				"619E34A7DE48B991"
-			]
-			id: "06B061C0EE94BC90"
-			tasks: [
-				{
-					id: "0AD0021818A0BB33"
-					type: "item"
-					item: "create:polished_rose_quartz"
-					consume_items: false
-				}
-				{
-					id: "0F6DB8FCC5C16A94"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Heated Treatment"
-			x: -1.0d
-			y: 17.5d
-			shape: "circle"
-			subtitle: "Contraption 18-2"
-			description: [
-				"Dropping the Liquids onto a Precision Mechanism will convert it to its Infernal counterpart."
-				""
-				"Once again, full automation of bonus mechanisms is not as pressing a task, since they do not lead to any further machines beyond their own."
-				"A semi-automatic setup for converting Precision Mechanisms whenever needed should suffice."
-			]
-			dependencies: [
-				"239C64263B91350D"
-				"1D9D65FBD06DD481"
-			]
-			id: "3C50B4556375178E"
-			tasks: [{
-				id: "24070D354D67A3DF"
-				type: "item"
-				item: "kubejs:infernal_mechanism"
-				consume_items: false
-			}]
-		}
-		{
-			title: "A lot. of lava"
-			icon: "minecraft:lava_bucket"
-			x: -2.5d
+			title: "Blaze Escort"
+			x: 0.5d
 			y: 17.0d
-			subtitle: "Contraption 18-1"
-			description: [
-				""
-				"Every Zinc Machine will end up using 24 Buckets of Lava in Production. It's not a great ecological footprint, but even just one Hose Pulley can make quick work of it."
-			]
+			shape: "circle"
+			description: ["For the first time in the progression, a Blaze Burner is required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners."]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
 				"21753CBB528EAADF"
 			]
 			hide: true
-			id: "1D9D65FBD06DD481"
-			tasks: [
-				{
-					id: "4A9BF979E823D4CB"
-					type: "item"
-					item: "minecraft:lava_bucket"
-					consume_items: false
-				}
-				{
-					id: "73BF4F3B488FBC83"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Soul Distillery"
-			icon: "kubejs:liquid_soul_bucket"
-			x: -1.0d
-			y: 16.0d
-			subtitle: "Contraption 17-3"
-			description: ["Drop all the harvested vines into a Heated Mixing Basin."]
-			dependencies: [
-				"223BB57AD0239511"
-				"7E59B7DC239E621E"
-				"5DCF9C8212AA3BE3"
-			]
-			id: "239C64263B91350D"
-			tasks: [
-				{
-					id: "7BBC2AAED0A77FDC"
-					type: "item"
-					item: "kubejs:liquid_soul_bucket"
-					consume_items: false
-				}
-				{
-					id: "21C241D2335C67E4"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
+			id: "5DCF9C8212AA3BE3"
+			tasks: [{
+				id: "3BBAFB33D9E2BB24"
+				type: "item"
+				item: "create:blaze_burner"
+				consume_items: false
+			}]
 		}
 		{
 			title: "The Double Decker I"
@@ -598,27 +585,84 @@
 			]
 		}
 		{
-			title: "Arming the Deployer II"
+			title: "Soul Distillery"
+			icon: "kubejs:liquid_soul_bucket"
+			x: -1.0d
+			y: 16.0d
+			subtitle: "Contraption 17-3"
+			description: ["Drop all the harvested vines into a Heated Mixing Basin."]
+			dependencies: [
+				"223BB57AD0239511"
+				"7E59B7DC239E621E"
+				"5DCF9C8212AA3BE3"
+			]
+			id: "239C64263B91350D"
+			tasks: [
+				{
+					id: "7BBC2AAED0A77FDC"
+					type: "item"
+					item: "kubejs:liquid_soul_bucket"
+					consume_items: false
+				}
+				{
+					id: "21C241D2335C67E4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "A. Lot. Of. Lava"
+			icon: "minecraft:lava_bucket"
 			x: -2.5d
-			y: 11.5d
-			shape: "circle"
+			y: 17.0d
+			subtitle: "Contraption 18-1"
 			description: [
-				"It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly."
-				"Just like last time, the requirement does not necessarily call for automation."
+				""
+				"Every Zinc Machine will end up using 24 Buckets of Lava in Production. It's not a great ecological footprint, but even just one Hose Pulley can make quick work of it."
 			]
 			hide_dependency_lines: true
-			dependencies: ["5351AF6CA73CB8E0"]
-			id: "6D8BB2D6A75ABB16"
-			tasks: [{
-				id: "7DF53EF0CF55B5D7"
-				type: "item"
-				item: {
-					id: "kubejs:screwdriver"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			hide: true
+			id: "1D9D65FBD06DD481"
+			tasks: [
+				{
+					id: "4A9BF979E823D4CB"
+					type: "item"
+					item: "minecraft:lava_bucket"
+					consume_items: false
 				}
+				{
+					id: "73BF4F3B488FBC83"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Heated Treatment"
+			x: -1.0d
+			y: 17.5d
+			shape: "circle"
+			subtitle: "Contraption 18-2"
+			description: [
+				"Dropping the Liquids onto a Precision Mechanism will convert it to its Infernal counterpart."
+				""
+				"Once again, full automation of bonus mechanisms is not as pressing a task, since they do not lead to any further machines beyond their own."
+				"A semi-automatic setup for converting Precision Mechanisms whenever needed should suffice."
+			]
+			dependencies: [
+				"239C64263B91350D"
+				"1D9D65FBD06DD481"
+			]
+			id: "3C50B4556375178E"
+			tasks: [{
+				id: "24070D354D67A3DF"
+				type: "item"
+				item: "kubejs:infernal_mechanism"
 				consume_items: false
 			}]
 		}
@@ -657,50 +701,6 @@
 					random_bonus: 4
 				}
 			]
-		}
-		{
-			title: "The Alloy Mixer"
-			icon: "create:brass_ingot"
-			x: 1.0d
-			y: 2.0d
-			shape: "circle"
-			subtitle: "Contraption 10"
-			description: [
-				"Not part of the Mechanism Chain, yet very important for creating relevant machines."
-				""
-				"Using Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them."
-				""
-				"Pumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots."
-				""
-				"For less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above."
-			]
-			hide_dependency_lines: false
-			dependencies: ["727B43FD95C4A512"]
-			id: "174E3A810535CAAC"
-			tasks: [{
-				id: "4418A795B9FB076D"
-				type: "checkmark"
-			}]
-		}
-		{
-			title: "Blaze Escort"
-			x: 0.5d
-			y: 17.0d
-			shape: "circle"
-			description: ["For the first time in the progression, a Blaze Burner is required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners."]
-			hide_dependency_lines: true
-			dependencies: [
-				"19715EBCBBA1B4AD"
-				"21753CBB528EAADF"
-			]
-			hide: true
-			id: "5DCF9C8212AA3BE3"
-			tasks: [{
-				id: "3BBAFB33D9E2BB24"
-				type: "item"
-				item: "create:blaze_burner"
-				consume_items: false
-			}]
 		}
 	]
 }
