@@ -33,6 +33,7 @@ onEvent("item.registry", event => {
 		registerMechanism("Kinetic", "Kinetic")
 		registerMechanism("Sealed", "Sealed")
 		registerMechanism("Infernal", "Infernal")
+		registerMechanism("Sturdy", "Sturdy")
 		registerMechanism("Inductive", "Inductive")
 		registerMechanism("Abstruse", "Abstruse")
 		registerMechanism("Calculation", "Calculation")
@@ -284,7 +285,7 @@ onEvent("block.registry", event => {
 	registerMachine("Copper", "Copper", "cutout")
 	registerMachine("Zinc", "Zinc", "cutout")
 	registerMachine("Enderium", "Enderium", "cutout")
-	//	registerMachine("Invar", "cutout")
+	registerMachine("Obsidian", "Obsidian", "translucent")
 
 	let registerCasing = (name, localName) => {
 		let id = name.toLowerCase() + "_casing"
