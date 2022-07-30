@@ -372,7 +372,7 @@
 				{
 					id: "611F921F94FAE142"
 					type: "item"
-					title: "Copper Can (Molten Iron)"
+					title: "Bucket (Molten Iron)"
 					item: "indrev:molten_iron_bucket"
 					consume_items: false
 				}
