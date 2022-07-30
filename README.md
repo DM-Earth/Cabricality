@@ -74,13 +74,13 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [X] 黄铜机器
 - [X] 锌机器
 - [X] 殷钢机器
-- [X] 末影合金机器**（未完善）**
+- [X] 末影合金机器（未完善）
 - [X] 福鲁伊克斯机器
 - [X] `新` 黑曜机器
 
 ### 特殊内容
 
-- [X] 混沌炼金**（未完善）**
+- [X] 混沌炼金（未完善）
 - [X] 交易系统
 - [X] 数字运算系统
 
