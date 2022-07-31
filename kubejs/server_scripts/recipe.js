@@ -956,7 +956,7 @@ function alchemy(event) {
 				"type": "indrev:fluid_infuse",
 				"ingredients": Ingredient.of(e.ingredient).toJson(),
 				"fluidInput": {
-					"fluid": "kubejs:molten_glass",
+					"fluid": "tconstruct:molten_glass",
 					"amount": 8100
 				},
 				"output": { "item": e.id },
@@ -990,7 +990,7 @@ function alchemy(event) {
 		"ingredients": [
 			{ "item": "minecraft:redstone" },
 		],
-		"fluidInput": { "fluid": "kubejs:molten_glass", "amount": 8100 },
+		"fluidInput": { "fluid": "tconstruct:molten_glass", "amount": 8100 },
 		"output": { "item": "kubejs:accellerator_redstone", "count": 1 },
 		"processTime": 400
 	})
@@ -1000,7 +1000,7 @@ function alchemy(event) {
 		"ingredients": [
 			{ "item": "indrev:silver_dust" }
 		],
-		"fluidInput": { "fluid": "kubejs:molten_glass", "amount": 8100 },
+		"fluidInput": { "fluid": "tconstruct:molten_glass", "amount": 8100 },
 		"output": { "item": "kubejs:substrate_silver", "count": 1 },
 		"processTime": 400
 	})
@@ -1010,7 +1010,7 @@ function alchemy(event) {
 		"ingredients": [
 			{ "item": "minecraft:glowstone_dust" }
 		],
-		"fluidInput": { "fluid": "kubejs:molten_glass", "amount": 8100 },
+		"fluidInput": { "fluid": "tconstruct:molten_glass", "amount": 8100 },
 		"output": { "item": "kubejs:accellerator_glowstone", "count": 1 },
 		"processTime": 400
 	})

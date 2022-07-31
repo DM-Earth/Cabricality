@@ -4,7 +4,7 @@
     "item": "minecraft:glass"
   },
   "fluidOutput": {
-    "fluid": "kubejs:molten_glass",
+    "fluid": "tconstruct:molten_glass",
     "amount": 81000
   },
   "processTime": 600

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+      "tconstruct:molten_iron",
+      "indrev:molten_iron_still"
+  ]
+}

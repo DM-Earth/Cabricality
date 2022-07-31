@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+      "tconstruct:molten_brass",
+      "kubejs:molten_brass"
+  ]
+}
