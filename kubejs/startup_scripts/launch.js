@@ -14,7 +14,7 @@ let AP = (id, x) => MOD("architects_palette", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 
 onEvent("item.registry", event => {
-	//	Mechanism
+//	Mechanism
 	let registerMechanism = (name, localName, rarity) => {
 		let id = name.toLowerCase() + "_mechanism"
 		let incompleteId = "incomplete_" + id
@@ -39,7 +39,7 @@ onEvent("item.registry", event => {
 		registerMechanism("Calculation", "Calculation")
 	}
 
-	//	Machine Parts
+//	Machine Parts
 	let registerMachinePart = (name, localName) => {
 		let id = name.replace(" ", "_").toLowerCase()
 
@@ -51,7 +51,7 @@ onEvent("item.registry", event => {
 		registerMachinePart("Saw Blade", "Saw Blade")
 	}
 
-	//	Tools
+//	Tools
 	let registerSaw = (materialName, materialId, durability) => {
 		let id = materialId + "_saw"
 
@@ -71,7 +71,7 @@ onEvent("item.registry", event => {
 		registerToolMaterial("Netherite", "Netherite", 2031)
 	}
 
-	//	Other items
+//	Other items
 	let registerTypicalItem = (name, localName) => {
 		let id = name.replace(" ", "_").toLowerCase()
 
@@ -113,11 +113,11 @@ onEvent("item.registry", event => {
 
 		registerTypicalItem("Basalz Shard", "Basalz Shard")
 		registerTypicalItem("Basalz Powder", "Basalz Powder")
-		//		registerTypicalItem("Blitz Mote")
-		//		registerTypicalItem("Blitz Powder")
+//		registerTypicalItem("Blitz Mote")
+//		registerTypicalItem("Blitz Powder")
 		registerTypicalItem("Blizz Cube", "Blizz Cube")
 		registerTypicalItem("Blizz Powder", "Blizz Powder")
-		//		registerTypicalItem("Smoke Mote")
+//		registerTypicalItem("Smoke Mote")
 
 		registerTypicalItem("Ice Charge", "Ice Charge")
 		registerTypicalItem("Earth Charge", "Earth Charge")
@@ -228,7 +228,7 @@ onEvent("item.registry", event => {
 		})
 	}
 
-	//	Final init
+//	Final init
 	let initItems = () => {
 		initMechanisms()
 		initMachineParts()
@@ -266,7 +266,7 @@ onEvent("item.registry", event => {
 })
 
 onEvent("block.registry", event => {
-	//	Machine
+//	Machine
 	let registerMachine = (name, localName, layer) => {
 		let id = name.toLowerCase() + "_machine"
 		event.create(id)
@@ -391,7 +391,7 @@ onEvent("block.registry", event => {
 	reagent(0x232456, 0x7C95A4, "lead", "Lead", "§8Lead§r", "indrev:lead_dust")
 	reagent(0xD99413, 0xFAF25E, "gold", "Gold", "§eGold§r", "indrev:gold_dust")
 	category()
-	//	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§c朱砂", "thermal:cinnabar")
+//	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§c朱砂", "thermal:cinnabar")
 	reagent(0x335DC1, 0x7395E7, "lapis", "Lapis Lazuli", "§1Lapis Lazuli§r", "minecraft:lapis_lazuli")
 	reagent(0x00A82B, 0xADFACB, "emerald", "Emerald", "§2Emerald§r", "kubejs:emerald_dust")
 	reagent(0x20C3B3, 0xD2FCF3, "diamond", "Diamond", "§bDiamond§r", "kubejs:diamond_dust")
@@ -538,9 +538,9 @@ onEvent("fluid.registry", event => {
 		.displayName("Liquified Logic (Unprocessed)")
 		.thinTexture(0xE7FFCB)
 		.noBlock()
-	/*	for (i = 0; i < 10; i++) {
+/*		for (i = 0; i < 10; i++) {
 			event.create("number_" + i)
-				.displayName("玻色-爱因斯坦凝聚态逻辑（${i}）")
+				.displayName("Liquified Ligic (${i})")
 				.thinTexture(colors[i]).noBlock()
 		}	*/
 	event.create("matrix")
