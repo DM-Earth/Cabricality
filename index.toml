@@ -2785,6 +2785,11 @@ file = "mods/kubejs-fabric-1802.5.3-build.461.jar"
 hash = "40f5cba03dcf5f9f23b5e371137ec97e68c867a91b6a15c080f0737bc688d61c"
 
 [[files]]
+file = "mods/kubejs.pw.toml"
+hash = "0ddf463233b27a1f61c4d40cd25e52d3c935734cadcec974995d147053ad7942"
+metafile = true
+
+[[files]]
 file = "mods/lazydfu.pw.toml"
 hash = "ea127e8f74006f3a9ce099f9e96adaa3b3f4f281231ece703c4e7f9732137ebd"
 metafile = true
@@ -2851,6 +2856,11 @@ hash = "289dfab2986c3a16e18954c94c0f9c8a0ef36ac40dedce1128faecb1a68d109c"
 [[files]]
 file = "mods/rhino-fabric-1802.1.14-build.182.jar"
 hash = "06a95f12b39edadcd918e9dd0135b6aea7972107e2317831e57e033af6776c6b"
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "c8237d62ff964cd0d22e3293d536f00163f718b39d93dec880398882fb608dab"
+metafile = true
 
 [[files]]
 file = "mods/roughly-enough-characters.pw.toml"
