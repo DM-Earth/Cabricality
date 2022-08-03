@@ -74,7 +74,6 @@ onEvent("item.registry", event => {
 	//	Other items
 	let registerTypicalItem = (name, localName) => {
 		let id = name.replace(" ", "_").toLowerCase()
-
 		event.create(id)
 			.texture(modpackId + ":item/" + id)
 			.displayName(localName)
@@ -108,16 +107,14 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Rough Sand", "Rough Sand")
 		registerTypicalItem("Purified Sand", "Purified Sand")
 
+		registerTypicalItem("Cobalt Dust", "Cobalt Dust")
 		registerTypicalItem("Emerald Dust", "Emerald Dust")
 		registerTypicalItem("Diamond Dust", "Diamond Dust")
 
 		registerTypicalItem("Basalz Shard", "Basalz Shard")
 		registerTypicalItem("Basalz Powder", "Basalz Powder")
-		//		registerTypicalItem("Blitz Mote")
-		//		registerTypicalItem("Blitz Powder")
 		registerTypicalItem("Blizz Cube", "Blizz Cube")
 		registerTypicalItem("Blizz Powder", "Blizz Powder")
-		//		registerTypicalItem("Smoke Mote")
 
 		registerTypicalItem("Ice Charge", "Ice Charge")
 		registerTypicalItem("Earth Charge", "Earth Charge")
@@ -136,27 +133,6 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/incomplete_coke_chunk")
 			.displayName("Incomplete Coke Chunk")
 
-		event.create("raw_logic_sheet")
-			.texture(modpackId + ":item/raw_logic_sheet")
-			.displayName("Raw Logic Sheet")
-			.glow(true)
-
-
-
-		event.create("earth_slimy_fern")
-			.texture(modpackId + ":item/fern/earth_slimy_fern")
-			.displayName("Slimy Fern")
-
-		event.create("ender_slimy_fern")
-			.texture(modpackId + ":item/fern/ender_slimy_fern")
-			.displayName("Slimy Fern")
-
-		event.create("sky_slimy_fern")
-			.texture(modpackId + ":item/fern/sky_slimy_fern")
-			.displayName("Slimy Fern")
-
-
-
 		event.create("earth_slimy_fern_leaf")
 			.texture(modpackId + ":item/fern/leaf/earth_slimy_fern_leaf")
 			.displayName("Slimy Fern Leaf")
@@ -168,8 +144,6 @@ onEvent("item.registry", event => {
 		event.create("sky_slimy_fern_leaf")
 			.texture(modpackId + ":item/fern/leaf/sky_slimy_fern_leaf")
 			.displayName("Slimy Fern Leaf")
-
-
 
 		event.create("earth_slimy_fern_paste")
 			.texture(modpackId + ":item/fern/paste/earth_slimy_fern_paste")
@@ -207,6 +181,10 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/boot_medium")
 			.displayName("Flash Drive")
 			.maxDamage(512)
+
+		event.create("crushed_cobalt_ore")
+			.texture(modpackId + ":item/crushed_cobalt_ore")
+			.displayName("Crushed Cobalt Ore")
 
 		let processors = ["Calculation", "Logic", "Engineering"]
 		let processorsLocalName = ["Calculation", "Logic", "Engineering"]
@@ -257,7 +235,6 @@ onEvent("item.registry", event => {
 			.glow(true)
 	*/
 
-	event.create('thermal_cast').texture(modpackId + ":item/cast/thermal_cast").displayName('Thermal Cast').unstackable()
 	event.create('three_cast').texture(modpackId + ":item/cast/three_cast").displayName('Integer Cast (3)').unstackable()
 	event.create('eight_cast').texture(modpackId + ":item/cast/eight_cast").displayName('Integer Cast (8)').unstackable()
 	event.create('plus_cast').texture(modpackId + ":item/cast/plus_cast").displayName('Operator Cast (+)').unstackable()
@@ -505,11 +482,13 @@ onEvent("fluid.registry", event => {
 		.displayName("Liquified Logic (Unprocessed)")
 		.thinTexture(0xE7FFCB)
 		.noBlock()
+
 	for (i = 0; i < 10; i++) {
 		event.create("number_" + i)
-			.displayName("Liquified Computation (${i})")
+			.displayName("Liquified Computation (" + i + ")")
 			.thinTexture(colors[i])
 			.noBlock()
+			.noBucket()
 	}
 	event.create("matrix")
 		.displayName("Liquified Computation Matrix")

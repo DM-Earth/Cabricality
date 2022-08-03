@@ -109,7 +109,6 @@ function tweaks(event) {
 	event.replaceInput("indrev:nikolite_dust", "minecraft:redstone")
 
 	event.blasting(IV("steel_ingot"), MC("iron_ingot")).cookingTime(400)
-	event.stonecutting(AR("netherite_gear"), MC("netherite_ingot"))
 
 	event.remove({ id: CR("splashing/gravel") })
 	event.recipes.createSplashing([
@@ -512,7 +511,6 @@ function oreProcessing(event) {
 		})
 		event.remove({ id: TC("smeltery/melting/metal/" + id + "/dust") })
 
-		// TODO: droplets
 		if (materialBP.get(id) != null) {
 			let byproduct = "tconstruct:molten_" + materialBP.get(id)
 			event.custom({
@@ -570,25 +568,9 @@ function oreProcessing(event) {
 		let crushed = "create:crushed_" + e + "_ore"
 		let dust = "indrev:" + e + "_dust"
 		let ores = "#minecraft:" + e + "_ores"
-
 		process(ingot, nugget, raw, crushed, dust, ores, e,)
-
 		event.remove({ id: "alloy_forgery:" + e + "_from_ores" })
 		event.remove({ id: "alloy_forgery:" + e + "_from_raw_ores" })
-		event.custom({
-			"type": "alloy_forgery:forging",
-			"inputs": [
-				{ "item": dust },
-				{ "item": dust },
-				{ "item": dust }
-			],
-			"output": {
-				"id": ingot,
-				"count": 1
-			},
-			"min_forge_tier": 1,
-			"fuel_per_tick": 3
-		})
 	})
 	let metalsCreate = ["zinc"]
 	metalsCreate.forEach(e => {
@@ -608,6 +590,16 @@ function oreProcessing(event) {
 		let crushed = "create:crushed_" + e + "_ore"
 		let dust = "indrev:" + e + "_dust"
 		let ores = "#c:" + e + "_ores"
+		process(ingot, nugget, raw, crushed, dust, ores, e)
+	})
+	let metalsTic = ["cobalt"]
+	metalsTic.forEach(e => {
+		let ingot = "tconstruct:" + e + "_ingot"
+		let nugget = "tconstruct:" + e + "_nugget"
+		let raw = "tconstruct:raw_" + e
+		let crushed = "kubejs:crushed_" + e + "_ore"
+		let dust = "kubejs:" + e + "_dust"
+		let ores = "#c:ores/" + e
 		process(ingot, nugget, raw, crushed, dust, ores, e)
 	})
 }
@@ -1163,7 +1155,8 @@ function initFluixMachine(event) {
 		S: MC("iron_ingot")
 	})
 
-	/*	let t = KJ("incomplete_calculation_mechanism")
+	/*
+	let t = KJ("incomplete_calculation_mechanism")
 		event.recipes.createSequencedAssembly([
 			KJ("calculation_mechanism"),
 		], KJ("inductive_mechanism"), [
@@ -1172,7 +1165,8 @@ function initFluixMachine(event) {
 			event.recipes.createDeploying(t, [t, KJ("flash_drive")])
 		]).transitionalItem(t)
 			.loops(1)
-			.id("kubejs:calculation_mechanism")	*/
+			.id("kubejs:calculation_mechanism")
+	*/
 
 	event.remove({ output: AE2("controller") })
 	event.shaped(AE2("controller"), [
@@ -1201,8 +1195,6 @@ function initFluixMachine(event) {
 
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, C("#redstone_dusts"), KJ("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("redstone"))
-	//	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, MC("green_dye"), KJ("calculation_mechanism"))
-	//	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("green_dye"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, C("#glowstone_dusts"), KJ("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, AE2("engineering_processor"), MC("glowstone_dust"))
 	event.replaceInput({ id: AE2("network/crafting/patterns_blank") }, C("#glowstone_dusts"), KJ("calculation_mechanism"))
@@ -1211,7 +1203,19 @@ function initFluixMachine(event) {
 function initMath(event) {
 	let types = ["three", "eight", "plus", "minus", "multiply", "divide"]
 	types.forEach(e => {
-		event.stonecutting(KJ(e), KJ("raw_logic_sheet"))
+		event.stonecutting(KJ(e + "_cast"), IV("bronze_plate"))
+		event.custom({
+			"type": "tconstruct:casting_table",
+			"cast": {
+				"item": KJ(e + '_cast')
+			},
+			"fluid": {
+				"name": "kubejs:raw_logic",
+				"amount": 81
+			},
+			"result": Item.of(KJ(e)).toResultJson(),
+			"cooling_time": 10
+		})
 	})
 
 	let nums = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
@@ -1259,6 +1263,64 @@ function initMath(event) {
 			}
 		}
 	}
+
+	let meltOrCrucible = (id, out, outAmount) => {
+		event.custom({
+			"type": "tconstruct:melting",
+			"ingredient": { "item": id },
+			"result": {
+				"fluid": out,
+				"amount": outAmount
+			},
+			"temperature": 200,
+			"time": 20
+		})
+	}
+
+	let alloyAmount = 810
+	let outAmount = 4050
+	event.custom({
+		"type": "tconstruct:alloy",
+		"inputs": [
+			{ "name": "kubejs:number_0", "amount": alloyAmount },
+			{ "name": "kubejs:number_1", "amount": alloyAmount },
+			{ "name": "kubejs:number_2", "amount": alloyAmount },
+			{ "name": "kubejs:number_3", "amount": alloyAmount },
+			{ "name": "kubejs:number_4", "amount": alloyAmount },
+			{ "name": "kubejs:number_5", "amount": alloyAmount },
+			{ "name": "kubejs:number_6", "amount": alloyAmount },
+			{ "name": "kubejs:number_7", "amount": alloyAmount },
+			{ "name": "kubejs:number_8", "amount": alloyAmount },
+			{ "name": "kubejs:number_9", "amount": alloyAmount }
+		],
+		"result": {
+			"fluid": "kubejs:matrix",
+			"amount": outAmount
+		},
+		"temperature": 200
+	})
+
+	meltOrCrucible(KJ("calculation_mechanism"), KJ("raw_logic"), 2430)
+	meltOrCrucible(KJ("zero"), KJ("number_0"), 81)
+	meltOrCrucible(KJ("one"), KJ("number_1"), 81)
+	meltOrCrucible(KJ("two"), KJ("number_2"), 81)
+	meltOrCrucible(KJ("three"), KJ("number_3"), 81)
+	meltOrCrucible(KJ("four"), KJ("number_4"), 81)
+	meltOrCrucible(KJ("five"), KJ("number_5"), 81)
+	meltOrCrucible(KJ("six"), KJ("number_6"), 81)
+	meltOrCrucible(KJ("seven"), KJ("number_7"), 81)
+	meltOrCrucible(KJ("eight"), KJ("number_8"), 81)
+	meltOrCrucible(KJ("nine"), KJ("number_9"), 81)
+
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"fluid": {
+			"name": "kubejs:matrix",
+			"amount": 81000
+		},
+		"result": Item.of(KJ("computation_matrix")).toResultJson(),
+		"cooling_time": 20
+	})
 }
 function trading(event) {
 	let trade = (card_id, ingredient, output) => {
