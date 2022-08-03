@@ -4,7 +4,7 @@
     "item": "indrev:tungsten_block"
   },
   "fluidOutput": {
-    "fluid": "kubejs:molten_tungsten",
+    "fluid": "tconstruct:molten_tungsten",
     "amount": 81000
   },
   "processTime": 600

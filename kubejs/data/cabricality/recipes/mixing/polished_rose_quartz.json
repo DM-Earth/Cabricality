@@ -3,7 +3,6 @@
   "ingredients": [
     {
       "fluid": "kubejs:redstone",
-      
       "amount": 10125
     },
     {

@@ -7,7 +7,7 @@
   ],
   "results": [
     {
-      "fluid": "indrev:molten_iron_still",
+      "fluid": "tconstruct:molten_iron",
       "amount": 1000
     }
   ],

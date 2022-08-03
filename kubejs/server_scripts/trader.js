@@ -214,7 +214,7 @@ onEvent("recipes", event => {
 						"item": "create:brass_sheet"
 					},
 					"P": {
-						"item": "minecraft:paper"
+						"item": "indrev:bronze_nugget"
 					},
 					"I": {
 						"item": itemId

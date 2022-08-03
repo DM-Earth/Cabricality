@@ -4,7 +4,7 @@
     "item": "minecraft:diamond_block"
   },
   "fluidOutput": {
-    "fluid": "kubejs:molten_diamond",
+    "fluid": "tconstruct:molten_diamond",
     "amount": 81000
   },
   "processTime": 600

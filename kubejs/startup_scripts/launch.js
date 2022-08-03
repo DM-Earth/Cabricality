@@ -91,7 +91,7 @@ onEvent("item.registry", event => {
 
 		registerTypicalItem("Invar Ingot", "Invar Ingot")
 		registerTypicalItem("Nickel Ingot", "Nickel Ingot")
-		registerTypicalItem("Nickel Nugget", "Nickel Ingot")
+		registerTypicalItem("Nickel Nugget", "Nickel Nugget")
 		registerTypicalItem("Enderium Ingot", "Enderium Ingot")
 		registerTypicalItem("Nickel Compound", "Nickel Compound")
 		registerTypicalItem("Invar Compound", "Invar Compound")
@@ -183,8 +183,6 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/fern/paste/sky_slimy_fern_paste")
 			.displayName("Slimy Fern Paste")
 
-
-
 		event.create("radiant_sheet")
 			.texture(modpackId + ":item/radiant_sheet")
 			.displayName("Radiant Sheet")
@@ -194,8 +192,6 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/radiant_coil")
 			.displayName("Radiant Coil")
 			.glow(true)
-
-
 
 		event.create("chromatic_resonator")
 			.texture(modpackId + ":item/chromatic_resonator")
@@ -211,11 +207,6 @@ onEvent("item.registry", event => {
 			.texture(modpackId + ":item/boot_medium")
 			.displayName("Flash Drive")
 			.maxDamage(512)
-
-		event.create("charged_calculator")
-			.texture(modpackId + ":item/charged_calculator")
-			.displayName("Charged Calculator")
-			.maxDamage(64)
 
 		let processors = ["Calculation", "Logic", "Engineering"]
 		let processorsLocalName = ["Calculation", "Logic", "Engineering"]
@@ -259,10 +250,20 @@ onEvent("item.registry", event => {
 	number("Divide", "÷")
 	number("Missingno", "NaN")
 
-	event.create("number_array")
-		.texture(modpackId + ":item/number/number_array")
-		.displayName("Number Array")
-		.glow(true)
+	/*
+		event.create("number_array")
+			.texture(modpackId + ":item/number/number_array")
+			.displayName("Number Array")
+			.glow(true)
+	*/
+
+	event.create('thermal_cast').texture(modpackId + ":item/cast/thermal_cast").displayName('Thermal Cast').unstackable()
+	event.create('three_cast').texture(modpackId + ":item/cast/three_cast").displayName('Integer Cast (3)').unstackable()
+	event.create('eight_cast').texture(modpackId + ":item/cast/eight_cast").displayName('Integer Cast (8)').unstackable()
+	event.create('plus_cast').texture(modpackId + ":item/cast/plus_cast").displayName('Operator Cast (+)').unstackable()
+	event.create('minus_cast').texture(modpackId + ":item/cast/minus_cast").displayName('Operator Cast (-)').unstackable()
+	event.create('multiply_cast').texture(modpackId + ":item/cast/multiply_cast").displayName('Operator Cast (×)').unstackable()
+	event.create('divide_cast').texture(modpackId + ":item/cast/divide_cast").displayName('Operator Cast (÷)').unstackable()
 })
 
 onEvent("block.registry", event => {
@@ -392,7 +393,7 @@ onEvent("block.registry", event => {
 	reagent(0x232456, 0x7C95A4, "lead", "Lead", "§8Lead§r", "indrev:lead_dust")
 	reagent(0xD99413, 0xFAF25E, "gold", "Gold", "§eGold§r", "indrev:gold_dust")
 	category()
-	//	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§c朱砂", "thermal:cinnabar")
+	//	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§cCinnabar", "thermal:cinnabar")
 	reagent(0x335DC1, 0x7395E7, "lapis", "Lapis Lazuli", "§1Lapis Lazuli§r", "minecraft:lapis_lazuli")
 	reagent(0x00A82B, 0xADFACB, "emerald", "Emerald", "§2Emerald§r", "kubejs:emerald_dust")
 	reagent(0x20C3B3, 0xD2FCF3, "diamond", "Diamond", "§bDiamond§r", "kubejs:diamond_dust")
@@ -482,16 +483,6 @@ onEvent("fluid.registry", event => {
 		.thinTexture(0x404344)
 		.noBlock()
 
-	event.create("liquid_soul")
-		.displayName("Liquid Soul")
-		.thinTexture(0x604b3f)
-		.noBlock()
-
-	event.create("slime")
-		.displayName("§aSilme")
-		.thinTexture(0x75db89)
-		.noBlock()
-
 	event.create("waste")
 		.displayName("Waste")
 		.thinTexture(0x123d36)
@@ -505,34 +496,6 @@ onEvent("fluid.registry", event => {
 		.displayName("Coke")
 		.thinTexture(0x323232).noBlock()
 
-
-
-	event.create("molten_zinc")
-		.displayName("Molten Zinc")
-		.thickTexture(0xb0b29f)
-
-	event.create("molten_tungsten")
-		.displayName("Molten Tungsten")
-		.thickTexture(0x57594c)
-
-	event.create("molten_brass")
-		.displayName("Molten Brass")
-		.thickTexture(0xe0c36f)
-
-	event.create("molten_diamond")
-		.displayName("Molten Diamond")
-		.thickTexture(0x4ee5ca)
-
-	event.create("molten_enderium")
-		.displayName("Molten Enderium").
-		thinTexture(0x185f74)
-
-	event.create("molten_glass")
-		.displayName("Molten Glass")
-		.thinTexture(0xcfe6e5)
-
-
-
 	event.create("fine_sand")
 		.displayName("Fine Sand").noBlock()
 		.thickTexture(0xded6a4)
@@ -542,11 +505,12 @@ onEvent("fluid.registry", event => {
 		.displayName("Liquified Logic (Unprocessed)")
 		.thinTexture(0xE7FFCB)
 		.noBlock()
-	/*	for (i = 0; i < 10; i++) {
-			event.create("number_" + i)
-				.displayName("玻色-爱因斯坦凝聚态逻辑（${i}）")
-				.thinTexture(colors[i]).noBlock()
-		}	*/
+	for (i = 0; i < 10; i++) {
+		event.create("number_" + i)
+			.displayName("Liquified Computation (${i})")
+			.thinTexture(colors[i])
+			.noBlock()
+	}
 	event.create("matrix")
 		.displayName("Liquified Computation Matrix")
 		.thinTexture(colors[0])

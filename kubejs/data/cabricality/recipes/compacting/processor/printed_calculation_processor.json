@@ -2,7 +2,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "fluid": "indrev:molten_copper_still",
+      "fluid": "tconstruct:molten_copper",
       "amount": 11664
     },
     {

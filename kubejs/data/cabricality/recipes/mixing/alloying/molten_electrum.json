@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "tconstruct:molten_gold",
+      "amount": 9000
+    },
+    {
+      "fluid": "tconstruct:molten_silver",
+      "amount": 9000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "tconstruct:molten_electrum",
+      "amount": 9000
+    }
+  ]
+}

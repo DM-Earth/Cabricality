@@ -5,7 +5,7 @@
       "item": "kubejs:inductive_mechanism"
     },
     {
-      "fluid": "kubejs:molten_enderium",
+      "fluid": "tconstruct:molten_enderium",
       "amount": 9000
     }
   ],

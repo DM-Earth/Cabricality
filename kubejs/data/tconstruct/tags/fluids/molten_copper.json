@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
       "tconstruct:molten_copper",
-      "indrev:molten_copper_still"
+      "tconstruct:molten_copper"
   ]
 }

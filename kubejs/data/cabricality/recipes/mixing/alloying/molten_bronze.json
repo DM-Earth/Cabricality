@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "tconstruct:molten_copper",
+      "amount": 9000
+    },
+    {
+      "fluid": "tconstruct:molten_tin",
+      "amount": 9000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "tconstruct:molten_bronze",
+      "amount": 9000
+    }
+  ]
+}

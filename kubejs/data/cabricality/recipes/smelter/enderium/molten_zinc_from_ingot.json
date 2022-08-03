@@ -4,7 +4,7 @@
     "item": "kubejs:enderium_ingot"
   },
   "fluidOutput": {
-    "fluid": "kubejs:molten_enderium",
+    "fluid": "tconstruct:molten_enderium",
     "amount": 9000
   },
   "processTime": 600

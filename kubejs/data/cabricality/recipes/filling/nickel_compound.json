@@ -5,7 +5,7 @@
       "item": "kubejs:nickel_ingot"
     },
     {
-      "fluid": "indrev:molten_iron_still",
+      "fluid": "tconstruct:molten_iron",
       "amount": 40500
     }
   ],

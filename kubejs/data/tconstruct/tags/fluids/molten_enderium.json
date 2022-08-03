@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-      "tconstruct:molten_netherite",
-      "indrev:molten_netherite_still"
+      "tconstruct:molten_enderium"
   ]
 }

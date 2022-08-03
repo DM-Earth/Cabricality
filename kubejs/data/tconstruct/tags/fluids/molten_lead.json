@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
       "tconstruct:molten_lead",
-      "indrev:molten_lead_still"
+      "tconstruct:molten_lead"
   ]
 }

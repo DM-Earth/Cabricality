@@ -4,7 +4,7 @@
     "item": "create:brass_block"
   },
   "fluidOutput": {
-    "fluid": "kubejs:molten_brass",
+    "fluid": "tconstruct:molten_brass",
     "amount": 81000
   },
   "processTime": 600

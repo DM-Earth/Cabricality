@@ -64,7 +64,7 @@ onEvent("rei.hide.items", event => {
 
 	event.hide("create:propeller")
 
-	event.hide("kubejs:molten_tungsten_bucket")
+	event.hide("tconstruct:molten_tungsten_bucket")
 
 	event.hide("createplus:crushed_tungsten_ore")
 	event.hide("createplus:crushed_antimony_ore")

@@ -136,11 +136,11 @@
 		"theme": "LIGHT",
 		"layout": {
 			// Declares the position of the search field.
-			"searchFieldLocation": "CENTER",
+			"searchFieldLocation": "TOP_SIDE",
 			// Declares the position of the config button.
-			"configButtonLocation": "LOWER",
+			"configButtonLocation": "UPPER",
 			// Declares whether the craftable filter button is enabled.
-			"showCraftableOnlyButton": false
+			"showCraftableOnlyButton": true
 		},
 		// Declares the appearance of recipe's border.
 		"recipeBorder": "DEFAULT",
@@ -159,7 +159,7 @@
 		// Declares whether REI should remove the recipe book.
 		"disableRecipeBook": false,
 		// Declares whether mob effects should be on the left side instead of the right side.
-		"leftSideMobEffects": false,
+		"leftSideMobEffects": true,
 		// Declares whether subsets is enabled.
 		"isSubsetsEnabled": false,
 		"allowInventoryHighlighting": true,

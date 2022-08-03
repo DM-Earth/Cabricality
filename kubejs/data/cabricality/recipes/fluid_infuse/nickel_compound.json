@@ -6,7 +6,7 @@
     }
   ],
   "fluidInput": {
-    "fluid": "indrev:molten_iron_still",
+    "fluid": "tconstruct:molten_iron",
     "amount": 36000
   },
   "output": {

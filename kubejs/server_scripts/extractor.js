@@ -30,130 +30,130 @@ onEvent("block.right_click", event => {
 
 			//	Vanilla metal
 			if (event.block.down.id == "minecraft:iron_ore") {
-				downBlock = "indrev:molten_iron"
+				downBlock = "tconstruct:molten_iron_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "minecraft:deepslate_iron_ore") {
-				downBlock = "indrev:molten_iron"
+				downBlock = "tconstruct:molten_iron_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "minecraft:iron_block" || event.block.down.id == "minecraft:raw_iron_block") {
-				downBlock = "indrev:molten_iron"
+				downBlock = "tconstruct:molten_iron_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			if (event.block.down.id == "minecraft:gold_ore") {
-				downBlock = "indrev:molten_gold"
+				downBlock = "tconstruct:molten_gold_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "minecraft:deepslate_gold_ore") {
-				downBlock = "indrev:molten_gold"
+				downBlock = "tconstruct:molten_gold_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "minecraft:gold_block" || event.block.down.id == "minecraft:raw_gold_block") {
-				downBlock = "indrev:molten_gold"
+				downBlock = "tconstruct:molten_gold_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			if (event.block.down.id == "minecraft:copper_ore") {
-				downBlock = "indrev:molten_copper"
+				downBlock = "tconstruct:molten_copper_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "minecraft:deepslate_copper_ore") {
-				downBlock = "indrev:molten_copper"
+				downBlock = "tconstruct:molten_copper_fluid"
 				smeltChance = 0.5
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "minecraft:copper_block" || event.block.down.id == "minecraft:raw_copper_block") {
-				downBlock = "indrev:molten_copper"
+				downBlock = "tconstruct:molten_copper_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			if (event.block.down.id == "create:zinc_ore") {
-				downBlock = "kubejs:molten_zinc"
+				downBlock = "tconstruct:molten_zinc_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "create:deepslate_zinc_ore") {
-				downBlock = "kubejs:molten_zinc"
+				downBlock = "tconstruct:molten_zinc_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "create:zinc_block" || event.block.down.id == "create:raw_zinc_block") {
-				downBlock = "kubejs:molten_zinc"
+				downBlock = "tconstruct:molten_zinc_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			//	Indrev
 			if (event.block.down.id == "indrev:tungsten_ore") {
-				downBlock = "kubejs:molten_tungsten"
+				downBlock = "tconstruct:molten_tungsten_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "indrev:deepslate_tungsten_ore") {
-				downBlock = "kubejs:molten_tungsten"
+				downBlock = "tconstruct:molten_tungsten_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "indrev:tungsten_block" || event.block.down.id == "indrev:raw_tungsten_block") {
-				downBlock = "kubejs:molten_tungsten"
+				downBlock = "tconstruct:molten_tungsten_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			if (event.block.down.id == "indrev:tin_ore") {
-				downBlock = "indrev:molten_tin"
+				downBlock = "tconstruct:molten_tin_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "indrev:deepslate_tin_ore") {
-				downBlock = "indrev:molten_tin"
+				downBlock = "tconstruct:molten_tin_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "indrev:tin_block" || event.block.down.id == "indrev:raw_tin_block") {
-				downBlock = "indrev:molten_tin"
+				downBlock = "tconstruct:molten_tin_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			if (event.block.down.id == "indrev:silver_ore") {
-				downBlock = "indrev:molten_silver"
+				downBlock = "tconstruct:molten_silver_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "indrev:deepslate_silver_ore") {
-				downBlock = "indrev:molten_silver"
+				downBlock = "tconstruct:molten_silver_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "indrev:silver_block" || event.block.down.id == "indrev:raw_silver_block") {
-				downBlock = "indrev:molten_silver"
+				downBlock = "tconstruct:molten_silver_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
 
 			if (event.block.down.id == "indrev:lead_ore") {
-				downBlock = "indrev:molten_lead"
+				downBlock = "tconstruct:molten_lead_fluid"
 				smeltChance = 0.125
 				smeltSpeed = 0.85
 			}
 			if (event.block.down.id == "indrev:deepslate_lead_ore") {
-				downBlock = "indrev:molten_lead"
+				downBlock = "tconstruct:molten_lead_fluid"
 				smeltChance = 0.25
 				smeltSpeed = 0.75
 			}
 			if (event.block.down.id == "indrev:lead_block" || event.block.down.id == "indrev:raw_lead_block") {
-				downBlock = "indrev:molten_lead"
+				downBlock = "tconstruct:molten_lead_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
@@ -164,7 +164,7 @@ onEvent("block.right_click", event => {
 				smeltSpeed = 1.0
 			}
 			if (event.block.down.id == "create:brass_block") {
-				downBlock = "kubejs:molten_brass"
+				downBlock = "tconstruct:molten_brass_fluid"
 				smeltChance = 1.0
 				smeltSpeed = 0.5
 			}
@@ -180,48 +180,48 @@ onEvent("block.right_click", event => {
 			if (event.block.east.id == "minecraft:water") smeltSpeed = smeltSpeed + 0.15
 			if (event.block.south.id == "minecraft:water") smeltSpeed = smeltSpeed + 0.15
 
-			if (event.block.down.id == "indrev:molten_iron") {
+			if (event.block.down.id == "tconstruct:molten_iron") {
 				downBlock = "minecraft:iron_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "indrev:molten_gold") {
+			if (event.block.down.id == "tconstruct:molten_gold") {
 				downBlock = "minecraft:gold_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "indrev:molten_copper") {
+			if (event.block.down.id == "tconstruct:molten_copper") {
 				downBlock = "minecraft:copper_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "kubejs:molten_zinc") {
+			if (event.block.down.id == "tconstruct:molten_zinc") {
 				downBlock = "create:zinc_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "kubejs:molten_tungsten") {
+			if (event.block.down.id == "tconstruct:molten_tungsten") {
 				downBlock = "indrev:tungsten_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "indrev:molten_tin") {
+			if (event.block.down.id == "tconstruct:molten_tin") {
 				downBlock = "indrev:tin_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "indrev:molten_lead") {
+			if (event.block.down.id == "tconstruct:molten_lead") {
 				downBlock = "indrev:lead_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
-			if (event.block.down.id == "indrev:molten_silver") {
+			if (event.block.down.id == "tconstruct:molten_silver") {
 				downBlock = "indrev:silver_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75
 			}
 
-			if (event.block.down.id == "kubejs:molten_brass") {
+			if (event.block.down.id == "tconstruct:molten_brass") {
 				downBlock = "create:brass_block"
 				smeltChance = 1.0
 				smeltSpeed = 0.75

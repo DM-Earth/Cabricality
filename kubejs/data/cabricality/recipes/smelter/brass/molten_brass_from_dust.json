@@ -4,7 +4,7 @@
     "item": "createplus:brass_dust"
   },
   "fluidOutput": {
-    "fluid": "kubejs:molten_brass",
+    "fluid": "tconstruct:molten_brass",
     "amount": 9000
   },
   "processTime": 600
