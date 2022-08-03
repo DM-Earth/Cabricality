@@ -2785,8 +2785,18 @@ file = "mods/create-1.18.2-0.5.0c-701.jar"
 hash = "4c699471dfc827b338e6f283005101f62c7ab7ccbfa97d4ff47e0228575b9464"
 
 [[files]]
+file = "mods/create-fabric.pw.toml"
+hash = "d506aff4966cf0049497f348aecb880cd3dbade497746c84a91f6b3b133c47ae"
+metafile = true
+
+[[files]]
 file = "mods/createplus-1.0.0.jar"
 hash = "f690888f36320c2e1ff2a2e175288ca8d7d4ec47e257df4bdc93d704a54f5bd0"
+
+[[files]]
+file = "mods/custom-splash-screen.pw.toml"
+hash = "23e3c4cb4e2ee0ed4cd1d9a8e1960578cf3e49839813c7930c4809aba304a1f7"
+metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
@@ -2876,6 +2886,11 @@ metafile = true
 [[files]]
 file = "mods/iris-mc1.18.2-1.2.4-build.38.jar"
 hash = "45c00e3a58688440af95698c6ce4b57128b1a6a201285718c3770c3a50331bbb"
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "2d3c10d8c134ca9e5a24b0aff53bdf17e8702b8b8b5b997a0b8a542e0361587d"
+metafile = true
 
 [[files]]
 file = "mods/item-filters.pw.toml"
