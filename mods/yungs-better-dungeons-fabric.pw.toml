@@ -1,0 +1,13 @@
+name = "YUNG's Better Dungeons (Fabric)"
+filename = "YungsBetterDungeons-1.18.2-Fabric-2.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "60a2dcbf64e70a2f7b6e65d0ed2ce57bda5dbcee"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3777936
+project-id = 525586

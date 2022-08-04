@@ -3071,3 +3071,28 @@ metafile = true
 file = "mods/wthit.pw.toml"
 hash = "98c8ffafe56c38e04da80c8c061e1f1dfc1212a53f3b0c90d7f6b3381c961e95"
 metafile = true
+
+[[files]]
+file = "mods/yungs-api-fabric.pw.toml"
+hash = "b5e74fec582f1dc10fda86a3c41c00821f15471285c2570c7c9ace3316a438be"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-desert-temples-fabric.pw.toml"
+hash = "3df47a88cfbd953b56f651345620ffd17f0994b8ea0625515819fe55489a9652"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-dungeons-fabric.pw.toml"
+hash = "155eda7a63a53cce08924e9f9c64aa505b5d7a848f1a592e7ec061154012115d"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-mineshafts-fabric.pw.toml"
+hash = "7eb509430f5866b8ebfef43e21cd4b9a73cf6056d18b0cf2cb4ae3cb884dfe06"
+metafile = true
+
+[[files]]
+file = "mods/yungs-extras-fabric.pw.toml"
+hash = "43def9ff7e9948695c694d2395f21254fa857d50a4f8bd6f8c40ebd96655769e"
+metafile = true
