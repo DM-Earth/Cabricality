@@ -10,7 +10,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 ## Compare Between Original CAB Modpack
 
 - [X] `Update` [Create 0.3.2g → Create 0.5](https://github.com/Creators-of-Create/Create)
-- [ ] `Update` [TConstruct](https://github.com/SlimeKnights/TinkersConstruct) [→ waiting for this Fabric port by AlphaMode](https://github.com/Alpha-s-Stuff/TinkersConstruct)
+- [X] `Update` [TConstruct](https://github.com/SlimeKnights/TinkersConstruct) [→ waiting for this Fabric port by AlphaMode](https://github.com/Alpha-s-Stuff/TinkersConstruct)
 - [X] `Change` [Thermal Series](https://github.com/cofh) [→ Industrial Revolution, ](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
 - [X] `Change` [Advanced Rocketry](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Space Dimensions](https://www.curseforge.com/minecraft/mc-mods/moon-and-space-dimensions-fabric)
 - [X] `Still` [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2)
@@ -24,7 +24,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [X] Brass Machine
 - [X] Zinc Machine
 - [X] Invar Machine
-- [X] Enderium Machine **Not fully polished*
+- [X] Enderium Machine
 - [X] Fluix Machine
 - [X] `New` Obsidian Machine
 
@@ -60,7 +60,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 ## CABF与CAB的核心模组对照
 
 - [X] `更新` [Forge机械动力0.3.2g → Fabric机械动力0.5（开发版）](https://github.com/Creators-of-Create/Create)
-- [ ] `更新` [匠魂3](https://github.com/SlimeKnights/TinkersConstruct) [→ 匠魂3（AlphaMode Fabric移植）](https://github.com/Alpha-s-Stuff/TinkersConstruct)
+- [X] `更新` [匠魂3](https://github.com/SlimeKnights/TinkersConstruct) [→ 匠魂3（AlphaMode Fabric移植）](https://github.com/Alpha-s-Stuff/TinkersConstruct)
 - [X] `更换` [热力膨胀](https://github.com/cofh) [→ 工业革命、](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
 - [X] `更换` [高级火箭](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ 星际次元](https://www.curseforge.com/minecraft/mc-mods/moon-and-space-dimensions-fabric)
 - [X] `不变` [应用能源2](https://github.com/AppliedEnergistics/Applied-Energistics-2)
@@ -74,9 +74,9 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [X] 黄铜机器
 - [X] 锌机器
 - [X] 殷钢机器
-- [X] 末影合金机器（未完善）
+- [X] 末影合金机器
 - [X] 福鲁伊克斯机器
-- [X] `新` 黑曜机器
+- [X] `新` 黑曜石机器
 
 ### 特殊内容
 
@@ -89,7 +89,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [X] 建造并发射星舰
 - [ ] 探索太空
 
-### 通用
+### 常规
 
 - [X] 任务系统
 
