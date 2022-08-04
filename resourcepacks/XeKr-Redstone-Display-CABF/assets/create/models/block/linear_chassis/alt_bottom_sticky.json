@@ -1,0 +1,12 @@
+{
+    "parent": "create:block/linear_chassis/template_linear_chassis",
+    "textures": {
+        "bottom": "create:block/linear_chassis_end_sticky",
+        "top": "create:block/linear_chassis_end",
+        "bottom2": "create:block/linear_chassis_end",
+        "top2": "create:block/linear_chassis_end_sticky",
+        "side_top": "create:block/secondary_linear_chassis_side",
+        "side_bottom": "create:block/secondary_linear_chassis_side_bottom",
+        "side": "create:block/secondary_linear_chassis_side"
+    }
+}

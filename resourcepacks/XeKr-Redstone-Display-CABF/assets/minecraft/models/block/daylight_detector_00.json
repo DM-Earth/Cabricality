@@ -1,0 +1,57 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"textures": {
+		"2": "block/daylight_detector_00",
+		"particle": "block/daylight_detector_00"
+	},
+	"elements": [
+		{
+			"from": [6.25, 1.25, -0.1],
+			"to": [9.75, 4.75, -0.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 14, 14], "texture": "#2", "cullface": "north"}
+			}
+		},
+		{
+			"from": [-0.1, 1.25, 6.25],
+			"to": [-0.1, 4.75, 9.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
+			"faces": {
+				"west": {"uv": [0, 0, 14, 14], "texture": "#2", "cullface": "west"}
+			}
+		},
+		{
+			"from": [6.25, 1.25, 16.1],
+			"to": [9.75, 4.75, 16.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
+			"faces": {
+				"south": {"uv": [0, 0, 14, 14], "texture": "#2", "cullface": "south"}
+			}
+		},
+		{
+			"from": [6.25, -0.1, 6.25],
+			"to": [9.75, -0.1, 9.75],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"down": {"uv": [0, 0, 14, 14], "texture": "#2", "cullface": "down"}
+			}
+		},
+		{
+			"from": [6.25, 6.1, 6.25],
+			"to": [9.75, 6.1, 9.75],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, -2, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 14, 14], "texture": "#2"}
+			}
+		},
+		{
+			"from": [16.1, 1.25, 6.25],
+			"to": [16.1, 4.75, 9.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 14, 14], "texture": "#2", "cullface": "east"}
+			}
+		}
+	]
+}

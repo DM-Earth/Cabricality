@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/spawn_egg_differ",
+    "textures": {
+        "texture": "spawn_egg/wandering_trader"
+    }
+}

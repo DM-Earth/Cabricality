@@ -1,0 +1,127 @@
+{
+    "multipart": [
+        {   "when": { "instrument": "harp" },
+            "apply": { "model": "block/note_block_harp" }
+        },
+        {   "when": { "instrument": "xylophone" },
+            "apply": { "model": "block/note_block_xylophone" }
+        },
+        {   "when": { "instrument": "chime" },
+            "apply": { "model": "block/note_block_chime" }
+        },
+        {   "when": { "instrument": "guitar" },
+            "apply": { "model": "block/note_block_guitar" }
+        },
+        {   "when": { "instrument": "bell" },
+            "apply": { "model": "block/note_block_bell" }
+        },
+        {   "when": { "instrument": "flute" },
+            "apply": { "model": "block/note_block_flute" }
+        },
+        {   "when": { "instrument": "bass" },
+            "apply": { "model": "block/note_block_bass" }
+        },
+        {   "when": { "instrument": "hat" },
+            "apply": { "model": "block/note_block_hat" }
+        },
+        {   "when": { "instrument": "snare" },
+            "apply": { "model": "block/note_block_snare" }
+        },
+        {   "when": { "instrument": "basedrum" },
+            "apply": { "model": "block/note_block_basedrum" }
+        },
+        {   "when": { "instrument": "iron_xylophone" },
+            "apply": { "model": "block/note_block_iron_xylophone" }
+        },
+        {   "when": { "instrument": "cow_bell" },
+            "apply": { "model": "block/note_block_cow_bell" }
+        },
+        {   "when": { "instrument": "didgeridoo" },
+            "apply": { "model": "block/note_block_didgeridoo" }
+        },
+        {   "when": { "instrument": "bit" },
+            "apply": { "model": "block/note_block_bit" }
+        },
+        {   "when": { "instrument": "banjo" },
+            "apply": { "model": "block/note_block_banjo" }
+        },
+        {   "when": { "instrument": "pling" },
+            "apply": { "model": "block/note_block_pling" }
+        },
+        {   "when": { "note": "0" },
+            "apply": { "model": "block/note_block_0" }
+        },
+        {   "when": { "note": "1" },
+            "apply": { "model": "block/note_block_1" }
+        },
+        {   "when": { "note": "2" },
+            "apply": { "model": "block/note_block_2" }
+        },
+        {   "when": { "note": "3" },
+            "apply": { "model": "block/note_block_3" }
+        },
+        {   "when": { "note": "4" },
+            "apply": { "model": "block/note_block_4" }
+        },
+        {   "when": { "note": "5" },
+            "apply": { "model": "block/note_block_5" }
+        },
+        {   "when": { "note": "6" },
+            "apply": { "model": "block/note_block_6" }
+        },
+        {   "when": { "note": "7" },
+            "apply": { "model": "block/note_block_7" }
+        },
+        {   "when": { "note": "8" },
+            "apply": { "model": "block/note_block_8" }
+        },
+        {   "when": { "note": "9" },
+            "apply": { "model": "block/note_block_9" }
+        },
+        {   "when": { "note": "10" },
+            "apply": { "model": "block/note_block_10" }
+        },
+        {   "when": { "note": "11" },
+            "apply": { "model": "block/note_block_11" }
+        },
+        {   "when": { "note": "12" },
+            "apply": { "model": "block/note_block_12" }
+        },
+        {   "when": { "note": "13" },
+            "apply": { "model": "block/note_block_13" }
+        },
+        {   "when": { "note": "14" },
+            "apply": { "model": "block/note_block_14" }
+        },
+        {   "when": { "note": "15" },
+            "apply": { "model": "block/note_block_15" }
+        },
+        {   "when": { "note": "16" },
+            "apply": { "model": "block/note_block_16" }
+        },
+        {   "when": { "note": "17" },
+            "apply": { "model": "block/note_block_17" }
+        },
+        {   "when": { "note": "18" },
+            "apply": { "model": "block/note_block_18" }
+        },
+        {   "when": { "note": "19" },
+            "apply": { "model": "block/note_block_19" }
+        },
+        {   "when": { "note": "20" },
+            "apply": { "model": "block/note_block_20" }
+        },
+        {   "when": { "note": "21" },
+            "apply": { "model": "block/note_block_21" }
+        },
+        {   "when": { "note": "22" },
+            "apply": { "model": "block/note_block_22" }
+        },
+        {   "when": { "note": "23" },
+            "apply": { "model": "block/note_block_23" }
+        },
+        {   "when": { "note": "24" },
+            "apply": { "model": "block/note_block_24" }
+        }
+    ]
+}

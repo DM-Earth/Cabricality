@@ -1,0 +1,24 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"parent": "block/cube_bottom_top",
+	"textures": {
+		"particle": "block/dropper_bottom_on",
+		"bottom": "block/dropper_bottom_on",
+		"top": "block/dropper_front_vertical_on",
+		"side": "block/dropper_top_on"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "axis=x,sticky_bottom=false,sticky_top=false": {
+      "model": "create:block/linear_chassis/alt",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,sticky_bottom=false,sticky_top=false": {
+      "model": "create:block/linear_chassis/alt"
+    },
+    "axis=z,sticky_bottom=false,sticky_top=false": {
+      "model": "create:block/linear_chassis/alt",
+      "x": 90,
+      "y": 180
+    },
+    "axis=x,sticky_bottom=true,sticky_top=false": {
+      "model": "create:block/linear_chassis/alt_bottom_sticky",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,sticky_bottom=true,sticky_top=false": {
+      "model": "create:block/linear_chassis/alt_bottom_sticky"
+    },
+    "axis=z,sticky_bottom=true,sticky_top=false": {
+      "model": "create:block/linear_chassis/alt_bottom_sticky",
+      "x": 90,
+      "y": 180
+    },
+    "axis=x,sticky_bottom=false,sticky_top=true": {
+      "model": "create:block/linear_chassis/alt_top_sticky",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,sticky_bottom=false,sticky_top=true": {
+      "model": "create:block/linear_chassis/alt_top_sticky"
+    },
+    "axis=z,sticky_bottom=false,sticky_top=true": {
+      "model": "create:block/linear_chassis/alt_top_sticky",
+      "x": 90,
+      "y": 180
+    },
+    "axis=x,sticky_bottom=true,sticky_top=true": {
+      "model": "create:block/linear_chassis/alt_both_sticky",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,sticky_bottom=true,sticky_top=true": {
+      "model": "create:block/linear_chassis/alt_both_sticky"
+    },
+    "axis=z,sticky_bottom=true,sticky_top=true": {
+      "model": "create:block/linear_chassis/alt_both_sticky",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

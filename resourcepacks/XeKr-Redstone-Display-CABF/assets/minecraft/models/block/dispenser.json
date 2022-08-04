@@ -1,0 +1,10 @@
+{
+    "parent": "block/observer",
+    "textures": {
+        "bottom": "block/dispenser_back",
+        "side": "block/dispenser_side",
+        "top": "block/dispenser_top",
+        "front": "block/dispenser_front",
+        "particle": "block/dispenser_front"
+    }
+}

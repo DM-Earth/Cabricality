@@ -1,0 +1,7 @@
+{
+	"parent": "block/daylight_detector_00",
+	"textures": {
+		"2": "block/daylight_detector_09",
+		"particle": "block/daylight_detector_09"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "parent": "block/observer",
+    "textures": {
+        "bottom": "block/dropper_back",
+        "side": "block/dropper_side",
+        "top": "block/dropper_top",
+        "front": "block/dropper_front",
+        "particle": "block/dropper_front"
+    }
+}

@@ -1,0 +1,57 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [
+		{
+			"name": "Element",
+			"from": [1, 1, -0.05],
+			"to": [15, 11, -0.05],
+			"faces": {
+				"north": {"uv": [1, 5, 15, 15], "texture": "#all", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Element",
+			"from": [1, 1, 16.05],
+			"to": [15, 11, 16.05],
+			"faces": {
+				"south": {"uv": [1, 5, 15, 15], "texture": "#all", "cullface": "south"}
+			}
+		},
+		{
+			"name": "Element",
+			"from": [-0.05, 1, 1],
+			"to": [-0.05, 11, 15],
+			"faces": {
+				"west": {"uv": [1, 5, 15, 15], "texture": "#all", "cullface": "west"}
+			}
+		},
+		{
+			"name": "Element",
+			"from": [16.05, 1, 1],
+			"to": [16.05, 11, 15],
+			"faces": {
+				"east": {"uv": [1, 5, 15, 15], "texture": "#all", "cullface": "east"}
+			}
+		},
+		{
+			"name": "Element",
+			"from": [1, 16.05, 5],
+			"to": [15, 16.05, 15],
+			"faces": {
+				"up": {"uv": [1, 5, 15, 15], "texture": "#all", "cullface": "up"}
+			}
+		},
+		{
+			"name": "Element",
+			"from": [1, -0.05, 1],
+			"to": [15, -0.05, 11],
+			"faces": {
+				"down": {"uv": [1, 5, 15, 15], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

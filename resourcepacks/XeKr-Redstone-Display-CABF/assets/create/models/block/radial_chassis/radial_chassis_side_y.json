@@ -1,0 +1,19 @@
+{
+	"__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+	"textures": {
+		"radial_chassis_side": "create:block/radial_chassis_side"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 0, 0, 15 ],
+			"to": [ 15, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 15, 15, 16 ], "texture": "#radial_chassis_side" },
+				"up": { "uv": [ 0, 0, 15, 1 ], "texture": "#radial_chassis_side" },
+				"south": { "uv": [ 0, 0, 15, 16 ], "texture": "#radial_chassis_side" },
+				"west": { "uv": [ 0, 0, 1, 16 ], "texture": "#radial_chassis_side" }
+			}
+		}
+	]
+}

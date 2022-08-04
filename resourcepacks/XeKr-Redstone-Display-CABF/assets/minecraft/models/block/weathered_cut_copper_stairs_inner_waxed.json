@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "minecraft:block/weathered_cut_copper_waxed",
+    "top": "minecraft:block/weathered_cut_copper_waxed",
+    "side": "minecraft:block/weathered_cut_copper_waxed"
+  }
+}

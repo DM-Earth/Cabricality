@@ -1,0 +1,184 @@
+{
+	"__comment": "Designed by XeKr with Cubik Studio - https://cubik.studio",
+	"parent": "block/block0",
+	"textures": {
+        "particle": "block/target",
+		"all": "block/target13",
+		"sign": "block/red_wool"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 18, 3 ],
+			"to": [ 1.001, 30, 5 ],
+			"faces": {
+				"west": { "uv": [ 3, 2, 5, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 18, 7 ],
+			"to": [ 1.001, 20, 13 ],
+			"faces": {
+				"west": { "uv": [ 7, 12, 13, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 28, 7 ],
+			"to": [ 1.001, 30, 13 ],
+			"faces": {
+				"west": { "uv": [ 7, 2, 13, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 23, 7 ],
+			"to": [ 1.001, 25, 11 ],
+			"faces": {
+				"west": { "uv": [ 7, 7, 11, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 20, 11 ],
+			"to": [ 1.001, 28, 13 ],
+			"faces": {
+				"west": { "uv": [ 11, 4, 13, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 11, 20, 14.999 ],
+			"to": [ 13, 28, 15 ],
+			"faces": {
+				"south": { "uv": [ 11, 4, 13, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 3, 18, 14.999 ],
+			"to": [ 5, 30, 15 ],
+			"faces": {
+				"south": { "uv": [ 3, 2, 5, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 7, 18, 14.999 ],
+			"to": [ 13, 20, 15 ],
+			"faces": {
+				"south": { "uv": [ 7, 12, 13, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 7, 28, 14.999 ],
+			"to": [ 13, 30, 15 ],
+			"faces": {
+				"south": { "uv": [ 7, 2, 13, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 7, 23, 14.999 ],
+			"to": [ 11, 25, 15 ],
+			"faces": {
+				"south": { "uv": [ 7, 7, 11, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 20, 3 ],
+			"to": [ 15, 28, 5 ],
+			"faces": {
+				"east": { "uv": [ 11, 4, 13, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 18, 11.0001 ],
+			"to": [ 15, 30, 13.0001 ],
+			"faces": {
+				"east": { "uv": [ 3, 2, 5, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 18, 3.0001 ],
+			"to": [ 15, 20, 9.0001 ],
+			"faces": {
+				"east": { "uv": [ 7, 12, 13, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 28, 3.0001 ],
+			"to": [ 15, 30, 9.0001 ],
+			"faces": {
+				"east": { "uv": [ 7, 2, 13, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 23, 5.0001 ],
+			"to": [ 15, 25, 9.000099 ],
+			"faces": {
+				"east": { "uv": [ 7, 7, 11, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 3, 20, 0.9999 ],
+			"to": [ 5, 28, 1.0009 ],
+			"faces": {
+				"north": { "uv": [ 11, 4, 13, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 11.0001, 18, 1 ],
+			"to": [ 13.0001, 30, 1.001 ],
+			"faces": {
+				"north": { "uv": [ 3, 2, 5, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 3.0001, 18, 0.9999 ],
+			"to": [ 9.0001, 20, 1.0009 ],
+			"faces": {
+				"north": { "uv": [ 7, 12, 13, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 3.0001, 28, 0.9999 ],
+			"to": [ 9.0001, 30, 1.0009 ],
+			"faces": {
+				"north": { "uv": [ 7, 2, 13, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5.0001, 23, 1 ],
+			"to": [ 9.000099, 25, 1.001 ],
+			"faces": {
+				"north": { "uv": [ 7, 7, 11, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		}
+	]
+}

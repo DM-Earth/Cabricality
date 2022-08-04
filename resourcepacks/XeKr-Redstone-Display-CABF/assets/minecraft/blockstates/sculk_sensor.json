@@ -1,0 +1,61 @@
+{
+	"multipart": [
+		{"when":{"sculk_sensor_phase":"active"},
+		"apply":{"model": "block/sculk_sensor_active"}
+		},
+		{"when":{"sculk_sensor_phase":"cooldown"},
+		"apply":{"model": "block/sculk_sensor_cd"}
+		},
+		{"when":{"sculk_sensor_phase":"inactive"},
+		"apply":{"model": "block/sculk_sensor_inactive"}
+		},
+		{"when":{"power":"0"},
+		"apply":{"model": "block/sculk_sensor_00"}
+		},
+		{"when":{"power":"1"},
+		"apply":{"model": "block/sculk_sensor_01"}
+		},
+		{"when":{"power":"2"},
+		"apply":{"model": "block/sculk_sensor_02"}
+		},
+		{"when":{"power":"3"},
+		"apply":{"model": "block/sculk_sensor_03"}
+		},
+		{"when":{"power":"4"},
+		"apply":{"model": "block/sculk_sensor_04"}
+		},
+		{"when":{"power":"5"},
+		"apply":{"model": "block/sculk_sensor_05"}
+		},
+		{"when":{"power":"6"},
+		"apply":{"model": "block/sculk_sensor_06"}
+		},
+		{"when":{"power":"7"},
+		"apply":{"model": "block/sculk_sensor_07"}
+		},
+		{"when":{"power":"8"},
+		"apply":{"model": "block/sculk_sensor_08"}
+		},
+		{"when":{"power":"9"},
+		"apply":{"model": "block/sculk_sensor_09"}
+		},
+		{"when":{"power":"10"},
+		"apply":{"model": "block/sculk_sensor_10"}
+		},
+		{"when":{"power":"11"},
+		"apply":{"model": "block/sculk_sensor_11"}
+		},
+		{"when":{"power":"12"},
+		"apply":{"model": "block/sculk_sensor_12"}
+		},
+		{"when":{"power":"13"},
+		"apply":{"model": "block/sculk_sensor_13"}
+		},
+		{"when":{"power":"14"},
+		"apply":{"model": "block/sculk_sensor_14"}
+		},
+		{"when":{"power":"15"},
+		"apply":{"model": "block/sculk_sensor_15"}
+		}
+  ]
+}
