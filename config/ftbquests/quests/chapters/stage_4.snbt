@@ -572,8 +572,8 @@
 				title: "Complete Chapter 4a"
 				icon: "kubejs:substrate_chaos"
 				disable_toast: true
-				stat: "minecraft:play_one_minute"
-				value: 1
+				stat: "minecraft:play_time"
+				value: 60
 			}]
 		}
 		{

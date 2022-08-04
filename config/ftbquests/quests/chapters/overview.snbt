@@ -245,8 +245,8 @@
 					title: "&6Complete Chapter 5"
 					icon: "agape_space:starship_control"
 					disable_toast: true
-					stat: "minecraft:play_one_minute"
-					value: 1
+					stat: "minecraft:play_time"
+					value: 60
 				}
 				{
 					id: "68543E92A6B517DC"
