@@ -311,6 +311,12 @@ function tweaks(event) {
 
 	event.remove({ id: TC('compat/create/andesite_alloy_zinc') })
 	event.remove({ id: TC('compat/create/andesite_alloy_iron') })
+
+	event.replaceInput({ output: TC("seared_duct") }, TC("cobalt_ingot"), CR("brass_ingot"))
+	event.replaceInput({ output: TC("scorched_duct") }, TC("cobalt_ingot"), CR("brass_ingot"))
+
+	event.replaceInput({ output: TC("scorched_drain") }, TC("obsidian_pane"), CR("sturdy_sheet"))
+	event.replaceInput({ output: TC("scorched_chute") }, TC("obsidian_pane"), CR("sturdy_sheet"))
 }
 
 function alloying(event) {
