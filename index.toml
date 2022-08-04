@@ -1113,6 +1113,38 @@ file = "kubejs/assets/minecraft/textures/gui/title/background/panorama_5.png"
 hash = "2f5d101242feb1a1c9b3dd77c68cb718846c8afefce0d5b4b6f1b2ed32e3677a"
 
 [[files]]
+file = "kubejs/assets/tconstruct/textures/block/foundry/controller/foundry_active.png"
+hash = "7f0dade769c5a71a602b69bc65bc940c6b12503b5e1303dbd76de3c334e589a8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/foundry/controller/foundry_active.png.mcmeta"
+hash = "a1d4171d971c3a7b3202d9aa67062f643f579443a71cc92efe38f1acd8990f03"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/foundry/controller/foundry_inactive.png"
+hash = "b3f6c03c7b892768948ed6ac6f01242aa042a3da132e822db5906d0aea4ee79f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/foundry/controller/foundry_unformed.png"
+hash = "8f9b376644de01e71f41821b22a9a8bbebe55b84d65ce768f037d9f499efcaf2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/foundry/io/duct_front_active.png"
+hash = "e5dec48b45a8938b029245c3001bc904e2074e361d45c9eb24012c74988c1d01"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/foundry/io/duct_front_inactive.png"
+hash = "4d65b5ec8e69fed092cc098c70f575e79cab7c0a114161b7218ad9867f4fe6a9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/smeltery/io/duct_front_active.png"
+hash = "4ec9b9ae291340941afe20363dd93fc4db67a82e48d3d3aafa561fef0a08f54a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/smeltery/io/duct_front_inactive.png"
+hash = "3a37adc370ea05302bf861158ea2f33ddf98577936296306ecd6ae2cdd76ddf6"
+
+[[files]]
 file = "kubejs/client_scripts/client.js"
 hash = "601b40a28f2200093292e01a089527876a1238b9fad6138a898fb0e7008ada55"
 
@@ -1522,15 +1554,15 @@ hash = "f56e9ca026826cffefe901ee5577f19d4df85affe3aa0ba0fd9f162ebc74b93e"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/abstruse_mechanism.json"
-hash = "afe5d6d9f5dce168211ee4377d018f9f0a1bf459d72ccc18bba2d9b514c7bce2"
+hash = "6bba758cb008d3bc8d67c90749b50d913218795652ccdfc8423888c957df7141"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/brass_from_copper.json"
-hash = "6ca189512ed9b3d4f94c4f2969d80debbb9b06c218c72f40612d85b1e402976a"
+hash = "e59e88a6e4e5f8c3c2da85ac6f1ffc0ac6943f8d59356dd37590fe7fa8c56795"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/brass_from_zinc.json"
-hash = "2beb4edcd725e95c2b047684faa47d28c9b06c1980563a20b256d859b72ff230"
+hash = "34433be0e53caa1e021c5b5cd96b79ae7c7a4bb5c1b1ab0602f15ad51597ddd0"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/coke.json"
@@ -1550,7 +1582,7 @@ hash = "96caaab91256b38ba45968e40c93c41aa0ef479e48188069466cb6cc5eb2f6db"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/nickel_compound.json"
-hash = "3b128832e650d3b9c99c795a7a5350619c7f08d6b75c876c0e3e7b300daa80c9"
+hash = "163ee62f5e683da22523a07819e821ed7c070f11904660785de763e707e1a638"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/fluid_infuse/sand_ball.json"
@@ -1690,15 +1722,15 @@ hash = "441a2237ab60751e324fdcb1a10729428ab5c972607583eeb49e41ac9aa16826"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/brass/molten_brass_from_block.json"
-hash = "d2202fe765dca50e14eb17f6f9f8b117a15539a70a0a3f8665c7f25d0f1d5c72"
+hash = "c06f701094c6505fb73c08b699ca5f2fa499a73681d6fee8ebb0224428278ee9"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/brass/molten_brass_from_dust.json"
-hash = "b73b8b122a13e4ad3caeb5cd2badef5c5c784532600fcb4bd818ded755b08b76"
+hash = "0877dd56668dca4ad336c8830b1d4a3fba5cf33889afde9899a01d54815e49b0"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/brass/molten_brass_from_ingot.json"
-hash = "14bc9c3d0572851f64bcee3faa6e9155456d118bbd13f27da768ac4efb863103"
+hash = "1c0da1d6041eca568038a427eb73111c7ecfd2df0dc91cde16ae762541cb18e0"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/coal/molten_coke_from_ingot.json"
@@ -1706,23 +1738,23 @@ hash = "5856eb0be07e2d478edd494e858d10042a20ceda903f0a86851d89b4a03c2953"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/diamond/molten_diamond_from_block.json"
-hash = "f33250ee72cc7634ae44a4c3794230679721957460eb41dc1eb53eda9b1a54ca"
+hash = "7d0a907ece34c8542e5d658e26e4696c917a4141eda55da4bb89401011d826ce"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/diamond/molten_diamond_from_dust.json"
-hash = "4c2dff4d56a573eff8266d0d7246c593ecd22ad51e162207ebeea84cf11a7832"
+hash = "b02454e776306470c68917c9079a7b2eb7a3babfc145b271ae1d1b8f4fd55c54"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/diamond/molten_diamond_from_ingot.json"
-hash = "eb6cd14bb95e999d1dcd94aecf31707b4106198c9009d7390165958b5e378924"
+hash = "d6aff7910200fc1ec7399a6c4f3b8ec68cd1a39f2838543913c4acbf1ba97382"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/enderium/molten_zinc_from_ingot.json"
-hash = "874b020e978ef2f871015759ee329d49e151fc4af87ddcf65558166bdf4999a0"
+hash = "509354adc647603e7d432e9e27f53e7ab44edd892cfd77b4e47b152c151b3719"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/glass/molten_glass_from_block.json"
-hash = "ace381713db9c6c11d68392f02c4a2553b26aacc00a91d5129b3022b11c51a4e"
+hash = "5aff34ea4d388b5d46280adf8b6727d138983e914076e6e1f1a01696d83be594"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/number_array.json"
@@ -1742,27 +1774,27 @@ hash = "d54638d02800b620fcef15cf595610dfc68f5bf7c2468d8b21ba687bcdd1d406"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/tungsten/molten_zinc_from_block.json"
-hash = "16c92226715e8c0853d13b43e37e591faa00bf69005613a152f9b9e3a7681640"
+hash = "2d8bdf80513cd503a591b22170f738cd1823c663879c00b298c5c419fdcb2e2a"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/tungsten/molten_zinc_from_dust.json"
-hash = "afe3d181372398d49f5e587e54a96253094277f98a5dec51e2352b9160b3699d"
+hash = "10014f55b851afcc3a5c0872975a0d9506050e85a8025a3b0a85d88e0e7da19e"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/tungsten/molten_zinc_from_ingot.json"
-hash = "b7d67690f94dbe3ffe73588597ec3734d945713590a4a949bca8985cd1b0269a"
+hash = "350a9cc07cde2a0d94cfee43f4b5775d22e6aed3e4f40a4a9ce35677f85a6d40"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/zinc/molten_zinc_from_block.json"
-hash = "43381a2ac8a0afb1d4a7829d26eab9c8f2f278de446d76251207474242a748d1"
+hash = "3ed0f99618a81ea3a3fec81cc90f7b42a68ee90e677efe9d8f92058e5f7bc941"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/zinc/molten_zinc_from_dust.json"
-hash = "170968f6c41cc30b1962031a131cce2fb2e3be540697e221eade7ccd8eaa71f3"
+hash = "b17de6dd1a5fe6f8afbb5c4c2538bb9ee07cd8d305f6bbdb8d8d73aff2fd2657"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelter/zinc/molten_zinc_from_ingot.json"
-hash = "105bc0bc30e835cb5048708d257f5b6bc387bf2d02e1a028077358ca83c2008f"
+hash = "7a1b18bc12f5007ee5e9351d23b2c7c8b051cbfcc71ecb273bac3bced899b91b"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/smelting/nickel_ingot_from_crushed.json"
@@ -2729,54 +2761,6 @@ file = "kubejs/data/tconstruct/loot_tables/blocks/cobalt_ore.json"
 hash = "edb884e55fa69a83b17c76ecf778bc238086351278b1740eb03f162d8372c6f0"
 
 [[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_brass.json"
-hash = "3fa672e3268653f8414b2870b72ab94aaa32b1af726d5daab11cd1cac0ce8ab3"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_copper.json"
-hash = "c5ac910eeaceb67751470f3533fd527717cb21bd51c2e6aa660564d32cc0b6e5"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_diamond.json"
-hash = "9030589328a22a51e3214515d42c8378079c532e110e6e254ffebcaee125d07e"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_enderium.json"
-hash = "7bd1e82e468b1e5fb6e914df1ae8b21e387a1b68a50c7e0c0f10bb51411a9ea3"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_glass.json"
-hash = "cd45323465a347d4080fcd58600b8919d9430ad16d042e1a7b0dadc315e6f574"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_gold.json"
-hash = "a54ac1231789856b6ab3e4c891614c2d28b2b6d3c76c672243bfcaa407eb460b"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_iron.json"
-hash = "195e91bf4659de9ab06c275cdb5c7c6ad663436f93f5a2b1f3fceab5bd12b117"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_lead.json"
-hash = "589bb445458d85eb51f1b1930cf94c5cdf4402d4b1cf2508ed99b1b217e04e0c"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_netherite.json"
-hash = "31724af8f3471fafbe01a8bb94820b2587de26710fe9cd59d92abcd2dbdd898d"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_silver.json"
-hash = "016794043d4b8fd86a1bdbae8d4047de19a0ad123c9c82aeb933a0d53d3e7e63"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_tin.json"
-hash = "e63020343183a92bc68e64cab294eb368cc33bb4afd032e0ae3ab96aa18f922c"
-
-[[files]]
-file = "kubejs/data/tconstruct/tags/fluids/molten_zinc.json"
-hash = "9cc0ed93a598b2ca1c2264aaee2858b549f17ca9788c4f941b2ae8a5e22e119c"
-
-[[files]]
 file = "kubejs/server_scripts/extractor.js"
 hash = "54cf3d121c1bfec905e338524acf642d3eeafcce51f52f99921a8defe37a965f"
 
@@ -2786,7 +2770,7 @@ hash = "a75cac640a7dd1ba9976ade5396a26087f89536ccd091c8fc7e6c93a1c297d75"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "39ee33761ad9741180a830ffea00504c0d318cb43d7b7721656f544ecfaf7332"
+hash = "e1bfef28e14082ee4b5bed8530fcc03555ff5b1b67215112b32115ac85d38def"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
