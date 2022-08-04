@@ -2864,6 +2864,11 @@ file = "mods/cobblegen-v1.10b33+mc1.18.x.jar"
 hash = "57d970864ab6686349d23fde16c0e198103526bebb5b2a55eadd27014211741f"
 
 [[files]]
+file = "mods/cobblegen.pw.toml"
+hash = "0fdaa26c126f1eb0a1926a0f1b20e46f4e28de8a2074b77dda213539b0431089"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "7c95c7eb827be20a2ea98e9a5924e43c8123bfd2bcb01fdcc5a538d37faabe8f"
 metafile = true
