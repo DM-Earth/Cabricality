@@ -34,70 +34,38 @@
 			}]
 		}
 		{
-			title: "Ready to Deploy"
-			icon: "kubejs:calculation_mechanism"
-			x: 1.0d
-			y: 7.5d
-			subtitle: "Contraption 40-2"
-			description: ["For one last time, a line of Deployers will be needed to upgrade the previous mechanism to the next tier."]
-			dependencies: [
-				"1BF8F3CC8BEBB620"
-				"71D90A1E5D53FC0A"
-			]
-			id: "6824055533465010"
-			tasks: [
-				{
-					id: "34B7E632F7FD83DB"
-					type: "item"
-					item: "kubejs:calculation_mechanism"
-					consume_items: false
-				}
-				{
-					id: "48B114D2C0F51F6D"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
+			title: "New Capacity"
+			icon: "indrev:heat_generator_mk4"
+			x: -1.0d
+			y: -2.5d
+			shape: "circle"
+			description: ["The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later."]
+			dependencies: ["4B80A801A5BE4A01"]
+			id: "13B197C90F9812C8"
+			tasks: [{
+				id: "4C687EF00A44ED1E"
+				type: "checkmark"
+			}]
 		}
 		{
-			title: "Chapter 4 Complete!"
-			x: 1.0d
-			y: 9.5d
-			shape: "hexagon"
-			description: [
-				"Great work! The final assembly line is now complete. Your factory just entered the Digital Age."
-				""
-				"New options have opened up in the Overview. Whenever you are ready."
-			]
-			dependencies: ["6824055533465010"]
-			size: 2.0d
-			id: "28DAED70768C6A50"
+			title: "The Alchemical Laser BOOM"
+			icon: "indrev:laser_emitter_mk4"
+			x: 3.0d
+			y: -2.5d
+			shape: "circle"
+			description: ["A central role in this age of technology is played by the Alchemical Laser."]
+			dependencies: ["4B80A801A5BE4A01"]
+			id: "6D26DAB7D0FF6E90"
 			tasks: [{
-				id: "3E607053D3B0C552"
-				type: "item"
-				item: "ae2:controller"
-				consume_items: false
+				id: "16897A4EF323B02E"
+				type: "checkmark"
 			}]
-			rewards: [
-				{
-					id: "40B14407CE6BAB56"
-					type: "item"
-					item: "kubejs:calculation_mechanism"
-					count: 16
-				}
-				{
-					id: "1825E20FFD3BEBFF"
-					type: "item"
-					item: "ae2:fluix_crystal"
-					random_bonus: 4
-				}
-				{
-					id: "3FD881040347300A"
-					type: "item"
-					item: "indrev:lead_plate"
-					random_bonus: 4
-				}
-			]
+			rewards: [{
+				id: "24B631E93DB0C8F7"
+				type: "item"
+				team_reward: true
+				item: "kubejs:powered_water_bucket"
+			}]
 		}
 		{
 			title: "Sand Delivery"
@@ -188,6 +156,102 @@
 			]
 		}
 		{
+			title: "Modern Cobblegen"
+			icon: "minecraft:basalt"
+			x: -3.0d
+			y: -1.0d
+			subtitle: "Contraption 32-1"
+			description: ["Basalt is an accessible type of rock that contains traces of inert Basalz Powder. For the purposes of this, a steady supply of them is needed."]
+			hide_dependency_lines: true
+			dependencies: ["4B80A801A5BE4A01"]
+			id: "0B602ED47A0195A4"
+			tasks: [
+				{
+					id: "4649973A51C977D9"
+					type: "item"
+					item: "minecraft:basalt"
+					consume_items: false
+				}
+				{
+					id: "738E569981496B56"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Hot Laser"
+			icon: "kubejs:basalz_shard"
+			x: -3.0d
+			y: 0.5d
+			subtitle: "Contraption 32-2"
+			description: [
+				"The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper."
+				""
+			]
+			dependencies: ["0B602ED47A0195A4"]
+			id: "6C4CB8F616A9C3DF"
+			tasks: [
+				{
+					id: "712E7C4EEB4BCF55"
+					type: "item"
+					item: "kubejs:basalz_shard"
+					consume_items: false
+				}
+				{
+					id: "7DF47F688E5C795C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Basalz Mill"
+			icon: "kubejs:basalz_powder"
+			x: -3.0d
+			y: 2.0d
+			subtitle: "Contraption 33-1"
+			description: ["Before it is ready for processing, the basalz essence needs a bit of refinement. "]
+			dependencies: ["6C4CB8F616A9C3DF"]
+			id: "5799B4124EE20DB1"
+			tasks: [
+				{
+					id: "54F29099D9D81837"
+					type: "item"
+					item: "kubejs:basalz_powder"
+					consume_items: false
+				}
+				{
+					id: "05969082F437FCA9"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Concentrated Heat"
+			icon: "kubejs:earth_charge"
+			x: -3.0d
+			y: 3.0d
+			subtitle: "Contraption 33-2"
+			description: ["Compact enough powder back together to create the highly reactive Earth Charge."]
+			dependencies: ["5799B4124EE20DB1"]
+			id: "60A8B4C736CE3226"
+			tasks: [
+				{
+					id: "2C3C495C9B18005A"
+					type: "item"
+					item: "kubejs:earth_charge"
+					consume_items: false
+				}
+				{
+					id: "21545C0F55D9D8C8"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
 			title: "Crystalline Sand"
 			icon: "kubejs:purified_sand"
 			x: -1.0d
@@ -208,6 +272,39 @@
 				}
 				{
 					id: "2BE9DD7F346679E2"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Wood Delivery"
+			icon: "minecraft:oak_log"
+			x: 3.0d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Contraption 34-1"
+			description: ["It'll be good to order a Wood supply to this location. Aside from Silicon it can contribute to this assembly line for some other useful products."]
+			hide_dependency_lines: true
+			dependencies: ["4B80A801A5BE4A01"]
+			id: "46820FBDDDEE491E"
+			tasks: [
+				{
+					id: "0AA0DEB1A87DA675"
+					type: "item"
+					title: "Any Wooden Log"
+					icon: "minecraft:oak_log"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "72BA1D3BD545CBE6"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -309,102 +406,6 @@
 			]
 		}
 		{
-			title: "Concentrated Heat"
-			icon: "kubejs:earth_charge"
-			x: -3.0d
-			y: 3.0d
-			subtitle: "Contraption 33-2"
-			description: ["Compact enough powder back together to create the highly reactive Earth Charge."]
-			dependencies: ["5799B4124EE20DB1"]
-			id: "60A8B4C736CE3226"
-			tasks: [
-				{
-					id: "2C3C495C9B18005A"
-					type: "item"
-					item: "kubejs:earth_charge"
-					consume_items: false
-				}
-				{
-					id: "21545C0F55D9D8C8"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Basalz Mill"
-			icon: "kubejs:basalz_powder"
-			x: -3.0d
-			y: 2.0d
-			subtitle: "Contraption 33-1"
-			description: ["Before it is ready for processing, the basalz essence needs a bit of refinement. "]
-			dependencies: ["6C4CB8F616A9C3DF"]
-			id: "5799B4124EE20DB1"
-			tasks: [
-				{
-					id: "54F29099D9D81837"
-					type: "item"
-					item: "kubejs:basalz_powder"
-					consume_items: false
-				}
-				{
-					id: "05969082F437FCA9"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Hot Laser"
-			icon: "kubejs:basalz_shard"
-			x: -3.0d
-			y: 0.5d
-			subtitle: "Contraption 32-2"
-			description: [
-				"The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper."
-				""
-			]
-			dependencies: ["0B602ED47A0195A4"]
-			id: "6C4CB8F616A9C3DF"
-			tasks: [
-				{
-					id: "712E7C4EEB4BCF55"
-					type: "item"
-					item: "kubejs:basalz_shard"
-					consume_items: false
-				}
-				{
-					id: "7DF47F688E5C795C"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Modern Cobblegen"
-			icon: "minecraft:basalt"
-			x: -3.0d
-			y: -1.0d
-			subtitle: "Contraption 32-1"
-			description: ["Basalt is an accessible type of rock that contains traces of inert Basalz Powder. For the purposes of this, a steady supply of them is needed."]
-			hide_dependency_lines: true
-			dependencies: ["4B80A801A5BE4A01"]
-			id: "0B602ED47A0195A4"
-			tasks: [
-				{
-					id: "4649973A51C977D9"
-					type: "item"
-					item: "minecraft:basalt"
-					consume_items: false
-				}
-				{
-					id: "738E569981496B56"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			title: "Snow Machine"
 			icon: "minecraft:snow_block"
 			x: 5.0d
@@ -433,7 +434,7 @@
 			icon: "kubejs:blizz_cube"
 			x: 5.0d
 			y: 2.5d
-			subtitle: "Contraption 38-1"
+			subtitle: "Contraption 38"
 			description: [
 				"The second Alchemical Laser forms activated blizz essence from Snow Blocks."
 				""
@@ -528,6 +529,51 @@
 			]
 		}
 		{
+			title: "Secrets uncovered"
+			icon: "kubejs:substrate_silicon"
+			disable_toast: true
+			x: -3.0d
+			y: 5.0d
+			shape: "hexagon"
+			description: ["The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial."]
+			dependencies: ["3B431AAADE8845FA"]
+			hide: true
+			size: 1.5d
+			id: "0CE88FEA070DC46C"
+			tasks: [{
+				id: "5B4F2E2F7BDEA6A0"
+				type: "stat"
+				title: "Complete Chapter 4a"
+				icon: "kubejs:substrate_chaos"
+				disable_toast: true
+				stat: "minecraft:play_time"
+				value: 60
+			}]
+		}
+		{
+			title: "Unboxing"
+			icon: "ae2:silicon"
+			x: -1.0d
+			y: 5.0d
+			subtitle: "Contraption 39-A"
+			description: ["Separate the Silicon from its jar using a Reagent Extractor."]
+			dependencies: ["0CE88FEA070DC46C"]
+			id: "4B19B6EAD511378D"
+			tasks: [
+				{
+					id: "6FCB9E7E2CC10348"
+					type: "item"
+					item: "ae2:silicon"
+					consume_items: false
+				}
+				{
+					id: "0A4B691EF3CDC7A0"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
 			title: "Circuit Stamper"
 			icon: "ae2:printed_silicon"
 			x: 1.0d
@@ -555,75 +601,26 @@
 			]
 		}
 		{
-			title: "Secrets uncovered"
-			icon: "kubejs:substrate_silicon"
-			disable_toast: true
-			x: -3.0d
-			y: 5.0d
-			shape: "hexagon"
-			description: ["The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial."]
-			dependencies: ["3B431AAADE8845FA"]
-			hide: true
-			size: 1.5d
-			id: "0CE88FEA070DC46C"
-			tasks: [{
-				id: "5B4F2E2F7BDEA6A0"
-				type: "stat"
-				title: "Complete Chapter 4a"
-				icon: "kubejs:substrate_chaos"
-				disable_toast: true
-				stat: "minecraft:play_time"
-				value: 60
-			}]
-		}
-		{
-			title: "The Alchemical Laser BOOM"
-			icon: "indrev:laser_emitter_mk4"
-			x: 3.0d
-			y: -2.5d
-			shape: "circle"
-			description: ["A central role in this age of technology is played by the Alchemical Laser."]
-			dependencies: ["4B80A801A5BE4A01"]
-			id: "6D26DAB7D0FF6E90"
-			tasks: [{
-				id: "16897A4EF323B02E"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "24B631E93DB0C8F7"
-				type: "item"
-				team_reward: true
-				item: "kubejs:powered_water_bucket"
-			}]
-		}
-		{
-			title: "Wood Delivery"
-			icon: "minecraft:oak_log"
-			x: 3.0d
-			y: -0.5d
-			shape: "square"
-			subtitle: "Contraption 34-1"
-			description: ["It'll be good to order a Wood supply to this location. Aside from Silicon it can contribute to this assembly line for some other useful products."]
-			hide_dependency_lines: true
-			dependencies: ["4B80A801A5BE4A01"]
-			id: "46820FBDDDEE491E"
+			title: "Ready to Deploy"
+			icon: "kubejs:calculation_mechanism"
+			x: 1.0d
+			y: 7.5d
+			subtitle: "Contraption 40-2"
+			description: ["For one last time, a line of Deployers will be needed to upgrade the previous mechanism to the next tier."]
+			dependencies: [
+				"1BF8F3CC8BEBB620"
+				"71D90A1E5D53FC0A"
+			]
+			id: "6824055533465010"
 			tasks: [
 				{
-					id: "0AA0DEB1A87DA675"
+					id: "34B7E632F7FD83DB"
 					type: "item"
-					title: "Any Wooden Log"
-					icon: "minecraft:oak_log"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:logs"
-						}
-					}
+					item: "kubejs:calculation_mechanism"
 					consume_items: false
 				}
 				{
-					id: "72BA1D3BD545CBE6"
+					id: "48B114D2C0F51F6D"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -655,25 +652,42 @@
 			}]
 		}
 		{
-			title: "Unboxing"
-			icon: "ae2:silicon"
-			x: -1.0d
-			y: 5.0d
-			subtitle: "Contraption 39-A"
-			description: ["Separate the Silicon from its jar using a Reagent Extractor."]
-			dependencies: ["0CE88FEA070DC46C"]
-			id: "4B19B6EAD511378D"
-			tasks: [
+			title: "Chapter 4 Complete!"
+			x: 1.0d
+			y: 9.5d
+			shape: "hexagon"
+			description: [
+				"Great work! The final assembly line is now complete. Your factory just entered the Digital Age."
+				""
+				"New options have opened up in the Overview. Whenever you are ready."
+			]
+			dependencies: ["6824055533465010"]
+			size: 2.0d
+			id: "28DAED70768C6A50"
+			tasks: [{
+				id: "3E607053D3B0C552"
+				type: "item"
+				item: "ae2:controller"
+				consume_items: false
+			}]
+			rewards: [
 				{
-					id: "6FCB9E7E2CC10348"
+					id: "40B14407CE6BAB56"
 					type: "item"
-					item: "ae2:silicon"
-					consume_items: false
+					item: "kubejs:calculation_mechanism"
+					count: 16
 				}
 				{
-					id: "0A4B691EF3CDC7A0"
-					type: "checkmark"
-					title: "Automated"
+					id: "1825E20FFD3BEBFF"
+					type: "item"
+					item: "ae2:fluix_crystal"
+					random_bonus: 4
+				}
+				{
+					id: "3FD881040347300A"
+					type: "item"
+					item: "indrev:lead_plate"
+					random_bonus: 4
 				}
 			]
 		}
@@ -734,20 +748,6 @@
 					consume_items: false
 				}
 			]
-		}
-		{
-			title: "New Capacity"
-			icon: "indrev:heat_generator_mk4"
-			x: -1.0d
-			y: -2.5d
-			shape: "circle"
-			description: ["The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later."]
-			dependencies: ["4B80A801A5BE4A01"]
-			id: "13B197C90F9812C8"
-			tasks: [{
-				id: "4C687EF00A44ED1E"
-				type: "checkmark"
-			}]
 		}
 	]
 }
