@@ -76,7 +76,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [X] 殷钢机器
 - [X] 末影合金机器
 - [X] 福鲁伊克斯机器
-- [X] `新` 黑曜石机器
+- [X] `新` 黑曜机器
 
 ### 特殊内容
 

@@ -1,6 +1,6 @@
 let modpackId = "cabricality"
 function tradeList() {
-//	sync needed
+//	Sync needed
 //	profession, modId, item, =itemCount, =silverCoinCount
 	let tl = [
 //		Farming
