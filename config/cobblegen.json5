@@ -17,7 +17,13 @@
   "cobbleGen": [
     {
       "id": "minecraft:cobblestone",
-      "weight": 100.0
+      "weight": 100.0,
+      "minY": 0
+    },
+    {
+      "id": "minecraft:cobbled_deepslate",
+      "weight": 100.0,
+      "maxY": 0
     }
   ],
   "stoneGen": [
@@ -71,40 +77,40 @@
     "cobbleGen": {
       "minecraft:bedrock": [
         {
+          "id": "create:limestone",
+          "weight": 40.0
+        },
+        {
           "id": "minecraft:diorite",
-          "weight": 1.0
+          "weight": 10.0
         },
         {
           "id": "minecraft:andesite",
-          "weight": 1.0
+          "weight": 40.0
         },
         {
           "id": "minecraft:granite",
-          "weight": 1.0
-        },
-        {
-          "id": "create:limestone",
-          "weight": 1.0
+          "weight": 10.0
         }
       ]
     },
     "stoneGen": {
       "minecraft:bedrock": [
         {
+          "id": "create:limestone",
+          "weight": 40.0
+        },
+        {
           "id": "minecraft:diorite",
-          "weight": 1.0
+          "weight": 10.0
         },
         {
           "id": "minecraft:andesite",
-          "weight": 1.0
+          "weight": 40.0
         },
         {
           "id": "minecraft:granite",
-          "weight": 1.0
-        },
-        {
-          "id": "create:limestone",
-          "weight": 1.0
+          "weight": 10.0
         }
       ]
     },

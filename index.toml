@@ -2855,6 +2855,11 @@ hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
 
 [[files]]
+file = "mods/c2me-fabric.pw.toml"
+hash = "e72273cbc32fb9fb946ec244e707a315ae91a7b816ac47444e5bd1cc664d29fa"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "c7db587d0799043490a1cdc144bbcc7a3ddaaff13e2f5ebbb145b796c1ce7115"
 metafile = true
@@ -3015,6 +3020,11 @@ metafile = true
 [[files]]
 file = "mods/mcwifipnp.pw.toml"
 hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
+metafile = true
+
+[[files]]
+file = "mods/memoryleakfix.pw.toml"
+hash = "f61810be98ef52436d3355ecfa4354bc47d142cbe9468fbd14415e5bc6d66125"
 metafile = true
 
 [[files]]
