@@ -228,8 +228,7 @@ onEvent("item.registry", event => {
 	number("Divide", "÷")
 	number("Missingno", "NaN")
 
-/*
-	event.create("number_array")
+/*	event.create("number_array")
 		.texture(modpackId + ":item/number/number_array")
 		.displayName("Number Array")
 		.glow(true)
