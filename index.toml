@@ -182,7 +182,7 @@ hash = "37cad8dea9ce8f79e7476c63eb02b2400809cd8677cf33630ea214013ae2ac02"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/machine_template.json"
-hash = "d0edce7b9b55793a0309d94d705104d6cb32f3554ed43dc9c8fba4f3c2e2f8de"
+hash = "cd8c4ac5ca4e925ef12300770e9a9ce6a0da050f19db19ad2375e9501820fd8b"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/mundane_substrate.json"
@@ -194,11 +194,11 @@ hash = "f431d630e562bd48aad60c1b989067b86f4c8f7dcb386957144d6ccc5fd5ffa2"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/trading/profession_card.json"
-hash = "6088e643806a713305a6ab33cadc4b640b299205f08aa2beedf1eb182ce1af48"
+hash = "9769ff25f39ecaf667c71f89dd9aec0e90871658305b4468e1cfed0549850d27"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/trading/trade_card.json"
-hash = "ada86d1570e9b9e16bb8984f1a85fadf3d6e771bd6ab3df7b3d9de2b2095fa8a"
+hash = "f7506bd3e3b39e83b00f9c28c3494677cc09948e02a9a2fd05c257f7ebfc2a20"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/accellerator_glass.png"
@@ -214,7 +214,7 @@ hash = "e6b17db8c380cbd1a05c187d30c466324735ee6e14b15b3c2b27a4f22bbb5076"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_side.png.mcmeta"
-hash = "647ff268b4963fe5d333741c56c1224e517852b34093ea08a14e9f9821926f45"
+hash = "9d4e4d257b05f5da3f2617c5b3be0cd6f51811fcb1903e969ea9d6fcd5628a4a"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_top.png"
@@ -222,7 +222,7 @@ hash = "b2085ce5b46506fb48dc0ffbb5523e37000533c71f00b9ec84b2e3ecd9c5f346"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_top.png.mcmeta"
-hash = "7df24e3d2b26297c3cc800136121a3e10ae368302c8d18585bb0f716f41e7ffd"
+hash = "4986af7f235796bf5393d6919a7c1b5f3b0274a8dfc2a61b14cf886ca655ef56"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_top_ctm.png"
@@ -234,7 +234,7 @@ hash = "53ac09714a087ad0cefa54e2005ab483e50dba747587174973fc40dba4b82c17"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/fluix/fluix_casing.png.mcmeta"
-hash = "bd7246be89b68ebac7a219e548d24478502dc6d42d936741e4deba6fcf6f009b"
+hash = "78a8640b20d24904f7fc3530ed72120485e89ef435455db45ff2f9f98073189f"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/fluix/fluix_casing_ctm.png"
@@ -250,7 +250,7 @@ hash = "2620b642f41f82c2b3e2e71dd1f6a14cbb474400a5863777b627c04bc46fbb96"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/invar/invar_casing_side.png.mcmeta"
-hash = "507c0e4cdcadcb2cbf20b7281f652b2bc35e076f23e5903187d0baa9292337c7"
+hash = "cb20342e6a96843f67949863d27ec0abab1ea6c44baf1fb001bda288a0fb1e30"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/invar/invar_casing_top.png"
@@ -266,7 +266,7 @@ hash = "064d093c0cac59b65bb6b8cb3bedfd160908c9ad6c6b1480c33c604e9e807157"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/zinc/zinc_casing_side.png.mcmeta"
-hash = "48c88cc501f14f7521af6ccc4dca2ebd06c9db071d482c0645cf9eed6225ec1f"
+hash = "ae6b0398693d9a4e52549f5c3896e43318dc0af81f9714486415a704beba50ed"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/catalyst_glass.png"
@@ -282,7 +282,7 @@ hash = "7b7cf0dc36d764103aa4a5357b335ce9af676bae6a52d835cfdc2fe2f5cd1348"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/computation_matrix.png.mcmeta"
-hash = "49fc4624f6d61129d531f982ca66b24219ed1716c8e736e0b11f34a9a68250ea"
+hash = "d947e6371a5bb46ab733722fac72f7aae2832fc94ecc8a1ab55c3e1471cbf4f4"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/computation_matrix_2.png"
@@ -290,7 +290,7 @@ hash = "435de10be8c8ba05c5f8529a255f925013c5945fdb127bc3adc70ccab5626ab1"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/computation_matrix_2.png.mcmeta"
-hash = "49fc4624f6d61129d531f982ca66b24219ed1716c8e736e0b11f34a9a68250ea"
+hash = "d947e6371a5bb46ab733722fac72f7aae2832fc94ecc8a1ab55c3e1471cbf4f4"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/machine/enderium/enderium_machine_bottom.png"
@@ -402,7 +402,7 @@ hash = "ddfb8fbde8ba2f2823792c4904280717bf03134b3467d07824c5908eb0a488c7"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/charged_calculator.png.mcmeta"
-hash = "4de2fc02a986a7f5ac46edfe4936f85152ad025fdb6afd51a688b545be2d0eb7"
+hash = "566eff411c942252967303f454672d0343f54fe9e0bafd590261c43dab66ac60"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/chromatic_resonator.png"
@@ -410,7 +410,7 @@ hash = "aec1590203256fd9760e1fc699e016f4a840e32b4a5f20e0ffc746010d92ad27"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/chromatic_resonator.png.mcmeta"
-hash = "8552792149f206f62f26882a4ebe39720b92114330cf42007d13bc344d22f5b2"
+hash = "4cc5da8a95dde5648e5b18d258947682f28269ff1a34729f780a9f28e5caf59d"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/circuit_scrap.png"
@@ -446,7 +446,7 @@ hash = "ff62c1274a9185a612a4d5fe24ca00513be003e6424b14011d9662a55ac8c746"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/dye_entangled_singularity.png.mcmeta"
-hash = "64026175403fa142db0500270b215870537e0c128a0e9b09d6a9d85c4825d480"
+hash = "77e655ec8bc3818ea2c86b1971f95bf610f68563e951e9c34248309c135e3ae3"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/earth_charge.png"
@@ -562,7 +562,7 @@ hash = "96d73582f96e0e9b1eb0a7194b5adac23b88fafe8586fc4c102d256fc8d5018b"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/number/missingno.png.mcmeta"
-hash = "806a15c83ed1f2b1c7e6c60a9fc443edd193f3d59bda2f90c43fed63879c5c95"
+hash = "771dd93485c272a2d5b324a06abf8ba6cdb1b0fc73dfe46a75f7bd41c4d3ab59"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/number/multiply.png"
@@ -730,11 +730,11 @@ hash = "37296f793d6e907d7bffaac80b514db98480a1dd076bae8ee2652979f5baa8ce"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/create/textures/item/lang/en_us.json"
-hash = "b1973c78b4f7a668abab9435b80f124a82c59d9dbb9fe637f13cc11cd64aa872"
+hash = "77b9f7fccea0f2383b5b6282aed76eb1062d86dc30ef2ac7093f75b7e5c86c88"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/create/textures/item/lang/zh_cn.json"
-hash = "f495ee1aa31878a895b325ab5b1f960593bbd2eb4de1226f958b6f40fd337bb7"
+hash = "3e92e15ab0d7ebfffab740ef157d63346db7ee2a12fa568b66ecfec29afddcf0"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/create/textures/item/precision_mechanism.png"
@@ -798,7 +798,7 @@ hash = "a9c037a01dff080b1e53db68ff7fa207ddcf671429166e4f89ffcb961ba8b106"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/condenser_on.png.mcmeta"
-hash = "54035f6387d4b752a9ddb8bf4745bf81bea294c945682ec5ed1c3713aa6ea20c"
+hash = "a9b890085dafc615459e83e9115acfea9e5b6d10c0b201b6a5fd94bdd7f743bc"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/deepslate_lead_ore.png"
@@ -818,7 +818,7 @@ hash = "44f56f76e1be09977d53a9b14e39e53c56abf01053f5b07a2ba2757b3753dd4d"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/electric_furnace_emissive_on.png.mcmeta"
-hash = "bdb8af017a9d021aded58ac7a4c5239cae1b347d3d17fb56e7c87124543a976c"
+hash = "8e94f7ef3f8da0e92816d50f872420a64e6191e1f2807027d64c87b667ed1886"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/fluid_infuser.png"
@@ -830,7 +830,7 @@ hash = "c0c6a3d12b0130025c22d3cdc7adb654b7630e1fb95a619b4f7785c2257cf1ae"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/fluid_infuser_on.png.mcmeta"
-hash = "e398dcf3541e20e30d18a44ef7b290e24794659bb9fcca5e87ceb64b41725ab5"
+hash = "fc304a5ea308edfcd6a6eba7823dadc20f1a2110171716cd4daa44b2570d8e65"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/heat_generator.png"
@@ -858,7 +858,7 @@ hash = "0099ab7da26bec9b4787fd1474a53e1bd3167ff2fdd5a7312e920bb7d63b971b"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/pulverizer_on.png.mcmeta"
-hash = "dd4daf530182769d858f750edd3da2a2a839361ad8c506399528b0c27675b044"
+hash = "f0e84ee6690f97d4b9bcc81cdabb53cf634e01be4fa053e61b75e027b697851f"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/recycler.png"
@@ -870,7 +870,7 @@ hash = "aeafd1be9004972dca5eb3a72581292361b7db4e1ac45c7cc9ff1ff6ee68cea1"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/recycler_on.png.mcmeta"
-hash = "140ab363f11e07bf955a319ca2d14ff2711308a37a38d914366c69a38e85b2bf"
+hash = "8c2422f779e4cf218fdc3cb953237099a92aaa4525ac2f60f64f346fc8c02a03"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/sawmill.png"
@@ -882,7 +882,7 @@ hash = "8fa0cedd2b4e22981dc4c1e588587713b878d5025b524dde95165fb1f6abcebe"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/sawmill_on.png.mcmeta"
-hash = "4bf16a0077b6e44f1d891a3ca585790ec0f22f65a75150be6b7d525b2ec816f4"
+hash = "fca6a804063f27ece29dd10c81f16597fa7515e4c2b416804a505355baf7f2f3"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/smelter.png"
@@ -906,7 +906,7 @@ hash = "6740f174f90400c297b407d1bb7b7406b19552e95d130a52b8e8da883a5b8217"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/solid_infuser_emissive_on.png.mcmeta"
-hash = "f7e1cb9a750ad8266c0d313f4bc8207ca0fc4c02f824f2a1cb7ab56d2c995f94"
+hash = "73069855bf725a08fefb0528dcfab9701736be683b9e322151e32522ac34291c"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/tin_ore.png"
@@ -2814,7 +2814,7 @@ hash = "a75cac640a7dd1ba9976ade5396a26087f89536ccd091c8fc7e6c93a1c297d75"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "824930dd36ca6265ec8296e586d69bc3dd82b88cbd343976aec51b21a7856a8d"
+hash = "ad213fea17c1dbd1da2b5dbbdc83f629c0b7ba2956d2bdfe2f5c7270be000793"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
