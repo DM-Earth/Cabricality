@@ -318,6 +318,10 @@ function tweaks(event) {
 
 	event.replaceInput({ output: TC("scorched_drain") }, TC("obsidian_pane"), CR("sturdy_sheet"))
 	event.replaceInput({ output: TC("scorched_chute") }, TC("obsidian_pane"), CR("sturdy_sheet"))
+
+	event.remove({ output: "naturescompass:naturescompass" })
+	event.remove({ output: "explorerscompass:explorerscompass" })
+	donutCraft(event, "naturescompass:naturescompass", MC("compass"), MC("#leaves"))
 }
 
 function alloying(event) {
