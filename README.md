@@ -30,7 +30,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 ### Special Functions
 
-- [X] Chaos Alchemy **Not fully polished*
+- [X] Chaotic Alchemy **Not fully polished*
 - [X] Trading System
 - [X] Mad Maths
 
