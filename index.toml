@@ -46,7 +46,7 @@ hash = "a0fcd69151ac9adb814565976fe81ac5a2b312a5d4bd0d80b7dac1684d5f44f2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "b1b9d8f8ca020b4d645be95f5430f396b68e7f1b93c4a4db73237a2d44adf229"
+hash = "d2575d015eb63c52e0eacc45bfac734ad1c63b3a07569be8127b441aa48e9f99"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
@@ -66,7 +66,7 @@ hash = "c5eba90b54b03189c05f3267f66c783c1ba8c84c4f1835ddafb32c4190f25e68"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_3.snbt"
-hash = "8dbc6e8ba395b2034d84e1d02101642de9d5cef79f0fa5d1d250b7718dc16ff7"
+hash = "3b261591c628ea75d6e85abe107f7de33cd29e6f2a16e88196094ae4ec73cd8e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
@@ -2814,7 +2814,7 @@ hash = "a75cac640a7dd1ba9976ade5396a26087f89536ccd091c8fc7e6c93a1c297d75"
 
 [[files]]
 file = "kubejs/server_scripts/recipe.js"
-hash = "ad213fea17c1dbd1da2b5dbbdc83f629c0b7ba2956d2bdfe2f5c7270be000793"
+hash = "cf28ff91dacb328ba5506e3ab6773d8eadc2e0c55e16de7f5d220ade4aa82512"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
