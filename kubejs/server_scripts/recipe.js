@@ -17,6 +17,7 @@ let FD = (id, x) => MOD("farmersdelight", id, x)
 let ED = (id, x) => MOD("extended_drawers", id, x)
 let BC = (id, x) => MOD("bitsandchisels", id, x)
 let TC = (id, x) => MOD("tconstruct", id, x)
+let CC = (id, x) => MOD("computercraft", id, x)
 
 let wood_types = [
 	MC("oak"), MC("spruce"), MC("birch"), MC("jungle"), MC("acacia"), MC("dark_oak"), MC("crimson"), MC("warped"),
@@ -804,7 +805,7 @@ function initInvarMachine(event) {
 	let chop = (type, output) => {
 		event.custom({
 			"type": "farmersdelight:cutting",
-			"ingredients": [{ "item": TC(type + "_slime_fern") }],
+			"ingredients": [{ "item": "tconstruct:" + type + "_slime_fern" }],
 			"tool": { "tag": "fabric:tools/knives" },
 			"result": [Item.of(KJ(type + "_slimy_fern_leaf"), 2).toResultJson()]
 		})
@@ -813,7 +814,7 @@ function initInvarMachine(event) {
 			"ingredients": [{ "item": KJ(type + "_slimy_fern_leaf") }],
 			"results": [{ "item": TC(type + "_slime_fern") }]
 		})
-		event.custom(ifiniDeploying(KJ(type + "_slimy_fern_leaf", 2), KJ(type + "_slimy_fern"), "#fabric:tools/knives"))
+		event.custom(ifiniDeploying(KJ(type + "_slimy_fern_leaf", 2), TC(type + "_slime_fern"), "#fabric:tools/knives"))
 		event.recipes.createMilling([KJ(type + "_slimy_fern_paste")], KJ(type + "_slimy_fern_leaf"))
 		event.campfireCooking(output, KJ(type + "_slimy_fern_paste")).cookingTime(300)
 	}
@@ -1414,6 +1415,23 @@ function spaceCraft(event) {
 	smithAndMechCraft(AR("starship_conduit"), AP("pipe"), plastic)
 }
 
+function initComputer(event) {
+	event.remove({ output: CC("computer_normal") })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cast": {
+			"item": "ae2:controller"
+		},
+		"cast_consumed": true,
+		"fluid": {
+			"name": "tconstruct:molten_electrum",
+			"amount": 27000
+		},
+		"result": "computercraft:computer_normal",
+		"cooling_time": 20
+	})
+}
+
 onEvent("recipes", event => {
 	tweaks(event)
 	oreProcessing(event)
@@ -1427,6 +1445,7 @@ onEvent("recipes", event => {
 	initEnderMachine(event)
 	alchemy(event)
 	initFluixMachine(event)
+	initComputer(event)
 	initMath(event)
 	spaceCraft(event)
 	alloying(event)
