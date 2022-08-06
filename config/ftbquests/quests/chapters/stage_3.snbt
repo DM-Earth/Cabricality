@@ -1045,9 +1045,7 @@
 			x: -1.5d
 			y: 16.5d
 			shape: "circle"
-			description: [
-				"Cool down the molten silver into a Block and admire how shiny it is."
-			]
+			description: ["Cool down the molten silver into a Block and admire how shiny it is."]
 			dependencies: ["0C11EC34D5FA508B"]
 			id: "0D146AD9FE774F8B"
 			tasks: [

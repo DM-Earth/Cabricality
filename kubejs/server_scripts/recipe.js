@@ -270,7 +270,7 @@ function tweaks(event) {
 		B: MC("barrel")
 	})
 	event.remove({ output: MC("shulker_box") })
-	event.shaped(CR("item_vault"), [
+	event.shaped(MC("shulker_box"), [
 		"L",
 		"B",
 		"L"
