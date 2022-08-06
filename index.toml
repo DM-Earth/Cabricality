@@ -2855,11 +2855,6 @@ hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
 
 [[files]]
-file = "mods/c2me-fabric.pw.toml"
-hash = "e72273cbc32fb9fb946ec244e707a315ae91a7b816ac47444e5bd1cc664d29fa"
-metafile = true
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "c7db587d0799043490a1cdc144bbcc7a3ddaaff13e2f5ebbb145b796c1ce7115"
 metafile = true
@@ -3083,7 +3078,7 @@ hash = "289dfab2986c3a16e18954c94c0f9c8a0ef36ac40dedce1128faecb1a68d109c"
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "c8237d62ff964cd0d22e3293d536f00163f718b39d93dec880398882fb608dab"
+hash = "ce702760d6523461d9b563e932273fa507d7c2cee5a2b70c1cdfd7c226528a04"
 metafile = true
 
 [[files]]
