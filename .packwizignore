@@ -3,3 +3,4 @@
 *.mrpack
 /LICENSE
 *.zip
+/assets/*
