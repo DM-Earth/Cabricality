@@ -1,4 +1,4 @@
-<div align="center"> <img src="https://github.com/JieningYu/Cabricality/blob/packwiz/1.18.2/fabric/dev/assets/cabricality_banner.png?raw=true" width = 750 /> </div>
+<div align="center"> <img src="https://github.com/JieningYu/Cabricality/blob/packwiz/1.18.2/fabric/dev/assets/cabricality_banner.png?raw=true" width = 750> </div>
 
 <details><summary>English</summary>
 <p>
