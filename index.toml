@@ -2861,7 +2861,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "37c11528bcdb10c771c37d7e129a7841a8f0ebc08f91d04231914fec8a729fbd"
+hash = "a033d406927064e452c706f7cf936e54764d053aea8cbea06710c0fa47dbb9e2"
 metafile = true
 
 [[files]]
@@ -2940,7 +2940,7 @@ metafile = true
 
 [[files]]
 file = "mods/extended-drawers.pw.toml"
-hash = "3a565b98448d458ccd46b050d112272d21df9eb12ffbd56a134db2fdaf3f5982"
+hash = "ba059fdc06289ebe29bbec223347e1967e1735d31d81773d86381090d9576ebf"
 metafile = true
 
 [[files]]
