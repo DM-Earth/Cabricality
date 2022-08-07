@@ -1,4 +1,4 @@
-let debug = false
+let debug_extractor = false
 onEvent("block.right_click", event => {
 	var isNextToLog = false
 	if (event.block.id == "kubejs:extractor_machine") {
@@ -229,7 +229,7 @@ onEvent("block.right_click", event => {
 		}
 
 		let isFluidSource = false
-		if (debug == true) {
+		if (debug_extractor == true) {
 			event.server.runCommandSilent("say start")
 			event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
 			event.server.runCommandSilent("say " + event.block.down.getBlockState().toString().indexOf("[level=").toString())
@@ -248,8 +248,8 @@ onEvent("block.right_click", event => {
 
 			&& isFluidSource == true
 		) {
-			//	if (debug == true) event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
-			if (debug == true) event.server.runCommandSilent(`say ${event.block.down.getBlockState().toString()}`)
+			//	if (debug_extractor == true) event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
+			if (debug_extractor == true) event.server.runCommandSilent(`say ${event.block.down.getBlockState().toString()}`)
 			x = event.block.x
 			y = event.block.y - 1
 			yup = event.block.y + 1

@@ -2896,6 +2896,11 @@ hash = "7c95c7eb827be20a2ea98e9a5924e43c8123bfd2bcb01fdcc5a538d37faabe8f"
 metafile = true
 
 [[files]]
+file = "mods/coxinha-utilities.pw.toml"
+hash = "0d54310c1169c147139a8cb029f46aee03b65ab5e2247f45626408dcc7327830"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
 hash = "d506aff4966cf0049497f348aecb880cd3dbade497746c84a91f6b3b133c47ae"
 metafile = true

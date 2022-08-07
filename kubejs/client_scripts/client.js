@@ -63,6 +63,7 @@ onEvent("rei.hide.items", event => {
 	event.hide("agape_space:aluminum_plate")
 
 	event.hide("create:propeller")
+	event.hide("create:copper_ladder")
 
 	event.hide("tconstruct:molten_tungsten_bucket")
 

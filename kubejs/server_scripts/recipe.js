@@ -10,6 +10,7 @@ let F = (id, x) => MOD("fabric", id, x)
 let IV = (id, x) => MOD("indrev", id, x)
 let AE2 = (id, x) => MOD("ae2", id, x)
 let KB = (id, x) => MOD("kibe", id, x)
+let CX = (id, x) => MOD("coxinhautilities", id, x)
 let PMD = (id, x) => MOD("promenade", id, x)
 let AR = (id, x) => MOD("agape_space", id, x)
 let AP = (id, x) => MOD("architects_palette", id, x)
@@ -322,6 +323,48 @@ function tweaks(event) {
 	event.remove({ output: "naturescompass:naturescompass" })
 	event.remove({ output: "explorerscompass:explorerscompass" })
 	donutCraft(event, "naturescompass:naturescompass", MC("compass"), MC("#leaves"))
+
+	event.remove({ output: CX("portable_tank_mk1") })
+	event.shaped(CX("portable_tank_mk1"), [
+		"T",
+		"P",
+		"T"
+	], {
+		T: IV("tin_plate"),
+		P: KB("tank")
+	})
+	event.remove({ output: CX("cardboard_box") })
+	event.shaped(CX("cardboard_box"), [
+		"T",
+		"P",
+		"T"
+	], {
+		T: IV("planks"),
+		P: MC("paper")
+	})
+	event.remove({ output: CX("wooden_hopper") })
+	event.shaped(CX("wooden_hopper"), [
+		"W W",
+		"P P",
+		" P "
+	], {
+		W: MC("#planks"),
+		P: IV("planks")
+	})
+	upgradeAll(CX("portable_tank_mkTL"), 1, 4, 5)
+	event.remove({ output: CX("grannys_sink") })
+	event.recipes.createMechanicalCrafting(CX("grannys_sink"), [
+		"SSSSS",
+		"SSSSS",
+		"SSWSS",
+		"SSSSS",
+		"SSSSS"
+	], {
+		W: MC("water_bucket"),
+		S: KJ("computation_matrix")
+	})
+	event.remove({ output: CX("copper_ladder") })
+	event.replaceOutput({}, CR("copper_ladder"), CX("copper_ladder"))
 }
 
 function alloying(event) {
@@ -683,6 +726,7 @@ function initCopperMachine(event) {
 	copper_machine("indrev:fisher_mk2", 1, MC("bucket"))
 	if (createVersion >= 0.5) copper_machine("create:steam_engine", 2, MC("piston"))
 	copper_machine("create:smart_fluid_pipe", 2)
+	copper_machine(CX("fluid_trash_can"), 1, KB("trash_can"))
 }
 
 function initBrassMachine(event) {
@@ -934,6 +978,7 @@ function initInvarMachine(event) {
 	event.remove({ output: IV("mining_rig_mk4") })
 	event.remove({ output: IV("data_card_writer_mk4") })
 	event.remove({ output: IV("drain_mk1") })
+	invar_machine(CX("energy_trash_can"), 1, KB("trash_can"))
 }
 
 function initEnderMachine(event) {
@@ -1125,6 +1170,17 @@ function alchemy(event) {
 				},
 				"output": { "item": e.id },
 				"processTime": 375
+			})
+			event.custom({
+				"type": "tconstruct:casting_basin",
+				"cast": Ingredient.of(e.ingredient).toJson(),
+				"cast_consumed": true,
+				"fluid": {
+					"name": "tconstruct:molten_glass",
+					"amount": 8100
+				},
+				"result": e.id,
+				"cooling_time": 150
 			})
 			event.custom({
 				"type": "indrev:sawmill",

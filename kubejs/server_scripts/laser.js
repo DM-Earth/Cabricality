@@ -1,6 +1,6 @@
 let outputItem = ""
 let length = 16
-let debug = false
+let debug_laser = false
 
 function rnd(seed) {
 	let seedO = (seed * 9301 + 49297) % 233280 //toxic, don't touch it
@@ -32,7 +32,7 @@ function blockRecipes(inputBlock) {
 	return ""
 }
 function chaosT(subs, seed, event) {
-	if (debug == true) event.server.runCommandSilent("say " + subs + " seed " + seed)
+	if (debug_laser == true) event.server.runCommandSilent("say " + subs + " seed " + seed)
 	let igneous = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone"]
 	let herbal = ["red", "orange", "yellow", "green", "blue", "magenta"]
 	let volatile = ["blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine"]
@@ -42,7 +42,7 @@ function chaosT(subs, seed, event) {
 	let chaos = ["igneous", "herbal", "volatile", "crystal", "metal", "gem"]
 	let allSubstrate = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone", "red", "orange", "yellow", "green", "blue", "magenta", "blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine", "zinc", "copper", "iron", "lead", "gold", "sulfur", "certus", "lapis", "emerald", "diamond", "ruby", "sapphire"]
 
-	if (debug == true) event.server.runCommandSilent("say silicon: " + allSubstrate[rand(allSubstrate.length, seed + 114514)] + " silver: " + allSubstrate[rand(allSubstrate.length, seed + 1919810)])
+	if (debug_laser == true) event.server.runCommandSilent("say silicon: " + allSubstrate[rand(allSubstrate.length, seed + 114514)] + " silver: " + allSubstrate[rand(allSubstrate.length, seed + 1919810)])
 
 	if (subs == select(chaos, seed).sort().toString()) return "chaos"
 	if (subs == select(igneous, seed).sort().toString()) return "igneous"
@@ -61,7 +61,7 @@ function chaosT(subs, seed, event) {
 }
 
 onEvent("block.left_click", event => {
-	let seedL = event.getEntity().getServer().getOverworld().getSeed()
+	let seedL = Math.abs(event.getEntity().getServer().getOverworld().getSeed())
 	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == "kubejs:powered_water" && event.block.up.getBlockState().toString().includes("[level=0]")) {
 		let block = event.block
 		x = block.x
@@ -90,8 +90,8 @@ onEvent("block.left_click", event => {
 			let blockZ = targetBlock.z
 
 			if (targetBlock.id.startsWith("kubejs:substrate_")) {
-				//		if (debug == true) event.server.runCommandSilent("say " + targetBlock.id.replace("kubejs:substrate_", ""))
-				if (debug == true) event.server.runCommandSilent(`say ${targetBlock.id.replace("kubejs:substrate_", "")}`)
+				//		if (debug_laser == true) event.server.runCommandSilent("say " + targetBlock.id.replace("kubejs:substrate_", ""))
+				if (debug_laser == true) event.server.runCommandSilent(`say ${targetBlock.id.replace("kubejs:substrate_", "")}`)
 				substrateList.push(targetBlock.id.replace("kubejs:substrate_", ""))
 				//		event.server.runCommandSilent("setblock " + blockX + " " + blockY + " " + blockZ + " minecraft:air")
 				event.server.runCommandSilent(`setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
@@ -112,8 +112,8 @@ onEvent("block.left_click", event => {
 				event.server.runCommandSilent(`setblock ${blockX} ${blockY} ${blockZ} ${outputBlock}`)
 			}
 		}
-		//	if (debug == true) event.server.runCommandSilent("say " + substrateList.toString() + " seed " + seedL)
-		if (debug == true) event.server.runCommandSilent(`say ${substrateList.toString} seed ${seedL}`)
+		if (debug_laser == true) event.server.runCommandSilent("say " + substrateList.toString() + " seed " + seedL)
+		// if (debug_laser == true) event.server.runCommandSilent(`say ${substrateList.toString} seed ${seedL}`)
 
 		let unifiedSubstrates = substrateList.sort().toString()
 		let outputChaos = chaosT(unifiedSubstrates, seedL, event)
