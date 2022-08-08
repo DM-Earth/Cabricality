@@ -117,7 +117,7 @@
 		}
 		{
 			title: "IIIb: Liquid"
-			icon: "kubejs:molten_zinc_bucket"
+			icon: "tconstruct:molten_zinc_bucket"
 			x: -8.5d
 			y: 2.0d
 			shape: "circle"
