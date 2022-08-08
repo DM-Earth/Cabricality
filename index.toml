@@ -1637,14 +1637,6 @@ file = "kubejs/data/cabricality/recipes/fluid_infuse/sand_ball.json"
 hash = "5d7984724c7e0cfe7d948468e34e87695f1c68c1109c88a6d16b7a2a3057da15"
 
 [[files]]
-file = "kubejs/data/cabricality/recipes/forging/enderium_from_ender_dust.json"
-hash = "88e720315b299be8e4ff4c90ef1b95eb62f5a98d19b623cedfb1c1408c6f803f"
-
-[[files]]
-file = "kubejs/data/cabricality/recipes/forging/enderium_from_ender_pearl.json"
-hash = "18b6a4c088d940ce1a8a7661069eefe5cee883122b3c4e374383f530ffa6dfc9"
-
-[[files]]
 file = "kubejs/data/cabricality/recipes/forging/purified_sand.json"
 hash = "7d553e7bcd50993f6b68a817ed0912bb0863a7b25aa5dc754a1f1710f74add77"
 
