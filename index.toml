@@ -50,7 +50,7 @@ hash = "d2575d015eb63c52e0eacc45bfac734ad1c63b3a07569be8127b441aa48e9f99"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "05123dce75d25ea19b2dac2bf98ed63df6cf9c4c6de67d7057d81b9490c6cc59"
+hash = "60ad026357e81a5136d03653486bccce22d82939d8b769e93969606587635ec2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
@@ -62,11 +62,11 @@ hash = "ee1f1eeab64a9e23faa0bf035e9a7343c907705f64e8adb25080ca545a5bf6a4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_2.snbt"
-hash = "c5eba90b54b03189c05f3267f66c783c1ba8c84c4f1835ddafb32c4190f25e68"
+hash = "06f96b22276b9107a29a22c03343100979636ae93b1fa9c63e0460d9b7672015"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_3.snbt"
-hash = "3b261591c628ea75d6e85abe107f7de33cd29e6f2a16e88196094ae4ec73cd8e"
+hash = "7dd3d120e537af88785a83f67231a1670d91302f4b6e3ef31861f576b5166cee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
@@ -2931,6 +2931,11 @@ hash = "1e3d4b62d2b1224356261ca5f9aece724ed2cc6c8f31c77d64867e6bc173ee9d"
 metafile = true
 
 [[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "3b02db77305eefa3a10c53fd08337159bfb22774dbf8cd7ee23dffac5627932d"
+metafile = true
+
+[[files]]
 file = "mods/extended-drawers.pw.toml"
 hash = "ba059fdc06289ebe29bbec223347e1967e1735d31d81773d86381090d9576ebf"
 metafile = true
@@ -3136,11 +3141,6 @@ hash = "21caf42aee36ccdd72c0437e7ed6587769630afa49267f59647e75f1274fa8b8"
 [[files]]
 file = "mods/starlight.pw.toml"
 hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
-metafile = true
-
-[[files]]
-file = "mods/structures-compass.pw.toml"
-hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
 metafile = true
 
 [[files]]
