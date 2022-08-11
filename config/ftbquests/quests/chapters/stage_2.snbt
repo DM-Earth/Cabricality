@@ -361,7 +361,7 @@
 		}
 		{
 			title: "Get Melted"
-			icon: "indrev:molten_iron_bucket"
+			icon: "tconstruct:molten_iron_bucket"
 			x: 1.0d
 			y: 9.5d
 			subtitle: "Contraption 15-4"
@@ -373,7 +373,7 @@
 					id: "611F921F94FAE142"
 					type: "item"
 					title: "Bucket (Molten Iron)"
-					item: "indrev:molten_iron_bucket"
+					item: "tconstruct:molten_iron_bucket"
 					consume_items: false
 				}
 				{

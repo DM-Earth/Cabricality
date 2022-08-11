@@ -1036,7 +1036,7 @@
 				id: "1E9F96D2152F7384"
 				type: "item"
 				title: "Bucket (Molten Silver)"
-				item: "indrev:molten_silver_bucket"
+				item: "tconstruct:molten_silver_bucket"
 			}]
 		}
 		{
