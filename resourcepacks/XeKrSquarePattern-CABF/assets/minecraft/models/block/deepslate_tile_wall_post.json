@@ -1,0 +1,9 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall_bottom": "block/deepslate_tiles",
+        "wall_top": "block/deepslate_tiles_top",
+        "wall_end": "block/deepslate_tiles_end",
+        "wall": "block/deepslate_tiles_side"
+   }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+		{ "model": "block/honeycomb_block" },
+		{ "model": "block/honeycomb_block1" },
+		{ "model": "block/honeycomb_block2" },
+		{ "model": "block/honeycomb_block3" }
+		]
+    }
+}

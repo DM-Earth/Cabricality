@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_column_end_small",
+    "textures": {
+        "top": "block/birch_planks4",
+        "side": "block/birch_planks_side",
+        "end": "block/birch_planks_end"
+    }
+}

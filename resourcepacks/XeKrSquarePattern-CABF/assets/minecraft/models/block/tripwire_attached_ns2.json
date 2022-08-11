@@ -1,0 +1,8 @@
+{
+    "parent": "block/tripwire_attached_ns",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "block/tripwire2",
+        "texture": "block/tripwire2"
+    }
+}

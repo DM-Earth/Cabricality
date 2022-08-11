@@ -1,0 +1,74 @@
+{
+    "multipart": [
+        {
+		"when":{"bites":"0"},
+		"apply": [
+             { "model": "block/cake", "weight": 1 },
+             { "model": "block/cake2", "weight": 1 },
+             { "model": "block/cake3", "weight": 1 },
+             { "model": "block/cake4", "weight": 1 },
+             { "model": "block/cake5", "weight": 1 }
+			]
+		},
+        {
+		"when":{"bites":"1"},
+		"apply": [
+             { "model": "block/cake_slice1", "weight": 1 },
+             { "model": "block/cake_slice12", "weight": 1 },
+             { "model": "block/cake_slice13", "weight": 1 },
+             { "model": "block/cake_slice14", "weight": 1 },
+             { "model": "block/cake_slice15", "weight": 1 }
+			]
+		},
+        {
+		"when":{"bites":"2"},
+		"apply": [
+             { "model": "block/cake_slice2", "weight": 1 },
+             { "model": "block/cake_slice22", "weight": 1 },
+             { "model": "block/cake_slice23", "weight": 1 },
+             { "model": "block/cake_slice24", "weight": 1 },
+             { "model": "block/cake_slice25", "weight": 1 }
+			]
+		},
+        {
+		"when":{"bites":"3"},
+		"apply": [
+             { "model": "block/cake_slice3", "weight": 1 },
+             { "model": "block/cake_slice32", "weight": 1 },
+             { "model": "block/cake_slice33", "weight": 1 },
+             { "model": "block/cake_slice34", "weight": 1 },
+             { "model": "block/cake_slice35", "weight": 1 }
+			]
+		},
+        {
+		"when":{"bites":"4"},
+		"apply": [
+             { "model": "block/cake_slice4", "weight": 1 },
+             { "model": "block/cake_slice42", "weight": 1 },
+             { "model": "block/cake_slice43", "weight": 1 },
+             { "model": "block/cake_slice44", "weight": 1 },
+             { "model": "block/cake_slice45", "weight": 1 }
+			]
+		},
+        {
+		"when":{"bites":"5"},
+		"apply": [
+             { "model": "block/cake_slice5", "weight": 1 },
+             { "model": "block/cake_slice52", "weight": 1 },
+             { "model": "block/cake_slice53", "weight": 1 },
+             { "model": "block/cake_slice54", "weight": 1 },
+             { "model": "block/cake_slice55", "weight": 1 }
+			]
+		},
+        {
+		"when":{"bites":"6"},
+		"apply": [
+             { "model": "block/cake_slice6", "weight": 1 },
+             { "model": "block/cake_slice62", "weight": 1 },
+             { "model": "block/cake_slice63", "weight": 1 },
+             { "model": "block/cake_slice64", "weight": 1 },
+             { "model": "block/cake_slice65", "weight": 1 }
+			]
+		}
+    ]
+}

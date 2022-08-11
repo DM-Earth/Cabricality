@@ -1,0 +1,8 @@
+{
+    "parent": "block/template_wall_side_2end",
+    "textures": {
+        "wall": "block/cobblestone_side",
+        "top": "block/cobblestone_top",
+        "bottom": "block/cobblestone"
+    }
+}

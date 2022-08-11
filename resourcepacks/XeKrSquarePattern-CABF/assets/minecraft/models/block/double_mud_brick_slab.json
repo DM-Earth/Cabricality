@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/mud_bricks_top",
+    "side": "minecraft:block/mud_bricks_side"
+  }
+}

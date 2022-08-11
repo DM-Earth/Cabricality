@@ -1,0 +1,9 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall_bottom": "block/sandstone",
+        "wall_top": "block/sandstone_top",
+        "wall_end": "block/sandstone_end",
+        "wall": "block/sandstone_side"
+   }
+}

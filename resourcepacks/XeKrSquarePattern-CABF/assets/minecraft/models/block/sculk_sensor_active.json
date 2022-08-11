@@ -1,0 +1,9 @@
+{
+    "parent": "block/sculk_sensor",
+    "textures": {
+		"bottom": "block/sculk_sensor_bottom_on",
+		"side": "block/sculk_sensor_side_on",
+		"tendrils": "block/sculk_sensor_tendril_active",
+		"top": "block/sculk_sensor_top_on"
+    }
+}

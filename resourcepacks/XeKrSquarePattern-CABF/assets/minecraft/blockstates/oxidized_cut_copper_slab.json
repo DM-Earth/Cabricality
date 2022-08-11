@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/oxidized_cut_copper_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/double_oxidized_cut_copper_slab"
+    },
+    "type=top": {
+      "model": "minecraft:block/oxidized_cut_copper_slab_top"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+	"textures": {
+		"particle": "create:block/radial_chassis_side",
+		"radial_chassis_top": "create:block/radial_chassis_top"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 1, 0, 1 ],
+			"to": [ 15, 16, 15 ],
+			"faces": {
+				"down": { "uv": [ 1, 1, 15, 15 ], "texture": "#radial_chassis_top" },
+				"up": { "uv": [ 1, 1, 15, 15 ], "texture": "#radial_chassis_top" }
+			}
+		}
+	]
+}

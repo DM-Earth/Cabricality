@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "persistent=true,distance=1": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=true,distance=2": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=true,distance=3": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=true,distance=4": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=true,distance=5": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=true,distance=6": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=true,distance=7": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=1": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=2": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=3": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=4": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=5": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=6": [
+	    { "model": "block/dark_oak_leaves1"},
+	    { "model": "block/dark_oak_leaves2"}
+	],
+    "persistent=false,distance=7": {"model": "minecraft:block/dark_oak_leaves_dying"}
+  }
+}

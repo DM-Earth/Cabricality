@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "bottom=true,1": { "model": "block/scaffolding_unstable" },
+        "bottom=false,1": { "model": "block/scaffolding_stable" },
+        "bottom=true,distance=6": { "model": "block/scaffolding_last" },
+        "bottom=true,distance=7": { "model": "block/scaffolding_last" }
+    }
+}

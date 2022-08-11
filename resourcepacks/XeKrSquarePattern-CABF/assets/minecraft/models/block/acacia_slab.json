@@ -1,0 +1,9 @@
+{
+    "parent": "block/slab_wood",
+    "textures": {
+        "bottom": "block/acacia_planks",
+        "top": "block/acacia_planks",
+        "side": "block/acacia_planks_end",
+        "end": "block/acacia_planks_end"
+    }
+}

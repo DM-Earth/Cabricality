@@ -1,0 +1,43 @@
+{
+	"__comment": "Designed by XeKr with Cubik Studio - https://cubik.studio",
+	"parent": "block/flower_pot_cross",
+	"textures": {
+		"flowerpot": "block/flower_pot_wither",
+		"plant": "block/wither_rose"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 5, 0, 5 ],
+			"to": [ 11, 6, 11 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 6, 6 ], "texture": "#flowerpot" },
+				"up": { "uv": [ 10, 5, 16, 11 ], "texture": "#flowerpot" },
+				"north": { "uv": [ 10, 0, 16, 6 ], "texture": "#flowerpot" },
+				"south": { "uv": [ 0, 10, 6, 16 ], "texture": "#flowerpot" },
+				"west": { "uv": [ 10, 10, 16, 16 ], "texture": "#flowerpot" },
+				"east": { "uv": [ 16, 10, 10, 16 ], "texture": "#flowerpot" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 8, 5, 5 ],
+			"to": [ 8.001, 15, 11 ],
+			"rotation": { "origin": [ 8, 5, 8 ], "axis": "y", "angle": 45 },
+			"faces": {
+				"west": { "uv": [ 4, 3, 12, 16 ], "texture": "#plant" },
+				"east": { "uv": [ 4, 3, 12, 16 ], "texture": "#plant" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 8, 5, 5 ],
+			"to": [ 8.001, 15, 11 ],
+			"rotation": { "origin": [ 8, 5, 8 ], "axis": "y", "angle": -45 },
+			"faces": {
+				"west": { "uv": [ 4, 3, 12, 16 ], "texture": "#plant" },
+				"east": { "uv": [ 4, 3, 12, 16 ], "texture": "#plant" }
+			}
+		}
+	]
+}

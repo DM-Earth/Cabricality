@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_x_top",
+	"textures": {
+		"front": "block/spruce_door_top",
+		"side": "block/spruce_door_side",
+		"back": "block/spruce_door_top_flip"
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/vine",
+    "textures": {
+        "particle": "block/vine",
+        "vine": "block/vine3"
+    }
+}

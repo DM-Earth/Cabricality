@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/wall_side_tall",
+  "textures": {
+    "wall": "minecraft:block/mossy_cobblestone",
+    "end": "minecraft:block/mossy_cobblestone_side",
+    "top": "minecraft:block/mossy_cobblestone_top"
+  }
+}

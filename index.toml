@@ -205,30 +205,6 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/bloc
 hash = "3af027e294d37f3b8ed0d240bc3c4a257570a6d4ca3836974e8696570ffb83ff"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_ctm.png"
-hash = "fae8d1444d718f718f9af32943d8fb20a662027800a3662c01c4f51379dd6a54"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_side.png"
-hash = "e6b17db8c380cbd1a05c187d30c466324735ee6e14b15b3c2b27a4f22bbb5076"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_side.png.mcmeta"
-hash = "647ff268b4963fe5d333741c56c1224e517852b34093ea08a14e9f9821926f45"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_top.png"
-hash = "b2085ce5b46506fb48dc0ffbb5523e37000533c71f00b9ec84b2e3ecd9c5f346"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_top.png.mcmeta"
-hash = "7df24e3d2b26297c3cc800136121a3e10ae368302c8d18585bb0f716f41e7ffd"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/enderium/enderium_casing_top_ctm.png"
-hash = "cb072f3f122b0b3870187aca55f76f85a9cbc4a9d9fe5b85e1ab3ec3bf45f872"
-
-[[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/casing/fluix/fluix_casing.png"
 hash = "53ac09714a087ad0cefa54e2005ab483e50dba747587174973fc40dba4b82c17"
 
@@ -310,11 +286,11 @@ hash = "47c20a5fd995263cf5be25b6589e47990d01c0308235916b99580907ee5768b7"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/machine/extractor/extractor_machine_side.png"
-hash = "b2def65c57fa890dd0fafd0ebede325dd2d44775fbcb36d448c47651d214b496"
+hash = "ad361d1373a78b9f949643ceb72cafe57d001c227aba53db797452ec22a6b2d1"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/machine/extractor/extractor_machine_top.png"
-hash = "fe3d85c37703a65fd1e29ec4b178076df4a4fc3defbc1ab5589b3380fec61fcd"
+hash = "57ce2e56acfc52ce4e8d8d937f703acaab362118b4b6784b749849d4d7ddba83"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/machine/zinc/zinc_machine_bottom.png"
@@ -1055,6 +1031,14 @@ hash = "ab9124635d718408f6bdeadabc6ff7667f11f3093866d6bb25ecf046d645b8b5"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/minecraft/textures/gui/title/background/panorama_5.png"
 hash = "2f5d101242feb1a1c9b3dd77c68cb718846c8afefce0d5b4b6f1b2ed32e3677a"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/minecraft/textures/gui/title/edition.png"
+hash = "d2284a982fe7322ff9470bbf59bc16219d267ad05dce7c3412ca869330d00a7d"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/minecraft/textures/gui/title/minecraft.png"
+hash = "c9494817a0d2291de62f421447f516e8ad4c371561e35a941118a5cae7effbd1"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/tconstruct/lang/zh_cn.json"
@@ -2956,16 +2940,6 @@ hash = "1c35cab7734569484a497e630835dc3783e09e45685e0b106f2f307bdc9ae942"
 metafile = true
 
 [[files]]
-file = "mods/ftb-backups-2.pw.toml"
-hash = "fd29a7a199fe15c4bd64b65f3dad1afc5ab4f6ef706b42d3169e470d769a954d"
-metafile = true
-
-[[files]]
-file = "mods/ftb-chunks-fabric.pw.toml"
-hash = "d6fe7bafcf70423e17d05f3d21a502ca31a1115db4b5e774a95df611dae248a4"
-metafile = true
-
-[[files]]
 file = "mods/ftb-library-fabric.pw.toml"
 hash = "ff48e48e828ba58db59ade1d3b05ab01373e528bba4ca74417566c9f6ed208a9"
 metafile = true
@@ -3013,6 +2987,11 @@ metafile = true
 [[files]]
 file = "mods/kibe.pw.toml"
 hash = "508dd3ddc4a4d7880b80a3806b24002a1bdf90dd608da1e51b58e845bcc66fce"
+metafile = true
+
+[[files]]
+file = "mods/krypton.pw.toml"
+hash = "219d4425679c60fd2855a6a39a6fccb6db3948dcc57b9da7c20907c855c5bd3d"
 metafile = true
 
 [[files]]
@@ -3081,8 +3060,18 @@ hash = "22ead426c002828d3d2f4da9caf5454fabae689bbf4291020919da7909095794"
 metafile = true
 
 [[files]]
+file = "mods/opac-fabric-create-support.pw.toml"
+hash = "50bd803afaf12d3406ad7bf1781e2f75bb38bbccb5d7720c32cf6f833a97eb15"
+metafile = true
+
+[[files]]
 file = "mods/open-loader.pw.toml"
 hash = "a259b4f251c2f694f3b07f2ef979e726bee9351e9e9af862d6e21eeb9d9fa4f9"
+metafile = true
+
+[[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+hash = "48c99dfbabd6743d13ce17903a5a3bc27d79d2d6312e311c68e8018514409162"
 metafile = true
 
 [[files]]
@@ -3111,8 +3100,9 @@ hash = "b17d25b273caec976c340d196d09482b908d8ae43e389132c787714100ea8186"
 metafile = true
 
 [[files]]
-file = "mods/replaymod-1.18.2-2.6.6.jar"
-hash = "289dfab2986c3a16e18954c94c0f9c8a0ef36ac40dedce1128faecb1a68d109c"
+file = "mods/replaymod.pw.toml"
+hash = "0e6ac6ceb4ede2574f3d23ed88ae8a2628b5eb539f22444fb61d6887ae5e5c80"
+metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
@@ -3146,6 +3136,16 @@ metafile = true
 [[files]]
 file = "mods/wthit.pw.toml"
 hash = "98c8ffafe56c38e04da80c8c061e1f1dfc1212a53f3b0c90d7f6b3381c961e95"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "d292ddce2d35a03a294fde3a0195800ae348ee06b45b17350180c31d6f0dcb5f"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "07aac5b0e1579af6f3cb233fd7725c25ddbbc6f14941b5bf2d0a38214e5fb556"
 metafile = true
 
 [[files]]

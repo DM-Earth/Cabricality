@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "moisture=0": { "model": "block/farmland_x" },
+        "moisture=1": { "model": "block/farmland_x1" },
+        "moisture=2": { "model": "block/farmland_x2" },
+        "moisture=3": { "model": "block/farmland_x3" },
+        "moisture=4": { "model": "block/farmland_x4" },
+        "moisture=5": { "model": "block/farmland_x5" },
+        "moisture=6": { "model": "block/farmland_x6" },
+        "moisture=7": { "model": "block/farmland_x_moist" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/trapdoor_top",
+    "textures": {
+        "texture": "block/acacia_trapdoor_flip",
+		"side": "minecraft:block/acacia_door_side"
+    }
+}

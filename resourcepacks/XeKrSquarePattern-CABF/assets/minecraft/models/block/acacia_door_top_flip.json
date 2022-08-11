@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_x_top_flip",
+	"textures": {
+		"front": "block/acacia_door_top_flip",
+		"side": "block/acacia_door_side",
+		"back": "block/acacia_door_top"
+	}
+}

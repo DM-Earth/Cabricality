@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/birch_slab" },
+        "type=top": { "model": "block/birch_slab", "x": 180, "uvlock": true   },
+        "type=double": { "model": "block/double_birch_slab" }
+    }
+}

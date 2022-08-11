@@ -1,0 +1,9 @@
+{
+    "parent": "block/slab_wood",
+    "textures": {
+        "bottom": "block/crimson_planks",
+        "top": "block/crimson_planks",
+        "side": "block/crimson_planks_end",
+        "end": "block/crimson_planks_end"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/kelp_plant"},
+      {"model": "minecraft:block/kelp_plant2"},
+      {"model": "minecraft:block/kelp_plant3"},
+      {"model": "minecraft:block/kelp_plant4"}
+    ]
+  }
+}

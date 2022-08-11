@@ -1,0 +1,8 @@
+{
+    "parent": "block/template_wall_side_2end",
+    "textures": {
+        "wall": "block/polished_blackstone_bricks_wall",
+        "top": "block/polished_blackstone_bricks_top",
+        "bottom": "block/polished_blackstone_bricks"
+    }
+}

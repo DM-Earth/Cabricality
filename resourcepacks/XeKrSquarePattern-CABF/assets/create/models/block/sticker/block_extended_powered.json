@@ -1,0 +1,8 @@
+{
+	"parent": "create:block/sticker/block",
+    "textures": {
+		"0": "block/piston_bottom_sticky_on",
+		"1": "block/piston_inner_sticky",
+        "4": "create:block/sticker_side_powered_sticky"
+    }
+}

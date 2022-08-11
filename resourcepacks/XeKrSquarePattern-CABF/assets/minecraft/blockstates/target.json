@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "power=0": { "model": "block/target" },
+    "power=1": { "model": "block/target1" },
+    "power=2": { "model": "block/target2" },
+    "power=3": { "model": "block/target3" },
+    "power=4": { "model": "block/target4" },
+    "power=5": { "model": "block/target5" },
+    "power=6": { "model": "block/target6" },
+    "power=7": { "model": "block/target7" },
+    "power=8": { "model": "block/target8" },
+    "power=9": { "model": "block/target9" },
+    "power=10": { "model": "block/target10" },
+    "power=11": { "model": "block/target11" },
+    "power=12": { "model": "block/target12" },
+    "power=13": { "model": "block/target13" },
+    "power=14": { "model": "block/target14" },
+    "power=15": { "model": "block/target15" }
+  }
+}

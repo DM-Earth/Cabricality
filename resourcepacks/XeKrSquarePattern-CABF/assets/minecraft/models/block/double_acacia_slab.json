@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_column_end_small",
+    "textures": {
+        "top": "block/acacia_planks4",
+        "side": "block/acacia_planks_side",
+        "end": "block/acacia_planks_end"
+    }
+}

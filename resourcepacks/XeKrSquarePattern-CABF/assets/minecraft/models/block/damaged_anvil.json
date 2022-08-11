@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_anvil",
+  "textures": {
+    "top": "minecraft:block/damaged_anvil_top",
+    "side": "minecraft:block/damaged_anvil",
+    "bottom": "minecraft:block/damaged_anvil_bottom"
+  }
+}

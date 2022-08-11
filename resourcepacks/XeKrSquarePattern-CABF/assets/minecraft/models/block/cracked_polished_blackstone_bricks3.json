@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "block/cracked_polished_blackstone_bricks3"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall_bottom": "block/polished_blackstone_bricks",
+        "wall_top": "block/polished_blackstone_bricks_top",
+        "wall_end": "block/polished_blackstone_bricks_post",
+        "wall": "block/polished_blackstone_bricks_side"
+   }
+}

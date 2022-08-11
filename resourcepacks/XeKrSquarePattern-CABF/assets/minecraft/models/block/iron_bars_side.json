@@ -1,0 +1,43 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/iron_bars",
+		"bars": "block/iron_bars"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 0],
+			"to": [8, 16, 8],
+			"faces": {
+				"east": {"uv": [8, 0, 16, 16], "texture": "#bars"},
+				"west": {"uv": [16, 0, 8, 16], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [7, 0, 0],
+			"to": [9, 16, 7],
+			"faces": {
+				"north": {"uv": [7, 0, 9, 16], "texture": "#bars", "cullface": "north"},
+				"up": {"uv": [7, 0, 9, 7], "texture": "#bars"},
+				"down": {"uv": [9, 0, 7, 7], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [7, 0.05, 0],
+			"to": [9, 0.05, 7],
+			"faces": {
+				"up": {"uv": [7, 0, 9, 7], "texture": "#bars"},
+				"down": {"uv": [9, 0, 7, 7], "texture": "#bars"}
+			}
+		},
+		{
+			"from": [7, 15.95, 0],
+			"to": [9, 15.95, 7],
+			"faces": {
+				"up": {"uv": [7, 0, 9, 7], "texture": "#bars"},
+				"down": {"uv": [9, 0, 7, 7], "texture": "#bars"}
+			}
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/note_surface",
+    "textures": {
+        "all": "block/note_block_bass"
+    }
+}

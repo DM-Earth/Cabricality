@@ -1,0 +1,9 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall_bottom": "block/cobbled_deepslate",
+        "wall_top": "block/cobbled_deepslate",
+        "wall_end": "block/deepslate_end",
+        "wall": "block/deepslate_side"
+   }
+}

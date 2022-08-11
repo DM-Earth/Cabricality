@@ -1,0 +1,152 @@
+{
+	"__comment": "Designed by XeKr with Cubik Studio - https://cubik.studio",
+	"parent": "block/block0",
+	"textures": {
+        "particle": "block/target",
+		"all": "block/target3",
+		"sign": "block/red_wool"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 18, 5 ],
+			"to": [ 1.001, 20, 11 ],
+			"faces": {
+				"west": { "uv": [ 5, 12, 11, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 28, 5 ],
+			"to": [ 1.001, 30, 11 ],
+			"faces": {
+				"west": { "uv": [ 5, 2, 11, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 23, 5 ],
+			"to": [ 1.001, 25, 9 ],
+			"faces": {
+				"west": { "uv": [ 5, 7, 9, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 1, 20, 9 ],
+			"to": [ 1.001, 28, 11 ],
+			"faces": {
+				"west": { "uv": [ 9, 4, 11, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 9, 20, 14.999 ],
+			"to": [ 11, 28, 15 ],
+			"faces": {
+				"south": { "uv": [ 9, 4, 11, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5, 18, 14.999 ],
+			"to": [ 11, 20, 15 ],
+			"faces": {
+				"south": { "uv": [ 5, 12, 11, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5, 28, 14.999 ],
+			"to": [ 11, 30, 15 ],
+			"faces": {
+				"south": { "uv": [ 5, 2, 11, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5, 23, 14.999 ],
+			"to": [ 9, 25, 15 ],
+			"faces": {
+				"south": { "uv": [ 5, 7, 9, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 20, 5.0001 ],
+			"to": [ 15, 28, 7.0001 ],
+			"faces": {
+				"east": { "uv": [ 9, 4, 11, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 18, 5.0001 ],
+			"to": [ 15, 20, 11.0001 ],
+			"faces": {
+				"east": { "uv": [ 5, 12, 11, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 28, 5.0001 ],
+			"to": [ 15, 30, 11.0001 ],
+			"faces": {
+				"east": { "uv": [ 5, 2, 11, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 14.999, 23, 7.0001 ],
+			"to": [ 15, 25, 11.0001 ],
+			"faces": {
+				"east": { "uv": [ 5, 7, 9, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5.0001, 20, 1 ],
+			"to": [ 7.0001, 28, 1.001 ],
+			"faces": {
+				"north": { "uv": [ 9, 4, 11, 12 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5.0001, 18, 1 ],
+			"to": [ 11.0001, 20, 1.001 ],
+			"faces": {
+				"north": { "uv": [ 5, 12, 11, 14 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 5.0001, 28, 1 ],
+			"to": [ 11.0001, 30, 1.001 ],
+			"faces": {
+				"north": { "uv": [ 5, 2, 11, 4 ], "texture": "#sign", "cullface": "up" }
+			}
+		},
+		{
+			"__comment": "PlaneX2",
+			"from": [ 7.0001, 23, 1 ],
+			"to": [ 11.0001, 25, 1.001 ],
+			"faces": {
+				"north": { "uv": [ 5, 7, 9, 9 ], "texture": "#sign", "cullface": "up" }
+			}
+		}
+	]
+}

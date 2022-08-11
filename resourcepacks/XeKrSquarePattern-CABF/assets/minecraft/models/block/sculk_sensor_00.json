@@ -1,0 +1,34 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"power": "block/sculk_sensor_00",
+		"particle": "block/sculk_sensor_00"
+	},
+	"elements": [
+		{
+			"from": [-0.05, 0, 4.5],
+			"to": [16.05, 7, 11.5],
+			"faces": {
+				"east": {"uv": [0, 0, 14, 14], "texture": "#power", "cullface": "east"},
+				"west": {"uv": [0, 0, 14, 14], "texture": "#power", "cullface": "west"}
+			}
+		},
+		{
+			"from": [4.5, 0, -0.05],
+			"to": [11.5, 7, 16.05],
+			"faces": {
+				"north": {"uv": [0, 0, 14, 14], "texture": "#power", "cullface": "north"},
+				"south": {"uv": [0, 0, 14, 14], "texture": "#power", "cullface": "south"}
+			}
+		},
+		{
+			"from": [4.5, -0.05, 4.5],
+			"to": [11.5, 8.05, 11.5],
+			"faces": {
+				"up": {"uv": [0, 2, 14, 16], "texture": "#power", "cullface": "up"},
+				"down": {"uv": [0, 2, 14, 16], "texture": "#power", "cullface": "down"}
+			}
+		}
+	]
+}

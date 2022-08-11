@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_x_bottom_flip",
+	"textures": {
+		"side": "block/warped_door_side",
+		"front": "block/warped_door_bottom_flip",
+		"back": "block/warped_door_bottom"
+	}
+}

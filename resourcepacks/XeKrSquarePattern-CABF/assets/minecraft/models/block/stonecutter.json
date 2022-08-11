@@ -1,0 +1,59 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/stonecutter_bottom",
+		"bottom": "block/stonecutter_bottom",
+		"top": "block/stonecutter_top",
+		"side": "block/stonecutter_side",
+		"saw": "block/stonecutter_saw",
+		"glass": "block/glass"
+	},
+	"elements": [
+		{
+			"name": "Element",
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"north": {"uv": [0, 7, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 7, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 7, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 7, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"name": "PlaneX4",
+			"from": [1, 9, 8],
+			"to": [15, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 15, 16], "texture": "#saw"},
+				"south": {"uv": [1, 9, 15, 16], "texture": "#saw"}
+			}
+		},
+		{
+			"from": [0, 9, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 7], "texture": "#glass", "cullface": "down"},
+				"east": {"uv": [0, 0, 16, 7], "texture": "#glass", "cullface": "down"},
+				"south": {"uv": [0, 0, 16, 7], "texture": "#glass", "cullface": "down"},
+				"west": {"uv": [0, 0, 16, 7], "texture": "#glass", "cullface": "down"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#glass", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0.1, 15.9, 0.1],
+			"to": [15.9, 9, 15.9],
+			"faces": {
+				"north": {"uv": [0, 11, 16, 16], "texture": "#glass", "cullface": "down"},
+				"east": {"uv": [0, 11, 16, 16], "texture": "#glass", "cullface": "down"},
+				"south": {"uv": [0, 11, 16, 16], "texture": "#glass", "cullface": "down"},
+				"west": {"uv": [0, 11, 16, 16], "texture": "#glass", "cullface": "down"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#glass", "cullface": "down"}
+			}
+		}
+	]
+}

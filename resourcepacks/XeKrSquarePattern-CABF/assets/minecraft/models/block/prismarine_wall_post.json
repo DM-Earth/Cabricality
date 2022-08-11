@@ -1,0 +1,9 @@
+{
+    "parent": "block/wall_post2",
+    "textures": {
+        "wall_bottom": "block/prismarine_base",
+        "wall_top": "block/prismarine_top",
+        "wall_end": "block/prismarine_side",
+        "wall": "block/prismarine_base"
+   }
+}

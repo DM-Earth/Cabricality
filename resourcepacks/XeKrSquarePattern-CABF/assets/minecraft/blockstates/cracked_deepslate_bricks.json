@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "": [
+		{ "model": "block/cracked_deepslate_bricks" },
+		{ "model": "block/cracked_deepslate_bricks2" },
+		{ "model": "block/cracked_deepslate_bricks3" }
+    ]
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+	    { "model": "block/glowstone"},
+	    { "model": "block/glowstone2"},
+	    { "model": "block/glowstone3"},
+	    { "model": "block/glowstone4"}
+	]
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_x_bottom_flip",
+	"textures": {
+		"side": "block/birch_door_side",
+		"front": "block/birch_door_bottom_flip",
+		"back": "block/birch_door_bottom"
+	}
+}

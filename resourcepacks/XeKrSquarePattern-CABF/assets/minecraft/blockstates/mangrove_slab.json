@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/mangrove_slab" },
+        "type=top": { "model": "block/mangrove_slab", "x": 180, "uvlock": true },
+        "type=double": { "model": "block/double_mangrove_slab" }
+    }
+}

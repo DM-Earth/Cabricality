@@ -1,0 +1,9 @@
+{
+    "parent": "block/mycelium",
+    "textures": {
+        "particle": "block/dirt",
+        "bottom": "block/dirt",
+        "top": "block/mycelium_top3",
+        "side": "block/mycelium_side2"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/note_block_0",
+    "textures": {
+        "top": "block/note_block_top_8",
+        "side": "block/note_block_8"
+    }
+}

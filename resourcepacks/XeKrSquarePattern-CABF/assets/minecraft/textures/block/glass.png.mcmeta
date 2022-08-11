@@ -1,0 +1,13 @@
+{
+  "ctm": {
+    "ctm_version": 1,
+    "type": "ctm",
+    "textures": [
+      "minecraft:block/glass_ctm"
+    ],
+    "extra": {
+      "connect_inside": true,
+      "ignore_states": true
+    }
+  }
+}

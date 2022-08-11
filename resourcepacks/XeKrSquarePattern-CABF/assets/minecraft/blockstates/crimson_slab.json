@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/crimson_slab" },
+        "type=top": { "model": "block/crimson_slab", "x": 180, "uvlock": true },
+        "type=double": { "model": "block/double_crimson_slab" }
+    }
+}

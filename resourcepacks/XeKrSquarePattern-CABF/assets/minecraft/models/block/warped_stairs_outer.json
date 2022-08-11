@@ -1,0 +1,9 @@
+{
+    "parent": "block/outer_stairs_wood",
+    "textures": {
+        "bottom": "block/warped_planks",
+        "top": "block/warped_planks",
+        "side": "block/warped_planks_side",
+        "end": "block/warped_planks_end"
+    }
+}

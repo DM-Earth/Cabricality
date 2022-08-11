@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "snowy=false": [
+            { "model": "block/mycelium", "weight": 5 },
+            { "model": "block/mycelium", "y": 90, "weight": 5 },
+            { "model": "block/mycelium", "y": 180, "weight": 5 },
+            { "model": "block/mycelium", "y": 270, "weight": 5 },
+            { "model": "block/mycelium2", "weight": 1 },
+            { "model": "block/mycelium2", "y": 90, "weight": 1 },
+            { "model": "block/mycelium2", "y": 180, "weight": 1 },
+            { "model": "block/mycelium2", "y": 270, "weight": 1 },
+            { "model": "block/mycelium3", "weight": 1 },
+            { "model": "block/mycelium3", "y": 90, "weight": 1 },
+            { "model": "block/mycelium3", "y": 180, "weight": 1 },
+            { "model": "block/mycelium3", "y": 270, "weight": 1 }
+        ],
+        "snowy=true":  { "model": "block/grass_block_snow" }
+    }
+}

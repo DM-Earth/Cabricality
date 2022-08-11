@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+	    { "model": "block/polished_granite", "weight": 1 },
+	    { "model": "block/polished_granite2", "weight": 1 },
+	    { "model": "block/polished_granite3", "weight": 1 },
+	    { "model": "block/polished_granite4", "weight": 1 }
+	]
+    }
+}

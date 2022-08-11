@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/spruce_slab" },
+        "type=top": { "model": "block/spruce_slab", "x": 180, "uvlock": true },
+        "type=double": { "model": "block/double_spruce_slab" }
+    }
+}

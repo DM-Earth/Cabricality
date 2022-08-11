@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/wall_side_tall",
+  "textures": {
+    "wall": "minecraft:block/deepslate_bricks",
+    "end": "minecraft:block/deepslate_bricks_post",
+    "top": "minecraft:block/deepslate_bricks_top"
+  }
+}

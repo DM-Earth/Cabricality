@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_column_end_small",
+    "textures": {
+        "top": "block/mangrove_planks4",
+        "side": "block/mangrove_planks_side",
+        "end": "block/mangrove_planks_end"
+    }
+}

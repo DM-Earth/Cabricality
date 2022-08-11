@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "": [
+	    { "model": "block/birch_planks", "weight": 1 },
+	    { "model": "block/birch_planks2", "weight": 1 },
+	    { "model": "block/birch_planks3", "weight": 1 }
+	]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_column_end_small",
+    "textures": {
+        "top": "block/mossy_stone_bricks_top",
+        "side": "block/mossy_stone_bricks_side",
+        "end": "block/mossy_stone_bricks_end"
+    }
+}

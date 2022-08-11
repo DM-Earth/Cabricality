@@ -1,0 +1,9 @@
+{
+    "parent": "block/cake",
+    "textures": {
+        "particle": "block/cake_side2",
+        "bottom": "block/cake_bottom2",
+        "top": "block/cake_top2",
+        "side": "block/cake_side2"
+    }
+}

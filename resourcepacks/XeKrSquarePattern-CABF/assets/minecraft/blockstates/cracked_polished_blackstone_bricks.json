@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "": [
+		{ "model": "block/cracked_polished_blackstone_bricks" },
+		{ "model": "block/cracked_polished_blackstone_bricks2" },
+		{ "model": "block/cracked_polished_blackstone_bricks3" }
+    ]
+	}
+}

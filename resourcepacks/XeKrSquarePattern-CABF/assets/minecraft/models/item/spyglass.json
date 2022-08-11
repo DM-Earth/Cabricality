@@ -1,0 +1,57 @@
+{
+	"credit": "Made by XeKr with Blockbench",
+	"textures": {
+		"spyglass": "item/spyglass"
+	},
+	"elements": [
+		{
+			"from": [7.25, 8, 7.25],
+			"to": [8.75, 12, 8.75],
+			"faces": {
+				"north": {"uv": [8, 8, 11, 16], "texture": "#spyglass"},
+				"east": {"uv": [8, 8, 11, 16], "texture": "#spyglass"},
+				"south": {"uv": [8, 8, 11, 16], "texture": "#spyglass"},
+				"west": {"uv": [8, 8, 11, 16], "texture": "#spyglass"},
+				"up": {"uv": [8, 5, 11, 8], "texture": "#spyglass"}
+			}
+		},
+		{
+			"from": [7, 3, 7],
+			"to": [9, 8, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [12, 2, 16, 12], "texture": "#spyglass"},
+				"east": {"uv": [12, 2, 16, 12], "texture": "#spyglass"},
+				"south": {"uv": [12, 2, 16, 12], "texture": "#spyglass"},
+				"west": {"uv": [12, 2, 16, 12], "texture": "#spyglass"},
+				"up": {"uv": [12, 0, 16, 4], "texture": "#spyglass"},
+				"down": {"uv": [12, 12, 16, 16], "texture": "#spyglass"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, -2, 0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -2, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [-67.5, 0, 45],
+			"translation": [-0.75, 0, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"head": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0, -16],
+			"scale": [1.6, 1.6, 1.6]
+		},
+		"fixed": {
+			"translation": [0, 1, -1],
+			"scale": [2, 2, 2]
+		}
+	}
+}

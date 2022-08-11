@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+	    { "model": "block/mossy_cobblestone", "weight": 3 },
+	    { "model": "block/mossy_cobblestone2", "weight": 2 },
+	    { "model": "block/mossy_cobblestone3", "weight": 1 },
+	    { "model": "block/mossy_cobblestone4", "weight": 2 }
+	]
+    }
+}

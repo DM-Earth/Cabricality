@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+	    { "model": "block/polished_diorite", "weight": 1 },
+	    { "model": "block/polished_diorite2", "weight": 1 },
+	    { "model": "block/polished_diorite3", "weight": 1 },
+	    { "model": "block/polished_diorite4", "weight": 1 }
+	]
+    }
+}

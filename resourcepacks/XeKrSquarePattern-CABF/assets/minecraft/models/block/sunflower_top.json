@@ -1,0 +1,54 @@
+{
+	"__comment": "Designed by XeKr with Cubik Studio - https://cubik.studio",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/sunflower_front",
+		"cross": "block/sunflower_top",
+		"back": "block/sunflower_back",
+		"front": "block/sunflower_front"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 0.8, 0, 8 ],
+			"to": [ 15.2, 8, 8.001 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 8, 16, 16 ], "texture": "#cross" },
+				"south": { "uv": [ 0, 8, 16, 16 ], "texture": "#cross" }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 8, 0, 0.8 ],
+			"to": [ 8.001, 8, 15.2 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 8, 16, 16 ], "texture": "#cross" },
+				"east": { "uv": [ 0, 8, 16, 16 ], "texture": "#cross" }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 9.599999, -1, 1 ],
+			"to": [ 9.601, 15, 15 ],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "z", "angle": 22.5, "rescale": true },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#back" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#front" }
+			}
+		},
+		{
+			"__comment": "PlaneZ5",
+			"from": [ 7.5, 6.5, 8 ],
+			"to": [ 9.5, 8.5, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 10, 4, 7, 7 ], "texture": "#cross" },
+				"south": { "uv": [ 7, 4, 10, 7 ], "texture": "#cross" }
+			}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_column_end",
+    "textures": {
+        "top": "block/red_nether_bricks_top",
+        "side": "block/red_nether_bricks_side",
+        "end": "block/red_nether_bricks_end"		
+    }
+}

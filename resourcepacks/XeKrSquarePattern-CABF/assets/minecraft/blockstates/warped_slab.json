@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "block/warped_slab" },
+        "type=top": { "model": "block/warped_slab", "x": 180, "uvlock": true },
+        "type=double": { "model": "block/double_warped_slab" }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "multipart": [
+		{
+		"when":{"lit":"true"},
+		"apply": 	{"model": "minecraft:block/black_candle_cake_lit" }
+		},
+		{
+		"when":{"lit":"false"},
+		"apply": 	{"model": "minecraft:block/black_candle_cake" }
+		},
+		{
+		"apply": [
+			{"model": "minecraft:block/cake", "weight": 1 },
+			{"model": "minecraft:block/cake2", "weight": 1 },
+			{"model": "minecraft:block/cake3", "weight": 1 },
+			{"model": "minecraft:block/cake4", "weight": 1 },
+			{"model": "minecraft:block/cake5", "weight": 1 }
+			]
+		}
+	]
+}

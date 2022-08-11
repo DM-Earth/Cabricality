@@ -1,0 +1,7 @@
+{
+    "parent": "block/trapdoor_open",
+    "textures": {
+        "texture": "block/oak_trapdoor_flip",
+		"side": "minecraft:block/oak_door_side"
+    }
+}

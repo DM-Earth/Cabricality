@@ -1,0 +1,37 @@
+{
+	"__comment": "Designed by XeKr with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "block/piston_top_sticky_on",
+		"side2": "block/piston_side_sticky_on",
+		"platform": "block/piston_top_sticky_on",
+		"unsticky": "block/piston_top_on",
+		"side": "block/piston_side_sticky",
+		"side3": "block/piston_side"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 4 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 4 ], "texture": "#side2", "cullface": "down", "rotation": 180 },
+				"up": { "uv": [ 0, 0, 16, 4 ], "texture": "#side2", "cullface": "up" },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#platform", "cullface": "north" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#unsticky" },
+				"west": { "uv": [ 0, 0, 16, 4 ], "texture": "#side2", "cullface": "west", "rotation": 270 },
+				"east": { "uv": [ 0, 0, 16, 4 ], "texture": "#side2", "cullface": "east", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 6, 6, 4 ],
+			"to": [ 10, 10, 20 ],
+			"faces": {
+				"down": { "uv": [ 0, 0, 16, 4 ], "texture": "#side3", "rotation": 90 },
+				"up": { "uv": [ 0, 0, 16, 4 ], "texture": "#side3", "rotation": 270 },
+				"west": { "uv": [ 16, 4, 0, 0 ], "texture": "#side3" },
+				"east": { "uv": [ 0, 0, 16, 4 ], "texture": "#side3" }
+			}
+		}
+	]
+}

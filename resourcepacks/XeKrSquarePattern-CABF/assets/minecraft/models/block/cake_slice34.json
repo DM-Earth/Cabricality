@@ -1,0 +1,10 @@
+{
+    "parent": "block/cake_slice3",
+    "textures": {
+        "particle": "block/cake_side4",
+        "bottom": "block/cake_bottom4",
+        "top": "block/cake_top4",
+        "side": "block/cake_side4",
+        "inside": "block/cake_inner4"
+    }
+}
