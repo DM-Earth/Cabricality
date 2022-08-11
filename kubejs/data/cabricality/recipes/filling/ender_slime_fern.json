@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "tconstruct:earth_slime_fern"
+    },
+    {
+      "fluid": "tconstruct:molten_ender",
+      "amount": 9000
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:ender_slime_fern"
+    }
+  ]
+}

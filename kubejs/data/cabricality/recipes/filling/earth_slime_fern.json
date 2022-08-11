@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:fern"
+    },
+    {
+      "fluid": "tconstruct:earth_slime",
+      "amount": 9720
+    }
+  ],
+  "results": [
+    {
+      "item": "tconstruct:earth_slime_fern"
+    }
+  ]
+}
