@@ -2865,6 +2865,11 @@ file = "mods/TConstruct-1.18.2-3.5.1.DEV.4d8ca75.jar"
 hash = "3bc2d10411ef80e5912335fdf4c1e5b8951b52e482df8256f0c619e7c6db92c8"
 
 [[files]]
+file = "mods/ad-astra-fabric.pw.toml"
+hash = "58f020a43ef82eeb00ddc85c90a0c795df391e62e5781340fe52751eaa266fec"
+metafile = true
+
+[[files]]
 file = "mods/ae2.pw.toml"
 hash = "cf5dc84f8614662235d680ad9cd601de26e0f35690bc4aabb1427cc01a9ae66f"
 metafile = true
@@ -3086,11 +3091,6 @@ metafile = true
 [[files]]
 file = "mods/modmenu.pw.toml"
 hash = "37b69a71c010cb7e4d10a84a7c0e44373566ddb19aaaf4428ff2bb9ade0692e1"
-metafile = true
-
-[[files]]
-file = "mods/moon-and-space-dimensions-fabric.pw.toml"
-hash = "e054c2574b17da77170e8202bb25e2ac12d8cce95b6315219f385baedf9825f1"
 metafile = true
 
 [[files]]
