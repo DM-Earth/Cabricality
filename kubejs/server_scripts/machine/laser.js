@@ -59,8 +59,7 @@ function chaosT(subs, seed, event) {
 
 	return ""
 }
-
-onEvent("block.left_click", event => {
+function process(event) {
 	let seedL = Math.abs(event.getEntity().getServer().getOverworld().getSeed())
 	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == "kubejs:powered_water" && event.block.up.getBlockState().toString().includes("[level=0]")) {
 		let block = event.block
@@ -138,4 +137,11 @@ onEvent("block.left_click", event => {
 			event.server.runCommandSilent(`setblock ${x} ${yUp} ${z} minecraft:water`)
 		}
 	}
+}
+
+onEvent("block.left_click", event => {
+	process(event)
+})
+onEvent("block.right_click", event => {
+	process(event)
 })

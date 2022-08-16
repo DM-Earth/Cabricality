@@ -10,6 +10,7 @@
     }
   },
   "result": {
-    "item": "kubejs:stone_rod"
+    "item": "kubejs:stone_rod",
+    "count": 4
   }
 }

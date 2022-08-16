@@ -1,0 +1,29 @@
+{
+	"type": "ad_astra:space_station",
+	"ingredients": [
+		{
+			"ingredient": {
+				"item": "ad_astra:desh_plating"
+			},
+			"count": 64
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:steel_plating"
+			},
+			"count": 64
+		},
+		{
+			"ingredient": {
+				"item": "architects_palette:plating_block"
+			},
+			"count": 48
+		},
+		{
+			"ingredient": {
+				"item": "kubejs:invar_casing"
+			},
+			"count": 18
+		}
+	]
+}

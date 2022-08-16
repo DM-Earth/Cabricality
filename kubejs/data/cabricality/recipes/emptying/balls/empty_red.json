@@ -10,9 +10,9 @@
       "item": "ae2:yellow_paint_ball"
     },
     {
-      "fluid": "kubejs:waste",
+      "fluid": "minecraft:water",
       
-      "amount": 20250
+      "amount": 0
     }
   ]
 }
