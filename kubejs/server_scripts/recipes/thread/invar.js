@@ -3,7 +3,7 @@ onEvent("recipes", event => {
     event.custom({
       "type": "farmersdelight:cutting",
       "ingredients": [{ "item": "tconstruct:" + type + "_slime_fern" }],
-      "tool": { "tag": "fabric:tools/knives" },
+      "tool": { "tag": "c:tools/knives" },
       "result": [Item.of(KJ(type + "_slimy_fern_leaf"), 2).toResultJson()]
     })
     event.custom({
@@ -11,7 +11,7 @@ onEvent("recipes", event => {
       "ingredients": [{ "item": KJ(type + "_slimy_fern_leaf") }],
       "results": [{ "item": TC(type + "_slime_fern") }]
     })
-    event.custom(ifiniDeploying(KJ(type + "_slimy_fern_leaf", 2), TC(type + "_slime_fern"), "#fabric:tools/knives"))
+    event.custom(ifiniDeploying(KJ(type + "_slimy_fern_leaf", 2), TC(type + "_slime_fern"), "#c:tools/knives"))
     event.recipes.createMilling([KJ(type + "_slimy_fern_paste")], KJ(type + "_slimy_fern_leaf"))
     event.campfireCooking(output, KJ(type + "_slimy_fern_paste")).cookingTime(300)
   }

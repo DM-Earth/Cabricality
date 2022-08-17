@@ -13,6 +13,9 @@ function indrev_tag_unify(event) {
   material("silver")
   material("tin")
 
+  event.removeAll("c:storage_blocks/steel")
+  event.add("c:storage_blocks/steel", AR("steel_block"))
+
   let material_vanilla = (materialId) => {
     event.add("c:dusts/" + materialId, "indrev:" + materialId + "_dust")
   }

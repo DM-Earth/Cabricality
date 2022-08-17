@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "name": "kubejs:redstone",
+    "amount": 81000
+  },
+  "result": {
+    "item": "minecraft:redstone_block"
+  },
+  "cooling_time": 80
+}

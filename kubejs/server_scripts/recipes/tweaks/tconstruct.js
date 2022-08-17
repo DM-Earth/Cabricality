@@ -3,7 +3,6 @@ onEvent("recipes", event => {
 	event.remove({ id: TC('smeltery/alloys/molten_brass') })
 	event.remove({ id: TC('smeltery/alloys/molten_invar') })
 	event.remove({ id: TC('smeltery/alloys/molten_electrum') })
-	event.remove({ id: TC('smeltery/alloys/molten_rose_gold') })
 	event.remove({ id: TC('smeltery/alloys/molten_enderium') })
 
 	event.remove({ type: MC("crafting_shapeless"), output: "createplus:brass_dust" })

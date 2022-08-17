@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "ae2:ender_dust"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_ender",
+    "amount": 5063
+  },
+  "temperature": 400,
+  "time": 15
+}
