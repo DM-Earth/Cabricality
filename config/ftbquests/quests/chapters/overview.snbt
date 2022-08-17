@@ -476,7 +476,7 @@
 		}
 		{
 			title: "&9&l&o..to a Spacefarer"
-			icon: "agape_space:moon_soil"
+			icon: "ad_astra:moon_sand"
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
@@ -496,7 +496,7 @@
 					id: "058AEB3EF218C7D2"
 					type: "stat"
 					title: "&6Complete Chapter 5"
-					icon: "agape_space:starship_control"
+					icon: "indrev:controller"
 					disable_toast: true
 					stat: "minecraft:play_time"
 					value: 60
@@ -504,7 +504,7 @@
 				{
 					id: "68543E92A6B517DC"
 					type: "item"
-					item: "agape_space:moon_soil"
+					item: "ad_astra:moon_sand"
 					consume_items: false
 				}
 			]

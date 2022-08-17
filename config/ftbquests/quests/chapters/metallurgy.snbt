@@ -3,7 +3,7 @@
 	group: "331B6409EF6A7840"
 	order_index: 7
 	filename: "metallurgy"
-	title: "&8> Metallurgy"
+	title: "> Metallurgy"
 	icon: "indrev:silver_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

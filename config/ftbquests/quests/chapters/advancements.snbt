@@ -131,71 +131,92 @@
 					id: "56406DC1EB23D39A"
 					type: "dimension"
 					title: "&5Nether"
-					icon: "minecraft:warped_nylium"
+					icon: "minecraft:netherrack"
 					dimension: "minecraft:the_nether"
 				}
 				{
 					id: "666EC6A82E1DBFD7"
 					type: "dimension"
 					title: "&3The End"
-					icon: "minecraft:dragon_head"
+					icon: "minecraft:end_stone"
 					dimension: "minecraft:the_end"
 				}
 				{
-					id: "110554B9C12D2314"
+					id: "01025B3292529483"
 					type: "dimension"
-					title: "&8Moon"
-					icon: "agape_space:moon_soil"
-					dimension: "agape:moon_surface"
+					title: "Earth Orbit"
+					icon: "ad_astra:earth_globe"
+					dimension: "ad_astra:earth_orbit"
 				}
 				{
-					id: "2B3625794BBA96DA"
+					id: "2EECAE3FE330C933"
 					type: "dimension"
-					title: "&4Mars"
-					icon: "agape_space:red_sandy"
-					dimension: "agape:red_planet"
+					title: "Glacio"
+					icon: "ad_astra:glacio_stone"
+					dimension: "ad_astra:glacio"
 				}
 				{
-					id: "3C21CC92645E0720"
+					id: "7B664638EEA93456"
 					type: "dimension"
-					title: "&7Ganymede"
-					icon: "agape_space:scorched_soil"
-					dimension: "agape:ganymede"
+					title: "Glacio Orbit"
+					icon: "ad_astra:glacio_globe"
+					dimension: "ad_astra:glacio_orbit"
 				}
 				{
-					id: "275B75C379710342"
+					id: "1EA15A05CE6FE617"
 					type: "dimension"
-					title: "&bMercury"
-					icon: "minecraft:packed_ice"
-					dimension: "agape:mercury"
+					title: "Mars"
+					icon: "ad_astra:mars_cobblestone"
+					dimension: "ad_astra:mars"
 				}
 				{
-					id: "114DCF04DB9B96B6"
+					id: "1B2392A99AA4DCB9"
 					type: "dimension"
-					title: "&6Titan"
-					icon: "minecraft:sponge"
-					dimension: "agape:titan"
+					title: "Mars Orbit"
+					icon: "ad_astra:mars_globe"
+					dimension: "ad_astra:mars_orbit"
 				}
 				{
-					id: "0193D60332AB4557"
+					id: "32EEE244FA7BC215"
 					type: "dimension"
-					title: "&fEuropa"
-					icon: "minecraft:calcite"
-					dimension: "agape:europa_surface"
+					title: "Mercury"
+					icon: "ad_astra:mercury_cobblestone"
+					dimension: "ad_astra:mercury"
 				}
 				{
-					id: "2867994E4F80E45F"
+					id: "4260EF57B3CA896C"
 					type: "dimension"
-					title: "&cIo"
-					icon: "minecraft:red_glazed_terracotta"
-					dimension: "agape:io"
+					title: "Mercury Orbit"
+					icon: "ad_astra:mercury_globe"
+					dimension: "ad_astra:mercury_orbit"
 				}
 				{
-					id: "7DF46966D91771F8"
+					id: "2E80F104FE82A2BF"
 					type: "dimension"
-					title: "&eVenus"
-					icon: "minecraft:smooth_sandstone"
-					dimension: "agape:venus_surface"
+					title: "Moon"
+					icon: "ad_astra:moon_cobblestone"
+					dimension: "ad_astra:moon"
+				}
+				{
+					id: "21CFC836E0644873"
+					type: "dimension"
+					title: "Moon Orbit"
+					icon: "ad_astra:moon_globe"
+					dimension: "ad_astra:moon_orbit"
+				}
+				{
+					id: "0A648CFDB2036807"
+					type: "dimension"
+					title: "Venus"
+					icon: "ad_astra:venus_cobblestone"
+					dimension: "ad_astra:venus"
+				}
+				{
+					id: "7F4A0D32517E3535"
+					type: "dimension"
+					title: "Venus Orbit"
+					icon: "ad_astra:venus_globe"
+					dimension: "ad_astra:venus_orbit"
 				}
 			]
 		}

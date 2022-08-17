@@ -36,7 +36,11 @@
 		}
 		{
 			title: "We have lift off!"
-			icon: "agape_space:starship_control"
+			icon: {
+				id: "ad_astra:tier_4_rocket"
+				Count: 1b
+				tag: { }
+			}
 			x: 2.0d
 			y: 7.75d
 			shape: "hexagon"
@@ -58,7 +62,7 @@
 			tasks: [{
 				id: "05BDC7ACF64D13C2"
 				type: "item"
-				item: "agape_space:starship_control"
+				item: "indrev:controller"
 				consume_items: false
 			}]
 		}
@@ -429,13 +433,7 @@
 		}
 		{
 			title: "Attire"
-			icon: {
-				id: "agape_space:enviro_helmet"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "ad_astra:space_painting"
 			x: 0.0d
 			y: 6.0d
 			shape: "circle"
@@ -447,7 +445,7 @@
 					id: "7E45D4E589606928"
 					type: "item"
 					item: {
-						id: "agape_space:enviro_helmet"
+						id: "ad_astra:space_helmet"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -459,7 +457,7 @@
 					id: "00E67717F76ABA56"
 					type: "item"
 					item: {
-						id: "agape_space:enviro_armor"
+						id: "ad_astra:space_suit"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -471,7 +469,7 @@
 					id: "3D1FB475F19FB099"
 					type: "item"
 					item: {
-						id: "agape_space:enviro_legs"
+						id: "ad_astra:space_pants"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -483,7 +481,7 @@
 					id: "29F72399D75E555C"
 					type: "item"
 					item: {
-						id: "agape_space:enviro_feet"
+						id: "ad_astra:space_boots"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -496,11 +494,9 @@
 		{
 			title: "Electrolysis"
 			icon: {
-				id: "agape_space:oxygen_tank"
+				id: "ad_astra:oxygen_tank"
 				Count: 1b
-				tag: {
-					oxygen: { }
-				}
+				tag: { }
 			}
 			x: 2.0d
 			y: 6.0d
@@ -513,26 +509,16 @@
 			]
 			dependencies: ["6A156D11D983661D"]
 			id: "3AD7553F3C8593F9"
-			tasks: [
-				{
-					id: "045DB251DB8BB97F"
-					type: "item"
-					item: "agape_space:oxy_gen"
-					consume_items: false
+			tasks: [{
+				id: "045DB251DB8BB97F"
+				type: "item"
+				item: {
+					id: "ad_astra:oxygen_tank"
+					Count: 1b
+					tag: { }
 				}
-				{
-					id: "23140AC17E9BE946"
-					type: "item"
-					item: {
-						id: "agape_space:oxygen_tank"
-						Count: 1b
-						tag: {
-							oxygen: { }
-						}
-					}
-					consume_items: false
-				}
-			]
+				consume_items: false
+			}]
 		}
 		{
 			title: "Operators"
@@ -577,7 +563,7 @@
 		}
 		{
 			title: "The Spaceship"
-			icon: "agape_space:starship_powersource"
+			icon: "ad_astra:steel_engine"
 			x: 4.0d
 			y: 6.0d
 			shape: "circle"
@@ -594,19 +580,19 @@
 				{
 					id: "5A1CC7C1BAFFABBC"
 					type: "item"
-					item: "agape_space:starship_conduit"
+					item: "ad_astra:steel_tank"
 					consume_items: false
 				}
 				{
 					id: "303C6C7B357D47D9"
 					type: "item"
-					item: "agape_space:starship_engine"
+					item: "ad_astra:steel_engine"
 					consume_items: false
 				}
 				{
 					id: "5140EF835413E2FC"
 					type: "item"
-					item: "agape_space:starship_powersource"
+					item: "ad_astra:fuel_bucket"
 					consume_items: false
 				}
 			]

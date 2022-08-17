@@ -168,13 +168,7 @@
 		}
 		{
 			title: "&6&lQuest Content Overwiew"
-			icon: {
-				id: "patchouli:guide_book"
-				Count: 1b
-				tag: {
-					"patchouli:book": "agape_space:space_guide"
-				}
-			}
+			icon: "ad_astra:astrodux"
 			disable_toast: true
 			x: -1.5d
 			y: -1.5d
