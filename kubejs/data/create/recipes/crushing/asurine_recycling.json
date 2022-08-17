@@ -7,6 +7,10 @@
   ],
   "results": [
     {
+      "item": "kubejs:crushed_cobalt_ore",
+      "chance": 0.8
+    },
+    {
       "item": "create:crushed_zinc_ore",
       "chance": 0.3
     },

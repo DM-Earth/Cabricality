@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:coins/calorite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:coins/calorite"
+  },
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 30
+  },
+  "temperature": 900,
+  "time": 42
+}

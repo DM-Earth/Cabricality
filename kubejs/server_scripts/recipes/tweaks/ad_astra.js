@@ -89,4 +89,12 @@ onEvent("recipes", event => {
 			C: IV("controller")
 		})
 	})
+	let ore_map = [
+		["ad_astra:raw_desh", "kubejs:crushed_desh_ore"],
+		["ad_astra:raw_ostrum", "kubejs:crushed_ostrum_ore"],
+		["ad_astra:raw_calorite", "kubejs:crushed_calorite_ore"]
+	]
+	ore_map.forEach(mapped => {
+		event.replaceOutput({type: CR("crushing")}, mapped[0], mapped[1])
+	})
 })

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:plates/calorite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:plates/calorite"
+  },
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 90
+  },
+  "temperature": 900,
+  "time": 63
+}

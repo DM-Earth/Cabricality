@@ -282,6 +282,7 @@ onEvent("recipes", event => {
   })
 
   event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, "#c:plates/brass", CR("golden_sheet"))
+  event.recipes.createPressing(KJ("zinc_sheet"), CR("zinc_ingot"))
 
   wood_types.forEach(wood => {
     if (wood.startsWith("tconstruct")) {

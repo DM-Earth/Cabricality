@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:plates/ostrum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:plates/ostrum"
+  },
+  "result": {
+    "fluid": "kubejs:molten_ostrum",
+    "amount": 90
+  },
+  "temperature": 900,
+  "time": 63
+}

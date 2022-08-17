@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:nuggets/calorite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/nugget"
+  },
+  "fluid": {
+    "tag": "c:molten_calorite",
+    "amount": 10
+  },
+  "result": {
+    "tag": "c:nuggets/calorite"
+  },
+  "cooling_time": 21
+}

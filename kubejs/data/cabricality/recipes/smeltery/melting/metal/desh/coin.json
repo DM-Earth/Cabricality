@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:coins/desh",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:coins/desh"
+  },
+  "result": {
+    "fluid": "kubejs:molten_desh",
+    "amount": 30
+  },
+  "temperature": 900,
+  "time": 42
+}
