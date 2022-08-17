@@ -105,6 +105,14 @@ file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "c0f24436bee0c7f30378d90f0ebf5a5ad10b12440d22e7cfc6863ad10c8851e0"
 
 [[files]]
+file = "config/jade/jade.json"
+hash = "82ef87e244c22b28d8a653785b2b935544c4552cb5039225f54181812c6f594b"
+
+[[files]]
+file = "config/jade/plugins.json"
+hash = "e6c1efa33004f63c811f14f79203442a339fcb64c5d1c583098c30b3782dc10a"
+
+[[files]]
 file = "config/modmenu.json"
 hash = "7ddcfd9d74337936e78b4c2feaf06e62c1584a72ab1e5e725004207711bba0ad"
 
@@ -1267,18 +1275,6 @@ hash = "361f177d6fcb83c8a705520a72a4a020568c2fef6246dbf12b04825fcb132540"
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
 hash = "558d6d938191ef00df9c8bcacac9217d6960ab681fa4375916c3113b462801b2"
-
-[[files]]
-file = "config/waila/blacklist.json"
-hash = "640800920130d084dec5a3a7f52c10e18d72ed7faca522b5bcb6bb46d0dcae9b"
-
-[[files]]
-file = "config/waila/waila.json"
-hash = "4597fde5d576f236df3cdb1e9049601e766780ca9b245263a0fc0aa886286624"
-
-[[files]]
-file = "config/waila/waila_plugins.json"
-hash = "f7b380bd53695c1bee1ffa05caf943ebde19154fd0c48d65f7acae1744ceada8"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/item/machine_part/saw_blade.png"
@@ -3426,7 +3422,7 @@ hash = "9842bacc77f3a329755465f80a268e8f89645d8a29325395619e334993e01c85"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
-hash = "96b50ab7af48271fd4190d03d95c8431a8c5228fe0616acf4d853a103a1eb66d"
+hash = "0f91898ddd26d5df9162b30858c8f330478143bd45945a6fed800e29e3ff2083"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ore_processing.js"
@@ -3532,6 +3528,11 @@ metafile = true
 [[files]]
 file = "mods/createplus-1.0.0.jar"
 hash = "f690888f36320c2e1ff2a2e175288ca8d7d4ec47e257df4bdc93d704a54f5bd0"
+
+[[files]]
+file = "mods/ctm-refabricated.pw.toml"
+hash = "3313ae2e4364baa48c96b7dcc8d356af55024e76bd7a590ca0de580366d4e77d"
+metafile = true
 
 [[files]]
 file = "mods/custom-splash-screen.pw.toml"
@@ -8656,6 +8657,18 @@ hash = "8173f984a20a93217cb77aa6cd3e7df1b890b7df18b4f3e979355bd1803035d6"
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/README.txt"
 hash = "99f6b97458e20cabc60b2f7baad554bd1d4bd6a70fe1752699720a1d71ae13dc"
+
+[[files]]
+file = "resourcepacks/XeKrSquarePattern-CABF/assets/ad_astra/textures/item/calorite_ingot.png"
+hash = "e29fc24c1f75beb373f84e980de34203f0ece2cab85a23817f9c5144c7b6c60f"
+
+[[files]]
+file = "resourcepacks/XeKrSquarePattern-CABF/assets/ad_astra/textures/item/desh_ingot.png"
+hash = "ee5b13507793b7158f548d1de197711fc462f505025f072463d1b8b298cf7680"
+
+[[files]]
+file = "resourcepacks/XeKrSquarePattern-CABF/assets/ad_astra/textures/item/ostrum_ingot.png"
+hash = "4881c6d4392ec283aebcd2bb8d100441e352ccc3e3e2551787cb8fbd158a8706"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/ae2/textures/block/deepslate_quartz_ore_0.png"
