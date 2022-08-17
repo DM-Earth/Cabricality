@@ -12,9 +12,9 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 ## Compare Between Original CAB Modpack
 
 - [x] `Update` [Create 0.3.2g → Create 0.5](https://github.com/Creators-of-Create/Create)
-- [x] `Update` [TConstruct](https://github.com/SlimeKnights/TinkersConstruct) [→ waiting for this Fabric port by AlphaMode](https://github.com/Alpha-s-Stuff/TinkersConstruct)
+- [x] `Update` [TConstruct](https://github.com/SlimeKnights/TinkersConstruct) [→ Fabric port by AlphaMode](https://github.com/Alpha-s-Stuff/TinkersConstruct)
 - [x] `Change` [Thermal Series](https://github.com/cofh) [→ Industrial Revolution, ](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
-- [x] `Change` [Advanced Rocketry](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Space Dimensions](https://www.curseforge.com/minecraft/mc-mods/moon-and-space-dimensions-fabric)
+- [x] `Change` [Advanced Rocketry](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Ad Astra!](https://modrinth.com/mod/ad-astra-fabric)
 - [x] `Still` [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2)
 
 ## Features

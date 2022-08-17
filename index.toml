@@ -42,7 +42,7 @@ hash = "ee8ba7197ec11ca14e2de279ca37b0226508fd97ba10b54d8bf18cf37fab6080"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advancements.snbt"
-hash = "a0fcd69151ac9adb814565976fe81ac5a2b312a5d4bd0d80b7dac1684d5f44f2"
+hash = "52111f2ef62b63ac50fd870f37216410d63a2bb16999971159836f911626d4f6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
@@ -50,11 +50,11 @@ hash = "d2575d015eb63c52e0eacc45bfac734ad1c63b3a07569be8127b441aa48e9f99"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "60ad026357e81a5136d03653486bccce22d82939d8b769e93969606587635ec2"
+hash = "797de943e603abc89c67376a4c45ffeed524b0c9bef06fe9611928840e883d52"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "fd0c58b07c0476b087b20f115d25181c35a453630227d7c9e9a73aef86a8562d"
+hash = "a82aa11956889edd839ac194669c1c0e03ba56d2d3c95728552fa300fd1a72c1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -78,7 +78,7 @@ hash = "8c70bc92a5747c7009eaa15fe313203d259c6ef639dfdc161ea5f2a6d8d7a411"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "2b6b2d99cdc40a06020e008de918462630b7feddaff453c8d45eef4e4184b850"
+hash = "504faec5b12e27c33d70985d323e69278be6a963303bab1f77c2037e1ab676d3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
@@ -86,7 +86,7 @@ hash = "62717cdc8ca723589b46d781f15e83cf241560c80217a86cb8dc6bbb5ea6f1bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "4210fee201d4f9c988f4fae6ae253cef9823395b17dd58b60ae3728d57787e1e"
+hash = "25ecd9c453222b712715e73e4cc21067d703d3289527622f18310da7683d21f0"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -826,35 +826,35 @@ hash = "e2cbef8a0cc8a2f1a0cf1d3d9a8125b6e7e00a06a3e488e147b8ab50ddb4dd65"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk1.json"
-hash = "6dfa83d1d81af1dcb980f8b1b6d05856c0347e4a0ff2dd4ce342c851f59b40bb"
+hash = "9c96bb3f2c4870ba74c6fdcf58de4cdb7ffdaae757a38ed16e67467a0af87480"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk2.json"
-hash = "197d61795f03df576121c182d54d54c6f16fab75c18242aa62e280b32bf9b3ce"
+hash = "2744d055ce0f763efa1d8e0d704a0907271cca2b1abca6148f578197e3aee2d8"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk3.json"
-hash = "c84410cb8a5036d8cf5720a06181ffe8407f40ac5cc96a63f7c180e944947ecc"
+hash = "7a001753daf00de3fc1c45f224a8634404384979347fdb3f22cf7ba0ffe944be"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk4.json"
-hash = "edbb341a3fa3ab7b0af5048bd8f64509822a6498d75e8d86ce5c1ad4752cd2cc"
+hash = "266fdfa76a74bca2c84f9bf19915f3dd0dca94c77838216d1cb487f11ff38bff"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk1.json"
-hash = "59f10d32ca8e0f4dd64adffe7f068c61f5822fc9df596ec91948cb3b071c008d"
+hash = "281477ce5efbd7deea3f8c23d350cda6190b172d725314334c699c66b3e48f3d"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk2.json"
-hash = "1ddf17d8cf3ad9ddbe83112010d0d310912e7c35d10912c55832442b3c41fc0e"
+hash = "f2d272d3cb85959ded5112db986d7605827816732fe4bdb2a658a1d2e4d1f228"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk3.json"
-hash = "a6b78181478181bea01fc434738d950c969b50ef200404e8da580a20adbd60b4"
+hash = "df8501e2f758701db1bcd0f58db038712f974265051be01c7858b807823e7389"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk4.json"
-hash = "40edf1f5366f611eaeeea8c05086b20a27f9f0908106556765171f7cd854bc7a"
+hash = "2f1798f86620cf7e2eabdcec8a1d28273c9affd844c9dbc067eaee6f7bb84f80"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/biomass_generator.png"
@@ -874,7 +874,7 @@ hash = "5862b0c8376bf8a19e5b6289f98063a53ad775d33c1e7dedcebeba30adbce8ed"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk1.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk2.png"
@@ -882,7 +882,7 @@ hash = "60ecabe0d70c1b04fb2582324603674f9713270e38f49d8e36cd6cbbf294b36d"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk2.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk3.png"
@@ -890,7 +890,7 @@ hash = "84f5d35da5be257b0b20208c91d4fc0725aba7af2ce4d310872f751425dabcad"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk3.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk4.png"
@@ -898,7 +898,7 @@ hash = "56a41a7e1c2feaf5f5c598571ac8dde44fbbd253003e50e967ee70fc76ca35c3"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk4.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk1.png"
@@ -906,7 +906,7 @@ hash = "6dd547ffdcb93e799281adf0f20aa33becb95d40ab51372accb21ffc7c68e6bc"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk1.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk2.png"
@@ -914,7 +914,7 @@ hash = "b5f9317189803934f05bc381543be0ca5663d39f64e394c0d9e1c319df794814"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk2.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk3.png"
@@ -922,7 +922,7 @@ hash = "1a93321d90a506a96d6f7294c738fa0e0f49080b31b3851eb0e3f0909e154039"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk3.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk4.png"
@@ -930,7 +930,7 @@ hash = "cd20dda41ad09563da6eb2a4b38c84d3457fd535d17d7cbc3c7edcde044353e5"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk4.png.mcmeta"
-hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
+hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wrap.png"
