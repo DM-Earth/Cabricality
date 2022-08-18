@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "minecraft:ancient_debris"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_netherite",
+    "amount": 750
+  },
+  "processTime": 600
+}

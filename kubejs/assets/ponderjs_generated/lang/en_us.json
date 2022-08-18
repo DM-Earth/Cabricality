@@ -1,0 +1,18 @@
+{
+  "kubejs.ponder.alchemy_setup.header": "The Alchemy Setup",
+  "kubejs.ponder.alchemy_setup.text_1": "Start with a Laser Emitter, and attach a fluid hopper on top",
+  "kubejs.ponder.alchemy_setup.text_10": "There\u0027re five of them, so we should only take out one in order to do the conversion",
+  "kubejs.ponder.alchemy_setup.text_11": "Let\u0027s say... lead (in practice you should place them at least 6 blocks far from the laser)",
+  "kubejs.ponder.alchemy_setup.text_12": "And then we fire up the laser...",
+  "kubejs.ponder.alchemy_setup.text_13": "Hmm... That didn\u0027t work out, and the substrates are gone, too.",
+  "kubejs.ponder.alchemy_setup.text_14": "Let\u0027s try taking out iron this time",
+  "kubejs.ponder.alchemy_setup.text_15": "And we got it! Once you found out the correct recipe, the product substrate will appear in the powered water",
+  "kubejs.ponder.alchemy_setup.text_2": "Place powered water above the hopper",
+  "kubejs.ponder.alchemy_setup.text_3": "The explosion can break blocks but has no damage",
+  "kubejs.ponder.alchemy_setup.text_4": "Powered water has a 50% chance of becoming water",
+  "kubejs.ponder.alchemy_setup.text_5": "Here are the things that you can make with the laser (in practice you should place them at least 6 blocks far from the laser)",
+  "kubejs.ponder.alchemy_setup.text_6": "The basalts turned into basalt shards, the snow turned into blizz cube and the water turned into powered water",
+  "kubejs.ponder.alchemy_setup.text_7": "If you want to mess around with alchemy, you need to place the substrates in front of the laser",
+  "kubejs.ponder.alchemy_setup.text_8": "You should place four at a time, and make sure that all 4 are of the same kind. The recipe is random for each map.",
+  "kubejs.ponder.alchemy_setup.text_9": "For example, in order to make the metal substrate, we should try gold, lead, zinc, copper and iron substrate"
+}

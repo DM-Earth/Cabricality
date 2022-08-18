@@ -1,0 +1,18 @@
+{
+  "kubejs.ponder.alchemy_setup.header": "炼金镭射器的使用",
+  "kubejs.ponder.alchemy_setup.text_1": "放置一个激光镭射器，并在其上方放置一个流体漏斗",
+  "kubejs.ponder.alchemy_setup.text_10": "这里一共有5个，所以我们需要拿出一个，留下剩余4个以进行炼金转化",
+  "kubejs.ponder.alchemy_setup.text_11": "让我们拿出铅... （在实际使用中，这些材料需要距离镭射器至少6格）",
+  "kubejs.ponder.alchemy_setup.text_12": "...然后发射镭射波",
+  "kubejs.ponder.alchemy_setup.text_13": "额...，这似乎什么都没有转化出来，而且那些材料也都消失了",
+  "kubejs.ponder.alchemy_setup.text_14": "这次让我们试试拿出铁",
+  "kubejs.ponder.alchemy_setup.text_15": "这次成功了！当你发现正确的配方时，成品催化剂会在流体漏斗上方出现。",
+  "kubejs.ponder.alchemy_setup.text_2": "在流体漏斗上方放置充能水",
+  "kubejs.ponder.alchemy_setup.text_3": "这一连串的爆炸可以破坏方块",
+  "kubejs.ponder.alchemy_setup.text_4": "上方的冲能水会有一半的几率变成普通的水",
+  "kubejs.ponder.alchemy_setup.text_5": "下面是你可以用镭射波做的事情（在实际使用中，这些材料需要距离镭射器至少6格）",
+  "kubejs.ponder.alchemy_setup.text_6": "玄武岩会变成玄武碎片，雪块则会变成暴雪结晶，水会变成充能水",
+  "kubejs.ponder.alchemy_setup.text_7": "如果你想进行炼金操作，你需要将炼金材料放置在镭射器前",
+  "kubejs.ponder.alchemy_setup.text_8": "你需要一次放置4罐材料，并确保这4罐材料是同类的。此配方与你地图的种子相关",
+  "kubejs.ponder.alchemy_setup.text_9": "例如制作金属催化剂，我们需要尝试金、铅、锌、铜铁的炼金材料"
+}

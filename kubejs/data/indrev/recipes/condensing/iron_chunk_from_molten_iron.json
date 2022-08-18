@@ -1,0 +1,12 @@
+{
+  "type": "indrev:condenser",
+  "output": {
+    "item": "indrev:iron_chunk",
+    "count": 1
+  },
+  "fluidInput": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 9000
+  },
+  "processTime": 500
+}

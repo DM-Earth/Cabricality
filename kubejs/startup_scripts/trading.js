@@ -51,6 +51,8 @@ function tradeList() {
 		["mining", "item", "minecraft", "tuff", 64, 2],
 		["mining", "item", "minecraft", "sandstone", 64, 1],
 		["mining", "item", "create", "limestone", 64, 1],
+		["mining", "item", "promenade", "blunite", 64, 1],
+		["mining", "item", "promenade", "carbonite", 64, 1],
 		["mining", "item", "indrev", "sulfur_crystal", 16, 6],
 		["mining", "item", "minecraft", "lapis_lazuli", 16, 6],
 		["mining", "item", "minecraft", "diamond", 1, 14],

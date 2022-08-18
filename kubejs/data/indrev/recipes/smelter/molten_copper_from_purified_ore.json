@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "indrev:copper_purified_ore"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 45000
+  },
+  "processTime": 600
+}

@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "indrev:iron_purified_ore"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 45000
+  },
+  "processTime": 600
+}

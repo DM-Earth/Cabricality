@@ -1345,8 +1345,28 @@ file = "kubejs/assets/cabricality/textures/item/trading/trade_card.png"
 hash = "5721d741782ac1f39de082d8da74b9a824ecfab2cad9199ae56bdbb5bdb98a1b"
 
 [[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "f55df588ae032e813a6b5b5d652b3509b29e5eac70a16fce69da22d286689782"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/zh_cn.json"
+hash = "4ed7b19bb334aed7cfc5ef4374a35b920c436bc7b985424ede8d36f2d9258728"
+
+[[files]]
+file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
+hash = "f55df588ae032e813a6b5b5d652b3509b29e5eac70a16fce69da22d286689782"
+
+[[files]]
+file = "kubejs/assets/ponderjs_generated/lang/zh_cn.json"
+hash = "4ed7b19bb334aed7cfc5ef4374a35b920c436bc7b985424ede8d36f2d9258728"
+
+[[files]]
 file = "kubejs/client_scripts/client.js"
 hash = "de12df432c9a6af2f364573f21e0ddae87f90dd409eae330e561393e45ad8b99"
+
+[[files]]
+file = "kubejs/client_scripts/ponder.js"
+hash = "ce00dc19ec88d8049f44b14873565c570187113751c38a2a5f91852f48ae15d9"
 
 [[files]]
 file = "kubejs/data/ad_astra/loot_tables/blocks/deepslate_calorite_ore.json"
@@ -1821,6 +1841,10 @@ file = "kubejs/data/cabricality/recipes/filling/coke.json"
 hash = "b299992d054f2b3a3166e43ffdd0ab8e5210b90a1e9f72571c9c7f463490de29"
 
 [[files]]
+file = "kubejs/data/cabricality/recipes/filling/dark_amaranth_roots.json"
+hash = "5388060975c00112cc70253c4a2561b779f9de7e16c35479408cf7c36b91897f"
+
+[[files]]
 file = "kubejs/data/cabricality/recipes/filling/earth_slime_fern.json"
 hash = "8300c5f7affd76edef1c1da7e473d4134f848112497ddca1a700626722a10d14"
 
@@ -1894,7 +1918,7 @@ hash = "97469732745bbc7fe613cd91f81c5442d71b6530826b6b62668e71408c6b2b96"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/item_application/fluix_casing_from_log.json"
-hash = "24ada24f621ebe6719f7ee0da909e430326130d54f3cfe5e22ff46df966e8afd"
+hash = "ad2c00c0b84eea80a0f3b96ad0c8cbce89873300646b9c78af44ea7829e324f9"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/item_application/invar_casing_from_log.json"
@@ -1902,7 +1926,7 @@ hash = "db5e617bff7919126099861e4766adee38957ad4ccf8234331af86822b535f6a"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/item_application/zinc_casing_from_log.json"
-hash = "bcaabdf5960d6be941c3a39cc763b5e8796ddce9b3831e6bb31d3db9aca8e622"
+hash = "7f18d4cf2414f99eaeba9a2119b676c106d349a0ce69792cdb1cc866c4a66ffc"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/melting/ender_dust.json"
@@ -3301,6 +3325,190 @@ file = "kubejs/data/indrev/loot_tables/blocks/tin_ore.json"
 hash = "1c65f324672173f86cca1e0735b4f18f470ae51b0b74ec62ecdcb4820f3bbda9"
 
 [[files]]
+file = "kubejs/data/indrev/recipes/condensing/copper_chunk_from_molten_copper.json"
+hash = "595da77de0290c33afda823aedbb60245f43f7e641a044a2cdc17eb5dbfd979d"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/condensing/gold_chunk_from_molten_gold.json"
+hash = "68ce957548e6f4e148cfb54910b4ded9e681ce16de038d87172ce58810dbbe16"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/condensing/iron_chunk_from_molten_iron.json"
+hash = "d015da4d1b4fd719d5034bc443ebc391fa2ab64561c60b4c117815dafed47ca0"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/condensing/lead_chunk_from_molten_lead.json"
+hash = "21a8d5698136746761816096f465998557722dd989ccd81d3614b9af230e4049"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/condensing/netherite_chunk_from_molten_netherite.json"
+hash = "9c8330813e4493cb49a18c78ec3e1d69ca326ec40b91ce8eaec038aad55954ab"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/condensing/silver_chunk_from_molten_silver.json"
+hash = "74376b613c5bad17f349f2b07f2dfd9c8913d2dd8fa422b065bb4a48c3296459"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/condensing/tin_chunk_from_molten_tin.json"
+hash = "0e896e0e4946922f306dcd438ed1abf75a7f1065bf21e9b7626264ccc07f592c"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_block.json"
+hash = "f2fddf7dda25d0b691b7b0339659bc843df8e7920077e708e66f0518d0b80a20"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_dust.json"
+hash = "a2daeb9c061987c4243727d72aa5d977dda1be716460e3671d736b4112f0cecb"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_ingot.json"
+hash = "ccf26e68b5dedb099aa3a1cf4afef9968a0210347b919b985a90544bbb58d086"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_nugget.json"
+hash = "68770258969a0202244fbd1fc04d02a894000e292f318b487188c766af3f35a2"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_ore.json"
+hash = "39c525eb0375ccfa4344abc77b359780b9ae0ea8494c45ce18a1fe6d17d49ddb"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_purified_ore.json"
+hash = "9f68e868378a22efa9075ab9150e1247e5c15c28322c21448283fc9fe73233ba"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_block.json"
+hash = "dfb803bc8cefecf869cabffdec510525bc778f8b07d2e36395fe5b47543b7515"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_dust.json"
+hash = "712f56bb3c48aa0ddfb0809591ee3e1d08f3cbdbf91c773cc3ec317eb9074f78"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_ingot.json"
+hash = "aa29a455ca5d704bb7e31d3143ae7c98451d73bcbd2d07bca00debe16bf7e7ab"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_nugget.json"
+hash = "8e37670b09a7a5268f9302e9852bc232c0a00411adc41b57b3e3b492f0aaa340"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_ore.json"
+hash = "4cfc096314ae500a7961f03c31bf75b863edfbbc40e23e5460a684d0803ee901"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_purified_ore.json"
+hash = "1fb3ccd0e314dcf2643a660db49bff4df993fd552e12234ec2fb9a89db39736c"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_block.json"
+hash = "af4c3fb87ca7ab2930bd9fd958cf3cb0fb39306f148cc8d94921392ea765031b"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_dust.json"
+hash = "a681b138734496de70f4e7dc070e2b5a2b03bc3e07bd1948d4791cd750630c5b"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_ingot.json"
+hash = "53e5fb66d050a5db3e29e7e2207b927279c336e91668766938ece81b4780ebbb"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_nugget.json"
+hash = "d7bb076c7a5285347b25127290fd79a511cee1fcc635490be81cda22f3f43952"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_ore.json"
+hash = "a4dbb6fd43ddd28d4b48d6e1f8fdf4880cb08fa5823fdf23be318474843c41f1"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_purified_ore.json"
+hash = "11e23bed40d4c9ed5054e3c1d25303249785b762e303b7027adb612bcfd7e8c5"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_block.json"
+hash = "44d44d3f8b48f2b9365311811b469cd7ff6c5138a0c426304a011181a9fdb54c"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_dust.json"
+hash = "c893287a21738cf457a56f621ef551b6f6658854ef4e6d09d00d965f0b5ef28f"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_ingot.json"
+hash = "ebd06b6dc84b490075a69d6fb5b1199e83527d12ff0d5d7f49f44230e86152e0"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_nugget.json"
+hash = "f4eabcdcda828c9f71080d4dec91148324a73a486ce9d8a986414260db0cc413"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_ore.json"
+hash = "6feec91cde0f5120034fa25a654bbbff364924c8e7f8404d4805fa5773d49670"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_purified_ore.json"
+hash = "0ec8d866deb118919bab0540a921cffc0a33801e7824245bea331549bf12f4fb"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_netherite_from_dust.json"
+hash = "9ed9264b1325ab20cb06460ad9a85c93a4955f5a25e623e07471a518e0a54282"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_netherite_from_ore.json"
+hash = "e2fd20741ccfd3b5238d588af56edffba2b0c902c28885da5a4ef03e901adb44"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_netherite_from_purified_ore.json"
+hash = "307bd5344fdb707e5de3ea2c384d7e94d3e72f34567b709b48fff1386dbf23ef"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_block.json"
+hash = "4de2d0d0c5ff973a24e47d96edaba86d62ae02e6645408b9026314bc0e8457cb"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_dust.json"
+hash = "d02a2c6173a51203d884b8205e22ef7986f9000c2708062134bd56d00c01cdbe"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_ingot.json"
+hash = "642e87df2120c512d2fc101dddb5a104b7217fde33304394ada551d3e789df78"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_nugget.json"
+hash = "fbd402953bcc735f13a0579facec1704c3511f3545e7804e7fd0e44372d9f0e6"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_ore.json"
+hash = "169135397b47771d0a3e581b8bc057e5c9838f97500efe81e55176716115ad4d"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_purified_ore.json"
+hash = "3a4db135a6eb522e5c3c2de104308137eafc4c9b8079f3fc742869c8eb727700"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_block.json"
+hash = "78e3561f4e07e8b0d27a7e2e1a70863de63b8aea4211782634dc7e42118ac496"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_dust.json"
+hash = "75711e9a067a5d8c3316cc0e66b06e1a03649cdf327b579a53cc60252ac71c7e"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_ingot.json"
+hash = "82b9fa17da4a8cd1d509574907fd09dff4777c10c2f68fbeb40b4c1835adc30a"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_nugget.json"
+hash = "889c6f99650d76e54973a84c35127b746f7394f1ec301f0a097355d290796723"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_ore.json"
+hash = "b167e6ef767256f5af811bb579bcdfbce199d4fde6e66b5dc0448eebc56a1ddd"
+
+[[files]]
+file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_purified_ore.json"
+hash = "1a3c77b29a421d754bb13296f04a30acab5b4621eb16486cb5ec15163ef74634"
+
+[[files]]
 file = "kubejs/data/minecraft/loot_tables/blocks/copper_ore.json"
 hash = "46790c3b195bf3dbca959bbc62817ad29b0b141bf943c155ea3ed43088c1b92c"
 
@@ -3422,7 +3630,7 @@ hash = "9842bacc77f3a329755465f80a268e8f89645d8a29325395619e334993e01c85"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
-hash = "0f91898ddd26d5df9162b30858c8f330478143bd45945a6fed800e29e3ff2083"
+hash = "31c6b97897fc9234dec6b15ae7c20ea916e4c6bcbba7a4c05d886abbd8cfb883"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ore_processing.js"
@@ -3438,7 +3646,7 @@ hash = "9749128b7532c870ae8ee5eb364c0e5fc3d5192736eaebea3fdb9c6d3d263c96"
 
 [[files]]
 file = "kubejs/server_scripts/tags/tags.js"
-hash = "eda99f5444014e1ead3d038b9a0a5a767170548dcf3a0e6a34dd9d64fcce421f"
+hash = "b9070aa513c2af121f629de6a6703ca2cdc06fe57e6a90e836f7c2bc5a557629"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
@@ -3450,7 +3658,7 @@ hash = "573cdf22100d78ee1d5550f69a63d4b4774aa4f03d2d0e12b29d9af1a8453aed"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "1da40071be063286317f3415f729c06c8d9e4a9e51af2cb328aa434cee22c71e"
+hash = "6349f204b824757e3d5935d4c7a6ae2792c9fc8211f2fdbc296a54cad644c18c"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -3680,11 +3888,6 @@ hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
 metafile = true
 
 [[files]]
-file = "mods/memoryleakfix.pw.toml"
-hash = "f61810be98ef52436d3355ecfa4354bc47d142cbe9468fbd14415e5bc6d66125"
-metafile = true
-
-[[files]]
 file = "mods/mo-structures.pw.toml"
 hash = "2d28482058d2d26425ce201ff66684944cbf3bac2841cf4fbc9157fe51830fbe"
 metafile = true
@@ -3732,6 +3935,11 @@ metafile = true
 [[files]]
 file = "mods/polylib.pw.toml"
 hash = "3abd6bfd91f9099a1c744f4c2dd6d77354f64b36c47ca62462ec95c912d94cab"
+metafile = true
+
+[[files]]
+file = "mods/ponder.pw.toml"
+hash = "65edb51604e963fb7b09f06a465e83cd88836a0a5bb07df18efa4838dd95952d"
 metafile = true
 
 [[files]]
@@ -8656,7 +8864,7 @@ hash = "8173f984a20a93217cb77aa6cd3e7df1b890b7df18b4f3e979355bd1803035d6"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/README.txt"
-hash = "99f6b97458e20cabc60b2f7baad554bd1d4bd6a70fe1752699720a1d71ae13dc"
+hash = "8a428e7d6ce87c20edf1e3ed9aa3aeaad589fe52d4ba3703ffc74b4105b5199b"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/ad_astra/textures/item/calorite_ingot.png"
@@ -8948,35 +9156,35 @@ hash = "b21ebd79b60da954607c5d1263e369ca4beec1c919341012c54bb406df6ac753"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/alt.json"
-hash = "88856948bb944d5b25e151b6315e4caebed4d7d3f06f4cb3b47abb7bf42ed260"
+hash = "b3c6c5f79274de3906a85bd2739e2c6382b8653aa7653c392d8d11d948f71ec7"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/alt_both_sticky.json"
-hash = "3ac6d3f2fde43c1c70c79c50988b93889c60df8c14b67902f1c2bdd49eb5685d"
+hash = "3c79e1bf5ca67225cd06129345e5c3007015026230a51d2fb01aee48eddeeb72"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/alt_bottom_sticky.json"
-hash = "f1ce310fb8ffc1c778a2c40bfab6cc64520b947f7efed6775c6aaff17c657d56"
+hash = "da1b2e144a275efd8087adfb276bd2bc70c044f60774ce7e211836f8740993bd"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/alt_top_sticky.json"
-hash = "378b4dfbfc74a8bf1770a90632b5923279e958532bd57123436ec2796a9d86ea"
+hash = "e7f12e96dde493717f5b25388dee36f11af3436997f9d7115fe82fec03ede7d5"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/regular.json"
-hash = "f58ca069af6b6a570b5a1839f2761a798c183be4b4659f13d874b7442af2a256"
+hash = "893079b45294724ebad82ae19a5a63266abf717c56ba972ed7bb4558ca868a47"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/regular_both_sticky.json"
-hash = "969c24475393d967148725e52f93ba8f58e0e5e6087a2db48e89d45b6cf2e3e2"
+hash = "7cd2f4997778e120b3994c182b5bc328b16d0800f5dd13a0c0027eddf61e44cb"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/regular_bottom_sticky.json"
-hash = "79905df6e4ac009499db892f125f24ea77749e35056bed198c464ebf10bbbb01"
+hash = "e62051f0aace02ed8207d341201f7b68158b7c3436c858352e3e9d1a5509d35b"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/regular_top_sticky.json"
-hash = "cc06d8a5f0345fdde7ff3f142f1ed75196a8d59e092a74eae4959dd6ac3d98a9"
+hash = "70499cfbc07f3bc7565063a4120d696745be65b6660bc6d3f380562b227e90c1"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/linear_chassis/template_linear_chassis.json"
@@ -8992,19 +9200,19 @@ hash = "20970eede9919258134351bc4cfb287700a6e04115f293480f06c1122e31674f"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/mechanical_piston/sticky/block.json"
-hash = "445e1ff6cd92ac64ca2851e8f26bf5066d962f45ac8a26d939550b6a2d3309c9"
+hash = "0e22f57e46402d1c69009c7d6445c0bf5fff478745fa8f70c493ddf2c04823fb"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/mechanical_piston/sticky/block_rotated.json"
-hash = "c6d7e8df6f062d6cec2fc960f65983c29d3da9ba97d9a4f794d0acf3c0d80de9"
+hash = "149312753a30561666f5602c8683569c2a82c1fd8af1595bd0274042ba162786"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/mechanical_piston/sticky/head.json"
-hash = "cfd05ced309f013ee9574c493d2a02ea86d5b1c00135d7dd10eea2812e07f652"
+hash = "cc5d249578af445a2537d14f54619cdf5e51a2ae790d02d0161c536b196b74bb"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/mechanical_piston/sticky/item.json"
-hash = "7308ba32c2443633537db0d4da13030f3fb25b276cdd8f2b7fd3d1883fb57fff"
+hash = "1f3ee1a44317ed776623ba87bfa3ca84a72825bc0e71e5a046f872ead350d27a"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/radial_chassis/radial_chassis_base.json"
@@ -9016,7 +9224,7 @@ hash = "966a5c7424f2c57703f5942e7efd7bbfe2822bb96225dfb0a7bc0ebc4438e9c6"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/radial_chassis/radial_chassis_side_x_sticky.json"
-hash = "758dac7e17a7b17c5b682150c1479e1e4d5c1c5cd53c9c67254ac8e479a24920"
+hash = "78fae647ee5c31a4d9b95beaa6711cf4aea8422b3ccb94da69c2f392e8590f8b"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/radial_chassis/radial_chassis_side_y.json"
@@ -9024,7 +9232,7 @@ hash = "3daa16ab3251debfcb46f6a5d823ef874a8927617d11592041fe95bf66249b58"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/radial_chassis/radial_chassis_side_y_sticky.json"
-hash = "b320eba3063a937def561a08af03d07d6ab7f03d4fa431ffe5c2882a47b5fbde"
+hash = "9af989120b184e52ae5a58dea654175fcc99a29c2c33f5951bafd01724a92fc7"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/radial_chassis/radial_chassis_side_z.json"
@@ -9032,15 +9240,15 @@ hash = "8f3e2ff3a416f30850b6796f064c05516705e9508442f66ddb109192cbfb0c98"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/radial_chassis/radial_chassis_side_z_sticky.json"
-hash = "d68e8dc92ff76547465ea672500402e19d94ea0695acc0aa20ce401dc8376b50"
+hash = "e397346809a9e6a4c0609c2d3c33cc628ccabe5a24eae2c3e189c32fd4a5139d"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/smart_chute/block.json"
-hash = "6e650249c3c659cc9c8cab9dd7b37b70ff2ca7f7402c65110431ad6dc0b9501a"
+hash = "6d8441f0ad4d3ef28979b75800089a5b60caae452c051274cc4daedc6bd0223f"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/smart_chute/block_powered.json"
-hash = "f1f4adf95db8fcf0527d8fdaa5f4891eaeadfdcf7875273dbebc88c46b4929e0"
+hash = "9a8a6f065cb97fbf9bc464d223b3f81eec19e92e2b4d57168c6ffe34e32ea62a"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/create/models/block/sticker/block.json"
@@ -11132,11 +11340,11 @@ hash = "b5df4d4c7a4c8bb820cdce627077b33bed7162e0f5ed0a64959abc1c5c315b61"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/models/block/rich_soil_farmland.json"
-hash = "b71dde37c721623f0c90256491ff945ed268a2a5230a21e97011aec5486ab565"
+hash = "5455e4ae10e8ec9e80200146dcd291155da9c9a4c0fba2db3f9162fc02c4fbbd"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/models/block/rich_soil_farmland_moist.json"
-hash = "2362460b595f46c42fff23d9a797fd5c1413cba95bbf6dbfa3c7880e5b8d3803"
+hash = "d964fa102d09e780454405c0038c591266d584af30c082dfbb69b8b1500a3465"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/textures/block/acacia_pantry_front.png"
@@ -11296,7 +11504,7 @@ hash = "a9526de30aa465d646f585892679a51c42a451da0ab48db01f0f8bdc6ba57532"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/textures/block/stove_front_on.png.mcmeta"
-hash = "a47d72bdf590b573a93c3e80d5ba9802f15f635092d4baed8127dc01ef3c858c"
+hash = "3edd6755f3c0f0dee8314fd5211045a787444db32a1ba997a6137e8a9c522103"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/textures/block/stove_side.png"
@@ -11312,7 +11520,7 @@ hash = "02a4c893330494b51e086ae2d6ed35d18ab6b201b122599da5cc08531cfff1d0"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/textures/block/stove_top_on.png.mcmeta"
-hash = "280f6b32d03282eecff6a2d072f804c7aa06475d246c9e5a107de3019c30791d"
+hash = "6dbdac93b3b28e8ce4ac983327dd4c75499f84bebd12985d677669bf75e8e457"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/farmersdelight/textures/block/warped_pantry_front.png"
@@ -11508,7 +11716,7 @@ hash = "3edadfde0ba2099bd1c3b81f07af6918fc8c7b1e45099fa65e63c26f1befd062"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/acacia_planks.json"
-hash = "9d554fd57d4f8cc67668229cd3ee6931457c71c4c59225e3550cace9eaedd257"
+hash = "6ef31f86f1405d1f8ad87ecde99c47eaebbf08b27a143c3dc6339b29e388da45"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/acacia_slab.json"
@@ -11556,7 +11764,7 @@ hash = "ed6828b49f7b790d11678c3cf829d9b79774253ff182d72f842f8f767a7a2e93"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/birch_planks.json"
-hash = "229fde42247c88c3d79ea12a0552ba970f70035ec8fa4cd49c3ef1d354e38e41"
+hash = "9b2b89c29f0c651606d8bb5afe74d8e6f745f97340438564210d79a5af3d6a56"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/birch_slab.json"
@@ -11584,7 +11792,7 @@ hash = "cda53ae4dbf21156316125ff1b7bb1ed729985a98535f3ab38fede26b9e2c350"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/bookshelf.json"
-hash = "1146a8dc3e83cce9e5d2c6a104761cb354bec612ba48e4e5449d2a8be52e843a"
+hash = "46685608df6dbe16c7fc127dbfe982168113aadb193733b3d00c0ae1b7a042b7"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/brick_slab.json"
@@ -11600,7 +11808,7 @@ hash = "340c9bcd9dbcd9409084182d06d4d8410818dcded145ab450e69ef07fb2567d5"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/bricks.json"
-hash = "c2559617fc014f9a414791d42bd034d892fd1ac9dac40a4253ffc1beb676c2f3"
+hash = "3d27815bc5cad9c6fb1f0eeefdcda62e8597b82bd63bff8f25c4bb8b3c1578fa"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/brown_candle_cake.json"
@@ -11612,7 +11820,7 @@ hash = "72ac2cebb86f730a4360bf8cd7fe7ea02eb098194205f7ece51710689abe17c4"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/cake.json"
-hash = "807eaef2484385db8e77ad05332daa33a6519ee33affb9ff2d167d2dbd8da598"
+hash = "b8eb3e5e8c67e32f85a92828cd9b89936ba359466d053e72b1a2715bd7919fdf"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/candle_cake.json"
@@ -11640,7 +11848,7 @@ hash = "28937bbf14b79a96d10a01e81d9e390d6348d6a15ff90e19f8a8a4740a46a1f4"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/cobblestone.json"
-hash = "558f8b6dca18bef51c53ea2f81cd3467c6af27d16972ed07413ab7bcb9f5da19"
+hash = "b37ae442ec8ec7dabe4f9bd4f355574fda4de99a6c2a4173cc471fefe4f54cb2"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/cobblestone_slab.json"
@@ -11668,7 +11876,7 @@ hash = "94db6e283d478b7e342727734f3e37c6ce0c18b662c980988b0bb3d9d4491e46"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/crimson_planks.json"
-hash = "48519aec9e4466692b29f9ff3318430206fa9fe7562859b91e4a5da8fd4a2735"
+hash = "9a70287799d533fa8a733a7066c7e447b209fe5a92afe0bc1bde0de1a4cdc202"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/crimson_slab.json"
@@ -11684,7 +11892,7 @@ hash = "58c513b88d9bb5c507726e43f671e01e9de5e761cd7fe3f4a66fb2b88ecc7aad"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/crying_obsidian.json"
-hash = "a7f5fdf1bef2405e5a2d9c2aefc2dde82e05e66b300cbf8a6ec3640b004c66f8"
+hash = "b45a4f62909a13f9a02cb83c2e2bf1083ec8ec7f6539970d1a85ff3e38e3c371"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/cut_copper_slab.json"
@@ -11716,7 +11924,7 @@ hash = "6bb8bb32fb6f5cb789f41d50419b19f24c83497ad53cb1203f8e0b7902a2285c"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/dark_oak_planks.json"
-hash = "37c76ae7200ee77b8d56c7a7d88041fb06c72f550c86425183504a0898905125"
+hash = "2f752b885f3b0cdbd49af34cdcf367c7faffcf6c944a3a915480ad21c42d9c4c"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/dark_oak_slab.json"
@@ -11748,7 +11956,7 @@ hash = "d1772326fc50cedf8aa4953993ac4a2d57d971ccb3a39953567e5c12d10adf50"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/deepslate_bricks.json"
-hash = "01eb69ed4c3db974526edb6e4d7477cb7bd3a97061ce2e90255bccc4578554ab"
+hash = "88a1633cd4693f5ece6e0dc34213311df8bac06d6cdb93595b2e888ffc783cea"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/deepslate_tile_slab.json"
@@ -11776,7 +11984,7 @@ hash = "2e747908d9cc7815c0ac70621d332aff8cb2c4a24ecbbb1fcea9da16e6231be1"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/fern.json"
-hash = "9bbf3b63e19516789f6f459d8f2170350132f1869a31b981ef6cfe6f22fbfead"
+hash = "78a3ef14f436b7eb4f17aa355521a685d23ffb0e54e60721f853436a0419bca5"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/flowering_azalea_leaves.json"
@@ -11784,7 +11992,7 @@ hash = "1657f083012e57c0171de69e1aa09c5b73466d7d37cfdb84855037d45f725ed7"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/glowstone.json"
-hash = "896926b644d9cb95607b7f35604f5064e8677015a05e198145f40c3f1bb08a7a"
+hash = "f42857b0b4e0738807fd6ccfac094baebbfda2fee2c77bb729a484e790eef303"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/granite_slab.json"
@@ -11796,11 +12004,11 @@ hash = "2ca44efb1b6ea6b56a2dc1e5168431efcc2633153f819d9cafccdef4d58de6d0"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/grass.json"
-hash = "ca4118db1492b6872c3dfdaec2ac2b6db90ea5bf28cb07b76342aa648be2bf70"
+hash = "7df273637a58629ca9f723c71788e45f56525e9633244c45e6f8ffe87b60de6a"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/grass_block.json"
-hash = "2bd5442d8460f7fb6ce18bfba1dcef7aa86d4653028ccb6b060d27060f3ccfc3"
+hash = "55be9215258ee28e06af8d34c83652c9cc0c4cdcfc650332aab6dc4170f4eb94"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/gravel.json"
@@ -11868,7 +12076,7 @@ hash = "c74c4b38bb634164002cd7610eb56a4a6b1b62b6f66a0c8bee99fcbd44312d94"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/jungle_planks.json"
-hash = "b4903ba8870746dd238db15cf51e69350f34dedd67faac56d306511965bb3350"
+hash = "1d9abbbc61798b1de24d62a335ab943198ffd7468d8231d1f3e1a52747d6c032"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/jungle_slab.json"
@@ -11924,7 +12132,7 @@ hash = "f39a105c22cc9db3c486a57d396b986f524dd4b1eb0b49262ed2abde2f9aa574"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/mangrove_planks.json"
-hash = "7495b0ccb523137f8ea27ae791f1a48636003bd9f2e831e2a4f4c5bd0836b117"
+hash = "7e5f787271120d6288deeb3968d392f8a905f72bfcd930a269df758b2256ff9e"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/mangrove_slab.json"
@@ -11940,7 +12148,7 @@ hash = "a3415e89cbcb547734dc5cb37cf3fb4b3c82a658e618fa8935d73d42c440b09a"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/mossy_cobblestone.json"
-hash = "70fa93c8165af3a99a47bca2082f6dfa53ed607099d301715c757a4e0d67e5b8"
+hash = "1dfa1c990fac24d049bbf83d6c3b4f2ac5887c105cf87448770346b72e344528"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/mossy_cobblestone_slab.json"
@@ -11952,7 +12160,7 @@ hash = "9b8b38434e28e58c4d1fa20ea478a4b9ac1f32a5e756e9175039ebd1364a42ce"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/mossy_stone_bricks.json"
-hash = "e8826c2950a8d55885199db079723f32949650e03bfefd43ffccc0b9013f3bf7"
+hash = "b599379db4f2c7172a1be4c4e19ec562be10667e8091d1582cf1ddeddac8606f"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/mud_brick_slab.json"
@@ -11980,7 +12188,7 @@ hash = "a113209932c6ae3a1f67b86b749f8e1925acd8bc771d282f9638bb96cb3f2dfe"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/nether_bricks.json"
-hash = "551a7f5edd76975684c2100436c6384142cf68cfc0c02afbaf3743db27faf37a"
+hash = "92fe8c36fbe96c5ec7de7328cb8c2d9d764eca49017bae7bb2f88a4f1d7a675f"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/nether_gold_ore.json"
@@ -12008,7 +12216,7 @@ hash = "b5b4841bf95f798411579845839298c6e35ed6c1339a742f3ae59bf7462f4a44"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/oak_planks.json"
-hash = "87fee59b4793b930d68ab432d3b4f507cf0c44750040ba8b0617f478ebb250ff"
+hash = "f6bf6e9b045a23ac57c80d3fc4b917a2edb867515e25e703cb16b8ace83a1fc7"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/oak_slab.json"
@@ -12024,7 +12232,7 @@ hash = "3ffcd4524eb8c2408c5c64ad32729bb5ea54beb6b148513f7b8df9ab4e4ef52d"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/obsidian.json"
-hash = "95455f418a4e370a47b8f5bed7379eab3bbe696ae348b37ab53f9cf65d232f95"
+hash = "22634290c39e1910413d9ed16c034265477c8194ec3a7926d92b51c648ec9833"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/orange_candle_cake.json"
@@ -12060,7 +12268,7 @@ hash = "6cb38f005e336418d158a74797b74272534eb330fae25162b03cc033eca516d6"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/polished_blackstone_bricks.json"
-hash = "bc1c63873c60167d817b4b30af850e44ef98a47d6821e7c80e668e54cd5583a2"
+hash = "8983e46ad6de92c6d353f46fd125b3d50aee475cef5245fc351a157dbefdff06"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/polished_blackstone_slab.json"
@@ -12112,7 +12320,7 @@ hash = "8f375c69e2eed424f9284a92df105c9f62298973ddfe3b624a77b9fac3654f8f"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/purpur_block.json"
-hash = "f584db05f2c1d0e2b61ad2ed107e9edd7f010280f71e4f3a49a8190a3d06addc"
+hash = "f4b6c987307ea9a710f069be3abd51afe9d36ed304dac90e85abc18c209647cf"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/purpur_slab.json"
@@ -12184,7 +12392,7 @@ hash = "684cedf407862116651c48dc02da595533b95db4bc483632c222e01873cbc085"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/soul_soil.json"
-hash = "04e537147387102164d2879150cb1175656ce6625b1228242f0f4af8e46c1fff"
+hash = "c29bee94cbfd036307d308b35068e93ced81c96d6e87da3b687cad814f012571"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/spruce_door.json"
@@ -12196,7 +12404,7 @@ hash = "9154d823a16c160c151d582225167fa4ddd891e76572f54107332b989dc70506"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/spruce_planks.json"
-hash = "90de78cfcca59ce6eee5cb67f73ac3e4b78b9a6c99b296a2511281b0a5a09bad"
+hash = "5f63d5dbfae8c7bfacf5571ac099412bb4522e147dfc878d1376ef2b162a4a55"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/spruce_slab.json"
@@ -12220,7 +12428,7 @@ hash = "f586b3996c089cc9bb251bb15d6f95800ee980b1285fa57a71e66320b9cc018b"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/stone_bricks.json"
-hash = "6eb60fd8f098f03aba8f1443d2e87f8717627525159b642cae9857c4ec926e97"
+hash = "4946f5ab6ef741162a0218f24e7e2f68818992efe77a782cf90bc0a21786541a"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/stone_slab.json"
@@ -12248,7 +12456,7 @@ hash = "828e3bc5955ede6b4ac8b7cb6f7acbf521fbad07e903ebfbc92e1d6623148759"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/warped_planks.json"
-hash = "136ba9ebf619e6be457b34f267670c4dccfd7e4d42db32263d71cd7573ede6f3"
+hash = "feef6e6cfee1d02ad506e0c6da08c91b690d64c2de8b78f1de41a618c1834afa"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/blockstates/warped_slab.json"
@@ -12700,115 +12908,115 @@ hash = "e66c7dff54cbd6bd94f091d0e82bc5136f2b8367e36989b23b099213c649ed9b"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake2.json"
-hash = "22b03a706b47ead697a8a568463bcc07eefa4b9fa3207a69aebad9f1d7dc707e"
+hash = "5540725d35ca391227944b5f9fb50599c83f670358c73ad2380dabf41ca86da1"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake3.json"
-hash = "e2abcd65294f3a0b62c1dc770b522df26b1c1868287fc6cd725fd97ba382045a"
+hash = "1ba3a14f2a0764473279cc5b37e8527ae3412b2247232170c5b2d41157900d21"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake4.json"
-hash = "95db2b48fa4e6d727c6e9fca9e7c50deb6362591ab7f94297e02a553eb91e7cc"
+hash = "bff3dc22f1413b39fbb49fcd6943249f9a9f09384dcbb7b0ca526cf993df9eb8"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake5.json"
-hash = "da621d937b8ff3bb2829b57172ddb8729b9f448c2aaf6eb3653235edb1d62096"
+hash = "eb474f75453bffae4b8048d849b38feb79b771553ef47282a493a6f48cea39d0"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice12.json"
-hash = "429e4790373081bb86c1c97d0a991b5ec9b130004204f96bd5d62ed598b8f6a6"
+hash = "1aa358f032220699f4dd7c6d941c801fc0a753470cdd1dba72b8a7a4c90c9101"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice13.json"
-hash = "f65375ed7b903611d3f2fef2a0d26ace042cc1d206aa0d00e724761bd8609245"
+hash = "18666eb298074bbf607f4ae214727f2f77fb6aec44da42ceb5a46ff8a3cd655e"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice14.json"
-hash = "880fce74d5f9cfe1846d70ea11cd337043c43190c802eecd20ebd22a1404b235"
+hash = "076a31efdd63d5889bf4b2f7477ee66580df8c004862399900303faeeda5af71"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice15.json"
-hash = "f5f0f38d4f6edfe305613a5c679e778b4683eca900d38324f771dcaa40771031"
+hash = "d8c36afefa45d0c7e5986585250986d5a50ae8ecce2083effe209a26eb7c284e"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice22.json"
-hash = "62b30c1932a1c03f63a06a78c029c81c30512b6d654e7d484846bdf36c9d935d"
+hash = "46d58c9d37705f564505952dd37da56cf267dd97b67759555cfc4438686ffefe"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice23.json"
-hash = "5679b4b9c93d8c20d546b1309da49015eb134d2faa90a519b41926ac1b7db854"
+hash = "10b63426f878444c6f2388930f99bbcc0fbf6f2f2c9b71d7c5265fafaec413ff"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice24.json"
-hash = "c2eb80fce4d64bb31356492df0a1b6e01bcf8096332a0e40391d60d796128d62"
+hash = "cf4f96ec3321f5ed5be5b073025e8f13170b9315f571f248f25ccf8165b0ad24"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice25.json"
-hash = "5555a3966f743bc8c514139ee163dabef6e788ba8c750ad1fe019f1d3e1986d3"
+hash = "ef7622d87fe7b5842260663aceacd08680006c747a153909ef97fd1d0b846ba8"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice32.json"
-hash = "44d85133ba4080f6e959c74d68a7ef41eb49825c393f3baea71d0e8bf9fca9c6"
+hash = "70df8ab8c811c550341a9df720353d325680839a88b91e94cf4e2eea920fc784"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice33.json"
-hash = "fc835224a0b71844c3c1a924670cca7e67d0efe5536be81fa88e89fc3cf1551f"
+hash = "655e61e8734f4710eee2797d691fed23c46d2a47f5203e46356a4cbd8e534c92"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice34.json"
-hash = "2f7cdb0f5eba26064e9e2a9b6c34c73bb75ff7bc46dad0b3099b2b2de439d16d"
+hash = "9e9c2939ef2822f070c977f4c888495697fed06e20cb372ef445d3043cd4090e"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice35.json"
-hash = "cc12c2e089ca75cbfc0d8ab46ea8d7d85327e641335dde62f84c9868caa910b5"
+hash = "c42f5303c54d15f71fd3f05bd5055b6f96fceb881288351b1d78f80f3d5e785d"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice42.json"
-hash = "075d6c0779732877e5354c3a74dcc6fd31c0e0eb75ec4f49ba7ca727058566ac"
+hash = "7f7828597b991e4afa787af097d0d6a6551bb46b0f3d421c370ea76473efd606"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice43.json"
-hash = "aec5efdfd69360de7350ee7bd3e5db8697bb68563468611114d8c653cbd0857e"
+hash = "3eafc23a8390e0ece31b30485b951bfff6a55a2ddd61acf1109abe2ac45683e9"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice44.json"
-hash = "37af1643bc4c8819be6c5b7a9fc3bdfee9d131d8de867bfc787b25098c26f8ad"
+hash = "85f25b747ebda4bdabcc3913bc223970d4d54c8bcbb3add9e3f19fcae905ecfe"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice45.json"
-hash = "1b42e5fab3ed7380976fd0b1d0aae18b99e24cb7140baed8e0604563e2265ada"
+hash = "aee709fa85875866e7e73db00e2b3dc831a55f88f7e7db7bc9a558d7e28a584c"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice52.json"
-hash = "f62cfc20e0566fd364ac500469533188f7845d5b9676ac6462eb07ea69107c54"
+hash = "4a6806f87533019e31777d528e7b4916c8b00f4338ccac316b46350726d8b712"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice53.json"
-hash = "b761410204c60d4642df82277ce823a60c15d4df01f6ae8222029589ceacea71"
+hash = "2510db17d80218ae111f85e7eaad57f477800eee7dbb7284cef0e8e5c0882b35"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice54.json"
-hash = "e7fcf20558594d79d3caf6e3a49012fc2e444393299a75b97ea0bc4251640a67"
+hash = "e7a14bf6e0f1ad2a2280d1727ddbcd8c32899bfbba1e9eba01631e09602c4f15"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice55.json"
-hash = "5b47f3bfe521a99918e639669d90892cc4118fb20827eaffebc06cc8861cc9d6"
+hash = "f549bcb5927ce524940f1ac99929cbde206abd08482b839a350c1b9f995c2ffe"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice62.json"
-hash = "5a53a605babc1a0af756c40415c192427e48b8d49d90a38b759b7fe0f4d0f7af"
+hash = "1b4287e035cfc8c34bf38b4d3dda02a8e74d3e41dcade0635b94e5e94e6560fc"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice63.json"
-hash = "ec482762a0d53f112df79956b6f2748c5e84399a8570522a8d69211aea16ba41"
+hash = "7308af6ad43801a7b91b92ed4846f3819186f0c89df323d6197d9c36c4089a47"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice64.json"
-hash = "b08c31f576b63a2150c9aa144144a43d41e54a2ddac20ed38b77f7010fa8418f"
+hash = "6204216baf5be95e81ce2cbfdf3c9dfe3938e735a0d008b48ade123820ec4af5"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/cake_slice65.json"
-hash = "a0338d72405b566514f953e8d34ac94ca01a0db2f1d6597e7806f33924cd93b9"
+hash = "03ffe3660d94bceec85c98c6578e3e283103a82393d50fc349b0f03dc945267a"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/carrots_stage0_1.json"
@@ -13676,23 +13884,23 @@ hash = "2f2e3581b4b0666c3dc52ab735cc855ce41ce140c9af10ab16e645a41d7c8faf"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/grass_block0.json"
-hash = "594ed5fb7ef8e8eee1797d96002eabc803d20a0abf424d8f443fa6042e8a6847"
+hash = "0a13102bf79849b558890f09fc97e39ffbbd3357bf3d248d1ec3b9492f373c83"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/grass_block1.json"
-hash = "f76640f3903ae24bc7a6cfcbafa4215537430266d086670cfc0762be53c24557"
+hash = "a28d1a270eda3d2b8870bcc152fc847ebbbd96a138d526b0d767be27a10fe433"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/grass_block2.json"
-hash = "57be7f3c28e6878e170eea7f48b4f29314648eafd6b75104320440b3640edb9b"
+hash = "cc679aca3a7fb91a4b994e8b83a4e9a72d1acc08865883758b06a025b37c1313"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/grass_block3.json"
-hash = "a45c363f6886f9bcde02ff1c7d3df4613617a81dc22b09671761a22407417669"
+hash = "3d165a9d86ba9b21eb5e4967388cf918097a66d2bec903834f927ecd97d2555d"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/grass_block4.json"
-hash = "fae99c97ce31c3521543cc7f0070ce7e58d93650b8f84520be0be0339ad5077c"
+hash = "eedb1e98fd6a32e82e1a99b36abc338285ab1e30d10918e37f8313c74773f51f"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/honeycomb_block1.json"
@@ -14220,11 +14428,11 @@ hash = "93d742c743b62446d79415b0fac2e0a3a87edb1a8b7010529f2a82d7b2568680"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/mycelium2.json"
-hash = "9c775b9511d183864002bb97f73d73f6bc31a2f1a3fa6a0a644f5147864debbd"
+hash = "7c56b70ba904e7c4b31c41b05d194b3ff3ee27ca2f880b8ba9d735b873539903"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/mycelium3.json"
-hash = "ac31fabc65d579536b791eafdcc3f23f2d72e5b1d89fcd96588c7cd8257332c9"
+hash = "8203f30dd6eb1f1bb424a9ee0b3eb08ac3e3d22e6d1712cac694dc42e9beb71c"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/nether_brick_wall_side.json"
@@ -14612,11 +14820,11 @@ hash = "8de0fe171a592dfa4808472f26304313d124125018a6c80ae3fdc146b807c619"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/podzol2.json"
-hash = "bf88b0e7b78a9334d99a491adc651c653936d74b982cf93c300e2e09101d683e"
+hash = "5614c04804e4b2c06a851820305b8a36ce99ad4dbde0b8ac3b896abbce40ec91"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/podzol3.json"
-hash = "48ae5e5d33eb0603692dd77ec9a1ce75b89c2ced6913ab1a07a37d34aeff679e"
+hash = "e21be97351bd47f1187a323d11f19eab6e780b0a17ceb33bdd1066976c9a5c18"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/models/block/polished_andesite.json"
@@ -18976,7 +19184,7 @@ hash = "93622e133d60c8423bd9dfcff050bb998b99a374a34fd687b5dbd9fc5faec999"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/textures/block/glass.png.mcmeta"
-hash = "cf2d412ac79dce064080947a51387dd7bd46fd80e621f92b0aa79729200a682f"
+hash = "d18f0d02de52ed284ec59dc5835de07ece1be1ae3720284c1f410c94e18f72db"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/textures/block/glass_ctm.png"
@@ -21956,7 +22164,7 @@ hash = "02c8140be395ccb3d44e25b480a566c9cc5467618a2d4865a78158b65a396e29"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/textures/block/sea_lantern.png.mcmeta"
-hash = "46a1ffb48bef008b5e95dcff62ba4c7baa4846b93b166a6f952ca27e53d34d93"
+hash = "b85efefc23a5531264d18bb62234a3fd36f8735a4aef0f2f3bb7cdd555cd8995"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/textures/block/sea_pickle.png"
@@ -22600,7 +22808,7 @@ hash = "23055cf6b4440b100f4fc41e9186c62e49c4cd743b1edcf63f1f417e28a7a778"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/textures/block/tinted_glass.png.mcmeta"
-hash = "75040abed24a321aa607df7f803fe3b39ae78a20cca8492a85320b4bb971e6d8"
+hash = "3db216fc0b6125335cf544ce16042689857685e3443023a211cb2f9acd455fd4"
 
 [[files]]
 file = "resourcepacks/XeKrSquarePattern-CABF/assets/minecraft/textures/block/tinted_glass_ctm.png"

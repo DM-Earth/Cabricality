@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:hanging_roots"
+    },
+    {
+      "fluid": "tconstruct:ender_slime",
+      "amount": 27000
+    }
+  ],
+  "results": [
+    {
+      "item": "promenade:dark_amaranth_roots"
+    }
+  ]
+}
