@@ -89,36 +89,29 @@ function process_laser(event) {
 			let blockZ = targetBlock.z
 
 			if (targetBlock.id.startsWith("kubejs:substrate_")) {
-				//		if (debug_laser == true) event.server.runCommandSilent("say " + targetBlock.id.replace("kubejs:substrate_", ""))
-				if (debug_laser == true) event.server.runCommandSilent(`say ${targetBlock.id.replace("kubejs:substrate_", "")}`)
+				if (debug_laser == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replace("kubejs:substrate_", "")}`)
 				substrateList.push(targetBlock.id.replace("kubejs:substrate_", ""))
-				//		event.server.runCommandSilent("setblock " + blockX + " " + blockY + " " + blockZ + " minecraft:air")
-				event.server.runCommandSilent(`setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
-				//		if (targetBlock.id == "kubejs:substrate_chaos") event.server.runCommandSilent("summon minecraft:item " + x + " " + yUp + " " + z + " {Health:32767, Item:{id:\"kubejs:substrate_chaos\",Count:1b}}")
-				if (targetBlock.id == "kubejs:substrate_chaos") event.server.runCommandSilent(`summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"kubejs:substrate_chaos",Count:1b}}`)
+				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
+				if (targetBlock.id == "kubejs:substrate_chaos") dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"kubejs:substrate_chaos",Count:1b}}`)
 			}
 
 			let outputItem = itemRecipes(targetBlock.id)
 			let outputBlock = blockRecipes(targetBlock.id)
 			if (outputItem != "") {
-				//		event.server.runCommandSilent("setblock " + blockX + " " + blockY + " " + blockZ + " minecraft:air")
-				event.server.runCommandSilent(`setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
-				//		event.server.runCommandSilent("summon minecraft:item " + blockX + " " + blockY + " " + blockZ + " {Health:32767, Item:{id:\"" + outputItem + "\",Count:1b}}")
-				event.server.runCommandSilent(`summon minecraft:item ${blockX} ${blockY} ${blockZ} {Health:32767, Item:{id:"${outputItem}",Count:1b}}`)
+				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
+				dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${blockX} ${blockY} ${blockZ} {Health:32767, Item:{id:"${outputItem}",Count:1b}}`)
 			}
 			if (outputBlock != "") {
-				//		event.server.runCommandSilent("setblock " + blockX + " " + blockY + " " + blockZ + " " + outputBlock)
-				event.server.runCommandSilent(`setblock ${blockX} ${blockY} ${blockZ} ${outputBlock}`)
+				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} ${outputBlock}`)
 			}
 		}
 		if (debug_laser == true) event.server.runCommandSilent("say " + substrateList.toString() + " seed " + seedL)
-		// if (debug_laser == true) event.server.runCommandSilent(`say ${substrateList.toString} seed ${seedL}`)
 
 		let unifiedSubstrates = substrateList.sort().toString()
 		let outputChaos = chaosT(unifiedSubstrates, seedL, event)
 		if (outputChaos != "") {
 			//		event.server.runCommandSilent("summon minecraft:item " + x + " " + yUp + " " + z + " {Health:32767, Item:{id:\"kubejs:substrate_" + outputChaos + "\",Count:1b}}")
-			event.server.runCommandSilent(`summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"kubejs:substrate_${outputChaos}",Count:1b}}`)
+			dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"kubejs:substrate_${outputChaos}",Count:1b}}`)
 		}
 
 		for (let i = length; i >= 1; i = i - 1) {
@@ -133,8 +126,7 @@ function process_laser(event) {
 			explosion.explode()
 		}
 		if (Math.random() > 0.5) {
-			//	event.server.runCommandSilent("setblock " + x + " " + yUp + " " + z + " minecraft:water")
-			event.server.runCommandSilent(`setblock ${x} ${yUp} ${z} minecraft:water`)
+			dimensional_commanding(event.server, event.block.dimension, `setblock ${x} ${yUp} ${z} minecraft:water`)
 		}
 	}
 }

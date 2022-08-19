@@ -52,8 +52,8 @@ onEvent("block.right_click", event => {
       let y = block.y
       let x = block.x
       let z = block.z
-      event.server.runCommandSilent("fill " + (x+1) + " " + y + " " + (z+1) + " " + (x-1) + " " + (y-(engine_height+engine_end_height+3)) + " " + (z-1) + " minecraft:air")
-      event.server.runCommandSilent(`summon minecraft:item ${x} ${y} ${z} {Item:{id:"ad_astra:${material_id}_engine",Count:1b}}`)
+      dimensional_commanding(event.server, event.block.dimension, "fill " + (x+1) + " " + y + " " + (z+1) + " " + (x-1) + " " + (y-(engine_height+engine_end_height+2)) + " " + (z-1) + " minecraft:air")
+      dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${y} ${z} {Item:{id:"ad_astra:${material_id}_engine",Count:1b}}`)
     }
   }
 })

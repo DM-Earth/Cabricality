@@ -51,9 +51,9 @@ onEvent("block.right_click", event => {
       let ZP = z + 1
       let ZM = z -1 
 
-      event.server.runCommandSilent("fill " + XP + " " + y + " " + z + " " + XM + " " + YH + " " + z + " minecraft:air")
-      event.server.runCommandSilent("fill " + x + " " + y + " " + ZP + " " + x + " " + YH + " " + ZM + " minecraft:air")
-      event.server.runCommandSilent(`summon minecraft:item ${x} ${y} ${z} {Item:{id:"ad_astra:${material_id}_tank",Count:1b}}`)
+      dimensional_commanding(event.server, event.block.dimension, "fill " + XP + " " + y + " " + z + " " + XM + " " + YH + " " + z + " minecraft:air")
+      dimensional_commanding(event.server, event.block.dimension, "fill " + x + " " + y + " " + ZP + " " + x + " " + YH + " " + ZM + " minecraft:air")
+      dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${y} ${z} {Item:{id:"ad_astra:${material_id}_tank",Count:1b}}`)
     }
   }
 })

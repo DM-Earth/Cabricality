@@ -1,5 +1,5 @@
 onEvent("recipes", event => {
-  event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
+	event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
 	let gear = KJ("sturdy_mechanism")
 	let plastic = KJ("matter_plastics")
 	let machine = AE2("controller")
@@ -17,12 +17,12 @@ onEvent("recipes", event => {
 		G: gear,
 		S: matrix
 	})
-  let smithAndMechCraft = (r, i1, i2) => {
+	let smithAndMechCraft = (r, i1, i2) => {
 		event.remove({ output: r })
 		event.smithing(r, i1, i2)
 		event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
 	}
-  smithAndMechCraft(AR("rocket_launch_pad"), IV("tin_plate"), plastic)
+	smithAndMechCraft(AR("rocket_launch_pad"), IV("tin_plate"), plastic)
 	smithAndMechCraft(AR("cryo_freezer"), IV("condenser_mk4"), plastic)
 	smithAndMechCraft(AR("oxygen_sensor"), MC("observer"), plastic)
 	smithAndMechCraft(AR("fuel_refinery"), IV("smelter_mk4"), plastic)
@@ -47,9 +47,9 @@ onEvent("recipes", event => {
 		})
 	})
 	event.remove({ type: AR("compressing") })
-	event.remove({ type: AR("oxygen_conversion") })
+	//event.remove({ type: AR("oxygen_conversion") })
 	event.remove({ type: AR("nasa_workbench") })
-	event.remove({ output: AR("oxygen_loader") })
+	//event.remove({ output: AR("oxygen_loader") })
 	event.remove({ output: AR("oxygen_distributer") })
 	event.remove({ output: AR("energizer") })
 	event.remove({ output: AR("water_pump") })
@@ -95,6 +95,6 @@ onEvent("recipes", event => {
 		["ad_astra:raw_calorite", "kubejs:crushed_calorite_ore"]
 	]
 	ore_map.forEach(mapped => {
-		event.replaceOutput({type: CR("crushing")}, mapped[0], mapped[1])
+		event.replaceOutput({ type: CR("crushing") }, mapped[0], mapped[1])
 	})
 })

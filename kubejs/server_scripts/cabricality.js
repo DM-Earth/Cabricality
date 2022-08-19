@@ -23,3 +23,7 @@ let wood_types = [
 	AP("twisted"),
 	TC("bloodshroom"), TC("skyroot"), TC("greenheart")
 ]
+
+function dimensional_commanding(server, dimension, command) {
+	server.runCommandSilent("execute in " + dimension.toString() + " run " + command)
+}

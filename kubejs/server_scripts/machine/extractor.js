@@ -11,7 +11,7 @@ onEvent("block.right_click", event => {
 			x = event.block.x
 			y = event.block.y - 1
 			z = event.block.z
-			event.server.runCommandSilent("setblock " + x + " " + y + " " + z + " kubejs:resin")
+			dimensional_commanding(event.server, event.block.dimension, "setblock " + x + " " + y + " " + z + " kubejs:resin")
 		}
 
 		//	Smelter
@@ -260,14 +260,14 @@ onEvent("block.right_click", event => {
 			smeltChance = smeltChance * 1.2
 			if (Math.random() <= smeltChance) {
 				//		event.server.runCommandSilent("setblock " + downPos + " " + downBlock)
-				event.server.runCommandSilent(`setblock ${downPos} ${downBlock}`)
+				dimensional_commanding(event.server, event.block.dimension, `setblock ${downPos} ${downBlock}`)
 			} else {
 				//		event.server.runCommandSilent("setblock " + downPos + " " + "minecraft:air")
-				event.server.runCommandSilent(`setblock ${downPos} minecraft:air`)
+				dimensional_commanding(event.server, event.block.dimension, `setblock ${downPos} minecraft:air`)
 			}
 			smeltSpeed2 = 1.05 - smeltSpeed
 			//	if (Math.random() <= smeltSpeed2) event.server.runCommandSilent("setblock " + upPos + " minecraft:air")
-			if (Math.random() <= smeltSpeed2) event.server.runCommandSilent(`setblock ${upPos} minecraft:air`)
+			if (Math.random() <= smeltSpeed2) dimensional_commanding(event.server, event.block.dimension, `setblock ${upPos} minecraft:air`)
 		}
 	}
 })
