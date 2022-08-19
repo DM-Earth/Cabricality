@@ -32,7 +32,7 @@ onEvent("ponder.registry", (event) => {
             scene.idle(60);
 
             scene.addKeyframe();
-            scene.showControls(50, [4, 3, 2], "right").leftClick();
+            scene.showControls(50, [4, 3, 2], "right").rightClick();
             scene.idle(20);
             scene.particles.simple(5, "explosion", [3, 3, 2]).density(3).motion([0, 0, 0]).area([-5, 3, 2]).lifetime(15);
             scene.world.modifyBlocks([0, 0, 0], "minecraft:barrier");
@@ -52,7 +52,7 @@ onEvent("ponder.registry", (event) => {
                 .placeNearTarget();
             scene.idle(60);
 
-            scene.showControls(70, [4, 3, 2], "right").leftClick();
+            scene.showControls(70, [4, 3, 2], "right").rightClick();
             scene.idle(20);
             scene.particles.simple(5, "explosion", [3, 3, 2]).density(3).motion([0, 0, 0]).area([-5, 3, 2]).lifetime(15);
             scene.world.modifyBlocks([0, 0, 4], "minecraft:barrier");
@@ -220,5 +220,148 @@ onEvent("ponder.registry", (event) => {
                 .placeNearTarget();
             scene.world.hideSection([0, 1, 2, 3, 1, 2], Facing.EAST);
             scene.idle(90);
-        })
+        });
+
+
+
+
+
+    event.create("indrev:controller")
+        .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", (scene, util) => {
+            scene.configureBasePlate(0, 0, 7);
+            scene.showBasePlate();
+            scene.setSceneOffsetY(-3);
+            scene.world.setBlocks([3, 1, 3], "indrev:controller", false);
+            scene.idle(10);
+
+            scene.world.showSection([3, 1, 3, 3, 1, 3], Facing.DOWN);
+            scene.text(60, "Congratulations! You're just one step away from going to the Moon!")
+                .pointAt(util.vector.centerOf(3, 1, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.idle(70);
+
+            scene.world.setBlocks([3, 1, 3], "minecraft:air", true);
+            scene.text(60, "But before that happens, you'll need to do some preparations")
+                .pointAt(util.vector.centerOf(3, 1, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.idle(20);
+            scene.world.setBlocks([3, 1, 3], "minecraft:air", true);
+            scene.idle(50);
+
+            scene.text(60, "For starters, you'll need rocket engines and rocket tanks")
+                .pointAt(util.vector.topOf(1, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            const engine = scene.world.createItemEntity([3, 1, 3], util.vector.of(-0.1, 1, 0.2), "ad_astra:steel_engine");
+            const tank = scene.world.createItemEntity([3, 1, 3], util.vector.of(0.1, 1, 0), "ad_astra:steel_tank");
+            scene.idle(70);
+
+            scene.text(60, "Like real rockets, these things are huge, so you'll need multi-block contraptions to make them")
+                .pointAt(util.vector.topOf(1, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.idle(70);
+
+            scene.addKeyframe();
+            scene.idle(10);
+
+            const t1rocket = scene.world.createEntity("ad_astra:tier_1_rocket", [0, 12, 3]);
+            const t2rocket = scene.world.createEntity("ad_astra:tier_2_rocket", [2, 12, 3]);
+            const t3rocket = scene.world.createEntity("ad_astra:tier_3_rocket", [4, 12, 3]);
+            const t4rocket = scene.world.createEntity("ad_astra:tier_4_rocket", [6, 12, 3]);
+            scene.text(60, "There're 4 tiers of rockets, each made up of steel, desh, ostrum, and calorite")
+                .pointAt(util.vector.topOf(1, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            for (var i = 0; i < 60; i++) {
+                scene.world.modifyEntity(t1rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.24) < 1 ? 1 : e.getY() - 0.24, e.getZ()); });
+                scene.world.modifyEntity(t2rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.27) < 1 ? 1 : e.getY() - 0.27, e.getZ()); });
+                scene.world.modifyEntity(t3rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.32) < 1 ? 1 : e.getY() - 0.32, e.getZ()); });
+                scene.world.modifyEntity(t4rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.2) < 1 ? 1 : e.getY() - 0.21, e.getZ()); });
+                scene.idle(1);
+            }
+            scene.world.modifyEntity(engine, (e) => { e.kill(); });
+            scene.world.modifyEntity(tank, (e) => { e.kill(); });
+            scene.idle(20);
+
+            scene.text(60, "Higher tiers require resources from the planets lower tiers could go to")
+                .pointAt(util.vector.topOf(1, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.idle(70);
+
+            scene.text(60, "We'll start with tier 1, which is made up of steel")
+                .pointAt(util.vector.topOf(1, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.idle(20);
+            scene.world.modifyEntity(t2rocket, (e) => { e.kill(); });
+            scene.world.modifyEntity(t3rocket, (e) => { e.kill(); });
+            scene.world.modifyEntity(t4rocket, (e) => { e.kill(); });
+            for (var i = 0; i < 20; i++) {
+                scene.world.modifyEntity(t1rocket, (e) => { e.setPos(e.getX() + 6 / 20, 1, e.getZ() - 2 / 20); });
+                scene.idle(1);
+            }
+            scene.idle(40);
+
+            scene.addKeyframe();
+            let layer = 1;
+            scene.text(100, "For base, we need iron plates and pillars. That's the same for all engines")
+                .pointAt(util.vector.topOf(3, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.rotateCameraY(-105);
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(50);
+
+            layer = 2;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(70);
+
+            scene.text(150, "For the layers above that, we'll need to use the material that each tier requires")
+                .pointAt(util.vector.topOf(3, 4, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            layer = 3;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(50);
+
+            layer = 4;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(50);
+
+            layer = 5;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(70);
+
+            layer = 6;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.world.hideSection([3, 6, 3], Facing.UP);
+            scene.idle(70);
+
+            scene.text(60, "Finally, we seal the top with the block of the material")
+                .pointAt(util.vector.centerOf(3, 6, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.world.setBlocks([3, 6, 3], "ad_astra:steel_block", false);
+            scene.world.showSection([3, 6, 3], Facing.DOWN);
+
+            scene.idle(70);
+
+            scene.addKeyframe();
+            scene.showControls(30, [3, 8, 4.2], "down").rightClick();
+            scene.idle(2);
+            scene.world.modifyEntity(t1rocket, (e) => { e.kill(); });
+            scene.idle(18);
+            scene.world.setBlocks([0, 1, 0, 6, 6, 6], "minecraft:air", false);
+            const engine2 = scene.world.createItemEntity([3, 3, 3], util.vector.of(0.01, 0, -0.02), "ad_astra:steel_engine");
+            scene.rotateCameraY(105);
+            scene.idle(20);
+            scene.text(60, "And there you have it, the engine of a rocket!")
+                .pointAt(util.vector.centerOf(3, 1, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+        });
 })
