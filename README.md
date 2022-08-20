@@ -11,7 +11,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 ## Compare Between Original CAB Modpack
 
-- [x] `Update` [Create 0.3.2g → Create 0.5](https://github.com/Creators-of-Create/Create)
+- [x] `Update` [Forge Create 0.3.2g → Fabric Create 0.5.0c](https://github.com/Creators-of-Create/Create)
 - [x] `Update` [TConstruct](https://github.com/SlimeKnights/TinkersConstruct) [→ Fabric port by AlphaMode](https://github.com/Alpha-s-Stuff/TinkersConstruct)
 - [x] `Change` [Thermal Series](https://github.com/cofh) [→ Industrial Revolution, ](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
 - [x] `Change` [Advanced Rocketry](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Ad Astra!](https://modrinth.com/mod/ad-astra-fabric)
@@ -61,7 +61,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 ## CABF 与 CAB 的核心模组对照
 
-- [x] `更新` [Forge 机械动力 0.3.2g → Fabric 机械动力 0.5（开发版）](https://github.com/Creators-of-Create/Create)
+- [x] `更新` [Forge 机械动力 0.3.2g → Fabric 机械动力 0.5.0c](https://github.com/Creators-of-Create/Create)
 - [x] `更新` [匠魂 3](https://github.com/SlimeKnights/TinkersConstruct) [→ 匠魂 3（AlphaMode Fabric 移植）](https://github.com/Alpha-s-Stuff/TinkersConstruct)
 - [x] `更换` [热力膨胀](https://github.com/cofh) [→ 工业革命、](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
 - [x] `更换` [高级火箭](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ 星际次元](https://www.curseforge.com/minecraft/mc-mods/moon-and-space-dimensions-fabric)
