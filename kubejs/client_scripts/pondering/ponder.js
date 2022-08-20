@@ -226,8 +226,8 @@ onEvent("ponder.registry", (event) => {
 
 
 
-    event.create("ad_astra:steel_engine")
-        .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", (scene, util) => {
+    event.create("indrev:controller")
+        .scene("rocket_introduction", "Launching Rockets 101", "cabricality:rocket_engine", (scene, util) => {
             scene.configureBasePlate(0, 0, 7);
             scene.showBasePlate();
             scene.setSceneOffsetY(-3);
@@ -301,18 +301,28 @@ onEvent("ponder.registry", (event) => {
             scene.world.modifyEntity(t3rocket, (e) => { e.kill(); });
             scene.world.modifyEntity(t4rocket, (e) => { e.kill(); });
             for (var i = 0; i < 20; i++) {
-                scene.world.modifyEntity(t1rocket, (e) => { e.setPos(e.getX() + 6 / 20, 1, e.getZ() - 2 / 20); });
+                scene.world.modifyEntity(t1rocket, (e) => { e.setPos(e.getX() + 3 / 20, 1, 3); });
                 scene.idle(1);
             }
             scene.idle(40);
+        })
 
-            scene.addKeyframe();
+
+
+
+
+    event.create("ad_astra:steel_engine")
+        .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", (scene, util) => {
+            scene.configureBasePlate(0, 0, 7);
+            scene.showBasePlate();
+            scene.setSceneOffsetY(-3);
+            scene.idle(10);
+
             let layer = 1;
             scene.text(100, "For base, we need iron plates and pillars. That's the same for all engines")
                 .pointAt(util.vector.topOf(3, 2, 3))
                 .colored(PonderPalette.WHITE)
                 .placeNearTarget();
-            scene.rotateCameraY(-105);
             scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
             scene.idle(50);
 
@@ -341,6 +351,7 @@ onEvent("ponder.registry", (event) => {
             scene.world.hideSection([3, 6, 3], Facing.UP);
             scene.idle(70);
 
+            scene.addKeyframe();
             scene.text(60, "Finally, we seal the top with the block of the material")
                 .pointAt(util.vector.centerOf(3, 6, 3))
                 .colored(PonderPalette.WHITE)
@@ -350,18 +361,117 @@ onEvent("ponder.registry", (event) => {
 
             scene.idle(70);
 
-            scene.addKeyframe();
             scene.showControls(30, [3, 8, 4.2], "down").rightClick();
-            scene.idle(2);
-            scene.world.modifyEntity(t1rocket, (e) => { e.kill(); });
-            scene.idle(18);
+            scene.idle(20);
             scene.world.setBlocks([0, 1, 0, 6, 6, 6], "minecraft:air", false);
             const engine2 = scene.world.createItemEntity([3, 3, 3], util.vector.of(0.01, 0, -0.02), "ad_astra:steel_engine");
-            scene.rotateCameraY(105);
             scene.idle(20);
             scene.text(60, "And there you have it, the engine of a rocket!")
                 .pointAt(util.vector.centerOf(3, 1, 3))
                 .colored(PonderPalette.WHITE)
                 .placeNearTarget();
+        })
+
+
+
+
+    event.create("ad_astra:steel_tank")
+        .scene("rocket_tank", "Making a Rocket Tank", "cabricality:rocket_tank", (scene, util) => {
+            scene.configureBasePlate(0, 0, 7);
+            scene.showBasePlate();
+            scene.setSceneOffsetY(-3);
+            scene.idle(10);
+            scene.text(90, "For rocket tanks, you may want to build it two blocks up from the ground for convenience")
+            scene.world.showSection([3, 1, 3, 3, 2, 3], Facing.EAST);
+            scene.world.showSection([5, 1, 5], Facing.NORTH);
+            scene.idle(5);
+            scene.world.showSection([5, 2, 5], Facing.NORTH);
+            scene.idle(5);
+            scene.world.showSection([5, 3, 5], Facing.NORTH);
+            scene.idle(5);
+            scene.world.showSection([5, 4, 5], Facing.NORTH);
+            scene.idle(85);
+
+            scene.world.hideSection([5, 1, 5, 5, 4, 5], Facing.NORTH);
+            scene.addKeyframe();
+            scene.text(60, "Start with the block of the material")
+                .pointAt(util.vector.topOf(3, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.world.showSection([3, 3, 3], Facing.DOWN);
+            scene.idle(70);
+
+            let layer = 3;
+            scene.text(100, "Then add plates to its sides")
+                .pointAt(util.vector.topOf(3, 2, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.world.setBlocks([5, 1, 5, 5, 4, 5], "minecraft:air", false);
+            scene.world.setBlocks([3, 1, 3, 3, 2, 3], "minecraft:air", true);
+            scene.world.showSection([3, layer, 2], Facing.DOWN);
+            scene.world.showSection([3, layer, 4], Facing.DOWN);
+            scene.world.showSection([2, layer, 3], Facing.DOWN);
+            scene.world.showSection([4, layer, 3], Facing.DOWN);
+            scene.idle(110);
+
+            layer = 4;
+            scene.text(200, "Use pillars to build up and add fuel in them")
+                .pointAt(util.vector.topOf(3, 4, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.world.showSection([3, layer, 2], Facing.DOWN);
+            scene.world.showSection([3, layer, 4], Facing.DOWN);
+            scene.world.showSection([2, layer, 3], Facing.DOWN);
+            scene.world.showSection([4, layer, 3], Facing.DOWN);
+            scene.idle(25);
+            scene.world.showSection([3, layer, 3], Facing.DOWN);
+            scene.idle(25);
+
+            layer = 5;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(50);
+
+            layer = 6;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(50);
+
+            layer = 7;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(70);
+
+            layer = 8;
+            scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
+            scene.idle(70);
+
+            layer = 9;
+            scene.world.showSection([3, layer, 2], Facing.DOWN);
+            scene.world.showSection([3, layer, 4], Facing.DOWN);
+            scene.world.showSection([2, layer, 3], Facing.DOWN);
+            scene.world.showSection([4, layer, 3], Facing.DOWN);
+            scene.idle(70);
+
+            scene.addKeyframe();
+
+            scene.text(60, "Finally, we seal the top with the block of the material")
+                .pointAt(util.vector.centerOf(3, 9, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
+            scene.world.showSection([3, 9, 3], Facing.DOWN);
+
+            scene.idle(70);
+
+            scene.world.hideSection([0, 4, 0, 6, 9, 6], Facing.UP);
+            scene.showControls(100, [3, 4.3, 3], "down").rightClick();
+            scene.idle(40);
+            scene.world.showSection([0, 4, 0, 6, 9, 6], Facing.DOWN);
+            scene.idle(40);
+            scene.world.setBlocks([0, 1, 0, 6, 9, 6], "minecraft:air", false);
+            const tank2 = scene.world.createItemEntity([3, 3, 3], util.vector.of(0.01, 0, -0.02), "ad_astra:steel_tank");
+            scene.idle(20);
+            scene.text(60, "After right-clicking the base block on the bottom, you'll get a rocket tank")
+                .pointAt(util.vector.centerOf(3, 1, 3))
+                .colored(PonderPalette.WHITE)
+                .placeNearTarget();
         });
+
 })
