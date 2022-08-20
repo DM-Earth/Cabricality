@@ -82,7 +82,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 ### 特殊内容
 
-- [x] 混沌炼金（未完善）
+- [x] 混沌炼金（待完善）
 - [x] 交易系统
 - [x] 数字运算系统
 
