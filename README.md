@@ -63,8 +63,8 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 - [x] `更新` [Forge 机械动力 0.3.2g → Fabric 机械动力 0.5.0c](https://github.com/Creators-of-Create/Create)
 - [x] `更新` [匠魂 3](https://github.com/SlimeKnights/TinkersConstruct) [→ 匠魂 3（AlphaMode Fabric 移植）](https://github.com/Alpha-s-Stuff/TinkersConstruct)
-- [x] `更换` [热力膨胀](https://github.com/cofh) [→ 工业革命、](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
-- [x] `更换` [高级火箭](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ 星际次元](https://www.curseforge.com/minecraft/mc-mods/moon-and-space-dimensions-fabric)
+- [x] `替换` [热力膨胀](https://github.com/cofh) [→ 工业革命、](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
+- [x] `替换` [高级火箭](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Ad Astra!](https://modrinth.com/mod/ad-astra-fabric)
 - [x] `不变` [应用能源 2](https://github.com/AppliedEnergistics/Applied-Energistics-2)
 
 ## CABF 已经实现的玩法
