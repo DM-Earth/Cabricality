@@ -737,6 +737,242 @@ file = "config/openloader/resources/cabf-assets/pack.mcmeta"
 hash = "7af188485bb933f8bc342b061dbdd9817cbb0017658146a8e59df8c069b86c40"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag.json"
+hash = "851a42ac241d1dab0df5ae5be00966f9c45ce5e560300d17539aa8f95c1a992b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_blue.json"
+hash = "9bfd77c8a57e0b01b534b4feb66174ba002ac4a31e6afca1c4d81ca53e7f899e"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_brown.json"
+hash = "25fefc1b9820eb5939be0bbf5793f594cddf753aa6cbd7cbcda4d0997ae028f5"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_cyan.json"
+hash = "e57a61b288560d2391c70295f271c34531ceae26720b273ef5c7f520248ce6ad"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_gray.json"
+hash = "caab754bac3be6cb2278b2359bf7110603eb22b94925e7b80d4e6583d945d79a"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_green.json"
+hash = "a78002cfed5d5b8e18c9feb23dac243bf366673e1a4c6b83431cd25b3ed55779"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_light_blue.json"
+hash = "79b2c713083008a63cd7aa2ba0f6f0db94753ba229aaaaf1466941a9132907c8"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_lime.json"
+hash = "68d91f149a117f7eaceda33236504b62859b98be1e19bf261765b30a31e214e5"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_magenta.json"
+hash = "7b2bfc6d1dc189b89d182ecabf83963a2eac7c4b8d109b6e50bcb25fc91d140e"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_orange.json"
+hash = "ecbfbfcd0a82272fbb72654785fd1025abe0c3352d5670ad76def96701e3696f"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_pink.json"
+hash = "784a5319a18c612169df9e09ac87d3501ad2c194f696e69ffe8fc3fbba5a9aa3"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_purple.json"
+hash = "927b36954f5f3b7445a60cdde55a25f6449df6100c5923e846fb818c7985cd3e"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_red.json"
+hash = "2172bd57da7f7bbb6df7138ccc29550514697befcf19d6ef1d09a6f62d3a3f0c"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_yellow.json"
+hash = "e6a950b62a08220cc55c5383ee75c47cae1874d795601402914324e3ae5c7090"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/flag.json"
+hash = "c93f9109581a583b7e6ccb1906921aa09f75f4dc6734c7825404f9ff81dfcd5d"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/flag_down.json"
+hash = "4959c60e7f5cae919c6174660d016ac5e263e4f1e607a7d7f3b3f9b5352a48c4"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/flag_up.json"
+hash = "70a6f87c4460c6e6b1423e5641535d21c3e1d0f05febd8552b9c2e537b354b8f"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/launch_pad.json"
+hash = "64bd9fcffc1c107d86fdc78eb1976c5a8211ec4ffa0ee9f8f8fbe474ed7b0a8f"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/launch_pad_base.json"
+hash = "b6a0054f26fb8af07dce2722ec7dc2e85420549e592a78a9b11b5a36f31d0367"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks.png"
+hash = "5af47b6166d20d29edb2b8b4617aed168ae7f7a35422a70904c667f554bbc9d7"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks.png.mcmeta"
+hash = "ebf5a733a4432b24fb31844c69002a6b28de3675c7fd2c8f7d0472dcfabe2f52"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks_ctm.png"
+hash = "5905fa2837b324a042cba8e2c91c4bdd2695fac255068a5c0861b36b3915b2b2"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_block.png"
+hash = "0d18ec3bc167eaac91cd7745ecf5e5015364c1cef8b26b77b8380b5e976ebe05"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_block.png.mcmeta"
+hash = "d352f2e622326e6fba696951fb4e27852f67a44b370d0fb345b82066df5e4255"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_block_ctm.png"
+hash = "03c4dace5dc849d22fd9ce77eeb93c57f0b141a3cfd619a4efbe414668a2b433"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_pillar.png"
+hash = "d93de422c1554b423e99b7d949774c8429cab8ff1f2db4ed0ce7507d28fbc067"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_pillar.png.mcmeta"
+hash = "2e4a63a05e98e82c67d25749c951d988401f2ec95e3942cbed729672467717ab"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_pillar_ctm.png"
+hash = "c3cc1f769c7a94475a21d1433c30a8d2bea0b8d774e861b6cbc7987fde925034"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_pillar_top.png"
+hash = "c851c6430fc2fd4d6c59abfd504f92c40e24b07228e3bc81716cdeb23e4a288f"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_pillar_top.png.mcmeta"
+hash = "ce1015b00cb9396c01de2b8839dfb535772f8bf5680a17b7e4f1ec6aa76da770"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_pillar_top_ctm.png"
+hash = "f90aa958bc392e96c50a1509c11ee794362182c2a39b4a123fef565ab4086959"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_blue.png"
+hash = "ad3e8630de44ecba802938c93bb0990236ad32c71511d3953d3e09bf63c38f9d"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_brown.png"
+hash = "6ca4cfb8b4d63860998a44689de6bb2605d76d6b2c6b04f8c4f85f74cda26f24"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_cyan.png"
+hash = "9cb68ce60733fb1dbf42c1b19d9cea8a6211e01273ccae5e5a878ec19a391000"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_gray.png"
+hash = "44f7d00163ca669cb226507b4bddfe693d5371e5fbae212fc5f116df2c46a4b9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_green.png"
+hash = "58078accf68c68902a6fe3548490c8b971c6aebe532547218f945fc6ede585b6"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_light_blue.png"
+hash = "f3b4a02a150fa5d9db9fe9dd93351653c3af249f1e381d82ff3813cfade64a60"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_lime.png"
+hash = "c052eae0a3b7a7faf36ba247c7c6d307658c3df57095623af72a3db129d558b9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_magenta.png"
+hash = "bf5b3924973552e0e70a3d38542f65a2898bd8651b8d62786486d12996bc2a50"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_orange.png"
+hash = "2ebb71a9d4bc5dae7689c696e5013933dc3f59442ca21bc74727049199bcec1c"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_pink.png"
+hash = "4ee602ca13c4f3b69e81ac3a346ddd9e1e4037638d82bf3c02764d6db916af90"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_purple.png"
+hash = "2314fe06c405a59685fb456dcf26c6ae427623cf1b6835de4948aeb060bc32d2"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_red.png"
+hash = "e635b518003545d79f56479b6048b45fc3b22b10eab7fa087f939858010686ff"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_white.png"
+hash = "a308b334373031664a13653225ba2138245470f3ee74630e0905865a1836078b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_yellow.png"
+hash = "2052081d0eea5a18f9415cda8600fe4a21265ef5c7d1493fffca88ea6d98cbd1"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/blue_iron_pillar.png"
+hash = "176d4ee59e43115dd52039c1c6cd4183b9c9c6567cc0ce4522072a0c046a548a"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/blue_iron_pillar_top.png"
+hash = "7aa6e3f4c477879e8f9f12e2f4e65fa08c9c472269b450bab68257ec51e20546"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar.png"
+hash = "f5611060274877785aad6a981a17ec5d0fd71bd4e03034f5579e16159c80dcdd"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar.png.mcmeta"
+hash = "6eab8bab2b845803e25fd9376c628ca560e940d8b9db8caf6e7567da4386c3a7"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_ctm.png"
+hash = "3656716e33073c1dd330602888e170f5030ba9ccc7471d342b76ece2084510e9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_top.png"
+hash = "e1e08a1b3d56b6173b0640c536af0bd8ef61a3e8d734e13e99aabb5138f1b07b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_top.png.mcmeta"
+hash = "7abf3113d9f057960bc591d1138dd6a558c430b4ae35d1faef803f75138997dd"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_top_ctm.png"
+hash = "87d7c1ab881b031d6be23944ab4a5796f1f177826de5c1f2b1873c9f694b5665"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/marked_iron_pillar.png"
+hash = "1ca6e3036943942ec5655244b95c8f16ab0abc489a52a6e33f099be7a020229b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/marked_iron_pillar_top.png"
+hash = "85516bad5356ad68acac4db538bb711d1622a6a0e981efe4dc58e6c9d82c65ae"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad.png"
+hash = "ed5aab2cf6d3f03d02650668f26fce37b34ba09b9a3ffb691937eaee25c58a79"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad_ctm.png"
+hash = "fb9923d53277a7ea616ee82b53af62f33d81ddd815a5c7739262efff84ad3f2b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad_silent.png"
+hash = "8f75974fe718ff98c13632ac8ed564715f8d7556c864e389bbbea9f153bcaf59"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad_silent.png.mcmeta"
+hash = "faf4222d47475b637a6413752159323bba05517952c8397529842086acac76fe"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_calorite.png"
 hash = "2ff10c4fcf55a13a53e8955f53f42b5aebfdc8df3c0987a882406f120ea194dd"
 
@@ -826,35 +1062,35 @@ hash = "e2cbef8a0cc8a2f1a0cf1d3d9a8125b6e7e00a06a3e488e147b8ab50ddb4dd65"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk1.json"
-hash = "9c96bb3f2c4870ba74c6fdcf58de4cdb7ffdaae757a38ed16e67467a0af87480"
+hash = "6dfa83d1d81af1dcb980f8b1b6d05856c0347e4a0ff2dd4ce342c851f59b40bb"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk2.json"
-hash = "2744d055ce0f763efa1d8e0d704a0907271cca2b1abca6148f578197e3aee2d8"
+hash = "197d61795f03df576121c182d54d54c6f16fab75c18242aa62e280b32bf9b3ce"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk3.json"
-hash = "7a001753daf00de3fc1c45f224a8634404384979347fdb3f22cf7ba0ffe944be"
+hash = "c84410cb8a5036d8cf5720a06181ffe8407f40ac5cc96a63f7c180e944947ecc"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk4.json"
-hash = "266fdfa76a74bca2c84f9bf19915f3dd0dca94c77838216d1cb487f11ff38bff"
+hash = "edbb341a3fa3ab7b0af5048bd8f64509822a6498d75e8d86ce5c1ad4752cd2cc"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk1.json"
-hash = "281477ce5efbd7deea3f8c23d350cda6190b172d725314334c699c66b3e48f3d"
+hash = "59f10d32ca8e0f4dd64adffe7f068c61f5822fc9df596ec91948cb3b071c008d"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk2.json"
-hash = "f2d272d3cb85959ded5112db986d7605827816732fe4bdb2a658a1d2e4d1f228"
+hash = "1ddf17d8cf3ad9ddbe83112010d0d310912e7c35d10912c55832442b3c41fc0e"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk3.json"
-hash = "df8501e2f758701db1bcd0f58db038712f974265051be01c7858b807823e7389"
+hash = "a6b78181478181bea01fc434738d950c969b50ef200404e8da580a20adbd60b4"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk4.json"
-hash = "2f1798f86620cf7e2eabdcec8a1d28273c9affd844c9dbc067eaee6f7bb84f80"
+hash = "40edf1f5366f611eaeeea8c05086b20a27f9f0908106556765171f7cd854bc7a"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/biomass_generator.png"
@@ -874,7 +1110,7 @@ hash = "5862b0c8376bf8a19e5b6289f98063a53ad775d33c1e7dedcebeba30adbce8ed"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk1.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk2.png"
@@ -882,7 +1118,7 @@ hash = "60ecabe0d70c1b04fb2582324603674f9713270e38f49d8e36cd6cbbf294b36d"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk2.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk3.png"
@@ -890,7 +1126,7 @@ hash = "84f5d35da5be257b0b20208c91d4fc0725aba7af2ce4d310872f751425dabcad"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk3.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk4.png"
@@ -898,7 +1134,7 @@ hash = "56a41a7e1c2feaf5f5c598571ac8dde44fbbd253003e50e967ee70fc76ca35c3"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_center_emissive_mk4.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk1.png"
@@ -906,7 +1142,7 @@ hash = "6dd547ffdcb93e799281adf0f20aa33becb95d40ab51372accb21ffc7c68e6bc"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk1.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk2.png"
@@ -914,7 +1150,7 @@ hash = "b5f9317189803934f05bc381543be0ca5663d39f64e394c0d9e1c319df794814"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk2.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk3.png"
@@ -922,7 +1158,7 @@ hash = "1a93321d90a506a96d6f7294c738fa0e0f49080b31b3851eb0e3f0909e154039"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk3.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk4.png"
@@ -930,7 +1166,7 @@ hash = "cd20dda41ad09563da6eb2a4b38c84d3457fd535d17d7cbc3c7edcde044353e5"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wire_emissive_mk4.png.mcmeta"
-hash = "11f424caedc78f9d71c69700b96142279540c87cfc7602915e9cc090aeb32548"
+hash = "7057824c10146052021f2ca9cdf1a43038efe995e4a077279595c3b06791c439"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/cable/cable_wrap.png"
@@ -1350,23 +1586,23 @@ hash = "f55df588ae032e813a6b5b5d652b3509b29e5eac70a16fce69da22d286689782"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/zh_cn.json"
-hash = "4ed7b19bb334aed7cfc5ef4374a35b920c436bc7b985424ede8d36f2d9258728"
+hash = "a7a72f4fd36d78c50d2460015ebbe8ac707d32633ef893ce5972ec12fbfb61ad"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
-hash = "f55df588ae032e813a6b5b5d652b3509b29e5eac70a16fce69da22d286689782"
+hash = "fc85672c516f71896ac0ffa65142b64d3c80f593fc41e6df3fe80ce0dc7dfe12"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/zh_cn.json"
-hash = "4ed7b19bb334aed7cfc5ef4374a35b920c436bc7b985424ede8d36f2d9258728"
+hash = "a7a72f4fd36d78c50d2460015ebbe8ac707d32633ef893ce5972ec12fbfb61ad"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
 hash = "de12df432c9a6af2f364573f21e0ddae87f90dd409eae330e561393e45ad8b99"
 
 [[files]]
-file = "kubejs/client_scripts/ponder.js"
-hash = "ce00dc19ec88d8049f44b14873565c570187113751c38a2a5f91852f48ae15d9"
+file = "kubejs/client_scripts/pondering/ponder.js"
+hash = "69a8510b3d7eb762c5142fdce3c1fc16ffd50f3b83308f81e2b87346732c5878"
 
 [[files]]
 file = "kubejs/data/ad_astra/loot_tables/blocks/deepslate_calorite_ore.json"
@@ -1775,6 +2011,10 @@ hash = "4daf76021a8490e68eb1fc9ee78d5df802dd12493b0c4c5c8d550c7f0f63505a"
 [[files]]
 file = "kubejs/data/cabricality/recipes/crafting/ender_slime_fern.json"
 hash = "a9800d26e99b60bf8221581533cde6e18b4359c1dcc2204183e51161d3936d10"
+
+[[files]]
+file = "kubejs/data/cabricality/recipes/crafting/necrotic_bone.json"
+hash = "d20725f8b2d24b9cb298054b5997132fa7e71aea5135d031a953283b2e91a285"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/crafting/nickel_ingot.json"
@@ -3326,187 +3566,187 @@ hash = "1c65f324672173f86cca1e0735b4f18f470ae51b0b74ec62ecdcb4820f3bbda9"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/copper_chunk_from_molten_copper.json"
-hash = "5904166be8cf872b6bfc136f325b92cfd3fc43b9c171bfd6a80dca1922d583df"
+hash = "595da77de0290c33afda823aedbb60245f43f7e641a044a2cdc17eb5dbfd979d"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/gold_chunk_from_molten_gold.json"
-hash = "54cb644bc8d5dd7b2b18a06929228c399f0a919a972de32d124193db4db7505f"
+hash = "68ce957548e6f4e148cfb54910b4ded9e681ce16de038d87172ce58810dbbe16"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/iron_chunk_from_molten_iron.json"
-hash = "471fe0881b96f6bfba0844333c8e8b69a72d0d07b36868fc6b83273ff996a148"
+hash = "d015da4d1b4fd719d5034bc443ebc391fa2ab64561c60b4c117815dafed47ca0"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/lead_chunk_from_molten_lead.json"
-hash = "a0b8bbe6f9ef19228c8c50a4de7253d81f2a5c794bcc621d93312e877be1cd57"
+hash = "21a8d5698136746761816096f465998557722dd989ccd81d3614b9af230e4049"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/netherite_chunk_from_molten_netherite.json"
-hash = "fd396d7bd57b4cee1d87f19495b4b7007368b3e1c2f033e99e302d613598cdb5"
+hash = "9c8330813e4493cb49a18c78ec3e1d69ca326ec40b91ce8eaec038aad55954ab"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/silver_chunk_from_molten_silver.json"
-hash = "7bb2c26319391d7ac0467e19937f4d3565ff3bab38a4fbef42faecceab3999a0"
+hash = "74376b613c5bad17f349f2b07f2dfd9c8913d2dd8fa422b065bb4a48c3296459"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/tin_chunk_from_molten_tin.json"
-hash = "bbd4c79253dcc6e76404ed5be874c870331dd6069af2206c8e19691d094582dd"
+hash = "0e896e0e4946922f306dcd438ed1abf75a7f1065bf21e9b7626264ccc07f592c"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_block.json"
-hash = "66b7bc4384acbf663b7aa0a602b693a22c92ea5a2ee59790b5f34b3e9ea4f3ed"
+hash = "f2fddf7dda25d0b691b7b0339659bc843df8e7920077e708e66f0518d0b80a20"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_dust.json"
-hash = "e3143eb49ffc036b0d747aa5c9e7c7478043196981da9b0fee6f0f42788c5ff2"
+hash = "a2daeb9c061987c4243727d72aa5d977dda1be716460e3671d736b4112f0cecb"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_ingot.json"
-hash = "8a840feb4cd5c9d939ce0704157bc4d6637a7523d52209cf96a0941f98c8dec4"
+hash = "ccf26e68b5dedb099aa3a1cf4afef9968a0210347b919b985a90544bbb58d086"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_nugget.json"
-hash = "990979d86c0ad37ef2c2810f854db7b78747e908d7c83eead71a2e4bbc99ccd2"
+hash = "68770258969a0202244fbd1fc04d02a894000e292f318b487188c766af3f35a2"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_ore.json"
-hash = "be52c9eb241d54af6ec1134309b853102b10b9e2acfd86d5009372139f6e5138"
+hash = "39c525eb0375ccfa4344abc77b359780b9ae0ea8494c45ce18a1fe6d17d49ddb"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_copper_from_purified_ore.json"
-hash = "67cdd3d2d40a910ccfd10771a7b4b2312aa0505c80d310f83bade6600878ee91"
+hash = "9f68e868378a22efa9075ab9150e1247e5c15c28322c21448283fc9fe73233ba"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_block.json"
-hash = "7a5e5506ebbcff6f07109cc018fbcc8169048e8df9648b943128edaf71d1cb0d"
+hash = "dfb803bc8cefecf869cabffdec510525bc778f8b07d2e36395fe5b47543b7515"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_dust.json"
-hash = "0e42603ccf8a090ae4cf4c433e1b7e29f66ea4c57245e7cce2bfd3ded41eea3e"
+hash = "712f56bb3c48aa0ddfb0809591ee3e1d08f3cbdbf91c773cc3ec317eb9074f78"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_ingot.json"
-hash = "4a37dfb4d9a16d93bae16a58b30735fe72649bafda1ddd030154f3ba3a4a08f3"
+hash = "aa29a455ca5d704bb7e31d3143ae7c98451d73bcbd2d07bca00debe16bf7e7ab"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_nugget.json"
-hash = "a6bcbe21a8ddfff388301740d400d93315a51a65c62ecaf2ff643b1b402a79fa"
+hash = "8e37670b09a7a5268f9302e9852bc232c0a00411adc41b57b3e3b492f0aaa340"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_ore.json"
-hash = "572c8d93044eb2ede510ded2b60d0d25d2dd44c7a2d9db62d118883675340d94"
+hash = "4cfc096314ae500a7961f03c31bf75b863edfbbc40e23e5460a684d0803ee901"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_gold_from_purified_ore.json"
-hash = "412940f3a131920e28c416cea64a74ecc1b782d6cae6792589297d2eeef5ce55"
+hash = "1fb3ccd0e314dcf2643a660db49bff4df993fd552e12234ec2fb9a89db39736c"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_block.json"
-hash = "135050420c9e06d20fe51f9ffe5785925ba0627b437f455ae1e454bdfdd3d147"
+hash = "af4c3fb87ca7ab2930bd9fd958cf3cb0fb39306f148cc8d94921392ea765031b"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_dust.json"
-hash = "32e854073be17367b74f0f38273aa197612d0e6416b9716e019b486553105887"
+hash = "a681b138734496de70f4e7dc070e2b5a2b03bc3e07bd1948d4791cd750630c5b"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_ingot.json"
-hash = "61535b815c01f488063658ec0413fbd5f22db21f4d75cebfdd8c78d9d39e5497"
+hash = "53e5fb66d050a5db3e29e7e2207b927279c336e91668766938ece81b4780ebbb"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_nugget.json"
-hash = "a90abcf02558b4874a4b0ec0f676ccba24595f3eef6eb45299eb6526d1ecacdc"
+hash = "d7bb076c7a5285347b25127290fd79a511cee1fcc635490be81cda22f3f43952"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_ore.json"
-hash = "bc4c63982a9d1d0abc4b879cfc6de396d61ef3fbf0d3143caf0222b2407cd8f9"
+hash = "a4dbb6fd43ddd28d4b48d6e1f8fdf4880cb08fa5823fdf23be318474843c41f1"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_iron_from_purified_ore.json"
-hash = "6c8965024003b6fc4e416841a71223b2be3da168934506c1c631f7a2e4b5d2bf"
+hash = "11e23bed40d4c9ed5054e3c1d25303249785b762e303b7027adb612bcfd7e8c5"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_block.json"
-hash = "d1f903fa0df90cf22bf749cbd2b164d90b461291e40f676ebef889e08356ba52"
+hash = "44d44d3f8b48f2b9365311811b469cd7ff6c5138a0c426304a011181a9fdb54c"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_dust.json"
-hash = "e6d94836d86350406d45a4d17ca353057196507788043bf7778a9395d5b66269"
+hash = "c893287a21738cf457a56f621ef551b6f6658854ef4e6d09d00d965f0b5ef28f"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_ingot.json"
-hash = "29271f8dd7c61defaef3685a65978a7380da74eac52d0088b38aff3a94a67c86"
+hash = "ebd06b6dc84b490075a69d6fb5b1199e83527d12ff0d5d7f49f44230e86152e0"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_nugget.json"
-hash = "ff2ef9b3cc80a12630b02f8b61e1e0086609f31aeefdf7140dcdb263bb24a5d6"
+hash = "f4eabcdcda828c9f71080d4dec91148324a73a486ce9d8a986414260db0cc413"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_ore.json"
-hash = "f1111200791f44fce2f262e992fd48ee093f0e4357838635b73386b331044642"
+hash = "6feec91cde0f5120034fa25a654bbbff364924c8e7f8404d4805fa5773d49670"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_lead_from_purified_ore.json"
-hash = "49323abd83dafb97efb063a88192703df292ad9c498ea8670fe6198975b4819c"
+hash = "0ec8d866deb118919bab0540a921cffc0a33801e7824245bea331549bf12f4fb"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_netherite_from_dust.json"
-hash = "aabb447a1b212cffed23a6cc53e3b958ff06765db1400846256e4be25ea99343"
+hash = "9ed9264b1325ab20cb06460ad9a85c93a4955f5a25e623e07471a518e0a54282"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_netherite_from_ore.json"
-hash = "cd8c2a6b8bd24feb0e3a6862927d0e41edf40db971f158e42fd529f4f5381c75"
+hash = "e2fd20741ccfd3b5238d588af56edffba2b0c902c28885da5a4ef03e901adb44"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_netherite_from_purified_ore.json"
-hash = "4f80614eb2594721a51a5b365cc68a10397038f1264723e505376c73d9b771ec"
+hash = "307bd5344fdb707e5de3ea2c384d7e94d3e72f34567b709b48fff1386dbf23ef"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_block.json"
-hash = "e61435281407072d1273f453c184fc85c93aa9ef2c0d4ad0c975a750bb45e2d3"
+hash = "4de2d0d0c5ff973a24e47d96edaba86d62ae02e6645408b9026314bc0e8457cb"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_dust.json"
-hash = "46fd426334325f459f67657c934043a23ca354707041c3e977f35d6869605e19"
+hash = "d02a2c6173a51203d884b8205e22ef7986f9000c2708062134bd56d00c01cdbe"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_ingot.json"
-hash = "759cd978d370cb49dc92070fcb4fda2399e161334f50e33ab83963280a5619df"
+hash = "642e87df2120c512d2fc101dddb5a104b7217fde33304394ada551d3e789df78"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_nugget.json"
-hash = "a33d6c0ff373582c87e69b02e2059350957a1a553969dbaa9b7b958085c79d5a"
+hash = "fbd402953bcc735f13a0579facec1704c3511f3545e7804e7fd0e44372d9f0e6"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_ore.json"
-hash = "0442f450eda647cd33e0afa60b79e541e4f8afba09637e598eee91bfa9e81d42"
+hash = "169135397b47771d0a3e581b8bc057e5c9838f97500efe81e55176716115ad4d"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_silver_from_purified_ore.json"
-hash = "5d01e845ebc8b26bd0c2a9e7db03be0eefed08b9d6b33f87259ac5c3b6a3a94c"
+hash = "3a4db135a6eb522e5c3c2de104308137eafc4c9b8079f3fc742869c8eb727700"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_block.json"
-hash = "0a2dfe71d922b2c9a8393761ffca1043bfeb3aa6509a342562e1c2543b2c809d"
+hash = "78e3561f4e07e8b0d27a7e2e1a70863de63b8aea4211782634dc7e42118ac496"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_dust.json"
-hash = "0656f4850928f5b47aac2c07b516602761281443ecf56ba1f714b57a70e24ebb"
+hash = "75711e9a067a5d8c3316cc0e66b06e1a03649cdf327b579a53cc60252ac71c7e"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_ingot.json"
-hash = "3961b9794f6508b9cfe28fa60f959a185b203ff599dd0dc9dffc049f7346214c"
+hash = "82b9fa17da4a8cd1d509574907fd09dff4777c10c2f68fbeb40b4c1835adc30a"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_nugget.json"
-hash = "a54065bea78c7852a09d6fe2ccb5027429dca642fde5b5770f3219b628de6a94"
+hash = "889c6f99650d76e54973a84c35127b746f7394f1ec301f0a097355d290796723"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_ore.json"
-hash = "f1929076505f6016e6d7ed59bf52a11a5c72c000befb163b4010a245a7aed7de"
+hash = "b167e6ef767256f5af811bb579bcdfbce199d4fde6e66b5dc0448eebc56a1ddd"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/smelter/molten_tin_from_purified_ore.json"
-hash = "c82930b4845574df7fd042c6c07669b940ca5ee38fa2db2d9238386bc56d2eaa"
+hash = "1a3c77b29a421d754bb13296f04a30acab5b4621eb16486cb5ec15163ef74634"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/blocks/copper_ore.json"
@@ -3554,23 +3794,23 @@ hash = "edb884e55fa69a83b17c76ecf778bc238086351278b1740eb03f162d8372c6f0"
 
 [[files]]
 file = "kubejs/server_scripts/cabricality.js"
-hash = "808515d78d13dd856942981a0efafb475e6d14afd40b3bfc64d4cd38aeec588e"
+hash = "39152eb8651eaf58b5fbec1066abe1237333c6822b1b85ec4f57b6d3709e6716"
 
 [[files]]
 file = "kubejs/server_scripts/machine/extractor.js"
-hash = "16f828de10458e0d6501f7cecf12e3c32fcedb90e0006d90754fa5faab2b434e"
+hash = "34eda147fbf47667dd75eb01841be64ecb9c8060920d4c6ac1dfdd70c2276ba8"
 
 [[files]]
 file = "kubejs/server_scripts/machine/laser.js"
-hash = "c7ab8e97c7e3c3d181d5530c0900e831a000bf2c6126fea883344c64d2bd11ed"
+hash = "7fbdf596466925dcf65dbd3bcbabfeba0887d9094f2281800f544892868cfdea"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_engine.js"
-hash = "dfcc6f4f371bab86dafb167ed359a3822806082b488bf432d3fdf350707dae14"
+hash = "84420b9b457542f6c3c6c99757408bfd32bba4f418380c91813e944fd7d93b6e"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_tank.js"
-hash = "acca441ae0fda61167c47881419c8d0b0284eb9b35dea0a0e6767ade3ff2c283"
+hash = "58d06cd9f8ffc794ab3d94cd7001e1b0a19b8389899149affc0e4c2c1465f6f1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/recipe.js"
@@ -3622,11 +3862,11 @@ hash = "2b3e7502e5b35ac8c25aae3e7f186bd8f28ee94d337e5536a001441723483b85"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/trader.js"
-hash = "52cd2d9a38daffa8bfaa055b903eae37c2580663585da105b41feda90c70d908"
+hash = "aed35083c65504c00f5bcf2a26069a4b254a3a6080eba6f8f291fc4861b80219"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
-hash = "9842bacc77f3a329755465f80a268e8f89645d8a29325395619e334993e01c85"
+hash = "4f2587d157265151a5ca592d5130db7b8e5956b01cb2ebb2c9639d503213a234"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
@@ -3658,11 +3898,11 @@ hash = "573cdf22100d78ee1d5550f69a63d4b4774aa4f03d2d0e12b29d9af1a8453aed"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "6349f204b824757e3d5935d4c7a6ae2792c9fc8211f2fdbc296a54cad644c18c"
+hash = "a968ef8c2a30d2e24e749477ee028d1aada41a145ce8915f70e22156e3677273"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
-hash = "b50096647da6dc98125a9c3f958e8d7f7aa1f6c41f488c4fc7394e799bedecf0"
+hash = "8dc6ad44a6b0bada5533763f0f7526c8b09498f04fd43adef633be0d46841e4f"
 
 [[files]]
 file = "mods/Hephaestus-1.18.2-3.5.1.DEV.33b3fef.jar"
