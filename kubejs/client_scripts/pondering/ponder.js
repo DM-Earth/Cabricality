@@ -226,7 +226,7 @@ onEvent("ponder.registry", (event) => {
 
 
 
-    event.create("indrev:controller")
+    event.create("ad_astra:steel_engine")
         .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", (scene, util) => {
             scene.configureBasePlate(0, 0, 7);
             scene.showBasePlate();

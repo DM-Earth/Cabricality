@@ -14,5 +14,17 @@
   "kubejs.ponder.alchemy_setup.text_6": "The basalts turned into basalt shards, the snow turned into blizz cube and the water turned into powered water",
   "kubejs.ponder.alchemy_setup.text_7": "If you want to mess around with alchemy, you need to place the substrates in front of the laser",
   "kubejs.ponder.alchemy_setup.text_8": "You should place four at a time, and make sure that all 4 are of the same kind. The recipe is random for each map.",
-  "kubejs.ponder.alchemy_setup.text_9": "For example, in order to make the metal substrate, we should try gold, lead, zinc, copper and iron substrate"
+  "kubejs.ponder.alchemy_setup.text_9": "For example, in order to make the metal substrate, we should try gold, lead, zinc, copper and iron substrate",
+  "kubejs.ponder.rocket_engine.header": "Making a Rocket Engine",
+  "kubejs.ponder.rocket_engine.text_1": "Congratulations! You\u0027re just one step away from going to the Moon!",
+  "kubejs.ponder.rocket_engine.text_10": "Finally, we seal the top with the block of the material",
+  "kubejs.ponder.rocket_engine.text_11": "And there you have it, the engine of a rocket!",
+  "kubejs.ponder.rocket_engine.text_2": "But before that happens, you\u0027ll need to do some preparations",
+  "kubejs.ponder.rocket_engine.text_3": "For starters, you\u0027ll need rocket engines and rocket tanks",
+  "kubejs.ponder.rocket_engine.text_4": "Like real rockets, these things are huge, so you\u0027ll need multi-block contraptions to make them",
+  "kubejs.ponder.rocket_engine.text_5": "There\u0027re 4 tiers of rockets, each made up of steel, desh, ostrum, and calorite",
+  "kubejs.ponder.rocket_engine.text_6": "Higher tiers require resources from the planets lower tiers could go to",
+  "kubejs.ponder.rocket_engine.text_7": "We\u0027ll start with tier 1, which is made up of steel",
+  "kubejs.ponder.rocket_engine.text_8": "For base, we need iron plates and pillars. That\u0027s the same for all engines",
+  "kubejs.ponder.rocket_engine.text_9": "For the layers above that, we\u0027ll need to use the material that each tier requires"
 }

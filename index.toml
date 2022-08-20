@@ -3330,7 +3330,7 @@ hash = "5904166be8cf872b6bfc136f325b92cfd3fc43b9c171bfd6a80dca1922d583df"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/gold_chunk_from_molten_gold.json"
-hash = "68ce957548e6f4e148cfb54910b4ded9e681ce16de038d87172ce58810dbbe16"
+hash = "54cb644bc8d5dd7b2b18a06929228c399f0a919a972de32d124193db4db7505f"
 
 [[files]]
 file = "kubejs/data/indrev/recipes/condensing/iron_chunk_from_molten_iron.json"
