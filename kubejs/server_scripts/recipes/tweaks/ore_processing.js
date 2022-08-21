@@ -57,7 +57,7 @@ onEvent("recipes", event => {
     ["create", "zinc", "create", "create", "createplus", "tconstruct"],
 
     ["indrev", "tin", "indrev", "create", "indrev", "tconstruct"],
-    ["indrev", "lead", "indrev", "create", "indrev"], "tconstruct",
+    ["indrev", "lead", "indrev", "create", "indrev", "tconstruct"],
 
     ["tconstruct", "cobalt", "tconstruct", "kubejs", "kubejs", "tconstruct"],
 
