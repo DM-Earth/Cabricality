@@ -535,6 +535,64 @@ let rocket_tank = (scene, util) => {
 
 
 
+
+let extractor = (scene, util) => {
+    scene.configureBasePlate(0, 0, 5);
+    scene.showBasePlate();
+    scene.idle(10);
+
+    scene.world.showSection([2, 1, 2, 2, 6, 2], Facing.DOWN);
+    scene.world.showSection([0, 4, 0, 4, 6, 4], Facing.DOWN);
+    scene.text(60, "In order to extract liquid resin, you need to find some trees")
+        .pointAt(util.vector.centerOf(2, 1, 2))
+        .colored(PonderPalette.WHITE)
+        .placeNearTarget();
+    scene.idle(70);
+
+    scene.world.showSection([2, 2, 1, 2, 1, 1], Facing.DOWN);
+    scene.text(60, "Place the extractor next to a log. Make sure that there's no block below the machine")
+        .pointAt(util.vector.centerOf(2, 2, 1))
+        .colored(PonderPalette.WHITE)
+        .placeNearTarget();
+    scene.idle(70);
+
+    scene.showControls(60, [2, 2.6, 1], "left").rightClick();
+    scene.idle(40);
+    scene.world.setBlocks([2, 1, 1], "kubejs:resin", true);
+    scene.idle(20);
+
+    scene.text(60, "The liquid resin can be harvested by pipes")
+        .pointAt(util.vector.centerOf(2, 2, 1))
+        .colored(PonderPalette.WHITE)
+        .placeNearTarget();
+    scene.world.showSection([1, 1, 1, 0, 2, 1], Facing.EAST);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 onEvent("ponder.registry", (event) => {
     event.create("indrev:laser_emitter_mk4")
         .scene("alchemy_setup", "The Alchemy Setup", alchemy_setup);
@@ -546,4 +604,6 @@ onEvent("ponder.registry", (event) => {
         .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", rocket_engine);
     event.create("ad_astra:steel_tank")
         .scene("rocket_tank", "Making a Rocket Tank", "cabricality:rocket_tank", rocket_tank);
+    event.create("kubejs:extractor_machine")
+        .scene("extractor", "Making an Extractor", "cabricality:extractor", extractor);
 })
