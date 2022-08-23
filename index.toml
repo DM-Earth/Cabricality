@@ -3915,7 +3915,7 @@ metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "cf5dc84f8614662235d680ad9cd601de26e0f35690bc4aabb1427cc01a9ae66f"
+hash = "c806661e4bf5fa277755c064102b277ab2553ef5daf2d105e3572b60c2778ce5"
 metafile = true
 
 [[files]]
@@ -3945,7 +3945,7 @@ metafile = true
 
 [[files]]
 file = "mods/cccbridge.pw.toml"
-hash = "7a316a592fc9ebcaec8f2af6c9a8a282d2478d049391d77099cb66c016ecdcc8"
+hash = "b300eda9e302fd0710735da40a5f368c14db803f2a34de364ba357298b5e3dcd"
 metafile = true
 
 [[files]]
@@ -4029,7 +4029,7 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "8a985aff33c049993c35e44cefe293df87516a5b4e744911e65b7a9fa60d6f53"
+hash = "059dda5970c80ebf787ce03dec13d35aa178a3a56399c05a88e4818d56b8324a"
 metafile = true
 
 [[files]]
@@ -4039,7 +4039,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-quests-fabric.pw.toml"
-hash = "5faffccc8307b532b3e32f0e80aa72a7661785344e72759bb8c6c67048ce1b9d"
+hash = "2198a2619d8b25323870d9f6c6a3c4d7c75119756a60e26acaa232e482a8ecbc"
 metafile = true
 
 [[files]]
@@ -4104,7 +4104,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "9fdb491538541907bef5ae665c3458371b4485252cce3579a93781383805b121"
+hash = "0c955376c33ec88895568df06cac648273e67db13c8a49afc0c74b5002adc9dd"
 metafile = true
 
 [[files]]
@@ -4149,7 +4149,7 @@ metafile = true
 
 [[files]]
 file = "mods/no-unused-chunks.pw.toml"
-hash = "abd19626e120aefb6b7dad8581df29cbf9dd5b279261fa69e1d814d8ef6e0a1a"
+hash = "890ce63caf11c8a738e7641c6386db709b13127230b39d18bcb7350b03696807"
 metafile = true
 
 [[files]]
@@ -4169,7 +4169,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "48c99dfbabd6743d13ce17903a5a3bc27d79d2d6312e311c68e8018514409162"
+hash = "1f1acbbbdfe91f9639c94fb1c9d00588a27f21640eaa3a1e4a9cd8a5f82df222"
 metafile = true
 
 [[files]]
@@ -4194,12 +4194,12 @@ metafile = true
 
 [[files]]
 file = "mods/quests-additions-fabric.pw.toml"
-hash = "9643c63d770414995cac83623ed26aefcccbb575d54865b06d18ac4af5b08d73"
+hash = "ce82dd38055992d8ef24a8d70372d4a57c4be55b08b6f31519f0381e25f295d2"
 metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "24f11fa273c9e8d1a2b3a7b14ecc448e01bfdc97cf8eeb23fe465b9989ba5ef4"
+hash = "2ece972fd1306a38ca278d9da23656c73bc103df57709a4bdac0a0271a646f34"
 metafile = true
 
 [[files]]
@@ -4209,7 +4209,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "ce702760d6523461d9b563e932273fa507d7c2cee5a2b70c1cdfd7c226528a04"
+hash = "ac165d7df1ac06a26c630f220ebeec858f9863a8c6c4a7dcbadb7ad04c44e8fa"
 metafile = true
 
 [[files]]
@@ -4219,12 +4219,12 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "c3e35edc97f0a420421025be41ba1a3af1cc7c59ccf23143e09ce6c1631ec347"
+hash = "6bbaa499cb0998b9bd0cf54b1d6e221d7dacd591b7cda58c3ad93b283538246b"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "f234a8e383d2145966b28900ca77012c1fe916e4c599c65a7f0f68acd4efbca1"
+hash = "52ba338bab4dd378d56e0188ef9b66d7626b62b40ab2d324c224e99d15a7324a"
 metafile = true
 
 [[files]]
@@ -4243,7 +4243,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "d66abb55e48a5c56a93885bb3b24b0bb0199acaa773ebe188fef6f3e7f11a999"
+hash = "bea28944bbcb4e29ca9812acfdcb039ddac867cf807eb7fdca044224ca51c4f0"
 metafile = true
 
 [[files]]
