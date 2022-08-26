@@ -36,10 +36,10 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [x] Trading System
 - [x] Mad Maths
 
-### Game's Ending
+### Endgame
 
-- [x] Starship Building and Launching
-- [ ] Space Exploration
+- [x] Rocket Building and Launching
+- [x] Space Exploration
 
 ### General
 
@@ -86,10 +86,10 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 - [x] 交易系统
 - [x] 数字运算系统
 
-### 大结局
+### 末期
 
-- [x] 建造并发射星舰
-- [ ] 探索太空
+- [x] 建造并发射火箭
+- [x] 探索太空
 
 ### 常规
 
