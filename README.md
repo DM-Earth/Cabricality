@@ -45,7 +45,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 - [x] Quests
 
-#### [Is there any problem? Check our Wiki!](https://github.com/JieningYu/Cabricality/wiki)
+#### [Is there any problem? Check our Wiki!](https://github.com/DM-Earth/Cabricality/wiki)
 
 </p>
 </details>
@@ -95,7 +95,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 - [x] 任务系统
 
-#### [遇到问题了吗？来看看我们的百科吧！](https://github.com/JieningYu/Cabricality/wiki)
+#### [遇到问题了吗？来看看我们的百科吧！](https://github.com/DM-Earth/Cabricality/wiki)
 
 </p>
 </details>
