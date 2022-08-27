@@ -84,7 +84,23 @@
 				{
 					id: "1900BA945C62D0CC"
 					type: "item"
-					item: "alloy_forgery:deepslate_bricks_forge_controller"
+					title: "Smart Forgery"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:smeltery_controller"
+									Count: 1b
+								}
+								{
+									id: "alloy_forgery:deepslate_bricks_forge_controller"
+									Count: 1b
+								}
+							]
+						}
+					}
 					consume_items: false
 				}
 				{
