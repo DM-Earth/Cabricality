@@ -3,23 +3,21 @@
 	group: ""
 	order_index: 0
 	filename: "welcome"
-	title: "&8 {welcome.cabricality.title}"
+	title: "{welcome.cabricality.title}"
 	icon: "minecraft:spore_blossom"
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "&f&l{welcome.cabricality.limitless.title}"
+			title: "{welcome.cabricality.limitless.title}"
 			icon: "minecraft:gold_ore"
 			disable_toast: true
 			x: -3.5d
 			y: -5.0d
 			shape: "hexagon"
 			description: [
-				"{welcome.cabricality.limitless.content.1}"
-				"{welcome.cabricality.limitless.content.2}"
-				""
+				"{welcome.cabricality.limitless.content}"
 			]
 			size: 2.0d
 			id: "09356B3BEF298E06"
@@ -41,16 +39,14 @@
 			]
 		}
 		{
-			title: "&f&l{welcome.cabricality.optional.title}"
+			title: "{welcome.cabricality.optional.title}"
 			icon: "minecraft:grass_block"
 			disable_toast: true
 			x: -3.5d
 			y: -2.5d
 			shape: "hexagon"
 			description: [
-				"{welcome.cabricality.optional.content.1}"
-				""
-				"{welcome.cabricality.optional.content.2}"
+				"{welcome.cabricality.optional.content}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["09356B3BEF298E06"]
@@ -62,7 +58,7 @@
 			}]
 		}
 		{
-			title: "&f&lI"
+			title: "{welcome.cabricality.i.title}"
 			icon: "create:cogwheel"
 			disable_toast: true
 			x: -4.0d
@@ -70,9 +66,7 @@
 			shape: "hexagon"
 			subtitle: "{welcome.cabricality.i.subtitle}"
 			description: [
-				"{welcome.cabricality.i.content.1}"
-				"{welcome.cabricality.i.content.2}"
-				"{welcome.cabricality.i.content.3}"
+				"{welcome.cabricality.i.content}"
 			]
 			dependencies: ["69D55492A8F42A94"]
 			size: 1.5d
@@ -88,16 +82,14 @@
 			}]
 		}
 		{
-			title: "&f&lII"
+			title: "{welcome.cabricality.ii.title}"
 			icon: "create:large_cogwheel"
 			disable_toast: true
 			x: -3.5d
 			y: 0.5d
 			shape: "hexagon"
 			description: [
-				"{welcome.cabricality.ii.content.1}"
-				""
-				"{welcome.cabricality.ii.content.2}"
+				"{welcome.cabricality.ii.content}"
 			]
 			dependencies: ["407236D2B1D2257D"]
 			size: 1.5d
@@ -113,16 +105,14 @@
 			}]
 		}
 		{
-			title: "&f&lIII"
+			title: "{welcome.cabricality.iii.title}"
 			icon: "kubejs:andesite_machine"
 			disable_toast: true
 			x: -2.0d
 			y: 1.0d
 			shape: "hexagon"
 			description: [
-				"{welcome.cabricality.iii.content.1}"
-				""
-				"{welcome.cabricality.iii.content.2}"
+				"{welcome.cabricality.iii.content}"
 			]
 			dependencies: ["2C7ADB6C11B918B1"]
 			size: 1.5d
@@ -138,20 +128,14 @@
 			}]
 		}
 		{
-			title: "&f&lIV"
+			title: "{welcome.cabricality.iv.title}"
 			icon: "indrev:solid_infuser_mk1"
 			disable_toast: true
 			x: -0.5d
 			y: 0.5d
 			shape: "hexagon"
 			description: [
-				"{welcome.cabricality.iv.content.1}"
-				""
-				"{welcome.cabricality.iv.content.2}"
-				""
-				"{welcome.cabricality.iv.content.3}"
-				""
-				"{welcome.cabricality.iv.content.4}"
+				"{welcome.cabricality.iv.content}"
 			]
 			dependencies: ["1947C6CE179EBAC6"]
 			size: 1.5d
@@ -167,25 +151,14 @@
 			}]
 		}
 		{
-			title: "&6&l{welcome.cabricality.overview.title}"
+			title: "{welcome.cabricality.overview.title}"
 			icon: "ad_astra:astrodux"
 			disable_toast: true
 			x: -1.5d
 			y: -1.5d
 			shape: "hexagon"
 			description: [
-				"{welcome.cabricality.overview.content.1}"
-				"{welcome.cabricality.overview.content.2}"
-				""
-				"{welcome.cabricality.overview.content.3}"
-				""
-				"{welcome.cabricality.overview.content.4}"
-				""
-				"{welcome.cabricality.overview.content.5}"
-				""
-				"{welcome.cabricality.overview.content.6}"
-				""
-				"{welcome.cabricality.overview.content.7}"
+				"{welcome.cabricality.overview.content}"
 			]
 			dependencies: ["58E38BA6D927409F"]
 			size: 1.5d
@@ -207,7 +180,7 @@
 			x: 2.0d
 			y: -1.5d
 			shape: "hexagon"
-			description: ["{welcome.cabricality.go.content.1}"]
+			description: ["{welcome.cabricality.go.content}"]
 			dependencies: ["00003FCBB33E62C4"]
 			size: 2.0d
 			id: "31EDFA6D2FF86CB0"

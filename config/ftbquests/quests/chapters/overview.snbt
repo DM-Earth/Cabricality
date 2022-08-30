@@ -14,7 +14,7 @@
 			x: -13.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["{overview.cabricality.start.content.1}"]
+			description: ["{overview.cabricality.start.content}"]
 			size: 2.0d
 			id: "75FB28B253B14876"
 			tasks: [{
@@ -44,9 +44,7 @@
 			y: -1.5d
 			shape: "circle"
 			description: [
-				"{overview.cabricality.preperation.content.1}"
-				""
-				"{overview.cabricality.preperation.content.2}"
+				"{overview.cabricality.preperation.content}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "7D6BC99CCCB29924"
@@ -125,9 +123,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.chapter_1.start.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_1.start.content.1}"
-				""
-				"{overview.cabricality.chapter_1.start.content.2}"
+				"{overview.cabricality.chapter_1.start.content}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "61147823CC87F711"
@@ -145,9 +141,7 @@
 			shape: "square"
 			subtitle: "{overview.cabricality.chapter_1.end.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_1.end.content.1}"
-				""
-				"{overview.cabricality.chapter_1.end.content.2}"
+				"{overview.cabricality.chapter_1.end.content}"
 			]
 			dependencies: [
 				"61147823CC87F711"
@@ -173,9 +167,7 @@
 			subtitle: "{overview.cabricality.bonus_1a.start.subtitle}"
 			description: [
 				""
-				"{overview.cabricality.bonus_1a.start.content.1}"
-				""
-				"{overview.cabricality.bonus_1a.start.content.2}"
+				"{overview.cabricality.bonus_1a.start.content}"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "7D872F933F45809B"
@@ -192,9 +184,7 @@
 			y: 2.5d
 			subtitle: "{overview.cabricality.bonus_1a.end.subtitle}"
 			description: [
-				"{overview.cabricality.bonus_1a.end.content.1}"
-				""
-				"{overview.cabricality.bonus_1a.end.content.2}"
+				"{overview.cabricality.bonus_1a.end.content}"
 			]
 			dependencies: [
 				"7D872F933F45809B"
@@ -219,9 +209,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.chapter_2.start.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_2.start.content.1}"
-				""
-				"{overview.cabricality.chapter_2.start.content.2}"
+				"{overview.cabricality.chapter_2.start.content}"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "1E263994D4883A08"
@@ -238,9 +226,7 @@
 			y: 0.0d
 			subtitle: "{overview.cabricality.chapter_2.end.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_2.end.content.1}"
-				""
-				"{overview.cabricality.chapter_2.end.content.2}"
+				"{overview.cabricality.chapter_2.end.content}"
 			]
 			dependencies: [
 				"1E263994D4883A08"
@@ -265,10 +251,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.bonus_2a.start.subtitle}"
 			description: [
-				"{overview.cabricality.bonus_2a.start.content.1}"
-				"{overview.cabricality.bonus_2a.start.content.2}"
-				""
-				"{overview.cabricality.bonus_2a.start.content.3}"
+				"{overview.cabricality.bonus_2a.start.content}"
 			]
 			dependencies: ["69275ECFC147E15B"]
 			id: "7888F9129E9FE517"
@@ -285,9 +268,7 @@
 			y: -2.5d
 			subtitle: "{overview.cabricality.bonus_2a.end.subtitle}"
 			description: [
-				"{overview.cabricality.bonus_2a.end.content.1}"
-				""
-				"{overview.cabricality.bonus_2a.end.content.2}"
+				"{overview.cabricality.bonus_2a.end.content}"
 			]
 			dependencies: [
 				"7888F9129E9FE517"
@@ -312,11 +293,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.chapter_3.start.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_3.start.content.1}"
-				""
-				"{overview.cabricality.chapter_3.start.content.2}"
-				""
-				"{overview.cabricality.chapter_3.start.content.3}"
+				"{overview.cabricality.chapter_3.start.content}"
 			]
 			dependencies: ["69275ECFC147E15B"]
 			id: "780E8AE86250C73D"
@@ -333,9 +310,7 @@
 			y: 0.0d
 			subtitle: "{overview.cabricality.chapter_3.end.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_3.end.content.1}"
-				""
-				"{overview.cabricality.chapter_3.end.content.2}"
+				"{overview.cabricality.chapter_3.end.content}"
 			]
 			dependencies: [
 				"780E8AE86250C73D"
@@ -360,10 +335,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.bonus_3a.start.subtitle}"
 			description: [
-				"{overview.cabricality.bonus_3a.start.content.1}"
-				"{overview.cabricality.bonus_3a.start.content.2}"
-				""
-				"{overview.cabricality.bonus_3a.start.content.3}"
+				"{overview.cabricality.bonus_3a.start.content}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "2BB2C7B95E3C89AE"
@@ -379,7 +351,7 @@
 			x: -2.0d
 			y: 2.5d
 			subtitle: "{overview.cabricality.bonus_3a.end.subtitle}"
-			description: ["{overview.cabricality.bonus_3a.end.content.1}"]
+			description: ["{overview.cabricality.bonus_3a.end.content}"]
 			dependencies: [
 				"2BB2C7B95E3C89AE"
 				"6DBEF7A11890ADF8"
@@ -403,11 +375,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.chapter_4.start.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_4.start.content.1}"
-				""
-				"{overview.cabricality.chapter_4.start.content.2}"
-				""
-				"{overview.cabricality.chapter_4.start.content.3}"
+				"{overview.cabricality.chapter_4.start.content}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "26173D4777F439B1"
@@ -425,11 +393,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.chapter_4a.start.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_4a.start.content.1}"
-				""
-				"{overview.cabricality.chapter_4a.start.content.2}"
-				""
-				"{overview.cabricality.chapter_4a.start.content.3}"
+				"{overview.cabricality.chapter_4a.start.content}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "3934AD57122B6FFE"
@@ -446,10 +410,7 @@
 			y: 0.0d
 			subtitle: "{overview.cabricality.chapter_4.end.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_4.end.content.1}"
-				""
-				"{overview.cabricality.chapter_4.end.content.2}"
-				"{overview.cabricality.chapter_4.end.content.3}"
+				"{overview.cabricality.chapter_4.end.content}"
 			]
 			min_required_dependencies: 3
 			dependencies: [
@@ -478,9 +439,7 @@
 			shape: "circle"
 			subtitle: "{overview.cabricality.chapter_5.start.subtitle}"
 			description: [
-				"{overview.cabricality.chapter_5.start.content.1}"
-				""
-				"{overview.cabricality.chapter_5.start.content.2}"
+				"{overview.cabricality.chapter_5.start.content}"
 			]
 			dependencies: ["08716DBF9C882623"]
 			id: "5E62059675895213"
@@ -497,9 +456,7 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"{overview.cabricality.chapter_5.end.content.1}"
-				""
-				"{overview.cabricality.chapter_5.end.content.2}"
+				"{overview.cabricality.chapter_5.end.content}"
 			]
 			dependencies: [
 				"5E62059675895213"
