@@ -6,7 +6,7 @@
   "welcome.cabricality.limitless.content.2": "We hope you'll have a good time with it.",
 
   "welcome.cabricality.optional.title": "Completely Optional",
-  "welcome.cabricality.optional.content.1": "The Questing system helps you with the primary customisations of the Modpack: &3Trades&r and the &6Progression of Tech&r",
+  "welcome.cabricality.optional.content.1": "The Questing system helps you with the primary customizations of the Modpack: &3Trades&r and the &6Progression of Tech&r",
   "welcome.cabricality.optional.content.2": "Completing Quests is not required to progress through the game.",
 
   "welcome.cabricality.i.subtitle": "Introduction",
@@ -35,5 +35,125 @@
   "welcome.cabricality.overview.content.7": "- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you.",
 
   "welcome.cabricality.go.title": "Off you go!",
-  "welcome.cabricality.go.content.1": "Now that you have an idea of what is new and what is not, settle in and start your Journey."
+  "welcome.cabricality.go.content.1": "Now that you have an idea of what is new and what is not, settle in and start your Journey.",
+
+
+
+  "overview.cabricality.title": "> Overview",
+
+  "overview.cabricality.punch.title": "From a Tree Puncher...",
+  "overview.cabricality.punch.content.1": "&aWelcome to the Overview. You can always come back here to catch up on your current position in the Progression of Technology. If you look closely, your Journey to the Moon completes the final step of the way on the right side.",
+  "overview.cabricality.punch.task.logs.title": "Any Logs",
+
+  "overview.cabricality.prepare.title": "Preparations",
+  "overview.cabricality.prepare.content.1": "Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first.",
+  "overview.cabricality.prepare.content.2": "Here are some recommendations for a successful start.",
+  "overview.cabricality.prepare.task.forgery.title": "Smart Forgery",
+
+  "overview.cabricality.andesite.title": "High Aspirations",
+  "overview.cabricality.andesite.subtitle": "Chapter 1",
+  "overview.cabricality.andesite.content.1": "The earliest inventions reveal ones resourcefulness with low level equipment: Auto-Crafting? None. Filtering? Not cheap! Item Transport? May the Belt Spaghetti mesh in your favour.",
+  "overview.cabricality.andesite.content.2": "After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+  "overview.cabricality.andesite.task.unlock.title": "Unlock Chapter 1",
+
+  "overview.cabricality.kinetic.title": "Andesite Machinery",
+  "overview.cabricality.kinetic.subtitle": "Milestone",
+  "overview.cabricality.kinetic.content.1": "With Kinetic Mechanisms automated, many new possibilities unfold. Most of Create's machinery can now be crafted without much hassle. The early game just got a bit less early!",
+  "overview.cabricality.kinetic.content.2": "You can now continue, or choose to spend some time in the bonus section of Chapter 1. After all, a stronger supply of Copper Machines will come to be quite useful, too!",
+  "overview.cabricality.andesite.task.complete.title": "Complete Chapter 1",
+
+  "overview.cabricality.rubber.title": "Rubber Tycoon",
+  "overview.cabricality.rubber.subtitle": "Bonus 1A",
+  "overview.cabricality.rubber.content.1": "While Copper Machines will definitely be required going forward; full automation of their ingredients is completely optional.",
+  "overview.cabricality.rubber.content.2": "After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed.",
+  "overview.cabricality.rubber.task.unlock.title": "Unlock Bonus 1A",
+
+  "overview.cabricality.copper.title": "Copper Machinery",
+  "overview.cabricality.copper.subtitle": "Challenge",
+  "overview.cabricality.copper.content.1": "Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs.",
+  "overview.cabricality.copper.content.2": "Note that Sealed Mechanisms are an ingredient to nothing else. The main assembly line will continue with Kinetic Mechanisms.",
+  "overview.cabricality.copper.task.complete.title": "Complete Bonus 1A",
+
+  "overview.cabricality.electron.title": "Alluring Expedience",
+  "overview.cabricality.electron.subtitle": "Chapter 2",
+  "overview.cabricality.electron.content.1": "The chicken and egg problem remains: in order to automate precision mechanisms for brass equipment more conveniently, having more brass equipment would be really useful!",
+  "overview.cabricality.electron.content.2": "After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+  "overview.cabricality.electron.task.unlock.title": "Unlock Chapter 2",
+
+  "overview.cabricality.brass.title": "Brass Machinery",
+  "overview.cabricality.brass.subtitle": "Milestone",
+  "overview.cabricality.brass.content.1": "With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life.",
+  "overview.cabricality.brass.content.2": "It also opens the gate leading towards the Invar Age- potentially after a quick stop by the bonus section..",
+  "overview.cabricality.brass.task.complete.title": "Complete Chapter 2",
+
+  "overview.cabricality.enderium.title": "Melting the Funds",
+  "overview.cabricality.enderium.subtitle": "Bonus 3A",
+  "overview.cabricality.enderium.content.1": "The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension.",
+  "overview.cabricality.enderium.content.2": "In researching the required technologies, you will find that your hard earned silver suddenly finds a second use..",
+  "overview.cabricality.enderium.content.3": "After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed.",
+  "overview.cabricality.enderium.task.unlock.title": "Unlock Bonus 3A",
+
+  "overview.cabricality.zinc.title": "Zinc Machinery",
+  "overview.cabricality.zinc.subtitle": "Utility",
+  "overview.cabricality.zinc.content.1": "&2Zinc Machines&r are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready.",
+  "overview.cabricality.zinc.content.2": "Note that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms.",
+  "overview.cabricality.zinc.task.complete.title": "Complete Bonus 2A",
+
+  "overview.cabricality.radiant.title": "The Catharsis",
+  "overview.cabricality.radiant.subtitle": "Chapter 3",
+  "overview.cabricality.radiant.content.1": "The Groundwork has been laid with all that has been created so far. The pace should really pick up from here.",
+  "overview.cabricality.radiant.content.2": "Producing components for inductive technology relies on very peculiar techniques. Though with all the new equipment ready, automating even the more convoluted interactions should become a cakewalk.",
+  "overview.cabricality.radiant.content.3": "After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+  "overview.cabricality.radiant.task.unlock.title": "Unlock Chapter 3",
+
+  "overview.cabricality.invar.title": "Invar Machinery",
+  "overview.cabricality.invar.subtitle": "Milestone",
+  "overview.cabricality.invar.content.1": "A completely different age of Technology. Some machines are suddenly powered by some hardly observable magical energy.",
+  "overview.cabricality.invar.content.2": "The Launch feels very close now. While there still lie challenges ahead, the solution footprint will shrink again thanks to the new Appliances.",
+  "overview.cabricality.invar.task.complete.title": "Complete Chapter 3",
+
+  "overview.cabricality.infernal.title": "Magmatic Exploits",
+  "overview.cabricality.infernal.subtitle": "Bonus 2A",
+  "overview.cabricality.infernal.content.1": "We need to go Deeper!",
+  "overview.cabricality.infernal.content.2": "Access to Zinc Machines will require for some engineering in another dimension. Even if it's literally Hell, a change of scene will always bring forth new ideas and inspiration.",
+  "overview.cabricality.infernal.content.3": "After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed.",
+  "overview.cabricality.infernal.task.unlock.title": "Unlock Bonus 2A",
+
+  "overview.cabricality.ender.title": "Ender Machinery",
+  "overview.cabricality.ender.subtitle": "Utility",
+  "overview.cabricality.ender.content.1": "Ender Machines provide not only access to instant Teleportation, but also to the most powerful upgrades for your machines.",
+  "overview.cabricality.ender.task.complete.title": "Complete Bonus 3A",
+
+
+  "overview.cabricality.silicon.title": "Into the Box",
+  "overview.cabricality.silicon.subtitle": "Chapter 4",
+  "overview.cabricality.silicon.content.1": "A new Energy Unit joins the ranks: the production facility for silicon will involve an interplay of thermal induction machinery and the familiar kinetic components.",
+  "overview.cabricality.silicon.content.2": "Between Flux and Stress, a peculiar innovation in Laser technology will be required to produce some of the ingredients involved.",
+  "overview.cabricality.silicon.content.3": "After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+  "overview.cabricality.silicon.task.unlock.title": "Unlock Chapter 4",
+
+  "overview.cabricality.chaotic.title": "Chaotic Alchemy",
+  "overview.cabricality.chaotic.subtitle": "Alternative Path",
+  "overview.cabricality.chaotic.content.1": "You'll find that the newly discovered Laser setup has other interesting capabilities.",
+  "overview.cabricality.chaotic.content.2": "Behind a bit of science and experimentation lies a way to transmute seemingly unrelated materials between another. The demanded Silicon element is one of them, but which is its counterpart?",
+  "overview.cabricality.chaotic.content.3": "After hitting the Checkmark above, the alternative fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar. It will still be possible to return to the other chapter.",
+  "overview.cabricality.chaotic.task.unlock.title": "Unlock Chapter 4a",
+
+  "overview.cabricality.fluix.title": "Fluix Machinery",
+  "overview.cabricality.fluix.subtitle": "Milestone",
+  "overview.cabricality.fluix.content.1": "With Calculation Mechanisms, the Factory enters the Digital Age. Instant Material-Energy conversion (ME) revolutionists item and fluid logistics for both the assembly lines and personal use.",
+  "overview.cabricality.fluix.content.2": "At this point, all of the tools necessary to facilitate space travel have become accessible. Might as well start a countdown.",
+  "overview.cabricality.fluix.content.3": "10, 9, 8...",
+  "overview.cabricality.fluix.task.complete.title": "Complete Chapter 4",
+
+  "overview.cabricality.digit.title": "Divide by Digital",
+  "overview.cabricality.digit.subtitle": "Finale",
+  "overview.cabricality.digit.content.1": "The entire factory is started back up for one final sprint. With a steady supply of Calculation Mechanisms, the Digital Infrastructure performs the necessary operations to put together an ideal Trajectory.",
+  "overview.cabricality.digit.content.2": "While this Data Center visibly crunches the numbers, the designated Astronaut starts getting themselves and the spaceship prepared for launch.",
+  "overview.cabricality.digit.task.unlock.title": "Unlock the Final Chapter",
+
+  "overview.cabricality.space.title": "..to a Spacefarer",
+  "overview.cabricality.space.content.1": "&oThe Dream of walking the Moon's surface finally came to fruition.",
+  "overview.cabricality.space.content.2": "&oWith that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!&r",
+  "overview.cabricality.space.task.complete.title": "Complete Chapter 5"
 }
