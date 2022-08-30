@@ -3,24 +3,24 @@
 	group: "331B6409EF6A7840"
 	order_index: 0
 	filename: "overview"
-	title: "&a{overview.cabricality.title}"
+	title: "{overview.cabricality.title}"
 	icon: "minecraft:oak_sapling"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "&a&l{overview.cabricality.punch.title}"
+			title: "{overview.cabricality.start.title}"
 			icon: "minecraft:grass_block"
 			x: -13.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["{overview.cabricality.punch.content.1}"]
+			description: ["{overview.cabricality.start.content.1}"]
 			size: 2.0d
 			id: "75FB28B253B14876"
 			tasks: [{
 				id: "7F88BABEC9889C76"
 				type: "item"
-				title: "{overview.cabricality.punch.task.logs.title}"
+				title: "{overview.cabricality.start.task.logs.title}"
 				icon: "minecraft:oak_log"
 				item: {
 					id: "itemfilters:tag"
@@ -38,15 +38,15 @@
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.prepare.title}"
+			title: "{overview.cabricality.preperation.title}"
 			icon: "minecraft:cobblestone_stairs"
 			x: -12.5d
 			y: -1.5d
 			shape: "circle"
 			description: [
-				"{overview.cabricality.prepare.content.1}"
+				"{overview.cabricality.preperation.content.1}"
 				""
-				"{overview.cabricality.prepare.content.2}"
+				"{overview.cabricality.preperation.content.2}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "7D6BC99CCCB29924"
@@ -84,7 +84,7 @@
 				{
 					id: "1900BA945C62D0CC"
 					type: "item"
-					title: "{overview.cabricality.prepare.task.forgery.title}"
+					title: "{overview.cabricality.preperation.task.forgery.title}"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -118,36 +118,36 @@
 			}]
 		}
 		{
-			title: "&6&l{overview.cabricality.andesite.title}"
+			title: "{overview.cabricality.chapter_1.start.title}"
 			icon: "create:andesite_alloy"
 			x: -11.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6{overview.cabricality.andesite.subtitle}"
+			subtitle: "{overview.cabricality.chapter_1.start.subtitle}"
 			description: [
-				"{overview.cabricality.andesite.content.1}"
+				"{overview.cabricality.chapter_1.start.content.1}"
 				""
-				"{overview.cabricality.andesite.content.2}"
+				"{overview.cabricality.chapter_1.start.content.2}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "61147823CC87F711"
 			tasks: [{
 				id: "5A8DF2D8553904BF"
 				type: "checkmark"
-				title: "&6{overview.cabricality.andesite.task.unlock.title}"
+				title: "{overview.cabricality.chapter_1.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.kinetic.title}"
+			title: "{overview.cabricality.chapter_1.end.title}"
 			disable_toast: true
 			x: -10.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "{overview.cabricality.kinetic.subtitle}"
+			subtitle: "{overview.cabricality.chapter_1.end.subtitle}"
 			description: [
-				"{overview.cabricality.kinetic.content.1}"
+				"{overview.cabricality.chapter_1.end.content.1}"
 				""
-				"{overview.cabricality.kinetic.content.2}"
+				"{overview.cabricality.chapter_1.end.content.2}"
 			]
 			dependencies: [
 				"61147823CC87F711"
@@ -157,7 +157,7 @@
 			tasks: [{
 				id: "36F8C3CAF6FC3FB2"
 				type: "stat"
-				title: "&6{overview.cabricality.andesite.task.complete.title}"
+				title: "{overview.cabricality.chapter_1.end.task.complete.title}"
 				icon: "kubejs:kinetic_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -165,36 +165,36 @@
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.rubber.title}"
+			title: "{overview.cabricality.bonus_1a.start.title}"
 			icon: "kubejs:cured_rubber"
 			x: -9.5d
 			y: 1.5d
 			shape: "circle"
-			subtitle: "{overview.cabricality.rubber.subtitle}"
+			subtitle: "{overview.cabricality.bonus_1a.start.subtitle}"
 			description: [
 				""
-				"{overview.cabricality.rubber.content.1}"
+				"{overview.cabricality.bonus_1a.start.content.1}"
 				""
-				"{overview.cabricality.rubber.content.2}"
+				"{overview.cabricality.bonus_1a.start.content.2}"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "7D872F933F45809B"
 			tasks: [{
 				id: "681DACF11F193771"
 				type: "checkmark"
-				title: "&4{overview.cabricality.rubber.task.unlock.title}"
+				title: "{overview.cabricality.bonus_1a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&4&l{overview.cabricality.copper.title}"
+			title: "{overview.cabricality.bonus_1a_end.title}"
 			disable_toast: true
 			x: -8.0d
 			y: 2.5d
-			subtitle: "&4{overview.cabricality.copper.subtitle}"
+			subtitle: "{overview.cabricality.bonus_1a.end.subtitle}"
 			description: [
-				"{overview.cabricality.copper.content.1}"
+				"{overview.cabricality.bonus_1a.end.content.1}"
 				""
-				"{overview.cabricality.copper.content.2}"
+				"{overview.cabricality.bonus_1a.end.content.2}"
 			]
 			dependencies: [
 				"7D872F933F45809B"
@@ -204,7 +204,7 @@
 			tasks: [{
 				id: "27B07858A6018539"
 				type: "stat"
-				title: "&4{overview.cabricality.copper.task.complete.title}"
+				title: "{overview.cabricality.bonus_1a.end.task.complete.title}"
 				icon: "kubejs:sealed_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -212,35 +212,35 @@
 			}]
 		}
 		{
-			title: "&6&l{overview.cabricality.electron.title}"
+			title: "{overview.cabricality.chapter_2.start.title}"
 			icon: "create:electron_tube"
 			x: -8.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6{overview.cabricality.electron.subtitle}"
+			subtitle: "{overview.cabricality.chapter_2.start.subtitle}"
 			description: [
-				"{overview.cabricality.electron.content.1}"
+				"{overview.cabricality.chapter_2.start.content.1}"
 				""
-				"{overview.cabricality.electron.content.2}"
+				"{overview.cabricality.chapter_2.start.content.2}"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "1E263994D4883A08"
 			tasks: [{
 				id: "28C41C062843C2CA"
 				type: "checkmark"
-				title: "&6{overview.cabricality.electron.task.unlock.title}"
+				title: "{overview.cabricality.chapter_2.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.brass.title}"
+			title: "{overview.cabricality.chapter_2.end.title}"
 			disable_toast: true
 			x: -7.0d
 			y: 0.0d
-			subtitle: "{overview.cabricality.brass.subtitle}"
+			subtitle: "{overview.cabricality.chapter_2.end.subtitle}"
 			description: [
-				"{overview.cabricality.brass.content.1}"
+				"{overview.cabricality.chapter_2.end.content.1}"
 				""
-				"{overview.cabricality.brass.content.2}"
+				"{overview.cabricality.chapter_2.end.content.2}"
 			]
 			dependencies: [
 				"1E263994D4883A08"
@@ -250,7 +250,7 @@
 			tasks: [{
 				id: "0FF38BBE3B19D9C2"
 				type: "stat"
-				title: "&6{overview.cabricality.brass.task.complete.title}"
+				title: "{overview.cabricality.chapter_2.end.task.complete.title}"
 				icon: "create:precision_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -258,36 +258,36 @@
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.enderium.title}"
-			icon: "kubejs:enderium_ingot"
-			x: -3.5d
-			y: 1.5d
+			title: "{overview.cabricality.bonus_2a.start.title}"
+			icon: "minecraft:lava_bucket"
+			x: -6.5d
+			y: -1.5d
 			shape: "circle"
-			subtitle: "{overview.cabricality.enderium.subtitle}"
+			subtitle: "{overview.cabricality.bonus_2a.start.subtitle}"
 			description: [
-				"{overview.cabricality.enderium.content.1}"
-				"{overview.cabricality.enderium.content.2}"
+				"{overview.cabricality.bonus_2a.start.content.1}"
+				"{overview.cabricality.bonus_2a.start.content.2}"
 				""
-				"{overview.cabricality.enderium.content.3}"
+				"{overview.cabricality.bonus_2a.start.content.3}"
 			]
-			dependencies: ["400CDC316DCDFE88"]
-			id: "2BB2C7B95E3C89AE"
+			dependencies: ["69275ECFC147E15B"]
+			id: "7888F9129E9FE517"
 			tasks: [{
-				id: "722CA19434E722FB"
+				id: "21753CBB528EAADF"
 				type: "checkmark"
-				title: "{overview.cabricality.enderium.task.unlock.title}"
+				title: "{overview.cabricality.bonus_2a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&2&l{overview.cabricality.zinc.title}"
+			title: "{overview.cabricality.bonus_2a.end.title}"
 			disable_toast: true
 			x: -5.0d
 			y: -2.5d
-			subtitle: "&2{overview.cabricality.zinc.subtitle}"
+			subtitle: "{overview.cabricality.bonus_2a.end.subtitle}"
 			description: [
-				"{overview.cabricality.zinc.content.1}"
+				"{overview.cabricality.bonus_2a.end.content.1}"
 				""
-				"{overview.cabricality.zinc.content.2}"
+				"{overview.cabricality.bonus_2a.end.content.2}"
 			]
 			dependencies: [
 				"7888F9129E9FE517"
@@ -297,7 +297,7 @@
 			tasks: [{
 				id: "12CFC84D3F01F49F"
 				type: "stat"
-				title: "&2{overview.cabricality.zinc.task.complete.title}"
+				title: "{overview.cabricality.bonus_2a.end.task.complete.title}"
 				icon: "kubejs:infernal_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -305,37 +305,37 @@
 			}]
 		}
 		{
-			title: "&6&l{overview.cabricality.radiant.title}"
+			title: "{overview.cabricality.chapter_3.start.title}"
 			icon: "kubejs:radiant_coil"
 			x: -5.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6{overview.cabricality.radiant.subtitle}"
+			subtitle: "{overview.cabricality.chapter_3.start.subtitle}"
 			description: [
-				"{overview.cabricality.radiant.content.1}"
+				"{overview.cabricality.chapter_3.start.content.1}"
 				""
-				"{overview.cabricality.radiant.content.2}"
+				"{overview.cabricality.chapter_3.start.content.2}"
 				""
-				"{overview.cabricality.radiant.content.3}"
+				"{overview.cabricality.chapter_3.start.content.3}"
 			]
 			dependencies: ["69275ECFC147E15B"]
 			id: "780E8AE86250C73D"
 			tasks: [{
 				id: "2F6FEDBB1BDCB36C"
 				type: "checkmark"
-				title: "&6{overview.cabricality.radiant.task.unlock.title}"
+				title: "{overview.cabricality.chapter_3.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.invar.title}"
+			title: "{overview.cabricality.chapter_3.end.title}"
 			disable_toast: true
 			x: -4.0d
 			y: 0.0d
-			subtitle: "{overview.cabricality.invar.subtitle}"
+			subtitle: "{overview.cabricality.chapter_3.end.subtitle}"
 			description: [
-				"{overview.cabricality.invar.content.1}"
+				"{overview.cabricality.chapter_3.end.content.1}"
 				""
-				"{overview.cabricality.invar.content.2}"
+				"{overview.cabricality.chapter_3.end.content.2}"
 			]
 			dependencies: [
 				"780E8AE86250C73D"
@@ -345,7 +345,7 @@
 			tasks: [{
 				id: "7FEEF6BED2C3F31B"
 				type: "stat"
-				title: "&6{overview.cabricality.invar.task.complete.title}"
+				title: "{overview.cabricality.chapter_3.end.task.complete.title}"
 				icon: "kubejs:inductive_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -353,33 +353,33 @@
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.infernal.title}"
-			icon: "minecraft:lava_bucket"
-			x: -6.5d
-			y: -1.5d
+			title: "{overview.cabricality.bonus_3a.start.title}"
+			icon: "kubejs:enderium_ingot"
+			x: -3.5d
+			y: 1.5d
 			shape: "circle"
-			subtitle: "{overview.cabricality.infernal.subtitle}"
+			subtitle: "{overview.cabricality.bonus_3a.start.subtitle}"
 			description: [
-				"{overview.cabricality.infernal.content.1}"
-				"{overview.cabricality.infernal.content.2}"
+				"{overview.cabricality.bonus_3a.start.content.1}"
+				"{overview.cabricality.bonus_3a.start.content.2}"
 				""
-				"{overview.cabricality.infernal.content.3}"
+				"{overview.cabricality.bonus_3a.start.content.3}"
 			]
-			dependencies: ["69275ECFC147E15B"]
-			id: "7888F9129E9FE517"
+			dependencies: ["400CDC316DCDFE88"]
+			id: "2BB2C7B95E3C89AE"
 			tasks: [{
-				id: "21753CBB528EAADF"
+				id: "722CA19434E722FB"
 				type: "checkmark"
-				title: "{overview.cabricality.infernal.task.unlock.title}"
+				title: "{overview.cabricality.bonus_3a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&3&l{overview.cabricality.ender.title}"
+			title: "{overview.cabricality.bonus_3a.end.title}"
 			disable_toast: true
 			x: -2.0d
 			y: 2.5d
-			subtitle: "&3{overview.cabricality.ender.subtitle}"
-			description: ["&3{overview.cabricality.ender.content.1}"]
+			subtitle: "{overview.cabricality.bonus_3a.end.subtitle}"
+			description: ["{overview.cabricality.bonus_3a.end.content.1}"]
 			dependencies: [
 				"2BB2C7B95E3C89AE"
 				"6DBEF7A11890ADF8"
@@ -388,7 +388,7 @@
 			tasks: [{
 				id: "4BC5C43C7B23CA16"
 				type: "stat"
-				title: "{overview.cabricality.ender.task.complete.title}"
+				title: "{overview.cabricality.bonus_3a.end.task.complete.title}"
 				icon: "kubejs:abstruse_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -396,60 +396,60 @@
 			}]
 		}
 		{
-			title: "&6&l{overview.cabricality.silicon.title}"
+			title: "{overview.cabricality.chapter_4.start.title}"
 			icon: "kubejs:silicon_compound"
 			x: -2.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6{overview.cabricality.silicon.subtitle}"
+			subtitle: "{overview.cabricality.chapter_4.start.subtitle}"
 			description: [
-				"{overview.cabricality.silicon.content.1}"
+				"{overview.cabricality.chapter_4.start.content.1}"
 				""
-				"{overview.cabricality.silicon.content.2}"
+				"{overview.cabricality.chapter_4.start.content.2}"
 				""
-				"{overview.cabricality.silicon.content.3}"
+				"{overview.cabricality.chapter_4.start.content.3}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "26173D4777F439B1"
 			tasks: [{
 				id: "74CFD83C501C4952"
 				type: "checkmark"
-				title: "&6{overview.cabricality.silicon.task.unlock.title}"
+				title: "{overview.cabricality.chapter_4.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&6&l{overview.cabricality.chaotic.title}"
+			title: "{overview.cabricality.chapter_4a.start.title}"
 			icon: "kubejs:substrate_chaos"
 			x: -2.5d
 			y: -1.25d
 			shape: "circle"
-			subtitle: "{overview.cabricality.chaotic.subtitle}"
+			subtitle: "{overview.cabricality.chapter_4a.start.subtitle}"
 			description: [
-				"{overview.cabricality.chaotic.content.1}"
+				"{overview.cabricality.chapter_4a.start.content.1}"
 				""
-				"{overview.cabricality.chaotic.content.2}"
+				"{overview.cabricality.chapter_4a.start.content.2}"
 				""
-				"{overview.cabricality.chaotic.content.3}"
+				"{overview.cabricality.chapter_4a.start.content.3}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "3934AD57122B6FFE"
 			tasks: [{
 				id: "5DF206B1738D08A0"
 				type: "checkmark"
-				title: "&6{overview.cabricality.chaotic.task.unlock.title}"
+				title: "{overview.cabricality.chapter_4a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&l{overview.cabricality.fluix.title}"
+			title: "{overview.cabricality.chapter_4.end.title}"
 			disable_toast: true
 			x: -1.0d
 			y: 0.0d
-			subtitle: "{overview.cabricality.fluix.subtitle}"
+			subtitle: "{overview.cabricality.chapter_4.end.subtitle}"
 			description: [
-				"{overview.cabricality.fluix.content.1}"
+				"{overview.cabricality.chapter_4.end.content.1}"
 				""
-				"{overview.cabricality.fluix.content.2}"
-				"&7{overview.cabricality.fluix.content.3}"
+				"{overview.cabricality.chapter_4.end.content.2}"
+				"{overview.cabricality.chapter_4.end.content.3}"
 			]
 			min_required_dependencies: 3
 			dependencies: [
@@ -463,7 +463,7 @@
 			tasks: [{
 				id: "79AB928A6C8E21DA"
 				type: "stat"
-				title: "&6{overview.cabricality.fluix.task.complete.title}"
+				title: "{overview.cabricality.chapter_4.end.task.complete.title}"
 				icon: "kubejs:calculation_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -471,35 +471,35 @@
 			}]
 		}
 		{
-			title: "&6&l{overview.cabricality.digit.title}"
+			title: "{overview.cabricality.chapter_5.start.title}"
 			icon: "kubejs:divide"
 			x: 0.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&5{overview.cabricality.digit.subtitle}"
+			subtitle: "{overview.cabricality.chapter_5.start.subtitle}"
 			description: [
-				"{overview.cabricality.digit.content.1}"
+				"{overview.cabricality.chapter_5.start.content.1}"
 				""
-				"{overview.cabricality.digit.content.2}"
+				"{overview.cabricality.chapter_5.start.content.2}"
 			]
 			dependencies: ["08716DBF9C882623"]
 			id: "5E62059675895213"
 			tasks: [{
 				id: "251A91F6C21AEAFB"
 				type: "checkmark"
-				title: "&6{overview.cabricality.digit.task.unlock.title}"
+				title: "{overview.cabricality.chapter_5.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&9&l&o{overview.cabricality.space.title}"
+			title: "{overview.cabricality.chapter_5.end.title}"
 			icon: "ad_astra:moon_sand"
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"{overview.cabricality.space.content.1}"
+				"{overview.cabricality.chapter_5.end.content.1}"
 				""
-				"{overview.cabricality.space.content.2}"
+				"{overview.cabricality.chapter_5.end.content.2}"
 			]
 			dependencies: [
 				"5E62059675895213"
@@ -511,7 +511,7 @@
 				{
 					id: "058AEB3EF218C7D2"
 					type: "stat"
-					title: "&6{overview.cabricality.space.task.complete.title}"
+					title: "{overview.cabricality.chapter_5.end.task.complete.title}"
 					icon: "indrev:controller"
 					disable_toast: true
 					stat: "minecraft:play_time"
