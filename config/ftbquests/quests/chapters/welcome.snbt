@@ -3,22 +3,22 @@
 	group: ""
 	order_index: 0
 	filename: "welcome"
-	title: "&8 Welcome"
+	title: "&8 {welcome.cabricality.title}"
 	icon: "minecraft:spore_blossom"
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "&f&lLimitless Potential"
+			title: "&f&l{welcome.cabricality.limitless.title}"
 			icon: "minecraft:gold_ore"
 			disable_toast: true
 			x: -3.5d
 			y: -5.0d
 			shape: "hexagon"
 			description: [
-				"This pack is for you."
-				"We hope you'll have a good time with it."
+				"{welcome.cabricality.limitless.content.1}"
+				"{welcome.cabricality.limitless.content.2}"
 				""
 			]
 			size: 2.0d
@@ -41,16 +41,16 @@
 			]
 		}
 		{
-			title: "&f&lCompletely Optional"
+			title: "&f&l{welcome.cabricality.optional.title}"
 			icon: "minecraft:grass_block"
 			disable_toast: true
 			x: -3.5d
 			y: -2.5d
 			shape: "hexagon"
 			description: [
-				"The Questing system helps you with the primary customisations of the Modpack: &3Trades&r and the &6Progression of Tech&r"
+				"{welcome.cabricality.optional.content.1}"
 				""
-				"Completing Quests is not required to progress through the game."
+				"{welcome.cabricality.optional.content.2}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["09356B3BEF298E06"]
@@ -68,11 +68,11 @@
 			x: -4.0d
 			y: -1.0d
 			shape: "hexagon"
-			subtitle: "简介"
+			subtitle: "{welcome.cabricality.i.subtitle}"
 			description: [
-				"Modpack Description:"
-				"The sandbox has been turned upside down - be ready to invent your best Create Contraptions yet. "
-				"&7(Or the first, if you are that brave!)"
+				"{welcome.cabricality.i.content.1}"
+				"{welcome.cabricality.i.content.2}"
+				"{welcome.cabricality.i.content.3}"
 			]
 			dependencies: ["69D55492A8F42A94"]
 			size: 1.5d
@@ -95,9 +95,9 @@
 			y: 0.5d
 			shape: "hexagon"
 			description: [
-				"About fifty inventions lie between you and the moon. "
+				"{welcome.cabricality.ii.content.1}"
 				""
-				"Thousands of components will flow through the ever-growing sequence of your machines, providing the means to explore the next level of technology. "
+				"{welcome.cabricality.ii.content.2}"
 			]
 			dependencies: ["407236D2B1D2257D"]
 			size: 1.5d
@@ -120,9 +120,9 @@
 			y: 1.0d
 			shape: "hexagon"
 			description: [
-				"Your entire factory will be put to the test as final products flow into the Data Centre, programming the Guidance computer of your Spaceship."
+				"{welcome.cabricality.iii.content.1}"
 				""
-				"Every step is different, some may even differ depending on the generation seed of your World."
+				"{welcome.cabricality.iii.content.2}"
 			]
 			dependencies: ["2C7ADB6C11B918B1"]
 			size: 1.5d
@@ -145,13 +145,13 @@
 			y: 0.5d
 			shape: "hexagon"
 			description: [
-				"Tired of the grind?"
+				"{welcome.cabricality.iv.content.1}"
 				""
-				"Fund the operation with coin provided either from various errands, or your chosen professions. "
+				"{welcome.cabricality.iv.content.2}"
 				""
-				"Automatically ship produce from your farms or gather other players to aid you in your mission."
+				"{welcome.cabricality.iv.content.3}"
 				""
-				"Then you can purchase all manner of resources, artifacts and building blocks from the market, making your life just a little bit easier."
+				"{welcome.cabricality.iv.content.4}"
 			]
 			dependencies: ["1947C6CE179EBAC6"]
 			size: 1.5d
@@ -167,25 +167,25 @@
 			}]
 		}
 		{
-			title: "&6&lQuest Content Overwiew"
+			title: "&6&l{welcome.cabricality.overview.title}"
 			icon: "ad_astra:astrodux"
 			disable_toast: true
 			x: -1.5d
 			y: -1.5d
 			shape: "hexagon"
 			description: [
-				"- &6The Bulletin Board&r provides means to earn currency for Trading."
-				"Here you can complete various errands or buy a profession permit for use in the Trading Machine."
+				"{welcome.cabricality.overview.content.1}"
+				"{welcome.cabricality.overview.content.2}"
 				""
-				"- &6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
+				"{welcome.cabricality.overview.content.3}"
 				""
-				"- &6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine."
+				"{welcome.cabricality.overview.content.4}"
 				""
-				"- The &3Factory Guide&r provides useful information for the path of Technology and Automation. All challenges to be overcome have been neatly organised into chapters and tasks. It is entirely optional to follow this Guide."
+				"{welcome.cabricality.overview.content.5}"
 				""
-				"- The Section on &3Metallurgy&r gives an overview of the ways to turn your ore into refined metal. Different paths yield differently."
+				"{welcome.cabricality.overview.content.6}"
 				""
-				"- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you."
+				"{welcome.cabricality.overview.content.7}"
 			]
 			dependencies: ["58E38BA6D927409F"]
 			size: 1.5d
@@ -201,13 +201,13 @@
 			}]
 		}
 		{
-			title: "&f&lOff you go!"
+			title: "&f&l{welcome.cabricality.go.title}"
 			icon: "minecraft:gold_block"
 			disable_toast: true
 			x: 2.0d
 			y: -1.5d
 			shape: "hexagon"
-			description: ["Now that you have an idea of what is new and what is not, settle in and start your Journey."]
+			description: ["{welcome.cabricality.go.content.1}"]
 			dependencies: ["00003FCBB33E62C4"]
 			size: 2.0d
 			id: "31EDFA6D2FF86CB0"
