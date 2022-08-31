@@ -3,23 +3,19 @@
 	group: "331B6409EF6A7840"
 	order_index: 1
 	filename: "stage_1"
-	title: "&f1&r High Aspirations"
+	title: "{overview.cabricality.title}"
 	icon: "kubejs:andesite_machine"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Chapter 1 Start!"
+			title: "{chapter_1.cabricality.start.title}"
 			icon: "create:wrench"
 			x: 2.0d
 			y: -1.0d
 			shape: "hexagon"
 			description: [
-				"Welcome to the Factory Guide!"
-				""
-				"These Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing."
-				""
-				"Happy engineering!"
+				"{chapter_1.cabricality.start.content}"
 			]
 			dependencies: ["5A8DF2D8553904BF"]
 			hide: true
@@ -42,9 +38,7 @@
 			y: -1.0d
 			shape: "circle"
 			description: [
-				"The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated."
-				""
-				"Be reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort."
+				"{chapter_1.cabricality.speedrun.content}"
 			]
 			dependencies: ["5799D55BB26BA52C"]
 			id: "6892AE55581393C6"
@@ -54,16 +48,14 @@
 			}]
 		}
 		{
-			title: "Automatic Forest"
+			title: "{chapter_1.cabricality.automatic_forest.title}"
 			icon: "minecraft:oak_log"
 			x: -1.0d
 			y: 1.0d
 			shape: "square"
 			subtitle: "Contraption 1"
 			description: [
-				"Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort. "
-				""
-				"Mechanical Saws are a powerful way to achieve this."
+				"{chapter_1.cabricality.automatic_forest.content}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
@@ -72,7 +64,7 @@
 				{
 					id: "58AB6E0FF2EA6AD4"
 					type: "item"
-					title: "Any Wooden Log"
+					title: "{chapter_1.cabricality.automatic_forest.task.wooden_log.title}"
 					icon: "minecraft:oak_log"
 					disable_toast: true
 					item: {
@@ -87,17 +79,17 @@
 				{
 					id: "0842082756DA73FE"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Water Infuser"
+			title: "{chapter_1.cabricality.water_infuser.title}"
 			icon: "minecraft:dripstone_block"
 			x: 3.0d
 			y: 1.0d
-			subtitle: "Contraption 2"
-			description: ["Compat Limestone with Water to make Dripstone Blocks, which can be milled into Clay Balls."]
+			subtitle: "{chapter_1.cabricality.water_infuser.subtitle}"
+			description: ["{chapter_1.cabricality.water_infuser.content}"]
 			dependencies: ["106C6DFDCB97327C"]
 			id: "31A0FFA3DFEB3D7D"
 			tasks: [
@@ -110,20 +102,18 @@
 				{
 					id: "523839D341188A71"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Underwater Garden"
+			title: "{chapter_1.cabricality.underwater_garden.title}"
 			icon: "minecraft:kelp"
 			x: 5.0d
 			y: 1.0d
-			subtitle: "Contraption 3"
+			subtitle: "{chapter_1.cabricality.underwater_garden.subtitle}"
 			description: [
-				"Kelp is vital ingredient to our first Assembly Line target: Andesite Alloy."
-				""
-				"Kelp can be gathered automatically with Mechanical Harvesters."
+				"{chapter_1.cabricality.underwater_garden.content}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
@@ -138,21 +128,18 @@
 				{
 					id: "0631FA27CEE5D67D"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Bedrock's Bounty"
+			title: "{chapter_1.cabricality.bedrock_bounty.title}"
 			icon: "minecraft:bedrock"
 			x: 1.0d
 			y: 1.0d
-			subtitle: "Contraption 4"
+			subtitle: "{chapter_1.cabricality.bedrock_bounty.subtitle}"
 			description: [
-				"Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely."
-				""
-				"At this time it is best to set up drills to break generated blocks between lava and water."
-				"Since bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides."
+				"{chapter_1.cabricality.bedrock_bounty.content}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
@@ -173,33 +160,33 @@
 				{
 					id: "0E1DA643781577E1"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "The Andesite Lift"
+			title: "{chapter_1.cabricality.stone_lift.title}"
 			icon: "create:rope_pulley"
 			x: 1.0d
 			y: 3.0d
 			shape: "circle"
-			subtitle: "Contraption 5"
-			description: ["All your Andesite is likely not being generated near your factory. Figure out a way to bring it to the surface."]
+			subtitle: "{chapter_1.cabricality.stone_lift.subtitle}"
+			description: ["{chapter_1.cabricality.stone_lift.content}"]
 			dependencies: ["106C6DFDCB97327C"]
 			id: "6B7F0631060A9E62"
 			tasks: [{
 				id: "0C764FDD555E8CCD"
 				type: "checkmark"
-				title: "Automated"
+				title: "{common.cabricality.automated}"
 			}]
 		}
 		{
-			title: "Clay Miller"
+			title: "{chapter_1.cabricality.clay_miller.title}"
 			icon: "minecraft:clay_ball"
 			x: 4.0d
 			y: 3.0d
-			subtitle: "Contraption 6-1"
-			description: ["With the help of Millstone, Dripstone Blocks can be milled into Clay Balls."]
+			subtitle: "{chapter_1.cabricality.clay_miller.subtitle}"
+			description: ["{chapter_1.cabricality.clay_miller.content}"]
 			dependencies: ["31A0FFA3DFEB3D7D"]
 			dependency_requirement: "one_completed"
 			id: "729FB5DD07C234E8"
@@ -213,17 +200,17 @@
 				{
 					id: "02EE2F24FDF534BC"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Algae Blender"
+			title: "{chapter_1.cabricality.algae_blender.title}"
 			icon: "architects_palette:algal_blend"
 			x: 5.0d
 			y: 3.5d
-			subtitle: "Contraption 6-2"
-			description: ["In the Mix! Clay and Kelp can be processed with the Mechanical Mixer."]
+			subtitle: "{chapter_1.cabricality.algae_blender.subtitle}"
+			description: ["{chapter_1.cabricality.algae_blender.content}"]
 			dependencies: [
 				"729FB5DD07C234E8"
 				"608BF7BE3CB666F3"
@@ -239,17 +226,17 @@
 				{
 					id: "63EA7BF746BF3254"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Algae Cooker"
+			title: "{chapter_1.cabricality.algae_cooker.title}"
 			icon: "architects_palette:algal_brick"
 			x: 4.5d
 			y: 4.5d
-			subtitle: "Contraption 6-3"
-			description: ["Smelt the Algal blend into bricks. While a Furnace works great, an Encased Fan can do it without the need of Fuel."]
+			subtitle: "{chapter_1.cabricality.algae_cooker.subtitle}"
+			description: ["{chapter_1.cabricality.algae_cooker.content}"]
 			dependencies: ["72BE175C83834838"]
 			id: "32786E9D145FFE25"
 			tasks: [
@@ -262,17 +249,17 @@
 				{
 					id: "1484A9A6DB85EA6D"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Algaesite Mixer"
+			title: "{chapter_1.cabricality.algaesite_mixer.title}"
 			icon: "create:andesite_alloy"
 			x: 3.5d
 			y: 5.0d
-			subtitle: "Contraption 6-4"
-			description: ["In another Mix! This time it'll be the bricks and your surfaced Andesite Cobblestone."]
+			subtitle: "{chapter_1.cabricality.algaesite_mixer.subtitle}"
+			description: ["{chapter_1.cabricality.algaesite_mixer.content}"]
 			dependencies: [
 				"106C6DFDCB97327C"
 				"32786E9D145FFE25"
@@ -288,24 +275,24 @@
 				{
 					id: "6AA98FC4680D6521"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Log Stripper"
+			title: "{chapter_1.cabricality.log_stripper.title}"
 			icon: "minecraft:stripped_oak_log"
 			x: -1.0d
 			y: 3.5d
-			subtitle: "Contraption 7-1"
-			description: ["Upwards-facing Mechanical Saws can process the harvested logs further..."]
+			subtitle: "{chapter_1.cabricality.log_stripper.subtitle}"
+			description: ["{chapter_1.cabricality.log_stripper.content}"]
 			dependencies: ["2CB570195DA7E106"]
 			id: "532EFE32C3A515B5"
 			tasks: [
 				{
 					id: "3C7A4BA98EEC90E8"
 					type: "item"
-					title: "Any Stripped Log"
+					title: "{chapter_1.cabricality.log_stripper.task.stripped_log.title}"
 					icon: "minecraft:stripped_oak_log"
 					item: {
 						id: "itemfilters:tag"
@@ -319,24 +306,24 @@
 				{
 					id: "7B60357D06FE3ADC"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Plank Cutter"
+			title: "{chapter_1.cabricality.plank_cutter.title}"
 			icon: "minecraft:oak_planks"
 			x: -0.5d
 			y: 4.5d
-			subtitle: "Contraption 7-2"
-			description: ["...and further..."]
+			subtitle: "{chapter_1.cabricality.plank_cutter.subtitle}"
+			description: ["{chapter_1.cabricality.plank_cutter.content}"]
 			dependencies: ["532EFE32C3A515B5"]
 			id: "19921941321965A4"
 			tasks: [
 				{
 					id: "1A63E51B0CF5C6DD"
 					type: "item"
-					title: "Any Planks"
+					title: "{chapter_1.cabricality.plank_cutter.task.planks.title}"
 					icon: "minecraft:oak_planks"
 					item: {
 						id: "itemfilters:tag"
@@ -350,20 +337,18 @@
 				{
 					id: "175767726FBCAA8D"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Cutter of Cut Planks"
+			title: "{chapter_1.cabricality.cutter_cut_planks.title}"
 			icon: "minecraft:oak_slab"
 			x: 0.5d
 			y: 5.0d
-			subtitle: "Contraption 7-3"
+			subtitle: "{chapter_1.cabricality.cutter_cut_planks.subtitle}"
 			description: [
-				"...and further, into the perfect base for our first Mechanism."
-				""
-				"Note: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw."
+				"{chapter_1.cabricality.cutter_cut_planks.content}"
 			]
 			dependencies: ["19921941321965A4"]
 			id: "59E4A6163753BC12"
@@ -371,7 +356,7 @@
 				{
 					id: "23030B6D0072EBE8"
 					type: "item"
-					title: "Any Wooden Slab"
+					title: "{chapter_1.cabricality.cutter_cut_planks.task.wooden_slab.title}"
 					icon: "minecraft:oak_slab"
 					item: {
 						id: "itemfilters:tag"
@@ -385,17 +370,17 @@
 				{
 					id: "59B260F52722A1FE"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Deploy, Deploy, Deploy."
+			title: "{chapter_1.cabricality.deploy_deploy_deploy.title}"
 			icon: "kubejs:kinetic_mechanism"
 			x: 2.0d
 			y: 6.5d
-			subtitle: "Contraption 8"
-			description: ["Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line."]
+			subtitle: "{chapter_1.cabricality.deploy_deploy_deploy.subtitle}"
+			description: ["{chapter_1.cabricality.deploy_deploy_deploy.content}"]
 			dependencies: [
 				"59E4A6163753BC12"
 				"73FCA432DEFC1DED"
@@ -412,12 +397,12 @@
 				{
 					id: "34C54664AB22ECFD"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Arming the Deployer"
+			title: "{chapter_1.cabricality.arming_deployer.title}"
 			icon: {
 				id: "kubejs:stone_saw"
 				Count: 1b
@@ -429,8 +414,7 @@
 			y: 6.5d
 			shape: "circle"
 			description: [
-				"It'll be good to stock up on a couple of saws for the Mechanism Assembly."
-				"However, they are not nearly consumed as quickly as something that would require an automated supply."
+				"{chapter_1.cabricality.arming_deployer.content}"
 			]
 			hide_dependency_lines: true
 			dependencies: [
@@ -441,7 +425,7 @@
 			tasks: [{
 				id: "52A4AF128B571664"
 				type: "item"
-				title: "Any Saw"
+				title: "{chapter_1.cabricality.arming_deployer.task.saw.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -453,15 +437,12 @@
 			}]
 		}
 		{
-			title: "Chapter 1 Complete!"
+			title: "{chapter_1.cabricality.complete.title}"
 			x: 2.0d
 			y: 8.5d
 			shape: "hexagon"
 			description: [
-				"Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit."
-				""
-				"Before moving on, check back through your factory and search for any major bottlenecks."
-				"It'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough."
+				"{chapter_1.cabricality.complete.content}"
 			]
 			dependencies: ["675C395B2074C24C"]
 			size: 2.0d
@@ -494,13 +475,13 @@
 			]
 		}
 		{
-			title: "Ah wait, don't chop"
+			title: "{bonus_1a.cabricality.resin.title}"
 			icon: "kubejs:resin_bucket"
 			x: 0.0d
 			y: 10.0d
 			shape: "square"
-			subtitle: "Contraption 9-1"
-			description: ["Liquid resin can be extracted from healthy Trees by right-clicking Extractor Machines next to the logs."]
+			subtitle: "{bonus_1a.cabricality.resin.subtitle}"
+			description: ["{bonus_1a.cabricality.resin.content}"]
 			dependencies: [
 				"3F45DFEF31838A00"
 				"681DACF11F193771"
@@ -518,17 +499,17 @@
 				{
 					id: "29BEB0A31C3FB00B"
 					type: "checkmark"
-					title: "Automated (Resin)"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Rubber Stamper"
+			title: "{bonus_1a.cabricality.rubber_stamper.title}"
 			icon: "kubejs:rubber"
 			x: 1.0d
 			y: 10.5d
-			subtitle: "Contraption 9-2"
-			description: ["Gather the resin via a network of Fluid Pipes and use a Basin-Press to solidify it."]
+			subtitle: "{bonus_1a.cabricality.rubber_stamper.subtitle}"
+			description: ["{bonus_1a.cabricality.rubber_stamper.content}"]
 			dependencies: ["3728DF562D6DCE3A"]
 			id: "3EF5F89DBD6959E3"
 			tasks: [
@@ -541,21 +522,19 @@
 				{
 					id: "5BBF2E1143CD356E"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Curing by Flame"
+			title: "{bonus_1a.cabricality.curing_flame.title}"
 			icon: "kubejs:cured_rubber"
 			x: 2.0d
 			y: 11.0d
 			shape: "square"
-			subtitle: "Contraption 9-3"
+			subtitle: "{bonus_1a.cabricality.curing_flame.subtitle}"
 			description: [
-				"Finally, smelt the raw rubber into its cured state."
-				""
-				"Bon Appétit!"
+				"{bonus_1a.cabricality.curing_flame.content}"
 			]
 			dependencies: ["3EF5F89DBD6959E3"]
 			id: "29D37095C73B3DEC"
@@ -569,16 +548,16 @@
 				{
 					id: "17286271B0667AAA"
 					type: "checkmark"
-					title: "Automated"
+					title: "{common.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "All Sealed Up"
+			title: "{bonus_1a.cabricality.sealed_up.title}"
 			x: 3.5d
 			y: 11.5d
 			shape: "circle"
-			description: ["From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on."]
+			description: ["{bonus_1a.cabricality.sealed_up.content}"]
 			dependencies: ["29D37095C73B3DEC"]
 			id: "6545C3F427B12106"
 			tasks: [{
@@ -589,11 +568,11 @@
 			}]
 		}
 		{
-			title: "Bonus 1A Complete!"
+			title: "{bonus_1a.cabricality.complete.title}"
 			x: 2.0d
 			y: 13.0d
 			shape: "hexagon"
-			description: ["Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you."]
+			description: ["{bonus_1a.cabricality.complete.content}"]
 			dependencies: ["6545C3F427B12106"]
 			size: 2.0d
 			id: "0E0535849D8D9279"

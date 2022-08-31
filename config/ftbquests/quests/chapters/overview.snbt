@@ -38,13 +38,13 @@
 			}]
 		}
 		{
-			title: "{overview.cabricality.preperation.title}"
+			title: "{overview.cabricality.preparation.title}"
 			icon: "minecraft:cobblestone_stairs"
 			x: -12.5d
 			y: -1.5d
 			shape: "circle"
 			description: [
-				"{overview.cabricality.preperation.content}"
+				"{overview.cabricality.preparation.content}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "7D6BC99CCCB29924"
@@ -82,7 +82,7 @@
 				{
 					id: "1900BA945C62D0CC"
 					type: "item"
-					title: "{overview.cabricality.preperation.task.forgery.title}"
+					title: "{overview.cabricality.preparation.task.forgery.title}"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b

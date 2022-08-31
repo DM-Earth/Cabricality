@@ -1,5 +1,6 @@
 {
   "data.cabricality.title": "Cabricality",
+  "common.cabricality.automated": "Automated",
 
 
 
@@ -43,9 +44,9 @@
   "overview.cabricality.start.content": "&aWelcome to the Overview. You can always come back here to catch up on your current position in the Progression of Technology. If you look closely, your Journey to the Moon completes the final step of the way on the right side.",
   "overview.cabricality.start.task.logs.title": "Any Logs",
 
-  "overview.cabricality.preperation.title": "&f&lPreparations",
-  "overview.cabricality.preperation.content.1": "Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first.\n\nHere are some recommendations for a successful start.",
-  "overview.cabricality.preperation.task.forgery.title": "Smart Forgery",
+  "overview.cabricality.preparation.title": "&f&lPreparations",
+  "overview.cabricality.preparation.content.1": "Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first.\n\nHere are some recommendations for a successful start.",
+  "overview.cabricality.preparation.task.forgery.title": "Smart Forgery",
 
   "overview.cabricality.chapter_1.start.title": "&6&lHigh Aspirations",
   "overview.cabricality.chapter_1.start.subtitle": "&6Chapter 1",
@@ -129,5 +130,95 @@
 
   "overview.cabricality.chapter_5.end.title": "&9&l&o..to a Spacefarer",
   "overview.cabricality.chapter_5.end.content": "&oThe Dream of walking the Moon's surface finally came to fruition.\n\n&oWith that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!&r",
-  "overview.cabricality.chapter_5.end.task.complete.title": "&6Complete Chapter 5"
+  "overview.cabricality.chapter_5.end.task.complete.title": "&6Complete Chapter 5",
+
+
+
+  "chapter_1.cabricality.title": "&f1&r High Aspirations",
+
+  "chapter_1.cabricality.start.title": "Chapter 1 Start!",
+  "chapter_1.cabricality.start.content": "Welcome to the Factory Guide!\n\nThese Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing.\n\nHappy engineering!",
+
+  "chapter_1.cabricality.speedrun.title": "Speedrun",
+  "chapter_1.cabricality.speedrun.content": "The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated.\n\nBe reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort.",
+
+  "chapter_1.cabricality.automatic_forest.title": "Automatic Forest",
+  "chapter_1.cabricality.automatic_forest.content": "Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort.\n\nMechanical Saws are a powerful way to achieve this.",
+  "chapter_1.cabricality.automatic_forest.task.wooden_log.title": "Any Wooden Log",
+
+  "chapter_1.cabricality.water_infuser.title": "Water Infuser",
+  "chapter_1.cabricality.water_infuser.subtitle": "Contraption 2",
+  "chapter_1.cabricality.water_infuser.content": "Compact Limestone with Water to make Dripstone Blocks, which can be milled into Clay Balls.",
+
+  "chapter_1.cabricality.underwater_garden.title": "Underwater Garden",
+  "chapter_1.cabricality.underwater_garden.subtitle": "Contraption 3",
+  "chapter_1.cabricality.underwater_garden.content": "Kelp is vital ingredient to our first Assembly Line target: Andesite Alloy.\n\nKelp can be gathered automatically with Mechanical Harvesters.",
+
+  "chapter_1.cabricality.bedrock_bounty.title": "Bedrock's Bounty",
+  "chapter_1.cabricality.bedrock_bounty.subtitle": "Contraption 4",
+  "chapter_1.cabricality.bedrock_bounty.content": "Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely.\n\nAt this time it is best to set up drills to break generated blocks between lava and water.\nSince bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides.",
+
+  "chapter_1.cabricality.stone_lift.title": "The Stone Lift",
+  "chapter_1.cabricality.stone_lift.subtitle": "Contraption 5",
+  "chapter_1.cabricality.stone_lift.content": "All your Andesite is likely not being generated near your factory. Figure out a way to bring it to the surface.",
+
+  "chapter_1.cabricality.clay_miller.title": "Clay Miller",
+  "chapter_1.cabricality.clay_miller.subtitle": "Contraption 6-1",
+  "chapter_1.cabricality.clay_miller.content": "With the help of Millstone, Dripstone Blocks can be milled into Clay Balls.",
+
+  "chapter_1.cabricality.algae_blender.title": "Algae Blender",
+  "chapter_1.cabricality.algae_blender.subtitle": "Contraption 6-2",
+  "chapter_1.cabricality.algae_blender.content": "In the Mix! Clay and Kelp can be processed with the Mechanical Mixer.",
+
+  "chapter_1.cabricality.algae_cooker.title": "Algae Cooker",
+  "chapter_1.cabricality.algae_cooker.subtitle": "Contraption 6-3",
+  "chapter_1.cabricality.algae_cooker.content": "Smelt the Algal blend into bricks. While a Furnace works great, an Encased Fan can do it without the need of Fuel.",
+
+  "chapter_1.cabricality.algaesite_mixer.title": "Algaesite Mixer",
+  "chapter_1.cabricality.algaesite_mixer.subtitle": "Contraption 6-4",
+  "chapter_1.cabricality.algaesite_mixer.content": "In another Mix! This time it'll be the bricks and your surfaced Andesite.",
+
+  "chapter_1.cabricality.log_stripper.title": "Log Stripper",
+  "chapter_1.cabricality.log_stripper.subtitle": "Contraption 7-1",
+  "chapter_1.cabricality.log_stripper.content": "Upwards-facing Mechanical Saws can process the harvested logs further...",
+  "chapter_1.cabricality.log_stripper.task.stripped_log.title": "Any Stripped Log",
+
+  "chapter_1.cabricality.plank_cutter.title": "Plank Cutter",
+  "chapter_1.cabricality.plank_cutter.subtitle": "Contraption 7-2",
+  "chapter_1.cabricality.plank_cutter.content": "...and further...",
+  "chapter_1.cabricality.plank_cutter.task.planks.title": "Any Planks",
+
+  "chapter_1.cabricality.cutter_cut_planks.title": "Cutter of Cut Planks",
+  "chapter_1.cabricality.cutter_cut_planks.subtitle": "Contraption 7-3",
+  "chapter_1.cabricality.cutter_cut_planks.content": "...and further, into the perfect base for our first Mechanism.\n\nNote: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw.",
+  "chapter_1.cabricality.cutter_cut_planks.task.wooden_slab.title": "Any Wooden Slab",
+
+  "chapter_1.cabricality.deploy_deploy_deploy.title": "Deploy, Deploy, Deploy.",
+  "chapter_1.cabricality.deploy_deploy_deploy.subtitle": "Contraption 8",
+  "chapter_1.cabricality.deploy_deploy_deploy.content": "Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line.",
+
+  "chapter_1.cabricality.arming_deployer.title": "Arming the Deployer",
+  "chapter_1.cabricality.arming_deployer.content": "It'll be good to stock up on a couple of saws for the Mechanism Assembly.\nHowever, they are not nearly consumed as quickly as something that would require an automated supply.",
+  "chapter_1.cabricality.arming_deployer.task.saw.title": "Any Saw",
+
+  "chapter_1.cabricality.complete.title": "Chapter 1 Complete!",
+  "chapter_1.cabricality.complete.content": "Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit.\n\nBefore moving on, check back through your factory and search for any major bottlenecks.\nIt'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough.",
+
+  "bonus_1a.cabricality.resin.title": "Ah wait, don't chop",
+  "bonus_1a.cabricality.resin.subtitle": "Contraption 9-1",
+  "bonus_1a.cabricality.resin.content": "Liquid resin can be extracted from healthy Trees by right-clicking Extractor Machines next to the logs.",
+
+  "bonus_1a.cabricality.rubber_stamper.title": "Rubber Stamper",
+  "bonus_1a.cabricality.rubber_stamper.subtitle": "Contraption 9-2",
+  "bonus_1a.cabricality.rubber_stamper.content": "Gather the resin via a network of Fluid Pipes and use a Basin-Press to solidify it.",
+
+  "bonus_1a.cabricality.curing_flame.title": "Curing by Flame",
+  "bonus_1a.cabricality.curing_flame.subtitle": "Contraption 9-3",
+  "bonus_1a.cabricality.curing_flame.content": "Finally, smelt the raw rubber into its cured state.\nBon Appétit!",
+
+  "bonus_1a.cabricality.sealed_up.title": "All Sealed Up",
+  "bonus_1a.cabricality.sealed_up.content": "From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on.",
+
+  "bonus_1a.cabricality.complete.title": "Bonus 1A Complete!p",
+  "bonus_1a.cabricality.complete.content": "Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you."
 }
