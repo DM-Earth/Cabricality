@@ -138,87 +138,210 @@
 
   "chapter_1.cabricality.start.title": "Chapter 1 Start!",
   "chapter_1.cabricality.start.content": "Welcome to the Factory Guide!\n\nThese Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing.\n\nHappy engineering!",
+  "chapter_1.cabricality.start.task.checkmark.title": "Checkmark",
 
   "chapter_1.cabricality.speedrun.title": "Speedrun",
   "chapter_1.cabricality.speedrun.content": "The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated.\n\nBe reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort.",
+  "chapter_1.cabricality.speedrun.task.checkmark.title": "Checkmark",
 
-  "chapter_1.cabricality.automatic_forest.title": "Automatic Forest",
-  "chapter_1.cabricality.automatic_forest.content": "Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort.\n\nMechanical Saws are a powerful way to achieve this.",
-  "chapter_1.cabricality.automatic_forest.task.wooden_log.title": "Any Wooden Log",
+  "contraption.cabricality.1.title": "Automatic Forest",
+  "contraption.cabricality.1.subtitle": "Contraption 1",
+  "contraption.cabricality.1.content": "Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort.\n\nMechanical Saws are a powerful way to achieve this.",
+  "contraption.cabricality.1.task.wooden_log.title": "Any Wooden Log",
 
-  "chapter_1.cabricality.water_infuser.title": "Water Infuser",
-  "chapter_1.cabricality.water_infuser.subtitle": "Contraption 2",
-  "chapter_1.cabricality.water_infuser.content": "Compact Limestone with Water to make Dripstone Blocks, which can be milled into Clay Balls.",
+  "contraption.cabricality.2.title": "Water Infuser",
+  "contraption.cabricality.2.subtitle": "Contraption 2",
+  "contraption.cabricality.2.content": "Compact Limestone with Water to make Dripstone Blocks, which can be milled into Clay Balls.",
 
-  "chapter_1.cabricality.underwater_garden.title": "Underwater Garden",
-  "chapter_1.cabricality.underwater_garden.subtitle": "Contraption 3",
-  "chapter_1.cabricality.underwater_garden.content": "Kelp is vital ingredient to our first Assembly Line target: Andesite Alloy.\n\nKelp can be gathered automatically with Mechanical Harvesters.",
+  "contraption.cabricality.3.title": "Underwater Garden",
+  "contraption.cabricality.3.subtitle": "Contraption 3",
+  "contraption.cabricality.3.content": "Kelp is vital ingredient to our first Assembly Line target: Andesite Alloy.\n\nKelp can be gathered automatically with Mechanical Harvesters.",
 
-  "chapter_1.cabricality.bedrock_bounty.title": "Bedrock's Bounty",
-  "chapter_1.cabricality.bedrock_bounty.subtitle": "Contraption 4",
-  "chapter_1.cabricality.bedrock_bounty.content": "Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely.\n\nAt this time it is best to set up drills to break generated blocks between lava and water.\nSince bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides.",
+  "contraption.cabricality.4.title": "Bedrock's Bounty",
+  "contraption.cabricality.4.subtitle": "Contraption 4",
+  "contraption.cabricality.4.content": "Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely.\n\nAt this time it is best to set up drills to break generated blocks between lava and water.\nSince bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides.",
 
-  "chapter_1.cabricality.stone_lift.title": "The Stone Lift",
-  "chapter_1.cabricality.stone_lift.subtitle": "Contraption 5",
-  "chapter_1.cabricality.stone_lift.content": "All your Andesite is likely not being generated near your factory. Figure out a way to bring it to the surface.",
+  "contraption.cabricality.5.title": "The Stone Lift",
+  "contraption.cabricality.5.subtitle": "Contraption 5",
+  "contraption.cabricality.5.content": "All your Andesite is likely not being generated near your factory. Figure out a way to bring it to the surface.",
 
-  "chapter_1.cabricality.clay_miller.title": "Clay Miller",
-  "chapter_1.cabricality.clay_miller.subtitle": "Contraption 6-1",
-  "chapter_1.cabricality.clay_miller.content": "With the help of Millstone, Dripstone Blocks can be milled into Clay Balls.",
+  "contraption.cabricality.6.1.title": "Clay Miller",
+  "contraption.cabricality.6.1.subtitle": "Contraption 6-1",
+  "contraption.cabricality.6.1.content": "With the help of Millstone, Dripstone Blocks can be milled into Clay Balls.",
 
-  "chapter_1.cabricality.algae_blender.title": "Algae Blender",
-  "chapter_1.cabricality.algae_blender.subtitle": "Contraption 6-2",
-  "chapter_1.cabricality.algae_blender.content": "In the Mix! Clay and Kelp can be processed with the Mechanical Mixer.",
+  "contraption.cabricality.6.2.title": "Algae Blender",
+  "contraption.cabricality.6.2.subtitle": "Contraption 6-2",
+  "contraption.cabricality.6.2.content": "In the Mix! Clay and Kelp can be processed with the Mechanical Mixer.",
 
-  "chapter_1.cabricality.algae_cooker.title": "Algae Cooker",
-  "chapter_1.cabricality.algae_cooker.subtitle": "Contraption 6-3",
-  "chapter_1.cabricality.algae_cooker.content": "Smelt the Algal blend into bricks. While a Furnace works great, an Encased Fan can do it without the need of Fuel.",
+  "contraption.cabricality.6.3.title": "Algae Cooker",
+  "contraption.cabricality.6.3.subtitle": "Contraption 6-3",
+  "contraption.cabricality.6.3.content": "Smelt the Algal blend into bricks. While a Furnace works great, an Encased Fan can do it without the need of Fuel.",
 
-  "chapter_1.cabricality.algaesite_mixer.title": "Algaesite Mixer",
-  "chapter_1.cabricality.algaesite_mixer.subtitle": "Contraption 6-4",
-  "chapter_1.cabricality.algaesite_mixer.content": "In another Mix! This time it'll be the bricks and your surfaced Andesite.",
+  "contraption.cabricality.6.4.title": "Algaesite Mixer",
+  "contraption.cabricality.6.4.subtitle": "Contraption 6-4",
+  "contraption.cabricality.6.4.content": "In another Mix! This time it'll be the bricks and your surfaced Andesite.",
 
-  "chapter_1.cabricality.log_stripper.title": "Log Stripper",
-  "chapter_1.cabricality.log_stripper.subtitle": "Contraption 7-1",
-  "chapter_1.cabricality.log_stripper.content": "Upwards-facing Mechanical Saws can process the harvested logs further...",
-  "chapter_1.cabricality.log_stripper.task.stripped_log.title": "Any Stripped Log",
+  "contraption.cabricality.7.1.title": "Log Stripper",
+  "contraption.cabricality.7.1.subtitle": "Contraption 7-1",
+  "contraption.cabricality.7.1.content": "Upwards-facing Mechanical Saws can process the harvested logs further...",
+  "contraption.cabricality.7.1.task.stripped_log.title": "Any Stripped Log",
 
-  "chapter_1.cabricality.plank_cutter.title": "Plank Cutter",
-  "chapter_1.cabricality.plank_cutter.subtitle": "Contraption 7-2",
-  "chapter_1.cabricality.plank_cutter.content": "...and further...",
-  "chapter_1.cabricality.plank_cutter.task.planks.title": "Any Planks",
+  "contraption.cabricality.7.2.title": "Plank Cutter",
+  "contraption.cabricality.7.2.subtitle": "Contraption 7-2",
+  "contraption.cabricality.7.2.content": "...and further...",
+  "contraption.cabricality.7.2.task.planks.title": "Any Planks",
 
-  "chapter_1.cabricality.cutter_cut_planks.title": "Cutter of Cut Planks",
-  "chapter_1.cabricality.cutter_cut_planks.subtitle": "Contraption 7-3",
-  "chapter_1.cabricality.cutter_cut_planks.content": "...and further, into the perfect base for our first Mechanism.\n\nNote: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw.",
-  "chapter_1.cabricality.cutter_cut_planks.task.wooden_slab.title": "Any Wooden Slab",
+  "contraption.cabricality.7.3.title": "Cutter of Cut Planks",
+  "contraption.cabricality.7.3.subtitle": "Contraption 7-3",
+  "contraption.cabricality.7.3.content": "...and further, into the perfect base for our first Mechanism.\n\nNote: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw.",
+  "contraption.cabricality.7.3.task.wooden_slab.title": "Any Wooden Slab",
 
-  "chapter_1.cabricality.deploy_deploy_deploy.title": "Deploy, Deploy, Deploy.",
-  "chapter_1.cabricality.deploy_deploy_deploy.subtitle": "Contraption 8",
-  "chapter_1.cabricality.deploy_deploy_deploy.content": "Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line.",
+  "contraption.cabricality.8.title": "Deploy, Deploy, Deploy.",
+  "contraption.cabricality.8.subtitle": "Contraption 8",
+  "contraption.cabricality.8.content": "Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line.",
 
-  "chapter_1.cabricality.arming_deployer.title": "Arming the Deployer",
-  "chapter_1.cabricality.arming_deployer.content": "It'll be good to stock up on a couple of saws for the Mechanism Assembly.\nHowever, they are not nearly consumed as quickly as something that would require an automated supply.",
-  "chapter_1.cabricality.arming_deployer.task.saw.title": "Any Saw",
+  "contraption.cabricality.assemble.title": "Arming the Deployer",
+  "contraption.cabricality.assemble.content": "It'll be good to stock up on a couple of saws for the Mechanism Assembly.\nHowever, they are not nearly consumed as quickly as something that would require an automated supply.",
+  "contraption.cabricality.assemble.task.saw.title": "Any Saw",
 
   "chapter_1.cabricality.complete.title": "Chapter 1 Complete!",
   "chapter_1.cabricality.complete.content": "Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit.\n\nBefore moving on, check back through your factory and search for any major bottlenecks.\nIt'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough.",
 
-  "bonus_1a.cabricality.resin.title": "Ah wait, don't chop",
-  "bonus_1a.cabricality.resin.subtitle": "Contraption 9-1",
-  "bonus_1a.cabricality.resin.content": "Liquid resin can be extracted from healthy Trees by right-clicking Extractor Machines next to the logs.",
+  "contraption.cabricality.9.1.title": "Ah wait, don't chop",
+  "contraption.cabricality.9.1.subtitle": "Contraption 9-1",
+  "contraption.cabricality.9.1.content": "Liquid resin can be extracted from healthy Trees by right-clicking Extractor Machines next to the logs.",
 
-  "bonus_1a.cabricality.rubber_stamper.title": "Rubber Stamper",
-  "bonus_1a.cabricality.rubber_stamper.subtitle": "Contraption 9-2",
-  "bonus_1a.cabricality.rubber_stamper.content": "Gather the resin via a network of Fluid Pipes and use a Basin-Press to solidify it.",
+  "contraption.cabricality.9.2.title": "Rubber Stamper",
+  "contraption.cabricality.9.2.subtitle": "Contraption 9-2",
+  "contraption.cabricality.9.2.content": "Gather the resin via a network of Fluid Pipes and use a Basin-Press to solidify it.",
 
-  "bonus_1a.cabricality.curing_flame.title": "Curing by Flame",
-  "bonus_1a.cabricality.curing_flame.subtitle": "Contraption 9-3",
-  "bonus_1a.cabricality.curing_flame.content": "Finally, smelt the raw rubber into its cured state.\nBon Appétit!",
+  "contraption.cabricality.9.3.title": "Curing by Flame",
+  "contraption.cabricality.9.3.subtitle": "Contraption 9-3",
+  "contraption.cabricality.9.3.content": "Finally, smelt the raw rubber into its cured state.\nBon Appétit!",
 
-  "bonus_1a.cabricality.sealed_up.title": "All Sealed Up",
-  "bonus_1a.cabricality.sealed_up.content": "From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on.",
+  "bonus_1a.cabricality.assemble.title": "All Sealed Up",
+  "bonus_1a.cabricality.assemble.content": "From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on.",
 
-  "bonus_1a.cabricality.complete.title": "Bonus 1A Complete!p",
-  "bonus_1a.cabricality.complete.content": "Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you."
+  "bonus_1a.cabricality.complete.title": "Bonus 1A Complete!",
+  "bonus_1a.cabricality.complete.content": "Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you.",
+
+
+
+  "chapter_2.cabricality.title": "&f2&r Alluring Expedience",
+
+  "chapter_2.cabricality.start.title": "Chapter 2 Start!",
+  "chapter_2.cabricality.start.content": "The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier.\n\nHappy Inventing!",
+  "chapter_2.cabricality.start.task.checkmark.title": "Checkmark",
+
+  "contraption.cabricality.10.title": "The Alloy Mixer",
+  "contraption.cabricality.10.subtitle": "Contraption 10",
+  "contraption.cabricality.10.content": "Not part of the Mechanism Chain, yet very important for creating relevant machines.\n\nUsing Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them.\n\nPumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots.\n\nFor less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above.",
+  "contraption.cabricality.10.task.checkmark.title": "Checkmark",
+
+  "chapter_2.cabricality.sand.title": "Temporary Sand",
+  "chapter_2.cabricality.sand.content": "Initially, Certus Quartz Seeds require sand to be crafted. However, for full automation it might be worthwhile to bypass that requirement with the help of Mechanical Crafters.",
+
+  "chapter_2.cabricality.water.title": "Water Supply",
+  "chapter_2.cabricality.water.content": "The contraptions of Chapter 2 require a healthy supply of water. The easiest way is to pull from water sources directly using Mechanical Pumps and a fluid pipe network.",
+  "chapter_2.cabricality.water.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.11.title": "Skystone Infini-mill",
+  "contraption.cabricality.11.subtitle": "Contraption 11",
+  "contraption.cabricality.11.content": "You can just keep on pulverising it. Sky Stone blocks never seem to lose mass in the process. What a world we live in!\n\nFind Sky Stone Blocks at Meteor crash sites. If you haven't encountered any, try looking for one using the Meteorite compass.",
+  "contraption.cabricality.11.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.12.1.title": "Quartz Seeds",
+  "contraption.cabricality.12.1.subtitle": "Contraption 12-1",
+  "contraption.cabricality.12.1.content": "This piece of quartz is too small. With enough water we might get somewhere.\n\nIf you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accellerate the process.",
+
+  "contraption.cabricality.12.2.title": "The Great Growth",
+  "contraption.cabricality.12.2.subtitle": "Contraption 12-2",
+  "contraption.cabricality.12.2.content": "Finally, a fully grown crystal. Don't forget to send every second one back around for seed production!",
+  "contraption.cabricality.12.2.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.13.title": "The (Re-)Charger",
+  "contraption.cabricality.13.subtitle": "Contraption 13",
+  "contraption.cabricality.13.content": "Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2.\n\nThe Charger from AE2 can be used here, along with the Item Trasportation of choice.",
+  "contraption.cabricality.13.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.14.1.title": "Skystone Mixer",
+  "contraption.cabricality.14.1.subtitle": "Contraption 14-1",
+  "contraption.cabricality.14.1.content": "Dissolving this strange reactive powder in water creates a fun and useful liquid.",
+  "contraption.cabricality.14.1.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.14.2.title": "Charged Mixer",
+  "contraption.cabricality.14.2.subtitle": "Contraption 14-2",
+  "contraption.cabricality.14.2.content": "Discharging an Energized Certus Quartz Crystal into the liquid creates a solution that reminds you of liquid redstone.\n&7Notice that the mixing process returns an inert quartz ready to be recharged using Contraption 14.",
+  "contraption.cabricality.14.2.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.14.3.title": "Painted Quartz Mixer",
+  "contraption.cabricality.14.3.subtitle": "Contraption 14-3",
+  "contraption.cabricality.14.3.content": "In a third and final Mixer, our freshly grown Crystals will be treated to a nice and energetic re-design.\n\n&7&o(Sorry to all Mineralogists.)",
+  "contraption.cabricality.14.3.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.15.1.title": "Iron for Days",
+  "contraption.cabricality.15.1.subtitle": "Contraption 15-1",
+  "contraption.cabricality.15.1.content": "Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone.\n\nStart with some Drills hooked up to regenerating Cobblestone blocks.",
+  "contraption.cabricality.15.1.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.15.2.title": "De-Chunkify",
+  "contraption.cabricality.15.2.subtitle": "Contraption 15-2",
+  "contraption.cabricality.15.2.content": "The Cobblestone first needs to be milled down into Gravel.",
+  "contraption.cabricality.15.2.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.15.3.title": "Ferric Traces",
+  "contraption.cabricality.15.3.subtitle": "Contraption 15-3",
+  "contraption.cabricality.15.3.content": "Washing the Gravel with an Encased Fan leaves you with Iron Nuggets and Flint.",
+  "contraption.cabricality.15.3.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.15.4.title": "Get Melted",
+  "contraption.cabricality.15.4.subtitle": "Contraption 15-4",
+  "contraption.cabricality.15.4.content": "Route the nuggets into your High-Temperature melting equipment. A Melter from Tinkers' Construct, for example.",
+  "contraption.cabricality.15.4.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.15.5.title": "Second Coating Layer",
+  "contraption.cabricality.15.5.subtitle": "Contraption 15-5",
+  "contraption.cabricality.15.5.content": "Spout a droplet of Molten Iron onto the Rose Quartz Crystal to create a fully functional Electron Tube.",
+  "contraption.cabricality.15.5.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.16.title": "Keep on Deploying",
+  "contraption.cabricality.16.subtitle": "Contraption 16",
+  "contraption.cabricality.16.content": "Bringing together Electron Tubes and Kinetic Mechanisms using a row of Deployers concludes your second Assembly Line.",
+  "contraption.cabricality.16.task.checkmark.title": "Automated",
+
+  "chapter_2.cabricality.assemble.title": "Arming the Deployer II",
+  "chapter_2.cabricality.assemble.content": "It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly.\n\nJust like last time, the requirement does not necessarily call for automation.",
+
+  "chapter_2.cabricality.complete.title": "Chapter 2 Complete!",
+  "chapter_2.cabricality.complete.content": "Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!\n\nAfter cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section.",
+
+  "bonus_2.cabricality.preparation.title": "Blaze Escort",
+  "bonus_2.cabricality.preparation.content": "For the first time in the progression, a Blaze Burner is required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners.",
+
+  "contraption.cabricality.17.1.title": "The Double Decker I",
+  "contraption.cabricality.17.1.subtitle": "Contraption 17-1",
+  "contraption.cabricality.17.1.content": "For the all-mighty Infernal Mechanism, a bountiful source of soul essence is needed. Thankfully, the vines of the underworld seem to carry it in them.\n\nTwisting Vines grow upwards, you can gather them using Mechanical Harvesters.",
+  "contraption.cabricality.17.1.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.17.2.title": "The Double Decker II",
+  "contraption.cabricality.17.2.subtitle": "Contraption 17-2",
+  "contraption.cabricality.17.2.content": "Weeping Vines grow downwards from a ceiling. You can gather them with Mechanical Harvesters.\n\nFor style points, you can use the same contraption to harvest both vine types simultaneously.",
+  "contraption.cabricality.17.2.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.17.3.title": "Soul Distillery",
+  "contraption.cabricality.17.3.subtitle": "Contraption 17-3",
+  "contraption.cabricality.17.3.content": "Drop all the harvested vines into a Heated Mixing Basin.",
+  "contraption.cabricality.17.3.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.18.1.title": "A. Lot. Of. Lava",
+  "contraption.cabricality.18.1.subtitle": "Contraption 18-1",
+  "contraption.cabricality.18.1.content": "Every Zinc Machine will end up using 24 Buckets of Lava in Production. It's not a great ecological footprint, but even just one Hose Pulley can make quick work of it.",
+  "contraption.cabricality.18.1.task.checkmark.title": "Automated",
+
+  "contraption.cabricality.18.2.title": "Heated Treatment",
+  "contraption.cabricality.18.2.subtitle": "Contraption 18-2",
+  "contraption.cabricality.18.2.content": "Dropping the Liquids onto a Precision Mechanism will convert it to its Infernal counterpart.\n\nOnce again, full automation of bonus mechanisms is not as pressing a task, since they do not lead to any further machines beyond their own.\nA semi-automatic setup for converting Precision Mechanisms whenever needed should suffice.",
+
+  "bonus_2a.cabricality.complete.title": "Bonus 2A Complete!",
+  "bonus_2a.cabricality.complete.content": "Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."
 }
