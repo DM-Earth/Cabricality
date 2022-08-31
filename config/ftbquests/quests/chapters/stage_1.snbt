@@ -75,7 +75,7 @@
 				{
 					id: "0842082756DA73FE"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -98,7 +98,7 @@
 				{
 					id: "523839D341188A71"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -122,7 +122,7 @@
 				{
 					id: "0631FA27CEE5D67D"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -152,7 +152,7 @@
 				{
 					id: "0E1DA643781577E1"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -169,7 +169,7 @@
 			tasks: [{
 				id: "0C764FDD555E8CCD"
 				type: "checkmark"
-				title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 			}]
 		}
 		{
@@ -192,7 +192,7 @@
 				{
 					id: "02EE2F24FDF534BC"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -218,7 +218,7 @@
 				{
 					id: "63EA7BF746BF3254"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -241,7 +241,7 @@
 				{
 					id: "1484A9A6DB85EA6D"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -267,7 +267,7 @@
 				{
 					id: "6AA98FC4680D6521"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -298,7 +298,7 @@
 				{
 					id: "7B60357D06FE3ADC"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -329,7 +329,7 @@
 				{
 					id: "175767726FBCAA8D"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -360,7 +360,7 @@
 				{
 					id: "59B260F52722A1FE"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -387,7 +387,7 @@
 				{
 					id: "34C54664AB22ECFD"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -485,7 +485,7 @@
 				{
 					id: "29BEB0A31C3FB00B"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -508,7 +508,7 @@
 				{
 					id: "5BBF2E1143CD356E"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -532,7 +532,7 @@
 				{
 					id: "17286271B0667AAA"
 					type: "checkmark"
-					title: "{common.cabricality.automated}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}

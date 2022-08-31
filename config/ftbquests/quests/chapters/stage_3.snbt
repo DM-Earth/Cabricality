@@ -3,24 +3,18 @@
 	group: "331B6409EF6A7840"
 	order_index: 3
 	filename: "stage_3"
-	title: "&f3&r The Catharsis"
+	title: "{chapter_3.cabricality.title}"
 	icon: "indrev:machine_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Chapter 3 Start!"
+			title: "!"
 			icon: "create:precision_mechanism"
 			x: -1.5d
 			y: -1.0d
 			shape: "hexagon"
-			description: [
-				"Working towards a passive supply of Radiant Induction Coils, you'll be sure to encounter some new and unfamiliar tasks. "
-				""
-				"Once again it's time to grab the Wrench, re-stock the toolbox and to clear out a new plot."
-				""
-				"Happy Creating!"
-			]
+			description: ["{chapter_3.cabricality.start.content}"]
 			dependencies: ["780E8AE86250C73D"]
 			hide: true
 			size: 2.0d
@@ -28,6 +22,7 @@
 			tasks: [{
 				id: "2236686383D4E61B"
 				type: "checkmark"
+				title: "{chapter_3.cabricality.start.task.checkmark.title}"
 			}]
 			rewards: [{
 				id: "296358DF5AEC671C"
@@ -36,17 +31,11 @@
 			}]
 		}
 		{
-			title: "Keeping Stock"
+			title: "{chapter_3.cabricality.preparation.title}"
 			x: -3.5d
 			y: -1.0d
 			shape: "circle"
-			description: [
-				"A few of the following contraptions involve dropping items on the ground. Whenever a process will not backstack on overflow (e.g. belt items waiting automatically), it is important to toggle the production at certain buffer thresholds."
-				""
-				"More concretely: When the output buffer exceeds 75%, stop producing items. Once it reaches below 25%, start the process up again. This prevents overflow and machines from spewing items everywhere."
-				""
-				"The Stockpile Switch is designed for this purpose exactly. "
-			]
+			description: ["{chapter_3.cabricality.preparation.content}"]
 			dependencies: ["397232F676CB621B"]
 			id: "472FB03D0E5A38D6"
 			tasks: [{
@@ -63,12 +52,12 @@
 			}]
 		}
 		{
-			title: "Express Sticks"
+			title: "{contraption.cabricality.19.title}"
 			icon: "minecraft:stick"
 			x: -3.0d
 			y: 1.0d
-			subtitle: "Contraption 19"
-			description: ["For this next trick a supply of Wooden Sticks is required. Whether that calls for a new harvester or just a scheduled shipment from Contraption 1 is up to you."]
+			subtitle: "{contraption.cabricality.19.subtitle}"
+			description: ["{contraption.cabricality.19.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "194B973EAF17809C"
@@ -82,17 +71,17 @@
 				{
 					id: "435C3E443BCC9176"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "More Cobblestone"
+			title: "{contraption.cabricality.20.1.title}"
 			icon: "minecraft:cobblestone"
 			x: -1.5d
 			y: 1.0d
-			subtitle: "Contraption 20-1"
-			description: ["The trusty and cheap multi-purpose material of cobblestone is making its comeback."]
+			subtitle: "{contraption.cabricality.20.1.subtitle}"
+			description: ["{contraption.cabricality.20.1.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "5C277D27606F64DA"
@@ -100,7 +89,7 @@
 				{
 					id: "35C10E79F8F1E0DF"
 					type: "item"
-					title: "Any Cobblestone"
+					title: "{contraption.cabricality.20.1.task.cobblestone}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -113,21 +102,17 @@
 				{
 					id: "36BD580312C8177B"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "The Wall"
+			title: "{contraption.cabricality.20.2.title}"
 			icon: "create:crushing_wheel"
 			x: -1.5d
 			y: 2.5d
-			subtitle: "Contraption 20-2"
-			description: [
-				"Next up, we need Crushing Wheels. Not only as a machine, but as an ingredient, too."
-				""
-				"Walls of Mechanical Crafters can quickly get in the way of paths and other infrastructure. Make sure to give them some space."
-			]
+			subtitle: "{contraption.cabricality.20.2.subtitle}"
+			description: ["{contraption.cabricality.20.2.content}"]
 			dependencies: [
 				"194B973EAF17809C"
 				"5C277D27606F64DA"
@@ -143,17 +128,17 @@
 				{
 					id: "764E76A93ED07203"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Inception"
+			title: "{contraption.cabricality.20.3.title}"
 			icon: "ae2:singularity"
 			x: -1.5d
 			y: 4.0d
-			subtitle: "Contraption 20-3"
-			description: ["By Crushing the Crushing Wheels using Crushing Wheels, a strange anomaly is created and dropped. We can use this to our advantage."]
+			subtitle: "{contraption.cabricality.20.3.subtitle}"
+			description: ["{contraption.cabricality.20.3.content}"]
 			dependencies: ["7AAE71F57FB89BCC"]
 			id: "2C81D358594C4352"
 			tasks: [
@@ -166,21 +151,17 @@
 				{
 					id: "09AAD9853B976D69"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Slimy Ferns"
+			title: "{chapter_3.cabricality.slimy_fern.title}"
 			icon: "tconstruct:earth_slime_fern"
 			x: 3.5d
 			y: 1.0d
 			shape: "circle"
-			description: [
-				"In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms."
-				""
-				"Roam the lands for a bit and look out for egregiously vibrant spots of colour in the vegetation. Don't forget to bring a pair of Shears."
-			]
+			description: ["{chapter_3.cabricality.slimy_fern.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "01BE1A7FCE79C63D"
@@ -206,19 +187,12 @@
 			]
 		}
 		{
-			title: "The Haunted Cycle"
+			title: "{contraption.cabricality.21.title}"
 			icon: "kubejs:sky_slimy_fern_leaf"
 			x: 3.5d
 			y: 2.5d
-			subtitle: "Contraption 21"
-			description: [
-				"Slimy Ferns have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply."
-				""
-				"The cycle is simple: Cut the fern plant into halves using a Deployer, then haunt one of the leaves in the soul flame. It is recommended to ensure that all colours of fern are duplicated at similar rates."
-				""
-				""
-				"Oh, and keep a backup of each fern somewhere safe."
-			]
+			subtitle: "{contraption.cabricality.21.subtitle}"
+			description: ["{contraption.cabricality.21.content}"]
 			dependencies: ["01BE1A7FCE79C63D"]
 			id: "38D19F4EC634F33B"
 			tasks: [
@@ -243,17 +217,17 @@
 				{
 					id: "40B23393B8A6D2E8"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Mysterious Biomass"
+			title: "{contraption.cabricality.22.1.title}"
 			icon: "kubejs:earth_slimy_fern_paste"
 			x: 3.5d
 			y: 4.0d
-			subtitle: "Contraption 22-1"
-			description: ["Route the excess leaves into a crusher, in preparation for the upcoming magic trick."]
+			subtitle: "{contraption.cabricality.22.1.subtitle}"
+			description: ["{contraption.cabricality.22.1.content}"]
 			dependencies: ["38D19F4EC634F33B"]
 			id: "3D1EEB596FDBE4E7"
 			tasks: [
@@ -278,42 +252,34 @@
 				{
 					id: "65864C0AE5B28091"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "I like Mobs, actually"
+			title: "{chapter_3.cabricality.mob_cage.title}"
 			icon: "minecraft:zombie_head"
 			x: 3.5d
 			y: 5.5d
 			shape: "circle"
-			subtitle: "Alt. Contraption 21 \\& 22"
-			description: [
-				"An automation alternative to the Spirit Cycle is to set up a Monster Spawner of some kind."
-				""
-				"Click the Checkmark to skip the Fern Duplication Contraption."
-			]
+			subtitle: "{chapter_3.cabricality.mob_cage.subtitle}"
+			description: ["{chapter_3.cabricality.mob_cage.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "016864AD0C9247B9"
 			tasks: [{
 				id: "53728BDEA8F1938C"
 				type: "checkmark"
-				title: "Checkmark"
+				title: "{chapter_3.cabricality.mob_cage.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "Cooking up some Gunpowder"
+			title: "{contraption.cabricality.22.2.title}"
 			icon: "minecraft:gunpowder"
 			x: 1.5d
 			y: 4.0d
-			subtitle: "Contraption 22-2"
-			description: [
-				"Transmuting the green reactive blend requires very special heating conditions, only available on Campfires or Stoves."
-				""
-				"This Contraption will need the special ability to both place and collect items from these places."
-			]
+			subtitle: "{contraption.cabricality.22.2.subtitle}"
+			description: ["{contraption.cabricality.22.2.content}"]
 			dependencies: [
 				"3D1EEB596FDBE4E7"
 				"016864AD0C9247B9"
@@ -330,21 +296,17 @@
 				{
 					id: "34EFEE60A6755C01"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Cooking up some Ender Dust"
+			title: "{contraption.cabricality.22.3.title}"
 			icon: "ae2:ender_dust"
 			x: 1.5d
 			y: 5.5d
-			subtitle: "Contraption 22-3"
-			description: [
-				"Transmuting the purple reactive blend requires very special heating conditions, only available on Campfires or Stoves."
-				""
-				"This Contraption will need the special ability to both place and collect items from these places."
-			]
+			subtitle: "{contraption.cabricality.22.3.subtitle}"
+			description: ["{contraption.cabricality.22.3.content}"]
 			dependencies: [
 				"3D1EEB596FDBE4E7"
 				"016864AD0C9247B9"
@@ -361,21 +323,17 @@
 				{
 					id: "37A6393C0AD6E861"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Cooking up some Fertiliser"
+			title: "{contraption.cabricality.22.4.title}"
 			icon: "minecraft:bone_meal"
 			x: 1.5d
 			y: 7.0d
-			subtitle: "Contraption 22-4"
-			description: [
-				"Transmuting the blue reactive blend requires very special heating conditions, only available on Campfires or Stoves."
-				""
-				"This Contraption will need the special ability to both place and collect items from these places."
-			]
+			subtitle: "{contraption.cabricality.22.4.subtitle}"
+			description: ["{contraption.cabricality.22.4.content}"]
 			dependencies: [
 				"3D1EEB596FDBE4E7"
 				"016864AD0C9247B9"
@@ -392,17 +350,17 @@
 				{
 					id: "4002627D52C3A616"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "More Sand"
+			title: "{contraption.cabricality.23.1.title}"
 			icon: "minecraft:sand"
 			x: 0.0d
 			y: 1.0d
-			subtitle: "Contraption 23-1"
-			description: ["Sand will be required to build the Explosives needed for the Reactor. Thankfully, new standards have allowed you access to Crushing Wheels, which make sand production a lot less of a nuisance."]
+			subtitle: "{contraption.cabricality.23.1.subtitle}"
+			description: ["{contraption.cabricality.23.1.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "5F9BA7BA46D2E5B8"
@@ -416,17 +374,17 @@
 				{
 					id: "2A3EAC60765E5C7A"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Checker Crafters"
+			title: "{contraption.cabricality.23.2.title}"
 			icon: "minecraft:tnt"
 			x: 0.0d
 			y: 4.0d
-			subtitle: "Contraption 23-2"
-			description: ["Use Mechanical Crafters to build TNT. Since most of its slots will have to be supplied individually, a mechanical Arm might help for provinding the necessary logistics."]
+			subtitle: "{contraption.cabricality.23.2.subtitle}"
+			description: ["{contraption.cabricality.23.2.content}"]
 			dependencies: [
 				"5F9BA7BA46D2E5B8"
 				"050A20198A80CF1A"
@@ -442,23 +400,17 @@
 				{
 					id: "2AD912C0E25F5D65"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "The Reactor"
+			title: "{contraption.cabricaliry.24.title}"
 			icon: "ae2:quantum_entangled_singularity"
 			x: -1.5d
 			y: 5.5d
-			subtitle: "Contraption 24"
-			description: [
-				"Here comes the central feature of this Factory Wing: the Reactor."
-				""
-				"Progressing towards Inductive Coils requires a controlled Explosion where nearby Singularities and Ender Dust are combined. See if you can come up with a circuit to continuously blow up these dropped item-stacks."
-				""
-				"Note: Ender dust and Singularities are consumed in a 1:1 ratio. They do not have to be in the exact same location. One TNT can transform multiple sets of ingredients. The result will drop at the location of the Singularity item."
-			]
+			subtitle: "{contraption.cabricaliry.24.subtitle}"
+			description: ["{contraption.cabricaliry.24.content}"]
 			dependencies: [
 				"02B2E249421FAE58"
 				"2C81D358594C4352"
@@ -475,24 +427,24 @@
 				{
 					id: "3A68EA184DE4D9B4"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Your Favourite Colour"
+			title: "{contraption.cabricality.25.title}"
 			icon: "minecraft:rose_bush"
 			x: 0.0d
 			y: 7.0d
-			subtitle: "Contraption 25"
-			description: ["For production of chromatic materials, a colour pigment is needed. It is up to you which colour dye should be automated for this purpose. The only exception is white dye."]
+			subtitle: "{contraption.cabricality.25.subtitle}"
+			description: ["{contraption.cabricality.25.content}"]
 			dependencies: ["402F89CABF6BCDA4"]
 			id: "27C191346BB14D9D"
 			tasks: [
 				{
 					id: "6C47C95A06683D71"
 					type: "item"
-					title: "Dyes except White"
+					title: "{contraption.cabricality.25.task.dye.title}"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -566,17 +518,17 @@
 				{
 					id: "32E697E9386ABF17"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Painting Space itself"
+			title: "{contraption.cabricality.26.1.title}"
 			icon: "kubejs:dye_entangled_singularity"
 			x: -1.5d
 			y: 7.0d
-			subtitle: "Contraption 26-1"
-			description: ["Mixing the Entangled Singularities with a dye of choice creates the very essence of colour! Just what we need for producing a perfected chromatic compound."]
+			subtitle: "{contraption.cabricality.26.1.subtitle}"
+			description: ["{contraption.cabricality.26.1.content}"]
 			dependencies: [
 				"27C191346BB14D9D"
 				"5A199B898D41A309"
@@ -592,20 +544,16 @@
 				{
 					id: "4B4BDAA9DFB0518A"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Spectral Correction (Red)"
+			title: "{chapter_3.cabricality.correction.red.title}"
 			x: -0.85d
 			y: 9.0d
 			shape: "circle"
-			description: [
-				"Crushing Dyed Singularities has a chance to yield little orbs of red colour."
-				""
-				"Since this is not the colour needed for chromatic compound, you can use Item Drains for frequency correction."
-			]
+			description: ["{chapter_3.cabricality.correction.red.content}"]
 			dependencies: ["2CCD84D55DE71EB2"]
 			id: "3B421C8F7947E542"
 			tasks: [{
@@ -616,15 +564,11 @@
 			}]
 		}
 		{
-			title: "Spectral Correction (Yellow)"
+			title: "{chapter_3.cabricality.correction.yellow.title}"
 			x: -2.0d
 			y: 9.0d
 			shape: "circle"
-			description: [
-				"Crushing Dyed Singularities has a chance to yield little orbs of yellow colour, aswell."
-				""
-				"Much like the red ones, these have to be drained once again to shift the frequency in the right direction."
-			]
+			description: ["{chapter_3.cabricality.correction.yellow.content}"]
 			dependencies: [
 				"2CCD84D55DE71EB2"
 				"3B421C8F7947E542"
@@ -638,11 +582,11 @@
 			}]
 		}
 		{
-			title: "Spectral Correction (Green)"
+			title: "{chapter_3.cabricality.correction.green.title}"
 			x: -3.0d
 			y: 8.5d
 			shape: "circle"
-			description: ["The cycle continues. "]
+			description: ["{chapter_3.cabricality.correction.green.content}"]
 			dependencies: [
 				"2CCD84D55DE71EB2"
 				"381F8F373605BB97"
@@ -656,11 +600,11 @@
 			}]
 		}
 		{
-			title: "Spectral Correction (Blue)"
+			title: "{chapter_3.cabricality.correction.blue.title}"
 			x: -3.5d
 			y: 7.5d
 			shape: "circle"
-			description: ["Being almost there, all the Paint Balls now brought to the blue frequency will have to be run through the Item Drain one last time."]
+			description: ["{chapter_3.cabricality.correction.blue.content}"]
 			dependencies: [
 				"2CCD84D55DE71EB2"
 				"6A76E65324F0ACC0"
@@ -674,12 +618,12 @@
 			}]
 		}
 		{
-			title: "Toxic Byproducts"
+			title: "{chapter_3.cabricality.byproduct.title}"
 			icon: "kubejs:waste_bucket"
 			x: 0.5d
 			y: 9.0d
 			shape: "square"
-			description: ["Draining paint balls creates a significant amount of liquid byproduct, which has to be disposed of before it starts clogging up the production line."]
+			description: ["{chapter_3.cabricality.byproduct.content}"]
 			dependencies: [
 				"3B421C8F7947E542"
 				"302FCD205CC2F708"
@@ -692,15 +636,16 @@
 			tasks: [{
 				id: "7058D1CE264D6769"
 				type: "checkmark"
+				"{chapter_3.cabricality.byproduct.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "Spectral Correction (Magenta)"
+			title: "{contraption.cabricality.26.2.title}"
 			icon: "ae2:magenta_paint_ball"
 			x: -3.5d
 			y: 6.35d
-			subtitle: "Contraption 26-2"
-			description: ["Magenta Paint Balls contain the essence needed for production of Chromatic Compound. Some will come directly from the crushed singularity, but the majority can be obtained by spectral correction on the other colours."]
+			subtitle: "{contraption.cabricality.26.2.subtitle}"
+			description: ["{contraption.cabricality.26.2.content}"]
 			dependencies: [
 				"2CCD84D55DE71EB2"
 				"302FCD205CC2F708"
@@ -716,90 +661,72 @@
 				{
 					id: "27D5CBB137116AB1"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Colours Refined"
-			icon: {
-				id: "create:chromatic_compound"
-				Count: 1b
-				tag: { }
-			}
+			title: "{contraption.cabricality.26.3.title}"
+			icon: "create:chromatic_compound"
 			x: -5.0d
 			y: 6.35d
-			subtitle: "Contraption 26-3"
-			description: ["Use Mechanical Crafters once more to refine the paint orbs into Chromatic Compound."]
+			subtitle: "{contraption.cabricality.26.3.subtitle}"
+			description: ["{contraption.cabricality.26.3.content}"]
 			dependencies: ["3BE15AA5C237AB80"]
 			id: "7B23C933D76458BA"
 			tasks: [
 				{
 					id: "2F334C3D67DE059C"
 					type: "item"
-					item: {
-						id: "create:chromatic_compound"
-						Count: 1b
-						tag: { }
-					}
+					item: "create:chromatic_compound"
 					consume_items: false
 				}
 				{
 					id: "27A8B7785CAB07C8"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Overcorrection"
+			title: "{chapter_3.cabricality.overcorrection.title}"
 			icon: "ae2:black_paint_ball"
 			x: -3.5d
 			y: 5.0d
 			shape: "circle"
-			description: ["Oops! Draining the colour's essence one too many times will create a mundane paint ball not able to be used for further processing."]
+			description: ["{chapter_3.cabricality.overcorrection.content}"]
 			dependencies: ["3BE15AA5C237AB80"]
 			id: "03B7909623F97843"
 			tasks: [{
 				id: "07521D1C50A8B75F"
 				type: "checkmark"
+				title: "{chapter_3.cabricality.overcorrection.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "Let there be light"
+			title: "{contraption.cabricality.27.title}"
 			icon: "minecraft:torch"
 			x: -6.5d
 			y: 3.5d
 			shape: "circle"
-			subtitle: "Contraption 27"
-			description: [
-				"The production of Refined Radiance requires either a steady supply of light emitting blocks, or an active Beacon Beam."
-				""
-				"Choose which path you would like to take, and provide necessary preparation/automation."
-			]
+			subtitle: "{contraption.cabricality.27.subtitle}"
+			description: ["{contraption.cabricality.27.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "3025B5861FE17ADF"
 			tasks: [{
 				id: "7FB92D9DB34672AE"
 				type: "checkmark"
+				title: "{contraption.cabricality.27.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "Throwing Flash"
+			title: "{contraption.cabricality.28.1.title}"
 			icon: "create:refined_radiance"
 			x: -6.5d
 			y: 6.35d
 			subtitle: "Contraption 28-1"
-			description: [
-				"When dropped as an item, Chromatic Compound will absorb light around itself and eventually turn into Refined Radiance. Choose one of three approaches:"
-				""
-				"- Autoplacing light emitting blocks near the dropped compound items (blocks need line of sight to item)"
-				""
-				"- Supplying light emitting blocks as items on nearby depots/belts (blocks need line of sight to item)"
-				""
-				"- Throwing the compound into a Beacon Beam for free and instant conversion"
-			]
+			description: ["{contraption.cabricality.28.1.content}"]
 			dependencies: [
 				"3025B5861FE17ADF"
 				"7B23C933D76458BA"
@@ -815,21 +742,17 @@
 				{
 					id: "2DC30322D81D9999"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Post-Process"
+			title: "{contraption.cabricality.28.2.title}"
 			icon: "kubejs:radiant_sheet"
 			x: -6.0d
 			y: 9.0d
-			subtitle: "Contraption 28-2"
-			description: [
-				"The main work is done. All that's left is a small assembly line to process Refined Radiance into Radiant Coils."
-				""
-				"Start with a Mechanical Press."
-			]
+			subtitle: "{contraption.cabricality.28.2.subtitle}"
+			description: ["{contraption.cabricality.28.2.content}"]
 			dependencies: ["286510750C333C1F"]
 			id: "410FF28B63E0FC0C"
 			tasks: [
@@ -842,17 +765,17 @@
 				{
 					id: "37BF06FF4255C1B1"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Neon lights"
+			title: "{contraption.cabricality.28.3.title}"
 			icon: "kubejs:radiant_coil"
 			x: -4.0d
 			y: 11.0d
-			subtitle: "Contraption 28-3"
-			description: ["And finally, one last Crafter to cut and wind up the radiant sheet into an Induction Coil."]
+			subtitle: "{contraption.cabricality.28.3.subtitle}"
+			description: ["{contraption.cabricality.28.3.content}"]
 			dependencies: ["410FF28B63E0FC0C"]
 			id: "626A7D9947D82B89"
 			tasks: [
@@ -865,17 +788,17 @@
 				{
 					id: "27C737E08A9027A5"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Deploy the Payload"
+			title: "{contraption.cabricality.29.title}"
 			icon: "kubejs:inductive_mechanism"
 			x: -1.5d
 			y: 11.5d
-			subtitle: "Contraption 29"
-			description: ["You know the drill. It is time to upgrade your previously automated Precision Mechanisms to the next level!"]
+			subtitle: "{contraption.cabricality.29.subtitle}"
+			description: ["{contraption.cabricality.29.content}"]
 			dependencies: [
 				"59D2104DB6AE93FD"
 				"626A7D9947D82B89"
@@ -891,38 +814,32 @@
 				{
 					id: "057A05C13C55ABC4"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Mechanical Auto Hammer"
+			title: "{contraption.cabricality.30.title}"
 			icon: "kubejs:invar_ingot"
 			x: 0.5d
 			y: -1.0d
 			shape: "circle"
-			subtitle: "Contraption 30"
-			description: [
-				"Aside from the Inductive Mechanism, Invar Machinery builds on a tough Metal Alloy between Iron and Nickel."
-				""
-				"Since the full refinement process of Invar takes a few lengthy steps, automation is recommended."
-			]
+			subtitle: "{contraption.cabricality.30.subtitle}"
+			description: ["{contraption.cabricality.30.content}"]
 			dependencies: ["397232F676CB621B"]
 			id: "26A1E68DA7ACB025"
 			tasks: [{
 				id: "428A5B60D9C268BD"
 				type: "checkmark"
+				title: "{contraption.cabricality.30.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "Arming the Deployer III"
+			title: "{chapter_3.cabricality.assemble.title}"
 			x: 0.0d
 			y: 11.5d
 			shape: "circle"
-			description: [
-				"It'll be good to stock up on a couple of resonators for the Mechanism Assembly."
-				"Don't worry about automating them fully, though."
-			]
+			description: ["{chapter_3.cabricality.assemble.content}"]
 			hide_dependency_lines: true
 			dependencies: ["626A7D9947D82B89"]
 			id: "59D2104DB6AE93FD"
@@ -940,15 +857,11 @@
 			}]
 		}
 		{
-			title: "Chapter 3 Complete!"
+			title: "{chapter_3.cabricality.complete.title}"
 			x: -1.5d
 			y: 13.5d
 			shape: "hexagon"
-			description: [
-				"Congrats! Inductive Mechanisms will now be generated passively. This opens the door to new exciting technological and magical exploits!"
-				""
-				"Once you are happy with the Assembly Line, head on back to the overview. There will be new options to explore."
-			]
+			description: ["{chapter_3.cabricality.complete.content}"]
 			dependencies: ["6CBA3D97CAD5DB63"]
 			size: 2.0d
 			id: "3A63A48662F352CB"
@@ -980,15 +893,11 @@
 			]
 		}
 		{
-			title: "Insert Coin"
+			title: "{bonus_3a.cabricality.coin.title}"
 			x: -3.0d
 			y: 15.0d
 			shape: "circle"
-			description: [
-				"The Special properties of Silver can prove useful in creating Enderium Alloy."
-				""
-				"As it turns out, the only source of Silver seems to be your money. Makes you wonder where the official mints get it from.."
-			]
+			description: ["{bonus_3a.cabricality.coin.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"2BB2C7B95E3C89AE"
@@ -1004,12 +913,12 @@
 			}]
 		}
 		{
-			title: "Not the End"
+			title: "{bonus_3a.cabricality.not_the_end.title}"
 			icon: "minecraft:end_portal_frame"
 			x: 0.0d
 			y: 15.0d
 			shape: "circle"
-			description: ["The Secrets to Teleportation lie behind the dimensional gate to the End."]
+			description: ["{bonus_3a.cabricality.not_the_end.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"6CBA3D97CAD5DB63"
@@ -1025,35 +934,32 @@
 			}]
 		}
 		{
-			title: "Dissolved"
+			title: "{bonus_3a.cabricality.dissolved.title}"
 			x: -1.5d
 			y: 15.5d
 			shape: "circle"
-			description: ["Take the coins and throw them into your Smeltery. Watch out: this is an irreversible process."]
+			description: ["{bonus_3a.cabricality.dissolved.content}"]
 			dependencies: ["38B063C8DE71E86D"]
 			id: "0C11EC34D5FA508B"
 			tasks: [{
 				id: "1E9F96D2152F7384"
 				type: "item"
-				title: "Bucket (Molten Silver)"
 				item: "tconstruct:molten_silver_bucket"
 			}]
 		}
 		{
-			title: "Expensive Bricks"
+			title: "{bonus_3a.cabricality.block.title}"
 			icon: "indrev:silver_block"
 			x: -1.5d
 			y: 16.5d
 			shape: "circle"
-			description: ["Cool down the molten silver into a Block and admire how shiny it is."]
+			description: ["{bonus_3a.cabricality.block.content}"]
 			dependencies: ["0C11EC34D5FA508B"]
 			id: "0D146AD9FE774F8B"
 			tasks: [
 				{
 					id: "7A7EE0DF809CEDC8"
 					type: "item"
-					title: "Silver Ingot"
-					icon: "indrev:silver_block"
 					item: "indrev:silver_block"
 					consume_items: false
 				}
@@ -1066,11 +972,11 @@
 			]
 		}
 		{
-			title: "Ender for Garnish"
+			title: "{bonus_3a.cabricality.garnish.title}"
 			x: -3.0d
 			y: 17.5d
 			shape: "circle"
-			description: ["Set aside some Ender dust from your Reactor. In case your supply is bottlenecked, you can use Ender Pearls, too."]
+			description: ["{bonus_3a.cabricality.garnish.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"2BB2C7B95E3C89AE"
@@ -1086,15 +992,11 @@
 			}]
 		}
 		{
-			title: "Gateway Expedition"
+			title: "{bonus_3a.cabricality.expedition.title}"
 			x: 0.0d
 			y: 17.5d
 			shape: "circle"
-			description: [
-				"After your flawless encounter with the Ender Dragon, make your way to the Gateway and travel to the outer Islands."
-				""
-				"Here you should be able to find the poise bushes necessary for creating Enderium Alloy."
-			]
+			description: ["{bonus_3a.cabricality.expedition.content}"]
 			dependencies: ["05C7E580ED88B556"]
 			id: "794B3C10C6110CB5"
 			tasks: [{
@@ -1105,15 +1007,11 @@
 			}]
 		}
 		{
-			title: "Alien Alloys"
+			title: "{bonus_3a.cabricality.alloy.title}"
 			x: -1.5d
 			y: 18.0d
 			shape: "circle"
-			description: [
-				"Fire up your End Stone Alloy Smelter for two rounds of processing:"
-				""
-				"First off, refine your Silver Ingots with Ender Dust and Poise Bushes."
-			]
+			description: ["bonus_3a.cabricality.alloy.content"]
 			dependencies: [
 				"0D146AD9FE774F8B"
 				"794B3C10C6110CB5"
@@ -1128,11 +1026,11 @@
 			}]
 		}
 		{
-			title: "Enderium Infused"
+			title: "{bonus_3a.cabricality.enderium.title}"
 			x: -1.5d
 			y: 19.0d
 			shape: "circle"
-			description: ["And finally, upgrade some of your Inductive Mechanisms in the Smelter using the newly obtained Alloy."]
+			description: ["{bonus_3a.cabricality.enderium.content}"]
 			dependencies: ["7B080B5C87247EA1"]
 			id: "6DBEF7A11890ADF8"
 			tasks: [{
@@ -1143,12 +1041,12 @@
 			}]
 		}
 		{
-			title: "The Poise Cycle"
+			title: "{bonus_3a.cabricality.cycle.title}"
 			icon: "promenade:dark_amaranth_wart_block"
 			x: 0.0d
 			y: 19.5d
 			shape: "circle"
-			description: ["Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium."]
+			description: ["{bonus_3a.cabricality.cycle.content}"]
 			dependencies: ["794B3C10C6110CB5"]
 			id: "1CCDA748B237F6F5"
 			tasks: [{
@@ -1165,11 +1063,11 @@
 			}]
 		}
 		{
-			title: "Bonus 3A Complete!"
+			title: "{bonus_3a.cabricality.complete.title}"
 			x: -1.5d
 			y: 21.0d
 			shape: "hexagon"
-			description: ["Marvellous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up."]
+			description: ["{bonus_3a.cabricality.complete.content}"]
 			dependencies: ["6DBEF7A11890ADF8"]
 			size: 2.0d
 			id: "4EDD9A8F14E48EAE"

@@ -82,7 +82,7 @@
 				{
 					id: "2DC358D8174FC867"
 					type: "checkmark"
-					title: "{chapter_2.cabricality.water.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -106,7 +106,7 @@
 				{
 					id: "3C8D449468C6DD27"
 					type: "checkmark"
-					title: "{contraption.cabricality.11.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -149,7 +149,7 @@
 				{
 					id: "5143762A67B81B7E"
 					type: "checkmark"
-					title: "{contraption.cabricality.12.2.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -173,7 +173,7 @@
 				{
 					id: "56F78EAD35D1046E"
 					type: "checkmark"
-					title: "{contraption.cabricality.13.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -199,7 +199,7 @@
 				{
 					id: "1CB43671DBA7EBB6"
 					type: "checkmark"
-					title: "{contraption.cabricality.14.1.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -226,7 +226,7 @@
 				{
 					id: "4B98217B670ECA57"
 					type: "checkmark"
-					title: "{contraption.cabricality.14.2.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -252,7 +252,7 @@
 				{
 					id: "0F6DB8FCC5C16A94"
 					type: "checkmark"
-					title: "{contraption.cabricality.14.3.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -276,7 +276,7 @@
 				{
 					id: "5E676D2CC5975AEA"
 					type: "checkmark"
-					title: "{contraption.cabricality.15.1.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -299,7 +299,7 @@
 				{
 					id: "63F3877902E01590"
 					type: "checkmark"
-					title: "{contraption.cabricality.15.2.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -322,7 +322,7 @@
 				{
 					id: "64B405696E96FFCD"
 					type: "checkmark"
-					title: "{contraption.cabricality.15.3.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -345,7 +345,7 @@
 				{
 					id: "75C982848F2CEA85"
 					type: "checkmark"
-					title: "{contraption.cabricality.15.4.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -371,7 +371,7 @@
 				{
 					id: "1D7C84803766FD04"
 					type: "checkmark"
-					title: "{contraption.cabricality.15.5.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -397,7 +397,7 @@
 				{
 					id: "002032AE65148DBD"
 					type: "checkmark"
-					title: "{contraption.cabricality.16.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -460,11 +460,11 @@
 			]
 		}
 		{
-			title: "{bonus_2.cabricality.preparation.title}"
+			title: "{bonus_2a.cabricality.preparation.title}"
 			x: 0.5d
 			y: 17.0d
 			shape: "circle"
-			description: ["{bonus_2.cabricality.preparation.content}"]
+			description: ["{bonus_2a.cabricality.preparation.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
@@ -503,7 +503,7 @@
 				{
 					id: "6F7A49C7C377ABF1"
 					type: "checkmark"
-					title: "{contraption.cabricality.17.1.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -531,7 +531,7 @@
 				{
 					id: "6149AB838FC42C17"
 					type: "checkmark"
-					title: "{contraption.cabricality.17.2.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -558,7 +558,7 @@
 				{
 					id: "21C241D2335C67E4"
 					type: "checkmark"
-					title: "{contraption.cabricality.17.3.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -586,7 +586,7 @@
 				{
 					id: "73BF4F3B488FBC83"
 					type: "checkmark"
-					title: "{contraption.cabricality.18.1.task.checkmark.title}"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
