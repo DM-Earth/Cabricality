@@ -493,5 +493,45 @@
   "bonus_3a.cabricality.cycle.content": "Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium.",
 
   "bonus_3a.cabricality.complete.title": "Bonus 3A Complete!",
-  "bonus_3a.cabricality.complete.content": "Marvelous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up."
+  "bonus_3a.cabricality.complete.content": "Marvelous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up.",
+
+
+
+  "chapter_4.cabricality.title": "&f4&r Into the Box",
+
+  "chapter_4.cabricality.start.title": "Chapter 4 Start!",
+  "chapter_4.cabricality.start.content": "The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery.\n\nMuch like previous chapters, a few new material sources or shipments are required first.",
+
+  "chapter_4.cabricality.new_capacity.title": "New Capacity",
+  "chapter_4.cabricality.new_capacity.content": "The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later.",
+
+  "chapter_4.cabricality.laser_describe.title": "The Alchemical Laser BOOM",
+  "chapter_4.cabricality.laser_describe.content": "A central role in this age of technology is played by the Alchemical Laser.",
+
+  "contraption.cabricality.31.1.title": "Sand Delivery",
+  "contraption.cabricality.31.1.subtitle": "Contraption 31-1",
+  "contraption.cabricality.31.1.content": "A new Shipment of Sand should be scheduled, for it is significantly rich in silicon.",
+
+  "contraption.cabricality.31.2.title": "Ball O' Sand",
+  "contraption.cabricality.31.2.subtitle": "Contraption 31-2",
+  "contraption.cabricality.31.2.content": "First, the raw blocks are washed and refined into small orbs of wet sand.\n\nSince they could easily collapse, they should never be stacked on top of another. The inductive Fluid Encapsulator should have the necessary precision to generate these reliably.",
+
+  "chapter_4.cabricality.liquid_sand.title": "Liquid Sand",
+  "chapter_4.cabricality.liquid_sand.content": "Sifting for Coarse Sand creates a byproduct relevant for further refining the silicon compound.",
+
+  "contraption.cabricality.31.3.title": "Coarse Sand",
+  "contraption.cabricality.31.3.subtitle": "Contraption 31-3",
+  "contraption.cabricality.31.3.content": "Rolling the sand ball over an item drain reveals the larger chunks contained within.",
+
+  "contraption.cabricality.32.1.title": "Modern Cobblegen",
+  "contraption.cabricality.32.1.subtitle": "Contraption 32-1",
+  "contraption.cabricality.32.1.content": "Basalt is an accessible type of rock that contains traces of inert Basalz Powder. For the purposes of this, a steady supply of them is needed.",
+
+  "contraption.cabricality.32.2.title": "Hot Laser",
+  "contraption.cabricality.32.2.subtitle": "Contraption 32-2",
+  "contraption.cabricality.32.2.content": "The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper.",
+
+  "contraption.cabricality.33.1.title": "Basalz Mill",
+  "contraption.cabricality.33.1.subtitle": "Contraption 33-1",
+  "contraption.cabricality.33.1.content": "Before it is ready for processing, the basalz essence needs a bit of refinement."
 }

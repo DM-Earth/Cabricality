@@ -3,21 +3,19 @@
 	group: "331B6409EF6A7840"
 	order_index: 4
 	filename: "stage_4"
-	title: "&f4&r Into the Box"
+	title: "{chapter_4.cabricality.title}"
 	icon: "minecraft:purple_shulker_box"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Chapter 4 Start!"
+			title: "{chapter_4.cabricality.start.title}"
 			icon: "kubejs:inductive_mechanism"
 			x: 1.0d
 			y: -2.5d
 			shape: "hexagon"
 			description: [
-				"The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery."
-				""
-				"Much like previous chapters, a few new material sources or shipments are required first."
+				"{chapter_4.cabricality.start.content}"
 			]
 			dependencies: ["74CFD83C501C4952"]
 			hide: true
@@ -34,12 +32,12 @@
 			}]
 		}
 		{
-			title: "New Capacity"
+			title: "{chapter_4.cabricality.new_capacity.title}"
 			icon: "indrev:heat_generator_mk4"
 			x: -1.0d
 			y: -2.5d
 			shape: "circle"
-			description: ["The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later."]
+			description: ["{chapter_4.cabricality.new_capacity.content}"]
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "13B197C90F9812C8"
 			tasks: [{
@@ -48,12 +46,12 @@
 			}]
 		}
 		{
-			title: "The Alchemical Laser BOOM"
+			title: "{chapter_4.cabricality.laser_describe.title}"
 			icon: "indrev:laser_emitter_mk4"
 			x: 3.0d
 			y: -2.5d
 			shape: "circle"
-			description: ["A central role in this age of technology is played by the Alchemical Laser."]
+			description: ["{chapter_4.cabricality.laser_describe.content}"]
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "6D26DAB7D0FF6E90"
 			tasks: [{
@@ -68,12 +66,12 @@
 			}]
 		}
 		{
-			title: "Sand Delivery"
+			title: "{contraption.cabricality.31.1.title}"
 			icon: "minecraft:sand"
 			x: -1.0d
 			y: -0.5d
-			subtitle: "Contraption 31-1"
-			description: ["A new Shipment of Sand should be scheduled, for it is significantly rich in silicon."]
+			subtitle: "{contraption.cabricality.31.1.subtitle}"
+			description: ["{contraption.cabricality.31.1.content}"]
 			hide_dependency_lines: true
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "22202C87352242D6"
@@ -87,20 +85,18 @@
 				{
 					id: "58353DEAB0670141"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Ball o' Sand"
+			title: "{contraption.cabricality.31.2.title}"
 			icon: "kubejs:sand_ball"
 			x: -1.0d
 			y: 0.5d
-			subtitle: "Contraption 31-2"
+			subtitle: "{contraption.cabricality.31.2.subtitle}"
 			description: [
-				"First, the raw blocks are washed and refined into small orbs of wet sand."
-				""
-				"Since they could easily collapse, they should never be stacked on top of another. The inductive Fluid Encapsulator should have the necessary precision to generate these reliably."
+				"{contraption.cabricality.31.2.content}"
 			]
 			dependencies: ["22202C87352242D6"]
 			id: "42F1A649D86DB86D"
@@ -114,17 +110,17 @@
 				{
 					id: "36183F0BBDAA8DB8"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Liquid Sand"
+			title: "{chapter_4.cabricality.liquid_sand.title}"
 			icon: "kubejs:fine_sand_bucket"
 			x: 1.0d
 			y: 1.5d
 			shape: "circle"
-			description: ["Sifting for Coarse Sand creates a byproduct relevant for further refining the silicon compound."]
+			description: ["{chapter_4.cabricality.liquid_sand.content}"]
 			dependencies: ["42F1A649D86DB86D"]
 			id: "4412F3B2827606E4"
 			tasks: [{
@@ -133,12 +129,12 @@
 			}]
 		}
 		{
-			title: "Coarse Sand"
+			title: "{contraption.cabricality.31.3.title}"
 			icon: "kubejs:rough_sand"
 			x: -1.0d
 			y: 1.5d
-			subtitle: "Contraption 31-3"
-			description: ["Rolling the sand ball over an item drain reveals the larger chunks contained within."]
+			subtitle: "{contraption.cabricality.31.3.subtitle}"
+			description: ["{contraption.cabricality.31.3.content}"]
 			dependencies: ["42F1A649D86DB86D"]
 			id: "0F5AA5DF001DCDF5"
 			tasks: [
@@ -151,17 +147,17 @@
 				{
 					id: "589AB5A61CD95E2F"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Modern Cobblegen"
+			title: "{contraption.cabricality.32.1.title}"
 			icon: "minecraft:basalt"
 			x: -3.0d
 			y: -1.0d
-			subtitle: "Contraption 32-1"
-			description: ["Basalt is an accessible type of rock that contains traces of inert Basalz Powder. For the purposes of this, a steady supply of them is needed."]
+			subtitle: "{contraption.cabricality.32.1.subtitle}"
+			description: ["{contraption.cabricality.32.1.content}"]
 			hide_dependency_lines: true
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "0B602ED47A0195A4"
@@ -175,19 +171,18 @@
 				{
 					id: "738E569981496B56"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Hot Laser"
+			title: "{contraption.cabricality.32.2.title}"
 			icon: "kubejs:basalz_shard"
 			x: -3.0d
 			y: 0.5d
-			subtitle: "Contraption 32-2"
+			subtitle: "{contraption.cabricality.32.2.subtitle}"
 			description: [
-				"The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper."
-				""
+				"{contraption.cabricality.32.2.content}"
 			]
 			dependencies: ["0B602ED47A0195A4"]
 			id: "6C4CB8F616A9C3DF"
@@ -201,17 +196,17 @@
 				{
 					id: "7DF47F688E5C795C"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Basalz Mill"
+			title: "{contraption.cabricality.33.1.title}"
 			icon: "kubejs:basalz_powder"
 			x: -3.0d
 			y: 2.0d
-			subtitle: "Contraption 33-1"
-			description: ["Before it is ready for processing, the basalz essence needs a bit of refinement. "]
+			subtitle: "{contraption.cabricality.33.1.subtitle}"
+			description: ["{contraption.cabricality.33.1.content}"]
 			dependencies: ["6C4CB8F616A9C3DF"]
 			id: "5799B4124EE20DB1"
 			tasks: [
@@ -224,7 +219,7 @@
 				{
 					id: "05969082F437FCA9"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -247,7 +242,7 @@
 				{
 					id: "21545C0F55D9D8C8"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -273,7 +268,7 @@
 				{
 					id: "2BE9DD7F346679E2"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -306,7 +301,7 @@
 				{
 					id: "72BA1D3BD545CBE6"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -351,7 +346,7 @@
 				{
 					id: "4960B920CCF3C186"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -374,7 +369,7 @@
 				{
 					id: "44D36B403AA26E97"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -401,7 +396,7 @@
 				{
 					id: "2F239D4D9BB9B47A"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -425,7 +420,7 @@
 				{
 					id: "193D8F8FEC7F864B"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -452,7 +447,7 @@
 				{
 					id: "518D5675C9D1757D"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -475,7 +470,7 @@
 				{
 					id: "5CA556BB4614DD06"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -498,7 +493,7 @@
 				{
 					id: "220B89A9B897FA67"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -524,7 +519,7 @@
 				{
 					id: "57D267DD10A22D32"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -569,7 +564,7 @@
 				{
 					id: "0A4B691EF3CDC7A0"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -596,7 +591,7 @@
 				{
 					id: "20B36555F58C4DB1"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
@@ -622,7 +617,7 @@
 				{
 					id: "48B114D2C0F51F6D"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
