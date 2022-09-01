@@ -405,12 +405,12 @@
 			]
 		}
 		{
-			title: "{contraption.cabricaliry.24.title}"
+			title: "{contraption.cabricality.24.title}"
 			icon: "ae2:quantum_entangled_singularity"
 			x: -1.5d
 			y: 5.5d
-			subtitle: "{contraption.cabricaliry.24.subtitle}"
-			description: ["{contraption.cabricaliry.24.content}"]
+			subtitle: "{contraption.cabricality.24.subtitle}"
+			description: ["{contraption.cabricality.24.content}"]
 			dependencies: [
 				"02B2E249421FAE58"
 				"2C81D358594C4352"

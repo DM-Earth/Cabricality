@@ -31,7 +31,7 @@
   "welcome.cabricality.iv.content": "Tired of the grind?\n\nFund the operation with coin provided either from various errands, or your chosen professions.\n\nAutomatically ship produce from your farms or gather other players to aid you in your mission.\n\nThen you can purchase all manner of resources, artifacts and building blocks from the market, making your life just a little bit easier.",
 
   "welcome.cabricality.overview.title": "&6&lQuest Content Overview",
-  "welcome.cabricality.overview.content": "- &6The Bulletin Board&r provides means to earn currency for Trading.\n\nHere you can complete various errands or buy a profession permit for use in the Trading Machine.\n\n- &6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets.\n\n- &6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine.\n\n- The &3Factory Guide&r provides useful information for the path of Technology and Automation. All challenges to be overcome have been neatly organised into chapters and tasks. It is entirely optional to follow this Guide.\n\n- The Section on &3Metallurgy&r gives an overview of the ways to turn your ore into refined metal. Different paths yield differently.\n\n- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you.",
+  "welcome.cabricality.overview.content": "- &6The Bulletin Board&r provides means to earn currency for Trading.\n\nHere you can complete various errands or buy a profession permit for use in the Trading Machine.\n\n- &6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets.\n\n- &6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine.\n\n- The &3Factory Guide&r provides useful information for the path of Technology and Automation. All challenges to be overcome have been neatly organized into chapters and tasks. It is entirely optional to follow this Guide.\n\n- The Section on &3Metallurgy&r gives an overview of the ways to turn your ore into refined metal. Different paths yield differently.\n\n- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you.",
 
   "welcome.cabricality.go.title": "Off you go!",
   "welcome.cabricality.go.content": "Now that you have an idea of what is new and what is not, settle in and start your Journey.",
@@ -244,13 +244,13 @@
   "chapter_2.cabricality.water.title": "Water Supply",
   "chapter_2.cabricality.water.content": "The contraptions of Chapter 2 require a healthy supply of water. The easiest way is to pull from water sources directly using Mechanical Pumps and a fluid pipe network.",
 
-  "contraption.cabricality.11.title": "Skystone Infini-mill",
+  "contraption.cabricality.11.title": "Skystone Infin-mill",
   "contraption.cabricality.11.subtitle": "Contraption 11",
-  "contraption.cabricality.11.content": "You can just keep on pulverising it. Sky Stone blocks never seem to lose mass in the process. What a world we live in!\n\nFind Sky Stone Blocks at Meteor crash sites. If you haven't encountered any, try looking for one using the Meteorite compass.",
+  "contraption.cabricality.11.content": "You can just keep on pulverizing it. Sky Stone blocks never seem to lose mass in the process. What a world we live in!\n\nFind Sky Stone Blocks at Meteor crash sites. If you haven't encountered any, try looking for one using the Meteorite compass.",
 
   "contraption.cabricality.12.1.title": "Quartz Seeds",
   "contraption.cabricality.12.1.subtitle": "Contraption 12-1",
-  "contraption.cabricality.12.1.content": "This piece of quartz is too small. With enough water we might get somewhere.\n\nIf you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accellerate the process.",
+  "contraption.cabricality.12.1.content": "This piece of quartz is too small. With enough water we might get somewhere.\n\nIf you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accelerate the process.",
 
   "contraption.cabricality.12.2.title": "The Great Growth",
   "contraption.cabricality.12.2.subtitle": "Contraption 12-2",
@@ -258,7 +258,7 @@
 
   "contraption.cabricality.13.title": "The (Re-)Charger",
   "contraption.cabricality.13.subtitle": "Contraption 13",
-  "contraption.cabricality.13.content": "Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2.\n\nThe Charger from AE2 can be used here, along with the Item Trasportation of choice.",
+  "contraption.cabricality.13.content": "Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2.\n\nThe Charger from AE2 can be used here, along with the Item Transportation of choice.",
 
   "contraption.cabricality.14.1.title": "Skystone Mixer",
   "contraption.cabricality.14.1.subtitle": "Contraption 14-1",
@@ -357,11 +357,11 @@
   "contraption.cabricality.20.3.content": "By Crushing the Crushing Wheels using Crushing Wheels, a strange anomaly is created and dropped. We can use this to our advantage.",
 
   "chapter_3.cabricality.slimy_fern.title": "Slimy Ferns",
-  "chapter_3.cabricality.slimy_fern.content": "In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms.\n\nRoam the lands for a bit and look out for egregiously vibrant spots of colour in the vegetation. Don't forget to bring a pair of Shears.",
+  "chapter_3.cabricality.slimy_fern.content": "In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms.\n\nRoam the lands for a bit and look out for egregiously vibrant spots of color in the vegetation. Don't forget to bring a pair of Shears.",
 
   "contraption.cabricality.21.title": "The Haunted Cycle",
   "contraption.cabricality.21.subtitle": "Contraption 21",
-  "contraption.cabricality.21.content": "Slimy Ferns have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply.\n\nThe cycle is simple: Cut the fern plant into halves using a Deployer, then haunt one of the leaves in the soul flame. It is recommended to ensure that all colours of fern are duplicated at similar rates.\n&7Oh, and keep a backup of each fern somewhere safe.",
+  "contraption.cabricality.21.content": "Slimy Ferns have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply.\n\nThe cycle is simple: Cut the fern plant into halves using a Deployer, then haunt one of the leaves in the soul flame. It is recommended to ensure that all colors of fern are duplicated at similar rates.\n&7Oh, and keep a backup of each fern somewhere safe.",
 
   "contraption.cabricality.22.1.title": "Mysterious Biomass",
   "contraption.cabricality.22.1.subtitle": "Contraption 22-1",
@@ -380,7 +380,7 @@
   "contraption.cabricality.22.3.subtitle": "Contraption 22-3",
   "contraption.cabricality.22.3.content": "Transmuting the purple reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
 
-  "contraption.cabricality.22.4.title": "Cooking up some Fertiliser",
+  "contraption.cabricality.22.4.title": "Cooking up some Fertilizer",
   "contraption.cabricality.22.4.subtitle": "Contraption 22-4",
   "contraption.cabricality.22.4.content": "Transmuting the blue reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
 
@@ -390,26 +390,26 @@
 
   "contraption.cabricality.23.2.title": "Checker Crafters",
   "contraption.cabricality.23.2.subtitle": "Contraption 23-2",
-  "contraption.cabricality.23.2.content": "Use Mechanical Crafters to build TNT. Since most of its slots will have to be supplied individually, a mechanical Arm might help for provinding the necessary logistics.",
+  "contraption.cabricality.23.2.content": "Use Mechanical Crafters to build TNT. Since most of its slots will have to be supplied individually, a mechanical Arm might help for providing the necessary logistics.",
 
   "contraption.cabricality.24.title": "The Reactor",
   "contraption.cabricality.24.subtitle": "Contraption 24",
   "contraption.cabricality.24.content": "Here comes the central feature of this Factory Wing: the Reactor.\n\nProgressing towards Inductive Coils requires a controlled Explosion where nearby Singularities and Ender Dust are combined. See if you can come up with a circuit to continuously blow up these dropped item-stacks.\n\nNote: Ender dust and Singularities are consumed in a 1:1 ratio. They do not have to be in the exact same location. One TNT can transform multiple sets of ingredients. The result will drop at the location of the Singularity item.",
 
-  "contraption.cabricality.25.title": "Your Favourite Colour",
+  "contraption.cabricality.25.title": "Your Favorite Color",
   "contraption.cabricality.25.subtitle": "Contraption 25",
-  "contraption.cabricality.25.content": "For production of chromatic materials, a colour pigment is needed. It is up to you which colour dye should be automated for this purpose. The only exception is white dye.",
+  "contraption.cabricality.25.content": "For production of chromatic materials, a color pigment is needed. It is up to you which color dye should be automated for this purpose. The only exception is white dye.",
   "contraption.cabricality.25.task.dye.title": "Dyes except White",
 
   "contraption.cabricality.26.1.title": "Painting Space itself",
   "contraption.cabricality.26.1.subtitle": "Contraption 26-1",
-  "contraption.cabricality.26.1.content": "Mixing the Entangled Singularities with a dye of choice creates the very essence of colour! Just what we need for producing a perfected chromatic compound.\"",
+  "contraption.cabricality.26.1.content": "Mixing the Entangled Singularities with a dye of choice creates the very essence of color! Just what we need for producing a perfected chromatic compound.\"",
 
   "chapter_3.cabricality.correction.red.title": "&cSpectral Correction &7(Red)",
-  "chapter_3.cabricality.correction.red.content": "Crushing Dyed Singularities has a chance to yield little orbs of red colour.\n\nSince this is not the colour needed for chromatic compound, you can use Item Drains for frequency correction.",
+  "chapter_3.cabricality.correction.red.content": "Crushing Dyed Singularities has a chance to yield little orbs of red color.\n\nSince this is not the color needed for chromatic compound, you can use Item Drains for frequency correction.",
 
   "chapter_3.cabricality.correction.yellow.title": "&eSpectral Correction &7(Yellow)",
-  "chapter_3.cabricality.correction.yellow.content": "Crushing Dyed Singularities has a chance to yield little orbs of yellow colour, aswell.\n\nMuch like the red ones, these have to be drained once again to shift the frequency in the right direction.",
+  "chapter_3.cabricality.correction.yellow.content": "Crushing Dyed Singularities has a chance to yield little orbs of yellow color, as well.\n\nMuch like the red ones, these have to be drained once again to shift the frequency in the right direction.",
 
   "chapter_3.cabricality.correction.green.title": "&aSpectral Correction &7(Green)",
   "chapter_3.cabricality.correction.green.content": "The cycle continues.",
@@ -423,14 +423,14 @@
 
   "contraption.cabricality.26.2.title": "&dSpectral Correction &7(Magenta)",
   "contraption.cabricality.26.2.subtitle": "Contraption 26-2",
-  "contraption.cabricality.26.2.content": "Magenta Paint Balls contain the essence needed for production of Chromatic Compound. Some will come directly from the crushed singularity, but the majority can be obtained by spectral correction on the other colours.",
+  "contraption.cabricality.26.2.content": "Magenta Paint Balls contain the essence needed for production of Chromatic Compound. Some will come directly from the crushed singularity, but the majority can be obtained by spectral correction on the other colors.",
 
-  "contraption.cabricality.26.3.title": "Colours Refined",
+  "contraption.cabricality.26.3.title": "Colors Refined",
   "contraption.cabricality.26.3.subtitle": "Contraption 26-3",
   "contraption.cabricality.26.3.content": "Use Mechanical Crafters once more to refine the paint orbs into Chromatic Compound.",
 
   "chapter_3.cabricality.overcorrection.title": "Overcorrection",
-  "chapter_3.cabricality.overcorrection.content": "Oops! Draining the colour's essence one too many times will create a mundane paint ball not able to be used for further processing.",
+  "chapter_3.cabricality.overcorrection.content": "Oops! Draining the color's essence one too many times will create a mundane paint ball not able to be used for further processing.",
   "chapter_3.cabricality.overcorrection.task.checkmark.title": "Checkmark",
 
   "contraption.cabricality.27.title": "Let there be light",
@@ -440,7 +440,7 @@
 
   "contraption.cabricality.28.1.title": "Throwing Flash",
   "contraption.cabricality.28.1.subtitle": "Contraption 28-1",
-  "contraption.cabricality.28.1.content": "When dropped as an item, Chromatic Compound will absorb light around itself and eventually turn into Refined Radiance. Choose one of three approaches:\n\n- Autoplacing light emitting blocks near the dropped compound items (blocks need line of sight to item)\n\n- Supplying light emitting blocks as items on nearby depots/belts (blocks need line of sight to item)\n\n- Throwing the compound into a Beacon Beam for free and instant conversion",
+  "contraption.cabricality.28.1.content": "When dropped as an item, Chromatic Compound will absorb light around itself and eventually turn into Refined Radiance. Choose one of three approaches:\n\n- Auto-placing light emitting blocks near the dropped compound items (blocks need line of sight to item)\n\n- Supplying light emitting blocks as items on nearby depots/belts (blocks need line of sight to item)\n\n- Throwing the compound into a Beacon Beam for free and instant conversion",
 
   "contraption.cabricality.28.2.title": "Post-Process",
   "contraption.cabricality.28.2.subtitle": "Contraption 28-2",
@@ -480,8 +480,8 @@
   "bonus_3a.cabricality.garnish.title": "Ender for Garnish",
   "bonus_3a.cabricality.garnish.content": "Set aside some Ender dust from your Reactor. In case your supply is bottlenecked, you can use Ender Pearls, too.",
 
-  "bonus_3a.cabricality.expedisiton.title": "Gateway Expedition",
-  "bonus_3a.cabricality.expedisiton.content": "After your flawless encounter with the Ender Dragon, make your way to the Gateway and travel to the outer Islands.\n\nHere you should be able to find the poise bushes necessary for creating Enderium Alloy.",
+  "bonus_3a.cabricality.expedition.title": "Gateway Expedition",
+  "bonus_3a.cabricality.expedition.content": "After your flawless encounter with the Ender Dragon, make your way to the Gateway and travel to the outer Islands.\n\nHere you should be able to find the poise bushes necessary for creating Enderium Alloy.",
 
   "bonus_3a.cabricality.alloy.title": "Alien Alloys",
   "bonus_3a.cabricality.alloy.content": "Fire up your End Stone Alloy Smelter for two rounds of processing:\n\nFirst off, refine your Silver Ingots with Ender Dust and Poise Bushes.",
@@ -493,5 +493,5 @@
   "bonus_3a.cabricality.cycle.content": "Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium.",
 
   "bonus_3a.cabricality.complete.title": "Bonus 3A Complete!",
-  "bonus_3a.cabricality.complete.content": "Marvellous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up."
+  "bonus_3a.cabricality.complete.content": "Marvelous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up."
 }
