@@ -1,0 +1,13 @@
+name = "ChoiceTheorem's Overhauled Village"
+filename = "CTOV-Fabric-Forge-2.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fgmhI8kH/versions/2.9/CTOV-Fabric-Forge-2.9.jar"
+hash-format = "sha1"
+hash = "20171174847cfa9ce5a02b34d281bcd9c6faf295"
+
+[update]
+[update.modrinth]
+mod-id = "fgmhI8kH"
+version = "qvvu7W5e"
