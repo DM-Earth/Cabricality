@@ -1,4 +1,5 @@
 {
+  "comment_1": "Ponder",
   "kubejs.ponder.alchemy_setup.header": "The Alchemy Setup",
   "kubejs.ponder.alchemy_setup.text_1": "Start with a Laser Emitter, and attach a fluid hopper on top",
   "kubejs.ponder.alchemy_setup.text_10": "There\u0027re five of them, so we should only take out one in order to do the conversion",
@@ -29,7 +30,7 @@
   "kubejs.ponder.rocket_engine.text_9": "For the layers above that, we\u0027ll need to use the material that each tier requires",
 
 
-  "comment_2": "items",
+  "comment_2": "Items",
   "item.kubejs.kinetic_mechanism": "Kinetic Mechanism",
   "item.kubejs.incomplete_kinetic_mechanism": "Incomplete Kinetic Mechanism",
   "item.kubejs.sealed_mechanism": "Sealed Mechanism",
@@ -136,15 +137,15 @@
   "item.kubejs.divide": "Divide",
   "item.kubejs.missingno": "NaN",
 
-  "item.kubejs.three_cast": "3 Cast",
-  "item.kubejs.eight_cast": "8 Cast",
+  "item.kubejs.three_cast": "Interger Cast (3)",
+  "item.kubejs.eight_cast": "Interger Cast (8)",
   "item.kubejs.plus_cast": "Plus Cast",
   "item.kubejs.minus_cast": "Minus Cast",
   "item.kubejs.multiply_cast": "Multiply Cast",
   "item.kubejs.divide_cast": "Divide Cast",
 
 
-  "comment_3": "blocks",
+  "comment_3": "Blocks",
   "block.kubejs.extractor_machine": "Extractor Machine",
   "block.kubejs.andesite_machine": "Andesite Machine",
   "block.kubejs.brass_machine": "Brass Machine",
@@ -161,7 +162,7 @@
   "block.kubejs.computation_matrix": "Computation Matrix",
 
 
-  "comment_4": "fluids",
+  "comment_4": "Fluids",
   "fluid.kubejs.resin": "Resin",
   "fluid.kubejs.redstone": "Redstone",
   "fluid.kubejs.sky_stone": "Sky Stone",
@@ -176,14 +177,14 @@
   "fluid.kubejs.molten_ostrum": "Molten Ostrum",
   "fluid.kubejs.molten_calorite": "Molten Calorite",
 
-  "fluid.kubejs.number_0": "Liquified Computation 0",
-  "fluid.kubejs.number_1": "Liquified Computation 1",
-  "fluid.kubejs.number_2": "Liquified Computation 2",
-  "fluid.kubejs.number_3": "Liquified Computation 3",
-  "fluid.kubejs.number_4": "Liquified Computation 4",
-  "fluid.kubejs.number_5": "Liquified Computation 5",
-  "fluid.kubejs.number_6": "Liquified Computation 6",
-  "fluid.kubejs.number_7": "Liquified Computation 7",
-  "fluid.kubejs.number_8": "Liquified Computation 8",
-  "fluid.kubejs.number_9": "Liquified Computation 9"
+  "fluid.kubejs.number_0": "Liquified Computation (0)",
+  "fluid.kubejs.number_1": "Liquified Computation (1)",
+  "fluid.kubejs.number_2": "Liquified Computation (2)",
+  "fluid.kubejs.number_3": "Liquified Computation (3)",
+  "fluid.kubejs.number_4": "Liquified Computation (4)",
+  "fluid.kubejs.number_5": "Liquified Computation (5)",
+  "fluid.kubejs.number_6": "Liquified Computation (6)",
+  "fluid.kubejs.number_7": "Liquified Computation (7)",
+  "fluid.kubejs.number_8": "Liquified Computation (8)",
+  "fluid.kubejs.number_9": "Liquified Computation (9)"
 }
