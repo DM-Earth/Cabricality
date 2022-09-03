@@ -476,7 +476,7 @@
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 																		}
 																		BlockEntityTag: {
-																			LootTable: "custom:chests/patience_1"
+																			LootTable: "cabricality:chests/patience_1"
 																		}
 																	}
 																	Count: 1b
