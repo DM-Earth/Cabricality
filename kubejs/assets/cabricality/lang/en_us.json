@@ -38,7 +38,122 @@
 
 
 
-  "overview.cabricality.title": "&a> Overview",
+  "market.cabricality.title": "&6> Market",
+
+  "market.cabricality.start.title"   : "&6&lThe Market",
+  "market.cabricality.start.content" : "&6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets.\n\nHave a look around. I'm sure you'll find something of use.",
+  "market.cabricality.start.task.checkmark.title": "Checkmark",
+
+  "market.cabricality.exchange.gold.title"   : "Manual &6Exchange",
+  "market.cabricality.exchange.gold.subtitle": "&764 Silver Coins&r -> &61 Gold Coin&r",
+  "market.cabricality.exchange.gold.content" : "Some trades require you to hand in Gold Coins. These are worth a stack of Silver each.",
+
+  "market.cabricality.exchange.silver.title"   : "Manual &7Exchange",
+  "market.cabricality.exchange.silver.subtitle": "&61 Gold Coin&r -> &764 Silver Coins&r",
+  "market.cabricality.exchange.silver.content" : "Here you can exchange a Gold Coin back to a Stack of Silver.",
+
+  "market.cabricality.saw.title"   : "Saw Everything",
+  "market.cabricality.saw.subtitle": "3 Gold - I just saw it!...Wait what?",
+  "market.cabricality.saw.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms.&r",
+  "market.cabricality.saw.reward.enchanted_saw.tag.display.name": "{\\\"text\\\":\\\"Enchanted Saw\\\",\\\"color\\\":\\\"gold\",\\\"italic\\\":false}",
+  "market.cabricality.saw.reward.enchanted_saw.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
+
+  "market.cabricality.screwdriver.title"   : "Never Screwed",
+  "market.cabricality.screwdriver.subtitle": "5 Gold - So does the screwer.",
+  "market.cabricality.screwdriver.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms.&r",
+  "market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.name": "{\\\"text\\\":\\\"Enchanted Screwdriver\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}",
+  "market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
+
+  "market.cabricality.resonator.title"   : "Magnetic Energetic",
+  "market.cabricality.resonator.subtitle": "5 Gold - Copy \\& Paste!",
+  "market.cabricality.resonator.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms.&r",
+  "market.cabricality.resonator.reward.enchanted_resonator.tag.display.name": "{\\\"text\\\":\\\"Enchanted Resonator\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}",
+  "market.cabricality.resonator.reward.enchanted_resonator.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
+
+  "market.cabricality.flash_drive.title"   : "Windows Update",
+  "market.cabricality.flash_drive.subtitle": "11 Gold - Time to update your XP!",
+  "market.cabricality.flash_drive.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &Calculation Mechanisms.&r",
+  "market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.name": "{\\\"text\\\":\\\"Enchanted Flash Drive\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}",
+  "market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
+
+  "market.cabricality.sleepless.title"   : "Sleepless",
+  "market.cabricality.sleepless.subtitle": "10 Silver - Without nightmares!",
+  "market.cabricality.sleepless.content" : "Your last resort in case the sundown beat you to it.",
+
+  "market.cabricality.locator.title"   : "Fortress Locator",
+  "market.cabricality.locator.subtitle": "2 Gold - You literally did that??",
+  "market.cabricality.locator.content" : "Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times.",
+
+  "market.cabricality.dinner.title"   : "Corporate Dinner",
+  "market.cabricality.dinner.subtitle": "10 Silver - Swept back hunger and be yourself!",
+  "market.cabricality.dinner.content" : "Sometimes you have to treat yourself and the co-workers to a nice meal.",
+
+  "market.cabricality.landfill.title"   : "Landfill Pickup",
+  "market.cabricality.landfill.subtitle": "15 Silver - Dirt, dirt, dirt.",
+  "market.cabricality.landfill.content" : "Early on it might help to import some dirt for base building.",
+
+  "market.cabricality.test_of_patience.title"   : "Test of Patience",
+  "market.cabricality.test_of_patience.subtitle": "50 Silver - Ehhhh, try refreshing the site?",
+  "market.cabricality.test_of_patience.content" : "This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite.\n&7But what will await you at the bottom?",
+
+  "test_of_patience.cabricality.name": "{\\\"italic\\\":false,\\\"text\\\":\\\"Test of Patience\\\",\\\"color\\\":\\\"dark_purple\\\"}",
+  "test_of_patience.cabricality.lore": "{\\\"italic\\\":true,\\\"color\\\":\\\"gray\\\",\\\"text\\\":\\\"The fabled prize awaits at the bottom...\\\"}",
+
+  "test_of_patience.cabricality.welcome.paper.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"Welcome, Challenger\\\"}",
+  "test_of_patience.cabricality.welcome.barrel.lore": "{\\\"text\\\": \\\"The fabled prize awaits at the bottom...\\\",\\\"italic\\\": true,\\\"color\\\": \\\"gray\\\"}",
+
+  "test_of_patience.cabrocality.floor_1.paper.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"You'll have to unbox a few of these\\\"}",
+  "test_of_patience.cabrocality.floor_1.barrel.lore": "{\\\"text\\\": \\\"The fabled prize awaits at the bottom...\\\",\\\"italic\\\": true,\\\"color\\\": \\\"gray\\\"}",
+
+  "test_of_patience.cabricality.floor_2.barrel.lore": "{\\\"italic\\\":true,\\\"color\\\":\\\"gray\\\",\\\"text\\\":\\\"The fabled prize awaits at the bottom...\\\"}",
+  "test_of_patience.cabricality.floor_2.paper.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"Good luck, see you at the bottom!\\\"}",
+  "test_of_patience.cabricality.floor_2.apple.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"Motivational Apple\\\"}",
+
+  "market.cabricality.enderpack.title"   : "Enderpack",
+  "market.cabricality.enderpack.subtitle": "55 Silver - I'm just a burden on your shoulders...",
+  "market.cabricality.enderpack.content" : "It's like a backpack but classy.",
+
+  "market.cabricality.undying.title"   : "1-Up!",
+  "market.cabricality.undying.subtitle": "60 Silver - Put your VR goggles off!",
+  "market.cabricality.undying.content" : "",
+
+  "market.cabricality.undying.title"   : "Where Mob?",
+  "market.cabricality.undying.subtitle": "45 Silver - Avada Kedavra!",
+  "market.cabricality.undying.content" : "As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!",
+
+  "market.cabricality.express.title"   : "Press Express",
+  "market.cabricality.express.subtitle": "6 Gold - *FBI Express opened the door.",
+  "market.cabricality.express.content" : "True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!",
+
+  "market.cabricality.gardener.title"   : "Gardener's Starter Pack",
+  "market.cabricality.gardener.subtitle": "24 Silver - Forget me not.",
+  "market.cabricality.gardener.content" : "",
+
+  "market.cabricality.painter.title"   : "Painter's Starter Kit",
+  "market.cabricality.painter.subtitle": "24 Silver - Without courses.",
+  "market.cabricality.painter.content" : "",
+
+  "market.cabricality.steamer.title"   : "Steamer's Collection",
+  "market.cabricality.steamer.subtitle": "24 Silver - Drive the car, the well-steamed car.",
+  "market.cabricality.steamer.content" : "",
+
+  "market.cabricality.pet_owner.title"   : "Pet Owner's Starter Pack",
+  "market.cabricality.pet_owner.subtitle": "24 Silver - Let's be lonely together...",
+  "market.cabricality.pet_owner.content" : "",
+
+  "market.cabricality.leaf.title"   : "Instant Aesthetics",
+  "market.cabricality.leaf.subtitle": "24 Silver - I had a dream..",
+  "market.cabricality.leaf.content" : "Not too stoked with your facade? Not a problem! Foliage solves everything.",
+
+  "market.cabricality.bee.title"   : "No, Not The Bees!",
+  "market.cabricality.bee.subtitle": "48 Silver - Bee and Pig = Big and.. Nothing.",
+  "market.cabricality.bee.content" : "",
+  "market.cabricality.bee.task.flower.title": "Any Flower",
+
+
+
+
+  "overview.cabricality.title",: "&a> Overview",
 
   "overview.cabricality.start.title"   : "&a&lFrom a Tree Puncher...",
   "overview.cabricality.start.content" : "&aWelcome to the Overview. You can always come back here to catch up on your current position in the Progression of Technology. If you look closely, your Journey to the Moon completes the final step of the way on the right side.",
@@ -131,6 +246,14 @@
   "overview.cabricality.chapter_5.end.title"   : "&9&l&o..to a Spacefarer",
   "overview.cabricality.chapter_5.end.content" : "&oThe Dream of walking the Moon's surface finally came to fruition.\n\n&oWith that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!&r",
   "overview.cabricality.chapter_5.end.task.complete.title": "&6Complete Chapter 5",
+
+
+
+  "thanks.cabricality.title": "&8 Special Thanks",
+
+  "thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
+  "thanks.cabricality.staff.subtitle": "Staff",
+  "thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7Original Author&r\n\n&f&lYjn024&r\n&7Modpack Author&r\n\n&f&lKrLite&r\n&7Translator, Artist, Coder&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7Contributer&r",
 
 
 
