@@ -666,7 +666,7 @@
 
 
 
-  "chapter_4.cabricality.title"   : "&f4&r Into the Box",
+  "chapter_4.cabricality.title": "&f4&r Into the Box",
 
   "chapter_4.cabricality.start.title"   : "Chapter 4 Start!",
   "chapter_4.cabricality.start.content" : "The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery.\n\nMuch like previous chapters, a few new material sources or shipments are required first.",
@@ -798,7 +798,7 @@
 
   "metallurgy.cabricality.pickaxe.title"   : "Mining Tool",
   "metallurgy.cabricality.pickaxe.subtitle": "1 -> 1",
-  "metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
+  "metallurgy.cabricality.pickaxe.task.checkmark.title": "Checkmark",
 
   "metallurgy.cabricality.fortune_pickaxe.title"   : "Fortune",
   "metallurgy.cabricality.fortune_pickaxe.subtitle": "1 -> 1 ~ 2",
@@ -817,6 +817,7 @@
 
   "metallurgy.cabricality.i.milling.title"   : "Milling",
   "metallurgy.cabricality.i.milling.subtitle": "1 -> 3",
+  "metallurgy.cabricality.i.milling.task.checkmark.title": "Checkmark",
 
   "metallurgy.cabricality.i.crushing.title"   : "Crushing",
   "metallurgy.cabricality.i.crushing.subtitle": "1 -> 3 ~ 6",
@@ -856,7 +857,7 @@
 
 
 
-  "thanks.cabricality.title",: "&8 Special Thanks",
+  "thanks.cabricality.title": "&8 Special Thanks",
 
   "thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
   "thanks.cabricality.staff.subtitle": "Staff",
