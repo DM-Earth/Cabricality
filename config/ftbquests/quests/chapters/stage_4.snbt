@@ -32,31 +32,33 @@
 			}]
 		}
 		{
-			title: "{chapter_4.cabricality.new_capacity.title}"
+			title: "{chapter_4.cabricality.preparation.title}"
 			icon: "indrev:heat_generator_mk4"
 			x: -1.0d
 			y: -2.5d
 			shape: "circle"
-			description: ["{chapter_4.cabricality.new_capacity.content}"]
+			description: ["{chapter_4.cabricality.preparation.content}"]
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "13B197C90F9812C8"
 			tasks: [{
 				id: "4C687EF00A44ED1E"
 				type: "checkmark"
+				title: "{chapter_4.cabricality.preparation.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "{chapter_4.cabricality.laser_describe.title}"
+			title: "{chapter_4.cabricality.laser.title}"
 			icon: "indrev:laser_emitter_mk4"
 			x: 3.0d
 			y: -2.5d
 			shape: "circle"
-			description: ["{chapter_4.cabricality.laser_describe.content}"]
+			description: ["{chapter_4.cabricality.laser.content}"]
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "6D26DAB7D0FF6E90"
 			tasks: [{
 				id: "16897A4EF323B02E"
 				type: "checkmark"
+				title: "{chapter_4.cabricality.laser.task.checkmark.title}"
 			}]
 			rewards: [{
 				id: "24B631E93DB0C8F7"
@@ -126,6 +128,7 @@
 			tasks: [{
 				id: "5C23F9DBF4F2F484"
 				type: "checkmark"
+				title: "{chapter_4.cabricality.liquid_sand.task.checkmark.title}"
 			}]
 		}
 		{
@@ -224,12 +227,12 @@
 			]
 		}
 		{
-			title: "Concentrated Heat"
+			title: "{contraption.cabricality.33.2.title}"
 			icon: "kubejs:earth_charge"
 			x: -3.0d
 			y: 3.0d
-			subtitle: "Contraption 33-2"
-			description: ["Compact enough powder back together to create the highly reactive Earth Charge."]
+			subtitle: "contraption.cabricality.33.2.subtitle}"
+			description: ["{contraption.cabricality.33.2.content}"]
 			dependencies: ["5799B4124EE20DB1"]
 			id: "60A8B4C736CE3226"
 			tasks: [
@@ -247,12 +250,12 @@
 			]
 		}
 		{
-			title: "Crystalline Sand"
+			title: "{contraption.cabricality.33.3.title}"
 			icon: "kubejs:purified_sand"
 			x: -1.0d
 			y: 3.0d
-			subtitle: "Contraption 33-3"
-			description: ["Enriching coarse sand with earth charges creates Sand Crystals. Not much more processing is left until the Silicon content reaches a state usable for circuits."]
+			subtitle: "{contraption.cabricality.33.3.subtitle}"
+			description: ["{contraption.cabricality.33.3.content}"]
 			dependencies: [
 				"60A8B4C736CE3226"
 				"0F5AA5DF001DCDF5"
@@ -273,13 +276,13 @@
 			]
 		}
 		{
-			title: "Wood Delivery"
+			title: "{contraption.cabricality.34.1.title}"
 			icon: "minecraft:oak_log"
 			x: 3.0d
 			y: -0.5d
 			shape: "square"
-			subtitle: "Contraption 34-1"
-			description: ["It'll be good to order a Wood supply to this location. Aside from Silicon it can contribute to this assembly line for some other useful products."]
+			subtitle: "{contraption.cabricality.34.1.subtitle}"
+			description: ["{contraption.cabricality.34.1.content}"]
 			hide_dependency_lines: true
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "46820FBDDDEE491E"
@@ -287,7 +290,7 @@
 				{
 					id: "0AA0DEB1A87DA675"
 					type: "item"
-					title: "Any Wooden Log"
+					title: "{contraption.cabricality.34.1.task.wooden_log.title}"
 					icon: "minecraft:oak_log"
 					item: {
 						id: "itemfilters:tag"
@@ -306,12 +309,12 @@
 			]
 		}
 		{
-			title: "Pyrolyzer Round I"
+			title: "{contraption.cabricality.34.2.title}"
 			icon: "minecraft:charcoal"
 			x: 3.0d
 			y: 0.5d
-			subtitle: "Contraption 34-2"
-			description: ["A Pyrolisation process is not strictly required for Charcoal, but the increased yield makes it worthwhile if the wood supply is limited."]
+			subtitle: "{contraption.cabricality.34.2.subtitle}"
+			description: ["{contraption.cabricality.34.2.content}"]
 			dependencies: ["46820FBDDDEE491E"]
 			id: "3249CD08992F2BCD"
 			tasks: [
@@ -324,16 +327,17 @@
 				{
 					id: "760709B05A0FEF11"
 					type: "checkmark"
+					title: "{contraption.cabricality.34.2.task.checkmark.title}"
 				}
 			]
 		}
 		{
-			title: "Pyrolyzer Round II"
+			title: "{contraption.cabricality.34.3.title}"
 			icon: "kubejs:coal_coke"
 			x: 3.0d
 			y: 1.5d
-			subtitle: "Contraption 34-3"
-			description: ["In a secondary, more lengthy pyrolisation process, Coal Coke is formed. An ideal material for both refining Silicon and to provide heat as Solid Fuel."]
+			subtitle: "{contraption.cabricality.34.3.content}"
+			description: ["{contraption.cabricality.34.3.content}"]
 			dependencies: ["3249CD08992F2BCD"]
 			id: "1A383F96B312D1B8"
 			tasks: [
@@ -351,12 +355,12 @@
 			]
 		}
 		{
-			title: "Controlled Cuts"
+			title: "{contraption.cabricality.35.title}"
 			icon: "kubejs:coke_chunk"
 			x: 3.0d
 			y: 3.0d
-			subtitle: "Contraption 35"
-			description: ["Using Mechanical Saws and Water, the coke can to be cut up into chunks in order to become a more effective catalyst."]
+			subtitle: "{contraption.cabricality.35.subtitle}"
+			description: ["{contraption.cabricality.35.content}"]
 			dependencies: ["1A383F96B312D1B8"]
 			id: "16F920C2AF2FA2E0"
 			tasks: [
@@ -374,12 +378,12 @@
 			]
 		}
 		{
-			title: "The Merge"
+			title: "{contraption.cabricality.36.title}"
 			icon: "kubejs:silicon_compound"
 			x: 1.0d
 			y: 4.0d
-			subtitle: "Contraption 36"
-			description: ["The process of refining silicon requires a blend of Sand Crystals, Fine Sand and the Carbon Catalyst."]
+			subtitle: "{contraption.cabricality.36.subtitle}"
+			description: ["{contraption.cabricality.36.content}"]
 			dependencies: [
 				"343050A40A3AB1F0"
 				"4412F3B2827606E4"
@@ -401,12 +405,12 @@
 			]
 		}
 		{
-			title: "Snow Machine"
+			title: "{contraption.cabricality.37.title}"
 			icon: "minecraft:snow_block"
 			x: 5.0d
 			y: -1.0d
-			subtitle: "Contraption 37"
-			description: ["New Invar Technology makes forming snowballs out of Water quite a simple process. Perhaps we should set aside a few for our next unannounced visitor.."]
+			subtitle: "{contraption.cabricality.37.subtitle}"
+			description: ["{contraption.cabricality.37.content}"]
 			hide_dependency_lines: true
 			dependencies: ["4B80A801A5BE4A01"]
 			id: "4B34B52092BA32BE"
@@ -425,16 +429,12 @@
 			]
 		}
 		{
-			title: "Cool Laser"
+			title: "{contraption.cabricality.38.title}"
 			icon: "kubejs:blizz_cube"
 			x: 5.0d
 			y: 2.5d
-			subtitle: "Contraption 38"
-			description: [
-				"The second Alchemical Laser forms activated blizz essence from Snow Blocks."
-				""
-				"Your automation strategy from Contraption 32 will perform just as effective here."
-			]
+			subtitle: "{contraption.cabricality.38.subtitle}"
+			description: ["{contraption.cabricality.38.content}"]
 			dependencies: ["4B34B52092BA32BE"]
 			id: "0AE7FAEBD5F86D9C"
 			tasks: [
@@ -452,12 +452,12 @@
 			]
 		}
 		{
-			title: "Blizz Mill"
+			title: "{contraption.cabricality.39.1.title}"
 			icon: "kubejs:blizz_powder"
 			x: 5.0d
 			y: 4.0d
-			subtitle: "Contraption 39-1"
-			description: ["Just like earlier, the essence becomes usable only after a bit of refinement."]
+			subtitle: "{contraption.cabricality.39.1.subtitle}"
+			description: ["{contraption.cabricality.39.1.content}"]
 			dependencies: ["0AE7FAEBD5F86D9C"]
 			id: "01B0A6236A5073D1"
 			tasks: [
@@ -475,12 +475,12 @@
 			]
 		}
 		{
-			title: "Concentrated Cold"
+			title: "{contraption.cabricality.39.2.title}"
 			icon: "kubejs:ice_charge"
 			x: 5.0d
 			y: 5.0d
-			subtitle: "Contraption 39-2"
-			description: ["Compact enough powder back together to create the highly reactive Ice Charge."]
+			subtitle: "{contraption.cabricality.39.2.subtitle}"
+			description: ["{contraption.cabricality.39.2.content}"]
 			dependencies: ["01B0A6236A5073D1"]
 			id: "4732465116D723EE"
 			tasks: [
@@ -498,12 +498,12 @@
 			]
 		}
 		{
-			title: "Final Induction"
+			title: "{contraption.cabricality.39.3.title}"
 			icon: "ae2:silicon"
 			x: 3.0d
 			y: 5.0d
-			subtitle: "Contraption 39-3"
-			description: ["One final pass in the Induction Smelter now produces a chunk of high-quality Silicon."]
+			subtitle: "{contraption.cabricality.39.3.subtitle}"
+			description: ["{contraption.cabricality.39.3.content}"]
 			dependencies: [
 				"2268AFAF6E9AB5E2"
 				"4732465116D723EE"
@@ -524,13 +524,13 @@
 			]
 		}
 		{
-			title: "Secrets uncovered"
+			title: "{chapter_4.cabricality.chapter_4a.title}"
 			icon: "kubejs:substrate_silicon"
 			disable_toast: true
 			x: -3.0d
 			y: 5.0d
 			shape: "hexagon"
-			description: ["The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial."]
+			description: ["{chapter_4.cabricality.chapter_4a.content}"]
 			dependencies: ["3B431AAADE8845FA"]
 			hide: true
 			size: 1.5d
@@ -538,7 +538,7 @@
 			tasks: [{
 				id: "5B4F2E2F7BDEA6A0"
 				type: "stat"
-				title: "Complete Chapter 4a"
+				title: "{chapter_4.cabricality.chapter_4a.task.complete.title}"
 				icon: "kubejs:substrate_chaos"
 				disable_toast: true
 				stat: "minecraft:play_time"
@@ -546,12 +546,12 @@
 			}]
 		}
 		{
-			title: "Unboxing"
+			title: "{contraption.cabricality.39.a.title}"
 			icon: "ae2:silicon"
 			x: -1.0d
 			y: 5.0d
-			subtitle: "Contraption 39-A"
-			description: ["Separate the Silicon from its jar using a Reagent Extractor."]
+			subtitle: "{contraption.cabricality.39.a.subtitle}"
+			description: ["{contraption.cabricality.39.a.content}"]
 			dependencies: ["0CE88FEA070DC46C"]
 			id: "4B19B6EAD511378D"
 			tasks: [
@@ -569,12 +569,12 @@
 			]
 		}
 		{
-			title: "Circuit Stamper"
+			title: "{contraption.cabricality.40.1.title}"
 			icon: "ae2:printed_silicon"
 			x: 1.0d
 			y: 6.0d
-			subtitle: "Contraption 40-1"
-			description: ["Use Deployers to create a circuit base out of silicon. The required Press can be located at the center of Sky Stone Meteors."]
+			subtitle: "{contraption.cabricality.40.1.subtitle}"
+			description: ["{contraption.cabricality.40.1.content}"]
 			dependencies: [
 				"067C5FDA4709F195"
 				"4B19B6EAD511378D"
@@ -596,12 +596,12 @@
 			]
 		}
 		{
-			title: "Ready to Deploy"
+			title: "{contraption.cabricality.40.2.title}"
 			icon: "kubejs:calculation_mechanism"
 			x: 1.0d
 			y: 7.5d
-			subtitle: "Contraption 40-2"
-			description: ["For one last time, a line of Deployers will be needed to upgrade the previous mechanism to the next tier."]
+			subtitle: "{contraption.cabricality.40.2.subtitle}"
+			description: ["{contraption.cabricality.40.2.content}"]
 			dependencies: [
 				"1BF8F3CC8BEBB620"
 				"71D90A1E5D53FC0A"
@@ -622,14 +622,11 @@
 			]
 		}
 		{
-			title: "Arming the Deployer IV"
+			title: "{chapter_4.cabricality.assemble.title}"
 			x: -0.5d
 			y: 7.5d
 			shape: "circle"
-			description: [
-				"The installation process of Calculation Mechanisms can be facilitated by a Flash Drive."
-				"The precious Cobalt required can be found in the Nether. "
-			]
+			description: ["{chapter_4.cabricality.assemble.content}"]
 			hide_dependency_lines: true
 			dependencies: ["71D90A1E5D53FC0A"]
 			id: "1BF8F3CC8BEBB620"
@@ -647,15 +644,11 @@
 			}]
 		}
 		{
-			title: "Chapter 4 Complete!"
+			title: "{chapter_4.cabricality.complete.title}"
 			x: 1.0d
 			y: 9.5d
 			shape: "hexagon"
-			description: [
-				"Great work! The final assembly line is now complete. Your factory just entered the Digital Age."
-				""
-				"New options have opened up in the Overview. Whenever you are ready."
-			]
+			description: ["{chapter_4.cabricality.complete.content}"]
 			dependencies: ["6824055533465010"]
 			size: 2.0d
 			id: "28DAED70768C6A50"
@@ -687,11 +680,11 @@
 			]
 		}
 		{
-			title: "Express Circuitry I"
+			title: "{contraption.cabricality.41.1.title}"
 			x: 3.0d
 			y: 9.5d
-			subtitle: "Contraption 41-1"
-			description: ["Additional Processors are required in creating logistical components of ME Technology. At some point some Semi-Automation should come into consideration."]
+			subtitle: "{contraption.cabricality.41.1.subtitle}"
+			description: ["{contraption.cabricality.41.1.content}"]
 			dependencies: ["28DAED70768C6A50"]
 			id: "24C48CFAAD71B230"
 			tasks: [
@@ -716,11 +709,11 @@
 			]
 		}
 		{
-			title: "Express Circuitry II"
+			title: "{contraption.cabricality.41.2.title}"
 			x: 4.0d
 			y: 9.5d
-			subtitle: "Contraption 41-2"
-			description: ["Assembling the Processors is not a trivial process. But it sure is fun to watch it work."]
+			subtitle: "{contraption.cabricality.41.2.subtitle}"
+			description: ["{contraption.cabricality.41.2.content}"]
 			dependencies: ["24C48CFAAD71B230"]
 			id: "2B8F1D804107EB8C"
 			tasks: [
