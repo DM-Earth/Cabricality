@@ -3,23 +3,23 @@
 	group: "0810E42B2DD79973"
 	order_index: 0
 	filename: "advancements"
-	title: "&d> Advancements"
+	title: "{advancements.cabricality.title}"
 	icon: "minecraft:enchanting_table"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "&6Accumulation"
+			title: "{advancement.cabricality.accumulation.title}"
 			icon: "minecraft:spruce_sapling"
 			x: 2.0d
 			y: -4.0d
 			shape: "rsquare"
-			subtitle: "Remember to plant it back!"
+			subtitle: "{advancement.cabricality.accumulation.subtitle}"
 			id: "3D46F5872613C87A"
 			tasks: [{
 				id: "305B8665F7A566F1"
 				type: "item"
-				title: "Craft 4096 planks"
+				title: "{advancement.cabricality.accumulation.task.craft.title}"
 				icon: "minecraft:oak_planks"
 				item: {
 					id: "itemfilters:tag"
@@ -34,12 +34,12 @@
 			}]
 		}
 		{
-			title: "&fThe highest level of the world!"
+			title: "{advancement.cabricality.reach_the_sky.title}"
 			icon: "minecraft:barrier"
 			x: 3.0d
 			y: -6.0d
 			shape: "rsquare"
-			subtitle: "But how literally can I get down?"
+			subtitle: "{advancement.cabricality.reach_the_sky.subtitle}"
 			id: "48B93059B325B230"
 			tasks: [{
 				id: "169EFAAAE095C621"
@@ -47,7 +47,7 @@
 				title: "Reach the Hight of 255 Blocks"
 				icon: "minecraft:ladder"
 				dimension: "minecraft:overworld"
-				ignore_dimension: true
+				ignore_dimension: false
 				position: [I;
 					0
 					255
@@ -61,7 +61,7 @@
 			}]
 		}
 		{
-			title: "&7Under Construction"
+			title: "{advancement.cabricality.construction.title}"
 			icon: {
 				id: "minecraft:scaffolding"
 				Count: 1b
@@ -75,7 +75,7 @@
 			x: 0.0d
 			y: -5.0d
 			shape: "rsquare"
-			subtitle: "Go in for large-scale construction！"
+			subtitle: "{advancement.cabricality.construction.subtitle}"
 			id: "7C7B993FACB7E466"
 			tasks: [
 				{
@@ -130,107 +130,108 @@
 				{
 					id: "56406DC1EB23D39A"
 					type: "dimension"
-					title: "&5Nether"
+					title: "{advancement.cabricality.explore.dimension.nether}"
 					icon: "minecraft:netherrack"
 					dimension: "minecraft:the_nether"
 				}
 				{
 					id: "666EC6A82E1DBFD7"
 					type: "dimension"
-					title: "&3The End"
+					title: "{advancement.cabricality.explore.dimension.the_end}"
 					icon: "minecraft:end_stone"
 					dimension: "minecraft:the_end"
 				}
 				{
-					id: "01025B3292529483"
-					type: "dimension"
-					title: "Earth Orbit"
-					icon: "ad_astra:earth_globe"
-					dimension: "ad_astra:earth_orbit"
-				}
-				{
-					id: "2EECAE3FE330C933"
-					type: "dimension"
-					title: "Glacio"
-					icon: "ad_astra:glacio_stone"
-					dimension: "ad_astra:glacio"
-				}
-				{
-					id: "7B664638EEA93456"
-					type: "dimension"
-					title: "Glacio Orbit"
-					icon: "ad_astra:glacio_globe"
-					dimension: "ad_astra:glacio_orbit"
-				}
-				{
-					id: "1EA15A05CE6FE617"
-					type: "dimension"
-					title: "Mars"
-					icon: "ad_astra:mars_cobblestone"
-					dimension: "ad_astra:mars"
-				}
-				{
-					id: "1B2392A99AA4DCB9"
-					type: "dimension"
-					title: "Mars Orbit"
-					icon: "ad_astra:mars_globe"
-					dimension: "ad_astra:mars_orbit"
-				}
-				{
-					id: "32EEE244FA7BC215"
-					type: "dimension"
-					title: "Mercury"
-					icon: "ad_astra:mercury_cobblestone"
-					dimension: "ad_astra:mercury"
-				}
-				{
-					id: "4260EF57B3CA896C"
-					type: "dimension"
-					title: "Mercury Orbit"
-					icon: "ad_astra:mercury_globe"
-					dimension: "ad_astra:mercury_orbit"
-				}
-				{
 					id: "2E80F104FE82A2BF"
 					type: "dimension"
-					title: "Moon"
+					title: "{advancement.cabricality.explore.planet.the_moon}"
 					icon: "ad_astra:moon_cobblestone"
 					dimension: "ad_astra:moon"
 				}
 				{
-					id: "21CFC836E0644873"
+					id: "2EECAE3FE330C933"
 					type: "dimension"
-					title: "Moon Orbit"
-					icon: "ad_astra:moon_globe"
-					dimension: "ad_astra:moon_orbit"
+					title: "{advancement.cabricality.explore.planet.glacio}"
+					icon: "ad_astra:glacio_stone"
+					dimension: "ad_astra:glacio"
+				}
+				{
+					id: "1EA15A05CE6FE617"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.planet.mars}"
+					icon: "ad_astra:mars_cobblestone"
+					dimension: "ad_astra:mars"
+				}
+				{
+					id: "32EEE244FA7BC215"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.planet.mercury}"
+					icon: "ad_astra:mercury_cobblestone"
+					dimension: "ad_astra:mercury"
 				}
 				{
 					id: "0A648CFDB2036807"
 					type: "dimension"
-					title: "Venus"
+					title: "{advancement.cabricality.explore.planet.venus}"
 					icon: "ad_astra:venus_cobblestone"
 					dimension: "ad_astra:venus"
 				}
 				{
+					id: "01025B3292529483"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.orbit.earth}"
+					icon: "ad_astra:earth_globe"
+					dimension: "ad_astra:earth_orbit"
+				}
+				{
+					id: "21CFC836E0644873"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.orbit.the_moon}"
+					icon: "ad_astra:moon_globe"
+					dimension: "ad_astra:moon_orbit"
+				}
+				{
+					id: "7B664638EEA93456"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.orbit.glacio}"
+					icon: "ad_astra:glacio_globe"
+					dimension: "ad_astra:glacio_orbit"
+				}
+				{
+					id: "1B2392A99AA4DCB9"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.orbit.mars}"
+					icon: "ad_astra:mars_globe"
+					dimension: "ad_astra:mars_orbit"
+				}
+				{
+					id: "4260EF57B3CA896C"
+					type: "dimension"
+					title: "{advancement.cabricality.explore.orbit.mercury}"
+					icon: "ad_astra:mercury_globe"
+					dimension: "ad_astra:mercury_orbit"
+				}
+				{
 					id: "7F4A0D32517E3535"
 					type: "dimension"
-					title: "Venus Orbit"
+					title: "{advancement.cabricality.explore.orbit.venus}"
 					icon: "ad_astra:venus_globe"
 					dimension: "ad_astra:venus_orbit"
 				}
 			]
 		}
 		{
-			title: "&8Get into Spatial Storage"
+			title: "{advancement.cabricality.being_stored.title}"
 			x: 3.0d
 			y: -8.0d
 			shape: "circle"
+			subtitle: "{advancement.cabricality.being_stored.subtitle}"
 			secret: true
 			id: "4BF4C879E63527FE"
 			tasks: [{
 				id: "2DBA595DB41A6BDF"
 				type: "dimension"
-				title: "&8Spatial Storage"
+				title: "{advancement.cabricality.being_stored.task.spatial_storage}"
 				icon: {
 					id: "ftbquests:custom_icon"
 					Count: 1b
@@ -242,68 +243,17 @@
 			}]
 		}
 		{
-			title: "&lComplete Cabricality"
-			icon: "minecraft:red_glazed_terracotta"
-			x: 1.5714285714285836d
-			y: -5.4642857142857295d
-			shape: "circle"
-			dependencies: [
-				"47965C310D9847DC"
-				"4F7A70041B67A348"
-			]
-			size: 1.7d
-			secret: true
-			id: "4D94E2619DDAADC4"
-			tasks: [
-				{
-					id: "20DA4D5551E78BC0"
-					type: "advancement"
-					title: "&2'Speedrun' Minecraft"
-					icon: "minecraft:grass_block"
-					disable_toast: true
-					advancement: "minecraft:end/respawn_dragon"
-					criterion: ""
-				}
-				{
-					id: "4CD7A603CEE226FE"
-					type: "advancement"
-					title: "&dFinish Space Exploration"
-					icon: "agape_space:starship_engine"
-					disable_toast: true
-					advancement: "agape:advancements_starship"
-					criterion: ""
-				}
-				{
-					id: "33CBBC9CE221D956"
-					type: "advancement"
-					title: "&6Complete Create Mod"
-					icon: "create:yellow_seat"
-					disable_toast: true
-					advancement: "create:long_travel"
-					criterion: ""
-				}
-				{
-					id: "40EFC4C905FD6B5F"
-					type: "advancement"
-					title: "&eComplete Farmer's Delight"
-					icon: "farmersdelight:stove"
-					disable_toast: true
-					advancement: "farmersdelight:main/master_chef"
-					criterion: ""
-				}
-			]
-		}
-		{
-			title: "&d&lWhat are U doing?!"
+			title: "{advancement.cabricality.flying_skunk.title}"
 			x: 4.0d
 			y: -4.0d
 			shape: "circle"
+			subtitle: "{advancement.cabricality.flying_skunk.subtitle}"
 			secret: true
 			id: "497CB9503F98E8FE"
 			tasks: [{
 				id: "063E4D8B2C3995B1"
 				type: "stat"
-				title: "&dFlight Distance"
+				title: "{advancement.cabricality.flying_skunk.task.fly.title}"
 				icon: {
 					id: "minecraft:elytra"
 					Count: 1b
@@ -319,27 +269,81 @@
 			}]
 		}
 		{
-			title: "&6&lA Long Tour"
+			title: "{advancement.cabricality.long_tour.title}"
 			x: 0.0d
 			y: -3.0d
 			shape: "circle"
+			subtitle: "{advancement.cabricality.long_tour.subtitle}"
 			secret: true
 			id: "38DCB9AD8BBDEA34"
 			tasks: [{
 				id: "0F86A9C202CADA8B"
 				type: "questsadditions:days"
-				title: "Playing for 5000 days"
+				title: "{advancement.cabricality.long_tour.task.play.title}"
 				icon: "minecraft:clock"
 				days: 5000
 			}]
 		}
 		{
-			title: "&8&lNothing more to say NOOOOOOOOO"
+			title: "{advancement.cabricality.new.title}"
 			x: -1.0d
 			y: -7.0d
 			shape: "circle"
+			subtitle: "{advancement.cabricality.new.subtitle}"
 			secret: true
 			id: "407425094BB67456"
+		}
+		{
+			title: "{advacnements.cabricality.complete.title}"
+			icon: "minecraft:red_glazed_terracotta"
+			x: 1.5714285714285836d
+			y: -5.4642857142857295d
+			shape: "circle"
+			dependencies: [
+				"47965C310D9847DC"
+				"4F7A70041B67A348"
+			]
+			size: 1.7d
+			secret: true
+			id: "4D94E2619DDAADC4"
+			tasks: [
+				{
+					id: "20DA4D5551E78BC0"
+					type: "advancement"
+					title: "{advancements.cabricality.complete.task.minecraft.title}"
+					icon: "minecraft:grass_block"
+					disable_toast: true
+					advancement: "minecraft:end/respawn_dragon"
+					criterion: ""
+				}
+				{
+					id: "4CD7A603CEE226FE"
+					type: "advancement"
+					title: "{advancements.cabricality.complete.task.ad_astra.title}"
+					icon: "ad_astra:space_painting"
+					disable_toast: true
+					advancement: "ad_astra:interstellar"
+					criterion: ""
+				}
+				{
+					id: "33CBBC9CE221D956"
+					type: "advancement"
+					title: "{advancements.cabricality.complete.task.create.title}"
+					icon: "create:yellow_seat"
+					disable_toast: true
+					advancement: "create:long_travel"
+					criterion: ""
+				}
+				{
+					id: "40EFC4C905FD6B5F"
+					type: "advancement"
+					title: "{advancements.cabricality.complete.task.farmers_delight.title}"
+					icon: "farmersdelight:stove"
+					disable_toast: true
+					advancement: "farmersdelight:main/master_chef"
+					criterion: ""
+				}
+			]
 		}
 	]
 }

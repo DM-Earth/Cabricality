@@ -249,11 +249,57 @@
 
 
 
-  "thanks.cabricality.title": "&8 Special Thanks",
+  "advancements.cabricality.title": "&d> Advancements",
 
-  "thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
-  "thanks.cabricality.staff.subtitle": "Staff",
-  "thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7Original Author&r\n\n&f&lYjn024&r\n&7Modpack Author&r\n\n&f&lKrLite&r\n&7Translator, Artist, Coder&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7Contributer&r",
+  "advancement.cabricality.accumulation.title"   : "&6Accumulation",
+  "advancement.cabricality.accumulation.subtitle": "&6Remember to plant'em back!",
+  "advancement.cabricality.accumulation.task.craft.title": "Craft 2^12 Wooden Planks",
+
+  "advancement.cabricality.reach_the_sky.title"   : "&bReach the Sky",
+  "advancement.cabricality.reach_the_sky.subtitle": "&bBut.. how can I literally get down?!!",
+
+  "advancement.cabricality.construction.title"   : "&7Under Construction",
+  "advancement.cabricality.construction.subtitle": "&7Go in for a larger construction!",
+
+  "advancement.cabricality.explore.title"   : "&5A Real Hitch Hiker",
+  "advancement.cabricality.explore.subtitle": "&5Always remember wind, dirt, and the place called Home!",
+
+  "advancement.cabricality.explore.dimension.nether" : "&5Nether",
+  "advancement.cabricality.explore.dimension.the_end": "&3The End",
+
+  "advancement.cabricality.explore.planet.the_moon"  : "&8The Moon",
+  "advancement.cabricality.explore.planet.glacio"    : "&9Glacio",
+  "advancement.cabricality.explore.planet.mars"      : "&cMars",
+  "advancement.cabricality.explore.planet.mercury"   : "&5Mercury",
+  "advancement.cabricality.explore.planet.venus"     : "&6Venus",
+
+  "advancement.cabricality.explore.orbit.earth"     : "&2Earth&8 Orbit",
+  "advancement.cabricality.explore.orbit.the_moon"  : "&8The Moon&8 Orbit",
+  "advancement.cabricality.explore.orbit.glacio"    : "&9Glacio&8 Orbit",
+  "advancement.cabricality.explore.orbit.mars"      : "&cMars&8 Orbit",
+  "advancement.cabricality.explore.orbit.mercury"   : "&5Mercury&8 Prbit",
+  "advancement.cabricality.explore.orbit.venus"     : "&6Venus&8 Orbit",
+
+  "advancement.cabricality.being_stored.title"   : "&8Being 'Stored'",
+  "advancement.cabricality.being_stored.subtitle": "&Where the hell is here..",
+  "advancement.cabricality.being_stored.task.spatial_storage": "&Getting into the Spatial Storage",
+
+  "advancement.cabricality.flying_skunk.title"   : "&d..Why Are You Here..?",
+  "advancement.cabricality.flying_skunk.subtitle": "&dTherefore, Senpai Shouts.",
+  "advancement.cabricality.flying_skunk.task.fly.title": "&dFlight Distance",
+
+  "advancement.cabricality.long_tour.title"   : "&6A Long Tour",
+  "advancement.cabricality.long_tour.subtitle": "&6You are the one by my side, all the time.",
+  "advancement.cabricality.long_tour.task.play.title": "&5Playing for 5000 Days",
+
+  "advancement.cabricality.new.title"   : "&8No More to Say",
+  "advancement.cabricality.new.subtitle": "&8NOOOO",
+
+  "advacnements.cabricality.complete.title": "&fComplete Cabricality",
+  "advancements.cabricality.complete.task.minecraft.title"      : "&2'Speedrun' Minecraft",
+  "advancements.cabricality.complete.task.ad_astra.title"       : "&dThe Outerspace",
+  "advancements.cabricality.complete.task.create.title"         : "&6Machinery Revolution",
+  "advancements.cabricality.complete.task.farmers_delight.title": "&eDelicacy Cure",
 
 
 
@@ -739,5 +785,80 @@
 
   "contraption.cabricality.41.2.title"   : "Express Circuitry II",
   "contraption.cabricality.41.2.subtitle": "Contraption 41-2",
-  "contraption.cabricality.41.2.content" : "Assembling the Processors is not a trivial process. But it sure is fun to watch it work."
+  "contraption.cabricality.41.2.content" : "Assembling the Processors is not a trivial process. But it sure is fun to watch it work.",
+
+
+
+  "metallurgy.cabricality.title": "> Metallurgy",
+
+  "metallurgy.cabricality.start.title"   : "Build-a-Processing:",
+  "metallurgy.cabricality.start.subtitle"   : "",
+  "metallurgy.cabricality.start.content" : "A simple Overview of most options to process your way from Ore to Ingot.\n\nFor every path through this graph, the effective yield per ore can be estimated by multiplying the ratio of each included step.",
+  "metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.pickaxe.title"   : "Mining Tool",
+  "metallurgy.cabricality.pickaxe.subtitle": "1 -> 1",
+  "metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.fortune_pickaxe.title"   : "Fortune",
+  "metallurgy.cabricality.fortune_pickaxe.subtitle": "1 -> 1 ~ 2",
+  "metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.i.title"   : "&f&lI&r Crushed",
+  "metallurgy.cabricality.i.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.i.smelting.title"   : "Smelting",
+  "metallurgy.cabricality.i.smelting.subtitle": "1 -> 3",
+  "metallurgy.cabricality.i.smelting.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.i.pulverizing.title"   : "Pulverizing",
+  "metallurgy.cabricality.i.pulverizing.subtitle": "1 -> 6",
+  "metallurgy.cabricality.i.pulverizing.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.i.milling.title"   : "Milling",
+  "metallurgy.cabricality.i.milling.subtitle": "1 -> 3",
+
+  "metallurgy.cabricality.i.crushing.title"   : "Crushing",
+  "metallurgy.cabricality.i.crushing.subtitle": "1 -> 3 ~ 6",
+  "metallurgy.cabricality.i.crushing.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.ii.title"   : "&f&lII&r Dust",
+  "metallurgy.cabricality.ii.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.ii.blocking.title"   : "Block Cooling \\& Smelting",
+  "metallurgy.cabricality.ii.blocking.subtitle": "9 -> 1",
+  "metallurgy.cabricality.ii.blocking.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.ii.smelting.title"   : "Smelting Dust",
+  "metallurgy.cabricality.ii.smelting.subtitle": "1 -> 1",
+  "metallurgy.cabricality.ii.smelting.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.ii.melting.title"   : "Melting",
+  "metallurgy.cabricality.ii.melting.subtitle": "1 -> 3",
+  "metallurgy.cabricality.ii.melting.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.ii.washing.title"   : "Washing",
+  "metallurgy.cabricality.ii.washing.subtitle": "1 -> 2",
+  "metallurgy.cabricality.ii.washing.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.iiia.title"   : "&f&lIIIa&r Nugget",
+  "metallurgy.cabricality.iiia.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.iiib.title"   : "&f&lIIIb&r Liquid",
+  "metallurgy.cabricality.iiib.subtitle": "[in Nuggets]",
+  "metallurgy.cabricality.iiib.task.checkmark.title": "Checkmark",
+
+  "metallurgy.cabricality.iii.compacting.title"   : "Compacting by Press",
+  "metallurgy.cabricality.iii.compacting.task.checkmark.title": "Compacting by Press",
+
+  "metallurgy.cabricality.iv.title"   : "&f&lIV&r Ingot",
+  "metallurgy.cabricality.iv.task.checkmark.title": "Checkmark",
+
+
+
+  "thanks.cabricality.title",: "&8 Special Thanks",
+
+  "thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
+  "thanks.cabricality.staff.subtitle": "Staff",
+  "thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7Original Author&r\n\n&f&lYjn024&r\n&7Modpack Author&r\n\n&f&lKrLite&r\n&7Translator, Artist, Coder&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7Contributer&r"
 }
