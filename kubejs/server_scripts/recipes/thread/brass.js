@@ -11,17 +11,6 @@ onEvent("recipes", event => {
   event.remove({ id: CR("sequenced_assembly/precision_mechanism") })
   event.shapeless(KJ("screwdriver"), [IV("screwdriver"), MC("iron_ingot"), MC("blue_dye")])
 
-  /*	let transition = CR("incomplete_precision_mechanism")
-    event.recipes.createSequencedAssembly([
-      CR("precision_mechanism"),
-    ], KJ("kinetic_mechanism"), [
-      event.recipes.createDeploying(transition, [transition, CR("electron_tube")]),
-      event.recipes.createDeploying(transition, [transition, CR("electron_tube")]),
-      event.recipes.createDeploying(transition, [transition, "kubejs:screwdriver"])
-    ]).transitionalItem(transition)
-      .loops(1)
-      .id("kubejs:precision_mechanism")	*/
-
   event.shaped(KJ("brass_machine"), [
     "SSS",
     "SCS",

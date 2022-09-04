@@ -344,7 +344,7 @@ onEvent("fluid.registry", event => {
 		.thinTexture(0xE7FFCB)
 		.noBlock()
 
-	for (i = 0; i < 10; i++) {
+	for (let i = 0; i < 10; i++) {
 		event.create("number_" + i)
 			.displayName("Liquified Computation (" + i + ")")
 			.thinTexture(colors[i])
