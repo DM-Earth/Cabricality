@@ -1,5 +1,5 @@
 {
-  "comment_1": "Ponder",
+  "comment_ponder": "Ponder",
 
   "kubejs.ponder.alchemy_setup.header" : "The Alchemy Setup",
 
@@ -35,7 +35,7 @@
 
 
 
-  "comment_2": "Items",
+  "comment_item": "Items",
 
   "item.kubejs.kinetic_mechanism"    : "Kinetic Mechanism",
   "item.kubejs.incomplete_kinetic_mechanism"    : "Incomplete Kinetic Mechanism",
@@ -58,6 +58,8 @@
   "item.kubejs.iron_saw"     : "Iron Saw",
   "item.kubejs.diamond_saw"  : "Diamond Saw",
   "item.kubejs.netherite_saw": "Netherite Saw",
+
+  "item.kubejs.screwdriver": "Reinforced Screwdriver",
 
   "item.kubejs.stone_rod": "Stone Rod",
 
@@ -159,7 +161,7 @@
 
 
 
-  "comment_3": "Blocks",
+  "comment_block": "Blocks",
 
   "block.kubejs.extractor_machine": "Extractor Machine",
   "block.kubejs.andesite_machine" : "Andesite Machine",
@@ -177,7 +179,7 @@
   "block.kubejs.computation_matrix": "Computation Matrix",
 
 
-  "comment_4": "Substrates",
+  "comment_substrate": "Substrates",
 
   "block.kubejs.substrate_andesite"   : "§7Andesite§r Reagent",
   "block.kubejs.substrate_diorite"    : "§7Diorite§r Reagent",
@@ -247,7 +249,7 @@
 
 
 
-  "comment_5": "Fluids",
+  "comment_fluid": "Fluids",
 
   "fluid.kubejs.resin"        : "Resin",
   "fluid.kubejs.redstone"     : "Redstone",
@@ -272,5 +274,201 @@
   "fluid.kubejs.number_6": "Liquified Computation (6)",
   "fluid.kubejs.number_7": "Liquified Computation (7)",
   "fluid.kubejs.number_8": "Liquified Computation (8)",
-  "fluid.kubejs.number_9": "Liquified Computation (9)"
+  "fluid.kubejs.number_9": "Liquified Computation (9)",
+
+
+
+  "comment_trading": "Trading",
+
+  "item.kubejs.profession_card_farming"  : "§dProfession Card",
+  "item.kubejs.profession_card_carpentry": "§dProfession Card",
+  "item.kubejs.profession_card_mining"   : "§dProfession Card",
+  "item.kubejs.profession_card_masonry"  : "§dProfession Card",
+  "item.kubejs.profession_card_hunting"  : "§dProfession Card",
+  "item.kubejs.profession_card_cooking"  : "§dProfession Card",
+  "item.kubejs.profession_card_fishing"  : "§dProfession Card",
+  "item.kubejs.profession_card_smithing" : "§dProfession Card",
+
+
+  "item.kubejs.trade_card_farmersdelight_carrot_crate"  : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_beetroot_crate": "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_cabbage_crate" : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_tomato_crate"  : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_onion_crate"   : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_rice_bag"      : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_canvas"        : "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_sweet_berries" : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_cocoa_beans"   : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_honey_bottle"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_honeycomb"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_dandelion"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_poppy"         : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_oxeye_daisy"   : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_bread"         : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_brown_mushroom": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_kelp"          : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_pumpkin"       : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_wool"          : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_melon"         : "§6Trade Card",
+
+
+  "item.kubejs.trade_card_minecraft_oak_log"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_spruce_log"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_jungle_log"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_dark_oak_log": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_acacia_log"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_birch_log"   : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_crimson_stem": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_warped_stem" : "§6Trade Card",
+
+  "item.kubejs.trade_card_promenade_palm_log"          : "§6Trade Card",
+  "item.kubejs.trade_card_promenade_cherry_oak_log"    : "§6Trade Card",
+  "item.kubejs.trade_card_promenade_dark_amaranth_stem": "§6Trade Card",
+
+
+  "item.kubejs.trade_card_create_crushed_iron_ore"  : "§6Trade Card",
+  "item.kubejs.trade_card_create_crushed_copper_ore": "§6Trade Card",
+  "item.kubejs.trade_card_create_crushed_zinc_ore"  : "§6Trade Card",
+  "item.kubejs.trade_card_create_crushed_gold_ore"  : "§6Trade Card",
+  "item.kubejs.trade_card_create_crushed_nickel_ore": "§6Trade Card",
+  "item.kubejs.trade_card_create_crushed_lead_ore"  : "§6Trade Card",
+  "item.kubejs.trade_card_create_crushed_tin_ore"   : "§6Trade Card",
+
+  "item.kubejs.trade_card_kubejs_crushed_calorite_ore": "§6Trade Card",
+  "item.kubejs.trade_card_kubejs_crushed_ostrum_ore"  : "§6Trade Card",
+  "item.kubejs.trade_card_kubejs_crushed_desh_ore"    : "§6Trade Card",
+  "item.kubejs.trade_card_kubejs_crushed_cobalt_ore"  : "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_andesite" : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_granite"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_diorite"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_tuff"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_sandstone": "§6Trade Card",
+
+  "item.kubejs.trade_card_create_limestone": "§6Trade Card",
+
+  "item.kubejs.trade_card_promenade_blunite"  : "§6Trade Card",
+  "item.kubejs.trade_card_promenade_carbonite": "§6Trade Card",
+
+  "item.kubejs.trade_card_create_scoria"  : "§6Trade Card",
+  "item.kubejs.trade_card_create_ochrum"  : "§6Trade Card",
+  "item.kubejs.trade_card_create_crimsite": "§6Trade Card",
+  "item.kubejs.trade_card_create_asurine" : "§6Trade Card",
+
+  "item.kubejs.trade_card_indrev_sulfur_crustal": "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_lapis_lazuli": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_diamond"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_coal"        : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_redstone"    : "§6Trade Card",
+
+
+  "item.kubejs.trade_card_architects_palette_basalt_tiles"     : "§6Trade Card",
+  "item.kubejs.trade_card_architects_palette_sunmetal_block"   : "§6Trade Card",
+  "item.kubejs.trade_card_architects_palette_osseous_bricks"   : "§6Trade Card",
+  "item.kubejs.trade_card_architects_palette_packed_ice_pillar": "§6Trade Card",
+  "item.kubejs.trade_card_architects_palette_flint_tiles"      : "§6Trade Card",
+  "item.kubejs.trade_card_architects_palette_abyssaline"       : "§6Trade Card",
+  "item.kubejs.trade_card_architects_palette_glided_sandstone" : "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_bricks": "§6Trade Card",
+
+  "item.kubejs.trade_card_architects_palette_olivestone_bricks": "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_quartz_bricks": "§6Trade Card",
+
+  "item.kubejs.trade_card_architects_palette_algal_bricks": "§6Trade Card",
+
+  "item.kubejs.trade_card_create_ornate_iron_window": "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_mossy_cobblestone": "§6Trade Card",
+
+  "item.kubejs.trade_card_tconstruct_seared_bricks"  : "§6Trade Card",
+  "item.kubejs.trade_card_tconstruct_scorched_bricks": "§6Trade Card",
+
+  "item.kubejs.trade_card_c_glazed_terracotta": "§6Trade Card",
+
+
+  "item.kubejs.trade_card_minecraft_phantom_membrane": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_rabbit_foot"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_nether_star"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_dragon_breath"   : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_ghast_tear"      : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_dragon_egg"      : "§6Trade Card",
+
+
+  "item.kubejs.trade_card_create_bar_of_chocolate": "§6Trade Card",
+  "item.kubejs.trade_card_create_honeyed_apple"   : "§6Trade Card",
+  "item.kubejs.trade_card_create_builders_tea"    : "§6Trade Card",
+
+  "item.kubejs.trade_card_farmersdelight_hot_cocoa"                   : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_tomato_sauce"                : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_apple_pie_slice"             : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_chocolate_pie_slice"         : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_sweet_berry_cheesecake_slice": "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_cake_slice"                  : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_sweet_berry_cookie"          : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_honey_cookie"                : "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_cookie": "§6Trade Card",
+
+  "item.kubejs.trade_card_farmersdelight_fruit_salad"     : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_mixed_salad"     : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_nether_salad"    : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_barbecue_stick"  : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_egg_sandwich"    : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_chicken_sandwich": "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_bacon_sandwich"  : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_hamburger"       : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_mutton_wrap"     : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_dumplings"       : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_stuffed_potato"  : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_cabbage_rolls"   : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_beef_stew"       : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_chicken_soup"    : "§6Trade Card",
+
+  "item.kubejs.trade_card_minecraft_rabbit_stew"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_beetroot_soup": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_pumpkin_pie"  : "§6Trade Card",
+
+  "item.kubejs.trade_card_farmersdelight_vegetable_soup"         : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_fish_stew"              : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_fried_rice"             : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_pumpkin_soup"           : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_baked_cod_stew"         : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_noodle_soup"            : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_pasta_with_meatballs"   : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_pasta_with_mutton_chops": "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_roasted_mutton_chops"   : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_vegetable_noodles"      : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_steak_and_potatoes"     : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_ratatouille"            : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_squid_ink_pasta"        : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_roast_chicken"          : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_stuffed_pumpkin"        : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_honey_glazed_ham"       : "§6Trade Card",
+  "item.kubejs.trade_card_farmersdelight_shepherds_pie"          : "§6Trade Card",
+
+  "item.kubejs.trade_card_create_sweet_roll": "§6Trade Card",
+
+
+  "item.kubejs.trade_card_minecraft_cod"          : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_salmon"       : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_pufferfish"   : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_tropical_fish": "§6Trade Card",
+
+
+  "item.kubejs.trade_card_minecraft_iron_boots"       : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_iron_leggings"    : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_iron_chectplate"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_iron_helmet"      : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_golden_boots"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_golden_leggings"  : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_golden_chestplate": "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_golden_helmet"    : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_golden_apple"     : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_arrow"            : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_iron_sword"       : "§6Trade Card",
+  "item.kubejs.trade_card_minecraft_golden_sword"     : "§6Trade Card"
 }
