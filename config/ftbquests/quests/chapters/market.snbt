@@ -81,7 +81,7 @@
 					}]
 					Damage: 0
 					display: {
-						Name: "{market.cabricality.saw.reward.enchanted_saw.tag.display.name}"
+						Name: "{\\\"text\\\":\\\"Enchanted Saw\\\",\\\"color\\\":\\\"gold\",\\\"italic\\\":false}"
 					}
 				}
 			}
@@ -125,8 +125,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{market.cabricality.saw.reward.enchanted_saw.tag.display.name}"
-							Lore: ["{market.cabricality.saw.reward.enchanted_saw.tag.display.lore}"]
+							Name: "{\\\"text\\\":\\\"Enchanted Saw\\\",\\\"color\\\":\\\"gold\",\\\"italic\\\":false}"
+							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
 						}
 					}
 				}
@@ -144,7 +144,7 @@
 					}]
 					Damage: 0
 					display: {
-						Name: "{market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.name}"
+						Name: "{\\\"text\\\":\\\"Enchanted Screwdriver\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
 					}
 				}
 			}
@@ -187,8 +187,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.name}"
-							Lore: ["{market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.lore}"]
+							Name: "{\\\"text\\\":\\\"Enchanted Screwdriver\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
+							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
 						}
 					}
 				}
@@ -206,7 +206,7 @@
 					}]
 					Damage: 0
 					display: {
-						Name: "{market.cabricality.resonator.reward.enchanted_resonator.tag.display.name}"
+						Name: "{\\\"text\\\":\\\"Enchanted Resonator\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
 					}
 				}
 			}
@@ -250,8 +250,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{market.cabricality.resonator.reward.enchanted_resonator.tag.display.name}"
-							Lore: ["{market.cabricality.resonator.reward.enchanted_resonator.tag.display.lore}"]
+							Name: "{\\\"text\\\":\\\"Enchanted Resonator\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
+							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
 						}
 					}
 				}
@@ -269,7 +269,7 @@
 					}]
 					Damage: 0
 					display: {
-						Name: "{market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.name}"
+						Name: "{\\\"text\\\":\\\"Enchanted Flash Drive\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
 					}
 				}
 			}
@@ -312,8 +312,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.name}"
-							Lore: ["{market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.lore}"]
+							Name: "{\\\"text\\\":\\\"Enchanted Flash Drive\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
+							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
 						}
 					}
 				}
@@ -480,8 +480,8 @@
 							lvl: 1s
 						}]
 						display: {
-							Name: "{test_of_patience.cabricality.name}"
-							Lore: ["{test_of_patience.cabricality.lore}"]
+							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
+							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
 						BlockEntityTag: {
 							id: "minecraft:barrel"
@@ -492,7 +492,7 @@
 									Slot: 11b
 									tag: {
 										display: {
-											Name: "{test_of_patience.cabricality.welcome.paper.name}"
+											Name: "{\"italic\": false, \"text\":\"Welcome, Challenger\"}"
 											bold: 0b
 										}
 									}
@@ -503,7 +503,7 @@
 									Slot: 15b
 									tag: {
 										display: {
-											Lore: ["{test_of_patience.cabricality.welcome.barrel.lore}"]
+											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
 										}
 										BlockEntityTag: {
 											id: "minecraft:barrel"
@@ -515,7 +515,7 @@
 													tag: {
 														RepairCost: 0
 														display: {
-															Name: "{test_of_patience.cabricality.floor_1.paper.name}"
+															Name: "{\"italic\": false, \"text\":\"You'll have to unbox a few of these\"}"
 														}
 													}
 												}
@@ -525,7 +525,7 @@
 													Slot: 23b
 													tag: {
 														display: {
-															Lore: ["{test_of_patience.cabricality.floor_1.barrel.lore}"]
+															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
 														}
 														BlockEntityTag: {
 															id: "minecraft:barrel"
@@ -536,7 +536,7 @@
 																	Slot: 11b
 																	tag: {
 																		display: {
-																			Lore: ["{test_of_patience.cabricality.floor_2.barrel.lore}"]
+																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 																		}
 																		BlockEntityTag: {
 																			LootTable: "cabricality:chests/patience_1"
@@ -550,7 +550,7 @@
 																	tag: {
 																		RepairCost: 0
 																		display: {
-																			Name: "{test_of_patience.cabricality.floor_2.paper.name}"
+																			Name: "{\"italic\": false, \"text\":\"Good luck, see you at the bottom!\"}"
 																		}
 																	}
 																}
@@ -560,7 +560,7 @@
 																	Slot: 14b
 																	tag: {
 																		display: {
-																			Name: "{test_of_patience.cabricality.floor_2.apple.name}"
+																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
 																		}
 																	}
 																}
@@ -631,12 +631,12 @@
 			}]
 		}
 		{
-			title: "{market.cabricality.undying.title}"
+			title: "{market.cabricality.mob.title}"
 			icon: "create:haunted_bell"
 			x: -5.0d
 			y: 1.0d
-			subtitle: "{market.cabricality.undying.subtitle}"
-			description: ["{market.cabricality.undying.content}"]
+			subtitle: "{market.cabricality.mob.subtitle}"
+			description: ["{market.cabricality.mob.content}"]
 			id: "4B52A04818075900"
 			tasks: [{
 				id: "4FB1B4787D648565"

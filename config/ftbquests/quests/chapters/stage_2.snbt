@@ -424,11 +424,11 @@
 			}]
 		}
 		{
-			title: ""
+			title: "{chapter_2.cabricality.complete.title}"
 			x: -1.0d
 			y: 13.5d
 			shape: "hexagon"
-			description: [""]
+			description: ["{chapter_2.cabricality.complete.content}"]
 			dependencies: ["19715EBCBBA1B4AD"]
 			size: 2.0d
 			id: "7FC4D1E69377271D"

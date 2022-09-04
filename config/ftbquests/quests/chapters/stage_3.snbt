@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "!"
+			title: "{chapter_3.cabricality.start.title}"
 			icon: "create:precision_mechanism"
 			x: -1.5d
 			y: -1.0d
@@ -636,7 +636,7 @@
 			tasks: [{
 				id: "7058D1CE264D6769"
 				type: "checkmark"
-				"{chapter_3.cabricality.byproduct.task.checkmark.title}"
+				title: "{chapter_3.cabricality.byproduct.task.checkmark.title}"
 			}]
 		}
 		{

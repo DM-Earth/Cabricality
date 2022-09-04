@@ -110,7 +110,7 @@
 			]
 		}
 		{
-			title: "&5Explore all Dimensions"
+			title: "{advancement.cabricality.explore.title}"
 			icon: {
 				id: "minecraft:netherite_pickaxe"
 				Count: 1b
@@ -124,7 +124,7 @@
 			x: 1.0d
 			y: -7.0d
 			shape: "rsquare"
-			subtitle: "Don't forget the place called home!"
+			subtitle: "{advancement.cabricality.explore.subtitle}"
 			id: "769CAC17CA1366FD"
 			tasks: [
 				{

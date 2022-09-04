@@ -444,13 +444,13 @@
 				{
 					id: "6A30FCE70C7C7289"
 					type: "item"
-					item: "kubejs:accellerator_redstone"
+					item: "kubejs:accelerator_redstone"
 					consume_items: false
 				}
 				{
 					id: "3D9F64E8128BB9A6"
 					type: "item"
-					item: "kubejs:accellerator_glowstone"
+					item: "kubejs:accelerator_glowstone"
 					consume_items: false
 				}
 			]

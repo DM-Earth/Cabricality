@@ -73,8 +73,8 @@
   "item.kubejs.ruby"    : "红宝石",
   "item.kubejs.sapphire": "蓝宝石",
 
-  "item.kubejs.gold_coin"  : "&6金币",
-  "item.kubejs.silver_coin": "&7银币",
+  "item.kubejs.gold_coin"  : "§6金币",
+  "item.kubejs.silver_coin": "§7银币",
 
   "item.kubejs.sand_ball"    : "沙团",
   "item.kubejs.rough_sand"   : "粗砂",

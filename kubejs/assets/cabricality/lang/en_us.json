@@ -55,26 +55,18 @@
   "market.cabricality.saw.title"   : "Saw Everything",
   "market.cabricality.saw.subtitle": "3 Gold - I just saw it!...Wait what?",
   "market.cabricality.saw.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms.&r",
-  "market.cabricality.saw.reward.enchanted_saw.tag.display.name": "{\\\"text\\\":\\\"Enchanted Saw\\\",\\\"color\\\":\\\"gold\",\\\"italic\\\":false}",
-  "market.cabricality.saw.reward.enchanted_saw.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
 
   "market.cabricality.screwdriver.title"   : "Never Screwed",
   "market.cabricality.screwdriver.subtitle": "5 Gold - So does the screwer.",
   "market.cabricality.screwdriver.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms.&r",
-  "market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.name": "{\\\"text\\\":\\\"Enchanted Screwdriver\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}",
-  "market.cabricality.screwdriver.reward.enchanted_screwdriver.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
 
   "market.cabricality.resonator.title"   : "Magnetic Energetic",
   "market.cabricality.resonator.subtitle": "5 Gold - Copy \\& Paste!",
   "market.cabricality.resonator.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms.&r",
-  "market.cabricality.resonator.reward.enchanted_resonator.tag.display.name": "{\\\"text\\\":\\\"Enchanted Resonator\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}",
-  "market.cabricality.resonator.reward.enchanted_resonator.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
 
   "market.cabricality.flash_drive.title"   : "Windows Update",
   "market.cabricality.flash_drive.subtitle": "11 Gold - Time to update your XP!",
   "market.cabricality.flash_drive.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &Calculation Mechanisms.&r",
-  "market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.name": "{\\\"text\\\":\\\"Enchanted Flash Drive\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}",
-  "market.cabricality.flash_drive.reward.enchanted_flash_drive.tag.display.lore": "{\\\"text\\\":\\\"Do not use in manual crafting\\\"}",
 
   "market.cabricality.sleepless.title"   : "Sleepless",
   "market.cabricality.sleepless.subtitle": "10 Silver - Without nightmares!",
@@ -96,19 +88,6 @@
   "market.cabricality.test_of_patience.subtitle": "50 Silver - Ehhhh, try refreshing the site?",
   "market.cabricality.test_of_patience.content" : "This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite.\n&7But what will await you at the bottom?",
 
-  "test_of_patience.cabricality.name": "{\\\"italic\\\":false,\\\"text\\\":\\\"Test of Patience\\\",\\\"color\\\":\\\"dark_purple\\\"}",
-  "test_of_patience.cabricality.lore": "{\\\"italic\\\":true,\\\"color\\\":\\\"gray\\\",\\\"text\\\":\\\"The fabled prize awaits at the bottom...\\\"}",
-
-  "test_of_patience.cabricality.welcome.paper.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"Welcome, Challenger\\\"}",
-  "test_of_patience.cabricality.welcome.barrel.lore": "{\\\"text\\\": \\\"The fabled prize awaits at the bottom...\\\",\\\"italic\\\": true,\\\"color\\\": \\\"gray\\\"}",
-
-  "test_of_patience.cabrocality.floor_1.paper.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"You'll have to unbox a few of these\\\"}",
-  "test_of_patience.cabrocality.floor_1.barrel.lore": "{\\\"text\\\": \\\"The fabled prize awaits at the bottom...\\\",\\\"italic\\\": true,\\\"color\\\": \\\"gray\\\"}",
-
-  "test_of_patience.cabricality.floor_2.barrel.lore": "{\\\"italic\\\":true,\\\"color\\\":\\\"gray\\\",\\\"text\\\":\\\"The fabled prize awaits at the bottom...\\\"}",
-  "test_of_patience.cabricality.floor_2.paper.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"Good luck, see you at the bottom!\\\"}",
-  "test_of_patience.cabricality.floor_2.apple.name" : "{\\\"italic\\\": false, \\\"text\\\":\\\"Motivational Apple\\\"}",
-
   "market.cabricality.enderpack.title"   : "Enderpack",
   "market.cabricality.enderpack.subtitle": "55 Silver - I'm just a burden on your shoulders...",
   "market.cabricality.enderpack.content" : "It's like a backpack but classy.",
@@ -117,9 +96,9 @@
   "market.cabricality.undying.subtitle": "60 Silver - Put your VR goggles off!",
   "market.cabricality.undying.content" : "",
 
-  "market.cabricality.undying.title"   : "Where Mob?",
-  "market.cabricality.undying.subtitle": "45 Silver - Avada Kedavra!",
-  "market.cabricality.undying.content" : "As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!",
+  "market.cabricality.mob.title"   : "Where Mob?",
+  "market.cabricality.mob.subtitle": "45 Silver - Avada Kedavra!",
+  "market.cabricality.mob.content" : "As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!",
 
   "market.cabricality.express.title"   : "Press Express",
   "market.cabricality.express.subtitle": "6 Gold - *FBI Express opened the door.",
@@ -281,8 +260,8 @@
   "advancement.cabricality.explore.orbit.venus"    : "&6Venus&8 Orbit",
 
   "advancement.cabricality.being_stored.title"   : "&8Being 'Stored'",
-  "advancement.cabricality.being_stored.subtitle": "&Where the hell is here..",
-  "advancement.cabricality.being_stored.task.spatial_storage": "&Getting into the Spatial Storage",
+  "advancement.cabricality.being_stored.subtitle": "&8Where the hell is here..",
+  "advancement.cabricality.being_stored.task.spatial_storage": "&8Getting into the Spatial Storage",
 
   "advancement.cabricality.flying_skunk.title"   : "&d..Why Are You Here..?",
   "advancement.cabricality.flying_skunk.subtitle": "&dTherefore, Senpai Shouts.",
@@ -825,7 +804,7 @@
 
 
 
-  "metallurgy.cabricality.title",: "> Metallurgy",
+  "metallurgy.cabricality.title": "> Metallurgy",
 
   "metallurgy.cabricality.start.title"   : "Build-a-Processing:",
   "metallurgy.cabricality.start.subtitle"   : "",
