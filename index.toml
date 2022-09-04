@@ -4563,6 +4563,11 @@ hash = "0e6ac6ceb4ede2574f3d23ed88ae8a2628b5eb539f22444fb61d6887ae5e5c80"
 metafile = true
 
 [[files]]
+file = "mods/rhino.pw.toml"
+hash = "b31157693618d7e49b26189e90ff94b65ba034abc8bafba22d25ec2263ba0e8e"
+metafile = true
+
+[[files]]
 file = "mods/roughly-enough-characters.pw.toml"
 hash = "86c4ef056d5d2a56d0f69cd988b656a1201651845e40a7027726fec7c9f090b6"
 metafile = true
