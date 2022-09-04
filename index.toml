@@ -4398,6 +4398,11 @@ hash = "03f6d4651da69de498d2033f9cec972d59878abbef08131eb8f0d9b1ab5d2dba"
 metafile = true
 
 [[files]]
+file = "mods/hephaestus.pw.toml"
+hash = "a764de0009bb085911f3e3af3a91d7e039aaea4b32c5ae3cd14f7ed9642e9a79"
+metafile = true
+
+[[files]]
 file = "mods/here-be-no-dragons.pw.toml"
 hash = "d7d04009eba5c1068bd9aa5214c7ef87dcf426c4f23229b3dbfa6996952fd7c5"
 metafile = true
@@ -4555,11 +4560,6 @@ metafile = true
 [[files]]
 file = "mods/replaymod.pw.toml"
 hash = "0e6ac6ceb4ede2574f3d23ed88ae8a2628b5eb539f22444fb61d6887ae5e5c80"
-metafile = true
-
-[[files]]
-file = "mods/rhino.pw.toml"
-hash = "ac165d7df1ac06a26c630f220ebeec858f9863a8c6c4a7dcbadb7ad04c44e8fa"
 metafile = true
 
 [[files]]
