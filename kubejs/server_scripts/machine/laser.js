@@ -14,8 +14,8 @@ function rand(number, seed) {
 function select(input, seed) {
 	let selectTemp = input
 	let selected = []
-	for (i = 0; i < 4; i++) {
-		num = rand(selectTemp.length - 1, seed + i)
+	for (let i = 0; i < 4; i++) {
+		let num = rand(selectTemp.length - 1, seed + i)
 		selected.push(selectTemp[num])
 		selectTemp.splice(num, 1)
 	}
@@ -63,11 +63,11 @@ function process_laser(event) {
 	let seedL = Math.abs(event.getEntity().getServer().getOverworld().getSeed())
 	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == "kubejs:powered_water" && event.block.up.getBlockState().toString().includes("[level=0]")) {
 		let block = event.block
-		x = block.x
-		y = block.y
-		z = block.z
-		yUp = y + 1
-		yDown = y - 1
+		let x = block.x
+		let y = block.y
+		let z = block.z
+		let yUp = y + 1
+		let yDown = y - 1
 
 		let stringDirection = block.down.properties.facing
 		let facing = ""
