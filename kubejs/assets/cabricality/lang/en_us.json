@@ -789,7 +789,43 @@
 
 
 
-  "metallurgy.cabricality.title": "> Metallurgy",
+  "chapter_4a.cabricality.title": "↓&r Chaotic Alchemy",
+
+  "chapter_4a.cabricality.start.title"   : "AnothernWay Foward",
+  "chapter_4a.cabricality.start.content" : "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",
+  "chapter_4a.cabricality.start.task.checkmark.title": "Checkmark",
+
+  "chapter_4a.cabricality.preparation.title"   : "Encapsulate - Decapsulate",
+  "chapter_4a.cabriclaity.preparation.content" : "Aside from the Alchemical Laser setup, you'll need a few other Machines for your new Alchemy Lab.\n\n- The Fluid Encapsulator uses Molten Glass to create Reagents from resources.\n\n- The Reagent Extractor can reverse this process.",
+
+  "alchemy.cabricality.clueless.title"   : "Clueless",
+  "alchemy.cabricality.clueless.content" : "Glowstone or Redstone Accelerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code.\n\nThis may reveal additional information about the correct combination as described in their tooltip.",
+
+  "alchemy.cabricality.silver.content"     : "Your coins seem to have a corresponding Reagent, too. Though do not expect to be able to mint new currency out of your silver ingots.",
+  "alchemy.cabricality.igneous.content"    : "If this is Unlocked, you have gathered all reagents of the Igneous Category.\n\nThe Igneous Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.&r\n\nIt's recommended to always take notes of previous results. This way it is not uncommon to find the solution in under six attempts!",
+  "alchemy.cabricality.herbal.content"     : "If this is Unlocked, you have gathered all reagents of the Herbal Category.\n\nThe Herbal Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+  "alchemy.cabricality.volatile.content"   : "If this is Unlocked, you have gathered all reagents of the Volatile Category.\n\nThe Volatile Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+  "alchemy.cabricality.crystalline.content": "If this is Unlocked, you have gathered all reagents of the Crystalline Category.\n\nThe Crystalline Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+  "alchemy.cabricality.metallurgic.content": "If this is Unlocked, you have gathered all reagents of the Metallurgic Category.\n\nThe Metallurgic Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+  "alchemy.cabricality.gemstone.content"   : "If this is Unlocked, you have gathered all reagents of the Gemstone Category.\n\nThe Gemstone Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+
+  "chapter_4a.cabricality.final_code.title"   : "The Final Code",
+  "chapter_4a.cabricality.final_code.content" : "If this is Unlocked, you have gathered Catalysts of every Category.\n\nThis Ultimate Catalyst is now a combination of four of the Catalysts, much in the way the Catalysts are found and made by their Reagents.\n&7See this item's REI entry for more information.",
+
+  "chapter_4a.cabricality.discovery.title"   : "The Discovery",
+  "chapter_4a.cabricality.discovery.content" : "Armed with the Chaos Catalyst, you will find all manner of transmutation pairs among the Reagents above.\n\nSimply put the Chaos Catalyst and a few jars of one reagent (The transmutation is lossy) into the hopper cart and find a different reagent returned after activating the laser. Mind that the Catalyst is never consumed in the process.\n\nOne of the Reagents should lead not to another known one, but to the Reagent of Silicon. If this turns out to be one that is reasonably accessible, you can consider choosing this path of production over the main one.",
+
+  "contraption.cabricality.31.a.title"   : "Automatic Chaos",
+  "contraption.cabricality.31.a.subtitle": "Contraption 31-A",
+  "contraption.cabricality.31.a.content" : "With the transmutation recipe in hand, it is time to build a facility able to create an infinite amount of Silicon Reagent via Laser Alchemy and the other steps part of the process.\n\nNote that the concete solution depends highly on the transmutation pairings of your World, which is why it cannot be laid out in this Guide. You can use JEI to find other necessary recipes leading up to the reagent you require.",
+
+  "chapter_4a.cabricality.complete.title"   : "&3Warp Zone",
+  "chapter_4a.cabricality.complete.content" : "Now that you have a passive supply of Silicon Reagent, you may head over to the main section of Chapter 4. You will have opened up an entry point near the end of its recipe chain.",
+  "chapter_4a.cabricality.complete.task.checkmark.title": "Checkmark",
+
+
+
+  "metallurgy.cabricality.title",: "> Metallurgy",
 
   "metallurgy.cabricality.start.title"   : "Build-a-Processing:",
   "metallurgy.cabricality.start.subtitle"   : "",

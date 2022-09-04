@@ -62,10 +62,10 @@ onEvent("block.registry", event => {
   reagent(0x6B5D4F, 0x7D6B5A, "limestone", "Limestone", "§7Limestone§r", "create:limestone")
   category()
   reagent(0xD30000, 0xB80F0A, "red", "Crimson", "§4Crimson§r", "minecraft:red_dye")
-  reagent(0xFC6600, 0xb1560f, "orange", "Orange", "§6Orange§r", "minecraft:orange_dye")		//	biomesoplenty:burning_blossom
+  reagent(0xFC6600, 0xb1560f, "orange", "Orange", "§6Orange§r", "minecraft:orange_dye")			//	biomesoplenty:burning_blossom
   reagent(0xFFF200, 0xdba520, "yellow", "Goldenrod", "§eGoldenrod§r", "minecraft:yellow_dye")	//	biomesoplenty:goldenrod
-  reagent(0x9dc183, 0x708238, "green", "Olive", "§2Olive§r", "minecraft:green_dye")	 //	 biomesoplenty:watergrass
-  reagent(0x57a0d2, 0x0080fe, "blue", "Azure", "§3Azure§r", "minecraft:light_blue_dye")	//	biomesoplenty:blue_hydrangea
+  reagent(0x9dc183, 0x708238, "green", "Olive", "§2Olive§r", "minecraft:green_dye")				//	 biomesoplenty:watergrass
+  reagent(0x57a0d2, 0x0080fe, "blue", "Azure", "§3Azure§r", "minecraft:light_blue_dye")			//	biomesoplenty:blue_hydrangea
   reagent(0xb200ed, 0xff66cc, "magenta", "Fuchsia", "§dFuchsia§r", "minecraft:magenta_dye")
   category()
   reagent(0xAC3B00, 0xD5AC26, "blaze", "Blazing", "§6Blazing§r", "minecraft:blaze_powder")
@@ -84,7 +84,7 @@ onEvent("block.registry", event => {
   reagent(0x232456, 0x7C95A4, "lead", "Lead", "§8Lead§r", "indrev:lead_dust")
   reagent(0xD99413, 0xFAF25E, "gold", "Gold", "§eGold§r", "indrev:gold_dust")
   category()
-  //	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§cCinnabar", "thermal:cinnabar")
+//	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§cCinnabar", "thermal:cinnabar")
   reagent(0x335DC1, 0x7395E7, "lapis", "Lapis Lazuli", "§1Lapis Lazuli§r", "minecraft:lapis_lazuli")
   reagent(0x00A82B, 0xADFACB, "emerald", "Emerald", "§2Emerald§r", "kubejs:emerald_dust")
   reagent(0x20C3B3, 0xD2FCF3, "diamond", "Diamond", "§bDiamond§r", "kubejs:diamond_dust")
@@ -132,30 +132,30 @@ onEvent("block.registry", event => {
     .hardness(0.1)
     .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
     .model(modpackId + ":block/substrate")
-    .displayName("§7Silver §rReagent")
+    .displayName("§7Silver§r Reagent")
     .renderType("cutout")
     .item(e => e.color(0, 0x9FADB4).color(1, 0xBECCD2))
     .tagBoth(modpackId + ":substrates")
     .tagBlock("minecraft:mineable/pickaxe")
 
-  event.create("accellerator_glowstone")
+  event.create("accelerator_glowstone")
     .material("glass")
     .color(0, 0xFFBC5E)
     .hardness(0.1)
     .box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
-    .model(modpackId + ":block/accellerator")
-    .displayName("§6Glowstone §rAccelerator")
+    .model(modpackId + ":block/accelerator")
+    .displayName("§6Glowstone§r Accelerator")
     .renderType("cutout")
     .item(e => e.color(0, 0xFFBC5E))
     .tagBlock("minecraft:mineable/pickaxe")
 
-  event.create(`accellerator_redstone`)
+  event.create(`accelerator_redstone`)
     .material("glass")
     .color(0, 0xAA0F01)
     .hardness(0.1)
     .box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
-    .model(modpackId + ":block/accellerator")
-    .displayName("§cRedstone §rAccelerator")
+    .model(modpackId + ":block/accelerator")
+    .displayName("§cRedstone§r Accelerator")
     .renderType("cutout")
     .item(e => e.color(0, 0xAA0F01))
     .tagBlock("minecraft:mineable/pickaxe")
