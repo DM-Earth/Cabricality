@@ -75,14 +75,14 @@
 				id: "kubejs:netherite_saw"
 				Count: 1b
 				tag: {
+					Damage: 0
+					display: {
+						Name: "[\"§5Enchanted Saw\"]"
+					}
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 3s
 					}]
-					Damage: 0
-					display: {
-						Name: "{\\\"text\\\":\\\"Enchanted Saw\\\",\\\"color\\\":\\\"gold\",\\\"italic\\\":false}"
-					}
 				}
 			}
 			x: -8.5d
@@ -117,17 +117,17 @@
 					id: "kubejs:netherite_saw"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Saw\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 						Enchantments: [{
-							lvl: 10s
 							id: "minecraft:unbreaking"
+							lvl: 10s
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\\\"text\\\":\\\"Enchanted Saw\\\",\\\"color\\\":\\\"gold\",\\\"italic\\\":false}"
-							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
-						}
+						HideFlags: 1
 					}
 				}
 			}]
@@ -138,14 +138,14 @@
 				id: "kubejs:screwdriver"
 				Count: 1b
 				tag: {
+					Damage: 0
+					display: {
+						Name: "[\"§5Enchanted Screwdriver\"]"
+					}
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 3s
 					}]
-					Damage: 0
-					display: {
-						Name: "{\\\"text\\\":\\\"Enchanted Screwdriver\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
-					}
 				}
 			}
 			x: -7.0d
@@ -187,8 +187,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{\\\"text\\\":\\\"Enchanted Screwdriver\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
-							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
+							Name: "[\"§5Enchanted Screwdriver\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
 						}
 					}
 				}
@@ -200,14 +200,11 @@
 				id: "kubejs:chromatic_resonator"
 				Count: 1b
 				tag: {
+					Damage: 0
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 3s
 					}]
-					Damage: 0
-					display: {
-						Name: "{\\\"text\\\":\\\"Enchanted Resonator\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
-					}
 				}
 			}
 			x: -5.0d
@@ -250,8 +247,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{\\\"text\\\":\\\"Enchanted Resonator\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
-							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
+							Name: "[\"§5Enchanted Resonator\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
 						}
 					}
 				}
@@ -263,14 +260,11 @@
 				id: "kubejs:flash_drive"
 				Count: 1b
 				tag: {
+					Damage: 0
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 10s
 					}]
-					Damage: 0
-					display: {
-						Name: "{\\\"text\\\":\\\"Enchanted Flash Drive\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
-					}
 				}
 			}
 			x: -3.5d
@@ -312,8 +306,8 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{\\\"text\\\":\\\"Enchanted Flash Drive\\\",\\\"color\\\":\\\"gold\\\",\\\"italic\\\":false}"
-							Lore: ["{\\\"text\\\":\\\"Do not use in manual crafting\\\"}"]
+							Name: "[\"§5Enchanted Flash Drive\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
 						}
 					}
 				}
@@ -356,10 +350,7 @@
 			rewards: [{
 				id: "6C78DDBF35C5FA73"
 				type: "item"
-				item: {
-					id: "explorerscompass:explorerscompass"
-					Count: 1b
-				}
+				item: "explorerscompass:explorerscompass"
 			}]
 		}
 		{
@@ -474,22 +465,17 @@
 					id: "minecraft:barrel"
 					Count: 1b
 					tag: {
-						HideFlags: 1
 						Enchantments: [{
 							id: "minecraft:unbreaking"
 							lvl: 1s
 						}]
-						display: {
-							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
-							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
-						}
 						BlockEntityTag: {
 							id: "minecraft:barrel"
 							Items: [
 								{
+									Slot: 11b
 									id: "minecraft:paper"
 									Count: 1b
-									Slot: 11b
 									tag: {
 										display: {
 											Name: "{\"italic\": false, \"text\":\"Welcome, Challenger\"}"
@@ -498,9 +484,9 @@
 									}
 								}
 								{
+									Slot: 15b
 									id: "minecraft:barrel"
 									Count: 1b
-									Slot: 15b
 									tag: {
 										display: {
 											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -509,9 +495,9 @@
 											id: "minecraft:barrel"
 											Items: [
 												{
+													Slot: 3b
 													id: "minecraft:paper"
 													Count: 1b
-													Slot: 3b
 													tag: {
 														RepairCost: 0
 														display: {
@@ -520,9 +506,9 @@
 													}
 												}
 												{
+													Slot: 23b
 													id: "minecraft:barrel"
 													Count: 1b
-													Slot: 23b
 													tag: {
 														display: {
 															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -531,9 +517,9 @@
 															id: "minecraft:barrel"
 															Items: [
 																{
+																	Slot: 11b
 																	id: "minecraft:barrel"
 																	Count: 1b
-																	Slot: 11b
 																	tag: {
 																		display: {
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
@@ -544,9 +530,9 @@
 																	}
 																}
 																{
+																	Slot: 13b
 																	id: "minecraft:paper"
 																	Count: 1b
-																	Slot: 13b
 																	tag: {
 																		RepairCost: 0
 																		display: {
@@ -555,9 +541,9 @@
 																	}
 																}
 																{
+																	Slot: 14b
 																	id: "minecraft:apple"
 																	Count: 1b
-																	Slot: 14b
 																	tag: {
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
@@ -573,6 +559,11 @@
 									}
 								}
 							]
+						}
+						HideFlags: 1
+						display: {
+							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
+							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
 					}
 				}
