@@ -1,5 +1,5 @@
 onEvent("block.registry", event => {
-  for (i = 0; i < 15; i++) {
+  for (let i = 0; i < 15; i++) {
     event.create(`failed_alchemy_${i}`)
       .material("glass")
       .color(0, 0x394867)
@@ -14,9 +14,9 @@ onEvent("block.registry", event => {
   }
   global.substrates = []
   global.substrate_mapping = {}
-  var current_category = []
-  var category_index = 0
-  var substrate_index = 0
+  let current_category = []
+  let category_index = 0
+  let substrate_index = 0
 
   let category = () => {
     global.substrates.push(current_category)
@@ -62,10 +62,10 @@ onEvent("block.registry", event => {
   reagent(0x6B5D4F, 0x7D6B5A, "limestone", "Limestone", "§7Limestone§r", "create:limestone")
   category()
   reagent(0xD30000, 0xB80F0A, "red", "Crimson", "§4Crimson§r", "minecraft:red_dye")
-  reagent(0xFC6600, 0xb1560f, "orange", "Orange", "§6Orange§r", "minecraft:orange_dye")		//	biomesoplenty:burning_blossom
-  reagent(0xFFF200, 0xdba520, "yellow", "Goldenrod", "§eGoldenrod§r", "minecraft:yellow_dye")	//	biomesoplenty:goldenrod
-  reagent(0x9dc183, 0x708238, "green", "Olive", "§2Olive§r", "minecraft:green_dye")	 //	 biomesoplenty:watergrass
-  reagent(0x57a0d2, 0x0080fe, "blue", "Azure", "§3Azure§r", "minecraft:light_blue_dye")	//	biomesoplenty:blue_hydrangea
+  reagent(0xFC6600, 0xb1560f, "orange", "Orange", "§6Orange§r", "minecraft:orange_dye")
+  reagent(0xFFF200, 0xdba520, "yellow", "Goldenrod", "§eGoldenrod§r", "minecraft:yellow_dye")
+  reagent(0x9dc183, 0x708238, "green", "Olive", "§2Olive§r", "minecraft:green_dye")
+  reagent(0x57a0d2, 0x0080fe, "blue", "Azure", "§3Azure§r", "minecraft:light_blue_dye")
   reagent(0xb200ed, 0xff66cc, "magenta", "Fuchsia", "§dFuchsia§r", "minecraft:magenta_dye")
   category()
   reagent(0xAC3B00, 0xD5AC26, "blaze", "Blazing", "§6Blazing§r", "minecraft:blaze_powder")

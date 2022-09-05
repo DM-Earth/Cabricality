@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 1
 	filename: "thanks"
-	title: "&8 Special Thanks"
+	title: "{thanks.cabricality.title}"
 	icon: {
 		id: "minecraft:writable_book"
 		Count: 1b
@@ -16,13 +16,14 @@
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		title: "&cThanks &afor &bplaying&f!"
+	quests: [
+		{
+		title: "{thanks.cabricality.staff.title}"
 		x: -9.0d
 		y: -7.0d
 		shape: "circle"
-		subtitle: "Staff"
-		description: ["Original Author: Simibubi"]
+		subtitle: "{thanks.cabricality.staff.subtitle}"
+		description: ["{thanks.cabricality.staff.content}"]
 		dependencies: ["4D94E2619DDAADC4"]
 		hide: true
 		size: 2.2d

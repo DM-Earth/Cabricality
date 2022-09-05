@@ -19,12 +19,12 @@ onEvent("recipes", event => {
 	let nums = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 	let ops = [(a, b) => a + b, (a, b) => a - b, (a, b) => a * b, (a, b) => b == 0 ? "error" : a / b]
 	let opNames = ["plus", "minus", "multiply", "divide"]
-	for (var a = 0; a < 10; a++) {
-		for (var b = 0; b < 10; b++) {
-			for (var op = 0; op < ops.length; op++) {
+	for (let a = 0; a < 10; a++) {
+		for (let b = 0; b < 10; b++) {
+			for (let op = 0; op < ops.length; op++) {
 
 				let result = ops[op](a, b)
-				var output;
+				let output;
 
 				if (result == "error")
 					output = KJ("missingno")

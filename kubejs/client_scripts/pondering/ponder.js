@@ -220,26 +220,6 @@ let alchemy_setup = (scene, util) => {
     scene.idle(90);
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let rocket_introduction = (scene, util) => {
     scene.configureBasePlate(0, 0, 7);
     scene.showBasePlate();
@@ -288,7 +268,7 @@ let rocket_introduction = (scene, util) => {
         .pointAt(util.vector.topOf(1, 2, 3))
         .colored(PonderPalette.WHITE)
         .placeNearTarget();
-    for (var i = 0; i < 60; i++) {
+    for (let i = 0; i < 60; i++) {
         scene.world.modifyEntity(t1rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.24) < 1 ? 1 : e.getY() - 0.24, e.getZ()); });
         scene.world.modifyEntity(t2rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.27) < 1 ? 1 : e.getY() - 0.27, e.getZ()); });
         scene.world.modifyEntity(t3rocket, (e) => { e.setPos(e.getX(), (e.getY() - 0.32) < 1 ? 1 : e.getY() - 0.32, e.getZ()); });
@@ -313,29 +293,12 @@ let rocket_introduction = (scene, util) => {
     scene.world.modifyEntity(t2rocket, (e) => { e.kill(); });
     scene.world.modifyEntity(t3rocket, (e) => { e.kill(); });
     scene.world.modifyEntity(t4rocket, (e) => { e.kill(); });
-    for (var i = 0; i < 20; i++) {
+    for (let i = 0; i < 20; i++) {
         scene.world.modifyEntity(t1rocket, (e) => { e.setPos(e.getX() + 3 / 20, 1, 3); });
         scene.idle(1);
     }
     scene.idle(40);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let rocket_engine = (scene, util) => {
     scene.configureBasePlate(0, 0, 7);
@@ -396,26 +359,6 @@ let rocket_engine = (scene, util) => {
         .colored(PonderPalette.WHITE)
         .placeNearTarget();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let rocket_tank = (scene, util) => {
     scene.configureBasePlate(0, 0, 7);
@@ -515,27 +458,6 @@ let rocket_tank = (scene, util) => {
         .placeNearTarget();
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let extractor = (scene, util) => {
     scene.configureBasePlate(0, 0, 5);
     scene.showBasePlate();
@@ -567,31 +489,6 @@ let extractor = (scene, util) => {
         .placeNearTarget();
     scene.world.showSection([1, 1, 1, 0, 2, 1], Facing.EAST);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 onEvent("ponder.registry", (event) => {
     event.create("indrev:laser_emitter_mk4")

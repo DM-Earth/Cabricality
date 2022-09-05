@@ -3,22 +3,18 @@
 	group: "331B6409EF6A7840"
 	order_index: 2
 	filename: "stage_2"
-	title: "&f2&r Alluring Expedience"
+	title: "{chapter_2.cabricality.title}"
 	icon: "kubejs:brass_machine"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Chapter 2 Start!"
+			title: "{chapter_2.cabricality.start.title}"
 			icon: "kubejs:kinetic_mechanism"
 			x: -1.0d
 			y: 2.0d
 			shape: "hexagon"
-			description: [
-				"The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier."
-				""
-				"Happy Inventing!"
-			]
+			description: ["{chapter_2.cabricality.start.content}"]
 			dependencies: ["28C41C062843C2CA"]
 			hide: true
 			size: 2.0d
@@ -26,6 +22,7 @@
 			tasks: [{
 				id: "2B249158FB9D453B"
 				type: "checkmark"
+				title: "{chapter_2.cabricality.start.task.checkmark.title}"
 			}]
 			rewards: [{
 				id: "05FBDFB7D5A9B322"
@@ -34,35 +31,28 @@
 			}]
 		}
 		{
-			title: "The Alloy Mixer"
+			title: "{contraption.cabricality.10.title}"
 			icon: "create:brass_ingot"
 			x: 1.0d
 			y: 2.0d
 			shape: "circle"
-			subtitle: "Contraption 10"
-			description: [
-				"Not part of the Mechanism Chain, yet very important for creating relevant machines."
-				""
-				"Using Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them."
-				""
-				"Pumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots."
-				""
-				"For less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above."
-			]
+			subtitle: "{contraption.cabricality.10.subtitle}"
+			description: ["{contraption.cabricality.10.content}"]
 			hide_dependency_lines: false
 			dependencies: ["727B43FD95C4A512"]
 			id: "174E3A810535CAAC"
 			tasks: [{
 				id: "4418A795B9FB076D"
 				type: "checkmark"
+				title: "{contraption.cabricality.10.task.checkmark.title}"
 			}]
 		}
 		{
-			title: "Temporary Sand"
+			title: "{chapter_2.cabricality.sand.title}"
 			x: -5.0d
 			y: 5.0d
 			shape: "circle"
-			description: ["Initially, Certus Quartz Seeds require sand to be crafted. However, for full automation it might be worthwhile to bypass that requirement with the help of Mechanical Crafters."]
+			description: ["{chapter_2.cabricality.sand.content}"]
 			hide_dependency_lines: true
 			dependencies: ["727B43FD95C4A512"]
 			id: "0AF5F19F5D9FB5C9"
@@ -74,11 +64,11 @@
 			}]
 		}
 		{
-			title: "Water Supply"
+			title: "{chapter_2.cabricality.water.title}"
 			icon: "minecraft:water_bucket"
 			x: -3.0d
 			y: 4.5d
-			description: ["The contraptions of Chapter 2 require a healthy supply of water. The easiest way is to pull from water sources directly using Mechanical Pumps and a fluid pipe network."]
+			description: ["{chapter_2.cabricality.water.content}"]
 			hide_dependency_lines: true
 			dependencies: ["727B43FD95C4A512"]
 			id: "2FFFE1C5366930BB"
@@ -92,21 +82,17 @@
 				{
 					id: "2DC358D8174FC867"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Skystone Infini-mill"
+			title: "{contraption.cabricality.11.title}"
 			icon: "ae2:sky_dust"
 			x: -1.0d
 			y: 4.0d
-			subtitle: "Contraption 11"
-			description: [
-				"You can just keep on pulverising it. Sky Stone blocks never seem to lose mass in the process. What a world we live in!"
-				""
-				"Find Sky Stone Blocks at Meteor crash sites. If you haven't encountered any, try looking for one using the Meteorite compass."
-			]
+			subtitle: "{contraption.cabricality.11.subtitle}"
+			description: ["{contraption.cabricality.11.content}"]
 			hide_dependency_lines: true
 			dependencies: ["727B43FD95C4A512"]
 			id: "4F95D5136E944ADB"
@@ -120,21 +106,17 @@
 				{
 					id: "3C8D449468C6DD27"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Quartz Seeds"
+			title: "{contraption.cabricality.12.1.title}"
 			x: -4.0d
 			y: 7.0d
 			shape: "circle"
-			subtitle: "Contraption 12-1"
-			description: [
-				"This piece of quartz is too small. With enough water we might get somewhere."
-				""
-				"If you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accellerate the process. "
-			]
+			subtitle: "{contraption.cabricality.12.1.subtitle}"
+			description: ["{contraption.cabricality.12.1.content}"]
 			dependencies: [
 				"0AF5F19F5D9FB5C9"
 				"2FFFE1C5366930BB"
@@ -149,12 +131,12 @@
 			}]
 		}
 		{
-			title: "The Greate Growth"
+			title: "{contraption.cabricality.12.2.title}"
 			icon: "ae2:certus_quartz_crystal"
 			x: -2.5d
 			y: 8.0d
-			subtitle: "Contraption 12-2"
-			description: ["Finally, a fully grown crystal. Don't forget to send every second one back around for seed production!"]
+			subtitle: "{contraption.cabricality.12.2.subtitle}"
+			description: ["{contraption.cabricality.12.2.content}"]
 			dependencies: ["345B94F6D17605CD"]
 			id: "1861E583C9DAA0BA"
 			tasks: [
@@ -167,21 +149,17 @@
 				{
 					id: "5143762A67B81B7E"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "The (Re-)Charger"
+			title: "{contraption.cabricality.13.title}"
 			icon: "ae2:charged_certus_quartz_crystal"
 			x: 1.0d
 			y: 6.0d
-			subtitle: "Contraption 13"
-			description: [
-				"Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2."
-				""
-				"The Charger from AE2 can be used here, along with the Item Trasportation of choice."
-			]
+			subtitle: "{contraption.cabricality.13.subtitle}"
+			description: ["{contraption.cabricality.13.content}"]
 			hide_dependency_lines: true
 			dependencies: ["1256352748B93449"]
 			id: "24FFFE0FC9EAEF8D"
@@ -195,17 +173,17 @@
 				{
 					id: "56F78EAD35D1046E"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Skystone Mixer"
+			title: "{contraption.cabricality.14.1.title}"
 			icon: "kubejs:sky_stone_bucket"
 			x: -1.0d
 			y: 5.5d
-			subtitle: "Contraption 14-1"
-			description: ["Dissolving this strange reactive powder in water creates a fun and useful liquid."]
+			subtitle: "{contraption.cabricality.14.1.subtitle}"
+			description: ["{contraption.cabricality.14.1.content}"]
 			dependencies: [
 				"2FFFE1C5366930BB"
 				"4F95D5136E944ADB"
@@ -221,21 +199,17 @@
 				{
 					id: "1CB43671DBA7EBB6"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Charged Mixer"
+			title: "{contraption.cabricality.14.2.title}"
 			icon: "kubejs:redstone_bucket"
 			x: -0.5d
 			y: 7.0d
-			subtitle: "Contraption 14-2"
-			description: [
-				"Discharging an Energized Certus Quartz Crystal into the liquid creates a solution that reminds you of liquid redstone."
-				""
-				"Notice that the mixing process returns an inert quartz ready to be recharged using Contraption 14."
-			]
+			subtitle: "{contraption.cabricality.14.2.subtitle}"
+			description: ["{contraption.cabricality.14.2.content}"]
 			dependencies: [
 				"1256352748B93449"
 				"24FFFE0FC9EAEF8D"
@@ -252,20 +226,17 @@
 				{
 					id: "4B98217B670ECA57"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Painted Quartz Mixer"
+			title: "{contraption.cabricality.14.3.title}"
 			icon: "create:polished_rose_quartz"
 			x: -1.0d
 			y: 8.5d
-			subtitle: "Contraption 14-3"
-			description: [
-				"In a third and final Mixer, our freshly grown Crystals will be treated to a nice and energetic re-design."
-				"(Sorry to all Mineralogists.)"
-			]
+			subtitle: "{contraption.cabricality.14.3.subtitle}"
+			description: ["{contraption.cabricality.14.3.content}"]
 			dependencies: [
 				"1861E583C9DAA0BA"
 				"619E34A7DE48B991"
@@ -281,21 +252,17 @@
 				{
 					id: "0F6DB8FCC5C16A94"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Iron for Days"
+			title: "{contraption.cabricality.15.1.title}"
 			icon: "minecraft:cobblestone"
 			x: 3.5d
 			y: 7.0d
-			subtitle: "Contraption 15-1"
-			description: [
-				"Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone."
-				""
-				"Start with some Drills hooked up to regenerating Cobblestone blocks."
-			]
+			subtitle: "{contraption.cabricality.15.1.subtitle}"
+			description: ["{contraption.cabricality.15.1.content}"]
 			hide_dependency_lines: true
 			dependencies: ["727B43FD95C4A512"]
 			id: "0E46C1FCE5AEB1DF"
@@ -309,17 +276,17 @@
 				{
 					id: "5E676D2CC5975AEA"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "De-Chunkify"
+			title: "{contraption.cabricality.15.2.title}"
 			icon: "minecraft:gravel"
 			x: 4.0d
 			y: 9.0d
-			subtitle: "Contraption 15-2"
-			description: ["The Cobblestone first needs to be milled down into Gravel."]
+			subtitle: "{contraption.cabricality.15.2.subtitle}"
+			description: ["{contraption.cabricality.15.2.content}"]
 			dependencies: ["0E46C1FCE5AEB1DF"]
 			id: "1139F2E4E6FCFE29"
 			tasks: [
@@ -332,17 +299,17 @@
 				{
 					id: "63F3877902E01590"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Ferric Traces"
+			title: "{contraption.cabricality.15.3.title}"
 			icon: "minecraft:iron_nugget"
 			x: 2.5d
 			y: 10.0d
-			subtitle: "Contraption 15-3"
-			description: ["Washing the Gravel with an Encased Fan leaves you with Iron Nuggets and Flint."]
+			subtitle: "{contraption.cabricality.15.3.subtitle}"
+			description: ["{contraption.cabricality.15.3.content}"]
 			dependencies: ["1139F2E4E6FCFE29"]
 			id: "53735DC4231AB566"
 			tasks: [
@@ -355,41 +322,40 @@
 				{
 					id: "64B405696E96FFCD"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Get Melted"
+			title: "{contraption.cabricality.15.4.title}"
 			icon: "tconstruct:molten_iron_bucket"
 			x: 1.0d
 			y: 9.5d
-			subtitle: "Contraption 15-4"
-			description: ["Route the nuggets into your High-Temperature melting equipment. A Melter from Tinkers' Construct, for example."]
+			subtitle: "{contraption.cabricality.15.4.subtitle}"
+			description: ["{contraption.cabricality.15.4.content}"]
 			dependencies: ["53735DC4231AB566"]
 			id: "2167272204B6627B"
 			tasks: [
 				{
 					id: "611F921F94FAE142"
 					type: "item"
-					title: "Bucket (Molten Iron)"
 					item: "tconstruct:molten_iron_bucket"
 					consume_items: false
 				}
 				{
 					id: "75C982848F2CEA85"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Second Coating Layer"
+			title: "{contraption.cabricality.15.5.title}"
 			icon: "create:electron_tube"
 			x: -0.5d
 			y: 10.0d
-			subtitle: "Contraption 15-5"
-			description: ["Spout a droplet of Molten Iron onto the Rose Quartz Crystal to create a fully functional Electron Tube."]
+			subtitle: "{contraption.cabricality.15.5.subtitle}"
+			description: ["{contraption.cabricality.15.5.content}"]
 			dependencies: [
 				"2167272204B6627B"
 				"06B061C0EE94BC90"
@@ -405,17 +371,17 @@
 				{
 					id: "1D7C84803766FD04"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Keep on Deploying"
+			title: "{contraption.cabricality.16.title}"
 			icon: "create:precision_mechanism"
 			x: -1.0d
 			y: 11.5d
-			subtitle: "Contraption 16"
-			description: ["Bringing together Electron Tubes and Kinetic Mechanisms using a row of Deployers concludes your second Assembly Line."]
+			subtitle: "{contraption.cabricality.16.subtitle}"
+			description: ["{contraption.cabricality.16.content}"]
 			dependencies: [
 				"5351AF6CA73CB8E0"
 				"6D8BB2D6A75ABB16"
@@ -431,19 +397,16 @@
 				{
 					id: "002032AE65148DBD"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Arming the Deployer II"
+			title: "{chapter_2.cabricality.assemble.title}"
 			x: -2.5d
 			y: 11.5d
 			shape: "circle"
-			description: [
-				"It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly."
-				"Just like last time, the requirement does not necessarily call for automation."
-			]
+			description: ["{chapter_2.cabricality.assemble.content}"]
 			hide_dependency_lines: true
 			dependencies: ["5351AF6CA73CB8E0"]
 			id: "6D8BB2D6A75ABB16"
@@ -461,15 +424,11 @@
 			}]
 		}
 		{
-			title: "Chapter 2 Complete!"
+			title: "{chapter_2.cabricality.complete.title}"
 			x: -1.0d
 			y: 13.5d
 			shape: "hexagon"
-			description: [
-				"Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!"
-				""
-				"After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section."
-			]
+			description: ["{chapter_2.cabricality.complete.content}"]
 			dependencies: ["19715EBCBBA1B4AD"]
 			size: 2.0d
 			id: "7FC4D1E69377271D"
@@ -501,11 +460,11 @@
 			]
 		}
 		{
-			title: "Blaze Escort"
+			title: "{bonus_2a.cabricality.preparation.title}"
 			x: 0.5d
 			y: 17.0d
 			shape: "circle"
-			description: ["For the first time in the progression, a Blaze Burner is required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners."]
+			description: ["{bonus_2a.cabricality.preparation.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
@@ -521,16 +480,12 @@
 			}]
 		}
 		{
-			title: "The Double Decker I"
+			title: "{contraption.cabricality.17.1.title}"
 			icon: "minecraft:twisting_vines"
 			x: -3.0d
 			y: 15.5d
-			subtitle: "Contraption 17-1"
-			description: [
-				"For the all-mighty Infernal Mechanism, a bountiful source of soul essence is needed. Thankfully, the vines of the underworld seem to carry it in them."
-				""
-				"Twisting Vines grow upwards, you can gather them using Mechanical Harvesters."
-			]
+			subtitle: "{contraption.cabricality.17.1.subtitle}"
+			description: ["{contraption.cabricality.17.1.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
@@ -548,21 +503,17 @@
 				{
 					id: "6F7A49C7C377ABF1"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "The Double Decker II"
+			title: "{contraption.cabricality.17.2.title}"
 			icon: "minecraft:weeping_vines"
 			x: 1.0d
 			y: 15.5d
-			subtitle: "Contraption 17-2"
-			description: [
-				"Weeping Vines grow downwards from a ceiling. You can gather them with Mechanical Harvesters."
-				""
-				"For style points, you can use the same contraption to harvest both vine types simultaneously."
-			]
+			subtitle: "{contraption.cabricality.17.2.subtitle}"
+			description: ["{contraption.cabricality.17.2.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
@@ -580,17 +531,17 @@
 				{
 					id: "6149AB838FC42C17"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Soul Distillery"
+			title: "{contraption.cabricality.17.3.title}"
 			icon: "tconstruct:liquid_soul_bucket"
 			x: -1.0d
 			y: 16.0d
-			subtitle: "Contraption 17-3"
-			description: ["Drop all the harvested vines into a Heated Mixing Basin."]
+			subtitle: "{contraption.cabricality.17.3.subtitle}"
+			description: ["{contraption.cabricality.17.3.content}"]
 			dependencies: [
 				"223BB57AD0239511"
 				"7E59B7DC239E621E"
@@ -607,20 +558,17 @@
 				{
 					id: "21C241D2335C67E4"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "A. Lot. Of. Lava"
+			title: "{contraption.cabricality.18.1.title}"
 			icon: "minecraft:lava_bucket"
 			x: -2.5d
 			y: 17.0d
-			subtitle: "Contraption 18-1"
-			description: [
-				""
-				"Every Zinc Machine will end up using 24 Buckets of Lava in Production. It's not a great ecological footprint, but even just one Hose Pulley can make quick work of it."
-			]
+			subtitle: "{contraption.cabricality.18.1.subtitle}"
+			description: ["{contraption.cabricality.18.1.content}"]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
@@ -638,22 +586,17 @@
 				{
 					id: "73BF4F3B488FBC83"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Heated Treatment"
+			title: "{contraption.cabricality.18.2.title}"
 			x: -1.0d
 			y: 17.5d
 			shape: "circle"
-			subtitle: "Contraption 18-2"
-			description: [
-				"Dropping the Liquids onto a Precision Mechanism will convert it to its Infernal counterpart."
-				""
-				"Once again, full automation of bonus mechanisms is not as pressing a task, since they do not lead to any further machines beyond their own."
-				"A semi-automatic setup for converting Precision Mechanisms whenever needed should suffice."
-			]
+			subtitle: "{contraption.cabricality.18.2.subtitle}"
+			description: ["{contraption.cabricality.18.2.content}"]
 			dependencies: [
 				"239C64263B91350D"
 				"1D9D65FBD06DD481"
@@ -667,11 +610,11 @@
 			}]
 		}
 		{
-			title: "Bonus 2A Complete!"
+			title: "{bonus_2a.cabricality.complete.title}"
 			x: -1.0d
 			y: 19.5d
 			shape: "hexagon"
-			description: ["Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."]
+			description: ["{bonus_2a.cabricality.complete.content}"]
 			dependencies: ["3C50B4556375178E"]
 			size: 2.0d
 			id: "047FD4E54147D8F7"

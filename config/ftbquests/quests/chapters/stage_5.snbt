@@ -3,23 +3,18 @@
 	group: "331B6409EF6A7840"
 	order_index: 6
 	filename: "stage_5"
-	title: "&f5&r Divide by Digital"
+	title: "{chapter_5.cabricality.title}"
 	icon: "kubejs:computation_matrix"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Finale Start!"
+			title: "{chapter_5.cabricality.start.title}"
 			icon: "kubejs:calculation_mechanism"
 			x: 5.0d
 			y: 15.5d
 			shape: "hexagon"
-			description: [
-				"Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations! "
-				"But do not fear, as an inventor you will let your creation do all the work for you, as usual."
-				""
-				"Cast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required."
-			]
+			description: ["{chapter_5.cabricality.start.content}"]
 			dependencies: ["251A91F6C21AEAFB"]
 			hide: true
 			size: 2.0d
@@ -27,6 +22,7 @@
 			tasks: [{
 				id: "1F6009A328AA0184"
 				type: "checkmark"
+				title: "{chapter_5.cabricality.start.task.checkmark.title}"
 			}]
 			rewards: [{
 				id: "0397D214E0A6CC89"
@@ -35,52 +31,330 @@
 			}]
 		}
 		{
-			title: "We have lift off!"
-			icon: {
-				id: "ad_astra:tier_4_rocket"
-				Count: 1b
-				tag: { }
-			}
+			title: "{ontraption.cabricality.42.title}"
+			icon: "kubejs:raw_logic_bucket"
 			x: 2.0d
-			y: 7.75d
-			shape: "hexagon"
-			description: [
-				"With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship."
-				""
-				"Take a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner."
-				""
-				"In your own time, take a seat in your assembled rocket, and press Space."
+			y: 15.5d
+			shape: "square"
+			subtitle: "{ontraption.cabricality.42.subtitle}"
+			description: ["{ontraption.cabricality.42.content}"]
+			dependencies: ["5D0454F977C4F080"]
+			size: 1.5d
+			id: "70D563EF30E9CB97"
+			tasks: [
+				{
+					id: "2A4A54EBAFBEB39F"
+					type: "item"
+					item: "kubejs:raw_logic_bucket"
+					consume_items: false
+				}
+				{
+					id: "406AAC43EBD44F6A"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
 			]
-			dependencies: [
-				"6BA9A176EDA001A3"
-				"69311E02A8B3451D"
-				"3AD7553F3C8593F9"
-				"73473DC7269EC5B0"
-			]
-			size: 2.0d
-			id: "47965C310D9847DC"
-			tasks: [{
-				id: "05BDC7ACF64D13C2"
-				type: "item"
-				item: "indrev:controller"
-				consume_items: false
-			}]
 		}
 		{
-			title: "Solving Trajectories"
+			title: "{contraption.cabricality.43.title}"
+			icon: "kubejs:plus"
+			x: 2.0d
+			y: 14.0d
+			subtitle: "{contraption.cabricality.43.subtitle}"
+			description: ["{contraption.cabricality.43.content}"]
+			dependencies: ["70D563EF30E9CB97"]
+			id: "4E85C8A2EEEB57C3"
+			tasks: [
+				{
+					id: "69462AA912169E3B"
+					type: "item"
+					item: "kubejs:plus"
+					consume_items: false
+				}
+				{
+					id: "56E1C75AD6DF3119"
+					type: "item"
+					item: "kubejs:minus"
+					consume_items: false
+				}
+				{
+					id: "3BF3D9E9B3782EA3"
+					type: "item"
+					item: "kubejs:multiply"
+					consume_items: false
+				}
+				{
+					id: "5914CB0D1D6E839E"
+					type: "item"
+					item: "kubejs:divide"
+					consume_items: false
+				}
+				{
+					id: "26517C9D1C3D8269"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:three"
+			x: 0.5d
+			y: 13.5d
+			subtitle: "{contraption.cabricality.44.1.subtitle}"
+			description: ["{contraption.cabricality.44.1.content}"]
+			dependencies: ["70D563EF30E9CB97"]
+			id: "5550A3E383EFEC90"
+			tasks: [
+				{
+					id: "343E4ED28EA67219"
+					type: "item"
+					item: "kubejs:three"
+					consume_items: false
+				}
+				{
+					id: "61DEC75D20A61088"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:eight"
+			x: 3.5d
+			y: 13.5d
+			subtitle: "{contraption.cabricality.44.2.subtitle}"
+			description: ["{contraption.cabricality.44.2.content}"]
+			dependencies: ["70D563EF30E9CB97"]
+			id: "3126DE83A6741671"
+			tasks: [
+				{
+					id: "18BB7C8E32701CB6"
+					type: "item"
+					item: "kubejs:eight"
+					consume_items: false
+				}
+				{
+					id: "4DAD021C66AB2A27"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:one"
+			x: -1.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.1.title}"
+			description: ["{contraption.cabricality.45.1.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "42B5C0102B22F389"
+			tasks: [
+				{
+					id: "61A3EF7882F2A31E"
+					type: "item"
+					item: "kubejs:one"
+					consume_items: false
+				}
+				{
+					id: "402FD7973EC66AEA"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:two"
+			x: -0.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.2.title}"
+			description: ["{contraption.cabricality.45.2.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "5358E5F7FB59DD60"
+			tasks: [
+				{
+					id: "2AD655BD7E1A0EBF"
+					type: "item"
+					item: "kubejs:two"
+					consume_items: false
+				}
+				{
+					id: "14D9C52366D6AF27"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:four"
+			x: 0.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.4.title}"
+			description: ["{contraption.cabricality.45.4.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "55F959A18E904D6C"
+			tasks: [
+				{
+					id: "54FEAD9C942788CF"
+					type: "item"
+					item: "kubejs:four"
+					consume_items: false
+				}
+				{
+					id: "3662CA8BEE33E02D"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:five"
+			x: 1.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.5.title}"
+			description: ["{contraption.cabricality.45.5.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "7927B6162577FA7B"
+			tasks: [
+				{
+					id: "0B94D4B1C2A131DA"
+					type: "item"
+					item: "kubejs:five"
+					consume_items: false
+				}
+				{
+					id: "4963498277C8A578"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:six"
+			x: 2.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.6.title}"
+			description: ["{contraption.cabricality.45.6.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "1C6657984648B0D4"
+			tasks: [
+				{
+					id: "0127797E6B5249A2"
+					type: "item"
+					item: "kubejs:six"
+					consume_items: false
+				}
+				{
+					id: "3E69BC01E47532D1"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:seven"
+			x: 3.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.7.title}"
+			description: ["{contraption.cabricality.45.7.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "4A16CE3BC111280F"
+			tasks: [
+				{
+					id: "7FA25AD87CBD6B62"
+					type: "item"
+					item: "kubejs:seven"
+					consume_items: false
+				}
+				{
+					id: "44A10C4B490D3C62"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:nine"
+			x: 4.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.9.title}"
+			description: ["{contraption.cabricality.45.9.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "7D808F15BEDD7A7B"
+			tasks: [
+				{
+					id: "2F81E83410906BB5"
+					type: "item"
+					item: "kubejs:nine"
+					consume_items: false
+				}
+				{
+					id: "5521427D5BAF2771"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			icon: "kubejs:zero"
+			x: 5.5d
+			y: 11.5d
+			subtitle: "{contraption.cabricality.45.0.title}"
+			description: ["{contraption.cabricality.45.0.content}"]
+			dependencies: [
+				"5550A3E383EFEC90"
+				"3126DE83A6741671"
+				"4E85C8A2EEEB57C3"
+			]
+			id: "2441491CB5D5E57D"
+			tasks: [
+				{
+					id: "6FF94B3F20E69F43"
+					type: "item"
+					item: "kubejs:zero"
+					consume_items: false
+				}
+				{
+					id: "3413FA802F33F4BF"
+					type: "checkmark"
+					title: "{contraption.cabricality.automated}"
+				}
+			]
+		}
+		{
+			title: "{contraption.cabricality.46.title}"
 			x: 2.0d
 			y: 9.5d
 			shape: "circle"
-			subtitle: "Contraption 45"
-			description: [
-				"For the calculations of the Guidance computer, we will need.. a lot of these Digits."
-				""
-				"Before letting items exit the logistical ecosystem of the calculations, make sure each digit leaves in equal amounts. Brass Tunnels can solve this issue in a straight-forward fashion."
-				""
-				"Each digit now has to be dissolved back into its liquified form via Smeltery. Once a Smeltery collected 10 liquified items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix."
-				""
-				"The Guidance Computer requires 8 Matrices to function. Depending on your data centre and mechanism assembly lines, this may take a while."
-			]
+			subtitle: "{contraption.cabricality.46.subtitle}"
+			description: ["{contraption.cabricality.46.content}"]
 			dependencies: [
 				"42B5C0102B22F389"
 				"5358E5F7FB59DD60"
@@ -104,301 +378,12 @@
 			}]
 		}
 		{
-			title: "Processing Power"
-			icon: "kubejs:raw_logic_bucket"
-			x: 2.0d
-			y: 15.5d
-			shape: "square"
-			subtitle: "Contraption 42"
-			description: ["In order to provide 'Mechanical' Calculators with numbers and operators, all available Calculation Mechanisms have to be melted down into the figurative processing power they provide."]
-			dependencies: ["5D0454F977C4F080"]
-			size: 1.5d
-			id: "70D563EF30E9CB97"
-			tasks: [
-				{
-					id: "2A4A54EBAFBEB39F"
-					type: "item"
-					item: "kubejs:raw_logic_bucket"
-					consume_items: false
-				}
-				{
-					id: "406AAC43EBD44F6A"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:three"
-			x: 0.5d
-			y: 13.5d
-			subtitle: "Contraption 43-1"
-			description: [
-				"As one of the two available digits, Threes can be cast from unprocessed logic. Together with the Eight and available Operators, your Calculators will have to create the remaining digits from 0 to 9 in equal amounts."
-				""
-				"This casting process can quickly become a bottleneck, for most running calculations depend on the numbers generated here. Make sure things move fluently."
-			]
-			dependencies: ["70D563EF30E9CB97"]
-			id: "5550A3E383EFEC90"
-			tasks: [
-				{
-					id: "343E4ED28EA67219"
-					type: "item"
-					item: "kubejs:three"
-					consume_items: false
-				}
-				{
-					id: "61DEC75D20A61088"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:eight"
-			x: 3.5d
-			y: 13.5d
-			subtitle: "Contraption 43-3"
-			description: [
-				"The second available Digit is the Eight. It can be cast from unprocessed logic."
-				""
-				"From here, plan via which calculations the other digits will be created, and how the cost can be minimised. Remember that each added calculation step ends up increasing the amount of Calculation Mechanisms required for the digit it leads to."
-			]
-			dependencies: ["70D563EF30E9CB97"]
-			id: "3126DE83A6741671"
-			tasks: [
-				{
-					id: "18BB7C8E32701CB6"
-					type: "item"
-					item: "kubejs:eight"
-					consume_items: false
-				}
-				{
-					id: "4DAD021C66AB2A27"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:zero"
-			x: 5.5d
-			y: 11.5d
-			subtitle: "Contraption 44-8"
-			description: ["3-3, 2-2, 8-8,...? A total of 39 options exist to calculate zeros. A tough decision!"]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "2441491CB5D5E57D"
-			tasks: [
-				{
-					id: "6FF94B3F20E69F43"
-					type: "item"
-					item: "kubejs:zero"
-					consume_items: false
-				}
-				{
-					id: "3413FA802F33F4BF"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:one"
-			x: -1.5d
-			y: 11.5d
-			subtitle: "Contraption 44-1"
-			description: ["3-2, 4/4, 8-7,...? A total of 21 options exist to calculate ones. Whichever will it be?"]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "42B5C0102B22F389"
-			tasks: [
-				{
-					id: "61A3EF7882F2A31E"
-					type: "item"
-					item: "kubejs:one"
-					consume_items: false
-				}
-				{
-					id: "402FD7973EC66AEA"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:two"
-			x: -0.5d
-			y: 11.5d
-			subtitle: "Contraption 44-2"
-			description: ["3-1, 8/4, 1+1,...? A total of 17 options exist to calculate twos. Any favourites?"]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "5358E5F7FB59DD60"
-			tasks: [
-				{
-					id: "2AD655BD7E1A0EBF"
-					type: "item"
-					item: "kubejs:two"
-					consume_items: false
-				}
-				{
-					id: "14D9C52366D6AF27"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:four"
-			x: 0.5d
-			y: 11.5d
-			subtitle: "Contraption 44-3"
-			description: ["6-2, 2x2, 3+1,...? A total of 16 options exist to calculate fours. Choose wisely."]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "55F959A18E904D6C"
-			tasks: [
-				{
-					id: "54FEAD9C942788CF"
-					type: "item"
-					item: "kubejs:four"
-					consume_items: false
-				}
-				{
-					id: "3662CA8BEE33E02D"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:five"
-			x: 1.5d
-			y: 11.5d
-			subtitle: "Contraption 44-4"
-			description: ["3+2, 6-1, 8-3,...? A total of 14 options exist to calculate fives. How do you want to do this?"]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "7927B6162577FA7B"
-			tasks: [
-				{
-					id: "0B94D4B1C2A131DA"
-					type: "item"
-					item: "kubejs:five"
-					consume_items: false
-				}
-				{
-					id: "4963498277C8A578"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:six"
-			x: 2.5d
-			y: 11.5d
-			subtitle: "Contraption 44-5"
-			description: ["3x2, 3+3, 8-2,...? A total of 16 options exist to calculate sixes. May the best be victorious."]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "1C6657984648B0D4"
-			tasks: [
-				{
-					id: "0127797E6B5249A2"
-					type: "item"
-					item: "kubejs:six"
-					consume_items: false
-				}
-				{
-					id: "3E69BC01E47532D1"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:seven"
-			x: 3.5d
-			y: 11.5d
-			subtitle: "Contraption 44-6"
-			description: ["9-2, 4+3, 8-1,...? A total of 14 options exist to calculate sevens. Feeling Lucky?"]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "4A16CE3BC111280F"
-			tasks: [
-				{
-					id: "7FA25AD87CBD6B62"
-					type: "item"
-					item: "kubejs:seven"
-					consume_items: false
-				}
-				{
-					id: "44A10C4B490D3C62"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			icon: "kubejs:nine"
-			x: 4.5d
-			y: 11.5d
-			subtitle: "Contraption 44-7"
-			description: ["3x3, 4+5, 8+1,...? A total of 15 options exist to calculate nines. The choice is yours."]
-			dependencies: [
-				"5550A3E383EFEC90"
-				"3126DE83A6741671"
-				"4E85C8A2EEEB57C3"
-			]
-			id: "7D808F15BEDD7A7B"
-			tasks: [
-				{
-					id: "2F81E83410906BB5"
-					type: "item"
-					item: "kubejs:nine"
-					consume_items: false
-				}
-				{
-					id: "5521427D5BAF2771"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Upcycle Bin"
+			title: "{contraption.cabricality.47.title}"
 			icon: "ae2:matter_ball"
 			x: 2.0d
 			y: 3.0d
-			subtitle: "Contraption 47"
-			description: [
-				"Rocketry Equipment is built from the light but robust material of Matter Plastics. Matter Balls can be created in a Matter Condenser."
-				""
-				"First, insert a 1k ME Storage Component into the Matter Condenser, set it to produce Matter Balls and then supply it with the most abundant flow of items you can come up with. Don't throw your valuables in; the items are consumed in the process."
-			]
+			subtitle: "{contraption.cabricality.47.subtitle}"
+			description: ["{contraption.cabricality.47.content}"]
 			hide_dependency_lines: true
 			dependencies: ["5D0454F977C4F080"]
 			id: "3CBED6B591BCEDEA"
@@ -412,16 +397,17 @@
 				{
 					id: "0811C927283EE155"
 					type: "checkmark"
-					title: "Automated"
+					title: "{contraption.cabricality.automated}"
 				}
 			]
 		}
 		{
-			title: "Expensive Bricks II"
+			title: "{contraption.cabricality.48.title}"
 			x: 2.0d
 			y: 4.5d
 			shape: "circle"
-			description: ["Create bars of Matter Plastics in a Heated Compacter. You'll need a couple of these."]
+			subtitle: "{contraption.cabricality.48.subtitle}"
+			description: ["{contraption.cabricality.48.content}"]
 			dependencies: ["3CBED6B591BCEDEA"]
 			id: "6A156D11D983661D"
 			tasks: [{
@@ -432,12 +418,94 @@
 			}]
 		}
 		{
-			title: "Attire"
+			title: "{contraption.cabricality.49.title}"
+			icon: {
+				id: "ad_astra:oxygen_tank"
+				Count: 1b
+				tag: { }
+			}
+			x: 2.0d
+			y: 6.0d
+			shape: "circle"
+			subtitle: "{contraption.cabricality.49.subtitle}"
+			description: ["{contraption.cabricality.49.content}"]
+			dependencies: ["6A156D11D983661D"]
+			id: "3AD7553F3C8593F9"
+			tasks: [{
+				id: "045DB251DB8BB97F"
+				type: "item"
+				item: {
+					id: "ad_astra:oxygen_tank"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "{contraption.cabricality.50.title}"
+			icon: "ad_astra:steel_engine"
+			x: 4.0d
+			y: 6.0d
+			shape: "circle"
+			subtitle: "{contraption.cabricality.50.subtitle}"
+			description: ["{contraption.cabricality.50.content}"]
+			dependencies: ["6A156D11D983661D"]
+			id: "73473DC7269EC5B0"
+			tasks: [
+				{
+					id: "5A1CC7C1BAFFABBC"
+					type: "item"
+					item: "ad_astra:steel_tank"
+					consume_items: false
+				}
+				{
+					id: "303C6C7B357D47D9"
+					type: "item"
+					item: "ad_astra:steel_engine"
+					consume_items: false
+				}
+				{
+					id: "5140EF835413E2FC"
+					type: "item"
+					item: "ad_astra:fuel_bucket"
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "{chapter_5.cabricality.complete.title}"
+			icon: {
+				id: "ad_astra:tier_4_rocket"
+				Count: 1b
+				tag: { }
+			}
+			x: 2.0d
+			y: 7.75d
+			shape: "hexagon"
+			description: ["{chapter_5.cabricality.complete.content}"]
+			dependencies: [
+				"6BA9A176EDA001A3"
+				"69311E02A8B3451D"
+				"3AD7553F3C8593F9"
+				"73473DC7269EC5B0"
+			]
+			size: 2.0d
+			id: "47965C310D9847DC"
+			tasks: [{
+				id: "05BDC7ACF64D13C2"
+				type: "item"
+				item: "indrev:controller"
+				consume_items: false
+			}]
+		}
+		{
+			title: "{chapter_5.cabricality.attire.title}"
 			icon: "ad_astra:space_painting"
 			x: 0.0d
 			y: 6.0d
 			shape: "circle"
-			description: ["If you intend to survive past the landing, a special set of armour will be required."]
+			description: ["{chapter_5.cabricality.attire.content}"]
 			dependencies: ["6A156D11D983661D"]
 			id: "6BA9A176EDA001A3"
 			tasks: [
@@ -487,112 +555,6 @@
 							Damage: 0
 						}
 					}
-					consume_items: false
-				}
-			]
-		}
-		{
-			title: "Electrolysis"
-			icon: {
-				id: "ad_astra:oxygen_tank"
-				Count: 1b
-				tag: { }
-			}
-			x: 2.0d
-			y: 6.0d
-			shape: "circle"
-			subtitle: "Contraption 48"
-			description: [
-				"In order to fill your Oxygen Tanks, stand on a Gas Charge Pad with oxygen in its internal storage."
-				""
-				"Suitable Oxygen can be gained by separating water into its components via heated mixing."
-			]
-			dependencies: ["6A156D11D983661D"]
-			id: "3AD7553F3C8593F9"
-			tasks: [{
-				id: "045DB251DB8BB97F"
-				type: "item"
-				item: {
-					id: "ad_astra:oxygen_tank"
-					Count: 1b
-					tag: { }
-				}
-				consume_items: false
-			}]
-		}
-		{
-			title: "Operators"
-			icon: "kubejs:plus"
-			x: 2.0d
-			y: 14.0d
-			subtitle: "Contraption 43-2"
-			description: ["Without the operators, a data center would not be able to combine digits into others. Provide your Calculators with an automated supply of any operator they end up requiring."]
-			dependencies: ["70D563EF30E9CB97"]
-			id: "4E85C8A2EEEB57C3"
-			tasks: [
-				{
-					id: "69462AA912169E3B"
-					type: "item"
-					item: "kubejs:plus"
-					consume_items: false
-				}
-				{
-					id: "56E1C75AD6DF3119"
-					type: "item"
-					item: "kubejs:minus"
-					consume_items: false
-				}
-				{
-					id: "3BF3D9E9B3782EA3"
-					type: "item"
-					item: "kubejs:multiply"
-					consume_items: false
-				}
-				{
-					id: "5914CB0D1D6E839E"
-					type: "item"
-					item: "kubejs:divide"
-					consume_items: false
-				}
-				{
-					id: "26517C9D1C3D8269"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "The Spaceship"
-			icon: "ad_astra:steel_engine"
-			x: 4.0d
-			y: 6.0d
-			shape: "circle"
-			subtitle: "Contraption &b50"
-			description: [
-				"With the Launch Pad in place, it is time to construct your Spaceship. "
-				""
-				"Give it your best, after all this is the final Contraption you've been working towards. "
-				"&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating."
-			]
-			dependencies: ["6A156D11D983661D"]
-			id: "73473DC7269EC5B0"
-			tasks: [
-				{
-					id: "5A1CC7C1BAFFABBC"
-					type: "item"
-					item: "ad_astra:steel_tank"
-					consume_items: false
-				}
-				{
-					id: "303C6C7B357D47D9"
-					type: "item"
-					item: "ad_astra:steel_engine"
-					consume_items: false
-				}
-				{
-					id: "5140EF835413E2FC"
-					type: "item"
-					item: "ad_astra:fuel_bucket"
 					consume_items: false
 				}
 			]

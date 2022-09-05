@@ -14,7 +14,7 @@ onEvent("recipes", event => {
 
 	//TL as number
 	let upgradeAll = (input, min, max, actualDelete) => {
-		for (i = min; i <= actualDelete; i++) {
+		for (let i = min; i <= actualDelete; i++) {
 			let inputThing = input.replace("TL", i.toString())
 			if (i < max) {
 				let outputThing = input.replace("TL", (i + 1).toString())

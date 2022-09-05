@@ -1,6 +1,6 @@
 let debug_extractor = false
 onEvent("block.right_click", event => {
-	var isNextToLog = false
+	let isNextToLog = false
 	if (event.block.id == "kubejs:extractor_machine") {
 		if (event.block.west.hasTag("minecraft:logs")) isNextToLog = true
 		if (event.block.east.hasTag("minecraft:logs")) isNextToLog = true
@@ -8,16 +8,16 @@ onEvent("block.right_click", event => {
 		if (event.block.south.hasTag("minecraft:logs")) isNextToLog = true
 		if (event.block.down.id != "minecraft:air" && event.block.down.id != "kubejs:resin") isNextToLog = false
 		if (isNextToLog == true && Math.random() > 0.973) {
-			x = event.block.x
-			y = event.block.y - 1
-			z = event.block.z
+			let x = event.block.x
+			let y = event.block.y - 1
+			let z = event.block.z
 			dimensional_commanding(event.server, event.block.dimension, "setblock " + x + " " + y + " " + z + " kubejs:resin")
 		}
 
 		//	Smelter
-		smeltSpeed = 1.0
-		downBlock = event.block.down.id
-		smeltChance = 1.0
+		let smeltSpeed = 1.0
+		let downBlock = event.block.down.id
+		let smeltChance = 1.0
 		if (event.block.up.id == "minecraft:lava") {
 			if (event.block.west.id == "minecraft:lava") smeltSpeed = smeltSpeed + 0.25
 			if (event.block.north.id == "minecraft:lava") smeltSpeed = smeltSpeed + 0.25
@@ -250,12 +250,12 @@ onEvent("block.right_click", event => {
 		) {
 			//	if (debug_extractor == true) event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
 			if (debug_extractor == true) event.server.runCommandSilent(`say ${event.block.down.getBlockState().toString()}`)
-			x = event.block.x
-			y = event.block.y - 1
-			yup = event.block.y + 1
-			z = event.block.z
-			downPos = x + " " + y + " " + z
-			upPos = x + " " + yup + " " + z
+			let x = event.block.x
+			let y = event.block.y - 1
+			let yup = event.block.y + 1
+			let z = event.block.z
+			let downPos = x + " " + y + " " + z
+			let upPos = x + " " + yup + " " + z
 
 			smeltChance = smeltChance * 1.2
 			if (Math.random() <= smeltChance) {
@@ -265,7 +265,7 @@ onEvent("block.right_click", event => {
 				//		event.server.runCommandSilent("setblock " + downPos + " " + "minecraft:air")
 				dimensional_commanding(event.server, event.block.dimension, `setblock ${downPos} minecraft:air`)
 			}
-			smeltSpeed2 = 1.05 - smeltSpeed
+			let smeltSpeed2 = 1.05 - smeltSpeed
 			//	if (Math.random() <= smeltSpeed2) event.server.runCommandSilent("setblock " + upPos + " minecraft:air")
 			if (Math.random() <= smeltSpeed2) dimensional_commanding(event.server, event.block.dimension, `setblock ${upPos} minecraft:air`)
 		}

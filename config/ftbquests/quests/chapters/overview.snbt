@@ -3,24 +3,24 @@
 	group: "331B6409EF6A7840"
 	order_index: 0
 	filename: "overview"
-	title: "&a> Overview"
+	title: "{overview.cabricality.title}"
 	icon: "minecraft:oak_sapling"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "&a&lFrom a Tree Puncher..."
+			title: "{overview.cabricality.start.title}"
 			icon: "minecraft:grass_block"
 			x: -13.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["&aWelcome to the Overview. You can always come back here to catch up on your current position in the Progression of Technology. If you look closely, your Journey to the Moon completes the final step of the way on the right side."]
+			description: ["{overview.cabricality.start.content}"]
 			size: 2.0d
 			id: "75FB28B253B14876"
 			tasks: [{
 				id: "7F88BABEC9889C76"
 				type: "item"
-				title: "Any Logs"
+				title: "{overview.cabricality.start.task.logs.title}"
 				icon: "minecraft:oak_log"
 				item: {
 					id: "itemfilters:tag"
@@ -34,19 +34,17 @@
 			rewards: [{
 				id: "149668A9603D545F"
 				type: "item"
-				item: "farmersdelight:hot_cocoa"
+				item: "farmersdelight:apple_cider"
 			}]
 		}
 		{
-			title: "&f&lPreparations"
+			title: "{overview.cabricality.preparation.title}"
 			icon: "minecraft:cobblestone_stairs"
 			x: -12.5d
 			y: -1.5d
 			shape: "circle"
 			description: [
-				"Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first."
-				""
-				"Here are some recommendations for a successful start."
+				"{overview.cabricality.preparation.content}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "7D6BC99CCCB29924"
@@ -84,7 +82,7 @@
 				{
 					id: "1900BA945C62D0CC"
 					type: "item"
-					title: "Smart Forgery"
+					title: "{overview.cabricality.preparation.task.forgery.title}"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -118,36 +116,32 @@
 			}]
 		}
 		{
-			title: "&6&lHigh Aspirations"
+			title: "{overview.cabricality.chapter_1.start.title}"
 			icon: "create:andesite_alloy"
 			x: -11.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6Chapter 1"
+			subtitle: "{overview.cabricality.chapter_1.start.subtitle}"
 			description: [
-				"The earliest inventions reveal ones resourcefulness with low level equipment: Auto-Crafting? None. Filtering? Not cheap! Item Transport? May the Belt Spaghetti mesh in your favour."
-				""
-				"After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{overview.cabricality.chapter_1.start.content}"
 			]
 			dependencies: ["75FB28B253B14876"]
 			id: "61147823CC87F711"
 			tasks: [{
 				id: "5A8DF2D8553904BF"
 				type: "checkmark"
-				title: "&6Unlock Chapter 1"
+				title: "{overview.cabricality.chapter_1.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&lAndesite Machinery"
+			title: "{overview.cabricality.chapter_1.end.title}"
 			disable_toast: true
 			x: -10.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "Milestone"
+			subtitle: "{overview.cabricality.chapter_1.end.subtitle}"
 			description: [
-				"With Kinetic Mechanisms automated, many new possibilities unfold. Most of Create's machinery can now be crafted without much hassle. The early game just got a bit less early!"
-				""
-				"You can now continue, or choose to spend some time in the bonus section of Chapter 1. After all, a stronger supply of Copper Machines will come to be quite useful, too!"
+				"{overview.cabricality.chapter_1.end.content}"
 			]
 			dependencies: [
 				"61147823CC87F711"
@@ -157,44 +151,40 @@
 			tasks: [{
 				id: "36F8C3CAF6FC3FB2"
 				type: "stat"
-				title: "&6Complete Chapter 1"
+				title: "{overview.cabricality.chapter_1.end.task.complete.title}"
 				icon: "kubejs:kinetic_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&f&lRubber Tycoon"
+			title: "{overview.cabricality.bonus_1a.start.title}"
 			icon: "kubejs:cured_rubber"
 			x: -9.5d
 			y: 1.5d
 			shape: "circle"
-			subtitle: "Bonus 1A"
+			subtitle: "{overview.cabricality.bonus_1a.start.subtitle}"
 			description: [
 				""
-				"While Copper Machines will definitely be required going forward; full automation of their ingredients is completely optional."
-				""
-				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+				"{overview.cabricality.bonus_1a.start.content}"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "7D872F933F45809B"
 			tasks: [{
 				id: "681DACF11F193771"
 				type: "checkmark"
-				title: "&4Unlock Bonus 1A"
+				title: "{overview.cabricality.bonus_1a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&4&lCopper Machinery"
+			title: "{overview.cabricality.bonus_1a_end.title}"
 			disable_toast: true
 			x: -8.0d
 			y: 2.5d
-			subtitle: "&4Challenge"
+			subtitle: "{overview.cabricality.bonus_1a.end.subtitle}"
 			description: [
-				"Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
-				""
-				"Note that Sealed Mechanisms are an ingredient to nothing else. The main assembly line will continue with Kinetic Mechanisms."
+				"{overview.cabricality.bonus_1a.end.content}"
 			]
 			dependencies: [
 				"7D872F933F45809B"
@@ -204,43 +194,39 @@
 			tasks: [{
 				id: "27B07858A6018539"
 				type: "stat"
-				title: "&4Complete Bonus 1A"
+				title: "{overview.cabricality.bonus_1a.end.task.complete.title}"
 				icon: "kubejs:sealed_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&6&lAlluring Expedience"
+			title: "{overview.cabricality.chapter_2.start.title}"
 			icon: "create:electron_tube"
 			x: -8.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6Chapter 2"
+			subtitle: "{overview.cabricality.chapter_2.start.subtitle}"
 			description: [
-				"The chicken and egg problem remains: in order to automate precision mechanisms for brass equipment more conveniently, having more brass equipment would be really useful!"
-				""
-				"After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{overview.cabricality.chapter_2.start.content}"
 			]
 			dependencies: ["0E98B4D2BBF55308"]
 			id: "1E263994D4883A08"
 			tasks: [{
 				id: "28C41C062843C2CA"
 				type: "checkmark"
-				title: "&6Unlock Chapter 2"
+				title: "{overview.cabricality.chapter_2.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&lBrass Machinery"
+			title: "{overview.cabricality.chapter_2.end.title}"
 			disable_toast: true
 			x: -7.0d
 			y: 0.0d
-			subtitle: "Milestone"
+			subtitle: "{overview.cabricality.chapter_2.end.subtitle}"
 			description: [
-				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life."
-				""
-				"It also opens the gate leading towards the Invar Age- potentially after a quick stop by the bonus section.."
+				"{overview.cabricality.chapter_2.end.content}"
 			]
 			dependencies: [
 				"1E263994D4883A08"
@@ -250,44 +236,39 @@
 			tasks: [{
 				id: "0FF38BBE3B19D9C2"
 				type: "stat"
-				title: "&6Complete Chapter 2"
+				title: "{overview.cabricality.chapter_2.end.task.complete.title}"
 				icon: "create:precision_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&f&lMelting the Funds"
-			icon: "kubejs:enderium_ingot"
-			x: -3.5d
-			y: 1.5d
+			title: "{overview.cabricality.bonus_2a.start.title}"
+			icon: "minecraft:lava_bucket"
+			x: -6.5d
+			y: -1.5d
 			shape: "circle"
-			subtitle: "Bonus 3A"
+			subtitle: "{overview.cabricality.bonus_2a.start.subtitle}"
 			description: [
-				"The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
-				"In researching the required technologies, you will find that your hard earned silver suddenly finds a second use.."
-				""
-				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."
+				"{overview.cabricality.bonus_2a.start.content}"
 			]
-			dependencies: ["400CDC316DCDFE88"]
-			id: "2BB2C7B95E3C89AE"
+			dependencies: ["69275ECFC147E15B"]
+			id: "7888F9129E9FE517"
 			tasks: [{
-				id: "722CA19434E722FB"
+				id: "21753CBB528EAADF"
 				type: "checkmark"
-				title: "Unlock Bonus 3A"
+				title: "{overview.cabricality.bonus_2a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&2&lZinc Machinery"
+			title: "{overview.cabricality.bonus_2a.end.title}"
 			disable_toast: true
 			x: -5.0d
 			y: -2.5d
-			subtitle: "&2Utility"
+			subtitle: "{overview.cabricality.bonus_2a.end.subtitle}"
 			description: [
-				"&2Zinc Machines&r are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
-				""
-				"Note that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms."
+				"{overview.cabricality.bonus_2a.end.content}"
 			]
 			dependencies: [
 				"7888F9129E9FE517"
@@ -297,45 +278,39 @@
 			tasks: [{
 				id: "12CFC84D3F01F49F"
 				type: "stat"
-				title: "&2Complete Bonus 2A"
+				title: "{overview.cabricality.bonus_2a.end.task.complete.title}"
 				icon: "kubejs:infernal_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&6&lThe Catharsis"
+			title: "{overview.cabricality.chapter_3.start.title}"
 			icon: "kubejs:radiant_coil"
 			x: -5.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6Chapter 3"
+			subtitle: "{overview.cabricality.chapter_3.start.subtitle}"
 			description: [
-				"The Groundwork has been laid with all that has been created so far. The pace should really pick up from here."
-				""
-				"Producing components for inductive technology relies on very peculiar techniques. Though with all the new equipment ready, automating even the more convoluted interactions should become a cakewalk."
-				""
-				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{overview.cabricality.chapter_3.start.content}"
 			]
 			dependencies: ["69275ECFC147E15B"]
 			id: "780E8AE86250C73D"
 			tasks: [{
 				id: "2F6FEDBB1BDCB36C"
 				type: "checkmark"
-				title: "&6Unlock Chapter 3"
+				title: "{overview.cabricality.chapter_3.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&lInvar Machinery"
+			title: "{overview.cabricality.chapter_3.end.title}"
 			disable_toast: true
 			x: -4.0d
 			y: 0.0d
-			subtitle: "Milestone"
+			subtitle: "{overview.cabricality.chapter_3.end.subtitle}"
 			description: [
-				"A completely different age of Technology. Some machines are suddenly powered by some hardly observable magical energy."
-				""
-				"The Launch feels very close now. While there still lie challenges ahead, the solution footprint will shrink again thanks to the new Appliances."
+				"{overview.cabricality.chapter_3.end.content}"
 			]
 			dependencies: [
 				"780E8AE86250C73D"
@@ -345,41 +320,38 @@
 			tasks: [{
 				id: "7FEEF6BED2C3F31B"
 				type: "stat"
-				title: "&6Complete Chapter 3"
+				title: "{overview.cabricality.chapter_3.end.task.complete.title}"
 				icon: "kubejs:inductive_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&f&lMagmatic Exploits"
-			icon: "minecraft:lava_bucket"
-			x: -6.5d
-			y: -1.5d
+			title: "{overview.cabricality.bonus_3a.start.title}"
+			icon: "kubejs:enderium_ingot"
+			x: -3.5d
+			y: 1.5d
 			shape: "circle"
-			subtitle: "Bonus 2A"
+			subtitle: "{overview.cabricality.bonus_3a.start.subtitle}"
 			description: [
-				"We need to go Deeper!"
-				"Access to Zinc Machines will require for some engineering in another dimension. Even if it's literally Hell, a change of scene will always bring forth new ideas and inspiration."
-				""
-				"After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed."
+				"{overview.cabricality.bonus_3a.start.content}"
 			]
-			dependencies: ["69275ECFC147E15B"]
-			id: "7888F9129E9FE517"
+			dependencies: ["400CDC316DCDFE88"]
+			id: "2BB2C7B95E3C89AE"
 			tasks: [{
-				id: "21753CBB528EAADF"
+				id: "722CA19434E722FB"
 				type: "checkmark"
-				title: "Unlock Bonus 2A"
+				title: "{overview.cabricality.bonus_3a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&3&lEnder Machinery"
+			title: "{overview.cabricality.bonus_3a.end.title}"
 			disable_toast: true
 			x: -2.0d
 			y: 2.5d
-			subtitle: "&3Utility"
-			description: ["&3Ender Machines provide not only access to instant Teleportation, but also to the most powerful upgrades for your machines."]
+			subtitle: "{overview.cabricality.bonus_3a.end.subtitle}"
+			description: ["{overview.cabricality.bonus_3a.end.content}"]
 			dependencies: [
 				"2BB2C7B95E3C89AE"
 				"6DBEF7A11890ADF8"
@@ -388,68 +360,57 @@
 			tasks: [{
 				id: "4BC5C43C7B23CA16"
 				type: "stat"
-				title: "Complete Bonus 3A"
+				title: "{overview.cabricality.bonus_3a.end.task.complete.title}"
 				icon: "kubejs:abstruse_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&6&lInto the Box"
+			title: "{overview.cabricality.chapter_4.start.title}"
 			icon: "kubejs:silicon_compound"
 			x: -2.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&6Chapter 4"
+			subtitle: "{overview.cabricality.chapter_4.start.subtitle}"
 			description: [
-				"A new Energy Unit joins the ranks: the production facility for silicon will involve an interplay of thermal induction machinery and the familiar kinetic components."
-				""
-				"Between Flux and Stress, a peculiar innovation in Laser technology will be required to produce some of the ingredients involved."
-				""
-				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{overview.cabricality.chapter_4.start.content}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "26173D4777F439B1"
 			tasks: [{
 				id: "74CFD83C501C4952"
 				type: "checkmark"
-				title: "&6Unlock Chapter 4"
+				title: "{overview.cabricality.chapter_4.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&6&lChaotic Alchemy"
+			title: "{overview.cabricality.chapter_4a.start.title}"
 			icon: "kubejs:substrate_chaos"
 			x: -2.5d
 			y: -1.25d
 			shape: "circle"
-			subtitle: "Alternative Path"
+			subtitle: "{overview.cabricality.chapter_4a.start.subtitle}"
 			description: [
-				"You'll find that the newly discovered Laser setup has other interesting capabilities."
-				""
-				"Behind a bit of science and experimentation lies a way to transmute seemingly unrelated materials between another. The demanded Silicon element is one of them, but which is its counterpart?"
-				""
-				"After hitting the Checkmark above, the alternative fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar. It will still be possible to return to the other chapter."
+				"{overview.cabricality.chapter_4a.start.content}"
 			]
 			dependencies: ["400CDC316DCDFE88"]
 			id: "3934AD57122B6FFE"
 			tasks: [{
 				id: "5DF206B1738D08A0"
 				type: "checkmark"
-				title: "&6Unlock Chapter 4a"
+				title: "{overview.cabricality.chapter_4a.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&f&lFluix Machinery"
+			title: "{overview.cabricality.chapter_4.end.title}"
 			disable_toast: true
 			x: -1.0d
 			y: 0.0d
-			subtitle: "Milestone"
+			subtitle: "{overview.cabricality.chapter_4.end.subtitle}"
 			description: [
-				"With Calculation Mechanisms, the Factory enters the Digital Age. Instant Material-Energy conversion (ME) revolutionises item and fluid logistics for both the assembly lines and personal use."
-				""
-				"At this point, all of the tools necessary to facilitate space travel have become accessible. Might as well start a countdown."
-				"&710, 9, 8..."
+				"{overview.cabricality.chapter_4.end.content}"
 			]
 			min_required_dependencies: 3
 			dependencies: [
@@ -463,43 +424,39 @@
 			tasks: [{
 				id: "79AB928A6C8E21DA"
 				type: "stat"
-				title: "&6Complete Chapter 4"
+				title: "{overview.cabricality.chapter_4.end.task.complete.title}"
 				icon: "kubejs:calculation_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
-				value: 60
+				value: 1
 			}]
 		}
 		{
-			title: "&6&lDivide by Digital"
+			title: "{overview.cabricality.chapter_5.start.title}"
 			icon: "kubejs:divide"
 			x: 0.5d
 			y: 0.0d
 			shape: "circle"
-			subtitle: "&5Finale"
+			subtitle: "{overview.cabricality.chapter_5.start.subtitle}"
 			description: [
-				"The entire factory is started back up for one final sprint. With a steady supply of Calculation Mechanisms, the Digital Infrastucture performs the necessary operations to put together an ideal Trajectory."
-				""
-				"While this Data Center visibly crunches the numbers, the designated Astronaut starts getting themselves and the spaceship prepared for launch."
+				"{overview.cabricality.chapter_5.start.content}"
 			]
 			dependencies: ["08716DBF9C882623"]
 			id: "5E62059675895213"
 			tasks: [{
 				id: "251A91F6C21AEAFB"
 				type: "checkmark"
-				title: "&6Unlock the Final Chapter"
+				title: "{overview.cabricality.chapter_5.start.task.unlock.title}"
 			}]
 		}
 		{
-			title: "&9&l&o..to a Spacefarer"
+			title: "{overview.cabricality.chapter_5.end.title}"
 			icon: "ad_astra:moon_sand"
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"&oThe Dream of walking the Moon's surface finally came to fruition."
-				""
-				"&oWith that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!&r"
+				"{overview.cabricality.chapter_5.end.content}"
 			]
 			dependencies: [
 				"5E62059675895213"
@@ -511,11 +468,11 @@
 				{
 					id: "058AEB3EF218C7D2"
 					type: "stat"
-					title: "&6Complete Chapter 5"
+					title: "{overview.cabricality.chapter_5.end.task.complete.title}"
 					icon: "indrev:controller"
 					disable_toast: true
 					stat: "minecraft:play_time"
-					value: 60
+					value: 1
 				}
 				{
 					id: "68543E92A6B517DC"

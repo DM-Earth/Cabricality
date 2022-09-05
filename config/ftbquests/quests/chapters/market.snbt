@@ -3,78 +3,92 @@
 	group: "0810E42B2DD79973"
 	order_index: 1
 	filename: "market"
-	title: "&6> Market"
+	title: "{market.cabricality.title}"
 	icon: "minecraft:chest"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Sleepless"
-			icon: "minecraft:cyan_bed"
-			x: -10.0d
-			y: -1.0d
-			subtitle: "10 Silver"
-			description: ["Your last resort in case the sundown beat you to it."]
-			id: "5D17CB247942013A"
+			title: "{market.cabricality.start.title}"
+			icon: "minecraft:chest"
+			x: -6.0d
+			y: -4.0d
+			shape: "hexagon"
+			description: ["{market.cabricality.start.content}"]
+			size: 2.0d
+			id: "0F870BEA235D662D"
 			tasks: [{
-				id: "0783860FB502A201"
+				id: "3929233A89B34A71"
+				type: "checkmark"
+				title: "{market.cabricality.start.task.checkmark.title}"
+			}]
+		}
+		{
+			title: "{market.cabricality.exchange.gold.title}"
+			icon: "kubejs:gold_coin"
+			x: -8.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "{market.cabricality.exchange.gold.subtitle}"
+			description: ["{market.cabricality.exchange.gold.content}"]
+			dependencies: ["0F870BEA235D662D"]
+			id: "1A566C74B1F7F050"
+			tasks: [{
+				id: "2387D852CA97AD1A"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
-				count: 10L
+				count: 64L
 			}]
 			rewards: [{
-				id: "55EF0FE847AE3353"
-				type: "item"
-				item: "minecraft:cyan_bed"
-			}]
-		}
-		{
-			title: "Fortress Locator"
-			icon: "create:blaze_burner"
-			x: -7.5d
-			y: -0.4821428571428612d
-			subtitle: "2 Gold"
-			description: ["Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times."]
-			id: "252B9DD5BFB8184A"
-			tasks: [{
-				id: "5345AA8760A95127"
-				type: "item"
+				id: "341C8CC09CDE7DE6"
+				type: "questsadditions:repeat"
 				icon: "kubejs:gold_coin"
-				item: "kubejs:gold_coin"
-				count: 2L
-			}]
-			rewards: [{
-				id: "6C78DDBF35C5FA73"
-				type: "item"
-				item: {
-					id: "explorerscompass:explorerscompass"
-					Count: 1b
-					tag: { }
-				}
+				table_id: 6372636554880692939L
 			}]
 		}
 		{
-			title: "Saw everything"
+			title: "{market.cabricality.exchange.silver.title}"
+			icon: { id: "kubejs:silver_coin", Count: 64b }
+			x: -4.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "{market.cabricality.exchange.silver.subtitle}"
+			description: ["{market.cabricality.exchange.silver.content}"]
+			dependencies: ["0F870BEA235D662D"]
+			id: "5326F6482C45D22A"
+			tasks: [{
+				id: "772821832EE93341"
+				type: "item"
+				item: "kubejs:gold_coin"
+			}]
+			rewards: [{
+				id: "73CB9C5EC1BED6EC"
+				type: "questsadditions:repeat"
+				icon: "kubejs:silver_coin"
+				auto: "disabled"
+				table_id: 477886174531820947L
+			}]
+		}
+		{
+			title: "{market.cabricality.saw.title}"
 			icon: {
 				id: "kubejs:netherite_saw"
 				Count: 1b
 				tag: {
-					RepairCost: 0
+					Damage: 0
+					display: {
+						Name: "[\"§5Enchanted Saw\"]"
+					}
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 3s
 					}]
-					Damage: 0
-					display: {
-						Name: "{\"text\":\"Enchanted Saw\"}"
-					}
 				}
 			}
 			x: -8.5d
 			y: -6.5d
-			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of    &6Kinetic Mechanisms.&r"]
+			subtitle: "{market.cabricality.saw.subtitle}"
+			description: ["{market.cabricality.saw.content}"]
 			hide_dependency_lines: true
 			id: "4F953BACF4D1C151"
 			tasks: [
@@ -92,7 +106,6 @@
 				{
 					id: "3EE8736C08EF80F4"
 					type: "item"
-					icon: "kubejs:gold_coin"
 					item: "kubejs:gold_coin"
 					count: 3L
 				}
@@ -104,29 +117,31 @@
 					id: "kubejs:netherite_saw"
 					Count: 1b
 					tag: {
-						RepairCost: 0
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Saw\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 						Enchantments: [{
-							lvl: 10s
 							id: "minecraft:unbreaking"
+							lvl: 10s
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
-						}
+						HideFlags: 1
 					}
 				}
 			}]
 		}
 		{
-			title: "Never Screwed"
+			title: "{market.cabricality.screwdriver.title}"
 			icon: {
 				id: "kubejs:screwdriver"
 				Count: 1b
 				tag: {
 					Damage: 0
+					display: {
+						Name: "[\"§5Enchanted Screwdriver\"]"
+					}
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 3s
@@ -135,8 +150,8 @@
 			}
 			x: -7.0d
 			y: -6.5d
-			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms.&r"]
+			subtitle: "{market.cabricality.screwdriver.subtitle}"
+			description: ["{market.cabricality.screwdriver.content}"]
 			id: "72CACE8F0E4701B1"
 			tasks: [
 				{
@@ -153,7 +168,6 @@
 				{
 					id: "74585BB7E80CF010"
 					type: "item"
-					icon: { id: "kubejs:gold_coin", Count: 5b }
 					item: "kubejs:gold_coin"
 					count: 5L
 				}
@@ -173,14 +187,15 @@
 						Unbreakable: 1
 						Damage: 0
 						display: {
-							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+							Name: "[\"§5Enchanted Screwdriver\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
 						}
 					}
 				}
 			}]
 		}
 		{
-			title: "Magnetic Energetic"
+			title: "{market.cabricality.resonator.title}"
 			icon: {
 				id: "kubejs:chromatic_resonator"
 				Count: 1b
@@ -194,8 +209,8 @@
 			}
 			x: -5.0d
 			y: -6.5d
-			subtitle: "7 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms.&r"]
+			subtitle: "{market.cabricality.resonator.subtitle}"
+			description: ["{market.cabricality.resonator.content}"]
 			id: "43FC566E833BE834"
 			tasks: [
 				{
@@ -212,7 +227,6 @@
 				{
 					id: "5B31A98B9EFCCFAB"
 					type: "item"
-					icon: "kubejs:gold_coin"
 					item: "kubejs:gold_coin"
 					count: 7L
 					consume_items: false
@@ -225,97 +239,131 @@
 					id: "kubejs:chromatic_resonator"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "{\"text\":\"Enchanted Resonator\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Resonator\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 					}
 				}
 			}]
 		}
 		{
-			title: "&6&lThe Market"
-			icon: "minecraft:chest"
-			x: -6.0d
-			y: -4.0d
-			shape: "hexagon"
-			description: [
-				"&6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets."
-				""
-				"Have a look around. I'm sure you'll find something of use."
+			title: "{market.cabricality.flash_drive.title}"
+			icon: {
+				id: "kubejs:flash_drive"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 10s
+					}]
+				}
+			}
+			x: -3.5d
+			y: -6.5d
+			subtitle: "{market.cabricality.flash_drive.subtitle}"
+			description: ["{market.cabricality.flash_drive.content}"]
+			id: "00D6DD6AE8E3C014"
+			tasks: [
+				{
+					id: "561DF7A17B804B1F"
+					type: "item"
+					item: {
+						id: "kubejs:flash_drive"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "04FA9389D991556D"
+					type: "item"
+					item: "kubejs:gold_coin"
+					count: 11L
+				}
 			]
-			size: 2.0d
-			id: "0F870BEA235D662D"
-			tasks: [{
-				id: "3929233A89B34A71"
-				type: "checkmark"
+			rewards: [{
+				id: "3EA7518063CBEA5B"
+				type: "item"
+				item: {
+					id: "kubejs:flash_drive"
+					Count: 1b
+					tag: {
+						HideFlags: 1
+						Enchantments: [{
+							lvl: 10s
+							id: "minecraft:unbreaking"
+						}]
+						Unbreakable: 1
+						Damage: 0
+						display: {
+							Name: "[\"§5Enchanted Flash Drive\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
+					}
+				}
 			}]
 		}
 		{
-			title: "Manual Exchange"
-			icon: { id: "kubejs:silver_coin", Count: 64b }
-			x: -4.0d
-			y: -4.0d
-			shape: "circle"
-			subtitle: "Gold -> Silver"
-			description: ["Here you can exchange a Gold Coin back to a Stack of Silver."]
-			dependencies: ["0F870BEA235D662D"]
-			id: "5326F6482C45D22A"
+			title: "{market.cabricality.sleepless.title}"
+			icon: "minecraft:cyan_bed"
+			x: -10.0d
+			y: -1.0d
+			subtitle: "{market.cabricality.sleepless.subtitle}"
+			description: ["{market.cabricality.sleepless.content}"]
+			id: "5D17CB247942013A"
 			tasks: [{
-				id: "772821832EE93341"
+				id: "0783860FB502A201"
+				type: "item"
+				item: "kubejs:silver_coin"
+				count: 10L
+			}]
+			rewards: [{
+				id: "55EF0FE847AE3353"
+				type: "item"
+				item: "minecraft:cyan_bed"
+			}]
+		}
+		{
+			title: "{market.cabricality.locator.title}"
+			icon: "create:blaze_burner"
+			x: -7.5d
+			y: -0.4821428571428612d
+			subtitle: "{market.cabricality.locator.subtitle}"
+			description: ["{market.cabricality.locator.content}"]
+			id: "252B9DD5BFB8184A"
+			tasks: [{
+				id: "5345AA8760A95127"
 				type: "item"
 				item: "kubejs:gold_coin"
+				count: 2L
 			}]
 			rewards: [{
-				id: "73CB9C5EC1BED6EC"
-				type: "questsadditions:repeat"
-				icon: "kubejs:silver_coin"
-				auto: "disabled"
-				table_id: 477886174531820947L
-			}]
-		}
-		{
-			title: "Manual Exchange"
-			icon: "kubejs:gold_coin"
-			x: -8.0d
-			y: -4.0d
-			shape: "circle"
-			subtitle: "Silver -> Gold"
-			description: ["Some trades require you to hand in Gold Coins. These are worth a stack of Silver each."]
-			dependencies: ["0F870BEA235D662D"]
-			id: "1A566C74B1F7F050"
-			tasks: [{
-				id: "2387D852CA97AD1A"
+				id: "6C78DDBF35C5FA73"
 				type: "item"
-				icon: "kubejs:silver_coin"
-				item: "kubejs:silver_coin"
-				count: 64L
-			}]
-			rewards: [{
-				id: "341C8CC09CDE7DE6"
-				type: "questsadditions:repeat"
-				icon: "kubejs:gold_coin"
-				table_id: 6372636554880692939L
+				item: "explorerscompass:explorerscompass"
 			}]
 		}
 		{
-			title: "Corporate Dinner"
+			title: "{market.cabricality.dinner.title}"
 			icon: "farmersdelight:steak_and_potatoes"
 			x: -8.0d
 			y: -2.0d
-			subtitle: "10 Silver"
-			description: ["Sometimes you have to treat yourself and the co-workers to a nice meal."]
+			subtitle: "{market.cabricality.dinner.subtitle}"
+			description: ["{market.cabricality.dinner.content}"]
 			id: "09DC2E2BE2BE32F4"
 			tasks: [{
 				id: "6235F365D702DF2B"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 10L
 			}]
@@ -353,17 +401,16 @@
 			]
 		}
 		{
-			title: "Landfill Pickup"
+			title: "{market.cabricality.landfill.title}"
 			icon: "minecraft:dirt"
 			x: -6.0d
 			y: -0.9821428571428541d
-			subtitle: "15 Silver"
-			description: ["Early on it might help to import some dirt for base building."]
+			subtitle: "{market.cabricality.landfill.subtitle}"
+			description: ["{market.cabricality.landfill.content}"]
 			id: "4B01606CE7AF3121"
 			tasks: [{
 				id: "188BEC2BA245DB13"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 15L
 			}]
@@ -389,7 +436,7 @@
 			]
 		}
 		{
-			title: "Test of Patience"
+			title: "{market.cabricality.test_of_patience.title}"
 			icon: {
 				id: "minecraft:barrel"
 				Count: 1b
@@ -402,11 +449,8 @@
 			}
 			x: -9.0d
 			y: 0.0d
-			subtitle: "50 Silver"
-			description: [
-				"This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite."
-				"&7But what will await you at the bottom?"
-			]
+			subtitle: "{market.cabricality.test_of_patience.subtitle}"
+			description: ["{market.cabricality.test_of_patience.content}"]
 			id: "09EA580B3D32FEEB"
 			tasks: [{
 				id: "3EA558277444F605"
@@ -430,18 +474,19 @@
 							Items: [
 								{
 									Slot: 11b
+									id: "minecraft:paper"
+									Count: 1b
 									tag: {
-										RepairCost: 0
 										display: {
 											Name: "{\"italic\": false, \"text\":\"Welcome, Challenger\"}"
 											bold: 0b
 										}
 									}
-									Count: 1b
-									id: "minecraft:paper"
 								}
 								{
 									Slot: 15b
+									id: "minecraft:barrel"
+									Count: 1b
 									tag: {
 										display: {
 											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -451,17 +496,19 @@
 											Items: [
 												{
 													Slot: 3b
+													id: "minecraft:paper"
+													Count: 1b
 													tag: {
 														RepairCost: 0
 														display: {
 															Name: "{\"italic\": false, \"text\":\"You'll have to unbox a few of these\"}"
 														}
 													}
-													Count: 1b
-													id: "minecraft:paper"
 												}
 												{
 													Slot: 23b
+													id: "minecraft:barrel"
+													Count: 1b
 													tag: {
 														display: {
 															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -471,73 +518,68 @@
 															Items: [
 																{
 																	Slot: 11b
+																	id: "minecraft:barrel"
+																	Count: 1b
 																	tag: {
 																		display: {
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 																		}
 																		BlockEntityTag: {
-																			LootTable: "custom:chests/patience_1"
+																			LootTable: "cabricality:chests/patience_1"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:barrel"
 																}
 																{
 																	Slot: 13b
+																	id: "minecraft:paper"
+																	Count: 1b
 																	tag: {
 																		RepairCost: 0
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Good luck, see you at the bottom!\"}"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:paper"
 																}
 																{
 																	Slot: 14b
+																	id: "minecraft:apple"
+																	Count: 1b
 																	tag: {
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:apple"
 																}
 															]
 														}
 													}
-													Count: 1b
-													id: "minecraft:barrel"
 												}
 											]
 										}
 									}
-									Count: 1b
-									id: "minecraft:barrel"
 								}
 							]
 						}
+						HideFlags: 1
 						display: {
 							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
 							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
-						HideFlags: 1
 					}
 				}
 			}]
 		}
 		{
-			title: "Enderpack"
+			title: "{market.cabricality.enderpack.title}"
 			icon: "minecraft:shulker_box"
 			x: -4.5d
 			y: -0.5d
-			subtitle: "55 Silver"
-			description: ["It's like a backpack but classy."]
+			subtitle: "{market.cabricality.enderpack.subtitle}"
+			description: ["{market.cabricality.enderpack.content}"]
 			id: "4FD46F841CCD59F8"
 			tasks: [{
 				id: "709557A517B0143F"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 55L
 			}]
@@ -560,16 +602,16 @@
 			]
 		}
 		{
-			title: "1-Up!"
+			title: "{market.cabricality.undying.title}"
 			icon: "minecraft:totem_of_undying"
 			x: -3.0d
 			y: 0.0d
-			subtitle: "60 Silver"
+			subtitle: "{market.cabricality.undying.subtitle}"
+			description: ["{market.cabricality.undying.content}"]
 			id: "6D9F2FBEB7CC5195"
 			tasks: [{
 				id: "165B9A886A26BCC8"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 60L
 			}]
@@ -580,17 +622,16 @@
 			}]
 		}
 		{
-			title: "Where mob?"
+			title: "{market.cabricality.mob.title}"
 			icon: "create:haunted_bell"
 			x: -5.0d
 			y: 1.0d
-			subtitle: "45 Silver"
-			description: ["As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!"]
+			subtitle: "{market.cabricality.mob.subtitle}"
+			description: ["{market.cabricality.mob.content}"]
 			id: "4B52A04818075900"
 			tasks: [{
 				id: "4FB1B4787D648565"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 45L
 			}]
@@ -608,79 +649,16 @@
 			]
 		}
 		{
-			title: "Windows Update"
-			icon: {
-				id: "kubejs:flash_drive"
-				Count: 1b
-				tag: {
-					Damage: 0
-					display: {
-						Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-					}
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 10s
-					}]
-				}
-			}
-			x: -3.5d
-			y: -6.5d
-			subtitle: "11 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms.&r"]
-			id: "00D6DD6AE8E3C014"
-			tasks: [
-				{
-					id: "561DF7A17B804B1F"
-					type: "item"
-					item: {
-						id: "kubejs:flash_drive"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "04FA9389D991556D"
-					type: "item"
-					icon: "kubejs:gold_coin"
-					item: "kubejs:gold_coin"
-					count: 11L
-				}
-			]
-			rewards: [{
-				id: "3EA7518063CBEA5B"
-				type: "item"
-				item: {
-					id: "kubejs:flash_drive"
-					Count: 1b
-					tag: {
-						display: {
-							Name: "{\"text\":\"Enchanted Flash Drive\",\"color\":\"gold\",\"italic\":false}"
-						}
-						Enchantments: [{
-							lvl: 10s
-							id: "minecraft:unbreaking"
-						}]
-						Unbreakable: 1
-						Damage: 0
-						HideFlags: 1
-					}
-				}
-			}]
-		}
-		{
-			title: "Press Express"
+			title: "{market.cabricality.express.title}"
 			icon: "ae2:silicon_press"
 			x: -1.0d
 			y: -2.0d
-			subtitle: "6 Gold"
-			description: ["True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!"]
+			subtitle: "{market.cabricality.express.subtitle}"
+			description: ["{market.cabricality.express.content}"]
 			id: "4BAC95CCC72369AD"
 			tasks: [{
 				id: "3D328A6D69E64EDA"
 				type: "item"
-				icon: "kubejs:gold_coin"
 				item: "kubejs:gold_coin"
 				count: 6L
 			}]
@@ -692,16 +670,16 @@
 			}]
 		}
 		{
-			title: "Gardener's Starter Pack"
+			title: "{market.cabricality.gardener.title}"
 			icon: "minecraft:sunflower"
 			x: -4.0d
 			y: -1.9821428571428612d
-			subtitle: "24 Silver"
+			subtitle: "{market.cabricality.gardener.subtitle}"
+			description: ["{market.cabricality.gardener.content}"]
 			id: "42384DE39AA48976"
 			tasks: [{
 				id: "05BB5DFA82280C0C"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -727,16 +705,16 @@
 			]
 		}
 		{
-			title: "Painter's Starter Kit"
+			title: "{market.cabricality.painter.title}"
 			icon: "minecraft:painting"
 			x: -7.0d
 			y: 1.0d
-			subtitle: "24 Silver"
+			subtitle: "{market.cabricality.painter.subtitle}"
+			description: ["{market.cabricality.painter.content}"]
 			id: "61B040CD0832EFC0"
 			tasks: [{
 				id: "6404722100F1DEF7"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -792,16 +770,16 @@
 			]
 		}
 		{
-			title: "Tracking Starter Pack"
+			title: "{market.cabricality.steamer.title}"
 			icon: "create:track"
 			x: -11.0d
 			y: -2.0d
-			subtitle: "24 Silver"
+			subtitle: "{market.cabricality.steamer.subtitle}"
+			description: ["{market.cabricality.steamer.content}"]
 			id: "117587D824D23D69"
 			tasks: [{
 				id: "06C835DB602D6F9F"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -832,16 +810,16 @@
 			]
 		}
 		{
-			title: "Pet Owner's Starter Pack"
+			title: "{market.cabricality.pet_owner.title}"
 			icon: "minecraft:tropical_fish"
 			x: -11.0d
 			y: 1.0d
-			subtitle: "24 Silver"
+			subtitle: "{market.cabricality.pet_owner.subtitle}"
+			description: ["{market.cabricality.pet_owner.content}"]
 			id: "2D75D1864FB1EF75"
 			tasks: [{
 				id: "3AA788B63B6A73EF"
 				type: "item"
-				icon: "kubejs:silver_coin"
 				item: "kubejs:silver_coin"
 				count: 24L
 			}]
@@ -878,12 +856,12 @@
 			]
 		}
 		{
-			title: "Instant Aesthetics"
+			title: "{market.cabricality.leaf.title}"
 			icon: "minecraft:oak_leaves"
 			x: -1.0d
 			y: 1.0d
-			subtitle: "24 Silver"
-			description: ["Not too stoked with your facade? Not a problem! Foliage solves everything."]
+			subtitle: "{market.cabricality.leaf.subtitle}"
+			description: ["{market.cabricality.leaf.content}"]
 			id: "7D93DAB3E8ACF953"
 			tasks: [{
 				id: "06028A67C6DCCD00"
@@ -931,24 +909,24 @@
 			]
 		}
 		{
-			title: "No, not the bees!"
+			title: "{market.cabricality.bee.title}"
 			icon: "minecraft:bee_nest"
 			x: -2.0d
 			y: -1.0d
-			subtitle: "48 Silver"
+			subtitle: "{market.cabricality.bee.subtitle}"
+			description: ["{market.cabricality.bee.content}"]
 			id: "003E0D1CE60B166A"
 			tasks: [
 				{
 					id: "6837BEE1075CC785"
 					type: "item"
-					icon: "kubejs:silver_coin"
 					item: "kubejs:silver_coin"
 					count: 48L
 				}
 				{
 					id: "3CCE09D1715B54C7"
 					type: "item"
-					title: "Any Flower"
+					title: "{market.cabricality.bee.task.flower.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b

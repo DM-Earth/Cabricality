@@ -2,3 +2,4 @@
 *.mrpack
 /packwiz
 *.zip
+.vscode/settings.json

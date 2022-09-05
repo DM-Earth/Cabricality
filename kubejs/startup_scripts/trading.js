@@ -1,7 +1,7 @@
 let modpackId = "cabricality"
 function tradeList() {
 //	sync needed
-//	profession, modId, item, =itemCount, =silverCoinCount
+//	profession, type, modId, item, =itemCount, =silverCoinCount
 	let tl = [
 //		Farming
 		["farming", "item", "farmersdelight", "carrot_crate", 1, 1],
@@ -165,7 +165,7 @@ onEvent("item.registry", event => {
 	tradeList().forEach(trade => {
 		let isTag = ""
 		if (trade[1] == "tag") isTag = "#"
-		event.create("trade_card_" + trade[3])
+		event.create("trade_card_" + trade[2] + "_" + trade[3])
 			.texture(modpackId + ":/item/trading/trade_card")
 			.displayName("§6Trade Card")
 			.tooltip(`§7${isTag}${trade[2]}:${trade[3]}`)
@@ -177,6 +177,6 @@ onEvent("item.registry", event => {
 		event.create("profession_card_" + profession)
 			.texture(modpackId + ":/item/trading/profession_card")
 			.displayName("§dProfession Card")
-			.tooltip(`${modpackId}:${profession}`)
+			.tooltip(`§7${modpackId}:${profession}`)
 	})
 })
