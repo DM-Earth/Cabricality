@@ -837,7 +837,7 @@
 	"contraption.cabricality.45.4.content" : "6-2, 2x2, 3+1,...? A total of 16 options exist to calculate fours. Choose wisely.",
 
 	"contraption.cabricality.45.5.subtitle": "Contraption 45-5",
-	"contraption.cabricality.45.5.content" : "3+2, 6-1, 8-3,...? A total of 14 options exist to calculate fives. How do you want to do this?\"",
+	"contraption.cabricality.45.5.content" : "3+2, 6-1, 8-3,...? A total of 14 options exist to calculate fives. How do you want to do this?",
 
 	"contraption.cabricality.45.6.subtitle": "Contraption 45-6",
 	"contraption.cabricality.45.6.content" : "3x2, 3+3, 8-2,...? A total of 16 options exist to calculate sixes. May the best be victorious.",
@@ -879,7 +879,7 @@
 
   
   
-	"metallurgy.cabricality.title",: "> Metallurgy",
+	"metallurgy.cabricality.title": "> Metallurgy",
   
 	"metallurgy.cabricality.start.title"   : "Build-a-Processing:",
 	"metallurgy.cabricality.start.subtitle"   : "",

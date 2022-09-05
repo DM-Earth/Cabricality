@@ -144,7 +144,7 @@
 			icon: "kubejs:one"
 			x: -1.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.1.title}"
+			subtitle: "{contraption.cabricality.45.1.subtitle}"
 			description: ["{contraption.cabricality.45.1.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -170,7 +170,7 @@
 			icon: "kubejs:two"
 			x: -0.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.2.title}"
+			subtitle: "{contraption.cabricality.45.2.subtitle}"
 			description: ["{contraption.cabricality.45.2.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -196,7 +196,7 @@
 			icon: "kubejs:four"
 			x: 0.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.4.title}"
+			subtitle: "{contraption.cabricality.45.4.subtitle}"
 			description: ["{contraption.cabricality.45.4.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -222,7 +222,7 @@
 			icon: "kubejs:five"
 			x: 1.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.5.title}"
+			subtitle: "{contraption.cabricality.45.5.subtitle}"
 			description: ["{contraption.cabricality.45.5.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -248,7 +248,7 @@
 			icon: "kubejs:six"
 			x: 2.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.6.title}"
+			subtitle: "{contraption.cabricality.45.6.subtitle}"
 			description: ["{contraption.cabricality.45.6.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -274,7 +274,7 @@
 			icon: "kubejs:seven"
 			x: 3.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.7.title}"
+			subtitle: "{contraption.cabricality.45.7.subtitle}"
 			description: ["{contraption.cabricality.45.7.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -300,7 +300,7 @@
 			icon: "kubejs:nine"
 			x: 4.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.9.title}"
+			subtitle: "{contraption.cabricality.45.9.subtitle}"
 			description: ["{contraption.cabricality.45.9.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"
@@ -326,7 +326,7 @@
 			icon: "kubejs:zero"
 			x: 5.5d
 			y: 11.5d
-			subtitle: "{contraption.cabricality.45.0.title}"
+			subtitle: "{contraption.cabricality.45.0.subtitle}"
 			description: ["{contraption.cabricality.45.0.content}"]
 			dependencies: [
 				"5550A3E383EFEC90"

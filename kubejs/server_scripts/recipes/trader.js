@@ -164,7 +164,7 @@ onEvent("recipes", event => {
 	event.remove({ type: IV("infuse") })
 	let professions = []
 	tradeList().forEach(trade => {
-		let tradeCard = "kubejs:trade_card_" + trade[3]
+		let tradeCard = "kubejs:trade_card_" + trade[2] + "_" + trade[3]
 		let professionCard = "kubejs:profession_card_" + trade[0]
 		let itemId = trade[2] + ":" + trade[3]
 		let tradeType = trade[1]

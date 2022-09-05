@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "cabricality:block/accellerator_glass",
+		"0": "cabricality:block/accelerator_glass",
 		"particle": "block/glass"
 	},
 	"elements": [
