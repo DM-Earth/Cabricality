@@ -53,7 +53,7 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 <details><summary>简体中文</summary>
 <p>
 
-# Cabricality（CABF）
+# 永无止境：重缝（CABF）
 
 这是一个基于[机械动力：永无止境（CAB）](https://github.com/simibubi/Above-and-Beyond)的整合包，在**Fabric 1.18.2**运行，并使用**机械动力 0.5。**
 
