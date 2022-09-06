@@ -16,6 +16,7 @@
 			x: -3.5d
 			y: -5.0d
 			shape: "hexagon"
+			subtitle: "{welcome.cabricality.limitless.subtitle}"
 			description: [
 				"{welcome.cabricality.limitless.content}"
 			]
@@ -45,9 +46,8 @@
 			x: -3.5d
 			y: -2.5d
 			shape: "hexagon"
-			description: [
-				"{welcome.cabricality.optional.content}"
-			]
+			subtitle: "{welcome.cabricality.optional.subtitle}"
+			description: ["{welcome.cabricality.optional.content}"]
 			hide_dependency_lines: true
 			dependencies: ["09356B3BEF298E06"]
 			size: 1.5d
@@ -65,9 +65,7 @@
 			y: -1.0d
 			shape: "hexagon"
 			subtitle: "{welcome.cabricality.i.subtitle}"
-			description: [
-				"{welcome.cabricality.i.content}"
-			]
+			description: ["{welcome.cabricality.i.content}"]
 			dependencies: ["69D55492A8F42A94"]
 			size: 1.5d
 			id: "407236D2B1D2257D"
@@ -88,9 +86,8 @@
 			x: -3.5d
 			y: 0.5d
 			shape: "hexagon"
-			description: [
-				"{welcome.cabricality.ii.content}"
-			]
+			subtitle: "{welcome.cabricality.ii.subtitle}"
+			description: ["{welcome.cabricality.ii.content}"]
 			dependencies: ["407236D2B1D2257D"]
 			size: 1.5d
 			id: "2C7ADB6C11B918B1"
@@ -111,9 +108,8 @@
 			x: -2.0d
 			y: 1.0d
 			shape: "hexagon"
-			description: [
-				"{welcome.cabricality.iii.content}"
-			]
+			subtitle: "{welcome.cabricality.iii.subtitle}"
+			description: ["{welcome.cabricality.iii.content}"]
 			dependencies: ["2C7ADB6C11B918B1"]
 			size: 1.5d
 			id: "1947C6CE179EBAC6"
@@ -134,9 +130,8 @@
 			x: -0.5d
 			y: 0.5d
 			shape: "hexagon"
-			description: [
-				"{welcome.cabricality.iv.content}"
-			]
+			subtitle: "{welcome.cabricality.iv.subtitle}"
+			description: ["{welcome.cabricality.iv.content}"]
 			dependencies: ["1947C6CE179EBAC6"]
 			size: 1.5d
 			id: "58E38BA6D927409F"
@@ -157,9 +152,7 @@
 			x: -1.5d
 			y: -1.5d
 			shape: "hexagon"
-			description: [
-				"{welcome.cabricality.overview.content}"
-			]
+			description: ["{welcome.cabricality.overview.content}"]
 			dependencies: ["58E38BA6D927409F"]
 			size: 1.5d
 			id: "00003FCBB33E62C4"
@@ -174,7 +167,7 @@
 			}]
 		}
 		{
-			title: "&f&l{welcome.cabricality.go.title}"
+			title: "{welcome.cabricality.go.title}"
 			icon: "minecraft:gold_block"
 			disable_toast: true
 			x: 2.0d
