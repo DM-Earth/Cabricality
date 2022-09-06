@@ -376,4 +376,34 @@ onEvent("item.modification", event => {
 			item.maxStackSize = 1
 		})
 	});
+	
+	event.modify("indrev:steel_hoe", item => {
+		item.fireResistant = true
+		item.setAttackDamage(1)
+		item.setAttackSpeed(3.5)
+	})
+	
+	event.modify("indrev:steel_shovel", item => {
+		item.fireResistant = true
+		item.setAttackDamage(5)
+		item.setAttackSpeed(1)
+	})
+	
+	event.modify("indrev:steel_axe", item => {
+		item.fireResistant = true
+		item.setAttackDamage(10)
+		item.setAttackSpeed(0.9)
+	})
+	
+	event.modify("indrev:steel_pickaxe", item => {
+		item.fireResistant = true
+		item.setAttackDamage(4.5)
+		item.setAttackSpeed(1.2)
+	})
+	
+	event.modify("indrev:steel_sword", item => {
+		item.fireResistant = true
+		item.setAttackDamage(8)
+		item.setAttackSpeed(1.3)
+	})
 })
