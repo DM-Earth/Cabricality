@@ -49,6 +49,7 @@
 	"market.cabricality.title": "&6> Market",
   
 	"market.cabricality.start.title"   : "&6&lThe Market",
+	"market.cabricality.start.subtitle": "Here, you can even buy...",
 	"market.cabricality.start.content" : "&6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets.\n\nHave a look around. I'm sure you'll find something of use.",
 	"market.cabricality.start.task.checkmark.title": "Checkmark",
   
@@ -61,79 +62,79 @@
 	"market.cabricality.exchange.silver.content" : "Here you can exchange a Gold Coin back to a Stack of Silver.",
   
 	"market.cabricality.saw.title"   : "Saw Everything",
-	"market.cabricality.saw.subtitle": "3 Gold - I just saw it!...Wait what?",
+	"market.cabricality.saw.subtitle": "&63 Gold&r - I just saw it!...Wait what?",
 	"market.cabricality.saw.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms.&r",
   
 	"market.cabricality.screwdriver.title"   : "Never Screwed",
-	"market.cabricality.screwdriver.subtitle": "5 Gold - So does the screwer.",
+	"market.cabricality.screwdriver.subtitle": "&65 Gold&r - So does the screwer.",
 	"market.cabricality.screwdriver.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms.&r",
   
 	"market.cabricality.resonator.title"   : "Magnetic Energetic",
-	"market.cabricality.resonator.subtitle": "5 Gold - Copy \\& Paste!",
+	"market.cabricality.resonator.subtitle": "&67 Gold&r - Copy \\& Paste!",
 	"market.cabricality.resonator.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms.&r",
   
 	"market.cabricality.flash_drive.title"   : "Windows Update",
-	"market.cabricality.flash_drive.subtitle": "11 Gold - Time to update your XP!",
+	"market.cabricality.flash_drive.subtitle": "&611 Gold&r - Time to update your XP!",
 	"market.cabricality.flash_drive.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms.&r",
   
 	"market.cabricality.sleepless.title"   : "Sleepless",
-	"market.cabricality.sleepless.subtitle": "10 Silver - Without nightmares!",
+	"market.cabricality.sleepless.subtitle": "&710 Silver&r - Without nightmares!",
 	"market.cabricality.sleepless.content" : "Your last resort in case the sundown beat you to it.",
   
 	"market.cabricality.locator.title"   : "Fortress Locator",
-	"market.cabricality.locator.subtitle": "2 Gold - You literally did that??",
+	"market.cabricality.locator.subtitle": "&62 Gold&r - You literally did that??",
 	"market.cabricality.locator.content" : "Aimlessly traversing the nether is just the worst. This wonderful gadget will point you in the correct direction at all times.",
   
 	"market.cabricality.dinner.title"   : "Corporate Dinner",
-	"market.cabricality.dinner.subtitle": "10 Silver - Swept back hunger and be yourself!",
+	"market.cabricality.dinner.subtitle": "&710 Silver&r - Swept back hunger and be yourself!",
 	"market.cabricality.dinner.content" : "Sometimes you have to treat yourself and the co-workers to a nice meal.",
   
 	"market.cabricality.landfill.title"   : "Landfill Pickup",
-	"market.cabricality.landfill.subtitle": "15 Silver - Dirt, dirt, dirt.",
+	"market.cabricality.landfill.subtitle": "&715 Silver&r - Dirt, dirt, dirt.",
 	"market.cabricality.landfill.content" : "Early on it might help to import some dirt for base building.",
   
 	"market.cabricality.test_of_patience.title"   : "Test of Patience",
-	"market.cabricality.test_of_patience.subtitle": "50 Silver - Ehhhh, try refreshing the site?",
+	"market.cabricality.test_of_patience.subtitle": "&750 Silver&r - Ehhhh, try refreshing the site?",
 	"market.cabricality.test_of_patience.content" : "This mysterious fellow is offering a puzzle box with seemingly endless layers of depth. As an expert you know that this can only be finite.\n&7But what will await you at the bottom?",
   
 	"market.cabricality.enderpack.title"   : "Enderpack",
-	"market.cabricality.enderpack.subtitle": "55 Silver - I'm just a burden on your shoulders...",
+	"market.cabricality.enderpack.subtitle": "&755 Silver&r - I'm just a burden on your shoulders...",
 	"market.cabricality.enderpack.content" : "It's like a backpack but classy.",
   
 	"market.cabricality.undying.title"   : "1-Up!",
-	"market.cabricality.undying.subtitle": "60 Silver - Put your VR goggles off!",
+	"market.cabricality.undying.subtitle": "&760 Silver&r - Put your VR goggles off!",
 	"market.cabricality.undying.content" : "",
   
 	"market.cabricality.mob.title"   : "Where Mob?",
-	"market.cabricality.mob.subtitle": "45 Silver - Avada Kedavra!",
+	"market.cabricality.mob.subtitle": "&745 Silver&r - Avada Kedavra!",
 	"market.cabricality.mob.content" : "As seen on TV: This Magical Bell can detect unlit areas around it. Free shipping, bonus cursed campfire. What a Deal!",
   
 	"market.cabricality.express.title"   : "Press Express",
-	"market.cabricality.express.subtitle": "6 Gold - *FBI Express opened the door.",
+	"market.cabricality.express.subtitle": "&66 Gold&r - *FBI Express opened the door.",
 	"market.cabricality.express.content" : "True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!",
   
 	"market.cabricality.gardener.title"   : "Gardener's Starter Pack",
-	"market.cabricality.gardener.subtitle": "24 Silver - Forget me not.",
+	"market.cabricality.gardener.subtitle": "&724 Silver&r - Forget me not.",
 	"market.cabricality.gardener.content" : "",
   
 	"market.cabricality.painter.title"   : "Painter's Starter Kit",
-	"market.cabricality.painter.subtitle": "24 Silver - Without courses.",
+	"market.cabricality.painter.subtitle": "&724 Silver&r - Without courses.",
 	"market.cabricality.painter.content" : "",
   
 	"market.cabricality.steamer.title"   : "Steamer's Collection",
-	"market.cabricality.steamer.subtitle": "24 Silver - Drive the car, the well-steamed car.",
+	"market.cabricality.steamer.subtitle": "&724 Silver&r - Drive the car, the well-steamed car.",
 	"market.cabricality.steamer.content" : "",
   
 	"market.cabricality.pet_owner.title"   : "Pet Owner's Starter Pack",
-	"market.cabricality.pet_owner.subtitle": "24 Silver - Let's be lonely together...",
+	"market.cabricality.pet_owner.subtitle": "&724 Silver&r - Let's be lonely together...",
 	"market.cabricality.pet_owner.content" : "",
   
 	"market.cabricality.leaf.title"   : "Instant Aesthetics",
-	"market.cabricality.leaf.subtitle": "24 Silver - I had a dream..",
+	"market.cabricality.leaf.subtitle": "&724 Silver&r - I had a dream..",
 	"market.cabricality.leaf.content" : "Not too stoked with your facade? Not a problem! Foliage solves everything.",
   
 	"market.cabricality.bee.title"   : "No, Not The Bees!",
-	"market.cabricality.bee.subtitle": "48 Silver - Bee and Pig = Big and.. Nothing.",
+	"market.cabricality.bee.subtitle": "&748 Silver&r - Bee and Pig = Big and.. Nothing.",
 	"market.cabricality.bee.content" : "",
 	"market.cabricality.bee.task.flower.title": "Any Flower",
   

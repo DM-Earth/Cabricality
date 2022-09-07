@@ -14,6 +14,7 @@
 			x: -6.0d
 			y: -4.0d
 			shape: "hexagon"
+			subtitle: "{market.cabricality.start.subtitle}"
 			description: ["{market.cabricality.start.content}"]
 			size: 2.0d
 			id: "0F870BEA235D662D"
