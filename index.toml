@@ -1418,7 +1418,7 @@ hash = "326923296bf29d6b38281604f0fe2701f792f575513c6f4dcbe605d46824d0ef"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/minecraft/texts/splashes.txt"
-hash = "7d3a342f929854202c8d74efc1d24a32de7d0a9217af09bc14188aa974d35129"
+hash = "b07e682f49225e8b8b908204fd0fa365eef8ba644b92638cc24def01a0db2237"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/minecraft/textures/block/deepslate_iron_ore.png"
