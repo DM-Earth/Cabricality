@@ -46,15 +46,15 @@ hash = "684a97145572aba3c5dc320716c6cb66ff36180ae8f149b9d60249414c83d309"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advancements.snbt"
-hash = "52111f2ef62b63ac50fd870f37216410d63a2bb16999971159836f911626d4f6"
+hash = "f3393e811abe84520a6f993754971f51aea85ea1b68008c656b9b18f26dce139"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "85e4c5aff9e9069fae85a42b0c4676097eaabed00eb37331aa1f3d03c4c07c5b"
+hash = "ac8d675b3590c093070dd95c27c6962aa88a046114dbc5cd9d3f0c54fb5f15a5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "797de943e603abc89c67376a4c45ffeed524b0c9bef06fe9611928840e883d52"
+hash = "f5ea83b8cf819b21849112c4c2ad050d1255a4d4d143e85c828189e16ccac700"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
@@ -66,23 +66,23 @@ hash = "c02e13ff19040eb1be1c973216f7eab4a799587479c62d5ebf6a5b41f42a5066"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_2.snbt"
-hash = "2ff40b862562a4d949f2e41353eebb45efe47ebbc9f7288f52fe71c98393acef"
+hash = "a24a78af38d8ce6ef5c4194def57bec4a10ffb2d5ea4ad0d472cacab1d978ce8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_3.snbt"
-hash = "04ac874734438bef5b0c99ed29649ce1739cb87e13acf7f1fbd55fcb9d2511f5"
+hash = "42296cc2ddc713412e6711316684025288ccbabcff2fa1249105c53ed618b957"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
 hash = "1418234905976ae8d233b665cb1dad96a039ffb89dbb81e185b8ddc462222bb8"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/stage_4b.snbt"
-hash = "8c70bc92a5747c7009eaa15fe313203d259c6ef639dfdc161ea5f2a6d8d7a411"
+file = "config/ftbquests/quests/chapters/stage_4a.snbt"
+hash = "7fc38e29b0f9498fdd46db9104f39d89f13b06316961c57711d200fb49788a65"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "504faec5b12e27c33d70985d323e69278be6a963303bab1f77c2037e1ab676d3"
+hash = "48152ca7a9dbca4cd035ab79daaba599869f0f84158ab7cdcea0bd65793b7b60"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
@@ -90,7 +90,7 @@ hash = "947f2e2009a996462a58e68dbd3f88a60ebd7e35c84f5932f5335d41d687f7ec"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "0ac1eb679d01bc6a00414c9b59a6a46998d6d7f49c3ab5a1ce71c541a24a6486"
+hash = "3f8bf69f3b18d5df3f4a2a7f500a63cd1f89d3850935b6291e3048848c965d8c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -125,8 +125,8 @@ file = "config/openloader/advanced_options.json"
 hash = "97c64147276f55cad728249dd77602661e2327fa178aeb8e0db12866df448211"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/accellerator.json"
-hash = "a1165287ce21e5883f13c4a8ad0b67ea615e49f066e355fd7cf071089ab69614"
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/accelerator.json"
+hash = "4311ab21335117bbb9f8f4b36bee9affbedd5d0e20c8c2b38b5848c00c26fd0c"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/casing/enderium_casing.json"
@@ -213,7 +213,7 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/t
 hash = "ada86d1570e9b9e16bb8984f1a85fadf3d6e771bd6ab3df7b3d9de2b2095fa8a"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/accellerator_glass.png"
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/accelerator_glass.png"
 hash = "3af027e294d37f3b8ed0d240bc3c4a257570a6d4ca3836974e8696570ffb83ff"
 
 [[files]]
@@ -741,276 +741,40 @@ file = "config/openloader/resources/cabf-assets/pack.mcmeta"
 hash = "7af188485bb933f8bc342b061dbdd9817cbb0017658146a8e59df8c069b86c40"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag.json"
-hash = "851a42ac241d1dab0df5ae5be00966f9c45ce5e560300d17539aa8f95c1a992b"
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/iron_pillar.json"
+hash = "651d4e7e6fab88cc63e003842777b42df8825b7e920296c92e829ff3d4e51d30"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_blue.json"
-hash = "9bfd77c8a57e0b01b534b4feb66174ba002ac4a31e6afca1c4d81ca53e7f899e"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_brown.json"
-hash = "25fefc1b9820eb5939be0bbf5793f594cddf753aa6cbd7cbcda4d0997ae028f5"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_cyan.json"
-hash = "e57a61b288560d2391c70295f271c34531ceae26720b273ef5c7f520248ce6ad"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_gray.json"
-hash = "caab754bac3be6cb2278b2359bf7110603eb22b94925e7b80d4e6583d945d79a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_green.json"
-hash = "a78002cfed5d5b8e18c9feb23dac243bf366673e1a4c6b83431cd25b3ed55779"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_light_blue.json"
-hash = "79b2c713083008a63cd7aa2ba0f6f0db94753ba229aaaaf1466941a9132907c8"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_lime.json"
-hash = "68d91f149a117f7eaceda33236504b62859b98be1e19bf261765b30a31e214e5"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_magenta.json"
-hash = "7b2bfc6d1dc189b89d182ecabf83963a2eac7c4b8d109b6e50bcb25fc91d140e"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_orange.json"
-hash = "ecbfbfcd0a82272fbb72654785fd1025abe0c3352d5670ad76def96701e3696f"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_pink.json"
-hash = "784a5319a18c612169df9e09ac87d3501ad2c194f696e69ffe8fc3fbba5a9aa3"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_purple.json"
-hash = "927b36954f5f3b7445a60cdde55a25f6449df6100c5923e846fb818c7985cd3e"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_red.json"
-hash = "2172bd57da7f7bbb6df7138ccc29550514697befcf19d6ef1d09a6f62d3a3f0c"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/flag_yellow.json"
-hash = "e6a950b62a08220cc55c5383ee75c47cae1874d795601402914324e3ae5c7090"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/blockstates/rocket_launch_pad.json"
-hash = "5686ec27cccdc425729b5a2b69ba67f4d8866eb349bf34505d9821722b42d62a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag.json"
-hash = "90016871602d57af1de216dc93b3af34803593781b5b81c241252586246ed3df"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_blue.json"
-hash = "73022ead96f5f86a4e38c2102bb8f0793579627298597aeafa29084a1d8e5375"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_brown.json"
-hash = "881b8b2a42c643f54b567fb55a614eb77ec5e0407dbe527f5cb663a677157bf6"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_cyan.json"
-hash = "625613af961d4ddacfceb0c4abc1986292a175edef1b8998d6ad00e53618ec94"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down.json"
-hash = "874f2d73f4d22948203e7ecb88d24e00719b7dacf23be38bf48bfa7b93840a8a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_blue.json"
-hash = "3ee9e5700cca190110901fc934cb6553bc675bd7be58f5933fe5845e163019ea"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_brown.json"
-hash = "9dc020d49a23e50d8c14fbc2985040e8fad222d875c5566d449dc43e382e42d9"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_cyan.json"
-hash = "9b9a1cb9176157b7d49226364b6abbdf5928041ce84e4be799aa58007d945643"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_gray.json"
-hash = "57d42170ad84a705724050f043df7501bfdaaab9664ee9bfafb247f42536c484"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_green.json"
-hash = "b95eee5b4d9b1e00a8c5a1183ae322665a1fbab71eb2ed8b2bcb3530f86ad090"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_light_blue.json"
-hash = "309f33bdc8db324a2817153b7086a09d51025e20189213538c9d6d07e46b17fb"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_lime.json"
-hash = "b19dd7c6fb06df76c9fe90bb3c3b785fd92fffbf575d81be4061c7725fdb724c"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_magenta.json"
-hash = "d17fa71ade2287aba97ad06a15dd0be3508894a7fae045abb364e9c018801465"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_orange.json"
-hash = "2a49d8bcc3b9e18df760191c924185caf3861a91eb1bf0517ace95b32ea9fe32"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_pink.json"
-hash = "7315ed9cbf3c16bb32eaf70eb8c4e30c6b07bbbce6282a81ede3f92db04b8a54"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_purple.json"
-hash = "09460de8b01bb6260b0d4a02ec765bf505b7e67bcd611d9cc83465c74cc357cd"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_red.json"
-hash = "510a9196a9ad98ade09b3ec639d06f3be413b2b6f40c74db14b6d85cd1942189"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_down_yellow.json"
-hash = "3677642986e274f690b6ad604d36bce780b25e705a2e8e8fdbe0912545bb085e"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_gray.json"
-hash = "c50f5f784a3ebf390bae24590285f4c2370ca0de9a214427168e6330e7dfae30"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_green.json"
-hash = "22a4ea98bdda15bc111530001ce782b25d842f687d0c827f80253198cdf3fe2f"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_light_blue.json"
-hash = "1b6ed458a40357b003b3b4a7ea50a08e72166dee962209fed7ccbba90a17e249"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_lime.json"
-hash = "0683fc05a78f59b533e2b2f75f7f8ec16a667af24f8c70cb6eaff16c5a309fe7"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_magenta.json"
-hash = "712c5d7934dfb591b259fc2f1567c55bfa091641680e8a7f1dd301b64ae9d786"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_orange.json"
-hash = "f8a64f5151a870b457c5ada7009a87d533156676ad96edef8deb68c1ab00ab28"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_pink.json"
-hash = "9f6b2c65604db7a7d633b6a3dce85306df517f01b99b692912d19929cf8d0ed0"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_purple.json"
-hash = "4b6b87212b62d66077c83535a06467f5a68f494e6ff968c936780cdff27054cc"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_red.json"
-hash = "a61f45c2bc466651a559254cd68b91d378ff94c19adb5677c31ab26185e889b9"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up.json"
-hash = "eb033dac18f02b0a4f75fc0c436d157f2a4e363cd99c73cecfc2a98bc7a92f1e"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_blue.json"
-hash = "bb57a74dc6800651eab7b518e1c61850dfda8494679ae0a1369c58d6829d7d4c"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_brown.json"
-hash = "1a0c09fd78263fd40619666b97ef1d2b0eba9a03d7127dcccc3acb9083687bd4"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_cyan.json"
-hash = "b002fb3f9f125c4d128ea8d1c8b836891f64a4c0aa7ff8f79c39a9f9ce33f506"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_gray.json"
-hash = "fbb0d83ed6e544dbee1eea9a7a0ba7749146a8357fc56e854240a935af2bd5bb"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_green.json"
-hash = "5f81179fdf0c7ba270a15cdfbfede37909830c6f1c541555eafd0ea01de450e0"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_light_blue.json"
-hash = "104315e2b225dfc3b2371347e967ecb6bab146ea186d8d7f1cf7be9d85695b89"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_lime.json"
-hash = "c028abc33cf97b9ea521078da3e8c4950e3f98687efd918f466ba1635ab1dfb3"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_magenta.json"
-hash = "26225bcc8c61dcf7c9f44c87a95e334394ceb8f7e9dba6be09e25df922174871"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_orange.json"
-hash = "4f820a8c46c0a9b1dd1b446ca56cc36d568add6cf998ffca315ece40bcaadb88"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_pink.json"
-hash = "bcccafa5de0c0ed07332ad5765ea7de237ce4cc27a132cd6bb284cd6b8364ec8"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_purple.json"
-hash = "4b9cd9edd039c5c7ae0635b0824b3c4f463cfde60b14e54d883b0ab71ea20e20"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_red.json"
-hash = "a00c2a964053a651f603b6747a8880e1fee7a7212987a0929a4b8c36966b2c3f"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_up_yellow.json"
-hash = "afac0b17e592f9ce0a220c45999bad6b2ff3d6f7dcdf6371f8639e9ee3e58ae6"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/flag_yellow.json"
-hash = "72b719cb3b6326023dbbfb3456587c361c2666007280f39b28c2b8064a90e0de"
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/iron_pillar_horizontal.json"
+hash = "ae12fd33373066aa64cee3b31c34bebb8e9bbc4ffeafb0429382720a18075e4b"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/rocket_launch_pad.json"
-hash = "0759071354c762ef0c2664ea25b396fecb5ad5e05e4551b5ead272517b94d200"
+hash = "47cdf85f2649e6d49dc6976db75e1c151175f2afb4b76fa73c463a3648e5f926"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/rocket_launch_pad_base.json"
-hash = "53f79fd1cdee4c8a12c71856d4197c87e671c2a5c0a46a5eb3d5f99f1594c546"
+hash = "d52fd575b2b3e8d374c26daa466d0142ab07de0c5ce1d99f863596f179c53bf3"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/flag.json"
-hash = "c93f9109581a583b7e6ccb1906921aa09f75f4dc6734c7825404f9ff81dfcd5d"
+hash = "63f398ce43c26b268a6dabcc57c10f8f44cb8a4309c1f80d037153b3821f1e4f"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/flag_down.json"
-hash = "4959c60e7f5cae919c6174660d016ac5e263e4f1e607a7d7f3b3f9b5352a48c4"
+hash = "17c5b1d8c2d8ff7c788672bfa47f6e305d70159f4f3dc4d14907faeeca9208db"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/flag_up.json"
-hash = "70a6f87c4460c6e6b1423e5641535d21c3e1d0f05febd8552b9c2e537b354b8f"
+hash = "ce99cffdbfd101b01d03d4be8e33be0a7ba9f3e37e4e408b66ac2926ea8e9961"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/launch_pad.json"
-hash = "64bd9fcffc1c107d86fdc78eb1976c5a8211ec4ffa0ee9f8f8fbe474ed7b0a8f"
+hash = "524203c5fb715480f1b691e5be1c830abb88d9754afe08f33a32eb46c21d9754"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/launch_pad_base.json"
-hash = "b6a0054f26fb8af07dce2722ec7dc2e85420549e592a78a9b11b5a36f31d0367"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/calorite_block.png"
-hash = "80608a0d566df963d8474a2e64da7244979773b1253d6f447f9d8a06d4621b6f"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/calorite_pillar.png"
-hash = "2e1e0cc89ba5672bf9aad67130f52109291939e9eadcbb152375cf2df3b01746"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/calorite_pillar_top.png"
-hash = "807bcf38c4879a3fde7aa34f8db8816bf3b45c98bca808f63c16322232eace10"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/calorite_plating.png"
-hash = "b06a448bf6efeb85b3dff5bdc16e2b6595cd27760d5f3dfb1975c0f13cf16c88"
+hash = "644f54715fb9950468c0a170b09ec901a54a3d9865904aa57c9b23c0b88a921b"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks.png"
@@ -1023,6 +787,34 @@ hash = "ebf5a733a4432b24fb31844c69002a6b28de3675c7fd2c8f7d0472dcfabe2f52"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks_ctm.png"
 hash = "5905fa2837b324a042cba8e2c91c4bdd2695fac255068a5c0861b36b3915b2b2"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/chiseled_glacio_stone_bricks_ctm.pxd"
+hash = "4e6b7da5bfd8642682379d796588f5bd0a5d2c35c7648bff9c5cbd873b1cf99a"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/desh_block_ctm.pxd"
+hash = "f0ab2c7b3a2180ee9482bb5643586efae201f4162925a008afb79dcbbb383a1d"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/desh_pillar_ctm.pxd"
+hash = "03882ae9c35db7e2c9ab643b79453ab6e06d5cf83bb7d8fd6688d55fc6760a76"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/desh_pillar_top_ctm.pxd"
+hash = "ad3b7a9b00ecf9533d38b238eea3f4aef810956f3be3261f053f375b79558837"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/glacio_pillar_top_ctm.pxd"
+hash = "efe4589f20ec69868aac9e698c5dbacd4e739b8c3eae1f419a0d1d8530e97a82"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/iron_plating.pxd"
+hash = "d35b5864787da3ddece4656cc3f64dc329c5bf76ae7166c1d76124357bfd8a85"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/polished_glacio_stone_ctm.pxd"
+hash = "33b912f4d8e72906f14d4f4009de70ef502b3cd07a451b446d90d8862bafd5cf"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_block.png"
@@ -1115,6 +907,98 @@ hash = "a308b334373031664a13653225ba2138245470f3ee74630e0905865a1836078b"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flag_yellow.png"
 hash = "2052081d0eea5a18f9415cda8600fe4a21265ef5c7d1493fffca88ea6d98cbd1"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/blue_iron_pillar.png"
+hash = "176d4ee59e43115dd52039c1c6cd4183b9c9c6567cc0ce4522072a0c046a548a"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/blue_iron_pillar_top.png"
+hash = "7aa6e3f4c477879e8f9f12e2f4e65fa08c9c472269b450bab68257ec51e20546"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar.pxd"
+hash = "d664a617a72df63a50d0b1c1b2e660147da665897596ba954da6e9d15b3aad43"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar_ctm.pxd"
+hash = "0bb663a8c88825a8b4e7c3ff0540f61e3567f8225c422ed22c83f9399715b947"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar_top.pxd"
+hash = "6553fa7fe0a9be8798716e074a3f8b40e03499162ff1b3abe051a2270dfe84d6"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar_top_ctm.pxd"
+hash = "8ce81a6886c58ee34700fe65027f9b6dca92130ac32e2d6d92bc1073eb0d3331"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar.png"
+hash = "f5611060274877785aad6a981a17ec5d0fd71bd4e03034f5579e16159c80dcdd"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar.png.mcmeta"
+hash = "6eab8bab2b845803e25fd9376c628ca560e940d8b9db8caf6e7567da4386c3a7"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_ctm.png"
+hash = "3656716e33073c1dd330602888e170f5030ba9ccc7471d342b76ece2084510e9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_top.png"
+hash = "e1e08a1b3d56b6173b0640c536af0bd8ef61a3e8d734e13e99aabb5138f1b07b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_top.png.mcmeta"
+hash = "7abf3113d9f057960bc591d1138dd6a558c430b4ae35d1faef803f75138997dd"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar_top_ctm.png"
+hash = "87d7c1ab881b031d6be23944ab4a5796f1f177826de5c1f2b1873c9f694b5665"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/marked_iron_pillar.png"
+hash = "1ca6e3036943942ec5655244b95c8f16ab0abc489a52a6e33f099be7a020229b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/marked_iron_pillar_top.png"
+hash = "85516bad5356ad68acac4db538bb711d1622a6a0e981efe4dc58e6c9d82c65ae"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/data/launch_pad.pxd"
+hash = "b141d225d1e13f67e843eaa36ac3de75f716cdee2a995d3311e8f4443b8e21b4"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/data/launch_pad_ctm.pxd"
+hash = "e2019dab6331600402d3c4492a7814a5817415028845247731130e945c6604bd"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad.png"
+hash = "ed5aab2cf6d3f03d02650668f26fce37b34ba09b9a3ffb691937eaee25c58a79"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad_ctm.png"
+hash = "fb9923d53277a7ea616ee82b53af62f33d81ddd815a5c7739262efff84ad3f2b"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad_silent.png"
+hash = "8f75974fe718ff98c13632ac8ed564715f8d7556c864e389bbbea9f153bcaf59"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad_silent.png.mcmeta"
+hash = "faf4222d47475b637a6413752159323bba05517952c8397529842086acac76fe"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/polished_glacio_stone.png"
+hash = "64b505d326c9592c249fc642b3a86071fd9d48ecca93b7e4ad874700b925dad9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/polished_glacio_stone.png.mcmeta"
+hash = "4d7e14639e54804d8fc20823cf404e2d7a8e1f616cf8d4fa4310c3e12fac05a3"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/polished_glacio_stone_ctm.png"
+hash = "03029fc5ce074ae35c6de4fed62d54511ae4367b643ceb47f7cf854613133a97"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_calorite.png"
@@ -1654,7 +1538,11 @@ hash = "558d6d938191ef00df9c8bcacac9217d6960ab681fa4375916c3113b462801b2"
 
 [[files]]
 file = "kubejs/assets/cabricality/lang/en_us.json"
-hash = "75d7f34a1585349aca57660e8adb80e51f4062848a30c3ac64ee3f0bc553262b"
+hash = "0464114360c7764abaa7cad67560c3ea8a37b9d3b6d360654d958faf643dc262"
+
+[[files]]
+file = "kubejs/assets/cabricality/lang/zh_cn.json"
+hash = "2d52b2665301fe7939f6c467c60e203d4e6f807ac1a67c113e863501b83b06c1"
 
 [[files]]
 file = "kubejs/assets/cabricality/ponder/extractor.nbt"
@@ -1738,11 +1626,11 @@ hash = "5721d741782ac1f39de082d8da74b9a824ecfab2cad9199ae56bdbb5bdb98a1b"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "c4efea73d823ca9865482596ec72f248f00a622e385b3b3fc64344977ccb8aa7"
+hash = "71bbd46a3144793eaabf67402238a6091f7f5852dbb9185d1fb53622795ef089"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/zh_cn.json"
-hash = "8fe6711b87d2c6e169d423c2b99e014d9dd5836a1c4e23af44dcf6e40718b128"
+hash = "93cbdcf3414125a0d88629d55ef8709eaf2b86bf36b9901964c58e153e879e6c"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
@@ -1758,7 +1646,7 @@ hash = "de12df432c9a6af2f364573f21e0ddae87f90dd409eae330e561393e45ad8b99"
 
 [[files]]
 file = "kubejs/client_scripts/pondering/ponder.js"
-hash = "ce2b8f51d431e0f37c55b159ab60a96f4bdcafc7f839783110668fc142dc49a0"
+hash = "beabf145ac6ca4b31c7bd8d563c676cddb99b5454f83779f473c6694fa5e9e14"
 
 [[files]]
 file = "kubejs/data/ad_astra/loot_tables/blocks/deepslate_calorite_ore.json"
@@ -4138,11 +4026,11 @@ hash = "39152eb8651eaf58b5fbec1066abe1237333c6822b1b85ec4f57b6d3709e6716"
 
 [[files]]
 file = "kubejs/server_scripts/machine/extractor.js"
-hash = "34eda147fbf47667dd75eb01841be64ecb9c8060920d4c6ac1dfdd70c2276ba8"
+hash = "d048d8d5b39a54f88555b022fbb5ca66a664d66ac0ba06939ca462a2d459c0fd"
 
 [[files]]
 file = "kubejs/server_scripts/machine/laser.js"
-hash = "7fbdf596466925dcf65dbd3bcbabfeba0887d9094f2281800f544892868cfdea"
+hash = "fa083dcb472da5ff9809725bc6cc47204fbd40f87c13e4b6f591e6b6141ec85e"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_engine.js"
@@ -4166,7 +4054,7 @@ hash = "d9c64b28026f4ae011c795052d0f126e10233a6b2c13e8585a8f889b60e10d36"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/brass.js"
-hash = "fe80467440c02c808d5e466210becbc50bcdce114d796ed8d8849c12788e2809"
+hash = "7932fe055989cb956597a413463e7eb327ca45f4a348ca42ea42e19358222930"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/computer.js"
@@ -4190,7 +4078,7 @@ hash = "d20fab0cf14f002d3f52c123fc52bf29bd81697560049687550bb06c64b1f0da"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/math.js"
-hash = "d6c715a789aa6d1e3e1bec51f72766c46edb03b210d5bad243801f86187f568e"
+hash = "2254d9837212228bdaec3ae9592a79e906a712e3b273211c7e0daae43b371247"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/obsidian.js"
@@ -4202,7 +4090,7 @@ hash = "2b3e7502e5b35ac8c25aae3e7f186bd8f28ee94d337e5536a001441723483b85"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/trader.js"
-hash = "aed35083c65504c00f5bcf2a26069a4b254a3a6080eba6f8f291fc4861b80219"
+hash = "4fdddac6c8c9f2eca2118cdb8d4a9848527f20b9281ae642df2ba0477c7870c4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
@@ -4222,7 +4110,7 @@ hash = "ed6f36f4fe4aa12ee949c3d49b83856c0ca5bdf967b4a609172a66b9a7767deb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/upgrading.js"
-hash = "9749128b7532c870ae8ee5eb364c0e5fc3d5192736eaebea3fdb9c6d3d263c96"
+hash = "57db00a3a13044298ffff46c4edfeecc63d8c871a489cd6c807090f707f28af5"
 
 [[files]]
 file = "kubejs/server_scripts/tags/tags.js"
@@ -4230,23 +4118,19 @@ hash = "b9070aa513c2af121f629de6a6703ca2cdc06fe57e6a90e836f7c2bc5a557629"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
-hash = "c6265aa58ae80ea96c6172d97301ef7d35c708e820cadef3939068aff96a7968"
+hash = "7f942e6382bd5bcdb794861affe1f793776067891c19efe401ee16e6bf39fb56"
 
 [[files]]
 file = "kubejs/startup_scripts/substrates.js"
-hash = "573cdf22100d78ee1d5550f69a63d4b4774aa4f03d2d0e12b29d9af1a8453aed"
+hash = "b2f03fbccc8619df9d20b33aef6fa2e615b03c771c75274b1a1027156d5f066a"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "a968ef8c2a30d2e24e749477ee028d1aada41a145ce8915f70e22156e3677273"
+hash = "42fa8ab159ef0a636a37fd540c3525fcdc2b44cb9c27ab5adbcbece6da408738"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
 hash = "8dc6ad44a6b0bada5533763f0f7526c8b09498f04fd43adef633be0d46841e4f"
-
-[[files]]
-file = "mods/Hephaestus-1.18.2-3.5.1.DEV.b34be4b.jar"
-hash = "888a6d84425e6cc335a1d6a953b4834ad3121df53197a283a03e5da3d5ff88c0"
 
 [[files]]
 file = "mods/ad-astra-fabric.pw.toml"
@@ -4290,7 +4174,7 @@ metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "c7db587d0799043490a1cdc144bbcc7a3ddaaff13e2f5ebbb145b796c1ce7115"
+hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
 metafile = true
 
 [[files]]
@@ -4314,8 +4198,13 @@ hash = "289cf2fb15222b03ed588377b920dcb8dbd8d242b3ea8b76c7e3950925b88d56"
 metafile = true
 
 [[files]]
+file = "mods/create-crystal-clear-fabric.pw.toml"
+hash = "2fc59a70d6d7ea78e162f3bc211504e2c9183fa81d171e3140d154b81ea4ca1b"
+metafile = true
+
+[[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "b0e57da1c9d78a51af4d264396a11ea4cf59d09676042985d4aa53b414ccde09"
+hash = "3d01384f400c6e27910f7a84f4c9d151798db7fe04c60082ace7942ee6e0c8db"
 metafile = true
 
 [[files]]
@@ -4429,7 +4318,7 @@ metafile = true
 
 [[files]]
 file = "mods/item-filters.pw.toml"
-hash = "34c3d305cba253298133e2f9da0da457b2d353cef6bcdd80707a3acfc75bfaf9"
+hash = "18e744fe60ee0536c210e8048c02b6cdca3ae0be3ecac64e1eb5af6598bfdfc7"
 metafile = true
 
 [[files]]
@@ -4524,7 +4413,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "1f1acbbbdfe91f9639c94fb1c9d00588a27f21640eaa3a1e4a9cd8a5f82df222"
+hash = "4567adfe24f6506130ad67d8438405836b210928f393aba910ca7e8d20e59a86"
 metafile = true
 
 [[files]]
@@ -4593,12 +4482,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "9975534254f48f7e67248a5e101a274116b71195e5c383e5a3bcddbd578a86af"
+hash = "92bb438b809e0b9502468a8a7d3f1e13f3174dd4c4fa4c703dbfe4cb488758c6"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "bea28944bbcb4e29ca9812acfdcb039ddac867cf807eb7fdca044224ca51c4f0"
+hash = "e202dbe44c613b66d68040e6e81a60ea3c901a6365787462a05d27a58dfeaeb4"
 metafile = true
 
 [[files]]
