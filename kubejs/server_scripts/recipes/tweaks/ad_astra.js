@@ -97,4 +97,17 @@ onEvent("recipes", event => {
 	ore_map.forEach(mapped => {
 		event.replaceOutput({ type: CR("crushing") }, mapped[0], mapped[1])
 	})
+
+	event.remove({ output: AR("steel_cable") })
+	event.remove({ output: AR("desh_cable") })
+	event.remove({ output: AR("ostrum_fluid_pipe") })
+	event.remove({ output: AR("desh_fluid_pipe") })
+	event.remove({ output: AR("wrench") })
+
+	event.shaped("8x ad_astra:desh_cable", [
+    "PMP"
+  ], {
+    P: KJ("invar_ingot"),
+    M: MC("redstone")
+  })
 })

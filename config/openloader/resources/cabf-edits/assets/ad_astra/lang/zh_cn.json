@@ -1,0 +1,6 @@
+{
+    "advancements.ad_astra.ad_astra.description": "§b搭建一个CNSA工作站以制造火箭",
+    "block.ad_astra.desh_cable": "殷钢能量管道",
+    "block.ad_astra.nasa_workbench": "CNSA工作站",
+    "emi.category.ad_astra.nasa_workbench": "CNSA工作站"
+}

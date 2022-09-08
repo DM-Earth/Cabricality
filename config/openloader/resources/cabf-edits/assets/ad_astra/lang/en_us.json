@@ -1,0 +1,6 @@
+{
+    "advancements.ad_astra.ad_astra.description": "§bConstruct a CNSA Workbench, allowing you to craft rockets",
+    "block.ad_astra.desh_cable": "Invar Energy Pipe",
+    "block.ad_astra.nasa_workbench": "CNSA Workbench",
+    "emi.category.ad_astra.nasa_workbench": "CNSA Workbench"
+}

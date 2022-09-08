@@ -67,12 +67,6 @@ onEvent("recipes", event => {
     Item.of(MC("dead_bush")).withChance(0.05)
   ], "minecraft:red_sand")
 
-  event.shaped("8x indrev:cable_mk1", [
-    "PMP"
-  ], {
-    P: KJ("invar_ingot"),
-    M: MC("redstone")
-  })
   event.shaped(IV("item_pipe_mk1", 8), [
     "PMP"
   ], {

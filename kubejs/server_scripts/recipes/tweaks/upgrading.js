@@ -26,7 +26,7 @@ onEvent("recipes", event => {
 	}
 	upgradeAll(KB("basalt_generator_mkTL"), 1, 4, 5)
 	upgradeAll(KB("cobblestone_generator_mkTL"), 1, 4, 5)
-	upgradeAll(IV("cable_mkTL"), 1, 4, 4)
+	upgradeAll(IV("cable_mkTL"), 1, 0, 4)
 	upgradeAll(IV("item_pipe_mkTL"), 1, 4, 4)
 	upgradeAll(IV("solid_infuser_mkTL"), 1, 4, 4)
 	upgradeAll(IV("fluid_infuser_mkTL"), 1, 4, 4)
