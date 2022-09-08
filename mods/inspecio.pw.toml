@@ -1,0 +1,13 @@
+name = "Inspecio"
+filename = "inspecio-1.4.1+1.18.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/a93H3mKU/versions/1.4.1+1.18/inspecio-1.4.1%2B1.18.jar"
+hash-format = "sha1"
+hash = "886b2d77f495b8725dbd8557fcb6437227e354f9"
+
+[update]
+[update.modrinth]
+mod-id = "a93H3mKU"
+version = "6sfabi0J"
