@@ -4257,11 +4257,6 @@ hash = "ba059fdc06289ebe29bbec223347e1967e1735d31d81773d86381090d9576ebf"
 metafile = true
 
 [[files]]
-file = "mods/fabric-api.pw.toml"
-hash = "d95379da217fbae889dc9b9e66a55d484ee63a28da2ffc9d79bd020cc4e2cc8d"
-metafile = true
-
-[[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "4559f01f8da539982476e058019d8e9b7906f3d9b84f06652b9687cee648515f"
 metafile = true
@@ -4429,6 +4424,11 @@ metafile = true
 [[files]]
 file = "mods/promenade.pw.toml"
 hash = "90c566f04f86546c14ac20a35e45c593a623b862d26e70ad64f3568b3029acb1"
+metafile = true
+
+[[files]]
+file = "mods/qsl.pw.toml"
+hash = "f0f4224d38fbb3f041412465e826ade26094914a20239cd597905cf9598704bd"
 metafile = true
 
 [[files]]
