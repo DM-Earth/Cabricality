@@ -178,7 +178,7 @@
 			}]
 		}
 		{
-			title: "{overview.cabricality.bonus_1a_end.title}"
+			title: "{overview.cabricality.bonus_1a.end.title}"
 			disable_toast: true
 			x: -8.0d
 			y: 2.5d

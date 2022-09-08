@@ -18,30 +18,30 @@
 	"welcome.cabricality.limitless.subtitle": "Be a Good Traveller",
 	"welcome.cabricality.limitless.content" : "This pack is for you.\n\n\nWe hope you'll have a good time with it.\n&7Just enjoy yourself!",
   
-	"welcome.cabricality.optional.title"   : "&fCompletely Optional",
+	"welcome.cabricality.optional.title"   : "&f&lCompletely Optional",
 	"welcome.cabricality.optional.subtitle": "Turing Test",
 	"welcome.cabricality.optional.content" : "The Questing system helps you with the primary customizations of the Modpack: &3Trades&r and the &6Progression of Tech&r\n\nCompleting Quests is not required to progress through the game.",
   
-	"welcome.cabricality.i.title"   : "&fI",
+	"welcome.cabricality.i.title"   : "&f&lI",
 	"welcome.cabricality.i.subtitle": "Introduction",
 	"welcome.cabricality.i.content" : "Modpack Description:\nThe sandbox has been turned upside down - be ready to invent your best Create Contraptions yet.\n&7(Or the first, if you are that brave!)",
   
-	"welcome.cabricality.ii.title"   : "&fII",
+	"welcome.cabricality.ii.title"   : "&f&lII",
 	"welcome.cabricality.ii.subtitle": "Where There's a Will",
 	"welcome.cabricality.ii.content" : "About fifty inventions lie between you and the moon.\n\nThousands of components will flow through the ever-growing sequence of your machines, providing the means to explore the next level of technology.",
   
-	"welcome.cabricality.iii.title"   : "&fIII",
+	"welcome.cabricality.iii.title"   : "&f&lIII",
 	"welcome.cabricality.iii.subtitle": "Tech Expansion",
 	"welcome.cabricality.iii.content" : "Your entire factory will be put to the test as final products flow into the Data Centre, programming the Guidance computer of your Spaceship.\n\nEvery step is different, some may even differ depending on the generation seed of your World.",
   
-	"welcome.cabricality.iv.title"   : "&fIV",
+	"welcome.cabricality.iv.title"   : "&f&lIV",
 	"welcome.cabricality.iv.subtitle": "Shuffle",
 	"welcome.cabricality.iv.content" : "Tired of the grind?\n\nFund the operation with coin provided either from various errands, or your chosen professions.\n\nAutomatically ship produce from your farms or gather other players to aid you in your mission.\n\nThen you can purchase all manner of resources, artifacts and building blocks from the market, making your life just a little bit easier.",
   
-	"welcome.cabricality.overview.title"   : "&6Quest Content Overview",
+	"welcome.cabricality.overview.title"   : "&6&lQuest Content Overview",
 	"welcome.cabricality.overview.content" : "- &6The Bulletin Board&r provides means to earn currency for Trading.\n\nHere you can complete various errands or buy a profession permit for use in the Trading Machine.\n\n- &6The Market&r gives you options to spend your money on a variety of fun and useful items and gadgets.\n\n- &6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine.\n\n- The &3Factory Guide&r provides useful information for the path of Technology and Automation. All challenges to be overcome have been neatly organized into chapters and tasks. It is entirely optional to follow this Guide.\n\n- The Section on &3Metallurgy&r gives an overview of the ways to turn your ore into refined metal. Different paths yield differently.\n\n- &3Lifesavers&r brings a spotlight to all those little utilities that can help you overcome the challenges set before you.",
   
-	"welcome.cabricality.go.title"   : "&fOff you go!",
+	"welcome.cabricality.go.title"   : "&f&l&oOff you go!",
 	"welcome.cabricality.go.content" : "Now that you have an idea of what is new and what is not, settle in and start your Journey.",
   
   
@@ -153,7 +153,7 @@
   
 	"overview.cabricality.chapter_1.start.title"   : "&6&lHigh Aspirations",
 	"overview.cabricality.chapter_1.start.subtitle": "&6Chapter 1",
-	"overview.cabricality.chapter_1.start.content" : "The earliest inventions reveal ones resourcefulness with low level equipment: Auto-Crafting? None. Filtering? Not cheap! Item Transport? May the Belt Spaghetti mesh in your favour.\n\nAfter hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+	"overview.cabricality.chapter_1.start.content" : "The earliest inventions reveal ones resourcefulness with low level equipment: Auto-Crafting? None. Filtering? Not cheap! Item Transport? May the Belt Spaghetti mesh in your favour.\n&7After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
 	"overview.cabricality.chapter_1.start.task.unlock.title": "&6Unlock Chapter 1",
   
 	"overview.cabricality.chapter_1.end.title"   : "&f&lAndesite Machinery",
@@ -163,17 +163,17 @@
   
 	"overview.cabricality.bonus_1a.start.title"   : "&f&lRubber Tycoon",
 	"overview.cabricality.bonus_1a.start.subtitle": "Bonus 1A",
-	"overview.cabricality.bonus_1a.start.content" : "While Copper Machines will definitely be required going forward; full automation of their ingredients is completely optional.\n\nAfter hitting the Checkmark above, additional Quests located in the First Chapter will be revealed.",
-	"overview.cabricality.bonus_1a.start.task.unlock.title": "&4Unlock Bonus 1A",
+	"overview.cabricality.bonus_1a.start.content" : "While Copper Machines will definitely be required going forward; full automation of their ingredients is completely optional.\n&7After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed.",
+	"overview.cabricality.bonus_1a.start.task.unlock.title": "&4Unlock &7Bonus &41A",
   
 	"overview.cabricality.bonus_1a.end.title"   : "&4&lCopper Machinery",
-	"overview.cabricality.bonus_1a.end.subtitle": "&4Challenge",
+	"overview.cabricality.bonus_1a.end.subtitle": "&4Utility",
 	"overview.cabricality.bonus_1a.end.content" : "Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs.\n\nNote that Sealed Mechanisms are an ingredient to nothing else. The main assembly line will continue with Kinetic Mechanisms.",
-	"overview.cabricality.bonus_1a.end.task.complete.title": "&4Complete Bonus 1A",
+	"overview.cabricality.bonus_1a.end.task.complete.title": "&4Complete &7Bonus &41A",
   
 	"overview.cabricality.chapter_2.start.title"   : "&6&lAlluring Expedience",
 	"overview.cabricality.chapter_2.start.subtitle": "&6Chapter 2",
-	"overview.cabricality.chapter_2.start.content" : "The chicken and egg problem remains: in order to automate precision mechanisms for brass equipment more conveniently, having more brass equipment would be really useful!\n\nAfter hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+	"overview.cabricality.chapter_2.start.content" : "The chicken and egg problem remains: in order to automate precision mechanisms for brass equipment more conveniently, having more brass equipment would be really useful!\n&7After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
 	"overview.cabricality.chapter_2.start.task.unlock.title": "&6Unlock Chapter 2",
   
 	"overview.cabricality.chapter_2.end.title"   : "&f&lBrass Machinery",
@@ -183,17 +183,17 @@
   
 	"overview.cabricality.bonus_2a.start.title"   : "&f&lMagmatic Exploits",
 	"overview.cabricality.bonus_2a.start.subtitle": "Bonus 2A",
-	"overview.cabricality.bonus_2a.start.content" : "We need to go Deeper!\nAccess to Zinc Machines will require for some engineering in another dimension. Even if it's literally Hell, a change of scene will always bring forth new ideas and inspiration.\n\nAfter hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed.",
-	"overview.cabricality.bonus_2a.start.task.unlock.title": "&2Unlock Bonus 2A",
+	"overview.cabricality.bonus_2a.start.content" : "We need to go Deeper!\nAccess to Zinc Machines will require for some engineering in another dimension. Even if it's literally Hell, a change of scene will always bring forth new ideas and inspiration.\n&7After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed.",
+	"overview.cabricality.bonus_2a.start.task.unlock.title": "&2Unlock &7Bonus &22A",
   
 	"overview.cabricality.bonus_2a.end.title"   : "&2&lZinc Machinery",
 	"overview.cabricality.bonus_2a.end.subtitle": "&2Utility",
 	"overview.cabricality.bonus_2a.end.content" : "&2Zinc Machines&r are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready.\n\nNote that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms.",
-	"overview.cabricality.bonus_2a.end.task.complete.title": "&2Complete Bonus 2A",
+	"overview.cabricality.bonus_2a.end.task.complete.title": "&2Complete &7Bonus &22A",
   
 	"overview.cabricality.chapter_3.start.title"   : "&6&lThe Catharsis",
 	"overview.cabricality.chapter_3.start.subtitle": "&6Chapter 3",
-	"overview.cabricality.chapter_3.start.content" : "The Groundwork has been laid with all that has been created so far. The pace should really pick up from here.\n\nProducing components for inductive technology relies on very peculiar techniques. Though with all the new equipment ready, automating even the more convoluted interactions should become a cakewalk.\n\nAfter hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+	"overview.cabricality.chapter_3.start.content" : "The Groundwork has been laid with all that has been created so far. The pace should really pick up from here.\n\nProducing components for inductive technology relies on very peculiar techniques. Though with all the new equipment ready, automating even the more convoluted interactions should become a cakewalk.\n&7After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
 	"overview.cabricality.chapter_3.start.task.unlock.title": "&6Unlock Chapter 3",
   
 	"overview.cabricality.chapter_3.end.title"   : "&f&lInvar Machinery",
@@ -203,23 +203,23 @@
   
 	"overview.cabricality.bonus_3a.start.title"   : "&f&lMelting the Funds",
 	"overview.cabricality.bonus_3a.start.subtitle": "Bonus 3A",
-	"overview.cabricality.bonus_3a.start.content" : "The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension.\nIn researching the required technologies, you will find that your hard earned silver suddenly finds a second use..\n\nAfter hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed.",
-	"overview.cabricality.bonus_3a.start.task.unlock.title": "&3Unlock Bonus 3A",
+	"overview.cabricality.bonus_3a.start.content" : "The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension.\nIn researching the required technologies, you will find that your hard earned silver suddenly finds a second use..\n&7After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed.",
+	"overview.cabricality.bonus_3a.start.task.unlock.title": "&3Unlock &7Bonus &33A",
   
 	"overview.cabricality.bonus_3a.end.title"   : "&3&lEnder Machinery",
 	"overview.cabricality.bonus_3a.end.subtitle": "&3Utility",
 	"overview.cabricality.bonus_3a.end.content" : "&3Ender Machines provide not only access to instant Teleportation, but also to the most powerful upgrades for your machines.",
-	"overview.cabricality.bonus_3a.end.task.complete.title": "&3Complete Bonus 3A",
+	"overview.cabricality.bonus_3a.end.task.complete.title": "&3Complete &7Bonus &33A",
   
 	"overview.cabricality.chapter_4.start.title"   : "&6&lInto the Box",
 	"overview.cabricality.chapter_4.start.subtitle": "&6Chapter 4",
-	"overview.cabricality.chapter_4.start.content" : "A new Energy Unit joins the ranks: the production facility for silicon will involve an interplay of thermal induction machinery and the familiar kinetic components.\n\nBetween Flux and Stress, a peculiar innovation in Laser technology will be required to produce some of the ingredients involved.\n\nAfter hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
+	"overview.cabricality.chapter_4.start.content" : "A new Energy Unit joins the ranks: the production facility for silicon will involve an interplay of thermal induction machinery and the familiar kinetic components.\n\nBetween Flux and Stress, a peculiar innovation in Laser technology will be required to produce some of the ingredients involved.\n&7After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar.",
 	"overview.cabricality.chapter_4.start.task.unlock.title": "&6Unlock Chapter 4",
   
 	"overview.cabricality.chapter_4a.start.title"   : "&6&lChaotic Alchemy",
 	"overview.cabricality.chapter_4a.start.subtitle": "Alternative Path",
-	"overview.cabricality.chapter_4a.start.content" : "You'll find that the newly discovered Laser setup has other interesting capabilities.\n\nBehind a bit of science and experimentation lies a way to transmute seemingly unrelated materials between another. The demanded Silicon element is one of them, but which is its counterpart?\n\nAfter hitting the Checkmark above, the alternative fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar. It will still be possible to return to the other chapter.",
-	"overview.cabricality.chapter_4a.start.task.unlock.title": "&6Unlock Chapter 4a",
+	"overview.cabricality.chapter_4a.start.content" : "You'll find that the newly discovered Laser setup has other interesting capabilities.\n\nBehind a bit of science and experimentation lies a way to transmute seemingly unrelated materials between another. The demanded Silicon element is one of them, but which is its counterpart?\n&7After hitting the Checkmark above, the alternative fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar. It will still be possible to return to the other chapter.",
+	"overview.cabricality.chapter_4a.start.task.unlock.title": "&6Unlock Chapter 4 &7Alt",
   
 	"overview.cabricality.chapter_4.end.title"   : "&f&lFluix Machinery",
 	"overview.cabricality.chapter_4.end.subtitle": "Milestone",
@@ -229,11 +229,11 @@
 	"overview.cabricality.chapter_5.start.title"   : "&6&lDivide by Digital",
 	"overview.cabricality.chapter_5.start.subtitle": "&5Finale",
 	"overview.cabricality.chapter_5.start.content" : "The entire factory is started back up for one final sprint. With a steady supply of Calculation Mechanisms, the Digital Infrastructure performs the necessary operations to put together an ideal Trajectory.\n\nWhile this Data Center visibly crunches the numbers, the designated Astronaut starts getting themselves and the spaceship prepared for launch.",
-	"overview.cabricality.chapter_5.start.task.unlock.title": "&6Unlock the Final Chapter",
+	"overview.cabricality.chapter_5.start.task.unlock.title": "&6Unlock the &5Finale",
   
 	"overview.cabricality.chapter_5.end.title"   : "&9&l&o..to a Spacefarer",
 	"overview.cabricality.chapter_5.end.content" : "&oThe Dream of walking the Moon's surface finally came to fruition.\n\n&oWith that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!&r",
-	"overview.cabricality.chapter_5.end.task.complete.title": "&6Complete Chapter 5",
+	"overview.cabricality.chapter_5.end.task.complete.title": "&5Time to Launch!",
   
   
   
