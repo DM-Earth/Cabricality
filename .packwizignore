@@ -4,3 +4,4 @@
 /LICENSE
 *.zip
 /assets/*
+/.vscode/*

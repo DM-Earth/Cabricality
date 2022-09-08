@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".vscode/settings.json"
-hash = "2c3453c998b3673365629896b7c5d6e616838005373ef0752d1e3122c63e8dcf"
-
-[[files]]
 file = "config/cobblegen.json5"
 hash = "aa33f53f02b61ecf9077b8739a29cfbc6d2ccb8e00110192505a523468c6b9ed"
 
@@ -58,7 +54,7 @@ hash = "f5ea83b8cf819b21849112c4c2ad050d1255a4d4d143e85c828189e16ccac700"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "67457905863e25070179e006cf713eaaf3542cf6ef823f78ac6ba0f657775f22"
+hash = "2290336f5d5b742ac625701819e0fe305ab3d3b24e278d08809be724edff52f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -741,6 +737,14 @@ file = "config/openloader/resources/cabf-assets/pack.mcmeta"
 hash = "7af188485bb933f8bc342b061dbdd9817cbb0017658146a8e59df8c069b86c40"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/lang/en_us.json"
+hash = "7efcdcc03ea5f3bd10348c19a984b379010aefa15efb1ce6894afb2d99ecac52"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/lang/zh_cn.json"
+hash = "72033c46b6f7e491d84b5ca00f0f48068cfae61d615f6a3da307b666fc4cc6b2"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/iron_pillar.json"
 hash = "651d4e7e6fab88cc63e003842777b42df8825b7e920296c92e829ff3d4e51d30"
 
@@ -777,6 +781,10 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/lau
 hash = "644f54715fb9950468c0a170b09ec901a54a3d9865904aa57c9b23c0b88a921b"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/cable/desh_cable.png"
+hash = "7ea154a831d8158ad91bc7681f871e9acb4908d6d4b5986d0e00acdfcc4b6068"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks.png"
 hash = "5af47b6166d20d29edb2b8b4617aed168ae7f7a35422a70904c667f554bbc9d7"
 
@@ -787,34 +795,6 @@ hash = "ebf5a733a4432b24fb31844c69002a6b28de3675c7fd2c8f7d0472dcfabe2f52"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/chiseled_glacio_stone_bricks_ctm.png"
 hash = "5905fa2837b324a042cba8e2c91c4bdd2695fac255068a5c0861b36b3915b2b2"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/chiseled_glacio_stone_bricks_ctm.pxd"
-hash = "4e6b7da5bfd8642682379d796588f5bd0a5d2c35c7648bff9c5cbd873b1cf99a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/desh_block_ctm.pxd"
-hash = "f0ab2c7b3a2180ee9482bb5643586efae201f4162925a008afb79dcbbb383a1d"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/desh_pillar_ctm.pxd"
-hash = "03882ae9c35db7e2c9ab643b79453ab6e06d5cf83bb7d8fd6688d55fc6760a76"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/desh_pillar_top_ctm.pxd"
-hash = "ad3b7a9b00ecf9533d38b238eea3f4aef810956f3be3261f053f375b79558837"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/glacio_pillar_top_ctm.pxd"
-hash = "efe4589f20ec69868aac9e698c5dbacd4e739b8c3eae1f419a0d1d8530e97a82"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/iron_plating.pxd"
-hash = "d35b5864787da3ddece4656cc3f64dc329c5bf76ae7166c1d76124357bfd8a85"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/data/polished_glacio_stone_ctm.pxd"
-hash = "33b912f4d8e72906f14d4f4009de70ef502b3cd07a451b446d90d8862bafd5cf"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/desh_block.png"
@@ -1007,6 +987,10 @@ hash = "2ff10c4fcf55a13a53e8955f53f42b5aebfdc8df3c0987a882406f120ea194dd"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_ostrum.png"
 hash = "5cc28ca992224a2791319e42a4e3aca25c2f4e5a0da49cc4f15db4244d24fd38"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/desh_cable.png"
+hash = "7cefa2cedaa8b12d12a0583c38bda2a05f4a16b1ae572b7aabc18f30c46e7851"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/desh_plate.png"
@@ -1538,11 +1522,11 @@ hash = "558d6d938191ef00df9c8bcacac9217d6960ab681fa4375916c3113b462801b2"
 
 [[files]]
 file = "kubejs/assets/cabricality/lang/en_us.json"
-hash = "0464114360c7764abaa7cad67560c3ea8a37b9d3b6d360654d958faf643dc262"
+hash = "3b1e517bf321276b98b9718f1c13c693df161796d82670529ed9ac201d6f3fb9"
 
 [[files]]
 file = "kubejs/assets/cabricality/lang/zh_cn.json"
-hash = "2d52b2665301fe7939f6c467c60e203d4e6f807ac1a67c113e863501b83b06c1"
+hash = "0b30b1a8f7c02cf0b6e1ab3b9aecb31765dcdb9d89b309a280861ca2105e8a1b"
 
 [[files]]
 file = "kubejs/assets/cabricality/ponder/extractor.nbt"
@@ -4094,11 +4078,11 @@ hash = "4fdddac6c8c9f2eca2118cdb8d4a9848527f20b9281ae642df2ba0477c7870c4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
-hash = "4f2587d157265151a5ca592d5130db7b8e5956b01cb2ebb2c9639d503213a234"
+hash = "aa8e1500b934daaf89fc2e91723d2a1ac584f80e0a53d83d9e0f1024a7265ab1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
-hash = "31c6b97897fc9234dec6b15ae7c20ea916e4c6bcbba7a4c05d886abbd8cfb883"
+hash = "38cf7b43e4f7d652e94586dfb413c9ce0da336d1c6d1c635a0c41ced5d88908b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ore_processing.js"
@@ -4110,7 +4094,7 @@ hash = "ed6f36f4fe4aa12ee949c3d49b83856c0ca5bdf967b4a609172a66b9a7767deb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/upgrading.js"
-hash = "57db00a3a13044298ffff46c4edfeecc63d8c871a489cd6c807090f707f28af5"
+hash = "0ea01690637786f78a7b75abc3a07669d5e1000f86b41f5b804093611f3779e8"
 
 [[files]]
 file = "kubejs/server_scripts/tags/tags.js"
@@ -4302,6 +4286,11 @@ hash = "2a746b1f98332f3ff0e4c5e337d20a33c9eacb82ab4e62b24174a816ded2e24b"
 metafile = true
 
 [[files]]
+file = "mods/inspecio.pw.toml"
+hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
+metafile = true
+
+[[files]]
 file = "mods/inventory-profiles-next.pw.toml"
 hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
 metafile = true
@@ -4310,6 +4299,10 @@ metafile = true
 file = "mods/iris.pw.toml"
 hash = "7bc62af50be24f86bf8923bfa40797f58b9c2d2f4550dfa102cdc0952e160e2b"
 metafile = true
+
+[[files]]
+file = "mods/item-filters-fabric-1802.2.7-build.33.jar"
+hash = "083f3d25a0489268eb360f9950a16f5636862a28e4f58ebfebcad651e5143456"
 
 [[files]]
 file = "mods/jade-addons-fabric.pw.toml"
@@ -4357,11 +4350,6 @@ hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
 metafile = true
 
 [[files]]
-file = "mods/logical-zoom.pw.toml"
-hash = "ceb6914dc615c4af05e942bb82011dc7d69f8a5051d35ddbaf958419d04b18a3"
-metafile = true
-
-[[files]]
 file = "mods/mcwifipnp.pw.toml"
 hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
 metafile = true
@@ -4389,6 +4377,11 @@ metafile = true
 [[files]]
 file = "mods/notenoughcrashes.pw.toml"
 hash = "22ead426c002828d3d2f4da9caf5454fabae689bbf4291020919da7909095794"
+metafile = true
+
+[[files]]
+file = "mods/ok-zoomer.pw.toml"
+hash = "d240a40073a8ae5c5f56b4c3cde5d78951ca71dc5b8279f0405f346a537659b7"
 metafile = true
 
 [[files]]
@@ -4473,6 +4466,11 @@ hash = "21caf42aee36ccdd72c0437e7ed6587769630afa49267f59647e75f1274fa8b8"
 [[files]]
 file = "mods/starlight.pw.toml"
 hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
+metafile = true
+
+[[files]]
+file = "mods/trinkets.pw.toml"
+hash = "49f5590e6160266691eaca6948b33a3a2763e590ed4bcf90189f13650066c84e"
 metafile = true
 
 [[files]]

@@ -5,9 +5,9 @@
 
 # Cabricality
 
-[Create: Above and Beyond](https://github.com/simibubi/Above-and-Beyond) but for **Fabric 1.18.2** using **Create 0.5**.
+[Create: Above and Beyond](https://github.com/simibubi/Above-and-Beyond) but for **Quilt 1.18.2** using **Create 0.5**.
 
-Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to Fabric so there're a lot of differences between them.
+Cabricality aims to port the CAB experience to Quilt, but not 1:1 clone it to Quilt so there're a lot of differences between them.
 
 ## Compare Between Original CAB Modpack
 
@@ -55,9 +55,9 @@ Cabricality aims to port the CAB experience to Fabric, but not 1:1 clone it to F
 
 # 永无止境：重缝（CABF）
 
-这是一个基于[机械动力：永无止境（CAB）](https://github.com/simibubi/Above-and-Beyond)的整合包，在**Fabric 1.18.2**运行，并使用**机械动力 0.5。**
+这是一个基于[机械动力：永无止境（CAB）](https://github.com/simibubi/Above-and-Beyond)的整合包，在**Quilt 1.18.2**运行，并使用**机械动力 0.5。**
 
-我们旨在将 CAB 整合包的体验完整地移植到 Fabric 端。比起复制，我们更倾向于二次创作，所以 CABF 与原版 CAB 整合包有许多不同之处，希望你喜欢。
+我们旨在将 CAB 整合包的体验完整地移植到 Quilt 端。比起复制，我们更倾向于二次创作，所以 CABF 与原版 CAB 整合包有许多不同之处，希望你喜欢。
 
 ## CABF 与 CAB 的核心模组对照
 
