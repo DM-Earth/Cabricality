@@ -50,7 +50,7 @@
 	"kubejs.ponder.rocket_tank.header": "制造火箭燃料箱",
 
 	"kubejs.ponder.rocket_tank.text_1": "制造燃料箱的时候，可以考虑从两格高处开始建造",
-	"kubejs.ponder.rocket_tank.text_2": "先放置一层燃料箱等级所对应的材料",
+	"kubejs.ponder.rocket_tank.text_2": "先放置一个燃料箱等级所对应的材料",
 	"kubejs.ponder.rocket_tank.text_3": "然后，用板材将其包裹",
 	"kubejs.ponder.rocket_tank.text_4": "再用柱子扩展容量，并填满燃料",
 	"kubejs.ponder.rocket_tank.text_5": "最后一步，用相同的材料封顶",

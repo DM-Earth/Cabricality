@@ -1,3 +1,6 @@
 {
-  "parent": "ad_astra:custom/launch_pad"
+  "parent": "ad_astra:custom/launch_pad",
+  "textures": {
+	"pad": "ad_astra:block/launch_pad/launch_pad_silent"
+  }
 }

@@ -1,3 +1,7 @@
 {
-  "parent": "ad_astra:custom/launch_pad_base"
+  "parent": "ad_astra:custom/launch_pad_base",
+  "textures": {
+	"pad": "ad_astra:block/launch_pad/launch_pad",
+	"mark": "ad_astra:block/iron_pillars/marked_iron_pillar"
+  }
 }

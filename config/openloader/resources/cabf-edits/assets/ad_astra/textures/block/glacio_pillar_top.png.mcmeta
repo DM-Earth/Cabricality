@@ -1,0 +1,10 @@
+{
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "layer":"SOLID",
+        "textures":[
+            "ad_astra:block/glacio_pillar_top_ctm"
+        ]
+    }
+}

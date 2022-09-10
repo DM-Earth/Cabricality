@@ -1,51 +1,63 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made with Blockbench by KrLite",
+	"textures": {
+		"1": "ad_astra:block/steel_pillar_ctm",
+		"particle": "#0"
+	},
 	"elements": [
 		{
-			"from": [2, 0, 7.5],
-			"to": [3, 16, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [21, 8, 15]},
+			"from": [3, 0, 7],
+			"to": [5, 15, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -15, 0]},
 			"faces": {
-				"north": {"uv": [11, 9, 12, 15], "texture": "#0"},
-				"east": {"uv": [11, 9, 12, 15], "texture": "#0"},
-				"south": {"uv": [11, 9, 12, 15], "texture": "#0"},
-				"west": {"uv": [10, 9, 11, 15], "texture": "#0"},
-				"up": {"uv": [11, 4, 12, 5], "texture": "#0"}
+				"north": {"uv": [14, 0, 15, 7.5], "texture": "#1"},
+				"east": {"uv": [14, 0, 14.5, 7.5], "texture": "#1"},
+				"south": {"uv": [15, 0, 14, 7.5], "texture": "#1"},
+				"west": {"uv": [14.5, 0, 15, 7.5], "texture": "#1"},
+				"up": {"uv": [15, 0, 14, 1], "texture": "#1"}
 			}
 		},
 		{
-			"from": [3, 7, 8],
-			"to": [5, 15, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [20, 23, 15.5]},
+			"from": [5, 0, 7.5],
+			"to": [13, 7, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -15, 0]},
 			"faces": {
-				"north": {"uv": [0, 8, 2, 16], "texture": "#0"},
-				"east": {"uv": [0, 0, 0, 0], "texture": "#0"},
-				"south": {"uv": [2, 8, 0, 16], "texture": "#0"},
-				"west": {"uv": [0, 0, 0, 0], "texture": "#0"},
-				"up": {"uv": [0, 0, 0, 0], "texture": "#0"},
-				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
+				"north": {"uv": [0, 0, 8, 7], "texture": "#0"},
+				"east": {"uv": [15, 0, 16, 7], "texture": "#0"},
+				"south": {"uv": [8, 0, 16, 7], "texture": "#0"},
+				"up": {"uv": [0, 0, 8, 1], "texture": "#0"}
 			}
 		},
 		{
-			"from": [13, 7, 8],
-			"to": [15, 15, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [20, 23, 15.5]},
+			"from": [3, 6.15, 7.7],
+			"to": [5, 14, 8.3],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [3, 14, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 2, 8], "texture": "#0"},
-				"east": {"uv": [0, 0, 0, 0], "texture": "#0"},
-				"south": {"uv": [2, 0, 0, 8], "texture": "#0"},
-				"west": {"uv": [0, 0, 0, 0], "texture": "#0"},
-				"up": {"uv": [0, 0, 0, 0], "texture": "#0"},
-				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
+				"north": {"uv": [0, 0, 1, 8], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 1, 8], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 8], "texture": "#0"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#0"}
 			}
 		},
 		{
-			"from": [5, 7, 8],
-			"to": [13, 15, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [20, 23, 15.5]},
+			"from": [1, 6.75, 7.75],
+			"to": [3, 9, 8.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
 			"faces": {
-				"north": {"uv": [0, 8, 8, 16], "texture": "#0"},
-				"south": {"uv": [8, 8, 0, 16], "texture": "#0"}
+				"north": {"uv": [0, 0, 2, 2.25], "texture": "#0"},
+				"south": {"uv": [14, 0, 16, 2.25], "texture": "#0"},
+				"west": {"uv": [0, 0, 0.5, 2.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, 7.75],
+			"to": [3, 6.75, 8.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
+			"faces": {
+				"north": {"uv": [0, 1.25, 3, 8], "texture": "#0"},
+				"south": {"uv": [13, 1.25, 16, 8], "texture": "#0"},
+				"west": {"uv": [0, 1.25, 1, 8], "texture": "#0"}
 			}
 		}
 	],
@@ -60,12 +72,12 @@
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -61, 0],
-			"translation": [0.25, 1, 0],
+			"translation": [1.5, 0.75, 0],
 			"scale": [0.47695, 0.72695, 0.6]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 105, 0],
-			"translation": [-0.25, 3.25, 0],
+			"rotation": [0, 95, 0],
+			"translation": [1.25, 1.25, 0],
 			"scale": [0.6, 0.6, 0.6]
 		},
 		"ground": {
@@ -84,5 +96,38 @@
 			"translation": [0, -3.25, 0],
 			"scale": [0.5, 0.5, 1]
 		}
-	}
+	},
+	"groups": [
+		{
+			"name": "flag",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "feet",
+					"origin": [3, 12, 8],
+					"color": 0,
+					"children": []
+				},
+				{
+					"name": "supporter",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"children": [0]
+				},
+				{
+					"name": "flag",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"children": [1]
+				},
+				{
+					"name": "identifier",
+					"origin": [3, 31, 8],
+					"color": 0,
+					"children": [2, 3, 4]
+				}
+			]
+		}
+	]
 }
