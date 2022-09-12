@@ -1,5 +1,3 @@
-let modpackId = "cabricality"
-
 let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
 let CR = (id, x) => MOD("create", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
@@ -19,13 +17,13 @@ onEvent("item.registry", event => {
 		let id = name.toLowerCase() + "_mechanism"
 		let incompleteId = "incomplete_" + id
 
-		event.create(id)
-			.texture(modpackId + ":/item/mechanism/" + id)
+		event.create(asIdentifier(id))
+			.texture(asIdentifier("/item/mechanism/" + id))
 			.displayName(localName + " Mechanism")
 			.rarity(rarity ? rarity : RARITY_COMMON)
 
-		event.create(incompleteId)
-			.texture(modpackId + ":/item/mechanism/incomplete/" + incompleteId)
+		event.create(asIdentifier(incompleteId))
+			.texture(asIdentifier("/item/mechanism/incomplete/" + incompleteId))
 			.displayName("Incomplete " + localName + " Mechanism")
 			.rarity(rarity ? rarity : RARITY_COMMON)
 	}
@@ -43,8 +41,8 @@ onEvent("item.registry", event => {
 	let registerMachinePart = (name, localName) => {
 		let id = name.replace(" ", "_").toLowerCase()
 
-		event.create(id)
-			.texture(modpackId + ":/item/machine_part/" + id)
+		event.create(asIdentifier(id))
+			.texture(asIdentifier("/item/machine_part/" + id))
 			.displayName(localName)
 	}
 	let initMachineParts = () => {
@@ -55,8 +53,8 @@ onEvent("item.registry", event => {
 	let registerSaw = (materialName, materialId, durability) => {
 		let id = materialId + "_saw"
 
-		event.create(id)
-			.texture(modpackId + ":item/tool/saw/" + id)
+		event.create(asIdentifier(id))
+			.texture(asIdentifier("item/tool/saw/" + id))
 			.displayName(materialName + " Saw")
 			.maxDamage(durability)
 	}
@@ -74,8 +72,8 @@ onEvent("item.registry", event => {
 	//	Other items
 	let registerTypicalItem = (name, localName) => {
 		let id = name.replace(" ", "_").toLowerCase()
-		event.create(id)
-			.texture(modpackId + ":item/" + id)
+		event.create(asIdentifier(id))
+			.texture(asIdentifier("item/" + id))
 			.displayName(localName)
 	}
 	let initTypicalItems = () => {
@@ -83,8 +81,8 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Rubber", "Rubber")
 		registerTypicalItem("Cured Rubber", "Rubber")
 
-		event.create("screwdriver")
-			.texture(modpackId + ":item/screwdriver")
+		event.create(asIdentifier("screwdriver"))
+			.texture(asIdentifier("item/screwdriver"))
 			.displayName("Reinforced Screwdriver")
 			.maxDamage(512)
 
@@ -128,78 +126,78 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Zinc Sheet", "Zinc Sheet")
 		registerTypicalItem("Matter Plastics", "Matter Plastics")
 
-		event.create("coal_coke")
-			.texture(modpackId + ":item/coal_coke")
+		event.create(asIdentifier("coal_coke"))
+			.texture(asIdentifier("item/coal_coke"))
 			.displayName("Coke")
 			.burnTime(3200)
 
-		event.create("incomplete_coke_chunk")
-			.texture(modpackId + ":item/incomplete_coke_chunk")
+		event.create(asIdentifier("incomplete_coke_chunk"))
+			.texture(asIdentifier("item/incomplete_coke_chunk"))
 			.displayName("Incomplete Coke Chunk")
 
-		event.create("earth_slimy_fern_leaf")
-			.texture(modpackId + ":item/fern/leaf/earth_slimy_fern_leaf")
+		event.create(asIdentifier("earth_slimy_fern_leaf"))
+			.texture(asIdentifier("item/fern/leaf/earth_slimy_fern_leaf"))
 			.displayName("Slimy Fern Leaf")
 
-		event.create("ender_slimy_fern_leaf")
-			.texture(modpackId + ":item/fern/leaf/ender_slimy_fern_leaf")
+		event.create(asIdentifier("ender_slimy_fern_leaf"))
+			.texture(asIdentifier("item/fern/leaf/ender_slimy_fern_leaf"))
 			.displayName("Slimy Fern Leaf")
 
-		event.create("sky_slimy_fern_leaf")
-			.texture(modpackId + ":item/fern/leaf/sky_slimy_fern_leaf")
+		event.create(asIdentifier("sky_slimy_fern_leaf"))
+			.texture(asIdentifier("item/fern/leaf/sky_slimy_fern_leaf"))
 			.displayName("Slimy Fern Leaf")
 
-		event.create("earth_slimy_fern_paste")
-			.texture(modpackId + ":item/fern/paste/earth_slimy_fern_paste")
+		event.create(asIdentifier("earth_slimy_fern_paste"))
+			.texture(asIdentifier("item/fern/paste/earth_slimy_fern_paste"))
 			.displayName("Slimy Fern Paste")
 
-		event.create("ender_slimy_fern_paste")
-			.texture(modpackId + ":item/fern/paste/ender_slimy_fern_paste")
+		event.create(asIdentifier("ender_slimy_fern_paste"))
+			.texture(asIdentifier("item/fern/paste/ender_slimy_fern_paste"))
 			.displayName("Slimy Fern Paste")
 
-		event.create("sky_slimy_fern_paste")
-			.texture(modpackId + ":item/fern/paste/sky_slimy_fern_paste")
+		event.create(asIdentifier("sky_slimy_fern_paste"))
+			.texture(asIdentifier("item/fern/paste/sky_slimy_fern_paste"))
 			.displayName("Slimy Fern Paste")
 
-		event.create("radiant_sheet")
-			.texture(modpackId + ":item/radiant_sheet")
+		event.create(asIdentifier("radiant_sheet"))
+			.texture(asIdentifier("item/radiant_sheet"))
 			.displayName("Radiant Sheet")
 			.glow(true)
 
-		event.create("radiant_coil")
-			.texture(modpackId + ":item/radiant_coil")
+		event.create(asIdentifier("radiant_coil"))
+			.texture(asIdentifier("item/radiant_coil"))
 			.displayName("Radiant Coil")
 			.glow(true)
 
-		event.create("chromatic_resonator")
-			.texture(modpackId + ":item/chromatic_resonator")
+		event.create(asIdentifier("chromatic_resonator"))
+			.texture(asIdentifier("item/chromatic_resonator"))
 			.displayName("Chromatic Resonator")
 			.maxDamage(512)
 
-		event.create("dye_entangled_singularity")
-			.texture(modpackId + ":item/dye_entangled_singularity")
+		event.create(asIdentifier("dye_entangled_singularity"))
+			.texture(asIdentifier("item/dye_entangled_singularity"))
 			.unstackable()
 			.displayName("Dyed Entangled Singularity")
 
-		event.create("flash_drive")
-			.texture(modpackId + ":item/boot_medium")
+		event.create(asIdentifier("flash_drive"))
+			.texture(asIdentifier("item/boot_medium"))
 			.displayName("Flash Drive")
 			.maxDamage(512)
 
-		event.create("crushed_cobalt_ore")
-			.texture(modpackId + ":item/crushed/crushed_cobalt_ore")
+		event.create(asIdentifier("crushed_cobalt_ore"))
+			.texture(asIdentifier("item/crushed/crushed_cobalt_ore"))
 			.displayName("Crushed Cobalt Ore")
 
-		event.create("crushed_desh_ore")
-			.texture(modpackId + ":item/crushed/crushed_desh_ore")
+		event.create(asIdentifier("crushed_desh_ore"))
+			.texture(asIdentifier("item/crushed/crushed_desh_ore"))
 			.displayName("Crushed Desh Ore")
 
-		event.create("crushed_ostrum_ore")
-			.texture(modpackId + ":item/crushed/crushed_ostrum_ore")
+		event.create(asIdentifier("crushed_ostrum_ore"))
+			.texture(asIdentifier("item/crushed/crushed_ostrum_ore"))
 			.displayName("Crushed Ostrum Ore")
 
-		event.create("crushed_calorite_ore")
-			.texture(modpackId + ":item/crushed/crushed_calorite_ore")
+		event.create(asIdentifier("crushed_calorite_ore"))
+			.texture(asIdentifier("item/crushed/crushed_calorite_ore"))
 			.displayName("Crushed Calorite Ore")
 
 		let processors = ["Calculation", "Logic", "Engineering"]
@@ -207,8 +205,8 @@ onEvent("item.registry", event => {
 		processors.forEach(name => {
 			let id = name.toLowerCase()
 			let localName = processorsLocalName[processors.indexOf(name)]
-			event.create("incomplete_" + id + "_processor")
-				.texture(modpackId + ":item/processor/incomplete_" + id + "_processor")
+			event.create(asIdentifier("incomplete_" + id + "_processor"))
+				.texture(asIdentifier("item/processor/incomplete_" + id + "_processor"))
 				.displayName("Incomplete " + localName + " Processor")
 		})
 	}
@@ -224,7 +222,7 @@ onEvent("item.registry", event => {
 	let number = (name, localName) => {
 		let id = name.toLowerCase()
 		event.create(id)
-			.texture(modpackId + ":item/number/" + id)
+			.texture(asIdentifier("item/number/" + id))
 			.displayName(localName)
 			.glow(true)
 	}
@@ -245,18 +243,18 @@ onEvent("item.registry", event => {
 	number("Missingno", "NaN")
 
 	/*
-		event.create("number_array")
-			.texture(modpackId + ":item/number/number_array")
+		event.create(asIdentifier("number_array")
+			.texture(asIdentifier("item/number/number_array")
 			.displayName("Number Array")
 			.glow(true)
 	*/
 
-	event.create('three_cast').texture(modpackId + ":item/cast/three_cast").displayName('Integer Cast (3)').unstackable()
-	event.create('eight_cast').texture(modpackId + ":item/cast/eight_cast").displayName('Integer Cast (8)').unstackable()
-	event.create('plus_cast').texture(modpackId + ":item/cast/plus_cast").displayName('Operator Cast (+)').unstackable()
-	event.create('minus_cast').texture(modpackId + ":item/cast/minus_cast").displayName('Operator Cast (-)').unstackable()
-	event.create('multiply_cast').texture(modpackId + ":item/cast/multiply_cast").displayName('Operator Cast (×)').unstackable()
-	event.create('divide_cast').texture(modpackId + ":item/cast/divide_cast").displayName('Operator Cast (÷)').unstackable()
+	event.create(asIdentifier("three_cast")).texture(asIdentifier("item/cast/three_cast")).displayName("Integer Cast (3)").unstackable()
+	event.create(asIdentifier("eight_cast")).texture(asIdentifier("item/cast/eight_cast")).displayName("Integer Cast (8)").unstackable()
+	event.create(asIdentifier("plus_cast")).texture(asIdentifier("item/cast/plus_cast")).displayName("Operator Cast (+)").unstackable()
+	event.create(asIdentifier("minus_cast")).texture(asIdentifier("item/cast/minus_cast")).displayName("Operator Cast (-)").unstackable()
+	event.create(asIdentifier("multiply_cast")).texture(asIdentifier("item/cast/multiply_cast")).displayName("Operator Cast (×)").unstackable()
+	event.create(asIdentifier("divide_cast")).texture(asIdentifier("item/cast/divide_cast")).displayName("Operator Cast (÷)").unstackable()
 })
 
 onEvent("block.registry", event => {
@@ -264,7 +262,7 @@ onEvent("block.registry", event => {
 	let registerMachine = (name, localName, layer) => {
 		let id = name.toLowerCase() + "_machine"
 		event.create(id)
-			.model(modpackId + ":block/machine/" + id)
+			.model(asIdentifier("block/machine/" + id))
 			.material("lantern")
 			.hardness(3.0)
 			.displayName(localName + " Machine")
@@ -284,7 +282,7 @@ onEvent("block.registry", event => {
 	let registerCasing = (name, localName) => {
 		let id = name.toLowerCase() + "_casing"
 		event.create(id)
-			.model(modpackId + ":block/casing/" + id)
+			.model(asIdentifier("block/casing/" + id))
 			.material("metal")
 			.hardness(3.0)
 			.displayName(localName + " Casing")
@@ -296,8 +294,8 @@ onEvent("block.registry", event => {
 	registerCasing("Zinc", "Zinc")
 	registerCasing("Enderium", "Enderium")
 
-	event.create("computation_matrix")
-		.model(modpackId + ":block/computation_matrix")
+	event.create(asIdentifier("computation_matrix"))
+		.model(asIdentifier("block/computation_matrix"))
 		.material("metal")
 		.hardness(3.0)
 		.displayName("Computation Matrix")
@@ -305,66 +303,66 @@ onEvent("block.registry", event => {
 })
 
 onEvent("fluid.registry", event => {
-	event.create("resin")
+	event.create(asIdentifier("resin"))
 		.displayName("Resin")
 		.thinTexture(0xaf7519)
 
-	event.create("redstone")
+	event.create(asIdentifier("redstone"))
 		.displayName("Redstone")
 		.thinTexture(0x850b0e)
 		.noBlock()
 
-	event.create("sky_stone")
+	event.create(asIdentifier("sky_stone"))
 		.displayName("Sky Stone")
 		.thinTexture(0x404344)
 		.noBlock()
 
-	event.create("waste")
+	event.create(asIdentifier("waste"))
 		.displayName("Waste")
 		.thinTexture(0x123d36)
 		.noBlock()
 
-	event.create("powered_water")
+	event.create(asIdentifier("powered_water"))
 		.displayName("Powered Water")
 		.thinTexture(0x76d0f9)
 
-	event.create("coke")
+	event.create(asIdentifier("coke"))
 		.displayName("Coke")
 		.thinTexture(0x323232)
 		.noBlock()
 
-	event.create("fine_sand")
+	event.create(asIdentifier("fine_sand"))
 		.displayName("Fine Sand")
 		.thickTexture(0xded6a4)
 		.noBlock()
 
 	let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
-	event.create("raw_logic")
+	event.create(asIdentifier("raw_logic"))
 		.displayName("Liquified Logic (Unprocessed)")
 		.thinTexture(0xE7FFCB)
 		.noBlock()
 
 	for (let i = 0; i < 10; i++) {
-		event.create("number_" + i)
+		event.create(asIdentifier("number_" + i))
 			.displayName("Liquified Computation (" + i + ")")
 			.thinTexture(colors[i])
 			.noBlock()
 			.noBucket()
 	}
-	event.create("matrix")
+	event.create(asIdentifier("matrix"))
 		.displayName("Liquified Computation Matrix")
 		.thinTexture(colors[0])
 		.noBlock()
 
-	event.create("molten_desh")
+	event.create(asIdentifier("molten_desh"))
 		.displayName("Molten Desh")
 		.thickTexture(0xc88448)
 
-	event.create("molten_ostrum")
+	event.create(asIdentifier("molten_ostrum"))
 		.displayName("Molten Ostrum")
 		.thickTexture(0x6c4c59)
 
-	event.create("molten_calorite")
+	event.create(asIdentifier("molten_calorite"))
 		.displayName("Molten Calorite")
 		.thickTexture(0x931d3b)
 })

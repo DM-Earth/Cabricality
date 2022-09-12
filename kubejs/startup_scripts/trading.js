@@ -1,4 +1,3 @@
-let modpackId = "cabricality"
 function tradeList() {
 //	sync needed
 //	profession, type, modId, item, =itemCount, =silverCoinCount
@@ -165,8 +164,8 @@ onEvent("item.registry", event => {
 	tradeList().forEach(trade => {
 		let isTag = ""
 		if (trade[1] == "tag") isTag = "#"
-		event.create("trade_card_" + trade[2] + "_" + trade[3])
-			.texture(modpackId + ":/item/trading/trade_card")
+		event.create(asIdentifier("trade_card_" + trade[2] + "_" + trade[3]))
+			.texture(asIdentifier("/item/trading/trade_card"))
 			.displayName("§6Trade Card")
 			.tooltip(`§7${isTag}${trade[2]}:${trade[3]}`)
 		if (professions.includes(trade[0]) != true) {
@@ -174,8 +173,8 @@ onEvent("item.registry", event => {
 		}
 	})
 	professions.forEach(profession => {
-		event.create("profession_card_" + profession)
-			.texture(modpackId + ":/item/trading/profession_card")
+		event.create(asIdentifier("profession_card_" + profession))
+			.texture(asIdentifier("/item/trading/profession_card"))
 			.displayName("§dProfession Card")
 			.tooltip(`§7${modpackId}:${profession}`)
 	})
