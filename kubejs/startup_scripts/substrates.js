@@ -32,7 +32,7 @@ onEvent("block.registry", event => {
       name: name
     }
     current_category.push({
-      id: "kubejs" + `:substrate_${id}`,
+      id: asIdentifier(`substrate_${id}`),
       ingredient: ingredient,
       outputItem: outputItem
     })
@@ -86,10 +86,10 @@ onEvent("block.registry", event => {
   category()
   //	reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§cCinnabar", "thermal:cinnabar")
   reagent(0x335DC1, 0x7395E7, "lapis", "Lapis Lazuli", "§1Lapis Lazuli§r", "minecraft:lapis_lazuli")
-  reagent(0x00A82B, 0xADFACB, "emerald", "Emerald", "§2Emerald§r", "kubejs:emerald_dust")
-  reagent(0x20C3B3, 0xD2FCF3, "diamond", "Diamond", "§bDiamond§r", "kubejs:diamond_dust")
-  reagent(0x9D0A33, 0xFB7B71, "ruby", "Ruby", "§cRuby§r", "kubejs:ruby")
-  reagent(0x246BE9, 0x76C6FC, "sapphire", "Sapphire", "§9Sapphire§r", "kubejs:sapphire")
+  reagent(0x00A82B, 0xADFACB, "emerald", "Emerald", "§2Emerald§r", asIdentifier("emerald_dust"))
+  reagent(0x20C3B3, 0xD2FCF3, "diamond", "Diamond", "§bDiamond§r", asIdentifier("diamond_dust"))
+  reagent(0x9D0A33, 0xFB7B71, "ruby", "Ruby", "§cRuby§r", asIdentifier("ruby"))
+  reagent(0x246BE9, 0x76C6FC, "sapphire", "Sapphire", "§9Sapphire§r", asIdentifier("sapphire"))
   category()
   catalyst(0x506D84, 0x889EAF, "igneous", "Igneous", "§dIgneous")
   catalyst(0xB5CDA3, 0xC9E4C5, "herbal", "Herbal", "§dHerbal")
