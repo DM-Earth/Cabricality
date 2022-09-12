@@ -1,11 +1,11 @@
 onEvent("recipes", event => {
-  event.shaped(KJ("enderium_machine"), [
+  event.shaped(CABF("enderium_machine"), [
 		"SSS",
 		"SCS",
 		"SSS"
 	], {
-		C: KJ("enderium_casing"),
-		S: KJ("abstruse_mechanism")
+		C: CABF("enderium_casing"),
+		S: CABF("abstruse_mechanism")
 	})
 
 	event.custom({
@@ -38,11 +38,11 @@ onEvent("recipes", event => {
 	let ender_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), "kubejs:enderium_machine", other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "kubejs:enderium_machine", B: other_ingredient })
+			event.smithing(Item.of(id, amount), asIdentifier("enderium_machine"), other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: asIdentifier("enderium_machine"), B: other_ingredient })
 		}
 		else
-			event.stonecutting(Item.of(id, amount), "kubejs:enderium_machine")
+			event.stonecutting(Item.of(id, amount), asIdentifier("enderium_machine"))
 	}
 
 	ender_machine("kibe:entangled_chest", 1, MC("chest"))

@@ -9,10 +9,10 @@ onEvent("recipes", event => {
 
 	event.remove({ id: TC("smeltery/casting/seared/smeltery_controller") })
 	event.remove({ id: TC("smeltery/melting/copper/smeltery_controller") })
-	donutCraft(event, TC('smeltery_controller'), TC('seared_bricks'), KJ('sealed_mechanism'))
+	donutCraft(event, TC('smeltery_controller'), TC('seared_bricks'), CABF('sealed_mechanism'))
 
 	event.remove({ id: TC('smeltery/casting/scorched/foundry_controller') })
-	donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), KJ('infernal_mechanism'))
+	donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), CABF('infernal_mechanism'))
 	event.remove({ id: TC('smeltery/melting/soul/sand') })
 
 	event.custom({
@@ -21,7 +21,7 @@ onEvent("recipes", event => {
 			"item": "minecraft:redstone"
 		},
 		"result": {
-			"fluid": "kubejs:redstone",
+			"fluid": asIdentifier("redstone"),
 			"amount": 9000
 		},
 		"temperature": 250,
@@ -33,7 +33,7 @@ onEvent("recipes", event => {
 			"item": "minecraft:redstone_block"
 		},
 		"result": {
-			"fluid": "kubejs:redstone",
+			"fluid": asIdentifier("redstone"),
 			"amount": 81000
 		},
 		"temperature": 250,

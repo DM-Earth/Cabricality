@@ -494,13 +494,13 @@ onEvent("ponder.registry", (event) => {
     event.create("indrev:laser_emitter_mk4")
         .scene("alchemy_setup", "The Alchemy Setup", alchemy_setup);
     event.create("indrev:controller")
-        .scene("rocket_introduction", "Launching Rockets 101", "cabricality:rocket_engine", rocket_introduction)
-        .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", rocket_engine)
-        .scene("rocket_tank", "Making a Rocket Tank", "cabricality:rocket_tank", rocket_tank);
+        .scene("rocket_introduction", "Launching Rockets 101", asIdentifier("rocket_engine"), rocket_introduction)
+        .scene("rocket_engine", "Making a Rocket Engine", asIdentifier("rocket_engine"), rocket_engine)
+        .scene("rocket_tank", "Making a Rocket Tank", asIdentifier("rocket_tank"), rocket_tank);
     event.create("ad_astra:steel_engine")
-        .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", rocket_engine);
+        .scene("rocket_engine", "Making a Rocket Engine", asIdentifier("rocket_engine"), rocket_engine);
     event.create("ad_astra:steel_tank")
-        .scene("rocket_tank", "Making a Rocket Tank", "cabricality:rocket_tank", rocket_tank);
+        .scene("rocket_tank", "Making a Rocket Tank", asIdentifier("rocket_tank"), rocket_tank);
     event.create("kubejs:extractor_machine")
-        .scene("extractor", "Making an Extractor", "cabricality:extractor", extractor);
+        .scene("extractor", "Making an Extractor", asIdentifier("extractor"), extractor);
 })

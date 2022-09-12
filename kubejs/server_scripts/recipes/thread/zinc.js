@@ -1,20 +1,20 @@
 onEvent("recipes", event => {
-  event.shaped(KJ("zinc_machine"), [
+  event.shaped(CABF("zinc_machine"), [
 		"SSS",
 		"SCS",
 		"SSS"
 	], {
-		C: KJ("zinc_casing"),
-		S: KJ("infernal_mechanism")
+		C: CABF("zinc_casing"),
+		S: CABF("infernal_mechanism")
 	})
 	let zinc_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), "kubejs:zinc_machine", other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "kubejs:zinc_machine", B: other_ingredient })
+			event.smithing(Item.of(id, amount), asIdentifier("zinc_machine"), other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: asIdentifier("zinc_machine"), B: other_ingredient })
 		}
 		else
-			event.stonecutting(Item.of(id, amount), "kubejs:zinc_machine")
+			event.stonecutting(Item.of(id, amount), asIdentifier("zinc_machine"))
 	}
 	zinc_machine(KB("cobblestone_generator_mk1"), 1, MC("piston"))
 	zinc_machine(KB("basalt_generator_mk1"), 1, MC("blue_ice"))

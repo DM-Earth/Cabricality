@@ -1,12 +1,12 @@
 onEvent("recipes", event => {
-  let blizz = KJ("blizz_powder")
-	let basalz = KJ("basalz_powder")
-	event.recipes.createSplashing([Item.of(KJ("sand_ball")).withChance(0.125)], "minecraft:sandstone")
-	event.recipes.createCrushing([Item.of(blizz, 1), Item.of(blizz, 1).withChance(.5)], KJ("blizz_cube"))
-	event.recipes.createCrushing([Item.of(basalz, 1), Item.of(basalz, 1).withChance(.5)], KJ("basalz_shard"))
-	event.recipes.createCompacting(KJ("ice_charge"), [blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz])
-	event.recipes.createCompacting(KJ("earth_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
-	//	event.recipes.createCompacting(KJ("lightning_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
+  let blizz = CABF("blizz_powder")
+	let basalz = CABF("basalz_powder")
+	event.recipes.createSplashing([Item.of(CABF("sand_ball")).withChance(0.125)], "minecraft:sandstone")
+	event.recipes.createCrushing([Item.of(blizz, 1), Item.of(blizz, 1).withChance(.5)], CABF("blizz_cube"))
+	event.recipes.createCrushing([Item.of(basalz, 1), Item.of(basalz, 1).withChance(.5)], CABF("basalz_shard"))
+	event.recipes.createCompacting(CABF("ice_charge"), [blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz])
+	event.recipes.createCompacting(CABF("earth_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
+	//	event.recipes.createCompacting(CABF("lightning_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
 
 	event.remove({ id: CR("crushing/obsidian") })
 	//	event.remove({ output: "ae2:silicon", type: "minecraft:smelting" })
@@ -15,15 +15,15 @@ onEvent("recipes", event => {
 	event.remove({ id: AE2("smelting/silicon_from_certus_quartz_dust") })
 
 	let alchemy_mix = (output, catalyst, r1, r2, amount) => {
-		event.recipes.createMixing([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + catalyst), KJ("substrate_" + r1, 2), KJ("substrate_" + r2)]).heated()
+		event.recipes.createMixing([Item.of(CABF("substrate_" + output, amount ? amount : 1)), CABF("substrate_" + catalyst)], [CABF("substrate_" + catalyst), CABF("substrate_" + r1, 2), CABF("substrate_" + r2)]).heated()
 	}
 	let alchemy_smelt = (output, catalyst, r1, r2, amount) => {
 		let arrayIn = []
 		let c = 1
 		if (amount) { c = amount }
-		arrayIn.push(KJ("substrate_" + output, c))
-		arrayIn.push(KJ("substrate_" + catalyst))
-		event.recipes.createCompacting(arrayIn, [KJ("substrate_" + r1, 2), KJ("substrate_" + catalyst), KJ("substrate_" + r2)]).heated()
+		arrayIn.push(CABF("substrate_" + output, c))
+		arrayIn.push(CABF("substrate_" + catalyst))
+		event.recipes.createCompacting(arrayIn, [CABF("substrate_" + r1, 2), CABF("substrate_" + catalyst), CABF("substrate_" + r2)]).heated()
 	}
 
 	alchemy_mix("red", "herbal", "diorite", "andesite")
@@ -83,7 +83,7 @@ onEvent("recipes", event => {
 		event.custom({
 			"type": "indrev:sawmill",
 			"ingredients": {
-				"item": KJ(`failed_alchemy_${id}`)
+				"item": CABF(`failed_alchemy_${id}`)
 			},
 			"output": jsonOut,
 			"processTime": 64
@@ -117,8 +117,8 @@ onEvent("recipes", event => {
 	event.recipes.createCrushing(CR("powdered_obsidian"), MC("obsidian"))
 
 	recompact(CR("powdered_obsidian"), MC("obsidian"))
-	recompact(KJ("diamond_dust"), MC("diamond"))
-	recompact(KJ("emerald_dust"), MC("emerald"))
+	recompact(CABF("diamond_dust"), MC("diamond"))
+	recompact(CABF("emerald_dust"), MC("emerald"))
 
 	global.substrates.forEach(a => {
 		a.forEach(e => {
@@ -156,14 +156,14 @@ onEvent("recipes", event => {
 
 	event.custom({
 		"type": "indrev:sawmill",
-		"ingredients": { "item": "kubejs:substrate_silicon" },
+		"ingredients": { "item": asIdentifier("substrate_silicon") },
 		"output": [{ "item": "ae2:silicon", "count": 1 }],
 		"processTime": 64
 	})
 
 	event.custom({
 		"type": "indrev:sawmill",
-		"ingredients": { "item": "kubejs:substrate_silver" },
+		"ingredients": { "item": asIdentifier("substrate_silver") },
 		"output": [{ "item": "indrev:silver_dust", "count": 1 }],
 		"processTime": 64
 	})
@@ -174,7 +174,7 @@ onEvent("recipes", event => {
 			{ "item": "minecraft:redstone" },
 		],
 		"fluidInput": { "fluid": "tconstruct:molten_glass", "amount": 8100 },
-		"output": { "item": "kubejs:accellerator_redstone", "count": 1 },
+		"output": { "item": asIdentifier("accelerator_redstone"), "count": 1 },
 		"processTime": 400
 	})
 
@@ -184,7 +184,7 @@ onEvent("recipes", event => {
 			{ "item": "indrev:silver_dust" }
 		],
 		"fluidInput": { "fluid": "tconstruct:molten_glass", "amount": 8100 },
-		"output": { "item": "kubejs:substrate_silver", "count": 1 },
+		"output": { "item": asIdentifier("substrate_silver"), "count": 1 },
 		"processTime": 400
 	})
 
@@ -194,7 +194,7 @@ onEvent("recipes", event => {
 			{ "item": "minecraft:glowstone_dust" }
 		],
 		"fluidInput": { "fluid": "tconstruct:molten_glass", "amount": 8100 },
-		"output": { "item": "kubejs:accellerator_glowstone", "count": 1 },
+		"output": { "item": asIdentifier("accelerator_glowstone"), "count": 1 },
 		"processTime": 400
 	})
 })

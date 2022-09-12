@@ -4,32 +4,32 @@ onEvent("recipes", event => {
 		"SSS",
 		"SSS"
 	], {
-		S: KJ("cured_rubber")
+		S: CABF("cured_rubber")
 	})
-	event.smelting("kubejs:cured_rubber", "kubejs:rubber")
-	event.shaped(KJ("sealed_mechanism"), [
+	event.smelting(asIdentifier("cured_rubber"), asIdentifier("rubber"))
+	event.shaped(CABF("sealed_mechanism"), [
 		"SCS"
 	], {
-		C: KJ("kinetic_mechanism"),
-		S: KJ("cured_rubber")
+		C: CABF("kinetic_mechanism"),
+		S: CABF("cured_rubber")
 	})
-	event.shaped(KJ("copper_machine"), [
+	event.shaped(CABF("copper_machine"), [
 		"SSS",
 		"SCS",
 		"SSS"
 	], {
 		C: CR("copper_casing"),
-		S: KJ("sealed_mechanism")
+		S: CABF("sealed_mechanism")
 	})
 
 	let copper_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), "kubejs:copper_machine", other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "kubejs:copper_machine", B: other_ingredient })
+			event.smithing(Item.of(id, amount), asIdentifier("copper_machine"), other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: asIdentifier("copper_machine"), B: other_ingredient })
 		}
 		else
-			event.stonecutting(Item.of(id, amount), "kubejs:copper_machine")
+			event.stonecutting(Item.of(id, amount), asIdentifier("copper_machine"))
 	}
 	copper_machine("create:copper_backtank", 1, MC("copper_block"))
 	copper_machine("create:portable_fluid_interface", 2)

@@ -44,10 +44,10 @@ function tradeList() {
 		["mining", "item", "create", "crushed_nickel_ore", 16, 14],
 		["mining", "item", "create", "crushed_lead_ore", 16, 14],
 		["mining", "item", "create", "crushed_tin_ore", 16, 12],
-		["mining", "item", "kubejs", "crushed_calorite_ore", 16, 16],
-		["mining", "item", "kubejs", "crushed_ostrum_ore", 16, 16],
-		["mining", "item", "kubejs", "crushed_desh_ore", 16, 16],
-		["mining", "item", "kubejs", "crushed_cobalt_ore", 16, 16],
+		["mining", "item", "cabricality", "crushed_calorite_ore", 16, 16],
+		["mining", "item", "cabricality", "crushed_ostrum_ore", 16, 16],
+		["mining", "item", "cabricality", "crushed_desh_ore", 16, 16],
+		["mining", "item", "cabricality", "crushed_cobalt_ore", 16, 16],
 		["mining", "item", "minecraft", "andesite", 64, 1],
 		["mining", "item", "minecraft", "granite", 64, 1],
 		["mining", "item", "minecraft", "diorite", 64, 1],
@@ -164,16 +164,16 @@ onEvent("recipes", event => {
 	event.remove({ type: IV("infuse") })
 	let professions = []
 	tradeList().forEach(trade => {
-		let tradeCard = "kubejs:trade_card_" + trade[2] + "_" + trade[3]
-		let professionCard = "kubejs:profession_card_" + trade[0]
+		let tradeCard = asIdentifier("trade_card_" + trade[2] + "_" + trade[3])
+		let professionCard = asIdentifier("profession_card_" + trade[0])
 		let itemId = trade[2] + ":" + trade[3]
 		let tradeType = trade[1]
 		let itemCount = trade[4]
-		let coin = "kubejs:silver_coin"
+		let coin = asIdentifier("silver_coin")
 		let coinCount = trade[5]
 		event.shapeless("2x " + tradeCard, [tradeCard])
 		if (coinCount >= 64) {
-			coin = "kubejs:gold_coin"
+			coin = asIdentifier("gold_coin")
 			coinCount = Math.floor(coinCount / 64.0)
 		}
 		if (professions.includes(trade[0]) != true) {

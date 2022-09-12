@@ -3,7 +3,7 @@ let modpackId = "cabricality"
 let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
 let CR = (id, x) => MOD("create", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
-let KJ = (id, x) => MOD("kubejs", id, x)
+let CABF = (id, x) => MOD("kubejs", id, x)
 let C = (id, x) => MOD("c", id, x)
 let F = (id, x) => MOD("fabric", id, x)
 let IV = (id, x) => MOD("indrev", id, x)

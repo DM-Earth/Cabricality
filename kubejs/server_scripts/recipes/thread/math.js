@@ -1,17 +1,17 @@
 onEvent("recipes", event => {
   let types = ["three", "eight", "plus", "minus", "multiply", "divide"]
 	types.forEach(e => {
-		event.stonecutting(KJ(e + "_cast"), IV("bronze_plate"))
+		event.stonecutting(CABF(e + "_cast"), IV("bronze_plate"))
 		event.custom({
 			"type": "tconstruct:casting_table",
 			"cast": {
-				"item": KJ(e + '_cast')
+				"item": CABF(e + '_cast')
 			},
 			"fluid": {
-				"name": "kubejs:raw_logic",
+				"name": asIdentifier("raw_logic"),
 				"amount": 81
 			},
-			"result": Item.of(KJ(e)).toResultJson(),
+			"result": Item.of(CABF(e)).toResultJson(),
 			"cooling_time": 10
 		})
 	})
@@ -27,7 +27,7 @@ onEvent("recipes", event => {
 				let output;
 
 				if (result == "error")
-					output = KJ("missingno")
+					output = CABF("missingno")
 				else if (result < 0)
 					continue
 				else if (result > 9)
@@ -35,7 +35,7 @@ onEvent("recipes", event => {
 				else if (result % 1 != 0)
 					continue
 				else
-					output = KJ(nums[result])
+					output = CABF(nums[result])
 
 				event.custom({
 					"type": "create:mechanical_crafting",
@@ -44,13 +44,13 @@ onEvent("recipes", event => {
 					],
 					"key": {
 						"A": {
-							"item": KJ(nums[a])
+							"item": CABF(nums[a])
 						},
 						"O": {
-							"item": KJ(opNames[op])
+							"item": CABF(opNames[op])
 						},
 						"B": {
-							"item": KJ(nums[b])
+							"item": CABF(nums[b])
 						}
 					},
 					"result": {
@@ -80,43 +80,43 @@ onEvent("recipes", event => {
 	event.custom({
 		"type": "tconstruct:alloy",
 		"inputs": [
-			{ "name": "kubejs:number_0", "amount": alloyAmount },
-			{ "name": "kubejs:number_1", "amount": alloyAmount },
-			{ "name": "kubejs:number_2", "amount": alloyAmount },
-			{ "name": "kubejs:number_3", "amount": alloyAmount },
-			{ "name": "kubejs:number_4", "amount": alloyAmount },
-			{ "name": "kubejs:number_5", "amount": alloyAmount },
-			{ "name": "kubejs:number_6", "amount": alloyAmount },
-			{ "name": "kubejs:number_7", "amount": alloyAmount },
-			{ "name": "kubejs:number_8", "amount": alloyAmount },
-			{ "name": "kubejs:number_9", "amount": alloyAmount }
+			{ "name": asIdentifier("number_0"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_1"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_2"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_3"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_4"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_5"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_6"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_7"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_8"), "amount": alloyAmount },
+			{ "name": asIdentifier("number_9"), "amount": alloyAmount }
 		],
 		"result": {
-			"fluid": "kubejs:matrix",
+			"fluid": asIdentifier("matrix"),
 			"amount": outAmount
 		},
 		"temperature": 200
 	})
 
-	meltOrCrucible(KJ("calculation_mechanism"), KJ("raw_logic"), 2430)
-	meltOrCrucible(KJ("zero"), KJ("number_0"), 81)
-	meltOrCrucible(KJ("one"), KJ("number_1"), 81)
-	meltOrCrucible(KJ("two"), KJ("number_2"), 81)
-	meltOrCrucible(KJ("three"), KJ("number_3"), 81)
-	meltOrCrucible(KJ("four"), KJ("number_4"), 81)
-	meltOrCrucible(KJ("five"), KJ("number_5"), 81)
-	meltOrCrucible(KJ("six"), KJ("number_6"), 81)
-	meltOrCrucible(KJ("seven"), KJ("number_7"), 81)
-	meltOrCrucible(KJ("eight"), KJ("number_8"), 81)
-	meltOrCrucible(KJ("nine"), KJ("number_9"), 81)
+	meltOrCrucible(CABF("calculation_mechanism"), CABF("raw_logic"), 2430)
+	meltOrCrucible(CABF("zero"), CABF("number_0"), 81)
+	meltOrCrucible(CABF("one"), CABF("number_1"), 81)
+	meltOrCrucible(CABF("two"), CABF("number_2"), 81)
+	meltOrCrucible(CABF("three"), CABF("number_3"), 81)
+	meltOrCrucible(CABF("four"), CABF("number_4"), 81)
+	meltOrCrucible(CABF("five"), CABF("number_5"), 81)
+	meltOrCrucible(CABF("six"), CABF("number_6"), 81)
+	meltOrCrucible(CABF("seven"), CABF("number_7"), 81)
+	meltOrCrucible(CABF("eight"), CABF("number_8"), 81)
+	meltOrCrucible(CABF("nine"), CABF("number_9"), 81)
 
 	event.custom({
 		"type": "tconstruct:casting_basin",
 		"fluid": {
-			"name": "kubejs:matrix",
+			"name": asIdentifier("matrix"),
 			"amount": 81000
 		},
-		"result": Item.of(KJ("computation_matrix")).toResultJson(),
+		"result": Item.of(CABF("computation_matrix")).toResultJson(),
 		"cooling_time": 20
 	})
 })
