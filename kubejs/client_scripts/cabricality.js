@@ -1,3 +1,5 @@
+let modpackId = "cabricality"
+
 let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
 let CR = (id, x) => MOD("create", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
@@ -19,15 +21,4 @@ let CC = (id, x) => MOD("computercraft", id, x)
 
 function asIdentifier(id) {
   return modpackId + ":" + id
-}
-
-let wood_types = [
-	MC("oak"), MC("spruce"), MC("birch"), MC("jungle"), MC("acacia"), MC("dark_oak"), MC("crimson"), MC("warped"),
-	PMD("dark_amaranth"), PMD("palm"), PMD("cherry_oak"),
-	AP("twisted"),
-	TC("bloodshroom"), TC("skyroot"), TC("greenheart")
-]
-
-function dimensional_commanding(server, dimension, command) {
-	server.runCommandSilent("execute in " + dimension.toString() + " run " + command)
 }
