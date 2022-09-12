@@ -4,7 +4,7 @@
     "item": "minecraft:redstone_block"
   },
   "fluidOutput": {
-    "fluid": "kubejs:redstone",
+    "fluid": "cabricality:redstone",
     "amount": 81000
   },
   "processTime": 600

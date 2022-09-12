@@ -13,7 +13,7 @@
     "tag": "c:nuggets/calorite"
   },
   "result": {
-    "fluid": "kubejs:molten_calorite",
+    "fluid": "cabricality:molten_calorite",
     "amount": 10
   },
   "temperature": 900,

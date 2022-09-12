@@ -5,12 +5,12 @@
       "item": "minecraft:stone"
     },
     {
-      "item": "kubejs:invar_ingot"
+      "item": "cabricality:invar_ingot"
     }
   ],
   "results": [
     {
-      "item": "kubejs:invar_casing"
+      "item": "cabricality:invar_casing"
     }
   ]
 }

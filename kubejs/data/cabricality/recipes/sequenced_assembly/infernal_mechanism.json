@@ -4,14 +4,14 @@
     "item": "create:precision_mechanism"
   },
   "transitionalItem": {
-    "item": "kubejs:incomplete_infernal_mechanism"
+    "item": "cabricality:incomplete_infernal_mechanism"
   },
   "sequence": [
     {
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         },
         {
           "fluid": "tconstruct:liquid_soul",
@@ -21,7 +21,7 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         }
       ]
     },
@@ -29,7 +29,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         },
         {
           "fluid": "minecraft:lava",
@@ -39,7 +39,7 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         }
       ]
     },
@@ -47,7 +47,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         },
         {
           "fluid": "minecraft:lava",
@@ -57,7 +57,7 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         }
       ]
     },
@@ -65,7 +65,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         },
         {
           "fluid": "minecraft:lava",
@@ -75,14 +75,14 @@
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_infernal_mechanism"
+          "item": "cabricality:incomplete_infernal_mechanism"
         }
       ]
     }
   ],
   "results": [
     {
-      "item": "kubejs:infernal_mechanism",
+      "item": "cabricality:infernal_mechanism",
       "chance": 1
     }
   ],

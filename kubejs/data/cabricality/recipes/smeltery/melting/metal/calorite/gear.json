@@ -13,7 +13,7 @@
     "tag": "c:gears/calorite"
   },
   "result": {
-    "fluid": "kubejs:molten_calorite",
+    "fluid": "cabricality:molten_calorite",
     "amount": 360
   },
   "temperature": 900,

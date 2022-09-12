@@ -1,9 +1,9 @@
 {
     "replace": false,
     "values": [
-        "kubejs:stone_saw",
-        "kubejs:iron_saw",
-        "kubejs:diamond_saw",
-        "kubejs:netherite_saw"
+        "cabricality:stone_saw",
+        "cabricality:iron_saw",
+        "cabricality:diamond_saw",
+        "cabricality:netherite_saw"
     ]
 }

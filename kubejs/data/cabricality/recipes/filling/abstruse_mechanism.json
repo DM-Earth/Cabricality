@@ -2,7 +2,7 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "kubejs:inductive_mechanism"
+      "item": "cabricality:inductive_mechanism"
     },
     {
       "fluid": "tconstruct:molten_enderium",
@@ -11,7 +11,7 @@
   ],
   "results": [
     {
-      "item": "kubejs:abstruse_mechanism"
+      "item": "cabricality:abstruse_mechanism"
     }
   ]
 }

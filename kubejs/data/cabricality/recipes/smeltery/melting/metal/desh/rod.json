@@ -13,7 +13,7 @@
     "tag": "c:rods/desh"
   },
   "result": {
-    "fluid": "kubejs:molten_desh",
+    "fluid": "cabricality:molten_desh",
     "amount": 45
   },
   "temperature": 900,

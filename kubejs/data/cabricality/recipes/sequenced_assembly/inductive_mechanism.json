@@ -4,22 +4,22 @@
     "item": "create:precision_mechanism"
   },
   "transitionalItem": {
-    "item": "kubejs:incomplete_inductive_mechanism"
+    "item": "cabricality:incomplete_inductive_mechanism"
   },
   "sequence": [
     {
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_inductive_mechanism"
+          "item": "cabricality:incomplete_inductive_mechanism"
         },
         {
-          "item": "kubejs:radiant_coil"
+          "item": "cabricality:radiant_coil"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_inductive_mechanism"
+          "item": "cabricality:incomplete_inductive_mechanism"
         }
       ]
     },
@@ -27,15 +27,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_inductive_mechanism"
+          "item": "cabricality:incomplete_inductive_mechanism"
         },
         {
-          "item": "kubejs:radiant_coil"
+          "item": "cabricality:radiant_coil"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_inductive_mechanism"
+          "item": "cabricality:incomplete_inductive_mechanism"
         }
       ]
     },
@@ -43,22 +43,22 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "kubejs:incomplete_inductive_mechanism"
+          "item": "cabricality:incomplete_inductive_mechanism"
         },
         {
-          "item": "kubejs:chromatic_resonator"
+          "item": "cabricality:chromatic_resonator"
         }
       ],
       "results": [
         {
-          "item": "kubejs:incomplete_inductive_mechanism"
+          "item": "cabricality:incomplete_inductive_mechanism"
         }
       ]
     }
   ],
   "results": [
     {
-      "item": "kubejs:inductive_mechanism",
+      "item": "cabricality:inductive_mechanism",
       "chance": 1
     }
   ],

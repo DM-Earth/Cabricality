@@ -2,7 +2,7 @@
   "type": "indrev:fluid_infuse",
   "ingredients": [
     {
-      "item": "kubejs:inductive_mechanism"
+      "item": "cabricality:inductive_mechanism"
     }
   ],
   "fluidInput": {
@@ -10,7 +10,7 @@
     "amount": 9000
   },
   "output": {
-    "item": "kubejs:abstruse_mechanism",
+    "item": "cabricality:abstruse_mechanism",
     "count": 1
   },
   "processTime": 400

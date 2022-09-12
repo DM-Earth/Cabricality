@@ -4,7 +4,7 @@
     "tag": "minecraft:coals"
   },
   "fluidOutput": {
-    "fluid": "kubejs:coke",
+    "fluid": "cabricality:coke",
     "amount": 9000
   },
   "processTime": 600

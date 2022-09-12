@@ -2,12 +2,12 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "kubejs:calculation_mechanism"
+      "item": "cabricality:calculation_mechanism"
     }
   ],
   "results": [
     {
-      "fluid": "kubejs:raw_logic",
+      "fluid": "cabricality:raw_logic",
       "amount": 2430
     }
   ],

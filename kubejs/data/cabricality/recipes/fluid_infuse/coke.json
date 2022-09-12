@@ -6,11 +6,11 @@
     }
   ],
   "fluidInput": {
-    "fluid": "kubejs:coke",
+    "fluid": "cabricality:coke",
     "amount": 45000
   },
   "output": {
-    "item": "kubejs:coal_coke",
+    "item": "cabricality:coal_coke",
     "count": 1
   },
   "processTime": 800
