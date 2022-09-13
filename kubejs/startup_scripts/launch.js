@@ -220,7 +220,7 @@ onEvent("item.registry", event => {
 	initItems()
 	let number = (name, localName) => {
 		let id = name.toLowerCase()
-		event.create(id)
+		event.create(asIdentifier(id))
 			.texture(asIdentifier("item/number/" + id))
 			.displayName(localName)
 			.glow(true)
