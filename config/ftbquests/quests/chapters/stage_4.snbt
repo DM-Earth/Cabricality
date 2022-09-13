@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "{chapter_4.cabricality.start.title}"
-			icon: "kubejs:inductive_mechanism"
+			icon: "cabricality:inductive_mechanism"
 			x: 1.0d
 			y: -2.5d
 			shape: "hexagon"
@@ -64,7 +64,7 @@
 				id: "24B631E93DB0C8F7"
 				type: "item"
 				team_reward: true
-				item: "kubejs:powered_water_bucket"
+				item: "cabricality:powered_water_bucket"
 			}]
 		}
 		{
@@ -93,7 +93,7 @@
 		}
 		{
 			title: "{contraption.cabricality.31.2.title}"
-			icon: "kubejs:sand_ball"
+			icon: "cabricality:sand_ball"
 			x: -1.0d
 			y: 0.5d
 			subtitle: "{contraption.cabricality.31.2.subtitle}"
@@ -106,7 +106,7 @@
 				{
 					id: "05FFE255DDB4E66F"
 					type: "item"
-					item: "kubejs:sand_ball"
+					item: "cabricality:sand_ball"
 					consume_items: false
 				}
 				{
@@ -118,7 +118,7 @@
 		}
 		{
 			title: "{chapter_4.cabricality.liquid_sand.title}"
-			icon: "kubejs:fine_sand_bucket"
+			icon: "cabricality:fine_sand_bucket"
 			x: 1.0d
 			y: 1.5d
 			shape: "circle"
@@ -133,7 +133,7 @@
 		}
 		{
 			title: "{contraption.cabricality.31.3.title}"
-			icon: "kubejs:rough_sand"
+			icon: "cabricality:rough_sand"
 			x: -1.0d
 			y: 1.5d
 			subtitle: "{contraption.cabricality.31.3.subtitle}"
@@ -144,7 +144,7 @@
 				{
 					id: "006110328A2D022F"
 					type: "item"
-					item: "kubejs:rough_sand"
+					item: "cabricality:rough_sand"
 					consume_items: false
 				}
 				{
@@ -180,7 +180,7 @@
 		}
 		{
 			title: "{contraption.cabricality.32.2.title}"
-			icon: "kubejs:basalz_shard"
+			icon: "cabricality:basalz_shard"
 			x: -3.0d
 			y: 0.5d
 			subtitle: "{contraption.cabricality.32.2.subtitle}"
@@ -193,7 +193,7 @@
 				{
 					id: "712E7C4EEB4BCF55"
 					type: "item"
-					item: "kubejs:basalz_shard"
+					item: "cabricality:basalz_shard"
 					consume_items: false
 				}
 				{
@@ -205,7 +205,7 @@
 		}
 		{
 			title: "{contraption.cabricality.33.1.title}"
-			icon: "kubejs:basalz_powder"
+			icon: "cabricality:basalz_powder"
 			x: -3.0d
 			y: 2.0d
 			subtitle: "{contraption.cabricality.33.1.subtitle}"
@@ -216,7 +216,7 @@
 				{
 					id: "54F29099D9D81837"
 					type: "item"
-					item: "kubejs:basalz_powder"
+					item: "cabricality:basalz_powder"
 					consume_items: false
 				}
 				{
@@ -228,7 +228,7 @@
 		}
 		{
 			title: "{contraption.cabricality.33.2.title}"
-			icon: "kubejs:earth_charge"
+			icon: "cabricality:earth_charge"
 			x: -3.0d
 			y: 3.0d
 			subtitle: "contraption.cabricality.33.2.subtitle}"
@@ -239,7 +239,7 @@
 				{
 					id: "2C3C495C9B18005A"
 					type: "item"
-					item: "kubejs:earth_charge"
+					item: "cabricality:earth_charge"
 					consume_items: false
 				}
 				{
@@ -251,7 +251,7 @@
 		}
 		{
 			title: "{contraption.cabricality.33.3.title}"
-			icon: "kubejs:purified_sand"
+			icon: "cabricality:purified_sand"
 			x: -1.0d
 			y: 3.0d
 			subtitle: "{contraption.cabricality.33.3.subtitle}"
@@ -265,7 +265,7 @@
 				{
 					id: "76715E399222E329"
 					type: "item"
-					item: "kubejs:purified_sand"
+					item: "cabricality:purified_sand"
 					consume_items: false
 				}
 				{
@@ -333,7 +333,7 @@
 		}
 		{
 			title: "{contraption.cabricality.34.3.title}"
-			icon: "kubejs:coal_coke"
+			icon: "cabricality:coal_coke"
 			x: 3.0d
 			y: 1.5d
 			subtitle: "{contraption.cabricality.34.3.content}"
@@ -344,7 +344,7 @@
 				{
 					id: "7AFFEF4014CE671C"
 					type: "item"
-					item: "kubejs:coal_coke"
+					item: "cabricality:coal_coke"
 					consume_items: false
 				}
 				{
@@ -356,7 +356,7 @@
 		}
 		{
 			title: "{contraption.cabricality.35.title}"
-			icon: "kubejs:coke_chunk"
+			icon: "cabricality:coke_chunk"
 			x: 3.0d
 			y: 3.0d
 			subtitle: "{contraption.cabricality.35.subtitle}"
@@ -367,7 +367,7 @@
 				{
 					id: "36A367A143AD6175"
 					type: "item"
-					item: "kubejs:coke_chunk"
+					item: "cabricality:coke_chunk"
 					consume_items: false
 				}
 				{
@@ -379,7 +379,7 @@
 		}
 		{
 			title: "{contraption.cabricality.36.title}"
-			icon: "kubejs:silicon_compound"
+			icon: "cabricality:silicon_compound"
 			x: 1.0d
 			y: 4.0d
 			subtitle: "{contraption.cabricality.36.subtitle}"
@@ -394,7 +394,7 @@
 				{
 					id: "7824435744C12C18"
 					type: "item"
-					item: "kubejs:silicon_compound"
+					item: "cabricality:silicon_compound"
 					consume_items: false
 				}
 				{
@@ -430,7 +430,7 @@
 		}
 		{
 			title: "{contraption.cabricality.38.title}"
-			icon: "kubejs:blizz_cube"
+			icon: "cabricality:blizz_cube"
 			x: 5.0d
 			y: 2.5d
 			subtitle: "{contraption.cabricality.38.subtitle}"
@@ -441,7 +441,7 @@
 				{
 					id: "11B1248ECFCD2F26"
 					type: "item"
-					item: "kubejs:blizz_cube"
+					item: "cabricality:blizz_cube"
 					consume_items: false
 				}
 				{
@@ -453,7 +453,7 @@
 		}
 		{
 			title: "{contraption.cabricality.39.1.title}"
-			icon: "kubejs:blizz_powder"
+			icon: "cabricality:blizz_powder"
 			x: 5.0d
 			y: 4.0d
 			subtitle: "{contraption.cabricality.39.1.subtitle}"
@@ -464,7 +464,7 @@
 				{
 					id: "7EA6D73F7A49EBAF"
 					type: "item"
-					item: "kubejs:blizz_powder"
+					item: "cabricality:blizz_powder"
 					consume_items: false
 				}
 				{
@@ -476,7 +476,7 @@
 		}
 		{
 			title: "{contraption.cabricality.39.2.title}"
-			icon: "kubejs:ice_charge"
+			icon: "cabricality:ice_charge"
 			x: 5.0d
 			y: 5.0d
 			subtitle: "{contraption.cabricality.39.2.subtitle}"
@@ -487,7 +487,7 @@
 				{
 					id: "3DFF735C19CE82A5"
 					type: "item"
-					item: "kubejs:ice_charge"
+					item: "cabricality:ice_charge"
 					consume_items: false
 				}
 				{
@@ -525,7 +525,7 @@
 		}
 		{
 			title: "{chapter_4.cabricality.chapter_4a.title}"
-			icon: "kubejs:substrate_silicon"
+			icon: "cabricality:substrate_silicon"
 			disable_toast: true
 			x: -3.0d
 			y: 5.0d
@@ -539,7 +539,7 @@
 				id: "5B4F2E2F7BDEA6A0"
 				type: "stat"
 				title: "{chapter_4.cabricality.chapter_4a.task.complete.title}"
-				icon: "kubejs:substrate_chaos"
+				icon: "cabricality:substrate_chaos"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 60
@@ -597,7 +597,7 @@
 		}
 		{
 			title: "{contraption.cabricality.40.2.title}"
-			icon: "kubejs:calculation_mechanism"
+			icon: "cabricality:calculation_mechanism"
 			x: 1.0d
 			y: 7.5d
 			subtitle: "{contraption.cabricality.40.2.subtitle}"
@@ -611,7 +611,7 @@
 				{
 					id: "34B7E632F7FD83DB"
 					type: "item"
-					item: "kubejs:calculation_mechanism"
+					item: "cabricality:calculation_mechanism"
 					consume_items: false
 				}
 				{
@@ -634,7 +634,7 @@
 				id: "1CC8A01100CE4AE3"
 				type: "item"
 				item: {
-					id: "kubejs:flash_drive"
+					id: "cabricality:flash_drive"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -662,7 +662,7 @@
 				{
 					id: "40B14407CE6BAB56"
 					type: "item"
-					item: "kubejs:calculation_mechanism"
+					item: "cabricality:calculation_mechanism"
 					count: 16
 				}
 				{

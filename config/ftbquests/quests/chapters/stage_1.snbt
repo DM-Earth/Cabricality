@@ -4,7 +4,7 @@
 	order_index: 1
 	filename: "stage_1"
 	title: "{chapter_1.cabricality.title}"
-	icon: "kubejs:andesite_machine"
+	icon: "cabricality:andesite_machine"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -366,7 +366,7 @@
 		}
 		{
 			title: "{contraption.cabricality.8.title}"
-			icon: "kubejs:kinetic_mechanism"
+			icon: "cabricality:kinetic_mechanism"
 			x: 2.0d
 			y: 6.5d
 			subtitle: "{contraption.cabricality.8.subtitle}"
@@ -381,7 +381,7 @@
 				{
 					id: "68B67FDC410885B3"
 					type: "item"
-					item: "kubejs:kinetic_mechanism"
+					item: "cabricality:kinetic_mechanism"
 					consume_items: false
 				}
 				{
@@ -394,7 +394,7 @@
 		{
 			title: "{contraption.cabricality.assemble.title}"
 			icon: {
-				id: "kubejs:stone_saw"
+				id: "cabricality:stone_saw"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -436,14 +436,14 @@
 			tasks: [{
 				id: "2D4BB6A2E22A86E3"
 				type: "item"
-				item: "kubejs:andesite_machine"
+				item: "cabricality:andesite_machine"
 				consume_items: false
 			}]
 			rewards: [
 				{
 					id: "30E03E42611E5613"
 					type: "item"
-					item: "kubejs:kinetic_mechanism"
+					item: "cabricality:kinetic_mechanism"
 					count: 16
 				}
 				{
@@ -462,7 +462,7 @@
 		}
 		{
 			title: "{contraption.cabricality.9.1.title}"
-			icon: "kubejs:resin_bucket"
+			icon: "cabricality:resin_bucket"
 			x: 0.0d
 			y: 10.0d
 			shape: "square"
@@ -478,7 +478,7 @@
 				{
 					id: "52B181D406A5AC67"
 					type: "item"
-					item: "kubejs:extractor_machine"
+					item: "cabricality:extractor_machine"
 					count: 4L
 					consume_items: false
 				}
@@ -491,7 +491,7 @@
 		}
 		{
 			title: "{contraption.cabricality.9.2.title}"
-			icon: "kubejs:rubber"
+			icon: "cabricality:rubber"
 			x: 1.0d
 			y: 10.5d
 			subtitle: "{contraption.cabricality.9.2.subtitle}"
@@ -502,7 +502,7 @@
 				{
 					id: "0F98BACE3B940BC9"
 					type: "item"
-					item: "kubejs:rubber"
+					item: "cabricality:rubber"
 					consume_items: false
 				}
 				{
@@ -514,7 +514,7 @@
 		}
 		{
 			title: "{contraption.cabricality.9.3.title}"
-			icon: "kubejs:cured_rubber"
+			icon: "cabricality:cured_rubber"
 			x: 2.0d
 			y: 11.0d
 			shape: "square"
@@ -526,7 +526,7 @@
 				{
 					id: "7D328EB34500FE28"
 					type: "item"
-					item: "kubejs:cured_rubber"
+					item: "cabricality:cured_rubber"
 					consume_items: false
 				}
 				{
@@ -547,7 +547,7 @@
 			tasks: [{
 				id: "2C94C22FBED69EE4"
 				type: "item"
-				item: "kubejs:sealed_mechanism"
+				item: "cabricality:sealed_mechanism"
 				consume_items: false
 			}]
 		}
@@ -563,20 +563,20 @@
 			tasks: [{
 				id: "31511DA3C34905F1"
 				type: "item"
-				item: "kubejs:copper_machine"
+				item: "cabricality:copper_machine"
 				consume_items: false
 			}]
 			rewards: [
 				{
 					id: "0CDF1AD650CC3EA0"
 					type: "item"
-					item: "kubejs:sealed_mechanism"
+					item: "cabricality:sealed_mechanism"
 					count: 16
 				}
 				{
 					id: "200F3D1A04E713EF"
 					type: "item"
-					item: "kubejs:cured_rubber"
+					item: "cabricality:cured_rubber"
 					random_bonus: 4
 				}
 				{

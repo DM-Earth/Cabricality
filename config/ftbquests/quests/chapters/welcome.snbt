@@ -103,7 +103,7 @@
 		}
 		{
 			title: "{welcome.cabricality.iii.title}"
-			icon: "kubejs:andesite_machine"
+			icon: "cabricality:andesite_machine"
 			disable_toast: true
 			x: -2.0d
 			y: 1.0d
@@ -142,7 +142,7 @@
 			rewards: [{
 				id: "583C35BA7A7B9004"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 			}]
 		}
 		{

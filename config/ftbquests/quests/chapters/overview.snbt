@@ -152,7 +152,7 @@
 				id: "36F8C3CAF6FC3FB2"
 				type: "stat"
 				title: "{overview.cabricality.chapter_1.end.task.complete.title}"
-				icon: "kubejs:kinetic_mechanism"
+				icon: "cabricality:kinetic_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 1
@@ -160,7 +160,7 @@
 		}
 		{
 			title: "{overview.cabricality.bonus_1a.start.title}"
-			icon: "kubejs:cured_rubber"
+			icon: "cabricality:cured_rubber"
 			x: -9.5d
 			y: 1.5d
 			shape: "circle"
@@ -195,7 +195,7 @@
 				id: "27B07858A6018539"
 				type: "stat"
 				title: "{overview.cabricality.bonus_1a.end.task.complete.title}"
-				icon: "kubejs:sealed_mechanism"
+				icon: "cabricality:sealed_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 1
@@ -279,7 +279,7 @@
 				id: "12CFC84D3F01F49F"
 				type: "stat"
 				title: "{overview.cabricality.bonus_2a.end.task.complete.title}"
-				icon: "kubejs:infernal_mechanism"
+				icon: "cabricality:infernal_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 1
@@ -287,7 +287,7 @@
 		}
 		{
 			title: "{overview.cabricality.chapter_3.start.title}"
-			icon: "kubejs:radiant_coil"
+			icon: "cabricality:radiant_coil"
 			x: -5.5d
 			y: 0.0d
 			shape: "circle"
@@ -321,7 +321,7 @@
 				id: "7FEEF6BED2C3F31B"
 				type: "stat"
 				title: "{overview.cabricality.chapter_3.end.task.complete.title}"
-				icon: "kubejs:inductive_mechanism"
+				icon: "cabricality:inductive_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 1
@@ -329,7 +329,7 @@
 		}
 		{
 			title: "{overview.cabricality.bonus_3a.start.title}"
-			icon: "kubejs:enderium_ingot"
+			icon: "cabricality:enderium_ingot"
 			x: -3.5d
 			y: 1.5d
 			shape: "circle"
@@ -361,7 +361,7 @@
 				id: "4BC5C43C7B23CA16"
 				type: "stat"
 				title: "{overview.cabricality.bonus_3a.end.task.complete.title}"
-				icon: "kubejs:abstruse_mechanism"
+				icon: "cabricality:abstruse_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 1
@@ -369,7 +369,7 @@
 		}
 		{
 			title: "{overview.cabricality.chapter_4.start.title}"
-			icon: "kubejs:silicon_compound"
+			icon: "cabricality:silicon_compound"
 			x: -2.5d
 			y: 0.0d
 			shape: "circle"
@@ -387,7 +387,7 @@
 		}
 		{
 			title: "{overview.cabricality.chapter_4a.start.title}"
-			icon: "kubejs:substrate_chaos"
+			icon: "cabricality:substrate_chaos"
 			x: -2.5d
 			y: -1.25d
 			shape: "circle"
@@ -425,7 +425,7 @@
 				id: "79AB928A6C8E21DA"
 				type: "stat"
 				title: "{overview.cabricality.chapter_4.end.task.complete.title}"
-				icon: "kubejs:calculation_mechanism"
+				icon: "cabricality:calculation_mechanism"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 1
@@ -433,7 +433,7 @@
 		}
 		{
 			title: "{overview.cabricality.chapter_5.start.title}"
-			icon: "kubejs:divide"
+			icon: "cabricality:divide"
 			x: 0.5d
 			y: 0.0d
 			shape: "circle"

@@ -159,7 +159,7 @@
 		}
 		{
 			title: "{metallurgy.cabricality.ii.blocking.title}"
-			icon: "kubejs:extractor_machine"
+			icon: "cabricality:extractor_machine"
 			x: -6.0d
 			y: 0.0d
 			subtitle: "{metallurgy.cabricality.ii.blocking.subtitle}"

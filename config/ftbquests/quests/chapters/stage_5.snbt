@@ -4,13 +4,13 @@
 	order_index: 6
 	filename: "stage_5"
 	title: "{chapter_5.cabricality.title}"
-	icon: "kubejs:computation_matrix"
+	icon: "cabricality:computation_matrix"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "{chapter_5.cabricality.start.title}"
-			icon: "kubejs:calculation_mechanism"
+			icon: "cabricality:calculation_mechanism"
 			x: 5.0d
 			y: 15.5d
 			shape: "hexagon"
@@ -32,7 +32,7 @@
 		}
 		{
 			title: "{ontraption.cabricality.42.title}"
-			icon: "kubejs:raw_logic_bucket"
+			icon: "cabricality:raw_logic_bucket"
 			x: 2.0d
 			y: 15.5d
 			shape: "square"
@@ -45,7 +45,7 @@
 				{
 					id: "2A4A54EBAFBEB39F"
 					type: "item"
-					item: "kubejs:raw_logic_bucket"
+					item: "cabricality:raw_logic_bucket"
 					consume_items: false
 				}
 				{
@@ -57,7 +57,7 @@
 		}
 		{
 			title: "{contraption.cabricality.43.title}"
-			icon: "kubejs:plus"
+			icon: "cabricality:plus"
 			x: 2.0d
 			y: 14.0d
 			subtitle: "{contraption.cabricality.43.subtitle}"
@@ -68,25 +68,25 @@
 				{
 					id: "69462AA912169E3B"
 					type: "item"
-					item: "kubejs:plus"
+					item: "cabricality:plus"
 					consume_items: false
 				}
 				{
 					id: "56E1C75AD6DF3119"
 					type: "item"
-					item: "kubejs:minus"
+					item: "cabricality:minus"
 					consume_items: false
 				}
 				{
 					id: "3BF3D9E9B3782EA3"
 					type: "item"
-					item: "kubejs:multiply"
+					item: "cabricality:multiply"
 					consume_items: false
 				}
 				{
 					id: "5914CB0D1D6E839E"
 					type: "item"
-					item: "kubejs:divide"
+					item: "cabricality:divide"
 					consume_items: false
 				}
 				{
@@ -97,7 +97,7 @@
 			]
 		}
 		{
-			icon: "kubejs:three"
+			icon: "cabricality:three"
 			x: 0.5d
 			y: 13.5d
 			subtitle: "{contraption.cabricality.44.1.subtitle}"
@@ -108,7 +108,7 @@
 				{
 					id: "343E4ED28EA67219"
 					type: "item"
-					item: "kubejs:three"
+					item: "cabricality:three"
 					consume_items: false
 				}
 				{
@@ -119,7 +119,7 @@
 			]
 		}
 		{
-			icon: "kubejs:eight"
+			icon: "cabricality:eight"
 			x: 3.5d
 			y: 13.5d
 			subtitle: "{contraption.cabricality.44.2.subtitle}"
@@ -130,7 +130,7 @@
 				{
 					id: "18BB7C8E32701CB6"
 					type: "item"
-					item: "kubejs:eight"
+					item: "cabricality:eight"
 					consume_items: false
 				}
 				{
@@ -141,7 +141,7 @@
 			]
 		}
 		{
-			icon: "kubejs:one"
+			icon: "cabricality:one"
 			x: -1.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.1.subtitle}"
@@ -156,7 +156,7 @@
 				{
 					id: "61A3EF7882F2A31E"
 					type: "item"
-					item: "kubejs:one"
+					item: "cabricality:one"
 					consume_items: false
 				}
 				{
@@ -167,7 +167,7 @@
 			]
 		}
 		{
-			icon: "kubejs:two"
+			icon: "cabricality:two"
 			x: -0.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.2.subtitle}"
@@ -182,7 +182,7 @@
 				{
 					id: "2AD655BD7E1A0EBF"
 					type: "item"
-					item: "kubejs:two"
+					item: "cabricality:two"
 					consume_items: false
 				}
 				{
@@ -193,7 +193,7 @@
 			]
 		}
 		{
-			icon: "kubejs:four"
+			icon: "cabricality:four"
 			x: 0.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.4.subtitle}"
@@ -208,7 +208,7 @@
 				{
 					id: "54FEAD9C942788CF"
 					type: "item"
-					item: "kubejs:four"
+					item: "cabricality:four"
 					consume_items: false
 				}
 				{
@@ -219,7 +219,7 @@
 			]
 		}
 		{
-			icon: "kubejs:five"
+			icon: "cabricality:five"
 			x: 1.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.5.subtitle}"
@@ -234,7 +234,7 @@
 				{
 					id: "0B94D4B1C2A131DA"
 					type: "item"
-					item: "kubejs:five"
+					item: "cabricality:five"
 					consume_items: false
 				}
 				{
@@ -245,7 +245,7 @@
 			]
 		}
 		{
-			icon: "kubejs:six"
+			icon: "cabricality:six"
 			x: 2.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.6.subtitle}"
@@ -260,7 +260,7 @@
 				{
 					id: "0127797E6B5249A2"
 					type: "item"
-					item: "kubejs:six"
+					item: "cabricality:six"
 					consume_items: false
 				}
 				{
@@ -271,7 +271,7 @@
 			]
 		}
 		{
-			icon: "kubejs:seven"
+			icon: "cabricality:seven"
 			x: 3.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.7.subtitle}"
@@ -286,7 +286,7 @@
 				{
 					id: "7FA25AD87CBD6B62"
 					type: "item"
-					item: "kubejs:seven"
+					item: "cabricality:seven"
 					consume_items: false
 				}
 				{
@@ -297,7 +297,7 @@
 			]
 		}
 		{
-			icon: "kubejs:nine"
+			icon: "cabricality:nine"
 			x: 4.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.9.subtitle}"
@@ -312,7 +312,7 @@
 				{
 					id: "2F81E83410906BB5"
 					type: "item"
-					item: "kubejs:nine"
+					item: "cabricality:nine"
 					consume_items: false
 				}
 				{
@@ -323,7 +323,7 @@
 			]
 		}
 		{
-			icon: "kubejs:zero"
+			icon: "cabricality:zero"
 			x: 5.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.0.subtitle}"
@@ -338,7 +338,7 @@
 				{
 					id: "6FF94B3F20E69F43"
 					type: "item"
-					item: "kubejs:zero"
+					item: "cabricality:zero"
 					consume_items: false
 				}
 				{
@@ -372,7 +372,7 @@
 			tasks: [{
 				id: "2C98415D43457049"
 				type: "item"
-				item: "kubejs:computation_matrix"
+				item: "cabricality:computation_matrix"
 				count: 8L
 				consume_items: false
 			}]
@@ -413,7 +413,7 @@
 			tasks: [{
 				id: "25532A2369192051"
 				type: "item"
-				item: "kubejs:matter_plastics"
+				item: "cabricality:matter_plastics"
 				consume_items: false
 			}]
 		}

@@ -188,7 +188,7 @@
 		}
 		{
 			title: "{contraption.cabricality.21.title}"
-			icon: "kubejs:sky_slimy_fern_leaf"
+			icon: "cabricality:sky_slimy_fern_leaf"
 			x: 3.5d
 			y: 2.5d
 			subtitle: "{contraption.cabricality.21.subtitle}"
@@ -199,19 +199,19 @@
 				{
 					id: "135871C95B811F71"
 					type: "item"
-					item: "kubejs:sky_slimy_fern_leaf"
+					item: "cabricality:sky_slimy_fern_leaf"
 					consume_items: false
 				}
 				{
 					id: "315328866377A0DC"
 					type: "item"
-					item: "kubejs:ender_slimy_fern_leaf"
+					item: "cabricality:ender_slimy_fern_leaf"
 					consume_items: false
 				}
 				{
 					id: "65D5A32F475D78B6"
 					type: "item"
-					item: "kubejs:earth_slimy_fern_leaf"
+					item: "cabricality:earth_slimy_fern_leaf"
 					consume_items: false
 				}
 				{
@@ -223,7 +223,7 @@
 		}
 		{
 			title: "{contraption.cabricality.22.1.title}"
-			icon: "kubejs:earth_slimy_fern_paste"
+			icon: "cabricality:earth_slimy_fern_paste"
 			x: 3.5d
 			y: 4.0d
 			subtitle: "{contraption.cabricality.22.1.subtitle}"
@@ -234,19 +234,19 @@
 				{
 					id: "3EB8C2219D74126B"
 					type: "item"
-					item: "kubejs:earth_slimy_fern_paste"
+					item: "cabricality:earth_slimy_fern_paste"
 					consume_items: false
 				}
 				{
 					id: "4CB87BE063DACC5F"
 					type: "item"
-					item: "kubejs:ender_slimy_fern_paste"
+					item: "cabricality:ender_slimy_fern_paste"
 					consume_items: false
 				}
 				{
 					id: "1F0B0F9D72A6F611"
 					type: "item"
-					item: "kubejs:sky_slimy_fern_paste"
+					item: "cabricality:sky_slimy_fern_paste"
 					consume_items: false
 				}
 				{
@@ -524,7 +524,7 @@
 		}
 		{
 			title: "{contraption.cabricality.26.1.title}"
-			icon: "kubejs:dye_entangled_singularity"
+			icon: "cabricality:dye_entangled_singularity"
 			x: -1.5d
 			y: 7.0d
 			subtitle: "{contraption.cabricality.26.1.subtitle}"
@@ -538,7 +538,7 @@
 				{
 					id: "1A034719E3B94207"
 					type: "item"
-					item: "kubejs:dye_entangled_singularity"
+					item: "cabricality:dye_entangled_singularity"
 					consume_items: false
 				}
 				{
@@ -619,7 +619,7 @@
 		}
 		{
 			title: "{chapter_3.cabricality.byproduct.title}"
-			icon: "kubejs:waste_bucket"
+			icon: "cabricality:waste_bucket"
 			x: 0.5d
 			y: 9.0d
 			shape: "square"
@@ -748,7 +748,7 @@
 		}
 		{
 			title: "{contraption.cabricality.28.2.title}"
-			icon: "kubejs:radiant_sheet"
+			icon: "cabricality:radiant_sheet"
 			x: -6.0d
 			y: 9.0d
 			subtitle: "{contraption.cabricality.28.2.subtitle}"
@@ -759,7 +759,7 @@
 				{
 					id: "0B3A86351C4C94D9"
 					type: "item"
-					item: "kubejs:radiant_sheet"
+					item: "cabricality:radiant_sheet"
 					consume_items: false
 				}
 				{
@@ -771,7 +771,7 @@
 		}
 		{
 			title: "{contraption.cabricality.28.3.title}"
-			icon: "kubejs:radiant_coil"
+			icon: "cabricality:radiant_coil"
 			x: -4.0d
 			y: 11.0d
 			subtitle: "{contraption.cabricality.28.3.subtitle}"
@@ -782,7 +782,7 @@
 				{
 					id: "3AF0E2934C047AA3"
 					type: "item"
-					item: "kubejs:radiant_coil"
+					item: "cabricality:radiant_coil"
 					consume_items: false
 				}
 				{
@@ -794,7 +794,7 @@
 		}
 		{
 			title: "{contraption.cabricality.29.title}"
-			icon: "kubejs:inductive_mechanism"
+			icon: "cabricality:inductive_mechanism"
 			x: -1.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.29.subtitle}"
@@ -808,7 +808,7 @@
 				{
 					id: "153D599D82983310"
 					type: "item"
-					item: "kubejs:inductive_mechanism"
+					item: "cabricality:inductive_mechanism"
 					consume_items: false
 				}
 				{
@@ -820,7 +820,7 @@
 		}
 		{
 			title: "{contraption.cabricality.30.title}"
-			icon: "kubejs:invar_ingot"
+			icon: "cabricality:invar_ingot"
 			x: 0.5d
 			y: -1.0d
 			shape: "circle"
@@ -847,7 +847,7 @@
 				id: "6334526E14C21487"
 				type: "item"
 				item: {
-					id: "kubejs:chromatic_resonator"
+					id: "cabricality:chromatic_resonator"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -875,7 +875,7 @@
 				{
 					id: "002FAA00240A80FD"
 					type: "item"
-					item: "kubejs:inductive_mechanism"
+					item: "cabricality:inductive_mechanism"
 					count: 16
 				}
 				{
@@ -887,7 +887,7 @@
 				{
 					id: "5E5F5C257C45D344"
 					type: "item"
-					item: "kubejs:invar_ingot"
+					item: "cabricality:invar_ingot"
 					random_bonus: 4
 				}
 			]
@@ -908,7 +908,7 @@
 			tasks: [{
 				id: "3B8AF2614A9EE681"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				consume_items: false
 			}]
 		}
@@ -1021,7 +1021,7 @@
 			tasks: [{
 				id: "0EC104535857B542"
 				type: "item"
-				item: "kubejs:enderium_ingot"
+				item: "cabricality:enderium_ingot"
 				consume_items: false
 			}]
 		}
@@ -1036,7 +1036,7 @@
 			tasks: [{
 				id: "6F8624E071829779"
 				type: "item"
-				item: "kubejs:abstruse_mechanism"
+				item: "cabricality:abstruse_mechanism"
 				consume_items: false
 			}]
 		}
@@ -1074,14 +1074,14 @@
 			tasks: [{
 				id: "314DEBB9F9DE70F4"
 				type: "item"
-				item: "kubejs:enderium_machine"
+				item: "cabricality:enderium_machine"
 				consume_items: false
 			}]
 			rewards: [
 				{
 					id: "2445637181E32B19"
 					type: "item"
-					item: "kubejs:abstruse_mechanism"
+					item: "cabricality:abstruse_mechanism"
 					count: 16
 				}
 				{
@@ -1093,7 +1093,7 @@
 				{
 					id: "1383A8E9F3AC725D"
 					type: "item"
-					item: "kubejs:enderium_ingot"
+					item: "cabricality:enderium_ingot"
 					random_bonus: 4
 				}
 			]
