@@ -773,5 +773,7 @@
 	"fluid.ad_astra.oxygen"   : "氧气",
 	"fluid.ad_astra.cryo_fuel": "深低温燃油",
 	"fluid.ad_astra.fuel"     : "燃油",
-	"fluid.ad_astra.oil"      : "原油"
+	"fluid.ad_astra.oil"      : "原油",
+
+	"block.ad_astra.desh_cable"   : "殷钢能量管道"
 }
