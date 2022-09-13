@@ -31,7 +31,7 @@ onEvent("recipes", event => {
     event.recipes.createPressing(s, s)
   ]).transitionalItem(s)
     .loops(16)
-    .id(asIdentifier("invar_ingot")
+    .id(asIdentifier("invar_ingot"))
 
   event.remove({ id: CR("mechanical_crafting/crushing_wheel") })
   event.recipes.createMechanicalCrafting(Item.of(CR("crushing_wheel"), 2), [
