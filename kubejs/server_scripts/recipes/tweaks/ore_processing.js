@@ -59,13 +59,13 @@ onEvent("recipes", event => {
     ["indrev", "tin", "indrev", "create", "indrev", "tconstruct"],
     ["indrev", "lead", "indrev", "create", "indrev", "tconstruct"],
 
-    ["tconstruct", "cobalt", "tconstruct", "kubejs", "kubejs", "tconstruct"],
+    ["tconstruct", "cobalt", "tconstruct", "cabricality", "cabricality", "tconstruct"],
 
-    ["ad_astra", "desh", "ad_astra", "kubejs", "kubejs", "kubejs"],
-    ["ad_astra", "ostrum", "ad_astra", "kubejs", "kubejs", "kubejs"],
-    ["ad_astra", "calorite", "ad_astra", "kubejs", "kubejs", "kubejs"],
+    ["ad_astra", "desh", "ad_astra", "cabricality", "cabricality", "cabricality"],
+    ["ad_astra", "ostrum", "ad_astra", "cabricality", "cabricality", "cabricality"],
+    ["ad_astra", "calorite", "ad_astra", "cabricality", "cabricality", "cabricality"],
 
-    ["kubejs", "nickel", "kubejs", "create", "kubejs", "tconstruct"]
+    ["cabricality", "nickel", "cabricality", "create", "cabricality", "tconstruct"]
   ]
   metals.forEach(metal => {
     let ingot = metal[0] + ":" + metal[1] + "_ingot"

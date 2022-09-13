@@ -4,13 +4,13 @@
 	order_index: 2
 	filename: "stage_2"
 	title: "{chapter_2.cabricality.title}"
-	icon: "kubejs:brass_machine"
+	icon: "cabricality:brass_machine"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "{chapter_2.cabricality.start.title}"
-			icon: "kubejs:kinetic_mechanism"
+			icon: "cabricality:kinetic_mechanism"
 			x: -1.0d
 			y: 2.0d
 			shape: "hexagon"
@@ -179,7 +179,7 @@
 		}
 		{
 			title: "{contraption.cabricality.14.1.title}"
-			icon: "kubejs:sky_stone_bucket"
+			icon: "cabricality:sky_stone_bucket"
 			x: -1.0d
 			y: 5.5d
 			subtitle: "{contraption.cabricality.14.1.subtitle}"
@@ -193,7 +193,7 @@
 				{
 					id: "36E36D584FCBC358"
 					type: "item"
-					item: "kubejs:sky_stone_bucket"
+					item: "cabricality:sky_stone_bucket"
 					consume_items: false
 				}
 				{
@@ -205,7 +205,7 @@
 		}
 		{
 			title: "{contraption.cabricality.14.2.title}"
-			icon: "kubejs:redstone_bucket"
+			icon: "cabricality:redstone_bucket"
 			x: -0.5d
 			y: 7.0d
 			subtitle: "{contraption.cabricality.14.2.subtitle}"
@@ -220,7 +220,7 @@
 				{
 					id: "5F47790124641B2D"
 					type: "item"
-					item: "kubejs:redstone_bucket"
+					item: "cabricality:redstone_bucket"
 					consume_items: false
 				}
 				{
@@ -414,7 +414,7 @@
 				id: "7DF53EF0CF55B5D7"
 				type: "item"
 				item: {
-					id: "kubejs:screwdriver"
+					id: "cabricality:screwdriver"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -435,7 +435,7 @@
 			tasks: [{
 				id: "4C32A887DA89A75C"
 				type: "item"
-				item: "kubejs:brass_machine"
+				item: "cabricality:brass_machine"
 				consume_items: false
 			}]
 			rewards: [
@@ -605,7 +605,7 @@
 			tasks: [{
 				id: "24070D354D67A3DF"
 				type: "item"
-				item: "kubejs:infernal_mechanism"
+				item: "cabricality:infernal_mechanism"
 				consume_items: false
 			}]
 		}
@@ -621,14 +621,14 @@
 			tasks: [{
 				id: "5D828A5601F86224"
 				type: "item"
-				item: "kubejs:zinc_machine"
+				item: "cabricality:zinc_machine"
 				consume_items: false
 			}]
 			rewards: [
 				{
 					id: "5868F4AF0FBE0295"
 					type: "item"
-					item: "kubejs:infernal_mechanism"
+					item: "cabricality:infernal_mechanism"
 					count: 16
 				}
 				{

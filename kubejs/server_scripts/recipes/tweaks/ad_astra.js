@@ -1,9 +1,9 @@
 onEvent("recipes", event => {
-	event.recipes.createCompacting(KJ("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
-	let gear = KJ("sturdy_mechanism")
-	let plastic = KJ("matter_plastics")
+	event.recipes.createCompacting(CABF("matter_plastics"), [AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball"), AE2("matter_ball")]).superheated()
+	let gear = CABF("sturdy_mechanism")
+	let plastic = CABF("matter_plastics")
 	let machine = AE2("controller")
-	let matrix = KJ("computation_matrix")
+	let matrix = CABF("computation_matrix")
 	event.remove({ output: IV("controller") })
 	event.recipes.createMechanicalCrafting(IV("controller"), [
 		"AAAAA",
@@ -90,9 +90,9 @@ onEvent("recipes", event => {
 		})
 	})
 	let ore_map = [
-		["ad_astra:raw_desh", "kubejs:crushed_desh_ore"],
-		["ad_astra:raw_ostrum", "kubejs:crushed_ostrum_ore"],
-		["ad_astra:raw_calorite", "kubejs:crushed_calorite_ore"]
+		["ad_astra:raw_desh", asIdentifier("crushed_desh_ore")],
+		["ad_astra:raw_ostrum", asIdentifier("crushed_ostrum_ore")],
+		["ad_astra:raw_calorite", asIdentifier("crushed_calorite_ore")]
 	]
 	ore_map.forEach(mapped => {
 		event.replaceOutput({ type: CR("crushing") }, mapped[0], mapped[1])
@@ -107,7 +107,7 @@ onEvent("recipes", event => {
 	event.shaped("8x ad_astra:desh_cable", [
     "PMP"
   ], {
-    P: KJ("invar_ingot"),
+    P: CABF("invar_ingot"),
     M: MC("redstone")
   })
 })

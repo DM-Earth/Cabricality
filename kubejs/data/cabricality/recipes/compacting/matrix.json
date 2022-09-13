@@ -2,13 +2,13 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "fluid": "kubejs:matrix",
+      "fluid": "cabricality:matrix",
       "amount": 81000
     }
   ],
   "results": [
     {
-      "item": "kubejs:computation_matrix"
+      "item": "cabricality:computation_matrix"
     }
   ]
 }

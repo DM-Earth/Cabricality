@@ -2,7 +2,7 @@
   "type": "indrev:fluid_infuse",
   "ingredients": [
     {
-      "item": "kubejs:nickel_ingot"
+      "item": "cabricality:nickel_ingot"
     }
   ],
   "fluidInput": {
@@ -10,7 +10,7 @@
     "amount": 36000
   },
   "output": {
-    "item": "kubejs:nickel_compound",
+    "item": "cabricality:nickel_compound",
     "count": 1
   },
   "processTime": 400

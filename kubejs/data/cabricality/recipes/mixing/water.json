@@ -5,7 +5,7 @@
       "item": "create:copper_sheet"
     },
     {
-      "item": "kubejs:zinc_sheet"
+      "item": "cabricality:zinc_sheet"
     },
     {
       "fluid": "minecraft:water",
@@ -25,7 +25,7 @@
       "item": "create:copper_sheet"
     },
     {
-      "item": "kubejs:zinc_sheet"
+      "item": "cabricality:zinc_sheet"
     }
   ],
   "heatRequirement":"heated"

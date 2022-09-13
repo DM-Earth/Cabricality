@@ -2,5 +2,7 @@
 	"fluid.ad_astra.oxygen"   : "Oxygen",
 	"fluid.ad_astra.cryo_fuel": "Cryo Fuel",
 	"fluid.ad_astra.fuel"     : "Fuel",
-	"fluid.ad_astra.oil"      : "Oil"
+	"fluid.ad_astra.oil"      : "Oil",
+
+	"block.ad_astra.desh_cable"   : "Invar Energy Pipe"
 }

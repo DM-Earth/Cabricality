@@ -7,10 +7,10 @@
   ],
   "key": {
     "C": {
-      "item": "kubejs:nickel_nugget"
+      "item": "cabricality:nickel_nugget"
     }
   },
   "result": {
-    "item": "kubejs:nickel_ingot"
+    "item": "cabricality:nickel_ingot"
   }
 }

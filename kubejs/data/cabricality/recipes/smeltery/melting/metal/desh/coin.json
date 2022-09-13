@@ -13,7 +13,7 @@
     "tag": "c:coins/desh"
   },
   "result": {
-    "fluid": "kubejs:molten_desh",
+    "fluid": "cabricality:molten_desh",
     "amount": 30
   },
   "temperature": 900,

@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "kubejs:kinetic_mechanism"
+    "item": "cabricality:kinetic_mechanism"
   },
   "transitionalItem": {
     "item": "create:incomplete_precision_mechanism"
@@ -46,7 +46,7 @@
           "item": "create:incomplete_precision_mechanism"
         },
         {
-          "item": "kubejs:screwdriver"
+          "item": "cabricality:screwdriver"
         }
       ],
       "results": [

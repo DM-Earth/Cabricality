@@ -26,7 +26,7 @@
 		}
 		{
 			title: "{market.cabricality.exchange.gold.title}"
-			icon: "kubejs:gold_coin"
+			icon: "cabricality:gold_coin"
 			x: -8.0d
 			y: -4.0d
 			shape: "circle"
@@ -37,19 +37,19 @@
 			tasks: [{
 				id: "2387D852CA97AD1A"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 64L
 			}]
 			rewards: [{
 				id: "341C8CC09CDE7DE6"
 				type: "questsadditions:repeat"
-				icon: "kubejs:gold_coin"
+				icon: "cabricality:gold_coin"
 				table_id: 6372636554880692939L
 			}]
 		}
 		{
 			title: "{market.cabricality.exchange.silver.title}"
-			icon: { id: "kubejs:silver_coin", Count: 64b }
+			icon: { id: "cabricality:silver_coin", Count: 64b }
 			x: -4.0d
 			y: -4.0d
 			shape: "circle"
@@ -60,12 +60,12 @@
 			tasks: [{
 				id: "772821832EE93341"
 				type: "item"
-				item: "kubejs:gold_coin"
+				item: "cabricality:gold_coin"
 			}]
 			rewards: [{
 				id: "73CB9C5EC1BED6EC"
 				type: "questsadditions:repeat"
-				icon: "kubejs:silver_coin"
+				icon: "cabricality:silver_coin"
 				auto: "disabled"
 				table_id: 477886174531820947L
 			}]
@@ -73,7 +73,7 @@
 		{
 			title: "{market.cabricality.saw.title}"
 			icon: {
-				id: "kubejs:netherite_saw"
+				id: "cabricality:netherite_saw"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -97,7 +97,7 @@
 					id: "4C77B71D0EC3B2EA"
 					type: "item"
 					item: {
-						id: "kubejs:netherite_saw"
+						id: "cabricality:netherite_saw"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -107,7 +107,7 @@
 				{
 					id: "3EE8736C08EF80F4"
 					type: "item"
-					item: "kubejs:gold_coin"
+					item: "cabricality:gold_coin"
 					count: 3L
 				}
 			]
@@ -115,7 +115,7 @@
 				id: "56DB21D18FB1FF64"
 				type: "item"
 				item: {
-					id: "kubejs:netherite_saw"
+					id: "cabricality:netherite_saw"
 					Count: 1b
 					tag: {
 						display: {
@@ -136,7 +136,7 @@
 		{
 			title: "{market.cabricality.screwdriver.title}"
 			icon: {
-				id: "kubejs:screwdriver"
+				id: "cabricality:screwdriver"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -159,7 +159,7 @@
 					id: "1E25EB2883C9A960"
 					type: "item"
 					item: {
-						id: "kubejs:screwdriver"
+						id: "cabricality:screwdriver"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -169,7 +169,7 @@
 				{
 					id: "74585BB7E80CF010"
 					type: "item"
-					item: "kubejs:gold_coin"
+					item: "cabricality:gold_coin"
 					count: 5L
 				}
 			]
@@ -177,7 +177,7 @@
 				id: "743730BBE32A0875"
 				type: "item"
 				item: {
-					id: "kubejs:screwdriver"
+					id: "cabricality:screwdriver"
 					Count: 1b
 					tag: {
 						HideFlags: 1
@@ -198,7 +198,7 @@
 		{
 			title: "{market.cabricality.resonator.title}"
 			icon: {
-				id: "kubejs:chromatic_resonator"
+				id: "cabricality:chromatic_resonator"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -218,7 +218,7 @@
 					id: "36CBD54BCB068EB1"
 					type: "item"
 					item: {
-						id: "kubejs:chromatic_resonator"
+						id: "cabricality:chromatic_resonator"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -228,7 +228,7 @@
 				{
 					id: "5B31A98B9EFCCFAB"
 					type: "item"
-					item: "kubejs:gold_coin"
+					item: "cabricality:gold_coin"
 					count: 7L
 					consume_items: false
 				}
@@ -237,7 +237,7 @@
 				id: "0F4C7BB4C0ECB4CC"
 				type: "item"
 				item: {
-					id: "kubejs:chromatic_resonator"
+					id: "cabricality:chromatic_resonator"
 					Count: 1b
 					tag: {
 						HideFlags: 1
@@ -258,7 +258,7 @@
 		{
 			title: "{market.cabricality.flash_drive.title}"
 			icon: {
-				id: "kubejs:flash_drive"
+				id: "cabricality:flash_drive"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -278,7 +278,7 @@
 					id: "561DF7A17B804B1F"
 					type: "item"
 					item: {
-						id: "kubejs:flash_drive"
+						id: "cabricality:flash_drive"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -288,7 +288,7 @@
 				{
 					id: "04FA9389D991556D"
 					type: "item"
-					item: "kubejs:gold_coin"
+					item: "cabricality:gold_coin"
 					count: 11L
 				}
 			]
@@ -296,7 +296,7 @@
 				id: "3EA7518063CBEA5B"
 				type: "item"
 				item: {
-					id: "kubejs:flash_drive"
+					id: "cabricality:flash_drive"
 					Count: 1b
 					tag: {
 						HideFlags: 1
@@ -325,7 +325,7 @@
 			tasks: [{
 				id: "0783860FB502A201"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [{
@@ -345,7 +345,7 @@
 			tasks: [{
 				id: "5345AA8760A95127"
 				type: "item"
-				item: "kubejs:gold_coin"
+				item: "cabricality:gold_coin"
 				count: 2L
 			}]
 			rewards: [{
@@ -365,7 +365,7 @@
 			tasks: [{
 				id: "6235F365D702DF2B"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
@@ -412,7 +412,7 @@
 			tasks: [{
 				id: "188BEC2BA245DB13"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 15L
 			}]
 			rewards: [
@@ -456,7 +456,7 @@
 			tasks: [{
 				id: "3EA558277444F605"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 50L
 			}]
 			rewards: [{
@@ -581,7 +581,7 @@
 			tasks: [{
 				id: "709557A517B0143F"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 55L
 			}]
 			rewards: [
@@ -613,7 +613,7 @@
 			tasks: [{
 				id: "165B9A886A26BCC8"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 60L
 			}]
 			rewards: [{
@@ -633,7 +633,7 @@
 			tasks: [{
 				id: "4FB1B4787D648565"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 45L
 			}]
 			rewards: [
@@ -660,13 +660,13 @@
 			tasks: [{
 				id: "3D328A6D69E64EDA"
 				type: "item"
-				item: "kubejs:gold_coin"
+				item: "cabricality:gold_coin"
 				count: 6L
 			}]
 			rewards: [{
 				id: "51ABA96DE3477D3B"
 				type: "item"
-				item: "kubejs:circuit_scrap"
+				item: "cabricality:circuit_scrap"
 				count: 4
 			}]
 		}
@@ -681,7 +681,7 @@
 			tasks: [{
 				id: "05BB5DFA82280C0C"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -716,7 +716,7 @@
 			tasks: [{
 				id: "6404722100F1DEF7"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -781,7 +781,7 @@
 			tasks: [{
 				id: "06C835DB602D6F9F"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -821,7 +821,7 @@
 			tasks: [{
 				id: "3AA788B63B6A73EF"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -867,7 +867,7 @@
 			tasks: [{
 				id: "06028A67C6DCCD00"
 				type: "item"
-				item: "kubejs:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 24L
 			}]
 			rewards: [
@@ -921,7 +921,7 @@
 				{
 					id: "6837BEE1075CC785"
 					type: "item"
-					item: "kubejs:silver_coin"
+					item: "cabricality:silver_coin"
 					count: 48L
 				}
 				{

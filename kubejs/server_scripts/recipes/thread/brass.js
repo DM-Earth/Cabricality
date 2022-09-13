@@ -9,9 +9,9 @@ onEvent("recipes", event => {
   event.recipes.createMechanicalCrafting(Item.of(AE2("fluix_crystal_seed"), 2), ["A"], { A: AE2("#all_fluix") })
 
   event.remove({ id: CR("sequenced_assembly/precision_mechanism") })
-  event.shapeless(KJ("screwdriver"), [IV("screwdriver"), MC("iron_ingot"), MC("blue_dye")])
+  event.shapeless(CABF("screwdriver"), [IV("screwdriver"), MC("iron_ingot"), MC("blue_dye")])
 
-  event.shaped(KJ("brass_machine"), [
+  event.shaped(CABF("brass_machine"), [
     "SSS",
     "SCS",
     "SSS"
@@ -22,11 +22,11 @@ onEvent("recipes", event => {
   let brass_machine = (id, amount, other_ingredient) => {
     event.remove({ output: id })
     if (other_ingredient) {
-      event.smithing(Item.of(id, amount), "kubejs:brass_machine", other_ingredient)
-      event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: "kubejs:brass_machine", B: other_ingredient })
+      event.smithing(Item.of(id, amount), asIdentifier("brass_machine"), other_ingredient)
+      event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: asIdentifier("brass_machine"), B: other_ingredient })
     }
     else
-      event.stonecutting(Item.of(id, amount), "kubejs:brass_machine")
+      event.stonecutting(Item.of(id, amount), asIdentifier("brass_machine"))
   }
   brass_machine("create:mechanical_crafter", 3, MC("crafting_table"))
   brass_machine("create:sequenced_gearshift", 2)

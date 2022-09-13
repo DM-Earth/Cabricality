@@ -23,12 +23,12 @@ function select(input, seed) {
 }
 
 function itemRecipes(inputBlock) {
-	if (inputBlock == "minecraft:basalt") { return "kubejs:basalz_shard" }
-	if (inputBlock == "minecraft:snow_block") { return "kubejs:blizz_cube" }
+	if (inputBlock == "minecraft:basalt") { return asIdentifier("basalz_shard") }
+	if (inputBlock == "minecraft:snow_block") { return asIdentifier("blizz_cube") }
 	return ""
 }
 function blockRecipes(inputBlock) {
-	if (inputBlock == "minecraft:water") { return "kubejs:powered_water" }
+	if (inputBlock == "minecraft:water") { return asIdentifier("powered_water") }
 	return ""
 }
 function chaosT(subs, seed, event) {
@@ -61,7 +61,7 @@ function chaosT(subs, seed, event) {
 }
 function process_laser(event) {
 	let seedL = Math.abs(event.getEntity().getServer().getOverworld().getSeed())
-	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == "kubejs:powered_water" && event.block.up.getBlockState().toString().includes("[level=0]")) {
+	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == asIdentifier("powered_water") && event.block.up.getBlockState().toString().includes("[level=0]")) {
 		let block = event.block
 		let x = block.x
 		let y = block.y
@@ -88,11 +88,11 @@ function process_laser(event) {
 			let blockY = targetBlock.y
 			let blockZ = targetBlock.z
 
-			if (targetBlock.id.startsWith("kubejs:substrate_")) {
-				if (debug_laser == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replace("kubejs:substrate_", "")}`)
-				substrateList.push(targetBlock.id.replace("kubejs:substrate_", ""))
+			if (targetBlock.id.startsWith(asIdentifier("substrate_"))) {
+				if (debug_laser == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replace(asIdentifier("substrate_", ""))}`)
+				substrateList.push(targetBlock.id.replace(asIdentifier("substrate_", "")))
 				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
-				if (targetBlock.id == "kubejs:substrate_chaos") dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"kubejs:substrate_chaos",Count:1b}}`)
+				if (targetBlock.id == asIdentifier("substrate_chaos")) dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:asIdentifier("substrate_chaos",Count:1b}}`)
 			}
 
 			let outputItem = itemRecipes(targetBlock.id)
@@ -110,8 +110,8 @@ function process_laser(event) {
 		let unifiedSubstrates = substrateList.sort().toString()
 		let outputChaos = chaosT(unifiedSubstrates, seedL, event)
 		if (outputChaos != "") {
-			//		event.server.runCommandSilent("summon minecraft:item " + x + " " + yUp + " " + z + " {Health:32767, Item:{id:\"kubejs:substrate_" + outputChaos + "\",Count:1b}}")
-			dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"kubejs:substrate_${outputChaos}",Count:1b}}`)
+			//		event.server.runCommandSilent("summon minecraft:item " + x + " " + yUp + " " + z + " {Health:32767, Item:{id:\asIdentifier("substrate_" + outputChaos + "\",Count:1b}}")
+			dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:asIdentifier("substrate_${outputChaos}",Count:1b}}`)
 		}
 
 		for (let i = length; i >= 1; i = i - 1) {

@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "kubejs:silver_coin"
+      "item": "cabricality:silver_coin"
     }
   ],
   "results": [

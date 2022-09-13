@@ -13,7 +13,7 @@
     "tag": "c:storage_blocks/calorite"
   },
   "result": {
-    "fluid": "kubejs:molten_calorite",
+    "fluid": "cabricality:molten_calorite",
     "amount": 810
   },
   "temperature": 900,

@@ -3,11 +3,11 @@ onEvent("recipes", event => {
   event.remove({ type: IV("sawmill") })
   event.remove({ type: IV("compress") })
   event.remove({ type: AE2("inscriber") })
-  event.shaped(KJ("circuit_scrap", 2), [" A ", "ABA", " A "], { A: KJ("invar_ingot"), B: C("#circuit_press") })
-  event.stonecutting(AE2("silicon_press"), KJ("circuit_scrap"))
-  event.stonecutting(AE2("engineering_processor_press"), KJ("circuit_scrap"))
-  event.stonecutting(AE2("calculation_processor_press"), KJ("circuit_scrap"))
-  event.stonecutting(AE2("logic_processor_press"), KJ("circuit_scrap"))
+  event.shaped(CABF("circuit_scrap", 2), [" A ", "ABA", " A "], { A: CABF("invar_ingot"), B: C("#circuit_press") })
+  event.stonecutting(AE2("silicon_press"), CABF("circuit_scrap"))
+  event.stonecutting(AE2("engineering_processor_press"), CABF("circuit_scrap"))
+  event.stonecutting(AE2("calculation_processor_press"), CABF("circuit_scrap"))
+  event.stonecutting(AE2("logic_processor_press"), CABF("circuit_scrap"))
 
   event.remove({ id: FD("flint_knife") })
   event.remove({ id: FD("iron_knife") })
@@ -257,7 +257,7 @@ onEvent("recipes", event => {
     "SSSSS"
   ], {
     W: MC("water_bucket"),
-    S: KJ("computation_matrix")
+    S: CABF("computation_matrix")
   })
   event.remove({ output: CX("copper_ladder") })
   event.replaceOutput({}, CR("copper_ladder"), CX("copper_ladder"))
@@ -276,7 +276,7 @@ onEvent("recipes", event => {
   })
 
   event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, "#c:plates/brass", CR("golden_sheet"))
-  event.recipes.createPressing(KJ("zinc_sheet"), CR("zinc_ingot"))
+  event.recipes.createPressing(CABF("zinc_sheet"), CR("zinc_ingot"))
   event.replaceInput(IV("steel_block"), AR("steel_block"))
   event.replaceInput(IV("steel_nugget"), AR("steel_nugget"))
   event.replaceInput(AR("steel_ingot"), IV("steel_ingot"))

@@ -1,4 +1,3 @@
-let modpackId = "cabricality"
 function tradeList() {
 //	sync needed
 //	profession, type, modId, item, =itemCount, =silverCoinCount
@@ -45,10 +44,10 @@ function tradeList() {
 		["mining", "item", "create", "crushed_nickel_ore", 16, 14],
 		["mining", "item", "create", "crushed_lead_ore", 16, 14],
 		["mining", "item", "create", "crushed_tin_ore", 16, 12],
-		["mining", "item", "kubejs", "crushed_calorite_ore", 16, 16],
-		["mining", "item", "kubejs", "crushed_ostrum_ore", 16, 16],
-		["mining", "item", "kubejs", "crushed_desh_ore", 16, 16],
-		["mining", "item", "kubejs", "crushed_cobalt_ore", 16, 16],
+		["mining", "item", modpackId, "crushed_calorite_ore", 16, 16],
+		["mining", "item", modpackId, "crushed_ostrum_ore", 16, 16],
+		["mining", "item", modpackId, "crushed_desh_ore", 16, 16],
+		["mining", "item", modpackId, "crushed_cobalt_ore", 16, 16],
 		["mining", "item", "minecraft", "andesite", 64, 1],
 		["mining", "item", "minecraft", "granite", 64, 1],
 		["mining", "item", "minecraft", "diorite", 64, 1],
@@ -165,8 +164,8 @@ onEvent("item.registry", event => {
 	tradeList().forEach(trade => {
 		let isTag = ""
 		if (trade[1] == "tag") isTag = "#"
-		event.create("trade_card_" + trade[2] + "_" + trade[3])
-			.texture(modpackId + ":/item/trading/trade_card")
+		event.create(asIdentifier("trade_card_" + trade[2] + "_" + trade[3]))
+			.texture(asIdentifier("/item/trading/trade_card"))
 			.displayName("§6Trade Card")
 			.tooltip(`§7${isTag}${trade[2]}:${trade[3]}`)
 		if (professions.includes(trade[0]) != true) {
@@ -174,8 +173,8 @@ onEvent("item.registry", event => {
 		}
 	})
 	professions.forEach(profession => {
-		event.create("profession_card_" + profession)
-			.texture(modpackId + ":/item/trading/profession_card")
+		event.create(asIdentifier("profession_card_" + profession))
+			.texture(asIdentifier("/item/trading/profession_card"))
 			.displayName("§dProfession Card")
 			.tooltip(`§7${modpackId}:${profession}`)
 	})

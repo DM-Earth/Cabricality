@@ -2,7 +2,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "kubejs:coal_coke"
+      "item": "cabricality:coal_coke"
     },
     {
       "fluid": "minecraft:water",

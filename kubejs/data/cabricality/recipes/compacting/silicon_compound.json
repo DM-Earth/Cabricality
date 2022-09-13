@@ -2,19 +2,19 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "fluid": "kubejs:fine_sand",
+      "fluid": "cabricality:fine_sand",
       "amount": 40500
     },
     {
-      "item": "kubejs:purified_sand"
+      "item": "cabricality:purified_sand"
     },
     {
-      "item": "kubejs:coke_chunk"
+      "item": "cabricality:coke_chunk"
     }
   ],
   "results": [
     {
-      "item": "kubejs:silicon_compound"
+      "item": "cabricality:silicon_compound"
     }
   ]
 }

@@ -1,7 +1,7 @@
 onEvent("recipes", event => {
   event.custom(ifiniDeploying(AE2("printed_silicon"), AE2("silicon"), AE2("silicon_press")))
 
-	event.shaped(KJ("flash_drive"), [
+	event.shaped(CABF("flash_drive"), [
 		"SCA"
 	], {
 		A: TC("cobalt_ingot"),
@@ -10,16 +10,16 @@ onEvent("recipes", event => {
 	})
 
 	/*
-	let t = KJ("incomplete_calculation_mechanism")
+	let t = CABF("incomplete_calculation_mechanism")
 		event.recipes.createSequencedAssembly([
-			KJ("calculation_mechanism"),
-		], KJ("inductive_mechanism"), [
+			CABF("calculation_mechanism"),
+		], CABF("inductive_mechanism"), [
 			event.recipes.createDeploying(t, [t, AE2("printed_silicon")]),
 			event.recipes.createDeploying(t, [t, AE2("printed_silicon")]),
-			event.recipes.createDeploying(t, [t, KJ("flash_drive")])
+			event.recipes.createDeploying(t, [t, CABF("flash_drive")])
 		]).transitionalItem(t)
 			.loops(1)
-			.id("kubejs:calculation_mechanism")
+			.id(asIdentifier("calculation_mechanism")
 	*/
 
 	event.remove({ output: AE2("controller") })
@@ -28,8 +28,8 @@ onEvent("recipes", event => {
 		"SCS",
 		"SSS"
 	], {
-		C: KJ("fluix_casing"),
-		S: KJ("calculation_mechanism")
+		C: CABF("fluix_casing"),
+		S: CABF("calculation_mechanism")
 	})
 
 	let fluix_machine = (id, amount, other_ingredient) => {
@@ -47,9 +47,9 @@ onEvent("recipes", event => {
 	fluix_machine(AE2("annihilation_core"), 4, AE2("calculation_processor"))
 	fluix_machine(AE2("chest"), 1, MC("chest"))
 
-	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, C("#redstone_dusts"), KJ("calculation_mechanism"))
+	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, C("#redstone_dusts"), CABF("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/item_storage_components_cell_1k_part") }, AE2("logic_processor"), MC("redstone"))
-	event.replaceInput({ id: AE2("network/cells/spatial_components") }, C("#glowstone_dusts"), KJ("calculation_mechanism"))
+	event.replaceInput({ id: AE2("network/cells/spatial_components") }, C("#glowstone_dusts"), CABF("calculation_mechanism"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, AE2("engineering_processor"), MC("glowstone_dust"))
-	event.replaceInput({ id: AE2("network/crafting/patterns_blank") }, C("#glowstone_dusts"), KJ("calculation_mechanism"))
+	event.replaceInput({ id: AE2("network/crafting/patterns_blank") }, C("#glowstone_dusts"), CABF("calculation_mechanism"))
 })

@@ -13,7 +13,7 @@
     "tag": "c:coins/ostrum"
   },
   "result": {
-    "fluid": "kubejs:molten_ostrum",
+    "fluid": "cabricality:molten_ostrum",
     "amount": 30
   },
   "temperature": 900,

@@ -2,14 +2,14 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "fluid": "kubejs:resin",
+      "fluid": "cabricality:resin",
       
       "amount": 20250
     }
   ],
   "results": [
     {
-      "item": "kubejs:rubber"
+      "item": "cabricality:rubber"
     }
   ]
 }

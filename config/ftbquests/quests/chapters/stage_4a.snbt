@@ -4,13 +4,13 @@
 	order_index: 5
 	filename: "stage_4a"
 	title: "{chapter_4a.cabricality.title}"
-	icon: "kubejs:substrate_chaos"
+	icon: "cabricality:substrate_chaos"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "{chapter_4a.cabricality.start.title}"
-			icon: "kubejs:inductive_mechanism"
+			icon: "cabricality:inductive_mechanism"
 			x: 1.75d
 			y: 2.0d
 			shape: "hexagon"
@@ -62,7 +62,7 @@
 			tasks: [{
 				id: "1E93F39E5F1F678E"
 				type: "item"
-				item: "kubejs:substrate_andesite"
+				item: "cabricality:substrate_andesite"
 				consume_items: false
 			}]
 		}
@@ -75,7 +75,7 @@
 			tasks: [{
 				id: "5D98554C2EF24A62"
 				type: "item"
-				item: "kubejs:substrate_diorite"
+				item: "cabricality:substrate_diorite"
 				consume_items: false
 			}]
 		}
@@ -88,7 +88,7 @@
 			tasks: [{
 				id: "090BAD8069B5962C"
 				type: "item"
-				item: "kubejs:substrate_granite"
+				item: "cabricality:substrate_granite"
 				consume_items: false
 			}]
 		}
@@ -101,7 +101,7 @@
 			tasks: [{
 				id: "739A22504FFAC363"
 				type: "item"
-				item: "kubejs:substrate_cobblestone"
+				item: "cabricality:substrate_cobblestone"
 				consume_items: false
 			}]
 		}
@@ -114,7 +114,7 @@
 			tasks: [{
 				id: "2F714B82CD1A3FDD"
 				type: "item"
-				item: "kubejs:substrate_basalt"
+				item: "cabricality:substrate_basalt"
 				consume_items: false
 			}]
 		}
@@ -127,7 +127,7 @@
 			tasks: [{
 				id: "217E5A578A83222B"
 				type: "item"
-				item: "kubejs:substrate_magenta"
+				item: "cabricality:substrate_magenta"
 				consume_items: false
 			}]
 		}
@@ -140,7 +140,7 @@
 			tasks: [{
 				id: "6FD70BEFECE67F2C"
 				type: "item"
-				item: "kubejs:substrate_orange"
+				item: "cabricality:substrate_orange"
 				consume_items: false
 			}]
 		}
@@ -153,7 +153,7 @@
 			tasks: [{
 				id: "183677E3CD7A38E0"
 				type: "item"
-				item: "kubejs:substrate_green"
+				item: "cabricality:substrate_green"
 				consume_items: false
 			}]
 		}
@@ -166,7 +166,7 @@
 			tasks: [{
 				id: "0A7F5C2865C6F5F5"
 				type: "item"
-				item: "kubejs:substrate_red"
+				item: "cabricality:substrate_red"
 				consume_items: false
 			}]
 		}
@@ -179,7 +179,7 @@
 			tasks: [{
 				id: "2A79E5D1D6C6787F"
 				type: "item"
-				item: "kubejs:substrate_yellow"
+				item: "cabricality:substrate_yellow"
 				consume_items: false
 			}]
 		}
@@ -192,7 +192,7 @@
 			tasks: [{
 				id: "7E01B9B59066FD90"
 				type: "item"
-				item: "kubejs:substrate_blue"
+				item: "cabricality:substrate_blue"
 				consume_items: false
 			}]
 		}
@@ -205,7 +205,7 @@
 			tasks: [{
 				id: "3D85594FB65E7A91"
 				type: "item"
-				item: "kubejs:substrate_gunpowder"
+				item: "cabricality:substrate_gunpowder"
 				consume_items: false
 			}]
 		}
@@ -218,7 +218,7 @@
 			tasks: [{
 				id: "6BE52A47FB071345"
 				type: "item"
-				item: "kubejs:substrate_prismarine"
+				item: "cabricality:substrate_prismarine"
 				consume_items: false
 			}]
 		}
@@ -231,7 +231,7 @@
 			tasks: [{
 				id: "0F0273B7441B6840"
 				type: "item"
-				item: "kubejs:substrate_nether"
+				item: "cabricality:substrate_nether"
 				consume_items: false
 			}]
 		}
@@ -244,7 +244,7 @@
 			tasks: [{
 				id: "465B3645832D5B9A"
 				type: "item"
-				item: "kubejs:substrate_obsidian"
+				item: "cabricality:substrate_obsidian"
 				consume_items: false
 			}]
 		}
@@ -257,7 +257,7 @@
 			tasks: [{
 				id: "119E7FC4D7BB242F"
 				type: "item"
-				item: "kubejs:substrate_blaze"
+				item: "cabricality:substrate_blaze"
 				consume_items: false
 			}]
 		}
@@ -270,7 +270,7 @@
 			tasks: [{
 				id: "6B17F1E13DF99E50"
 				type: "item"
-				item: "kubejs:substrate_slime"
+				item: "cabricality:substrate_slime"
 				consume_items: false
 			}]
 		}
@@ -283,7 +283,7 @@
 			tasks: [{
 				id: "6C839FAE45EC2AB4"
 				type: "item"
-				item: "kubejs:substrate_certus"
+				item: "cabricality:substrate_certus"
 				consume_items: false
 			}]
 		}
@@ -296,7 +296,7 @@
 			tasks: [{
 				id: "3106C362414AB238"
 				type: "item"
-				item: "kubejs:substrate_sulfur"
+				item: "cabricality:substrate_sulfur"
 				consume_items: false
 			}]
 		}
@@ -309,7 +309,7 @@
 			tasks: [{
 				id: "08F2F111C97B57CD"
 				type: "item"
-				item: "kubejs:substrate_lead"
+				item: "cabricality:substrate_lead"
 				consume_items: false
 			}]
 		}
@@ -322,7 +322,7 @@
 			tasks: [{
 				id: "4A4C9D6E372A5466"
 				type: "item"
-				item: "kubejs:substrate_gold"
+				item: "cabricality:substrate_gold"
 				consume_items: false
 			}]
 		}
@@ -335,7 +335,7 @@
 			tasks: [{
 				id: "185775BFC6FE2D89"
 				type: "item"
-				item: "kubejs:substrate_zinc"
+				item: "cabricality:substrate_zinc"
 				consume_items: false
 			}]
 		}
@@ -348,7 +348,7 @@
 			tasks: [{
 				id: "3FA02655BC1E99A6"
 				type: "item"
-				item: "kubejs:substrate_copper"
+				item: "cabricality:substrate_copper"
 				consume_items: false
 			}]
 		}
@@ -361,7 +361,7 @@
 			tasks: [{
 				id: "4932CD6D8FE77BB7"
 				type: "item"
-				item: "kubejs:substrate_iron"
+				item: "cabricality:substrate_iron"
 				consume_items: false
 			}]
 		}
@@ -374,7 +374,7 @@
 			tasks: [{
 				id: "2D94A57470F15112"
 				type: "item"
-				item: "kubejs:substrate_lapis"
+				item: "cabricality:substrate_lapis"
 				consume_items: false
 			}]
 		}
@@ -387,7 +387,7 @@
 			tasks: [{
 				id: "09ADE0525C1D7379"
 				type: "item"
-				item: "kubejs:substrate_sapphire"
+				item: "cabricality:substrate_sapphire"
 				consume_items: false
 			}]
 		}
@@ -400,7 +400,7 @@
 			tasks: [{
 				id: "36A7406CD330E7AB"
 				type: "item"
-				item: "kubejs:substrate_emerald"
+				item: "cabricality:substrate_emerald"
 				consume_items: false
 			}]
 		}
@@ -413,7 +413,7 @@
 			tasks: [{
 				id: "68CD031A5C815200"
 				type: "item"
-				item: "kubejs:substrate_ruby"
+				item: "cabricality:substrate_ruby"
 				consume_items: false
 			}]
 		}
@@ -426,7 +426,7 @@
 			tasks: [{
 				id: "61BF1495FCB27EEB"
 				type: "item"
-				item: "kubejs:substrate_diamond"
+				item: "cabricality:substrate_diamond"
 				consume_items: false
 			}]
 		}
@@ -444,13 +444,13 @@
 				{
 					id: "6A30FCE70C7C7289"
 					type: "item"
-					item: "kubejs:accelerator_redstone"
+					item: "cabricality:accelerator_redstone"
 					consume_items: false
 				}
 				{
 					id: "3D9F64E8128BB9A6"
 					type: "item"
-					item: "kubejs:accelerator_glowstone"
+					item: "cabricality:accelerator_glowstone"
 					consume_items: false
 				}
 			]
@@ -466,7 +466,7 @@
 			tasks: [{
 				id: "7EA2895F0FB5A5D6"
 				type: "item"
-				item: "kubejs:substrate_silver"
+				item: "cabricality:substrate_silver"
 				consume_items: false
 			}]
 		}
@@ -487,7 +487,7 @@
 			tasks: [{
 				id: "34B1FAA6107B2411"
 				type: "item"
-				item: "kubejs:substrate_igneous"
+				item: "cabricality:substrate_igneous"
 				consume_items: false
 			}]
 		}
@@ -509,7 +509,7 @@
 			tasks: [{
 				id: "1F5A37CC8E10B3DB"
 				type: "item"
-				item: "kubejs:substrate_herbal"
+				item: "cabricality:substrate_herbal"
 				consume_items: false
 			}]
 		}
@@ -531,7 +531,7 @@
 			tasks: [{
 				id: "744E156650A1F4B3"
 				type: "item"
-				item: "kubejs:substrate_volatile"
+				item: "cabricality:substrate_volatile"
 				consume_items: false
 			}]
 		}
@@ -549,7 +549,7 @@
 			tasks: [{
 				id: "0881E44E3823D060"
 				type: "item"
-				item: "kubejs:substrate_crystal"
+				item: "cabricality:substrate_crystal"
 				consume_items: false
 			}]
 		}
@@ -570,7 +570,7 @@
 			tasks: [{
 				id: "4E81FAFD3B80DFE9"
 				type: "item"
-				item: "kubejs:substrate_metal"
+				item: "cabricality:substrate_metal"
 				consume_items: false
 			}]
 		}
@@ -591,7 +591,7 @@
 			tasks: [{
 				id: "10F212525DABED77"
 				type: "item"
-				item: "kubejs:substrate_gem"
+				item: "cabricality:substrate_gem"
 				consume_items: false
 			}]
 		}
@@ -613,7 +613,7 @@
 			tasks: [{
 				id: "3299FF447F8110CF"
 				type: "item"
-				item: "kubejs:substrate_chaos"
+				item: "cabricality:substrate_chaos"
 				consume_items: false
 			}]
 		}
@@ -628,7 +628,7 @@
 			tasks: [{
 				id: "68FBEFA1BC6479ED"
 				type: "item"
-				item: "kubejs:substrate_silicon"
+				item: "cabricality:substrate_silicon"
 				consume_items: false
 			}]
 		}

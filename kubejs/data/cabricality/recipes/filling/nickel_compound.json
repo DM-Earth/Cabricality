@@ -2,7 +2,7 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "kubejs:nickel_ingot"
+      "item": "cabricality:nickel_ingot"
     },
     {
       "fluid": "tconstruct:molten_iron",
@@ -11,7 +11,7 @@
   ],
   "results": [
     {
-      "item": "kubejs:nickel_compound"
+      "item": "cabricality:nickel_compound"
     }
   ]
 }

@@ -4,5 +4,5 @@
 	title: "1 Gold Coin"
 	icon: "create:crushed_gold_ore"
 	loot_size: 1
-	rewards: [{ item: "kubejs:gold_coin" }]
+	rewards: [{ item: "cabricality:gold_coin" }]
 }

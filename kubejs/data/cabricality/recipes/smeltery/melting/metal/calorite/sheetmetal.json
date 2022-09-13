@@ -13,7 +13,7 @@
     "tag": "c:sheetmetals/calorite"
   },
   "result": {
-    "fluid": "kubejs:molten_calorite",
+    "fluid": "cabricality:molten_calorite",
     "amount": 90
   },
   "temperature": 900,

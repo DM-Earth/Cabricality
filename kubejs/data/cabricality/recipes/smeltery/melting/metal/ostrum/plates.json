@@ -13,7 +13,7 @@
     "tag": "c:plates/ostrum"
   },
   "result": {
-    "fluid": "kubejs:molten_ostrum",
+    "fluid": "cabricality:molten_ostrum",
     "amount": 90
   },
   "temperature": 900,

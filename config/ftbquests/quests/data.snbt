@@ -1,7 +1,7 @@
 {
 	version: 13
 	title: "{data.cabricality.title}"
-	icon: "kubejs:abstruse_mechanism"
+	icon: "cabricality:abstruse_mechanism"
 	disable_toast: true
 	default_reward_team: true
 	default_consume_items: true

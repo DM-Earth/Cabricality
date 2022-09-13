@@ -1,17 +1,17 @@
 let debug_extractor = false
 onEvent("block.right_click", event => {
 	let isNextToLog = false
-	if (event.block.id == "kubejs:extractor_machine") {
+	if (event.block.id == asIdentifier("extractor_machine")) {
 		if (event.block.west.hasTag("minecraft:logs")) isNextToLog = true
 		if (event.block.east.hasTag("minecraft:logs")) isNextToLog = true
 		if (event.block.north.hasTag("minecraft:logs")) isNextToLog = true
 		if (event.block.south.hasTag("minecraft:logs")) isNextToLog = true
-		if (event.block.down.id != "minecraft:air" && event.block.down.id != "kubejs:resin") isNextToLog = false
+		if (event.block.down.id != "minecraft:air" && event.block.down.id != asIdentifier("resin")) isNextToLog = false
 		if (isNextToLog == true && Math.random() > 0.973) {
 			let x = event.block.x
 			let y = event.block.y - 1
 			let z = event.block.z
-			dimensional_commanding(event.server, event.block.dimension, "setblock " + x + " " + y + " " + z + " kubejs:resin")
+			dimensional_commanding(event.server, event.block.dimension, "setblock " + x + " " + y + " " + z + " " + asIdentifier("resin"))
 		}
 
 		//	Smelter
@@ -159,7 +159,7 @@ onEvent("block.right_click", event => {
 			}
 
 			if (event.block.down.id == "minecraft:redstone_block") {
-				downBlock = "kubejs:redstone"
+				downBlock = asIdentifier("redstone")
 				smeltChance = 1.0
 				smeltSpeed = 1.0
 			}

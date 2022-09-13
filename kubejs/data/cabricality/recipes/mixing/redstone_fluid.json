@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "fluid": "kubejs:sky_stone",
+      "fluid": "cabricality:sky_stone",
       
       "amount": 10125
     },
@@ -12,7 +12,7 @@
   ],
   "results": [
     {
-      "fluid": "kubejs:redstone",
+      "fluid": "cabricality:redstone",
       
       "amount": 10125
     },

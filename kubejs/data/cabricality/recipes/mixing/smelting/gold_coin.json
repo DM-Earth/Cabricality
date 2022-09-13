@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "kubejs:gold_coin"
+      "item": "cabricality:gold_coin"
     }
   ],
   "results": [

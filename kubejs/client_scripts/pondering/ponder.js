@@ -19,7 +19,7 @@ let alchemy_setup = (scene, util) => {
         .placeNearTarget();
     scene.idle(60);
 
-    scene.world.setBlocks([4, 3, 2], "kubejs:powered_water", false);
+    scene.world.setBlocks([4, 3, 2], "cabricality:powered_water", false);
     scene.world.modifyBlocks([4, 3, 2], (curState) => curState.with("falling", "false"), false);
     scene.world.showSection([4, 3, 2], Facing.DOWN);
 
@@ -73,7 +73,7 @@ let alchemy_setup = (scene, util) => {
     scene.world.hideSection([4, 3, 2], Facing.EAST);
     scene.world.modifyBlocks([0, 0, 0, 4, 0, 4], "minecraft:obsidian");
     scene.idle(35);
-    scene.world.setBlocks([4, 3, 2], "kubejs:powered_water", true);
+    scene.world.setBlocks([4, 3, 2], "cabricality:powered_water", true);
     scene.world.modifyBlocks([4, 3, 2], (curState) => curState.with("falling", "false"), false);
     scene.world.showSection([4, 3, 2], Facing.DOWN);
 
@@ -84,7 +84,7 @@ let alchemy_setup = (scene, util) => {
     scene.world.setBlocks([4, 2, 0], "kibe:fluid_hopper", false);
     scene.world.modifyBlocks([4, 2, 0], (curState) => curState.with("facing", "down").with("enabled", "true"), false);
     scene.world.showSection([4, 2, 0], Facing.WEST);
-    scene.world.setBlocks([4, 3, 0], "kubejs:powered_water", false);
+    scene.world.setBlocks([4, 3, 0], "cabricality:powered_water", false);
     scene.world.modifyBlocks([4, 3, 0], (curState) => curState.with("falling", "false"), false);
     scene.world.showSection([4, 3, 0], Facing.DOWN);
 
@@ -94,7 +94,7 @@ let alchemy_setup = (scene, util) => {
     scene.world.setBlocks([4, 2, 4], "kibe:fluid_hopper", false);
     scene.world.modifyBlocks([4, 2, 4], (curState) => curState.with("facing", "down").with("enabled", "true"), false);
     scene.world.showSection([4, 2, 4], Facing.WEST);
-    scene.world.setBlocks([4, 3, 4], "kubejs:powered_water", false);
+    scene.world.setBlocks([4, 3, 4], "cabricality:powered_water", false);
     scene.world.modifyBlocks([4, 3, 4], (curState) => curState.with("falling", "false"), false);
     scene.world.showSection([4, 3, 4], Facing.DOWN);
 
@@ -111,12 +111,12 @@ let alchemy_setup = (scene, util) => {
     scene.particles.simple(5, "explosion", [3, 3, 0]).density(3).motion([0, 0, 0]).area([-5, 3, 0]).lifetime(15);
     scene.particles.simple(5, "explosion", [3, 3, 2]).density(3).motion([0, 0, 0]).area([-5, 3, 2]).lifetime(15);
     scene.particles.simple(5, "explosion", [3, 3, 4]).density(3).motion([0, 0, 0]).area([-5, 3, 4]).lifetime(15);
-    scene.world.modifyBlocks([0, 1, 4], "kubejs:powered_water", true);
+    scene.world.modifyBlocks([0, 1, 4], "cabricality:powered_water", true);
     scene.world.modifyBlocks([0, 1, 4], (curState) => curState.with("falling", "false"), false);
     scene.world.modifyBlocks([0, 1, 0], "minecraft:air");
     scene.world.modifyBlocks([0, 1, 2], "minecraft:air");
-    const this_is_a_shard = scene.world.createItemEntity([0, 2, 4], util.vector.of(0, 0, 0), "kubejs:blizz_cube");
-    const this_is_another_shard = scene.world.createItemEntity([0, 2, 0], util.vector.of(0, 0, 0), "kubejs:basalz_shard");
+    const this_is_a_shard = scene.world.createItemEntity([0, 2, 4], util.vector.of(0, 0, 0), "cabricality:blizz_cube");
+    const this_is_another_shard = scene.world.createItemEntity([0, 2, 0], util.vector.of(0, 0, 0), "cabricality:basalz_shard");
     scene.idle(40);
 
     scene.text(70, "The basalts turned into basalt shards, the snow turned into blizz cube and the water turned into powered water")
@@ -140,15 +140,15 @@ let alchemy_setup = (scene, util) => {
         .pointAt(util.vector.centerOf(0, 1, 2))
         .colored(PonderPalette.WHITE)
         .placeNearTarget();
-    scene.world.setBlocks([4, 1, 0], "kubejs:substrate_gold", false);
-    scene.world.setBlocks([3, 1, 0], "kubejs:substrate_lead", false);
-    scene.world.setBlocks([2, 1, 0], "kubejs:substrate_zinc", false);
-    scene.world.setBlocks([1, 1, 0], "kubejs:substrate_copper", false);
-    scene.world.setBlocks([0, 1, 0], "kubejs:substrate_iron", false);
-    scene.world.setBlocks([3, 1, 2], "kubejs:substrate_gold", false);
-    scene.world.setBlocks([2, 1, 2], "kubejs:substrate_zinc", false);
-    scene.world.setBlocks([1, 1, 2], "kubejs:substrate_copper", false);
-    scene.world.setBlocks([0, 1, 2], "kubejs:substrate_iron", false);
+    scene.world.setBlocks([4, 1, 0], "cabricality:substrate_gold", false);
+    scene.world.setBlocks([3, 1, 0], "cabricality:substrate_lead", false);
+    scene.world.setBlocks([2, 1, 0], "cabricality:substrate_zinc", false);
+    scene.world.setBlocks([1, 1, 0], "cabricality:substrate_copper", false);
+    scene.world.setBlocks([0, 1, 0], "cabricality:substrate_iron", false);
+    scene.world.setBlocks([3, 1, 2], "cabricality:substrate_gold", false);
+    scene.world.setBlocks([2, 1, 2], "cabricality:substrate_zinc", false);
+    scene.world.setBlocks([1, 1, 2], "cabricality:substrate_copper", false);
+    scene.world.setBlocks([0, 1, 2], "cabricality:substrate_iron", false);
     scene.world.showSection([0, 1, 0, 4, 1, 0], Facing.DOWN);
     scene.idle(90);
 
@@ -198,10 +198,10 @@ let alchemy_setup = (scene, util) => {
         .pointAt(util.vector.centerOf(0, 1, 2))
         .colored(PonderPalette.WHITE)
         .placeNearTarget();
-    scene.world.setBlocks([3, 1, 2], "kubejs:substrate_gold", false);
-    scene.world.setBlocks([2, 1, 2], "kubejs:substrate_lead", false);
-    scene.world.setBlocks([1, 1, 2], "kubejs:substrate_zinc", false);
-    scene.world.setBlocks([0, 1, 2], "kubejs:substrate_copper", false);
+    scene.world.setBlocks([3, 1, 2], "cabricality:substrate_gold", false);
+    scene.world.setBlocks([2, 1, 2], "cabricality:substrate_lead", false);
+    scene.world.setBlocks([1, 1, 2], "cabricality:substrate_zinc", false);
+    scene.world.setBlocks([0, 1, 2], "cabricality:substrate_copper", false);
     scene.world.showSection([0, 1, 2, 3, 1, 2], Facing.DOWN);
     scene.idle(70);
 
@@ -209,7 +209,7 @@ let alchemy_setup = (scene, util) => {
     scene.world.showSection([0, 1, 2, 3, 1, 2], Facing.DOWN);
     scene.particles.simple(5, "explosion", [3, 3, 2]).density(3).motion([0, 0, 0]).area([-5, 3, 2]).lifetime(15);
     scene.world.setBlocks([0, 1, 2, 3, 1, 2], "minecraft:air", true);
-    const woc_goldenlegend = scene.world.createItemEntity([4, 3, 2], util.vector.of(-0.02, 0.3, 0), "kubejs:substrate_metal");
+    const woc_goldenlegend = scene.world.createItemEntity([4, 3, 2], util.vector.of(-0.02, 0.3, 0), "cabricality:substrate_metal");
     scene.idle(60);
 
     scene.text(80, "And we got it! Once you found out the correct recipe, the product substrate will appear in the powered water")
@@ -480,7 +480,7 @@ let extractor = (scene, util) => {
 
     scene.showControls(60, [2, 2.6, 1], "left").rightClick();
     scene.idle(40);
-    scene.world.setBlocks([2, 1, 1], "kubejs:resin", true);
+    scene.world.setBlocks([2, 1, 1], "cabricality:resin", true);
     scene.idle(20);
 
     scene.text(60, "The liquid resin can be harvested by pipes")
@@ -501,6 +501,6 @@ onEvent("ponder.registry", (event) => {
         .scene("rocket_engine", "Making a Rocket Engine", "cabricality:rocket_engine", rocket_engine);
     event.create("ad_astra:steel_tank")
         .scene("rocket_tank", "Making a Rocket Tank", "cabricality:rocket_tank", rocket_tank);
-    event.create("kubejs:extractor_machine")
+    event.create("cabricality:extractor_machine")
         .scene("extractor", "Making an Extractor", "cabricality:extractor", extractor);
 })
