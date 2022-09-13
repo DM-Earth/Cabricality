@@ -4,3 +4,4 @@
 *.zip
 .vscode/settings.json
 openloader-resources
+*.pxd
