@@ -548,57 +548,57 @@
   
   
   
-	"advancements.cabricality.title": "&d> Advancements",
+	"advancements.cabricality.title": "&d> 进度",
   
-	"advancement.cabricality.accumulation.title"   : "&6Accumulation",
-	"advancement.cabricality.accumulation.subtitle": "&6Remember to plant'em back!",
-	"advancement.cabricality.accumulation.task.craft.title": "Craft 2^12 Wooden Planks",
+	"advancement.cabricality.accumulation.title"   : "&6光头强",
+	"advancement.cabricality.accumulation.subtitle": "&6记得种回去！",
+	"advancement.cabricality.accumulation.task.craft.title": "合成 4096 块木板",
   
-	"advancement.cabricality.reach_the_sky.title"   : "&bReach the Sky",
-	"advancement.cabricality.reach_the_sky.subtitle": "&bBut.. how can I literally get down?!!",
+	"advancement.cabricality.reach_the_sky.title"   : "&b到达世界最高层",
+	"advancement.cabricality.reach_the_sky.subtitle": "&b不过... 该如何下去？",
   
-	"advancement.cabricality.construction.title"   : "&7Under Construction",
-	"advancement.cabricality.construction.subtitle": "&7Go in for a larger construction!",
+	"advancement.cabricality.construction.title"   : "&7基建狂魔",
+	"advancement.cabricality.construction.subtitle": "&7进入大基建时代！",
   
-	"advancement.cabricality.explore.title"   : "&5A Real Hitch Hiker",
-	"advancement.cabricality.explore.subtitle": "&5Always remember wind, dirt, and the place called Home!",
+	"advancement.cabricality.explore.title"   : "&5真正的旅行者",
+	"advancement.cabricality.explore.subtitle": "&5永远记住，有一个地方，叫家。",
   
-	"advancement.cabricality.explore.dimension.nether" : "&5Nether",
-	"advancement.cabricality.explore.dimension.the_end": "&3The End",
+	"advancement.cabricality.explore.dimension.nether" : "&5下界",
+	"advancement.cabricality.explore.dimension.the_end": "&3末路之地",
   
-	"advancement.cabricality.explore.planet.the_moon" : "&8The Moon",
-	"advancement.cabricality.explore.planet.glacio"   : "&9Glacio",
-	"advancement.cabricality.explore.planet.mars"     : "&cMars",
-	"advancement.cabricality.explore.planet.mercury"  : "&5Mercury",
-	"advancement.cabricality.explore.planet.venus"    : "&6Venus",
+	"advancement.cabricality.explore.planet.the_moon" : "&8月球",
+	"advancement.cabricality.explore.planet.glacio"   : "&9霜原",
+	"advancement.cabricality.explore.planet.mars"     : "&c火星",
+	"advancement.cabricality.explore.planet.mercury"  : "&5水星",
+	"advancement.cabricality.explore.planet.venus"    : "&6金星",
   
-	"advancement.cabricality.explore.orbit.earth"    : "&2Earth&8 Orbit",
-	"advancement.cabricality.explore.orbit.the_moon" : "&8The Moon&8 Orbit",
-	"advancement.cabricality.explore.orbit.glacio"   : "&9Glacio&8 Orbit",
-	"advancement.cabricality.explore.orbit.mars"     : "&cMars&8 Orbit",
-	"advancement.cabricality.explore.orbit.mercury"  : "&5Mercury&8 Prbit",
-	"advancement.cabricality.explore.orbit.venus"    : "&6Venus&8 Orbit",
+	"advancement.cabricality.explore.orbit.earth"    : "&2地球&8轨道",
+	"advancement.cabricality.explore.orbit.the_moon" : "&8月球&8轨道",
+	"advancement.cabricality.explore.orbit.glacio"   : "&9霜原&8轨道",
+	"advancement.cabricality.explore.orbit.mars"     : "&c火星&8轨道",
+	"advancement.cabricality.explore.orbit.mercury"  : "&5水星&8轨道",
+	"advancement.cabricality.explore.orbit.venus"    : "&6金星&8轨道",
   
-	"advancement.cabricality.being_stored.title"   : "&8Being 'Stored'",
-	"advancement.cabricality.being_stored.subtitle": "&8Where the hell is here..",
-	"advancement.cabricality.being_stored.task.spatial_storage": "&8Getting into the Spatial Storage",
+	"advancement.cabricality.being_stored.title"   : "&8被封存的自己",
+	"advancement.cabricality.being_stored.subtitle": "&8这是什么鬼地方..",
+	"advancement.cabricality.being_stored.task.spatial_storage": "&8进入封闭空间",
   
-	"advancement.cabricality.flying_skunk.title"   : "&d..Why Are You Here..?",
-	"advancement.cabricality.flying_skunk.subtitle": "&dTherefore, Senpai Shouts.",
-	"advancement.cabricality.flying_skunk.task.fly.title": "&dFlight Distance",
+	"advancement.cabricality.flying_skunk.title"   : "&d..你怎么在这？",
+	"advancement.cabricality.flying_skunk.subtitle": "&d因此，仙贝大喊。",
+	"advancement.cabricality.flying_skunk.task.fly.title": "&d飞行距离",
   
-	"advancement.cabricality.long_tour.title"   : "&6A Long Tour",
-	"advancement.cabricality.long_tour.subtitle": "&6You are the one by my side, all the time.",
-	"advancement.cabricality.long_tour.task.play.title": "&5Playing for 5000 Days",
+	"advancement.cabricality.long_tour.title"   : "&6一段漫长的旅途",
+	"advancement.cabricality.long_tour.subtitle": "&6你是我的人，一直都是。",
+	"advancement.cabricality.long_tour.task.play.title": "&5游玩5000天",
   
-	"advancement.cabricality.new.title"   : "&8No More to Say",
-	"advancement.cabricality.new.subtitle": "&8NOOOO",
+	"advancement.cabricality.new.title"   : "&8草，词穷了",
+	"advancement.cabricality.new.subtitle": "&8不————————",
   
-	"advacnements.cabricality.complete.title": "&fComplete Cabricality",
-	"advancements.cabricality.complete.task.minecraft.title"      : "&2'Speedrun' Minecraft",
-	"advancements.cabricality.complete.task.ad_astra.title"       : "&dThe Outerspace",
-	"advancements.cabricality.complete.task.create.title"         : "&6Machinery Revolution",
-	"advancements.cabricality.complete.task.farmers_delight.title": "&eDelicacy Cure",
+	"advacnements.cabricality.complete.title": "&f幔缝重生",
+	"advancements.cabricality.complete.task.minecraft.title"      : "&2’速通‘Minecraft",
+	"advancements.cabricality.complete.task.ad_astra.title"       : "&d外太空",
+	"advancements.cabricality.complete.task.create.title"         : "&6机械飞升",
+	"advancements.cabricality.complete.task.farmers_delight.title": "&e美味佳肴",
   
   
   
