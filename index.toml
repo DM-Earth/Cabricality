@@ -4138,7 +4138,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "18182cee02eddd04cf7a32fc6b34e566d108ebb011a3238ab0a5366e0b10b5a4"
+hash = "a010c1bde6ac0dba1ece21416d99525b0cd20ed23625cea5d04a734b024e200e"
 metafile = true
 
 [[files]]
@@ -4396,7 +4396,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "4567adfe24f6506130ad67d8438405836b210928f393aba910ca7e8d20e59a86"
+hash = "a95a09d3e1b099ea8484fdf3adbd5e7e7cbedce8db33e4dedc5e91db1199a774"
 metafile = true
 
 [[files]]
@@ -4462,6 +4462,11 @@ metafile = true
 [[files]]
 file = "mods/sodium-fabric-mc1.18.2-0.4.1-replay.jar"
 hash = "21caf42aee36ccdd72c0437e7ed6587769630afa49267f59647e75f1274fa8b8"
+
+[[files]]
+file = "mods/splasher.pw.toml"
+hash = "565d7922f8bb5259d9067ca8a0744398aa13ceca5659bd8c306124bff4cb152c"
+metafile = true
 
 [[files]]
 file = "mods/starlight.pw.toml"

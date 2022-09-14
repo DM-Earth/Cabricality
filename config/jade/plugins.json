@@ -36,7 +36,7 @@
     "redstone": true
   },
   "jade": {
-    "registry_name": true,
+    "registry_name": false,
     "mod_name": false
   },
   "create": {
