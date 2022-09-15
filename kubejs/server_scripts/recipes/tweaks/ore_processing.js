@@ -8,8 +8,32 @@ onEvent("recipes", event => {
 
     event.smelting(nugget, dust).cookingTime(40)
     event.blasting(nugget, dust).cookingTime(20)
-    event.smelting(nugget, crushed)
-    event.blasting(nugget, crushed)
+
+    event.custom({
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": crushed
+      },
+      "result": {
+        "item": nugget,
+        "count": 3
+      },
+      "experience": 0.25,
+      "cookingtime": 100
+    })
+
+    event.custom({
+      "type": "minecraft:blasting",
+      "ingredient": {
+        "item": crushed
+      },
+      "result": {
+        "item": nugget,
+        "count": 3
+      },
+      "experience": 0.25,
+      "cookingtime": 50
+    })
 
     event.recipes.createMilling([Item.of(dust, 3)], crushed)
     event.recipes.createCrushing([Item.of(dust, 3), Item.of(dust, 3).withChance(0.5)], crushed)
@@ -48,7 +72,7 @@ onEvent("recipes", event => {
     event.remove({ id: "alloy_forgery:" + id + "_from_raw_ores" })
   }
   let metals = [
-    //0metalMod, 1metalId, 2nuggetMod, 3crushedMod, 4dustMod, 5moltenMod
+    //0metalMod,  1metalId,2nuggetMod, 3crushedMod,4dustMod,5moltenMod
     ["minecraft", "iron", "minecraft", "create", "indrev", "tconstruct"],
     ["minecraft", "gold", "minecraft", "create", "indrev", "tconstruct"],
     ["minecraft", "copper", "create", "create", "indrev", "tconstruct"],
@@ -65,7 +89,7 @@ onEvent("recipes", event => {
     ["ad_astra", "ostrum", "ad_astra", "cabricality", "cabricality", "cabricality"],
     ["ad_astra", "calorite", "ad_astra", "cabricality", "cabricality", "cabricality"],
 
-    ["cabricality", "nickel", "cabricality", "create", "cabricality", "tconstruct"]
+    ["cabricality", "nickel", "cabricality", "create", "cabricality", "tconstruct"],
   ]
   metals.forEach(metal => {
     let ingot = metal[0] + ":" + metal[1] + "_ingot"
@@ -79,6 +103,6 @@ onEvent("recipes", event => {
 
     event.remove({ output: ingot, input: "#" + metal[0] + ":" + metal[1] + "_ores" })
     event.remove({ output: ingot, input: "#c:" + metal[1] + "_ores" })
-    event.remove({ output: ingot, input: "#c:ores/" + metal[1]})
+    event.remove({ output: ingot, input: "#c:ores/" + metal[1] })
   })
 })

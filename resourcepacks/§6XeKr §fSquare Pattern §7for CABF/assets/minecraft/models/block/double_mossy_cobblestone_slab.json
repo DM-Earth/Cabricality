@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "block/mossy_cobblestone_top",
-        "side": "block/mossy_cobblestone_side"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_column_end_small",
-    "textures": {
-        "top": "block/deepslate_bricks_top",
-        "side": "block/deepslate_bricks_side",
-        "end": "block/deepslate_bricks_end"
-    }
-}

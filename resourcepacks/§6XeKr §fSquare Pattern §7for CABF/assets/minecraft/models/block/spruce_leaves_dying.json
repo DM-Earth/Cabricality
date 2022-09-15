@@ -1,8 +1,0 @@
-{
-	"parent": "block/leaves_x",
-	"textures": {
-		"top": "block/spruce_leaves_dying",
-		"side": "block/spruce_leaves_dying",
-		"particle": "block/spruce_leaves_dying"
-	}
-}

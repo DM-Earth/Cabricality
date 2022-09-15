@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/wall_side_tall",
-  "textures": {
-    "wall": "minecraft:block/stone_bricks",
-    "end": "minecraft:block/stone_bricks_post",
-    "top": "minecraft:block/stone_bricks_top"
-  }
-}

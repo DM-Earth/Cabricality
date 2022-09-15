@@ -1,9 +1,0 @@
-{
-    "parent": "block/wall_post",
-    "textures": {
-        "wall_bottom": "block/deepslate_top",
-        "wall_top": "block/deepslate_top",
-        "wall_end": "block/polished_deepslate_end",
-        "wall": "block/polished_deepslate_side"
-   }
-}

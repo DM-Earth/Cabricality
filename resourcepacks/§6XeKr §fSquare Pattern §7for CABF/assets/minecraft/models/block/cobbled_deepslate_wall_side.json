@@ -1,8 +1,0 @@
-{
-    "parent": "block/template_wall_side_2end",
-    "textures": {
-        "wall": "block/deepslate_wall",
-        "top": "block/cobbled_deepslate",
-        "bottom": "block/cobbled_deepslate"
-    }
-}

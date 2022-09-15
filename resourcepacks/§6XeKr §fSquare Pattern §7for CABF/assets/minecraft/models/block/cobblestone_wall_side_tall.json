@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/wall_side_tall",
-  "textures": {
-    "wall": "minecraft:block/cobblestone",
-    "end": "minecraft:block/cobblestone_side",
-    "top": "minecraft:block/cobblestone_top"
-  }
-}

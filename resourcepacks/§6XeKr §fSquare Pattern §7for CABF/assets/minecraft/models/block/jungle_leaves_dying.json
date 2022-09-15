@@ -1,8 +1,0 @@
-{
-	"parent": "block/leaves_x",
-	"textures": {
-		"top": "block/jungle_leaves_dying",
-		"side": "block/jungle_leaves_dying",
-		"particle": "block/jungle_leaves_dying"
-	}
-}

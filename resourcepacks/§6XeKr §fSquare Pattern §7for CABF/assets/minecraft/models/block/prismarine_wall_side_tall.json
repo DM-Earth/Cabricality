@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/wall_side_tall",
-  "textures": {
-    "wall": "minecraft:block/prismarine_base",
-    "end": "minecraft:block/prismarine_side",
-    "top": "minecraft:block/prismarine_top"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/wall_side_tall",
-  "textures": {
-    "wall": "minecraft:block/blackstone",
-    "end": "minecraft:block/blackstone_wall",
-    "top": "minecraft:block/blackstone_top"
-  }
-}

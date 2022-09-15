@@ -1,8 +1,0 @@
-{
-	"parent": "block/leaves_x",
-	"textures": {
-		"top": "block/mangrove_leaves_top2",
-		"side": "block/mangrove_leaves2",
-		"particle": "block/mangrove_leaves2"
-	}
-}

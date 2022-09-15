@@ -1,7 +1,0 @@
-{
-    "parent": "block/flower_pot_cross",
-     "textures": {
-		"flowerpot": "block/flower_pot9",
-        "plant": "block/red_tulip"
-    }
-}

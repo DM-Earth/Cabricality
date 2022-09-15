@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/wall_side_tall",
-  "textures": {
-    "wall": "minecraft:block/deepslate_tiles",
-    "end": "minecraft:block/deepslate_tiles_end",
-    "top": "minecraft:block/deepslate_tiles_top"
-  }
-}

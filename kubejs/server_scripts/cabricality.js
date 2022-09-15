@@ -18,6 +18,7 @@ let ED = (id, x) => MOD("extended_drawers", id, x)
 let BC = (id, x) => MOD("bitsandchisels", id, x)
 let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
+let ML = (id, x) => MOD("malum", id, x)
 
 function asIdentifier(id) {
   return modpackId + ":" + id

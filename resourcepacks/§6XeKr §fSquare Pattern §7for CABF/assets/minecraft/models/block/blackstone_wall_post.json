@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/wall_post",
-  "textures": {
-        "wall_bottom": "block/blackstone",
-        "wall_top": "block/blackstone_top",
-        "wall_end": "block/blackstone_end",
-        "wall": "block/blackstone_post"
-  }
-}

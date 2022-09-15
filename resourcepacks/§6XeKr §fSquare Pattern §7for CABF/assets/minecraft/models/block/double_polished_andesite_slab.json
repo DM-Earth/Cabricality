@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_column_end",
-    "textures": {
-        "top": "block/polished_andesite_top",
-        "side": "block/polished_andesite_side",
-        "end": "block/polished_andesite_end"
-    }
-}
