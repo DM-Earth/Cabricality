@@ -4142,11 +4142,6 @@ hash = "a010c1bde6ac0dba1ece21416d99525b0cd20ed23625cea5d04a734b024e200e"
 metafile = true
 
 [[files]]
-file = "mods/be-style-wither.pw.toml"
-hash = "a4d8523b820babca46c21463f4bab8e6ae39ae0fa8e7189de5a36d85b3252fe2"
-metafile = true
-
-[[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
@@ -4272,7 +4267,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-teams-fabric.pw.toml"
-hash = "03f6d4651da69de498d2033f9cec972d59878abbef08131eb8f0d9b1ab5d2dba"
+hash = "7e6082963df4d2e8452450f32144e5bc7ca7f78bd72cd00accc2454ef6fe29ae"
 metafile = true
 
 [[files]]
@@ -4377,6 +4372,11 @@ metafile = true
 [[files]]
 file = "mods/mealapi.pw.toml"
 hash = "e647a60b9fde4189fee9c7de55af223de32df83f20818491e94180086d1969b8"
+metafile = true
+
+[[files]]
+file = "mods/minecraft024.pw.toml"
+hash = "8249b0b96ee6b4e165ae0b7f63280fb7529f7ef518a47a22579ab074bbb8c946"
 metafile = true
 
 [[files]]
@@ -4495,7 +4495,7 @@ hash = "21caf42aee36ccdd72c0437e7ed6587769630afa49267f59647e75f1274fa8b8"
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "565d7922f8bb5259d9067ca8a0744398aa13ceca5659bd8c306124bff4cb152c"
+hash = "d52e229c378e2987475e12636f4f96be892e6d0d5bbb528bbdebd31a2be3cd3c"
 metafile = true
 
 [[files]]
