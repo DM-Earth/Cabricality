@@ -4886,11 +4886,6 @@ hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
 metafile = true
 
 [[files]]
-file = "mods/mealapi.pw.toml"
-hash = "e647a60b9fde4189fee9c7de55af223de32df83f20818491e94180086d1969b8"
-metafile = true
-
-[[files]]
 file = "mods/minecraft024.pw.toml"
 hash = "8249b0b96ee6b4e165ae0b7f63280fb7529f7ef518a47a22579ab074bbb8c946"
 metafile = true
@@ -4978,11 +4973,6 @@ metafile = true
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
 hash = "6bbaa499cb0998b9bd0cf54b1d6e221d7dacd591b7cda58c3ad93b283538246b"
-metafile = true
-
-[[files]]
-file = "mods/sandwichable.pw.toml"
-hash = "da403a55fd88f2d2aeacec6de320b7c8fb5010a7de8b831414fb4933681c9f44"
 metafile = true
 
 [[files]]
