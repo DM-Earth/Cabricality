@@ -4936,11 +4936,6 @@ hash = "8c752fa462607344229492d00c45ccd51a209f9338562e2d95b84d88d5cbcf1f"
 metafile = true
 
 [[files]]
-file = "mods/polylib.pw.toml"
-hash = "3abd6bfd91f9099a1c744f4c2dd6d77354f64b36c47ca62462ec95c912d94cab"
-metafile = true
-
-[[files]]
 file = "mods/ponder.pw.toml"
 hash = "65edb51604e963fb7b09f06a465e83cd88836a0a5bb07df18efa4838dd95952d"
 metafile = true
