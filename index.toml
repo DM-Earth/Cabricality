@@ -4132,6 +4132,11 @@ hash = "28f3a330db6ec489843622d1c0eeb6a40a92f2892073934e8ed3f974276f3519"
 metafile = true
 
 [[files]]
+file = "mods/arch-ex.pw.toml"
+hash = "e44d0ff0c823e9df28cebce2562ea9086677357531c79ec47dd804699a42569f"
+metafile = true
+
+[[files]]
 file = "mods/architects-palette-fabric.pw.toml"
 hash = "5d068ee053bfe3b7815d9b28b12144aaf65f9253247eff40480aacf3c2a8e02e"
 metafile = true
@@ -4139,6 +4144,16 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "a010c1bde6ac0dba1ece21416d99525b0cd20ed23625cea5d04a734b024e200e"
+metafile = true
+
+[[files]]
+file = "mods/backslot.pw.toml"
+hash = "914fff3a542a08420d56634019c6c6f59ddf046c1cb5e3e7c1f0c846043c4b6c"
+metafile = true
+
+[[files]]
+file = "mods/bad-wither-no-cookie.pw.toml"
+hash = "930fd68557900540372f08858bf00b7e4ea8c337208258bf2e50179d8b6af1eb"
 metafile = true
 
 [[files]]
@@ -4345,6 +4360,11 @@ hash = "ea127e8f74006f3a9ce099f9e96adaa3b3f4f281231ece703c4e7f9732137ebd"
 metafile = true
 
 [[files]]
+file = "mods/leaves-us-in-peace.pw.toml"
+hash = "21da451438c4b95811be685f967b800f0672ac0096bf9a4fc80e08db52902005"
+metafile = true
+
+[[files]]
 file = "mods/led.pw.toml"
 hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
 metafile = true
@@ -4410,18 +4430,8 @@ hash = "d240a40073a8ae5c5f56b4c3cde5d78951ca71dc5b8279f0405f346a537659b7"
 metafile = true
 
 [[files]]
-file = "mods/opac-fabric-create-support.pw.toml"
-hash = "50bd803afaf12d3406ad7bf1781e2f75bb38bbccb5d7720c32cf6f833a97eb15"
-metafile = true
-
-[[files]]
 file = "mods/open-loader.pw.toml"
 hash = "a259b4f251c2f694f3b07f2ef979e726bee9351e9e9af862d6e21eeb9d9fa4f9"
-metafile = true
-
-[[files]]
-file = "mods/open-parties-and-claims.pw.toml"
-hash = "a95a09d3e1b099ea8484fdf3adbd5e7e7cbedce8db33e4dedc5e91db1199a774"
 metafile = true
 
 [[files]]
@@ -4506,16 +4516,6 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "49f5590e6160266691eaca6948b33a3a2763e590ed4bcf90189f13650066c84e"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "92bb438b809e0b9502468a8a7d3f1e13f3174dd4c4fa4c703dbfe4cb488758c6"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-world-map.pw.toml"
-hash = "e202dbe44c613b66d68040e6e81a60ea3c901a6365787462a05d27a58dfeaeb4"
 metafile = true
 
 [[files]]
