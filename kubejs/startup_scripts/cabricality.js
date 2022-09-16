@@ -19,6 +19,10 @@ let BC = (id, x) => MOD("bitsandchisels", id, x)
 let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 
-function asIdentifier(id) {
-  return modpackId + ":" + id
+function asIdentifier(path, namespace) {
+	if (namespace) {
+		return namespace + ":" + path
+	} else {
+		return modpackId + ":" + path
+	}
 }

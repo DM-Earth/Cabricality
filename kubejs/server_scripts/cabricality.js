@@ -20,8 +20,12 @@ let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 let ML = (id, x) => MOD("malum", id, x)
 
-function asIdentifier(id) {
-  return modpackId + ":" + id
+function asIdentifier(path, namespace) {
+	if (namespace) {
+		return namespace + ":" + path
+	} else {
+		return modpackId + ":" + path
+	}
 }
 
 let wood_types = [

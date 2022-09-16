@@ -30,7 +30,6 @@ onEvent("recipes", event => {
   }
   brass_machine("create:mechanical_crafter", 3, MC("crafting_table"))
   brass_machine("create:sequenced_gearshift", 2)
-  brass_machine("create:furnace_engine", 1)
   brass_machine("create:rotation_speed_controller", 1)
   brass_machine("create:mechanical_arm", 1)
   brass_machine("create:stockpile_switch", 2)
