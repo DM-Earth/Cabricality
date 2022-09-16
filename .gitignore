@@ -2,6 +2,7 @@
 *.mrpack
 /packwiz
 *.zip
-.vscode/settings.json
+/.vscode/*
 openloader-resources
 *.pxd
+/.idea/*
