@@ -1185,50 +1185,6 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/ir
 hash = "1e0d8a3725166ce49db0dc13059d6aaa96f320fbf0373a6a7b81f63e164171ae"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/blue_iron_pillar.pxd"
-hash = "85e3bcf0f6789bcf2429bbe0abc17226a2037120d6ba76a6921ec1433a51d701"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/blue_iron_pillar_ctm.pxd"
-hash = "22c4b61477f72f18ebcc577e506c38d16da720f13cbe763c768f811e4407e043"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/blue_iron_pillar_top.pxd"
-hash = "80c4850325a51c0d39298166d66d6339befa9558d78583620eaec59d1979e96a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar.pxd"
-hash = "f07fcd4a975870dc1eaa4192d27d917aecbdf19a38c288af80a1fc44f16e71e1"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar_ctm.pxd"
-hash = "ba155dd2294c440e23702ac5bddb5e3282bf1a78836d37e6fc7d13de9522efaf"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar_top.pxd"
-hash = "ce24eee2a43aabddaa05da2c3e26fb1dd77e0877dc24871255a9b63f9809fcf4"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/iron_pillar_top_ctm.pxd"
-hash = "c833b8836c34936f07b7da4d56ad96ee73aa9be56cfe340f21f391f28827484a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/marked_iron_pillar.pxd"
-hash = "276a7af707e843058654cc8dbb0b6f775bdb10a6be277ec77f3a1219a313e8a3"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/marked_iron_pillar_ctm.pxd"
-hash = "3cedfdb733f632f0607786a1b841a1c8b602456b8e278a646e4a945349888c76"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/marked_iron_pillar_top.pxd"
-hash = "655698d87ba1f0fb9075e1332fb3fd16c3d329fa693983a9bab7a060b8aecddb"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/data/marked_iron_pillar_top_ctm.pxd"
-hash = "56b9862eb382c36494445c2ca4a13ef96bfd8da619fc3b2aed72b00cf41f8557"
-
-[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_pillars/iron_pillar.png"
 hash = "07a4aed0c612b1340f458ef21edd632f904d465c91262d1a6777b8a115fc0184"
 
@@ -1287,14 +1243,6 @@ hash = "d75317e03183d2d52fc8d71ec80414fb7ad8698a2042f31acdc149e54872731e"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/iron_plating_ctm.png"
 hash = "d9cc4718d644cb45904bfe739e6ef0dd707141648c4195d5c8e059bd6e5e38ff"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/data/launch_pad.pxd"
-hash = "b141d225d1e13f67e843eaa36ac3de75f716cdee2a995d3311e8f4443b8e21b4"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/data/launch_pad_ctm.pxd"
-hash = "e2019dab6331600402d3c4492a7814a5817415028845247731130e945c6604bd"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/launch_pad/launch_pad.png"
@@ -1990,15 +1938,15 @@ hash = "558d6d938191ef00df9c8bcacac9217d6960ab681fa4375916c3113b462801b2"
 
 [[files]]
 file = "config/splasher/customizations/en_us.txt"
-hash = "702c5cbd8fc4ffcc213a0a19441206d95bf1b1029afdacad13bd66f5a6d509e4"
+hash = "ec5b545d748b3153465b8cabf0e0d2b0092ce2e44973e84e8ecf0a1cf190a7d8"
 
 [[files]]
 file = "config/splasher/customizations/zh_cn.txt"
-hash = "215c75f844e4950515ec135f7188ecfdcf9af4d0d163025ee37b286e4ef9234f"
+hash = "15b36422b8ecbc9f63937e0f4b0a66fd9e7959f3570c297887d2146e4f5486e2"
 
 [[files]]
 file = "config/splasher/splasher.properties"
-hash = "ef5d94448489a7c4f9dbeaff7e049a537729952fb77b07227db7a9d5e7de3521"
+hash = "56602e7351c7d343f2d569c5517aad3c5225f611d5896e63949768f77ab5c5d8"
 
 [[files]]
 file = "kubejs/assets/cabricality/ponder/extractor.nbt"
