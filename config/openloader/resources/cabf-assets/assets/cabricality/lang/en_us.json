@@ -108,6 +108,9 @@
 	"item.cabricality.coke_chunk"           : "Coke Chunk",
 	"item.cabricality.incomplete_coke_chunk": "Incomplete Coke Chunk",
 
+	"item.cabricality.rubber"      : "Rubber",
+	"item.cabricality.cured_rubber": "Rubber",
+
 	"item.cabricality.nickel_dust"  : "Nickel Dust",
 	"item.cabricality.cobalt_dust"  : "Cobalt Dust",
 	"item.cabricality.desh_dust"    : "Desh Dust",
@@ -157,6 +160,20 @@
 	"item.cabricality.incomplete_calculation_processor": "Incomplete Calculation Processor",
 	"item.cabricality.incomplete_logic_processor"      : "Incomplete Logic Processor",
 	"item.cabricality.incomplete_engineering_processor": "Incomplete Engineering Processor",
+
+	"fluid.cabricality.resin_bucket"        : "Resin Bucket",
+	"fluid.cabricality.redstone_bucket"     : "Molten Redstone Bucket",
+	"fluid.cabricality.sky_stone_bucket"    : "Sky Stone Bucket",
+	"fluid.cabricality.waste_bucket"        : "Chromatic Waste Bucket",
+	"fluid.cabricality.powered_water_bucket": "Powered Water Bucket",
+	"fluid.cabricality.coke_bucket"         : "Coke Bucket",
+	"fluid.cabricality.fine_sand_bucket"    : "Fine Sand Bucket",
+	"fluid.cabricality.raw_logic_bucket"    : "Liquified Logic Bucket (Unprocessed)",
+	"fluid.cabricality.matrix_bucket"       : "Liquified Computation Matrix Bucket",
+
+	"fluid.cabricality.molten_desh_bucket"    : "Molten Desh Bucket",
+	"fluid.cabricality.molten_ostrum_bucket"  : "Molten Ostrum Bucket",
+	"fluid.cabricality.molten_calorite_bucket": "Molten Calorite Bucket",
 
 	"item.cabricality.zero" : "0",
 	"item.cabricality.one"  : "1",
@@ -282,7 +299,7 @@
 	"fluid.cabricality.powered_water": "Powered Water",
 	"fluid.cabricality.coke"         : "Coke",
 	"fluid.cabricality.fine_sand"    : "Fine Sand",
-	"fluid.cabricality.raw_logic"    : "Raw Logic",
+	"fluid.cabricality.raw_logic"    : "Liquified Logic (Unprocessed)",
 	"fluid.cabricality.matrix"       : "Liquified Computation Matrix",
 
 	"fluid.cabricality.molten_desh"    : "Molten Desh",
