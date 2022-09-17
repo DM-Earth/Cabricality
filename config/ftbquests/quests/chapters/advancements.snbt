@@ -44,7 +44,7 @@
 			tasks: [{
 				id: "169EFAAAE095C621"
 				type: "location"
-				title: "Reach the Hight of 255 Blocks"
+				title: "{advancement.cabricality.reach_the_sky.task.location.title}"
 				icon: "minecraft:ladder"
 				dimension: "minecraft:overworld"
 				ignore_dimension: false
@@ -81,7 +81,7 @@
 				{
 					id: "3EE01403F2449588"
 					type: "questsadditions:place"
-					title: "Place Cobblestone"
+					title: "{advancement.cabricality.construction.task.place_cobblestone.title}"
 					icon: "minecraft:cobblestone"
 					block: "minecraft:cobblestone"
 					replaced: "minecraft:air"
@@ -91,7 +91,7 @@
 				{
 					id: "251A2D458E887824"
 					type: "questsadditions:place"
-					title: "Place Dirt"
+					title: "{advancement.cabricality.construction.task.place_dirt.title}"
 					icon: "minecraft:dirt"
 					block: "minecraft:dirt"
 					replaced: "minecraft:air"
@@ -101,7 +101,7 @@
 				{
 					id: "6398A5D19BE51F07"
 					type: "questsadditions:break"
-					title: "Use and break scaffolding"
+					title: "{advancement.cabricality.construction.task.place_scaffolding.title}"
 					icon: "minecraft:scaffolding"
 					block: "minecraft:scaffolding"
 					value: 1024L
