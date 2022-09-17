@@ -1,7 +1,6 @@
 {
 	"comment_ponder": "思索",
 
-
 	"kubejs.ponder.alchemy_setup.header": "使用炼金镭射器",
 
 	"kubejs.ponder.alchemy_setup.text_1" : "放置一个激光镭射器，并在其上方放置一个流体漏斗",
@@ -28,7 +27,7 @@
 	"kubejs.ponder.extractor.text_3": "现在，你可以用流体管道抽取这些树脂了",
 
 
-	"kubejs.ponder.rocket_engine.header" : "制造火箭引擎",
+	"kubejs.ponder.rocket_engine.header": "制造火箭引擎",
 
 	"kubejs.ponder.rocket_engine.text_1": "我们需要准备些铁制板材与柱子作为基底，所有引擎都是如此",
 	"kubejs.ponder.rocket_engine.text_2": "对于上方的结构，不同等级的引擎需要不同的材料",
@@ -38,13 +37,13 @@
 
 	"kubejs.ponder.rocket_introduction.header": "火箭101",
 
-	"kubejs.ponder.rocket_introduction.text_1" : "恭喜！你与进入太空只有一步之遥了！",
-	"kubejs.ponder.rocket_introduction.text_2" : "在这之前，你需要做一些准备",
-	"kubejs.ponder.rocket_introduction.text_3" : "准备一些火箭用的引擎与储罐",
-	"kubejs.ponder.rocket_introduction.text_4" : "就像制造真正的火箭一样，要制造这些大家伙，你需要准备许多材料以组成多方块结构",
-	"kubejs.ponder.rocket_introduction.text_5" : "火箭共有4个等级",
-	"kubejs.ponder.rocket_introduction.text_6" : "等级越高，走得越远。而你首先需要乘坐最初级的火箭前往其他星球寻找制造高一级火箭所需的材料，然后以此类推...",
-	"kubejs.ponder.rocket_introduction.text_7" : "先尝试制造一台一级火箭吧！",
+	"kubejs.ponder.rocket_introduction.text_1": "恭喜！你与进入太空只有一步之遥了！",
+	"kubejs.ponder.rocket_introduction.text_2": "在这之前，你需要做一些准备",
+	"kubejs.ponder.rocket_introduction.text_3": "准备一些火箭用的引擎与储罐",
+	"kubejs.ponder.rocket_introduction.text_4": "就像制造真正的火箭一样，要制造这些大家伙，你需要准备许多材料以组成多方块结构",
+	"kubejs.ponder.rocket_introduction.text_5": "火箭共有4个等级",
+	"kubejs.ponder.rocket_introduction.text_6": "等级越高，走得越远。而你首先需要乘坐最初级的火箭前往其他星球寻找制造高一级火箭所需的材料，然后以此类推...",
+	"kubejs.ponder.rocket_introduction.text_7": "先尝试制造一台一级火箭吧！",
 
 
 	"kubejs.ponder.rocket_tank.header": "制造火箭燃料箱",
@@ -61,18 +60,19 @@
 	"comment_item": "物品",
 
 	"item.cabricality.kinetic_mechanism"    : "动力构件",
-	"item.cabricality.incomplete_kinetic_mechanism"    : "动力构件（半成品）",
 	"item.cabricality.sealed_mechanism"     : "气密构件",
-	"item.cabricality.incomplete_sealed_mechanism"     : "气密构件（半成品）",
 	"item.cabricality.infernal_mechanism"   : "酷热构件",
-	"item.cabricality.incomplete_infernal_mechanism"   : "酷热构件（半成品）",
 	"item.cabricality.sturdy_mechanism"     : "抗压构件",
-	"item.cabricality.incomplete_sturdy_mechanism"     : "抗压构件（半成品）",
 	"item.cabricality.inductive_mechanism"  : "超频构件",
-	"item.cabricality.incomplete_inductive_mechanism"  : "超频构件（半成品）",
 	"item.cabricality.abstruse_mechanism"   : "深邃构件",
-	"item.cabricality.incomplete_abstruse_mechanism"   : "深邃构件（半成品）",
 	"item.cabricality.calculation_mechanism": "智能构件",
+
+	"item.cabricality.incomplete_kinetic_mechanism"    : "动力构件（半成品）",
+	"item.cabricality.incomplete_sealed_mechanism"     : "气密构件（半成品）",
+	"item.cabricality.incomplete_infernal_mechanism"   : "酷热构件（半成品）",
+	"item.cabricality.incomplete_sturdy_mechanism"     : "抗压构件（半成品）",
+	"item.cabricality.incomplete_inductive_mechanism"  : "超频构件（半成品）",
+	"item.cabricality.incomplete_abstruse_mechanism"   : "深邃构件（半成品）",
 	"item.cabricality.incomplete_calculation_mechanism": "智能构件（半成品）",
 
 	"item.cabricality.saw_blade": "锯片",
@@ -105,7 +105,7 @@
 	"item.cabricality.rough_sand"   : "粗砂",
 	"item.cabricality.purified_sand": "高纯砂",
 
-	"item.cabricality.coke_chunk": "小块焦炭",
+	"item.cabricality.coke_chunk"           : "小块焦炭",
 	"item.cabricality.incomplete_coke_chunk": "小块焦炭（半成品）",
 
 	"item.cabricality.nickel_dust"  : "镍粉",
@@ -200,6 +200,7 @@
 	"block.cabricality.enderium_casing": "谐振末影机壳",
 
 	"block.cabricality.computation_matrix": "智能矩阵",
+
 
 
 	"comment_substrate": "试剂",
@@ -308,798 +309,851 @@
 
 
 
-
-	
 	"data.cabricality.title": "&f 永无止境：重缝",
 
 
 
 	"contraption.cabricality.automated": "&a自动生产",
-  
-  
-  
+	
+	
+	
 	"chapter_groups.cabricality.1": "&f  工具箱",
 	"chapter_groups.cabricality.2": "&f  科技树",
-  
-  
-  
+	
+	
+	
 	"welcome.cabricality.title": "&8 向着星辰与深渊",
-  
+	
 	"welcome.cabricality.limitless.title"   : "&f&l无限潜能",
 	"welcome.cabricality.limitless.subtitle": "一路顺风",
 	"welcome.cabricality.limitless.content" : "这是为你准备的世界。\n\n我们希望你能徜徉在机械动力等模组的无限可能中，更希望你能玩得开心！\n&7整个世界都将为你敞开！",
-  
+	
 	"welcome.cabricality.optional.title"   : "&f&l按需供应",
 	"welcome.cabricality.optional.subtitle": "图灵测试",
 	"welcome.cabricality.optional.content" : "任务系统可以帮助你使用&3交易&r模组和&6科技线&r模组对你的工厂进行深度定制。\n\n当然，这完全不是必要的——你可以随意创造和发挥，但任务系统也许能在你每次迷失的时候将你拉回正轨，并给你些小奖励。",
-  
+	
 	"welcome.cabricality.i.title"   : "&f&lI",
 	"welcome.cabricality.i.subtitle": "简介",
 	"welcome.cabricality.i.content" : "世界天翻地覆！准备创造最完美的机械工厂吧！\n&7打起精神，鼓足勇气！",
-  
+	
 	"welcome.cabricality.ii.title"   : "&f&lII",
 	"welcome.cabricality.ii.subtitle": "有志者事竟成",
 	"welcome.cabricality.ii.content" : "走向深空的路上，有近半百个全新发明正等着你。\n\n你将会解锁成千上万用途各异的零件，并需要把它们组装成精密而又庞大的机器。不要害怕失败，否则你将一事无成。\n&7你可以亲手推动下一次工业革命！",
-  
+	
 	"welcome.cabricality.iii.title"   : "&f&lIII",
 	"welcome.cabricality.iii.subtitle": "技术爆炸",
 	"welcome.cabricality.iii.content" : "你的工厂将会制造出精密的智能构件并组装出惊人的航天器，然后一飞冲天！\n\n每个人走的每一步都是不同的，但它们同等重要。在一些时候，如果你运气足够好，也能够事半功倍！\n尽兴的同时也要保持自信。",
-  
+	
 	"welcome.cabricality.iv.title"   : "&f&lIV",
 	"welcome.cabricality.iv.subtitle": "换种口味",
 	"welcome.cabricality.iv.content" : "不想总被死板的科技束缚？\n\n在这里，你还可以通过完成任务和职业交易募集资金。\n\n你获得的银币可以在&6市集&r购买许多东西，资源、特殊物品和建筑方块...合理使用它们肯定有所增益！",
-  
-	"welcome.cabricality.overview.title"   : "&6&l任务总览",
-	"welcome.cabricality.overview.content" : "&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！\n\n&5这些成就和Minecraft的进度不太一样。他们会更加困难，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r购物。\n\n&6就和逛商场一样，不过我们包邮。\n\n&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。\n\n&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！",
-  
-	"welcome.cabricality.go.title"   : "&f&l&o临门一脚",
-	"welcome.cabricality.go.content" : "现在你对你的任务目标有了清楚的了解。从这里你将开始你全新的征程。祝好运！",
-  
-  
-  
+	
+	"welcome.cabricality.overview.title"  : "&6&l任务总览",
+	"welcome.cabricality.overview.content": "&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！\n\n&5这些成就和Minecraft的进度不太一样。他们会更加困难，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r购物。\n\n&6就和逛商场一样，不过我们包邮。\n\n&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。\n\n&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！",
+	
+	"welcome.cabricality.go.title"  : "&f&l&o临门一脚",
+	"welcome.cabricality.go.content": "现在你对你的任务目标有了清楚的了解。从这里你将开始你全新的征程。祝好运！",
+	
+	
+	
 	"market.cabricality.title": "&6▶ 市集",
-  
+	
 	"market.cabricality.start.title"   : "&6&l市集",
 	"market.cabricality.start.subtitle": "在这里，你甚至可以买到...",
 	"market.cabricality.start.content" : "在&6市集，&r你可以买到许多有趣的商品和小部件。它们有的能助你完成任务，还有的能帮你打发时间\n\n四处逛逛吧，你肯定会爱上这里的！",
+	
 	"market.cabricality.start.task.checkmark.title": "四处逛逛",
-  
+	
 	"market.cabricality.exchange.gold.title"   : "货币&6兑换",
 	"market.cabricality.exchange.gold.subtitle": "&7银&r -> &6金&r   汇率 64:1",
 	"market.cabricality.exchange.gold.content" : "有些交易需要用金币支付，每一枚金币价值一组银币。",
-  
+	
 	"market.cabricality.exchange.silver.title"   : "货币&7兑换",
 	"market.cabricality.exchange.silver.subtitle": "&6金&r -> &7银&r   汇率 1:64",
 	"market.cabricality.exchange.silver.content" : "你也可以用一枚金币换回一组银币。",
-  
+	
 	"market.cabricality.saw.title"   : "锯我所知",
 	"market.cabricality.saw.subtitle": "&63 金币&r - 毫无根锯",
 	"market.cabricality.saw.content" : "购买它以在组装&6动力构件&r时最小化工具磨损。",
-  
+	
 	"market.cabricality.screwdriver.title"   : "从来不螺",
 	"market.cabricality.screwdriver.subtitle": "&65 金币&r - 996",
 	"market.cabricality.screwdriver.content" : "购买它以在组装&6精密构件&r时最小化工具磨损。",
-  
+	
 	"market.cabricality.resonator.title"   : "永久磁铁",
 	"market.cabricality.resonator.subtitle": "&67 金币&r - 贴贴",
 	"market.cabricality.resonator.content" : "购买它以在组装&6超频构件&r时最小化工具磨损。",
-  
+	
 	"market.cabricality.flash_drive.title"   : "Windows更新",
 	"market.cabricality.flash_drive.subtitle": "&611 金币&r - 是时候更新你的XP啦",
 	"market.cabricality.flash_drive.content" : "购买它以在组装&6智能构件&r时最小化工具磨损。",
-  
+	
 	"market.cabricality.sleepless.title"   : "梦游症",
 	"market.cabricality.sleepless.subtitle": "&710 银币&r - 毋有梦魇",
 	"market.cabricality.sleepless.content" : "面对日落，我们并非无计可施...\n\n至少，假装有地方睡觉能够理所当然地赐予你时间去做更多事。",
-  
+	
 	"market.cabricality.locator.title"   : "遗迹猎者",
 	"market.cabricality.locator.subtitle": "&62 金币&r - 自找上门",
 	"market.cabricality.locator.content" : "如果你不想在下界漫无目的地散步，买它就对了。",
-  
+	
 	"market.cabricality.dinner.title"   : "工作餐",
 	"market.cabricality.dinner.subtitle": "&710 银币&r - 横扫饥饿，做回自己！",
 	"market.cabricality.dinner.content" : "大多数情况下，和朋友们聚餐可以增进友谊，顺带让你饱餐一顿&7（废话）。&r",
-  
+	
 	"market.cabricality.landfill.title"   : "填海造陆工程 III期",
 	"market.cabricality.landfill.subtitle": "&715 银币&r - 泥土，泥土，泥土。",
 	"market.cabricality.landfill.content" : "来自大地的馈赠，当然，要花钱。",
-  
+	
 	"market.cabricality.test_of_patience.title"   : "命运酒桶",
 	"market.cabricality.test_of_patience.subtitle": "&750 银币&r - 刷新一下网页？",
 	"market.cabricality.test_of_patience.content" : "命运的酒桶自有乾坤。可惜你不能把它们塞回去，不然潜影盒们就可以提前退休了。\n\n&7这神秘的酒桶并不廉价，最深处又会藏着些什么呢？",
-  
+	
 	"market.cabricality.enderpack.title"   : "负重旅行",
 	"market.cabricality.enderpack.subtitle": "&755 银币&r - 只是你肩上的重担...",
 	"market.cabricality.enderpack.content" : "便携背包，古典款。易用，时尚。不试试吗？",
-  
+	
 	"market.cabricality.undying.title"   : "半条命",
 	"market.cabricality.undying.subtitle": "&760 银币&r - 喂，快把你的VR头显摘下来！",
 	"market.cabricality.undying.content" : "不用担心原主回来索命。",
-  
+	
 	"market.cabricality.mob.title"   : "妖魔鬼怪快离开",
 	"market.cabricality.mob.subtitle": "&745 银币&r - 看我老爹施法",
 	"market.cabricality.mob.content" : "如你所见，这一罩蕴含着魔法的钟可以驱散它周围无光环境中潜藏着的鬼怪！现场试用，七天无理由退货！购买捆绑包并置于随附灵魂火上更能响上加响！保证你此生不再有异变之患！\n&7温馨提示：广告创意，请以实物为准。\n\n&4灵梦：谁抢我活",
-  
+	
 	"market.cabricality.express.title"   : "压压速递",
 	"market.cabricality.express.subtitle": "&66 金币&r - 今晚别睡太死",
 	"market.cabricality.express.content" : "技术人员们一般不太喜欢出门，当然，宅们也不喜欢。庆幸的是，这几份板件现在可以直接派送到你的包里。",
-  
+	
 	"market.cabricality.gardener.title"   : "你的永恒花园",
 	"market.cabricality.gardener.subtitle": "&724 银币&r - 勿忘我",
 	"market.cabricality.gardener.content" : "",
-  
+	
 	"market.cabricality.painter.title"   : "绘师养成记",
 	"market.cabricality.painter.subtitle": "&724 银币&r - 不赠送入门课程",
 	"market.cabricality.painter.content" : "嘶哈嘶哈",
-  
+	
 	"market.cabricality.steamer.title"   : "铁路收藏家的最爱",
 	"market.cabricality.steamer.subtitle": "&724 银币&r - 学开车，啊不，学开火车",
 	"market.cabricality.steamer.content" : "如上，这里学不到如何驾驶高达。",
-  
+	
 	"market.cabricality.pet_owner.title"   : "铲屎官的成长之路",
 	"market.cabricality.pet_owner.subtitle": "&724 银币&r - 不只是因为寂寞",
 	"market.cabricality.pet_owner.content" : "都给我变！",
-  
+	
 	"market.cabricality.leaf.title"   : "土木工程入门",
 	"market.cabricality.leaf.subtitle": "&724 银币&r - 记得带桶",
 	"market.cabricality.leaf.content" : "用树叶铺满你的机器！\n&7不用担心结构问题，你和机器其中一个能跑就行。",
-  
+	
 	"market.cabricality.bee.title"   : "蜂窝移动网络",
 	"market.cabricality.bee.subtitle": "&748 银币&r - 我打赌你的信号不好",
 	"market.cabricality.bee.content" : "随附蜜蜂刷怪蛋，小心使用。",
+	
 	"market.cabricality.bee.task.flower.title": "任意花朵",
-  
-  
-  
-  
+	
+	
+	
 	"overview.cabricality.title": "&a▶ 纵览",
-  
-	"overview.cabricality.start.title"   : "&a&l一切都要从那棵树说起...",
-	"overview.cabricality.start.content" : "&a欢迎来到纵览。&r你可以随时在这里查看团队的科技树发展进度并解锁全新任务。如你所见，我会一直指引着你们直到你们离开这里走向更远——你们对大陆的探索将会在那时告一段落，但等着你们的远不止这些。旅途开始了！&a向着Minecraft科技时代的绝巘之峰勇敢地攀登吧！&r",
+	
+	"overview.cabricality.start.title"  : "&a&l一切都要从那棵树说起...",
+	"overview.cabricality.start.content": "&a欢迎来到纵览。&r你可以随时在这里查看团队的科技树发展进度并解锁全新任务。如你所见，我会一直指引着你们直到你们离开这里走向更远——你们对大陆的探索将会在那时告一段落，但等着你们的远不止这些。旅途开始了！&a向着Minecraft科技时代的绝巘之峰勇敢地攀登吧！&r",
+	
 	"overview.cabricality.start.task.logs.title": "任意原木",
-  
-	"overview.cabricality.preparation.title"   : "&f&l准备得当",
-	"overview.cabricality.preparation.content" : "在你急着开始之前，先准备些东西！一个完备的初始工作流能够使你的后续探索更加轻松。\n&7横着省下的路就会变成竖着的坑，早晚都要经过。",
+	
+	"overview.cabricality.preparation.title"  : "&f&l准备得当",
+	"overview.cabricality.preparation.content": "在你急着开始之前，先准备些东西！一个完备的初始工作流能够使你的后续探索更加轻松。\n&7横着省下的路就会变成竖着的坑，早晚都要经过。",
+	
 	"overview.cabricality.preparation.task.forgery.title": "冶炼炉",
-  
+	
 	"overview.cabricality.chapter_1.start.title"   : "&6&l扬帆起航",
 	"overview.cabricality.chapter_1.start.subtitle": "&6第一章",
 	"overview.cabricality.chapter_1.start.content" : "我们的事业刚刚起步！早期的工程真可谓是开荒垦地一般。自动合成？别想了。智能过滤？那东西可不便宜。自动化运输？嘿，找边儿站着去吧。现在只有自己动手才能丰衣足食。而这时你最需要的正是——&6安山机器！&r\n\n单击上方复选框以解锁&6第一章：扬帆起航。&r\n&7具体任务细节可以在左侧边栏选择查看。",
+	
 	"overview.cabricality.chapter_1.start.task.unlock.title": "&6解锁第一章",
-  
+	
 	"overview.cabricality.chapter_1.end.title"   : "&f&l安山时代",
 	"overview.cabricality.chapter_1.end.subtitle": "里程碑",
 	"overview.cabricality.chapter_1.end.content" : "现在你已经完成了&6动力构件&r的自动化！这样一来，很多机器都可以手工制作了。\n\n你现在可以选择继续发展&6第二章：初入门道&r的内容，或转而攻克&4第一章支线：橡胶垄断&r的挑战。无论如何，保证&4铜机器&r的充足供应总不会是件坏事！",
+	
 	"overview.cabricality.chapter_1.end.task.complete.title": "&6C完成第一章",
-  
+	
 	"overview.cabricality.bonus_1a.start.title"   : "&f&l能源大亨",
 	"overview.cabricality.bonus_1a.start.subtitle": "第一章 支线",
 	"overview.cabricality.bonus_1a.start.content" : "&4铜机器&r的需求并没有那么大。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？\n&7单击上方复选框，揭幕第一章的额外支线内容。",
+	
 	"overview.cabricality.bonus_1a.start.task.unlock.title": "&4解锁第一章 &7支线",
-  
+	
 	"overview.cabricality.bonus_1a.end.title"   : "&4&l冰汽时代",
 	"overview.cabricality.bonus_1a.end.subtitle": "&4挑战",
 	"overview.cabricality.bonus_1a.end.content" : "&4铜机器&r将会满足你对流体处理的所有需求。无论是释放还是抽取、交互、过滤...你现在可以向你的工厂中引入全自动流体处理系统了！\n&4气密构件&7仅会在&4第一章支线：能源大亨&7中使用。",
+	
 	"overview.cabricality.bonus_1a.end.task.complete.title": "&4Complete Bonus 1A",
-  
+	
 	"overview.cabricality.chapter_2.start.title"   : "&6&l初入门道",
 	"overview.cabricality.chapter_2.start.subtitle": "&6第二章",
 	"overview.cabricality.chapter_2.start.content" : "我们都知道机旦悖论：一旦要想更方便地自动化生产&6黄铜机器，&r你就首先需要更多的&6黄铜机器！&r\n\n单击上方复选框以解锁&6第二章：初入门道。&r\n&7具体任务细节可以在左侧边栏选择查看。",
+	
 	"overview.cabricality.chapter_2.start.task.unlock.title": "&6解锁第二章",
-  
+	
 	"overview.cabricality.chapter_2.end.title"   : "&f&l黄铜时代",
 	"overview.cabricality.chapter_2.end.subtitle": "里程碑",
 	"overview.cabricality.chapter_2.end.content" : "这么快你就能够自动生产&6精密构件&r了，真是令人惊讶！这下你已经解锁机械动力的几乎全部内容了。现在，从改进生产方式到改善生活环境的工具你应有尽有。&6黄铜色...&r多么好看的颜色！\n\n别懈怠！等你在&2第二章支线：流动产业&r稍作休整后，就该向着&6第三章：钢铁洪流&r进发了！",
+	
 	"overview.cabricality.chapter_2.end.task.complete.title": "&6完成第二章",
-  
+	
 	"overview.cabricality.bonus_2a.start.title"   : "&f&l流动产业",
 	"overview.cabricality.bonus_2a.start.subtitle": "第二章 支线",
 	"overview.cabricality.bonus_2a.start.content" : "我们需要更深入些！&2酷热构件&r的生产需要在另一个维度进行。尽管它简直和地狱别无二样，但在新的环境中工作总是能带来些全新的灵感和脑洞&2...也许吧？&r\n&7单击上方复选框，揭幕第二章的额外支线内容。",
+	
 	"overview.cabricality.bonus_2a.start.task.unlock.title": "&2解锁第二章 &7支线",
-  
+	
 	"overview.cabricality.bonus_2a.end.title"   : "&2&l朋克时代",
 	"overview.cabricality.bonus_2a.end.subtitle": "&2挑战",
 	"overview.cabricality.bonus_2a.end.content" : "&2锌机器&r不可置信地强大！从高效刷石到物品收集，它全都能胜任！是时候好好利用这些&2酷热的强大机器&r来为你的工厂添砖加瓦了。\n&2酷热构件&7仅会在&2第二章支线：流动产业&7中使用。",
+	
 	"overview.cabricality.bonus_2a.end.task.complete.title": "&2完成第二章 &7支线",
-  
+	
 	"overview.cabricality.chapter_3.start.title"   : "&6&l钢铁洪流",
 	"overview.cabricality.chapter_3.start.subtitle": "&6第三章",
 	"overview.cabricality.chapter_3.start.content" : "嗬，我们终于打下了坚实的基础。是时候快步前进了！\n\n在&6新工业时代，&r你会结出许多奇怪的技术，学到神奇的技巧。有了一定功底之后，无论多么错综复杂的交互生产也将会变得小菜一碟。\n\n点击上方复选框以解锁&6第三章：钢铁洪流。&r\n&7具体任务细节可以在左侧边栏选择查看。",
+	
 	"overview.cabricality.chapter_3.start.task.unlock.title": "&6解锁第三章",
-  
+	
 	"overview.cabricality.chapter_3.end.title"   : "&f&l合金时代",
 	"overview.cabricality.chapter_3.end.subtitle": "里程碑",
 	"overview.cabricality.chapter_3.end.content" : "科技发展的终点是&6魔法。&r现在你的一些机器已经被一些不是科学而是玄学的奇妙能量控制住了，&6不是吗？&r\n\n好吧，先不谈这些...放眼望去，你马上就能踏出历史性的一步了！&6新技术的合理运用&r能够继续推动你前进。\n&7你的一小步，世界的一大步。",
+	
 	"overview.cabricality.chapter_3.end.task.complete.title": "&6完成第三章",
-  
+	
 	"overview.cabricality.bonus_3a.start.title"   : "&f&l资金回转",
 	"overview.cabricality.bonus_3a.start.subtitle": "第三章 支线",
 	"overview.cabricality.bonus_3a.start.content" : "被空间移动的魅力所震撼从而寄希望于研究向往的&3第三维度&r的你还不如在&3量子力学领域&r放手一搏...在研究新材料的过程中，你发现辛苦挣来的&3银币&r竟能提供莫大帮助！\n&7勾选上方复选框，揭幕第三章的额外支线内容。",
+	
 	"overview.cabricality.bonus_3a.start.task.unlock.title": "&3解锁第三章 77支线",
-  
+	
 	"overview.cabricality.bonus_3a.end.title"   : "&3&l魔法时代",
 	"overview.cabricality.bonus_3a.end.subtitle": "&3挑战",
 	"overview.cabricality.bonus_3a.end.content" : "&3传...传送！&r有了&3末影合金机器&r后，你不仅能在眨眼间移动物品和流体，还能将工厂的生产效率提升到前所未有的高度...",
+	
 	"overview.cabricality.bonus_3a.end.task.complete.title": "&3完成第三章 &7支线",
-  
+	
 	"overview.cabricality.chapter_4.start.title"   : "&6&l靶向药物",
 	"overview.cabricality.chapter_4.start.subtitle": "&6第四章",
 	"overview.cabricality.chapter_4.start.content" : "你需要了解一些全新的动力组合方式！只有弄清楚&6热力系统&r和&6传统动力结构&r间的相互作用，才能够高效生产&6硅。&r你很快就将步入&6智能时代&r了！\n\n一项奇怪的研究发现，&6激光&r能够高效地在上述两种能级间不断跃迁。倘若能够加以利用，那么这将会是一个划时代的创新！\n\n点击上方复选框以解锁&6第四章：靶向药物。&r\n&7具体任务细节可以在左侧边栏选择查看。",
+	
 	"overview.cabricality.chapter_4.start.task.unlock.title": "&6解锁第四章",
-  
+	
 	"overview.cabricality.chapter_4a.start.title"   : "&6&l混沌炼金",
 	"overview.cabricality.chapter_4a.start.subtitle": "→ 备用路线",
 	"overview.cabricality.chapter_4a.start.content" : "如果你对死板的科技感到厌烦，那你费心研究的&6激光发射器&r也并非派不上用场。它们可是炼金好手！\n\n在科学和炼金术的奇妙联动下，你发现了一些&6几乎毫无关系的物质&r间相互转换的奥秘。继续发展科技所必须的原料&6硅&r也在其中。什么？&6炼金术&r怎么就不能生产硅了？\n&7温馨提示：不要品尝失败品。\n\n单击上方复选框以解锁&7备用路线：&6混沌炼金。\n&7具体任务细节可以在左侧边栏选择查看。",
+	
 	"overview.cabricality.chapter_4a.start.task.unlock.title": "&6解锁第四章 &7备用路线",
-  
+	
 	"overview.cabricality.chapter_4.end.title"   : "&f&l信息时代",
 	"overview.cabricality.chapter_4.end.subtitle": "里程碑",
 	"overview.cabricality.chapter_4.end.content" : "在&6智能构件&r的帮助下，你的工厂将会全面数字化！&6即时物能转换（ME转换）&r将会带来前所未有的技术革新！无论是对你的工厂还是你自己，意义同样重大。\n\n现在，你已经可以制造&6所有&r探索深空所需的材料和零件了。也许，可以提前安排一下倒计时？\n&710, 9, 8...",
+	
 	"overview.cabricality.chapter_4.end.task.complete.title": "&6解锁第四章",
-  
+	
 	"overview.cabricality.chapter_5.start.title"   : "&6&l意识上传",
 	"overview.cabricality.chapter_5.start.subtitle": "&5最终章",
 	"overview.cabricality.chapter_5.start.content" : "整个工厂都在为最后一段冲刺而全速运转。在&5智能构件&r的稳定供应下，所有智能化的&5基建平台&r都将会完美地在轨运行。\n\n当你的工厂正狼吞虎咽五颜六色的数字时，向着深空的&5先驱者们&r已经随时准备踏上那勇气之梯了！",
+	
 	"overview.cabricality.chapter_5.start.task.unlock.title": "&6解锁&5最终章",
-  
-	"overview.cabricality.chapter_5.end.title"   : "&9&l&o..还要走得更远",
-	"overview.cabricality.chapter_5.end.content" : "&o这也许只是你的一小步，却是&9全人类&r的一大步。\n\n&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r\n\n&9&l&o世界很大，生活更大。",
+	
+	"overview.cabricality.chapter_5.end.title"  : "&9&l&o..还要走得更远",
+	"overview.cabricality.chapter_5.end.content": "&o这也许只是你的一小步，却是&9全人类&r的一大步。\n\n&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r\n\n&9&l&o世界很大，生活更大。",
+	
 	"overview.cabricality.chapter_5.end.task.complete.title": "&5探索宇宙！",
-  
-  
-  
-	"advancements.cabricality.title": "&d> 进度",
-  
-	"advancement.cabricality.accumulation.title"   : "&6光头强",
+	
+	
+	
+	"advancements.cabricality.title": "&d▶ 成就",
+	
+	"advancement.cabricality.accumulation.title"   : "&6原始积累",
 	"advancement.cabricality.accumulation.subtitle": "&6记得种回去！",
-	"advancement.cabricality.accumulation.task.craft.title": "合成 4096 块木板",
-  
-	"advancement.cabricality.reach_the_sky.title"   : "&b到达世界最高层",
-	"advancement.cabricality.reach_the_sky.subtitle": "&b不过... 该如何下去？",
-  
+	
+	"advancement.cabricality.accumulation.task.craft.title": "合成2^12块木板",
+	
+	"advancement.cabricality.reach_the_sky.title"   : "&b触摸天空",
+	"advancement.cabricality.reach_the_sky.subtitle": "&bB到底该怎么下去呢？",
+
+	"advancement.cabricality.reach_the_sky.task.location.title": "到达255米的高度",
+	
 	"advancement.cabricality.construction.title"   : "&7基建狂魔",
-	"advancement.cabricality.construction.subtitle": "&7进入大基建时代！",
-  
-	"advancement.cabricality.explore.title"   : "&5真正的旅行者",
-	"advancement.cabricality.explore.subtitle": "&5永远记住，有一个地方，叫家。",
-  
+	"advancement.cabricality.construction.subtitle": "&7大兴土木！",
+	
+	"advancement.cabricality.construction.task.place_cobblestone.title": "放置圆石",
+	"advancement.cabricality.construction.task.place_dirt.title"       : "放置泥土",
+	"advancement.cabricality.construction.task.place_scaffolding.title": "使用并拆毁脚手架",
+	
+	"advancement.cabricality.explore.title"   : "&5漫游指南",
+	"advancement.cabricality.explore.subtitle": "&5永远不要忘记，叫做家的地方。",
+	
 	"advancement.cabricality.explore.dimension.nether" : "&5下界",
 	"advancement.cabricality.explore.dimension.the_end": "&3末路之地",
-  
-	"advancement.cabricality.explore.planet.the_moon" : "&8月球",
-	"advancement.cabricality.explore.planet.glacio"   : "&9霜原",
-	"advancement.cabricality.explore.planet.mars"     : "&c火星",
-	"advancement.cabricality.explore.planet.mercury"  : "&5水星",
-	"advancement.cabricality.explore.planet.venus"    : "&6金星",
-  
-	"advancement.cabricality.explore.orbit.earth"    : "&2地球&8轨道",
-	"advancement.cabricality.explore.orbit.the_moon" : "&8月球&8轨道",
-	"advancement.cabricality.explore.orbit.glacio"   : "&9霜原&8轨道",
-	"advancement.cabricality.explore.orbit.mars"     : "&c火星&8轨道",
-	"advancement.cabricality.explore.orbit.mercury"  : "&5水星&8轨道",
-	"advancement.cabricality.explore.orbit.venus"    : "&6金星&8轨道",
-  
-	"advancement.cabricality.being_stored.title"   : "&8被封存的自己",
-	"advancement.cabricality.being_stored.subtitle": "&8这是什么鬼地方..",
-	"advancement.cabricality.being_stored.task.spatial_storage": "&8进入封闭空间",
-  
-	"advancement.cabricality.flying_skunk.title"   : "&d..你怎么在这？",
-	"advancement.cabricality.flying_skunk.subtitle": "&d因此，仙贝大喊。",
+	
+	"advancement.cabricality.explore.planet.the_moon": "&8月球",
+	"advancement.cabricality.explore.planet.glacio"  : "&9霜原星",
+	"advancement.cabricality.explore.planet.mars"    : "&c火星",
+	"advancement.cabricality.explore.planet.mercury" : "&5水星",
+	"advancement.cabricality.explore.planet.venus"   : "&6金星",
+	
+	"advancement.cabricality.explore.orbit.earth"   : "&2地球&8轨道",
+	"advancement.cabricality.explore.orbit.the_moon": "&8月球&8轨道",
+	"advancement.cabricality.explore.orbit.glacio"  : "&9霜原星&8轨道",
+	"advancement.cabricality.explore.orbit.mars"    : "&c火星&8轨道",
+	"advancement.cabricality.explore.orbit.mercury" : "&5水星&8轨道",
+	"advancement.cabricality.explore.orbit.venus"   : "&6金星&8轨道",
+	
+	"advancement.cabricality.being_stored.title"   : "&8被封存的传说",
+	"advancement.cabricality.being_stored.subtitle": "&8地狱一般的鬼地方...",
+	
+	"advancement.cabricality.being_stored.task.spatial_storage": "&8钻进&8存储空间",
+	
+	"advancement.cabricality.flying_skunk.title"   : "&d你在做什么啊？",
+	"advancement.cabricality.flying_skunk.subtitle": "&d哼哼哼，啊！仙贝如是说。",
+	
 	"advancement.cabricality.flying_skunk.task.fly.title": "&d飞行距离",
-  
-	"advancement.cabricality.long_tour.title"   : "&6一段漫长的旅途",
-	"advancement.cabricality.long_tour.subtitle": "&6你是我的人，一直都是。",
+	
+	"advancement.cabricality.long_tour.title"   : "&6路途漫漫",
+	"advancement.cabricality.long_tour.subtitle": "&6你是我永远的朋友。",
+	
 	"advancement.cabricality.long_tour.task.play.title": "&5游玩5000天",
-  
-	"advancement.cabricality.new.title"   : "&8草，词穷了",
+	
+	"advancement.cabricality.new.title"   : "&8未完成的事业",
 	"advancement.cabricality.new.subtitle": "&8不————————",
-  
+	
 	"advacnements.cabricality.complete.title": "&f幔缝重生",
-	"advancements.cabricality.complete.task.minecraft.title"      : "&2’速通‘Minecraft",
-	"advancements.cabricality.complete.task.ad_astra.title"       : "&d外太空",
-	"advancements.cabricality.complete.task.create.title"         : "&6机械飞升",
-	"advancements.cabricality.complete.task.farmers_delight.title": "&e美味佳肴",
-  
-  
-  
+	
+	"advancements.cabricality.complete.task.minecraft.title"      : "&2你的世界",
+	"advancements.cabricality.complete.task.ad_astra.title"       : "&d无人深空",
+	"advancements.cabricality.complete.task.create.title"         : "&6机械革命",
+	"advancements.cabricality.complete.task.farmers_delight.title": "&e山肴野蔌",
+	
+	
+	
 	"chapter_1.cabricality.title": "&f1&r High Aspirations",
-  
-	"chapter_1.cabricality.start.title"   : "Chapter 1 Start!",
-	"chapter_1.cabricality.start.content" : "Welcome to the Factory Guide!\n\nThese Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing.\n\n&6Happy engineering!",
+	
+	"chapter_1.cabricality.start.title"  : "Chapter 1 Start!",
+	"chapter_1.cabricality.start.content": "Welcome to the Factory Guide!\n\nThese Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing.\n\n&6Happy engineering!",
+	
 	"chapter_1.cabricality.start.task.checkmark.title": "Checkmark",
-  
-	"chapter_1.cabricality.speedrun.title"   : "Speedrun",
-	"chapter_1.cabricality.speedrun.content" : "The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated.\n\nBe reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort.",
+	
+	"chapter_1.cabricality.speedrun.title"  : "Speedrun",
+	"chapter_1.cabricality.speedrun.content": "The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated.\n\nBe reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort.",
+	
 	"chapter_1.cabricality.speedrun.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.1.title"   : "Automatic Forest",
 	"contraption.cabricality.1.subtitle": "Contraption 1",
 	"contraption.cabricality.1.content" : "Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort.\n\nMechanical Saws are a powerful way to achieve this.",
+	
 	"contraption.cabricality.1.task.wooden_log.title": "Any Wooden Log",
-  
+	
 	"contraption.cabricality.2.title"   : "Water Infuser",
 	"contraption.cabricality.2.subtitle": "Contraption 2",
 	"contraption.cabricality.2.content" : "Compact Limestone with Water to make Dripstone Blocks, which can be milled into Clay Balls.",
-  
+	
 	"contraption.cabricality.3.title"   : "Underwater Garden",
 	"contraption.cabricality.3.subtitle": "Contraption 3",
 	"contraption.cabricality.3.content" : "Kelp is vital ingredient to our first Assembly Line target: Andesite Alloy.\n\nKelp can be gathered automatically with Mechanical Harvesters.",
-  
+	
 	"contraption.cabricality.4.title"   : "Bedrock's Bounty",
 	"contraption.cabricality.4.subtitle": "Contraption 4",
 	"contraption.cabricality.4.content" : "Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely.\n\nAt this time it is best to set up drills to break generated blocks between lava and water.\nSince bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides.",
-  
+	
 	"contraption.cabricality.5.title"   : "The Stone Lift",
 	"contraption.cabricality.5.subtitle": "Contraption 5",
 	"contraption.cabricality.5.content" : "All your Andesite is likely not being generated near your factory. Figure out a way to bring it to the surface.",
-  
+	
 	"contraption.cabricality.6.1.title"   : "Clay Miller",
 	"contraption.cabricality.6.1.subtitle": "Contraption 6-1",
 	"contraption.cabricality.6.1.content" : "With the help of Millstone, Dripstone Blocks can be milled into Clay Balls.",
-  
+	
 	"contraption.cabricality.6.2.title"   : "Algae Blender",
 	"contraption.cabricality.6.2.subtitle": "Contraption 6-2",
 	"contraption.cabricality.6.2.content" : "In the Mix! Clay and Kelp can be processed with the Mechanical Mixer.",
-  
+	
 	"contraption.cabricality.6.3.title"   : "Algae Cooker",
 	"contraption.cabricality.6.3.subtitle": "Contraption 6-3",
 	"contraption.cabricality.6.3.content" : "Smelt the Algal blend into bricks. While a Furnace works great, an Encased Fan can do it without the need of Fuel.",
-  
+	
 	"contraption.cabricality.6.4.title"   : "Algaesite Mixer",
 	"contraption.cabricality.6.4.subtitle": "Contraption 6-4",
 	"contraption.cabricality.6.4.content" : "In another Mix! This time it'll be the bricks and your surfaced Andesite.",
-  
+	
 	"contraption.cabricality.7.1.title"   : "Log Stripper",
 	"contraption.cabricality.7.1.subtitle": "Contraption 7-1",
 	"contraption.cabricality.7.1.content" : "Upwards-facing Mechanical Saws can process the harvested logs further...",
+	
 	"contraption.cabricality.7.1.task.stripped_log.title": "Any Stripped Log",
-  
+	
 	"contraption.cabricality.7.2.title"   : "Plank Cutter",
 	"contraption.cabricality.7.2.subtitle": "Contraption 7-2",
 	"contraption.cabricality.7.2.content" : "...and further...",
+	
 	"contraption.cabricality.7.2.task.planks.title": "Any Planks",
-  
+	
 	"contraption.cabricality.7.3.title"   : "Cutter of Cut Planks",
 	"contraption.cabricality.7.3.subtitle": "Contraption 7-3",
 	"contraption.cabricality.7.3.content" : "...and further, into the perfect base for our first Mechanism.\n\nNote: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw.",
+	
 	"contraption.cabricality.7.3.task.wooden_slab.title": "Any Wooden Slab",
-  
+	
 	"contraption.cabricality.8.title"   : "Deploy, Deploy, Deploy.",
 	"contraption.cabricality.8.subtitle": "Contraption 8",
 	"contraption.cabricality.8.content" : "Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line.",
-  
-	"contraption.cabricality.assemble.title"   : "Arming the Deployer",
+	
+	"contraption.cabricality.assemble.title"  : "Arming the Deployer",
 	"contraption.cabricality.assemble.content": "It'll be good to stock up on a couple of saws for the Mechanism Assembly.\n&7However, they are not nearly consumed as quickly as something that would require an automated supply.",
+	
 	"contraption.cabricality.assemble.task.saw.title": "Any Saw",
-  
-	"chapter_1.cabricality.complete.title"   : "Chapter 1 Complete!",
-	"chapter_1.cabricality.complete.content" : "Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit.\n&7Before moving on, check back through your factory and search for any major bottlenecks.\nIt'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough.",
-  
+	
+	"chapter_1.cabricality.complete.title"  : "Chapter 1 Complete!",
+	"chapter_1.cabricality.complete.content": "Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit.\n&7Before moving on, check back through your factory and search for any major bottlenecks.\nIt'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough.",
+	
 	"contraption.cabricality.9.1.title"   : "Ah wait, don't chop",
 	"contraption.cabricality.9.1.subtitle": "Contraption 9-1",
 	"contraption.cabricality.9.1.content" : "Liquid resin can be extracted from healthy Trees by right-clicking Extractor Machines next to the logs.",
-  
+	
 	"contraption.cabricality.9.2.title"   : "Rubber Stamper",
 	"contraption.cabricality.9.2.subtitle": "Contraption 9-2",
 	"contraption.cabricality.9.2.content" : "Gather the resin via a network of Fluid Pipes and use a Basin-Press to solidify it.",
-  
+	
 	"contraption.cabricality.9.3.title"   : "Curing by Flame",
 	"contraption.cabricality.9.3.subtitle": "Contraption 9-3",
 	"contraption.cabricality.9.3.content" : "Finally, smelt the raw rubber into its cured state.\nBon Appétit!",
-  
-	"bonus_1a.cabricality.assemble.title"   : "All Sealed Up",
-	"bonus_1a.cabricality.assemble.content" : "From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on.",
-  
-	"bonus_1a.cabricality.complete.title"   : "Bonus 1A Complete!",
-	"bonus_1a.cabricality.complete.content" : "Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you.",
-  
-  
-  
+	
+	"bonus_1a.cabricality.assemble.title"  : "All Sealed Up",
+	"bonus_1a.cabricality.assemble.content": "From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on.",
+	
+	"bonus_1a.cabricality.complete.title"  : "Bonus 1A Complete!",
+	"bonus_1a.cabricality.complete.content": "Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you.",
+	
+	
+	
 	"chapter_2.cabricality.title": "&f2&r Alluring Expedience",
-  
-	"chapter_2.cabricality.start.title"   : "Chapter 2 Start!",
-	"chapter_2.cabricality.start.content" : "The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier.\n\n&6Happy Inventing!",
+	
+	"chapter_2.cabricality.start.title"  : "Chapter 2 Start!",
+	"chapter_2.cabricality.start.content": "The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier.\n\n&6Happy Inventing!",
+	
 	"chapter_2.cabricality.start.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.10.title"   : "The Alloy Mixer",
 	"contraption.cabricality.10.subtitle": "Contraption 10",
 	"contraption.cabricality.10.content" : "Not part of the Mechanism Chain, yet very important for creating relevant machines.\n\nUsing Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them.\n\nPumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots.\n\nFor less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above.",
+	
 	"contraption.cabricality.10.task.checkmark.title": "Checkmark",
-  
-	"chapter_2.cabricality.sand.title"   : "Temporary Sand",
-	"chapter_2.cabricality.sand.content" : "Initially, Certus Quartz Seeds require sand to be crafted. However, for full automation it might be worthwhile to bypass that requirement with the help of Mechanical Crafters.",
-  
-	"chapter_2.cabricality.water.title"   : "Water Supply",
-	"chapter_2.cabricality.water.content" : "The contraptions of Chapter 2 require a healthy supply of water. The easiest way is to pull from water sources directly using Mechanical Pumps and a fluid pipe network.",
-  
+	
+	"chapter_2.cabricality.sand.title"  : "Temporary Sand",
+	"chapter_2.cabricality.sand.content": "Initially, Certus Quartz Seeds require sand to be crafted. However, for full automation it might be worthwhile to bypass that requirement with the help of Mechanical Crafters.",
+	
+	"chapter_2.cabricality.water.title"  : "Water Supply",
+	"chapter_2.cabricality.water.content": "The contraptions of Chapter 2 require a healthy supply of water. The easiest way is to pull from water sources directly using Mechanical Pumps and a fluid pipe network.",
+	
 	"contraption.cabricality.11.title"   : "Skystone Infin-mill",
 	"contraption.cabricality.11.subtitle": "Contraption 11",
 	"contraption.cabricality.11.content" : "You can just keep on pulverizing it. Sky Stone blocks never seem to lose mass in the process. What a world we live in!\n\nFind Sky Stone Blocks at Meteor crash sites. If you haven't encountered any, try looking for one using the Meteorite compass.",
-  
+	
 	"contraption.cabricality.12.1.title"   : "Quartz Seeds",
 	"contraption.cabricality.12.1.subtitle": "Contraption 12-1",
 	"contraption.cabricality.12.1.content" : "This piece of quartz is too small. With enough water we might get somewhere.\n\nIf you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accelerate the process.",
-  
+	
 	"contraption.cabricality.12.2.title"   : "The Great Growth",
 	"contraption.cabricality.12.2.subtitle": "Contraption 12-2",
 	"contraption.cabricality.12.2.content" : "Finally, a fully grown crystal. Don't forget to send every second one back around for seed production!",
-  
+	
 	"contraption.cabricality.13.title"   : "The (Re-)Charger",
 	"contraption.cabricality.13.subtitle": "Contraption 13",
 	"contraption.cabricality.13.content" : "Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2.\n\nThe Charger from AE2 can be used here, along with the Item Transportation of choice.",
-  
+	
 	"contraption.cabricality.14.1.title"   : "Skystone Mixer",
 	"contraption.cabricality.14.1.subtitle": "Contraption 14-1",
 	"contraption.cabricality.14.1.content" : "Dissolving this strange reactive powder in water creates a fun and useful liquid.",
-  
+	
 	"contraption.cabricality.14.2.title"   : "Charged Mixer",
 	"contraption.cabricality.14.2.subtitle": "Contraption 14-2",
 	"contraption.cabricality.14.2.content" : "Discharging an Energized Certus Quartz Crystal into the liquid creates a solution that reminds you of liquid redstone.\n&7Notice that the mixing process returns an inert quartz ready to be recharged using Contraption 14.",
-  
+	
 	"contraption.cabricality.14.3.title"   : "Painted Quartz Mixer",
 	"contraption.cabricality.14.3.subtitle": "Contraption 14-3",
 	"contraption.cabricality.14.3.content" : "In a third and final Mixer, our freshly grown Crystals will be treated to a nice and energetic re-design.\n\n&7&o(Sorry to all Mineralogists.)",
-  
+	
 	"contraption.cabricality.15.1.title"   : "Iron for Days",
 	"contraption.cabricality.15.1.subtitle": "Contraption 15-1",
 	"contraption.cabricality.15.1.content" : "Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone.\n\nStart with some Drills hooked up to regenerating Cobblestone blocks.",
-  
+	
 	"contraption.cabricality.15.2.title"   : "De-Chunkify",
 	"contraption.cabricality.15.2.subtitle": "Contraption 15-2",
 	"contraption.cabricality.15.2.content" : "The Cobblestone first needs to be milled down into Gravel.",
-  
+	
 	"contraption.cabricality.15.3.title"   : "Ferric Traces",
 	"contraption.cabricality.15.3.subtitle": "Contraption 15-3",
 	"contraption.cabricality.15.3.content" : "Washing the Gravel with an Encased Fan leaves you with Iron Nuggets and Flint.",
-  
+	
 	"contraption.cabricality.15.4.title"   : "Get Melted",
 	"contraption.cabricality.15.4.subtitle": "Contraption 15-4",
 	"contraption.cabricality.15.4.content" : "Route the nuggets into your High-Temperature melting equipment. A Melter from Tinkers' Construct, for example.",
-  
+	
 	"contraption.cabricality.15.5.title"   : "Second Coating Layer",
 	"contraption.cabricality.15.5.subtitle": "Contraption 15-5",
 	"contraption.cabricality.15.5.content" : "Spout a droplet of Molten Iron onto the Rose Quartz Crystal to create a fully functional Electron Tube.",
-  
+	
 	"contraption.cabricality.16.title"   : "Keep on Deploying",
 	"contraption.cabricality.16.subtitle": "Contraption 16",
 	"contraption.cabricality.16.content" : "Bringing together Electron Tubes and Kinetic Mechanisms using a row of Deployers concludes your second Assembly Line.",
-  
-	"chapter_2.cabricality.assemble.title"   : "Arming the Deployer II",
-	"chapter_2.cabricality.assemble.content" : "It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly.\n&7Just like last time, the requirement does not necessarily call for automation.",
-  
-	"chapter_2.cabricality.complete.title"   : "Chapter 2 Complete!",
-	"chapter_2.cabricality.complete.content" : "Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!\n&7After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section.",
-  
-	"bonus_2a.cabricality.preparation.title"   : "Blaze Escort",
-	"bonus_2a.cabricality.preparation.content" : "For the first time in the progression, a Blaze Burner is required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners.",
-  
+	
+	"chapter_2.cabricality.assemble.title"  : "Arming the Deployer II",
+	"chapter_2.cabricality.assemble.content": "It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly.\n&7Just like last time, the requirement does not necessarily call for automation.",
+	
+	"chapter_2.cabricality.complete.title"  : "Chapter 2 Complete!",
+	"chapter_2.cabricality.complete.content": "Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!\n&7After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section.",
+	
+	"bonus_2a.cabricality.preparation.title"  : "Blaze Escort",
+	"bonus_2a.cabricality.preparation.content": "For the first time in the progression, a Blaze Burner is required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners.",
+	
 	"contraption.cabricality.17.1.title"   : "The Double Decker I",
 	"contraption.cabricality.17.1.subtitle": "Contraption 17-1",
 	"contraption.cabricality.17.1.content" : "For the all-mighty Infernal Mechanism, a bountiful source of soul essence is needed. Thankfully, the vines of the underworld seem to carry it in them.\n\nTwisting Vines grow upwards, you can gather them using Mechanical Harvesters.",
-  
+	
 	"contraption.cabricality.17.2.title"   : "The Double Decker II",
 	"contraption.cabricality.17.2.subtitle": "Contraption 17-2",
 	"contraption.cabricality.17.2.content" : "Weeping Vines grow downwards from a ceiling. You can gather them with Mechanical Harvesters.\n\nFor style points, you can use the same contraption to harvest both vine types simultaneously.",
-  
+	
 	"contraption.cabricality.17.3.title"   : "Soul Distillery",
 	"contraption.cabricality.17.3.subtitle": "Contraption 17-3",
 	"contraption.cabricality.17.3.content" : "Drop all the harvested vines into a Heated Mixing Basin.",
-  
+	
 	"contraption.cabricality.18.1.title"   : "A. Lot. Of. Lava",
 	"contraption.cabricality.18.1.subtitle": "Contraption 18-1",
 	"contraption.cabricality.18.1.content" : "Every Zinc Machine will end up using 24 Buckets of Lava in Production. It's not a great ecological footprint, but even just one Hose Pulley can make quick work of it.",
-  
+	
 	"contraption.cabricality.18.2.title"   : "Heated Treatment",
 	"contraption.cabricality.18.2.subtitle": "Contraption 18-2",
 	"contraption.cabricality.18.2.content" : "Dropping the Liquids onto a Precision Mechanism will convert it to its Infernal counterpart.\n\nOnce again, full automation of bonus mechanisms is not as pressing a task, since they do not lead to any further machines beyond their own.\nA semi-automatic setup for converting Precision Mechanisms whenever needed should suffice.",
-  
-	"bonus_2a.cabricality.complete.title"   : "Bonus 2A Complete!",
-	"bonus_2a.cabricality.complete.content" : "Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line.",
-  
-  
-  
+	
+	"bonus_2a.cabricality.complete.title"  : "Bonus 2A Complete!",
+	"bonus_2a.cabricality.complete.content": "Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line.",
+	
+	
+	
 	"chapter_3.cabricality.title": "&f3&r The Catharsis",
-  
-	"chapter_3.cabricality.start.title"   : "Chapter 3 Start",
-	"chapter_3.cabricality.start.content" : "Working towards a passive supply of Radiant Induction Coils, you'll be sure to encounter some new and unfamiliar tasks.\n\nOnce again it's time to grab the Wrench, re-stock the toolbox and to clear out a new plot.\n\n&6Happy Creating!",
+	
+	"chapter_3.cabricality.start.title"  : "Chapter 3 Start",
+	"chapter_3.cabricality.start.content": "Working towards a passive supply of Radiant Induction Coils, you'll be sure to encounter some new and unfamiliar tasks.\n\nOnce again it's time to grab the Wrench, re-stock the toolbox and to clear out a new plot.\n\n&6Happy Creating!",
+	
 	"chapter_3.cabricality.start.task.checkmark.title": "Checkmark",
-  
-	"chapter_3.cabricality.preparation.title"   : "Keeping Stock",
-	"chapter_3.cabricality.preparation.content" : "A few of the following contraptions involve dropping items on the ground. Whenever a process will not backstack on overflow (e.g. belt items waiting automatically), it is important to toggle the production at certain buffer thresholds.\n\nMore concretely: When the output buffer exceeds 75%, stop producing items. Once it reaches below 25%, start the process up again. This prevents overflow and machines from spewing items everywhere.\n\nThe Stockpile Switch is designed for this purpose exactly.",
-  
+	
+	"chapter_3.cabricality.preparation.title"  : "Keeping Stock",
+	"chapter_3.cabricality.preparation.content": "A few of the following contraptions involve dropping items on the ground. Whenever a process will not backstack on overflow (e.g. belt items waiting automatically), it is important to toggle the production at certain buffer thresholds.\n\nMore concretely: When the output buffer exceeds 75%, stop producing items. Once it reaches below 25%, start the process up again. This prevents overflow and machines from spewing items everywhere.\n\nThe Stockpile Switch is designed for this purpose exactly.",
+	
 	"contraption.cabricality.19.title"   : "Express Sticks",
 	"contraption.cabricality.19.subtitle": "Contraption 19",
 	"contraption.cabricality.19.content" : "For this next trick a supply of Wooden Sticks is required. Whether that calls for a new harvester or just a scheduled shipment from Contraption 1 is up to you.",
-  
+	
 	"contraption.cabricality.20.1.title"   : "More Cobblestone",
 	"contraption.cabricality.20.1.subtitle": "Contraption 20-1",
 	"contraption.cabricality.20.1.content" : "The trusty and cheap multi-purpose material of cobblestone is making its comeback.",
+	
 	"contraption.cabricality.20.1.task.cobblestone": "Any Cobblestone",
-  
+	
 	"contraption.cabricality.20.2.title"   : "The Wall",
 	"contraption.cabricality.20.2.subtitle": "Contraption 20-2",
 	"contraption.cabricality.20.2.content" : "Next up, we need Crushing Wheels. Not only as a machine, but as an ingredient, too.\n\nWalls of Mechanical Crafters can quickly get in the way of paths and other infrastructure. Make sure to give them some space.",
-  
+	
 	"contraption.cabricality.20.3.title"   : "Inception",
 	"contraption.cabricality.20.3.subtitle": "Contraption 20-3",
 	"contraption.cabricality.20.3.content" : "By Crushing the Crushing Wheels using Crushing Wheels, a strange anomaly is created and dropped. We can use this to our advantage.",
-  
-	"chapter_3.cabricality.slimy_fern.title"   : "Slimy Ferns",
-	"chapter_3.cabricality.slimy_fern.content" : "In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms.\n\nRoam the lands for a bit and look out for egregiously vibrant spots of color in the vegetation. Don't forget to bring a pair of Shears.",
-  
+	
+	"chapter_3.cabricality.slimy_fern.title"  : "Slimy Ferns",
+	"chapter_3.cabricality.slimy_fern.content": "In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms.\n\nRoam the lands for a bit and look out for egregiously vibrant spots of color in the vegetation. Don't forget to bring a pair of Shears.",
+	
 	"contraption.cabricality.21.title"   : "The Haunted Cycle",
 	"contraption.cabricality.21.subtitle": "Contraption 21",
 	"contraption.cabricality.21.content" : "Slimy Ferns have the property of instant regeneration when exposed to Spirit Fire. Much like the Quartz Incubator in the other Factory, we can use this property to create a passive supply.\n\nThe cycle is simple: Cut the fern plant into halves using a Deployer, then haunt one of the leaves in the soul flame. It is recommended to ensure that all colors of fern are duplicated at similar rates.\n&7Oh, and keep a backup of each fern somewhere safe.",
-  
+	
 	"contraption.cabricality.22.1.title"   : "Mysterious Biomass",
 	"contraption.cabricality.22.1.subtitle": "Contraption 22-1",
 	"contraption.cabricality.22.1.content" : "Route the excess leaves into a crusher, in preparation for the upcoming magic trick.",
-  
+	
 	"chapter_3.cabricality.mob_cage.title"   : "I like Mobs, actually",
 	"chapter_3.cabricality.mob_cage.subtitle": "Alt. Contraption 21 \\& 22",
 	"chapter_3.cabricality.mob_cage.content" : "An automation alternative to the Spirit Cycle is to set up a Monster Spawner of some kind.\n\nClick the Checkmark to skip the Fern Duplication Contraption.",
+	
 	"chapter_3.cabricality.mob_cage.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.22.2.title"   : "Cooking up some Gunpowder",
 	"contraption.cabricality.22.2.subtitle": "Contraption 22-2",
 	"contraption.cabricality.22.2.content" : "Transmuting the green reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
-  
+	
 	"contraption.cabricality.22.3.title"   : "Cooking up some Ender Dust",
 	"contraption.cabricality.22.3.subtitle": "Contraption 22-3",
 	"contraption.cabricality.22.3.content" : "Transmuting the purple reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
-  
+	
 	"contraption.cabricality.22.4.title"   : "Cooking up some Fertilizer",
 	"contraption.cabricality.22.4.subtitle": "Contraption 22-4",
 	"contraption.cabricality.22.4.content" : "Transmuting the blue reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
-  
+	
 	"contraption.cabricality.23.1.title"   : "More Sand",
 	"contraption.cabricality.23.1.subtitle": "Contraption 23-1",
 	"contraption.cabricality.23.1.content" : "Sand will be required to build the Explosives needed for the Reactor. Thankfully, new standards have allowed you access to Crushing Wheels, which make sand production a lot less of a nuisance.",
-  
+	
 	"contraption.cabricality.23.2.title"   : "Checker Crafters",
 	"contraption.cabricality.23.2.subtitle": "Contraption 23-2",
 	"contraption.cabricality.23.2.content" : "Use Mechanical Crafters to build TNT. Since most of its slots will have to be supplied individually, a mechanical Arm might help for providing the necessary logistics.",
-  
+	
 	"contraption.cabricality.24.title"   : "The Reactor",
 	"contraption.cabricality.24.subtitle": "Contraption 24",
 	"contraption.cabricality.24.content" : "Here comes the central feature of this Factory Wing: the Reactor.\n\nProgressing towards Inductive Coils requires a controlled Explosion where nearby Singularities and Ender Dust are combined. See if you can come up with a circuit to continuously blow up these dropped item-stacks.\n\nNote: Ender dust and Singularities are consumed in a 1:1 ratio. They do not have to be in the exact same location. One TNT can transform multiple sets of ingredients. The result will drop at the location of the Singularity item.",
-  
+	
 	"contraption.cabricality.25.title"   : "Your Favorite Color",
 	"contraption.cabricality.25.subtitle": "Contraption 25",
 	"contraption.cabricality.25.content" : "For production of chromatic materials, a color pigment is needed. It is up to you which color dye should be automated for this purpose. The only exception is white dye.",
+	
 	"contraption.cabricality.25.task.dye.title": "Dyes except White",
-  
+	
 	"contraption.cabricality.26.1.title"   : "Painting Space itself",
 	"contraption.cabricality.26.1.subtitle": "Contraption 26-1",
 	"contraption.cabricality.26.1.content" : "Mixing the Entangled Singularities with a dye of choice creates the very essence of color! Just what we need for producing a perfected chromatic compound.\"",
-  
-	"chapter_3.cabricality.correction.red.title"   : "&cSpectral Correction &7(Red)",
-	"chapter_3.cabricality.correction.red.content" : "Crushing Dyed Singularities has a chance to yield little orbs of red color.\n\nSince this is not the color needed for chromatic compound, you can use Item Drains for frequency correction.",
-  
-	"chapter_3.cabricality.correction.yellow.title"   : "&eSpectral Correction &7(Yellow)",
-	"chapter_3.cabricality.correction.yellow.content" : "Crushing Dyed Singularities has a chance to yield little orbs of yellow color, as well.\n\nMuch like the red ones, these have to be drained once again to shift the frequency in the right direction.",
-  
-	"chapter_3.cabricality.correction.green.title"   : "&aSpectral Correction &7(Green)",
-	"chapter_3.cabricality.correction.green.content" : "The cycle continues.",
-  
-	"chapter_3.cabricality.correction.blue.title"   : "&1Spectral Correction &7(Blue)",
-	"chapter_3.cabricality.correction.blue.content" : "Being almost there, all the Paint Balls now brought to the blue frequency will have to be run through the Item Drain one last time.",
-  
-	"chapter_3.cabricality.byproduct.title"   : "Toxic Byproducts",
-	"chapter_3.cabricality.byproduct.content" : "Draining paint balls creates a significant amount of liquid byproduct, which has to be disposed of before it starts clogging up the production line.",
+	
+	"chapter_3.cabricality.correction.red.title"  : "&cSpectral Correction &7(Red)",
+	"chapter_3.cabricality.correction.red.content": "Crushing Dyed Singularities has a chance to yield little orbs of red color.\n\nSince this is not the color needed for chromatic compound, you can use Item Drains for frequency correction.",
+	
+	"chapter_3.cabricality.correction.yellow.title"  : "&eSpectral Correction &7(Yellow)",
+	"chapter_3.cabricality.correction.yellow.content": "Crushing Dyed Singularities has a chance to yield little orbs of yellow color, as well.\n\nMuch like the red ones, these have to be drained once again to shift the frequency in the right direction.",
+	
+	"chapter_3.cabricality.correction.green.title"  : "&aSpectral Correction &7(Green)",
+	"chapter_3.cabricality.correction.green.content": "The cycle continues.",
+	
+	"chapter_3.cabricality.correction.blue.title"  : "&1Spectral Correction &7(Blue)",
+	"chapter_3.cabricality.correction.blue.content": "Being almost there, all the Paint Balls now brought to the blue frequency will have to be run through the Item Drain one last time.",
+	
+	"chapter_3.cabricality.byproduct.title"  : "Toxic Byproducts",
+	"chapter_3.cabricality.byproduct.content": "Draining paint balls creates a significant amount of liquid byproduct, which has to be disposed of before it starts clogging up the production line.",
+	
 	"chapter_3.cabricality.byproduct.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.26.2.title"   : "&dSpectral Correction &7(Magenta)",
 	"contraption.cabricality.26.2.subtitle": "Contraption 26-2",
 	"contraption.cabricality.26.2.content" : "Magenta Paint Balls contain the essence needed for production of Chromatic Compound. Some will come directly from the crushed singularity, but the majority can be obtained by spectral correction on the other colors.",
-  
+	
 	"contraption.cabricality.26.3.title"   : "Colors Refined",
 	"contraption.cabricality.26.3.subtitle": "Contraption 26-3",
 	"contraption.cabricality.26.3.content" : "Use Mechanical Crafters once more to refine the paint orbs into Chromatic Compound.",
-  
-	"chapter_3.cabricality.overcorrection.title"   : "Overcorrection",
-	"chapter_3.cabricality.overcorrection.content" : "Oops! Draining the color's essence one too many times will create a mundane paint ball not able to be used for further processing.",
+	
+	"chapter_3.cabricality.overcorrection.title"  : "Overcorrection",
+	"chapter_3.cabricality.overcorrection.content": "Oops! Draining the color's essence one too many times will create a mundane paint ball not able to be used for further processing.",
+	
 	"chapter_3.cabricality.overcorrection.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.27.title"   : "Let there be light",
 	"contraption.cabricality.27.subtitle": "Contraption 27",
 	"contraption.cabricality.27.content" : "The production of Refined Radiance requires either a steady supply of light emitting blocks, or an active Beacon Beam.\n\nChoose which path you would like to take, and provide necessary preparation/automation.",
+	
 	"contraption.cabricality.27.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.28.1.title"   : "Throwing Flash",
 	"contraption.cabricality.28.1.subtitle": "Contraption 28-1",
 	"contraption.cabricality.28.1.content" : "When dropped as an item, Chromatic Compound will absorb light around itself and eventually turn into Refined Radiance. Choose one of three approaches:\n\n- Auto-placing light emitting blocks near the dropped compound items (blocks need line of sight to item)\n\n- Supplying light emitting blocks as items on nearby depots/belts (blocks need line of sight to item)\n\n- Throwing the compound into a Beacon Beam for free and instant conversion",
-  
+	
 	"contraption.cabricality.28.2.title"   : "Post-Process",
 	"contraption.cabricality.28.2.subtitle": "Contraption 28-2",
 	"contraption.cabricality.28.2.content" : "The main work is done. All that's left is a small assembly line to process Refined Radiance into Radiant Coils.\n\nStart with a Mechanical Press.",
-  
+	
 	"contraption.cabricality.28.3.title"   : "Neon Lights",
 	"contraption.cabricality.28.3.subtitle": "Contraption 28-3",
 	"contraption.cabricality.28.3.content" : "And finally, one last Crafter to cut and wind up the radiant sheet into an Induction Coil.",
-  
+	
 	"contraption.cabricality.29.title"   : "Deploy the Payload",
 	"contraption.cabricality.29.subtitle": "Contraption 29",
 	"contraption.cabricality.29.content" : "You know the drill. It is time to upgrade your previously automated Precision Mechanisms to the next level!",
-  
+	
 	"contraption.cabricality.30.title"   : "Mechanical Auto Hammer",
 	"contraption.cabricality.30.subtitle": "Contraption 30",
 	"contraption.cabricality.30.content" : "Aside from the Inductive Mechanism, Invar Machinery builds on a tough Metal Alloy between Iron and Nickel.\n\nSince the full refinement process of Invar takes a few lengthy steps, automation is recommended.",
+	
 	"contraption.cabricality.30.task.checkmark.title": "Checkmark",
-  
-	"chapter_3.cabricality.assemble.title"   : "Arming the Deployer III",
-	"chapter_3.cabricality.assemble.content" : "It'll be good to stock up on a couple of resonators for the Mechanism Assembly.\n&7Don't worry about automating them fully, though.",
-  
-	"chapter_3.cabricality.complete.title"   : "Chapter 3 Complete!",
-	"chapter_3.cabricality.complete.content" : "Congrats! Inductive Mechanisms will now be generated passively. This opens the door to new exciting technological and magical exploits!\n&7Once you are happy with the Assembly Line, head on back to the overview. There will be new options to explore.",
-  
-	"bonus_3a.cabricality.coin.title"   : "Insert Coin",
-	"bonus_3a.cabricality.coin.content" : "The Special properties of Silver can prove useful in creating Enderium Alloy.\n\nAs it turns out, the only source of Silver seems to be your money. Makes you wonder where the official mints get it from..",
-  
-	"bonus_3a.cabricality.not_the_end.title"   : "Not the End",
-	"bonus_3a.cabricality.not_the_end.content" : "The Secrets to Teleportation lie behind the dimensional gate to the End.",
-  
-	"bonus_3a.cabricality.dissolved.title"   : "Dissolved",
-	"bonus_3a.cabricality.dissolved.content" : "Take the coins and throw them into your Smeltery. Watch out: this is an irreversible process.",
-  
-	"bonus_3a.cabricality.block.title"   : "Expensive Bricks",
-	"bonus_3a.cabricality.block.content" : "Cool down the molten silver into a Block and admire how shiny it is.",
-  
-	"bonus_3a.cabricality.garnish.title"   : "Ender for Garnish",
-	"bonus_3a.cabricality.garnish.content" : "Set aside some Ender dust from your Reactor. In case your supply is bottlenecked, you can use Ender Pearls, too.",
-  
-	"bonus_3a.cabricality.expedition.title"   : "Gateway Expedition",
-	"bonus_3a.cabricality.expedition.content" : "After your flawless encounter with the Ender Dragon, make your way to the Gateway and travel to the outer Islands.\n\nHere you should be able to find the poise bushes necessary for creating Enderium Alloy.",
-  
-	"bonus_3a.cabricality.alloy.title"   : "Alien Alloys",
-	"bonus_3a.cabricality.alloy.content" : "Fire up your End Stone Alloy Smelter for two rounds of processing:\n\nFirst off, refine your Silver Ingots with Ender Dust and Poise Bushes.",
-  
-	"bonus_3a.cabricality.enderium.title"   : "Enderium Infused",
-	"bonus_3a.cabricality.enderium.content" : "And finally, upgrade some of your Inductive Mechanisms in the Smelter using the newly obtained Alloy.",
-  
-	"bonus_3a.cabricality.cycle.title"   : "The Poise Cycle",
-	"bonus_3a.cabricality.cycle.content" : "Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium.",
-  
-	"bonus_3a.cabricality.complete.title"   : "Bonus 3A Complete!",
-	"bonus_3a.cabricality.complete.content" : "Marvelous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up.",
-  
-  
-  
+	
+	"chapter_3.cabricality.assemble.title"  : "Arming the Deployer III",
+	"chapter_3.cabricality.assemble.content": "It'll be good to stock up on a couple of resonators for the Mechanism Assembly.\n&7Don't worry about automating them fully, though.",
+	
+	"chapter_3.cabricality.complete.title"  : "Chapter 3 Complete!",
+	"chapter_3.cabricality.complete.content": "Congrats! Inductive Mechanisms will now be generated passively. This opens the door to new exciting technological and magical exploits!\n&7Once you are happy with the Assembly Line, head on back to the overview. There will be new options to explore.",
+	
+	"bonus_3a.cabricality.coin.title"  : "Insert Coin",
+	"bonus_3a.cabricality.coin.content": "The Special properties of Silver can prove useful in creating Enderium Alloy.\n\nAs it turns out, the only source of Silver seems to be your money. Makes you wonder where the official mints get it from..",
+	
+	"bonus_3a.cabricality.not_the_end.title"  : "Not the End",
+	"bonus_3a.cabricality.not_the_end.content": "The Secrets to Teleportation lie behind the dimensional gate to the End.",
+	
+	"bonus_3a.cabricality.dissolved.title"  : "Dissolved",
+	"bonus_3a.cabricality.dissolved.content": "Take the coins and throw them into your Smeltery. Watch out: this is an irreversible process.",
+	
+	"bonus_3a.cabricality.block.title"  : "Expensive Bricks",
+	"bonus_3a.cabricality.block.content": "Cool down the molten silver into a Block and admire how shiny it is.",
+	
+	"bonus_3a.cabricality.garnish.title"  : "Ender for Garnish",
+	"bonus_3a.cabricality.garnish.content": "Set aside some Ender dust from your Reactor. In case your supply is bottlenecked, you can use Ender Pearls, too.",
+	
+	"bonus_3a.cabricality.expedition.title"  : "Gateway Expedition",
+	"bonus_3a.cabricality.expedition.content": "After your flawless encounter with the Ender Dragon, make your way to the Gateway and travel to the outer Islands.\n\nHere you should be able to find the poise bushes necessary for creating Enderium Alloy.",
+	
+	"bonus_3a.cabricality.alloy.title"  : "Alien Alloys",
+	"bonus_3a.cabricality.alloy.content": "Fire up your End Stone Alloy Smelter for two rounds of processing:\n\nFirst off, refine your Silver Ingots with Ender Dust and Poise Bushes.",
+	
+	"bonus_3a.cabricality.enderium.title"  : "Enderium Infused",
+	"bonus_3a.cabricality.enderium.content": "And finally, upgrade some of your Inductive Mechanisms in the Smelter using the newly obtained Alloy.",
+	
+	"bonus_3a.cabricality.cycle.title"  : "The Poise Cycle",
+	"bonus_3a.cabricality.cycle.content": "Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium.",
+	
+	"bonus_3a.cabricality.complete.title"  : "Bonus 3A Complete!",
+	"bonus_3a.cabricality.complete.content": "Marvelous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up.",
+	
+	
+	
 	"chapter_4.cabricality.title": "&f4&r Into the Box",
-  
-	"chapter_4.cabricality.start.title"   : "Chapter 4 Start!",
-	"chapter_4.cabricality.start.content" : "The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery.\n\nMuch like previous chapters, a few new material sources or shipments are required first.",
-  
-	"chapter_4.cabricality.preparation.title"   : "New Capacity",
-	"chapter_4.cabricality.preparation.content" : "The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later.",
+	
+	"chapter_4.cabricality.start.title"  : "Chapter 4 Start!",
+	"chapter_4.cabricality.start.content": "The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery.\n\nMuch like previous chapters, a few new material sources or shipments are required first.",
+	
+	"chapter_4.cabricality.preparation.title"  : "New Capacity",
+	"chapter_4.cabricality.preparation.content": "The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later.",
+	
 	"chapter_4.cabricality.preparation.task.checkmark.title": "Checkmark",
-  
-	"chapter_4.cabricality.laser.title"   : "The Alchemical Laser BOOM",
-	"chapter_4.cabricality.laser.content" : "A central role in this age of technology is played by the Alchemical Laser.",
+	
+	"chapter_4.cabricality.laser.title"  : "The Alchemical Laser BOOM",
+	"chapter_4.cabricality.laser.content": "A central role in this age of technology is played by the Alchemical Laser.",
+	
 	"chapter_4.cabricality.laser.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.31.1.title"   : "Sand Delivery",
 	"contraption.cabricality.31.1.subtitle": "Contraption 31-1",
 	"contraption.cabricality.31.1.content" : "A new Shipment of Sand should be scheduled, for it is significantly rich in silicon.",
-  
+	
 	"contraption.cabricality.31.2.title"   : "Ball O' Sand",
 	"contraption.cabricality.31.2.subtitle": "Contraption 31-2",
 	"contraption.cabricality.31.2.content" : "First, the raw blocks are washed and refined into small orbs of wet sand.\n\nSince they could easily collapse, they should never be stacked on top of another. The inductive Fluid Encapsulator should have the necessary precision to generate these reliably.",
-  
-	"chapter_4.cabricality.liquid_sand.title"   : "Liquid Sand",
-	"chapter_4.cabricality.liquid_sand.content" : "Sifting for Coarse Sand creates a byproduct relevant for further refining the silicon compound.",
+	
+	"chapter_4.cabricality.liquid_sand.title"  : "Liquid Sand",
+	"chapter_4.cabricality.liquid_sand.content": "Sifting for Coarse Sand creates a byproduct relevant for further refining the silicon compound.",
+	
 	"chapter_4.cabricality.liquid_sand.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.31.3.title"   : "Coarse Sand",
 	"contraption.cabricality.31.3.subtitle": "Contraption 31-3",
 	"contraption.cabricality.31.3.content" : "Rolling the sand ball over an item drain reveals the larger chunks contained within.",
-  
+	
 	"contraption.cabricality.32.1.title"   : "Modern Cobblegen",
 	"contraption.cabricality.32.1.subtitle": "Contraption 32-1",
 	"contraption.cabricality.32.1.content" : "Basalt is an accessible type of rock that contains traces of inert Basalz Powder. For the purposes of this, a steady supply of them is needed.",
-  
+	
 	"contraption.cabricality.32.2.title"   : "Hot Laser",
 	"contraption.cabricality.32.2.subtitle": "Contraption 32-2",
 	"contraption.cabricality.32.2.content" : "The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper.",
-  
+	
 	"contraption.cabricality.33.1.title"   : "Basalz Mill",
 	"contraption.cabricality.33.1.subtitle": "Contraption 33-1",
 	"contraption.cabricality.33.1.content" : "Before it is ready for processing, the basalz essence needs a bit of refinement.",
-  
+	
 	"contraption.cabricality.33.2.title"   : "Concentrated Heat",
 	"contraption.cabricality.33.2.subtitle": "Contraption 33-2",
 	"contraption.cabricality.33.2.content" : "Compact enough powder back together to create the highly reactive Earth Charge.",
-  
+	
 	"contraption.cabricality.33.3.title"   : "Crystalline Sand",
 	"contraption.cabricality.33.3.subtitle": "Contraption 33-3",
 	"contraption.cabricality.33.3.content" : "Enriching coarse sand with earth charges creates Sand Crystals. Not much more processing is left until the Silicon content reaches a state usable for circuits.",
-  
+	
 	"contraption.cabricality.34.1.title"   : "Wood Delivery",
 	"contraption.cabricality.34.1.subtitle": "Contraption 34-1",
 	"contraption.cabricality.34.1.content" : "It'll be good to order a Wood supply to this location. Aside from Silicon it can contribute to this assembly line for some other useful products.",
+	
 	"contraption.cabricality.34.1.task.wooden_log.title": "Any Wooden Log",
-  
+	
 	"contraption.cabricality.34.2.title"   : "Pyrolyzer Round I",
 	"contraption.cabricality.34.2.subtitle": "Contraption 34-2",
-	"contraption.cabricality.34.2.content" :  "A Pyrolisation process is not strictly required for Charcoal, but the increased yield makes it worthwhile if the wood supply is limited.",
+	"contraption.cabricality.34.2.content" : "A Pyrolisation process is not strictly required for Charcoal, but the increased yield makes it worthwhile if the wood supply is limited.",
+	
 	"contraption.cabricality.34.2.task.checkmark.title": "Checkmark",
-  
+	
 	"contraption.cabricality.34.3.title"   : "Pyrolyzer Round II",
 	"contraption.cabricality.34.3.subtitle": "Contraption 34-3",
 	"contraption.cabricality.34.3.content" : "In a secondary, more lengthy pyrolisation process, Coal Coke is formed. An ideal material for both refining Silicon and to provide heat as Solid Fuel.",
-  
+	
 	"contraption.cabricality.35.title"   : "Controlled Cuts",
 	"contraption.cabricality.35.subtitle": "Contraption 35",
 	"contraption.cabricality.35.content" : "Using Mechanical Saws and Water, the coke can to be cut up into chunks in order to become a more effective catalyst.",
-  
+	
 	"contraption.cabricality.36.title"   : "The Merge",
 	"contraption.cabricality.36.subtitle": "Contraption 36",
 	"contraption.cabricality.36.content" : "The process of refining silicon requires a blend of Sand Crystals, Fine Sand and the Carbon Catalyst.",
-  
+	
 	"contraption.cabricality.37.title"   : "Snow Machine",
 	"contraption.cabricality.37.subtitle": "Contraption 37",
 	"contraption.cabricality.37.content" : "New Invar Technology makes forming snowballs out of Water quite a simple process. Perhaps we should set aside a few for our next unannounced visitor..",
-  
+	
 	"contraption.cabricality.38.title"   : "Cool Laser",
 	"contraption.cabricality.38.subtitle": "Contraption 38",
 	"contraption.cabricality.38.content" : "The second Alchemical Laser forms activated blizz essence from Snow Blocks.\n\nYour automation strategy from Contraption 32 will perform just as effective here.",
-  
+	
 	"contraption.cabricality.39.1.title"   : "Blizz Mill",
 	"contraption.cabricality.39.1.subtitle": "Contraption 39-1",
 	"contraption.cabricality.39.1.content" : "Just like earlier, the essence becomes usable only after a bit of refinement.",
-  
+	
 	"contraption.cabricality.39.2.title"   : "Concentrated Cold",
 	"contraption.cabricality.39.2.subtitle": "Contraption 39-2",
 	"contraption.cabricality.39.2.content" : "Compact enough powder back together to create the highly reactive Ice Charge.",
-  
+	
 	"contraption.cabricality.39.3.title"   : "Final Induction",
 	"contraption.cabricality.39.3.subtitle": "Contraption 39-3",
 	"contraption.cabricality.39.3.content" : "One final pass in the Induction Smelter now produces a chunk of high-quality Silicon.",
-  
-	"chapter_4.cabricality.chapter_4a.title"   : "Secrets uncovered",
-	"chapter_4.cabricality.chapter_4a.content" : "The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial.",
+	
+	"chapter_4.cabricality.chapter_4a.title"  : "Secrets uncovered",
+	"chapter_4.cabricality.chapter_4a.content": "The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial.",
+	
 	"chapter_4.cabricality.chapter_4a.task.complete.title": "Complete Chapter 4a",
-  
+	
 	"contraption.cabricality.39.a.title"   : "Unboxing",
 	"contraption.cabricality.39.a.subtitle": "Contraption 39-A",
 	"contraption.cabricality.39.a.content" : "Separate the Silicon from its jar using a Reagent Extractor.",
-  
+	
 	"contraption.cabricality.40.1.title"   : "Circuit Stamper",
 	"contraption.cabricality.40.1.subtitle": "Contraption 40-1",
 	"contraption.cabricality.40.1.content" : "Use Deployers to create a circuit base out of silicon. The required Press can be located at the center of Sky Stone Meteors.",
-  
+	
 	"contraption.cabricality.40.2.title"   : "Ready to Deploy",
 	"contraption.cabricality.40.2.subtitle": "Contraption 40-2",
 	"contraption.cabricality.40.2.content" : "For one last time, a line of Deployers will be needed to upgrade the previous mechanism to the next tier.",
-  
-	"chapter_4.cabricality.assemble.title"   : "Arming the Deployer IV",
-	"chapter_4.cabricality.assemble.content" : "The installation process of Calculation Mechanisms can be facilitated by a Flash Drive.\n&7The precious Cobalt required can be found in the Nether.",
-  
-	"chapter_4.cabricality.complete.title"   : "Chapter 4 Complete!",
-	"chapter_4.cabricality.complete.content" : "Great work! The final assembly line is now complete. Your factory just entered the Digital Age.\n&7New options have opened up in the Overview. Whenever you are ready.",
-  
+	
+	"chapter_4.cabricality.assemble.title"  : "Arming the Deployer IV",
+	"chapter_4.cabricality.assemble.content": "The installation process of Calculation Mechanisms can be facilitated by a Flash Drive.\n&7The precious Cobalt required can be found in the Nether.",
+	
+	"chapter_4.cabricality.complete.title"  : "Chapter 4 Complete!",
+	"chapter_4.cabricality.complete.content": "Great work! The final assembly line is now complete. Your factory just entered the Digital Age.\n&7New options have opened up in the Overview. Whenever you are ready.",
+	
 	"contraption.cabricality.41.1.title"   : "Express Circuitry I",
 	"contraption.cabricality.41.1.subtitle": "Contraption 41-1",
 	"contraption.cabricality.41.1.content" : "Additional Processors are required in creating logistical components of ME Technology. At some point some Semi-Automation should come into consideration.",
-  
+	
 	"contraption.cabricality.41.2.title"   : "Express Circuitry II",
 	"contraption.cabricality.41.2.subtitle": "Contraption 41-2",
 	"contraption.cabricality.41.2.content" : "Assembling the Processors is not a trivial process. But it sure is fun to watch it work.",
-  
-  
-  
+	
+	
+	
 	"chapter_4a.cabricality.title": "↓&r Chaotic Alchemy",
-  
-	"chapter_4a.cabricality.start.title"   : "AnothernWay Foward",
-	"chapter_4a.cabricality.start.content" : "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",
+	
+	"chapter_4a.cabricality.start.title"  : "AnothernWay Foward",
+	"chapter_4a.cabricality.start.content": "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",
+	
 	"chapter_4a.cabricality.start.task.checkmark.title": "Checkmark",
-  
-	"chapter_4a.cabricality.preparation.title"   : "Encapsulate - Decapsulate",
-	"chapter_4a.cabriclaity.preparation.content" : "Aside from the Alchemical Laser setup, you'll need a few other Machines for your new Alchemy Lab.\n\n- The Fluid Encapsulator uses Molten Glass to create Reagents from resources.\n\n- The Reagent Extractor can reverse this process.",
-  
-	"alchemy.cabricality.clueless.title"   : "Clueless",
-	"alchemy.cabricality.clueless.content" : "Glowstone or Redstone Accelerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code.\n\nThis may reveal additional information about the correct combination as described in their tooltip.",
-  
+	
+	"chapter_4a.cabricality.preparation.title"  : "Encapsulate - Decapsulate",
+	"chapter_4a.cabriclaity.preparation.content": "Aside from the Alchemical Laser setup, you'll need a few other Machines for your new Alchemy Lab.\n\n- The Fluid Encapsulator uses Molten Glass to create Reagents from resources.\n\n- The Reagent Extractor can reverse this process.",
+	
+	"alchemy.cabricality.clueless.title"  : "Clueless",
+	"alchemy.cabricality.clueless.content": "Glowstone or Redstone Accelerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code.\n\nThis may reveal additional information about the correct combination as described in their tooltip.",
+	
 	"alchemy.cabricality.silver.content"     : "Your coins seem to have a corresponding Reagent, too. Though do not expect to be able to mint new currency out of your silver ingots.",
 	"alchemy.cabricality.igneous.content"    : "If this is Unlocked, you have gathered all reagents of the Igneous Category.\n\nThe Igneous Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.&r\n\nIt's recommended to always take notes of previous results. This way it is not uncommon to find the solution in under six attempts!",
 	"alchemy.cabricality.herbal.content"     : "If this is Unlocked, you have gathered all reagents of the Herbal Category.\n\nThe Herbal Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
@@ -1107,27 +1161,29 @@
 	"alchemy.cabricality.crystalline.content": "If this is Unlocked, you have gathered all reagents of the Crystalline Category.\n\nThe Crystalline Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
 	"alchemy.cabricality.metallurgic.content": "If this is Unlocked, you have gathered all reagents of the Metallurgic Category.\n\nThe Metallurgic Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
 	"alchemy.cabricality.gemstone.content"   : "If this is Unlocked, you have gathered all reagents of the Gemstone Category.\n\nThe Gemstone Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-  
-	"chapter_4a.cabricality.final_code.title"   : "The Final Code",
-	"chapter_4a.cabricality.final_code.content" : "If this is Unlocked, you have gathered Catalysts of every Category.\n\nThis Ultimate Catalyst is now a combination of four of the Catalysts, much in the way the Catalysts are found and made by their Reagents.\n&7See this item's REI entry for more information.",
-  
-	"chapter_4a.cabricality.discovery.title"   : "The Discovery",
-	"chapter_4a.cabricality.discovery.content" : "Armed with the Chaos Catalyst, you will find all manner of transmutation pairs among the Reagents above.\n\nSimply put the Chaos Catalyst and a few jars of one reagent (The transmutation is lossy) into the hopper cart and find a different reagent returned after activating the laser. Mind that the Catalyst is never consumed in the process.\n\nOne of the Reagents should lead not to another known one, but to the Reagent of Silicon. If this turns out to be one that is reasonably accessible, you can consider choosing this path of production over the main one.",
-  
+	
+	"chapter_4a.cabricality.final_code.title"  : "The Final Code",
+	"chapter_4a.cabricality.final_code.content": "If this is Unlocked, you have gathered Catalysts of every Category.\n\nThis Ultimate Catalyst is now a combination of four of the Catalysts, much in the way the Catalysts are found and made by their Reagents.\n&7See this item's REI entry for more information.",
+	
+	"chapter_4a.cabricality.discovery.title"  : "The Discovery",
+	"chapter_4a.cabricality.discovery.content": "Armed with the Chaos Catalyst, you will find all manner of transmutation pairs among the Reagents above.\n\nSimply put the Chaos Catalyst and a few jars of one reagent (The transmutation is lossy) into the hopper cart and find a different reagent returned after activating the laser. Mind that the Catalyst is never consumed in the process.\n\nOne of the Reagents should lead not to another known one, but to the Reagent of Silicon. If this turns out to be one that is reasonably accessible, you can consider choosing this path of production over the main one.",
+	
 	"contraption.cabricality.31.a.title"   : "Automatic Chaos",
 	"contraption.cabricality.31.a.subtitle": "Contraption 31-A",
 	"contraption.cabricality.31.a.content" : "With the transmutation recipe in hand, it is time to build a facility able to create an infinite amount of Silicon Reagent via Laser Alchemy and the other steps part of the process.\n\nNote that the concete solution depends highly on the transmutation pairings of your World, which is why it cannot be laid out in this Guide. You can use JEI to find other necessary recipes leading up to the reagent you require.",
-  
-	"chapter_4a.cabricality.complete.title"   : "&3Warp Zone",
-	"chapter_4a.cabricality.complete.content" : "Now that you have a passive supply of Silicon Reagent, you may head over to the main section of Chapter 4. You will have opened up an entry point near the end of its recipe chain.",
+	
+	"chapter_4a.cabricality.complete.title"  : "&3Warp Zone",
+	"chapter_4a.cabricality.complete.content": "Now that you have a passive supply of Silicon Reagent, you may head over to the main section of Chapter 4. You will have opened up an entry point near the end of its recipe chain.",
+	
 	"chapter_4a.cabricality.complete.task.checkmark.title": "Checkmark",
 
 
 
 	"chapter_5.cabricality.title": "&f5&r Divide by Digital",
 
-	"chapter_5.cabricality.start.title"   : "Finale Start!",
-	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	"chapter_5.cabricality.start.title"  : "Finale Start!",
+	"chapter_5.cabricality.start.content": "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	
 	"chapter_5.cabricality.start.task.checkmark.title": "Checkmark",
 
 	"contraption.cabricality.42.title"   : "Processing Power",
@@ -1188,85 +1244,102 @@
 	"contraption.cabricality.50.subtitle": "Contraption &b50&r",
 	"contraption.cabricality.50.content" : "With the Launch Pad in place, it is time to construct your Spaceship.\n\nGive it your best, after all this is the final Contraption you've been working towards.\n&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating.",
 
-	"chapter_5.cabricality.complete.title"   : "&dWe Have Lift Off!",
-	"chapter_5.cabricality.complete.content" : "With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship.\n\nTake a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner.\n\nIn your own time, take a seat in your assembled rocket, and press Space.",
+	"chapter_5.cabricality.complete.title"  : "&dWe Have Lift Off!",
+	"chapter_5.cabricality.complete.content": "With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship.\n\nTake a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner.\n\nIn your own time, take a seat in your assembled rocket, and press Space.",
 
-	"chapter_5.cabricality.attire.title"   : "&9Attire",
-	"chapter_5.cabricality.attire.content" : "If you intend to survive past the landing, a special set of armour will be required.",
+	"chapter_5.cabricality.attire.title"  : "&9Attire",
+	"chapter_5.cabricality.attire.content": "If you intend to survive past the landing, a special set of armour will be required.",
 
-  
-  
+	
+	
 	"metallurgy.cabricality.title": "> Metallurgy",
-  
+	
 	"metallurgy.cabricality.start.title"   : "Build-a-Processing:",
-	"metallurgy.cabricality.start.subtitle"   : "",
+	"metallurgy.cabricality.start.subtitle": "",
 	"metallurgy.cabricality.start.content" : "A simple Overview of most options to process your way from Ore to Ingot.\n\nFor every path through this graph, the effective yield per ore can be estimated by multiplying the ratio of each included step.",
+	
 	"metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.pickaxe.title"   : "Mining Tool",
 	"metallurgy.cabricality.pickaxe.subtitle": "1 -> 1",
+	
 	"metallurgy.cabricality.pickaxe.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.fortune_pickaxe.title"   : "Fortune",
 	"metallurgy.cabricality.fortune_pickaxe.subtitle": "1 -> 1 ~ 2",
+	
 	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "Checkmark",
-  
-	"metallurgy.cabricality.i.title"   : "&f&lI&r Crushed",
+	
+	"metallurgy.cabricality.i.title": "&f&lI&r Crushed",
+	
 	"metallurgy.cabricality.i.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.i.smelting.title"   : "Smelting",
 	"metallurgy.cabricality.i.smelting.subtitle": "1 -> 3",
+	
 	"metallurgy.cabricality.i.smelting.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.i.pulverizing.title"   : "Pulverizing",
 	"metallurgy.cabricality.i.pulverizing.subtitle": "1 -> 6",
+	
 	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.i.milling.title"   : "Milling",
 	"metallurgy.cabricality.i.milling.subtitle": "1 -> 3",
+	
 	"metallurgy.cabricality.i.milling.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.i.crushing.title"   : "Crushing",
 	"metallurgy.cabricality.i.crushing.subtitle": "1 -> 3 ~ 6",
+	
 	"metallurgy.cabricality.i.crushing.task.checkmark.title": "Checkmark",
-  
-	"metallurgy.cabricality.ii.title"   : "&f&lII&r Dust",
+	
+	"metallurgy.cabricality.ii.title": "&f&lII&r Dust",
+	
 	"metallurgy.cabricality.ii.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.ii.blocking.title"   : "Block Cooling \\& Smelting",
 	"metallurgy.cabricality.ii.blocking.subtitle": "9 -> 1",
+	
 	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.ii.smelting.title"   : "Smelting Dust",
 	"metallurgy.cabricality.ii.smelting.subtitle": "1 -> 1",
+	
 	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.ii.melting.title"   : "Melting",
 	"metallurgy.cabricality.ii.melting.subtitle": "1 -> 3",
+	
 	"metallurgy.cabricality.ii.melting.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.ii.washing.title"   : "Washing",
 	"metallurgy.cabricality.ii.washing.subtitle": "1 -> 2",
+	
 	"metallurgy.cabricality.ii.washing.task.checkmark.title": "Checkmark",
-  
-	"metallurgy.cabricality.iiia.title"   : "&f&lIIIa&r Nugget",
+	
+	"metallurgy.cabricality.iiia.title": "&f&lIIIa&r Nugget",
+	
 	"metallurgy.cabricality.iiia.task.checkmark.title": "Checkmark",
-  
+	
 	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&r Liquid",
 	"metallurgy.cabricality.iiib.subtitle": "[in Nuggets]",
+	
 	"metallurgy.cabricality.iiib.task.checkmark.title": "Checkmark",
-  
-	"metallurgy.cabricality.iii.compacting.title"   : "Compacting by Press",
+	
+	"metallurgy.cabricality.iii.compacting.title": "Compacting by Press",
+	
 	"metallurgy.cabricality.iii.compacting.task.checkmark.title": "Compacting by Press",
-  
-	"metallurgy.cabricality.iv.title"   : "&f&lIV&r Ingot",
+	
+	"metallurgy.cabricality.iv.title": "&f&lIV&r Ingot",
+	
 	"metallurgy.cabricality.iv.task.checkmark.title": "Checkmark",
-  
-  
-  
+	
+	
+	
 	"thanks.cabricality.title": "&8 Special Thanks",
-  
+	
 	"thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
 	"thanks.cabricality.staff.subtitle": "Staff",
 	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7Original Author&r\n\n&f&lYjn024&r\n&7Modpack Author&r\n\n&f&lKrLite&r\n&7Translator, Artist, Coder&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7Contributer&r"
-  }
+}
