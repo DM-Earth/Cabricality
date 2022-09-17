@@ -4568,6 +4568,11 @@ hash = "28f3a330db6ec489843622d1c0eeb6a40a92f2892073934e8ed3f974276f3519"
 metafile = true
 
 [[files]]
+file = "mods/amecs.pw.toml"
+hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
+metafile = true
+
+[[files]]
 file = "mods/arch-ex.pw.toml"
 hash = "e44d0ff0c823e9df28cebce2562ea9086677357531c79ec47dd804699a42569f"
 metafile = true
@@ -4629,11 +4634,6 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
-metafile = true
-
-[[files]]
-file = "mods/controlling.pw.toml"
-hash = "7e08a945982c433b66875ef6dd4fb0a4d43b5c9df0198612bfcc59804c6f4046"
 metafile = true
 
 [[files]]

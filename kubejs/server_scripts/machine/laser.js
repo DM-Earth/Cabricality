@@ -9,7 +9,7 @@ function rnd(seed) {
 
 function rand(number, seed) {
 	return Math.ceil(rnd(seed) * number)
-};
+}
 
 function select(input, seed) {
 	let selectTemp = input
