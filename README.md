@@ -1,4 +1,4 @@
-<div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/icon.png?raw=true" width = 250 alt="Cabricality Banner with Create"> </div>
+<div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/icon.png?raw=true" width = 250 alt="Cabricality"> </div>
 <h1 align="center"> Cabricality </h1>
 
 Cabricality is a **Create centered** challenge Minecraft Modpack for **Quilt 1.18.2**. With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays to building space stations, you can develop your technology as you want.
