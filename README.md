@@ -1,101 +1,68 @@
-<div align="center"> <img src="https://github.com/JieningYu/Cabricality/blob/packwiz/1.18.2/fabric/dev/assets/cabricality_banner.png?raw=true" width = 500> </div>
+<div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_icon.png?raw=true" width = 250 alt="Cabricality Banner with Create"> </div>
+<h1 align="center"> Cabricality </h1>
 
-<details><summary>English</summary>
-<p>
+Cabricality is a **Create centered** challenge Minecraft Modpack for **Quilt 1.18.2**. With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays to building space stations, you can develop your technology as you want.
 
-# Cabricality
-
-[Create: Above and Beyond](https://github.com/simibubi/Above-and-Beyond) but for **Quilt 1.18.2** using **Create 0.5**.
-
-Cabricality aims to port the CAB experience to Quilt, but not 1:1 clone it to Quilt so there're a lot of differences between them.
-
-## Compare Between Original CAB Modpack
-
-- [x] `Update` [Forge Create 0.3.2g → Fabric Create 0.5.0c](https://github.com/Creators-of-Create/Create)
-- [x] `Update` [TConstruct](https://github.com/SlimeKnights/TinkersConstruct) [→ Fabric port by AlphaMode](https://github.com/Alpha-s-Stuff/TinkersConstruct)
-- [x] `Change` [Thermal Series](https://github.com/cofh) [→ Industrial Revolution, ](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
-- [x] `Change` [Advanced Rocketry](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Ad Astra!](https://modrinth.com/mod/ad-astra-fabric)
-- [x] `Still` [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2)
+This pack is inspired from [Create: Above and Beyond](https://github.com/simibubi/Above-and-Beyond) and based on it, so it includes almost all the main features what Create: Above and Beyond has introduced.
 
 ## Features
 
-### Main Thread
+### Thread Based
 
-- [x] Andesite Machine
-- [x] Copper Machine
-- [x] Brass Machine
-- [x] Zinc Machine
-- [x] Invar Machine
-- [x] Enderium Machine
-- [x] Fluix Machine
-- [x] `New` Obsidian Machine
+As a tech pack, Cabricality has a **main thread** of the development of technologies. Aside from the main thread, there are **sub threads** for the unnecessary technology development. This can let you get rid of messed up technologies in some kitchen sink packs, and you can organize yourself with the rich-description quests.
 
-### Special Functions
+### Rich Quests
 
-- [x] Chaotic Alchemy \*_Not fully polished_
-- [x] Trading System
-- [x] Mad Maths
+In the quests you can check for chapters and milestones in the `Overview` tab, and complete them in your own way. After completing a chapter, you will get a new set of assemble line that done by yourself and gain more mechanics for machine making.
 
-### Endgame
+### Automation Required
 
-- [x] Rocket Building and Launching
-- [x] Space Exploration
+Nearly all contraptions and materials for the machines are needed to be automated by you and your factory. The design of the automation contraptions would be painful, but after automating all the materials, you will achieve the current milestone and step into the next one.
 
-### General
+### Trading System
 
-- [x] Quests
+After automating brass machines, you can make a lot of trade stations, which requires energy to work. With the help of trade cards and profession cards, you can sell and buy what you want using your resources and coins. 
 
-#### [Is there any problem? Check our Wiki!](https://github.com/DM-Earth/Cabricality/wiki)
+When you start to make an Enderium automation line which requires silver ingots, you will find that the only way to obtain silver before the chaotic alchemist is through trading and obtaining silver coins, so the trading system is not only useful but also necessary.
 
-</p>
-</details>
+### Chaotic Alchemist
 
-<details><summary>简体中文</summary>
-<p>
+You can infuse dust with molten glass to make substrates as glass jars. By alchemist mixing and alchemist smelting and the help of catalysts, you are able to convert matters into new matters just like chemical reactions.
 
-# 永无止境：重缝（CABF）
+To obtain the catalysts, you will need to learn the usage of laser emitters. It can send a chain of laser boom and combine substrates in front of it into catalyst if the kind of substrates are right. This kind of recipe are depends on your world's seeds. Once you found the correct recipe, the things will be easier to play around with.
 
-这是一个基于[机械动力：永无止境（CAB）](https://github.com/simibubi/Above-and-Beyond)的整合包，在**Quilt 1.18.2**运行，并使用**机械动力 0.5。**
+### Space Exploration
 
-我们旨在将 CAB 整合包的体验完整地移植到 Quilt 端。比起复制，我们更倾向于二次创作，所以 CABF 与原版 CAB 整合包有许多不同之处，希望你喜欢。
+The final goal of this modpack is get to the moon. But it's not the end. You can build better rockets with the materials that won't generate on earth to further plants or galaxies. You can also build space stations on planet orbits for deeper research.
 
-## CABF 与 CAB 的核心模组对照
+### Good Optimization
 
-- [x] `更新` [Forge 机械动力 0.3.2g → Fabric 机械动力 0.5.0c](https://github.com/Creators-of-Create/Create)
-- [x] `更新` [匠魂 3](https://github.com/SlimeKnights/TinkersConstruct) [→ 匠魂 3（AlphaMode Fabric 移植）](https://github.com/Alpha-s-Stuff/TinkersConstruct)
-- [x] `替换` [热力膨胀](https://github.com/cofh) [→ 工业革命、](https://github.com/GabrielOlvH/Industrial-Revolution)[Kibe](https://github.com/lucaargolo/kibe)
-- [x] `替换` [高级火箭](https://github.com/Advanced-Rocketry/AdvancedRocketry) [→ Ad Astra!](https://modrinth.com/mod/ad-astra-fabric)
-- [x] `不变` [应用能源 2](https://github.com/AppliedEnergistics/Applied-Energistics-2)
+Optimization of this modpack is better than Create: Above and Beyond. You can play this modpack with higher FPS (turn vsync off if possible). If you have problems with TPS, try to create a world using Creative mode then switch it to Survival mode.
 
-## CABF 已经实现的玩法
+## Technical Information
 
-### 主线内容
+All the development details can be found in this GitHub repo. You can follow this project by watching it.
 
-- [x] 安山机器
-- [x] 铜机器
-- [x] 黄铜机器
-- [x] 锌机器
-- [x] 殷钢机器
-- [x] 末影合金机器
-- [x] 福鲁伊克斯机器
-- [x] `新` 黑曜机器
+The pack is managed and developed using [packwiz](https://github.com/packwiz/packwiz) and released using [Modrinth format](https://docs.modrinth.com/docs/modpacks/format_definition/).
 
-### 特殊内容
+### Build from Sources
 
-- [x] 混沌炼金（待完善）
-- [x] 交易系统
-- [x] 数字运算系统
+Clone this repo and download [packiwz](https://github.com/packwiz/packwiz) to the root dictionary of Cabricality, then run these command in your terminal:
 
-### 末期
+macOS:
 
-- [x] 建造并发射火箭
-- [x] 探索太空
+`./packwiz modrinth export`
 
-### 常规
+Windows:
 
-- [x] 任务系统
+`packwiz modrinth export`
 
-#### [遇到问题了吗？来看看我们的百科吧！](https://github.com/DM-Earth/Cabricality/wiki)
+If you want to export a CurseForge format of this pack, you can use `packwiz curseforge export` though it's not recommended because all mods are imported from Modrinth if possible.
 
-</p>
-</details>
+For more information, see [packwiz wiki](https://packwiz.infra.link/).
+
+### Supported Launchers
+
+Almost all launchers that support Modrinth modpack and Quilt Loader installation are supported, such as [MultiMC](https://github.com/MultiMC/Launcher), [PolyMC](https://github.com/PolyMC/PolyMC) and [HMCL](https://github.com/huanghongxun/HMCL). 
+
+[PCL2](https://github.com/Hex-Dragon/PCL2) is not supported.
