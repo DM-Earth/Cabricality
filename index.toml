@@ -4581,11 +4581,6 @@ hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
 metafile = true
 
 [[files]]
-file = "mods/arch-ex.pw.toml"
-hash = "e44d0ff0c823e9df28cebce2562ea9086677357531c79ec47dd804699a42569f"
-metafile = true
-
-[[files]]
 file = "mods/architects-palette-fabric.pw.toml"
 hash = "5d068ee053bfe3b7815d9b28b12144aaf65f9253247eff40480aacf3c2a8e02e"
 metafile = true
