@@ -66,3 +66,7 @@ For more information, see [packwiz wiki](https://packwiz.infra.link/).
 Almost all launchers that support Modrinth modpack and Quilt Loader installation are supported, such as [MultiMC](https://github.com/MultiMC/Launcher), [PolyMC](https://github.com/PolyMC/PolyMC) and [HMCL](https://github.com/huanghongxun/HMCL). 
 
 [PCL2](https://github.com/Hex-Dragon/PCL2) is not supported.
+
+### Licence
+
+This project is licenced under AGPL-3.0.
