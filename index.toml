@@ -10,7 +10,7 @@ hash = "d76f03e86242db6920fdd60d85711e3e83d5ab2771a11fb5d4f67403c1f60255"
 
 [[files]]
 file = "config/customsplashscreen.json5"
-hash = "61c83ccaf8e8bc83b61f6c8eb7cffb4b8bb0309755e5270ed770e293fc2bb0bc"
+hash = "0c4ebb39d1bcd398d6c2c7b42c9f2ac641741294e0efe96c6f30a86a7934b8fa"
 
 [[files]]
 file = "config/customsplashscreen/background.png"
@@ -22,7 +22,7 @@ hash = "27b2ea2946ca5b00841ce7d1813b42dfb7e36b12ad50c7c9bea09053ac226cf3"
 
 [[files]]
 file = "config/customsplashscreen/mojank.png"
-hash = "e9cbca09667bb0cb1fca64f9758f0e27e7c80c4c7ddfb36d2f9caa691d44ee59"
+hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
 
 [[files]]
 file = "config/customsplashscreen/progressbar.png"
@@ -42,7 +42,7 @@ hash = "684a97145572aba3c5dc320716c6cb66ff36180ae8f149b9d60249414c83d309"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advancements.snbt"
-hash = "f3393e811abe84520a6f993754971f51aea85ea1b68008c656b9b18f26dce139"
+hash = "133e75dec24ce238fb73ebc82fc09b266b07754d746886f40ebd4af61c02344a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
@@ -122,11 +122,11 @@ hash = "97c64147276f55cad728249dd77602661e2327fa178aeb8e0db12866df448211"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/en_us.json"
-hash = "40fdc428801fd50fbf60a82d356130c2d079c9795f4759b4aeb0db394d8b0ebf"
+hash = "066ee91ef73e63b1ff27b056604179edd8d26dac691e8f2764a0d5f26b28b397"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/zh_cn.json"
-hash = "6efe2f322e37f59dbf1a579a947a2a3a12f858b259215d1af73a56a61d3c3c9a"
+hash = "1b4da214c80b14fb8ee72fcc6ebfb8e612bac880312a1868207b46252f46651f"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/accelerator.json"
@@ -979,6 +979,10 @@ hash = "4a07347dab6cfa7eea3d6c6e863ef9794d4ede03029bbf2886db38f58eb75e83"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/launch_pad_base.json"
 hash = "79687cc90fb88302b49476dc0d5222a3da653fb0837b4950b955b85fabe0e23c"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/water_pump.json"
+hash = "51f533e18bfa1b1020d2774cc5f0812e7b5fa9ca3e94120f7ad10e8357c1272b"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag.json"
@@ -1881,6 +1885,10 @@ file = "config/openloader/resources/cabf-edits/assets/sodium/lang/zh_cn.json"
 hash = "d5553d7d78fec39b5e7a157e3f277cdedb5449194968b4a29884b5364ac7bfd9"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/splasher/lang/zh_cn.json"
+hash = "ae854697ae45cd4e97b5a1bb1e3e94b34e3db10af8733e45182408f201f00858"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/tconstruct/lang/zh_cn.json"
 hash = "ed3dd283aef795b5cb105aafd8f5a5ecea5e35aa8c4f237f8c3767dab4b5afa9"
 
@@ -1938,11 +1946,11 @@ hash = "558d6d938191ef00df9c8bcacac9217d6960ab681fa4375916c3113b462801b2"
 
 [[files]]
 file = "config/splasher/customizations/en_us.txt"
-hash = "ec5b545d748b3153465b8cabf0e0d2b0092ce2e44973e84e8ecf0a1cf190a7d8"
+hash = "c42e812224587ebaddd80dc25dbaea5cabff94653ab3407d246168c047b102b5"
 
 [[files]]
 file = "config/splasher/customizations/zh_cn.txt"
-hash = "15b36422b8ecbc9f63937e0f4b0a66fd9e7959f3570c297887d2146e4f5486e2"
+hash = "6aa8f6dc35b598c69c3c47e5834d14de4511f41c1e24cc3fc4e5c6ffcb2c502e"
 
 [[files]]
 file = "config/splasher/splasher.properties"
@@ -4442,7 +4450,7 @@ hash = "b4a96c36b272910c822720ac334e44f32afd285e792e8676dfd80504965b0efb"
 
 [[files]]
 file = "kubejs/server_scripts/machine/laser.js"
-hash = "30e3828734c5c7cc5b7bf1364b9751facaea5d0381b84cda5b19b80376f82a9d"
+hash = "dbafcf57e0faf171a56e29620e7570ccadc8632840f4932e4a1cb291556353e7"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_engine.js"
@@ -4546,7 +4554,7 @@ hash = "862630a81bc2dfce9d5adf51c91153e1d7e82f1506847abebca8e92d3ad5dfc3"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "123dc3c33ac4e802540a93bdd37521ff4a803eb7af1cad5d566a4b1159d62c74"
+hash = "8608af754e4b418c5e2a9874a7ffcd8e2d02a7dc22810e8d9e71a10f006e4fa9"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -4628,7 +4636,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobblegen.pw.toml"
-hash = "0fdaa26c126f1eb0a1926a0f1b20e46f4e28de8a2074b77dda213539b0431089"
+hash = "fc7c4a49e3995a7d2ac4c41261670de8521dad745a21e4d9ce7f75278ceb90a6"
 metafile = true
 
 [[files]]
@@ -4722,7 +4730,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-teams-fabric.pw.toml"
-hash = "7e6082963df4d2e8452450f32144e5bc7ca7f78bd72cd00accc2454ef6fe29ae"
+hash = "984ac3dbc96c72e9416170949ca1a141e26218917ccbfd6655117d61ca23f408"
 metafile = true
 
 [[files]]
