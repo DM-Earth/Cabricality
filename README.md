@@ -22,7 +22,7 @@ The **well-descripted** quests will surely set you up goals before every tech te
 
 ### Quest Helpers
 
-Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** in a glance. Every chapter has it's unique assemble lines, and brand new adventures.
+Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** at a glance. Every chapter has it's unique assemble lines, and brand new adventures.
 
 Well, quests are just helpful tools we have prepared for you. It's absolutely at your will to choose to experience the pack in your own way!
 
