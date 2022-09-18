@@ -1,7 +1,7 @@
 
 <h4 align="center">Please install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">FTB Quests<a/>, <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">FTB Teams<a/>, <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">FTB Library<a/> and <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">Quest Additions<a/> manually!</h4>
 
-<div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 410 alt="Cabricality"> </div>
+<div align="center"> < img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 410 alt="Cabricality"> </div>
 <h1 align="center"> Cabricality </h1>
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
@@ -16,11 +16,15 @@ From shoveling clays under valleys to voyaging inside space stations, you can de
 
 ### Thread Based
 
-As a tech pack, Cabricality has a **main thread** of the development of technologies. Aside from the main thread, there are **sub threads** for the unnecessary technology development. This can let you get rid of messed up technologies in some kitchen sink packs, and you can organize yourself with the rich-description quests.
+As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** for unnecessary technologies.
 
-### Rich Quests
+The **well-descripted** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
 
-In the quests you can check for chapters and milestones in the `Overview` tab, and complete them in your own way. After completing a chapter, you will get a new set of assemble line that done by yourself and gain more mechanics for machine making.
+### Quest Helpers
+
+Lying on the left of the quest page, `Overview` is where you can unlock and check all the chapters and milestones in a glance. Every chapter has it's unique assemble lines, and brand new adventures.
+
+Well, quests are just helpful tools we have prepared for you. It's absolutely at your will to choose to experience the pack in your own way!
 
 ### Automation Required
 
