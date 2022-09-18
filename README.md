@@ -62,7 +62,7 @@ This modpack is managed and developed using [packwiz](https://github.com/packwiz
 
 ### Build from Sources
 
-Clone this repository and download [packiwz](https://github.com/packwiz/packwiz) to the pack's root dictionary, then run the commands below:
+Clone this repository and download [packwiz](https://github.com/packwiz/packwiz) to the pack's root dictionary, then run the commands below:
 
 
 
