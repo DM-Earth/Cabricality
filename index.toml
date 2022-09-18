@@ -4562,7 +4562,7 @@ hash = "8dc6ad44a6b0bada5533763f0f7526c8b09498f04fd43adef633be0d46841e4f"
 
 [[files]]
 file = "mods/ad-astra-fabric.pw.toml"
-hash = "e811d65502a6c345c43b362ee1ad883dabef1a860ef6101a4dd3e65f883d59b4"
+hash = "c971d85676b352cb31d853936d507baf294df62514f70ba102fe66d4939066d8"
 metafile = true
 
 [[files]]
