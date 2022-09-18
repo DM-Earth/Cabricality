@@ -6,9 +6,7 @@
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
 
-With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution).
-
-From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
+With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
 *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but recreated and redesigned on the base of the original pack.*
 
@@ -16,11 +14,15 @@ From shoveling clays under valleys to voyaging inside space stations, you can de
 
 ### Thread Based
 
-As a tech pack, Cabricality has a **main thread** of the development of technologies. Aside from the main thread, there are **sub threads** for the unnecessary technology development. This can let you get rid of messed up technologies in some kitchen sink packs, and you can organize yourself with the rich-description quests.
+As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** for unnecessary technologies.
 
-### Rich Quests
+The **well-descripted** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
 
-In the quests you can check for chapters and milestones in the `Overview` tab, and complete them in your own way. After completing a chapter, you will get a new set of assemble line that done by yourself and gain more mechanics for machine making.
+### Quest Helpers
+
+Lying on the left of the quest page, `Overview` is where you can unlock and check all the chapters and milestones in a glance. Every chapter has it's unique assemble lines, and brand new adventures.
+
+Well, quests are just helpful tools we have prepared for you. It's absolutely at your will to choose to experience the pack in your own way!
 
 ### Automation Required
 
