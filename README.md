@@ -10,6 +10,8 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 > *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but recreated and redesigned on the base of the original pack. Welcome, challenger, we hope you to enjoy our work!*
 
+<h3 align="center"> <a href="localizations/ZH_CN.md"> 简体中文 </a> </h3>
+
 ## Features
 
 ### Thread Basing
