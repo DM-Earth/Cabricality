@@ -44,7 +44,7 @@ Catalysts aren't that easy to obtain. Struct a **laser emitter** and let the par
 
 ### Space Exploring
 
-You might leave behind quests by landing on the moon, but your story never ends. **Ad astra** made exploring other planets and galaxies possible, what's more, you can build your space stations outside atmospheres!
+You might leave behind quests by landing on the moon, but your story never ends. **Ad Astra!** made exploring other planets and galaxies possible, what's more, you can build your space stations outside atmospheres!
 
 *Deeper adventure awaits, don't stop, Hitch Hiker!*
 
