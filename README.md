@@ -82,7 +82,7 @@ If you want to export a CurseForge format pack, you can use command `packwiz cur
 
 [^curseforge]: It's not recommended because all mods were imported from Modrinth.
 
-> *For more information, see [packwiz wiki.](https://packwiz.infra.link/)*
+> *For more information, see [packwiz wiki.](https://packwiz.infra.link)*
 
 ### Supported Launchers
 
