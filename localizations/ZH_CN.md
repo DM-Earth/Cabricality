@@ -64,7 +64,7 @@
 
 ### 手动构建
 
-你需要在本地克隆此仓库，并在仓库根目录下载[packwiz](https://github.com/packwiz/packwiz)。一切准备就绪后，请运行以下命令：
+你需要在本地克隆此仓库，并在仓库根目录下载[packwiz。](https://github.com/packwiz/packwiz)一切准备就绪后，请运行以下命令：
 
 **macOS / Linux:**
 
