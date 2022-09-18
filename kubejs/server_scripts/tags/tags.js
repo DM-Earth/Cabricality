@@ -27,6 +27,24 @@ function indrev_tag_unify(event) {
   material_vanilla("diamond")
   material_vanilla("copper")
 }
+
+function stripped_wood_tag_unify(event) {
+  missing_wood_types_stripped.forEach(e => {
+    let log = asIdentifier("stripped_" + e[1] + "_log", e[0])
+    let wood = asIdentifier("stripped_" + e[1] + "_wood", e[0])
+
+    if (e[0] == "malum") {
+      wood = asIdentifier("stripped_" + e[1], e[0])
+    }
+
+    if (!listIncludes(wood_types_no_wood, e)) {
+      event.add("c:stripped_wood", wood)
+    }
+
+    event.add("c:stripped_logs", log)
+  })
+}
+
 function ad_astra_tag_unify(event) {
   let material = (id) => {
     event.add("c:ingots/" + id, "ad_astra:" + id + "_ingot")
@@ -37,9 +55,11 @@ function ad_astra_tag_unify(event) {
   material("ostrum")
   material("calorite")
 }
+
 onEvent('tags.items', event => {
   indrev_tag_unify(event)
   ad_astra_tag_unify(event)
+  stripped_wood_tag_unify(event)
   
   event.get("create:upright_on_belt")
 		.add(AE2("red_paint_ball"))

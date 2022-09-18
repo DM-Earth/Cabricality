@@ -283,12 +283,4 @@ onEvent("recipes", event => {
   event.remove({output: IV("steel_block")})
   event.remove({output: IV("steel_nugget")})
   event.remove({output: AR("steel_ingot")})
-
-  wood_types.forEach(wood => {
-    if (wood.startsWith("tconstruct")) {
-      event.recipes.createCutting("2x " + wood + "_planks_slab", wood + "_planks").processingTime(150)
-    } else {
-      event.recipes.createCutting("2x " + wood + "_slab", wood + "_planks").processingTime(150)
-    }
-  })
 })

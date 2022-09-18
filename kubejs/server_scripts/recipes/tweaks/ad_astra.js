@@ -22,7 +22,7 @@ onEvent("recipes", event => {
 		event.smithing(r, i1, i2)
 		event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
 	}
-	smithAndMechCraft(AR("rocket_launch_pad"), IV("tin_plate"), plastic)
+	smithAndMechCraft(AR("launch_pad"), IV("tin_plate"), plastic)
 	smithAndMechCraft(AR("cryo_freezer"), IV("condenser_mk4"), plastic)
 	smithAndMechCraft(AR("oxygen_sensor"), MC("observer"), plastic)
 	smithAndMechCraft(AR("fuel_refinery"), IV("smelter_mk4"), plastic)
@@ -47,9 +47,7 @@ onEvent("recipes", event => {
 		})
 	})
 	event.remove({ type: AR("compressing") })
-	//event.remove({ type: AR("oxygen_conversion") })
 	event.remove({ type: AR("nasa_workbench") })
-	//event.remove({ output: AR("oxygen_loader") })
 	event.remove({ output: AR("oxygen_distributer") })
 	event.remove({ output: AR("energizer") })
 	event.remove({ output: AR("water_pump") })
