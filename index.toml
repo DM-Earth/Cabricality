@@ -4614,9 +4614,8 @@ file = "mods/blahaj-quilt-1.18-0.2.0.jar"
 hash = "b807524384153e33ec9c4ec793c0822b19654259813b15db65e745cf58376c77"
 
 [[files]]
-file = "mods/cabricality-utils.pw.toml"
-hash = "a90c584ed69868a1cf8313f0b6760f2271b294503e08a42276b75c6f2fe5302b"
-metafile = true
+file = "mods/cabricality-utils-0.1-alpha1-build1.jar"
+hash = "880b9a6cc2c74ed10a66ed48e0db338537bb9c6b0c53a15ed9eb7d979f544009"
 
 [[files]]
 file = "mods/campanion.pw.toml"
