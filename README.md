@@ -1,3 +1,6 @@
+
+<h4 align="center"><font color='red'> Please install [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric), [FTB Teams](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric), [FTB Library](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric) and [Quest Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric) manually!</font></h4>
+
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 410 alt="Cabricality"> </div>
 <h1 align="center"> Cabricality </h1>
 

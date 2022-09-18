@@ -4610,6 +4610,11 @@ file = "mods/blahaj-quilt-1.18-0.2.0.jar"
 hash = "b807524384153e33ec9c4ec793c0822b19654259813b15db65e745cf58376c77"
 
 [[files]]
+file = "mods/cabricality-utils.pw.toml"
+hash = "a90c584ed69868a1cf8313f0b6760f2271b294503e08a42276b75c6f2fe5302b"
+metafile = true
+
+[[files]]
 file = "mods/campanion.pw.toml"
 hash = "8d3de765ffa83b0499e328dbd1827e35c2a9f88c11cdc09ba1f4efe7d68f531f"
 metafile = true
@@ -4711,21 +4716,6 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "059dda5970c80ebf787ce03dec13d35aa178a3a56399c05a88e4818d56b8324a"
-metafile = true
-
-[[files]]
-file = "mods/ftb-library-fabric.pw.toml"
-hash = "ff48e48e828ba58db59ade1d3b05ab01373e528bba4ca74417566c9f6ed208a9"
-metafile = true
-
-[[files]]
-file = "mods/ftb-quests-fabric.pw.toml"
-hash = "2198a2619d8b25323870d9f6c6a3c4d7c75119756a60e26acaa232e482a8ecbc"
-metafile = true
-
-[[files]]
-file = "mods/ftb-teams-fabric.pw.toml"
-hash = "984ac3dbc96c72e9416170949ca1a141e26218917ccbfd6655117d61ca23f408"
 metafile = true
 
 [[files]]
@@ -4894,11 +4884,6 @@ metafile = true
 [[files]]
 file = "mods/qsl.pw.toml"
 hash = "f0f4224d38fbb3f041412465e826ade26094914a20239cd597905cf9598704bd"
-metafile = true
-
-[[files]]
-file = "mods/quests-additions-fabric.pw.toml"
-hash = "ce82dd38055992d8ef24a8d70372d4a57c4be55b08b6f31519f0381e25f295d2"
 metafile = true
 
 [[files]]
