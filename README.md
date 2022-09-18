@@ -1,7 +1,7 @@
 
 <h4 align="center">Please install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">FTB Quests<a/>, <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">FTB Teams<a/>, <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">FTB Library<a/> and <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">Quest Additions<a/> manually!</h4>
 
-<div align="center"> < img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 410 alt="Cabricality"> </div>
+<div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 410 alt="Cabricality"> </div>
 <h1 align="center"> Cabricality </h1>
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
