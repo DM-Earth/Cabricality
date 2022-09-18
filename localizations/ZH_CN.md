@@ -78,7 +78,11 @@
 packwiz modrinth export
 ```
 
-如果你想通过CurseForge整合包格式打包，请使用`packwiz curseforge export`命令[^curseforge]。
+**如果你想通过CurseForge整合包格式打包，请使用如下命令[^curseforge]：**
+
+```
+packwiz curseforge export
+```
 
 [^curseforge]: 不建议这样做，因为大部分模组都导入自Modrinth。
 
