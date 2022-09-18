@@ -60,7 +60,7 @@ If you like to write scripts and add your favorites to the game, **you're welcom
 
 **All development details can be found in this GitHub repository. You can follow this project by watching it.**
 
-This modpack is managed and developed using [packwiz](https://github.com/packwiz/packwiz) and released using [Modrinth format pack.](https://docs.modrinth.com/docs/modpacks/format_definition/)
+This modpack is managed and developed using [packwiz](https://github.com/packwiz/packwiz) and released using [Modrinth format pack.](https://docs.modrinth.com/docs/modpacks/format_definition)
 
 ### Build from Sources
 
