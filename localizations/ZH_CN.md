@@ -10,7 +10,7 @@
 
 > *此整合包在[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)的启发下，重新设计和创造了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中！*
 
-<h3 align="center"> <a href="https://github.com/DM-Earth/Cabricality"> English </a> </h3>
+<h3 align="center"> <a href="https://github.com/DM-Earth/Cabricality"> English </a>| 简体中文 </h3>
 
 ## 游戏内容
 

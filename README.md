@@ -10,7 +10,7 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 > *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but recreated and redesigned on the base of the original pack. Welcome, challenger, we hope you to enjoy our work!*
 
-<h3 align="center"> <a href="localizations/ZH_CN.md"> 简体中文 </a> </h3>
+<h3 align="center"> English | <a href="localizations/ZH_CN.md"> 简体中文 </a> </h3>
 
 ## Features
 
@@ -18,17 +18,17 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** of unnecessary technologies.
 
-The **well-descripted** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
+The **well-described** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
 
 ### Quest Helpers
 
-Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** at a glance. Every chapter has it's unique assemble lines, and brand new adventures.
+Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** at a glance. Every chapter has its unique assembly lines, and brand-new adventures.
 
 Well, quests are just helpful tools we have prepared for you. It's absolutely at your will to choose to experience the pack in your own way!
 
 ### Automata Era
 
-Nearly all machine necessities are **automatable.** It may be painful to reasonably divide the occupied area and functions of machinery, but as the old saying goes, no pains no gains. After all, you'll be able to unlock milestones and have encompassing visions of your magnificant factory!
+Nearly all machine necessities are **automatable.** It may be painful to reasonably divide the occupied area and functions of machinery, but as the old saying goes, no pains no gains. After all, you'll be able to unlock milestones and have encompassing visions of your magnificent factory!
 
 ### Trading Wonders
 
@@ -38,9 +38,9 @@ The system is poorly needed during the produce of `enderium` materials. The quee
 
 ### Chaotic Alchemies
 
-Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infust dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** It's magic!
+Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infuse dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** It's magic!
 
-Catalysts aren't that easy to obtain. Struct a **laser emmitter** and let the particle ray combine right substrates into exact catalysts. The recipe is randomly different between worlds, so excite yourself to find the right ones!
+Catalysts aren't that easy to obtain. Struct a **laser emitter** and let the particle ray combine right substrates into exact catalysts. The recipe is randomly different between worlds, so excite yourself to find the right ones!
 
 ### Space Exploring
 
@@ -80,7 +80,7 @@ packwiz modrinth export
 
 If you want to export a CurseForge format pack, you can use command `packwiz curseforge export`[^curseforge].
 
-[^curseforge]: It's not recommended because all mods were imported from Modrinth.
+[^curseforge] It's not recommended because all mods were imported from Modrinth.
 
 > *For more information, see [packwiz wiki.](https://packwiz.infra.link/)*
 
@@ -88,7 +88,7 @@ If you want to export a CurseForge format pack, you can use command `packwiz cur
 
 We support almost all launchers that compatible with **Modrinth format pack** and **Quilt.** Such as [MultiMC,](https://github.com/MultiMC/Launcher) [PolyMC](https://github.com/PolyMC/PolyMC) and [Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2].
 
-[^pcl2]: **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
+[^pcl2] **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
 
 ### Licence
 
