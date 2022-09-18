@@ -60,7 +60,7 @@
 
 **所有的技术细节都可以在此GitHub仓库中找到。如果你想追踪日后的开发进度，请`Watch`此仓库。**
 
-此整合包使用[packwiz](https://github.com/packwiz/packwiz)管理和打包内容，并以[Modrinth整合包](https://docs.modrinth.com/docs/modpacks/format_definition/)格式发布。
+此整合包使用[packwiz](https://github.com/packwiz/packwiz)管理和打包内容，并以[Modrinth整合包](https://docs.modrinth.com/docs/modpacks/format_definition)格式发布。
 
 ### 手动构建
 
