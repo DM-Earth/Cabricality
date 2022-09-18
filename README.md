@@ -1,5 +1,5 @@
 
-<h4 align="center"> <sup> Please Install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">  FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">  FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">  Quest Additions </a>  Manually! </sup> <br> </br> </h4>
+<h4 align="center"> <sup> Please Install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> Manually! </sup> <br> </br> </h4>
 
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 <h1 align="center"> Cabricality </h1>
