@@ -1957,6 +1957,10 @@ file = "config/splasher/splasher.properties"
 hash = "56602e7351c7d343f2d569c5517aad3c5225f611d5896e63949768f77ab5c5d8"
 
 [[files]]
+file = "icon.png"
+hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
+
+[[files]]
 file = "kubejs/assets/cabricality/ponder/extractor.nbt"
 hash = "d1a4e2cc7b25d25e4383da8529d9117f8e14db4ba74a6147fcbe1765474c7999"
 
@@ -4884,11 +4888,6 @@ metafile = true
 [[files]]
 file = "mods/qsl.pw.toml"
 hash = "f0f4224d38fbb3f041412465e826ade26094914a20239cd597905cf9598704bd"
-metafile = true
-
-[[files]]
-file = "mods/reeses-sodium-options.pw.toml"
-hash = "2ece972fd1306a38ca278d9da23656c73bc103df57709a4bdac0a0271a646f34"
 metafile = true
 
 [[files]]
