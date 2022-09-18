@@ -34,27 +34,27 @@
 
 当你拥有足够的黄铜之后，就能够制造**交易站**了。为这精密的仪器通上电源，听它轰鸣吧！放入`交易铭牌`和`职业铭牌`后，你就可以用手头的钱币交换一些罕见的材料了。当然，你也可以用材料**换回**钱币！噢，我的宝物啊！
 
-当你需要生产`谐振末影`材料的时候，交易系统是必需品。这种异界诞生的怪异材料为什么会将银币融进自身是一个未解之谜...如果那时你还不是一名**炼金术士**，那么交易就会成为获取银币的唯一方式。
+当你需要生产`谐振末影`材料的时候，交易系统是必需品。这种异界诞生的怪异材料为什么会将银币融进自身是一个未解之谜...如果那时你还不是一名**炼金术士，** 那么交易就会成为获取银币的唯一方式。
 
 ### 混沌炼金
 
-Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infust dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** It's magic!
+在炼金术士手中，珍稀材料从平平无奇的试剂瓶中破蛹而出。现在，你也可以做到！将原材料磨成粉末，掺进熔融玻璃中，能够方便地生产罐装试剂。在**炼金催化剂**的作用下搅拌、融合，**点石成金。** 这就是魔法！
 
-Catalysts aren't that easy to obtain. Struct a **laser emmitter** and let the particle ray combine right substrates into exact catalysts. The recipe is randomly different between worlds, so excite yourself to find the right ones!
+催化剂并不是什么可以简单制造的材料。要制造催化剂，首先你需要构筑一个**炼金镭射器**结构，然后对着一些特定的试剂发射高能射线。运气好的话，你才能得到一瓶催化剂。对于每个世界，催化剂配方都是不同的。所以打起精神来，永远不要放弃尝试！
 
-### 苍穹之际
+### 苍穹之巅
 
-You might leave behind quests by landing on the moon, but your story never ends. **Ad astra** made exploring other planets and galaxies possible, what's more, you can build your space stations outside atmospheres!
+当你登陆月球，也就完成了整合包中的最后一个任务。我们的使命结束了，但属于你的故事永远不会结束！**Ad Astra!** 使得探索更多的星球甚至星系成为了可能。享受未知宇宙的恐惧和乐趣吧！如果有你中意的星球，你还可以在她的近地轨道上建造空间站，仰望星空！真是件浪漫的事...
 
-*Deeper adventure awaits, don't stop, Hitch Hiker!*
+*深空无人，去银河系漫游吧！*
 
 ### 优化
 
-We prefer you to optimize your games on your own.
+我们建议你根据实际情况对游戏进行适当优化。
 
-**If you want a higher FPS(Frames per second),** vsync may help. **When the TPS(Ticks per second) is badly low,** try to enter a new world in `Creative Mode` before you switch to other modes you like.
+**如果你想要更顺滑流畅的FPS（帧每秒），** 开启垂直同步也许会有所帮助。**当游戏的TPS（游戏刻每秒）过低的时候，** 请尝试在`创造模式下`进入一个新的游戏世界，随后再切换至其它游戏模式。
 
-If you like to write scripts and add your favorites to the game, **you're welcome!**
+如果你希望写一些整合包脚本来提升游戏体验，**随时欢迎！**
 
 ## 技术支持
 
