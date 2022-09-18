@@ -82,7 +82,7 @@ packwiz modrinth export
 
 [^curseforge]: 不建议这样做，因为大部分模组都导入自Modrinth。
 
-> *更多信息请翻阅[packwiz wiki。](https://packwiz.infra.link/)*
+> *更多信息请翻阅[packwiz wiki。](https://packwiz.infra.link)*
 
 ### 启动器支持
 
