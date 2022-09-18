@@ -1,5 +1,5 @@
 
-<h4 align="center"> <sup> Please Install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">  FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">  FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">  Quest Additions </a>  Manually! </sup> <br> </br> </h4>
+<h4 align="center"> <sup> Please Install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> Manually! </sup> <br> </br> </h4>
 
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 <h1 align="center"> Cabricality </h1>
@@ -8,9 +8,9 @@
 
 With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
-> *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but recreated and redesigned on the base of the original pack. Welcome, challenger, we hope you to enjoy our work!*
+> *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work!*
 
-<h3 align="center"> <a href="localizations/ZH_CN.md"> 简体中文 </a> </h3>
+<h3 align="center"> English | <a href="localizations/ZH_CN.md"> 简体中文 </a> </h3>
 
 ## Features
 
@@ -18,17 +18,17 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** of unnecessary technologies.
 
-The **well-descripted** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
+The **well-described** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
 
 ### Quest Helpers
 
-Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** in a glance. Every chapter has it's unique assemble lines, and brand new adventures.
+Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** at a glance. Every chapter has its unique assembly lines, and brand-new adventures.
 
 Well, quests are just helpful tools we have prepared for you. It's absolutely at your will to choose to experience the pack in your own way!
 
 ### Automata Era
 
-Nearly all machine necessities are **automatable.** It may be painful to reasonably divide the occupied area and functions of machinery, but as the old saying goes, no pains no gains. After all, you'll be able to unlock milestones and have encompassing visions of your magnificant factory!
+Nearly all machine necessities are **automatable.** It may be painful to reasonably divide the occupied area and functions of machinery, but as the old saying goes, no pains no gains. After all, you'll be able to unlock milestones and have encompassing visions of your magnificent factory!
 
 ### Trading Wonders
 
@@ -38,9 +38,9 @@ The system is poorly needed during the produce of `enderium` materials. The quee
 
 ### Chaotic Alchemies
 
-Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infust dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** It's magic!
+Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infuse dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** It's magic!
 
-Catalysts aren't that easy to obtain. Struct a **laser emmitter** and let the particle ray combine right substrates into exact catalysts. The recipe is randomly different between worlds, so excite yourself to find the right ones!
+Catalysts aren't that easy to obtain. Struct a **laser emitter** and let the particle ray combine right substrates into exact catalysts. The recipe is randomly different between worlds, so excite yourself to find the right ones!
 
 ### Space Exploring
 

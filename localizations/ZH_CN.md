@@ -48,7 +48,7 @@ You might leave behind quests by landing on the moon, but your story never ends.
 
 *Deeper adventure awaits, don't stop, Hitch Hiker!*
 
-### 自定义
+### 优化
 
 We prefer you to optimize your games on your own.
 
@@ -64,7 +64,7 @@ If you like to write scripts and add your favorites to the game, **you're welcom
 
 ### 手动构建
 
-你需要在本地克隆此仓库，并在仓库根目录下载[packwiz。](https://github.com/packwiz/packwiz)一切准备就绪后，请运行以下命令：
+你需要在本地克隆此仓库，并在仓库根目录下载[packwiz](https://github.com/packwiz/packwiz)。一切准备就绪后，请运行以下命令：
 
 **macOS / Linux:**
 
@@ -86,7 +86,7 @@ packwiz modrinth export
 
 ### 启动器支持
 
-你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中运行这个整合包，如[MultiMC、](https://github.com/MultiMC/Launcher)[PolyMC](https://github.com/PolyMC/PolyMC)和[Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2]。
+你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行这个整合包，如[MultiMC、](https://github.com/MultiMC/Launcher)[PolyMC](https://github.com/PolyMC/PolyMC)和[Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2]。
 
 [^pcl2]: **注意，[PCL2启动器](https://github.com/Hex-Dragon/PCL2)不受支持。**
 
