@@ -8,7 +8,7 @@
 
 With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
-*This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but recreated and redesigned on the base of the original pack. We hope you to enjoy our work!*
+> *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but recreated and redesigned on the base of the original pack. Welcome, challenger, we hope you to enjoy our work!*
 
 ## Features
 
