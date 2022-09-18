@@ -14,27 +14,27 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 ### Thread Based
 
-As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** for unnecessary technologies.
+As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** of unnecessary technologies.
 
 The **well-descripted** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
 
 ### Quest Helpers
 
-Lying on the left of the quest page, `Overview` is where you can unlock and check all the chapters and milestones in a glance. Every chapter has it's unique assemble lines, and brand new adventures.
+Lying on the left of the quest page, `Overview` is where you can unlock and review all the **chapters** and **milestones** in a glance. Every chapter has it's unique assemble lines, and brand new adventures.
 
 Well, quests are just helpful tools we have prepared for you. It's absolutely at your will to choose to experience the pack in your own way!
 
-### Automation Required
+### Automata Era
 
-Nearly all contraptions and materials for the machines are needed to be automated by you and your factory. The design of the automation contraptions would be painful, but after automating all the materials, you will achieve the current milestone and step into the next one.
+Nearly all machine necessities are **automatable.** It may be painful to reasonably divide the occupied area and functions of machinery, but as the old saying goes, no pains no gains. After all, you'll be able to unlock milestones and have encompassing visions of your magnificant factory!
 
-### Trading System
+### Trading Wonders
 
-After automating brass machines, you can make a lot of trade stations, which requires energy to work. With the help of trade cards and profession cards, you can sell and buy what you want using your resources and coins. 
+You will have the ability to produce **trade stations** when brass supply is sufficient. When you plug the precise instrument on with adequate energy, it roars. With the help of `trade cards` and `profession cards`, some rarely seen materials could be exchanged by coins, and the process can also be reversed. Ah, my precious!
 
-When you start to make an Enderium automation line which requires silver ingots, you will find that the only way to obtain silver before the chaotic alchemist is through trading and obtaining silver coins, so the trading system is not only useful but also necessary.
+The system is poorly needed during the produce of `enderium` materials. The queer material born in anotherland, combines silver coins in it's body. If you aren't a alchemist, the only way to obtain them is through trade.
 
-### Chaotic Alchemist
+### Chaotic Alchemy
 
 You can infuse dust with molten glass to make substrates as glass jars. By alchemist mixing and alchemist smelting and the help of catalysts, you are able to convert matters into new matters just like chemical reactions.
 
