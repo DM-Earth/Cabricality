@@ -53,6 +53,11 @@ onEvent("recipes", event => {
   event.replaceInput("#c:compressed_steel", "indrev:steel_plate")
   event.replaceInput("#c:compressed_desh", "ad_astra:desh_plate")
 
+  event.replaceInput("#c:copper_nuggets", "create:copper_nugget")
+  event.replaceOutput({}, "#c:copper_nuggets", "create:copper_nugget")
+  event.replaceInput("#c:nuggets/copper", "create:copper_nugget")
+  event.replaceOutput({}, "#c:nuggets/copper", "create:copper_nugget")
+
   event.blasting(IV("steel_ingot"), MC("iron_ingot")).cookingTime(400)
 
   event.remove({ id: CR("splashing/gravel") })
