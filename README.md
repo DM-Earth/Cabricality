@@ -56,9 +56,9 @@ The pack is managed and developed using [packwiz](https://github.com/packwiz/pac
 
 ### Build from Sources
 
-Clone this repo and download [packiwz](https://github.com/packwiz/packwiz) to the root dictionary of Cabricality, then run these command in your terminal:
+Clone this repo and download [packwiz](https://github.com/packwiz/packwiz) to the root dictionary of Cabricality, then run these command in your terminal:
 
-macOS:
+macOS / Linux:
 
 `./packwiz modrinth export`
 
