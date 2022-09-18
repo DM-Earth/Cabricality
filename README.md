@@ -78,7 +78,11 @@ Clone this repository and download [packwiz](https://github.com/packwiz/packwiz)
 packwiz modrinth export
 ```
 
-If you want to export a CurseForge format pack, you can use command `packwiz curseforge export`[^curseforge].
+**If you want to export a CurseForge format pack, you can use command below[^curseforge]:**
+
+```
+packwiz curseforge export
+```
 
 [^curseforge]: It's not recommended because all mods were imported from Modrinth.
 
