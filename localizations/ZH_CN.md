@@ -48,7 +48,7 @@ You might leave behind quests by landing on the moon, but your story never ends.
 
 *Deeper adventure awaits, don't stop, Hitch Hiker!*
 
-### 自定义
+### 优化
 
 We prefer you to optimize your games on your own.
 
