@@ -66,7 +66,7 @@ Clone this repository and download [packiwz](https://github.com/packwiz/packwiz)
 
 
 
-**macOS:**
+**macOS / Linux:**
 
 ```
 ./packwiz modrinth export
