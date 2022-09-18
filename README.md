@@ -80,7 +80,7 @@ packwiz modrinth export
 
 If you want to export a CurseForge format pack, you can use command `packwiz curseforge export`[^curseforge].
 
-[^curseforge] It's not recommended because all mods were imported from Modrinth.
+[^curseforge]: It's not recommended because all mods were imported from Modrinth.
 
 > *For more information, see [packwiz wiki.](https://packwiz.infra.link/)*
 
@@ -88,7 +88,7 @@ If you want to export a CurseForge format pack, you can use command `packwiz cur
 
 We support almost all launchers that compatible with **Modrinth format pack** and **Quilt.** Such as [MultiMC,](https://github.com/MultiMC/Launcher) [PolyMC](https://github.com/PolyMC/PolyMC) and [Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2].
 
-[^pcl2] **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
+[^pcl2]: **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
 
 ### Licence
 
