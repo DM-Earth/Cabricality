@@ -339,7 +339,7 @@
 	
 	
 	
-	"welcome.cabricality.title": "&8 向着星辰与深渊",
+	"welcome.cabricality.title": "&8  向着星辰与深渊！",
 	
 	"welcome.cabricality.limitless.title"   : "&f&l无限潜能",
 	"welcome.cabricality.limitless.subtitle": "一路顺风",
@@ -592,7 +592,7 @@
 	"advancement.cabricality.accumulation.task.craft.title": "合成2^12块木板",
 	
 	"advancement.cabricality.reach_the_sky.title"   : "&b触摸天空",
-	"advancement.cabricality.reach_the_sky.subtitle": "&bB到底该怎么下去呢？",
+	"advancement.cabricality.reach_the_sky.subtitle": "&b到底该怎么下去呢？",
 
 	"advancement.cabricality.reach_the_sky.task.location.title": "到达255米的高度",
 	
@@ -1269,7 +1269,7 @@
 
 	
 	
-	"metallurgy.cabricality.title": "> Metallurgy",
+	"metallurgy.cabricality.title": "&8▶ 科学冶金",
 	
 	"metallurgy.cabricality.start.title"   : "Build-a-Processing:",
 	"metallurgy.cabricality.start.subtitle": "",
@@ -1354,9 +1354,9 @@
 	
 	
 	
-	"thanks.cabricality.title": "&8 Special Thanks",
+	"thanks.cabricality.title": "&8  特别感谢",
 	
-	"thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
-	"thanks.cabricality.staff.subtitle": "Staff",
-	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7Original Author&r\n\n&f&lYjn024&r\n&7Modpack Author&r\n\n&f&lKrLite&r\n&7Translator, Artist, Coder&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7Contributer&r"
+	"thanks.cabricality.staff.title"   : "&c感&a谢&b游&f玩！",
+	"thanks.cabricality.staff.subtitle": "制作人员",
+	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/代码&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7贡献者&r"
 }
