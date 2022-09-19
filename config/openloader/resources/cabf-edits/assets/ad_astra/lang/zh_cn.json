@@ -157,6 +157,8 @@
 	"block.ad_astra.flag_purple"    : "紫色基地旗帜",
 	"block.ad_astra.flag_red"       : "红色基地旗帜",
 	"block.ad_astra.flag_yellow"    : "黄色基地旗帜",
+	"block.ad_astra.flag_light_gray"       : "浅灰色基地旗帜",
+	"block.ad_astra.flag_black"    : "黑色基地旗帜",
 
 	"block.ad_astra.fuel_refinery": "燃油精炼厂",
 

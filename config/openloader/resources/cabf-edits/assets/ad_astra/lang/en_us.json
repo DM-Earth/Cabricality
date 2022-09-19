@@ -4,5 +4,5 @@
 	"fluid.ad_astra.fuel"     : "Fuel",
 	"fluid.ad_astra.oil"      : "Oil",
 
-	"block.ad_astra.desh_cable"   : "Invar Energy Pipe"
+	"block.ad_astra.desh_cable": "Invar Energy Pipe"
 }
