@@ -1,4 +1,3 @@
-let debug_extractor = false
 onEvent("block.right_click", event => {
 	let isNextToLog = false
 	if (event.block.id == asIdentifier("extractor_machine")) {
@@ -229,7 +228,7 @@ onEvent("block.right_click", event => {
 		}
 
 		let isFluidSource = false
-		if (debug_extractor == true) {
+		if (DEBUG == true) {
 			event.server.runCommandSilent("say start")
 			event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
 			event.server.runCommandSilent("say " + event.block.down.getBlockState().toString().indexOf("[level=").toString())
@@ -248,8 +247,8 @@ onEvent("block.right_click", event => {
 
 			&& isFluidSource == true
 		) {
-			//	if (debug_extractor == true) event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
-			if (debug_extractor == true) event.server.runCommandSilent(`say ${event.block.down.getBlockState().toString()}`)
+			//	if (DEBUG == true) event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
+			if (DEBUG == true) event.server.runCommandSilent(`say ${event.block.down.getBlockState().toString()}`)
 			let x = event.block.x
 			let y = event.block.y - 1
 			let yup = event.block.y + 1

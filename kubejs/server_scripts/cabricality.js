@@ -1,4 +1,5 @@
 let modpackId = "cabricality"
+let DEBUG = false
 
 let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
 let CR = (id, x) => MOD("create", id, x)

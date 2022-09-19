@@ -1,6 +1,5 @@
 let outputItem = ""
 let length = 16
-let debug_laser = false
 
 function rnd(seed) {
 	let seedO = (seed * 9301 + 49297) % 233280 //toxic, don't touch it
@@ -32,7 +31,7 @@ function blockRecipes(inputBlock) {
 	return ""
 }
 function chaosT(subs, seed, event) {
-	if (debug_laser == true) event.server.runCommandSilent("say " + subs + " seed " + seed)
+	if (DEBUG == true) event.server.runCommandSilent("say " + subs + " seed " + seed)
 	let igneous = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone"]
 	let herbal = ["red", "orange", "yellow", "green", "blue", "magenta"]
 	let volatile = ["blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine"]
@@ -42,7 +41,7 @@ function chaosT(subs, seed, event) {
 	let chaos = ["igneous", "herbal", "volatile", "crystal", "metal", "gem"]
 	let allSubstrate = ["andesite", "diorite", "granite", "cobblestone", "basalt", "limestone", "red", "orange", "yellow", "green", "blue", "magenta", "blaze", "slime", "nether", "obsidian", "gunpowder", "prismarine", "zinc", "copper", "iron", "lead", "gold", "sulfur", "certus", "lapis", "emerald", "diamond", "ruby", "sapphire"]
 
-	if (debug_laser == true) event.server.runCommandSilent("say silicon: " + allSubstrate[rand(allSubstrate.length, seed + 114514)] + " silver: " + allSubstrate[rand(allSubstrate.length, seed + 1919810)])
+	if (DEBUG == true) event.server.runCommandSilent("say silicon: " + allSubstrate[rand(allSubstrate.length, seed + 114514)] + " silver: " + allSubstrate[rand(allSubstrate.length, seed + 1919810)])
 
 	if (subs == select(chaos, seed).sort().toString()) return "chaos"
 	if (subs == select(igneous, seed).sort().toString()) return "igneous"
@@ -89,7 +88,7 @@ function process_laser(event) {
 			let blockZ = targetBlock.z
 
 			if (targetBlock.id.startsWith(asIdentifier("substrate_"))) {
-				if (debug_laser == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replace(asIdentifier("substrate_", ""))}`)
+				if (DEBUG == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replace(asIdentifier("substrate_", ""))}`)
 				substrateList.push(targetBlock.id.replace(asIdentifier("substrate_", "")))
 				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
 				if (targetBlock.id == asIdentifier("substrate_chaos")) dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:asIdentifier("substrate_chaos",Count:1b}}`)
@@ -105,7 +104,7 @@ function process_laser(event) {
 				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} ${outputBlock}`)
 			}
 		}
-		if (debug_laser == true) event.server.runCommandSilent("say " + substrateList.toString() + " seed " + seedL)
+		if (DEBUG == true) event.server.runCommandSilent("say " + substrateList.toString() + " seed " + seedL)
 
 		let unifiedSubstrates = substrateList.sort().toString()
 		let outputChaos = chaosT(unifiedSubstrates, seedL, event)
