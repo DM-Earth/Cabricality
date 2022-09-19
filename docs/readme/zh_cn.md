@@ -1,6 +1,8 @@
 
 <h4 align="center"> <sup> 为获得最佳游戏体验，请手动安装 <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> 模组。 </sup> <br> </br> </h4>
 
+<h4 align="center"> <sup> 若遇到问题，请随时查看 <a href="https://github.com/DM-Earth/Cabricality/wiki"> 永无止境：重缝 Wiki。 </a></sup></h4>
+
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 <h1 align="center"> 永无止境：重缝 </h1>
 

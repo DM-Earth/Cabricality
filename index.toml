@@ -1957,6 +1957,26 @@ file = "config/splasher/splasher.properties"
 hash = "56602e7351c7d343f2d569c5517aad3c5225f611d5896e63949768f77ab5c5d8"
 
 [[files]]
+file = "docs/faq/en_us.md"
+hash = "370309c5aceb408a68d1952936abd8d78a651e4664ac5d08c4c5cecf0eeea717"
+
+[[files]]
+file = "docs/faq/zh_cn.md"
+hash = "604552d5b617e2d8884d0a85905f7a48d9dba4cdf1e4879c2f5b2d395082e983"
+
+[[files]]
+file = "docs/index/en_us.md"
+hash = "335d90561044a68dee3a30da01b471b6ff3ef66e88f33c53dec3fc1bdf7823af"
+
+[[files]]
+file = "docs/index/zh_cn.md"
+hash = "e1f5c8c2b7f081bc1152e96ef8b6e5256c15f1014e9d4db2bdfd96568444523d"
+
+[[files]]
+file = "docs/readme/zh_cn.md"
+hash = "57261ed7b61368cc89e440bac21bb7f8cdd2f20259e47a5f1c2b17b9f73f4629"
+
+[[files]]
 file = "icon.png"
 hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
 
@@ -2722,7 +2742,7 @@ hash = "c723ddd121624370fafa0acbdb81adb565a09d73142d18f9717ab84f73570640"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/sequenced_assembly/infernal_mechanism.json"
-hash = "42eb4a246a64910c6a35b9310624f77f23694a1196fac07839c825c8d21bf7ce"
+hash = "ad65a05c544e5cde1a58354d6de94e0e7e83a9deaf471f53648e0459d64b8cc9"
 
 [[files]]
 file = "kubejs/data/cabricality/recipes/sequenced_assembly/precision_mechanism.json"
@@ -4446,15 +4466,15 @@ hash = "74c69d9e1181030f3a68028c653bda713c1b60dd3e04b71dd57cba8bcecb66a4"
 
 [[files]]
 file = "kubejs/server_scripts/cabricality.js"
-hash = "f04ff27b016e01c76b8b0e06424b3135908550f1724d3c6f4811a4c81e741eea"
+hash = "19e2da3547dd56a77c074209efcf6b82ad4af346f63d54c6f51aeb679c92407f"
 
 [[files]]
 file = "kubejs/server_scripts/machine/extractor.js"
-hash = "b4a96c36b272910c822720ac334e44f32afd285e792e8676dfd80504965b0efb"
+hash = "4e03e85a2a721e7c072f83c4856ee1ada490bdbeeeb67cd6ca70fdd6b256a9b6"
 
 [[files]]
 file = "kubejs/server_scripts/machine/laser.js"
-hash = "dbafcf57e0faf171a56e29620e7570ccadc8632840f4932e4a1cb291556353e7"
+hash = "1de92a8f64a1ab4b220e2642df908c4eedf59a7bcf4cce761a3e4c1033185694"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_engine.js"
@@ -4462,7 +4482,7 @@ hash = "84420b9b457542f6c3c6c99757408bfd32bba4f418380c91813e944fd7d93b6e"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_tank.js"
-hash = "e0c4f81cc7b5b260b33d01e39a20c116afe9da9e68f842c8e9b1af1e56f188a8"
+hash = "500844e60f612232cbc56ff21fbc3931c65ea4c6daa89b2056cfdd5f9da7260e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/recipe.js"
@@ -4518,15 +4538,15 @@ hash = "bcb62f5c747132641f0dcb45f9d304c74b9f0e1c4a2499a562f4e04ef6ed2ab2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
-hash = "640f542edd8c83f9b9b937f932d64cb236af7260f96b9ec5dee31c87d3fc44b4"
+hash = "eeb70949155d74056c66eb3f85db20579adde896b9619b0982d38fae459c8af6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/cutting.js"
-hash = "2acce9241752e88fba4fa16cfe8bb2d821d3ad6ffb8d834fbd71fb08c276c33c"
+hash = "0662f62eafad4f639a4184f88521d3edcbd6e9e792e93506c1b31ba0a092dee5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
-hash = "bcfe861a8714972b6927b332c7fe05f739fa5302cb8a950bac63744a93e6cb6f"
+hash = "ebcf5feff03543db6091b748bb23e095756ca45f7f93c620de0a52e2329a3463"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ore_processing.js"
@@ -4542,11 +4562,11 @@ hash = "0ea01690637786f78a7b75abc3a07669d5e1000f86b41f5b804093611f3779e8"
 
 [[files]]
 file = "kubejs/server_scripts/tags/tags.js"
-hash = "b9070aa513c2af121f629de6a6703ca2cdc06fe57e6a90e836f7c2bc5a557629"
+hash = "504e0d2437106cc2e6114752255d3935760efac7893790604faa24c9f78a298c"
 
 [[files]]
 file = "kubejs/startup_scripts/cabricality.js"
-hash = "8d13d678996389757bd8d087d273a19695b27860e4350dc6fa8363c124510444"
+hash = "2a5ed82b234b322e40d69914946e808eb3931970ccfb658adaeca0ebdc6e3f8b"
 
 [[files]]
 file = "kubejs/startup_scripts/launch.js"
@@ -4555,6 +4575,10 @@ hash = "1351700f37a091a8bfe4c1c23322bb3727ea19511046112699824431e3676631"
 [[files]]
 file = "kubejs/startup_scripts/substrates.js"
 hash = "862630a81bc2dfce9d5adf51c91153e1d7e82f1506847abebca8e92d3ad5dfc3"
+
+[[files]]
+file = "kubejs/startup_scripts/test.js"
+hash = "334bdfc5e6506e0b05dedc391cef5162003df3588017829f6a3c81297b38ab0b"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"

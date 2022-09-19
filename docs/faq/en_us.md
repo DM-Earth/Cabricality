@@ -16,3 +16,14 @@ This is a KubeJS issue, so it can't be fixed at our side. Restart Minecraft clie
 ### Can't transfer items and fluids within machines from Indrev mod
 
 Use the target machine with a `Screwdriver` to configure its input and output faces.
+
+### Can't view Infernal Mechanism's recipe
+
+It's a `Sequenced Assembly` recipe and need 2 steps of `Filling` recipe so REI can't display it.
+
+These steps are:
+
+- `167mB / 13500dP` of `Liquid Soul`,
+- `1000mB / 81000dP` of `Lava`;
+
+And repeat them for 3 times.
