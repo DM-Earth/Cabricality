@@ -24,7 +24,8 @@ function check_structure_tank(event, material, modid) {
     if (bottom_block.offset(Direction.UP, tank_height + 1).id != modid + ":" + material + "_plating") return_boolean = false
   })
   for (let i = 1; i < tank_height; i++) {
-    if (!block.offset(Direction.UP, i).hasTag(asIdentifier("rocket_fuel"))) return_boolean = false
+    let fuelBlock = block.offset(Direction.UP, i)
+    if (!fuelBlock.hasTag(asIdentifier("rocket_fuel")) || !fuelBlock.getBlockState().toString().includes("[level=0]")) return_boolean = false
   }
   if (block.offset(Direction.UP, tank_height + 1).id != modid + ":" + material + "_block") return_boolean = false
   return return_boolean
