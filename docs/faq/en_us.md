@@ -13,17 +13,6 @@
 ### Some items from KubeJS have missing textures
 This is a KubeJS issue, so it can't be fixed at our side. Restart Minecraft client may work.
 
-### Can't view Infernal Mechanism's recipe
-
-It's a `Sequenced Assemble` recipe and need 4 steps of `Filling` recipe so REI can't display it.
-
-These steps are:
-
-- `1000mB / 81000dP` of `Liquid Soul`,
-- `1000mB / 81000dP` of `Lava`,
-- `1000mB / 81000dP` of `Lava`,
-- `1000mB / 81000dP` of `Lava`.
-
 ### Can't transfer items and fluids within machines from Indrev mod
 
 Use the target machine with a `Screwdriver` to configure its input and output faces.

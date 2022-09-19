@@ -15,8 +15,7 @@
         },
         {
           "fluid": "tconstruct:liquid_soul",
-          
-          "amount": 40500
+          "amount": 13500
         }
       ],
       "results": [
@@ -33,43 +32,6 @@
         },
         {
           "fluid": "minecraft:lava",
-          
-          "amount": 81000
-        }
-      ],
-      "results": [
-        {
-          "item": "cabricality:incomplete_infernal_mechanism"
-        }
-      ]
-    },
-    {
-      "type": "create:filling",
-      "ingredients": [
-        {
-          "item": "cabricality:incomplete_infernal_mechanism"
-        },
-        {
-          "fluid": "minecraft:lava",
-          
-          "amount": 81000
-        }
-      ],
-      "results": [
-        {
-          "item": "cabricality:incomplete_infernal_mechanism"
-        }
-      ]
-    },
-    {
-      "type": "create:filling",
-      "ingredients": [
-        {
-          "item": "cabricality:incomplete_infernal_mechanism"
-        },
-        {
-          "fluid": "minecraft:lava",
-          
           "amount": 81000
         }
       ],
@@ -86,5 +48,5 @@
       "chance": 1
     }
   ],
-  "loops": 1
+  "loops": 3
 }
