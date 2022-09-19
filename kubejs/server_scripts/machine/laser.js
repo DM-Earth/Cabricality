@@ -1,5 +1,4 @@
-let outputItem = ""
-let length = 16
+let laser_length = 16
 
 function rnd(seed) {
 	let seedO = (seed * 9301 + 49297) % 233280 //toxic, don't touch it
@@ -80,7 +79,7 @@ function process_laser(event) {
 
 		let substrateList = []
 
-		for (let i = 1; i <= length; i++) {
+		for (let i = 1; i <= laser_length; i++) {
 			if (i < 6) continue
 			let targetBlock = block.down.offset(facing, i)
 			let blockX = targetBlock.x
@@ -88,10 +87,11 @@ function process_laser(event) {
 			let blockZ = targetBlock.z
 
 			if (targetBlock.id.startsWith(asIdentifier("substrate_"))) {
-				if (DEBUG == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replace(asIdentifier("substrate_", ""))}`)
-				substrateList.push(targetBlock.id.replace(asIdentifier("substrate_", "")))
+				if (DEBUG == true) dimensional_commanding(event.server, targetBlock.dimension, `say ${targetBlock.id.replaceAll("cabricality:substrate_", "")}`)
+				substrateList.push(targetBlock.id.replaceAll("cabricality:substrate_", ""))
 				dimensional_commanding(event.server, targetBlock.dimension, `setblock ${blockX} ${blockY} ${blockZ} minecraft:air`)
-				if (targetBlock.id == asIdentifier("substrate_chaos")) dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:asIdentifier("substrate_chaos",Count:1b}}`)
+				let output = asIdentifier("substrate_chaos")
+				if (targetBlock.id == asIdentifier("substrate_chaos")) dimensional_commanding(event.server, targetBlock.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"${output}",Count:1b}}`)
 			}
 
 			let outputItem = itemRecipes(targetBlock.id)
@@ -109,11 +109,11 @@ function process_laser(event) {
 		let unifiedSubstrates = substrateList.sort().toString()
 		let outputChaos = chaosT(unifiedSubstrates, seedL, event)
 		if (outputChaos != "") {
-			//		event.server.runCommandSilent("summon minecraft:item " + x + " " + yUp + " " + z + " {Health:32767, Item:{id:\asIdentifier("substrate_" + outputChaos + "\",Count:1b}}")
-			dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:asIdentifier("substrate_${outputChaos}",Count:1b}}`)
+			let output = asIdentifier("substrate_" + outputChaos)
+			dimensional_commanding(event.server, event.block.dimension, `summon minecraft:item ${x} ${yUp} ${z} {Health:32767, Item:{id:"${output}",Count:1b}}`)
 		}
 
-		for (let i = length; i >= 1; i = i - 1) {
+		for (let i = laser_length; i >= 1; i = i - 1) {
 			let targetBlock = block.down.offset(facing, i)
 			let explosion = targetBlock.createExplosion();
 			if (i >= 6) {
