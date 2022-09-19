@@ -339,7 +339,7 @@
 
 
 
-	"welcome.cabricality.title": "&8 Welcome",
+	"welcome.cabricality.title": "&8  Welcome",
 
 	"welcome.cabricality.limitless.title"   : "&f&lLimitless Potential",
 	"welcome.cabricality.limitless.subtitle": "Be a Good Traveller",
@@ -1269,7 +1269,7 @@
 
   
   
-	"metallurgy.cabricality.title": "> Metallurgy",
+	"metallurgy.cabricality.title": "&8> Metallurgy",
   
 	"metallurgy.cabricality.start.title"   : "Build-a-Processing:",
 	"metallurgy.cabricality.start.subtitle": "",
@@ -1354,7 +1354,7 @@
   
   
   
-	"thanks.cabricality.title": "&8 Special Thanks",
+	"thanks.cabricality.title": "&8  Special Thanks",
   
 	"thanks.cabricality.staff.title"   : "&cThanks &afor &bplaying&f!",
 	"thanks.cabricality.staff.subtitle": "Staff",
