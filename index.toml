@@ -22,7 +22,7 @@ hash = "27b2ea2946ca5b00841ce7d1813b42dfb7e36b12ad50c7c9bea09053ac226cf3"
 
 [[files]]
 file = "config/customsplashscreen/mojank.png"
-hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
+hash = "bb2080abef56e6ec5ab6bd4576e9e3dc7e15817410e02051553475f4cd3fcd8d"
 
 [[files]]
 file = "config/customsplashscreen/progressbar.png"
@@ -122,11 +122,11 @@ hash = "97c64147276f55cad728249dd77602661e2327fa178aeb8e0db12866df448211"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/en_us.json"
-hash = "066ee91ef73e63b1ff27b056604179edd8d26dac691e8f2764a0d5f26b28b397"
+hash = "8b698f07809f501f2e97d896f735f5846e723f28bc695a0b6c93311676a97211"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/zh_cn.json"
-hash = "1b4da214c80b14fb8ee72fcc6ebfb8e612bac880312a1868207b46252f46651f"
+hash = "c34c0b06cd963acbd0a0dab30d515ed290f069feb35549b2e72ebd323db9984c"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/accelerator.json"
@@ -1958,11 +1958,11 @@ hash = "56602e7351c7d343f2d569c5517aad3c5225f611d5896e63949768f77ab5c5d8"
 
 [[files]]
 file = "docs/faq/en_us.md"
-hash = "370309c5aceb408a68d1952936abd8d78a651e4664ac5d08c4c5cecf0eeea717"
+hash = "9dc88ba758cce3e196c162adb485ab353632916bdd73a8214056c59c44901d41"
 
 [[files]]
 file = "docs/faq/zh_cn.md"
-hash = "604552d5b617e2d8884d0a85905f7a48d9dba4cdf1e4879c2f5b2d395082e983"
+hash = "0738305f15744ce14d8e1587890713d1deeb8a5d4ebd7f449081b849b74bd5fe"
 
 [[files]]
 file = "docs/index/en_us.md"
@@ -1974,7 +1974,7 @@ hash = "e1f5c8c2b7f081bc1152e96ef8b6e5256c15f1014e9d4db2bdfd96568444523d"
 
 [[files]]
 file = "docs/readme/zh_cn.md"
-hash = "57261ed7b61368cc89e440bac21bb7f8cdd2f20259e47a5f1c2b17b9f73f4629"
+hash = "fa0a48b0771c0431115cb054133c011406e8d5f88d62dfce56e59eb300648c55"
 
 [[files]]
 file = "icon.png"
@@ -4959,7 +4959,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrestria.pw.toml"
-hash = "a4dce23b26046b0cd59801aca7711e1eb4c0c3a58352c0fa90c9167e59363e83"
+hash = "27ab9a18f3f6c417bcc728888bbcc5208fd66af29d7a0bfa181b58364c9c19ef"
 metafile = true
 
 [[files]]
