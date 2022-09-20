@@ -1271,86 +1271,86 @@
 	
 	"metallurgy.cabricality.title": "&8▶ 科学冶金",
 	
-	"metallurgy.cabricality.start.title"   : "Build-a-Processing:",
+	"metallurgy.cabricality.start.title"   : "流水线",
 	"metallurgy.cabricality.start.subtitle": "",
-	"metallurgy.cabricality.start.content" : "A simple Overview of most options to process your way from Ore to Ingot.\n\nFor every path through this graph, the effective yield per ore can be estimated by multiplying the ratio of each included step.",
+	"metallurgy.cabricality.start.content" : "这里列举了一些能够把原矿冶炼成金属锭的流水线生产方式。\n\n对于这张流程图里的每一条路线来说，原矿的有效产值就是先前所有步骤中比率的乘积。",
 	
-	"metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.start.task.checkmark.title": "成为冶金学者",
 	
-	"metallurgy.cabricality.pickaxe.title"   : "Mining Tool",
-	"metallurgy.cabricality.pickaxe.subtitle": "1 -> 1",
+	"metallurgy.cabricality.pickaxe.title"   : "徒手挖掘",
+	"metallurgy.cabricality.pickaxe.subtitle": "&71 → &81",
 	
-	"metallurgy.cabricality.pickaxe.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.pickaxe.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.fortune_pickaxe.title"   : "Fortune",
-	"metallurgy.cabricality.fortune_pickaxe.subtitle": "1 -> 1 ~ 2",
+	"metallurgy.cabricality.fortune_pickaxe.title"   : "时运",
+	"metallurgy.cabricality.fortune_pickaxe.subtitle": "&71 → &81 ~ 2",
 	
-	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.i.title": "&f&lI&r Crushed",
+	"metallurgy.cabricality.i.title": "&f&lI&r 粉碎矿石",
 	
-	"metallurgy.cabricality.i.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.task.checkmark.title": "下一步",
 	
-	"metallurgy.cabricality.i.smelting.title"   : "Smelting",
-	"metallurgy.cabricality.i.smelting.subtitle": "1 -> 3",
+	"metallurgy.cabricality.i.smelting.title"   : "熔炼",
+	"metallurgy.cabricality.i.smelting.subtitle": "&71 → &83",
 	
-	"metallurgy.cabricality.i.smelting.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.smelting.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.i.pulverizing.title"   : "Pulverizing",
-	"metallurgy.cabricality.i.pulverizing.subtitle": "1 -> 6",
+	"metallurgy.cabricality.i.pulverizing.title"   : "热解",
+	"metallurgy.cabricality.i.pulverizing.subtitle": "&71 → &86",
 	
-	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.i.milling.title"   : "Milling",
-	"metallurgy.cabricality.i.milling.subtitle": "1 -> 3",
+	"metallurgy.cabricality.i.milling.title"   : "磨粉",
+	"metallurgy.cabricality.i.milling.subtitle": "&71 → &83",
 	
-	"metallurgy.cabricality.i.milling.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.milling.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.i.crushing.title"   : "Crushing",
-	"metallurgy.cabricality.i.crushing.subtitle": "1 -> 3 ~ 6",
+	"metallurgy.cabricality.i.crushing.title"   : "粉碎",
+	"metallurgy.cabricality.i.crushing.subtitle": "&71 → &83 ~ 6",
 	
-	"metallurgy.cabricality.i.crushing.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.crushing.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.ii.title": "&f&lII&r Dust",
+	"metallurgy.cabricality.ii.title": "&f&lII&r 矿粉",
 	
-	"metallurgy.cabricality.ii.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.task.checkmark.title": "下一步",
 	
-	"metallurgy.cabricality.ii.blocking.title"   : "Block Cooling \\& Smelting",
-	"metallurgy.cabricality.ii.blocking.subtitle": "9 -> 1",
+	"metallurgy.cabricality.ii.blocking.title"   : "融铸\\&冷却成块",
+	"metallurgy.cabricality.ii.blocking.subtitle": "&79 → &81",
 	
-	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.ii.smelting.title"   : "Smelting Dust",
-	"metallurgy.cabricality.ii.smelting.subtitle": "1 -> 1",
+	"metallurgy.cabricality.ii.smelting.title"   : "再次熔炼",
+	"metallurgy.cabricality.ii.smelting.subtitle": "&71 → &81",
 	
-	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.ii.melting.title"   : "Melting",
-	"metallurgy.cabricality.ii.melting.subtitle": "1 -> 3",
+	"metallurgy.cabricality.ii.melting.title"   : "熔融",
+	"metallurgy.cabricality.ii.melting.subtitle": "&71 → &83",
 	
-	"metallurgy.cabricality.ii.melting.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.melting.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.ii.washing.title"   : "Washing",
-	"metallurgy.cabricality.ii.washing.subtitle": "1 -> 2",
+	"metallurgy.cabricality.ii.washing.title"   : "洗涤",
+	"metallurgy.cabricality.ii.washing.subtitle": "&71 → &82",
 	
-	"metallurgy.cabricality.ii.washing.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.washing.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.iiia.title": "&f&lIIIa&r Nugget",
+	"metallurgy.cabricality.iiia.title": "&f&lIIIa&r 金属粒",
 	
-	"metallurgy.cabricality.iiia.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.iiia.task.checkmark.title": "下一步",
 	
-	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&r Liquid",
-	"metallurgy.cabricality.iiib.subtitle": "[in Nuggets]",
+	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&r 液态金属",
+	"metallurgy.cabricality.iiib.subtitle": "[单位：粒]",
 	
-	"metallurgy.cabricality.iiib.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.iiib.task.checkmark.title": "下一步",
 	
-	"metallurgy.cabricality.iii.compacting.title": "Compacting by Press",
+	"metallurgy.cabricality.iii.compacting.title": "压制",
 	
-	"metallurgy.cabricality.iii.compacting.task.checkmark.title": "Compacting by Press",
+	"metallurgy.cabricality.iii.compacting.task.checkmark.title": "使用&6动力辊压机&r压制金属",
 	
-	"metallurgy.cabricality.iv.title": "&f&lIV&r Ingot",
+	"metallurgy.cabricality.iv.title": "&f&lIV&r 金属锭",
 	
-	"metallurgy.cabricality.iv.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.iv.task.checkmark.title": "完成",
 	
 	
 	
