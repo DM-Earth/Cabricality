@@ -1278,12 +1278,12 @@
 	"metallurgy.cabricality.start.task.checkmark.title": "成为冶金学者",
 	
 	"metallurgy.cabricality.pickaxe.title"   : "徒手挖掘",
-	"metallurgy.cabricality.pickaxe.subtitle": "&71 → &81",
+	"metallurgy.cabricality.pickaxe.subtitle": "&81 → &71",
 	
 	"metallurgy.cabricality.pickaxe.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.fortune_pickaxe.title"   : "时运",
-	"metallurgy.cabricality.fortune_pickaxe.subtitle": "&71 → &81 ~ 2",
+	"metallurgy.cabricality.fortune_pickaxe.subtitle": "&81 → &71 ~ 2",
 	
 	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "完成",
 	
@@ -1292,22 +1292,22 @@
 	"metallurgy.cabricality.i.task.checkmark.title": "下一步",
 	
 	"metallurgy.cabricality.i.smelting.title"   : "熔炼",
-	"metallurgy.cabricality.i.smelting.subtitle": "&71 → &83",
+	"metallurgy.cabricality.i.smelting.subtitle": "&81 → &73",
 	
 	"metallurgy.cabricality.i.smelting.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.i.pulverizing.title"   : "热解",
-	"metallurgy.cabricality.i.pulverizing.subtitle": "&71 → &86",
+	"metallurgy.cabricality.i.pulverizing.subtitle": "&81 → &76",
 	
 	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.i.milling.title"   : "磨粉",
-	"metallurgy.cabricality.i.milling.subtitle": "&71 → &83",
+	"metallurgy.cabricality.i.milling.subtitle": "&81 → &73",
 	
 	"metallurgy.cabricality.i.milling.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.i.crushing.title"   : "粉碎",
-	"metallurgy.cabricality.i.crushing.subtitle": "&71 → &83 ~ 6",
+	"metallurgy.cabricality.i.crushing.subtitle": "&81 → &73 ~ 6",
 	
 	"metallurgy.cabricality.i.crushing.task.checkmark.title": "完成",
 	
@@ -1316,22 +1316,22 @@
 	"metallurgy.cabricality.ii.task.checkmark.title": "下一步",
 	
 	"metallurgy.cabricality.ii.blocking.title"   : "融铸\\&冷却成块",
-	"metallurgy.cabricality.ii.blocking.subtitle": "&79 → &81",
+	"metallurgy.cabricality.ii.blocking.subtitle": "&89 → &71",
 	
 	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.ii.smelting.title"   : "再次熔炼",
-	"metallurgy.cabricality.ii.smelting.subtitle": "&71 → &81",
+	"metallurgy.cabricality.ii.smelting.subtitle": "&81 → &71",
 	
 	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.ii.melting.title"   : "熔融",
-	"metallurgy.cabricality.ii.melting.subtitle": "&71 → &83",
+	"metallurgy.cabricality.ii.melting.subtitle": "&81 → &73",
 	
 	"metallurgy.cabricality.ii.melting.task.checkmark.title": "完成",
 	
 	"metallurgy.cabricality.ii.washing.title"   : "洗涤",
-	"metallurgy.cabricality.ii.washing.subtitle": "&71 → &82",
+	"metallurgy.cabricality.ii.washing.subtitle": "&81 → &72",
 	
 	"metallurgy.cabricality.ii.washing.task.checkmark.title": "完成",
 	

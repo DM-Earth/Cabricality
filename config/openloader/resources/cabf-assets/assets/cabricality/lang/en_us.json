@@ -1278,12 +1278,12 @@
 	"metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.pickaxe.title"   : "Mining Tool",
-	"metallurgy.cabricality.pickaxe.subtitle": "1 -> 1",
+	"metallurgy.cabricality.pickaxe.subtitle": "&81 → &71",
 	
 	"metallurgy.cabricality.pickaxe.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.fortune_pickaxe.title"   : "Fortune",
-	"metallurgy.cabricality.fortune_pickaxe.subtitle": "1 -> 1 ~ 2",
+	"metallurgy.cabricality.fortune_pickaxe.subtitle": "&81 → &71 ~ 2",
 	
 	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "Checkmark",
   
@@ -1292,22 +1292,22 @@
 	"metallurgy.cabricality.i.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.i.smelting.title"   : "Smelting",
-	"metallurgy.cabricality.i.smelting.subtitle": "1 -> 3",
+	"metallurgy.cabricality.i.smelting.subtitle": "&81 → &73",
 	
 	"metallurgy.cabricality.i.smelting.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.i.pulverizing.title"   : "Pulverizing",
-	"metallurgy.cabricality.i.pulverizing.subtitle": "1 -> 6",
+	"metallurgy.cabricality.i.pulverizing.subtitle": "&81 → &76",
 	
 	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.i.milling.title"   : "Milling",
-	"metallurgy.cabricality.i.milling.subtitle": "1 -> 3",
+	"metallurgy.cabricality.i.milling.subtitle": "&81 → &73",
 	
 	"metallurgy.cabricality.i.milling.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.i.crushing.title"   : "Crushing",
-	"metallurgy.cabricality.i.crushing.subtitle": "1 -> 3 ~ 6",
+	"metallurgy.cabricality.i.crushing.subtitle": "&81 → &73 ~ 6",
 	
 	"metallurgy.cabricality.i.crushing.task.checkmark.title": "Checkmark",
   
@@ -1316,22 +1316,22 @@
 	"metallurgy.cabricality.ii.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.ii.blocking.title"   : "Block Cooling \\& Smelting",
-	"metallurgy.cabricality.ii.blocking.subtitle": "9 -> 1",
+	"metallurgy.cabricality.ii.blocking.subtitle": "&89 → &71",
 	
 	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.ii.smelting.title"   : "Smelting Dust",
-	"metallurgy.cabricality.ii.smelting.subtitle": "1 -> 1",
+	"metallurgy.cabricality.ii.smelting.subtitle": "&81 → &71",
 	
 	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.ii.melting.title"   : "Melting",
-	"metallurgy.cabricality.ii.melting.subtitle": "1 -> 3",
+	"metallurgy.cabricality.ii.melting.subtitle": "&81 → &73",
 	
 	"metallurgy.cabricality.ii.melting.task.checkmark.title": "Checkmark",
   
 	"metallurgy.cabricality.ii.washing.title"   : "Washing",
-	"metallurgy.cabricality.ii.washing.subtitle": "1 -> 2",
+	"metallurgy.cabricality.ii.washing.subtitle": "&81 → &72",
 	
 	"metallurgy.cabricality.ii.washing.task.checkmark.title": "Checkmark",
   
