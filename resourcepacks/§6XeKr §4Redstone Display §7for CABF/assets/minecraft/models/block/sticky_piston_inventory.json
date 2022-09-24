@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "bottom": "block/piston_bottom_sticky",
-        "side": "block/piston_side_sticky",
-        "top": "block/piston_top_sticky"
-    }
-}

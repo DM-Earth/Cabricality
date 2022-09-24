@@ -1,8 +1,0 @@
-{
-    "parent": "block/dropper_vertical",
-    "textures": {
-        "bottom": "block/dispenser_bottom_on",
-        "top": "block/dispenser_front_vertical_on",
-        "side": "block/dispenser_top_on"
-    }
-}
