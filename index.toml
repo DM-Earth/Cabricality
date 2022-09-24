@@ -913,62 +913,6 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/de
 hash = "863bdf9108ae21066ab4a13111eae56f6f14657fc5e853fec314dbaa94e63f13"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag.png"
-hash = "be1add76bdd1c0d573f27f9083faf09abb06ead53c5d2c2c2871c5df5fa9c723"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_blue.png"
-hash = "cb7bccdf20815d08db25d653dfc182f47060782d9da9d0e8e291c7d0ce337e6a"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_brown.png"
-hash = "06b22b6465c3e8f226ca1cbfde0802537d26758ea275f969866d53e717a51db1"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_cyan.png"
-hash = "2a624ea9d30361a7b455fd72a6883b45e5f9b350334f44a203d5412141b51e74"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_gray.png"
-hash = "14add9ca6d74be59a43a9edb37d316911e8c820716576938f3df6772351b2201"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_green.png"
-hash = "b25971ad88ea1b44bb84cfdcce97387d762f74b4fb9d82072f71be6bbe6a0542"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_light_blue.png"
-hash = "fc47ee179cd1d86a5f8511b78294f0ac49287571271eec9116151dc942e7f1cf"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_lime.png"
-hash = "766dc3cd95b679110faa21ec0132e17c97be85d2a26ade10b71feba27ed12012"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_magenta.png"
-hash = "85ec6cca78afd9de513feea5a0d2a11a0f1a6146222b60a85dcb4e04aaad86c7"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_orange.png"
-hash = "f962227fa85b8a0d617c8c258a9e66d5701988f25e8af068f8e6577da36756ca"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_pink.png"
-hash = "6d993933e98ce5a22e6a4aa182f5484f7a84d00636858991504d542fa05750a0"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_purple.png"
-hash = "1bc150632f7d47f3384df6110f665566ae9299b4556feb1bff9d09776a7339f7"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_red.png"
-hash = "fa64e0c37c934c4d8056f50e5116c6e556e36cdc02366f62f5de5f847a35ef26"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/flags/flag_yellow.png"
-hash = "87dfce419a6d37a920df072333859be656fc3e345e79969e014f2dcdc5561202"
-
-[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/glacio_pillar.png"
 hash = "0bbcb90f9ca96616412963d37c7b2cd3b4be1868bd4c7cdcd110768345ac5c67"
 
@@ -4442,8 +4386,9 @@ file = "mods/blahaj-quilt-1.18-0.2.0.jar"
 hash = "b807524384153e33ec9c4ec793c0822b19654259813b15db65e745cf58376c77"
 
 [[files]]
-file = "mods/cabricality-utils-0.1-alpha1-build1.jar"
-hash = "880b9a6cc2c74ed10a66ed48e0db338537bb9c6b0c53a15ed9eb7d979f544009"
+file = "mods/cabricality-utils.pw.toml"
+hash = "5ba1200ad983afaa0d3a20ef922c3291e0c8b88f9a82780a3ed659dcbf2cc38c"
+metafile = true
 
 [[files]]
 file = "mods/campanion.pw.toml"
