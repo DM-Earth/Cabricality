@@ -4,6 +4,8 @@
 <h4 align="center"> <sup> Please check <a href="https://github.com/DM-Earth/Cabricality/wiki"> Cabricality Wiki </a> when you have any problems.</sup></h4>
 
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
+<div align="center"> <img src="https://img.shields.io/modrinth/dt/cabricality" width = 100 alt="Modrinth Downloads"> </div>
+
 <h1 align="center"> Cabricality </h1>
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
