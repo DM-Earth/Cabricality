@@ -351,7 +351,7 @@
 			rewards: [{
 				id: "6C78DDBF35C5FA73"
 				type: "item"
-				item: "explorerscompass:explorerscompass"
+				item: "structures_compass:structures_compass"
 			}]
 		}
 		{

@@ -46,7 +46,7 @@ hash = "133e75dec24ce238fb73ebc82fc09b266b07754d746886f40ebd4af61c02344a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "8d67aa446aea05d1bba54d00b8a04c397eb683e17226d5e8f5097d1ebe9abb80"
+hash = "e6608e3e914176018ab8d9b26fe34c2e8cb06b822bd99f1e79d3e857e77edf11"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
@@ -103,14 +103,6 @@ hash = "4549a5bf6d2e30fc997325b0321e82bc2db6797cbfa4212c7c4978531755cc81"
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "c0f24436bee0c7f30378d90f0ebf5a5ad10b12440d22e7cfc6863ad10c8851e0"
-
-[[files]]
-file = "config/jade/jade.json"
-hash = "82ef87e244c22b28d8a653785b2b935544c4552cb5039225f54181812c6f594b"
-
-[[files]]
-file = "config/jade/plugins.json"
-hash = "f5ef785107c143aaaab8c94e81ab7d0c1ee2fb507d012a0af859093470414e49"
 
 [[files]]
 file = "config/modmenu.json"
@@ -1723,6 +1715,14 @@ hash = "6aa8f6dc35b598c69c3c47e5834d14de4511f41c1e24cc3fc4e5c6ffcb2c502e"
 [[files]]
 file = "config/splasher/splasher.properties"
 hash = "56602e7351c7d343f2d569c5517aad3c5225f611d5896e63949768f77ab5c5d8"
+
+[[files]]
+file = "config/waila/waila.json"
+hash = "4597fde5d576f236df3cdb1e9049601e766780ca9b245263a0fc0aa886286624"
+
+[[files]]
+file = "config/waila/waila_plugins.json"
+hash = "8f666e774766b366f5aa33845edb80ebaa4dd3b610d76be8308523b01c7dd2e2"
 
 [[files]]
 file = "icon.png"
@@ -4294,7 +4294,7 @@ hash = "0662f62eafad4f639a4184f88521d3edcbd6e9e792e93506c1b31ba0a092dee5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
-hash = "ebcf5feff03543db6091b748bb23e095756ca45f7f93c620de0a52e2329a3463"
+hash = "ae0083c811257da8aa5f3b2f2bd70fa4d97230c6d0e63b7230765044398dd82b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ore_processing.js"
@@ -4374,6 +4374,11 @@ metafile = true
 [[files]]
 file = "mods/bad-wither-no-cookie.pw.toml"
 hash = "930fd68557900540372f08858bf00b7e4ea8c337208258bf2e50179d8b6af1eb"
+metafile = true
+
+[[files]]
+file = "mods/badpackets.pw.toml"
+hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
 metafile = true
 
 [[files]]
@@ -4475,11 +4480,6 @@ hash = "1e3d4b62d2b1224356261ca5f9aece724ed2cc6c8f31c77d64867e6bc173ee9d"
 metafile = true
 
 [[files]]
-file = "mods/explorers-compass.pw.toml"
-hash = "3b02db77305eefa3a10c53fd08337159bfb22774dbf8cd7ee23dffac5627932d"
-metafile = true
-
-[[files]]
 file = "mods/extended-drawers.pw.toml"
 hash = "ba059fdc06289ebe29bbec223347e1967e1735d31d81773d86381090d9576ebf"
 metafile = true
@@ -4532,16 +4532,6 @@ metafile = true
 [[files]]
 file = "mods/item-filters-fabric-1802.2.7-build.33.jar"
 hash = "083f3d25a0489268eb360f9950a16f5636862a28e4f58ebfebcad651e5143456"
-
-[[files]]
-file = "mods/jade-addons-fabric.pw.toml"
-hash = "5730cc90f736b14bc6c6e61ece6713d20ccb77a41b9c0d68f8a05a008ed24ffb"
-metafile = true
-
-[[files]]
-file = "mods/jade.pw.toml"
-hash = "dd1b242d7347a9ca1be3489896524f3615efb8c284640156d871b8662be5fd8e"
-metafile = true
 
 [[files]]
 file = "mods/kibe.pw.toml"
@@ -4707,6 +4697,11 @@ hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
 metafile = true
 
 [[files]]
+file = "mods/structures-compass.pw.toml"
+hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
+metafile = true
+
+[[files]]
 file = "mods/terrestria.pw.toml"
 hash = "27ab9a18f3f6c417bcc728888bbcc5208fd66af29d7a0bfa181b58364c9c19ef"
 metafile = true
@@ -4714,6 +4709,11 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "49f5590e6160266691eaca6948b33a3a2763e590ed4bcf90189f13650066c84e"
+metafile = true
+
+[[files]]
+file = "mods/wthit.pw.toml"
+hash = "d51ce9092dd3eea3016cf6ebad6624cb3a6fb7a13b22571abd9f702da53d6cdd"
 metafile = true
 
 [[files]]
