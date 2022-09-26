@@ -789,66 +789,6 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/custom/wat
 hash = "51f533e18bfa1b1020d2774cc5f0812e7b5fa9ca3e94120f7ad10e8357c1272b"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag.json"
-hash = "d52dae28d3f79a3d59abed31d69e4a190434a0ddbd2151625a2aa4d759d75504"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_blue.json"
-hash = "adee8fb4393b4d9473faaf112e25192f74b9abf8bd52b5ac2b12d8f36cd17f91"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_brown.json"
-hash = "c0bd1337f25a0181ce0b794e913b777769d81347f1e512f7ad2e2e3dce0b5dbf"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_cyan.json"
-hash = "e18f952d54d9c7fc2c70c96ceec49e06d1be56e42c85877328c5eb5e002275cc"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_gray.json"
-hash = "b1c7d73bfdc577a63950b096635ef5e7ed3516e83e4e876e8fd03476f3e58030"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_green.json"
-hash = "8fbe7a9d772bf988b493520aafb1b36d359dae29b56785bf0b72379ef0bb6585"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_light_blue.json"
-hash = "48a21c6899184894a2cf1ad325d2247690e29584cef92daa974e0bd785382505"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_lime.json"
-hash = "41c6df85760b70ca6e9d5bcaff71551a18241fd6e0c465f77dfbfcd643ab4dd3"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_magenta.json"
-hash = "10ae254bc86a9f0467769a094f9b736013ef2be2a9ea91368dd32f8f6bc5c75d"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_orange.json"
-hash = "986c63f18150210ff808a7478e2882c90803a4213ee0d95a57e108fe26df6d35"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_pink.json"
-hash = "8dc74ef4cde1e0f785fe585ddb3cf1f7dae462727c438a9db7ff76c1a0eadcdc"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_purple.json"
-hash = "9fa1105e5eb3ed98027950a9b62c146b4c353ecb0b6fdde4fbb975e108910206"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_red.json"
-hash = "a67123dc81ca88c6c97e130610d585f9d47ee0a59577680672e7ea5b62644d55"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/flag_yellow.json"
-hash = "7c68a5b78833dbc4413e810e16a8947dd364af46853dddddebade1f25654ce37"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/item/rocket_launch_pad.json"
-hash = "fdf74c9cd728800d4c3867ea45cd39c4fe5596e8c651568f8c2b19ce6ba42241"
-
-[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/cable/desh_cable.png"
 hash = "778edb6123db067bea7b3624af8104842d2daa9cfc67c3ff98aff802202babb2"
 
@@ -4486,7 +4426,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "4559f01f8da539982476e058019d8e9b7906f3d9b84f06652b9687cee648515f"
+hash = "76f23e3c7d290c587085b22f59e06160a38593d73859cbb4a4738d1fa2fade4d"
 metafile = true
 
 [[files]]
@@ -4522,6 +4462,11 @@ metafile = true
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
 hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
+metafile = true
+
+[[files]]
+file = "mods/iris-flywheel-compat.pw.toml"
+hash = "9085b5ffe7dd1663966e6ffbb4495f2feaabe9d970d9a863d8dc0be129444bc0"
 metafile = true
 
 [[files]]
