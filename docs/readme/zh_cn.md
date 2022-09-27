@@ -1,11 +1,9 @@
 
 <h4 align="center"> <sup> 为获得最佳游戏体验，请手动安装 <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> 模组。 </sup> <br> </br> </h4>
 
-<div align="center"> <img src="https://img.shields.io/modrinth/dt/cabricality?label=%E4%B8%8B%E8%BD%BD&style=for-the-badge&color=blueviolet" width = 155 alt="Modrinth Downloads"> </div>
-
-<h4 align="center"> <sub> 欢迎翻阅 <a href="https://github.com/DM-Earth/Cabricality/wiki"> 永无止境：重缝 Wiki！ </a> </sub> </h4>
-
 <div align="center"> <br> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
+
+<div align="center"> <br> <img src="https://img.shields.io/modrinth/dt/cabricality?label=%E4%B8%8B%E8%BD%BD&style=for-the-badge&color=blueviolet" height = 35 alt="Modrinth 下载"> </div>
 
 <h1 align="center"> 永无止境：重缝 </h1>
 
@@ -13,7 +11,9 @@
 
 在这里，你可以跟随任务的指引，通过[机械动力](https://github.com/Fabricators-of-Create/Create)和[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
 
-> *此整合包在[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中！*
+> *此整合包在[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
+
+[^wiki]: 随时欢迎翻阅[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)
 
 <h3 align="center"> <a href="https://github.com/DM-Earth/Cabricality"> English </a> | 简体中文 </h3>
 
