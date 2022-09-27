@@ -1,7 +1,7 @@
 
 <h4 align="center"> <sup> 为获得最佳游戏体验，请手动安装 <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> 模组。 </sup> <br> </br> </h4>
 
-<h4 align="center"> <sup> 若遇到问题，请随时查看 <a href="https://github.com/DM-Earth/Cabricality/wiki"> 永无止境：重缝 Wiki。 </a></sup></h4>
+<h4 align="center"> <sup> 欢迎翻阅 <a href="https://github.com/DM-Earth/Cabricality/wiki"> 永无止境：重缝 Wiki！ </a></sup></h4>
 
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 <h1 align="center"> 永无止境：重缝 </h1>
@@ -18,7 +18,7 @@
 
 ### 主线流程
 
-作为科技向整合包，永无止境：重缝以科技发展作为游戏主线。在此之外，许多可选的有趣支线内容让科技树显得更加花枝招展。
+作为科技向整合包，永无止境：重缝以科技发展作为游戏主线。在此之外，许多可选的有趣支线内容让科技树显得更加花繁叶茂。
 
 每个任务都经过了精心安排，且大部分都有着丰富的描述。别担心！只要跟紧了它们，绝不会让你原地打转、踟蹰不前！
 
