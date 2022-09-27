@@ -5,7 +5,7 @@
 
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 
-<div align="center"> <img src="https://img.shields.io/modrinth/dt/cabricality" width = 100 alt="Modrinth Downloads"> </div>
+<div align="center"> <img src="https://img.shields.io/modrinth/dt/cabricality?label=%E4%B8%8B%E8%BD%BD&style=for-the-badge&color=blueviolet" width = 100 alt="Modrinth Downloads"> </div>
 
 <h1 align="center"> 永无止境：重缝 </h1>
 
