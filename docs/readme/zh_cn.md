@@ -1,11 +1,11 @@
 
 <h4 align="center"> <sup> 为获得最佳游戏体验，请手动安装 <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> 模组。 </sup> <br> </br> </h4>
 
-<h4 align="center"> <sup> 欢迎翻阅 <a href="https://github.com/DM-Earth/Cabricality/wiki"> 永无止境：重缝 Wiki！ </a></sup></h4>
+<div align="center"> <img src="https://img.shields.io/modrinth/dt/cabricality?label=%E4%B8%8B%E8%BD%BD&style=for-the-badge&color=blueviolet" width = 155 alt="Modrinth Downloads"> </div>
 
-<div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
+<h4 align="center"> <sub> 欢迎翻阅 <a href="https://github.com/DM-Earth/Cabricality/wiki"> 永无止境：重缝 Wiki！ </a> </sub> </h4>
 
-<div align="center"> <br> <img src="https://img.shields.io/modrinth/dt/cabricality?label=%E4%B8%8B%E8%BD%BD&style=for-the-badge&color=blueviolet" width = 155 alt="Modrinth Downloads"> </div>
+<div align="center"> <br> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 
 <h1 align="center"> 永无止境：重缝 </h1>
 
