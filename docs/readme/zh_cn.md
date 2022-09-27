@@ -23,8 +23,10 @@
 <div align="center">
   <br>
   </br>
-  <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality">
+  <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 575 alt="Cabricality">
   </img>
+  <br>
+  </br>
 </div>
 
 <div align="center">
