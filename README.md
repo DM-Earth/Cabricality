@@ -1,8 +1,6 @@
 
 <h4 align="center"> <sup> Please Install <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"> FTB Quests | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"> FTB Teams | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"> FTB Library | </a> <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"> Quest Additions </a> Manually! </sup> <br> </br> </h4>
 
-<h4 align="center"> <sup> Please check <a href="https://github.com/DM-Earth/Cabricality/wiki"> Cabricality Wiki </a> when you have any problems.</sup></h4>
-
 <div align="center"> <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 495 alt="Cabricality"> </div>
 
 <div align="center"> <br> <img src="https://img.shields.io/modrinth/dt/cabricality?label=Downloads&style=for-the-badge&color=blueviolet" width = 155 alt="Modrinth Downloads"> </div>
@@ -13,7 +11,9 @@
 
 With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
-> *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work!*
+> *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
+
+[^wiki]: Feel free to check [Cabricality Wiki](https://github.com/DM-Earth/Cabricality/wiki) when you have any problems!
 
 <h3 align="center"> English | <a href="docs/readme/zh_cn.md"> 简体中文 </a> </h3>
 
