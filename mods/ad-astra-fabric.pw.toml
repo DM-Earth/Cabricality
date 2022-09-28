@@ -1,13 +1,13 @@
 name = "Ad Astra (Fabric)"
-filename = "ad-astra-1.0.2-1.18.2.jar"
+filename = "ad-astra-1.0.3-1.18.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/3ufwT9JF/versions/gSh656wW/ad-astra-1.0.2-1.18.2.jar"
+url = "https://cdn.modrinth.com/data/3ufwT9JF/versions/fzC9pnwK/ad-astra-1.0.3-1.18.2.jar"
 hash-format = "sha1"
-hash = "1ba463617b22b139f0f6bfbaa53525ad27a2fd60"
+hash = "a59a050a1a63291e3105ebbb7821e24b66c0e354"
 
 [update]
 [update.modrinth]
 mod-id = "3ufwT9JF"
-version = "gSh656wW"
+version = "fzC9pnwK"

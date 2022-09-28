@@ -658,7 +658,7 @@ hash = "78c4755e4ada7116fdf83ba0c3d186a95858965422f715be675421a1fe353542"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/purified_sand.png"
-hash = "850da4508df2881a7758193fcc78e3a0db38dce05f0d2a3aec2809d84490e704"
+hash = "2c031eeabdfed8f6e92c27af9364a97d7127f70e8014a9b14fc2e84a62f0b455"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/radiant_coil.png"
@@ -667,10 +667,6 @@ hash = "d2baf29326abcec7e9b22ab00fa032be9a9563cca1e94f08f0f1fc734d7bf6e4"
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/radiant_sheet.png"
 hash = "d5a94e8f0066a3f0307b1d361331fa510929037d4ada0d77fa8f6f8d394a08f9"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/raw_logic_sheet.png"
-hash = "bba29ff8cd81dc5adb30c1df2d41ebc188a8059d4c07ea848ae5b3023ab0b113"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/rough_sand.png"
@@ -694,7 +690,7 @@ hash = "87292dc45cebecdab1c1da8f725c91e6f43971736ded457e73ffb8e55925e80b"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/screwdriver.png"
-hash = "f2e8efeacfb94167918bcd14be2aff84129abc524c34b0a91919bca688f6b82b"
+hash = "14285592787e878402e3938e7e08e5e5570c9730818d453dbf7f161b35d04544"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/silicon_compound.png"
@@ -705,16 +701,8 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item
 hash = "bb0cd09d45bc29954bdba4707582bb1d85dff2ced05783e94c8bed36d412aaa7"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/smoke_mote.png"
-hash = "da3747835f357941560c84d4c837552e2ed4409b89716de4a8f77a620e311902"
-
-[[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/stone_rod.png"
-hash = "5b9376595a8b93e41a844d0f6826a1295a9c8cf7aac14f2ad5077049b8b519e4"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/tool/material/stone_rod.png"
-hash = "5b9376595a8b93e41a844d0f6826a1295a9c8cf7aac14f2ad5077049b8b519e4"
+hash = "32672723a442b551bb55b11c7e4aeff99ed7a487724520073282bb10c36955e2"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/tool/saw/diamond_saw.png"
@@ -730,7 +718,7 @@ hash = "561eb120181b872de2bbc204ff51524899f076328a54a1406c7a9d30c871bf37"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/tool/saw/stone_saw.png"
-hash = "feb5c92ab7f2efe08fa40b7d13b5f1237ee40f106ef3b4bff1580f537697a2cd"
+hash = "b6bb1e7c55938ba4083b660962cc56184c16498528fd4deee737a7b15345038b"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/zinc_sheet.png"
@@ -738,11 +726,11 @@ hash = "9ce38805415e50de227484a7cd58c36c57de49bca4f2dbe92611be44af7b0e67"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/pack.mcmeta"
-hash = "7af188485bb933f8bc342b061dbdd9817cbb0017658146a8e59df8c069b86c40"
+hash = "361f177d6fcb83c8a705520a72a4a020568c2fef6246dbf12b04825fcb132540"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/pack.png"
-hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
+hash = "39f486a78dd5310a2fe6f1cf94e5f4d6587916b625cd5122ab8897a90b396b86"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/lang/en_us.json"
@@ -1001,62 +989,6 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/block/st
 hash = "143149d79302fa3377d442ac9eaa85542917427fb5f576e4c75fd471211b5015"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag.png"
-hash = "2450ff317962e0db6e78d8c6ea093131e7276a9b8ecb34a3099988f095d47d76"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_blue.png"
-hash = "f3810000e2265d417cacfce0113b4d323577e4f64344df8629d6e0538c44d745"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_brown.png"
-hash = "3b3b9c3c0d67d022ec5ff37738eff4155a0f6080496af78f6b030c55c8e2246e"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_cyan.png"
-hash = "242a43660eb0266f926ae05e0c460c573128ffe82ff1cd7fafbde6b8cfd19208"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_gray.png"
-hash = "9b066bbad77fd2a0f516d448344c585d7369ded5aa69fe42610d79b22111ec67"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_green.png"
-hash = "d3ae98f2989d191c597c530703ca98e08fe01348b4de484353a01b2b1d27b995"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_light_blue.png"
-hash = "2c424d7653ef65b0e99add3fff58523e046ba0412176f76831ef87ceadaf6199"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_lime.png"
-hash = "6e3fa1526879f85773d5de58fcad947d8b64465248925011820d40da89da5167"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_magenta.png"
-hash = "4e364d8a71c2d45c3e6aeca5b7c572440b9c5ec1bd612f04deb399e4c32ec8f8"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_orange.png"
-hash = "b9efc434d67f703c0ce39b81fccb1c222b0f9b6042933ef0412ff2c21c4741d5"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_pink.png"
-hash = "d2723212766f4236d131114b9776eed8b2df6179bb1ea4ac28b8932eb494bcb9"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_purple.png"
-hash = "e33f00e1f7b4333c26ed2cc0b881e6e2db30fca93817a1d2142553608917de2c"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_red.png"
-hash = "e4178e7d1f8bf67ed1f592ec293bde15d3e93f4c15464f572402b129bb2d9158"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/abandoned/flag_yellow.png"
-hash = "59ad5510024cde7dd3086fbf908ea42f1235470a0fd7a9b4e73dd037ce937bba"
-
-[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_calorite.png"
 hash = "2ff10c4fcf55a13a53e8955f53f42b5aebfdc8df3c0987a882406f120ea194dd"
 
@@ -1109,10 +1041,6 @@ file = "config/openloader/resources/cabf-edits/assets/create/textures/item/lang/
 hash = "3e92e15ab0d7ebfffab740ef157d63346db7ee2a12fa568b66ecfec29afddcf0"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/create/textures/item/precision_mechanism.png"
-hash = "44235d022adf59fe6b6a97ac55841745be6ec9223f71a47f3c4b0b61aa3c1a76"
-
-[[files]]
 file = "config/openloader/resources/cabf-edits/assets/createplus/lang/en_us.json"
 hash = "f52819a924df48fd6fded8bb913791a84332ef4170889478d447c6be536e437a"
 
@@ -1163,38 +1091,6 @@ hash = "66ac70957d93da6fabaf1ed79c4e192df77b691eb8c2693a2226623868a24cd3"
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/lang/zh_cn.json"
 hash = "8972b5b8c56dabfac91b2feedf8c3a5c5f15c5b4b8e55bd055e6edec15c2dfbe"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk1.json"
-hash = "9c96bb3f2c4870ba74c6fdcf58de4cdb7ffdaae757a38ed16e67467a0af87480"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk2.json"
-hash = "2744d055ce0f763efa1d8e0d704a0907271cca2b1abca6148f578197e3aee2d8"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk3.json"
-hash = "7a001753daf00de3fc1c45f224a8634404384979347fdb3f22cf7ba0ffe944be"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_center_mk4.json"
-hash = "266fdfa76a74bca2c84f9bf19915f3dd0dca94c77838216d1cb487f11ff38bff"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk1.json"
-hash = "281477ce5efbd7deea3f8c23d350cda6190b172d725314334c699c66b3e48f3d"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk2.json"
-hash = "f2d272d3cb85959ded5112db986d7605827816732fe4bdb2a658a1d2e4d1f228"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk3.json"
-hash = "df8501e2f758701db1bcd0f58db038712f974265051be01c7858b807823e7389"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/indrev/models/cable_side_mk4.json"
-hash = "2f1798f86620cf7e2eabdcec8a1d28273c9affd844c9dbc067eaee6f7bb84f80"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/textures/block/biomass_generator.png"
@@ -1634,11 +1530,11 @@ hash = "515e406d314d0f36f3b7584f67140bf8c2a4fc9a298dde613f710e7800c4f052"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/pack.mcmeta"
-hash = "361f177d6fcb83c8a705520a72a4a020568c2fef6246dbf12b04825fcb132540"
+hash = "7af188485bb933f8bc342b061dbdd9817cbb0017658146a8e59df8c069b86c40"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/pack.png"
-hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
+hash = "8c4949cabeaf1218127a18bd66d9cc12eb3cd948c3d1a67e38ad76ad3983b35a"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
@@ -1742,11 +1638,11 @@ hash = "404b2c4855a672cd75638b75919955c5d9b507ae43bd1acf87693bfd429607a9"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/item/trading/profession_card.png"
-hash = "3c5792c801f80f63b7344e90517ce51df2ff92856c3c5035d5ef5efaddb363b8"
+hash = "81b54eb8b38a05d6fccfc3103a85fdbda02bbb157c103e0c4e5940c4a18dd661"
 
 [[files]]
 file = "kubejs/assets/cabricality/textures/item/trading/trade_card.png"
-hash = "5721d741782ac1f39de082d8da74b9a824ecfab2cad9199ae56bdbb5bdb98a1b"
+hash = "9cace039746b4e0c433dc029e737eb2cf7b50796e91ee07e11d65990436571b4"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
@@ -4153,6 +4049,14 @@ file = "kubejs/data/tconstruct/loot_tables/blocks/cobalt_ore.json"
 hash = "74c69d9e1181030f3a68028c653bda713c1b60dd3e04b71dd57cba8bcecb66a4"
 
 [[files]]
+file = "kubejs/data/tconstruct/recipes/smeltery/melting/metal/cobalt/scorched_duct.json"
+hash = "a38dc6997d3541b3d8060ce031ea81c98763fc1353188d3a9364c26b8455deee"
+
+[[files]]
+file = "kubejs/data/tconstruct/recipes/smeltery/melting/metal/cobalt/seared_duct.json"
+hash = "f7c01f0a4e2bbbe97e54408b7a47d1683659f1db2b42749cb396e053c9f783bd"
+
+[[files]]
 file = "kubejs/server_scripts/cabricality.js"
 hash = "19e2da3547dd56a77c074209efcf6b82ad4af346f63d54c6f51aeb679c92407f"
 
@@ -4278,12 +4182,12 @@ hash = "8dc6ad44a6b0bada5533763f0f7526c8b09498f04fd43adef633be0d46841e4f"
 
 [[files]]
 file = "mods/ad-astra-fabric.pw.toml"
-hash = "c971d85676b352cb31d853936d507baf294df62514f70ba102fe66d4939066d8"
+hash = "bb495d271be5eefce40c7897da888add9223819bf15e351f93234f90e4e51536"
 metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "88219de91ab0d82148c825707ff3e28fae85c9a19b339dd937c2e083d2dd7829"
+hash = "dc306d93b5994351925191bc52eeb1707ebafc07fa1dc3e1d846cb24fe0f452c"
 metafile = true
 
 [[files]]
@@ -4594,7 +4498,7 @@ metafile = true
 
 [[files]]
 file = "mods/qsl.pw.toml"
-hash = "f0f4224d38fbb3f041412465e826ade26094914a20239cd597905cf9598704bd"
+hash = "07d75ca506fbe2c5e6a2077553b1f1873a90a9ef3316ea6bb88c5ed42435fdc1"
 metafile = true
 
 [[files]]
@@ -4614,12 +4518,12 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "a9aa82a9ddc0cb17a9de92c68b5ab52e7301c947b28afeaa00be970bd3e41b71"
+hash = "5e98198bbc6e9dcdbabfa02da042032bbe42c4c6e75488e279d7babb23296999"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "2ad443646863100af0f66138402e8cbfdf78ea565956d95d8e3e2b32c264d8a6"
+hash = "39269eb45ca79786c4eac3ede212feb85ccd90fe3e25ca0e4ab7e9fc1270d96e"
 metafile = true
 
 [[files]]
