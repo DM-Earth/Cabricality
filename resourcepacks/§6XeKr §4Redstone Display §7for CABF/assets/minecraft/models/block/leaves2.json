@@ -1,6 +1,0 @@
-{
-    "parent": "block/leavesx",
-    "textures": {
-        "all": "block/leaves2"
-    }
-}

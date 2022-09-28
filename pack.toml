@@ -1,12 +1,12 @@
 name = "Cabricality"
 author = "DM-Earth"
-version = "0.1.0-dev18"
+version = "0.1.0-alpha1-patch1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3837f7c1dd4bd35c65e43b7c3ad1da2a8a1724aba539b2523e0ec2e585510681"
+hash = "fb7b44581a4a3cec33a8ea9b4e4c1316367ab087999cfaa69fc9e799a6070ac7"
 
 [versions]
 minecraft = "1.18.2"

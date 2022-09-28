@@ -1,7 +1,0 @@
-{
-	"credit": "Made by XeKr with Blockbench",
-	"parent": "block/sculk_sensor_00",
-	"textures": {
-		"power": "block/sculk_sensor_14"
-	}
-}
