@@ -1,8 +1,6 @@
 *.DS_Store
 *.mrpack
-/packwiz
 *.zip
 /.vscode/*
-openloader-resources
 *.pxd
 /.idea/*
