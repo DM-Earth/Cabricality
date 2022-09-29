@@ -14,12 +14,8 @@ jobs:
         run: chmod +x ./packwiz
       - name: export modrinth
         run: ./packwiz mr export
-      - name: export curseforge
-        run: ./packwiz cf export
       - name: capture export artifacts
         uses: actions/upload-artifact@v2
         with:
-        - name: Artifacts-Modrinth
+          name: Artifacts-Modrinth
           path: /Cabricality-0.1.mrpack
-        - name: Artifacts-Curseforge
-          path: /Cabricality-0.1.zip
