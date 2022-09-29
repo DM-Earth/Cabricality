@@ -1,0 +1,26 @@
+name: export
+on: [push]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+      - name: make packwiz executable
+        run: chmod +x ./packwiz
+      - name: export modrinth
+        run: ./packwiz mr export
+      - name: export curseforge
+        run: ./packwiz cf export
+      - name: capture export artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Artifacts-Modrinth
+          path: /Cabricality-0.1.mrpack
+        with:
+          name: Artifacts-Curseforge
+          path: /Cabricality-0.1.zip
