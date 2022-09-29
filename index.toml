@@ -4285,7 +4285,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "3d01384f400c6e27910f7a84f4c9d151798db7fe04c60082ace7942ee6e0c8db"
+hash = "8c34fca924fdd83cd25f10f53329725d711da0a594abb1f1294f5a8ab35821bc"
 metafile = true
 
 [[files]]
@@ -4423,6 +4423,11 @@ metafile = true
 [[files]]
 file = "mods/led.pw.toml"
 hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "df288385d36b0b6cca4e056bec41f65f5a8f574f04c61594fba1f70f0382cedd"
 metafile = true
 
 [[files]]
