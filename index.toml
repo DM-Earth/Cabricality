@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/export.yml"
+hash = "397fc6b97112c614284c1e7da9fc3567815760c6e61b18ba18f810e485fc1adb"
+
+[[files]]
 file = "config/cobblegen.json5"
 hash = "aa33f53f02b61ecf9077b8739a29cfbc6d2ccb8e00110192505a523468c6b9ed"
 
