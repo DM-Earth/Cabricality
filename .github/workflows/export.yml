@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest]
-        version: 0.1.0-alpha2
+      ve: 0.1.0-alpha2
     runs-on: ${{ matrix.os }}
     steps:
       - name: checkout repository
@@ -21,9 +21,9 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts-Modrinth
-          path: ./Cabricality-${{ matrix.version }}.mrpack
+          path: ./Cabricality-${{ ve }}.mrpack
       - name: capture export artifacts - curseforge
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts-Curseforge
-          path: ./Cabricality-${{ matrix.version }}.zip
+          path: ./Cabricality-${{ ve }}.zip
