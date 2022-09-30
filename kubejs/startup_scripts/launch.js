@@ -134,30 +134,6 @@ onEvent("item.registry", event => {
 			.texture(asIdentifier("item/incomplete_coke_chunk"))
 			.displayName("Incomplete Coke Chunk")
 
-		event.create(asIdentifier("earth_slimy_fern_leaf"))
-			.texture(asIdentifier("item/fern/leaf/earth_slimy_fern_leaf"))
-			.displayName("Slimy Fern Leaf")
-
-		event.create(asIdentifier("ender_slimy_fern_leaf"))
-			.texture(asIdentifier("item/fern/leaf/ender_slimy_fern_leaf"))
-			.displayName("Slimy Fern Leaf")
-
-		event.create(asIdentifier("sky_slimy_fern_leaf"))
-			.texture(asIdentifier("item/fern/leaf/sky_slimy_fern_leaf"))
-			.displayName("Slimy Fern Leaf")
-
-		event.create(asIdentifier("earth_slimy_fern_paste"))
-			.texture(asIdentifier("item/fern/paste/earth_slimy_fern_paste"))
-			.displayName("Slimy Fern Paste")
-
-		event.create(asIdentifier("ender_slimy_fern_paste"))
-			.texture(asIdentifier("item/fern/paste/ender_slimy_fern_paste"))
-			.displayName("Slimy Fern Paste")
-
-		event.create(asIdentifier("sky_slimy_fern_paste"))
-			.texture(asIdentifier("item/fern/paste/sky_slimy_fern_paste"))
-			.displayName("Slimy Fern Paste")
-
 		event.create(asIdentifier("radiant_sheet"))
 			.texture(asIdentifier("item/radiant_sheet"))
 			.displayName("Radiant Sheet")
@@ -210,12 +186,31 @@ onEvent("item.registry", event => {
 		})
 	}
 
+	let initSlimyFerns = (event => {
+		let slime = (id, color) => {
+			id = id.toLowerCase()
+			event.create(asIdentifier(id + "_slimy_fern_leaf"))
+				.color(0, color)
+				.texture(asIdentifier("item/fern/slimy_fern_leaf"))
+				.displayName("Slimy Fern Leaf")
+
+			event.create(asIdentifier(id + "_slimy_fern_paste"))
+				.color(0, color)
+				.texture(asIdentifier("item/fern/slimy_fern_paste"))
+				.displayName("Slimy Fern Paste")
+		}
+		slime("earth", 0x8FDB84)
+		slime("sky", 0x00F9DE)
+		slime("ender", 0xAC2EFC)
+	})
+
 	//	Final init
 	let initItems = () => {
 		initMechanisms()
 		initMachineParts()
 		initToolMaterials()
 		initTypicalItems()
+		initSlimyFerns()
 	}
 	initItems()
 	let number = (name, localName) => {
@@ -373,31 +368,31 @@ onEvent("item.modification", event => {
 			item.maxStackSize = 1
 		})
 	});
-	
+
 	event.modify("indrev:steel_hoe", item => {
 		item.fireResistant = true
 		item.setAttackDamage(1)
 		item.setAttackSpeed(3.5)
 	})
-	
+
 	event.modify("indrev:steel_shovel", item => {
 		item.fireResistant = true
 		item.setAttackDamage(5)
 		item.setAttackSpeed(1)
 	})
-	
+
 	event.modify("indrev:steel_axe", item => {
 		item.fireResistant = true
 		item.setAttackDamage(10)
 		item.setAttackSpeed(0.9)
 	})
-	
+
 	event.modify("indrev:steel_pickaxe", item => {
 		item.fireResistant = true
 		item.setAttackDamage(4.5)
 		item.setAttackSpeed(1.2)
 	})
-	
+
 	event.modify("indrev:steel_sword", item => {
 		item.fireResistant = true
 		item.setAttackDamage(8)
