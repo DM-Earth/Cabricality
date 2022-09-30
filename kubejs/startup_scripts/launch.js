@@ -332,19 +332,19 @@ onEvent("fluid.registry", event => {
 
 	let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
 	event.create(asIdentifier("raw_logic"))
-		.displayName("Liquified Logic (Unprocessed)")
+		.displayName("Liquefied Logic (Unprocessed)")
 		.thinTexture(0xE7FFCB)
 		.noBlock()
 
 	for (let i = 0; i < 10; i++) {
 		event.create(asIdentifier("number_" + i))
-			.displayName("Liquified Computation (" + i + ")")
+			.displayName("Liquefied Computation (" + i + ")")
 			.thinTexture(colors[i])
 			.noBlock()
 			.noBucket()
 	}
 	event.create(asIdentifier("matrix"))
-		.displayName("Liquified Computation Matrix")
+		.displayName("Liquefied Computation Matrix")
 		.thinTexture(colors[0])
 		.noBlock()
 
