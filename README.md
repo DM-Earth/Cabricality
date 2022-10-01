@@ -99,7 +99,9 @@ You might leave behind quests by landing on the moon, but your story never ends.
 
 We prefer you to optimize your games on your own.
 
-**If you want a higher FPS(Frames per second),** vsync may help (Disable if your FPS is limited to 30).
+**If you want a higher FPS(Frames per second),** vsync may help[^fps].
+
+[^fps]: If the game's FPS is locked to 30, please consider to turn of vsync.
 
 If you like to write scripts and add your favorites to the game, **you're welcome!**
 
