@@ -5,3 +5,4 @@
 *.pxd
 /.idea/*
 /.fleet/*
+openloader-resources
