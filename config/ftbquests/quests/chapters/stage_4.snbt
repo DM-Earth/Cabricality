@@ -14,6 +14,7 @@
 			x: 1.0d
 			y: -2.5d
 			shape: "hexagon"
+			subtitle: "{chapter_4.cabricality.start.subtitle}"
 			description: [
 				"{chapter_4.cabricality.start.content}"
 			]
@@ -24,6 +25,7 @@
 			tasks: [{
 				id: "0C162B64EE377FC8"
 				type: "checkmark"
+				title: "{chapter_4.cabricality.start.task.checkmark.title}"
 			}]
 			rewards: [{
 				id: "01697377D270DD3C"

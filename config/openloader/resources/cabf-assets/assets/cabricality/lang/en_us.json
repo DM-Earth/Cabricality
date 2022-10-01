@@ -651,10 +651,11 @@
 	
 	"chapter_1.cabricality.title": "&f1&r High Aspirations",
   
-	"chapter_1.cabricality.start.title"  : "Chapter 1 Start!",
-	"chapter_1.cabricality.start.content": "Welcome to the Factory Guide!\n\nThese Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing.\n\n&6Happy engineering!",
+	"chapter_1.cabricality.start.title"   : "&6&lHigh Aspirations",
+	"chapter_1.cabricality.start.subtitle": "&6Chapter 1",
+	"chapter_1.cabricality.start.content" : "Welcome to the Factory Guide!\n\nThese Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing.\n\n&6Happy engineering!",
 	
-	"chapter_1.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_1.cabricality.start.task.checkmark.title": "&6Chapter 1 Start!",
   
 	"chapter_1.cabricality.speedrun.title"  : "Speedrun",
 	"chapter_1.cabricality.speedrun.content": "The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated.\n\nBe reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort.",
@@ -665,7 +666,7 @@
 	"contraption.cabricality.1.subtitle": "Contraption 1",
 	"contraption.cabricality.1.content" : "Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort.\n\nMechanical Saws are a powerful way to achieve this.",
 	
-	"contraption.cabricality.1.task.wooden_log.title": "Any Wooden Log",
+	"contraption.cabricality.1.task.wooden_log.title": "&7Any&r Wooden Log",
   
 	"contraption.cabricality.2.title"   : "Water Infuser",
 	"contraption.cabricality.2.subtitle": "Contraption 2",
@@ -703,7 +704,7 @@
 	"contraption.cabricality.7.1.subtitle": "Contraption 7-1",
 	"contraption.cabricality.7.1.content" : "Upwards-facing Mechanical Saws can process the harvested logs further...",
 	
-	"contraption.cabricality.7.1.task.stripped_log.title": "Any Stripped Log",
+	"contraption.cabricality.7.1.task.stripped_log.title": "&7Any&r Stripped Log",
   
 	"contraption.cabricality.7.2.title"   : "Plank Cutter",
 	"contraption.cabricality.7.2.subtitle": "Contraption 7-2",
@@ -715,7 +716,7 @@
 	"contraption.cabricality.7.3.subtitle": "Contraption 7-3",
 	"contraption.cabricality.7.3.content" : "...and further, into the perfect base for our first Mechanism.\n\nNote: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw.",
 	
-	"contraption.cabricality.7.3.task.wooden_slab.title": "Any Wooden Slab",
+	"contraption.cabricality.7.3.task.wooden_slab.title": "&7Any&r Wooden Slab",
   
 	"contraption.cabricality.8.title"   : "Deploy, Deploy, Deploy.",
 	"contraption.cabricality.8.subtitle": "Contraption 8",
@@ -724,9 +725,9 @@
 	"contraption.cabricality.assemble.title"  : "Arming the Deployer",
 	"contraption.cabricality.assemble.content": "It'll be good to stock up on a couple of saws for the Mechanism Assembly.\n&7However, they are not nearly consumed as quickly as something that would require an automated supply.",
 	
-	"contraption.cabricality.assemble.task.saw.title": "Any Saw",
+	"contraption.cabricality.assemble.task.saw.title": "&7Any&r Saw",
   
-	"chapter_1.cabricality.complete.title"  : "Chapter 1 Complete!",
+	"chapter_1.cabricality.complete.title"  : "&f&lChapter 1 Complete!",
 	"chapter_1.cabricality.complete.content": "Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit.\n&7Before moving on, check back through your factory and search for any major bottlenecks.\nIt'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough.",
   
 	"contraption.cabricality.9.1.title"   : "Ah wait, don't chop",
@@ -744,17 +745,18 @@
 	"bonus_1a.cabricality.assemble.title"  : "All Sealed Up",
 	"bonus_1a.cabricality.assemble.content": "From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on.",
   
-	"bonus_1a.cabricality.complete.title"  : "Bonus 1A Complete!",
+	"bonus_1a.cabricality.complete.title"  : "&4&lBonus 1A Complete!",
 	"bonus_1a.cabricality.complete.content": "Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you.",
   
   
   
 	"chapter_2.cabricality.title": "&f2&r Alluring Expedience",
   
-	"chapter_2.cabricality.start.title"  : "Chapter 2 Start!",
-	"chapter_2.cabricality.start.content": "The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier.\n\n&6Happy Inventing!",
+	"chapter_2.cabricality.start.title"   : "&6&lAlluring Expedience",
+	"chapter_2.cabricality.start.subtitle": "&6Chapter 2",
+	"chapter_2.cabricality.start.content" : "The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier.\n\n&6Happy Inventing!",
 	
-	"chapter_2.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_2.cabricality.start.task.checkmark.title": "&6Chapter 2 Start!",
   
 	"contraption.cabricality.10.title"   : "The Alloy Mixer",
 	"contraption.cabricality.10.subtitle": "Contraption 10",
@@ -823,7 +825,7 @@
 	"chapter_2.cabricality.assemble.title"  : "Arming the Deployer II",
 	"chapter_2.cabricality.assemble.content": "It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly.\n&7Just like last time, the requirement does not necessarily call for automation.",
   
-	"chapter_2.cabricality.complete.title"  : "Chapter 2 Complete!",
+	"chapter_2.cabricality.complete.title"  : "&f&lChapter 2 Complete!",
 	"chapter_2.cabricality.complete.content": "Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!\n&7After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section.",
   
 	"bonus_2a.cabricality.preparation.title"  : "Blaze Escort",
@@ -849,17 +851,18 @@
 	"contraption.cabricality.18.2.subtitle": "Contraption 18-2",
 	"contraption.cabricality.18.2.content" : "Dropping the Liquids onto a Precision Mechanism will convert it to its Infernal counterpart.\n\nOnce again, full automation of bonus mechanisms is not as pressing a task, since they do not lead to any further machines beyond their own.\nA semi-automatic setup for converting Precision Mechanisms whenever needed should suffice.",
   
-	"bonus_2a.cabricality.complete.title"  : "Bonus 2A Complete!",
+	"bonus_2a.cabricality.complete.title"  : "&2&lBonus 2A Complete!",
 	"bonus_2a.cabricality.complete.content": "Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line.",
   
   
   
 	"chapter_3.cabricality.title": "&f3&r The Catharsis",
   
-	"chapter_3.cabricality.start.title"  : "Chapter 3 Start",
-	"chapter_3.cabricality.start.content": "Working towards a passive supply of Radiant Induction Coils, you'll be sure to encounter some new and unfamiliar tasks.\n\nOnce again it's time to grab the Wrench, re-stock the toolbox and to clear out a new plot.\n\n&6Happy Creating!",
+	"chapter_3.cabricality.start.title"   : "&6&lTHE Catharsis",
+	"chapter_3.cabricality.start.subtitle": "&6Chapter 3",
+	"chapter_3.cabricality.start.content" : "Working towards a passive supply of Radiant Induction Coils, you'll be sure to encounter some new and unfamiliar tasks.\n\nOnce again it's time to grab the Wrench, re-stock the toolbox and to clear out a new plot.\n\n&6Happy Creating!",
 	
-	"chapter_3.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_3.cabricality.start.task.checkmark.title": "&6Chapter 3 Start!",
   
 	"chapter_3.cabricality.preparation.title"  : "Keeping Stock",
 	"chapter_3.cabricality.preparation.content": "A few of the following contraptions involve dropping items on the ground. Whenever a process will not backstack on overflow (e.g. belt items waiting automatically), it is important to toggle the production at certain buffer thresholds.\n\nMore concretely: When the output buffer exceeds 75%, stop producing items. Once it reaches below 25%, start the process up again. This prevents overflow and machines from spewing items everywhere.\n\nThe Stockpile Switch is designed for this purpose exactly.",
@@ -872,7 +875,7 @@
 	"contraption.cabricality.20.1.subtitle": "Contraption 20-1",
 	"contraption.cabricality.20.1.content" : "The trusty and cheap multi-purpose material of cobblestone is making its comeback.",
 	
-	"contraption.cabricality.20.1.task.cobblestone": "Any Cobblestone",
+	"contraption.cabricality.20.1.task.cobblestone": "&7Any&r Cobblestone",
   
 	"contraption.cabricality.20.2.title"   : "The Wall",
 	"contraption.cabricality.20.2.subtitle": "Contraption 20-2",
@@ -894,22 +897,22 @@
 	"contraption.cabricality.22.1.content" : "Route the excess leaves into a crusher, in preparation for the upcoming magic trick.",
   
 	"chapter_3.cabricality.mob_cage.title"   : "I like Mobs, actually",
-	"chapter_3.cabricality.mob_cage.subtitle": "Alt. Contraption 21 \\& 22",
+	"chapter_3.cabricality.mob_cage.subtitle": "&7Alternative for&r Contraption 21 \\& 22",
 	"chapter_3.cabricality.mob_cage.content" : "An automation alternative to the Spirit Cycle is to set up a Monster Spawner of some kind.\n\nClick the Checkmark to skip the Fern Duplication Contraption.",
 	
-	"chapter_3.cabricality.mob_cage.task.checkmark.title": "Checkmark",
+	"chapter_3.cabricality.mob_cage.task.checkmark.title": "Build a mob tower instead",
   
 	"contraption.cabricality.22.2.title"   : "Cooking up some Gunpowder",
 	"contraption.cabricality.22.2.subtitle": "Contraption 22-2",
-	"contraption.cabricality.22.2.content" : "Transmuting the green reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
+	"contraption.cabricality.22.2.content" : "Transmuting the &2GREEN&r reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
   
 	"contraption.cabricality.22.3.title"   : "Cooking up some Ender Dust",
 	"contraption.cabricality.22.3.subtitle": "Contraption 22-3",
-	"contraption.cabricality.22.3.content" : "Transmuting the purple reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
+	"contraption.cabricality.22.3.content" : "Transmuting the &5PURPLE&r reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
   
 	"contraption.cabricality.22.4.title"   : "Cooking up some Fertilizer",
 	"contraption.cabricality.22.4.subtitle": "Contraption 22-4",
-	"contraption.cabricality.22.4.content" : "Transmuting the blue reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
+	"contraption.cabricality.22.4.content" : "Transmuting the &9BLUE&r reactive blend requires very special heating conditions, only available on Campfires or Stoves.\n\nThis Contraption will need the special ability to both place and collect items from these places.",
   
 	"contraption.cabricality.23.1.title"   : "More Sand",
 	"contraption.cabricality.23.1.subtitle": "Contraption 23-1",
@@ -923,7 +926,7 @@
 	"contraption.cabricality.24.subtitle": "Contraption 24",
 	"contraption.cabricality.24.content" : "Here comes the central feature of this Factory Wing: the Reactor.\n\nProgressing towards Inductive Coils requires a controlled Explosion where nearby Singularities and Ender Dust are combined. See if you can come up with a circuit to continuously blow up these dropped item-stacks.\n\nNote: Ender dust and Singularities are consumed in a 1:1 ratio. They do not have to be in the exact same location. One TNT can transform multiple sets of ingredients. The result will drop at the location of the Singularity item.",
   
-	"contraption.cabricality.25.title"   : "Your Favorite Color",
+	"contraption.cabricality.25.title"   : "Colorful Decidophobia",
 	"contraption.cabricality.25.subtitle": "Contraption 25",
 	"contraption.cabricality.25.content" : "For production of chromatic materials, a color pigment is needed. It is up to you which color dye should be automated for this purpose. The only exception is white dye.",
 	
@@ -931,7 +934,7 @@
   
 	"contraption.cabricality.26.1.title"   : "Painting Space itself",
 	"contraption.cabricality.26.1.subtitle": "Contraption 26-1",
-	"contraption.cabricality.26.1.content" : "Mixing the Entangled Singularities with a dye of choice creates the very essence of color! Just what we need for producing a perfected chromatic compound.\"",
+	"contraption.cabricality.26.1.content" : "Mixing the Entangled Singularities with a dye of choice creates the very essence of color! Just what we need for producing a perfected chromatic compound.",
   
 	"chapter_3.cabricality.correction.red.title"  : "&cSpectral Correction &7(Red)",
 	"chapter_3.cabricality.correction.red.content": "Crushing Dyed Singularities has a chance to yield little orbs of red color.\n\nSince this is not the color needed for chromatic compound, you can use Item Drains for frequency correction.",
@@ -971,7 +974,7 @@
   
 	"contraption.cabricality.28.1.title"   : "Throwing Flash",
 	"contraption.cabricality.28.1.subtitle": "Contraption 28-1",
-	"contraption.cabricality.28.1.content" : "When dropped as an item, Chromatic Compound will absorb light around itself and eventually turn into Refined Radiance. Choose one of three approaches:\n\n- Auto-placing light emitting blocks near the dropped compound items (blocks need line of sight to item)\n\n- Supplying light emitting blocks as items on nearby depots/belts (blocks need line of sight to item)\n\n- Throwing the compound into a Beacon Beam for free and instant conversion",
+	"contraption.cabricality.28.1.content" : "When dropped as an item, Chromatic Compound will absorb light around itself and eventually turn into Refined Radiance. Choose one of three approaches:\n\n- &7Auto-placing light emitting blocks near the dropped compound items (blocks need line of sight to item);&r\n\n- &7Supplying light emitting blocks as items on nearby depots/belts (blocks need line of sight to item);&r\n\n- &7Throwing the compound into a Beacon Beam for free and instant conversion.&r",
   
 	"contraption.cabricality.28.2.title"   : "Post-Process",
 	"contraption.cabricality.28.2.subtitle": "Contraption 28-2",
@@ -994,7 +997,7 @@
 	"chapter_3.cabricality.assemble.title"  : "Arming the Deployer III",
 	"chapter_3.cabricality.assemble.content": "It'll be good to stock up on a couple of resonators for the Mechanism Assembly.\n&7Don't worry about automating them fully, though.",
   
-	"chapter_3.cabricality.complete.title"  : "Chapter 3 Complete!",
+	"chapter_3.cabricality.complete.title"  : "&f&lChapter 3 Complete!",
 	"chapter_3.cabricality.complete.content": "Congrats! Inductive Mechanisms will now be generated passively. This opens the door to new exciting technological and magical exploits!\n&7Once you are happy with the Assembly Line, head on back to the overview. There will be new options to explore.",
   
 	"bonus_3a.cabricality.coin.title"  : "Insert Coin",
@@ -1024,22 +1027,25 @@
 	"bonus_3a.cabricality.cycle.title"  : "The Poise Cycle",
 	"bonus_3a.cabricality.cycle.content": "Thanks to Inductive Technology, you have the option to replicate Poise Bushes passively, should you require a steadier and more convenient supply of Enderium.",
   
-	"bonus_3a.cabricality.complete.title"  : "Bonus 3A Complete!",
+	"bonus_3a.cabricality.complete.title"  : "&3&lBonus 3A Complete!",
 	"bonus_3a.cabricality.complete.content": "Marvelous! The power of instant transportation is in your hands at last. Surely there are some places in your factory where this could really speed things up.",
   
   
   
 	"chapter_4.cabricality.title": "&f4&r Into the Box",
   
-	"chapter_4.cabricality.start.title"  : "Chapter 4 Start!",
-	"chapter_4.cabricality.start.content": "The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery.\n\nMuch like previous chapters, a few new material sources or shipments are required first.",
+	"chapter_4.cabricality.start.title"   : "&6&lInto the Box",
+	"chapter_4.cabricality.start.subtitle": "&6Chapter 4",
+	"chapter_4.cabricality.start.content" : "The next target will be Printed Silicon. As one of two known ways to obtain it, the assembly line will move items, fluids and energy in and out of the new and rather compact Invar Machinery.\n\nMuch like previous chapters, a few new material sources or shipments are required first.",
   
+	"chapter_4.cabricality.start.task.checkmark.title": "&6Chapter 4 Start!",
+
 	"chapter_4.cabricality.preparation.title"  : "New Capacity",
 	"chapter_4.cabricality.preparation.content": "The upcoming Assembly Line will require a significant amount of flux energy to run. It is recommended to find a suitable generation method and to consider higher scales in planning should it become necessary later.",
 	
 	"chapter_4.cabricality.preparation.task.checkmark.title": "Checkmark",
   
-	"chapter_4.cabricality.laser.title"  : "The Alchemical Laser BOOM",
+	"chapter_4.cabricality.laser.title"  : "The Alchemical Laser &dBOOM&r",
 	"chapter_4.cabricality.laser.content": "A central role in this age of technology is played by the Alchemical Laser.",
 	
 	"chapter_4.cabricality.laser.task.checkmark.title": "Checkmark",
@@ -1085,7 +1091,7 @@
 	"contraption.cabricality.34.1.subtitle": "Contraption 34-1",
 	"contraption.cabricality.34.1.content" : "It'll be good to order a Wood supply to this location. Aside from Silicon it can contribute to this assembly line for some other useful products.",
 	
-	"contraption.cabricality.34.1.task.wooden_log.title": "Any Wooden Log",
+	"contraption.cabricality.34.1.task.wooden_log.title": "&7Any&r Wooden Log",
   
 	"contraption.cabricality.34.2.title"   : "Pyrolyzer Round I",
 	"contraption.cabricality.34.2.subtitle": "Contraption 34-2",
@@ -1128,7 +1134,7 @@
 	"chapter_4.cabricality.chapter_4a.title"  : "Secrets uncovered",
 	"chapter_4.cabricality.chapter_4a.content": "The Secret path has been discovered and pursued. From here, getting the Calculation Mechanism will be trivial.",
 	
-	"chapter_4.cabricality.chapter_4a.task.complete.title": "Complete Chapter 4a",
+	"chapter_4.cabricality.chapter_4a.task.complete.title": "&f&lComplete Chapter 4a",
   
 	"contraption.cabricality.39.a.title"   : "Unboxing",
 	"contraption.cabricality.39.a.subtitle": "Contraption 39-A",
@@ -1145,8 +1151,8 @@
 	"chapter_4.cabricality.assemble.title"  : "Arming the Deployer IV",
 	"chapter_4.cabricality.assemble.content": "The installation process of Calculation Mechanisms can be facilitated by a Flash Drive.\n&7The precious Cobalt required can be found in the Nether.",
   
-	"chapter_4.cabricality.complete.title"  : "Chapter 4 Complete!",
-	"chapter_4.cabricality.complete.content": "Great work! The final assembly line is now complete. Your factory just entered the Digital Age.\n&7New options have opened up in the Overview. Whenever you are ready.",
+	"chapter_4.cabricality.complete.title"  : "&f&lChapter 4 Complete!",
+	"chapter_4.cabricality.complete.content": "Great work! The final assembly line is now complete. Your factory just entered the Digital Age.\n&7New options have opened up in the Overview. Check them whenever you are ready.",
   
 	"contraption.cabricality.41.1.title"   : "Express Circuitry I",
 	"contraption.cabricality.41.1.subtitle": "Contraption 41-1",
@@ -1158,7 +1164,7 @@
   
   
   
-	"chapter_4a.cabricality.title": "↓&r Chaotic Alchemy",
+	"chapter_4a.cabricality.title": "&l↓&r Chaotic Alchemy",
   
 	"chapter_4a.cabricality.start.title"  : "AnothernWay Foward",
 	"chapter_4a.cabricality.start.content": "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",
