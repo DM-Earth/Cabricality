@@ -79,13 +79,13 @@ Nearly all machine necessities are **automatable.** It may be painful to reasona
 
 ### Trading Wonders
 
-You will have the ability to produce **trade stations** when brass supply is sufficient. When you plug the precise instrument on with adequate energy, it roars. With the help of `trade cards` and `profession cards`, some rarely seen materials could be exchanged by coins, and the process can also **be reversed.** Ah, my precious!
+You will have the ability to produce **trade stations** when brass supply is sufficient. When you plug the precise instrument on with adequate energy, it roars. With the help of `trade cards` and `profession cards`, some rarely seen materials could be exchanged by coins, and the process can also **be reversed.** *Ah, my precious!*
 
 The system is poorly needed during the produce of `enderium` materials. The queer material born in anotherland, combines silver coins in a mysterious way. If you aren't an alchemist, the only way to obtain them is through trade.
 
 ### Chaotic Alchemies
 
-Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infuse dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** It's magic!
+Substrates caged in glass jars break into pieces of treasure at the presence of an alchemist. You can do it too! Infuse dusts to molten glass yields substrates, and after mixing and smelting and the help of catalysts, **matters manufacture matters.** *It's magic!*
 
 Catalysts aren't that easy to obtain. Struct a **laser emitter** and let the particle ray combine right substrates into exact catalysts. The recipe is randomly different between worlds, so excite yourself to find the right ones!
 
@@ -93,13 +93,13 @@ Catalysts aren't that easy to obtain. Struct a **laser emitter** and let the par
 
 You might leave behind quests by landing on the moon, but your story never ends. **Ad Astra!** made exploring other planets and galaxies possible, what's more, you can build your space stations outside atmospheres!
 
-*Deeper adventure awaits, don't stop, Hitch Hiker!*
+***Deeper adventure awaits, don't stop, Hitch Hiker!***
 
 ## Optimizing
 
 We prefer you to optimize your games on your own.
 
-**If you want a higher FPS(Frames per second),** vsync may help. **When the TPS(Ticks per second) is badly low,** try to enter a new world in `Creative Mode` before you switch to other modes you like.
+**If you want a higher FPS(Frames per second),** vsync may help (Disable if your FPS is limited to 30).
 
 If you like to write scripts and add your favorites to the game, **you're welcome!**
 
