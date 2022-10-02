@@ -14,6 +14,7 @@
 			x: 5.0d
 			y: 15.5d
 			shape: "hexagon"
+			subtitle: "{chapter_5.cabricality.start.subtitle}"
 			description: ["{chapter_5.cabricality.start.content}"]
 			dependencies: ["251A91F6C21AEAFB"]
 			hide: true
