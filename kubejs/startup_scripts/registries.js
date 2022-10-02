@@ -186,17 +186,17 @@ onEvent("item.registry", event => {
 		})
 	}
 
-	let initSlimyFerns = (event => {
+	let initSlimeFerns = (event => {
 		let slime = (id, color) => {
 			id = id.toLowerCase()
-			event.create(asIdentifier(id + "_slimy_fern_leaf"))
+			event.create(asIdentifier(id + "_slime_fern_leaf"))
 				.color(0, color)
-				.texture(asIdentifier("item/fern/slimy_fern_leaf"))
+				.texture(asIdentifier("item/fern/slime_fern_leaf"))
 				.displayName("Slimy Fern Leaf")
 
-			event.create(asIdentifier(id + "_slimy_fern_paste"))
+			event.create(asIdentifier(id + "_slime_fern_paste"))
 				.color(0, color)
-				.texture(asIdentifier("item/fern/slimy_fern_paste"))
+				.texture(asIdentifier("item/fern/slime_fern_paste"))
 				.displayName("Slimy Fern Paste")
 		}
 		slime("earth", 0x8FDB84)
@@ -210,7 +210,7 @@ onEvent("item.registry", event => {
 		initMachineParts()
 		initToolMaterials()
 		initTypicalItems()
-		initSlimyFerns()
+		initSlimeFerns()
 	}
 	initItems()
 	let number = (name, localName) => {

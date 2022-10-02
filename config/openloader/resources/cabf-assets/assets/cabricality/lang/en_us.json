@@ -136,12 +136,12 @@
 
 	"item.cabricality.coal_coke": "Coal Coke",
 
-	"item.cabricality.earth_slimy_fern_leaf" : "Slimy Fern Leaf",
-	"item.cabricality.earth_slimy_fern_paste": "Slimy Fern Paste",
-	"item.cabricality.ender_slimy_fern_leaf" : "Slimy Fern Leaf",
-	"item.cabricality.ender_slimy_fern_paste": "Slimy Fern Paste",
-	"item.cabricality.sky_slimy_fern_leaf"   : "Slimy Fern Leaf",
-	"item.cabricality.sky_slimy_fern_paste"  : "Slimy Fern Paste",
+	"item.cabricality.earth_slime_fern_leaf" : "Slimy Fern Leaf",
+	"item.cabricality.earth_slime_fern_paste": "Slimy Fern Paste",
+	"item.cabricality.ender_slime_fern_leaf" : "Slimy Fern Leaf",
+	"item.cabricality.ender_slime_fern_paste": "Slimy Fern Paste",
+	"item.cabricality.sky_slime_fern_leaf"   : "Slimy Fern Leaf",
+	"item.cabricality.sky_slime_fern_paste"  : "Slimy Fern Paste",
 
 	"item.cabricality.radiant_sheet": "Radiant Sheet",
 	"item.cabricality.radiant_coil" : "Radiant Coil",
@@ -885,8 +885,8 @@
 	"contraption.cabricality.20.3.subtitle": "Contraption 20-3",
 	"contraption.cabricality.20.3.content" : "By Crushing the Crushing Wheels using Crushing Wheels, a strange anomaly is created and dropped. We can use this to our advantage.",
   
-	"chapter_3.cabricality.slimy_fern.title"  : "Slimy Ferns",
-	"chapter_3.cabricality.slimy_fern.content": "In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms.\n\nRoam the lands for a bit and look out for egregiously vibrant spots of color in the vegetation. Don't forget to bring a pair of Shears.",
+	"chapter_3.cabricality.slime_fern.title"  : "Slimy Ferns",
+	"chapter_3.cabricality.slime_fern.content": "In order to produce Gunpowder, Bone Meal and Ender Dust, the peculiar 'slimy fern' can be used as an alternative to Monster farms.\n\nRoam the lands for a bit and look out for egregiously vibrant spots of color in the vegetation. Don't forget to bring a pair of Shears.",
   
 	"contraption.cabricality.21.title"   : "The Haunted Cycle",
 	"contraption.cabricality.21.subtitle": "Contraption 21",
@@ -897,7 +897,7 @@
 	"contraption.cabricality.22.1.content" : "Route the excess leaves into a crusher, in preparation for the upcoming magic trick.",
   
 	"chapter_3.cabricality.mob_cage.title"   : "I like Mobs, actually",
-	"chapter_3.cabricality.mob_cage.subtitle": "&7Alternative for&r Contraption 21 \\& 22",
+	"chapter_3.cabricality.mob_cage.subtitle": "&8Alternative&r Contraption 21 \\& 22",
 	"chapter_3.cabricality.mob_cage.content" : "An automation alternative to the Spirit Cycle is to set up a Monster Spawner of some kind.\n\nClick the Checkmark to skip the Fern Duplication Contraption.",
 	
 	"chapter_3.cabricality.mob_cage.task.checkmark.title": "Build a mob tower instead",
@@ -1164,7 +1164,7 @@
   
   
   
-	"chapter_4a.cabricality.title": "&l↓&r Chaotic Alchemy",
+	"chapter_4a.cabricality.title": "↓ Chaotic Alchemy",
   
 	"chapter_4a.cabricality.start.title"  : "AnothernWay Foward",
 	"chapter_4a.cabricality.start.content": "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",

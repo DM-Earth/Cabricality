@@ -136,12 +136,12 @@
 
 	"item.cabricality.coal_coke": "焦炭",
 
-	"item.cabricality.earth_slimy_fern_leaf" : "黏性蕨叶片",
-	"item.cabricality.earth_slimy_fern_paste": "黏性蕨粉末",
-	"item.cabricality.ender_slimy_fern_leaf" : "黏性蕨叶片",
-	"item.cabricality.ender_slimy_fern_paste": "黏性蕨粉末",
-	"item.cabricality.sky_slimy_fern_leaf"   : "黏性蕨叶片",
-	"item.cabricality.sky_slimy_fern_paste"  : "黏性蕨粉末",
+	"item.cabricality.earth_slime_fern_leaf" : "黏性蕨叶片",
+	"item.cabricality.earth_slime_fern_paste": "黏性蕨粉末",
+	"item.cabricality.ender_slime_fern_leaf" : "黏性蕨叶片",
+	"item.cabricality.ender_slime_fern_paste": "黏性蕨粉末",
+	"item.cabricality.sky_slime_fern_leaf"   : "黏性蕨叶片",
+	"item.cabricality.sky_slime_fern_paste"  : "黏性蕨粉末",
 
 	"item.cabricality.radiant_sheet": "光辉板",
 	"item.cabricality.radiant_coil" : "光辉线圈",
@@ -885,8 +885,8 @@
 	"contraption.cabricality.20.3.subtitle": "步骤 20-3",
 	"contraption.cabricality.20.3.content" : "当你使用&6粉碎轮&r粉碎&6粉碎轮&r时，一种奇特的现象产生了...我们也许可以稍加利用...",
 	
-	"chapter_3.cabricality.slimy_fern.title"  : "利姆露大人的恩惠",
-	"chapter_3.cabricality.slimy_fern.content": "如果你想与怪物们友好相处，那也许你可以试试使用&6史莱姆蕨&r来生产&6火药、骨粉&r和&6末影粉...&r\n\n何不漫游大陆，寻找植被中异常鲜艳的颜色呢？别忘了随身带把剪刀。",
+	"chapter_3.cabricality.slime_fern.title"  : "利姆露大人的恩惠",
+	"chapter_3.cabricality.slime_fern.content": "如果你想与怪物们友好相处，那也许你可以试试使用&6史莱姆蕨&r来生产&6火药、骨粉&r和&6末影粉...&r\n\n何不漫游大陆，寻找植被中异常鲜艳的颜色呢？别忘了随身带把剪刀。",
 	
 	"contraption.cabricality.21.title"   : "阴魂不散",
 	"contraption.cabricality.21.subtitle": "步骤 21",
@@ -897,7 +897,7 @@
 	"contraption.cabricality.22.1.content" : "把多余的叶片粉碎，好戏即将开场。",
 	
 	"chapter_3.cabricality.mob_cage.title"   : "其实我更喜欢折磨怪物",
-	"chapter_3.cabricality.mob_cage.subtitle": "&7备选步骤&r 步骤 21 \\& 22",
+	"chapter_3.cabricality.mob_cage.subtitle": "&8备选步骤&r 步骤 21 \\& 22",
 	"chapter_3.cabricality.mob_cage.content" : "如果你不想搞那么麻烦，几个刷怪塔就可以解决一切。\n\n勾选“使用刷怪塔”以跳过&6史莱姆蕨&r机器的制造任务。",
 	
 	"chapter_3.cabricality.mob_cage.task.checkmark.title": "使用刷怪塔",
@@ -1071,7 +1071,7 @@
 	"contraption.cabricality.32.1.subtitle": "步骤 32-1",
 	"contraption.cabricality.32.1.content" : "从&6玄武岩&r中分离出微量的惰性&6玄武粉末&r是一种低成本的方案。但前提是，你要有用不完的&6玄武岩&r才行。",
 	
-	"contraption.cabricality.32.2.title"   : "炽热激光",
+	"contraption.cabricality.32.2.title"   : "白炽灯",
 	"contraption.cabricality.32.2.subtitle": "步骤 32-2",
 	"contraption.cabricality.32.2.content" : "第一台&6激光发射器&r能够将&6玄武碎片&r从&6玄武岩&r中提取出来，等待进一步的处理。\n\n你只需要在&6激光发射器&r上方放置一个&6吸液漏斗，&r再在最上方放置一格&6充能水，&r并向&6激光发射器&r通入红石信号就可使其工作。",
 	
@@ -1115,9 +1115,9 @@
 	"contraption.cabricality.37.subtitle": "步骤 37",
 	"contraption.cabricality.37.content" : "&6殷钢机器&r使得从水中制造&6雪球&r不再是难事。也许我们应该为下一位不速之客预留些雪球订单...",
 	
-	"contraption.cabricality.38.title"   : "冷酷激光",
+	"contraption.cabricality.38.title"   : "冷光灯",
 	"contraption.cabricality.38.subtitle": "步骤 38",
-	"contraption.cabricality.38.content" : "第二台&6激光发射器&r可以从&6雪块&r中提取出&6暴雪结晶。&r\n\n你完全可以使用与&6「步骤 32-2」&r中相同的机械结构。",
+	"contraption.cabricality.38.content" : "第二台&6激光发射器&r可以从&6雪块&r中提取出&6暴雪结晶。&r\n\n你完全可以使用与&6「步骤 32-2」&r中相同的机械\n结构。",
 	
 	"contraption.cabricality.39.1.title"   : "暴雪试炼",
 	"contraption.cabricality.39.1.subtitle": "步骤 39-1",

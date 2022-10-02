@@ -233,7 +233,7 @@
 			icon: "cabricality:earth_charge"
 			x: -3.0d
 			y: 3.0d
-			subtitle: "contraption.cabricality.33.2.subtitle}"
+			subtitle: "{contraption.cabricality.33.2.subtitle}"
 			description: ["{contraption.cabricality.33.2.content}"]
 			dependencies: ["5799B4124EE20DB1"]
 			id: "60A8B4C736CE3226"

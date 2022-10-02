@@ -157,12 +157,12 @@
 			]
 		}
 		{
-			title: "{chapter_3.cabricality.slimy_fern.title}"
+			title: "{chapter_3.cabricality.slime_fern.title}"
 			icon: "tconstruct:earth_slime_fern"
 			x: 3.5d
 			y: 1.0d
 			shape: "circle"
-			description: ["{chapter_3.cabricality.slimy_fern.content}"]
+			description: ["{chapter_3.cabricality.slime_fern.content}"]
 			hide_dependency_lines: true
 			dependencies: ["397232F676CB621B"]
 			id: "01BE1A7FCE79C63D"
@@ -189,7 +189,7 @@
 		}
 		{
 			title: "{contraption.cabricality.21.title}"
-			icon: "cabricality:sky_slimy_fern_leaf"
+			icon: "cabricality:sky_slime_fern_leaf"
 			x: 3.5d
 			y: 2.5d
 			subtitle: "{contraption.cabricality.21.subtitle}"
@@ -200,19 +200,19 @@
 				{
 					id: "135871C95B811F71"
 					type: "item"
-					item: "cabricality:sky_slimy_fern_leaf"
+					item: "cabricality:sky_slime_fern_leaf"
 					consume_items: false
 				}
 				{
 					id: "315328866377A0DC"
 					type: "item"
-					item: "cabricality:ender_slimy_fern_leaf"
+					item: "cabricality:ender_slime_fern_leaf"
 					consume_items: false
 				}
 				{
 					id: "65D5A32F475D78B6"
 					type: "item"
-					item: "cabricality:earth_slimy_fern_leaf"
+					item: "cabricality:earth_slime_fern_leaf"
 					consume_items: false
 				}
 				{
@@ -224,7 +224,7 @@
 		}
 		{
 			title: "{contraption.cabricality.22.1.title}"
-			icon: "cabricality:earth_slimy_fern_paste"
+			icon: "cabricality:earth_slime_fern_paste"
 			x: 3.5d
 			y: 4.0d
 			subtitle: "{contraption.cabricality.22.1.subtitle}"
@@ -235,19 +235,19 @@
 				{
 					id: "3EB8C2219D74126B"
 					type: "item"
-					item: "cabricality:earth_slimy_fern_paste"
+					item: "cabricality:earth_slime_fern_paste"
 					consume_items: false
 				}
 				{
 					id: "4CB87BE063DACC5F"
 					type: "item"
-					item: "cabricality:ender_slimy_fern_paste"
+					item: "cabricality:ender_slime_fern_paste"
 					consume_items: false
 				}
 				{
 					id: "1F0B0F9D72A6F611"
 					type: "item"
-					item: "cabricality:sky_slimy_fern_paste"
+					item: "cabricality:sky_slime_fern_paste"
 					consume_items: false
 				}
 				{
