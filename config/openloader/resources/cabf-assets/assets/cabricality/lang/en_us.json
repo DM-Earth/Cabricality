@@ -190,7 +190,7 @@
 	"item.cabricality.minus"    : "Minus",
 	"item.cabricality.multiply" : "Multiply",
 	"item.cabricality.divide"   : "Divide",
-	"item.cabricality.missingno": "NaN",
+	"item.cabricality.missingno": "א",
 
 	"item.cabricality.three_cast"   : "Interger Cast (3)",
 	"item.cabricality.eight_cast"   : "Interger Cast (8)",
@@ -255,7 +255,7 @@
 	"block.cabricality.substrate_lapis"   : "§1Lapis Lazuli§r Reagent",
 	"block.cabricality.substrate_emerald" : "§2Emerald§r Reagent",
 	"block.cabricality.substrate_diamond" : "§bDiamond§r Reagent",
-	"block.cabricality.substrate_sruby"   : "§cRuby§r Reagent",
+	"block.cabricality.substrate_ruby"   : "§cRuby§r Reagent",
 	"block.cabricality.substrate_sapphire": "§9Sapphire§r Reagent",
 
 	"block.cabricality.substrate_igneous" : "§dIgneous Catalyst",
@@ -1166,48 +1166,49 @@
   
 	"chapter_4a.cabricality.title": "↓ Chaotic Alchemy",
   
-	"chapter_4a.cabricality.start.title"  : "AnothernWay Foward",
+	"chapter_4a.cabricality.start.title"  : "Another Way Foward",
 	"chapter_4a.cabricality.start.content": "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",
 	
-	"chapter_4a.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_4a.cabricality.start.task.checkmark.title": "&7Become an &dAlchemist!&7",
   
 	"chapter_4a.cabricality.preparation.title"  : "Encapsulate - Decapsulate",
-	"chapter_4a.cabriclaity.preparation.content": "Aside from the Alchemical Laser setup, you'll need a few other Machines for your new Alchemy Lab.\n\n- The Fluid Encapsulator uses Molten Glass to create Reagents from resources.\n\n- The Reagent Extractor can reverse this process.",
+	"chapter_4a.cabriclaity.preparation.content": "Aside from the Alchemical Laser setup, you'll need a few other Machines for your new Alchemy Lab.\n\n- &7The Fluid Infuser uses Molten Glass to create Reagents from resources.&r\n\n- &7The Sawmill can reverse this process.&r",
   
 	"alchemy.cabricality.clueless.title"  : "Clueless",
 	"alchemy.cabricality.clueless.content": "Glowstone or Redstone Accelerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code.\n\nThis may reveal additional information about the correct combination as described in their tooltip.",
   
 	"alchemy.cabricality.silver.content"     : "Your coins seem to have a corresponding Reagent, too. Though do not expect to be able to mint new currency out of your silver ingots.",
-	"alchemy.cabricality.igneous.content"    : "If this is Unlocked, you have gathered all reagents of the Igneous Category.\n\nThe Igneous Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.&r\n\nIt's recommended to always take notes of previous results. This way it is not uncommon to find the solution in under six attempts!",
-	"alchemy.cabricality.herbal.content"     : "If this is Unlocked, you have gathered all reagents of the Herbal Category.\n\nThe Herbal Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.volatile.content"   : "If this is Unlocked, you have gathered all reagents of the Volatile Category.\n\nThe Volatile Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.crystalline.content": "If this is Unlocked, you have gathered all reagents of the Crystalline Category.\n\nThe Crystalline Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.metallurgic.content": "If this is Unlocked, you have gathered all reagents of the Metallurgic Category.\n\nThe Metallurgic Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.gemstone.content"   : "If this is Unlocked, you have gathered all reagents of the Gemstone Category.\n\nThe Gemstone Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+	"alchemy.cabricality.igneous.content"    : "&5If this is Unlocked, you have gathered all reagents of the &dIgneous Category.&r\n\nThe &dIgneous Catalyst&r can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.&r\n\n&7It's recommended to always take notes of previous results. This way it is not uncommon to find the solution in under six attempts!",
+	"alchemy.cabricality.herbal.content"     : "&5If this is Unlocked, you have gathered all reagents of the &dHerbal Category.&r\n\nThe &dHerbal Catalyst&r can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+	"alchemy.cabricality.volatile.content"   : "&5If this is Unlocked, you have gathered all reagents of the &dVolatile Category.&r\n\nThe &dVolatile Catalyst&r can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+	"alchemy.cabricality.crystalline.content": "&5If this is Unlocked, you have gathered all reagents of the &dCrystalline Category.&r\n\nThe &dCrystalline Catalyst&r can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+	"alchemy.cabricality.metallurgic.content": "&5If this is Unlocked, you have gathered all reagents of the &dMetallurgic Category.&r\n\nThe &dMetallurgic Catalyst&r can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+	"alchemy.cabricality.gemstone.content"   : "&5If this is Unlocked, you have gathered all reagents of the &dGemstone Category.&r\n\nThe &dGemstone Catalyst&r can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
   
 	"chapter_4a.cabricality.final_code.title"  : "The Final Code",
-	"chapter_4a.cabricality.final_code.content": "If this is Unlocked, you have gathered Catalysts of every Category.\n\nThis Ultimate Catalyst is now a combination of four of the Catalysts, much in the way the Catalysts are found and made by their Reagents.\n&7See this item's REI entry for more information.",
+	"chapter_4a.cabricality.final_code.content": "&5If this is Unlocked, you have gathered &dCatalysts of every Category.&r\n\nThis Ultimate Catalyst is now a combination of four of the Catalysts, much in the way the Catalysts are found and made by their Reagents.\n&7See this item's REI entry for more information.",
   
 	"chapter_4a.cabricality.discovery.title"  : "The Discovery",
 	"chapter_4a.cabricality.discovery.content": "Armed with the Chaos Catalyst, you will find all manner of transmutation pairs among the Reagents above.\n\nSimply put the Chaos Catalyst and a few jars of one reagent (The transmutation is lossy) into the hopper cart and find a different reagent returned after activating the laser. Mind that the Catalyst is never consumed in the process.\n\nOne of the Reagents should lead not to another known one, but to the Reagent of Silicon. If this turns out to be one that is reasonably accessible, you can consider choosing this path of production over the main one.",
   
 	"contraption.cabricality.31.a.title"   : "Automatic Chaos",
 	"contraption.cabricality.31.a.subtitle": "Contraption 31-A",
-	"contraption.cabricality.31.a.content" : "With the transmutation recipe in hand, it is time to build a facility able to create an infinite amount of Silicon Reagent via Laser Alchemy and the other steps part of the process.\n\nNote that the concete solution depends highly on the transmutation pairings of your World, which is why it cannot be laid out in this Guide. You can use JEI to find other necessary recipes leading up to the reagent you require.",
+	"contraption.cabricality.31.a.content" : "With the transmutation recipe in hand, it is time to build a facility able to create an infinite amount of Silicon Reagent via Laser Alchemy and the other steps part of the process.\n\nNote that the concrete solution depends highly on the transmutation pairings of your World, which is why it cannot be laid out in this Guide. You can use REI to find other necessary recipes leading up to the reagent you require.",
   
 	"chapter_4a.cabricality.complete.title"  : "&3Warp Zone",
 	"chapter_4a.cabricality.complete.content": "Now that you have a passive supply of Silicon Reagent, you may head over to the main section of Chapter 4. You will have opened up an entry point near the end of its recipe chain.",
 	
-	"chapter_4a.cabricality.complete.task.checkmark.title": "Checkmark",
+	"chapter_4a.cabricality.complete.task.checkmark.title": "&7Warp to &6Chapter 4 - Into the Box&r",
 
 
 
 	"chapter_5.cabricality.title": "&f5&r Divide by Digital",
 
-	"chapter_5.cabricality.start.title"  : "Finale Start!",
-	"chapter_5.cabricality.start.content": "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	"chapter_5.cabricality.start.title"   : "&6&lDivide by Digital",
+	"chapter_5.cabricality.start.subtitle": "&5Finale",
+	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
 	
-	"chapter_5.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_5.cabricality.start.task.checkmark.title": "&5Finale Start!",
 
 	"contraption.cabricality.42.title"   : "Processing Power",
 	"contraption.cabricality.42.subtitle": "Contraption 42",
@@ -1277,86 +1278,86 @@
   
 	"metallurgy.cabricality.title": "&8> Metallurgy",
   
-	"metallurgy.cabricality.start.title"   : "Build-a-Processing:",
+	"metallurgy.cabricality.start.title"   : "Build-a-Processing",
 	"metallurgy.cabricality.start.subtitle": "",
 	"metallurgy.cabricality.start.content" : "A simple Overview of most options to process your way from Ore to Ingot.\n\nFor every path through this graph, the effective yield per ore can be estimated by multiplying the ratio of each included step.",
 	
-	"metallurgy.cabricality.start.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.start.task.checkmark.title": "&7Become an &fMetallist!&r",
   
 	"metallurgy.cabricality.pickaxe.title"   : "Mining Tool",
 	"metallurgy.cabricality.pickaxe.subtitle": "&81 → &71",
 	
-	"metallurgy.cabricality.pickaxe.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.pickaxe.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.fortune_pickaxe.title"   : "Fortune",
 	"metallurgy.cabricality.fortune_pickaxe.subtitle": "&81 → &71 ~ 2",
 	
-	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "Complete",
   
-	"metallurgy.cabricality.i.title": "&f&lI&r Crushed",
+	"metallurgy.cabricality.i.title": "&f&lI&7 Crushed",
 	
-	"metallurgy.cabricality.i.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.task.checkmark.title": "Next",
   
 	"metallurgy.cabricality.i.smelting.title"   : "Smelting",
 	"metallurgy.cabricality.i.smelting.subtitle": "&81 → &73",
 	
-	"metallurgy.cabricality.i.smelting.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.smelting.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.i.pulverizing.title"   : "Pulverizing",
 	"metallurgy.cabricality.i.pulverizing.subtitle": "&81 → &76",
 	
-	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.i.milling.title"   : "Milling",
 	"metallurgy.cabricality.i.milling.subtitle": "&81 → &73",
 	
-	"metallurgy.cabricality.i.milling.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.milling.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.i.crushing.title"   : "Crushing",
 	"metallurgy.cabricality.i.crushing.subtitle": "&81 → &73 ~ 6",
 	
-	"metallurgy.cabricality.i.crushing.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.i.crushing.task.checkmark.title": "Complete",
   
-	"metallurgy.cabricality.ii.title": "&f&lII&r Dust",
+	"metallurgy.cabricality.ii.title": "&f&lII&7 Dust",
 	
-	"metallurgy.cabricality.ii.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.task.checkmark.title": "Next",
   
 	"metallurgy.cabricality.ii.blocking.title"   : "Block Cooling \\& Smelting",
 	"metallurgy.cabricality.ii.blocking.subtitle": "&89 → &71",
 	
-	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.ii.smelting.title"   : "Smelting Dust",
 	"metallurgy.cabricality.ii.smelting.subtitle": "&81 → &71",
 	
-	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.ii.melting.title"   : "Melting",
 	"metallurgy.cabricality.ii.melting.subtitle": "&81 → &73",
 	
-	"metallurgy.cabricality.ii.melting.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.melting.task.checkmark.title": "Complete",
   
 	"metallurgy.cabricality.ii.washing.title"   : "Washing",
 	"metallurgy.cabricality.ii.washing.subtitle": "&81 → &72",
 	
-	"metallurgy.cabricality.ii.washing.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.ii.washing.task.checkmark.title": "Complete",
   
-	"metallurgy.cabricality.iiia.title": "&f&lIIIa&r Nugget",
+	"metallurgy.cabricality.iiia.title": "&f&lIIIa&7 Nugget",
 	
-	"metallurgy.cabricality.iiia.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.iiia.task.checkmark.title": "Next",
   
-	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&r Liquid",
+	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&7 Liquid",
 	"metallurgy.cabricality.iiib.subtitle": "[in Nuggets]",
 	
-	"metallurgy.cabricality.iiib.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.iiib.task.checkmark.title": "Next",
   
-	"metallurgy.cabricality.iii.compacting.title": "Compacting by Press",
+	"metallurgy.cabricality.iii.compacting.title": "Compacting",
 	
 	"metallurgy.cabricality.iii.compacting.task.checkmark.title": "Compacting by Press",
   
-	"metallurgy.cabricality.iv.title": "&f&lIV&r Ingot",
+	"metallurgy.cabricality.iv.title": "&f&lIV&7 Ingot",
 	
-	"metallurgy.cabricality.iv.task.checkmark.title": "Checkmark",
+	"metallurgy.cabricality.iv.task.checkmark.title": "Complete",
   
   
   

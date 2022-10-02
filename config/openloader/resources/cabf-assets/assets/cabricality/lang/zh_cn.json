@@ -190,7 +190,7 @@
 	"item.cabricality.minus"    : "-",
 	"item.cabricality.multiply" : "×",
 	"item.cabricality.divide"   : "÷",
-	"item.cabricality.missingno": "NaN",
+	"item.cabricality.missingno": "א",
 
 	"item.cabricality.three_cast"   : "整数铸模（3）",
 	"item.cabricality.eight_cast"   : "整数铸模（8）",
@@ -255,7 +255,7 @@
 	"block.cabricality.substrate_lapis"   : "§1青金石§r试剂",
 	"block.cabricality.substrate_emerald" : "§2绿宝石§r试剂",
 	"block.cabricality.substrate_diamond" : "§b纯钻§r试剂",
-	"block.cabricality.substrate_sruby"   : "§c血钻§r试剂",
+	"block.cabricality.substrate_ruby"   : "§c血钻§r试剂",
 	"block.cabricality.substrate_sapphire": "§9蓝宝石§r试剂",
 
 	"block.cabricality.substrate_igneous" : "§d火山岩催化剂",
@@ -1166,48 +1166,49 @@
 	
 	"chapter_4a.cabricality.title": "&l↓&r 混沌炼金",
 	
-	"chapter_4a.cabricality.start.title"  : "AnothernWay Foward",
-	"chapter_4a.cabricality.start.content": "As an alternative, more risky approach to a refined Silicon resource, Laser Alchemy can provide an obscure yet rewarding new path of progression.\n\nDiscover the secret codes of each reagent class in order to learn about the recipe of Chaos Catalysts.\n\nOnce found, the Chaos Catalyst can not only transmute a material into Silicon, but potentially create other valuable resources from the most trivial ingredients!",
+	"chapter_4a.cabricality.start.title"  : "殊途同归",
+	"chapter_4a.cabricality.start.content": "作为另一条通向罗马的路，你可以用更加冒险的方式获得&d高能硅。&r激光冶金工业将你引向了这一条模糊却又高回报的殊途。\n\n你需要发掘不同试剂配方间的秘密规律，最终掌握&b混沌催化剂&r的制造方法！\n\n一旦你推开了这扇大门，你不仅能够轻易地将其他物质转化成&d硅，&r还能够获得点石成金的能力，从废土中提取出更多稀有材料！",
 	
-	"chapter_4a.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_4a.cabricality.start.task.checkmark.title": "&7成为&d炼金术士！&7",
 	
-	"chapter_4a.cabricality.preparation.title"  : "Encapsulate - Decapsulate",
-	"chapter_4a.cabriclaity.preparation.content": "Aside from the Alchemical Laser setup, you'll need a few other Machines for your new Alchemy Lab.\n\n- The Fluid Encapsulator uses Molten Glass to create Reagents from resources.\n\n- The Reagent Extractor can reverse this process.",
+	"chapter_4a.cabricality.preparation.title"  : "开刃 - 收刃",
+	"chapter_4a.cabriclaity.preparation.content": "除了一台&d炼金镭射器&r结构，你的实验室中还需要几台其它的制备仪器。\n\n- &7&d液体注入机&r可以将材料注入&d熔融玻璃&r中，制成罐装试剂。&r\n\n- &7&d锯木机&r则可以反向进行整个过程。&r",
 	
-	"alchemy.cabricality.clueless.title"  : "Clueless",
-	"alchemy.cabricality.clueless.content": "Glowstone or Redstone Accelerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code.\n\nThis may reveal additional information about the correct combination as described in their tooltip.",
+	"alchemy.cabricality.clueless.title"  : "一窍不通",
+	"alchemy.cabricality.clueless.content": "当使用&d漏斗矿车&r输入催化剂代码时，你可以选择在左起第五栏中放入&6荧石&r稳定剂和或&c红石&r稳定剂。\n\n这么做也许可以揭幕更多有关正确配方的信息...",
 	
-	"alchemy.cabricality.silver.content"     : "Your coins seem to have a corresponding Reagent, too. Though do not expect to be able to mint new currency out of your silver ingots.",
-	"alchemy.cabricality.igneous.content"    : "If this is Unlocked, you have gathered all reagents of the Igneous Category.\n\nThe Igneous Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.&r\n\nIt's recommended to always take notes of previous results. This way it is not uncommon to find the solution in under six attempts!",
-	"alchemy.cabricality.herbal.content"     : "If this is Unlocked, you have gathered all reagents of the Herbal Category.\n\nThe Herbal Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.volatile.content"   : "If this is Unlocked, you have gathered all reagents of the Volatile Category.\n\nThe Volatile Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.crystalline.content": "If this is Unlocked, you have gathered all reagents of the Crystalline Category.\n\nThe Crystalline Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.metallurgic.content": "If this is Unlocked, you have gathered all reagents of the Metallurgic Category.\n\nThe Metallurgic Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
-	"alchemy.cabricality.gemstone.content"   : "If this is Unlocked, you have gathered all reagents of the Gemstone Category.\n\nThe Gemstone Catalyst can be created by a combination of four reagents of this Category in the Alchemical Laser.\n&7See the Catalyst's REI entry for more information.",
+	"alchemy.cabricality.silver.content"     : "你口袋里的货币似乎也有着对应的试剂。别太想当然，把你的银锭铸成更多的货币肯定是行不通的。",
+	"alchemy.cabricality.igneous.content"    : "&5此任务会在你拥有所有&d类火山岩试剂&5后解锁。&r\n\n&d火山岩催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。&r\n\n&7记录下先前测试的结果是个好习惯。勤于记录，六次以内找到正确配方的概率也许就会大大增加！",
+	"alchemy.cabricality.herbal.content"     : "&5此任务会在你拥有所有&d类草药试剂&5后解锁。&r\n\n&d草药催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+	"alchemy.cabricality.volatile.content"   : "&5此任务会在你拥有所有&d类沸腾试剂&5后解锁。&r\n\n&d沸腾催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+	"alchemy.cabricality.crystalline.content": "&5此任务会在你拥有所有&d类晶化试剂&5后解锁。&r\n\n&d晶化催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+	"alchemy.cabricality.metallurgic.content": "&5此任务会在你拥有所有&d类箔层试剂&5后解锁。&r\n\n&d箔层催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+	"alchemy.cabricality.gemstone.content"   : "&5此任务会在你拥有所有&d类辉光试剂&5后解锁。&r\n\n&d辉光催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+  
+	"chapter_4a.cabricality.final_code.title"  : "宇宙的答案",
+	"chapter_4a.cabricality.final_code.content": "&5此任务会在你拥有所有&d催化剂&5后解锁。&r\n\n在你面前的催化剂，则需要其中的四个以合成。看吧，换汤不换药。\n&7详见催化剂的REI介绍界面。",
 	
-	"chapter_4a.cabricality.final_code.title"  : "The Final Code",
-	"chapter_4a.cabricality.final_code.content": "If this is Unlocked, you have gathered Catalysts of every Category.\n\nThis Ultimate Catalyst is now a combination of four of the Catalysts, much in the way the Catalysts are found and made by their Reagents.\n&7See this item's REI entry for more information.",
+	"chapter_4a.cabricality.discovery.title"  : "「伟大发现」",
+	"chapter_4a.cabricality.discovery.content": "手拿&b混沌催化剂，&r一切试剂的嬗变规律尽收眼底！n\n只需要把&b混沌催化剂&r和四罐其它试剂放在一起，照猫画虎地对其发射炼金激光即可。此过程不会消耗&b混沌催化剂。&r\n\n其中有一种试剂并不会转化为另一种，而是会产出&d高能硅。&r当你一旦成功，这将会大大简化你的生产流程。",
 	
-	"chapter_4a.cabricality.discovery.title"  : "The Discovery",
-	"chapter_4a.cabricality.discovery.content": "Armed with the Chaos Catalyst, you will find all manner of transmutation pairs among the Reagents above.\n\nSimply put the Chaos Catalyst and a few jars of one reagent (The transmutation is lossy) into the hopper cart and find a different reagent returned after activating the laser. Mind that the Catalyst is never consumed in the process.\n\nOne of the Reagents should lead not to another known one, but to the Reagent of Silicon. If this turns out to be one that is reasonably accessible, you can consider choosing this path of production over the main one.",
-	
-	"contraption.cabricality.31.a.title"   : "Automatic Chaos",
+	"contraption.cabricality.31.a.title"   : "混沌装置",
 	"contraption.cabricality.31.a.subtitle": "步骤 31-A",
-	"contraption.cabricality.31.a.content" : "With the transmutation recipe in hand, it is time to build a facility able to create an infinite amount of Silicon Reagent via Laser Alchemy and the other steps part of the process.\n\nNote that the concete solution depends highly on the transmutation pairings of your World, which is why it cannot be laid out in this Guide. You can use JEI to find other necessary recipes leading up to the reagent you require.",
+	"contraption.cabricality.31.a.content" : "你现在已经得知所有转化的具体配方了。是时候建造一条自动化炼金生产线来源源不断地生产&d硅&r了！\n\n注意，具体步骤会根据你所在世界的不同而产生大幅变化，这也是为什么我们不能像之前一样手把手地带着你一步步建造了。善用REI可以帮助你解决建造过程中的许多必要问题。",
 	
-	"chapter_4a.cabricality.complete.title"  : "&3Warp Zone",
-	"chapter_4a.cabricality.complete.content": "Now that you have a passive supply of Silicon Reagent, you may head over to the main section of Chapter 4. You will have opened up an entry point near the end of its recipe chain.",
+	"chapter_4a.cabricality.complete.title"  : "&3空间翘曲区域",
+	"chapter_4a.cabricality.complete.content": "现在，你有了充足的&d高能硅试剂&r供应，是时候再次一头扎进第四章的主线内容了！",
 	
-	"chapter_4a.cabricality.complete.task.checkmark.title": "Checkmark",
+	"chapter_4a.cabricality.complete.task.checkmark.title": "&7回到&6第四章：靶向药物&r",
 
 
 
-	"chapter_5.cabricality.title": "&f5&r Divide by Digital",
+	"chapter_5.cabricality.title": "&f5&r 意识上传",
 
-	"chapter_5.cabricality.start.title"  : "Finale Start!",
-	"chapter_5.cabricality.start.content": "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	"chapter_5.cabricality.start.title"   : "&6&l意识上传",
+	"chapter_5.cabricality.start.subtitle": "&5最终章",
+	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
 	
-	"chapter_5.cabricality.start.task.checkmark.title": "Checkmark",
+	"chapter_5.cabricality.start.task.checkmark.title": "&5开始！",
 
 	"contraption.cabricality.42.title"   : "Processing Power",
 	"contraption.cabricality.42.subtitle": "步骤 42",
@@ -1281,7 +1282,7 @@
 	"metallurgy.cabricality.start.subtitle": "",
 	"metallurgy.cabricality.start.content" : "这里列举了一些能够把原矿冶炼成金属锭的流水线生产方式。\n\n对于这张流程图里的每一条路线来说，原矿的有效产值就是先前所有步骤中比率的乘积。",
 	
-	"metallurgy.cabricality.start.task.checkmark.title": "成为冶金学者",
+	"metallurgy.cabricality.start.task.checkmark.title": "&7成为&f冶金学者！&7",
 	
 	"metallurgy.cabricality.pickaxe.title"   : "徒手挖掘",
 	"metallurgy.cabricality.pickaxe.subtitle": "&81 → &71",
@@ -1293,7 +1294,7 @@
 	
 	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.i.title": "&f&lI&r 粉碎矿石",
+	"metallurgy.cabricality.i.title": "&f&lI&7 粉碎矿石",
 	
 	"metallurgy.cabricality.i.task.checkmark.title": "下一步",
 	
@@ -1317,7 +1318,7 @@
 	
 	"metallurgy.cabricality.i.crushing.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.ii.title": "&f&lII&r 矿粉",
+	"metallurgy.cabricality.ii.title": "&f&lII&7 矿粉",
 	
 	"metallurgy.cabricality.ii.task.checkmark.title": "下一步",
 	
@@ -1341,11 +1342,11 @@
 	
 	"metallurgy.cabricality.ii.washing.task.checkmark.title": "完成",
 	
-	"metallurgy.cabricality.iiia.title": "&f&lIIIa&r 金属粒",
+	"metallurgy.cabricality.iiia.title": "&f&lIIIa&7 金属粒",
 	
 	"metallurgy.cabricality.iiia.task.checkmark.title": "下一步",
 	
-	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&r 液态金属",
+	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&7 液态金属",
 	"metallurgy.cabricality.iiib.subtitle": "[单位：粒]",
 	
 	"metallurgy.cabricality.iiib.task.checkmark.title": "下一步",
@@ -1354,7 +1355,7 @@
 	
 	"metallurgy.cabricality.iii.compacting.task.checkmark.title": "使用&6动力辊压机&r压制金属",
 	
-	"metallurgy.cabricality.iv.title": "&f&lIV&r 金属锭",
+	"metallurgy.cabricality.iv.title": "&f&lIV&7 金属锭",
 	
 	"metallurgy.cabricality.iv.task.checkmark.title": "完成",
 	
@@ -1364,5 +1365,5 @@
 	
 	"thanks.cabricality.staff.title"   : "&c感&a谢&b游&f玩！",
 	"thanks.cabricality.staff.subtitle": "制作人员",
-	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/代码&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7贡献者&r"
+	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/程序&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7贡献者&r"
 }

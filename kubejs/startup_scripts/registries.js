@@ -234,7 +234,7 @@ onEvent("item.registry", event => {
 	number("Minus", "-")
 	number("Multiply", "×")
 	number("Divide", "÷")
-	number("Missingno", "NaN")
+	number("Missingno", "א")
 
 	/*
 		event.create(asIdentifier("number_array")

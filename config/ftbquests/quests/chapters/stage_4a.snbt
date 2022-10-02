@@ -31,11 +31,11 @@
 			}]
 		}
 		{
-			title: "{chapter_4a.cabriclaity.preparation.title}"
+			title: "{chapter_4a.cabricality.preparation.title}"
 			x: -0.25d
 			y: 2.0d
 			shape: "circle"
-			description: ["{chapter_4a.cabriclaity.preparation.content}"]
+			description: ["{chapter_4a.cabricality.preparation.content}"]
 			dependencies: ["05446225038D260A"]
 			id: "42B615F7BECA6E58"
 			tasks: [
