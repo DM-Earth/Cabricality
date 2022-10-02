@@ -186,7 +186,7 @@ onEvent("item.registry", event => {
 		})
 	}
 
-	let initSlimeFerns = (event => {
+	let initSlimeFerns = () => {
 		let slime = (id, color) => {
 			id = id.toLowerCase()
 			event.create(asIdentifier(id + "_slime_fern_leaf"))
@@ -202,7 +202,7 @@ onEvent("item.registry", event => {
 		slime("earth", 0x8FDB84)
 		slime("sky", 0x00F9DE)
 		slime("ender", 0xAC2EFC)
-	})
+	}
 
 	//	Final init
 	let initItems = () => {
