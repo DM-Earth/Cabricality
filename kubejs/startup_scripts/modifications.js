@@ -20,7 +20,10 @@ onEvent("item.modification", event => {
             tierOptions.setAttackDamageBonus(e[5])
             tierOptions.setEnchantmentValue(e[6])
         }
-        let tools = ["hoe", "shovel", "axe", "pickaxe", "sword"]
+    //    let tools = ["hoe", "shovel", "axe", "pickaxe", "sword"]
+        let tools = [
+            ["sword", 4, 1.6, ]
+        ]
 
         tools.forEach(p => {
             event.modify(get(p), item => {

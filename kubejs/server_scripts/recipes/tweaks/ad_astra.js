@@ -54,7 +54,7 @@ onEvent("recipes", event => {
 	event.remove({ output: AR("nasa_workbench") })
 	event.remove({ output: AR("compressor") })
 
-	event.recipes.createPressing(AR("desh_plate"), AR("desh_ingot"))
+	event.recipes.createPressing(AR("compressed_desh"), AR("desh_ingot"))
 	event.recipes.createPressing(AR("compressed_ostrum"), AR("ostrum_ingot"))
 	event.recipes.createPressing(AR("compressed_calorite"), AR("calorite_ingot"))
 

@@ -1005,7 +1005,7 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/des
 hash = "7fcb784c821d4cf6a44e32b02de148bc93b44f5122de87d12d43d6f79ef0bdb8"
 
 [[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/desh_plate.png"
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_desh.png"
 hash = "4376dda61cfada45bfe6a4bb5e238d12c5c6a805b091ec9a9a22594c139f8c0d"
 
 [[files]]
@@ -4191,7 +4191,7 @@ metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "dc306d93b5994351925191bc52eeb1707ebafc07fa1dc3e1d846cb24fe0f452c"
+hash = "e0b8ec07f4ceca7e316a5860a15362a64d75ef4e6f34f98fd7b88642b32d4892"
 metafile = true
 
 [[files]]
@@ -4334,7 +4334,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "76f23e3c7d290c587085b22f59e06160a38593d73859cbb4a4738d1fa2fade4d"
+hash = "dfebd8072576c75a939f56cab83cabdf3c5828da7cdb814e97c272e6c0b8d006"
 metafile = true
 
 [[files]]

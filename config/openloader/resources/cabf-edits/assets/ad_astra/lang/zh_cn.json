@@ -459,7 +459,7 @@
 	"item.ad_astra.desh_engine": "戴斯火箭引擎",
 	"item.ad_astra.desh_ingot" : "戴斯锭",
 	"item.ad_astra.desh_nugget": "戴斯粒",
-	"item.ad_astra.desh_plate" : "戴斯板",
+	"item.ad_astra.compressed_desh" : "戴斯板",
 	"item.ad_astra.desh_tank"  : "戴斯燃料储罐",
 
 	"item.ad_astra.empty_tank": "空",
@@ -616,7 +616,7 @@
 	"tag.c.desh_ingots"        : "戴斯锭",
 	"tag.c.desh_nuggets"       : "戴斯粒",
 	"tag.c.desh_ores"          : "戴斯矿石",
-	"tag.c.desh_plates"        : "戴斯板",
+	"tag.c.compressed_deshs"        : "戴斯板",
 	"tag.c.ice_shard_ores"     : "冰晶矿石",
 	"tag.c.iron_plates"        : "铁板",
 	"tag.c.iron_rods"          : "铁棒",

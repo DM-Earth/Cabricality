@@ -51,12 +51,16 @@ onEvent("recipes", event => {
   event.replaceInput("indrev:nikolite_dust", "minecraft:redstone")
   event.replaceInput("#c:steel_ingots", "indrev:steel_ingot")
   event.replaceInput("#c:compressed_steel", "indrev:steel_plate")
-  event.replaceInput("#c:compressed_desh", "ad_astra:desh_plate")
+  event.replaceInput("#c:compressed_desh", "ad_astra:compressed_desh")
 
   event.replaceInput("#c:copper_nuggets", "create:copper_nugget")
   event.replaceOutput({}, "#c:copper_nuggets", "create:copper_nugget")
   event.replaceInput("#c:nuggets/copper", "create:copper_nugget")
   event.replaceOutput({}, "#c:nuggets/copper", "create:copper_nugget")
+
+  event.remove({ output: FD("wheat_dough") })
+  event.replaceInput(CR("dough"), FD("wheat_dough"))
+  event.replaceOutput({}, CR("dough"), FD("wheat_dough"))
 
   event.blasting(IV("steel_ingot"), MC("iron_ingot")).cookingTime(400)
 
