@@ -1163,7 +1163,7 @@
 	"chapter_4.cabricality.complete.title"  : "&f&l第四章完成！",
 	"chapter_4.cabricality.complete.content": "你坚持走到这里了！截至目前，工厂中所有的传统流水线都应组装完成，让我们一起步入智能时代吧！\n&7等你准备好了，就去&a纵览&7看看！",
 	
-	"contraption.cabricality.41.1.title"   : "电路快递 I",
+	"contraption.cabricality.41.1.title"   : "电路速递 I",
 	"contraption.cabricality.41.1.subtitle": "步骤 41-1",
 	"contraption.cabricality.41.1.content" : "组装&6各式ME电路板&r还需要一些额外操作，也许你可以制造一条半自动化流水线。",
 	
@@ -1215,73 +1215,73 @@
 
 	"chapter_5.cabricality.start.title"   : "&6&l意识上传",
 	"chapter_5.cabricality.start.subtitle": "&5最终章",
-	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	"chapter_5.cabricality.start.content" : "我们终于走到了旅途的最终章——你将会建造一栋数据中心！它会不计日夜地吞吐数以万计的数字和符号，川流不息。\n\nB勇敢前进，用你手边的机械开拓新的疆域！\n\n把沸腾奔涌的&5逻辑&r铸成一个个锃亮的数字，在智能时代的风口上无问西东...\n\n如果你有些头绪的话，试着构造一个&5ME系统，&r它也许能为你的数据管理提供一些更加有效的方案。",
 	
 	"chapter_5.cabricality.start.task.checkmark.title": "&5开始！",
 
-	"contraption.cabricality.42.title"   : "Processing Power",
+	"contraption.cabricality.42.title"   : "能源处理",
 	"contraption.cabricality.42.subtitle": "步骤 42",
-	"contraption.cabricality.42.content" : "In order to provide 'Mechanical' Calculators with numbers and operators, all available Calculation Mechanisms have to be melted down into the figurative processing power they provide.",
+	"contraption.cabricality.42.content" : "固态的&5智能构件&r难以加工。要用它们作为数据处理的原材料，你需要先将它们熔至液态。",
 
-	"contraption.cabricality.43.title"   : "Operators",
+	"contraption.cabricality.43.title"   : "藕断丝连",
 	"contraption.cabricality.43.subtitle": "步骤 43",
-	"contraption.cabricality.43.content" : "Without the operators, a data center would not be able to combine digits into others. Provide your Calculators with an automated supply of any operator they end up requiring.",
+	"contraption.cabricality.43.content" : "&5运算符&r就好似战马的蹄铁，无论是远征还是游击，都举足轻重。\n\n自动化供应&5运算符&r是一切数据处理的基础工作。",
 
 	"contraption.cabricality.44.1.subtitle": "步骤 44-1",
-	"contraption.cabricality.44.1.content" : "As one of the two available digits, Threes can be cast from unprocessed logic. Together with the Eight and available Operators, your Calculators will have to create the remaining digits from 0 to 9 in equal amounts.\n\nThis casting process can quickly become a bottleneck, for most running calculations depend on the numbers generated here. Make sure things move fluently.",
+	"contraption.cabricality.44.1.content" : "作为最原始的两个数字之一，你可以将&5液态逻辑&r直接处理成&5数字&l3。&r将它与&5数字&l8&r和各种&5运算符&r相结合，就能计算出&5&l0~9&r中的任何整数了。\n\n这一步骤很可能成为日后的产能瓶颈，因为任何数据的处理都要基于最原始的数字。务必确保你的机器工作顺畅无阻。",
 
 	"contraption.cabricality.44.2.subtitle": "步骤 44-2",
-	"contraption.cabricality.44.2.content" : "The second available Digit is the Eight. It can be cast from unprocessed logic.\n\nFrom here, plan via which calculations the other digits will be created, and how the cost can be minimised. Remember that each added calculation step ends up increasing the amount of Calculation Mechanisms required for the digit it leads to.",
+	"contraption.cabricality.44.2.content" : "作为除了&5数字&l3&r以外的另一个原始数字，&5数字&l8&r也可以直接由&5液态逻辑&r处理而成。\n\n从这一步起，你需要精确计算并最小化处理每个数字所消耗的&5机械、运算符&r和&5额外步骤。&r记住，你在任何一个步骤中的小失误都会增加处理目标数字所消耗的&5智能构件。&r",
 
 	"contraption.cabricality.45.1.subtitle": "步骤 45-1",
-	"contraption.cabricality.45.1.content" : "3-2, 4/4, 8-7,...? A total of 21 options exist to calculate ones. Whichever will it be?",
+	"contraption.cabricality.45.1.content" : "&5&o3-2、4÷4、8-7...&r\n\n总共有21种方式计算&5数字&l1。&r\n&7&o&o你会选择哪一种呢？",
 
 	"contraption.cabricality.45.2.subtitle": "步骤 45-2",
-	"contraption.cabricality.45.2.content" : "3-1, 8/4, 1+1,...? A total of 17 options exist to calculate twos. Any favourites?",
+	"contraption.cabricality.45.2.content" : "&5&o3-1, 8÷4, 1+1...&r\n\n总共有17种方式计算&5数字&l2。&r\n&7&o最中意哪个？",
 
 	"contraption.cabricality.45.4.subtitle": "步骤 45-4",
-	"contraption.cabricality.45.4.content" : "6-2, 2x2, 3+1,...? A total of 16 options exist to calculate fours. Choose wisely.",
+	"contraption.cabricality.45.4.content" : "&5&o6-2, 2×2, 3+1...&r\n\n总共有16种方式计算&5数字&l4。&r\n&7&o谨慎选择。",
 
 	"contraption.cabricality.45.5.subtitle": "步骤 45-5",
-	"contraption.cabricality.45.5.content" : "3+2, 6-1, 8-3,...? A total of 14 options exist to calculate fives. How do you want to do this?",
+	"contraption.cabricality.45.5.content" : "&5&o3+2, 6-1, 8-3...&r\n\n总共有14种方式计算&5数字&l5。&r\n&7&o你要怎么处理？",
 
 	"contraption.cabricality.45.6.subtitle": "步骤 45-6",
-	"contraption.cabricality.45.6.content" : "3x2, 3+3, 8-2,...? A total of 16 options exist to calculate sixes. May the best be victorious.",
+	"contraption.cabricality.45.6.content" : "&5&o3×2, 3+3, 8-2...&r\n\n总共有16种方式计算&5数字&l6。&r\n&7&o愿数学原理与你同在。",
 
 	"contraption.cabricality.45.7.subtitle": "步骤 45-7",
-	"contraption.cabricality.45.7.content" : "9-2, 4+3, 8-1,...? A total of 14 options exist to calculate sevens. Feeling Lucky?",
+	"contraption.cabricality.45.7.content" : "&5&o9-2, 4+3, 8-1...&r\n\n总共有14种方式计算&5数字&l7。&r\n&7&o天选之子？",
 
 	"contraption.cabricality.45.9.subtitle": "步骤 45-9",
-	"contraption.cabricality.45.9.content" : "3x3, 4+5, 8+1,...? A total of 15 options exist to calculate nines. The choice is yours.",
+	"contraption.cabricality.45.9.content" : "&5&o3×3, 4+5, 8+1...&r\n\n总共有15种方式计算&5数字&9。&r\n&7&o就由你来选择。",
 
 	"contraption.cabricality.45.0.subtitle": "步骤 45-0",
-	"contraption.cabricality.45.0.content" : "3-3, 2-2, 8-8,...? A total of 39 options exist to calculate zeros. A tough decision!",
+	"contraption.cabricality.45.0.content" : "&5&o3-3, 2-2, 8-8...&r\n\n总共有39种方式计算&5数字&l0。&r\n&7&o选择困难症！",
 
-	"contraption.cabricality.46.title"   : "Solving Trajectories",
+	"contraption.cabricality.46.title"   : "线性代数",
 	"contraption.cabricality.46.subtitle": "步骤 46",
-	"contraption.cabricality.46.content" : "For the calculations of the Guidance computer, we will need.. a lot of these Digits.\n\nBefore letting items exit the logistical ecosystem of the calculations, make sure each digit leaves in equal amounts. Brass Tunnels can solve this issue in a straight-forward fashion.\n\nEach digit now has to be dissolved back into its liquified form via Smeltery. Once a Smeltery collected 10 liquified items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix.\n\nThe Guidance Computer requires 8 Matrices to function. Depending on your data centre and mechanism assembly lines, this may take a while.",
+	"contraption.cabricality.46.content" : "为了让数据中心的大脑运行起来，我们需要...很多&5数字&l3。&r\n\n在这些数字离开逻辑循环阈时，请确保每种数字的数量相同。将&5黄铜隧道&r并排摆放可以有效解决这个问题。\n\n现在，你需要把这些数字送进&5冶炼炉，&r重新熔成液态。每当&5冶炼炉&r中同时拥有十种液态数字的时候，它们就会结合成&5编码逻辑。&r只有当这些有形的合金积累的足够多时，才能够被铸成一块&5智能矩阵。&r\n\n指导电脑最低需要8块&5智能矩阵&r才可以投入使用。你在数字生产线中所使用的技术和数据中心的结构，这可能需要花上一点时间。",
 
-	"contraption.cabricality.47.title"   : "Upcycle Bin",
+	"contraption.cabricality.47.title"   : "良性进制",
 	"contraption.cabricality.47.subtitle": "步骤 47",
-	"contraption.cabricality.47.content" : "Rocketry Equipment is built from the light but robust material of Matter Plastics. Matter Balls can be created in a Matter Condenser.\n\nFirst, insert a 1k ME Storage Component into the Matter Condenser, set it to produce Matter Balls and then supply it with the most abundant flow of items you can come up with. Don't throw your valuables in; the items are consumed in the process.",
+	"contraption.cabricality.47.content" : "&5物质条，&r这种无暇而坚韧的材料是制造星际飞行器的不二之选。而&5物质球&r可以通过&5物质冷凝器&r制造。\n\n向&5物质冷凝器&r中插入一条&51k ME 储存元件，&r调整输出为&5物质球，&r然后塞进你手头最富裕的物质。尽管使用你认为没有什么价值的物品吧！因为在&5物质冷凝器&r中，海底的珍珠和脚下的土同样便宜。",
 
-	"contraption.cabricality.48.title"   : "Expensive Bricks II",
+	"contraption.cabricality.48.title"   : "奢侈物质",
 	"contraption.cabricality.48.subtitle": "步骤 48",
-	"contraption.cabricality.48.content" : "Create bars of Matter Plastics in a Heated Compacter. You'll need a couple of these.",
+	"contraption.cabricality.48.content" : "你可以在&5高温液压机&r中制造出&5物质块，&r我们需要用上一些。",
 
-	"contraption.cabricality.49.title"   : "Electrolysis",
+	"contraption.cabricality.49.title"   : "电蚀工艺",
 	"contraption.cabricality.49.subtitle": "步骤 49",
-	"contraption.cabricality.49.content" : "In order to fill your Oxygen Tanks, stand on a Gas Charge Pad with oxygen in its internal storage.\n\nSuitable Oxygen can be gained by separating water into its components via heated mixing.",
+	"contraption.cabricality.49.content" : "站在&5供养仪&r上，慢慢装满你的&5氧气罐。&r\n\n而通过&5氧气制造仪，&r你可以将水中的氧元素电解成为氧气以供呼吸和储存。",
 
-	"contraption.cabricality.50.title"   : "The Spaceship",
-	"contraption.cabricality.50.subtitle": "步骤 &b50&r",
-	"contraption.cabricality.50.content" : "With the Launch Pad in place, it is time to construct your Spaceship.\n\nGive it your best, after all this is the final 步骤 you've been working towards.\n&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating.",
+	"contraption.cabricality.50.title"   : "&d千年之隼",
+	"contraption.cabricality.50.subtitle": "步骤 &d50&r",
+	"contraption.cabricality.50.content" : "站在空荡的&5发射台&r上，是时候造出属于你自己的飞船了。\n\n发挥出你的全部实力吧，不要在暴风雨前的宁静中倒下！",
 
-	"chapter_5.cabricality.complete.title"  : "&dWe Have Lift Off!",
-	"chapter_5.cabricality.complete.content": "With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship.\n\nTake a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner.\n\nIn your own time, take a seat in your assembled rocket, and press Space.",
+	"chapter_5.cabricality.complete.title"  : "&b自然选择，前进四！",
+	"chapter_5.cabricality.complete.content": "万物归位，蓄势待发。\n\n花点时间准备一面旗子，好趁早将它矗立在全新的大地上！\n\n放轻松，等你准备好了，向着星辰与大海义无反顾地前行吧。",
 
-	"chapter_5.cabricality.attire.title"  : "&9Attire",
-	"chapter_5.cabricality.attire.content": "If you intend to survive past the landing, a special set of armour will be required.",
+	"chapter_5.cabricality.attire.title"  : "&9盛装出席",
+	"chapter_5.cabricality.attire.content": "如果你想在严酷的外星环境中生存，考虑换套更合适的服装？",
 
 	
 	
