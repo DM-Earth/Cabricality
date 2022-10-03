@@ -1,5 +1,3 @@
-const Minecraft = java('net.minecraft.client.Minecraft')
-
 function playsound_coin(server, player, type) {
 	if (type == 'silver') {
 		server.runCommandSilent(`playsound minecraft:block.amethyst_cluster.break ambient @a ${player.x} ${player.y} ${player.z}`)
@@ -14,12 +12,18 @@ function playsound_coin(server, player, type) {
 	}
 }
 
+var coinCooling = [];
+
 onEvent('item.right_click', event => {
-	if (event.getItem() == 'cabricality:silver_coin') {
-		var side = Math.round(Math.random())
-		var player = event.getEntity()
-		var coin = ``
-		var message = ``
+	let player = event.getEntity()
+
+	if (event.getItem() == 'cabricality:silver_coin'
+	&& !coinCooling.includes(player.toString())) {
+		coinCooling.push(player.toString())
+
+		let side = Math.round(Math.random())
+		let coin = ``
+		let message = ``
 
 		if (side == 1) {
 			coin = `cabricality:silver_coin_top`
@@ -32,15 +36,23 @@ onEvent('item.right_click', event => {
 		}
 
 		Minecraft.getInstance().gameRenderer.displayItemActivation(coin)
-		Minecraft.getInstance().gui.getChat().addMessage(Text.translate(`event.cabricality.coin_flip`, player.getName(), event.getItem().getName()).getString() + message)
 		playsound_coin(event.server, player, 'silver')
+
+		event.server.scheduleInTicks(12, event.server, () => {
+			Minecraft.getInstance().gui.getChat().addMessage(Text.translate(`event.cabricality.coin_flip`, player.getName(), event.getItem().getName()).getString() + message)
+			event.server.scheduleInTicks(29, event.server, () => {
+				coinCooling = coinCooling.filter(function(item) { return item != player.toString() })
+			})
+		})
 	}
 
-	if (event.getItem() == 'cabricality:gold_coin') {
-		var side = Math.round(Math.random())
-		var player = event.getEntity()
-		var coin = ``
-		var message = ``
+	if (event.getItem() == 'cabricality:gold_coin'
+	&& !coinCooling.includes(player.toString())) {
+		coinCooling.push(player.toString())
+
+		let side = Math.round(Math.random())
+		let coin = ``
+		let message = ``
 
 		if (side == 1) {
 			coin = `cabricality:gold_coin_top`
@@ -52,7 +64,13 @@ onEvent('item.right_click', event => {
 		}
 
 		Minecraft.getInstance().gameRenderer.displayItemActivation(coin)
-		Minecraft.getInstance().gui.getChat().addMessage(Text.translate(`event.cabricality.coin_flip`, player.getName(), event.getItem().getName()).getString() + message)
 		playsound_coin(event.server, player, 'gold')
+
+		event.server.scheduleInTicks(12, event.server, () => {
+			Minecraft.getInstance().gui.getChat().addMessage(Text.translate(`event.cabricality.coin_flip`, player.getName(), event.getItem().getName()).getString() + message)
+			event.server.scheduleInTicks(29, event.server, () => {
+				coinCooling = coinCooling.filter(function(item) { return item != player.toString() })
+			})
+		})
 	}
 })

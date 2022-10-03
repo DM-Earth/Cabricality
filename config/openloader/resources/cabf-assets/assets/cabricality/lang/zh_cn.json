@@ -60,6 +60,7 @@
 	"comment_event": "事件",
 
 	"event.cabricality.coin_flip": "§8%s翻转了一枚%s，§8结果是",
+	"event.cabricality.dice_roll": "§8%s掷出了一枚%s，§8结果是",
 
 
 
@@ -208,6 +209,8 @@
 
 
 	"comment_block": "方块",
+
+	"block.cabricality.dice": "§5骰子",
 
 	"block.cabricality.extractor_machine": "提取器",
 	"block.cabricality.andesite_machine" : "安山机器",

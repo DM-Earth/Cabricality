@@ -62,6 +62,7 @@
 	"comment_event": "Events",
 
 	"event.cabricality.coin_flip": "§8%s flipped a %s, §8it was ",
+	"event.cabricality.dice_roll": "§8%s rolled a %s, §8it was ",
 
 
 
@@ -210,6 +211,8 @@
 
 
 	"comment_block": "Blocks",
+
+	"block.cabricality.dice": "§5Dice",
 
 	"block.cabricality.extractor_machine": "Extractor Machine",
 	"block.cabricality.andesite_machine" : "Andesite Machine",
