@@ -96,8 +96,8 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Ruby", "Ruby")
 		registerTypicalItem("Sapphire", "Sapphire")
 
-		registerTypicalItem("Gold Coin", "Gold Coin")
-		registerTypicalItem("Silver Coin", "Silver Coin")
+		registerTypicalItem("Gold Coin", "§6Gold Coin")
+		registerTypicalItem("Silver Coin", "§7Silver Coin")
 
 		registerTypicalItem("Sand Ball", "Sand Ball")
 		registerTypicalItem("Coke Chunk", "Coke Chunk")
@@ -249,6 +249,11 @@ onEvent("item.registry", event => {
 	event.create(asIdentifier("minus_cast")).texture(asIdentifier("item/cast/minus_cast")).displayName("Operator Cast (-)").unstackable()
 	event.create(asIdentifier("multiply_cast")).texture(asIdentifier("item/cast/multiply_cast")).displayName("Operator Cast (×)").unstackable()
 	event.create(asIdentifier("divide_cast")).texture(asIdentifier("item/cast/divide_cast")).displayName("Operator Cast (÷)").unstackable()
+
+	event.create(asIdentifier("silver_coin_top")).texture(asIdentifier("item/coin/silver_coin_top")).displayName("§7§l▲").unstackable()
+	event.create(asIdentifier("silver_coin_bottom")).texture(asIdentifier("item/coin/silver_coin_bottom")).displayName("§8§l▼").unstackable()
+	event.create(asIdentifier("gold_coin_top")).texture(asIdentifier("item/coin/gold_coin_top")).displayName("§e§l▲").unstackable()
+	event.create(asIdentifier("gold_coin_bottom")).texture(asIdentifier("item/coin/gold_coin_bottom")).displayName("§6§l▼").unstackable()
 })
 
 onEvent("block.registry", event => {

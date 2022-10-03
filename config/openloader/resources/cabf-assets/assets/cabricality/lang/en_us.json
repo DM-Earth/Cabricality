@@ -1,4 +1,6 @@
 {
+	"comment_brief": "Note that KubeJS doesn't read this file for translations. Go edit KubeJS scripts for final results in the game.",
+
 	"comment_ponder": "Ponder",
 
 	"kubejs.ponder.alchemy_setup.header": "The Alchemy Setup",
@@ -57,6 +59,12 @@
 
 
 
+	"comment_event": "Events",
+
+	"event.cabricality.coin_flip": "§8%s flipped a %s, §8it was ",
+
+
+
 	"comment_item": "Items",
 
 	"item.cabricality.kinetic_mechanism"    : "Kinetic Mechanism",
@@ -98,8 +106,8 @@
 	"item.cabricality.ruby"    : "Ruby",
 	"item.cabricality.sapphire": "Sapphire",
 
-	"item.cabricality.gold_coin"  : "&6Gold Coin",
-	"item.cabricality.silver_coin": "&7Silver Coin",
+	"item.cabricality.gold_coin"  : "§6Gold Coin",
+	"item.cabricality.silver_coin": "§7Silver Coin",
 
 	"item.cabricality.sand_ball"    : "Sand Ball",
 	"item.cabricality.rough_sand"   : "Rough Sand",
@@ -134,7 +142,7 @@
 
 	"item.cabricality.matter_plastics": "Matter Plastics",
 
-	"item.cabricality.coal_coke": "Coal Coke",
+	"item.cabricality.coal_coke": "Coke",
 
 	"item.cabricality.earth_slime_fern_leaf" : "Slimy Fern Leaf",
 	"item.cabricality.earth_slime_fern_paste": "Slimy Fern Paste",

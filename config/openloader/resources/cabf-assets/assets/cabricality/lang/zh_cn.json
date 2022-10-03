@@ -57,6 +57,12 @@
 
 
 
+	"comment_event": "事件",
+
+	"event.cabricality.coin_flip": "§8%s翻转了一枚%s，§8结果是",
+
+
+
 	"comment_item": "物品",
 
 	"item.cabricality.kinetic_mechanism"    : "动力构件",
