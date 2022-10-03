@@ -370,7 +370,7 @@
 	
 	"welcome.cabricality.iii.title"   : "&f&lIII",
 	"welcome.cabricality.iii.subtitle": "Tech Expansion",
-	"welcome.cabricality.iii.content" : "Your entire factory will be put to the test as final products flow into the Data Centre, programming the Guidance computer of your Spaceship.\n\nEvery step is different, some may even differ depending on the generation seed of your World.",
+	"welcome.cabricality.iii.content" : "Your entire factory will be put to the test as final products flow into the Data Center, programming the Guidance computer of your Spaceship.\n\nEvery step is different, some may even differ depending on the generation seed of your World.",
 	
 	"welcome.cabricality.iv.title"   : "&f&lIV",
 	"welcome.cabricality.iv.subtitle": "Shuffle",
@@ -1217,7 +1217,7 @@
 
 	"chapter_5.cabricality.start.title"   : "&6&lDivide by Digital",
 	"chapter_5.cabricality.start.subtitle": "&5Finale",
-	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Center. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
 	
 	"chapter_5.cabricality.start.task.checkmark.title": "&5Finale Start!",
 
@@ -1261,7 +1261,7 @@
 
 	"contraption.cabricality.46.title"   : "Solving Trajectories",
 	"contraption.cabricality.46.subtitle": "Contraption 46",
-	"contraption.cabricality.46.content" : "For the calculations of the Guidance computer, we will need.. a lot of these Digits.\n\nBefore letting items exit the logistical ecosystem of the calculations, make sure each digit leaves in equal amounts. Brass Tunnels can solve this issue in a straight-forward fashion.\n\nEach digit now has to be dissolved back into its Liquefied form via Smeltery. Once a Smeltery collected 10 Liquefied items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix.\n\nThe Guidance Computer requires 8 Matrices to function. Depending on your data centre and mechanism assembly lines, this may take a while.",
+	"contraption.cabricality.46.content" : "For the calculations of the Guidance computer, we will need.. a lot of these Digits.\n\nBefore letting items exit the logistical ecosystem of the calculations, make sure each digit leaves in equal amounts. Brass Tunnels can solve this issue in a straight-forward fashion.\n\nEach digit now has to be dissolved back into its Liquefied form via Smeltery. Once a Smeltery collected 10 Liquefied items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix.\n\nThe Guidance Computer requires 8 Matrices to function. Depending on your data center and mechanism assembly lines, this may take a while.",
 
 	"contraption.cabricality.47.title"   : "Upcycle Bin",
 	"contraption.cabricality.47.subtitle": "Contraption 47",
