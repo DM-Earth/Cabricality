@@ -6,15 +6,12 @@ function playsound_dice(server, player) {
 
 var diceCooling = []
 
-var coins = ['cabricality:silver_coin', 'cabricality:gold_coin']
-
 onEvent('block.right_click', event => {
 	let player = event.getEntity()
 
-	if (event.getBlock() == 'cabricality:dice') {
+	if (event.getBlock() == 'cabricality:dice' && player.getMainHandItem() == null) {
 		event.cancel()
-		if (!diceCooling.includes(player.toString())
-		&& !coins.includes(player.getMainHandItem().toString())) {
+		if (!diceCooling.includes(player.toString())) {
 			diceCooling.push(player.toString())
 
 			let serial = Math.floor(Math.random() * 6) + 1
