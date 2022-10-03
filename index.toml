@@ -997,16 +997,16 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/com
 hash = "2ff10c4fcf55a13a53e8955f53f42b5aebfdc8df3c0987a882406f120ea194dd"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_desh.png"
+hash = "4376dda61cfada45bfe6a4bb5e238d12c5c6a805b091ec9a9a22594c139f8c0d"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_ostrum.png"
 hash = "5cc28ca992224a2791319e42a4e3aca25c2f4e5a0da49cc4f15db4244d24fd38"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/desh_cable.png"
 hash = "7fcb784c821d4cf6a44e32b02de148bc93b44f5122de87d12d43d6f79ef0bdb8"
-
-[[files]]
-file = "config/openloader/resources/cabf-edits/assets/ad_astra/textures/item/compressed_desh.png"
-hash = "4376dda61cfada45bfe6a4bb5e238d12c5c6a805b091ec9a9a22594c139f8c0d"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/ae2/textures/item/calculation_processor.png"
@@ -4202,6 +4202,11 @@ metafile = true
 [[files]]
 file = "mods/amecs.pw.toml"
 hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "80e7c9fd868c28612d6e9945044e274399579ab0007285f2ec50caf006c771f3"
 metafile = true
 
 [[files]]
