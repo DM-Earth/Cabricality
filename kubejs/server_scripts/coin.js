@@ -51,7 +51,7 @@ onEvent('item.right_click', event => {
 		let coinSide = `top`
 		let message = `§8[ §e§l▲§8 ]`
 
-		if (side = 0) {
+		if (side == 0) {
 			coinSide = `bottom`
 			message = `§8[ §6§l▼§8 ]`
 		}
