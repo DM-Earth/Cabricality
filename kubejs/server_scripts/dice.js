@@ -13,7 +13,9 @@ onEvent('block.right_click', event => {
 	let player = event.getEntity()
 	let messagePrefix = Text.translate(`event.cabricality.dice_roll`, player.getName(), event.getBlock().getItem().getName()).getString()
 
-	if (event.getBlock() == 'cabricality:dice' && player.getMainHandItem() == null) {
+	if (event.getBlock() == 'cabricality:dice'
+	&& player.getName().getString() != 'Deployer'
+	&& player.getMainHandItem() == null) {
 		event.cancel()
 		if (!diceCooling.includes(player.toString())) {
 			diceCooling.push(player.toString())
