@@ -1,6 +1,7 @@
 function playsound_dice(server, player) {
 	server.runCommandSilent(`playsound minecraft:entity.drowned.shoot ambient @a ${player.x} ${player.y} ${player.z}`)
-	server.runCommandSilent(`playsound minecraft:block.anvil.place ambient @a ${player.x} ${player.y} ${player.z} 0.7 1.7`)
+	server.runCommandSilent(`playsound create:mechanical_press_activation_belt_compounded_1 ambient @a ${player.x} ${player.y} ${player.z}`)
+	server.runCommandSilent(`playsound minecraft:block.amethyst_cluster.hit ambient @a ${player.x} ${player.y} ${player.z} 1 0.7`)
 	server.runCommandSilent(`playsound ad_astra:passing_spaceship ambient @a ${player.x} ${player.y} ${player.z} 0.3`)
 }
 
