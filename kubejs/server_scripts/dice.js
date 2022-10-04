@@ -14,7 +14,7 @@ onEvent('block.right_click', event => {
 	let messagePrefix = Text.translate(`event.cabricality.dice_roll`, player.getName(), event.getBlock().getItem().getName()).getString()
 
 	if (event.getBlock() == 'cabricality:dice'
-	&& player.getName().getString() != 'Deployer'
+	&& player.getId() != '9e2faded-cafe-4ec2-c314-dad129ae971d'
 	&& player.getMainHandItem() == null) {
 		event.cancel()
 		if (!diceCooling.includes(player.toString())) {
