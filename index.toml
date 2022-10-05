@@ -6,7 +6,7 @@ hash = "81f8ccc5dd21d1dc2ea17a826fb4e2ece37e2cf442ae0b432ae9b77a26310354"
 
 [[files]]
 file = "config/create-common.toml"
-hash = "42443730ebb9ffe1d91dd1d8c53a424ebc26e67c605dbef5f2e5a29efc05b555"
+hash = "5cb86ce15d72eea6eaf3449293617ebb3309ea21c27810985f569da9ff703712"
 
 [[files]]
 file = "config/customsplashscreen.json5"
@@ -42,31 +42,31 @@ hash = "4d8311993c65854894d1134252be2e9e09cac9696706df8ff5c27fdec892b24b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advancements.snbt"
-hash = "fdf1e7fbc0e7fafc17452f9c79c4c47e5893300a9d378fc3bc179fdbfafecb0a"
+hash = "8a1a8e35b5c6631294b4ab3a98aabd99d17750636d78b2aa0f51e1df32d61e8d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "d0d1d1c89d91e396621790cbf5185c73d362bbffd697cc8dd1eb5aa7eb3d3e08"
+hash = "65862b9329269df5264867bb4df3a6452c331db4a4812fe05413722d2e201d12"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "c9b671403f201006b8686b9b669247c17248db36914ddb6d8e7a3949414166bb"
+hash = "5dee2d59d3319d0248e57f76401b3a2e87a8c93fe1e65f7b051dc45fc80c89a6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "7800ed7d372fb1897979f50cb671769ec39975d0780aadb0f27171bd574df2c7"
+hash = "5d472f7b296b81cfa6bf6b63ad47979e860ff194ecbc6b81d8b969d00669a68b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/professions.snbt"
-hash = "b500021c99157e0fe254c702f9661c5906ce260fabe7a96dccc368346aff3e9e"
+hash = "a035dbd05fad581b8e9f9c63b9f511f278650dc2e9ffd2948c788aa5c9a670c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "c78a0e2a1a6fa5ae1c50602c12b9ec5274cfbf492dedf9a96ac9977c0765625c"
+hash = "04a6f89ca43106f6d54aff3c42b568f43b8944ab51f789cb13f80f92e3199d50"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
-hash = "00f8984674e365386b51859c38c3f73cce6c17ba3b85acf10469d5be2affe8e3"
+hash = "cbe49c24a33f5270dcccbecc462815eb57b9a7dbbcfce92689260f0e7cfe3d88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_2.snbt"
@@ -78,7 +78,7 @@ hash = "67b742a48bace27718c10081c7e65276f182196f4fe77d7d546024c7f919f573"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
-hash = "afc91f1997147706c514193299c33ce44d1d669b48622fb82168052eb84a5f4f"
+hash = "a6c5e3f61259fdab03bcd00a7aebbd4fed100cec2def669d89dd896472587b4f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4a.snbt"
@@ -90,11 +90,11 @@ hash = "b39db3277face0dfca9797000703b450589ff1b990236fccfd06ef7203039c17"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
-hash = "ee75a7591d20d6f8fba0295a236f635fcba03ccac949034150eed023a7302093"
+hash = "9c4535e099614e65ca0ab2f0c9d79ea952da0924d1b0992da023814aa803000f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "9896c4829a6e27f9ff37dfc167821e8c880ed1eb0a417c3359738c82bdc13003"
+hash = "f2995f5d4d7f9d0b512190fb56bd6006f3c2897a87b4e7f7f72179b1d95eace9"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -122,11 +122,11 @@ hash = "accb774b8cdd52fece03a4e4349eb0e8408ed64143acd10a36e4e930c288c04e"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/en_us.json"
-hash = "43d48871ac4d0df474e45b7953265bf8edbb71bcc78a922e72b12724dc9a768b"
+hash = "69edf417d71683e6d1a92db8a6e969b0af57bf35d2e5ef44c208ba19ebc2cb4e"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/zh_cn.json"
-hash = "4e507f10ac732531c5bb56205b8c3588274bcc0b7f37342c7f05ccf730913b03"
+hash = "220f76578e8678c62d0f89aaac1955f14396f9cd9b092b98fde8753443997ea4"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/accelerator.json"
@@ -1606,7 +1606,7 @@ hash = "7b36e65d767f79bd69ee284edcea6dda2064870bbd97dd9b594a97183551d4d4"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "d455d9f0fd4c1060c75c04853890b69e61bb2d823c480a04210ba51dd33cb541"
+hash = "f0c0017b54363c2f209c124b9a2f64d26d1bd07221a11cf75b15bb0c8389baac"
 
 [[files]]
 file = "config/splasher/customizations/en_us.txt"
@@ -1742,11 +1742,19 @@ hash = "d0b902b67b73f9858d811ce870896d99a08ae57a1a6b73f0c4049d6e4295dcda"
 
 [[files]]
 file = "kubejs/client_scripts/cabricality.js"
-hash = "7eeb2ecdafe655b87776618d820333bf1e1eea4bd61e991354b5427b5f287827"
+hash = "c2dda8bc1d7332780f85275d58897a2fc1d289744e651a857ef7dc24e843c7df"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
 hash = "bcc1f010cdacdc68a6f77d52208e4dfef3096ef62eccdb2322d157f127b7d41e"
+
+[[files]]
+file = "kubejs/client_scripts/coin.js"
+hash = "a0cf24bb69d28f9aa194cd0f2fd0251c6d0fdd8e3635ba74e7eccf7217beadcf"
+
+[[files]]
+file = "kubejs/client_scripts/dice.js"
+hash = "a3c9693f7f74c2fbe931f01e519a044d1c45a84d86eba56d16088d57d826374f"
 
 [[files]]
 file = "kubejs/client_scripts/pondering/ponder.js"
@@ -4162,15 +4170,15 @@ hash = "5fbfdbdbe1ef7abc23e64b188d1ad77a3e8230b386883d33a5da87a51e6cdda6"
 
 [[files]]
 file = "kubejs/server_scripts/cabricality.js"
-hash = "50278ae8d0f8546f44941be3a4f259db68adcf2cceb51d5e76a2f5debc13245c"
+hash = "54b8df4cf7f55db72492b9f7d29f66bc2d8f0670bd5e90e30142cf8a5d4db98f"
 
 [[files]]
 file = "kubejs/server_scripts/coin.js"
-hash = "1eabfcef0974f5656a2dce949aaa1ef5f76104d3b44c25dee03ca4c3d6ace407"
+hash = "020ecba43b715bfdd6154630c1b755e048b574e0ee011dc99a18ec94a8344adc"
 
 [[files]]
 file = "kubejs/server_scripts/dice.js"
-hash = "ba5bca49364bd2c33f0fa4636069b5dd9288a20a8c49de32d33e29e2679ffd5a"
+hash = "9c0d31a4d6dedccfcd5f83f285ac49fef3dad0ab5a5592d2e01e386f50e3d1ff"
 
 [[files]]
 file = "kubejs/server_scripts/machine/extractor.js"
@@ -4187,6 +4195,10 @@ hash = "d1194ed482abab19dda9b7c0d8d45b37d1ae8d7d923b60647a930b85e2e1b316"
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_tank.js"
 hash = "20ad0e975eca759170d02d34bd9179ca1f2a64a7d7af5b3dc859d3e2292dd978"
+
+[[files]]
+file = "kubejs/server_scripts/quests.js"
+hash = "dca71353596fc597f059c38a1ec0a2aae634888e026036ff5d7485ddec12d336"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/recipe.js"
@@ -4238,7 +4250,7 @@ hash = "4f0d7e932254fe178686943d0eaf8126c330bc3a6e242867cdaead878fc3d67e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/trader.js"
-hash = "96ca0c15e0d29913970c1062df8f5df7df9cb4fba685996e28730fbcf830fb0c"
+hash = "9c114675314b6e59fb37d6074981dbefb77d68117ace64c0150b391db2fdb61d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
@@ -4270,7 +4282,7 @@ hash = "9f6a9008d41a1561b1520221b08bcb20a30d299d8906e3be5d006459ff09c2df"
 
 [[files]]
 file = "kubejs/startup_scripts/cabricality.js"
-hash = "d2c2fe0e0a33544dc564443165d1ec21f8a26f16d9f85d83ac05fdf03cc334c5"
+hash = "3ec4c787ebf89e198f0106d68c2f4a8c15f4227c5d8a08a6245d379f88311fd6"
 
 [[files]]
 file = "kubejs/startup_scripts/modifications.js"
@@ -4278,7 +4290,7 @@ hash = "08bdd4861869aa11f34abdf906db8aa22f4a1dae7a4d1ae34d23fbd90dce925a"
 
 [[files]]
 file = "kubejs/startup_scripts/registries.js"
-hash = "2309835433ee8848a7b3664ceda6d3c7cf4e218f07820fbcb45e4a766484e12b"
+hash = "9fef26afc04e2ea9a5765f066a459f111f820b671e6d28352f8817aa62c2987b"
 
 [[files]]
 file = "kubejs/startup_scripts/substrates.js"
@@ -4286,7 +4298,7 @@ hash = "0f5112f86593b8d701bf616bc852254edc4a3faec56a0aac87fd9ad0938a2f37"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "1f04aa32f8daaf521ccaf5c05821cde70f530362ce3c57460131cb461be0a4b9"
+hash = "5e41d29cb4fca460a18468cc5b2a96258a12fb897aad2df04a9165d5ded1eb01"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
