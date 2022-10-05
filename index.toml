@@ -4285,7 +4285,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-crystal-clear-fabric.pw.toml"
-hash = "76761d0b39141385adb82605c401fa2fceae860ea404e491ea9d308618e63210"
+hash = "6e34e6b12a4140c3a673fcfeef6fbd5dfeb65eb5019d5ef42b89ffc58197fec5"
 metafile = true
 
 [[files]]
@@ -4299,7 +4299,7 @@ hash = "f690888f36320c2e1ff2a2e175288ca8d7d4ec47e257df4bdc93d704a54f5bd0"
 
 [[files]]
 file = "mods/ct-overhaul-village.pw.toml"
-hash = "6908c74666190b86fdaea07bfe5bbf2cb6bc512e86116ac39320a322089c31a9"
+hash = "2736b7cd4cd82549d9fde59b63837b5eb04f395d686c193fcedd0bfa7f4dcc79"
 metafile = true
 
 [[files]]
