@@ -28,6 +28,9 @@
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				Count: 1b
+				tag: {
+					Damage: 0
+				}
 			}
 			x: -7.0d
 			y: -3.0d

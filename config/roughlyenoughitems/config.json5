@@ -1,7 +1,8 @@
 {
 	"basics": {
 		"favorites": [
-			"{id:\"ftbteams:my_team\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbteams:textures/teams.png\",\"x\":0,\"click\":\"ftbteams:open_gui\",\"loading_screen\":true}',type:\"ftblibrary:sidebar_button\"}"
+			"{id:\"ftbteams:my_team\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbteams:textures/teams.png\",\"x\":0,\"click\":\"ftbteams:open_gui\",\"loading_screen\":true}',type:\"ftblibrary:sidebar_button\"}",
+			"{id:\"ftbquests:quests\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbquests:item/book\",\"x\":610,\"click\":\"ftbquests:open_gui\",\"required_server_mods\":[\"ftbquests\"],\"custom_text\":true}',type:\"ftblibrary:sidebar_button\"}"
 		],
 		"hiddenFavorites": [],
 		"displayHistory": [
@@ -104,9 +105,10 @@
 			// Declares whether search time should be debugged.
 			"debugSearchTimeRequired": false,
 			// Declares whether REI should search async.
-			"asyncSearch": false,
+			"asyncSearch": true,
 			// Declares how many entries should be grouped one async search.
 			"asyncSearchPartitionSize": 100,
+			"patchAsyncThreadCrash": true,
 			"tooltipSearch": "PREFIX",
 			"tagSearch": "PREFIX",
 			"identifierSearch": "ALWAYS",
@@ -156,6 +158,7 @@
 		"isFocusModeZoomed": false
 	},
 	"functionality": {
+		"inputMethod": "rei:pinyin",
 		// Declares whether REI should remove the recipe book.
 		"disableRecipeBook": false,
 		// Declares whether mob effects should be on the left side instead of the right side.

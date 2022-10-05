@@ -15,9 +15,7 @@
 			y: -2.5d
 			shape: "hexagon"
 			subtitle: "{chapter_4.cabricality.start.subtitle}"
-			description: [
-				"{chapter_4.cabricality.start.content}"
-			]
+			description: ["{chapter_4.cabricality.start.content}"]
 			dependencies: ["74CFD83C501C4952"]
 			hide: true
 			size: 2.0d
@@ -99,9 +97,7 @@
 			x: -1.0d
 			y: 0.5d
 			subtitle: "{contraption.cabricality.31.2.subtitle}"
-			description: [
-				"{contraption.cabricality.31.2.content}"
-			]
+			description: ["{contraption.cabricality.31.2.content}"]
 			dependencies: ["22202C87352242D6"]
 			id: "42F1A649D86DB86D"
 			tasks: [
@@ -186,9 +182,7 @@
 			x: -3.0d
 			y: 0.5d
 			subtitle: "{contraption.cabricality.32.2.subtitle}"
-			description: [
-				"{contraption.cabricality.32.2.content}"
-			]
+			description: ["{contraption.cabricality.32.2.content}"]
 			dependencies: ["0B602ED47A0195A4"]
 			id: "6C4CB8F616A9C3DF"
 			tasks: [

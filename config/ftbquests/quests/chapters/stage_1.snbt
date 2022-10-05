@@ -170,7 +170,7 @@
 			tasks: [{
 				id: "0C764FDD555E8CCD"
 				type: "checkmark"
-					title: "{contraption.cabricality.automated}"
+				title: "{contraption.cabricality.automated}"
 			}]
 		}
 		{

@@ -16,8 +16,7 @@
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [
-		{
+	quests: [{
 		title: "{thanks.cabricality.staff.title}"
 		x: -9.0d
 		y: -7.0d
