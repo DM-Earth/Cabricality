@@ -12,7 +12,7 @@
       FTB Library |
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
-      Quest Additions
+      Quests Additions
     </a>
     模组。
   </sup>
