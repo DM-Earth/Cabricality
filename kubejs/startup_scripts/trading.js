@@ -1,6 +1,6 @@
 let modpackId = "cabricality"
-let S = (x) => IV('silver_coin', x)
-let G = (x) => IV('gold_coin', x)
+let S = (x) => CABF('silver_coin', x)
+let G = (x) => CABF('gold_coin', x)
 
 let mc = "minecraft"
 let pn = "promenade"
@@ -181,7 +181,6 @@ onEvent("item.registry", event => {
 
             let profession = (name, c1, c2, transactions) => {
                 let valid = true;
-                console.log(name)
                 let id = name.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").split(' ').join('_')
                 if (valid) {
                     global.professions.push(id)
@@ -191,7 +190,7 @@ onEvent("item.registry", event => {
                         .color(2, c2)
                         .parentModel(modpackId + ":item/profession_card")
                         .texture(modpackId + ":item/trading/profession_card_0")
-                        .displayName("§d职业铭牌")
+                        .displayName(Text.translate(`item.cabricality.profession_card`).getString())
                         .tooltip(`${modpackId}:${name}`)
                         .unstackable()
                 }
@@ -208,9 +207,19 @@ onEvent("item.registry", event => {
                     valid = false
                         //return;
                 }*/
-                let id = name.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").split(' ').join('_')
+                let split = name.toLowerCase().split('x')
+                let cid = ""
+                let amount = ""
+                split.forEach((e, idx) => {
+                    if (idx == 0) amount = e;
+                    else {
+                        if (idx > 1) cid = cid + "x";
+                        cid = cid + e.replace("'", "").replace("#", "").replace(' ', '');
+                    }
+                })
+                let id = cid.replace(':', '_');
                 if (valid) {
-                    if (custom == null) {
+                    if (custom == "shipments") {
                         global.trades.push(id)
                         global.transactions[id] = transactions
                         event.create(asIdentifier(`trade_card_${id}`))
@@ -218,18 +227,31 @@ onEvent("item.registry", event => {
                             .color(2, c2)
                             .parentModel(modpackId + ":item/trade_card")
                             .texture(modpackId + ":item/trading/trade_card_0")
-                            .displayName("§6交易铭牌")
-                            .tooltip(`§7${name}`)
-                            .tooltip(`${modpackId}:${custom}`)
+                            .displayName(Text.translate(`item.cabricality.trade_card`).getString())
+                            .tooltip(`§7${Item.of(cid).name}`)
+                            .tooltip(`§7${cid}`)
                             .unstackable()
-                    } else {
+                    } else if (custom == "exchange") {
+                        global.trades.push(id)
+                        global.transactions[id] = transactions
                         event.create(asIdentifier(`trade_card_${id}`))
+                            .color(0, c2)
                             .color(1, c1)
                             .color(2, c2)
                             .parentModel(modpackId + ":item/trade_card")
                             .texture(modpackId + ":item/trading/trade_card_0")
-                            .displayName("§6交易铭牌")
-                            .tooltip(`§7${name}`)
+                            .displayName(Text.translate(`item.cabricality.trade_card`).getString())
+                            .tooltip(`§7${cid}`)
+                            .unstackable()
+                    } else {
+                        event.create(asIdentifier(`trade_card_${custom}_${id}`))
+                            .color(1, c1)
+                            .color(2, c2)
+                            .parentModel(modpackId + ":item/trade_card")
+                            .texture(modpackId + ":item/trading/trade_card_0")
+                            .displayName(Text.translate(`item.cabricality.trade_card`).getString())
+                            .tooltip(`§7${Text.translate(Item.of(cid).getName()).getString()}`) //TODO: This is toxic
+                            .tooltip(`§7${cid}`)
                             .tooltip(`${modpackId}:${custom}`)
                     }
                 }
@@ -242,7 +264,12 @@ onEvent("item.registry", event => {
                 })
             })
 
-            let DATAGEN_QUESTS = true
+            trade("1x cabricality:exchange_currencies", 0xEEE9E9, 0xFFD700, [
+                [G(1), -1, S(64)],
+                [S(64), -1, G(1)]
+            ], "exchange")
+
+            let DATAGEN_QUESTS = false;
 
             let data = []
             let group_max_width = []
@@ -266,10 +293,21 @@ onEvent("item.registry", event => {
             let simple = (name, item, coin, c1, c2) => {
                     let jump1 = true;
                     let jump2 = true;
+                    let split = item.split('x')
+                    let id = ""
+                    let amount = ""
+                    split.forEach((e, idx) => {
+                        if (idx == 0) amount = e;
+                        else {
+                            if (idx > 1) id = id + "x";
+                            id = id + e.replace(' ', '').replace("#", "");
+                        }
+                    })
+                    let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").replace(" ", "_"))
                     if (!simulate)
-                        trade(name, c1, c2, [
+                        trade(item, c1, c2, [
                             [item, coin]
-                        ])
+                        ], "shipments")
                     if (!DATAGEN_QUESTS)
                         jump1 = false;
                     if (jump1) {
@@ -277,10 +315,6 @@ onEvent("item.registry", event => {
                         if (simulate)
                             jump2 = false;
                         if (jump2) {
-                            let split = item.split('x')
-                            let amount = split[0]
-                            let card_id = asIdentifier("trade_card_" + name.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").split(' ').join('_'))
-
                             if (col > 7) {
                                 col = 0
                                 row++
@@ -292,18 +326,18 @@ onEvent("item.registry", event => {
 
                             let template = `
 		{
-			title: "${amount}x ${name}"
-			icon: "${split[1].replace(' ', '').replace("#", "")}"
+			title: "${amount} × {${entry_cost<0?"block.":"item."}${id.replace(':','.')}}"
+			icon: "${id}"
 			disable_toast: true
 			x: ${x}d
 			y: ${y}d
 			shape: "hexagon"
-			subtitle: "${coin>=64? `${coin} Silver`:`${Math.floor(coin/64)} Silver`}"
+			subtitle: "${coin>=64? `${Math.floor(coin/64).toString()}{market.cabricality.shipments.gold}` : `${coin}{market.cabricality.shipments.silver}`}"
 			tasks: [{
 				type: "item"
-				item: "indrev:silver_coin"
-				icon: { id: "indrev:silver_coin", Count: ${entry_cost}b }
-				count: ${entry_cost}L
+				item: "cabricality:silver_coin"
+				icon: "cabricality:silver_coin"
+				count: ${Math.abs(entry_cost)}L
 			}]
 			rewards: [
 				{
@@ -313,8 +347,8 @@ onEvent("item.registry", event => {
 				}
 				{
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -329,7 +363,7 @@ onEvent("item.registry", event => {
         group = 0
         row = 0
 
-        entry_cost = 10
+        entry_cost = -10
         simple("Dirt", MC('dirt', 16), 2, 0x513825, 0xA87954)
         simple("Sand", MC('sand', 16), 4, 0xC2B289, 0xD8D6B9)
         simple("Gravel", MC('gravel', 16), 2, 0x686160, 0xA19393)
@@ -338,21 +372,22 @@ onEvent("item.registry", event => {
         simple("Blackstone", MC('blackstone', 16), 12, 0x140E0F, 0x2D2831)
         simple("Grout", TC('grout', 16), 12, 0x70737F, 0xAEB0B5)
         simple("Cobblestone", MC('cobblestone', 16), 1, 0x585858, 0x646363)
-        simple("Deepslate", MC('deepslate', 16), 1, 0x585858, 0x646363)
+        simple("Deepslate", MC('deepslate', 16), 1, 0x3D3D43, 0x646464)
         simple("Granite", MC('granite', 16), 3, 0x563A2F, 0x9A6C5B)
         simple("Diorite", MC('diorite', 16), 3, 0x7F7F7F, 0xD4D4D4)
         simple("Andesite", MC('andesite', 16), 3, 0x5F5F5F, 0x8E8E8E)
         simple("Limestone", CR('limestone', 16), 3, 0xA7A89E, 0xC0C2BA)
-        simple("Tuff", CR('tuff', 16), 3, 0x5E6055, 0x797E74)
-        simple("Calsite", CR('calsite', 16), 3, 0xC2C2C2, 0xDADADA)
+        simple("Tuff", MC('tuff', 16), 3, 0x5E6055, 0x797E74)
+        simple("Calcite", MC('calcite', 16), 3, 0xC2C2C2, 0xDADADA)
         simple("Dripstone", MC('dripstone_block', 16), 3, 0x6B5D4F, 0x7D6B5A)
         simple("Scoria", CR('scoria', 16), 3, 0x2A130C, 0x553427)
         simple("Scorchia", CR('scorchia', 16), 3, 0x0D0706, 0x23201A)
         simple("Obsidian", MC('obsidian', 1), 8, 0x05030A, 0x36234C)
 
         next_group()
-        entry_cost = 10
+        entry_cost = -10
             //simple("Dead Log", BOP('dead_log', 16), 2, 0x3D362D, 0x7A756D)
+            simple("Twisted Log", AP('twisted_log', 16), 8, 0x675962, 0x3F3441)
         simple("Oak Log", MC('oak_log', 16), 4, 0x735932, 0xA88756)
         simple("Birch Log", MC('birch_log', 16), 4, 0xD6D6D2, 0xC4B079)
         simple("Spruce Log", MC('spruce_log', 16), 4, 0x523E21, 0x6F522F)
@@ -361,13 +396,14 @@ onEvent("item.registry", event => {
         simple("Dark Oak Log", MC('dark_oak_log', 16), 4, 0x2C1B0D, 0x422B15)
         simple("Crimson Stem", MC('crimson_stem', 16), 8, 0x442332, 0x7A3852)
         simple("Warped Stem", MC('warped_stem', 16), 8, 0x3E1E2D, 0x347776)
+        
 
         next_group()
         entry_cost = 10
         simple("Iron Ingot", MC('iron_ingot', 8), 16, 0xA6A6A6, 0xD5D5D5)
         simple("Zinc Ingot", CR('zinc_ingot', 8), 16, 0x616A60, 0xD0D2C5)
-        simple("Copper Ingot", CR('copper_ingot', 8), 16, 0xDD7E5D, 0xFCEFBA)
-        simple("Nickel Ingot", IV('nickel_ingot', 8), 32, 0x977756, 0xE4D196)
+        simple("Copper Ingot", MC('copper_ingot', 8), 16, 0xDD7E5D, 0xFCEFBA)
+        simple("Nickel Ingot", CABF('nickel_ingot', 8), 32, 0x977756, 0xE4D196)
         simple("Lead Ingot", IV('lead_ingot', 8), 32, 0x232456, 0x7C95A4)
         simple("Gold Ingot", MC('gold_ingot', 8), 48, 0xD99413, 0xFAF25E)
 
@@ -375,25 +411,26 @@ onEvent("item.registry", event => {
             //simple("Silica Steel", "8x moreminecarts:silica_steel", 16, 0x3E4644, 0xB8DAC8)
         simple("Brass Ingot", CR('brass_ingot', 8), 48, 0x6F3C2D, 0xFCF085)
             //simple("Invar Ingot", IV('invar_ingot', 4), 64, 0x406D6C, 0xC3CAC1)
+            simple("Invar Ingot", CABF('invar_ingot', 4), 64, 0x406D6C, 0xC3CAC1)
 
         entry_cost = 10
         simple("Coal", MC('coal', 16), 4, 0x1C1C1E, 0x383D45)
         simple("Flint", MC('flint', 16), 4, 0x3C3B3B, 0xA6A6A6)
-        simple("Cinnabar", IV('cinnabar', 4), 16, 0xFC7781, 0xFCCED0)
+            //simple("Cinnabar", IV('cinnabar', 4), 16, 0xFC7781, 0xFCCED0)
         simple("Redstone Dust", MC('redstone', 16), 8, 0xA80F01, 0xFC7781)
         simple("Diamond", MC('diamond', 1), 64, 0x20C3B3, 0xD2FCF3)
         simple("Lapis Lazuli", MC('lapis_lazuli', 8), 32, 0x335DC1, 0x7395E7)
         simple("Emerald", MC('emerald', 1), 64, 0x00A82B, 0xADFACB)
-        simple("Sulfur", IV('sulfur', 4), 8, 0xC7A94A, 0xEEF071)
-        simple("Apatite", IV('apatite', 4), 8, 0x27A9BB, 0x2CC7C9)
-        simple("Niter", IV('niter', 4), 8, 0x735A65, 0xB8AFAF)
+        simple("Sulfur", IV('sulfur_crystal', 4), 8, 0xC7A94A, 0xEEF071)
+            //simple("Apatite", IV('apatite', 4), 8, 0x27A9BB, 0x2CC7C9)
+            //simple("Niter", IV('niter', 4), 8, 0x735A65, 0xB8AFAF)
         simple("Nether Quartz", MC('quartz', 8), 24, 0xB19E8F, 0xE7E2DB)
         simple("Certus Quartz", AE2('certus_quartz_crystal', 8), 24, 0x91C5FC, 0xA7CBCF)
-        simple("Fluix Quartz", AE2('fluix_crystal', 8), 32, 0x8F5CCB, 0xFC7ED4)
-        simple("Cured Rubber", IV('cured_rubber', 6), 16, 0x3D363C, 0x594F55)
+        simple("Fluix Crystal", AE2("fluix_crystal", 8), 32, 0x8F5CCB, 0xFC7ED4)
+        simple("Cured Rubber", CABF('cured_rubber', 6), 16, 0x3D363C, 0x594F55)
 
         next_group()
-        entry_cost = 10
+        entry_cost = -10
         simple("Scaffolding", MC('scaffolding', 16), 2, 0x7F5F41, 0xDDC683)
         simple("Wool", MC('white_wool', 1), 8, 0xBEC4C5, 0xE4E4E4)
         simple("Sponge", MC('sponge', 1), 16, 0x8F8234, 0xCDCF4A)
@@ -402,8 +439,9 @@ onEvent("item.registry", event => {
         row += 4
 
         next_group()
-        entry_cost = 10
+        entry_cost = -10
         simple("Rice", FD('rice_bag', 1), 4, 0x9F7653, 0xCEC6BC)
+        entry_cost = 10
         simple("Straw", FD('straw', 32), 8, 0x623A17, 0x966537)
             //simple("Glowshroom", BOP('glowshroom', 4), 9, 0x2C65C9, 0x83A7B7)
             //simple("Bramble", BOP('bramble', 4), 9, 0x8C3122, 0xECCDBC)
@@ -415,15 +453,20 @@ onEvent("item.registry", event => {
             //simple("Spanish Moss", BOP('spanish_moss', 4), 7, 0x395B2A, 0xA2C790)
             //simple("Willow Vine", BOP('willow_vine', 4), 7, 0x265F0D, 0x317B10)
             //simple("Cattail", BOP('cattail', 4), 4, 0x186B2B, 0x845738)
+        entry_cost = -10
         simple("Sugar Cane", MC('sugar_cane', 4), 3, 0x688546, 0xC5FC85)
         simple("Kelp", MC('kelp', 8), 3, 0x5B8131, 0x58A92F)
         simple("Bamboo", MC('bamboo', 8), 5, 0x4F7416, 0x88AC5F)
+        entry_cost = 10
         simple("Sweet Berries", MC('sweet_berries', 8), 11, 0x27613F, 0xA30700)
+        simple("Glow Berries", MC('glow_berries', 8), 17, 0xF4DF6A, 0xD27119)
+        entry_cost = -10
         simple("Vines", MC('vine', 4), 7, 0x183D08, 0x317B10)
+        entry_cost = 10
         simple("Tree Fertilizer", CR('tree_fertilizer', 1), 8, 0xCF8469, 0x71933A)
 
         next_group()
-        entry_cost = 10
+        entry_cost = -10
             //simple("Daub", SP('daub', 16), 5, 0xBFBAAA, 0xCBC8B6)
         simple("Clear Glass", TC('clear_glass', 16), 4, 0xA9C3CF, 0xE8E8E8)
             //simple("Factory Block", "16x chisel:factory/dots", 2, 0x211C10, 0x604B43)
@@ -431,7 +474,7 @@ onEvent("item.registry", event => {
         simple("Copper Shingles", CR('copper_shingles', 16), 3, 0xB5654B, 0xE4BB79)
         simple("Algal Bricks", AP('algal_bricks', 32), 6, 0x292926, 0x3D4D48)
         simple("Olivestone Bricks", AP('olivestone_bricks', 32), 8, 0x3A3C2E, 0x57553E)
-        simple("Architect's Limestone", AP('limestone', 32), 8, 0x756958, 0x7F7360)
+            //simple("Architect's Limestone", AP('limestone', 32), 8, 0x756958, 0x7F7360)
         simple("Sunmetal", AP('sunmetal_block', 32), 8, 0x603E38, 0xB48764)
         simple("Plating Block", AP('plating_block', 32), 8, 0x222225, 0x39383C)
         simple("Twisted Planks", AP('twisted_planks', 32), 8, 0x5E5259, 0x72616B)

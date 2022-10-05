@@ -1,7 +1,7 @@
 {
 	id: "1634333847CCE52A"
 	group: "0810E42B2DD79973"
-	order_index: 2
+	order_index: 1
 	filename: "professions"
 	title: "&a Bulletin Board"
 	icon: "minecraft:item_frame"
@@ -14,7 +14,7 @@
 				id: "tconstruct:pickaxe"
 				Count: 1b
 				tag: {
-					Damage: 0
+					tic_multipliers: { }
 					tic_stats: {
 						"tconstruct:attack_damage": 2.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -22,12 +22,8 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.2f
 					}
-					tic_multipliers: { }
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					Damage: 0
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -46,7 +42,11 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -63,11 +63,8 @@
 			tasks: [{
 				id: "121ECE09FBC2490A"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -75,13 +72,13 @@
 					id: "556BBA8B09E4BA0C"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_mining"
+					item: "cabricality:profession_card_mining"
 				}
 				{
 					id: "78B7B98BE67CCA84"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -93,7 +90,9 @@
 				id: "tconstruct:kama"
 				Count: 1b
 				tag: {
-					Damage: 0
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.5f
+					}
 					tic_stats: {
 						"tconstruct:attack_damage": 1.625f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -101,14 +100,8 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.6f
 					}
-					tic_multipliers: {
-						"tconstruct:attack_damage": 0.5f
-					}
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					Damage: 0
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -131,7 +124,11 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -148,11 +145,8 @@
 			tasks: [{
 				id: "40D5C78A3738FC5E"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -160,13 +154,13 @@
 					id: "4F0E97B8E88BF530"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_farming"
+					item: "cabricality:profession_card_farming"
 				}
 				{
 					id: "4630E4354593D196"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -178,7 +172,7 @@
 				id: "tconstruct:hand_axe"
 				Count: 1b
 				tag: {
-					Damage: 0
+					tic_multipliers: { }
 					tic_stats: {
 						"tconstruct:attack_damage": 8.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -186,12 +180,8 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 0.9f
 					}
-					tic_multipliers: { }
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					Damage: 0
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -218,7 +208,11 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -235,11 +229,8 @@
 			tasks: [{
 				id: "1D8BF49B36108A4D"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -247,13 +238,13 @@
 					id: "570B46650865045E"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_carpentry"
+					item: "cabricality:profession_card_carpentry"
 				}
 				{
 					id: "168DD43A1A6C846C"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -278,11 +269,8 @@
 			tasks: [{
 				id: "7DB85322979AEF65"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -290,13 +278,13 @@
 					id: "382E25CBB362EB84"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_cooking"
+					item: "cabricality:profession_card_cooking"
 				}
 				{
 					id: "402618EF59D8798B"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -308,7 +296,11 @@
 				id: "tconstruct:sledge_hammer"
 				Count: 1b
 				tag: {
-					Damage: 0
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:durability": 4.0f
+						"tconstruct:attack_damage": 1.35f
+					}
 					tic_stats: {
 						"tconstruct:attack_damage": 6.58125f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -316,17 +308,8 @@
 						"tconstruct:mining_speed": 3.45f
 						"tconstruct:attack_speed": 0.75f
 					}
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.4f
-						"tconstruct:durability": 4.0f
-						"tconstruct:attack_damage": 1.35f
-					}
-					tic_materials: [
-						"tconstruct:electrum"
-						"tconstruct:constantan"
-						"tconstruct:bronze"
-						"tconstruct:bronze"
-					]
+					Damage: 0
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -345,7 +328,12 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:electrum"
+						"tconstruct:constantan"
+						"tconstruct:bronze"
+						"tconstruct:bronze"
+					]
 					tic_persistent_data: {
 						upgrades: 2
 						abilities: 1
@@ -362,11 +350,8 @@
 			tasks: [{
 				id: "30824E76C57A8679"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -374,13 +359,13 @@
 					id: "1617766BFFC620D2"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_masonry"
+					item: "cabricality:profession_card_masonry"
 				}
 				{
 					id: "0059672C40C04303"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -392,7 +377,10 @@
 				id: "tconstruct:sword"
 				Count: 1b
 				tag: {
-					Damage: 0
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
 					tic_stats: {
 						"tconstruct:attack_damage": 5.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -400,15 +388,8 @@
 						"tconstruct:mining_speed": 3.7375f
 						"tconstruct:attack_speed": 1.6f
 					}
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.5f
-						"tconstruct:durability": 1.1f
-					}
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:constantan"
-					]
+					Damage: 0
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:maintained"
@@ -423,7 +404,11 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:constantan"
+					]
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -440,11 +425,8 @@
 			tasks: [{
 				id: "3F3272C9BFC25003"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -452,13 +434,13 @@
 					id: "242009705F048500"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_hunting"
+					item: "cabricality:profession_card_hunting"
 				}
 				{
 					id: "3EB7FB58B5D3D097"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -541,18 +523,15 @@
 			rewards: [{
 				id: "60DDCBCC377BA8B6"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 25b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 25b }
+				item: "cabricality:silver_coin"
 				count: 25
 			}]
 		}
 		{
 			title: "Fisherman"
 			icon: {
-				id: "aquaculture:gold_fishing_rod"
+				id: "minecraft:fishing_rod"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -568,11 +547,8 @@
 			tasks: [{
 				id: "79BD40CF4A57DA36"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -580,13 +556,13 @@
 					id: "70312C750F6E2115"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_fishing"
+					item: "cabricality:profession_card_fishing"
 				}
 				{
 					id: "4F7B79488825D2ED"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -612,11 +588,8 @@
 			rewards: [{
 				id: "6C5F42C1888F0C63"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 16b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 16b }
+				item: "cabricality:silver_coin"
 				count: 15
 			}]
 		}
@@ -639,11 +612,8 @@
 			tasks: [{
 				id: "042431BBCD1966C4"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30L
 			}]
 			rewards: [
@@ -651,13 +621,13 @@
 					id: "2E450774C09EF266"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:profession_card_smithing"
+					item: "cabricality:profession_card_smithing"
 				}
 				{
 					id: "5B00E0FDDDA7EEB0"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -665,7 +635,7 @@
 		}
 		{
 			title: "Plentiful Sapling Collection"
-			icon: "biomesoplenty:flowering_oak_sapling"
+			icon: "terrestria:rainbow_eucalyptus_sapling"
 			x: -4.5d
 			y: -2.5d
 			subtitle: "45 Silver"
@@ -675,48 +645,50 @@
 				{
 					id: "6467B7BC46B95AB7"
 					type: "item"
-					item: "biomesoplenty:white_cherry_sapling"
-				}
-				{
-					id: "53B388480793BD58"
-					type: "item"
-					item: "biomesoplenty:maple_sapling"
+					item: "promenade:autumn_oak_sapling"
 				}
 				{
 					id: "57263F412DD5DF08"
 					type: "item"
-					item: "biomesoplenty:fir_sapling"
-				}
-				{
-					id: "657B38C214414E2B"
-					type: "item"
-					item: "biomesoplenty:redwood_sapling"
+					item: "promenade:pink_cherry_oak_sapling"
 				}
 				{
 					id: "3E7A122FD86E017F"
 					type: "item"
-					item: "biomesoplenty:flowering_oak_sapling"
+					item: "promenade:palm_sapling"
 				}
 				{
 					id: "7CBBC7FB7C7F5D7E"
 					type: "item"
-					item: "biomesoplenty:palm_sapling"
+					item: "architects_palette:twisted_sapling"
+				}
+				{
+					id: "50A053839121268E"
+					type: "item"
+					item: "terrestria:rainbow_eucalyptus_sapling"
+				}
+				{
+					id: "25F3EB2BFBA8EAE0"
+					type: "item"
+					item: "terrestria:sakura_sapling"
+				}
+				{
+					id: "79B0B0CE8BFFEF91"
+					type: "item"
+					item: "malum:runewood_sapling"
 				}
 			]
 			rewards: [{
 				id: "5CEE44BA4F587BB2"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 45b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 45b }
+				item: "cabricality:silver_coin"
 				count: 45
 			}]
 		}
 		{
 			title: "Mineral Collection"
-			icon: "thermal:sulfur"
+			icon: "cabricality:substrate_sulfur"
 			x: -1.0d
 			y: -4.5d
 			subtitle: "25 Silver"
@@ -725,43 +697,40 @@
 				{
 					id: "05FA6BA978E2C59F"
 					type: "item"
-					item: "appliedenergistics2:certus_quartz_crystal"
+					item: "ae2:charged_certus_quartz_crystal"
 				}
 				{
 					id: "4DC845907E010B7E"
 					type: "item"
-					item: "thermal:sulfur"
+					item: "indrev:sulfur_crystal"
 				}
 				{
 					id: "40D6184B28DD1B00"
 					type: "item"
-					item: "thermal:cinnabar"
+					item: "ad_astra:calorite_ingot"
 				}
 				{
 					id: "6EC680AD06AEAE3E"
 					type: "item"
-					item: "thermal:niter"
+					item: "minecraft:quartz"
 				}
 				{
 					id: "394B5E7E3AD55394"
 					type: "item"
-					item: "thermal:apatite"
+					item: "minecraft:amethyst_shard"
 				}
 			]
 			rewards: [{
 				id: "7FA1F28AC13E3742"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 24b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 24b }
+				item: "cabricality:silver_coin"
 				count: 25
 			}]
 		}
 		{
 			title: "Plentiful Mineral Collection"
-			icon: "thermal:ruby"
+			icon: "cabricality:accelerator_redstone"
 			x: -1.0d
 			y: -3.0d
 			subtitle: "45 Silver"
@@ -771,12 +740,12 @@
 				{
 					id: "18D9327C3A3FC945"
 					type: "item"
-					item: "thermal:ruby"
+					item: "cabricality:ruby"
 				}
 				{
 					id: "0129F312595D379D"
 					type: "item"
-					item: "thermal:sapphire"
+					item: "cabricality:sapphire"
 				}
 				{
 					id: "5AA9BAAE6336FE84"
@@ -797,11 +766,8 @@
 			rewards: [{
 				id: "158BDC6AB3DED2C8"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 45b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 45b }
+				item: "cabricality:silver_coin"
 				count: 45
 			}]
 		}
@@ -890,19 +856,16 @@
 				{
 					id: "76F8080C0E176A08"
 					type: "item"
-					icon: {
-						id: "thermal:silver_coin"
-						Count: 32b
-					}
+					icon: { id: "cabricality:silver_coin", Count: 32b }
 					auto: "enabled"
-					item: "thermal:silver_coin"
+					item: "cabricality:silver_coin"
 					count: 32
 				}
 				{
 					id: "7FF7001764116001"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -937,7 +900,7 @@
 				{
 					id: "0D0220AE1F3EA9A4"
 					type: "item"
-					item: "create:gabbro"
+					item: "minecraft:dripstone_block"
 					count: 8L
 				}
 				{
@@ -949,18 +912,15 @@
 				{
 					id: "62545E644E0DD998"
 					type: "item"
-					item: "create:dolomite"
+					item: "minecraft:calcite"
 					count: 8L
 				}
 			]
 			rewards: [{
 				id: "3D573B952A099408"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 25b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 25b }
+				item: "cabricality:silver_coin"
 				count: 25
 			}]
 		}
@@ -988,36 +948,33 @@
 				{
 					id: "07105FD32CC3CB86"
 					type: "item"
-					item: "darkerdepths:aridrock"
+					item: "architects_palette:myonite"
 					count: 8L
 				}
 				{
 					id: "5246009651F94D74"
 					type: "item"
-					item: "darkerdepths:grimestone"
+					item: "minecraft:tuff"
 					count: 8L
 				}
 				{
 					id: "4A4F88C99DB35EF3"
 					type: "item"
-					item: "darkerdepths:shale"
+					item: "malum:twisted_rock"
 					count: 8L
 				}
 				{
 					id: "731A6B9678CE71D8"
 					type: "item"
-					item: "forbidden_arcanus:darkstone"
+					item: "create:asurine"
 					count: 8L
 				}
 			]
 			rewards: [{
 				id: "191FAA4E0A99AF43"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 45b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 45b }
+				item: "cabricality:silver_coin"
 				count: 45
 			}]
 		}
@@ -1037,11 +994,8 @@
 			rewards: [{
 				id: "3125103507C80C78"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 15b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 15b }
+				item: "cabricality:silver_coin"
 				count: 15
 			}]
 		}
@@ -1093,11 +1047,8 @@
 			rewards: [{
 				id: "001C0326E6B6F1FF"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 25b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 25b }
+				item: "cabricality:silver_coin"
 				count: 25
 			}]
 		}
@@ -1125,7 +1076,7 @@
 				{
 					id: "46748564E10CA41F"
 					type: "item"
-					item: "supplementaries:flax"
+					item: "farmersdelight:rope"
 					count: 3L
 				}
 				{
@@ -1150,11 +1101,8 @@
 			rewards: [{
 				id: "2EE90E45D02D23F1"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 45b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 45b }
+				item: "cabricality:silver_coin"
 				count: 45
 			}]
 		}
@@ -1181,7 +1129,7 @@
 				{
 					id: "77DF03F6422FE09D"
 					type: "item"
-					item: "xreliquary:rib_bone"
+					item: "architects_palette:withered_bone"
 				}
 				{
 					id: "5B926A8BCD627407"
@@ -1192,11 +1140,8 @@
 			rewards: [{
 				id: "652AE60D13691604"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 55b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 55b }
+				item: "cabricality:silver_coin"
 				count: 55
 			}]
 		}
@@ -1216,11 +1161,8 @@
 			rewards: [{
 				id: "15ACAE1E4D900E4C"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30
 			}]
 		}
@@ -1240,11 +1182,8 @@
 			rewards: [{
 				id: "57CF6CE48FF1115D"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 50b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 50b }
+				item: "cabricality:silver_coin"
 				count: 50
 			}]
 		}
@@ -1264,11 +1203,8 @@
 			rewards: [{
 				id: "5D7DB09D0FA7B0A5"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 50b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 50b }
+				item: "cabricality:silver_coin"
 				count: 50
 			}]
 		}
@@ -1281,16 +1217,13 @@
 			tasks: [{
 				id: "2CA6E7602A5FBCF5"
 				type: "item"
-				item: "supplementaries:globe"
+				item: "ad_astra:earth_globe"
 			}]
 			rewards: [{
 				id: "0D8EB996DBC24C64"
 				type: "item"
-				icon: {
-					id: "thermal:gold_coin"
-					Count: 2b
-				}
-				item: "thermal:gold_coin"
+				icon: { id: "cabricality:gold_coin", Count: 2b }
+				item: "cabricality:gold_coin"
 				count: 2
 			}]
 		}
@@ -1311,11 +1244,8 @@
 			rewards: [{
 				id: "76F2C38DE80E75F0"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 15b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 15b }
+				item: "cabricality:silver_coin"
 				count: 15
 			}]
 		}
@@ -1367,11 +1297,8 @@
 			rewards: [{
 				id: "1727FE45C409A64E"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 30b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 30b }
+				item: "cabricality:silver_coin"
 				count: 30
 			}]
 		}
@@ -1397,10 +1324,10 @@
 						id: "minecraft:white_banner"
 						Count: 1b
 						tag: {
+							HideFlags: 32
 							display: {
 								Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
 							}
-							HideFlags: 32
 							BlockEntityTag: {
 								Patterns: [
 									{
@@ -1458,19 +1385,16 @@
 				{
 					id: "72ADE787CA674127"
 					type: "item"
-					icon: {
-						id: "thermal:silver_coin"
-						Count: 10b
-					}
+					icon: { id: "cabricality:silver_coin", Count: 10b }
 					auto: "enabled"
-					item: "thermal:silver_coin"
+					item: "cabricality:silver_coin"
 					count: 10
 				}
 				{
 					id: "0D666C3C352901FA"
 					type: "custom"
 					title: "Clear Bad Omen"
-					icon: "biomesoplenty:wildflower"
+					icon: "terrestria:indian_paintbrush"
 					tags: ["bad_omen"]
 					team_reward: false
 					auto: "no_toast"
@@ -1479,7 +1403,7 @@
 					id: "77DE41861FF4DDCB"
 					type: "custom"
 					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					team_reward: true
 					auto: "no_toast"
@@ -1509,11 +1433,8 @@
 			rewards: [{
 				id: "52C6094274D540AB"
 				type: "item"
-				icon: {
-					id: "thermal:silver_coin"
-					Count: 60b
-				}
-				item: "thermal:silver_coin"
+				icon: { id: "cabricality:silver_coin", Count: 60b }
+				item: "cabricality:silver_coin"
 				count: 60
 			}]
 		}

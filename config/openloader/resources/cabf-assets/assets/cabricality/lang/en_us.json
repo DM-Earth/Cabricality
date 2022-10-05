@@ -400,6 +400,10 @@
 	"market.cabricality.exchange.silver.subtitle": "&61 Gold Coin&r -> &764 Silver Coins&r",
 	"market.cabricality.exchange.silver.content" : "Here you can exchange a Gold Coin back to a Stack of Silver.",
 	
+	"market.cabricality.shipments.gold"			: " &6Gold",
+	"market.cabricality.shipments.silver"		: " &7Silver",
+	"market.cabricality.shipments.repeatable"	: "Repeatable",
+	
 	"market.cabricality.saw.title"   : "Saw Everything",
 	"market.cabricality.saw.subtitle": "&63 Gold&r - I just saw it!...Wait what?",
 	"market.cabricality.saw.content" : "Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms.&r",

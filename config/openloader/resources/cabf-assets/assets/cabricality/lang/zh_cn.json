@@ -398,6 +398,10 @@
 	"market.cabricality.exchange.silver.subtitle": "&6金&r -> &7银&r   汇率 1:64",
 	"market.cabricality.exchange.silver.content" : "你也可以用一枚金币换回一组银币。",
 	
+	"market.cabricality.shipments.gold"			: "&6金币",
+	"market.cabricality.shipments.silver"		: "&7银币",
+	"market.cabricality.shipments.repeatable"	: "可重复的",
+	
 	"market.cabricality.saw.title"   : "锯我所知",
 	"market.cabricality.saw.subtitle": "&63 金币&r - 毫无根锯",
 	"market.cabricality.saw.content" : "购买它以在组装&6动力构件&r时最小化工具磨损。",

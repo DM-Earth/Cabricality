@@ -22,6 +22,7 @@ let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 let KJ = (id, x) => MOD("kubejs", id, x)
 let ML = (id, x) => MOD("malum", id, x)
+let TR = (id, x) => MOD("terrestria", id, x)
 
 function asIdentifier(path, namespace) {
     if (namespace) {

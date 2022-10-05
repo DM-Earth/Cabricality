@@ -9,3132 +9,2871 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "16x Dirt"
+			title: "16 × {block.minecraft.dirt}"
 			icon: "minecraft:dirt"
 			disable_toast: true
 			x: -3.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3F55BFB10D722AB3"
+			subtitle: "2{market.cabricality.shipments.silver}"
+			id: "709C4E63DC494FE2"
 			tasks: [{
-				id: "1997507669FE7674"
+				id: "098C518E054E6800"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "124822B842514364"
+					id: "6A3BA2C974458057"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_dirt"
+					item: "cabricality:trade_card_minecraft_dirt"
 				}
 				{
-					id: "25359D510073A654"
+					id: "05A44CE11175A32A"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Sand"
+			title: "16 × {block.minecraft.sand}"
 			icon: "minecraft:sand"
 			disable_toast: true
 			x: -2.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "6B44B07AECD75457"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "31B5D39FFD51581B"
 			tasks: [{
-				id: "7468F0738313EAE7"
+				id: "4890A5D251A6C5E0"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "3E596FB9144D8A07"
+					id: "7AD587F8F8E811C6"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_sand"
+					item: "cabricality:trade_card_minecraft_sand"
 				}
 				{
-					id: "2998F72AD4EB9639"
+					id: "15EB99F335B18DC7"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Gravel"
+			title: "16 × {block.minecraft.gravel}"
 			icon: "minecraft:gravel"
 			disable_toast: true
 			x: -1.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "571CFE2730FD847E"
+			subtitle: "2{market.cabricality.shipments.silver}"
+			id: "396BEAA197E86CCF"
 			tasks: [{
-				id: "523EF7A7CE54939C"
+				id: "60DB0D62FFD54AFF"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "02C9B6523A229354"
+					id: "1A5821D772C646F7"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_gravel"
+					item: "cabricality:trade_card_minecraft_gravel"
 				}
 				{
-					id: "7835B70617154797"
+					id: "4752990AE4D388EA"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Clay"
+			title: "16 × {block.minecraft.clay}"
 			icon: "minecraft:clay"
 			disable_toast: true
 			x: -0.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "52DAF847F7E1BB5D"
+			subtitle: "6{market.cabricality.shipments.silver}"
+			id: "428C248F87AFB6AA"
 			tasks: [{
-				id: "77877CCAA437259E"
+				id: "493056C55C9CC8A0"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "67AE2FBA4151C05E"
+					id: "5A729F2D88749A12"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_clay"
+					item: "cabricality:trade_card_minecraft_clay"
 				}
 				{
-					id: "6700D1D02A578471"
+					id: "7A90D718230FDDB8"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Ice"
+			title: "16 × {block.minecraft.ice}"
 			icon: "minecraft:ice"
 			disable_toast: true
 			x: 0.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "6603CA549ACE6FF5"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "02F3D8730CA0322D"
 			tasks: [{
-				id: "1804903FA8616FAD"
+				id: "6ECA936960BAD4DD"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "61607DF6467D14AE"
+					id: "7239BB4385F79FE5"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_ice"
+					item: "cabricality:trade_card_minecraft_ice"
 				}
 				{
-					id: "354DA0BAAB612872"
+					id: "1E078FA5C073CE3C"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Blackstone"
+			title: "16 × {block.minecraft.blackstone}"
 			icon: "minecraft:blackstone"
 			disable_toast: true
 			x: 1.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3873D282F91A3EB9"
+			subtitle: "12{market.cabricality.shipments.silver}"
+			id: "100E49872EC89793"
 			tasks: [{
-				id: "17858353E46458E6"
+				id: "24BE29C32F81F85F"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2C373C72BB7D7589"
+					id: "788BC7924AAFEFD4"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_blackstone"
+					item: "cabricality:trade_card_minecraft_blackstone"
 				}
 				{
-					id: "487B206A7DF1809E"
+					id: "4D795F87F772349D"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Grout"
+			title: "16 × {block.tconstruct.grout}"
 			icon: "tconstruct:grout"
 			disable_toast: true
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "769CF5242D97AFB4"
+			subtitle: "12{market.cabricality.shipments.silver}"
+			id: "51A642D1A38BE817"
 			tasks: [{
-				id: "52A1456E9ECF9AFE"
+				id: "090322C219C58CA7"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "08C88938D7ECEE60"
+					id: "505323122A881A92"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_grout"
+					item: "cabricality:trade_card_tconstruct_grout"
 				}
 				{
-					id: "037EF5E119EBAF97"
+					id: "656D56C205C2DDC1"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Cobblestone"
+			title: "16 × {block.minecraft.cobblestone}"
 			icon: "minecraft:cobblestone"
 			disable_toast: true
 			x: 3.5d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "6E7A0692EE20FCFB"
+			subtitle: "1{market.cabricality.shipments.silver}"
+			id: "2D3DF402E55DE687"
 			tasks: [{
-				id: "67F4AACCECF4B641"
+				id: "561A81FA9CF10737"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "3CF1AA06D19D6852"
+					id: "5883D2E0AABE2B6D"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_cobblestone"
+					item: "cabricality:trade_card_minecraft_cobblestone"
 				}
 				{
-					id: "7AB84B3340D9B330"
+					id: "1111B20C44B9D706"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Granite"
+			title: "16 × {block.minecraft.deepslate}"
+			icon: "minecraft:deepslate"
+			disable_toast: true
+			x: -3.5d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "1{market.cabricality.shipments.silver}"
+			id: "4C048CB4E2E6DB32"
+			tasks: [{
+				id: "4550FB31D2B02954"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "0C7607A34536B15B"
+					type: "item"
+					auto: "enabled"
+					item: "cabricality:trade_card_minecraft_deepslate"
+				}
+				{
+					id: "13D72226D05B9679"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "16 × {block.minecraft.granite}"
 			icon: "minecraft:granite"
 			disable_toast: true
-			x: -3.5d
+			x: -2.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "4629ACC74BED6D6D"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "44C836D55DD46714"
 			tasks: [{
-				id: "07DC576666050E43"
+				id: "54515A83021DF98B"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "0209F160ED8053F6"
+					id: "1E506A5739C68411"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_granite"
+					item: "cabricality:trade_card_minecraft_granite"
 				}
 				{
-					id: "4E95135FDF675242"
+					id: "1B00C6C8C0E7F812"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Diorite"
+			title: "16 × {block.minecraft.diorite}"
 			icon: "minecraft:diorite"
 			disable_toast: true
-			x: -2.5d
+			x: -1.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "6022C87FFD4EB0C3"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "6DFA6E9553574D06"
 			tasks: [{
-				id: "0DE4C88E703A0286"
+				id: "31EE62D1C4063B8A"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "5666130C987CA3D2"
+					id: "03C6622C11F1F0F2"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_diorite"
+					item: "cabricality:trade_card_minecraft_diorite"
 				}
 				{
-					id: "6C5695872E9D9036"
+					id: "34E437C862480BCF"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Andesite"
+			title: "16 × {block.minecraft.andesite}"
 			icon: "minecraft:andesite"
 			disable_toast: true
-			x: -1.5d
+			x: -0.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "07E1A1B027351B7B"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "051D90554741DCEF"
 			tasks: [{
-				id: "1BE6281AF7834157"
+				id: "09286A01B7672F2E"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "47418896361996E5"
+					id: "2487AF1247487BCD"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_andesite"
+					item: "cabricality:trade_card_minecraft_andesite"
 				}
 				{
-					id: "055C849106F3BA8A"
+					id: "296017C973664A19"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Limestone"
+			title: "16 × {block.create.limestone}"
 			icon: "create:limestone"
 			disable_toast: true
-			x: -0.5d
-			y: 1.0d
-			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "203D6B74B7C71BBA"
-			tasks: [{
-				id: "0A78AD0D8AC9FE1A"
-				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "73C005CB9CC8531E"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_limestone"
-				}
-				{
-					id: "2B82484BCCF638CF"
-					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "16x Weathered Limestone"
-			icon: "create:weathered_limestone"
-			disable_toast: true
 			x: 0.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "09C8736F295801DC"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "03594ED67C2515AB"
 			tasks: [{
-				id: "1FA63510E242B963"
+				id: "2A0279C4226EE4D5"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2DF8FD41A6D64FE2"
+					id: "035C5BC916D3958F"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_weathered_limestone"
+					item: "cabricality:trade_card_create_limestone"
 				}
 				{
-					id: "2682137936746352"
+					id: "495CD50ED7A110DE"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Dolomite"
-			icon: "create:dolomite"
+			title: "16 × {block.minecraft.tuff}"
+			icon: "minecraft:tuff"
 			disable_toast: true
 			x: 1.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "60BF6E43E60692EF"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "7CDE39AC512BA7B3"
 			tasks: [{
-				id: "0F0E352B15A00DF2"
+				id: "74E539772CEF3A0B"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "74C0CB30A9AD6F76"
+					id: "4081257A740EB342"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_dolomite"
+					item: "cabricality:trade_card_minecraft_tuff"
 				}
 				{
-					id: "7DC9507A3580EF63"
+					id: "71F545D2975982C3"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Gabbro"
-			icon: "create:gabbro"
+			title: "16 × {block.minecraft.calcite}"
+			icon: "minecraft:calcite"
 			disable_toast: true
 			x: 2.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "581A2BE2B75494CB"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "163FBD6EE7781B26"
 			tasks: [{
-				id: "661936C3058CB5CC"
+				id: "3BB39D502BBFEC2C"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "16E995F23690511E"
+					id: "1156BB41FEAF002F"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_gabbro"
+					item: "cabricality:trade_card_minecraft_calcite"
 				}
 				{
-					id: "7BC4D4921FE3362B"
+					id: "5F577CD00415EA7D"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Scoria"
-			icon: "create:scoria"
+			title: "16 × {block.minecraft.dripstone_block}"
+			icon: "minecraft:dripstone_block"
 			disable_toast: true
 			x: 3.5d
 			y: 1.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0AE14D26874130A6"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "28D703BD896A43BB"
 			tasks: [{
-				id: "6ABFCC7B0289463F"
+				id: "24506FD211A55A1D"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1776F9225BD34A54"
+					id: "1EC17FACA609E7B6"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_scoria"
+					item: "cabricality:trade_card_minecraft_dripstone_block"
 				}
 				{
-					id: "2E43809183850367"
+					id: "739E1E5A08B19F96"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Dark Scoria"
-			icon: "create:dark_scoria"
+			title: "16 × {block.create.scoria}"
+			icon: "create:scoria"
 			disable_toast: true
 			x: -3.5d
 			y: 2.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "62E62E146E30956B"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "3BC3D3653E1CAD42"
 			tasks: [{
-				id: "6D9733E397B86123"
+				id: "560F95AC1F2EB540"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "5A301A1E5CB134E5"
+					id: "3E3570D22A08724D"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_dark_scoria"
+					item: "cabricality:trade_card_create_scoria"
 				}
 				{
-					id: "005A43BCAB22E244"
+					id: "42A88665ED79C526"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Obsidian"
+			title: "16 × {block.create.scorchia}"
+			icon: "create:scorchia"
+			disable_toast: true
+			x: -2.5d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "64A938CB61D605DD"
+			tasks: [{
+				id: "69C937A5FBB60A47"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "6AF9427177DC6CEA"
+					type: "item"
+					auto: "enabled"
+					item: "cabricality:trade_card_create_scorchia"
+				}
+				{
+					id: "12013FD3A0CE2AC9"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "1 × {block.minecraft.obsidian}"
 			icon: "minecraft:obsidian"
 			disable_toast: true
-			x: -2.5d
+			x: -1.5d
 			y: 2.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "70C70496972A2A64"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "28BF5826C8185FA1"
 			tasks: [{
-				id: "3CF09F85902A2407"
+				id: "21B302AFB0A48FD9"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "0181D8FF3C0A54A8"
+					id: "0BA647EFA6CE0129"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_obsidian"
+					item: "cabricality:trade_card_minecraft_obsidian"
 				}
 				{
-					id: "1F43A81CD8235C80"
+					id: "65AAADFEDF072341"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Oak Log"
-			icon: "minecraft:oak_log"
+			title: "16 × {block.architects_palette.twisted_log}"
+			icon: "architects_palette:twisted_log"
 			disable_toast: true
 			x: -3.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3046CC144E87FE5D"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "63BFD477617790C4"
 			tasks: [{
-				id: "088202EF6A8F4D31"
+				id: "19E4D06080164D9B"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "0CA313E6CA54F301"
+					id: "0FEB6D067D808C30"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_oak_log"
+					item: "cabricality:trade_card_architects_palette_twisted_log"
 				}
 				{
-					id: "6C68296B5ED31360"
+					id: "5B60FB2C77E792E0"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Birch Log"
-			icon: "minecraft:birch_log"
+			title: "16 × {block.minecraft.oak_log}"
+			icon: "minecraft:oak_log"
 			disable_toast: true
 			x: -2.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "7C60A14C84F120EF"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "2049E9CE59E7BB94"
 			tasks: [{
-				id: "6B274A2A280CD1CD"
+				id: "6DD70D7B40FDD82A"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "666BEB7D06A3C65B"
+					id: "6096F941364E297B"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_birch_log"
+					item: "cabricality:trade_card_minecraft_oak_log"
 				}
 				{
-					id: "12A9C77CC026ED10"
+					id: "263FE44E9ECFC256"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Spruce Log"
-			icon: "minecraft:spruce_log"
+			title: "16 × {block.minecraft.birch_log}"
+			icon: "minecraft:birch_log"
 			disable_toast: true
 			x: -1.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "140B8F826C073BBE"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "42AA9C55F6A705C5"
 			tasks: [{
-				id: "7D1000B396C705C2"
+				id: "18BE15E6DF14F158"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2F50B3877C57FC49"
+					id: "05123DB23AE25B1B"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_spruce_log"
+					item: "cabricality:trade_card_minecraft_birch_log"
 				}
 				{
-					id: "2CF4B81B5CB2D054"
+					id: "79A0FB3F6BA47D17"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Jungle Log"
-			icon: "minecraft:jungle_log"
+			title: "16 × {block.minecraft.spruce_log}"
+			icon: "minecraft:spruce_log"
 			disable_toast: true
 			x: -0.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "68712FBE5BCC8FB4"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "0F51947886882463"
 			tasks: [{
-				id: "683F4472AF18AB31"
+				id: "73A29B14F7FDA2D9"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "644D4D14A52AA81A"
+					id: "795DED69555E99AB"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_jungle_log"
+					item: "cabricality:trade_card_minecraft_spruce_log"
 				}
 				{
-					id: "65AC222F00E11C3A"
+					id: "17E1BEBBF10B2CF3"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Acacia Log"
-			icon: "minecraft:acacia_log"
+			title: "16 × {block.minecraft.jungle_log}"
+			icon: "minecraft:jungle_log"
 			disable_toast: true
 			x: 0.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "7006291CFF242B13"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "4C4504B6677205E1"
 			tasks: [{
-				id: "60F8E9D6026B3C1B"
+				id: "13B1A4A941AF7B42"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2CDC306ACE5293E8"
+					id: "422F04BF0572673E"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_acacia_log"
+					item: "cabricality:trade_card_minecraft_jungle_log"
 				}
 				{
-					id: "4F472AA4D3EED713"
+					id: "7FEBB3E1839DEE63"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Dark Oak Log"
-			icon: "minecraft:dark_oak_log"
+			title: "16 × {block.minecraft.acacia_log}"
+			icon: "minecraft:acacia_log"
 			disable_toast: true
 			x: 1.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "268B6EADFCE17FBF"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "21B628741A457FFF"
 			tasks: [{
-				id: "529758F621765AD7"
+				id: "1802D2605AD86F7E"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "556A25FB8779834F"
+					id: "0E0C30D87F7BA7E0"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_dark_oak_log"
+					item: "cabricality:trade_card_minecraft_acacia_log"
 				}
 				{
-					id: "49EA0C86182BBBE2"
+					id: "06843249160896C8"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Crimson Stem"
-			icon: "minecraft:crimson_stem"
+			title: "16 × {block.minecraft.dark_oak_log}"
+			icon: "minecraft:dark_oak_log"
 			disable_toast: true
 			x: 2.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "081DAD8BE9C4A177"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "1013F0BEECCAF02D"
 			tasks: [{
-				id: "0662BE2FD9500254"
+				id: "67EB09D83C793F95"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "148F327B48488E14"
+					id: "101CFF6F1EE8F607"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_crimson_stem"
+					item: "cabricality:trade_card_minecraft_dark_oak_log"
 				}
 				{
-					id: "3B7B866873BCBCA4"
+					id: "426FD6224CAAA20A"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Warped Stem"
-			icon: "minecraft:warped_stem"
+			title: "16 × {block.minecraft.crimson_stem}"
+			icon: "minecraft:crimson_stem"
 			disable_toast: true
 			x: 3.5d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "5269E5F4E0E7EE33"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "3F7FD7AA0329FBBC"
 			tasks: [{
-				id: "4E91370ECDE0E633"
+				id: "3F8BF1F8253EB6AE"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "79B2E5D5D263EDDA"
+					id: "10D65A1352676FF7"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_warped_stem"
+					item: "cabricality:trade_card_minecraft_crimson_stem"
 				}
 				{
-					id: "48B7932CF3C42A57"
+					id: "10CD6010317BC17F"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Iron Ingot"
+			title: "16 × {block.minecraft.warped_stem}"
+			icon: "minecraft:warped_stem"
+			disable_toast: true
+			x: -3.5d
+			y: 4.5d
+			shape: "hexagon"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "715912B4419FB0EA"
+			tasks: [{
+				id: "1EE51E5DA948FF59"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "53658ECA3B4A4335"
+					type: "item"
+					auto: "enabled"
+					item: "cabricality:trade_card_minecraft_warped_stem"
+				}
+				{
+					id: "462940AEAD51EC25"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "8 × {item.minecraft.iron_ingot}"
 			icon: "minecraft:iron_ingot"
 			disable_toast: true
 			x: -3.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "63D3A9350329F0C5"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "11831761B47D50D5"
 			tasks: [{
-				id: "43111FE49735D3E9"
+				id: "05629212900F16DF"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2EFED2207D20C9C0"
+					id: "4AE74665457DC005"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_iron_ingot"
+					item: "cabricality:trade_card_minecraft_iron_ingot"
 				}
 				{
-					id: "12B4E3C7264E9A2C"
+					id: "779FD2593546056A"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Zinc Ingot"
+			title: "8 × {item.create.zinc_ingot}"
 			icon: "create:zinc_ingot"
 			disable_toast: true
 			x: -2.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "051B3FEE20126BC4"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "6AF6B9CC3A7C913D"
 			tasks: [{
-				id: "736523DFBFFB9577"
+				id: "7B1973EA4777E976"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "675DB956AD7CEF89"
+					id: "37237CA9BAFB1FD4"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_zinc_ingot"
+					item: "cabricality:trade_card_create_zinc_ingot"
 				}
 				{
-					id: "647E5B25587821F4"
+					id: "01C3A67F8C7DCCEC"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Copper Ingot"
-			icon: "create:copper_ingot"
+			title: "8 × {item.minecraft.copper_ingot}"
+			icon: "minecraft:copper_ingot"
 			disable_toast: true
 			x: -1.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "2CD1903FACC99798"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "1D37C35BEE5C02BC"
 			tasks: [{
-				id: "54F32596AA96BDD0"
+				id: "21DE33CFD0DC2B08"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2422F3039BA99F23"
+					id: "351048AB5FD1EA9F"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_copper_ingot"
+					item: "cabricality:trade_card_minecraft_copper_ingot"
 				}
 				{
-					id: "2921FE41C9FE99BE"
+					id: "6832202289BC77D2"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Nickel Ingot"
-			icon: "indrev:nickel_ingot"
+			title: "8 × {item.cabricality.nickel_ingot}"
+			icon: "cabricality:nickel_ingot"
 			disable_toast: true
 			x: -0.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "1227D143DBCC8FF0"
+			subtitle: "32{market.cabricality.shipments.silver}"
+			id: "291E07568CA59449"
 			tasks: [{
-				id: "08F2EA4609E82396"
+				id: "4C3A5842B289A765"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "10F2EEF7BF5F4723"
+					id: "0D11E7DE5AC6D3D1"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_nickel_ingot"
+					item: "cabricality:trade_card_cabricality_nickel_ingot"
 				}
 				{
-					id: "54FAEEB733BDC81C"
+					id: "29C0CAFF0100C7CF"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Lead Ingot"
+			title: "8 × {item.indrev.lead_ingot}"
 			icon: "indrev:lead_ingot"
 			disable_toast: true
 			x: 0.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0BB22E930EB1F14B"
+			subtitle: "32{market.cabricality.shipments.silver}"
+			id: "07BD13CB2A260C3B"
 			tasks: [{
-				id: "47A519189CDF4ED5"
+				id: "17FD32CC8CD7CFDA"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "02B1C1706AD70D4F"
+					id: "40981D51F0BA1362"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_lead_ingot"
+					item: "cabricality:trade_card_indrev_lead_ingot"
 				}
 				{
-					id: "4858C45989D10991"
+					id: "01B172BE2EED80D4"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Gold Ingot"
+			title: "8 × {item.minecraft.gold_ingot}"
 			icon: "minecraft:gold_ingot"
 			disable_toast: true
 			x: 1.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "4B8B5BBEE1D4A672"
+			subtitle: "48{market.cabricality.shipments.silver}"
+			id: "2899FF471C57E91D"
 			tasks: [{
-				id: "6451351FA03711BC"
+				id: "13C2D6A79B1B534C"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4F1E8DBB63DB7AA0"
+					id: "63F98248EFF6B85B"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_gold_ingot"
+					item: "cabricality:trade_card_minecraft_gold_ingot"
 				}
 				{
-					id: "06E3DAD06E6BBD5E"
+					id: "4E09679C9BDF8B11"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Andesite Alloy"
+			title: "16 × {item.create.andesite_alloy}"
 			icon: "create:andesite_alloy"
 			disable_toast: true
 			x: 2.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0A0717D6F67AE5F9"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "05458A9E1FF94BD2"
 			tasks: [{
-				id: "7FF3F175B6173AE9"
+				id: "4B18106A3A8074CB"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4DA6B694087F3DE1"
+					id: "5BAAFD889E90EE6E"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_andesite_alloy"
+					item: "cabricality:trade_card_create_andesite_alloy"
 				}
 				{
-					id: "2ECFA7A057E88A62"
+					id: "6DE6F1DBBE540CCE"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Brass Ingot"
+			title: "8 × {item.create.brass_ingot}"
 			icon: "create:brass_ingot"
 			disable_toast: true
 			x: 3.5d
-			y: 5.0d
+			y: 6.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "67E1A0E55CCF5FC4"
+			subtitle: "48{market.cabricality.shipments.silver}"
+			id: "41272CCC4EE5DC21"
 			tasks: [{
-				id: "5A5593F1A7D0DA0D"
+				id: "55FDB584C860E512"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "38863634B85E0769"
+					id: "039864C2DEDA1F3E"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_brass_ingot"
+					item: "cabricality:trade_card_create_brass_ingot"
 				}
 				{
-					id: "1EA7FAF717A868FC"
+					id: "70736F874F02DBB4"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Coal"
-			icon: "minecraft:coal"
+			title: "4 × {item.cabricality.invar_ingot}"
+			icon: "cabricality:invar_ingot"
 			disable_toast: true
 			x: -3.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "409A177113C29A7E"
+			subtitle: "1{market.cabricality.shipments.gold}"
+			id: "63B0AC263D4CF1A7"
 			tasks: [{
-				id: "134FD6BCA47EB240"
+				id: "1B499C3A7314B3F5"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1B51A73DB920AA1D"
+					id: "526D1B05601E10AF"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_coal"
+					item: "cabricality:trade_card_cabricality_invar_ingot"
 				}
 				{
-					id: "04CF601B560A99D4"
+					id: "3769136D2022D95C"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Flint"
-			icon: "minecraft:flint"
+			title: "16 × {item.minecraft.coal}"
+			icon: "minecraft:coal"
 			disable_toast: true
 			x: -2.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "4D65D1FC81AA8121"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "528C4CF702042BF4"
 			tasks: [{
-				id: "4BB9C9EF6474FDD7"
+				id: "43434F28975D7DB6"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "624CD980272ACB2B"
+					id: "47F07DB2E741E12F"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_flint"
+					item: "cabricality:trade_card_minecraft_coal"
 				}
 				{
-					id: "1558CF01BBC7183A"
+					id: "7A7C005242953A84"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Cinnabar"
-			icon: "indrev:cinnabar"
+			title: "16 × {item.minecraft.flint}"
+			icon: "minecraft:flint"
 			disable_toast: true
 			x: -1.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "58EAA0890D362073"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "76DE84D18E6F563F"
 			tasks: [{
-				id: "1C1E89EF1DE1FB6D"
+				id: "66803640FA058571"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1B674DFA2499FDB1"
+					id: "695E833E07B41FCF"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_cinnabar"
+					item: "cabricality:trade_card_minecraft_flint"
 				}
 				{
-					id: "75473B3B28F2602E"
+					id: "7374545C8624BAA3"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Redstone Dust"
+			title: "16 × {item.minecraft.redstone}"
 			icon: "minecraft:redstone"
 			disable_toast: true
 			x: -0.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "2451FFF1E4F46B7B"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "30C05EA975BA8C02"
 			tasks: [{
-				id: "6DB426625403DBE2"
+				id: "26BB7DA10CE724B9"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1A4DE964D01EE0AF"
+					id: "070FD83D8F1591DC"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_redstone_dust"
+					item: "cabricality:trade_card_minecraft_redstone"
 				}
 				{
-					id: "5CF7598A46533321"
+					id: "698D4EBEBE8DCAEB"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Diamond"
+			title: "1 × {item.minecraft.diamond}"
 			icon: "minecraft:diamond"
 			disable_toast: true
 			x: 0.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "64 Silver"
-			id: "28E73E04A9262634"
+			subtitle: "1{market.cabricality.shipments.gold}"
+			id: "604A586B21351F54"
 			tasks: [{
-				id: "2D4409C9FE4827C3"
+				id: "4C48D4F5427F480A"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "5B6D36BD2FFD607D"
+					id: "40F670942CE97DC7"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_diamond"
+					item: "cabricality:trade_card_minecraft_diamond"
 				}
 				{
-					id: "516D520EF64A7B1B"
+					id: "5E73FCEF303820EC"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Lapis Lazuli"
+			title: "8 × {item.minecraft.lapis_lazuli}"
 			icon: "minecraft:lapis_lazuli"
 			disable_toast: true
 			x: 1.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "5B228BDF8DCA98AB"
+			subtitle: "32{market.cabricality.shipments.silver}"
+			id: "14B5B2A317DDC1EC"
 			tasks: [{
-				id: "08D0F904F58688C8"
+				id: "1DF82E65DBDAA4E4"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "70C233BE61845344"
+					id: "2B65B9D9E6901D50"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_lapis_lazuli"
+					item: "cabricality:trade_card_minecraft_lapis_lazuli"
 				}
 				{
-					id: "696568CFAA6E5762"
+					id: "19289D2A37E41546"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Emerald"
+			title: "1 × {item.minecraft.emerald}"
 			icon: "minecraft:emerald"
 			disable_toast: true
 			x: 2.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "hexagon"
-			subtitle: "64 Silver"
-			id: "6FE3028D04A7A6DD"
+			subtitle: "1{market.cabricality.shipments.gold}"
+			id: "130C1588A55C289F"
 			tasks: [{
-				id: "692D82CD2B3B4355"
+				id: "4E3BFDC653484EEE"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "469BDCF5FBD1CC7E"
+					id: "362D5483802B0F18"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_emerald"
+					item: "cabricality:trade_card_minecraft_emerald"
 				}
 				{
-					id: "2B7BE299EB54FA0C"
+					id: "52AF37FD86938298"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Sulfur"
-			icon: "indrev:sulfur"
+			title: "4 × {item.indrev.sulfur_crystal}"
+			icon: "indrev:sulfur_crystal"
 			disable_toast: true
 			x: 3.5d
-			y: 6.0d
-			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "793195F8B178B10D"
-			tasks: [{
-				id: "54DF20C8D6F8A005"
-				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "41EC8D1FD0F998CF"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_sulfur"
-				}
-				{
-					id: "6EE8C3BC3119C7AD"
-					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "4x Apatite"
-			icon: "indrev:apatite"
-			disable_toast: true
-			x: -3.5d
 			y: 7.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "7BC6F88894409A47"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "647FC480F7127128"
 			tasks: [{
-				id: "31783F36997C84F6"
+				id: "14FE23C937F6579C"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "7516A935526C78D7"
+					id: "7A08E8DBC14882D6"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_apatite"
+					item: "cabricality:trade_card_indrev_sulfur_crystal"
 				}
 				{
-					id: "062F8A06585FCEA2"
+					id: "43F3DAE1D0615B72"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Niter"
-			icon: "indrev:niter"
-			disable_toast: true
-			x: -2.5d
-			y: 7.0d
-			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "783E6E9F97F2D5E6"
-			tasks: [{
-				id: "77228C1975FA7FAE"
-				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "21C37E4820AA43FD"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_niter"
-				}
-				{
-					id: "325C512B52002F5D"
-					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "8x Nether Quartz"
+			title: "8 × {item.minecraft.quartz}"
 			icon: "minecraft:quartz"
 			disable_toast: true
-			x: -1.5d
-			y: 7.0d
+			x: -3.5d
+			y: 8.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3D7F921D6920A50F"
+			subtitle: "24{market.cabricality.shipments.silver}"
+			id: "627EEE3CCBF49DA2"
 			tasks: [{
-				id: "31CB68F917DB81C7"
+				id: "44E16DADC9E45392"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "556E6957E4A0E2CF"
+					id: "009BECC14E8841A8"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_nether_quartz"
+					item: "cabricality:trade_card_minecraft_quartz"
 				}
 				{
-					id: "43E3D4B9B815351C"
+					id: "6D49A433C3498294"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Certus Quartz"
+			title: "8 × {item.ae2.certus_quartz_crystal}"
 			icon: "ae2:certus_quartz_crystal"
 			disable_toast: true
+			x: -2.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "24{market.cabricality.shipments.silver}"
+			id: "1C69C414EDA0472B"
+			tasks: [{
+				id: "1D96CBE9D697415A"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "0CE2C0F878D65C9A"
+					type: "item"
+					auto: "enabled"
+					item: "cabricality:trade_card_ae2_certus_quartz_crystal"
+				}
+				{
+					id: "2EC2F5764475807A"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "8 × {item.ae2.fluix_crystal}"
+			icon: "ae2:fluix_crystal"
+			disable_toast: true
+			x: -1.5d
+			y: 8.0d
+			shape: "hexagon"
+			subtitle: "32{market.cabricality.shipments.silver}"
+			id: "6CF1893AF25D29EE"
+			tasks: [{
+				id: "30B1A677419D307E"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "66BA57EDD293A75D"
+					type: "item"
+					auto: "enabled"
+					item: "cabricality:trade_card_ae2_fluix_crystal"
+				}
+				{
+					id: "24E15A81C3B9DB2A"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "6 × {item.cabricality.cured_rubber}"
+			icon: "cabricality:cured_rubber"
+			disable_toast: true
 			x: -0.5d
-			y: 7.0d
+			y: 8.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "05B2FA23E0FF7BCD"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "60E78081DD51DD76"
 			tasks: [{
-				id: "098C477907CC072B"
+				id: "62B825441B932C58"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "74391641A3C93C9D"
+					id: "0923DD2E88247CF9"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_certus_quartz"
+					item: "cabricality:trade_card_cabricality_cured_rubber"
 				}
 				{
-					id: "66A7F6B05D01BEB1"
+					id: "7462B4E3D0E01C4D"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Fluix Quartz"
-			icon: "ae2:flui"
-			disable_toast: true
-			x: 0.5d
-			y: 7.0d
-			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "13A61932F5E5C88E"
-			tasks: [{
-				id: "2BC4DFFBC42F4B70"
-				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "6645FB337D91B28D"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_fluix_quartz"
-				}
-				{
-					id: "68EBCC54C48EBFB3"
-					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "6x Cured Rubber"
-			icon: "indrev:cured_rubber"
-			disable_toast: true
-			x: 1.5d
-			y: 7.0d
-			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "7296A48B19019254"
-			tasks: [{
-				id: "4561ECDCC93600DE"
-				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "209D80272AE9AFBE"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_cured_rubber"
-				}
-				{
-					id: "0A69AD662958DE60"
-					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "16x Scaffolding"
+			title: "16 × {block.minecraft.scaffolding}"
 			icon: "minecraft:scaffolding"
 			disable_toast: true
 			x: -1.5d
-			y: 8.5d
+			y: 9.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "52661F704DED12E1"
+			subtitle: "2{market.cabricality.shipments.silver}"
+			id: "5EDC66D43B86D96B"
 			tasks: [{
-				id: "71A7A269F88B3C50"
+				id: "1FD0FC29E8DF7230"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "5260DF57091D5271"
+					id: "21FA04CABC87D89C"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_scaffolding"
+					item: "cabricality:trade_card_minecraft_scaffolding"
 				}
 				{
-					id: "1CEBF93A29762664"
+					id: "3F8D408AC67828C2"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Wool"
+			title: "1 × {block.minecraft.white_wool}"
 			icon: "minecraft:white_wool"
 			disable_toast: true
 			x: -0.5d
-			y: 8.5d
+			y: 9.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "1F35110FF66AD731"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "178666EC45EF7426"
 			tasks: [{
-				id: "74FFCFB5C81CE6F7"
+				id: "4A46F141D5E2BB65"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "7C092A156663DBC2"
+					id: "4ED3267D2BC0E1E7"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_wool"
+					item: "cabricality:trade_card_minecraft_white_wool"
 				}
 				{
-					id: "476C11BAA7C335AC"
+					id: "2DD5AE44ABBD7556"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Sponge"
+			title: "1 × {block.minecraft.sponge}"
 			icon: "minecraft:sponge"
 			disable_toast: true
 			x: 0.5d
-			y: 8.5d
+			y: 9.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "4F9EEE3B9A2F4EE2"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "75731F0C93035AD7"
 			tasks: [{
-				id: "25FDCEEDB9F35736"
+				id: "471DE63492987628"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "601D2A3D07913F52"
+					id: "758F70A061EBA4C7"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_sponge"
+					item: "cabricality:trade_card_minecraft_sponge"
 				}
 				{
-					id: "61AC0E680D6F6ACD"
+					id: "6FA8795D949B4071"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Cobweb"
+			title: "1 × {block.minecraft.cobweb}"
 			icon: "minecraft:cobweb"
 			disable_toast: true
 			x: 1.5d
-			y: 8.5d
+			y: 9.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "49B42F95AB7BE0D4"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "28903B91794A8EC0"
 			tasks: [{
-				id: "612D85E41B8FB044"
+				id: "338AC42E86E47504"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "27BBA7C0ECA6E4CF"
+					id: "29C817D325FDEDC6"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_cobweb"
+					item: "cabricality:trade_card_minecraft_cobweb"
 				}
 				{
-					id: "4E64B9A2E222F412"
+					id: "0B644ACE09F0908E"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Rice"
+			title: "1 × {block.farmersdelight.rice_bag}"
 			icon: "farmersdelight:rice_bag"
 			disable_toast: true
 			x: -3.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "7A40F6BE3EA9B42C"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "6EC24897BBE9747A"
 			tasks: [{
-				id: "3193B68EC2E128AD"
+				id: "2ADCED77C74C2CC8"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "63D1DF4D41D642E5"
+					id: "3CE6A7F85859D44A"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_rice"
+					item: "cabricality:trade_card_farmersdelight_rice_bag"
 				}
 				{
-					id: "53F1355CB8A23EE2"
+					id: "62109FB473C270D8"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Straw"
+			title: "32 × {item.farmersdelight.straw}"
 			icon: "farmersdelight:straw"
 			disable_toast: true
 			x: -2.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "00F21392BBB8FA47"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "75BA329844596BE0"
 			tasks: [{
-				id: "224820768ED35F2F"
+				id: "47471AF0DFABDF88"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1396B1DFE96879E6"
+					id: "252E1994CC33AC10"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_straw"
+					item: "cabricality:trade_card_farmersdelight_straw"
 				}
 				{
-					id: "39025B8385C5B4AD"
+					id: "21AC752CCC5D2C34"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Sugar Cane"
+			title: "4 × {block.minecraft.sugar_cane}"
 			icon: "minecraft:sugar_cane"
 			disable_toast: true
 			x: -1.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3C18BE2414AD68E7"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "26AE23C491241C82"
 			tasks: [{
-				id: "55265370561F769C"
+				id: "3F36F64616A90E6D"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1ECE51CF2D6101E0"
+					id: "253A5CE4FC8FA7DC"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_sugar_cane"
+					item: "cabricality:trade_card_minecraft_sugar_cane"
 				}
 				{
-					id: "74C2E1C611C2730B"
+					id: "0D9991F4161CE57B"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Kelp"
+			title: "8 × {block.minecraft.kelp}"
 			icon: "minecraft:kelp"
 			disable_toast: true
 			x: -0.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "32BEC43D3742FC37"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "05E52817E3A4D921"
 			tasks: [{
-				id: "05CC08FB2F70E614"
+				id: "0599D91AC2800D48"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "7D8FD2C0B9F9E274"
+					id: "26F16A6575D85592"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_kelp"
+					item: "cabricality:trade_card_minecraft_kelp"
 				}
 				{
-					id: "04A1B6CE4154809B"
+					id: "5F0DF3D6F3A49AE5"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Bamboo"
+			title: "8 × {block.minecraft.bamboo}"
 			icon: "minecraft:bamboo"
 			disable_toast: true
 			x: 0.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "63ACE03D939A18C6"
+			subtitle: "5{market.cabricality.shipments.silver}"
+			id: "72F8D130B593B8CB"
 			tasks: [{
-				id: "3E6F566FCE88D746"
+				id: "702B90D05EBF0A13"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "59717D2E4A73C6CA"
+					id: "1F76F66EFBDE45A4"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_bamboo"
+					item: "cabricality:trade_card_minecraft_bamboo"
 				}
 				{
-					id: "2606CF9BBEBE4FAF"
+					id: "145551D0A75FB795"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "8x Sweet Berries"
+			title: "8 × {item.minecraft.sweet_berries}"
 			icon: "minecraft:sweet_berries"
 			disable_toast: true
 			x: 1.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "10416A73E7A53237"
+			subtitle: "11{market.cabricality.shipments.silver}"
+			id: "57D080D936379827"
 			tasks: [{
-				id: "29A640FA55D16A22"
+				id: "3F7975D363963C88"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "5FF1DAEAABC90EB0"
+					id: "3D7053854EE6DFF5"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_sweet_berries"
+					item: "cabricality:trade_card_minecraft_sweet_berries"
 				}
 				{
-					id: "217DB6CC3F0F1DC8"
+					id: "301DC1535A331C00"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Vines"
-			icon: "minecraft:vine"
+			title: "8 × {item.minecraft.glow_berries}"
+			icon: "minecraft:glow_berries"
 			disable_toast: true
 			x: 2.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "46C1A5B4F88928F3"
+			subtitle: "17{market.cabricality.shipments.silver}"
+			id: "477217D2F11B7BE9"
 			tasks: [{
-				id: "5E9CBBF11468C582"
+				id: "3CBA843A32622A49"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "00211556A805339E"
+					id: "3BB4286544D7DDC6"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_vines"
+					item: "cabricality:trade_card_minecraft_glow_berries"
 				}
 				{
-					id: "3986D94C9D8F11EE"
+					id: "3980D1FC43B54283"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Tree Fertilizer"
-			icon: "create:tree_fertilizer"
+			title: "4 × {block.minecraft.vine}"
+			icon: "minecraft:vine"
 			disable_toast: true
 			x: 3.5d
-			y: 14.0d
+			y: 15.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "63E5EE9FB80AD8AB"
+			subtitle: "7{market.cabricality.shipments.silver}"
+			id: "6BE24C428F2FEC57"
 			tasks: [{
-				id: "1DF263B92FDD62C1"
+				id: "2C301188821CE5F5"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "22A50158DF88284F"
+					id: "4CBD5A1E66B0D3AC"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_tree_fertilizer"
+					item: "cabricality:trade_card_minecraft_vine"
 				}
 				{
-					id: "16F25EA48E57B523"
+					id: "28A4338462762522"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Clear Glass"
+			title: "1 × {item.create.tree_fertilizer}"
+			icon: "create:tree_fertilizer"
+			disable_toast: true
+			x: -3.5d
+			y: 16.0d
+			shape: "hexagon"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "600CA1670449B213"
+			tasks: [{
+				id: "14E904F77A0B81D8"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
+				count: 10L
+			}]
+			rewards: [
+				{
+					id: "76B45F213940FB88"
+					type: "item"
+					auto: "enabled"
+					item: "cabricality:trade_card_create_tree_fertilizer"
+				}
+				{
+					id: "1E50EC9953468D1E"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "16 × {block.tconstruct.clear_glass}"
 			icon: "tconstruct:clear_glass"
 			disable_toast: true
 			x: -3.5d
-			y: 15.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "28D8DFD657016377"
+			subtitle: "4{market.cabricality.shipments.silver}"
+			id: "0ECF572E8DA00415"
 			tasks: [{
-				id: "7CD0A8EB8F79D37C"
+				id: "5714C404B341AC64"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "73AB85D3CF3C0BF4"
+					id: "192A9F99F8FEC06E"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_clear_glass"
+					item: "cabricality:trade_card_tconstruct_clear_glass"
 				}
 				{
-					id: "37835592751A6A1E"
+					id: "52F60449A6E05B0C"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Copper Shingles"
+			title: "16 × {block.create.copper_shingles}"
 			icon: "create:copper_shingles"
 			disable_toast: true
 			x: -2.5d
-			y: 15.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0386827D2EA08028"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "541DC10B4CA35ABD"
 			tasks: [{
-				id: "74D2621071704C51"
+				id: "7AC0F3459ECD2290"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "0D73167E635485CA"
+					id: "25D2F888001C1FC7"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_copper_shingles"
+					item: "cabricality:trade_card_create_copper_shingles"
 				}
 				{
-					id: "779F21527F57F638"
+					id: "7696CABCA5FF6971"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Algal Bricks"
+			title: "32 × {block.architects_palette.algal_bricks}"
 			icon: "architects_palette:algal_bricks"
 			disable_toast: true
 			x: -1.5d
-			y: 15.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "04A5063E8674EF6B"
+			subtitle: "6{market.cabricality.shipments.silver}"
+			id: "2992A94A60B98EF8"
 			tasks: [{
-				id: "5ABB241A1671D9F9"
+				id: "7E2DB53BECF7C4E6"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "05EA4E091CEA678A"
+					id: "5C968E5E3D1F72D1"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_algal_bricks"
+					item: "cabricality:trade_card_architects_palette_algal_bricks"
 				}
 				{
-					id: "17757B7C4A6F6BA2"
+					id: "25B63CB068A03941"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Olivestone Bricks"
+			title: "32 × {block.architects_palette.olivestone_bricks}"
 			icon: "architects_palette:olivestone_bricks"
 			disable_toast: true
 			x: -0.5d
-			y: 15.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "7C717FF8F4FFDB0A"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "6B4F1141F4751434"
 			tasks: [{
-				id: "211975B2FC246DA4"
+				id: "5C0C793B22576ADF"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4062D0C729ABDF6F"
+					id: "77CE2928BCD72047"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_olivestone_bricks"
+					item: "cabricality:trade_card_architects_palette_olivestone_bricks"
 				}
 				{
-					id: "0E08A9ACEF9D9393"
+					id: "63F28500F8F22CA6"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Architect's Limestone"
-			icon: "architects_palette:limestone"
-			disable_toast: true
-			x: 0.5d
-			y: 15.5d
-			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "03048947869598B4"
-			tasks: [{
-				id: "0E3FB18351EF60CE"
-				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "3A2739A432CEA60F"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_architects_limestone"
-				}
-				{
-					id: "50A2BBB56630456C"
-					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "32x Sunmetal"
+			title: "32 × {block.architects_palette.sunmetal_block}"
 			icon: "architects_palette:sunmetal_block"
 			disable_toast: true
-			x: 1.5d
-			y: 15.5d
+			x: 0.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0C82CC74F3BB9944"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "174287CE029287ED"
 			tasks: [{
-				id: "5F04AB2CE408DB3A"
+				id: "1179AE9AEAFE2FA4"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "72D2E6206DBF4126"
+					id: "0BADDA1E6C31C824"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_sunmetal"
+					item: "cabricality:trade_card_architects_palette_sunmetal_block"
 				}
 				{
-					id: "44E5F198BD2FC36E"
+					id: "28364DDD5CC5A5FA"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Plating Block"
+			title: "32 × {block.architects_palette.plating_block}"
 			icon: "architects_palette:plating_block"
 			disable_toast: true
-			x: 2.5d
-			y: 15.5d
+			x: 1.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "76595E76151C1189"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "2824F8D7141CE262"
 			tasks: [{
-				id: "07CECFEDA5CF16D0"
+				id: "68FB1CD2C82EF500"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "138765A5920CA6B2"
+					id: "1DC730CA763945CE"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_plating_block"
+					item: "cabricality:trade_card_architects_palette_plating_block"
 				}
 				{
-					id: "5839290C5F0D24BD"
+					id: "73308E50D8F7B585"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Twisted Planks"
+			title: "32 × {block.architects_palette.twisted_planks}"
 			icon: "architects_palette:twisted_planks"
 			disable_toast: true
-			x: 3.5d
-			y: 15.5d
+			x: 2.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3CC2457D8F59B42B"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "25450EC51FC19EA3"
 			tasks: [{
-				id: "4D60D8AF292B6D7C"
+				id: "7877BA60F5B4E371"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "2420FBBDAF1BD6BB"
+					id: "3B29D0C8652E093E"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_twisted_planks"
+					item: "cabricality:trade_card_architects_palette_twisted_planks"
 				}
 				{
-					id: "18E574716C0631D2"
+					id: "794173D342EA6E5C"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "32x Osseous Bricks"
+			title: "32 × {block.architects_palette.osseous_bricks}"
 			icon: "architects_palette:osseous_bricks"
 			disable_toast: true
-			x: -3.5d
-			y: 16.5d
+			x: 3.5d
+			y: 17.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "323220221B196CE7"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "1E64FA06372637F8"
 			tasks: [{
-				id: "6FE582C5ABA7008C"
+				id: "5B4FD76EF974DFA0"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1281F981B113F5E7"
+					id: "17285E49A920908F"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_osseous_bricks"
+					item: "cabricality:trade_card_architects_palette_osseous_bricks"
 				}
 				{
-					id: "1514485467892D23"
+					id: "5648D4DAFF007D37"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Seared Stone"
+			title: "16 × {block.tconstruct.seared_stone}"
 			icon: "tconstruct:seared_stone"
 			disable_toast: true
-			x: -2.5d
-			y: 16.5d
+			x: -3.5d
+			y: 18.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "6C5842DC496F194F"
+			subtitle: "32{market.cabricality.shipments.silver}"
+			id: "1FED8FAA6D88C849"
 			tasks: [{
-				id: "5E39CF4D42D6A4EA"
+				id: "3D09F08D250331E0"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "0CA121A4564B7277"
+					id: "2096A3578490E5BF"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_seared_stone"
+					item: "cabricality:trade_card_tconstruct_seared_stone"
 				}
 				{
-					id: "787BE1048874EAD0"
+					id: "3E234550F06991F9"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "16x Scorched Stone"
+			title: "16 × {block.tconstruct.scorched_stone}"
 			icon: "tconstruct:scorched_stone"
 			disable_toast: true
-			x: -1.5d
-			y: 16.5d
+			x: -2.5d
+			y: 18.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "232942A2752A73C1"
+			subtitle: "32{market.cabricality.shipments.silver}"
+			id: "2D07174DEF33FDE0"
 			tasks: [{
-				id: "759AB11E4A9B9670"
+				id: "62FA22DB7077E832"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4FA3A8C5EB5D16CF"
+					id: "3349CD8AA01F947C"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_scorched_stone"
+					item: "cabricality:trade_card_tconstruct_scorched_stone"
 				}
 				{
-					id: "2E62D7DB0ED3A47A"
+					id: "18076C5314AC78B1"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Lantern"
+			title: "1 × {block.minecraft.lantern}"
 			icon: "minecraft:lantern"
 			disable_toast: true
-			x: -0.5d
-			y: 16.5d
+			x: -1.5d
+			y: 18.5d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "5280086945F160E6"
+			subtitle: "1{market.cabricality.shipments.silver}"
+			id: "3C3FB666D8021482"
 			tasks: [{
-				id: "060F06D811AD18BB"
+				id: "5AAB9921901C08BC"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "5E89C07F648DF827"
+					id: "7DA8D52814CEF90E"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_lantern"
+					item: "cabricality:trade_card_minecraft_lantern"
 				}
 				{
-					id: "721A7F7653FAB9C8"
+					id: "43E6D965FAEDC789"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Slime Ball"
+			title: "4 × {item.minecraft.slime_ball}"
 			icon: "minecraft:slime_ball"
 			disable_toast: true
 			x: -3.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "13822B625FB992CE"
+			subtitle: "24{market.cabricality.shipments.silver}"
+			id: "04019F388BA6FD9A"
 			tasks: [{
-				id: "0E5EF41B18EA13D9"
+				id: "226385ACEFDDBFD4"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4089B60E475BFE3B"
+					id: "2E484DD06427479D"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_slime_ball"
+					item: "cabricality:trade_card_minecraft_slime_ball"
 				}
 				{
-					id: "1C21BB07B1BD5FD5"
+					id: "1A6691A4DB3BD8CC"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x String"
+			title: "4 × {item.minecraft.string}"
 			icon: "minecraft:string"
 			disable_toast: true
 			x: -2.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0468CD52BE2E8597"
+			subtitle: "5{market.cabricality.shipments.silver}"
+			id: "659BCD5FE3DFFCDF"
 			tasks: [{
-				id: "2CA22B83A6FC5224"
+				id: "433820D4775DCAAF"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "091A5EC8C6AE4681"
+					id: "5F00A070052E841A"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_string"
+					item: "cabricality:trade_card_minecraft_string"
 				}
 				{
-					id: "1D00459557AFF3F9"
+					id: "2D8ED3990B4B6FDA"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Feather"
+			title: "4 × {item.minecraft.feather}"
 			icon: "minecraft:feather"
 			disable_toast: true
 			x: -1.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3D04238361FF62EA"
+			subtitle: "6{market.cabricality.shipments.silver}"
+			id: "5206ADBF08E21F54"
 			tasks: [{
-				id: "330A13916C8E257F"
+				id: "061F835661F76EBE"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4D6C847C72891A5F"
+					id: "39B7A2CFCF01A091"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_feather"
+					item: "cabricality:trade_card_minecraft_feather"
 				}
 				{
-					id: "1B26CC618127E1F2"
+					id: "57E8DFE04C2707D4"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Gunpowder"
+			title: "4 × {item.minecraft.gunpowder}"
 			icon: "minecraft:gunpowder"
 			disable_toast: true
 			x: -0.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "2C3872104428D5ED"
+			subtitle: "7{market.cabricality.shipments.silver}"
+			id: "4F3AEE6879DA8E6E"
 			tasks: [{
-				id: "708DD7408D191B52"
+				id: "1869FFABBFE72DF6"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "24E419C6CF19B591"
+					id: "02FD69BA35CAF0BB"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_gunpowder"
+					item: "cabricality:trade_card_minecraft_gunpowder"
 				}
 				{
-					id: "71F390B8C07896A2"
+					id: "5616F61ED7C54C1F"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Leather"
+			title: "4 × {item.minecraft.leather}"
 			icon: "minecraft:leather"
 			disable_toast: true
 			x: 0.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "2D29C865DA80F406"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "40E7FEE14E874426"
 			tasks: [{
-				id: "268FB1E723E55806"
+				id: "1BD56803E45F3D1D"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "3BC0D06EAAE6B24C"
+					id: "290BB4BE6AE1F275"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_leather"
+					item: "cabricality:trade_card_minecraft_leather"
 				}
 				{
-					id: "7FD25F2858EBB16D"
+					id: "198364D3D0D62033"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Ink Sac"
+			title: "4 × {item.minecraft.ink_sac}"
 			icon: "minecraft:ink_sac"
 			disable_toast: true
 			x: 1.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "2A8D79C781004720"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "37001AE5ECEFAE03"
 			tasks: [{
-				id: "2919988060337A24"
+				id: "51DA4D9933C94256"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "6E511C465441019C"
+					id: "19B2370DF3976142"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_ink_sac"
+					item: "cabricality:trade_card_minecraft_ink_sac"
 				}
 				{
-					id: "600558BCA3F660D5"
+					id: "55F64E3DBA00DA84"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Experience"
-			icon: "minecraft:e"
+			title: "1 × {item.minecraft.experience_bottle}"
+			icon: "minecraft:experience_bottle"
 			disable_toast: true
 			x: 2.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "164E21C0BDF740A2"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "1D711CCC3C0A5F2A"
 			tasks: [{
-				id: "4F0035279B2D3B67"
+				id: "7304E7C5359DD8C4"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "379974DD19944E6B"
+					id: "5BB894DE62AA1763"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_experience"
+					item: "cabricality:trade_card_minecraft_experience_bottle"
 				}
 				{
-					id: "624CE7192470403C"
+					id: "410F0E8EFE86B904"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Shulker Shell"
+			title: "1 × {item.minecraft.shulker_shell}"
 			icon: "minecraft:shulker_shell"
 			disable_toast: true
 			x: 3.5d
-			y: 18.0d
+			y: 20.0d
 			shape: "hexagon"
-			subtitle: "128 Silver"
-			id: "16A768B3BE175B76"
+			subtitle: "2{market.cabricality.shipments.gold}"
+			id: "64F57EFED13989C3"
 			tasks: [{
-				id: "0D4351A32F74B210"
+				id: "3F7CA5C24C7F611F"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "6CA512274C002A74"
+					id: "16E748CA28D3518F"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_shulker_shell"
+					item: "cabricality:trade_card_minecraft_shulker_shell"
 				}
 				{
-					id: "6DCB3395DE8A6D85"
+					id: "4FD5C244C380F185"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Spider Eye"
+			title: "4 × {item.minecraft.spider_eye}"
 			icon: "minecraft:spider_eye"
 			disable_toast: true
 			x: -3.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "0307ABAF8103593A"
+			subtitle: "10{market.cabricality.shipments.silver}"
+			id: "1455B97ECB425A20"
 			tasks: [{
-				id: "54CDFDD522B8CC91"
+				id: "21F5399B643B8BCD"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "7FB0EA5087B2E6FB"
+					id: "5BF55E3932CF5261"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_spider_eye"
+					item: "cabricality:trade_card_minecraft_spider_eye"
 				}
 				{
-					id: "6D0FA86CCBDF07D0"
+					id: "27331DE014C47982"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Ender Pearl"
+			title: "1 × {item.minecraft.ender_pearl}"
 			icon: "minecraft:ender_pearl"
 			disable_toast: true
 			x: -2.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "5F7CBCB3B6464F8D"
+			subtitle: "48{market.cabricality.shipments.silver}"
+			id: "70A0F15F79EFC836"
 			tasks: [{
-				id: "1A07DAB61CE39286"
+				id: "2ABF0BC1AAE78597"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "3DD594D2EFCDF421"
+					id: "625B1619FBBEE07C"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_ender_pearl"
+					item: "cabricality:trade_card_minecraft_ender_pearl"
 				}
 				{
-					id: "5ADFED034EC00853"
+					id: "1F186EC77CCF00DF"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Rotten Flesh"
+			title: "4 × {item.minecraft.rotten_flesh}"
 			icon: "minecraft:rotten_flesh"
 			disable_toast: true
 			x: -1.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "28B689DFD65D278D"
+			subtitle: "3{market.cabricality.shipments.silver}"
+			id: "5118204A3AD1397F"
 			tasks: [{
-				id: "03C77150BF07E250"
+				id: "31A9178190D7DC43"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "520DBB1699024DD7"
+					id: "7FB7B8B4E7E93B50"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_rotten_flesh"
+					item: "cabricality:trade_card_minecraft_rotten_flesh"
 				}
 				{
-					id: "482EA477473A8E71"
+					id: "3A8A2AE96BDF68B0"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "1x Blaze Rod"
+			title: "1 × {item.minecraft.blaze_rod}"
 			icon: "minecraft:blaze_rod"
 			disable_toast: true
 			x: -0.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "27C3E1B62366B124"
+			subtitle: "20{market.cabricality.shipments.silver}"
+			id: "47F44B9810CCFE37"
 			tasks: [{
-				id: "1BB063A9C1FEFD17"
+				id: "0D73A9E6B06DE9A7"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "34999D00D5BAAE8E"
+					id: "5B1A4BE4499876D8"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_blaze_rod"
+					item: "cabricality:trade_card_minecraft_blaze_rod"
 				}
 				{
-					id: "6A9BFC99109A64F9"
+					id: "702A496BDAAC1E70"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Bone"
+			title: "4 × {item.minecraft.bone}"
 			icon: "minecraft:bone"
 			disable_toast: true
 			x: 0.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "64A2554AC5F73F5A"
+			subtitle: "8{market.cabricality.shipments.silver}"
+			id: "08FD9A254AB8A2D3"
 			tasks: [{
-				id: "37D99CB714E82631"
+				id: "5DF193104B3ECCD2"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "3AD2D167AE31BF4B"
+					id: "101D24353B2CAAC4"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_bone"
+					item: "cabricality:trade_card_minecraft_bone"
 				}
 				{
-					id: "3784964DC29CDE3C"
+					id: "2F3EA841B1C0F6D1"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Prismarine Shard"
+			title: "4 × {item.minecraft.prismarine_shard}"
 			icon: "minecraft:prismarine_shard"
 			disable_toast: true
 			x: 1.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "3150515966C00549"
+			subtitle: "16{market.cabricality.shipments.silver}"
+			id: "7D1E05BDE8D9526F"
 			tasks: [{
-				id: "725555172DD3F599"
+				id: "30E3115219351C83"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "1243BF278F067A66"
+					id: "25B9ACFBF1A6B83A"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_prismarine_shard"
+					item: "cabricality:trade_card_minecraft_prismarine_shard"
 				}
 				{
-					id: "7A4AED25B4CD9798"
+					id: "3688AD4324FB5A2C"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			title: "4x Prismarine Crystals"
+			title: "4 × {item.minecraft.prismarine_crystals}"
 			icon: "minecraft:prismarine_crystals"
 			disable_toast: true
 			x: 2.5d
-			y: 19.0d
+			y: 21.0d
 			shape: "hexagon"
-			subtitle: "0 Silver"
-			id: "5FB3B1A8C2054DD4"
+			subtitle: "24{market.cabricality.shipments.silver}"
+			id: "601CF838A389E825"
 			tasks: [{
-				id: "38961F2D741692C0"
+				id: "1730132426E9846C"
 				type: "item"
-				icon: {
-					id: "indrev:silver_coin"
-					Count: 10b
-				}
-				item: "indrev:silver_coin"
+				icon: "cabricality:silver_coin"
+				item: "cabricality:silver_coin"
 				count: 10L
 			}]
 			rewards: [
 				{
-					id: "4501387C36D1548B"
+					id: "0FA2FCD017A48451"
 					type: "item"
 					auto: "enabled"
-					item: "cabricality:trade_card_prismarine_crystals"
+					item: "cabricality:trade_card_minecraft_prismarine_crystals"
 				}
 				{
-					id: "26B51CF43C6207A9"
+					id: "57862D30D4E95B29"
 					type: "custom"
-					title: "Repeatable"
-					icon: "minecraft:redstone"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
@@ -3144,7 +2883,7 @@
 			title: "Automatic Exchange"
 			icon: "cabricality:gold_coin"
 			x: 2.0d
-			y: 11.0d
+			y: 12.25d
 			shape: "circle"
 			subtitle: "Silver <> Gold"
 			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
@@ -3153,7 +2892,7 @@
 			tasks: [{
 				id: "601161A1565C5161"
 				type: "item"
-				item: "thermal:silver_coin"
+				item: "cabricality:silver_coin"
 			}]
 			rewards: [
 				{
@@ -3165,17 +2904,17 @@
 				{
 					id: "3D6C47FD645D7471"
 					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
 					tags: ["reset"]
 					auto: "no_toast"
 				}
 			]
 		}
 		{
-			icon: "ae2:engineering_processor_press"
+			icon: "indrev:solid_infuser_mk1"
 			x: 0.0d
-			y: 11.0d
+			y: 12.25d
 			shape: "hexagon"
 			description: [
 				"&6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine."
@@ -3189,6 +2928,52 @@
 				type: "checkmark"
 				title: "Shipments"
 			}]
+		}
+		{
+			title: "Early Shipping"
+			icon: "indrev:solid_infuser_mk1"
+			x: -2.0d
+			y: 12.25d
+			shape: "circle"
+			subtitle: "16 Silver"
+			description: [
+				"Getting to the Brass Age is hard work!"
+				""
+				"The avid salesman can come here for purchasing Trading Machines from the get go. This should help you take off!"
+			]
+			dependencies: ["6AC1CED0D341150E"]
+			id: "4DFE4FD3B504AF4B"
+			tasks: [{
+				id: "3E2EAC7B2D274669"
+				type: "item"
+				icon: "cabricality:silver_coin"
+				item: "thermal:silver_coin"
+				count: 30L
+			}]
+			rewards: [
+				{
+					id: "26C6A3ACA1B59772"
+					type: "item"
+					icon: "indrev:solid_infuser_mk1"
+					auto: "enabled"
+					item: "indrev:solid_infuser_mk1"
+				}
+				{
+					id: "271E7F49C6719B0B"
+					type: "item"
+					icon: "indrev:coal_generator_mk1"
+					auto: "no_toast"
+					item: "indrev:coal_generator_mk1"
+				}
+				{
+					id: "61448EF131387AEF"
+					type: "custom"
+					title: "{market.cabricality.shipments.repeatable}"
+					icon: "indrev:module_charger"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
 		}
 	]
 }
