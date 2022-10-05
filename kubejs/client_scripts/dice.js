@@ -14,7 +14,6 @@ onEvent('block.right_click', event => {
 			let messagePostfix = `§8[ §5§l${serial}§8 ]`
 	
 			Minecraft.getInstance().gameRenderer.displayItemActivation(`cabricality:dice_${serial}`)
-	
 			randomEventMessage = messagePrefix + messagePostfix
 		}
 	}

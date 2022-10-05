@@ -22,7 +22,6 @@ onEvent("item.modification", event => {
         }
     //    let tools = ["hoe", "shovel", "axe", "pickaxe", "sword"]
         let tools = [
-            ["sword", 4, 1.6, ]
         ]
 
         tools.forEach(p => {

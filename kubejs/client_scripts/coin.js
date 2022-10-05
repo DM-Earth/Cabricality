@@ -16,7 +16,6 @@ onEvent('item.right_click', event => {
 		}
 
 		Minecraft.getInstance().gameRenderer.displayItemActivation(`cabricality:silver_coin_${coinSide}`)
-
 		randomEventMessage = messagePrefix + messagePostfix
 	}
 
@@ -34,7 +33,6 @@ onEvent('item.right_click', event => {
 		}
 
 		Minecraft.getInstance().gameRenderer.displayItemActivation(`cabricality:gold_coin_${coinSide}`)
-
 		randomEventMessage = messagePrefix + messagePostfix
 	}
 })

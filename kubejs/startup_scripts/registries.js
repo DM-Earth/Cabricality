@@ -1,15 +1,3 @@
-let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
-let CR = (id, x) => MOD("create", id, x)
-let MC = (id, x) => MOD("minecraft", id, x)
-let C = (id, x) => MOD("c", id, x)
-let F = (id, x) => MOD("fabric", id, x)
-let IV = (id, x) => MOD("indrev", id, x)
-let AE2 = (id, x) => MOD("ae2", id, x)
-let KB = (id, x) => MOD("kibe", id, x)
-let PMD = (id, x) => MOD("promenade", id, x)
-let AP = (id, x) => MOD("architects_palette", id, x)
-let FD = (id, x) => MOD("farmersdelight", id, x)
-
 onEvent("item.registry", event => {
 	//	Mechanism
 	let registerMechanism = (name, localName, rarity) => {

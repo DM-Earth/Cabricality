@@ -1,7 +1,7 @@
 let laser_length = 16
 
 function rnd(seed) {
-	let seedO = (seed * 9301 + 49297) % 233280 //toxic, don't touch it
+	let seedO = (seed * 9301 + 49297) % 233280
 	return seedO / (233280.0)
 }
 
@@ -133,6 +133,7 @@ function process_laser(event) {
 onEvent("block.left_click", event => {
 	process_laser(event)
 })
+
 onEvent("block.right_click", event => {
 	process_laser(event)
 })

@@ -1,7 +1,5 @@
-
 onEvent("rei.remove.categories", event => {
 	event.yeet("minecraft:plugins/tag")
-//	event.yeet("alloy_forgery:forging")
 	event.yeet("minecraft:plugins/stripping")
 	event.yeet("minecraft:plugins/beacon_base")
 	event.yeet("minecraft:plugins/beacon_payment")
@@ -15,14 +13,11 @@ onEvent("rei.remove.categories", event => {
 	event.yeet("ae2:throwing_in_water")
 	event.yeet("ae2:condenser")
 	event.yeet("ae2:inscriber")
-//	event.yeet("create:fan_smoking")
-//	event.yeet("create:fan_blasting")
 	event.yeet("create:automatic_shapeless")
 	event.yeet("create:automatic_shaped")
 	event.yeet("create:automatic_packing")
 	event.yeet("create:automatic_brewing")
 	event.yeet("create:block_cutting")
-//	event.yeet("create:item_application")
 	event.yeet("create:mystery_conversation")
 })
 
