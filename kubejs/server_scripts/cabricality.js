@@ -25,7 +25,7 @@ const Minecraft = java('net.minecraft.client.Minecraft')
 const coinCoolingConst = 41
 const diceCoolingConst = 47
 
-var randomEventCooling = []
+let randomEventCooling = []
 
 function asIdentifier(path, namespace) {
 	if (namespace) {

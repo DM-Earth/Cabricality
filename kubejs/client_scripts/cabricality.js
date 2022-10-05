@@ -23,8 +23,8 @@ const Minecraft = java('net.minecraft.client.Minecraft')
 const coinCoolingConst = 41
 const diceCoolingConst = 47
 
-var randomEventCooling = 0
-var randomEventMessage = ''
+let randomEventCooling = 0
+let randomEventMessage = ''
 
 function itemActivation(item) {
 	Minecraft.getInstance().gameRenderer().displayItemActivation(item)
