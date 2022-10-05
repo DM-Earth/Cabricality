@@ -2,12 +2,6 @@ let modpackId = "cabricality"
 let S = (x) => CABF('silver_coin', x)
 let G = (x) => CABF('gold_coin', x)
 
-let mc = "minecraft"
-let pn = "promenade"
-let fd = "farmersdelight"
-let cr = "create"
-let ap = "architects_palette"
-
 global.trades = []
 global.professions = []
 global.transactions = []
