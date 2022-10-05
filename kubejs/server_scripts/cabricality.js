@@ -45,14 +45,14 @@ function listIncludes(full, sub) {
 	return returnV
 }
 
-let wood_types = [
+var wood_types = [
 	MC("oak"), MC("spruce"), MC("birch"), MC("jungle"), MC("acacia"), MC("dark_oak"), MC("crimson"), MC("warped"),
 	PMD("dark_amaranth"), PMD("palm"), PMD("cherry_oak"),
 	AP("twisted"),
 	TC("bloodshroom"), TC("skyroot"), TC("greenheart")
 ]
 
-let missing_wood_types_normal = [
+var missing_wood_types_normal = [
 	["malum", "runewood"],
 	["malum", "soulwood"],
 
@@ -69,7 +69,7 @@ let missing_wood_types_normal = [
 	["ad_astra", "glacian"]
 ]
 
-let missing_wood_types_stripped = [
+var missing_wood_types_stripped = [
 	["malum", "runewood"],
 	["malum", "soulwood"],
 
@@ -92,7 +92,7 @@ let missing_wood_types_stripped = [
 	["tconstruct", "greenheart"]
 ]
 
-let wood_types_no_wood = [
+var wood_types_no_wood = [
 	["ad_astra", "glacian"],
 
 	["terrestria", "yucca_palm"],

@@ -1,324 +1,325 @@
-let modpackId = "cabricality"
+let MOD = (domain, id, x) => (x ? `${x}× ` : "") + (id.startsWith("#") ? "#" : "") + domain + ":" + id.replace("#", "")
+let CR = (id, x) => MOD("create", id, x)
+let MC = (id, x) => MOD("minecraft", id, x)
+let CABF = (id, x) => MOD(modpackId, id, x)
+let C = (id, x) => MOD("c", id, x)
+let F = (id, x) => MOD("fabric", id, x)
+let IV = (id, x) => MOD("indrev", id, x)
+let AE2 = (id, x) => MOD("ae2", id, x)
+let KB = (id, x) => MOD("kibe", id, x)
+let CX = (id, x) => MOD("coxinhautilities", id, x)
+let PMD = (id, x) => MOD("promenade", id, x)
+let AR = (id, x) => MOD("ad_astra", id, x)
+let AP = (id, x) => MOD("architects_palette", id, x)
+let FD = (id, x) => MOD("farmersdelight", id, x)
+let ED = (id, x) => MOD("extended_drawers", id, x)
+let BC = (id, x) => MOD("bitsandchisels", id, x)
+let TC = (id, x) => MOD("tconstruct", id, x)
+let CC = (id, x) => MOD("computercraft", id, x)
+let KJ = (id, x) => MOD("kubejs", id, x)
+let ML = (id, x) => MOD("malum", id, x)
+let TR = (id, x) => MOD("terrestria", id, x)
+
 let S = (x) => CABF('silver_coin', x)
 let G = (x) => CABF('gold_coin', x)
 
-global.trades = []
-global.professions = []
-global.transactions = []
-
-let professions = [
-    ["farming", 0xFFCC29, 0x81B214, [
-        [FD("carrot_crate", 1), S(1)],
-        [FD("beetroot_crate", 1), 1],
-        [FD("cabbage_crate", 1), 1],
-        [FD("tomato_crate", 1), 1],
-        [FD("onion_crate", 1), 1],
-        [FD("rice_bag", 1), 1],
-        [FD("canvas", 32), 1],
-        [MC("sweet_berries", 8), 1],
-        [MC("cocoa_beans", 16), 1],
-        [MC("honey_bottle", 8), 1],
-        [MC("honeycomb", 4), 1],
-        [MC("dandelion", 16), 1],
-        [MC("poppy", 16), 1],
-        [MC("oxeye_daisy", 16), 1],
-        [MC("bread", 8), 1],
-        [MC("brown_mushroom", 8), 1],
-        [MC("red_mushroom", 8), 1],
-        [MC("kelp", 64), 1],
-        [MC("pumpkin", 9), 1],
-        [MC("wool", 16), 1],
-        [MC("melon", 3), 1]
-    ]],
-    ["carpentry", 0xD0AF84, 0x966C3B, [
-        [MC("oak_log", 64), 1],
-        [MC("spruce_log", 64), 1],
-        [MC("jungle_log", 64), 1],
-        [MC("dark_oak_log", 64), 1],
-        [MC("acacia_log", 64), 1],
-        [MC("birch_log", 64), 1],
-        [MC("crimson_stem", 64), 1],
-        [MC("warped_stem", 64), 1],
-        [PMD("palm_log", 64), 1],
-        [PMD("cherry_oak_log", 64), 1],
-        [PMD("dark_amaranth_stem", 64), 1]
-    ]],
-    ["mining", 0x1C1124, 0x88FFF7, [
-        [CR("crushed_iron_ore", 16), 12],
-        [CR("crushed_copper_ore", 16), 14],
-        [CR("crushed_zinc_ore", 16), 14],
-        [CR("crushed_gold_ore", 16), 16],
-        [CR("crushed_nickel_ore", 16), 14],
-        [CR("crushed_lead_ore", 16), 14],
-        [CR("crushed_tin_ore", 16), 12],
-        [KJ("crushed_calorite_ore", 16), 16],
-        [KJ("crushed_ostrum_ore", 16), 16],
-        [KJ("crushed_desh_ore", 16), 16],
-        [KJ("crushed_cobalt_ore", 16), 16],
-        [MC("andesite", 64), 1],
-        [MC("granite", 64), 1],
-        [MC("diorite", 64), 1],
-        [MC("tuff", 64), 2],
-        [MC("sandstone", 64), 1],
-        [CR("limestone", 64), 1],
-        [PMD("blunite", 64), 1],
-        [PMD("carbonite", 64), 1],
-        [CR("scoria", 64), 1],
-        [CR("veridium", 16), 1],
-        [CR("ochrum", 16), 1],
-        [CR("crimsite", 16), 1],
-        [CR("asurine", 16), 1],
-        [IV("sulfur_crystal", 16), 6],
-        [MC("lapis_lazuli", 16), 6],
-        [MC("diamond", 1), 14],
-        [MC("coal", 16), 2],
-        [MC("redstone", 48), 2]
-    ]],
-    ["masonry", 0x5E6F64, 0xBA7967, [
-        [AP("basalt_tiles", 64), 6],
-        [AP("sunmetal_block", 64), 8],
-        [AP("osseous_bricks", 64), 6],
-        [AP("packed_ice_pillar", 64), 8],
-        [AP("flint_tiles", 64), 4],
-        [AP("abyssaline", 64), 12],
-        [AP("gilded_sandstone", 64), 10],
-        [MC("bricks", 64), 6],
-        [AP("olivestone_bricks", 64), 4],
-        [MC("quartz_bricks", 64), 18],
-        [AP("algal_bricks", 64), 6],
-        [CR("ornate_iron_window", 64), 10],
-        [MC("mossy_cobblestone", 64), 6],
-        [TC("seared_bricks", 64), 8],
-        [TC("tconstruct", "scorched_bricks", 64), 12],
-        [C("glazed_terracotta", 64), 6]
-    ]],
-    ["hunting", 0x393E46, 0xCF0000, [
-        [MC("phantom_membrane", 1), 8],
-        [MC("rabbit_foot", 1), 8],
-        [MC("nether_star", 1), 64],
-        [MC("dragon_breath", 1), 1],
-        [MC("ghast_tear", 1), 10],
-        [MC("dragon_egg", 1), 128]
-    ]],
-    ["cooking", 0xD8B384, 0xF7DAD9, [
-        [CR("bar_of_chocolate", 16), 4],
-        [CR("honeyed_apple", 16), 4],
-        [CR("builders_tea", 16), 4],
-        [FD("hot_cocoa", 16), 5],
-        [FD("tomato_sauce", 8), 3],
-        [FD("apple_pie_slice", 16), 3],
-        [FD("chocolate_pie_slice", 16), 4],
-        [FD("sweet_berry_cheesecake_slice", 17), 3],
-        [FD("cake_slice", 14), 3],
-        [FD("sweet_berry_cookie", 64), 2],
-        [FD("honey_cookie", 64), 2],
-        [MC("cookie", 64), 2],
-        [FD("fruit_salad", 16), 7],
-        [FD("mixed_salad", 16), 9],
-        [FD("nether_salad", 16), 5],
-        [FD("barbecue_stick", 16), 5],
-        [FD("egg_sandwich", 16), 5],
-        [FD("chicken_sandwich", 16), 9],
-        [FD("bacon_sandwich", 16), 9],
-        [FD("hamburger", 16), 11],
-        [FD("mutton_wrap", 16), 10],
-        [FD("dumplings", 16), 7],
-        [FD("stuffed_potato", 16), 6],
-        [FD("cabbage_rolls", 16), 5],
-        [FD("beef_stew", 16), 8],
-        [FD("chicken_soup", 16), 9],
-        [MC("rabbit_stew", 16), 10],
-        [MC("beetroot_soup", 16), 7],
-        [MC("pumpkin_pie", 16), 6],
-        [FD("vegetable_soup", 16), 9],
-        [FD("fish_stew", 16), 9],
-        [FD("fried_rice", 16), 8],
-        [FD("pumpkin_soup", 16), 12],
-        [FD("baked_cod_stew", 16), 9],
-        [FD("noodle_soup", 16), 9],
-        [FD("pasta_with_meatballs", 16), 10],
-        [FD("pasta_with_mutton_chop", 16), 10],
-        [FD("roasted_mutton_chops", 16), 9],
-        [FD("vegetable_noodles", 16), 10],
-        [FD("steak_and_potatoes", 16), 9],
-        [FD("ratatouille", 16), 9],
-        [FD("squid_ink_pasta", 16), 11],
-        [FD("roast_chicken", 16), 7],
-        [FD("stuffed_pumpkin", 16), 9],
-        [FD("honey_glazed_ham", 16), 7],
-        [FD("shepherds_pie", 16), 7],
-        [CR("sweet_roll", 16), 4]
-    ]],
-    ["fishing", 0x9DDFD3, 0xDBF6E9, [
-        [MC("cod", 8), 1],
-        [MC("salmon", 8), 1],
-        [MC("pufferfish", 8), 1],
-        [MC("tropical_fish", 8), 1]
-    ]],
-    ["smithing", 0xFFC93C, 0xFF7A00, [
-        [MC("iron_boots", 1), 2],
-        [MC("iron_leggings", 1), 4],
-        [MC("iron_chestplate", 1), 4],
-        [MC("iron_helmet", 1), 2],
-        [MC("golden_boots", 1), 4],
-        [MC("golden_leggings", 1), 7],
-        [MC("golden_chestplate", 1), 8],
-        [MC("golden_helmet", 1), 5],
-        [MC("golden_apple", 1), 10],
-        [MC("arrow", 32), 3],
-        [MC("iron_sword", 1), 1],
-        [MC("golden_sword", 1), 2]
-    ]]
-]
-
 onEvent("item.registry", event => {
+	global.trades = []
+	global.professions = []
+	global.transactions = []
 
-            let profession = (name, c1, c2, transactions) => {
-                let valid = true;
-                let id = name.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").split(' ').join('_')
-                if (valid) {
-                    global.professions.push(id)
-                    global.transactions[id] = transactions
-                    event.create(asIdentifier("profession_card_" + id))
-                        .color(1, c1)
-                        .color(2, c2)
-                        .parentModel(modpackId + ":item/profession_card")
-                        .texture(modpackId + ":item/trading/profession_card_0")
-                        .displayName(Text.translate(`item.cabricality.profession_card`).getString())
-                        .tooltip(`${modpackId}:${name}`)
-                        .unstackable()
-                }
-            }
+	let profession = (name, c1, c2, transaction) => {
+		let id = name.toLowerCase().replace("'", "").split(" ").join("_")
+		global.professions.push(id)
+		global.transactions[id] = transaction
 
-            let trade = (name, c1, c2, transactions, custom) => {
-                let valid = true;
-                /*
-                try {
-                    console.log(name.split('x')[1].replace(" ", ""))
-                    let a = Ingredients.of(name.split('x')[1].replace(" ", ""));
-                } catch (e) {
-                    console.log(e)
-                    valid = false
-                        //return;
-                }*/
-                let split = name.toLowerCase().split('x')
-                let cid = ""
-                let amount = ""
-                split.forEach((e, idx) => {
-                    if (idx == 0) amount = e;
-                    else {
-                        if (idx > 1) cid = cid + "x";
-                        cid = cid + e.replace("'", "").replace("#", "").replace(' ', '');
-                    }
-                })
-                let id = cid.replace(':', '_');
-                if (valid) {
-                    if (custom == "shipments") {
-                        global.trades.push(id)
-                        global.transactions[id] = transactions
-                        event.create(asIdentifier(`trade_card_${id}`))
-                            .color(1, c1)
-                            .color(2, c2)
-                            .parentModel(modpackId + ":item/trade_card")
-                            .texture(modpackId + ":item/trading/trade_card_0")
-                            .displayName(Text.translate(`item.cabricality.trade_card`).getString())
-                            .tooltip(`§7${Item.of(cid).name}`)
-                            .tooltip(`§7${cid}`)
-                            .unstackable()
-                    } else if (custom == "exchange") {
-                        global.trades.push(id)
-                        global.transactions[id] = transactions
-                        event.create(asIdentifier(`trade_card_${id}`))
-                            .color(0, c2)
-                            .color(1, c1)
-                            .color(2, c2)
-                            .parentModel(modpackId + ":item/trade_card")
-                            .texture(modpackId + ":item/trading/trade_card_0")
-                            .displayName(Text.translate(`item.cabricality.trade_card`).getString())
-                            .tooltip(`§7${cid}`)
-                            .unstackable()
-                    } else {
-                        event.create(asIdentifier(`trade_card_${custom}_${id}`))
-                            .color(1, c1)
-                            .color(2, c2)
-                            .parentModel(modpackId + ":item/trade_card")
-                            .texture(modpackId + ":item/trading/trade_card_0")
-                            .displayName(Text.translate(`item.cabricality.trade_card`).getString())
-                            .tooltip(`§7${Text.translate(Item.of(cid).getName()).getString()}`) //TODO: This is toxic
-                            .tooltip(`§7${cid}`)
-                            .tooltip(`${modpackId}:${custom}`)
-                    }
-                }
-            }
+		event.create(asIdentifier(`profession_card_${id}`))
+	}
 
-            professions.forEach(pf => {
-                profession(pf[0], pf[1], pf[2], pf[3])
-                pf[3].forEach(trd => {
-                    trade(trd[0], pf[1], pf[2], null, pf[0])
-                })
-            })
+	let trade = (name, c1, c2, transactions, custom) => {
+		let split = name.toLowerCase().split('x')
+		let cid = ""
+		let amount = ""
+		split.forEach((e, idx) => {
+			if (idx == 0) amount = e;
+			else {
+				if (idx > 1) cid = cid + "x";
+				cid = cid + e.replace("'", "").replace("#", "").replace(' ', '');
+			}
+		})
+		let id = cid.replace(':', '_');
+		if (custom == "shipments") {
+			global.trades.push(id)
+			global.transactions[id] = transactions
 
-            trade("1x cabricality:exchange_currencies", 0xEEE9E9, 0xFFD700, [
-                [G(1), -1, S(64)],
-                [S(64), -1, G(1)]
-            ], "exchange")
+			event.create(asIdentifier(`trade_card_${id}`))
+				.color(1, c1)
+				.color(2, c2)
+				.parentModel(modpackId + ":item/trade_card")
+				.texture(modpackId + ":item/trading/trade_card_0")
+				.displayName(Text.translate(`item.cabricality.trade_card`).getString())
+				.tooltip(`§7${Item.of(cid).name}`)
+				.tooltip(`§7${cid}`)
+				.unstackable()
 
-            let DATAGEN_QUESTS = false;
+		} else if (custom == "exchange") {
+			global.trades.push(id)
+			global.transactions[id] = transactions
 
-            let data = []
-            let group_max_width = []
-            let current_group_max_width = 0
-            let simulate = DATAGEN_QUESTS
-            let entry_cost = 10
+			event.create(asIdentifier(`trade_card_${id}`))
+				.color(0, c2)
+				.color(1, c1)
+				.color(2, c2)
+				.parentModel(modpackId + ":item/trade_card")
+				.texture(modpackId + ":item/trading/trade_card_0")
+				.displayName(Text.translate(`item.cabricality.trade_card`).getString())
+				.tooltip(`§7${cid}`)
+				.unstackable()
 
-            let row = 0
-            let col = 0
-            let group = 0
+		} else {
+			event.create(asIdentifier(`trade_card_${custom}_${id}`))
+				.color(1, c1)
+				.color(2, c2)
+				.parentModel(modpackId + ":item/trade_card")
+				.texture(modpackId + ":item/trading/trade_card_0")
+				.displayName(Text.translate(`item.cabricality.trade_card`).getString())
+				.tooltip(`§7${Text.translate(Item.of(cid).getName()).getString()}`)
+				.tooltip(`§7${cid}`)
+				.tooltip(`${modpackId}:${custom}`)
+		}
+	}
 
-            let next_group = () => {
-                group++
-                if (simulate)
-                    group_max_width.push(current_group_max_width)
-                current_group_max_width = 0
-                col = 0
-                row++
-            }
+	profession("Farming", 0xFFCC29, 0x81B214, [
+		{ in : FD("carrot_crate", 1), out : S(1) },
+		{ in : FD("beetroot_crate", 1), out : S(1) },
+		{ in : FD("cabbage_crate", 1), out : S(1) },
+		{ in : FD("tomato_crate", 1), out : S(1) },
+		{ in : FD("onion_crate", 1), out : S(1) },
+		{ in : FD("rice_bag", 1), out : S(1) },
+		{ in : FD("canvas", 32), out : S(1) },
+		{ in : MC("sweet_berries", 8), out : S(1) },
+		{ in : MC("cocoa_beans", 16), out : S(1) },
+		{ in : MC("honey_bottle", 8), out : S(1) },
+		{ in : MC("honeycomb", 4), out : S(1) },
+		{ in : MC("dandelion", 16), out : S(1) },
+		{ in : MC("poppy", 16), out : S(1) },
+		{ in : MC("oxeye_daisy", 16), out : S(1) },
+		{ in : MC("bread", 8), out : S(1) },
+		{ in : MC("brown_mushroom", 8), out : S(1) },
+		{ in : MC("red_mushroom", 8), out : S(1) },
+		{ in : MC("kelp", 64), out : S(1) },
+		{ in : MC("pumpkin", 9), out : S(1) },
+		{ in : MC("wool", 16), out : S(1) },
+		{ in : MC("melon", 3), out : S(1) }
+	])
 
-            let simple = (name, item, coin, c1, c2) => {
-                    let jump1 = true;
-                    let jump2 = true;
-                    let split = item.split('x')
-                    let id = ""
-                    let amount = ""
-                    split.forEach((e, idx) => {
-                        if (idx == 0) amount = e;
-                        else {
-                            if (idx > 1) id = id + "x";
-                            id = id + e.replace(' ', '').replace("#", "");
-                        }
-                    })
-                    let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").replace(" ", "_"))
-                    if (!simulate)
-                        trade(item, c1, c2, [
-                            [item, coin]
-                        ], "shipments")
-                    if (!DATAGEN_QUESTS)
-                        jump1 = false;
-                    if (jump1) {
-                        current_group_max_width = Math.min(8, current_group_max_width + 1)
-                        if (simulate)
-                            jump2 = false;
-                        if (jump2) {
-                            if (col > 7) {
-                                col = 0
-                                row++
-                            }
+	profession("Carpentry", 0xD0AF84, 0x966C3B, [
+			{ in : MC("oak_log", 64), out : S(1) },
+			{ in : MC("spruce_log", 64), out : S(1) },
+			{ in : MC("jungle_log", 64), out : S(1) },
+			{ in : MC("dark_oak_log", 64), out : S(1) },
+			{ in : MC("acacia_log", 64), out : S(1) },
+			{ in : MC("birch_log", 64), out : S(1) },
+			{ in : MC("crimson_stem", 64), out : S(1) },
+			{ in : MC("warped_stem", 64), out : S(1) },
+			{ in : PMD("palm_log", 64), out : S(1) },
+			{ in : PMD("cherry_oak_log", 64), out : S(1) },
+			{ in : PMD("dark_amaranth_stem", 64), out : S(1) }
+	])
 
-                            let x = col - (group_max_width[group] - 1) / 2
-                            let y = row + group / 2
-                            col++
+	profession("Mining", 0x1C1124, 0x88FFF7, [
+			{ in : CR("crushed_iron_ore", 16), out : S(12) },
+			{ in : CR("crushed_copper_ore", 16), out : S(14) },
+			{ in : CR("crushed_zinc_ore", 16), out : S(14) },
+			{ in : CR("crushed_gold_ore", 16), out : S(16) },
+			{ in : CR("crushed_nickel_ore", 16), out : S(14) },
+			{ in : CR("crushed_lead_ore", 16), out : S(14) },
+			{ in : CR("crushed_tin_ore", 16), out : S(12) },
+			{ in : KJ("crushed_calorite_ore", 16), out : S(16) },
+			{ in : KJ("crushed_ostrum_ore", 16), out : S(16) },
+			{ in : KJ("crushed_desh_ore", 16), out : S(16) },
+			{ in : KJ("crushed_cobalt_ore", 16), out : S(16) },
+			{ in : MC("andesite", 64), out : S(1) },
+			{ in : MC("granite", 64), out : S(1) },
+			{ in : MC("diorite", 64), out : S(1) },
+			{ in : MC("tuff", 64), out : S(2) },
+			{ in : MC("sandstone", 64), out : S(1) },
+			{ in : CR("limestone", 64), out : S(1) },
+			{ in : PMD("blunite", 64), out : S(1) },
+			{ in : PMD("carbonite", 64), out : S(1) },
+			{ in : CR("scoria", 64), out : S(1) },
+			{ in : CR("veridium", 16), out : S(1) },
+			{ in : CR("ochrum", 16), out : S(1) },
+			{ in : CR("crimsite", 16), out : S(1) },
+			{ in : CR("asurine", 16), out : S(1) },
+			{ in : IV("sulfur_crystal", 16), out : S(6) },
+			{ in : MC("lapis_lazuli", 16), out : S(6) },
+			{ in : MC("diamond", 1), out : S(14) },
+			{ in : MC("coal", 16), out : S(2) },
+			{ in : MC("redstone", 48), out : S(2) }
+	])
 
-                            let template = `
+	profession("Masonry", 0x5E6F64, 0xBA7967, [
+			{ in: AP("basalt_tiles", 64), out : S(6) },
+			{ in: AP("sunmetal_block", 64), out : S(8) },
+			{ in: AP("osseous_bricks", 64), out : S(6) },
+			{ in: AP("packed_ice_pillar", 64), out : S(8) },
+			{ in: AP("flint_tiles", 64), out : S(4) },
+			{ in: AP("abyssaline", 64), out : S(12) },
+			{ in: AP("gilded_sandstone", 64), out : S(10) },
+			{ in: MC("bricks", 64), out : S(6) },
+			{ in: AP("olivestone_bricks", 64), out : S(4) },
+			{ in: MC("quartz_bricks", 64), out : S(18) },
+			{ in: AP("algal_bricks", 64), out : S(6) },
+			{ in: CR("ornate_iron_window", 64), out : S(10) },
+			{ in: MC("mossy_cobblestone", 64), out : S(6) },
+			{ in: TC("seared_bricks", 64), out : S(8) },
+			{ in: TC("tconstruct", "scorched_bricks", 64), out : S(12) },
+			{ in: C("glazed_terracotta", 64), out : S(6) }
+	])
+
+	profession("Hunting", 0x393E46, 0xCF0000, [
+			{ in : MC("phantom_membrane", 1), out : S(8) },
+			{ in : MC("rabbit_foot", 1), out : S(8) },
+			{ in : MC("nether_star", 1), out : S(64) },
+			{ in : MC("dragon_breath", 1), out : S(1) },
+			{ in : MC("ghast_tear", 1), out : S(10) },
+			{ in : MC("dragon_egg", 1), out : S(128) }
+	])
+
+	profession("Cooking", 0xD8B384, 0xF7DAD9, [
+			{ in : CR("bar_of_chocolate", 16), out : S(4) },
+			{ in : CR("honeyed_apple", 16), out : S(4) },
+			{ in : CR("builders_tea", 16), out : S(4) },
+			{ in : FD("hot_cocoa", 16), out : S(5) },
+			{ in : FD("tomato_sauce", 8), out : S(3) },
+			{ in : FD("apple_pie_slice", 16), out : S(3) },
+			{ in : FD("chocolate_pie_slice", 16), out : S(4) },
+			{ in : FD("sweet_berry_cheesecake_slice", 17), out : S(3) },
+			{ in : FD("cake_slice", 14), out : S(3) },
+			{ in : FD("sweet_berry_cookie", 64), out : S(2) },
+			{ in : FD("honey_cookie", 64), out : S(2) },
+			{ in : MC("cookie", 64), out : S(2) },
+			{ in : FD("fruit_salad", 16), out : S(7) },
+			{ in : FD("mixed_salad", 16), out : S(9) },
+			{ in : FD("nether_salad", 16), out : S(5) },
+			{ in : FD("barbecue_stick", 16), out : S(5) },
+			{ in : FD("egg_sandwich", 16), out : S(5) },
+			{ in : FD("chicken_sandwich", 16), out : S(9) },
+			{ in : FD("bacon_sandwich", 16), out : S(9) },
+			{ in : FD("hamburger", 16), out : S(11) },
+			{ in : FD("mutton_wrap", 16), out : S(10) },
+			{ in : FD("dumplings", 16), out : S(7) },
+			{ in : FD("stuffed_potato", 16), out : S(6) },
+			{ in : FD("cabbage_rolls", 16), out : S(5) },
+			{ in : FD("beef_stew", 16), out : S(8) },
+			{ in : FD("chicken_soup", 16), out : S(9) },
+			{ in : MC("rabbit_stew", 16), out : S(10) },
+			{ in : MC("beetroot_soup", 16), out : S(7) },
+			{ in : MC("pumpkin_pie", 16), out : S(6) },
+			{ in : FD("vegetable_soup", 16), out : S(9) },
+			{ in : FD("fish_stew", 16), out : S(9) },
+			{ in : FD("fried_rice", 16), out : S(8) },
+			{ in : FD("pumpkin_soup", 16), out : S(12) },
+			{ in : FD("baked_cod_stew", 16), out : S(9) },
+			{ in : FD("noodle_soup", 16), out : S(9) },
+			{ in : FD("pasta_with_meatballs", 16), out : S(10) },
+			{ in : FD("pasta_with_mutton_chop", 16), out : S(10) },
+			{ in : FD("roasted_mutton_chops", 16), out : S(9) },
+			{ in : FD("vegetable_noodles", 16), out : S(10) },
+			{ in : FD("steak_and_potatoes", 16), out : S(9) },
+			{ in : FD("ratatouille", 16), out : S(9) },
+			{ in : FD("squid_ink_pasta", 16), out : S(11) },
+			{ in : FD("roast_chicken", 16), out : S(7) },
+			{ in : FD("stuffed_pumpkin", 16), out : S(9) },
+			{ in : FD("honey_glazed_ham", 16), out : S(7) },
+			{ in : FD("shepherds_pie", 16), out : S(7) },
+			{ in : CR("sweet_roll", 16), out : S(4) }
+	])
+
+	profession("fishing", 0x9DDFD3, 0xDBF6E9, [
+			{ in : MC("cod", 8), out : S(1) },
+			{ in : MC("salmon", 8), out : S(1) },
+			{ in : MC("pufferfish", 8), out : S(1) },
+			{ in : MC("tropical_fish", 8), out : S(1) }
+		])
+	
+	profession("smithing", 0xFFC93C, 0xFF7A00, [
+			{ in : MC("iron_boots", 1), out : S(2) },
+			{ in : MC("iron_leggings", 1), out : S(4) },
+			{ in : MC("iron_chestplate", 1), out : S(4) },
+			{ in : MC("iron_helmet", 1), out : S(2) },
+			{ in : MC("golden_boots", 1), out : S(4) },
+			{ in : MC("golden_leggings", 1), out : S(7) },
+			{ in : MC("golden_chestplate", 1), out : S(8) },
+			{ in : MC("golden_helmet", 1), out : S(5) },
+			{ in : MC("golden_apple", 1), out : S(10) },
+			{ in : MC("arrow", 32), out : S(3) },
+			{ in : MC("iron_sword", 1), out : S(1) },
+			{ in : MC("golden_sword", 1), out : S(2) }
+	])
+
+	trade("Exchange Currencies", 0xEBA83A, 0xF4F4F4, [
+		{ in: G(1), out: S(64) },
+		{ in: S(64), out: G(1) }
+	], true)
+
+	let DATAGEN_QUESTS = false
+
+	let data = []
+	let group_max_width = []
+	let current_group_max_width = 0
+	let simulate = DATAGEN_QUESTS
+	let entry_cost = 10
+
+	let row = 0
+	let col = 0
+	let group = 0
+
+	let next_group = () => {
+		group++
+		if (simulate)
+			group_max_width.push(current_group_max_width)
+		current_group_max_width = 0
+		col = 0
+		row++
+	}
+
+	let simple = (name, item, coin, c1, c2) => {
+			let jump1 = true;
+			let jump2 = true;
+			let split = item.split('x')
+			let id = ""
+			let amount = ""
+			split.forEach((e, idx) => {
+				if (idx == 0) amount = e;
+				else {
+					if (idx > 1) id = id + "x";
+					id = id + e.replace(' ', '').replace("#", "");
+				}
+			})
+			let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").replace(" ", "_"))
+			if (!simulate)
+				trade(item, c1, c2, [
+					[item, coin]
+				], "shipments")
+			if (!DATAGEN_QUESTS)
+				jump1 = false;
+			if (jump1) {
+				current_group_max_width = Math.min(8, current_group_max_width + 1)
+				if (simulate)
+					jump2 = false;
+				if (jump2) {
+					if (col > 7) {
+						col = 0
+						row++
+					}
+
+					let x = col - (group_max_width[group] - 1) / 2
+					let y = row + group / 2
+					col++
+
+							let template = `
 		{
 			title: "${amount} × {${entry_cost<0?"block.":"item."}${id.replace(':','.')}}"
 			icon: "${id}"
@@ -348,10 +349,10 @@ onEvent("item.registry", event => {
 				}
 			]
 		}`
-                data.push(template)
-            }
-        }
-    }
+				data.push(template)
+			}
+		}
+	}
 
     while (true) {
         group = 0
@@ -380,8 +381,8 @@ onEvent("item.registry", event => {
 
         next_group()
         entry_cost = -10
-            //simple("Dead Log", BOP('dead_log', 16), 2, 0x3D362D, 0x7A756D)
-            simple("Twisted Log", AP('twisted_log', 16), 8, 0x675962, 0x3F3441)
+        //simple("Dead Log", BOP('dead_log', 16), 2, 0x3D362D, 0x7A756D)
+        simple("Twisted Log", AP('twisted_log', 16), 8, 0x675962, 0x3F3441)
         simple("Oak Log", MC('oak_log', 16), 4, 0x735932, 0xA88756)
         simple("Birch Log", MC('birch_log', 16), 4, 0xD6D6D2, 0xC4B079)
         simple("Spruce Log", MC('spruce_log', 16), 4, 0x523E21, 0x6F522F)
@@ -402,22 +403,22 @@ onEvent("item.registry", event => {
         simple("Gold Ingot", MC('gold_ingot', 8), 48, 0xD99413, 0xFAF25E)
 
         simple("Andesite Alloy", CR('andesite_alloy', 16), 8, 0x505050, 0x878787)
-            //simple("Silica Steel", "8x moreminecarts:silica_steel", 16, 0x3E4644, 0xB8DAC8)
+        //simple("Silica Steel", "8x moreminecarts:silica_steel", 16, 0x3E4644, 0xB8DAC8)
         simple("Brass Ingot", CR('brass_ingot', 8), 48, 0x6F3C2D, 0xFCF085)
-            //simple("Invar Ingot", IV('invar_ingot', 4), 64, 0x406D6C, 0xC3CAC1)
-            simple("Invar Ingot", CABF('invar_ingot', 4), 64, 0x406D6C, 0xC3CAC1)
+        //simple("Invar Ingot", IV('invar_ingot', 4), 64, 0x406D6C, 0xC3CAC1)
+        simple("Invar Ingot", CABF('invar_ingot', 4), 64, 0x406D6C, 0xC3CAC1)
 
         entry_cost = 10
         simple("Coal", MC('coal', 16), 4, 0x1C1C1E, 0x383D45)
         simple("Flint", MC('flint', 16), 4, 0x3C3B3B, 0xA6A6A6)
-            //simple("Cinnabar", IV('cinnabar', 4), 16, 0xFC7781, 0xFCCED0)
+        //simple("Cinnabar", IV('cinnabar', 4), 16, 0xFC7781, 0xFCCED0)
         simple("Redstone Dust", MC('redstone', 16), 8, 0xA80F01, 0xFC7781)
         simple("Diamond", MC('diamond', 1), 64, 0x20C3B3, 0xD2FCF3)
         simple("Lapis Lazuli", MC('lapis_lazuli', 8), 32, 0x335DC1, 0x7395E7)
         simple("Emerald", MC('emerald', 1), 64, 0x00A82B, 0xADFACB)
         simple("Sulfur", IV('sulfur_crystal', 4), 8, 0xC7A94A, 0xEEF071)
-            //simple("Apatite", IV('apatite', 4), 8, 0x27A9BB, 0x2CC7C9)
-            //simple("Niter", IV('niter', 4), 8, 0x735A65, 0xB8AFAF)
+        //simple("Apatite", IV('apatite', 4), 8, 0x27A9BB, 0x2CC7C9)
+        //simple("Niter", IV('niter', 4), 8, 0x735A65, 0xB8AFAF)
         simple("Nether Quartz", MC('quartz', 8), 24, 0xB19E8F, 0xE7E2DB)
         simple("Certus Quartz", AE2('certus_quartz_crystal', 8), 24, 0x91C5FC, 0xA7CBCF)
         simple("Fluix Crystal", AE2("fluix_crystal", 8), 32, 0x8F5CCB, 0xFC7ED4)
@@ -437,16 +438,16 @@ onEvent("item.registry", event => {
         simple("Rice", FD('rice_bag', 1), 4, 0x9F7653, 0xCEC6BC)
         entry_cost = 10
         simple("Straw", FD('straw', 32), 8, 0x623A17, 0x966537)
-            //simple("Glowshroom", BOP('glowshroom', 4), 9, 0x2C65C9, 0x83A7B7)
-            //simple("Bramble", BOP('bramble', 4), 9, 0x8C3122, 0xECCDBC)
-            //simple("Barley", BOP('barley', 4), 4, 0xB78B44, 0xD8BC64)
-            //simple("Watergrass", BOP('watergrass', 4), 4, 0x43763D, 0x538B51)
-            //simple("Mangrove Root", BOP('mangrove_root', 4), 9, 0x795740, 0xB8AB88)
-            //simple("Reed", BOP('reed', 4), 5, 0x7B4E35, 0xB2855C)
-            //simple("Clover Petal", BOP('huge_clover_petal', 4), 10, 0x5B8A4F, 0x6FA960)
-            //simple("Spanish Moss", BOP('spanish_moss', 4), 7, 0x395B2A, 0xA2C790)
-            //simple("Willow Vine", BOP('willow_vine', 4), 7, 0x265F0D, 0x317B10)
-            //simple("Cattail", BOP('cattail', 4), 4, 0x186B2B, 0x845738)
+        //simple("Glowshroom", BOP('glowshroom', 4), 9, 0x2C65C9, 0x83A7B7)
+        //simple("Bramble", BOP('bramble', 4), 9, 0x8C3122, 0xECCDBC)
+        //simple("Barley", BOP('barley', 4), 4, 0xB78B44, 0xD8BC64)
+        //simple("Watergrass", BOP('watergrass', 4), 4, 0x43763D, 0x538B51)
+        //simple("Mangrove Root", BOP('mangrove_root', 4), 9, 0x795740, 0xB8AB88)
+        //simple("Reed", BOP('reed', 4), 5, 0x7B4E35, 0xB2855C)
+        //simple("Clover Petal", BOP('huge_clover_petal', 4), 10, 0x5B8A4F, 0x6FA960)
+        //simple("Spanish Moss", BOP('spanish_moss', 4), 7, 0x395B2A, 0xA2C790)
+        //simple("Willow Vine", BOP('willow_vine', 4), 7, 0x265F0D, 0x317B10)
+        //simple("Cattail", BOP('cattail', 4), 4, 0x186B2B, 0x845738)
         entry_cost = -10
         simple("Sugar Cane", MC('sugar_cane', 4), 3, 0x688546, 0xC5FC85)
         simple("Kelp", MC('kelp', 8), 3, 0x5B8131, 0x58A92F)
@@ -461,14 +462,14 @@ onEvent("item.registry", event => {
 
         next_group()
         entry_cost = -10
-            //simple("Daub", SP('daub', 16), 5, 0xBFBAAA, 0xCBC8B6)
+        //simple("Daub", SP('daub', 16), 5, 0xBFBAAA, 0xCBC8B6)
         simple("Clear Glass", TC('clear_glass', 16), 4, 0xA9C3CF, 0xE8E8E8)
-            //simple("Factory Block", "16x chisel:factory/dots", 2, 0x211C10, 0x604B43)
-            //simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, 0x71706E, 0x9D9A98)
+        //simple("Factory Block", "16x chisel:factory/dots", 2, 0x211C10, 0x604B43)
+        //simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, 0x71706E, 0x9D9A98)
         simple("Copper Shingles", CR('copper_shingles', 16), 3, 0xB5654B, 0xE4BB79)
         simple("Algal Bricks", AP('algal_bricks', 32), 6, 0x292926, 0x3D4D48)
         simple("Olivestone Bricks", AP('olivestone_bricks', 32), 8, 0x3A3C2E, 0x57553E)
-            //simple("Architect's Limestone", AP('limestone', 32), 8, 0x756958, 0x7F7360)
+        //simple("Architect's Limestone", AP('limestone', 32), 8, 0x756958, 0x7F7360)
         simple("Sunmetal", AP('sunmetal_block', 32), 8, 0x603E38, 0xB48764)
         simple("Plating Block", AP('plating_block', 32), 8, 0x222225, 0x39383C)
         simple("Twisted Planks", AP('twisted_planks', 32), 8, 0x5E5259, 0x72616B)
@@ -477,9 +478,9 @@ onEvent("item.registry", event => {
         simple("Scorched Stone", TC('scorched_stone', 16), 32, 0x382C25, 0x4C3F37)
 
         simple("Lantern", MC('lantern', 1), 1, 0x484F64, 0xF6C765)
-            //simple("Copper Lantern", SP('copper_lantern', 1), 1, 0xB36535, 0xF3B154)
-            //simple("Brass Lantern", SP('brass_lantern', 1), 1, 0xA47C37, 0xFAEACF)
-            //simple("Crimson Lantern", SP('crimson_lantern', 1), 1, 0x9C0E2C, 0xE7EB56)
+        //simple("Copper Lantern", SP('copper_lantern', 1), 1, 0xB36535, 0xF3B154)
+        //simple("Brass Lantern", SP('brass_lantern', 1), 1, 0xA47C37, 0xFAEACF)
+        //simple("Crimson Lantern", SP('crimson_lantern', 1), 1, 0x9C0E2C, 0xE7EB56)
 
         next_group()
         entry_cost = 10
