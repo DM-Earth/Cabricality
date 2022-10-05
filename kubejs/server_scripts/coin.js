@@ -12,33 +12,29 @@ function playsoundCoin(server, player, type) {
 	}
 }
 
-const coinCoolingConst = 41
-
-var coinCooling = []
-
 onEvent('item.right_click', event => {
 	let server = event.server
 	let player = event.getEntity()
 
 	if (event.getItem() == 'cabricality:silver_coin'
-	&& !coinCooling.includes(player.toString())) {
-		coinCooling.push(player.toString())
+	&& !randomEventCooling.includes(player.toString())) {
+		randomEventCooling.push(player.toString())
 
 		playsoundCoin(server, player, 'silver')
 
 		server.scheduleInTicks(coinCoolingConst, server, () => {
-			coinCooling = coinCooling.filter(function(item) { return item != player.toString() })
+			randomEventCooling = randomEventCooling.filter(function(item) { return item != player.toString() })
 		})
 	}
 
 	if (event.getItem() == 'cabricality:gold_coin'
-	&& !coinCooling.includes(player.toString())) {
-		coinCooling.push(player.toString())
+	&& !randomEventCooling.includes(player.toString())) {
+		randomEventCooling.push(player.toString())
 
 		playsoundCoin(server, player, 'gold')
 
 		server.scheduleInTicks(coinCoolingConst, server, () => {
-			coinCooling = coinCooling.filter(function(item) { return item != player.toString() })
+			randomEventCooling = randomEventCooling.filter(function(item) { return item != player.toString() })
 		})
 	}
 })

@@ -7,10 +7,6 @@ function playsound_dice(server, player) {
 	server.runCommandSilent(`playsound ad_astra:passing_spaceship ambient @a ${player.x} ${player.y} ${player.z} 0.3`)
 }
 
-const diceCoolingConst = 47
-
-var diceCooling = []
-
 onEvent('block.right_click', event => {
 	let server = event.server
 	let player = event.getEntity()
@@ -19,13 +15,14 @@ onEvent('block.right_click', event => {
 	&& player.getId() != '9e2faded-cafe-4ec2-c314-dad129ae971d'
 	&& player.getMainHandItem() == null) {
 		event.cancel()
-		if (!diceCooling.includes(player.toString())) {
-			diceCooling.push(player.toString())
+		
+		if (!randomEventCooling.includes(player.toString())) {
+			randomEventCooling.push(player.toString())
 
 			playsound_dice(server, player)
 
 			server.scheduleInTicks(diceCoolingConst, server, () => {
-				diceCooling = diceCooling.filter(function(item) { return item != player.toString() })
+				randomEventCooling = randomEventCooling.filter(function(item) { return item != player.toString() })
 			})
 		}
 	}
