@@ -95,6 +95,6 @@ let wood_types_no_wood = [
 	["terrestria", "sakura"]
 ]
 
-function dimensional_commanding(server, dimension, command) {
+function dimensionalCommanding(server, dimension, command) {
 	server.runCommandSilent("execute in " + dimension.toString() + " run " + command)
 }
