@@ -62,6 +62,7 @@
 	"comment_event": "Events",
 
 	"event.cabricality.coin_flip": "§8%s flipped a %s, §8it was ",
+	"event.cabricality.dice_roll": "§8%s rolled a %s, §8it was ",
 
 
 
@@ -210,6 +211,8 @@
 
 
 	"comment_block": "Blocks",
+
+	"block.cabricality.dice": "§5Dice",
 
 	"block.cabricality.extractor_machine": "Extractor Machine",
 	"block.cabricality.andesite_machine" : "Andesite Machine",
@@ -367,7 +370,7 @@
 	
 	"welcome.cabricality.iii.title"   : "&f&lIII",
 	"welcome.cabricality.iii.subtitle": "Tech Expansion",
-	"welcome.cabricality.iii.content" : "Your entire factory will be put to the test as final products flow into the Data Centre, programming the Guidance computer of your Spaceship.\n\nEvery step is different, some may even differ depending on the generation seed of your World.",
+	"welcome.cabricality.iii.content" : "Your entire factory will be put to the test as final products flow into the Data Center, programming the Guidance computer of your Spaceship.\n\nEvery step is different, some may even differ depending on the generation seed of your World.",
 	
 	"welcome.cabricality.iv.title"   : "&f&lIV",
 	"welcome.cabricality.iv.subtitle": "Shuffle",
@@ -396,6 +399,10 @@
 	"market.cabricality.exchange.silver.title"   : "Manual &7Exchange",
 	"market.cabricality.exchange.silver.subtitle": "&61 Gold Coin&r -> &764 Silver Coins&r",
 	"market.cabricality.exchange.silver.content" : "Here you can exchange a Gold Coin back to a Stack of Silver.",
+	
+	"market.cabricality.shipments.gold"			: " &6Gold",
+	"market.cabricality.shipments.silver"		: " &7Silver",
+	"market.cabricality.shipments.repeatable"	: "Repeatable",
 	
 	"market.cabricality.saw.title"   : "Saw Everything",
 	"market.cabricality.saw.subtitle": "&63 Gold&r - I just saw it!...Wait what?",
@@ -1214,7 +1221,7 @@
 
 	"chapter_5.cabricality.start.title"   : "&6&lDivide by Digital",
 	"chapter_5.cabricality.start.subtitle": "&5Finale",
-	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Centre. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
+	"chapter_5.cabricality.start.content" : "Welcome to the final Chapter of this Journey: building the Data Center. What will this entail? Thousands of numeric calculations!\n\nBut do not fear, as an inventor you will let your creation do all the work for you, as usual.\n\nCast the combined logic of all your Calculation Mechanisms into two digits, from which you will calculate 8 others through a series of crafting operations. A digital ME system is recommended for managing the logistics, though not strictly required.",
 	
 	"chapter_5.cabricality.start.task.checkmark.title": "&5Finale Start!",
 
@@ -1227,38 +1234,38 @@
 	"contraption.cabricality.43.content" : "Without the operators, a data center would not be able to combine digits into others. Provide your Calculators with an automated supply of any operator they end up requiring.",
 
 	"contraption.cabricality.44.1.subtitle": "Contraption 44-1",
-	"contraption.cabricality.44.1.content" : "As one of the two available digits, Threes can be cast from unprocessed logic. Together with the Eight and available Operators, your Calculators will have to create the remaining digits from 0 to 9 in equal amounts.\n\nThis casting process can quickly become a bottleneck, for most running calculations depend on the numbers generated here. Make sure things move fluently.",
+	"contraption.cabricality.44.1.content" : "As one of the two available digits, &lThrees&r can be cast from unprocessed logic. Together with the &lEight&r and available Operators, your Calculators will have to create the remaining digits from &l0 to 9&r in equal amounts.\n\nThis casting process can quickly become a bottleneck, for most running calculations depend on the numbers generated here. Make sure things move fluently.",
 
 	"contraption.cabricality.44.2.subtitle": "Contraption 44-2",
-	"contraption.cabricality.44.2.content" : "The second available Digit is the Eight. It can be cast from unprocessed logic.\n\nFrom here, plan via which calculations the other digits will be created, and how the cost can be minimised. Remember that each added calculation step ends up increasing the amount of Calculation Mechanisms required for the digit it leads to.",
+	"contraption.cabricality.44.2.content" : "The second available Digit is the E&light.&r It can be cast from unprocessed logic.\n\nFrom here, plan via which calculations the other digits will be created, and how the cost can be minimised. Remember that each added calculation step ends up increasing the amount of Calculation Mechanisms required for the digit it leads to.",
 
 	"contraption.cabricality.45.1.subtitle": "Contraption 45-1",
-	"contraption.cabricality.45.1.content" : "3-2, 4/4, 8-7,...? A total of 21 options exist to calculate ones. Whichever will it be?",
+	"contraption.cabricality.45.1.content" : "&5&o3-2, 4÷4, 8-7...&r\n\nA total of 21 options exist to calculate &lones.&r\n&7&oWhichever will it be?",
 
 	"contraption.cabricality.45.2.subtitle": "Contraption 45-2",
-	"contraption.cabricality.45.2.content" : "3-1, 8/4, 1+1,...? A total of 17 options exist to calculate twos. Any favourites?",
+	"contraption.cabricality.45.2.content" : "&5&o3-1, 8÷4, 1+1...&r\n\nA total of 17 options exist to calculate &ltwos.&r\n&7&oAny favourites?",
 
 	"contraption.cabricality.45.4.subtitle": "Contraption 45-4",
-	"contraption.cabricality.45.4.content" : "6-2, 2x2, 3+1,...? A total of 16 options exist to calculate fours. Choose wisely.",
+	"contraption.cabricality.45.4.content" : "&5&o6-2, 2×2, 3+1...&r\n\nA total of 16 options exist to calculate &lfours.&r\n&7&oChoose wisely.",
 
 	"contraption.cabricality.45.5.subtitle": "Contraption 45-5",
-	"contraption.cabricality.45.5.content" : "3+2, 6-1, 8-3,...? A total of 14 options exist to calculate fives. How do you want to do this?",
+	"contraption.cabricality.45.5.content" : "&5&o3+2, 6-1, 8-3...&r\n\nA total of 14 options exist to calculate &lfives.&r\n&7&oHow do you want to do this?",
 
 	"contraption.cabricality.45.6.subtitle": "Contraption 45-6",
-	"contraption.cabricality.45.6.content" : "3x2, 3+3, 8-2,...? A total of 16 options exist to calculate sixes. May the best be victorious.",
+	"contraption.cabricality.45.6.content" : "&5&o3×2, 3+3, 8-2...&r\n\nA total of 16 options exist to calculate &lsixes.&r\n&7&oMay the best be victorious.",
 
 	"contraption.cabricality.45.7.subtitle": "Contraption 45-7",
-	"contraption.cabricality.45.7.content" : "9-2, 4+3, 8-1,...? A total of 14 options exist to calculate sevens. Feeling Lucky?",
+	"contraption.cabricality.45.7.content" : "&5&o9-2, 4+3, 8-1...&r\n\nA total of 14 options exist to calculate &lsevens.&r\n&7&oFeeling Lucky?",
 
 	"contraption.cabricality.45.9.subtitle": "Contraption 45-9",
-	"contraption.cabricality.45.9.content" : "3x3, 4+5, 8+1,...? A total of 15 options exist to calculate nines. The choice is yours.",
+	"contraption.cabricality.45.9.content" : "&5&o3×3, 4+5, 8+1...&r\n\nA total of 15 options exist to calculate &lnines.&r\n&7&oThe choice is yours.",
 
 	"contraption.cabricality.45.0.subtitle": "Contraption 45-0",
-	"contraption.cabricality.45.0.content" : "3-3, 2-2, 8-8,...? A total of 39 options exist to calculate zeros. A tough decision!",
+	"contraption.cabricality.45.0.content" : "&5&o3-3, 2-2, 8-8...&r\n\nA total of 39 options exist to calculate &lzeros.&r\n&7&oA tough decision!",
 
 	"contraption.cabricality.46.title"   : "Solving Trajectories",
 	"contraption.cabricality.46.subtitle": "Contraption 46",
-	"contraption.cabricality.46.content" : "For the calculations of the Guidance computer, we will need.. a lot of these Digits.\n\nBefore letting items exit the logistical ecosystem of the calculations, make sure each digit leaves in equal amounts. Brass Tunnels can solve this issue in a straight-forward fashion.\n\nEach digit now has to be dissolved back into its Liquefied form via Smeltery. Once a Smeltery collected 10 Liquefied items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix.\n\nThe Guidance Computer requires 8 Matrices to function. Depending on your data centre and mechanism assembly lines, this may take a while.",
+	"contraption.cabricality.46.content" : "For the calculations of the Guidance computer, we will need.. a lot of these Digits.\n\nBefore letting items exit the logistical ecosystem of the calculations, make sure each digit leaves in equal amounts. Brass Tunnels can solve this issue in a straight-forward fashion.\n\nEach digit now has to be dissolved back into its Liquefied form via Smeltery. Once a Smeltery collected 10 Liquefied items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix.\n\nThe Guidance Computer requires 8 Matrices to function. Depending on your data center and mechanism assembly lines, this may take a while.",
 
 	"contraption.cabricality.47.title"   : "Upcycle Bin",
 	"contraption.cabricality.47.subtitle": "Contraption 47",
@@ -1272,11 +1279,11 @@
 	"contraption.cabricality.49.subtitle": "Contraption 49",
 	"contraption.cabricality.49.content" : "In order to fill your Oxygen Tanks, stand on a Gas Charge Pad with oxygen in its internal storage.\n\nSuitable Oxygen can be gained by separating water into its components via heated mixing.",
 
-	"contraption.cabricality.50.title"   : "The Spaceship",
-	"contraption.cabricality.50.subtitle": "Contraption &b50&r",
+	"contraption.cabricality.50.title"   : "&dThe Millennium Falcon",
+	"contraption.cabricality.50.subtitle": "Contraption &d50&r",
 	"contraption.cabricality.50.content" : "With the Launch Pad in place, it is time to construct your Spaceship.\n\nGive it your best, after all this is the final Contraption you've been working towards.\n&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating.",
 
-	"chapter_5.cabricality.complete.title"  : "&dWe Have Lift Off!",
+	"chapter_5.cabricality.complete.title"  : "&bWe Have Lift Off!",
 	"chapter_5.cabricality.complete.content": "With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship.\n\nTake a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner.\n\nIn your own time, take a seat in your assembled rocket, and press Space.",
 
 	"chapter_5.cabricality.attire.title"  : "&9Attire",

@@ -1,0 +1,11 @@
+{
+	"parent": "cabricality:block/dice",
+	"textures": {
+		"1": "cabricality:item/dice/1",
+		"2": "cabricality:item/dice/2",
+		"3": "cabricality:item/dice/3",
+		"4": "cabricality:item/dice/4",
+		"5": "cabricality:item/dice/5",
+		"6": "cabricality:item/dice/6"
+	}
+}

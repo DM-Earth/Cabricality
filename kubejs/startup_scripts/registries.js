@@ -250,10 +250,16 @@ onEvent("item.registry", event => {
 	event.create(asIdentifier("multiply_cast")).texture(asIdentifier("item/cast/multiply_cast")).displayName("Operator Cast (×)").unstackable()
 	event.create(asIdentifier("divide_cast")).texture(asIdentifier("item/cast/divide_cast")).displayName("Operator Cast (÷)").unstackable()
 
-	event.create(asIdentifier("silver_coin_top")).texture(asIdentifier("item/coin/silver_coin_top")).displayName("§7§l▲").unstackable()
-	event.create(asIdentifier("silver_coin_bottom")).texture(asIdentifier("item/coin/silver_coin_bottom")).displayName("§8§l▼").unstackable()
-	event.create(asIdentifier("gold_coin_top")).texture(asIdentifier("item/coin/gold_coin_top")).displayName("§e§l▲").unstackable()
-	event.create(asIdentifier("gold_coin_bottom")).texture(asIdentifier("item/coin/gold_coin_bottom")).displayName("§6§l▼").unstackable()
+	event.create(asIdentifier("silver_coin_top")).displayName("§f§l▲").unstackable().parentModel(asIdentifier("item/coin/silver_coin_top")).group("search")
+	event.create(asIdentifier("silver_coin_bottom")).displayName("§7§l▼").unstackable().parentModel(asIdentifier("item/coin/silver_coin_bottom")).group("search")
+	event.create(asIdentifier("gold_coin_top")).displayName("§e§l▲").unstackable().parentModel(asIdentifier("item/coin/gold_coin_top")).group("search")
+	event.create(asIdentifier("gold_coin_bottom")).displayName("§6§l▼").unstackable().parentModel(asIdentifier("item/coin/gold_coin_bottom")).group("search")
+
+	let dice = [1, 2, 3, 4, 5, 6]
+
+	dice.forEach(serial => {
+		event.create(asIdentifier(`dice_${serial}`)).displayName(`§5§l${serial}`).unstackable().parentModel(asIdentifier("item/dice/" + serial)).group("search")
+	})
 })
 
 onEvent("block.registry", event => {
@@ -298,6 +304,13 @@ onEvent("block.registry", event => {
 		.material("metal")
 		.hardness(3.0)
 		.displayName("Computation Matrix")
+		.tagBlock("minecraft:mineable/pickaxe")
+
+	event.create(asIdentifier("dice"))
+		.model(asIdentifier("block/dice"))
+		.material("stone")
+		.hardness(2.0)
+		.displayName("§5Dice")
 		.tagBlock("minecraft:mineable/pickaxe")
 })
 

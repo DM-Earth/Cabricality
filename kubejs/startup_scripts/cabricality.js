@@ -20,11 +20,14 @@ let ED = (id, x) => MOD("extended_drawers", id, x)
 let BC = (id, x) => MOD("bitsandchisels", id, x)
 let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
+let KJ = (id, x) => MOD("kubejs", id, x)
+let ML = (id, x) => MOD("malum", id, x)
+let TR = (id, x) => MOD("terrestria", id, x)
 
 function asIdentifier(path, namespace) {
-	if (namespace) {
-		return namespace + ":" + path
-	} else {
-		return modpackId + ":" + path
-	}
+    if (namespace) {
+        return namespace + ":" + path
+    } else {
+        return modpackId + ":" + path
+    }
 }

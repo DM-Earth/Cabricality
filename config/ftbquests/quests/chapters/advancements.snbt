@@ -83,9 +83,10 @@
 					type: "questsadditions:place"
 					title: "{advancement.cabricality.construction.task.place_cobblestone.title}"
 					icon: "minecraft:cobblestone"
+					block_type: 0
 					block: "minecraft:cobblestone"
-					replaced: "minecraft:air"
 					value: 8192L
+					replaced: "minecraft:air"
 					replace: false
 				}
 				{
@@ -93,9 +94,10 @@
 					type: "questsadditions:place"
 					title: "{advancement.cabricality.construction.task.place_dirt.title}"
 					icon: "minecraft:dirt"
+					block_type: 0
 					block: "minecraft:dirt"
-					replaced: "minecraft:air"
 					value: 8192L
+					replaced: "minecraft:air"
 					replace: false
 				}
 				{
@@ -103,6 +105,7 @@
 					type: "questsadditions:break"
 					title: "{advancement.cabricality.construction.task.place_scaffolding.title}"
 					icon: "minecraft:scaffolding"
+					block_type: 0
 					block: "minecraft:scaffolding"
 					value: 1024L
 					checkItem: false

@@ -19,6 +19,17 @@ let BC = (id, x) => MOD("bitsandchisels", id, x)
 let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 
+const Minecraft = java('net.minecraft.client.Minecraft')
+const coinCoolingConst = 41
+const diceCoolingConst = 47
+
+var randomEventCooling = 0
+var randomEventMessage = ''
+
+function itemActivation(item) {
+	Minecraft.getInstance().gameRenderer().displayItemActivation(item)
+}
+
 function asIdentifier(path, namespace) {
 	if (namespace) {
 		return namespace + ":" + path
@@ -26,3 +37,13 @@ function asIdentifier(path, namespace) {
 		return modpackId + ":" + path
 	}
 }
+
+onEvent('client.tick', () => {
+	if (randomEventCooling == diceCoolingConst - 12) {
+		Minecraft.getInstance().gui.getChat().addMessage(randomEventMessage)
+	}
+
+	if (randomEventCooling > 0) {
+		randomEventCooling--
+	}
+})

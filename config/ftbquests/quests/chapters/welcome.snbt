@@ -17,9 +17,7 @@
 			y: -5.0d
 			shape: "hexagon"
 			subtitle: "{welcome.cabricality.limitless.subtitle}"
-			description: [
-				"{welcome.cabricality.limitless.content}"
-			]
+			description: ["{welcome.cabricality.limitless.content}"]
 			size: 2.0d
 			id: "09356B3BEF298E06"
 			tasks: [{

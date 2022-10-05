@@ -21,6 +21,12 @@ let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 let ML = (id, x) => MOD("malum", id, x)
 
+const Minecraft = java('net.minecraft.client.Minecraft')
+const coinCoolingConst = 41
+const diceCoolingConst = 47
+
+var randomEventCooling = []
+
 function asIdentifier(path, namespace) {
 	if (namespace) {
 		return namespace + ":" + path
@@ -93,6 +99,6 @@ let wood_types_no_wood = [
 	["terrestria", "sakura"]
 ]
 
-function dimensional_commanding(server, dimension, command) {
+function dimensionalCommanding(server, dimension, command) {
 	server.runCommandSilent("execute in " + dimension.toString() + " run " + command)
 }
