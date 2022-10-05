@@ -250,8 +250,8 @@ onEvent("item.registry", event => {
 	event.create(asIdentifier("multiply_cast")).texture(asIdentifier("item/cast/multiply_cast")).displayName("Operator Cast (×)").unstackable()
 	event.create(asIdentifier("divide_cast")).texture(asIdentifier("item/cast/divide_cast")).displayName("Operator Cast (÷)").unstackable()
 
-	event.create(asIdentifier("silver_coin_top")).displayName("§7§l▲").unstackable().parentModel(asIdentifier("item/coin/silver_coin_top"))
-	event.create(asIdentifier("silver_coin_bottom")).displayName("§8§l▼").unstackable().parentModel(asIdentifier("item/coin/silver_coin_bottom"))
+	event.create(asIdentifier("silver_coin_top")).displayName("§f§l▲").unstackable().parentModel(asIdentifier("item/coin/silver_coin_top"))
+	event.create(asIdentifier("silver_coin_bottom")).displayName("§7§l▼").unstackable().parentModel(asIdentifier("item/coin/silver_coin_bottom"))
 	event.create(asIdentifier("gold_coin_top")).displayName("§e§l▲").unstackable().parentModel(asIdentifier("item/coin/gold_coin_top"))
 	event.create(asIdentifier("gold_coin_bottom")).displayName("§6§l▼").unstackable().parentModel(asIdentifier("item/coin/gold_coin_bottom"))
 
