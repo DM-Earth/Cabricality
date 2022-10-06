@@ -1,13 +1,10 @@
 function playsound_dice(server, player) {
-	let runCommand = (command) => {
-		dimensionalCommanding(server, player.dimension, command)
-	}
-	runCommand(`playsound minecraft:entity.drowned.shoot ambient @a ${player.x} ${player.y} ${player.z}`)
-	runCommand(`playsound minecraft:block.deepslate.place ambient @a ${player.x} ${player.y} ${player.z}`)
-	runCommand(`playsound minecraft:block.conduit.activate ambient @a ${player.x} ${player.y} ${player.z} 0.7`)
-	runCommand(`playsound create:mechanical_press_activation_belt_compounded_1 ambient @a ${player.x} ${player.y} ${player.z} 0.7`)
-	runCommand(`playsound minecraft:block.amethyst_cluster.hit ambient @a ${player.x} ${player.y} ${player.z} 1 0.7`)
-	runCommand(`playsound ad_astra:passing_spaceship ambient @a ${player.x} ${player.y} ${player.z} 0.3`)
+	server.runCommandSilent(`playsound minecraft:entity.drowned.shoot ambient @a ${player.x} ${player.y} ${player.z}`)
+	server.runCommandSilent(`playsound minecraft:block.deepslate.place ambient @a ${player.x} ${player.y} ${player.z}`)
+	server.runCommandSilent(`playsound minecraft:block.conduit.activate ambient @a ${player.x} ${player.y} ${player.z} 0.7`)
+	server.runCommandSilent(`playsound create:mechanical_press_activation_belt_compounded_1 ambient @a ${player.x} ${player.y} ${player.z} 0.7`)
+	server.runCommandSilent(`playsound minecraft:block.amethyst_cluster.hit ambient @a ${player.x} ${player.y} ${player.z} 1 0.7`)
+	server.runCommandSilent(`playsound ad_astra:passing_spaceship ambient @a ${player.x} ${player.y} ${player.z} 0.3`)
 }
 
 onEvent('block.right_click', event => {
