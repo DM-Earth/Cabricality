@@ -4670,6 +4670,11 @@ file = "mods/sodium-fabric-mc1.18.2-0.4.1-replay.jar"
 hash = "21caf42aee36ccdd72c0437e7ed6587769630afa49267f59647e75f1274fa8b8"
 
 [[files]]
+file = "mods/sodium.pw.toml"
+hash = "d1480fd38a1ac53311baa2d57b92556834372f6ac04c355169441df9a59a161c"
+metafile = true
+
+[[files]]
 file = "mods/spark.pw.toml"
 hash = "6644b2d35da273260f7e56993c56f7d8d1bbeeb3e122702d24e6aca09db9f85b"
 metafile = true
