@@ -206,19 +206,19 @@ onEvent("recipes", event => {
   event.remove({ output: AP("plating_block") })
   event.stonecutting(AP("plating_block", 2), IV("steel_plate"))
 
-  event.remove({ output: TC('obsidian_pane') })
-  event.shaped(TC('obsidian_pane', 8), [
-    'SSS',
-    'SSS'
+  event.remove({ output: TC("obsidian_pane") })
+  event.shaped(TC("obsidian_pane", 8), [
+    "SSS",
+    "SSS"
   ], {
-    S: MC('obsidian')
+    S: MC("obsidian")
   })
 
-  event.replaceInput(AP('withered_bone'), TC('necrotic_bone'))
+  event.replaceInput(AP("withered_bone"), TC("necrotic_bone"))
 
 
-  event.remove({ id: TC('compat/create/andesite_alloy_zinc') })
-  event.remove({ id: TC('compat/create/andesite_alloy_iron') })
+  event.remove({ id: TC("compat/create/andesite_alloy_zinc") })
+  event.remove({ id: TC("compat/create/andesite_alloy_iron") })
 
   event.replaceInput({ output: TC("seared_duct") }, TC("cobalt_ingot"), CR("brass_ingot"))
   event.replaceInput({ output: TC("scorched_duct") }, TC("cobalt_ingot"), CR("brass_ingot"))

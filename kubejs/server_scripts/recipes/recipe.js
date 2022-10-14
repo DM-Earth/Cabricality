@@ -1,8 +1,8 @@
 let donutCraft = (event, output, center, ring) => {
 	event.shaped(output, [
-		'SSS',
-		'SCS',
-		'SSS'
+		"SSS",
+		"SCS",
+		"SSS"
 	], {
 		C: center,
 		S: ring

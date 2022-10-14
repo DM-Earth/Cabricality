@@ -5,7 +5,7 @@ onEvent("recipes", event => {
 		event.custom({
 			"type": "tconstruct:casting_table",
 			"cast": {
-				"item": CABF(e + '_cast')
+				"item": CABF(e + "_cast")
 			},
 			"fluid": {
 				"name": asIdentifier("raw_logic"),

@@ -165,13 +165,13 @@ onEvent("ponder.registry", (event) => {
             .placeNearTarget();
         scene.idle(90);
     
-        scene.text(80, "There're five of them, so we should only take out one in order to do the conversion")
+        scene.text(80, "There"re five of them, so we should only take out one in order to do the conversion")
             .pointAt(util.vector.centerOf(0, 1, 2))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
         scene.idle(90);
     
-        scene.text(80, "Let's say... lead (in practice you should place them at least 6 blocks far from the laser)")
+        scene.text(80, "Let"s say... lead (in practice you should place them at least 6 blocks far from the laser)")
             .pointAt(util.vector.centerOf(0, 1, 2))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -188,14 +188,14 @@ onEvent("ponder.registry", (event) => {
         scene.world.setBlocks([0, 1, 2, 3, 1, 2], "minecraft:air", true);
         scene.idle(60);
     
-        scene.text(80, "Hmm... That didn't work out, and the substrates are gone, too.")
+        scene.text(80, "Hmm... That didn"t work out, and the substrates are gone, too.")
             .pointAt(util.vector.centerOf(0, 1, 2))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
         scene.world.hideSection([0, 1, 2, 3, 1, 2], Facing.EAST);
         scene.idle(90);
     
-        scene.text(60, "Let's try taking out iron this time")
+        scene.text(60, "Let"s try taking out iron this time")
             .pointAt(util.vector.centerOf(0, 1, 2))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -229,14 +229,14 @@ onEvent("ponder.registry", (event) => {
         scene.idle(10);
     
         scene.world.showSection([3, 1, 3, 3, 1, 3], Facing.DOWN);
-        scene.text(60, "Congratulations! You're just one step away from going to the Moon!")
+        scene.text(60, "Congratulations! You"re just one step away from going to the Moon!")
             .pointAt(util.vector.centerOf(3, 1, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
         scene.idle(70);
     
         scene.world.setBlocks([3, 1, 3], "minecraft:air", true);
-        scene.text(60, "But before that happens, you'll need to do some preparations")
+        scene.text(60, "But before that happens, you"ll need to do some preparations")
             .pointAt(util.vector.centerOf(3, 1, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -244,7 +244,7 @@ onEvent("ponder.registry", (event) => {
         scene.world.setBlocks([3, 1, 3], "minecraft:air", true);
         scene.idle(50);
     
-        scene.text(60, "For starters, you'll need rocket engines and rocket tanks")
+        scene.text(60, "For starters, you"ll need rocket engines and rocket tanks")
             .pointAt(util.vector.topOf(1, 2, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -252,7 +252,7 @@ onEvent("ponder.registry", (event) => {
         const tank = scene.world.createItemEntity([3, 1, 3], util.vector.of(0.1, 1, 0), "ad_astra:steel_tank");
         scene.idle(70);
     
-        scene.text(60, "Like real rockets, these things are huge, so you'll need multi-block contraptions to make them")
+        scene.text(60, "Like real rockets, these things are huge, so you"ll need multi-block contraptions to make them")
             .pointAt(util.vector.topOf(1, 2, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -265,7 +265,7 @@ onEvent("ponder.registry", (event) => {
         const t2rocket = scene.world.createEntity("ad_astra:tier_2_rocket", [2, 12, 3]);
         const t3rocket = scene.world.createEntity("ad_astra:tier_3_rocket", [4, 12, 3]);
         const t4rocket = scene.world.createEntity("ad_astra:tier_4_rocket", [6, 12, 3]);
-        scene.text(60, "There're 4 tiers of rockets, each made up of steel, desh, ostrum, and calorite")
+        scene.text(60, "There"re 4 tiers of rockets, each made up of steel, desh, ostrum, and calorite")
             .pointAt(util.vector.topOf(1, 2, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -286,7 +286,7 @@ onEvent("ponder.registry", (event) => {
             .placeNearTarget();
         scene.idle(70);
     
-        scene.text(60, "We'll start with tier 1, which is made up of steel")
+        scene.text(60, "We"ll start with tier 1, which is made up of steel")
             .pointAt(util.vector.topOf(1, 2, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -308,7 +308,7 @@ onEvent("ponder.registry", (event) => {
         scene.idle(10);
     
         let layer = 1;
-        scene.text(100, "For base, we need iron plates and pillars. That's the same for all engines")
+        scene.text(100, "For base, we need iron plates and pillars. That"s the same for all engines")
             .pointAt(util.vector.topOf(3, 2, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -319,7 +319,7 @@ onEvent("ponder.registry", (event) => {
         scene.world.showSection([0, layer, 0, 6, layer, 6], Facing.DOWN);
         scene.idle(70);
     
-        scene.text(150, "For the layers above that, we'll need to use the material that each tier requires")
+        scene.text(150, "For the layers above that, we"ll need to use the material that each tier requires")
             .pointAt(util.vector.topOf(3, 4, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -453,7 +453,7 @@ onEvent("ponder.registry", (event) => {
         scene.world.setBlocks([0, 1, 0, 6, 9, 6], "minecraft:air", false);
         const tank2 = scene.world.createItemEntity([3, 3, 3], util.vector.of(0.01, 0, -0.02), "ad_astra:steel_tank");
         scene.idle(20);
-        scene.text(60, "After right-clicking the base block on the bottom, you'll get a rocket tank")
+        scene.text(60, "After right-clicking the base block on the bottom, you"ll get a rocket tank")
             .pointAt(util.vector.centerOf(3, 1, 3))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();
@@ -473,7 +473,7 @@ onEvent("ponder.registry", (event) => {
         scene.idle(70);
     
         scene.world.showSection([2, 2, 1, 2, 1, 1], Facing.DOWN);
-        scene.text(60, "Place the extractor next to a log. Make sure that there's no block below the machine")
+        scene.text(60, "Place the extractor next to a log. Make sure that there"s no block below the machine")
             .pointAt(util.vector.centerOf(2, 2, 1))
             .colored(PonderPalette.WHITE)
             .placeNearTarget();

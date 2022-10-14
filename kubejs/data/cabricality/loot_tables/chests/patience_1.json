@@ -85,7 +85,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "Let's do this.",
+								"text": "Let"s do this.",
 								"italic": false
 							}
 						}
@@ -99,7 +99,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "Don't stop until you're proud.",
+								"text": "Don"t stop until you"re proud.",
 								"italic": false
 							}
 						}
@@ -211,7 +211,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "It always seems impossible until it's done.",
+								"text": "It always seems impossible until it"s done.",
 								"italic": false
 							}
 						}
@@ -253,7 +253,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "You've got this.",
+								"text": "You"ve got this.",
 								"italic": false
 							}
 						}
@@ -295,7 +295,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "Don't let go.",
+								"text": "Don"t let go.",
 								"italic": false
 							}
 						}
@@ -365,7 +365,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "I'm sorry.",
+								"text": "I"m sorry.",
 								"italic": false
 							}
 						}

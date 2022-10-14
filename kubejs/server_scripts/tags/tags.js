@@ -56,7 +56,7 @@ function ad_astra_tag_unify(event) {
   material("calorite")
 }
 
-onEvent('tags.items', event => {
+onEvent("tags.items", event => {
   indrev_tag_unify(event)
   ad_astra_tag_unify(event)
   stripped_wood_tag_unify(event)
