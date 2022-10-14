@@ -1,0 +1,28 @@
+{
+	"block.indrev.solid_infuser_factory"    : "交易站工厂",
+	"block.indrev.solid_infuser"            : "交易站",
+	"block.indrev.solid_infuser_mk1"        : "交易站MK1",
+	"block.indrev.solid_infuser_mk2"        : "交易站MK2",
+	"block.indrev.solid_infuser_mk3"        : "交易站MK3",
+	"block.indrev.solid_infuser_mk4"        : "交易站MK4",
+	"block.indrev.solid_infuser_creative"   : "§d创造模式交易站",
+	"block.indrev.solid_infuser_factory_mk4": "交易站工厂MK4",
+
+	"block.indrev.cable_mk1": "能源管线MK1",
+	"block.indrev.cable_mk2": "能源管线MK2",
+	"block.indrev.cable_mk3": "能源管线MK3",
+	"block.indrev.cable_mk4": "能源管线MK4",
+
+	"indrev.category.rei.infusing": "交易",
+
+	"advancements.indrev.solid_infuser"            : "真正的商人",
+	"advancements.indrev.solid_infuser.description": "获得一个交易站",
+
+	"item.indrev.tin_plate"         : "锡板",
+	"item.indrev.lead_plate"        : "铅板",
+	"item.indrev.silver_plate"      : "银板",
+	"item.indrev.electrum_plate"    : "琥珀金板",
+	"item.indrev.bronze_plate"      : "青铜板",
+	"item.indrev.steel_plate"       : "钢板",
+	"item.indrev.carbon_fiber_plate": "碳纤维板"
+}
