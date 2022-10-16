@@ -7,7 +7,7 @@ onEvent("item.registry", event => {
             global.transactions = []
 
             let profession = (name, c1, c2, transaction) => {
-                let id = name.toLowerCase().replace(""", "").split(" ").join("_")
+                let id = name.toLowerCase().replace('"', "").split(" ").join("_")
                 global.professions.push(id)
                 global.transactions[id] = transaction
 
@@ -29,7 +29,7 @@ onEvent("item.registry", event => {
                     if (idx == 0) amount = e;
                     else {
                         if (idx > 1) cid = cid + "x";
-                        cid = cid + e.replace(""", "").replace("#", "").replace(" ", "");
+                        cid = cid + e.replace('"', "").replace("#", "").replace(" ", "");
                     }
                 })
                 let id = cid.replace(":", "_");
@@ -273,7 +273,7 @@ onEvent("item.registry", event => {
                             id = id + e.replace(" ", "").replace("#", "");
                         }
                     })
-                    let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace(""", "").replace("#", "").replace(":", "_").replace(" ", "_"))
+                    let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace('"', "").replace("#", "").replace(":", "_").replace(" ", "_"))
                     if (!simulate)
                         trade(item, c1, c2, [
                             [item, coin]
