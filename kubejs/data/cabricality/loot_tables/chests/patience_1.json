@@ -85,7 +85,7 @@
 						{
 							"function": "minecraft:set_name",
 							"name": {
-								"text": "Let"s do this.",
+								"text": "Let's do this.",
 								"italic": false
 							}
 						}

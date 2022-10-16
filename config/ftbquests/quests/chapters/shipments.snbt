@@ -4,7 +4,7 @@
 	order_index: 3
 	filename: "shipments"
 	title: "&a Shipments"
-	icon: "thermal:machine_press"
+	icon: "cabricality:trade_card_create_andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -2899,7 +2899,7 @@
 					id: "0A6DEF2E19943F9F"
 					type: "item"
 					auto: "enabled"
-					item: "kubejs:trade_card_exchange_currencies"
+					item: "cabricality:trade_card_exchange_currencies"
 				}
 				{
 					id: "3D6C47FD645D7471"

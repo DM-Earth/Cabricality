@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "#c:copper_nuggets"
+        "#c:copper_nuggets",
+        "malum:copper_nugget"
     ]
 }
