@@ -143,7 +143,7 @@ packwiz curseforge export
 
 ### 启动器支持
 
-你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行这个整合包，如[MultiMC、](https://github.com/MultiMC/Launcher)[PolyMC](https://github.com/PolyMC/PolyMC)和[Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2]。
+你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行这个整合包，如[MultiMC](https://github.com/MultiMC/Launcher)和[Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2]。
 
 [^pcl2]: **注意，[PCL2启动器](https://github.com/Hex-Dragon/PCL2)不受支持。**
 
