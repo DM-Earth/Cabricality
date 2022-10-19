@@ -39,5 +39,6 @@ onEvent("recipes", event => {
   brass_machine("create:brass_funnel", 4)
   brass_machine("create:brass_tunnel", 4)
 
+  event.remove({output: AE2("sky_dust"), input: AE2("sky_stone_block")})
   event.recipes.createMilling([AE2("sky_dust"), AE2("sky_stone_block")], AE2("sky_stone_block")).processingTime(1000)
 })
