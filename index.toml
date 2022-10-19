@@ -62,7 +62,7 @@ hash = "80fbba77a8968efbb78500ec9731bd3f12a6905d60f7856ac263e8246396b6f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "66a4a84e6206667f1b28ebf658ca3213860ec1bfb216a74ad1e53aa999fffec3"
+hash = "7681426253a9b23863733ee4cd9e48226d461abe785792859db4ec5113cf9a38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -809,6 +809,10 @@ file = "config/openloader/resources/cabf-edits/assets/ad_astra/lang/zh_cn.json"
 hash = "c4f8ee1091b77658d841dbe29429035eabfb488e7ab3d06c3f74bbc91f768315"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/ad_astra/lang/zh_tw.json"
+hash = "c4f8ee1091b77658d841dbe29429035eabfb488e7ab3d06c3f74bbc91f768315"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ad_astra/models/block/blue_iron_pillar.json"
 hash = "a88895af4f04b055d3fcb7a84e98f262ca4b6c7e50a1f24e24305248e4ecd471"
 
@@ -1085,6 +1089,10 @@ file = "config/openloader/resources/cabf-edits/assets/alloy_forgery/lang/zh_cn.j
 hash = "c8d4505bfc261eb30dd41c3ec3539db09374371528cab652cf298f7180b65d3c"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/alloy_forgery/lang/zh_tw.json"
+hash = "c8d4505bfc261eb30dd41c3ec3539db09374371528cab652cf298f7180b65d3c"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/bitsandchisels/textures/item/smart_chisel.png"
 hash = "06d815e63dbace67a4b378b42290c82ef9c92056e3ddf2c2a2d89b55ac316d79"
 
@@ -1094,6 +1102,10 @@ hash = "1300e0c2ec8c0141975fcc0341d195162747f249bfc7953f8fd52de67cf93dcd"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/create/lang/zh_cn.json"
+hash = "1cdd79959d7cee6eb0470511cd943ef81775db71be5ce0d49f6533c0acf09d2f"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/create/lang/zh_tw.json"
 hash = "1cdd79959d7cee6eb0470511cd943ef81775db71be5ce0d49f6533c0acf09d2f"
 
 [[files]]
@@ -1117,6 +1129,10 @@ file = "config/openloader/resources/cabf-edits/assets/createplus/lang/zh_cn.json
 hash = "4e0081290aacf0dc1b3e32ff8bb27428baaaebaffabd3fdddccaf9efa7abba0e"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/createplus/lang/zh_tw.json"
+hash = "4e0081290aacf0dc1b3e32ff8bb27428baaaebaffabd3fdddccaf9efa7abba0e"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/createplus/textures/item/brass_double_ingot.png"
 hash = "5993d2200de5ae7bcc9ec1f9abcb46ee4f71ae63a420d652e3035027ea97da09"
 
@@ -1137,11 +1153,23 @@ file = "config/openloader/resources/cabf-edits/assets/extended_drawers/lang/zh_c
 hash = "a69f95fe37b38cb9e579be1218355d7b401cd7dd928a7432051d16be1d9bdad8"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/extended_drawers/lang/zh_tw.json"
+hash = "a69f95fe37b38cb9e579be1218355d7b401cd7dd928a7432051d16be1d9bdad8"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ftbquests/lang/zh_cn.json"
 hash = "746629c8499ffde8829d8969bf5b84ca36e19de234cdcff9ced84243f2d63e1f"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/ftbquests/lang/zh_tw.json"
+hash = "746629c8499ffde8829d8969bf5b84ca36e19de234cdcff9ced84243f2d63e1f"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/ftbteams/lang/zh_cn.json"
+hash = "9a47bc78779ed73f121f4814fa49797dfc8d86033b05aee2f50f07f49b9af056"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/ftbteams/lang/zh_tw.json"
 hash = "9a47bc78779ed73f121f4814fa49797dfc8d86033b05aee2f50f07f49b9af056"
 
 [[files]]
@@ -1158,6 +1186,10 @@ hash = "66ac70957d93da6fabaf1ed79c4e192df77b691eb8c2693a2226623868a24cd3"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/indrev/lang/zh_cn.json"
+hash = "8972b5b8c56dabfac91b2feedf8c3a5c5f15c5b4b8e55bd055e6edec15c2dfbe"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/indrev/lang/zh_tw.json"
 hash = "8972b5b8c56dabfac91b2feedf8c3a5c5f15c5b4b8e55bd055e6edec15c2dfbe"
 
 [[files]]
@@ -1485,11 +1517,19 @@ file = "config/openloader/resources/cabf-edits/assets/led/lang/zh_cn.json"
 hash = "0379315b0a827e64f844a2804529e1984ce4a41f6f3726121752fcc00a978d47"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/led/lang/zh_tw.json"
+hash = "0379315b0a827e64f844a2804529e1984ce4a41f6f3726121752fcc00a978d47"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/malum/lang/en_us.json"
 hash = "c51c57abedc06f2aa0a935c26c02c7265be3edaed8cd2bc2f4f7a4162ef81b39"
 
 [[files]]
 file = "config/openloader/resources/cabf-edits/assets/malum/lang/zh_cn.json"
+hash = "f60c8bed60d35c5595abc350e8aa8214e0d080ba02c852b771413bc2dec1860c"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/malum/lang/zh_tw.json"
 hash = "f60c8bed60d35c5595abc350e8aa8214e0d080ba02c852b771413bc2dec1860c"
 
 [[files]]
@@ -1541,7 +1581,15 @@ file = "config/openloader/resources/cabf-edits/assets/questsadditions/lang/zh_cn
 hash = "0109bb040575c924f57cf0cd933a88917004b41bf6ad0f58f11ec8310fb05d1e"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/questsadditions/lang/zh_tw.json"
+hash = "0109bb040575c924f57cf0cd933a88917004b41bf6ad0f58f11ec8310fb05d1e"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/sodium/lang/zh_cn.json"
+hash = "d5553d7d78fec39b5e7a157e3f277cdedb5449194968b4a29884b5364ac7bfd9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/sodium/lang/zh_tw.json"
 hash = "d5553d7d78fec39b5e7a157e3f277cdedb5449194968b4a29884b5364ac7bfd9"
 
 [[files]]
@@ -1549,7 +1597,15 @@ file = "config/openloader/resources/cabf-edits/assets/splasher/lang/zh_cn.json"
 hash = "ae854697ae45cd4e97b5a1bb1e3e94b34e3db10af8733e45182408f201f00858"
 
 [[files]]
+file = "config/openloader/resources/cabf-edits/assets/splasher/lang/zh_tw.json"
+hash = "ae854697ae45cd4e97b5a1bb1e3e94b34e3db10af8733e45182408f201f00858"
+
+[[files]]
 file = "config/openloader/resources/cabf-edits/assets/tconstruct/lang/zh_cn.json"
+hash = "ed3dd283aef795b5cb105aafd8f5a5ecea5e35aa8c4f237f8c3767dab4b5afa9"
+
+[[files]]
+file = "config/openloader/resources/cabf-edits/assets/tconstruct/lang/zh_tw.json"
 hash = "ed3dd283aef795b5cb105aafd8f5a5ecea5e35aa8c4f237f8c3767dab4b5afa9"
 
 [[files]]
@@ -1742,7 +1798,7 @@ hash = "d0b902b67b73f9858d811ce870896d99a08ae57a1a6b73f0c4049d6e4295dcda"
 
 [[files]]
 file = "kubejs/client_scripts/cabricality.js"
-hash = "2f42df966bb0c86fc481363f8addab3c7dc5a8d1e898befd836173b66aa79d59"
+hash = "5dff80611f01d9ddf28548c6083ae326edc996761da658a9c389a9307013089e"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
@@ -1750,15 +1806,15 @@ hash = "b6d6eddc48d356e28bccc4d120bc3f8371b1d6a0fd3b556d26db4ceb83e02315"
 
 [[files]]
 file = "kubejs/client_scripts/coin.js"
-hash = "0e0d8e5c41c3466f1307019279bf79183882b90d4e7d27d6cd9c3469302089f8"
+hash = "4e265c1adae77b5d585e03aed980f8807c575a14e7db2eb8c4360c2d54abaf07"
 
 [[files]]
 file = "kubejs/client_scripts/dice.js"
-hash = "cb22255026031c03154e382a5d796ceb621596b54a79cf7064974e9d95bacf99"
+hash = "da6bf5cdbf827bb70bd30652636e085b2d53eb00e302c6e459cb00fc81229432"
 
 [[files]]
 file = "kubejs/client_scripts/pondering/ponder.js"
-hash = "ccf94a394dffb2fbdeaafdc85bb70d8e39cb7ccceee99824681250a4578bd061"
+hash = "7ca6f40727bda9bfd6ece5e20f362533c2e7555e3c6f22122a0109b657699428"
 
 [[files]]
 file = "kubejs/data/ad_astra/loot_tables/blocks/deepslate_calorite_ore.json"
@@ -1938,7 +1994,7 @@ hash = "bf06e9e78d0f867d0363b6641c4bfa26ea864f9e977ec4168d6cd651d0d5a0e7"
 
 [[files]]
 file = "kubejs/data/c/tags/items/nuggets/copper.json"
-hash = "5a227b2f75d630a118e9dde355b0a516f3a2917d90a409188a771ed806c658a8"
+hash = "4ed24a4cbf057c5d2186faa3c4eb76a31c9b8d6976e7f8b4f4ae8b90243bfb08"
 
 [[files]]
 file = "kubejs/data/c/tags/items/nuggets/nickel.json"
@@ -2110,7 +2166,7 @@ hash = "21850d5379212950c6da21d306aafeec9b30eb6380814ff594a1d2a7fa83c053"
 
 [[files]]
 file = "kubejs/data/cabricality/loot_tables/chests/patience_1.json"
-hash = "a1d83d0ee144f0e721f02e16bc80fabab001b9b9f636cb2cf9ac8a95d43e7679"
+hash = "9d6d7e612467ece3f08b4d0be5caeaf0f18eac137447787915e703017f069e31"
 
 [[files]]
 file = "kubejs/data/cabricality/ponder/extractor.nbt"
@@ -4170,15 +4226,15 @@ hash = "59d3dfab2cdf65cb024480efdf533965b261af09e6bb1d26c0b5634a3da16f0a"
 
 [[files]]
 file = "kubejs/server_scripts/cabricality.js"
-hash = "ae2b9d99c9c3964ea801682cc225418e9aa43e9be8963b456e031ad1c9223e6c"
+hash = "a6883b606d9cbc684314afa4e4de4de648f2ce2c85ff9b71eeca6db718d712e6"
 
 [[files]]
 file = "kubejs/server_scripts/coin.js"
-hash = "0f306918259829be4d029b5c4d2285e8be65a9f2573f6e1232485bca00d31888"
+hash = "c594bd6e9ad19fb9dd381ff6badd76fe40ad9280629965336a663dcdc9aff46d"
 
 [[files]]
 file = "kubejs/server_scripts/dice.js"
-hash = "24259d66c85948cb769802c63b5981786882851ea4066b4c285b8e9751095604"
+hash = "dffb615c013766261ad95429588584279dad1901610c62d66d2e4d678fe7f976"
 
 [[files]]
 file = "kubejs/server_scripts/machine/extractor.js"
@@ -4198,11 +4254,11 @@ hash = "500844e60f612232cbc56ff21fbc3931c65ea4c6daa89b2056cfdd5f9da7260e"
 
 [[files]]
 file = "kubejs/server_scripts/quests.js"
-hash = "966dc4a8e5537f011878141b1d6442c70d4852d27f32f01a6a26d7f42f9cb51c"
+hash = "9e2555a384afa7d6277d29bec8d4082697200b1aa05a06a59355afc14f13f1e6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/recipe.js"
-hash = "1ef719370a605948e0ab08754a19a048a777cc4938c7e20ec5aea8b65bfa175d"
+hash = "38b2560a049a8afb2be6dc4919a4401998ffdce9bf870d040901b57c3d47eeab"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/alchemy.js"
@@ -4214,7 +4270,7 @@ hash = "24db3a2c28d1ac233d3b9b815366afde6fe6caabd16532fe4d63d5e4bb0a6c5d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/brass.js"
-hash = "b8e508d52e976c647f8baf272c461371ce14f6d49c4af7a32a6e29de85cc034d"
+hash = "a88b75d4a5f5385c32938eef48855d17887f619c0e732415fda907ae9927ca69"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/computer.js"
@@ -4238,7 +4294,7 @@ hash = "b61144016979b34c3d554e52eb7c447f14de352ddf8c504a50c6f45c426f77b5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/math.js"
-hash = "438f1ba1be44bf5497c479c2c39611bd49d5a9398bb2a457d151e4638e82756c"
+hash = "c4c9bcd65afa01c057d5abeacabb5bf8cda5f682b398540a5fb26330b4dc8b7c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/thread/obsidian.js"
@@ -4254,7 +4310,7 @@ hash = "6d0d2ba209b39ba979e592541c4ee8cb57ac7b82285d1a164c1631bd041a111b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
-hash = "c09125f968250a0d112de3e5ead2fe1b84886690c80d5fac1cdbd1404d39146a"
+hash = "5e575369470bb839a76ef4e2ab1458183e4118dbb21c1956166207d37da0c649"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/cutting.js"
@@ -4262,7 +4318,7 @@ hash = "0662f62eafad4f639a4184f88521d3edcbd6e9e792e93506c1b31ba0a092dee5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/general_tweaks.js"
-hash = "bfa7483e570f258ece4d914704944703ecf60f365d866aba979738c43a006bb9"
+hash = "431010dfc367f02d76314a7cf9fd972efc4a2b927f8fa64979850a9659ffc381"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ore_processing.js"
@@ -4270,7 +4326,7 @@ hash = "c57eea6a03e6eca6e99d3b84519e08ca489da76a0994adf6f9fcfa4b87b7e33e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/tconstruct.js"
-hash = "a6f6089e370b328daa9788e4670705b78af2715684f288d2eb9aa66455541faa"
+hash = "84f3d42a3a47f9cfd8c658d65e2a6762f31d8fedaf4a91376b69ebaafaa375a9"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tweaks/upgrading.js"
@@ -4278,7 +4334,7 @@ hash = "0ea01690637786f78a7b75abc3a07669d5e1000f86b41f5b804093611f3779e8"
 
 [[files]]
 file = "kubejs/server_scripts/tags/tags.js"
-hash = "504e0d2437106cc2e6114752255d3935760efac7893790604faa24c9f78a298c"
+hash = "9d2c698852ac64a24e340d276b6d046dd9719219d156f785eb90337707f0e54d"
 
 [[files]]
 file = "kubejs/startup_scripts/cabricality.js"
@@ -4298,7 +4354,7 @@ hash = "a2bea934c643def68595d46abc7949a1c2602e1d9b54415433eef6fd3f692ea9"
 
 [[files]]
 file = "kubejs/startup_scripts/trading.js"
-hash = "a5aabf396d0efa206e8475cb0ae56346e4a37a85a8ae9faf529ed5aa37d930a9"
+hash = "4217d17977a569836c62d5aca64fc4b0fc6627258de9757e97049fa9420a9ddb"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -4464,7 +4520,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "dfebd8072576c75a939f56cab83cabdf3c5828da7cdb814e97c272e6c0b8d006"
+hash = "6058946b7fb51a487cfdf61cba87562eda75ee38ebb16ae336c26fb24dd17c26"
 metafile = true
 
 [[files]]
@@ -4504,7 +4560,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris-flywheel-compat.pw.toml"
-hash = "9085b5ffe7dd1663966e6ffbb4495f2feaabe9d970d9a863d8dc0be129444bc0"
+hash = "c074b2fbdd92050699f945a773d784d7ac0c4392c7c777618810e1e30ac64a56"
 metafile = true
 
 [[files]]
@@ -4713,7 +4769,7 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-api-fabric.pw.toml"
-hash = "b5e74fec582f1dc10fda86a3c41c00821f15471285c2570c7c9ace3316a438be"
+hash = "7aeccea64609b86db3a53be9d915015546cc778df3f745685992fd97be33efda"
 metafile = true
 
 [[files]]
