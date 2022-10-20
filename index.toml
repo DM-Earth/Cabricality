@@ -4381,8 +4381,8 @@ hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
 metafile = true
 
 [[files]]
-file = "mods/appleskin.pw.toml"
-hash = "80e7c9fd868c28612d6e9945044e274399579ab0007285f2ec50caf006c771f3"
+file = "mods/antique-atlas.pw.toml"
+hash = "f523a4953589f77c51091f978889b0ad81ef057b192aa773bb8f6856628c83a3"
 metafile = true
 
 [[files]]
@@ -4396,16 +4396,6 @@ hash = "a010c1bde6ac0dba1ece21416d99525b0cd20ed23625cea5d04a734b024e200e"
 metafile = true
 
 [[files]]
-file = "mods/backslot.pw.toml"
-hash = "914fff3a542a08420d56634019c6c6f59ddf046c1cb5e3e7c1f0c846043c4b6c"
-metafile = true
-
-[[files]]
-file = "mods/bad-wither-no-cookie.pw.toml"
-hash = "930fd68557900540372f08858bf00b7e4ea8c337208258bf2e50179d8b6af1eb"
-metafile = true
-
-[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
 metafile = true
@@ -4416,22 +4406,8 @@ hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
 
 [[files]]
-file = "mods/blahaj-quilt-1.18-0.2.0.jar"
-hash = "b807524384153e33ec9c4ec793c0822b19654259813b15db65e745cf58376c77"
-
-[[files]]
 file = "mods/cabricality-utils.pw.toml"
 hash = "5ba1200ad983afaa0d3a20ef922c3291e0c8b88f9a82780a3ed659dcbf2cc38c"
-metafile = true
-
-[[files]]
-file = "mods/campanion.pw.toml"
-hash = "8d3de765ffa83b0499e328dbd1827e35c2a9f88c11cdc09ba1f4efe7d68f531f"
-metafile = true
-
-[[files]]
-file = "mods/can-i-mine-this-block.pw.toml"
-hash = "afdd8be3fe26244ff1638af78cb8d33a1a7b650ea7f3dd9247aa5a020d67ddd5"
 metafile = true
 
 [[files]]
@@ -4479,11 +4455,6 @@ file = "mods/createplus-1.0.0.jar"
 hash = "f690888f36320c2e1ff2a2e175288ca8d7d4ec47e257df4bdc93d704a54f5bd0"
 
 [[files]]
-file = "mods/ct-overhaul-village.pw.toml"
-hash = "2736b7cd4cd82549d9fde59b63837b5eb04f395d686c193fcedd0bfa7f4dcc79"
-metafile = true
-
-[[files]]
 file = "mods/ctm-refabricated.pw.toml"
 hash = "3313ae2e4364baa48c96b7dcc8d356af55024e76bd7a590ca0de580366d4e77d"
 metafile = true
@@ -4494,18 +4465,8 @@ hash = "23e3c4cb4e2ee0ed4cd1d9a8e1960578cf3e49839813c7930c4809aba304a1f7"
 metafile = true
 
 [[files]]
-file = "mods/customskinloader.pw.toml"
-hash = "31f7f1c2adbefa4eff01727b14cff54cbdd12c4a7b6ec8520c755da0152c7cef"
-metafile = true
-
-[[files]]
 file = "mods/dawn.pw.toml"
 hash = "b60fc5c154d6ca0e07406638d53bfbaa751e3ef517ff553fcec8543847844728"
-metafile = true
-
-[[files]]
-file = "mods/debugify.pw.toml"
-hash = "4595621a88c273e5d0ab70dae5866d323122f449c668a667640ee79fbc6063f2"
 metafile = true
 
 [[files]]
@@ -4554,21 +4515,6 @@ hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
 metafile = true
 
 [[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
-metafile = true
-
-[[files]]
-file = "mods/iris-flywheel-compat.pw.toml"
-hash = "c074b2fbdd92050699f945a773d784d7ac0c4392c7c777618810e1e30ac64a56"
-metafile = true
-
-[[files]]
-file = "mods/iris.pw.toml"
-hash = "689beb7c10f85f12f08d2b5198e02c8ef72bf3a5372e390d76c7412cbc807296"
-metafile = true
-
-[[files]]
 file = "mods/item-filters-fabric-1802.2.7-build.33.jar"
 hash = "083f3d25a0489268eb360f9950a16f5636862a28e4f58ebfebcad651e5143456"
 
@@ -4613,16 +4559,6 @@ hash = "21da451438c4b95811be685f967b800f0672ac0096bf9a4fc80e08db52902005"
 metafile = true
 
 [[files]]
-file = "mods/led.pw.toml"
-hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
-metafile = true
-
-[[files]]
-file = "mods/libipn.pw.toml"
-hash = "8e69d511f4a0112cc811aaa3ca5c8dd06e86b65cbcad4e1a633a4caf6032a21b"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
 metafile = true
@@ -4638,23 +4574,8 @@ hash = "58168b0555e2ff4977a482707eb58fe2c38fd10322ba7a27b00b2866e19a481e"
 metafile = true
 
 [[files]]
-file = "mods/mcwifipnp.pw.toml"
-hash = "c94ba62d4826b6828e618ac19992e8d3a8b30b2eab80d6449a2cc023c0b076dc"
-metafile = true
-
-[[files]]
-file = "mods/megane.pw.toml"
-hash = "88d204010e68a166c3906dc710a0843fc2d69416e67953ee276603b307338a9e"
-metafile = true
-
-[[files]]
 file = "mods/minecraft024.pw.toml"
 hash = "8249b0b96ee6b4e165ae0b7f63280fb7529f7ef518a47a22579ab074bbb8c946"
-metafile = true
-
-[[files]]
-file = "mods/mo-structures.pw.toml"
-hash = "2d28482058d2d26425ce201ff66684944cbf3bac2841cf4fbc9157fe51830fbe"
 metafile = true
 
 [[files]]
@@ -4670,11 +4591,6 @@ metafile = true
 [[files]]
 file = "mods/no-unused-chunks.pw.toml"
 hash = "73f8c3c2aafcf7c4c504050acdce3f2ca4c9314c6ebbb97258cafabd34c8dce0"
-metafile = true
-
-[[files]]
-file = "mods/notenoughcrashes.pw.toml"
-hash = "22ead426c002828d3d2f4da9caf5454fabae689bbf4291020919da7909095794"
 metafile = true
 
 [[files]]
@@ -4733,11 +4649,6 @@ hash = "d1480fd38a1ac53311baa2d57b92556834372f6ac04c355169441df9a59a161c"
 metafile = true
 
 [[files]]
-file = "mods/spark.pw.toml"
-hash = "b55d9d1ea5b5cadde5973123c0c644065f905afff5ea8d3d24c6d6564a7470cd"
-metafile = true
-
-[[files]]
 file = "mods/splasher.pw.toml"
 hash = "d52e229c378e2987475e12636f4f96be892e6d0d5bbb528bbdebd31a2be3cd3c"
 metafile = true
@@ -4765,29 +4676,4 @@ metafile = true
 [[files]]
 file = "mods/wthit.pw.toml"
 hash = "d51ce9092dd3eea3016cf6ebad6624cb3a6fb7a13b22571abd9f702da53d6cdd"
-metafile = true
-
-[[files]]
-file = "mods/yungs-api-fabric.pw.toml"
-hash = "7aeccea64609b86db3a53be9d915015546cc778df3f745685992fd97be33efda"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-desert-temples-fabric.pw.toml"
-hash = "25e787d94b83fcb4bfb327c61f731b15ae85fdb56339467c63c48bc8db0a524e"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-dungeons-fabric.pw.toml"
-hash = "155eda7a63a53cce08924e9f9c64aa505b5d7a848f1a592e7ec061154012115d"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-mineshafts-fabric.pw.toml"
-hash = "7eb509430f5866b8ebfef43e21cd4b9a73cf6056d18b0cf2cb4ae3cb884dfe06"
-metafile = true
-
-[[files]]
-file = "mods/yungs-extras-fabric.pw.toml"
-hash = "43def9ff7e9948695c694d2395f21254fa857d50a4f8bd6f8c40ebd96655769e"
 metafile = true
