@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/nugget"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "c:molten_copper",
+    "amount": 10
+  },
+  "result": {
+    "item": "create:copper_nugget"
+  },
+  "cooling_time": 17
+}

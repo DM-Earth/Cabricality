@@ -105,4 +105,7 @@ onEvent("recipes", event => {
     event.remove({ output: ingot, input: "#c:" + metal[1] + "_ores" })
     event.remove({ output: ingot, input: "#c:ores/" + metal[1] })
   })
+
+  ore_recipe_types = ["ore_dense", "ore_singular", "ore_sparse"]
+  ore_recipe_types.forEach(ore_recipe_type => event.remove({id: "tconstruct:smeltery/melting/metal/copper/" + ore_recipe_type}))
 })
