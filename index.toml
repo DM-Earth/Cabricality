@@ -4381,11 +4381,6 @@ hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
 metafile = true
 
 [[files]]
-file = "mods/antique-atlas.pw.toml"
-hash = "f523a4953589f77c51091f978889b0ad81ef057b192aa773bb8f6856628c83a3"
-metafile = true
-
-[[files]]
 file = "mods/architects-palette-fabric.pw.toml"
 hash = "5d068ee053bfe3b7815d9b28b12144aaf65f9253247eff40480aacf3c2a8e02e"
 metafile = true
@@ -4517,16 +4512,6 @@ metafile = true
 [[files]]
 file = "mods/item-filters-fabric-1802.2.7-build.33.jar"
 hash = "083f3d25a0489268eb360f9950a16f5636862a28e4f58ebfebcad651e5143456"
-
-[[files]]
-file = "mods/journeymap-integration.pw.toml"
-hash = "b036ebb6c9f3a7177220ec7f5fc6bc84186a9236837b30d2bc3ad9667b617b03"
-metafile = true
-
-[[files]]
-file = "mods/journeymap.pw.toml"
-hash = "9d1d54ab28651ae535cd28494a34e2753af1c810ec3d1c2b8247deae75fd69a2"
-metafile = true
 
 [[files]]
 file = "mods/kibe.pw.toml"
