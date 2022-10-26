@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cabricality:block/machine/extractor_machine"
+    }
+  }
+}

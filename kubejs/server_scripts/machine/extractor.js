@@ -1,3 +1,5 @@
+// TODO:test
+/*
 onEvent("block.right_click", event => {
 	let isNextToLog = false
 	if (event.block.id == asIdentifier("extractor_machine")) {
@@ -238,14 +240,7 @@ onEvent("block.right_click", event => {
 		if (!event.block.down.getBlockState().toString().includes("[level=") || event.block.down.getBlockState().toString().includes("[level=0]")) isFluidSource = true
 		if (!event.block.up.getBlockState().toString().includes("[level=0]")) isFluidSource = false
 
-		if (downBlock != event.block.down.id && Math.random() <= smeltSpeed
-
-			/*		&& event.block.down.east.id != event.block.down.id &&
-						event.block.down.west.id != event.block.down.id &&
-						event.block.down.north.id != event.block.down.id &&
-						event.block.down.south.id != event.block.down.id	*/
-
-			&& isFluidSource == true
+		if (downBlock != event.block.down.id && Math.random() <= smeltSpeed && isFluidSource == true
 		) {
 			//	if (DEBUG == true) event.server.runCommandSilent("say " + event.block.down.getBlockState().toString())
 			if (DEBUG == true) event.server.runCommandSilent(`say ${event.block.down.getBlockState().toString()}`)
@@ -270,3 +265,4 @@ onEvent("block.right_click", event => {
 		}
 	}
 })
+*/

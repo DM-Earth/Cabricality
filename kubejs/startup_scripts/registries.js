@@ -264,7 +264,8 @@ onEvent("block.registry", event => {
 			.tagBlock("create:wrench_pickup")
 			.tagBlock("minecraft:mineable/pickaxe")
 	}
-	registerMachine("Extractor", "Extractor", "solid")
+	// TODO: test
+	// registerMachine("Extractor", "Extractor", "solid")
 	registerMachine("Andesite", "Andesite", "solid")
 	registerMachine("Brass", "Brass", "translucent")
 	registerMachine("Copper", "Copper", "cutout")
