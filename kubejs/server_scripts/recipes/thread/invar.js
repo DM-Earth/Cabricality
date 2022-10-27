@@ -4,16 +4,16 @@ onEvent("recipes", event => {
       "type": "farmersdelight:cutting",
       "ingredients": [{ "item": "tconstruct:" + type + "_slime_fern" }],
       "tool": { "tag": "c:tools/knives" },
-      "result": [Item.of(CABF(type + "_slimy_fern_leaf"), 2).toResultJson()]
+      "result": [Item.of(CABF(type + "_slime_fern_leaf"), 2).toResultJson()]
     })
     event.custom({
       "type": "create:haunting",
-      "ingredients": [{ "item": CABF(type + "_slimy_fern_leaf") }],
+      "ingredients": [{ "item": CABF(type + "_slime_fern_leaf") }],
       "results": [{ "item": TC(type + "_slime_fern") }]
     })
-    event.custom(ifiniDeploying(CABF(type + "_slimy_fern_leaf", 2), TC(type + "_slime_fern"), "#c:tools/knives"))
-    event.recipes.createMilling([CABF(type + "_slimy_fern_paste")], CABF(type + "_slimy_fern_leaf"))
-    event.campfireCooking(output, CABF(type + "_slimy_fern_paste")).cookingTime(300)
+    event.custom(ifiniDeploying(CABF(type + "_slime_fern_leaf", 2), TC(type + "_slime_fern"), "#c:tools/knives"))
+    event.recipes.createMilling([CABF(type + "_slime_fern_paste")], CABF(type + "_slime_fern_leaf"))
+    event.campfireCooking(output, CABF(type + "_slime_fern_paste")).cookingTime(300)
   }
   chop("earth", MC("gunpowder"))
   chop("sky", MC("bone_meal"))
