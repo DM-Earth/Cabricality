@@ -1,6 +1,6 @@
 name = "Cabricality"
 author = "DM-Earth"
-version = "0.1.0-alpha2"
+version = "0.1-alpha2"
 pack-format = "packwiz:1.1.0"
 
 [index]
@@ -10,4 +10,4 @@ hash = "4348297426dc090c8d075e0f2b4a3df9ed3ba5e7344af54073893b1d1d0a5fac"
 
 [versions]
 minecraft = "1.18.2"
-quilt = "0.17.4"
+quilt = "0.17.6"

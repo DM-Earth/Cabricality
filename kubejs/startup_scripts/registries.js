@@ -264,8 +264,6 @@ onEvent("block.registry", event => {
 			.tagBlock("create:wrench_pickup")
 			.tagBlock("minecraft:mineable/pickaxe")
 	}
-	// TODO: test
-	// registerMachine("Extractor", "Extractor", "solid")
 	registerMachine("Andesite", "Andesite", "solid")
 	registerMachine("Brass", "Brass", "translucent")
 	registerMachine("Copper", "Copper", "cutout")
@@ -304,9 +302,9 @@ onEvent("block.registry", event => {
 })
 
 onEvent("fluid.registry", event => {
-	event.create(asIdentifier("resin"))
-		.displayName("Resin")
-		.thinTexture(0xaf7519)
+	// event.create(asIdentifier("resin"))
+	// 	.displayName("Resin")
+	// 	.thinTexture(0xaf7519)
 
 	event.create(asIdentifier("redstone"))
 		.displayName("Redstone")
