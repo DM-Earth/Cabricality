@@ -302,15 +302,6 @@ onEvent("block.registry", event => {
 })
 
 onEvent("fluid.registry", event => {
-	// event.create(asIdentifier("resin"))
-	// 	.displayName("Resin")
-	// 	.thinTexture(0xaf7519)
-
-	event.create(asIdentifier("redstone"))
-		.displayName("Redstone")
-		.thinTexture(0x850b0e)
-		.noBlock()
-
 	event.create(asIdentifier("sky_stone"))
 		.displayName("Sky Stone")
 		.thinTexture(0x404344)
