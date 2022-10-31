@@ -58,7 +58,7 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 <h3 align="center">
   English |
-  <a href="docs/readme/zh_cn.md">
+  <a href="docs/readme/zh_simplified.md">
     简体中文
   </a>
 </h3>

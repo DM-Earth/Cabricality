@@ -58,9 +58,9 @@
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
-    English
+    English |
   </a>
-  | 简体中文
+  简体中文
 </h3>
 
 ## 游戏内容
