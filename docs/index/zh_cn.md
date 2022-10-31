@@ -2,7 +2,7 @@
 
 ### Wiki索引
 
-当前语言：`简体中文（中国）`
+当前语言：`简体中文`
 
 - [介绍](https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/docs/readme/zh_cn.md)
 - [游戏指引](https://github.com/DM-Earth/Cabricality/wiki/简体中文)
