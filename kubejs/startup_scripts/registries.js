@@ -307,11 +307,6 @@ onEvent("fluid.registry", event => {
 		.thinTexture(0x404344)
 		.noBlock()
 
-	event.create(asIdentifier("waste"))
-		.displayName("Waste")
-		.thinTexture(0x123d36)
-		.noBlock()
-
 	event.create(asIdentifier("powered_water"))
 		.displayName("Powered Water")
 		.thinTexture(0x76d0f9)
