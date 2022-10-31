@@ -4362,12 +4362,12 @@ hash = "8dc6ad44a6b0bada5533763f0f7526c8b09498f04fd43adef633be0d46841e4f"
 
 [[files]]
 file = "mods/ad-astra-fabric.pw.toml"
-hash = "bb495d271be5eefce40c7897da888add9223819bf15e351f93234f90e4e51536"
+hash = "c45ea478e0dcbe4ea7172aaa58fee139f76c7d13b6a68c76a66536abadb6c790"
 metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "91f992fa8b10ca4533bbf1d9fe579e2dd31dcc7e0500493ec204f839bf23548f"
+hash = "573eb46b9d640967c2df271069e34fbddbb3c0d681f332bc06338f112cd3f1d1"
 metafile = true
 
 [[files]]
@@ -4387,7 +4387,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "a010c1bde6ac0dba1ece21416d99525b0cd20ed23625cea5d04a734b024e200e"
+hash = "ccf1f3f81ce91c460704f8371e1a737343701eb5bd64d1937b18e26d5816b522"
 metafile = true
 
 [[files]]
@@ -4530,7 +4530,7 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "6e8c74eb9814008e9461ec86b2359e3d946f7a180c040674eaee4ba0a7ace2e7"
+hash = "0619bf4b3250ce1a7c2d41360d72065b0c6282814f500f3e3ff7de6a8d72e704"
 metafile = true
 
 [[files]]
@@ -4605,7 +4605,7 @@ metafile = true
 
 [[files]]
 file = "mods/qsl.pw.toml"
-hash = "07d75ca506fbe2c5e6a2077553b1f1873a90a9ef3316ea6bb88c5ed42435fdc1"
+hash = "b8b8a60a1da87bb84af8236288d98b307f156551435bceceabbc61bb8fef0cd1"
 metafile = true
 
 [[files]]
@@ -4620,7 +4620,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "5e98198bbc6e9dcdbabfa02da042032bbe42c4c6e75488e279d7babb23296999"
+hash = "35074b10ab42dab90248cc057257edc31979b61e31a436dc06be8aed8a3d3320"
 metafile = true
 
 [[files]]
@@ -4650,7 +4650,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrestria.pw.toml"
-hash = "27ab9a18f3f6c417bcc728888bbcc5208fd66af29d7a0bfa181b58364c9c19ef"
+hash = "978d9ba60f5c54e96c7f53d3ac41818c0058f364bc521e41fbaf10d9ddfa42a7"
 metafile = true
 
 [[files]]
@@ -4660,5 +4660,5 @@ metafile = true
 
 [[files]]
 file = "mods/wthit.pw.toml"
-hash = "d51ce9092dd3eea3016cf6ebad6624cb3a6fb7a13b22571abd9f702da53d6cdd"
+hash = "c78ed024370e83d09df73b5eb722612a3f48d65005f47539fb383b9186a5532f"
 metafile = true
