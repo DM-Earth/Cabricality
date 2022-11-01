@@ -302,11 +302,6 @@ onEvent("block.registry", event => {
 })
 
 onEvent("fluid.registry", event => {
-	event.create(asIdentifier("sky_stone"))
-		.displayName("Sky Stone")
-		.thinTexture(0x404344)
-		.noBlock()
-
 	event.create(asIdentifier("powered_water"))
 		.displayName("Powered Water")
 		.thinTexture(0x76d0f9)
@@ -334,6 +329,7 @@ onEvent("fluid.registry", event => {
 			.noBlock()
 			.noBucket()
 	}
+	
 	event.create(asIdentifier("matrix"))
 		.displayName("Liquefied Computation Matrix")
 		.thinTexture(colors[0])
