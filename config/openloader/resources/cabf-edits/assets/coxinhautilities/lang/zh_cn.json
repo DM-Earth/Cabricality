@@ -1,0 +1,125 @@
+{
+  "item.coxinhautilities.coxinha"   : "鸡肉面饼",
+  "tooltip.coxinhautilities.coxinha": "一道美味的法式巴西菜肴",
+
+  "item.coxinhautilities.cursed_coxinha" : "被诅咒的鸡肉面饼",
+  "item.coxinhautilities.golden_coxinha" : "金鸡肉面饼",
+  "item.coxinhautilities.diamond_coxinha": "钻石鸡肉面饼",
+
+  "item.coxinhautilities.potato_battery"          : "马铃薯电容",
+  "item.coxinhautilities.baked_potato_battery"    : "烤马铃薯电容",
+  "item.coxinhautilities.poisonous_potato_battery": "毒马铃薯电容",
+
+  "tooltip.coxinhautilities.potato_battery.1": "能量: ",
+  "tooltip.coxinhautilities.potato_battery.2": "%d/%d",
+  "tooltip.coxinhautilities.potato_battery.3": "分配能量: ",
+
+  "tooltip.coxinhautilities.potato_battery.witty": "绝对没有得到光圈科技的授权。",
+
+  "tooltip.coxinhautilities.baked_potato_battery.witty.1": "美味！",
+  "tooltip.coxinhautilities.baked_potato_battery.witty.2": "但仍然没有得到光圈科技的授权。",
+
+  "tooltip.coxinhautilities.poisonous_potato_battery.witty.1": "这土豆有毒……",
+  "tooltip.coxinhautilities.poisonous_potato_battery.witty.2": "不过，也许可能性很小？",
+
+
+  "item.coxinhautilities.ender_orchid_seeds": "末影花籽",
+
+  "block.coxinhautilities.ender_orchid"          : "末影花",
+  "tooltip.coxinhautilities.ender_orchid.1"      : "一个在外界生长的植物，",
+  "tooltip.coxinhautilities.ender_orchid.2"      : "末影珍珠是它的花瓣。",
+  "tooltip.coxinhautilities.ender_orchid.witty.1": "不要再喂它骨粉了！",
+  "tooltip.coxinhautilities.ender_orchid.witty.2": "大自然不喜欢太过匆忙。",
+
+
+  "block.coxinhautilities.wooden_hopper"        : "木质漏斗",
+  "tooltip.coxinhautilities.wooden_hopper.1"    : "一种更便宜但只有单个槽位的漏斗替代品，",
+  "tooltip.coxinhautilities.wooden_hopper.2"    : "无法被红石控制。",
+  "tooltip.coxinhautilities.wooden_hopper.witty": "吝啬鬼会为此尖叫，我想你就是其中之一。",
+
+
+  "block.coxinhautilities.portable_tank_mk1": "便携式储罐 MK1",
+  "block.coxinhautilities.portable_tank_mk2": "便携式储罐 MK2",
+  "block.coxinhautilities.portable_tank_mk3": "便携式储罐 MK3",
+  "block.coxinhautilities.portable_tank_mk4": "便携式储罐 MK4",
+  "block.coxinhautilities.portable_tank_mk5": "便携式储罐 MK5",
+
+  "tooltip.coxinhautilities.tank.fluidVariant.1": "流体: ",
+  "tooltip.coxinhautilities.tank.fluidVariant.2": "%d",
+
+  "tooltip.coxinhautilities.tank.none": "空",
+
+  "tooltip.coxinhautilities.tank.capacity.1": "容量: ",
+  "tooltip.coxinhautilities.tank.capacity.2": "%d/%d%d",
+
+  "tooltip.coxinhautilities.tank.holdShift"   : "按住 [Shift] 以显示容量为滴（D）",
+  "tooltip.coxinhautilities.tank.releaseShift": "松开 [Shift] 以显示容量为毫桶（mB）",
+  "tooltip.coxinhautilities.tank.witty.1"     : "奇怪的是，当它们可以容纳16到256桶的液体时，",
+  "tooltip.coxinhautilities.tank.witty.2"     : "它们被认为是“便携式的”。",
+
+  "unit.coxinhautilities.droplet"     : "D",
+  "unit.coxinhautilities.milliBuckets": "mB",
+
+
+  "block.coxinhautilities.grannys_sink"        : "奶奶的水槽",
+  "tooltip.coxinhautilities.grannys_sink.1"    : "据科学家们的估计，",
+  "tooltip.coxinhautilities.grannys_sink.2"    : "地球上所有海洋的总水量",
+  "tooltip.coxinhautilities.grannys_sink.3"    : "约为1.332×10^7立方公里。",
+  "tooltip.coxinhautilities.grannys_sink.4"    : "这听起来像是很多水，",
+  "tooltip.coxinhautilities.grannys_sink.5"    : "但它仅仅只够填满奶奶的水槽里的一小部分。",
+  "tooltip.coxinhautilities.grannys_sink.witty": "……我敢打包票，这才叫真正的“无限水”。",
+
+
+  "block.coxinhautilities.fluid_trash_can"        : "液体垃圾桶",
+  "tooltip.coxinhautilities.fluid_trash_can.1"    : "清除任何输入其中的流体，",
+  "tooltip.coxinhautilities.fluid_trash_can.2"    : "可以与周围的管道交互。",
+  "tooltip.coxinhautilities.fluid_trash_can.witty": "奶奶的水槽与它不共戴天。",
+
+
+  "block.coxinhautilities.energy_trash_can"        : "能量垃圾桶",
+  "tooltip.coxinhautilities.energy_trash_can.1"    : "清除任何输入其中的能量，",
+  "tooltip.coxinhautilities.energy_trash_can.2"    : "可以与周围的电线交互。",
+  "tooltip.coxinhautilities.energy_trash_can.witty": "可持续发展的最大敌人。",
+
+  "block.coxinhautilities.drying_rack"        : "晾干架",
+  "tooltip.coxinhautilities.drying_rack"      : "可以晾干物品的架子，就是这样简单。",
+  "tooltip.coxinhautilities.drying_rack.witty": "说实话，就是如此简单，完全没有过度复杂的机械原理^w^",
+
+  "block.coxinhautilities.cardboard_box"        : "纸板箱",
+  "tooltip.coxinhautilities.cardboard_box.1"    : "一种能够存储和移动存储方块的特殊盒子，",
+  "tooltip.coxinhautilities.cardboard_box.2"    : "按住 [Shift] 键并单击以取消或打包方块。",
+  "tooltip.coxinhautilities.cardboard_box.3"    : "",
+  "tooltip.coxinhautilities.cardboard_box.witty": "“特殊盒子”? 这实际上只是硬纸板……",
+
+  "tooltip.coxinhautilities.empty": "空",
+
+  "block.coxinhautilities.aquatic_torch"        : "水下火把",
+  "tooltip.coxinhautilities.aquatic_torch"      : "一个特殊的火把照亮在水下照亮你所在的地方。",
+  "tooltip.coxinhautilities.aquatic_torch.witty": "……再给发光鱿鱼一次机会。",
+
+  "block.coxinhautilities.copper_ladder"          : "铜梯子",
+  "block.coxinhautilities.exposed_copper_ladder"  : "斑驳的铜梯子",
+  "block.coxinhautilities.weathered_copper_ladder": "锈蚀的铜梯子",
+  "block.coxinhautilities.oxidized_copper_ladder" : "氧化的铜梯子",
+
+  "block.coxinhautilities.waxed_copper_ladder"          : "涂蜡的铜梯子",
+  "block.coxinhautilities.waxed_exposed_copper_ladder"  : "涂蜡的斑驳的铜梯子",
+  "block.coxinhautilities.waxed_weathered_copper_ladder": "涂蜡的锈蚀的铜梯子",
+  "block.coxinhautilities.waxed_oxidized_copper_ladder" : "涂蜡的氧化的铜梯子",
+
+  "tooltip.coxinhautilities.copper_ladder.1": "爬得更快的梯子，",
+  "tooltip.coxinhautilities.copper_ladder.2": "氧化越严重爬得越慢。",
+
+  "tooltip.coxinhautilities.copper_ladder.witty.1": "嘘……你知道这些梯子正像1.5 Beta",
+  "tooltip.coxinhautilities.copper_ladder.witty.2": "之前一样毫无氧化作用吗？试试看！",
+
+
+
+  "block.coxinhautilities.lava_sponge"        : "熔岩绵",
+  "tooltip.coxinhautilities.lava_sponge.witty": "你不需要听我解释，对吗？",
+
+  "block.coxinhautilities.wet_lava_sponge": "湿熔岩绵",
+
+  "config.coxinhautilities.coxinhautilities": "鸡肉面饼实用设备——配置与自定义",
+  "itemGroup.coxinhautilities.item_group"   : "鸡肉面饼实用设备"
+}

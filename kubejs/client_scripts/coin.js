@@ -1,8 +1,8 @@
-onEvent('item.right_click', event => {
+onEvent("item.right_click", event => {
 	let player = event.getPlayer()
 	let messagePrefix = Text.translate(`event.cabricality.coin_flip`, player.getName(), event.getItem().getName()).getString()
 
-	if (event.getItem() == 'cabricality:silver_coin'
+	if (event.getItem() == "cabricality:silver_coin"
 	&& randomEventCooling == 0) {
 		randomEventCooling = coinCoolingConst
 
@@ -19,7 +19,7 @@ onEvent('item.right_click', event => {
 		randomEventMessage = messagePrefix + messagePostfix
 	}
 
-	if (event.getItem() == 'cabricality:gold_coin'
+	if (event.getItem() == "cabricality:gold_coin"
 	&& randomEventCooling == 0) {
 		randomEventCooling = coinCoolingConst
 

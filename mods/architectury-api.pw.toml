@@ -1,13 +1,13 @@
 name = "Architectury API"
-filename = "architectury-4.9.84-fabric.jar"
+filename = "architectury-4.10.86-fabric.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/lhGA9TYQ/versions/foPbHoIn/architectury-4.9.84-fabric.jar"
+url = "https://cdn.modrinth.com/data/lhGA9TYQ/versions/rJ54rLqX/architectury-4.10.86-fabric.jar"
 hash-format = "sha1"
-hash = "ee6d6ac3e96e0894537d34ec9ed4b80f1a59e95e"
+hash = "f930db06909fbaee3c73e03c15eebc18975ce67a"
 
 [update]
 [update.modrinth]
 mod-id = "lhGA9TYQ"
-version = "foPbHoIn"
+version = "rJ54rLqX"

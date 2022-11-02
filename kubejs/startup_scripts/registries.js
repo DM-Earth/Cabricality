@@ -264,7 +264,6 @@ onEvent("block.registry", event => {
 			.tagBlock("create:wrench_pickup")
 			.tagBlock("minecraft:mineable/pickaxe")
 	}
-	registerMachine("Extractor", "Extractor", "solid")
 	registerMachine("Andesite", "Andesite", "solid")
 	registerMachine("Brass", "Brass", "translucent")
 	registerMachine("Copper", "Copper", "cutout")
@@ -303,25 +302,6 @@ onEvent("block.registry", event => {
 })
 
 onEvent("fluid.registry", event => {
-	event.create(asIdentifier("resin"))
-		.displayName("Resin")
-		.thinTexture(0xaf7519)
-
-	event.create(asIdentifier("redstone"))
-		.displayName("Redstone")
-		.thinTexture(0x850b0e)
-		.noBlock()
-
-	event.create(asIdentifier("sky_stone"))
-		.displayName("Sky Stone")
-		.thinTexture(0x404344)
-		.noBlock()
-
-	event.create(asIdentifier("waste"))
-		.displayName("Waste")
-		.thinTexture(0x123d36)
-		.noBlock()
-
 	event.create(asIdentifier("powered_water"))
 		.displayName("Powered Water")
 		.thinTexture(0x76d0f9)
@@ -349,6 +329,7 @@ onEvent("fluid.registry", event => {
 			.noBlock()
 			.noBucket()
 	}
+	
 	event.create(asIdentifier("matrix"))
 		.displayName("Liquefied Computation Matrix")
 		.thinTexture(colors[0])

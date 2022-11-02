@@ -68,7 +68,7 @@ onEvent("recipes", event => {
 		let engine = AR(tier[1] + "_engine")
 		let tank = AR(tier[1] + "_tank")
 		let block = AR(tier[1] + "_block")
-		event.recipes.createMechanicalCrafting(Item.of('ad_astra:tier_' + tier[0] + '_rocket', '{amount:243000L,fluid:{fluid:"ad_astra:fuel"}}'), [
+		event.recipes.createMechanicalCrafting(Item.of("ad_astra:tier_" + tier[0] + "_rocket", '{amount:243000L,fluid:{fluid:"ad_astra:fuel"}}'), [
 			"   R   ",
 			"  SBS  ",
 			"  SBS  ",

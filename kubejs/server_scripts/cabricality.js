@@ -21,7 +21,7 @@ let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 let ML = (id, x) => MOD("malum", id, x)
 
-const Minecraft = java('net.minecraft.client.Minecraft')
+const Minecraft = java("net.minecraft.client.Minecraft")
 const coinCoolingConst = 41
 const diceCoolingConst = 47
 

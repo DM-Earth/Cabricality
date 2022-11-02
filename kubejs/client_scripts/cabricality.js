@@ -19,12 +19,12 @@ let BC = (id, x) => MOD("bitsandchisels", id, x)
 let TC = (id, x) => MOD("tconstruct", id, x)
 let CC = (id, x) => MOD("computercraft", id, x)
 
-const Minecraft = java('net.minecraft.client.Minecraft')
+const Minecraft = java("net.minecraft.client.Minecraft")
 const coinCoolingConst = 41
 const diceCoolingConst = 47
 
 let randomEventCooling = 0
-let randomEventMessage = ''
+let randomEventMessage = ""
 
 function itemActivation(item) {
 	Minecraft.getInstance().gameRenderer().displayItemActivation(item)
@@ -38,7 +38,7 @@ function asIdentifier(path, namespace) {
 	}
 }
 
-onEvent('client.tick', () => {
+onEvent("client.tick", () => {
 	if (randomEventCooling == diceCoolingConst - 12) {
 		Minecraft.getInstance().gui.getChat().addMessage(randomEventMessage)
 	}
