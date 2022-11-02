@@ -302,48 +302,19 @@ onEvent("block.registry", event => {
 })
 
 onEvent("fluid.registry", event => {
-	event.create(asIdentifier("powered_water"))
-		.displayName("Powered Water")
-		.thinTexture(0x76d0f9)
+	// event.create(asIdentifier("powered_water"))
+	// 	.displayName("Powered Water")
+	// 	.thinTexture(0x76d0f9)
 
-	event.create(asIdentifier("coke"))
-		.displayName("Coke")
-		.thinTexture(0x323232)
-		.noBlock()
+	// event.create(asIdentifier("molten_desh"))
+	// 	.displayName("Molten Desh")
+	// 	.thickTexture(0xc88448)
 
-	event.create(asIdentifier("fine_sand"))
-		.displayName("Fine Sand")
-		.thickTexture(0xded6a4)
-		.noBlock()
+	// event.create(asIdentifier("molten_ostrum"))
+	// 	.displayName("Molten Ostrum")
+	// 	.thickTexture(0x6c4c59)
 
-	let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
-	event.create(asIdentifier("raw_logic"))
-		.displayName("Liquefied Logic (Unprocessed)")
-		.thinTexture(0xE7FFCB)
-		.noBlock()
-
-	for (let i = 0; i < 10; i++) {
-		event.create(asIdentifier("number_" + i))
-			.displayName("Liquefied Computation (" + i + ")")
-			.thinTexture(colors[i])
-			.noBlock()
-			.noBucket()
-	}
-	
-	event.create(asIdentifier("matrix"))
-		.displayName("Liquefied Computation Matrix")
-		.thinTexture(colors[0])
-		.noBlock()
-
-	event.create(asIdentifier("molten_desh"))
-		.displayName("Molten Desh")
-		.thickTexture(0xc88448)
-
-	event.create(asIdentifier("molten_ostrum"))
-		.displayName("Molten Ostrum")
-		.thickTexture(0x6c4c59)
-
-	event.create(asIdentifier("molten_calorite"))
-		.displayName("Molten Calorite")
-		.thickTexture(0x931d3b)
+	// event.create(asIdentifier("molten_calorite"))
+	// 	.displayName("Molten Calorite")
+	// 	.thickTexture(0x931d3b)
 })
