@@ -300,21 +300,3 @@ onEvent("block.registry", event => {
 		.displayName("§5Dice")
 		.tagBlock("minecraft:mineable/pickaxe")
 })
-
-onEvent("fluid.registry", event => {
-	// event.create(asIdentifier("powered_water"))
-	// 	.displayName("Powered Water")
-	// 	.thinTexture(0x76d0f9)
-
-	// event.create(asIdentifier("molten_desh"))
-	// 	.displayName("Molten Desh")
-	// 	.thickTexture(0xc88448)
-
-	// event.create(asIdentifier("molten_ostrum"))
-	// 	.displayName("Molten Ostrum")
-	// 	.thickTexture(0x6c4c59)
-
-	// event.create(asIdentifier("molten_calorite"))
-	// 	.displayName("Molten Calorite")
-	// 	.thickTexture(0x931d3b)
-})
