@@ -516,7 +516,7 @@
 	"overview.cabricality.bonus_1a.end.subtitle": "&4挑战",
 	"overview.cabricality.bonus_1a.end.content" : "&4铜机器&r将会满足你对流体处理的所有需求。无论是释放还是抽取、交互、过滤...你现在可以向你的工厂中引入全自动流体处理系统了！\n&4气密构件&7仅会在&4第一章支线：能源大亨&7中使用。",
 	
-	"overview.cabricality.bonus_1a.end.task.complete.title": "&4Complete Bonus 1A",
+	"overview.cabricality.bonus_1a.end.task.complete.title": "&4完成第一章 &7支线",
 	
 	"overview.cabricality.chapter_2.start.title"   : "&6&l初入门道",
 	"overview.cabricality.chapter_2.start.subtitle": "&6第二章",
@@ -1275,7 +1275,7 @@
 
 	"contraption.cabricality.49.title"   : "电蚀工艺",
 	"contraption.cabricality.49.subtitle": "步骤 49",
-	"contraption.cabricality.49.content" : "站在&5供养仪&r上，慢慢装满你的&5氧气罐。&r\n\n而通过&5氧气制造仪，&r你可以将水中的氧元素电解成为氧气以供呼吸和储存。",
+	"contraption.cabricality.49.content" : "站在&5供氧仪&r上，慢慢装满你的&5氧气罐。&r\n\n而通过&5氧气制造仪，&r你可以将水电解成为氧气以供呼吸和储存。",
 
 	"contraption.cabricality.50.title"   : "&d千年之隼",
 	"contraption.cabricality.50.subtitle": "步骤 &d50&r",
@@ -1378,5 +1378,5 @@
 	
 	"thanks.cabricality.staff.title"   : "&c感&a谢&b游&f玩！",
 	"thanks.cabricality.staff.subtitle": "制作人员",
-	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/程序&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&r\n&7贡献者&r"
+	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/程序&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox&\nMangoJellyPudding\n&7贡献者&r"
 }
