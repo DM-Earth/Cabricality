@@ -59,7 +59,7 @@ function chaosT(subs, seed, event) {
 }
 function process_laser(event) {
 	let seedL = Math.abs(event.getEntity().getServer().getOverworld().getSeed())
-	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == asIdentifier("powered_water") && event.block.up.getBlockState().toString().includes("[level=0]")) {
+	if (event.block.id == "kibe:fluid_hopper" && event.block.down.id == "indrev:laser_emitter_mk4" && event.block.up.id == asIdentifier("powered_water")) {
 		let block = event.block
 		let x = block.x
 		let y = block.y

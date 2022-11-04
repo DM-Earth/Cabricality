@@ -1,13 +1,13 @@
 name = "Hephaestus"
-filename = "Hephaestus-1.18.2-3.5.2.150.jar"
+filename = "Hephaestus-1.18.2-3.5.2.155.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/sdSn3wvy/versions/AHJxf7BQ/Hephaestus-1.18.2-3.5.2.150.jar"
+url = "https://cdn.modrinth.com/data/sdSn3wvy/versions/hEFa9Ofs/Hephaestus-1.18.2-3.5.2.155.jar"
 hash-format = "sha1"
-hash = "a26944b9b78e95981de3a9aee9dfa5d045e1e654"
+hash = "d2bf39d71f643d4f12d6a647d9327927b8e3ff49"
 
 [update]
 [update.modrinth]
 mod-id = "sdSn3wvy"
-version = "AHJxf7BQ"
+version = "hEFa9Ofs"
