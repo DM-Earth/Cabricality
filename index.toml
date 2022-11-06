@@ -4866,7 +4866,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "3c45e6bd278d63cee2deee3542ee3948bd26a66ec2a027c7cdbc75c055b5655d"
+hash = "30740fabf5400953823fe82fb6086196a60580ba31eccb9210dead911dc39865"
 metafile = true
 
 [[files]]
@@ -4876,7 +4876,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "24345cdcb88f5d16cfa381619435effd69cf2ef8d49dfe2d5133895fc65b88b8"
+hash = "a5602e43957e76d1012def121e8ac693174594c93868228de0d7f6f82f86a188"
 metafile = true
 
 [[files]]
