@@ -2,309 +2,311 @@ let S = (x) => CABF('silver_coin', x)
 let G = (x) => CABF('gold_coin', x)
 
 onEvent("item.registry", event => {
-            global.trades = []
-            global.professions = []
-            global.transactions = []
+    global.trades = []
+    global.professions = []
+    global.transactions = []
 
-            let profession = (name, c1, c2, transaction) => {
-                let id = name.toLowerCase().replace("'", "").split(" ").join("_")
-                global.professions.push(id)
-                global.transactions[id] = [transaction, asIdentifier("profession_card_" + id)]
+    let profession = (name, c1, c2, transaction) => {
+        let id = name.toLowerCase().replace("'", "").split(" ").join("_")
+        global.professions.push(id)
+        global.transactions[id] = [transaction, asIdentifier("profession_card_" + id)]
+        /*
+        event.create(asIdentifier("profession_card_" + id))
+            .color(1, c1)
+            .color(2, c2)
+            .parentModel(modpackId + ":item/profession_card")
+            .texture(modpackId + ":item/trading/profession_card_0")
+            .displayName(Text.translate(`item.cabricality.profession_card`).getString() + " §f- " + Text.translate(`profession.${modpackId}.${id}`).getString())
+            .tooltip("&b" + Text.translate(`profession.${modpackId}.${id}`).getString())
+            .unstackable()
+        */
+    }
 
-                event.create(asIdentifier("profession_card_" + id))
-                    .color(1, c1)
-                    .color(2, c2)
-                    .parentModel(modpackId + ":item/profession_card")
-                    .texture(modpackId + ":item/trading/profession_card_0")
-                    .displayName(Text.translate(`item.cabricality.profession_card`).getString() + " §f- " + Text.translate(`profession.${modpackId}.${id}`).getString())
-                    .tooltip("&b" + Text.translate(`profession.${modpackId}.${id}`).getString())
-                    .unstackable()
+    let trade = (name, c1, c2, transactions, custom) => {
+        let split = name.toLowerCase().split('x')
+        let cid = ""
+        let amount = ""
+        split.forEach((e, idx) => {
+            if (idx == 0) amount = e;
+            else {
+                if (idx > 1) cid = cid + "x";
+                cid = cid + e.replace("'", "").replace("#", "").replace(' ', '');
             }
+        })
+        let id = cid.replace(':', '_');
+        if (custom == "shipments") {
+            global.trades.push(id)
+            global.transactions[id] = [transactions, asIdentifier(`trade_card_${id}`)]
+            /*
+            event.create(asIdentifier(`trade_card_${id}`))
+                .color(1, c1)
+                .color(2, c2)
+                .parentModel(modpackId + ":item/trade_card")
+                .texture(modpackId + ":item/trading/trade_card_0")
+                .displayName(Text.translate(`item.cabricality.trade_card`).getString() + " §f- " + Text.translate(Item.of(cid).name.toString().split('\'')[1]).getString())
+                .tooltip(`§f${Text.translate(Item.of(cid).name.toString().split('\'')[1]).getString()}`)
+                .tooltip(`§8${cid}`)
+                .unstackable()
 
-            let trade = (name, c1, c2, transactions, custom) => {
-                let split = name.toLowerCase().split('x')
-                let cid = ""
-                let amount = ""
-                split.forEach((e, idx) => {
-                    if (idx == 0) amount = e;
-                    else {
-                        if (idx > 1) cid = cid + "x";
-                        cid = cid + e.replace("'", "").replace("#", "").replace(' ', '');
-                    }
-                })
-                let id = cid.replace(':', '_');
-                if (custom == "shipments") {
-                    global.trades.push(id)
-                    global.transactions[id] = [transactions, asIdentifier(`trade_card_${id}`)]
+            */
 
-                    event.create(asIdentifier(`trade_card_${id}`))
-                        .color(1, c1)
-                        .color(2, c2)
-                        .parentModel(modpackId + ":item/trade_card")
-                        .texture(modpackId + ":item/trading/trade_card_0")
-                        .displayName(Text.translate(`item.cabricality.trade_card`).getString() + " §f- " + Text.translate(Item.of(cid).name.toString().split('\'')[1]).getString())
-                        .tooltip(`§f${Text.translate(Item.of(cid).name.toString().split('\'')[1]).getString()}`)
-                        .tooltip(`§8${cid}`)
-                        .unstackable()
+        } else {
+            global.trades.push(id)
+            global.transactions[id] = [transactions, asIdentifier(`trade_card_${id}`)]
 
+            /*
+            event.create(asIdentifier(`trade_card_${id}`))
+                .color(0, c2)
+                .color(1, c1)
+                .color(2, c2)
+                .parentModel(modpackId + ":item/trade_card")
+                .texture(modpackId + ":item/trading/trade_card_0")
+                .displayName(Text.translate(`item.cabricality.trade_card`).getString() + " §f- " + Text.translate(`trading.cabricality.exchange_currencies`).getString())
+                .tooltip(Text.translate(`trading.cabricality.exchange_currencies`).getString())
+                .unstackable()
+            */
+        }
+    }
 
+    profession("Farming", 0xFFCC29, 0x81B214, [
+        { in: FD("carrot_crate", 1), out: S(1) },
+        { in: FD("beetroot_crate", 1), out: S(1) },
+        { in: FD("cabbage_crate", 1), out: S(1) },
+        { in: FD("tomato_crate", 1), out: S(1) },
+        { in: FD("onion_crate", 1), out: S(1) },
+        { in: FD("rice_bag", 1), out: S(1) },
+        { in: FD("canvas", 32), out: S(1) },
+        { in: MC("sweet_berries", 8), out: S(1) },
+        { in: MC("cocoa_beans", 16), out: S(1) },
+        { in: MC("honey_bottle", 8), out: S(1) },
+        { in: MC("honeycomb", 4), out: S(1) },
+        { in: MC("dandelion", 16), out: S(1) },
+        { in: MC("poppy", 16), out: S(1) },
+        { in: MC("oxeye_daisy", 16), out: S(1) },
+        { in: MC("bread", 8), out: S(1) },
+        { in: MC("brown_mushroom", 8), out: S(1) },
+        { in: MC("red_mushroom", 8), out: S(1) },
+        { in: MC("kelp", 64), out: S(1) },
+        { in: MC("pumpkin", 9), out: S(1) },
+        { in: MC("wool", 16), out: S(1) },
+        { in: MC("melon", 3), out: S(1) }
+    ])
 
-                } else {
-                    global.trades.push(id)
-                    global.transactions[id] = [transactions, asIdentifier(`trade_card_${id}`)]
+    profession("Carpentry", 0xD0AF84, 0x966C3B, [
+        { in: MC("oak_log", 64), out: S(1) },
+        { in: MC("spruce_log", 64), out: S(1) },
+        { in: MC("jungle_log", 64), out: S(1) },
+        { in: MC("dark_oak_log", 64), out: S(1) },
+        { in: MC("acacia_log", 64), out: S(1) },
+        { in: MC("birch_log", 64), out: S(1) },
+        { in: MC("crimson_stem", 64), out: S(1) },
+        { in: MC("warped_stem", 64), out: S(1) },
+        { in: PMD("palm_log", 64), out: S(1) },
+        { in: PMD("cherry_oak_log", 64), out: S(1) },
+        { in: PMD("dark_amaranth_stem", 64), out: S(1) }
+    ])
 
-                    event.create(asIdentifier(`trade_card_${id}`))
-                        .color(0, c2)
-                        .color(1, c1)
-                        .color(2, c2)
-                        .parentModel(modpackId + ":item/trade_card")
-                        .texture(modpackId + ":item/trading/trade_card_0")
-                        .displayName(Text.translate(`item.cabricality.trade_card`).getString() + " §f- " + Text.translate(`trading.cabricality.exchange_currencies`).getString())
-                        .tooltip(Text.translate(`trading.cabricality.exchange_currencies`).getString())
-                        .unstackable()
+    profession("Mining", 0x1C1124, 0x88FFF7, [
+        { in: CR("crushed_iron_ore", 16), out: S(12) },
+        { in: CR("crushed_copper_ore", 16), out: S(14) },
+        { in: CR("crushed_zinc_ore", 16), out: S(14) },
+        { in: CR("crushed_gold_ore", 16), out: S(16) },
+        { in: CR("crushed_nickel_ore", 16), out: S(14) },
+        { in: CR("crushed_lead_ore", 16), out: S(14) },
+        { in: CR("crushed_tin_ore", 16), out: S(12) },
+        { in: KJ("crushed_calorite_ore", 16), out: S(16) },
+        { in: KJ("crushed_ostrum_ore", 16), out: S(16) },
+        { in: KJ("crushed_desh_ore", 16), out: S(16) },
+        { in: KJ("crushed_cobalt_ore", 16), out: S(16) },
+        { in: MC("andesite", 64), out: S(1) },
+        { in: MC("granite", 64), out: S(1) },
+        { in: MC("diorite", 64), out: S(1) },
+        { in: MC("tuff", 64), out: S(2) },
+        { in: MC("sandstone", 64), out: S(1) },
+        { in: CR("limestone", 64), out: S(1) },
+        { in: PMD("blunite", 64), out: S(1) },
+        { in: PMD("carbonite", 64), out: S(1) },
+        { in: CR("scoria", 64), out: S(1) },
+        { in: CR("veridium", 16), out: S(1) },
+        { in: CR("ochrum", 16), out: S(1) },
+        { in: CR("crimsite", 16), out: S(1) },
+        { in: CR("asurine", 16), out: S(1) },
+        { in: IV("sulfur_crystal", 16), out: S(6) },
+        { in: MC("lapis_lazuli", 16), out: S(6) },
+        { in: MC("diamond", 1), out: S(14) },
+        { in: MC("coal", 16), out: S(2) },
+        { in: MC("redstone", 48), out: S(2) }
+    ])
 
+    profession("Masonry", 0x5E6F64, 0xBA7967, [
+        { in: AP("basalt_tiles", 64), out: S(6) },
+        { in: AP("sunmetal_block", 64), out: S(8) },
+        { in: AP("osseous_bricks", 64), out: S(6) },
+        { in: AP("packed_ice_pillar", 64), out: S(8) },
+        { in: AP("flint_tiles", 64), out: S(4) },
+        { in: AP("abyssaline", 64), out: S(12) },
+        { in: AP("gilded_sandstone", 64), out: S(10) },
+        { in: MC("bricks", 64), out: S(6) },
+        { in: AP("olivestone_bricks", 64), out: S(4) },
+        { in: MC("quartz_bricks", 64), out: S(18) },
+        { in: AP("algal_bricks", 64), out: S(6) },
+        { in: CR("ornate_iron_window", 64), out: S(10) },
+        { in: MC("mossy_cobblestone", 64), out: S(6) },
+        { in: TC("seared_bricks", 64), out: S(8) },
+        { in: TC("tconstruct", "scorched_bricks", 64), out: S(12) },
+        { in: C("glazed_terracotta", 64), out: S(6) }
+    ])
+
+    profession("Hunting", 0x393E46, 0xCF0000, [
+        { in: MC("phantom_membrane", 1), out: S(8) },
+        { in: MC("rabbit_foot", 1), out: S(8) },
+        { in: MC("nether_star", 1), out: S(64) },
+        { in: MC("dragon_breath", 1), out: S(1) },
+        { in: MC("ghast_tear", 1), out: S(10) },
+        { in: MC("dragon_egg", 1), out: S(128) }
+    ])
+
+    profession("Cooking", 0xD8B384, 0xF7DAD9, [
+        { in: CR("bar_of_chocolate", 16), out: S(4) },
+        { in: CR("honeyed_apple", 16), out: S(4) },
+        { in: CR("builders_tea", 16), out: S(4) },
+        { in: FD("hot_cocoa", 16), out: S(5) },
+        { in: FD("tomato_sauce", 8), out: S(3) },
+        { in: FD("apple_pie_slice", 16), out: S(3) },
+        { in: FD("chocolate_pie_slice", 16), out: S(4) },
+        { in: FD("sweet_berry_cheesecake_slice", 17), out: S(3) },
+        { in: FD("cake_slice", 14), out: S(3) },
+        { in: FD("sweet_berry_cookie", 64), out: S(2) },
+        { in: FD("honey_cookie", 64), out: S(2) },
+        { in: MC("cookie", 64), out: S(2) },
+        { in: FD("fruit_salad", 16), out: S(7) },
+        { in: FD("mixed_salad", 16), out: S(9) },
+        { in: FD("nether_salad", 16), out: S(5) },
+        { in: FD("barbecue_stick", 16), out: S(5) },
+        { in: FD("egg_sandwich", 16), out: S(5) },
+        { in: FD("chicken_sandwich", 16), out: S(9) },
+        { in: FD("bacon_sandwich", 16), out: S(9) },
+        { in: FD("hamburger", 16), out: S(11) },
+        { in: FD("mutton_wrap", 16), out: S(10) },
+        { in: FD("dumplings", 16), out: S(7) },
+        { in: FD("stuffed_potato", 16), out: S(6) },
+        { in: FD("cabbage_rolls", 16), out: S(5) },
+        { in: FD("beef_stew", 16), out: S(8) },
+        { in: FD("chicken_soup", 16), out: S(9) },
+        { in: MC("rabbit_stew", 16), out: S(10) },
+        { in: MC("beetroot_soup", 16), out: S(7) },
+        { in: MC("pumpkin_pie", 16), out: S(6) },
+        { in: FD("vegetable_soup", 16), out: S(9) },
+        { in: FD("fish_stew", 16), out: S(9) },
+        { in: FD("fried_rice", 16), out: S(8) },
+        { in: FD("pumpkin_soup", 16), out: S(12) },
+        { in: FD("baked_cod_stew", 16), out: S(9) },
+        { in: FD("noodle_soup", 16), out: S(9) },
+        { in: FD("pasta_with_meatballs", 16), out: S(10) },
+        { in: FD("pasta_with_mutton_chop", 16), out: S(10) },
+        { in: FD("roasted_mutton_chops", 16), out: S(9) },
+        { in: FD("vegetable_noodles", 16), out: S(10) },
+        { in: FD("steak_and_potatoes", 16), out: S(9) },
+        { in: FD("ratatouille", 16), out: S(9) },
+        { in: FD("squid_ink_pasta", 16), out: S(11) },
+        { in: FD("roast_chicken", 16), out: S(7) },
+        { in: FD("stuffed_pumpkin", 16), out: S(9) },
+        { in: FD("honey_glazed_ham", 16), out: S(7) },
+        { in: FD("shepherds_pie", 16), out: S(7) },
+        { in: CR("sweet_roll", 16), out: S(4) }
+    ])
+
+    profession("fishing", 0x9DDFD3, 0xDBF6E9, [
+        { in: MC("cod", 8), out: S(1) },
+        { in: MC("salmon", 8), out: S(1) },
+        { in: MC("pufferfish", 8), out: S(1) },
+        { in: MC("tropical_fish", 8), out: S(1) }
+    ])
+
+    profession("smithing", 0xFFC93C, 0xFF7A00, [
+        { in: MC("iron_boots", 1), out: S(2) },
+        { in: MC("iron_leggings", 1), out: S(4) },
+        { in: MC("iron_chestplate", 1), out: S(4) },
+        { in: MC("iron_helmet", 1), out: S(2) },
+        { in: MC("golden_boots", 1), out: S(4) },
+        { in: MC("golden_leggings", 1), out: S(7) },
+        { in: MC("golden_chestplate", 1), out: S(8) },
+        { in: MC("golden_helmet", 1), out: S(5) },
+        { in: MC("golden_apple", 1), out: S(10) },
+        { in: MC("arrow", 32), out: S(3) },
+        { in: MC("iron_sword", 1), out: S(1) },
+        { in: MC("golden_sword", 1), out: S(2) }
+    ])
+
+    trade("1x cabricality:exchange_currencies", 0xEEE9E9, 0xFFD700, [
+        { in: G(1), out: S(64) },
+        { in: S(64), out: G(1) }
+    ], "exchange")
+
+    let DATAGEN_QUESTS = false
+
+    let data = []
+    let group_max_width = []
+    let current_group_max_width = 0
+    let simulate = DATAGEN_QUESTS
+    let entry_cost = 10
+
+    let row = 0
+    let col = 0
+    let group = 0
+
+    let next_group = () => {
+        group++
+        if (simulate)
+            group_max_width.push(current_group_max_width)
+        current_group_max_width = 0
+        col = 0
+        row++
+    }
+
+    let simple = (name, item, coin, c1, c2) => {
+        let jump1 = true;
+        let jump2 = true;
+        let split = item.split('x')
+        let id = ""
+        let amount = ""
+        split.forEach((e, idx) => {
+            if (idx == 0) amount = e;
+            else {
+                if (idx > 1) id = id + "x";
+                id = id + e.replace(' ', '').replace("#", "");
+            }
+        })
+        let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").replace(" ", "_"))
+        if (!simulate)
+            trade(item, c1, c2, [
+                { in: item, out: coin >= 64 ? G(Math.floor(coin / 64)) : S(coin) }
+            ], "shipments")
+        if (!DATAGEN_QUESTS)
+            jump1 = false;
+        if (jump1) {
+            current_group_max_width = Math.min(8, current_group_max_width + 1)
+            if (simulate)
+                jump2 = false;
+            if (jump2) {
+                if (col > 7) {
+                    col = 0
+                    row++
                 }
-            }
 
-            profession("Farming", 0xFFCC29, 0x81B214, [
-                { in: FD("carrot_crate", 1), out: S(1) },
-                { in: FD("beetroot_crate", 1), out: S(1) },
-                { in: FD("cabbage_crate", 1), out: S(1) },
-                { in: FD("tomato_crate", 1), out: S(1) },
-                { in: FD("onion_crate", 1), out: S(1) },
-                { in: FD("rice_bag", 1), out: S(1) },
-                { in: FD("canvas", 32), out: S(1) },
-                { in: MC("sweet_berries", 8), out: S(1) },
-                { in: MC("cocoa_beans", 16), out: S(1) },
-                { in: MC("honey_bottle", 8), out: S(1) },
-                { in: MC("honeycomb", 4), out: S(1) },
-                { in: MC("dandelion", 16), out: S(1) },
-                { in: MC("poppy", 16), out: S(1) },
-                { in: MC("oxeye_daisy", 16), out: S(1) },
-                { in: MC("bread", 8), out: S(1) },
-                { in: MC("brown_mushroom", 8), out: S(1) },
-                { in: MC("red_mushroom", 8), out: S(1) },
-                { in: MC("kelp", 64), out: S(1) },
-                { in: MC("pumpkin", 9), out: S(1) },
-                { in: MC("wool", 16), out: S(1) },
-                { in: MC("melon", 3), out: S(1) }
-            ])
+                let x = col - (group_max_width[group] - 1) / 2
+                let y = row + group / 2
+                col++
 
-            profession("Carpentry", 0xD0AF84, 0x966C3B, [
-                { in: MC("oak_log", 64), out: S(1) },
-                { in: MC("spruce_log", 64), out: S(1) },
-                { in: MC("jungle_log", 64), out: S(1) },
-                { in: MC("dark_oak_log", 64), out: S(1) },
-                { in: MC("acacia_log", 64), out: S(1) },
-                { in: MC("birch_log", 64), out: S(1) },
-                { in: MC("crimson_stem", 64), out: S(1) },
-                { in: MC("warped_stem", 64), out: S(1) },
-                { in: PMD("palm_log", 64), out: S(1) },
-                { in: PMD("cherry_oak_log", 64), out: S(1) },
-                { in: PMD("dark_amaranth_stem", 64), out: S(1) }
-            ])
-
-            profession("Mining", 0x1C1124, 0x88FFF7, [
-                { in: CR("crushed_iron_ore", 16), out: S(12) },
-                { in: CR("crushed_copper_ore", 16), out: S(14) },
-                { in: CR("crushed_zinc_ore", 16), out: S(14) },
-                { in: CR("crushed_gold_ore", 16), out: S(16) },
-                { in: CR("crushed_nickel_ore", 16), out: S(14) },
-                { in: CR("crushed_lead_ore", 16), out: S(14) },
-                { in: CR("crushed_tin_ore", 16), out: S(12) },
-                { in: KJ("crushed_calorite_ore", 16), out: S(16) },
-                { in: KJ("crushed_ostrum_ore", 16), out: S(16) },
-                { in: KJ("crushed_desh_ore", 16), out: S(16) },
-                { in: KJ("crushed_cobalt_ore", 16), out: S(16) },
-                { in: MC("andesite", 64), out: S(1) },
-                { in: MC("granite", 64), out: S(1) },
-                { in: MC("diorite", 64), out: S(1) },
-                { in: MC("tuff", 64), out: S(2) },
-                { in: MC("sandstone", 64), out: S(1) },
-                { in: CR("limestone", 64), out: S(1) },
-                { in: PMD("blunite", 64), out: S(1) },
-                { in: PMD("carbonite", 64), out: S(1) },
-                { in: CR("scoria", 64), out: S(1) },
-                { in: CR("veridium", 16), out: S(1) },
-                { in: CR("ochrum", 16), out: S(1) },
-                { in: CR("crimsite", 16), out: S(1) },
-                { in: CR("asurine", 16), out: S(1) },
-                { in: IV("sulfur_crystal", 16), out: S(6) },
-                { in: MC("lapis_lazuli", 16), out: S(6) },
-                { in: MC("diamond", 1), out: S(14) },
-                { in: MC("coal", 16), out: S(2) },
-                { in: MC("redstone", 48), out: S(2) }
-            ])
-
-            profession("Masonry", 0x5E6F64, 0xBA7967, [
-                { in: AP("basalt_tiles", 64), out: S(6) },
-                { in: AP("sunmetal_block", 64), out: S(8) },
-                { in: AP("osseous_bricks", 64), out: S(6) },
-                { in: AP("packed_ice_pillar", 64), out: S(8) },
-                { in: AP("flint_tiles", 64), out: S(4) },
-                { in: AP("abyssaline", 64), out: S(12) },
-                { in: AP("gilded_sandstone", 64), out: S(10) },
-                { in: MC("bricks", 64), out: S(6) },
-                { in: AP("olivestone_bricks", 64), out: S(4) },
-                { in: MC("quartz_bricks", 64), out: S(18) },
-                { in: AP("algal_bricks", 64), out: S(6) },
-                { in: CR("ornate_iron_window", 64), out: S(10) },
-                { in: MC("mossy_cobblestone", 64), out: S(6) },
-                { in: TC("seared_bricks", 64), out: S(8) },
-                { in: TC("tconstruct", "scorched_bricks", 64), out: S(12) },
-                { in: C("glazed_terracotta", 64), out: S(6) }
-            ])
-
-            profession("Hunting", 0x393E46, 0xCF0000, [
-                { in: MC("phantom_membrane", 1), out: S(8) },
-                { in: MC("rabbit_foot", 1), out: S(8) },
-                { in: MC("nether_star", 1), out: S(64) },
-                { in: MC("dragon_breath", 1), out: S(1) },
-                { in: MC("ghast_tear", 1), out: S(10) },
-                { in: MC("dragon_egg", 1), out: S(128) }
-            ])
-
-            profession("Cooking", 0xD8B384, 0xF7DAD9, [
-                { in: CR("bar_of_chocolate", 16), out: S(4) },
-                { in: CR("honeyed_apple", 16), out: S(4) },
-                { in: CR("builders_tea", 16), out: S(4) },
-                { in: FD("hot_cocoa", 16), out: S(5) },
-                { in: FD("tomato_sauce", 8), out: S(3) },
-                { in: FD("apple_pie_slice", 16), out: S(3) },
-                { in: FD("chocolate_pie_slice", 16), out: S(4) },
-                { in: FD("sweet_berry_cheesecake_slice", 17), out: S(3) },
-                { in: FD("cake_slice", 14), out: S(3) },
-                { in: FD("sweet_berry_cookie", 64), out: S(2) },
-                { in: FD("honey_cookie", 64), out: S(2) },
-                { in: MC("cookie", 64), out: S(2) },
-                { in: FD("fruit_salad", 16), out: S(7) },
-                { in: FD("mixed_salad", 16), out: S(9) },
-                { in: FD("nether_salad", 16), out: S(5) },
-                { in: FD("barbecue_stick", 16), out: S(5) },
-                { in: FD("egg_sandwich", 16), out: S(5) },
-                { in: FD("chicken_sandwich", 16), out: S(9) },
-                { in: FD("bacon_sandwich", 16), out: S(9) },
-                { in: FD("hamburger", 16), out: S(11) },
-                { in: FD("mutton_wrap", 16), out: S(10) },
-                { in: FD("dumplings", 16), out: S(7) },
-                { in: FD("stuffed_potato", 16), out: S(6) },
-                { in: FD("cabbage_rolls", 16), out: S(5) },
-                { in: FD("beef_stew", 16), out: S(8) },
-                { in: FD("chicken_soup", 16), out: S(9) },
-                { in: MC("rabbit_stew", 16), out: S(10) },
-                { in: MC("beetroot_soup", 16), out: S(7) },
-                { in: MC("pumpkin_pie", 16), out: S(6) },
-                { in: FD("vegetable_soup", 16), out: S(9) },
-                { in: FD("fish_stew", 16), out: S(9) },
-                { in: FD("fried_rice", 16), out: S(8) },
-                { in: FD("pumpkin_soup", 16), out: S(12) },
-                { in: FD("baked_cod_stew", 16), out: S(9) },
-                { in: FD("noodle_soup", 16), out: S(9) },
-                { in: FD("pasta_with_meatballs", 16), out: S(10) },
-                { in: FD("pasta_with_mutton_chop", 16), out: S(10) },
-                { in: FD("roasted_mutton_chops", 16), out: S(9) },
-                { in: FD("vegetable_noodles", 16), out: S(10) },
-                { in: FD("steak_and_potatoes", 16), out: S(9) },
-                { in: FD("ratatouille", 16), out: S(9) },
-                { in: FD("squid_ink_pasta", 16), out: S(11) },
-                { in: FD("roast_chicken", 16), out: S(7) },
-                { in: FD("stuffed_pumpkin", 16), out: S(9) },
-                { in: FD("honey_glazed_ham", 16), out: S(7) },
-                { in: FD("shepherds_pie", 16), out: S(7) },
-                { in: CR("sweet_roll", 16), out: S(4) }
-            ])
-
-            profession("fishing", 0x9DDFD3, 0xDBF6E9, [
-                { in: MC("cod", 8), out: S(1) },
-                { in: MC("salmon", 8), out: S(1) },
-                { in: MC("pufferfish", 8), out: S(1) },
-                { in: MC("tropical_fish", 8), out: S(1) }
-            ])
-
-            profession("smithing", 0xFFC93C, 0xFF7A00, [
-                { in: MC("iron_boots", 1), out: S(2) },
-                { in: MC("iron_leggings", 1), out: S(4) },
-                { in: MC("iron_chestplate", 1), out: S(4) },
-                { in: MC("iron_helmet", 1), out: S(2) },
-                { in: MC("golden_boots", 1), out: S(4) },
-                { in: MC("golden_leggings", 1), out: S(7) },
-                { in: MC("golden_chestplate", 1), out: S(8) },
-                { in: MC("golden_helmet", 1), out: S(5) },
-                { in: MC("golden_apple", 1), out: S(10) },
-                { in: MC("arrow", 32), out: S(3) },
-                { in: MC("iron_sword", 1), out: S(1) },
-                { in: MC("golden_sword", 1), out: S(2) }
-            ])
-
-            trade("1x cabricality:exchange_currencies", 0xEEE9E9, 0xFFD700, [
-                { in: G(1), out: S(64) },
-                { in: S(64), out: G(1) }
-            ], "exchange")
-
-            let DATAGEN_QUESTS = false
-
-            let data = []
-            let group_max_width = []
-            let current_group_max_width = 0
-            let simulate = DATAGEN_QUESTS
-            let entry_cost = 10
-
-            let row = 0
-            let col = 0
-            let group = 0
-
-            let next_group = () => {
-                group++
-                if (simulate)
-                    group_max_width.push(current_group_max_width)
-                current_group_max_width = 0
-                col = 0
-                row++
-            }
-
-            let simple = (name, item, coin, c1, c2) => {
-                    let jump1 = true;
-                    let jump2 = true;
-                    let split = item.split('x')
-                    let id = ""
-                    let amount = ""
-                    split.forEach((e, idx) => {
-                        if (idx == 0) amount = e;
-                        else {
-                            if (idx > 1) id = id + "x";
-                            id = id + e.replace(' ', '').replace("#", "");
-                        }
-                    })
-                    let card_id = asIdentifier("trade_card_" + id.toLowerCase().replace("'", "").replace("#", "").replace(":", "_").replace(" ", "_"))
-                    if (!simulate)
-                        trade(item, c1, c2, [
-                            { in: item, out: coin >= 64 ? G(Math.floor(coin / 64)) : S(coin) }
-                        ], "shipments")
-                    if (!DATAGEN_QUESTS)
-                        jump1 = false;
-                    if (jump1) {
-                        current_group_max_width = Math.min(8, current_group_max_width + 1)
-                        if (simulate)
-                            jump2 = false;
-                        if (jump2) {
-                            if (col > 7) {
-                                col = 0
-                                row++
-                            }
-
-                            let x = col - (group_max_width[group] - 1) / 2
-                            let y = row + group / 2
-                            col++
-
-                            let template = `
+                let template = `
 		{
-			title: "${amount} × {${entry_cost<0?"block.":"item."}${id.replace(':','.')}}"
+			title: "${amount} × {${entry_cost < 0 ? "block." : "item."}${id.replace(':', '.')}}"
 			icon: "${id}"
 			disable_toast: true
 			x: ${x}d
 			y: ${y}d
 			shape: "hexagon"
-			subtitle: "${coin>=64? `${Math.floor(coin/64).toString()}{market.cabricality.shipments.gold}` : `${coin}{market.cabricality.shipments.silver}`}"
+			subtitle: "${coin >= 64 ? `${Math.floor(coin / 64).toString()}{market.cabricality.shipments.gold}` : `${coin}{market.cabricality.shipments.silver}`}"
 			tasks: [{
 				type: "item"
 				item: "cabricality:silver_coin"
@@ -326,10 +328,10 @@ onEvent("item.registry", event => {
 				}
 			]
 		}`
-				data.push(template)
-			}
-		}
-	}
+                data.push(template)
+            }
+        }
+    }
 
     while (true) {
         group = 0
@@ -368,7 +370,7 @@ onEvent("item.registry", event => {
         simple("Dark Oak Log", MC('dark_oak_log', 16), 4, 0x2C1B0D, 0x422B15)
         simple("Crimson Stem", MC('crimson_stem', 16), 8, 0x442332, 0x7A3852)
         simple("Warped Stem", MC('warped_stem', 16), 8, 0x3E1E2D, 0x347776)
-        
+
 
         next_group()
         entry_cost = 10

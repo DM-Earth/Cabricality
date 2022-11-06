@@ -27,6 +27,7 @@ onEvent("recipes", event => {
         let outItem = outArr[0]
         let outItemCount = outArr[1]
 
+        /*
         event.shapeless("2x " + card, [card])
         event.custom({
             "type": "indrev:infuse",
@@ -45,5 +46,6 @@ onEvent("recipes", event => {
             },
             "processTime": 125
         })
+        */
     })
 })
