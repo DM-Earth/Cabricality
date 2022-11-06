@@ -1,8 +1,8 @@
  {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cabricality:item/profession_card_0",
-    "layer1": "cabricality:item/profession_card_1",
-    "layer2": "cabricality:item/profession_card_2"
+    "layer0": "cabricality:item/card/profession_card_0",
+    "layer1": "cabricality:item/card/profession_card_1",
+    "layer2": "cabricality:item/card/profession_card_2"
   }
 }
