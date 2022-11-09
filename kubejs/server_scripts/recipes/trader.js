@@ -15,7 +15,7 @@ function process(name) {
 
 
 onEvent("recipes", event => {
-    event.remove({ type: IV("infuse") })
+    // event.remove({ type: IV("infuse") })
     let professions = []
     global.transactions.forEach(trade => {
         let card = trade[1]
@@ -31,7 +31,8 @@ onEvent("recipes", event => {
         event.shapeless("2x " + card, [card])
         event.custom({
             "type": "indrev:infuse",
-            "ingredients": [{
+            "ingredients": [
+                {
                     "item": inItem,
                     "count": inItemCount
                 },
