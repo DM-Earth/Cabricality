@@ -1,13 +1,13 @@
 name = "Rhino"
-filename = "rhino-fabric-1802.2.1-build.252.jar"
+filename = "rhino-fabric-1802.2.1-build.255.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/sk9knFPE/versions/VBYN93Fl/rhino-fabric-1802.2.1-build.252.jar"
+url = "https://cdn.modrinth.com/data/sk9knFPE/versions/bsrlks7Z/rhino-fabric-1802.2.1-build.255.jar"
 hash-format = "sha1"
-hash = "13dc1923395942ea1258882873c4a473115962d2"
+hash = "0ba00c51b05027200af1f8d873e7c53769c52d43"
 
 [update]
 [update.modrinth]
 mod-id = "sk9knFPE"
-version = "VBYN93Fl"
+version = "bsrlks7Z"

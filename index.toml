@@ -4648,7 +4648,7 @@ metafile = true
 
 [[files]]
 file = "mods/badpackets.pw.toml"
-hash = "d8fe226cd050b8c94fcb98819b2646a74863ad8d52fc22db37c29fe66e53996d"
+hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
 metafile = true
 
 [[files]]
@@ -4668,7 +4668,7 @@ metafile = true
 
 [[files]]
 file = "mods/cccbridge.pw.toml"
-hash = "5850435527adab62c3e94599030d572d48518cfb025707712cfdbdc077da7079"
+hash = "66aa4f271d3c852806c5158f199c507ae4895fcbe5f075278b16bae7b160714b"
 metafile = true
 
 [[files]]
@@ -4732,7 +4732,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "6058946b7fb51a487cfdf61cba87562eda75ee38ebb16ae336c26fb24dd17c26"
+hash = "2d6dd083a7b01b1035a52c09a088137b930ea6f0f8f28ae3e0ba23f05937e3ef"
 metafile = true
 
 [[files]]
@@ -4866,7 +4866,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "30740fabf5400953823fe82fb6086196a60580ba31eccb9210dead911dc39865"
+hash = "4f4d527dd8856b5f88cf73ab47f83585a55a151b67b8274e48ef4698b18ab508"
 metafile = true
 
 [[files]]
@@ -4876,7 +4876,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "a5602e43957e76d1012def121e8ac693174594c93868228de0d7f6f82f86a188"
+hash = "4d88aae056cb61bd72c1c94a0bc8c50ab15372b872b93e0c80e3d5a7bf646c3d"
 metafile = true
 
 [[files]]
@@ -4906,7 +4906,7 @@ metafile = true
 
 [[files]]
 file = "mods/terrestria.pw.toml"
-hash = "978d9ba60f5c54e96c7f53d3ac41818c0058f364bc521e41fbaf10d9ddfa42a7"
+hash = "e4b4f6fd8862320b44554444572f18f06e237263ba19752b425217f561a4bc9c"
 metafile = true
 
 [[files]]
