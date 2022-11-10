@@ -38,7 +38,7 @@
 				id: "2387D852CA97AD1A"
 				type: "item"
 				item: "cabricality:silver_coin"
-				count: 64L
+				count: 16L
 			}]
 			rewards: [{
 				id: "341C8CC09CDE7DE6"
@@ -49,7 +49,7 @@
 		}
 		{
 			title: "{market.cabricality.exchange.silver.title}"
-			icon: { id: "cabricality:silver_coin", Count: 64b }
+			icon: { id: "cabricality:silver_coin", Count: 16b }
 			x: -4.0d
 			y: -4.0d
 			shape: "circle"

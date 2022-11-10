@@ -9,11 +9,123 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+title: "{profession.cabricality.exchange}"
+icon: "cabricality:profession_card_563660456"
+disable_toast: true
+x: -4d
+y: 5d
+shape: "hexagon"
+tasks: [{
+type: "checkmark"
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:profession_card_563660456"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {item.cabricality.silver_coin}"
+icon: "cabricality:silver_coin"
+disable_toast: true
+x: -3d
+y: 5d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "cabricality:silver_coin"
+icon: "cabricality:silver_coin"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x716460792"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.cabricality.gold_coin}"
+icon: "cabricality:gold_coin"
+disable_toast: true
+x: -2d
+y: 5d
+shape: "hexagon"
+subtitle: "16 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "cabricality:gold_coin"
+icon: "cabricality:gold_coin"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1582914453"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "{profession.cabricality.farming}"
+icon: "cabricality:profession_card_1790608497"
+disable_toast: true
+x: -4d
+y: 7d
+shape: "hexagon"
+tasks: [{
+type: "checkmark"
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:profession_card_1790608497"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
 title: "9 × {item.minecraft.carrot}"
 icon: "minecraft:carrot"
 disable_toast: true
-x: -4d
-y: 4d
+x: -3d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -42,8 +154,8 @@ auto: "no_toast"
 title: "9 × {item.minecraft.beetroot}"
 icon: "minecraft:beetroot"
 disable_toast: true
-x: -3d
-y: 4d
+x: -2d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -72,8 +184,8 @@ auto: "no_toast"
 title: "9 × {item.minecraft.potato}"
 icon: "minecraft:potato"
 disable_toast: true
-x: -2d
-y: 4d
+x: -1d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -102,8 +214,8 @@ auto: "no_toast"
 title: "12 × {item.minecraft.sweet_berries}"
 icon: "minecraft:sweet_berries"
 disable_toast: true
-x: -1d
-y: 4d
+x: 0d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -132,8 +244,8 @@ auto: "no_toast"
 title: "16 × {item.minecraft.cocoa_beans}"
 icon: "minecraft:cocoa_beans"
 disable_toast: true
-x: 0d
-y: 4d
+x: 1d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -162,8 +274,8 @@ auto: "no_toast"
 title: "8 × {item.minecraft.honey_bottle}"
 icon: "minecraft:honey_bottle"
 disable_toast: true
-x: 1d
-y: 4d
+x: 2d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -192,8 +304,8 @@ auto: "no_toast"
 title: "4 × {item.minecraft.honeycomb}"
 icon: "minecraft:honeycomb"
 disable_toast: true
-x: 2d
-y: 4d
+x: 3d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -222,8 +334,8 @@ auto: "no_toast"
 title: "16 × {item.minecraft.wheat}"
 icon: "minecraft:wheat"
 disable_toast: true
-x: 3d
-y: 4d
+x: 4d
+y: 7d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -252,8 +364,8 @@ auto: "no_toast"
 title: "64 × {block.minecraft.kelp}"
 icon: "minecraft:kelp"
 disable_toast: true
-x: 4d
-y: 4d
+x: -4d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -282,8 +394,8 @@ auto: "no_toast"
 title: "64 × {item.minecraft.melon_slice}"
 icon: "minecraft:melon_slice"
 disable_toast: true
-x: -4d
-y: 5d
+x: -3d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -312,8 +424,8 @@ auto: "no_toast"
 title: "64 × {block.minecraft.white_wool}"
 icon: "minecraft:white_wool"
 disable_toast: true
-x: -3d
-y: 5d
+x: -2d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -342,8 +454,8 @@ auto: "no_toast"
 title: "9 × {item.farmersdelight.rice}"
 icon: "farmersdelight:rice"
 disable_toast: true
-x: -2d
-y: 5d
+x: -1d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -372,8 +484,8 @@ auto: "no_toast"
 title: "9 × {item.farmersdelight.onion}"
 icon: "farmersdelight:onion"
 disable_toast: true
-x: -1d
-y: 5d
+x: 0d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -402,8 +514,8 @@ auto: "no_toast"
 title: "9 × {item.farmersdelight.tomato}"
 icon: "farmersdelight:tomato"
 disable_toast: true
-x: 0d
-y: 5d
+x: 1d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -432,8 +544,8 @@ auto: "no_toast"
 title: "9 × {item.farmersdelight.cabbage}"
 icon: "farmersdelight:cabbage"
 disable_toast: true
-x: 1d
-y: 5d
+x: 2d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -462,8 +574,8 @@ auto: "no_toast"
 title: "9 × {item.farmersdelight.canvas}"
 icon: "farmersdelight:canvas"
 disable_toast: true
-x: 2d
-y: 5d
+x: 3d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -492,8 +604,8 @@ auto: "no_toast"
 title: "32 × {item.farmersdelight.pumpkin_slice}"
 icon: "farmersdelight:pumpkin_slice"
 disable_toast: true
-x: 3d
-y: 5d
+x: 4d
+y: 8d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -519,11 +631,37 @@ auto: "no_toast"
 }
 
 {
+title: "{profession.cabricality.carpentry}"
+icon: "cabricality:profession_card_x1322231973"
+disable_toast: true
+x: -4d
+y: 10d
+shape: "hexagon"
+tasks: [{
+type: "checkmark"
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:profession_card_x1322231973"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
 title: "32 × {block.minecraft.oak_log}"
 icon: "minecraft:oak_log"
 disable_toast: true
-x: -4d
-y: 6d
+x: -3d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -552,8 +690,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.spruce_log}"
 icon: "minecraft:spruce_log"
 disable_toast: true
-x: -3d
-y: 6d
+x: -2d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -582,8 +720,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.jungle_log}"
 icon: "minecraft:jungle_log"
 disable_toast: true
-x: -2d
-y: 6d
+x: -1d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -612,8 +750,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.dark_oak_log}"
 icon: "minecraft:dark_oak_log"
 disable_toast: true
-x: -1d
-y: 6d
+x: 0d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -642,8 +780,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.acacia_log}"
 icon: "minecraft:acacia_log"
 disable_toast: true
-x: 0d
-y: 6d
+x: 1d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -672,8 +810,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.birch_log}"
 icon: "minecraft:birch_log"
 disable_toast: true
-x: 1d
-y: 6d
+x: 2d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -702,8 +840,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.crimson_stem}"
 icon: "minecraft:crimson_stem"
 disable_toast: true
-x: 2d
-y: 6d
+x: 3d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -732,8 +870,8 @@ auto: "no_toast"
 title: "32 × {block.minecraft.warped_stem}"
 icon: "minecraft:warped_stem"
 disable_toast: true
-x: 3d
-y: 6d
+x: 4d
+y: 10d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -762,8 +900,8 @@ auto: "no_toast"
 title: "32 × {block.promenade.palm_log}"
 icon: "promenade:palm_log"
 disable_toast: true
-x: 4d
-y: 6d
+x: -4d
+y: 11d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -792,8 +930,8 @@ auto: "no_toast"
 title: "32 × {block.promenade.cherry_oak_log}"
 icon: "promenade:cherry_oak_log"
 disable_toast: true
-x: -4d
-y: 7d
+x: -3d
+y: 11d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -819,18 +957,18 @@ auto: "no_toast"
 }
 
 {
-title: "32 × {block.promenade.dark_amaranth_stem}"
+title: "24 × {block.promenade.dark_amaranth_stem}"
 icon: "promenade:dark_amaranth_stem"
 disable_toast: true
-x: -3d
-y: 7d
+x: -2d
+y: 11d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
 type: "item"
 item: "promenade:dark_amaranth_stem"
 icon: "promenade:dark_amaranth_stem"
-count: 32L
+count: 24L
 }]
 rewards: [
 {
@@ -847,101 +985,901 @@ auto: "no_toast"
 }
 ]
 }
-		{
-			title: "Automatic Exchange"
-			icon: "cabricality:gold_coin"
-			x: 2.0d
-			y: 12.25d
-			shape: "circle"
-			subtitle: "Silver <> Gold"
-			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
-			dependencies: ["6AC1CED0D341150E"]
-			id: "3B548F2C060C2229"
-			tasks: [{
-				id: "601161A1565C5161"
-				type: "item"
-				item: "cabricality:silver_coin"
-			}]
-			rewards: [
-				{
-					id: "0A6DEF2E19943F9F"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:trade_card_exchange_currencies"
-				}
-				{
-					id: "3D6C47FD645D7471"
-					type: "custom"
-					title: "{market.cabricality.shipments.repeatable}"
-					icon: "indrev:module_charger"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			icon: "indrev:solid_infuser_mk1"
-			x: 0.0d
-			y: 12.25d
-			shape: "hexagon"
-			description: [
-				"&6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Trading Machine."
-				""
-				"Each import card comes with a cost up front. Once that is paid you can limitlessly buy the respective goods priced at what's stated in the subtitle."
-			]
-			size: 2.0d
-			id: "6AC1CED0D341150E"
-			tasks: [{
-				id: "214F623C75A92809"
-				type: "checkmark"
-				title: "Shipments"
-			}]
-		}
-		{
-			title: "Early Shipping"
-			icon: "indrev:solid_infuser_mk1"
-			x: -2.0d
-			y: 12.25d
-			shape: "circle"
-			subtitle: "16 Silver"
-			description: [
-				"Getting to the Brass Age is hard work!"
-				""
-				"The avid salesman can come here for purchasing Trading Machines from the get go. This should help you take off!"
-			]
-			dependencies: ["6AC1CED0D341150E"]
-			id: "4DFE4FD3B504AF4B"
-			tasks: [{
-				id: "3E2EAC7B2D274669"
-				type: "item"
-				icon: "cabricality:silver_coin"
-				item: "thermal:silver_coin"
-				count: 30L
-			}]
-			rewards: [
-				{
-					id: "26C6A3ACA1B59772"
-					type: "item"
-					icon: "indrev:solid_infuser_mk1"
-					auto: "enabled"
-					item: "indrev:solid_infuser_mk1"
-				}
-				{
-					id: "271E7F49C6719B0B"
-					type: "item"
-					icon: "indrev:coal_generator_mk1"
-					auto: "no_toast"
-					item: "indrev:coal_generator_mk1"
-				}
-				{
-					id: "61448EF131387AEF"
-					type: "custom"
-					title: "{market.cabricality.shipments.repeatable}"
-					icon: "indrev:module_charger"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
+
+{
+title: "{profession.cabricality.mining}"
+icon: "cabricality:profession_card_1794814165"
+disable_toast: true
+x: -4d
+y: 13d
+shape: "hexagon"
+tasks: [{
+type: "checkmark"
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:profession_card_1794814165"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_iron_ore}"
+icon: "create:crushed_iron_ore"
+disable_toast: true
+x: -3d
+y: 13d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_iron_ore"
+icon: "create:crushed_iron_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_430404468"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_copper_ore}"
+icon: "create:crushed_copper_ore"
+disable_toast: true
+x: -2d
+y: 13d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_copper_ore"
+icon: "create:crushed_copper_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x859532795"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_zinc_ore}"
+icon: "create:crushed_zinc_ore"
+disable_toast: true
+x: -1d
+y: 13d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_zinc_ore"
+icon: "create:crushed_zinc_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_557022672"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_gold_ore}"
+icon: "create:crushed_gold_ore"
+disable_toast: true
+x: 0d
+y: 13d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_gold_ore"
+icon: "create:crushed_gold_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1517882612"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_nickel_ore}"
+icon: "create:crushed_nickel_ore"
+disable_toast: true
+x: 1d
+y: 13d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_nickel_ore"
+icon: "create:crushed_nickel_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x2096179274"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_lead_ore}"
+icon: "create:crushed_lead_ore"
+disable_toast: true
+x: 2d
+y: 13d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_lead_ore"
+icon: "create:crushed_lead_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1993788408"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.create.crushed_tin_ore}"
+icon: "create:crushed_tin_ore"
+disable_toast: true
+x: 3d
+y: 13d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crushed_tin_ore"
+icon: "create:crushed_tin_ore"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_260279835"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.cabricality.crushed_calorite_ore}"
+icon: "cabricality:crushed_calorite_ore"
+disable_toast: true
+x: 4d
+y: 13d
+shape: "hexagon"
+subtitle: "5 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "cabricality:crushed_calorite_ore"
+icon: "cabricality:crushed_calorite_ore"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_954864246"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.cabricality.crushed_ostrum_ore}"
+icon: "cabricality:crushed_ostrum_ore"
+disable_toast: true
+x: -4d
+y: 14d
+shape: "hexagon"
+subtitle: "4 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "cabricality:crushed_ostrum_ore"
+icon: "cabricality:crushed_ostrum_ore"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_592483303"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.cabricality.crushed_desh_ore}"
+icon: "cabricality:crushed_desh_ore"
+disable_toast: true
+x: -3d
+y: 14d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "cabricality:crushed_desh_ore"
+icon: "cabricality:crushed_desh_ore"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x692051901"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "2 × {item.cabricality.crushed_cobalt_ore}"
+icon: "cabricality:crushed_cobalt_ore"
+disable_toast: true
+x: -2d
+y: 14d
+shape: "hexagon"
+subtitle: "3 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "cabricality:crushed_cobalt_ore"
+icon: "cabricality:crushed_cobalt_ore"
+count: 2L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_2125822560"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.minecraft.andesite}"
+icon: "minecraft:andesite"
+disable_toast: true
+x: -1d
+y: 14d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:andesite"
+icon: "minecraft:andesite"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x872778328"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.minecraft.granite}"
+icon: "minecraft:granite"
+disable_toast: true
+x: 0d
+y: 14d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:granite"
+icon: "minecraft:granite"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_352717621"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.minecraft.diorite}"
+icon: "minecraft:diorite"
+disable_toast: true
+x: 1d
+y: 14d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:diorite"
+icon: "minecraft:diorite"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1740559973"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "48 × {block.minecraft.tuff}"
+icon: "minecraft:tuff"
+disable_toast: true
+x: 2d
+y: 14d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:tuff"
+icon: "minecraft:tuff"
+count: 48L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_76004084"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.minecraft.sandstone}"
+icon: "minecraft:sandstone"
+disable_toast: true
+x: 3d
+y: 14d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:sandstone"
+icon: "minecraft:sandstone"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1736320596"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.create.limestone}"
+icon: "create:limestone"
+disable_toast: true
+x: 4d
+y: 14d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:limestone"
+icon: "create:limestone"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1636539340"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.promenade.blunite}"
+icon: "promenade:blunite"
+disable_toast: true
+x: -4d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "promenade:blunite"
+icon: "promenade:blunite"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_686567550"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "64 × {block.promenade.carbonite}"
+icon: "promenade:carbonite"
+disable_toast: true
+x: -3d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "promenade:carbonite"
+icon: "promenade:carbonite"
+count: 64L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_414437172"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {block.create.scoria}"
+icon: "create:scoria"
+disable_toast: true
+x: -2d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:scoria"
+icon: "create:scoria"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_120787727"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {block.create.veridium}"
+icon: "create:veridium"
+disable_toast: true
+x: -1d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:veridium"
+icon: "create:veridium"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x965888377"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {block.create.ochrum}"
+icon: "create:ochrum"
+disable_toast: true
+x: 0d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:ochrum"
+icon: "create:ochrum"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_6062970"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {block.create.crimsite}"
+icon: "create:crimsite"
+disable_toast: true
+x: 1d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:crimsite"
+icon: "create:crimsite"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1320421858"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {block.create.asurine}"
+icon: "create:asurine"
+disable_toast: true
+x: 2d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:asurine"
+icon: "create:asurine"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_326003125"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.indrev.sulfur_crystal}"
+icon: "indrev:sulfur_crystal"
+disable_toast: true
+x: 3d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "indrev:sulfur_crystal"
+icon: "indrev:sulfur_crystal"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x176635892"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "6 × {item.minecraft.lapis_lazuli}"
+icon: "minecraft:lapis_lazuli"
+disable_toast: true
+x: 4d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:lapis_lazuli"
+icon: "minecraft:lapis_lazuli"
+count: 6L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1737517658"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.diamond}"
+icon: "minecraft:diamond"
+disable_toast: true
+x: -4d
+y: 16d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:diamond"
+icon: "minecraft:diamond"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1727487303"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "16 × {item.minecraft.coal}"
+icon: "minecraft:coal"
+disable_toast: true
+x: -3d
+y: 16d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:coal"
+icon: "minecraft:coal"
+count: 16L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_75491722"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "24 × {item.minecraft.redstone}"
+icon: "minecraft:redstone"
+disable_toast: true
+x: -2d
+y: 16d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:redstone"
+icon: "minecraft:redstone"
+count: 24L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x694407577"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
 	]
 }
