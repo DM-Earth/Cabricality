@@ -84,8 +84,8 @@ onEvent("item.registry", event => {
 		registerTypicalItem("Ruby", "Ruby")
 		registerTypicalItem("Sapphire", "Sapphire")
 
-		registerTypicalItem("Gold Coin", "§6Gold Coin")
-		registerTypicalItem("Silver Coin", "§7Silver Coin")
+		// registerTypicalItem("Gold Coin", "§6Gold Coin")
+		// registerTypicalItem("Silver Coin", "§7Silver Coin")
 
 		registerTypicalItem("Sand Ball", "Sand Ball")
 		registerTypicalItem("Coke Chunk", "Coke Chunk")
