@@ -153,7 +153,7 @@ onEvent("item.registry", event => {
         { in: CR("ornate_iron_window", 64), out: S(10) },
         { in: MC("mossy_cobblestone", 64), out: S(6) },
         { in: TC("seared_bricks", 64), out: S(8) },
-        { in: TC("tconstruct", "scorched_bricks", 64), out: S(12) },
+        { in: TC("scorched_bricks", 64), out: S(12) },
         { in: C("glazed_terracotta", 64), out: S(6) }
     ])
 
