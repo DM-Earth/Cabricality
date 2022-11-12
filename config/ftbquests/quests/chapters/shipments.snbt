@@ -99,7 +99,7 @@ title: "{profession.cabricality.farming}"
 icon: "cabricality:profession_card_1790608497"
 disable_toast: true
 x: -4d
-y: 7d
+y: 4d
 shape: "hexagon"
 tasks: [{
 type: "checkmark"
@@ -125,7 +125,7 @@ title: "9 × {item.minecraft.carrot}"
 icon: "minecraft:carrot"
 disable_toast: true
 x: -3d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -155,7 +155,7 @@ title: "9 × {item.minecraft.apple}"
 icon: "minecraft:apple"
 disable_toast: true
 x: -2d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -185,7 +185,7 @@ title: "9 × {item.minecraft.beetroot}"
 icon: "minecraft:beetroot"
 disable_toast: true
 x: -1d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -215,7 +215,7 @@ title: "9 × {item.minecraft.potato}"
 icon: "minecraft:potato"
 disable_toast: true
 x: 0d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -245,7 +245,7 @@ title: "12 × {item.minecraft.sweet_berries}"
 icon: "minecraft:sweet_berries"
 disable_toast: true
 x: 1d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -275,7 +275,7 @@ title: "16 × {item.minecraft.cocoa_beans}"
 icon: "minecraft:cocoa_beans"
 disable_toast: true
 x: 2d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -305,7 +305,7 @@ title: "8 × {item.minecraft.honey_bottle}"
 icon: "minecraft:honey_bottle"
 disable_toast: true
 x: 3d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -335,7 +335,7 @@ title: "4 × {item.minecraft.honeycomb}"
 icon: "minecraft:honeycomb"
 disable_toast: true
 x: 4d
-y: 7d
+y: 4d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -365,7 +365,7 @@ title: "16 × {item.minecraft.wheat}"
 icon: "minecraft:wheat"
 disable_toast: true
 x: -4d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -395,7 +395,7 @@ title: "64 × {block.minecraft.kelp}"
 icon: "minecraft:kelp"
 disable_toast: true
 x: -3d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -425,7 +425,7 @@ title: "64 × {item.minecraft.melon_slice}"
 icon: "minecraft:melon_slice"
 disable_toast: true
 x: -2d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -455,7 +455,7 @@ title: "64 × {block.minecraft.white_wool}"
 icon: "minecraft:white_wool"
 disable_toast: true
 x: -1d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -485,7 +485,7 @@ title: "16 × {block.minecraft.cactus}"
 icon: "minecraft:cactus"
 disable_toast: true
 x: 0d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -515,7 +515,7 @@ title: "9 × {item.farmersdelight.rice}"
 icon: "farmersdelight:rice"
 disable_toast: true
 x: 1d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -545,7 +545,7 @@ title: "9 × {item.farmersdelight.onion}"
 icon: "farmersdelight:onion"
 disable_toast: true
 x: 2d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -575,7 +575,7 @@ title: "9 × {item.farmersdelight.tomato}"
 icon: "farmersdelight:tomato"
 disable_toast: true
 x: 3d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -605,7 +605,7 @@ title: "9 × {item.farmersdelight.cabbage}"
 icon: "farmersdelight:cabbage"
 disable_toast: true
 x: 4d
-y: 8d
+y: 5d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -635,7 +635,7 @@ title: "9 × {item.farmersdelight.canvas}"
 icon: "farmersdelight:canvas"
 disable_toast: true
 x: -4d
-y: 9d
+y: 6d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -665,7 +665,7 @@ title: "32 × {item.farmersdelight.pumpkin_slice}"
 icon: "farmersdelight:pumpkin_slice"
 disable_toast: true
 x: -3d
-y: 9d
+y: 6d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -679,6 +679,36 @@ rewards: [
 type: "item"
 auto: "enabled"
 item: "cabricality:trade_card_1287195862"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "12 × {item.promenade.blueberries}"
+icon: "promenade:blueberries"
+disable_toast: true
+x: -2d
+y: 6d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "promenade:blueberries"
+icon: "promenade:blueberries"
+count: 12L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x361274431"
 }
 {
 type: "custom"
@@ -1403,10 +1433,40 @@ auto: "no_toast"
 }
 
 {
+title: "1 × {item.malum.crushed_soulstone}"
+icon: "malum:crushed_soulstone"
+disable_toast: true
+x: -1d
+y: 15d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "malum:crushed_soulstone"
+icon: "malum:crushed_soulstone"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1013988605"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
 title: "64 × {block.minecraft.andesite}"
 icon: "minecraft:andesite"
 disable_toast: true
-x: -1d
+x: 0d
 y: 15d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1436,7 +1496,7 @@ auto: "no_toast"
 title: "64 × {block.minecraft.granite}"
 icon: "minecraft:granite"
 disable_toast: true
-x: 0d
+x: 1d
 y: 15d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1466,7 +1526,7 @@ auto: "no_toast"
 title: "64 × {block.minecraft.diorite}"
 icon: "minecraft:diorite"
 disable_toast: true
-x: 1d
+x: 2d
 y: 15d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1496,7 +1556,7 @@ auto: "no_toast"
 title: "48 × {block.minecraft.tuff}"
 icon: "minecraft:tuff"
 disable_toast: true
-x: 2d
+x: 3d
 y: 15d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1526,7 +1586,7 @@ auto: "no_toast"
 title: "48 × {block.minecraft.calcite}"
 icon: "minecraft:calcite"
 disable_toast: true
-x: 3d
+x: 4d
 y: 15d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1556,8 +1616,8 @@ auto: "no_toast"
 title: "64 × {block.minecraft.sandstone}"
 icon: "minecraft:sandstone"
 disable_toast: true
-x: 4d
-y: 15d
+x: -4d
+y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -1586,7 +1646,7 @@ auto: "no_toast"
 title: "64 × {block.create.limestone}"
 icon: "create:limestone"
 disable_toast: true
-x: -4d
+x: -3d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1616,7 +1676,7 @@ auto: "no_toast"
 title: "64 × {block.promenade.blunite}"
 icon: "promenade:blunite"
 disable_toast: true
-x: -3d
+x: -2d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1646,7 +1706,7 @@ auto: "no_toast"
 title: "64 × {block.promenade.carbonite}"
 icon: "promenade:carbonite"
 disable_toast: true
-x: -2d
+x: -1d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1676,7 +1736,7 @@ auto: "no_toast"
 title: "16 × {block.create.scoria}"
 icon: "create:scoria"
 disable_toast: true
-x: -1d
+x: 0d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1706,7 +1766,7 @@ auto: "no_toast"
 title: "16 × {block.create.veridium}"
 icon: "create:veridium"
 disable_toast: true
-x: 0d
+x: 1d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1736,7 +1796,7 @@ auto: "no_toast"
 title: "16 × {block.create.ochrum}"
 icon: "create:ochrum"
 disable_toast: true
-x: 1d
+x: 2d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1766,7 +1826,7 @@ auto: "no_toast"
 title: "16 × {block.create.crimsite}"
 icon: "create:crimsite"
 disable_toast: true
-x: 2d
+x: 3d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1796,7 +1856,7 @@ auto: "no_toast"
 title: "16 × {block.create.asurine}"
 icon: "create:asurine"
 disable_toast: true
-x: 3d
+x: 4d
 y: 16d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1826,8 +1886,8 @@ auto: "no_toast"
 title: "4 × {item.indrev.sulfur_crystal}"
 icon: "indrev:sulfur_crystal"
 disable_toast: true
-x: 4d
-y: 16d
+x: -4d
+y: 17d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
 tasks: [{
@@ -1856,7 +1916,7 @@ auto: "no_toast"
 title: "6 × {item.minecraft.lapis_lazuli}"
 icon: "minecraft:lapis_lazuli"
 disable_toast: true
-x: -4d
+x: -3d
 y: 17d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1886,7 +1946,7 @@ auto: "no_toast"
 title: "1 × {item.minecraft.diamond}"
 icon: "minecraft:diamond"
 disable_toast: true
-x: -3d
+x: -2d
 y: 17d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.gold_coin}"
@@ -1916,7 +1976,7 @@ auto: "no_toast"
 title: "16 × {item.minecraft.coal}"
 icon: "minecraft:coal"
 disable_toast: true
-x: -2d
+x: -1d
 y: 17d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -1946,7 +2006,7 @@ auto: "no_toast"
 title: "24 × {item.minecraft.redstone}"
 icon: "minecraft:redstone"
 disable_toast: true
-x: -1d
+x: 0d
 y: 17d
 shape: "hexagon"
 subtitle: "1 x {item.cabricality.silver_coin}"
@@ -2879,6 +2939,1592 @@ rewards: [
 type: "item"
 auto: "enabled"
 item: "cabricality:trade_card_x1188087418"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "{profession.cabricality.cooking}"
+icon: "cabricality:profession_card_x473924577"
+disable_toast: true
+x: -4d
+y: 27d
+shape: "hexagon"
+tasks: [{
+type: "checkmark"
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:profession_card_x473924577"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.create.bar_of_chocolate}"
+icon: "create:bar_of_chocolate"
+disable_toast: true
+x: -3d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:bar_of_chocolate"
+icon: "create:bar_of_chocolate"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_873868548"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.create.honeyed_apple}"
+icon: "create:honeyed_apple"
+disable_toast: true
+x: -2d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:honeyed_apple"
+icon: "create:honeyed_apple"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_898924153"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.create.builders_tea}"
+icon: "create:builders_tea"
+disable_toast: true
+x: -1d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:builders_tea"
+icon: "create:builders_tea"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_917018125"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.create.sweet_roll}"
+icon: "create:sweet_roll"
+disable_toast: true
+x: 0d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "create:sweet_roll"
+icon: "create:sweet_roll"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1943380240"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "3 × {item.minecraft.bread}"
+icon: "minecraft:bread"
+disable_toast: true
+x: 1d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:bread"
+icon: "minecraft:bread"
+count: 3L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_166434027"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {block.minecraft.cake}"
+icon: "minecraft:cake"
+disable_toast: true
+x: 2d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:cake"
+icon: "minecraft:cake"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_75478571"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "8 × {item.minecraft.cookie}"
+icon: "minecraft:cookie"
+disable_toast: true
+x: 3d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:cookie"
+icon: "minecraft:cookie"
+count: 8L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1282324905"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.minecraft.pumpkin_pie}"
+icon: "minecraft:pumpkin_pie"
+disable_toast: true
+x: 4d
+y: 27d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:pumpkin_pie"
+icon: "minecraft:pumpkin_pie"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_926523432"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {block.farmersdelight.apple_pie}"
+icon: "farmersdelight:apple_pie"
+disable_toast: true
+x: -4d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:apple_pie"
+icon: "farmersdelight:apple_pie"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1251980798"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {block.farmersdelight.sweet_berry_cheesecake}"
+icon: "farmersdelight:sweet_berry_cheesecake"
+disable_toast: true
+x: -3d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:sweet_berry_cheesecake"
+icon: "farmersdelight:sweet_berry_cheesecake"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x658171742"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {block.farmersdelight.chocolate_pie}"
+icon: "farmersdelight:chocolate_pie"
+disable_toast: true
+x: -2d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:chocolate_pie"
+icon: "farmersdelight:chocolate_pie"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1976965148"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "2 × {block.farmersdelight.roast_chicken_block}"
+icon: "farmersdelight:roast_chicken_block"
+disable_toast: true
+x: -1d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:roast_chicken_block"
+icon: "farmersdelight:roast_chicken_block"
+count: 2L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1358368572"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "2 × {block.farmersdelight.stuffed_pumpkin_block}"
+icon: "farmersdelight:stuffed_pumpkin_block"
+disable_toast: true
+x: 0d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:stuffed_pumpkin_block"
+icon: "farmersdelight:stuffed_pumpkin_block"
+count: 2L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1209144869"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "2 × {block.farmersdelight.honey_glazed_ham_block}"
+icon: "farmersdelight:honey_glazed_ham_block"
+disable_toast: true
+x: 1d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:honey_glazed_ham_block"
+icon: "farmersdelight:honey_glazed_ham_block"
+count: 2L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1540781503"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "2 × {block.farmersdelight.shepherds_pie_block}"
+icon: "farmersdelight:shepherds_pie_block"
+disable_toast: true
+x: 2d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:shepherds_pie_block"
+icon: "farmersdelight:shepherds_pie_block"
+count: 2L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1392807194"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "6 × {item.farmersdelight.sweet_berry_cookie}"
+icon: "farmersdelight:sweet_berry_cookie"
+disable_toast: true
+x: 3d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:sweet_berry_cookie"
+icon: "farmersdelight:sweet_berry_cookie"
+count: 6L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_896533367"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "6 × {item.farmersdelight.honey_cookie}"
+icon: "farmersdelight:honey_cookie"
+disable_toast: true
+x: 4d
+y: 28d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:honey_cookie"
+icon: "farmersdelight:honey_cookie"
+count: 6L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1037142333"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.hot_cocoa}"
+icon: "farmersdelight:hot_cocoa"
+disable_toast: true
+x: -4d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:hot_cocoa"
+icon: "farmersdelight:hot_cocoa"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_414382578"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.apple_cider}"
+icon: "farmersdelight:apple_cider"
+disable_toast: true
+x: -3d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:apple_cider"
+icon: "farmersdelight:apple_cider"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1266945119"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.melon_juice}"
+icon: "farmersdelight:melon_juice"
+disable_toast: true
+x: -2d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:melon_juice"
+icon: "farmersdelight:melon_juice"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x216104017"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.fruit_salad}"
+icon: "farmersdelight:fruit_salad"
+disable_toast: true
+x: -1d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:fruit_salad"
+icon: "farmersdelight:fruit_salad"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1301570417"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.mixed_salad}"
+icon: "farmersdelight:mixed_salad"
+disable_toast: true
+x: 0d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:mixed_salad"
+icon: "farmersdelight:mixed_salad"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1742392808"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.nether_salad}"
+icon: "farmersdelight:nether_salad"
+disable_toast: true
+x: 1d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:nether_salad"
+icon: "farmersdelight:nether_salad"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1590482101"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.barbecue_stick}"
+icon: "farmersdelight:barbecue_stick"
+disable_toast: true
+x: 2d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:barbecue_stick"
+icon: "farmersdelight:barbecue_stick"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_775458697"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.egg_sandwich}"
+icon: "farmersdelight:egg_sandwich"
+disable_toast: true
+x: 3d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:egg_sandwich"
+icon: "farmersdelight:egg_sandwich"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x385183984"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.chicken_sandwich}"
+icon: "farmersdelight:chicken_sandwich"
+disable_toast: true
+x: 4d
+y: 29d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:chicken_sandwich"
+icon: "farmersdelight:chicken_sandwich"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_949768032"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.beef_stew}"
+icon: "farmersdelight:beef_stew"
+disable_toast: true
+x: -4d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:beef_stew"
+icon: "farmersdelight:beef_stew"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x2104834839"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.hamburger}"
+icon: "farmersdelight:hamburger"
+disable_toast: true
+x: -3d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:hamburger"
+icon: "farmersdelight:hamburger"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x30113052"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.bacon_sandwich}"
+icon: "farmersdelight:bacon_sandwich"
+disable_toast: true
+x: -2d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:bacon_sandwich"
+icon: "farmersdelight:bacon_sandwich"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_89888754"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.mutton_wrap}"
+icon: "farmersdelight:mutton_wrap"
+disable_toast: true
+x: -1d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:mutton_wrap"
+icon: "farmersdelight:mutton_wrap"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_790880861"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.dumplings}"
+icon: "farmersdelight:dumplings"
+disable_toast: true
+x: 0d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:dumplings"
+icon: "farmersdelight:dumplings"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x501526364"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.stuffed_potato}"
+icon: "farmersdelight:stuffed_potato"
+disable_toast: true
+x: 1d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:stuffed_potato"
+icon: "farmersdelight:stuffed_potato"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1654063918"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.cabbage_rolls}"
+icon: "farmersdelight:cabbage_rolls"
+disable_toast: true
+x: 2d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:cabbage_rolls"
+icon: "farmersdelight:cabbage_rolls"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1573223379"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.chicken_soup}"
+icon: "farmersdelight:chicken_soup"
+disable_toast: true
+x: 3d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:chicken_soup"
+icon: "farmersdelight:chicken_soup"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1014492444"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.vegetable_soup}"
+icon: "farmersdelight:vegetable_soup"
+disable_toast: true
+x: 4d
+y: 30d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:vegetable_soup"
+icon: "farmersdelight:vegetable_soup"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x450800080"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.fish_stew}"
+icon: "farmersdelight:fish_stew"
+disable_toast: true
+x: -4d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:fish_stew"
+icon: "farmersdelight:fish_stew"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1528963893"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.fried_rice}"
+icon: "farmersdelight:fried_rice"
+disable_toast: true
+x: -3d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:fried_rice"
+icon: "farmersdelight:fried_rice"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1204868201"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.pumpkin_soup}"
+icon: "farmersdelight:pumpkin_soup"
+disable_toast: true
+x: -2d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:pumpkin_soup"
+icon: "farmersdelight:pumpkin_soup"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1548925769"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.baked_cod_stew}"
+icon: "farmersdelight:baked_cod_stew"
+disable_toast: true
+x: -1d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:baked_cod_stew"
+icon: "farmersdelight:baked_cod_stew"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1011300393"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.noodle_soup}"
+icon: "farmersdelight:noodle_soup"
+disable_toast: true
+x: 0d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:noodle_soup"
+icon: "farmersdelight:noodle_soup"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x120140862"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.bacon_and_eggs}"
+icon: "farmersdelight:bacon_and_eggs"
+disable_toast: true
+x: 1d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:bacon_and_eggs"
+icon: "farmersdelight:bacon_and_eggs"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1440239917"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.pasta_with_meatballs}"
+icon: "farmersdelight:pasta_with_meatballs"
+disable_toast: true
+x: 2d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:pasta_with_meatballs"
+icon: "farmersdelight:pasta_with_meatballs"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x2013865029"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.pasta_with_mutton_chop}"
+icon: "farmersdelight:pasta_with_mutton_chop"
+disable_toast: true
+x: 3d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:pasta_with_mutton_chop"
+icon: "farmersdelight:pasta_with_mutton_chop"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1195118800"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.roasted_mutton_chops}"
+icon: "farmersdelight:roasted_mutton_chops"
+disable_toast: true
+x: 4d
+y: 31d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:roasted_mutton_chops"
+icon: "farmersdelight:roasted_mutton_chops"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1147340971"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.vegetable_noodles}"
+icon: "farmersdelight:vegetable_noodles"
+disable_toast: true
+x: -4d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:vegetable_noodles"
+icon: "farmersdelight:vegetable_noodles"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_959916993"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.steak_and_potatoes}"
+icon: "farmersdelight:steak_and_potatoes"
+disable_toast: true
+x: -3d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:steak_and_potatoes"
+icon: "farmersdelight:steak_and_potatoes"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x2043580759"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.ratatouille}"
+icon: "farmersdelight:ratatouille"
+disable_toast: true
+x: -2d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:ratatouille"
+icon: "farmersdelight:ratatouille"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1468778677"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.squid_ink_pasta}"
+icon: "farmersdelight:squid_ink_pasta"
+disable_toast: true
+x: -1d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:squid_ink_pasta"
+icon: "farmersdelight:squid_ink_pasta"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1954254084"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.grilled_salmon}"
+icon: "farmersdelight:grilled_salmon"
+disable_toast: true
+x: 0d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:grilled_salmon"
+icon: "farmersdelight:grilled_salmon"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x834509877"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.roast_chicken}"
+icon: "farmersdelight:roast_chicken"
+disable_toast: true
+x: 1d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:roast_chicken"
+icon: "farmersdelight:roast_chicken"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x834967178"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.stuffed_pumpkin}"
+icon: "farmersdelight:stuffed_pumpkin"
+disable_toast: true
+x: 2d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:stuffed_pumpkin"
+icon: "farmersdelight:stuffed_pumpkin"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_417360791"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "4 × {item.farmersdelight.honey_glazed_ham}"
+icon: "farmersdelight:honey_glazed_ham"
+disable_toast: true
+x: 3d
+y: 32d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "farmersdelight:honey_glazed_ham"
+icon: "farmersdelight:honey_glazed_ham"
+count: 4L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x253557071"
 }
 {
 type: "custom"

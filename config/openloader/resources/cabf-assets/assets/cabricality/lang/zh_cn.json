@@ -1,1382 +1,1336 @@
 {
-	"comment_ponder": "思索",
+  "comment_ponder": "思索",
+
+  "kubejs.ponder.alchemy_setup.header": "使用炼金镭射器",
+
+  "kubejs.ponder.alchemy_setup.text_1": "放置一个激光镭射器，并在其上方放置一个流体漏斗",
+  "kubejs.ponder.alchemy_setup.text_2": "在流体漏斗上方填充富能水",
+  "kubejs.ponder.alchemy_setup.text_3": "右击镭射器产生的一连串的爆炸会破坏方块",
+  "kubejs.ponder.alchemy_setup.text_4": "每次发射镭射波，上方的富能水有一半的几率会变成普通的水",
+  "kubejs.ponder.alchemy_setup.text_5": "你可以利用镭射波做以下的事：",
+  "kubejs.ponder.alchemy_setup.text_6": "对着一些原料发射镭射波会产出新的材料。玄武岩会变成玄武裂骸，雪块会变成暴雪结晶，水则会变成富能水",
+  "kubejs.ponder.alchemy_setup.text_7": "如果你想试着炼金，请把试剂放在镭射器前（在实际使用中，这些材料需要距离镭射器至少6格）",
+  "kubejs.ponder.alchemy_setup.text_8": "你需要一次性放置4罐试剂，并确保它们是同类的。炼金配方与你的世界种子相关",
+  "kubejs.ponder.alchemy_setup.text_9": "例如，当你想要制作一罐金属试剂时，你可以尝试把§e金元素、§8铅元素、§3锌元素、§6铜元素§r和§7铁元素§r试剂互相排列作为炼金原料",
+  "kubejs.ponder.alchemy_setup.text_10": "这里一共有5罐，所以我们需要拿出其中一罐放在一旁，留下剩余4个用作炼金转化的原料",
+  "kubejs.ponder.alchemy_setup.text_11": "让我们试试拿出§8铅元素§r试剂... （在实际使用中，这些材料需要距离镭射器至少6格）",
+  "kubejs.ponder.alchemy_setup.text_12": "...然后右击炼金镭射器",
+  "kubejs.ponder.alchemy_setup.text_13": "嗯...结果似乎不太好，而且那些用作原料的试剂也都消失了",
+  "kubejs.ponder.alchemy_setup.text_14": "这次让我们试试拿出§7铁元素§r试剂",
+  "kubejs.ponder.alchemy_setup.text_15": "干得好，你成功了！当你发现正确的配方时，成品试剂会在流体漏斗上方出现",
+
+  "kubejs.ponder.extractor.header": "使用提取器",
+
+  "kubejs.ponder.extractor.text_1": "要从树干中提取出树脂，你需要制造一些提取器",
+  "kubejs.ponder.extractor.text_2": "把提取器放置在原木旁，确保下方没有遮挡物，然后右击",
+  "kubejs.ponder.extractor.text_3": "现在，你可以用流体管道抽取这些树脂了",
+
+  "kubejs.ponder.rocket_engine.header": "制造火箭引擎",
+
+  "kubejs.ponder.rocket_engine.text_1": "我们需要准备些铁制板材与柱子作为基底，所有引擎都是如此",
+  "kubejs.ponder.rocket_engine.text_2": "对于上方的结构，不同等级的引擎需要不同的材料",
+  "kubejs.ponder.rocket_engine.text_3": "最后，我们使用对应材料封顶",
+  "kubejs.ponder.rocket_engine.text_4": "一台造价不菲的火箭引擎！",
+
+  "kubejs.ponder.rocket_introduction.header": "火箭101",
+
+  "kubejs.ponder.rocket_introduction.text_1": "恭喜！你与进入太空只有一步之遥了！",
+  "kubejs.ponder.rocket_introduction.text_2": "在这之前，你需要做一些准备",
+  "kubejs.ponder.rocket_introduction.text_3": "准备一些火箭用的引擎与储罐",
+  "kubejs.ponder.rocket_introduction.text_4": "就像制造真正的火箭一样，要制造这些大家伙，你需要准备许多材料以组成多方块结构",
+  "kubejs.ponder.rocket_introduction.text_5": "火箭共有4个等级",
+  "kubejs.ponder.rocket_introduction.text_6": "等级越高，走得越远。而你首先需要乘坐最初级的火箭前往其他星球寻找制造高一级火箭所需的材料，然后以此类推...",
+  "kubejs.ponder.rocket_introduction.text_7": "先尝试制造一台一级火箭吧！",
+
+  "kubejs.ponder.rocket_tank.header": "制造火箭燃料箱",
+
+  "kubejs.ponder.rocket_tank.text_1": "制造燃料箱的时候，可以考虑从两格高处开始建造",
+  "kubejs.ponder.rocket_tank.text_2": "先放置一个燃料箱等级所对应的材料",
+  "kubejs.ponder.rocket_tank.text_3": "然后，用板材将其包裹",
+  "kubejs.ponder.rocket_tank.text_4": "再用柱子扩展容量，并填满燃料",
+  "kubejs.ponder.rocket_tank.text_5": "最后一步，用相同的材料封顶",
+  "kubejs.ponder.rocket_tank.text_6": "右击多方块结构的底部，完成建造",
 
-	"kubejs.ponder.alchemy_setup.header": "使用炼金镭射器",
+  "comment_event": "事件",
 
-	"kubejs.ponder.alchemy_setup.text_1" : "放置一个激光镭射器，并在其上方放置一个流体漏斗",
-	"kubejs.ponder.alchemy_setup.text_2" : "在流体漏斗上方填充富能水",
-	"kubejs.ponder.alchemy_setup.text_3" : "右击镭射器产生的一连串的爆炸会破坏方块",
-	"kubejs.ponder.alchemy_setup.text_4" : "每次发射镭射波，上方的富能水有一半的几率会变成普通的水",
-	"kubejs.ponder.alchemy_setup.text_5" : "你可以利用镭射波做以下的事：",
-	"kubejs.ponder.alchemy_setup.text_6" : "对着一些原料发射镭射波会产出新的材料。玄武岩会变成玄武裂骸，雪块会变成暴雪结晶，水则会变成富能水",
-	"kubejs.ponder.alchemy_setup.text_7" : "如果你想试着炼金，请把试剂放在镭射器前（在实际使用中，这些材料需要距离镭射器至少6格）",
-	"kubejs.ponder.alchemy_setup.text_8" : "你需要一次性放置4罐试剂，并确保它们是同类的。炼金配方与你的世界种子相关",
-	"kubejs.ponder.alchemy_setup.text_9" : "例如，当你想要制作一罐金属试剂时，你可以尝试把§e金元素、§8铅元素、§3锌元素、§6铜元素§r和§7铁元素§r试剂互相排列作为炼金原料",
-	"kubejs.ponder.alchemy_setup.text_10": "这里一共有5罐，所以我们需要拿出其中一罐放在一旁，留下剩余4个用作炼金转化的原料",
-	"kubejs.ponder.alchemy_setup.text_11": "让我们试试拿出§8铅元素§r试剂... （在实际使用中，这些材料需要距离镭射器至少6格）",
-	"kubejs.ponder.alchemy_setup.text_12": "...然后右击炼金镭射器",
-	"kubejs.ponder.alchemy_setup.text_13": "嗯...结果似乎不太好，而且那些用作原料的试剂也都消失了",
-	"kubejs.ponder.alchemy_setup.text_14": "这次让我们试试拿出§7铁元素§r试剂",
-	"kubejs.ponder.alchemy_setup.text_15": "干得好，你成功了！当你发现正确的配方时，成品试剂会在流体漏斗上方出现",
+  "event.cabricality.coin_flip": "§8%s翻转了一枚%s，§8结果是",
+  "event.cabricality.dice_roll": "§8%s掷出了一枚%s，§8结果是",
 
+  "comment_item": "物品",
 
-	"kubejs.ponder.extractor.header": "使用提取器",
+  "item.cabricality.kinetic_mechanism": "动力构件",
+  "item.cabricality.sealed_mechanism": "气密构件",
+  "item.cabricality.infernal_mechanism": "酷热构件",
+  "item.cabricality.sturdy_mechanism": "抗压构件",
+  "item.cabricality.inductive_mechanism": "超频构件",
+  "item.cabricality.abstruse_mechanism": "深邃构件",
+  "item.cabricality.calculation_mechanism": "智能构件",
+
+  "item.cabricality.incomplete_kinetic_mechanism": "动力构件（半成品）",
+  "item.cabricality.incomplete_sealed_mechanism": "气密构件（半成品）",
+  "item.cabricality.incomplete_infernal_mechanism": "酷热构件（半成品）",
+  "item.cabricality.incomplete_sturdy_mechanism": "抗压构件（半成品）",
+  "item.cabricality.incomplete_inductive_mechanism": "超频构件（半成品）",
+  "item.cabricality.incomplete_abstruse_mechanism": "深邃构件（半成品）",
+  "item.cabricality.incomplete_calculation_mechanism": "智能构件（半成品）",
+
+  "item.cabricality.saw_blade": "锯片",
+
+  "item.cabricality.stone_saw": "石手锯",
+  "item.cabricality.iron_saw": "铁手锯",
+  "item.cabricality.diamond_saw": "钻石手锯",
+  "item.cabricality.netherite_saw": "下界合金手锯",
+
+  "item.cabricality.screwdriver": "电工螺丝刀",
+
+  "item.cabricality.stone_rod": "石棍",
+
+  "item.cabricality.invar_ingot": "殷钢锭",
+  "item.cabricality.nickel_ingot": "镍锭",
+  "item.cabricality.nickel_nugget": "镍粒",
+  "item.cabricality.enderium_ingot": "谐振末影锭",
+
+  "item.cabricality.nickel_compound": "镍混合物",
+  "item.cabricality.invar_compound": "殷钢混合物",
+  "item.cabricality.silicon_compound": "硅混合物",
+
+  "item.cabricality.ruby": "红宝石",
+  "item.cabricality.sapphire": "蓝宝石",
+
+  "item.cabricality.gold_coin": "§6金币",
+  "item.cabricality.silver_coin": "§7银币",
+
+  "item.cabricality.sand_ball": "沙团",
+  "item.cabricality.rough_sand": "粗砂",
+  "item.cabricality.purified_sand": "高纯砂",
+
+  "item.cabricality.coke_chunk": "小块焦炭",
+  "item.cabricality.incomplete_coke_chunk": "小块焦炭（半成品）",
+
+  "item.cabricality.rubber": "橡胶",
+  "item.cabricality.cured_rubber": "橡胶",
+
+  "item.cabricality.nickel_dust": "镍粉",
+  "item.cabricality.cobalt_dust": "钴粉",
+  "item.cabricality.desh_dust": "戴斯粉",
+  "item.cabricality.ostrum_dust": "紫金粉",
+  "item.cabricality.calorite_dust": "耐热金属粉",
+  "item.cabricality.emerald_dust": "绿宝石粉",
+  "item.cabricality.diamond_dust": "钻石粉",
+
+  "item.cabricality.basalz_shard": "玄武裂骸",
+  "item.cabricality.basalz_powder": "玄武粉末",
+  "item.cabricality.blizz_cube": "暴雪结晶",
+  "item.cabricality.blizz_powder": "暴雪粉末",
+
+  "item.cabricality.ice_charge": "冰荷弹",
+  "item.cabricality.earth_charge": "岩荷弹",
+  "item.cabricality.lightning_charge": "电荷弹",
+
+  "item.cabricality.circuit_scrap": "压印模板残片",
+
+  "item.cabricality.zinc_sheet": "锌板",
+
+  "item.cabricality.matter_plastics": "原质塑料",
+
+  "item.cabricality.coal_coke": "焦炭",
+
+  "item.cabricality.earth_slime_fern_leaf": "黏性蕨叶片",
+  "item.cabricality.earth_slime_fern_paste": "黏性蕨粉末",
+  "item.cabricality.ender_slime_fern_leaf": "黏性蕨叶片",
+  "item.cabricality.ender_slime_fern_paste": "黏性蕨粉末",
+  "item.cabricality.sky_slime_fern_leaf": "黏性蕨叶片",
+  "item.cabricality.sky_slime_fern_paste": "黏性蕨粉末",
+
+  "item.cabricality.radiant_sheet": "光辉板",
+  "item.cabricality.radiant_coil": "光辉线圈",
+
+  "item.cabricality.chromatic_resonator": "异彩共鸣器",
+
+  "item.cabricality.dye_entangled_singularity": "染色量子纠缠奇点",
+
+  "item.cabricality.flash_drive": "闪存",
+
+  "item.cabricality.crushed_cobalt_ore": "粉碎钴矿石",
+  "item.cabricality.crushed_desh_ore": "粉碎戴斯矿石",
+  "item.cabricality.crushed_ostrum_ore": "粉碎紫金矿石",
+  "item.cabricality.crushed_calorite_ore": "粉碎耐热金属矿石",
+
+  "item.cabricality.incomplete_calculation_processor": "运算处理器（半成品）",
+  "item.cabricality.incomplete_logic_processor": "逻辑处理器（半成品）",
+  "item.cabricality.incomplete_engineering_processor": "工程处理器（半成品）",
+
+  "item.cabricality.resin_bucket": "树脂桶",
+  "item.cabricality.redstone_bucket": "熔融红石桶",
+  "item.cabricality.sky_stone_bucket": "等离子态陨石桶",
+  "item.cabricality.waste_bucket": "异彩废液桶",
+  "item.cabricality.powered_water_bucket": "富能水桶",
+  "item.cabricality.coke_bucket": "液态焦炭桶",
+  "item.cabricality.fine_sand_bucket": "细砂桶",
+  "item.cabricality.raw_logic_bucket": "玻色-爱因斯坦凝聚态逻辑桶（未处理）",
+  "item.cabricality.matrix_bucket": "液态智能矩阵桶",
+
+  "item.cabricality.molten_desh_bucket": "熔融戴斯桶",
+  "item.cabricality.molten_ostrum_bucket": "熔融紫金桶",
+  "item.cabricality.molten_calorite_bucket": "熔融耐热金属桶",
+
+  "item.cabricality.zero": "0",
+  "item.cabricality.one": "1",
+  "item.cabricality.two": "2",
+  "item.cabricality.three": "3",
+  "item.cabricality.four": "4",
+  "item.cabricality.five": "5",
+  "item.cabricality.six": "6",
+  "item.cabricality.seven": "7",
+  "item.cabricality.eight": "8",
+  "item.cabricality.nine": "9",
+
+  "item.cabricality.plus": "+",
+  "item.cabricality.minus": "-",
+  "item.cabricality.multiply": "×",
+  "item.cabricality.divide": "÷",
+  "item.cabricality.missingno": "א",
+
+  "item.cabricality.three_cast": "整数铸模（3）",
+  "item.cabricality.eight_cast": "整数铸模（8）",
+  "item.cabricality.plus_cast": "运算符铸模（+）",
+  "item.cabricality.minus_cast": "运算符铸模（-）",
+  "item.cabricality.multiply_cast": "运算符铸模（×）",
+  "item.cabricality.divide_cast": "运算符铸模（÷）",
+
+  "comment_block": "方块",
+
+  "block.cabricality.dice": "§5骰子",
+
+  "block.cabricality.extractor_machine": "提取器",
+  "block.cabricality.andesite_machine": "安山机器",
+  "block.cabricality.brass_machine": "黄铜机器",
+  "block.cabricality.copper_machine": "铜机器",
+  "block.cabricality.zinc_machine": "锌机器",
+  "block.cabricality.enderium_machine": "谐振末影机器",
+  "block.cabricality.obsidian_machine": "黑曜机器",
+
+  "block.cabricality.invar_casing": "殷钢机壳",
+  "block.cabricality.fluix_casing": "福鲁伊克斯机壳",
+  "block.cabricality.zinc_casing": "锌机壳",
+  "block.cabricality.enderium_casing": "谐振末影机壳",
+
+  "block.cabricality.computation_matrix": "智能矩阵",
+
+  "comment_substrate": "试剂",
+
+  "block.cabricality.substrate_andesite": "§7安山岩§r试剂",
+  "block.cabricality.substrate_diorite": "§7闪长岩§r试剂",
+  "block.cabricality.substrate_granite": "§7花岗岩§r试剂",
+  "block.cabricality.substrate_cobblestone": "§7岩石§r试剂",
+  "block.cabricality.substrate_basalt": "§7玄武岩§r试剂",
+  "block.cabricality.substrate_limestone": "§7石灰岩§r试剂",
+
+  "block.cabricality.substrate_red": "§4烟栗§r试剂",
+  "block.cabricality.substrate_orange": "§6赭石§r试剂",
+  "block.cabricality.substrate_yellow": "§e藤黄§r试剂",
+  "block.cabricality.substrate_green": "§2粗孔雀绿§r试剂",
+  "block.cabricality.substrate_blue": "§3品绿§r试剂",
+  "block.cabricality.substrate_magenta": "§d苋菜红§r试剂",
+
+  "block.cabricality.substrate_blaze": "§6烈焰§r试剂",
+  "block.cabricality.substrate_slime": "§a莱姆§r试剂",
+  "block.cabricality.substrate_nether": "§4异度§r试剂",
+  "block.cabricality.substrate_obsidian": "§8曜黑§r试剂",
+  "block.cabricality.substrate_gunpowder": "§8易爆§r试剂",
+  "block.cabricality.substrate_prismarine": "§3亲水§r试剂",
+
+  "block.cabricality.substrate_sulfur": "§6硫磺§r试剂",
+  "block.cabricality.substrate_certus": "§b赛特斯石英§r试剂",
+
+  "block.cabricality.substrate_zinc": "§3锌元素§r试剂",
+  "block.cabricality.substrate_copper": "§6铜元素§r试剂",
+  "block.cabricality.substrate_iron": "§7铁元素§r试剂",
+  "block.cabricality.substrate_lead": "§8铅元素§r试剂",
+  "block.cabricality.substrate_gold": "§e金元素§r试剂",
+
+  "block.cabricality.substrate_lapis": "§1青金石§r试剂",
+  "block.cabricality.substrate_emerald": "§2绿宝石§r试剂",
+  "block.cabricality.substrate_diamond": "§b纯钻§r试剂",
+  "block.cabricality.substrate_ruby": "§c血钻§r试剂",
+  "block.cabricality.substrate_sapphire": "§9蓝宝石§r试剂",
+
+  "block.cabricality.substrate_igneous": "§d火山岩催化剂",
+  "block.cabricality.substrate_herbal": "§d草药催化剂",
+  "block.cabricality.substrate_volatile": "§d沸腾催化剂",
+  "block.cabricality.substrate_crystal": "§d晶化催化剂",
+  "block.cabricality.substrate_metal": "§d箔层催化剂",
+  "block.cabricality.substrate_gem": "§d辉光催化剂",
+
+  "block.cabricality.substrate_chaos": "§b§khu§on§mДa§r§b§k§oャ§lt.化§r§b§k§n劑§l\\\"【",
+  "block.cabricality.substrate_silicon": "§d高能硅试剂",
+  "block.cabricality.substrate_silver": "§7银元素§r试剂",
+
+  "block.cabricality.accelerator_glowstone": "§6荧石§r稳定剂",
+  "block.cabricality.accelerator_redstone": "§c红石§r稳定剂",
+
+  "block.cabricality.failed_alchemy_0": "罐装污秽",
+  "block.cabricality.failed_alchemy_1": "罐装污秽",
+  "block.cabricality.failed_alchemy_2": "罐装污秽",
+  "block.cabricality.failed_alchemy_3": "罐装污秽",
+  "block.cabricality.failed_alchemy_4": "罐装污秽",
+  "block.cabricality.failed_alchemy_5": "罐装污秽",
+  "block.cabricality.failed_alchemy_6": "罐装污秽",
+  "block.cabricality.failed_alchemy_7": "罐装污秽",
+  "block.cabricality.failed_alchemy_8": "罐装污秽",
+  "block.cabricality.failed_alchemy_9": "罐装污秽",
+  "block.cabricality.failed_alchemy_10": "罐装污秽",
+  "block.cabricality.failed_alchemy_11": "罐装污秽",
+  "block.cabricality.failed_alchemy_12": "罐装污秽",
+  "block.cabricality.failed_alchemy_13": "罐装污秽",
+  "block.cabricality.failed_alchemy_14": "罐装污秽",
+
+  "comment_fluid": "流体",
+
+  "fluid.cabricality.resin": "树脂",
+  "fluid.cabricality.redstone": "熔融红石",
+  "fluid.cabricality.sky_stone": "等离子态陨石",
+  "fluid.cabricality.waste": "异彩废液",
+  "fluid.cabricality.powered_water": "富能水",
+  "fluid.cabricality.coke": "液态焦炭",
+  "fluid.cabricality.fine_sand": "细砂",
+  "fluid.cabricality.raw_logic": "玻色-爱因斯坦凝聚态逻辑（未处理）",
+  "fluid.cabricality.matrix": "液态智能矩阵",
+
+  "fluid.cabricality.molten_desh": "熔融戴斯",
+  "fluid.cabricality.molten_ostrum": "熔融紫金",
+  "fluid.cabricality.molten_calorite": "熔融耐热金属",
+
+  "fluid.cabricality.number_0": "玻色-爱因斯坦凝聚态逻辑（0）",
+  "fluid.cabricality.number_1": "玻色-爱因斯坦凝聚态逻辑（1）",
+  "fluid.cabricality.number_2": "玻色-爱因斯坦凝聚态逻辑（2）",
+  "fluid.cabricality.number_3": "玻色-爱因斯坦凝聚态逻辑（3）",
+  "fluid.cabricality.number_4": "玻色-爱因斯坦凝聚态逻辑（4）",
+  "fluid.cabricality.number_5": "玻色-爱因斯坦凝聚态逻辑（5）",
+  "fluid.cabricality.number_6": "玻色-爱因斯坦凝聚态逻辑（6）",
+  "fluid.cabricality.number_7": "玻色-爱因斯坦凝聚态逻辑（7）",
+  "fluid.cabricality.number_8": "玻色-爱因斯坦凝聚态逻辑（8）",
+  "fluid.cabricality.number_9": "玻色-爱因斯坦凝聚态逻辑（9）",
+
+  "comment_trading": "交易",
+
+  "item.cabricality.profession_card": "§d职业铭牌",
+  "item.cabricality.trade_card": "§6交易铭牌",
+
+  "data.cabricality.title": "&f 永无止境：重缝",
+
+  "contraption.cabricality.automated": "&a自动生产",
+
+  "chapter_groups.cabricality.1": "&f  工具箱",
+  "chapter_groups.cabricality.2": "&f  科技树",
+
+  "welcome.cabricality.title": "&8  向着星辰与深渊！",
+
+  "welcome.cabricality.limitless.title": "&f&l无限潜能",
+  "welcome.cabricality.limitless.subtitle": "一路顺风",
+  "welcome.cabricality.limitless.content": "这是为你准备的世界。\n\n我们希望你能徜徉在机械动力等模组的无限可能中，更希望你能玩得开心！\n&7整个世界都将为你敞开！",
+
+  "welcome.cabricality.optional.title": "&f&l按需供应",
+  "welcome.cabricality.optional.subtitle": "图灵测试",
+  "welcome.cabricality.optional.content": "任务系统可以帮助你使用&3交易&r模组和&6科技线&r模组对你的工厂进行深度定制。\n\n当然，这完全不是必要的——你可以随意创造和发挥，但任务系统也许能在你每次迷失的时候将你拉回正轨，并给你些小奖励。",
+
+  "welcome.cabricality.i.title": "&f&lI",
+  "welcome.cabricality.i.subtitle": "简介",
+  "welcome.cabricality.i.content": "世界天翻地覆！准备创造最完美的机械工厂吧！\n&7打起精神，鼓足勇气！",
+
+  "welcome.cabricality.ii.title": "&f&lII",
+  "welcome.cabricality.ii.subtitle": "有志者事竟成",
+  "welcome.cabricality.ii.content": "走向深空的路上，有近半百个全新发明正等着你。\n\n你将会解锁成千上万用途各异的零件，并需要把它们组装成精密而又庞大的机器。不要害怕失败，否则你将一事无成。\n&7你可以亲手推动下一次工业革命！",
+
+  "welcome.cabricality.iii.title": "&f&lIII",
+  "welcome.cabricality.iii.subtitle": "技术爆炸",
+  "welcome.cabricality.iii.content": "你的工厂将会制造出精密的智能构件并组装出惊人的航天器，然后一飞冲天！\n\n每个人走的每一步都是不同的，但它们同等重要。在一些时候，如果你运气足够好，也能够事半功倍！\n尽兴的同时也要保持自信。",
+
+  "welcome.cabricality.iv.title": "&f&lIV",
+  "welcome.cabricality.iv.subtitle": "换种口味",
+  "welcome.cabricality.iv.content": "不想总被死板的科技束缚？\n\n在这里，你还可以通过完成任务和职业交易募集资金。\n\n你获得的银币可以在&6市集&r购买许多东西，资源、特殊物品和建筑方块...合理使用它们肯定有所增益！",
+
+  "welcome.cabricality.overview.title": "&6&l任务总览",
+  "welcome.cabricality.overview.content": "&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！\n\n&5这些成就和Minecraft的进度不太一样。他们会更加困难，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r购物。\n\n&6就和逛商场一样，不过我们包邮。\n\n&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。\n\n&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！",
+
+  "welcome.cabricality.go.title": "&f&l&o临门一脚",
+  "welcome.cabricality.go.content": "现在你对你的任务目标有了清楚的了解。从这里你将开始你全新的征程。祝好运！",
+
+  "market.cabricality.title": "&6▶ 市集",
+
+  "market.cabricality.start.title": "&6&l市集",
+  "market.cabricality.start.subtitle": "在这里，你甚至可以买到...",
+  "market.cabricality.start.content": "在&6市集，&r你可以买到许多有趣的商品和小部件。它们有的能助你完成任务，还有的能帮你打发时间\n\n四处逛逛吧，你肯定会爱上这里的！",
+
+  "market.cabricality.start.task.checkmark.title": "四处逛逛",
+
+  "market.cabricality.exchange.gold.title": "货币&6兑换",
+  "market.cabricality.exchange.gold.subtitle": "&7银&r -> &6金&r   汇率 64:1",
+  "market.cabricality.exchange.gold.content": "有些交易需要用金币支付，每一枚金币价值一组银币。",
+
+  "market.cabricality.exchange.silver.title": "货币&7兑换",
+  "market.cabricality.exchange.silver.subtitle": "&6金&r -> &7银&r   汇率 1:64",
+  "market.cabricality.exchange.silver.content": "你也可以用一枚金币换回一组银币。",
+
+  "market.cabricality.shipments.gold": "&6金币",
+  "market.cabricality.shipments.silver": "&7银币",
+  "market.cabricality.shipments.repeatable": "可重复的",
+
+  "market.cabricality.saw.title": "锯我所知",
+  "market.cabricality.saw.subtitle": "&63 金币&r - 毫无根锯",
+  "market.cabricality.saw.content": "购买它以在组装&6动力构件&r时最小化工具磨损。",
+
+  "market.cabricality.screwdriver.title": "从来不螺",
+  "market.cabricality.screwdriver.subtitle": "&65 金币&r - 996",
+  "market.cabricality.screwdriver.content": "购买它以在组装&6精密构件&r时最小化工具磨损。",
+
+  "market.cabricality.resonator.title": "永久磁铁",
+  "market.cabricality.resonator.subtitle": "&67 金币&r - 贴贴",
+  "market.cabricality.resonator.content": "购买它以在组装&6超频构件&r时最小化工具磨损。",
+
+  "market.cabricality.flash_drive.title": "Windows更新",
+  "market.cabricality.flash_drive.subtitle": "&611 金币&r - 是时候更新你的XP啦",
+  "market.cabricality.flash_drive.content": "购买它以在组装&6智能构件&r时最小化工具磨损。",
+
+  "market.cabricality.sleepless.title": "梦游症",
+  "market.cabricality.sleepless.subtitle": "&710 银币&r - 毋有梦魇",
+  "market.cabricality.sleepless.content": "面对日落，我们并非无计可施...\n\n至少，假装有地方睡觉能够理所当然地赐予你时间去做更多事。",
+
+  "market.cabricality.locator.title": "遗迹猎者",
+  "market.cabricality.locator.subtitle": "&62 金币&r - 自找上门",
+  "market.cabricality.locator.content": "如果你不想在下界漫无目的地散步，买它就对了。",
+
+  "market.cabricality.dinner.title": "工作餐",
+  "market.cabricality.dinner.subtitle": "&710 银币&r - 横扫饥饿，做回自己！",
+  "market.cabricality.dinner.content": "大多数情况下，和朋友们聚餐可以增进友谊，顺带让你饱餐一顿&7（废话）。&r",
+
+  "market.cabricality.landfill.title": "填海造陆工程 III期",
+  "market.cabricality.landfill.subtitle": "&715 银币&r - 泥土，泥土，泥土。",
+  "market.cabricality.landfill.content": "来自大地的馈赠，当然，要花钱。",
+
+  "market.cabricality.test_of_patience.title": "命运酒桶",
+  "market.cabricality.test_of_patience.subtitle": "&750 银币&r - 刷新一下网页？",
+  "market.cabricality.test_of_patience.content": "命运的酒桶自有乾坤。可惜你不能把它们塞回去，不然潜影盒们就可以提前退休了。\n\n&7这神秘的酒桶并不廉价，最深处又会藏着些什么呢？",
+
+  "market.cabricality.enderpack.title": "负重旅行",
+  "market.cabricality.enderpack.subtitle": "&755 银币&r - 只是你肩上的重担...",
+  "market.cabricality.enderpack.content": "便携背包，古典款。易用，时尚。不试试吗？",
 
-	"kubejs.ponder.extractor.text_1": "要从树干中提取出树脂，你需要制造一些提取器",
-	"kubejs.ponder.extractor.text_2": "把提取器放置在原木旁，确保下方没有遮挡物，然后右击",
-	"kubejs.ponder.extractor.text_3": "现在，你可以用流体管道抽取这些树脂了",
+  "market.cabricality.undying.title": "半条命",
+  "market.cabricality.undying.subtitle": "&760 银币&r - 喂，快把你的VR头显摘下来！",
+  "market.cabricality.undying.content": "不用担心原主回来索命。",
 
+  "market.cabricality.mob.title": "妖魔鬼怪快离开",
+  "market.cabricality.mob.subtitle": "&745 银币&r - 看我老爹施法",
+  "market.cabricality.mob.content": "如你所见，这一罩蕴含着魔法的钟可以驱散它周围无光环境中潜藏着的鬼怪！现场试用，七天无理由退货！购买捆绑包并置于随附灵魂火上更能响上加响！保证你此生不再有异变之患！\n&7温馨提示：广告创意，请以实物为准。\n\n&4灵梦：谁抢我活",
 
-	"kubejs.ponder.rocket_engine.header": "制造火箭引擎",
+  "market.cabricality.express.title": "压压速递",
+  "market.cabricality.express.subtitle": "&66 金币&r - 今晚别睡太死",
+  "market.cabricality.express.content": "技术人员们一般不太喜欢出门，当然，宅们也不喜欢。庆幸的是，这几份板件现在可以直接派送到你的包里。",
 
-	"kubejs.ponder.rocket_engine.text_1": "我们需要准备些铁制板材与柱子作为基底，所有引擎都是如此",
-	"kubejs.ponder.rocket_engine.text_2": "对于上方的结构，不同等级的引擎需要不同的材料",
-	"kubejs.ponder.rocket_engine.text_3": "最后，我们使用对应材料封顶",
-	"kubejs.ponder.rocket_engine.text_4": "一台造价不菲的火箭引擎！",
+  "market.cabricality.gardener.title": "你的永恒花园",
+  "market.cabricality.gardener.subtitle": "&724 银币&r - 勿忘我",
+  "market.cabricality.gardener.content": "",
 
+  "market.cabricality.painter.title": "绘师养成记",
+  "market.cabricality.painter.subtitle": "&724 银币&r - 不赠送入门课程",
+  "market.cabricality.painter.content": "嘶哈嘶哈",
 
-	"kubejs.ponder.rocket_introduction.header": "火箭101",
+  "market.cabricality.steamer.title": "铁路收藏家的最爱",
+  "market.cabricality.steamer.subtitle": "&724 银币&r - 学开车，啊不，学开火车",
+  "market.cabricality.steamer.content": "如上，这里学不到如何驾驶高达。",
 
-	"kubejs.ponder.rocket_introduction.text_1": "恭喜！你与进入太空只有一步之遥了！",
-	"kubejs.ponder.rocket_introduction.text_2": "在这之前，你需要做一些准备",
-	"kubejs.ponder.rocket_introduction.text_3": "准备一些火箭用的引擎与储罐",
-	"kubejs.ponder.rocket_introduction.text_4": "就像制造真正的火箭一样，要制造这些大家伙，你需要准备许多材料以组成多方块结构",
-	"kubejs.ponder.rocket_introduction.text_5": "火箭共有4个等级",
-	"kubejs.ponder.rocket_introduction.text_6": "等级越高，走得越远。而你首先需要乘坐最初级的火箭前往其他星球寻找制造高一级火箭所需的材料，然后以此类推...",
-	"kubejs.ponder.rocket_introduction.text_7": "先尝试制造一台一级火箭吧！",
+  "market.cabricality.pet_owner.title": "铲屎官的成长之路",
+  "market.cabricality.pet_owner.subtitle": "&724 银币&r - 不只是因为寂寞",
+  "market.cabricality.pet_owner.content": "都给我变！",
 
+  "market.cabricality.leaf.title": "土木工程入门",
+  "market.cabricality.leaf.subtitle": "&724 银币&r - 记得带桶",
+  "market.cabricality.leaf.content": "用树叶铺满你的机器！\n&7不用担心结构问题，你和机器其中一个能跑就行。",
 
-	"kubejs.ponder.rocket_tank.header": "制造火箭燃料箱",
+  "market.cabricality.bee.title": "蜂窝移动网络",
+  "market.cabricality.bee.subtitle": "&748 银币&r - 我打赌你的信号不好",
+  "market.cabricality.bee.content": "随附蜜蜂刷怪蛋，小心使用。",
 
-	"kubejs.ponder.rocket_tank.text_1": "制造燃料箱的时候，可以考虑从两格高处开始建造",
-	"kubejs.ponder.rocket_tank.text_2": "先放置一个燃料箱等级所对应的材料",
-	"kubejs.ponder.rocket_tank.text_3": "然后，用板材将其包裹",
-	"kubejs.ponder.rocket_tank.text_4": "再用柱子扩展容量，并填满燃料",
-	"kubejs.ponder.rocket_tank.text_5": "最后一步，用相同的材料封顶",
-	"kubejs.ponder.rocket_tank.text_6": "右击多方块结构的底部，完成建造",
+  "market.cabricality.bee.task.flower.title": "任意花朵",
 
+  "overview.cabricality.title": "&a▶ 纵览",
 
+  "overview.cabricality.start.title": "&a&l一切都要从那棵树说起...",
+  "overview.cabricality.start.content": "&a欢迎来到纵览。&r你可以随时在这里查看团队的科技树发展进度并解锁全新任务。如你所见，我会一直指引着你们直到你们离开这里走向更远——你们对大陆的探索将会在那时告一段落，但等着你们的远不止这些。旅途开始了！&a向着Minecraft科技时代的绝巘之峰勇敢地攀登吧！&r",
 
-	"comment_event": "事件",
+  "overview.cabricality.start.task.logs.title": "任意原木",
 
-	"event.cabricality.coin_flip": "§8%s翻转了一枚%s，§8结果是",
-	"event.cabricality.dice_roll": "§8%s掷出了一枚%s，§8结果是",
+  "overview.cabricality.preparation.title": "&f&l准备得当",
+  "overview.cabricality.preparation.content": "在你急着开始之前，先准备些东西！一个完备的初始工作流能够使你的后续探索更加轻松。\n&7横着省下的路就会变成竖着的坑，早晚都要经过。",
 
+  "overview.cabricality.preparation.task.forgery.title": "冶炼炉",
 
+  "overview.cabricality.chapter_1.start.title": "&6&l扬帆起航",
+  "overview.cabricality.chapter_1.start.subtitle": "&6第一章",
+  "overview.cabricality.chapter_1.start.content": "我们的事业刚刚起步！早期的工程真可谓是开荒垦地一般。自动合成？别想了。智能过滤？那东西可不便宜。自动化运输？嘿，找边儿站着去吧。现在只有自己动手才能丰衣足食。而这时你最需要的正是——&6安山机器！&r\n\n单击上方复选框以解锁&6第一章：扬帆起航。&r\n&7具体任务细节可以在左侧边栏选择查看。",
 
-	"comment_item": "物品",
+  "overview.cabricality.chapter_1.start.task.unlock.title": "&6解锁第一章",
 
-	"item.cabricality.kinetic_mechanism"    : "动力构件",
-	"item.cabricality.sealed_mechanism"     : "气密构件",
-	"item.cabricality.infernal_mechanism"   : "酷热构件",
-	"item.cabricality.sturdy_mechanism"     : "抗压构件",
-	"item.cabricality.inductive_mechanism"  : "超频构件",
-	"item.cabricality.abstruse_mechanism"   : "深邃构件",
-	"item.cabricality.calculation_mechanism": "智能构件",
+  "overview.cabricality.chapter_1.end.title": "&f&l安山时代",
+  "overview.cabricality.chapter_1.end.subtitle": "里程碑",
+  "overview.cabricality.chapter_1.end.content": "现在你已经完成了&6动力构件&r的自动化！这样一来，很多机器都可以手工制作了。\n\n你现在可以选择继续发展&6第二章：初入门道&r的内容，或转而攻克&4第一章支线：橡胶垄断&r的挑战。无论如何，保证&4铜机器&r的充足供应总不会是件坏事！",
 
-	"item.cabricality.incomplete_kinetic_mechanism"    : "动力构件（半成品）",
-	"item.cabricality.incomplete_sealed_mechanism"     : "气密构件（半成品）",
-	"item.cabricality.incomplete_infernal_mechanism"   : "酷热构件（半成品）",
-	"item.cabricality.incomplete_sturdy_mechanism"     : "抗压构件（半成品）",
-	"item.cabricality.incomplete_inductive_mechanism"  : "超频构件（半成品）",
-	"item.cabricality.incomplete_abstruse_mechanism"   : "深邃构件（半成品）",
-	"item.cabricality.incomplete_calculation_mechanism": "智能构件（半成品）",
+  "overview.cabricality.chapter_1.end.task.complete.title": "&6C完成第一章",
 
-	"item.cabricality.saw_blade": "锯片",
+  "overview.cabricality.bonus_1a.start.title": "&f&l能源大亨",
+  "overview.cabricality.bonus_1a.start.subtitle": "第一章 支线",
+  "overview.cabricality.bonus_1a.start.content": "&4铜机器&r的需求并没有那么大。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？\n&7单击上方复选框，揭幕第一章的额外支线内容。",
 
-	"item.cabricality.stone_saw"    : "石手锯",
-	"item.cabricality.iron_saw"     : "铁手锯",
-	"item.cabricality.diamond_saw"  : "钻石手锯",
-	"item.cabricality.netherite_saw": "下界合金手锯",
+  "overview.cabricality.bonus_1a.start.task.unlock.title": "&4解锁第一章 &7支线",
 
-	"item.cabricality.screwdriver": "电工螺丝刀",
+  "overview.cabricality.bonus_1a.end.title": "&4&l冰汽时代",
+  "overview.cabricality.bonus_1a.end.subtitle": "&4挑战",
+  "overview.cabricality.bonus_1a.end.content": "&4铜机器&r将会满足你对流体处理的所有需求。无论是释放还是抽取、交互、过滤...你现在可以向你的工厂中引入全自动流体处理系统了！\n&4气密构件&7仅会在&4第一章支线：能源大亨&7中使用。",
 
-	"item.cabricality.stone_rod": "石棍",
+  "overview.cabricality.bonus_1a.end.task.complete.title": "&4完成第一章 &7支线",
 
-	"item.cabricality.invar_ingot"   : "殷钢锭",
-	"item.cabricality.nickel_ingot"  : "镍锭",
-	"item.cabricality.nickel_nugget" : "镍粒",
-	"item.cabricality.enderium_ingot": "谐振末影锭",
+  "overview.cabricality.chapter_2.start.title": "&6&l初入门道",
+  "overview.cabricality.chapter_2.start.subtitle": "&6第二章",
+  "overview.cabricality.chapter_2.start.content": "我们都知道机旦悖论：一旦要想更方便地自动化生产&6黄铜机器，&r你就首先需要更多的&6黄铜机器！&r\n\n单击上方复选框以解锁&6第二章：初入门道。&r\n&7具体任务细节可以在左侧边栏选择查看。",
 
-	"item.cabricality.nickel_compound" : "镍混合物",
-	"item.cabricality.invar_compound"  : "殷钢混合物",
-	"item.cabricality.silicon_compound": "硅混合物",
-
-	"item.cabricality.ruby"    : "红宝石",
-	"item.cabricality.sapphire": "蓝宝石",
-
-	"item.cabricality.gold_coin"  : "§6金币",
-	"item.cabricality.silver_coin": "§7银币",
-
-	"item.cabricality.sand_ball"    : "沙团",
-	"item.cabricality.rough_sand"   : "粗砂",
-	"item.cabricality.purified_sand": "高纯砂",
+  "overview.cabricality.chapter_2.start.task.unlock.title": "&6解锁第二章",
 
-	"item.cabricality.coke_chunk"           : "小块焦炭",
-	"item.cabricality.incomplete_coke_chunk": "小块焦炭（半成品）",
+  "overview.cabricality.chapter_2.end.title": "&f&l黄铜时代",
+  "overview.cabricality.chapter_2.end.subtitle": "里程碑",
+  "overview.cabricality.chapter_2.end.content": "这么快你就能够自动生产&6精密构件&r了，真是令人惊讶！这下你已经解锁机械动力的几乎全部内容了。现在，从改进生产方式到改善生活环境的工具你应有尽有。&6黄铜色...&r多么好看的颜色！\n\n别懈怠！等你在&2第二章支线：流动产业&r稍作休整后，就该向着&6第三章：钢铁洪流&r进发了！",
 
-	"item.cabricality.rubber"      : "橡胶",
-	"item.cabricality.cured_rubber": "橡胶",
-
-	"item.cabricality.nickel_dust"  : "镍粉",
-	"item.cabricality.cobalt_dust"  : "钴粉",
-	"item.cabricality.desh_dust"    : "戴斯粉",
-	"item.cabricality.ostrum_dust"  : "紫金粉",
-	"item.cabricality.calorite_dust": "耐热金属粉",
-	"item.cabricality.emerald_dust" : "绿宝石粉",
-	"item.cabricality.diamond_dust" : "钻石粉",
-
-	"item.cabricality.basalz_shard" : "玄武裂骸",
-	"item.cabricality.basalz_powder": "玄武粉末",
-	"item.cabricality.blizz_cube"   : "暴雪结晶",
-	"item.cabricality.blizz_powder" : "暴雪粉末",
+  "overview.cabricality.chapter_2.end.task.complete.title": "&6完成第二章",
 
-	"item.cabricality.ice_charge"      : "冰荷弹",
-	"item.cabricality.earth_charge"    : "岩荷弹",
-	"item.cabricality.lightning_charge": "电荷弹",
+  "overview.cabricality.bonus_2a.start.title": "&f&l流动产业",
+  "overview.cabricality.bonus_2a.start.subtitle": "第二章 支线",
+  "overview.cabricality.bonus_2a.start.content": "我们需要更深入些！&2酷热构件&r的生产需要在另一个维度进行。尽管它简直和地狱别无二样，但在新的环境中工作总是能带来些全新的灵感和脑洞&2...也许吧？&r\n&7单击上方复选框，揭幕第二章的额外支线内容。",
 
-	"item.cabricality.circuit_scrap": "压印模板残片",
+  "overview.cabricality.bonus_2a.start.task.unlock.title": "&2解锁第二章 &7支线",
 
-	"item.cabricality.zinc_sheet": "锌板",
+  "overview.cabricality.bonus_2a.end.title": "&2&l朋克时代",
+  "overview.cabricality.bonus_2a.end.subtitle": "&2挑战",
+  "overview.cabricality.bonus_2a.end.content": "&2锌机器&r不可置信地强大！从高效刷石到物品收集，它全都能胜任！是时候好好利用这些&2酷热的强大机器&r来为你的工厂添砖加瓦了。\n&2酷热构件&7仅会在&2第二章支线：流动产业&7中使用。",
 
-	"item.cabricality.matter_plastics": "原质塑料",
+  "overview.cabricality.bonus_2a.end.task.complete.title": "&2完成第二章 &7支线",
 
-	"item.cabricality.coal_coke": "焦炭",
+  "overview.cabricality.chapter_3.start.title": "&6&l钢铁洪流",
+  "overview.cabricality.chapter_3.start.subtitle": "&6第三章",
+  "overview.cabricality.chapter_3.start.content": "嗬，我们终于打下了坚实的基础。是时候快步前进了！\n\n在&6新工业时代，&r你会结出许多奇怪的技术，学到神奇的技巧。有了一定功底之后，无论多么错综复杂的交互生产也将会变得小菜一碟。\n\n点击上方复选框以解锁&6第三章：钢铁洪流。&r\n&7具体任务细节可以在左侧边栏选择查看。",
 
-	"item.cabricality.earth_slime_fern_leaf" : "黏性蕨叶片",
-	"item.cabricality.earth_slime_fern_paste": "黏性蕨粉末",
-	"item.cabricality.ender_slime_fern_leaf" : "黏性蕨叶片",
-	"item.cabricality.ender_slime_fern_paste": "黏性蕨粉末",
-	"item.cabricality.sky_slime_fern_leaf"   : "黏性蕨叶片",
-	"item.cabricality.sky_slime_fern_paste"  : "黏性蕨粉末",
-
-	"item.cabricality.radiant_sheet": "光辉板",
-	"item.cabricality.radiant_coil" : "光辉线圈",
-
-	"item.cabricality.chromatic_resonator": "异彩共鸣器",
-
-	"item.cabricality.dye_entangled_singularity": "染色量子纠缠奇点",
-
-	"item.cabricality.flash_drive": "闪存",
-
-	"item.cabricality.crushed_cobalt_ore"  : "粉碎钴矿石",
-	"item.cabricality.crushed_desh_ore"    : "粉碎戴斯矿石",
-	"item.cabricality.crushed_ostrum_ore"  : "粉碎紫金矿石",
-	"item.cabricality.crushed_calorite_ore": "粉碎耐热金属矿石",
-
-	"item.cabricality.incomplete_calculation_processor": "运算处理器（半成品）",
-	"item.cabricality.incomplete_logic_processor"      : "逻辑处理器（半成品）",
-	"item.cabricality.incomplete_engineering_processor": "工程处理器（半成品）",
-
-	"item.cabricality.resin_bucket"        : "树脂桶",
-	"item.cabricality.redstone_bucket"     : "熔融红石桶",
-	"item.cabricality.sky_stone_bucket"    : "等离子态陨石桶",
-	"item.cabricality.waste_bucket"        : "异彩废液桶",
-	"item.cabricality.powered_water_bucket": "富能水桶",
-	"item.cabricality.coke_bucket"         : "液态焦炭桶",
-	"item.cabricality.fine_sand_bucket"    : "细砂桶",
-	"item.cabricality.raw_logic_bucket"    : "玻色-爱因斯坦凝聚态逻辑桶（未处理）",
-	"item.cabricality.matrix_bucket"       : "液态智能矩阵桶",
-
-	"item.cabricality.molten_desh_bucket"    : "熔融戴斯桶",
-	"item.cabricality.molten_ostrum_bucket"  : "熔融紫金桶",
-	"item.cabricality.molten_calorite_bucket": "熔融耐热金属桶",
-
-	"item.cabricality.zero" : "0",
-	"item.cabricality.one"  : "1",
-	"item.cabricality.two"  : "2",
-	"item.cabricality.three": "3",
-	"item.cabricality.four" : "4",
-	"item.cabricality.five" : "5",
-	"item.cabricality.six"  : "6",
-	"item.cabricality.seven": "7",
-	"item.cabricality.eight": "8",
-	"item.cabricality.nine" : "9",
-
-	"item.cabricality.plus"     : "+",
-	"item.cabricality.minus"    : "-",
-	"item.cabricality.multiply" : "×",
-	"item.cabricality.divide"   : "÷",
-	"item.cabricality.missingno": "א",
-
-	"item.cabricality.three_cast"   : "整数铸模（3）",
-	"item.cabricality.eight_cast"   : "整数铸模（8）",
-	"item.cabricality.plus_cast"    : "运算符铸模（+）",
-	"item.cabricality.minus_cast"   : "运算符铸模（-）",
-	"item.cabricality.multiply_cast": "运算符铸模（×）",
-	"item.cabricality.divide_cast"  : "运算符铸模（÷）",
-
-
-
-	"comment_block": "方块",
-
-	"block.cabricality.dice": "§5骰子",
-
-	"block.cabricality.extractor_machine": "提取器",
-	"block.cabricality.andesite_machine" : "安山机器",
-	"block.cabricality.brass_machine"    : "黄铜机器",
-	"block.cabricality.copper_machine"   : "铜机器",
-	"block.cabricality.zinc_machine"     : "锌机器",
-	"block.cabricality.enderium_machine" : "谐振末影机器",
-	"block.cabricality.obsidian_machine" : "黑曜机器",
-
-	"block.cabricality.invar_casing"   : "殷钢机壳",
-	"block.cabricality.fluix_casing"   : "福鲁伊克斯机壳",
-	"block.cabricality.zinc_casing"    : "锌机壳",
-	"block.cabricality.enderium_casing": "谐振末影机壳",
-
-	"block.cabricality.computation_matrix": "智能矩阵",
-
-
-
-	"comment_substrate": "试剂",
-
-	"block.cabricality.substrate_andesite"   : "§7安山岩§r试剂",
-	"block.cabricality.substrate_diorite"    : "§7闪长岩§r试剂",
-	"block.cabricality.substrate_granite"    : "§7花岗岩§r试剂",
-	"block.cabricality.substrate_cobblestone": "§7岩石§r试剂",
-	"block.cabricality.substrate_basalt"     : "§7玄武岩§r试剂",
-	"block.cabricality.substrate_limestone"  : "§7石灰岩§r试剂",
-
-	"block.cabricality.substrate_red"    : "§4烟栗§r试剂",
-	"block.cabricality.substrate_orange" : "§6赭石§r试剂",
-	"block.cabricality.substrate_yellow" : "§e藤黄§r试剂",
-	"block.cabricality.substrate_green"  : "§2粗孔雀绿§r试剂",
-	"block.cabricality.substrate_blue"   : "§3品绿§r试剂",
-	"block.cabricality.substrate_magenta": "§d苋菜红§r试剂",
-
-	"block.cabricality.substrate_blaze"     : "§6烈焰§r试剂",
-	"block.cabricality.substrate_slime"     : "§a莱姆§r试剂",
-	"block.cabricality.substrate_nether"    : "§4异度§r试剂",
-	"block.cabricality.substrate_obsidian"  : "§8曜黑§r试剂",
-	"block.cabricality.substrate_gunpowder" : "§8易爆§r试剂",
-	"block.cabricality.substrate_prismarine": "§3亲水§r试剂",
-
-	"block.cabricality.substrate_sulfur": "§6硫磺§r试剂",
-	"block.cabricality.substrate_certus": "§b赛特斯石英§r试剂",
-
-	"block.cabricality.substrate_zinc"  : "§3锌元素§r试剂",
-	"block.cabricality.substrate_copper": "§6铜元素§r试剂",
-	"block.cabricality.substrate_iron"  : "§7铁元素§r试剂",
-	"block.cabricality.substrate_lead"  : "§8铅元素§r试剂",
-	"block.cabricality.substrate_gold"  : "§e金元素§r试剂",
-
-	"block.cabricality.substrate_lapis"   : "§1青金石§r试剂",
-	"block.cabricality.substrate_emerald" : "§2绿宝石§r试剂",
-	"block.cabricality.substrate_diamond" : "§b纯钻§r试剂",
-	"block.cabricality.substrate_ruby"   : "§c血钻§r试剂",
-	"block.cabricality.substrate_sapphire": "§9蓝宝石§r试剂",
-
-	"block.cabricality.substrate_igneous" : "§d火山岩催化剂",
-	"block.cabricality.substrate_herbal"  : "§d草药催化剂",
-	"block.cabricality.substrate_volatile": "§d沸腾催化剂",
-	"block.cabricality.substrate_crystal" : "§d晶化催化剂",
-	"block.cabricality.substrate_metal"   : "§d箔层催化剂",
-	"block.cabricality.substrate_gem"     : "§d辉光催化剂",
-
-	"block.cabricality.substrate_chaos"  : "§b§khu§on§mДa§r§b§k§oャ§lt.化§r§b§k§n劑§l\\\"【",
-	"block.cabricality.substrate_silicon": "§d高能硅试剂",
-	"block.cabricality.substrate_silver" : "§7银元素§r试剂",
-
-	"block.cabricality.accelerator_glowstone": "§6荧石§r稳定剂",
-	"block.cabricality.accelerator_redstone" : "§c红石§r稳定剂",
-
-	"block.cabricality.failed_alchemy_0" : "罐装污秽",
-	"block.cabricality.failed_alchemy_1" : "罐装污秽",
-	"block.cabricality.failed_alchemy_2" : "罐装污秽",
-	"block.cabricality.failed_alchemy_3" : "罐装污秽",
-	"block.cabricality.failed_alchemy_4" : "罐装污秽",
-	"block.cabricality.failed_alchemy_5" : "罐装污秽",
-	"block.cabricality.failed_alchemy_6" : "罐装污秽",
-	"block.cabricality.failed_alchemy_7" : "罐装污秽",
-	"block.cabricality.failed_alchemy_8" : "罐装污秽",
-	"block.cabricality.failed_alchemy_9" : "罐装污秽",
-	"block.cabricality.failed_alchemy_10": "罐装污秽",
-	"block.cabricality.failed_alchemy_11": "罐装污秽",
-	"block.cabricality.failed_alchemy_12": "罐装污秽",
-	"block.cabricality.failed_alchemy_13": "罐装污秽",
-	"block.cabricality.failed_alchemy_14": "罐装污秽",
-
-
-
-	"comment_fluid": "流体",
-
-	"fluid.cabricality.resin"        : "树脂",
-	"fluid.cabricality.redstone"     : "熔融红石",
-	"fluid.cabricality.sky_stone"    : "等离子态陨石",
-	"fluid.cabricality.waste"        : "异彩废液",
-	"fluid.cabricality.powered_water": "富能水",
-	"fluid.cabricality.coke"         : "液态焦炭",
-	"fluid.cabricality.fine_sand"    : "细砂",
-	"fluid.cabricality.raw_logic"    : "玻色-爱因斯坦凝聚态逻辑（未处理）",
-	"fluid.cabricality.matrix"       : "液态智能矩阵",
-
-	"fluid.cabricality.molten_desh"    : "熔融戴斯",
-	"fluid.cabricality.molten_ostrum"  : "熔融紫金",
-	"fluid.cabricality.molten_calorite": "熔融耐热金属",
-
-	"fluid.cabricality.number_0": "玻色-爱因斯坦凝聚态逻辑（0）",
-	"fluid.cabricality.number_1": "玻色-爱因斯坦凝聚态逻辑（1）",
-	"fluid.cabricality.number_2": "玻色-爱因斯坦凝聚态逻辑（2）",
-	"fluid.cabricality.number_3": "玻色-爱因斯坦凝聚态逻辑（3）",
-	"fluid.cabricality.number_4": "玻色-爱因斯坦凝聚态逻辑（4）",
-	"fluid.cabricality.number_5": "玻色-爱因斯坦凝聚态逻辑（5）",
-	"fluid.cabricality.number_6": "玻色-爱因斯坦凝聚态逻辑（6）",
-	"fluid.cabricality.number_7": "玻色-爱因斯坦凝聚态逻辑（7）",
-	"fluid.cabricality.number_8": "玻色-爱因斯坦凝聚态逻辑（8）",
-	"fluid.cabricality.number_9": "玻色-爱因斯坦凝聚态逻辑（9）",
-
-
-
-	"comment_trading": "交易",
-
-	"item.cabricality.profession_card": "§d职业铭牌",
-	"item.cabricality.trade_card"     : "§6交易铭牌",
-
-
-
-	"data.cabricality.title": "&f 永无止境：重缝",
-
-
-
-	"contraption.cabricality.automated": "&a自动生产",
-	
-	
-	
-	"chapter_groups.cabricality.1": "&f  工具箱",
-	"chapter_groups.cabricality.2": "&f  科技树",
-	
-	
-	
-	"welcome.cabricality.title": "&8  向着星辰与深渊！",
-	
-	"welcome.cabricality.limitless.title"   : "&f&l无限潜能",
-	"welcome.cabricality.limitless.subtitle": "一路顺风",
-	"welcome.cabricality.limitless.content" : "这是为你准备的世界。\n\n我们希望你能徜徉在机械动力等模组的无限可能中，更希望你能玩得开心！\n&7整个世界都将为你敞开！",
-	
-	"welcome.cabricality.optional.title"   : "&f&l按需供应",
-	"welcome.cabricality.optional.subtitle": "图灵测试",
-	"welcome.cabricality.optional.content" : "任务系统可以帮助你使用&3交易&r模组和&6科技线&r模组对你的工厂进行深度定制。\n\n当然，这完全不是必要的——你可以随意创造和发挥，但任务系统也许能在你每次迷失的时候将你拉回正轨，并给你些小奖励。",
-	
-	"welcome.cabricality.i.title"   : "&f&lI",
-	"welcome.cabricality.i.subtitle": "简介",
-	"welcome.cabricality.i.content" : "世界天翻地覆！准备创造最完美的机械工厂吧！\n&7打起精神，鼓足勇气！",
-	
-	"welcome.cabricality.ii.title"   : "&f&lII",
-	"welcome.cabricality.ii.subtitle": "有志者事竟成",
-	"welcome.cabricality.ii.content" : "走向深空的路上，有近半百个全新发明正等着你。\n\n你将会解锁成千上万用途各异的零件，并需要把它们组装成精密而又庞大的机器。不要害怕失败，否则你将一事无成。\n&7你可以亲手推动下一次工业革命！",
-	
-	"welcome.cabricality.iii.title"   : "&f&lIII",
-	"welcome.cabricality.iii.subtitle": "技术爆炸",
-	"welcome.cabricality.iii.content" : "你的工厂将会制造出精密的智能构件并组装出惊人的航天器，然后一飞冲天！\n\n每个人走的每一步都是不同的，但它们同等重要。在一些时候，如果你运气足够好，也能够事半功倍！\n尽兴的同时也要保持自信。",
-	
-	"welcome.cabricality.iv.title"   : "&f&lIV",
-	"welcome.cabricality.iv.subtitle": "换种口味",
-	"welcome.cabricality.iv.content" : "不想总被死板的科技束缚？\n\n在这里，你还可以通过完成任务和职业交易募集资金。\n\n你获得的银币可以在&6市集&r购买许多东西，资源、特殊物品和建筑方块...合理使用它们肯定有所增益！",
-	
-	"welcome.cabricality.overview.title"  : "&6&l任务总览",
-	"welcome.cabricality.overview.content": "&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！\n\n&5这些成就和Minecraft的进度不太一样。他们会更加困难，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r购物。\n\n&6就和逛商场一样，不过我们包邮。\n\n&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。\n\n&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！",
-	
-	"welcome.cabricality.go.title"  : "&f&l&o临门一脚",
-	"welcome.cabricality.go.content": "现在你对你的任务目标有了清楚的了解。从这里你将开始你全新的征程。祝好运！",
-	
-	
-	
-	"market.cabricality.title": "&6▶ 市集",
-	
-	"market.cabricality.start.title"   : "&6&l市集",
-	"market.cabricality.start.subtitle": "在这里，你甚至可以买到...",
-	"market.cabricality.start.content" : "在&6市集，&r你可以买到许多有趣的商品和小部件。它们有的能助你完成任务，还有的能帮你打发时间\n\n四处逛逛吧，你肯定会爱上这里的！",
-	
-	"market.cabricality.start.task.checkmark.title": "四处逛逛",
-	
-	"market.cabricality.exchange.gold.title"   : "货币&6兑换",
-	"market.cabricality.exchange.gold.subtitle": "&7银&r -> &6金&r   汇率 64:1",
-	"market.cabricality.exchange.gold.content" : "有些交易需要用金币支付，每一枚金币价值一组银币。",
-	
-	"market.cabricality.exchange.silver.title"   : "货币&7兑换",
-	"market.cabricality.exchange.silver.subtitle": "&6金&r -> &7银&r   汇率 1:64",
-	"market.cabricality.exchange.silver.content" : "你也可以用一枚金币换回一组银币。",
-	
-	"market.cabricality.shipments.gold"			: "&6金币",
-	"market.cabricality.shipments.silver"		: "&7银币",
-	"market.cabricality.shipments.repeatable"	: "可重复的",
-	
-	"market.cabricality.saw.title"   : "锯我所知",
-	"market.cabricality.saw.subtitle": "&63 金币&r - 毫无根锯",
-	"market.cabricality.saw.content" : "购买它以在组装&6动力构件&r时最小化工具磨损。",
-	
-	"market.cabricality.screwdriver.title"   : "从来不螺",
-	"market.cabricality.screwdriver.subtitle": "&65 金币&r - 996",
-	"market.cabricality.screwdriver.content" : "购买它以在组装&6精密构件&r时最小化工具磨损。",
-	
-	"market.cabricality.resonator.title"   : "永久磁铁",
-	"market.cabricality.resonator.subtitle": "&67 金币&r - 贴贴",
-	"market.cabricality.resonator.content" : "购买它以在组装&6超频构件&r时最小化工具磨损。",
-	
-	"market.cabricality.flash_drive.title"   : "Windows更新",
-	"market.cabricality.flash_drive.subtitle": "&611 金币&r - 是时候更新你的XP啦",
-	"market.cabricality.flash_drive.content" : "购买它以在组装&6智能构件&r时最小化工具磨损。",
-	
-	"market.cabricality.sleepless.title"   : "梦游症",
-	"market.cabricality.sleepless.subtitle": "&710 银币&r - 毋有梦魇",
-	"market.cabricality.sleepless.content" : "面对日落，我们并非无计可施...\n\n至少，假装有地方睡觉能够理所当然地赐予你时间去做更多事。",
-	
-	"market.cabricality.locator.title"   : "遗迹猎者",
-	"market.cabricality.locator.subtitle": "&62 金币&r - 自找上门",
-	"market.cabricality.locator.content" : "如果你不想在下界漫无目的地散步，买它就对了。",
-	
-	"market.cabricality.dinner.title"   : "工作餐",
-	"market.cabricality.dinner.subtitle": "&710 银币&r - 横扫饥饿，做回自己！",
-	"market.cabricality.dinner.content" : "大多数情况下，和朋友们聚餐可以增进友谊，顺带让你饱餐一顿&7（废话）。&r",
-	
-	"market.cabricality.landfill.title"   : "填海造陆工程 III期",
-	"market.cabricality.landfill.subtitle": "&715 银币&r - 泥土，泥土，泥土。",
-	"market.cabricality.landfill.content" : "来自大地的馈赠，当然，要花钱。",
-	
-	"market.cabricality.test_of_patience.title"   : "命运酒桶",
-	"market.cabricality.test_of_patience.subtitle": "&750 银币&r - 刷新一下网页？",
-	"market.cabricality.test_of_patience.content" : "命运的酒桶自有乾坤。可惜你不能把它们塞回去，不然潜影盒们就可以提前退休了。\n\n&7这神秘的酒桶并不廉价，最深处又会藏着些什么呢？",
-	
-	"market.cabricality.enderpack.title"   : "负重旅行",
-	"market.cabricality.enderpack.subtitle": "&755 银币&r - 只是你肩上的重担...",
-	"market.cabricality.enderpack.content" : "便携背包，古典款。易用，时尚。不试试吗？",
-	
-	"market.cabricality.undying.title"   : "半条命",
-	"market.cabricality.undying.subtitle": "&760 银币&r - 喂，快把你的VR头显摘下来！",
-	"market.cabricality.undying.content" : "不用担心原主回来索命。",
-	
-	"market.cabricality.mob.title"   : "妖魔鬼怪快离开",
-	"market.cabricality.mob.subtitle": "&745 银币&r - 看我老爹施法",
-	"market.cabricality.mob.content" : "如你所见，这一罩蕴含着魔法的钟可以驱散它周围无光环境中潜藏着的鬼怪！现场试用，七天无理由退货！购买捆绑包并置于随附灵魂火上更能响上加响！保证你此生不再有异变之患！\n&7温馨提示：广告创意，请以实物为准。\n\n&4灵梦：谁抢我活",
-	
-	"market.cabricality.express.title"   : "压压速递",
-	"market.cabricality.express.subtitle": "&66 金币&r - 今晚别睡太死",
-	"market.cabricality.express.content" : "技术人员们一般不太喜欢出门，当然，宅们也不喜欢。庆幸的是，这几份板件现在可以直接派送到你的包里。",
-	
-	"market.cabricality.gardener.title"   : "你的永恒花园",
-	"market.cabricality.gardener.subtitle": "&724 银币&r - 勿忘我",
-	"market.cabricality.gardener.content" : "",
-	
-	"market.cabricality.painter.title"   : "绘师养成记",
-	"market.cabricality.painter.subtitle": "&724 银币&r - 不赠送入门课程",
-	"market.cabricality.painter.content" : "嘶哈嘶哈",
-	
-	"market.cabricality.steamer.title"   : "铁路收藏家的最爱",
-	"market.cabricality.steamer.subtitle": "&724 银币&r - 学开车，啊不，学开火车",
-	"market.cabricality.steamer.content" : "如上，这里学不到如何驾驶高达。",
-	
-	"market.cabricality.pet_owner.title"   : "铲屎官的成长之路",
-	"market.cabricality.pet_owner.subtitle": "&724 银币&r - 不只是因为寂寞",
-	"market.cabricality.pet_owner.content" : "都给我变！",
-	
-	"market.cabricality.leaf.title"   : "土木工程入门",
-	"market.cabricality.leaf.subtitle": "&724 银币&r - 记得带桶",
-	"market.cabricality.leaf.content" : "用树叶铺满你的机器！\n&7不用担心结构问题，你和机器其中一个能跑就行。",
-	
-	"market.cabricality.bee.title"   : "蜂窝移动网络",
-	"market.cabricality.bee.subtitle": "&748 银币&r - 我打赌你的信号不好",
-	"market.cabricality.bee.content" : "随附蜜蜂刷怪蛋，小心使用。",
-	
-	"market.cabricality.bee.task.flower.title": "任意花朵",
-	
-	
-	
-	"overview.cabricality.title": "&a▶ 纵览",
-	
-	"overview.cabricality.start.title"  : "&a&l一切都要从那棵树说起...",
-	"overview.cabricality.start.content": "&a欢迎来到纵览。&r你可以随时在这里查看团队的科技树发展进度并解锁全新任务。如你所见，我会一直指引着你们直到你们离开这里走向更远——你们对大陆的探索将会在那时告一段落，但等着你们的远不止这些。旅途开始了！&a向着Minecraft科技时代的绝巘之峰勇敢地攀登吧！&r",
-	
-	"overview.cabricality.start.task.logs.title": "任意原木",
-	
-	"overview.cabricality.preparation.title"  : "&f&l准备得当",
-	"overview.cabricality.preparation.content": "在你急着开始之前，先准备些东西！一个完备的初始工作流能够使你的后续探索更加轻松。\n&7横着省下的路就会变成竖着的坑，早晚都要经过。",
-	
-	"overview.cabricality.preparation.task.forgery.title": "冶炼炉",
-	
-	"overview.cabricality.chapter_1.start.title"   : "&6&l扬帆起航",
-	"overview.cabricality.chapter_1.start.subtitle": "&6第一章",
-	"overview.cabricality.chapter_1.start.content" : "我们的事业刚刚起步！早期的工程真可谓是开荒垦地一般。自动合成？别想了。智能过滤？那东西可不便宜。自动化运输？嘿，找边儿站着去吧。现在只有自己动手才能丰衣足食。而这时你最需要的正是——&6安山机器！&r\n\n单击上方复选框以解锁&6第一章：扬帆起航。&r\n&7具体任务细节可以在左侧边栏选择查看。",
-	
-	"overview.cabricality.chapter_1.start.task.unlock.title": "&6解锁第一章",
-	
-	"overview.cabricality.chapter_1.end.title"   : "&f&l安山时代",
-	"overview.cabricality.chapter_1.end.subtitle": "里程碑",
-	"overview.cabricality.chapter_1.end.content" : "现在你已经完成了&6动力构件&r的自动化！这样一来，很多机器都可以手工制作了。\n\n你现在可以选择继续发展&6第二章：初入门道&r的内容，或转而攻克&4第一章支线：橡胶垄断&r的挑战。无论如何，保证&4铜机器&r的充足供应总不会是件坏事！",
-	
-	"overview.cabricality.chapter_1.end.task.complete.title": "&6C完成第一章",
-	
-	"overview.cabricality.bonus_1a.start.title"   : "&f&l能源大亨",
-	"overview.cabricality.bonus_1a.start.subtitle": "第一章 支线",
-	"overview.cabricality.bonus_1a.start.content" : "&4铜机器&r的需求并没有那么大。是否做成全自动生产线也不是件重要的问题，但何尝不一试呢？\n&7单击上方复选框，揭幕第一章的额外支线内容。",
-	
-	"overview.cabricality.bonus_1a.start.task.unlock.title": "&4解锁第一章 &7支线",
-	
-	"overview.cabricality.bonus_1a.end.title"   : "&4&l冰汽时代",
-	"overview.cabricality.bonus_1a.end.subtitle": "&4挑战",
-	"overview.cabricality.bonus_1a.end.content" : "&4铜机器&r将会满足你对流体处理的所有需求。无论是释放还是抽取、交互、过滤...你现在可以向你的工厂中引入全自动流体处理系统了！\n&4气密构件&7仅会在&4第一章支线：能源大亨&7中使用。",
-	
-	"overview.cabricality.bonus_1a.end.task.complete.title": "&4完成第一章 &7支线",
-	
-	"overview.cabricality.chapter_2.start.title"   : "&6&l初入门道",
-	"overview.cabricality.chapter_2.start.subtitle": "&6第二章",
-	"overview.cabricality.chapter_2.start.content" : "我们都知道机旦悖论：一旦要想更方便地自动化生产&6黄铜机器，&r你就首先需要更多的&6黄铜机器！&r\n\n单击上方复选框以解锁&6第二章：初入门道。&r\n&7具体任务细节可以在左侧边栏选择查看。",
-	
-	"overview.cabricality.chapter_2.start.task.unlock.title": "&6解锁第二章",
-	
-	"overview.cabricality.chapter_2.end.title"   : "&f&l黄铜时代",
-	"overview.cabricality.chapter_2.end.subtitle": "里程碑",
-	"overview.cabricality.chapter_2.end.content" : "这么快你就能够自动生产&6精密构件&r了，真是令人惊讶！这下你已经解锁机械动力的几乎全部内容了。现在，从改进生产方式到改善生活环境的工具你应有尽有。&6黄铜色...&r多么好看的颜色！\n\n别懈怠！等你在&2第二章支线：流动产业&r稍作休整后，就该向着&6第三章：钢铁洪流&r进发了！",
-	
-	"overview.cabricality.chapter_2.end.task.complete.title": "&6完成第二章",
-	
-	"overview.cabricality.bonus_2a.start.title"   : "&f&l流动产业",
-	"overview.cabricality.bonus_2a.start.subtitle": "第二章 支线",
-	"overview.cabricality.bonus_2a.start.content" : "我们需要更深入些！&2酷热构件&r的生产需要在另一个维度进行。尽管它简直和地狱别无二样，但在新的环境中工作总是能带来些全新的灵感和脑洞&2...也许吧？&r\n&7单击上方复选框，揭幕第二章的额外支线内容。",
-	
-	"overview.cabricality.bonus_2a.start.task.unlock.title": "&2解锁第二章 &7支线",
-	
-	"overview.cabricality.bonus_2a.end.title"   : "&2&l朋克时代",
-	"overview.cabricality.bonus_2a.end.subtitle": "&2挑战",
-	"overview.cabricality.bonus_2a.end.content" : "&2锌机器&r不可置信地强大！从高效刷石到物品收集，它全都能胜任！是时候好好利用这些&2酷热的强大机器&r来为你的工厂添砖加瓦了。\n&2酷热构件&7仅会在&2第二章支线：流动产业&7中使用。",
-	
-	"overview.cabricality.bonus_2a.end.task.complete.title": "&2完成第二章 &7支线",
-	
-	"overview.cabricality.chapter_3.start.title"   : "&6&l钢铁洪流",
-	"overview.cabricality.chapter_3.start.subtitle": "&6第三章",
-	"overview.cabricality.chapter_3.start.content" : "嗬，我们终于打下了坚实的基础。是时候快步前进了！\n\n在&6新工业时代，&r你会结出许多奇怪的技术，学到神奇的技巧。有了一定功底之后，无论多么错综复杂的交互生产也将会变得小菜一碟。\n\n点击上方复选框以解锁&6第三章：钢铁洪流。&r\n&7具体任务细节可以在左侧边栏选择查看。",
-	
-	"overview.cabricality.chapter_3.start.task.unlock.title": "&6解锁第三章",
-	
-	"overview.cabricality.chapter_3.end.title"   : "&f&l合金时代",
-	"overview.cabricality.chapter_3.end.subtitle": "里程碑",
-	"overview.cabricality.chapter_3.end.content" : "科技发展的终点是&6魔法。&r现在你的一些机器已经被一些不是科学而是玄学的奇妙能量控制住了，&6不是吗？&r\n\n好吧，先不谈这些...放眼望去，你马上就能踏出历史性的一步了！&6新技术的合理运用&r能够继续推动你前进。\n&7你的一小步，世界的一大步。",
-	
-	"overview.cabricality.chapter_3.end.task.complete.title": "&6完成第三章",
-	
-	"overview.cabricality.bonus_3a.start.title"   : "&f&l资金回转",
-	"overview.cabricality.bonus_3a.start.subtitle": "第三章 支线",
-	"overview.cabricality.bonus_3a.start.content" : "被空间移动的魅力所震撼从而寄希望于研究向往的&3第三维度&r的你还不如在&3量子力学领域&r放手一搏...在研究新材料的过程中，你发现辛苦挣来的&3银币&r竟能提供莫大帮助！\n&7勾选上方复选框，揭幕第三章的额外支线内容。",
-	
-	"overview.cabricality.bonus_3a.start.task.unlock.title": "&3解锁第三章 77支线",
-	
-	"overview.cabricality.bonus_3a.end.title"   : "&3&l魔法时代",
-	"overview.cabricality.bonus_3a.end.subtitle": "&3挑战",
-	"overview.cabricality.bonus_3a.end.content" : "&3传...传送！&r有了&3末影合金机器&r后，你不仅能在眨眼间移动物品和流体，还能将工厂的生产效率提升到前所未有的高度...",
-	
-	"overview.cabricality.bonus_3a.end.task.complete.title": "&3完成第三章 &7支线",
-	
-	"overview.cabricality.chapter_4.start.title"   : "&6&l靶向药物",
-	"overview.cabricality.chapter_4.start.subtitle": "&6第四章",
-	"overview.cabricality.chapter_4.start.content" : "你需要了解一些全新的动力组合方式！只有弄清楚&6热力系统&r和&6传统动力结构&r间的相互作用，才能够高效生产&6硅。&r你很快就将步入&6智能时代&r了！\n\n一项奇怪的研究发现，&6激光&r能够高效地在上述两种能级间不断跃迁。倘若能够加以利用，那么这将会是一个划时代的创新！\n\n点击上方复选框以解锁&6第四章：靶向药物。&r\n&7具体任务细节可以在左侧边栏选择查看。",
-	
-	"overview.cabricality.chapter_4.start.task.unlock.title": "&6解锁第四章",
-	
-	"overview.cabricality.chapter_4a.start.title"   : "&6&l混沌炼金",
-	"overview.cabricality.chapter_4a.start.subtitle": "→ 备用路线",
-	"overview.cabricality.chapter_4a.start.content" : "如果你对死板的科技感到厌烦，那你费心研究的&6激光发射器&r也并非派不上用场。它们可是炼金好手！\n\n在科学和炼金术的奇妙联动下，你发现了一些&6几乎毫无关系的物质&r间相互转换的奥秘。继续发展科技所必须的原料&6硅&r也在其中。什么？&6炼金术&r怎么就不能生产硅了？\n&7温馨提示：不要品尝失败品。\n\n单击上方复选框以解锁&7备用路线：&6混沌炼金。\n&7具体任务细节可以在左侧边栏选择查看。",
-	
-	"overview.cabricality.chapter_4a.start.task.unlock.title": "&6解锁第四章 &7备用路线",
-	
-	"overview.cabricality.chapter_4.end.title"   : "&f&l信息时代",
-	"overview.cabricality.chapter_4.end.subtitle": "里程碑",
-	"overview.cabricality.chapter_4.end.content" : "在&6智能构件&r的帮助下，你的工厂将会全面数字化！&6即时物能转换（ME转换）&r将会带来前所未有的技术革新！无论是对你的工厂还是你自己，意义同样重大。\n\n现在，你已经可以制造&6所有&r探索深空所需的材料和零件了。也许，可以提前安排一下倒计时？\n&710, 9, 8...",
-	
-	"overview.cabricality.chapter_4.end.task.complete.title": "&6解锁第四章",
-	
-	"overview.cabricality.chapter_5.start.title"   : "&6&l意识上传",
-	"overview.cabricality.chapter_5.start.subtitle": "&5最终章",
-	"overview.cabricality.chapter_5.start.content" : "整个工厂都在为最后一段冲刺而全速运转。在&5智能构件&r的稳定供应下，所有智能化的&5基建平台&r都将会完美地在轨运行。\n\n当你的工厂正狼吞虎咽五颜六色的数字时，向着深空的&5先驱者们&r已经随时准备踏上那勇气之梯了！",
-	
-	"overview.cabricality.chapter_5.start.task.unlock.title": "&6解锁&5最终章",
-	
-	"overview.cabricality.chapter_5.end.title"  : "&9&l&o..还要走得更远",
-	"overview.cabricality.chapter_5.end.content": "&o这也许只是你的一小步，却是&9全人类&r的一大步。\n\n&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r\n\n&9&l&o世界很大，生活更大。",
-	
-	"overview.cabricality.chapter_5.end.task.complete.title": "&5探索宇宙！",
-	
-	
-	
-	"advancements.cabricality.title": "&d▶ 成就",
-	
-	"advancement.cabricality.accumulation.title"   : "&6原始积累",
-	"advancement.cabricality.accumulation.subtitle": "&6记得种回去！",
-	
-	"advancement.cabricality.accumulation.task.craft.title": "合成2^12块木板",
-	
-	"advancement.cabricality.reach_the_sky.title"   : "&b触摸天空",
-	"advancement.cabricality.reach_the_sky.subtitle": "&b到底该怎么下去呢？",
-
-	"advancement.cabricality.reach_the_sky.task.location.title": "到达255米的高度",
-	
-	"advancement.cabricality.construction.title"   : "&7基建狂魔",
-	"advancement.cabricality.construction.subtitle": "&7大兴土木！",
-	
-	"advancement.cabricality.construction.task.place_cobblestone.title": "放置圆石",
-	"advancement.cabricality.construction.task.place_dirt.title"       : "放置泥土",
-	"advancement.cabricality.construction.task.place_scaffolding.title": "使用并拆毁脚手架",
-	
-	"advancement.cabricality.explore.title"   : "&5漫游指南",
-	"advancement.cabricality.explore.subtitle": "&5永远不要忘记，叫做家的地方。",
-	
-	"advancement.cabricality.explore.dimension.nether" : "&5下界",
-	"advancement.cabricality.explore.dimension.the_end": "&3末路之地",
-	
-	"advancement.cabricality.explore.planet.the_moon": "&8月球",
-	"advancement.cabricality.explore.planet.glacio"  : "&9霜原星",
-	"advancement.cabricality.explore.planet.mars"    : "&c火星",
-	"advancement.cabricality.explore.planet.mercury" : "&5水星",
-	"advancement.cabricality.explore.planet.venus"   : "&6金星",
-	
-	"advancement.cabricality.explore.orbit.earth"   : "&2地球&8轨道",
-	"advancement.cabricality.explore.orbit.the_moon": "&8月球&8轨道",
-	"advancement.cabricality.explore.orbit.glacio"  : "&9霜原星&8轨道",
-	"advancement.cabricality.explore.orbit.mars"    : "&c火星&8轨道",
-	"advancement.cabricality.explore.orbit.mercury" : "&5水星&8轨道",
-	"advancement.cabricality.explore.orbit.venus"   : "&6金星&8轨道",
-	
-	"advancement.cabricality.being_stored.title"   : "&8被封存的传说",
-	"advancement.cabricality.being_stored.subtitle": "&8地狱一般的鬼地方...",
-	
-	"advancement.cabricality.being_stored.task.spatial_storage": "&8钻进&8存储空间",
-	
-	"advancement.cabricality.flying_skunk.title"   : "&d你在做什么啊？",
-	"advancement.cabricality.flying_skunk.subtitle": "&d哼哼哼，啊！仙贝如是说。",
-	
-	"advancement.cabricality.flying_skunk.task.fly.title": "&d飞行距离",
-	
-	"advancement.cabricality.long_tour.title"   : "&6路途漫漫",
-	"advancement.cabricality.long_tour.subtitle": "&6你是我永远的朋友。",
-	
-	"advancement.cabricality.long_tour.task.play.title": "&5游玩5000天",
-	
-	"advancement.cabricality.new.title"   : "&8未完成的事业",
-	"advancement.cabricality.new.subtitle": "&8不————————",
-	
-	"advacnements.cabricality.complete.title": "&f幔缝重生",
-	
-	"advancements.cabricality.complete.task.minecraft.title"      : "&2你的世界",
-	"advancements.cabricality.complete.task.ad_astra.title"       : "&d无人深空",
-	"advancements.cabricality.complete.task.create.title"         : "&6机械革命",
-	"advancements.cabricality.complete.task.farmers_delight.title": "&e山肴野蔌",
-	
-	
-	
-	"chapter_1.cabricality.title": "&f&l1&r 扬帆起航",
-	
-	"chapter_1.cabricality.start.title"   : "&6&l扬帆起航",
-	"chapter_1.cabricality.start.subtitle": "&6第一章",
-	"chapter_1.cabricality.start.content" : "&6欢迎来到科技树！&r\n\n这些任务告诉你接下来的生产线应该如何制作，跟随指引即可以满足工厂的充足材料供应。任务间的连接线代表了&6生产/处理&r不同材料时的顺序。\n\n&6积极出谋划策吧！&r",
-	
-	"chapter_1.cabricality.start.task.checkmark.title": "&6开始！",
-	
-	"chapter_1.cabricality.speedrun.title"  : "旁门左道...",
-	"chapter_1.cabricality.speedrun.content": "也许你并不想死板地跟着任务前进，没有问题。你可以选择只建造你想要的机械，甚至全部由双手完成而留下时间去探索，有余力的你还可以试试发掘新的制造方法或使用高阶材料来简化生产流程。但别忘了，这些可不能是你偷工减料的理由。\n&7玩得开心才是最重要的！",
-	
-	"chapter_1.cabricality.speedrun.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.1.title"   : "钢铁之“森”",
-	"contraption.cabricality.1.subtitle": "步骤 1",
-	"contraption.cabricality.1.content" : "首先，你需要木头，很多木头以及更多的木头。从大自然一昧地索取总不是个长久的办法，你最好赶快实现木材的自给自足和充足供应。\n\n合成一些&6动力锯&r试试，它们可是伐木好手。\n&7每当你能够自动生产某一物品时，就可以点击上方“自动生产”复选框以继续下一任务了。",
-	
-	"contraption.cabricality.1.task.wooden_log.title": "&7任意&r原木",
-	
-	"contraption.cabricality.2.title"   : "浸出液",
-	"contraption.cabricality.2.subtitle": "步骤 2",
-	"contraption.cabricality.2.content" : "把&6石灰岩&r和&6水&r混合并压制就可以批量生产滴水石块了，而后者则可以被磨制成粘土球。",
-	
-	"contraption.cabricality.3.title"   : "海底宫殿",
-	"contraption.cabricality.3.subtitle": "步骤 3",
-	"contraption.cabricality.3.content" : "海带是&6安山合金&r的必要原材料，而后者正是你第一条生产线上的主角，同时也是许多机械的必要原料之一。\n\n海带可以轻易地被&6动力收割机&r收集。",
-	
-	"contraption.cabricality.4.title"   : "黄金“石”代",
-	"contraption.cabricality.4.subtitle": "步骤 4",
-	"contraption.cabricality.4.content" : "在矿洞中寻找安山岩可是件累活。不过万幸的是，基岩可以让上方的岩浆和水迅速变成安山岩...和其它怪石。\n\n&6动力钻头&r可以有效地代替你手中的镐子。但因基岩的阻挡，你必须从其它方向收集石头...",
-	
-	"contraption.cabricality.5.title"   : "安山电梯",
-	"contraption.cabricality.5.subtitle": "步骤 5",
-	"contraption.cabricality.5.content" : "你不太可能把你的工厂选址在石缝中，或是搬一块基岩到地面上来。因此，也许你需要一种更加合理的方式来搬运石头。",
-	
-	"contraption.cabricality.6.1.title"   : "磨坊主的帮手",
-	"contraption.cabricality.6.1.subtitle": "步骤 6-1",
-	"contraption.cabricality.6.1.content" : "&6石磨&r可以将滴水石块处理成粘土球。",
-	
-	"contraption.cabricality.6.2.title"   : "泡个“藻”",
-	"contraption.cabricality.6.2.subtitle": "步骤 6-2",
-	"contraption.cabricality.6.2.content" : "快来搓碟！将海带和黏土球放到&6动力搅拌器&r下的工作盆中并提供动力，把它们搅拌均匀。",
-	
-	"contraption.cabricality.6.3.title"   : "波力海苔",
-	"contraption.cabricality.6.3.subtitle": "步骤 6-3",
-	"contraption.cabricality.6.3.content" : "你需要将上一步产出的海藻混合物烧制成为更坚硬的海藻砖。熔炉确实很好用，但为什么不考虑一下不需要燃料的岩浆和&6鼓风机&r的组合呢？",
-	
-	"contraption.cabricality.6.4.title"   : "如果“藻”知道...",
-	"contraption.cabricality.6.4.subtitle": "步骤 6-4",
-	"contraption.cabricality.6.4.content" : "没错！你需要将它们再次搅拌——不过这回的主角变成了&6海藻砖&r和你辛苦运上来的&6安山岩。&r",
-	
-	"contraption.cabricality.7.1.title"   : "削去外皮",
-	"contraption.cabricality.7.1.subtitle": "步骤 7-1",
-	"contraption.cabricality.7.1.content" : "面向上方的&6动力锯&r可以进一步处理原木...",
-	
-	"contraption.cabricality.7.1.task.stripped_log.title": "&7任意&r去皮原木",
-	
-	"contraption.cabricality.7.2.title"   : "二次切割",
-	"contraption.cabricality.7.2.subtitle": "步骤 7-2",
-	"contraption.cabricality.7.2.content" : "...枯燥地重复...",
-	
-	"contraption.cabricality.7.2.task.planks.title": "&7任意&r木板",
-	
-	"contraption.cabricality.7.3.title"   : "刀法精湛",
-	"contraption.cabricality.7.3.subtitle": "步骤 7-3",
-	"contraption.cabricality.7.3.content" : "...再来一次，把它们切割成一切构件的基础材料&6——木质台阶。&r\n&7记得在动力锯的过滤槽中放入这一步需要处理的物品，不然你猜不到它们会想要输出什么。",
-	
-	"contraption.cabricality.7.3.task.wooden_slab.title": "&7任意&r木质台阶",
-	
-	"contraption.cabricality.8.title"   : "扭一扭，按一按",
-	"contraption.cabricality.8.subtitle": "步骤 8",
-	"contraption.cabricality.8.content" : "将搅拌好的&6安山合金&r华丽地安装到&6木质台阶&r上，优雅地收尾你的第一条生产线！",
-	
-	"contraption.cabricality.assemble.title"  : "武装到手指",
-	"contraption.cabricality.assemble.content": "你肯定需要多贮存些&6手锯&r以便及时更换。\n&7它们并不是即时消耗品，所以手动合成一些就够用了。",
-	
-	"contraption.cabricality.assemble.task.saw.title": "&7任意&r手锯",
-	
-	"chapter_1.cabricality.complete.title"  : "&f&l第一章完成！",
-	"chapter_1.cabricality.complete.content": "恭喜！现在你可以自动生产&6动力构件&r了，你的工厂已然初具雏形！不要错过这个完美的契机，继续向前努力！\n\n再次回顾你的生产线，是否有些地方的构造不太合理？或者有些瓶颈你还没有发现？抑或是有什么可以更加优化的地方？\n&7要知道，如果你的安山岩生产机构极其高效，沙子的供应却不足，那你的安山合金产量也不会高到哪去...这可是会被人笑话的！",
-	
-	"contraption.cabricality.9.1.title"   : "不要砍尽劈绝",
-	"contraption.cabricality.9.1.subtitle": "步骤 9-1",
-	"contraption.cabricality.9.1.content" : "试着把提取器放置在一棵树木的树干旁然后右击它，你会在下方发现一些&4树脂流体！&r\n",
-	
-	"contraption.cabricality.9.2.title"   : "阿姨，压一压",
-	"contraption.cabricality.9.2.subtitle": "步骤 9-2",
-	"contraption.cabricality.9.2.content" : "用流体管道和动力泵将&4树脂流体&r泵到工作盆中，再用辊压机使其压制成型。",
-	
-	"contraption.cabricality.9.3.title"   : "火焰洗礼",
-	"contraption.cabricality.9.3.subtitle": "步骤 9-3",
-	"contraption.cabricality.9.3.content" : "最后一步，用火焰洗礼刚刚成型的&4固态橡胶，&r使其硫化！\n&7Bon Appétit!&8&o（祝好胃口！）",
-	
-	"bonus_1a.cabricality.assemble.title"  : "无缝衔接",
-	"bonus_1a.cabricality.assemble.content": "这一步很简单，以至于你完全可以用双手来完成。如果你想自动生产，晚些时候再用&4动力合成器&r替换你的工作台也无妨。",
-	
-	"bonus_1a.cabricality.complete.title"  : "&4&l第一章支线完成！",
-	"bonus_1a.cabricality.complete.content": "好样的，现在你有足够的&4气密构件&r了！以后有的是时间感谢你自己！",
-	
-	
-	
-	"chapter_2.cabricality.title": "&f&l2&r 初入门道",
-	
-	"chapter_2.cabricality.start.title"   : "&6&l初入门道",
-	"chapter_2.cabricality.start.subtitle": "&6第二章",
-	"chapter_2.cabricality.start.content" : "这一章节自动化的目标是&6电子管&r，把它安装在&6动力构件&r上就可以升往下一级别。\n\n&6积极发挥创意！&r",
-	
-	"chapter_2.cabricality.start.task.checkmark.title": "&6开始！",
-	
-	"contraption.cabricality.10.title"   : "炼丹炉",
-	"contraption.cabricality.10.subtitle": "步骤 10",
-	"contraption.cabricality.10.content" : "这台装置并不严格是生产线中的一部分，但它举足轻重。\n\n通过灵活使用&6冶炼炉、动力搅拌器&r和&6流体管道，&r你可以锻造出许多合金，&6黄铜&r便是其中之一。\n\n你可以在&6工作盆&r中加热并搅拌&6铜&r和&6锌&r制造&6黄铜。&r如果要制造其它合金，则需要用到&6冶炼炉。&r\n\n如果你不想搞得太麻烦，可以尝试制作一个输入金属锭→输出合金锭的半自动机械装置，够你用了。",
-	
-	"contraption.cabricality.10.task.checkmark.title": "完成",
-	
-	"chapter_2.cabricality.sand.title"  : "砂流之庭",
-	"chapter_2.cabricality.sand.content": "首先，我们需要沙子以&6合成赛特斯石英种子&r。但当你制作出一些&6精密构件&r后，就可以用&6动力合成器&r代替这一步骤了。",
-	
-	"chapter_2.cabricality.water.title"  : "农夫山泉",
-	"chapter_2.cabricality.water.content": "第二章的装置需要充足的水源供应。也许你可以考虑建在水源地旁并使用&6流体管道&r和&6流体泵&r建造流体运输网络以满足需求。",
-	
-	"contraption.cabricality.11.title"   : "逆熵陨石",
-	"contraption.cabricality.11.subtitle": "步骤 11",
-	"contraption.cabricality.11.content" : "你可以无限压榨它。这些&6陨石&r尽管数次粉身碎骨却并不会失去质量？迈尔的棺材板压不住啦！\n\n四处转转，也许你就能找到一个巨坑，那正是陨石坠落的迹象。如果你找不到，试试让&6陨石罗盘&r为你指路。\n&7自由资都害怕你压榨陨石的样子。",
-	
-	"contraption.cabricality.12.1.title"   : "种下希望...",
-	"contraption.cabricality.12.1.subtitle": "步骤 12-1",
-	"contraption.cabricality.12.1.content" : "这片石英也太小了。往里面注水或许能把它变大...\n\n如果你不想等待石英种子在水中泡几小时，你可以合成一些&6注液器&r来加速进程。",
-	
-	"contraption.cabricality.12.2.title"   : "万年孤独",
-	"contraption.cabricality.12.2.subtitle": "步骤 12-2",
-	"contraption.cabricality.12.2.content" : "你见证了它们的成长！当然，别忘了及时用一些&6赛特斯石英水晶&r重新合成&6赛特斯石英种子&r以使不断循环成为可能。",
-	
-	"contraption.cabricality.13.title"   : "循环能源",
-	"contraption.cabricality.13.subtitle": "步骤 13",
-	"contraption.cabricality.13.content" : "稍稍改造一下你的&6充能器，&r让它能够循环不断地给装置13-2所需要的&6赛特斯石英水晶&r充能。\n\n应用能源2的&6充能器&r和物流系统似乎是个不错的选择，你可以用&6谐振仓&r为其提供临时能源。",
-	
-	"contraption.cabricality.14.1.title"   : "陨石莫吉托",
-	"contraption.cabricality.14.1.subtitle": "步骤 14-1",
-	"contraption.cabricality.14.1.content" : "将这种易溶于水的粉末放入&6水&r中搅拌，或许能获得有趣的流体...",
-	
-	"contraption.cabricality.14.2.title"   : "感电",
-	"contraption.cabricality.14.2.subtitle": "步骤 14-2",
-	"contraption.cabricality.14.2.content" : "&6充能赛特斯石英水晶&r所蕴含的能量足以让流体中的分子破裂，原子重组，得到&6熔融红石。&r\n&7失去能量的&6赛特斯石英水晶&7并不会消失，你可以将它再次充能。",
-	
-	"contraption.cabricality.14.3.title"   : "搞颜色",
-	"contraption.cabricality.14.3.subtitle": "步骤 14-3",
-	"contraption.cabricality.14.3.content" : "最后一个&6动力搅拌器&r会用&6熔融红石&r对平平无奇的&6赛特斯石英水晶&r进行一次彻头彻尾的改造，仿佛为其注入了新的活力...\n&7&o（矿物学家们，对不住了）",
-	
-	"contraption.cabricality.15.1.title"   : "熨烫工艺",
-	"contraption.cabricality.15.1.subtitle": "步骤 15-1",
-	"contraption.cabricality.15.1.content" : "你可以从&6圆石&r中源源不断地提取铁，不过这一过程极为缓慢。\n\n先放置一些&6动力钻头&r来破坏和收集刷石机产出的圆石。",
-	
-	"contraption.cabricality.15.2.title"   : "高级缝纫术",
-	"contraption.cabricality.15.2.subtitle": "步骤 15-2",
-	"contraption.cabricality.15.2.content" : "先把&6圆石&r磨制成&6沙砾。&r",
-	
-	"contraption.cabricality.15.3.title"   : "微量元素",
-	"contraption.cabricality.15.3.subtitle": "步骤 15-3",
-	"contraption.cabricality.15.3.content" : "用&6鼓风机&r洗涤&6沙砾&r也许能让其中的燧石和铁粒重见天日。",
-	
-	"contraption.cabricality.15.4.title"   : "呜哇，化掉啦",
-	"contraption.cabricality.15.4.subtitle": "步骤 15-4",
-	"contraption.cabricality.15.4.content" : "把&6铁粒&r扔进你的高温熔炼设备里以生产熔融铁。匠魂的&6冶炼炉&r是最优选择。",
-	
-	"contraption.cabricality.15.5.title"   : "第二面墙",
-	"contraption.cabricality.15.5.subtitle": "步骤 15-5",
-	"contraption.cabricality.15.5.content" : "将几滴炽热的&6熔融铁&r注入&6玫瑰石英，&r盘虬在石英内的铁水一旦冷却，&6电子管&r那精密的电路就形成了。",
-	
-	"contraption.cabricality.16.title"   : "继续部署",
-	"contraption.cabricality.16.subtitle": "步骤 16",
-	"contraption.cabricality.16.content" : "在&6动力构件&r上安装电子管就可以批量生产&6精密构件&r了，你的第二条生产线就此结束！",
-	
-	"chapter_2.cabricality.assemble.title"  : "武装到牙齿",
-	"chapter_2.cabricality.assemble.content": "多贮存些&2螺丝刀&r是个好习惯。\n&7像&2手锯&7一样，它们消耗得很慢，所以不必制造自动生产线。",
-	
-	"chapter_2.cabricality.complete.title"  : "&f&l第二章完成！",
-	"chapter_2.cabricality.complete.content": "恭喜！你现在不用再为&6精密构件&r供应不足而发愁了！自豪地想想你是如何克服所有困难的吧！\n&7在对生产线上的不足之处进行简要休整后，让我们继续在&a纵览&7中解锁更多内容！",
-	
-	"bonus_2a.cabricality.preparation.title"  : "炎之律者",
-	"bonus_2a.cabricality.preparation.content": "这是你第一次接触这么高的温度——你需要一个&2烈焰人燃烧室&r来使材料达到足够的温度！对着&2烈焰人&r或&2烈焰人刷怪笼&r使用&2烈焰人燃烧室&r就可以将它们收入囊中。",
-	
-	"contraption.cabricality.17.1.title"   : "两面包夹芝士 I",
-	"contraption.cabricality.17.1.subtitle": "步骤 17-1",
-	"contraption.cabricality.17.1.content" : "&2酷热构件&r难以驾驭，而生产它们更是需要足够的灵魂精华。幸运的是，生长在&2下界&r的&2缠怨藤&r正以灵魂作为养料。\n\n&2缠怨藤&r向上生长，你可以用&2动力收割机&r收割它们，就像收割海带那样。",
-	
-	"contraption.cabricality.17.2.title"   : "两面包夹芝士 II",
-	"contraption.cabricality.17.2.subtitle": "步骤 17-2",
-	"contraption.cabricality.17.2.content" : "&2垂泪藤&r向下生长，但你照样可以用&2动力收割机&r来收割。\n&7如果你嫌烦的话，可以尝试用一套装置同时采集以上两种藤蔓。",
-	
-	"contraption.cabricality.17.3.title"   : "灵魂朗姆酒",
-	"contraption.cabricality.17.3.subtitle": "步骤 17-3",
-	"contraption.cabricality.17.3.content" : "把所有藤蔓放进&2工作盆&r中，然后搅拌...\n&7&o勿忘我！",
-	
-	"contraption.cabricality.18.1.title"   : "使鬼推磨",
-	"contraption.cabricality.18.1.subtitle": "步骤 18-1",
-	"contraption.cabricality.18.1.content" : "每生产一个&2锌机器&r总计需要&224桶岩浆。&r你也许感觉这并不环保，但是仅仅将一个&2软管滑轮&r伸入岩浆湖就能够解决燃眉之急。",
-	
-	"contraption.cabricality.18.2.title"   : "疯狂星期四",
-	"contraption.cabricality.18.2.subtitle": "步骤 18-2",
-	"contraption.cabricality.18.2.content" : "向&2精密构件&r不断浇筑特定流体就能够将其升格为&2酷热构件！&r\n\n请允许我再次重申，将这些支线的生产自动化并不是什么紧迫要务。因为在后续的生产中，支线产物并不是必要的。\n&7一个将&2精密构件&7转换为&2酷热构件&7的半自动化机器就已经足够了。相信我，你不会想要那么多&2酷热构件&7的。",
-	
-	"bonus_2a.cabricality.complete.title"  : "&2&l第二章支线完成！",
-	"bonus_2a.cabricality.complete.content": "宛如天工！你完成了下界带来的许多困难挑战，这肯定给予了你继续前进的莫大信心！",
-	
-	
-	
-	"chapter_3.cabricality.title": "&f3&r 钢铁洪流",
-	
-	"chapter_3.cabricality.start.title"   : "&6&l钢铁洪流",
-	"chapter_3.cabricality.start.subtitle": "&6第三章",
-	"chapter_3.cabricality.start.content" : "在批量生产&6光辉线圈&r的路上，你会遇到更加困难的挑战。\n\n再一次拿起扳手、挎起工具箱，为你的工厂开辟新地界吧！\n\n&6创造最伟大！&r",
-	
-	"chapter_3.cabricality.start.task.checkmark.title": "&6开始！",
-	
-	"chapter_3.cabricality.preparation.title"  : "库存克星",
-	"chapter_3.cabricality.preparation.content": "接下来的几个装置都需要在物品形态（掉落物形态）处理部分材料，然而这些操作都无法自动止损（例如掉落物的拥堵并不会使传送带上的物品停下）。手动增加止损机构和缓冲区因此成为了必要操作。\n\n更具体来说：当输出缓冲区内的物品个数达到设定值的75%时，停止材料生产；当它不足25%时，重新开始材料生产。这类机构能够防止物品到处散落，从而减少不必要的库存损耗。\n\n&6存量转换器&r正是为此而设计的。",
-	
-	"contraption.cabricality.19.title"   : "木棍次日达",
-	"contraption.cabricality.19.subtitle": "步骤 19",
-	"contraption.cabricality.19.content" : "下面材料的生产需要许多木棍。你可以选择重新采集木棍，或从你的&6「步骤 1」&r中拿取一些。",
-	
-	"contraption.cabricality.20.1.title"   : "石之海",
-	"contraption.cabricality.20.1.subtitle": "步骤 20-1",
-	"contraption.cabricality.20.1.content" : "鹅卵石可真是廉价啊（笑",
-	
-	"contraption.cabricality.20.1.task.cobblestone": "&7任意&r圆石",
-	
-	"contraption.cabricality.20.2.title"   : "高墙那边",
-	"contraption.cabricality.20.2.subtitle": "步骤 20-2",
-	"contraption.cabricality.20.2.content" : "下一步，我们需要&6粉碎轮。&r不过不仅要用作机器，还要用作原料。\n\n一整面&6动力合成器&r构成的墙可能会迅速阻碍你工厂里的其它基建结构。确保为它们留出足够的空间。",
-	
-	"contraption.cabricality.20.3.title"   : "盗梦空间",
-	"contraption.cabricality.20.3.subtitle": "步骤 20-3",
-	"contraption.cabricality.20.3.content" : "当你使用&6粉碎轮&r粉碎&6粉碎轮&r时，一种奇特的现象产生了...我们也许可以稍加利用...",
-	
-	"chapter_3.cabricality.slime_fern.title"  : "利姆露大人的恩惠",
-	"chapter_3.cabricality.slime_fern.content": "如果你想与怪物们友好相处，那也许你可以试试使用&6史莱姆蕨&r来生产&6火药、骨粉&r和&6末影粉...&r\n\n何不漫游大陆，寻找植被中异常鲜艳的颜色呢？别忘了随身带把剪刀。",
-	
-	"contraption.cabricality.21.title"   : "阴魂不散",
-	"contraption.cabricality.21.subtitle": "步骤 21",
-	"contraption.cabricality.21.content" : "当接触到&6灵魂火&r时，&6史莱姆蕨叶片&r可以在一瞬间重新生长为蕨。就像之前的&6赛特斯石英种子&r循环一样，我们也许可以对这一特点加以利用。\n\n这一循环相当简单：使用&6机械手&r将每个&6史莱姆蕨&r切成两片叶片，再用&6灵魂火&r将其中之一缠魂。所有颜色的&6史莱姆蕨&r最好以相同速度循环。\n&7啊，留一些用作备份总不是什么坏事。",
-	
-	"contraption.cabricality.22.1.title"   : "神秘生物量",
-	"contraption.cabricality.22.1.subtitle": "步骤 22-1",
-	"contraption.cabricality.22.1.content" : "把多余的叶片粉碎，好戏即将开场。",
-	
-	"chapter_3.cabricality.mob_cage.title"   : "其实我更喜欢折磨怪物",
-	"chapter_3.cabricality.mob_cage.subtitle": "&8备选步骤&r 步骤 21 \\& 22",
-	"chapter_3.cabricality.mob_cage.content" : "如果你不想搞那么麻烦，几个刷怪塔就可以解决一切。\n\n勾选“使用刷怪塔”以跳过&6史莱姆蕨&r机器的制造任务。",
-	
-	"chapter_3.cabricality.mob_cage.task.checkmark.title": "使用刷怪塔",
-	
-	"contraption.cabricality.22.2.title"   : "你需要煮点药",
-	"contraption.cabricality.22.2.subtitle": "步骤 22-2",
-	"contraption.cabricality.22.2.content" : "加工这些&2绿色&r生物材料的过程需要特殊的环境温度。目前，只有&6篝火&r和&6炉子&r才能满足这一要求。\n\n设计这一装置时不仅要考虑如何放置原料，更要考虑到如何才能安全地收集产物才行。",
-	
-	"contraption.cabricality.22.3.title"   : "江西炒粉",
-	"contraption.cabricality.22.3.subtitle": "步骤 22-3",
-	"contraption.cabricality.22.3.content" : "加工这些&5紫色&r生物材料的过程需要特殊的环境温度。目前，只有&6篝火&r和&6炉子&r才能满足这一要求。\n\n设计这一装置时不仅要考虑如何放置原料，更要考虑到如何才能安全地收集产物才行。",
-	
-	"contraption.cabricality.22.4.title"   : "煎点化肥",
-	"contraption.cabricality.22.4.subtitle": "步骤 22-4",
-	"contraption.cabricality.22.4.content" : "加工这些&9蓝色&r生物材料的过程需要特殊的环境温度。目前，只有&6篝火&r和&6炉子&r才能满足这一要求。\n\n设计这一装置时不仅要考虑如何放置原料，更要考虑到如何才能安全地收集产物才行。",
-	
-	"contraption.cabricality.23.1.title"   : "无法自拔",
-	"contraption.cabricality.23.1.subtitle": "步骤 23-1",
-	"contraption.cabricality.23.1.content" : "你需要更多沙子以制造反应堆中必须的炸药。可今非昔比的你有了粉碎轮，使这一切变得如此简单。",
-	
-	"contraption.cabricality.23.2.title"   : "不要在这里下国际象棋",
-	"contraption.cabricality.23.2.subtitle": "步骤 23-2",
-	"contraption.cabricality.23.2.content" : "用&6动力合成器&r来造些易爆品吧！在合成&6TNT&r时，你需要重复在不相邻的格子中分别放入&6沙子&r和&6火药。&r这时，一些&6动力臂&r或许能派上大用场。",
-	
-	"contraption.cabricality.24.title"   : "切尔诺贝利",
-	"contraption.cabricality.24.subtitle": "步骤 24",
-	"contraption.cabricality.24.content" : "你将亲手打造出这一工厂片区的核心装置：反应堆。\n\n要制造&6光辉线圈，&r你必须先让&6奇点&r和&6末影粉&r同时参与一次次的可控爆炸才行。希望你能想出一种万全的方法，使反应堆能够在三种材料的供应下稳定运转...\n\n注意，&6奇点&r和&6末影粉&r需要以1:1的比率供应。他们并不需要离得特别近，且一次爆炸可以同时转换多组物品。最终产物会在&6奇点&r所在位置生成。\n&7由于产物的堆叠规则为2个每组，所以你需要精细控制物品输入数量...抽屉是没用的！",
-	
-	"contraption.cabricality.25.title"   : "选择困难症",
-	"contraption.cabricality.25.subtitle": "步骤 25",
-	"contraption.cabricality.25.content" : "你首先需要选择一种颜料以生产&6异彩奇点。&r选择哪种颜色都可以，除了&f白色。&r",
-	
-	"contraption.cabricality.25.task.dye.title": "非白色染料",
-	
-	"contraption.cabricality.26.1.title"   : "染上星空的颜色",
-	"contraption.cabricality.26.1.subtitle": "步骤 26-1",
-	"contraption.cabricality.26.1.content" : "将&6量子缠绕态奇点&r与染料混合以探索颜色的究极奥秘！有了它，我们才能够着手制作&6异彩化合物。&r",
-	
-	"chapter_3.cabricality.correction.red.title"  : "&c光谱校正&r",
-	"chapter_3.cabricality.correction.red.content": "通过粉碎&6异彩奇点，&r你有概率获得一些&c染色球（红色）。&r\n\n你并不需要&c红色染色球&r来生产&6异彩化合物，&r试着放入&6分液池&r以校正它的光谱。",
-	
-	"chapter_3.cabricality.correction.yellow.title"  : "&e光谱校正&r",
-	"chapter_3.cabricality.correction.yellow.content": "通过粉碎&6异彩奇点，&r你同样有概率获得一些&e染色球（黄色）。&r\n\n就像红色的一样，&e黄色染色球&r也需要被再次分液以校正光谱。",
-	
-	"chapter_3.cabricality.correction.green.title"  : "&a光谱校正&r",
-	"chapter_3.cabricality.correction.green.content": "你还需要继续校正光谱频率。",
-	
-	"chapter_3.cabricality.correction.blue.title"  : "&1光谱校正&r",
-	"chapter_3.cabricality.correction.blue.content": "就快完成了！&1蓝色染色球&r只需再进行一次校正就可以投入使用了！",
-	
-	"chapter_3.cabricality.byproduct.title"  : "光盘行动",
-	"chapter_3.cabricality.byproduct.content": "分液的过程会产生大量流体副产物，你需要在生产线被堵塞之前及时处理它们。",
-	
-	"chapter_3.cabricality.byproduct.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.26.2.title"   : "&d光谱校正&r",
-	"contraption.cabricality.26.2.subtitle": "步骤 26-2",
-	"contraption.cabricality.26.2.content" : "&d品红色染色球&r拥有制造&6异彩化合物&r所需的精华。你有几率在粉碎&6异彩奇点&r时直接获得它们，但大多数还是通过光谱校正得到的。",
-	
-	"contraption.cabricality.26.3.title"   : "极致色彩",
-	"contraption.cabricality.26.3.subtitle": "步骤 26-3",
-	"contraption.cabricality.26.3.content" : "再次使用&6动力合成器&r以合成&6异彩化合物！&r",
-	
-	"chapter_3.cabricality.overcorrection.title"  : "失去高光",
-	"chapter_3.cabricality.overcorrection.content": "呃，对&6染色球&r的光谱进行过度校正只会使其失去颜色，无法继续处理。",
-	
-	"chapter_3.cabricality.overcorrection.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.27.title"   : "Simibubi说，“要有光”",
-	"contraption.cabricality.27.subtitle": "步骤 27",
-	"contraption.cabricality.27.content" : "&6光辉石&r的生产需要稳定供应的&6光源方块，&r或是一条&6信标光柱。&r\n\n选择一种你喜爱的方式并做好充足准备。",
-	
-	"contraption.cabricality.27.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.28.1.title"   : "闪光弹",
-	"contraption.cabricality.28.1.subtitle": "步骤 28-1",
-	"contraption.cabricality.28.1.content" : "当&6异彩化合物&r作为物品掉落的时候，它会汲取身旁的光源并进一步转化为&6光辉石&r。你有以下三种方式可以选择：\n\n- &7将物品形态的&6异彩化合物&7投掷到&6光源方块&7旁；&r\n\n- &7在物品形态的&6异彩化合物&7旁使用&6置物台&7或&6传送带&7供应&6光源方块&7；&r\n\n- &7将物品形态的&6异彩化合物&7扔进&6信标光柱&7中，这种剧烈的反应可以使其快速转换。&r",
-	
-	"contraption.cabricality.28.2.title"   : "通天之阶",
-	"contraption.cabricality.28.2.subtitle": "步骤 28-2",
-	"contraption.cabricality.28.2.content" : "主要工作已经完成！你只需要最后两步就能生产&6光辉线圈&r了。\n\n第一步，你需要一个&6动力辊压机。&r",
-	
-	"contraption.cabricality.28.3.title"   : "霓虹灯光",
-	"contraption.cabricality.28.3.subtitle": "步骤 28-3",
-	"contraption.cabricality.28.3.content" : "第二步，你需要一个&6动力合成器&r将压制好的&6光辉板&r切割并卷起，熠熠生辉的&6光辉线圈&r就做好了。",
-	
-	"contraption.cabricality.29.title"   : "有效载荷",
-	"contraption.cabricality.29.subtitle": "步骤 29",
-	"contraption.cabricality.29.content" : "你知道现在应该干什么了吧。是时候将你手中的&6精密构件&r升级一下了！",
-	
-	"contraption.cabricality.30.title"   : "动力重锤",
-	"contraption.cabricality.30.subtitle": "步骤 30",
-	"contraption.cabricality.30.content" : "除了&6超频构件，&r你还需要用&6殷钢&r（某种铁镍合金）制造&6殷钢机器&r才能完成&6机器方块&r的制造。\n\n由于精炼&6殷钢&r的过程漫长而又枯燥，所以你可能需要建造一条自动生产线...",
-	
-	"contraption.cabricality.30.task.checkmark.title": "知道了",
-	
-	"chapter_3.cabricality.assemble.title"  : "武装到头发",
-	"chapter_3.cabricality.assemble.content": "多贮存些&6共鸣器&r总归是个好习惯。\n&7不必要自动生产它们。",
-	
-	"chapter_3.cabricality.complete.title"  : "&f&l第三章完成！",
-	"chapter_3.cabricality.complete.content": "好耶，欢呼吧！&6超频构件&r正在被源源不断地生产！全新的技术和魔法之门将为你打开！\n&7当你认为你的生产线已经万无一失时，去&a纵览&7解锁新的目标吧！",
-	
-	"bonus_3a.cabricality.coin.title"  : "点赞、投币、收藏",
-	"bonus_3a.cabricality.coin.content": "&6银币&r的特殊属性可以用来制造&6末影机器。&r\n\n事实证明，&6银币&r的唯一来源似乎只有你的口袋。这不禁让你对铸币厂产生了好奇心...",
-	
-	"bonus_3a.cabricality.not_the_end.title"  : "此行未终",
-	"bonus_3a.cabricality.not_the_end.content": "乾坤挪移之术的秘密就在&6末地之门&r的另一端...",
-	
-	"bonus_3a.cabricality.dissolved.title"  : "熔烬",
-	"bonus_3a.cabricality.dissolved.content": "把你手中的银币投入&6冶炼炉&r中以继续...这是不可逆的，记住了。",
-	
-	"bonus_3a.cabricality.block.title"  : "贵重物品",
-	"bonus_3a.cabricality.block.content": "将你的&6熔融银&r铸成方块，并欣赏它的光泽...",
-	
-	"bonus_3a.cabricality.garnish.title"  : "加花",
-	"bonus_3a.cabricality.garnish.content": "从你的反应堆拿点&6末影粉&r来。如果你怕生产线被堵塞，使用末影珍珠也是可以的。",
-	
-	"bonus_3a.cabricality.expedition.title"  : "远征之门",
-	"bonus_3a.cabricality.expedition.content": "在你英勇击败末影龙后，通过&6折跃门&r前往外岛。\n\n在那里，你能够采集到&6末影合金&r的原材料之一——&6暗紫真菌。&r",
-	
-	"bonus_3a.cabricality.alloy.title"  : "地外合金",
-	"bonus_3a.cabricality.alloy.content": "再次点燃你的&6冶炼炉，&r进行两轮处理：\n\n首先，使用&6末影粉（或末影珍珠）&r以及&6暗紫真菌&r加固&6银锭。&r",
-	
-	"bonus_3a.cabricality.enderium.title"  : "注入林魂",
-	"bonus_3a.cabricality.enderium.content": "然后，在&6冶炼炉&r中使用&6熔融末影合金&r升级你的&6超频构件...&r",
-	
-	"bonus_3a.cabricality.cycle.title"  : "暗紫循环",
-	"bonus_3a.cabricality.cycle.content": "感谢&6超频&r技术，现在你可以循环生产&6暗紫真菌&r了。这样一来，稳定生产&6末影合金&r也就不再成问题。",
-	
-	"bonus_3a.cabricality.complete.title"  : "&3&l第三章支线完成！",
-	"bonus_3a.cabricality.complete.content": "无可比拟的乾坤挪移术正掌握在你的手心！在你庞大的工厂中，一定有某处可以利用它们进一步提高效率。看你的了！",
-	
-	
-	
-	"chapter_4.cabricality.title": "&f4&r 靶向药物",
-	
-	"chapter_4.cabricality.start.title"   : "&6&l靶向药物",
-	"chapter_4.cabricality.start.subtitle": "&6第四章",
-	"chapter_4.cabricality.start.content" : "下一步就是生产&6硅板&r了。已知道路中的一种就是将无数的物品、流体和能量不断地与紧凑的&6殷钢机器&r相结合。\n\n就像前几个章节一样，你需要先进行充足的材料准备。",
-	
-	"chapter_4.cabricality.start.task.checkmark.title": "&6开始！",
-
-	"chapter_4.cabricality.preparation.title"  : "投产！",
-	"chapter_4.cabricality.preparation.content": "接下来的生产线会消耗很多通量能量，确保你找到了合适的发电方式并能够随时增加发电规模，以便后续使用。",
-	
-	"chapter_4.cabricality.preparation.task.checkmark.title": "知道了",
-	
-	"chapter_4.cabricality.laser.title"  : "光之巨人",
-	"chapter_4.cabricality.laser.content": "&6炼金激光&r在这一科技阶梯中扮演着举足轻重的角色。",
-	
-	"chapter_4.cabricality.laser.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.31.1.title"   : "寄点沙子过来",
-	"contraption.cabricality.31.1.subtitle": "步骤 31-1",
-	"contraption.cabricality.31.1.content" : "是时候提高你的沙子产量了，因为它们富含&6硅！&r",
-	
-	"contraption.cabricality.31.2.title"   : "团团转",
-	"contraption.cabricality.31.2.subtitle": "步骤 31-2",
-	"contraption.cabricality.31.2.content" : "新产出的沙子将会被送去清洗并揉成一团。",
-	
-	"chapter_4.cabricality.liquid_sand.title"  : "搅和搅和",
-	"chapter_4.cabricality.liquid_sand.content": "在将&6沙球&r筛成&6粗砂&r的过程中不可避免地产生了副产品。不过先别急着扔掉，我们以后还会用到这些流体...",
-	
-	"chapter_4.cabricality.liquid_sand.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.31.3.title"   : "仍需打磨",
-	"contraption.cabricality.31.3.subtitle": "步骤 31-3",
-	"contraption.cabricality.31.3.content" : "将&6沙球&r扔到&6分液池&r中，分离出其中的砂质物。",
-	
-	"contraption.cabricality.32.1.title"   : "赛博石矿",
-	"contraption.cabricality.32.1.subtitle": "步骤 32-1",
-	"contraption.cabricality.32.1.content" : "从&6玄武岩&r中分离出微量的惰性&6玄武粉末&r是一种低成本的方案。但前提是，你要有用不完的&6玄武岩&r才行。",
-	
-	"contraption.cabricality.32.2.title"   : "白炽灯",
-	"contraption.cabricality.32.2.subtitle": "步骤 32-2",
-	"contraption.cabricality.32.2.content" : "第一台&6激光发射器&r能够将&6玄武碎片&r从&6玄武岩&r中提取出来，等待进一步的处理。\n\n你只需要在&6激光发射器&r上方放置一个&6吸液漏斗，&r再在最上方放置一格&6充能水，&r并向&6激光发射器&r通入红石信号就可使其工作。",
-	
-	"contraption.cabricality.33.1.title"   : "玄武试炼",
-	"contraption.cabricality.33.1.subtitle": "步骤 33-1",
-	"contraption.cabricality.33.1.content" : "在投入使用前，你需要将&6玄武碎片&r进一步提纯。",
-	
-	"contraption.cabricality.33.2.title"   : "浓缩热量",
-	"contraption.cabricality.33.2.subtitle": "步骤 33-2",
-	"contraption.cabricality.33.2.content" : "将一些处理好的&6玄武粉末&r压制成密度更高的&6岩荷弹&r吧。",
-	
-	"contraption.cabricality.33.3.title"   : "无瑕之玉",
-	"contraption.cabricality.33.3.subtitle": "步骤 33-3",
-	"contraption.cabricality.33.3.content" : "在高温下用&6岩荷弹&r富集&6粗砂&r就可以铸成&6高纯砂，&r这时，其中的硅含量已经足够我们制造硅板了。",
-	
-	"contraption.cabricality.34.1.title"   : "行将就木",
-	"contraption.cabricality.34.1.subtitle": "步骤 34-1",
-	"contraption.cabricality.34.1.content" : "在原地建造一个全新的树场是件值得考虑的事。它可以使你包括&6硅板&r在内的后续生产方便许多。",
-	
-	"contraption.cabricality.34.1.task.wooden_log.title": "&7任意&r原木",
-	
-	"contraption.cabricality.34.2.title"   : "一轮热解",
-	"contraption.cabricality.34.2.subtitle": "步骤 34-2",
-	"contraption.cabricality.34.2.content" : "&6木炭&r的生产只需要进行简单的烧炼。",
-	
-	"contraption.cabricality.34.2.task.checkmark.title": "知道了",
-	
-	"contraption.cabricality.34.3.title"   : "二轮热解",
-	"contraption.cabricality.34.3.subtitle": "步骤 34-3",
-	"contraption.cabricality.34.3.content" : "将&6木炭&r进行更加复杂的处理即可制造&6焦炭，&r它不仅是优秀的固体燃料，更是提纯&6硅&r的必要材料。",
-	
-	"contraption.cabricality.35.title"   : "高压水刀",
-	"contraption.cabricality.35.subtitle": "步骤 35",
-	"contraption.cabricality.35.content" : "将&6动力锯&r和水结合，可以将&6焦炭&r切割为小块，以增加催化时的接触表面积。",
-	
-	"contraption.cabricality.36.title"   : "调酒师",
-	"contraption.cabricality.36.subtitle": "步骤 36",
-	"contraption.cabricality.36.content" : "将&6高纯砂、小块焦炭&r和&6细砂流体&r混合搅拌，就可以从其中提纯出&6硅&r了。",
-	
-	"contraption.cabricality.37.title"   : "堆雪人",
-	"contraption.cabricality.37.subtitle": "步骤 37",
-	"contraption.cabricality.37.content" : "&6殷钢机器&r使得从水中制造&6雪球&r不再是难事。也许我们应该为下一位不速之客预留些雪球订单...",
-	
-	"contraption.cabricality.38.title"   : "冷光灯",
-	"contraption.cabricality.38.subtitle": "步骤 38",
-	"contraption.cabricality.38.content" : "第二台&6激光发射器&r可以从&6雪块&r中提取出&6暴雪结晶。&r\n\n你完全可以使用与&6「步骤 32-2」&r中相同的机械\n结构。",
-	
-	"contraption.cabricality.39.1.title"   : "暴雪试炼",
-	"contraption.cabricality.39.1.subtitle": "步骤 39-1",
-	"contraption.cabricality.39.1.content" : "就像早些时候一样，你需要将&6暴雪结晶&r进一步提纯。",
-	
-	"contraption.cabricality.39.2.title"   : "浓缩严寒",
-	"contraption.cabricality.39.2.subtitle": "步骤 39-2",
-	"contraption.cabricality.39.2.content" : "继续将&6暴雪粉末&r压制成为&6冰荷弹。&r",
-	
-	"contraption.cabricality.39.3.title"   : "终极归纳",
-	"contraption.cabricality.39.3.subtitle": "步骤 39-3",
-	"contraption.cabricality.39.3.content" : "在&6冶炼炉&r中将两者再次结合，就可以提纯出一小块高质量的&6硅&r了。",
-	
-	"chapter_4.cabricality.chapter_4a.title"  : "未解之谜",
-	"chapter_4.cabricality.chapter_4a.content": "一条秘密路线被前人发掘，如果利用得当的话，快速获取大量&6智慧构件&r也许不是什么难事...",
-	
-	"chapter_4.cabricality.chapter_4a.task.complete.title": "&f&l完成混沌炼金",
-	
-	"contraption.cabricality.39.a.title"   : "拆箱！",
-	"contraption.cabricality.39.a.subtitle": "步骤 39-A",
-	"contraption.cabricality.39.a.content" : "使用工业革命的&6锯木机&r把&6硅&r从试剂瓶中提取出来吧。",
-	
-	"contraption.cabricality.40.1.title"   : "压模电路",
-	"contraption.cabricality.40.1.subtitle": "步骤 40-1",
-	"contraption.cabricality.40.1.content" : "使用&6机械手&r将&6硅&r压模成&6硅板。&r你需要的&6硅压印模板&r可以在自然生成的陨石内部找到。",
-	
-	"contraption.cabricality.40.2.title"   : "整装待发",
-	"contraption.cabricality.40.2.subtitle": "步骤 40-2",
-	"contraption.cabricality.40.2.content" : "你还需要最后三个&6机械手&r将构件升级...",
-	
-	"chapter_4.cabricality.assemble.title"  : "全身武装",
-	"chapter_4.cabricality.assemble.content": "你需要一些&6闪存&r以制造&6智能构件。&r\n&7保管好贵重物品！",
-	
-	"chapter_4.cabricality.complete.title"  : "&f&l第四章完成！",
-	"chapter_4.cabricality.complete.content": "你坚持走到这里了！截至目前，工厂中所有的传统流水线都应组装完成，让我们一起步入智能时代吧！\n&7等你准备好了，就去&a纵览&7看看！",
-	
-	"contraption.cabricality.41.1.title"   : "电路速递 I",
-	"contraption.cabricality.41.1.subtitle": "步骤 41-1",
-	"contraption.cabricality.41.1.content" : "组装&6各式ME电路板&r还需要一些额外操作，也许你可以制造一条半自动化流水线。",
-	
-	"contraption.cabricality.41.2.title"   : "电路速递 II",
-	"contraption.cabricality.41.2.subtitle": "步骤 41-2",
-	"contraption.cabricality.41.2.content" : "组装它们并不是轻而易举就能完成的事，但看着它们运行很有趣。",
-	
-	
-	
-	"chapter_4a.cabricality.title": "&l↓&r 混沌炼金",
-	
-	"chapter_4a.cabricality.start.title"  : "殊途同归",
-	"chapter_4a.cabricality.start.content": "作为另一条通向罗马的路，你可以用更加冒险的方式获得&d高能硅。&r激光冶金工业将你引向了这一条模糊却又高回报的殊途。\n\n你需要发掘不同试剂配方间的秘密规律，最终掌握&b混沌催化剂&r的制造方法！\n\n一旦你推开了这扇大门，你不仅能够轻易地将其他物质转化成&d硅，&r还能够获得点石成金的能力，从废土中提取出更多稀有材料！",
-	
-	"chapter_4a.cabricality.start.task.checkmark.title": "&7成为&d炼金术士！&7",
-	
-	"chapter_4a.cabricality.preparation.title"  : "开刃 - 收刃",
-	"chapter_4a.cabriclaity.preparation.content": "除了一台&d炼金镭射器&r结构，你的实验室中还需要几台其它的制备仪器。\n\n- &7&d液体注入机&r可以将材料注入&d熔融玻璃&r中，制成罐装试剂。&r\n\n- &7&d锯木机&r则可以反向进行整个过程。&r",
-	
-	"alchemy.cabricality.clueless.title"  : "一窍不通",
-	"alchemy.cabricality.clueless.content": "当使用&d漏斗矿车&r输入催化剂代码时，你可以选择在左起第五栏中放入&6荧石&r稳定剂和或&c红石&r稳定剂。\n\n这么做也许可以揭幕更多有关正确配方的信息...",
-	
-	"alchemy.cabricality.silver.content"     : "你口袋里的货币似乎也有着对应的试剂。别太想当然，把你的银锭铸成更多的货币肯定是行不通的。",
-	"alchemy.cabricality.igneous.content"    : "&5此任务会在你拥有所有&d类火山岩试剂&5后解锁。&r\n\n&d火山岩催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。&r\n\n&7记录下先前测试的结果是个好习惯。勤于记录，六次以内找到正确配方的概率也许就会大大增加！",
-	"alchemy.cabricality.herbal.content"     : "&5此任务会在你拥有所有&d类草药试剂&5后解锁。&r\n\n&d草药催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
-	"alchemy.cabricality.volatile.content"   : "&5此任务会在你拥有所有&d类沸腾试剂&5后解锁。&r\n\n&d沸腾催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
-	"alchemy.cabricality.crystalline.content": "&5此任务会在你拥有所有&d类晶化试剂&5后解锁。&r\n\n&d晶化催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
-	"alchemy.cabricality.metallurgic.content": "&5此任务会在你拥有所有&d类箔层试剂&5后解锁。&r\n\n&d箔层催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
-	"alchemy.cabricality.gemstone.content"   : "&5此任务会在你拥有所有&d类辉光试剂&5后解锁。&r\n\n&d辉光催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
-  
-	"chapter_4a.cabricality.final_code.title"  : "宇宙的答案",
-	"chapter_4a.cabricality.final_code.content": "&5此任务会在你拥有所有&d催化剂&5后解锁。&r\n\n在你面前的催化剂，则需要其中的四个以合成。看吧，换汤不换药。\n&7详见催化剂的REI介绍界面。",
-	
-	"chapter_4a.cabricality.discovery.title"  : "「伟大发现」",
-	"chapter_4a.cabricality.discovery.content": "手拿&b混沌催化剂，&r一切试剂的嬗变规律尽收眼底！n\n只需要把&b混沌催化剂&r和四罐其它试剂放在一起，照猫画虎地对其发射炼金激光即可。此过程不会消耗&b混沌催化剂。&r\n\n其中有一种试剂并不会转化为另一种，而是会产出&d高能硅。&r当你一旦成功，这将会大大简化你的生产流程。",
-	
-	"contraption.cabricality.31.a.title"   : "混沌装置",
-	"contraption.cabricality.31.a.subtitle": "步骤 31-A",
-	"contraption.cabricality.31.a.content" : "你现在已经得知所有转化的具体配方了。是时候建造一条自动化炼金生产线来源源不断地生产&d硅&r了！\n\n注意，具体步骤会根据你所在世界的不同而产生大幅变化，这也是为什么我们不能像之前一样手把手地带着你一步步建造了。善用REI可以帮助你解决建造过程中的许多必要问题。",
-	
-	"chapter_4a.cabricality.complete.title"  : "&3空间翘曲区域",
-	"chapter_4a.cabricality.complete.content": "现在，你有了充足的&d高能硅试剂&r供应，是时候再次一头扎进第四章的主线内容了！",
-	
-	"chapter_4a.cabricality.complete.task.checkmark.title": "&7回到&6第四章：靶向药物&r",
-
-
-
-	"chapter_5.cabricality.title": "&f5&r 意识上传",
-
-	"chapter_5.cabricality.start.title"   : "&6&l意识上传",
-	"chapter_5.cabricality.start.subtitle": "&5最终章",
-	"chapter_5.cabricality.start.content" : "我们终于走到了旅途的最终章——你将会建造一栋数据中心！它会不计日夜地吞吐数以万计的数字和符号，川流不息。\n\nB勇敢前进，用你手边的机械开拓新的疆域！\n\n把沸腾奔涌的&5逻辑&r铸成一个个锃亮的数字，在智能时代的风口上无问西东...\n\n如果你有些头绪的话，试着构造一个&5ME系统，&r它也许能为你的数据管理提供一些更加有效的方案。",
-	
-	"chapter_5.cabricality.start.task.checkmark.title": "&5开始！",
-
-	"contraption.cabricality.42.title"   : "能源处理",
-	"contraption.cabricality.42.subtitle": "步骤 42",
-	"contraption.cabricality.42.content" : "固态的&5智能构件&r难以加工。要用它们作为数据处理的原材料，你需要先将它们熔至液态。",
-
-	"contraption.cabricality.43.title"   : "藕断丝连",
-	"contraption.cabricality.43.subtitle": "步骤 43",
-	"contraption.cabricality.43.content" : "&5运算符&r就好似战马的蹄铁，无论是远征还是游击，都举足轻重。\n\n自动化供应&5运算符&r是一切数据处理的基础工作。",
-
-	"contraption.cabricality.44.1.subtitle": "步骤 44-1",
-	"contraption.cabricality.44.1.content" : "作为最原始的两个数字之一，你可以将&5液态逻辑&r直接处理成&5数字&l3。&r将它与&5数字&l8&r和各种&5运算符&r相结合，就能计算出&5&l0~9&r中的任何整数了。\n\n这一步骤很可能成为日后的产能瓶颈，因为任何数据的处理都要基于最原始的数字。务必确保你的机器工作顺畅无阻。",
-
-	"contraption.cabricality.44.2.subtitle": "步骤 44-2",
-	"contraption.cabricality.44.2.content" : "作为除了&5数字&l3&r以外的另一个原始数字，&5数字&l8&r也可以直接由&5液态逻辑&r处理而成。\n\n从这一步起，你需要精确计算并最小化处理每个数字所消耗的&5机械、运算符&r和&5额外步骤。&r记住，你在任何一个步骤中的小失误都会增加处理目标数字所消耗的&5智能构件。&r",
-
-	"contraption.cabricality.45.1.subtitle": "步骤 45-1",
-	"contraption.cabricality.45.1.content" : "&5&o3-2、4÷4、8-7...&r\n\n总共有21种方式计算&5数字&l1。&r\n&7&o&o你会选择哪一种呢？",
-
-	"contraption.cabricality.45.2.subtitle": "步骤 45-2",
-	"contraption.cabricality.45.2.content" : "&5&o3-1, 8÷4, 1+1...&r\n\n总共有17种方式计算&5数字&l2。&r\n&7&o最中意哪个？",
-
-	"contraption.cabricality.45.4.subtitle": "步骤 45-4",
-	"contraption.cabricality.45.4.content" : "&5&o6-2, 2×2, 3+1...&r\n\n总共有16种方式计算&5数字&l4。&r\n&7&o谨慎选择。",
-
-	"contraption.cabricality.45.5.subtitle": "步骤 45-5",
-	"contraption.cabricality.45.5.content" : "&5&o3+2, 6-1, 8-3...&r\n\n总共有14种方式计算&5数字&l5。&r\n&7&o你要怎么处理？",
-
-	"contraption.cabricality.45.6.subtitle": "步骤 45-6",
-	"contraption.cabricality.45.6.content" : "&5&o3×2, 3+3, 8-2...&r\n\n总共有16种方式计算&5数字&l6。&r\n&7&o愿数学原理与你同在。",
-
-	"contraption.cabricality.45.7.subtitle": "步骤 45-7",
-	"contraption.cabricality.45.7.content" : "&5&o9-2, 4+3, 8-1...&r\n\n总共有14种方式计算&5数字&l7。&r\n&7&o天选之子？",
-
-	"contraption.cabricality.45.9.subtitle": "步骤 45-9",
-	"contraption.cabricality.45.9.content" : "&5&o3×3, 4+5, 8+1...&r\n\n总共有15种方式计算&5数字&9。&r\n&7&o就由你来选择。",
-
-	"contraption.cabricality.45.0.subtitle": "步骤 45-0",
-	"contraption.cabricality.45.0.content" : "&5&o3-3, 2-2, 8-8...&r\n\n总共有39种方式计算&5数字&l0。&r\n&7&o选择困难症！",
-
-	"contraption.cabricality.46.title"   : "线性代数",
-	"contraption.cabricality.46.subtitle": "步骤 46",
-	"contraption.cabricality.46.content" : "为了让数据中心的大脑运行起来，我们需要...很多&5数字&l3。&r\n\n在这些数字离开逻辑循环阈时，请确保每种数字的数量相同。将&5黄铜隧道&r并排摆放可以有效解决这个问题。\n\n现在，你需要把这些数字送进&5冶炼炉，&r重新熔成液态。每当&5冶炼炉&r中同时拥有十种液态数字的时候，它们就会结合成&5编码逻辑。&r只有当这些有形的合金积累的足够多时，才能够被铸成一块&5智能矩阵。&r\n\n指导电脑最低需要8块&5智能矩阵&r才可以投入使用。你在数字生产线中所使用的技术和数据中心的结构，这可能需要花上一点时间。",
-
-	"contraption.cabricality.47.title"   : "良性进制",
-	"contraption.cabricality.47.subtitle": "步骤 47",
-	"contraption.cabricality.47.content" : "&5物质条，&r这种无暇而坚韧的材料是制造星际飞行器的不二之选。而&5物质球&r可以通过&5物质冷凝器&r制造。\n\n向&5物质冷凝器&r中插入一条&51k ME 储存元件，&r调整输出为&5物质球，&r然后塞进你手头最富裕的物质。尽管使用你认为没有什么价值的物品吧！因为在&5物质冷凝器&r中，海底的珍珠和脚下的土同样便宜。",
-
-	"contraption.cabricality.48.title"   : "奢侈物质",
-	"contraption.cabricality.48.subtitle": "步骤 48",
-	"contraption.cabricality.48.content" : "你可以在&5高温液压机&r中制造出&5物质块，&r我们需要用上一些。",
-
-	"contraption.cabricality.49.title"   : "电蚀工艺",
-	"contraption.cabricality.49.subtitle": "步骤 49",
-	"contraption.cabricality.49.content" : "站在&5供氧仪&r上，慢慢装满你的&5氧气罐。&r\n\n而通过&5氧气制造仪，&r你可以从水中电离出氧气以供呼吸和储存。",
-
-	"contraption.cabricality.50.title"   : "&d千年之隼",
-	"contraption.cabricality.50.subtitle": "步骤 &d50&r",
-	"contraption.cabricality.50.content" : "站在空荡的&5发射台&r上，是时候造出属于你自己的飞船了。\n\n发挥出你的全部实力吧，不要在暴风雨前的宁静中倒下！",
-
-	"chapter_5.cabricality.complete.title"  : "&b自然选择，前进四！",
-	"chapter_5.cabricality.complete.content": "万物归位，蓄势待发。\n\n花点时间准备一面旗子，好趁早将它矗立在全新的大地上！\n\n放轻松，等你准备好了，向着星辰与大海义无反顾地前行吧。",
-
-	"chapter_5.cabricality.attire.title"  : "&9盛装出席",
-	"chapter_5.cabricality.attire.content": "如果你想在严酷的外星环境中生存，考虑换套更合适的服装？",
-
-	
-	
-	"metallurgy.cabricality.title": "&8▶ 科学冶金",
-	
-	"metallurgy.cabricality.start.title"   : "流水线",
-	"metallurgy.cabricality.start.subtitle": "",
-	"metallurgy.cabricality.start.content" : "这里列举了一些能够把原矿冶炼成金属锭的流水线生产方式。\n\n对于这张流程图里的每一条路线来说，原矿的有效产值就是先前所有步骤中比率的乘积。",
-	
-	"metallurgy.cabricality.start.task.checkmark.title": "&7成为&f冶金学者！&7",
-	
-	"metallurgy.cabricality.pickaxe.title"   : "徒手挖掘",
-	"metallurgy.cabricality.pickaxe.subtitle": "&81 → &71",
-	
-	"metallurgy.cabricality.pickaxe.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.fortune_pickaxe.title"   : "时运",
-	"metallurgy.cabricality.fortune_pickaxe.subtitle": "&81 → &71 ~ 2",
-	
-	"metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.i.title": "&f&lI&7 粉碎矿石",
-	
-	"metallurgy.cabricality.i.task.checkmark.title": "下一步",
-	
-	"metallurgy.cabricality.i.smelting.title"   : "熔炼",
-	"metallurgy.cabricality.i.smelting.subtitle": "&81 → &73",
-	
-	"metallurgy.cabricality.i.smelting.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.i.pulverizing.title"   : "热解",
-	"metallurgy.cabricality.i.pulverizing.subtitle": "&81 → &76",
-	
-	"metallurgy.cabricality.i.pulverizing.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.i.milling.title"   : "磨粉",
-	"metallurgy.cabricality.i.milling.subtitle": "&81 → &73",
-	
-	"metallurgy.cabricality.i.milling.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.i.crushing.title"   : "粉碎",
-	"metallurgy.cabricality.i.crushing.subtitle": "&81 → &73 ~ 6",
-	
-	"metallurgy.cabricality.i.crushing.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.ii.title": "&f&lII&7 矿粉",
-	
-	"metallurgy.cabricality.ii.task.checkmark.title": "下一步",
-	
-	"metallurgy.cabricality.ii.blocking.title"   : "融铸\\&冷却成块",
-	"metallurgy.cabricality.ii.blocking.subtitle": "&89 → &71",
-	
-	"metallurgy.cabricality.ii.blocking.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.ii.smelting.title"   : "再次熔炼",
-	"metallurgy.cabricality.ii.smelting.subtitle": "&81 → &71",
-	
-	"metallurgy.cabricality.ii.smelting.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.ii.melting.title"   : "熔融",
-	"metallurgy.cabricality.ii.melting.subtitle": "&81 → &73",
-	
-	"metallurgy.cabricality.ii.melting.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.ii.washing.title"   : "洗涤",
-	"metallurgy.cabricality.ii.washing.subtitle": "&81 → &72",
-	
-	"metallurgy.cabricality.ii.washing.task.checkmark.title": "完成",
-	
-	"metallurgy.cabricality.iiia.title": "&f&lIIIa&7 金属粒",
-	
-	"metallurgy.cabricality.iiia.task.checkmark.title": "下一步",
-	
-	"metallurgy.cabricality.iiib.title"   : "&f&lIIIb&7 液态金属",
-	"metallurgy.cabricality.iiib.subtitle": "[单位：粒]",
-	
-	"metallurgy.cabricality.iiib.task.checkmark.title": "下一步",
-	
-	"metallurgy.cabricality.iii.compacting.title": "压制",
-	
-	"metallurgy.cabricality.iii.compacting.task.checkmark.title": "使用&6动力辊压机&r压制金属",
-	
-	"metallurgy.cabricality.iv.title": "&f&lIV&7 金属锭",
-	
-	"metallurgy.cabricality.iv.task.checkmark.title": "完成",
-	
-	
-	
-	"thanks.cabricality.title": "&8  特别感谢",
-	
-	"thanks.cabricality.staff.title"   : "&c感&a谢&b游&f玩！",
-	"thanks.cabricality.staff.subtitle": "制作人员",
-	"thanks.cabricality.staff.content" : "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/程序&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox\nMangoJellyPudding&r\n&7贡献者&r"
+  "overview.cabricality.chapter_3.start.task.unlock.title": "&6解锁第三章",
+
+  "overview.cabricality.chapter_3.end.title": "&f&l合金时代",
+  "overview.cabricality.chapter_3.end.subtitle": "里程碑",
+  "overview.cabricality.chapter_3.end.content": "科技发展的终点是&6魔法。&r现在你的一些机器已经被一些不是科学而是玄学的奇妙能量控制住了，&6不是吗？&r\n\n好吧，先不谈这些...放眼望去，你马上就能踏出历史性的一步了！&6新技术的合理运用&r能够继续推动你前进。\n&7你的一小步，世界的一大步。",
+
+  "overview.cabricality.chapter_3.end.task.complete.title": "&6完成第三章",
+
+  "overview.cabricality.bonus_3a.start.title": "&f&l资金回转",
+  "overview.cabricality.bonus_3a.start.subtitle": "第三章 支线",
+  "overview.cabricality.bonus_3a.start.content": "被空间移动的魅力所震撼从而寄希望于研究向往的&3第三维度&r的你还不如在&3量子力学领域&r放手一搏...在研究新材料的过程中，你发现辛苦挣来的&3银币&r竟能提供莫大帮助！\n&7勾选上方复选框，揭幕第三章的额外支线内容。",
+
+  "overview.cabricality.bonus_3a.start.task.unlock.title": "&3解锁第三章 77支线",
+
+  "overview.cabricality.bonus_3a.end.title": "&3&l魔法时代",
+  "overview.cabricality.bonus_3a.end.subtitle": "&3挑战",
+  "overview.cabricality.bonus_3a.end.content": "&3传...传送！&r有了&3末影合金机器&r后，你不仅能在眨眼间移动物品和流体，还能将工厂的生产效率提升到前所未有的高度...",
+
+  "overview.cabricality.bonus_3a.end.task.complete.title": "&3完成第三章 &7支线",
+
+  "overview.cabricality.chapter_4.start.title": "&6&l靶向药物",
+  "overview.cabricality.chapter_4.start.subtitle": "&6第四章",
+  "overview.cabricality.chapter_4.start.content": "你需要了解一些全新的动力组合方式！只有弄清楚&6热力系统&r和&6传统动力结构&r间的相互作用，才能够高效生产&6硅。&r你很快就将步入&6智能时代&r了！\n\n一项奇怪的研究发现，&6激光&r能够高效地在上述两种能级间不断跃迁。倘若能够加以利用，那么这将会是一个划时代的创新！\n\n点击上方复选框以解锁&6第四章：靶向药物。&r\n&7具体任务细节可以在左侧边栏选择查看。",
+
+  "overview.cabricality.chapter_4.start.task.unlock.title": "&6解锁第四章",
+
+  "overview.cabricality.chapter_4a.start.title": "&6&l混沌炼金",
+  "overview.cabricality.chapter_4a.start.subtitle": "→ 备用路线",
+  "overview.cabricality.chapter_4a.start.content": "如果你对死板的科技感到厌烦，那你费心研究的&6激光发射器&r也并非派不上用场。它们可是炼金好手！\n\n在科学和炼金术的奇妙联动下，你发现了一些&6几乎毫无关系的物质&r间相互转换的奥秘。继续发展科技所必须的原料&6硅&r也在其中。什么？&6炼金术&r怎么就不能生产硅了？\n&7温馨提示：不要品尝失败品。\n\n单击上方复选框以解锁&7备用路线：&6混沌炼金。\n&7具体任务细节可以在左侧边栏选择查看。",
+
+  "overview.cabricality.chapter_4a.start.task.unlock.title": "&6解锁第四章 &7备用路线",
+
+  "overview.cabricality.chapter_4.end.title": "&f&l信息时代",
+  "overview.cabricality.chapter_4.end.subtitle": "里程碑",
+  "overview.cabricality.chapter_4.end.content": "在&6智能构件&r的帮助下，你的工厂将会全面数字化！&6即时物能转换（ME转换）&r将会带来前所未有的技术革新！无论是对你的工厂还是你自己，意义同样重大。\n\n现在，你已经可以制造&6所有&r探索深空所需的材料和零件了。也许，可以提前安排一下倒计时？\n&710, 9, 8...",
+
+  "overview.cabricality.chapter_4.end.task.complete.title": "&6解锁第四章",
+
+  "overview.cabricality.chapter_5.start.title": "&6&l意识上传",
+  "overview.cabricality.chapter_5.start.subtitle": "&5最终章",
+  "overview.cabricality.chapter_5.start.content": "整个工厂都在为最后一段冲刺而全速运转。在&5智能构件&r的稳定供应下，所有智能化的&5基建平台&r都将会完美地在轨运行。\n\n当你的工厂正狼吞虎咽五颜六色的数字时，向着深空的&5先驱者们&r已经随时准备踏上那勇气之梯了！",
+
+  "overview.cabricality.chapter_5.start.task.unlock.title": "&6解锁&5最终章",
+
+  "overview.cabricality.chapter_5.end.title": "&9&l&o..还要走得更远",
+  "overview.cabricality.chapter_5.end.content": "&o这也许只是你的一小步，却是&9全人类&r的一大步。\n\n&o我能陪你走到这里是我的荣幸。看到了你们的飞速发展，我的使命也就圆满完成了。&9真正的旅途才刚刚开始，我们明日再见。&r\n\n&9&l&o世界很大，生活更大。",
+
+  "overview.cabricality.chapter_5.end.task.complete.title": "&5探索宇宙！",
+
+  "advancements.cabricality.title": "&d▶ 成就",
+
+  "advancement.cabricality.accumulation.title": "&6原始积累",
+  "advancement.cabricality.accumulation.subtitle": "&6记得种回去！",
+
+  "advancement.cabricality.accumulation.task.craft.title": "合成2^12块木板",
+
+  "advancement.cabricality.reach_the_sky.title": "&b触摸天空",
+  "advancement.cabricality.reach_the_sky.subtitle": "&b到底该怎么下去呢？",
+
+  "advancement.cabricality.reach_the_sky.task.location.title": "到达255米的高度",
+
+  "advancement.cabricality.construction.title": "&7基建狂魔",
+  "advancement.cabricality.construction.subtitle": "&7大兴土木！",
+
+  "advancement.cabricality.construction.task.place_cobblestone.title": "放置圆石",
+  "advancement.cabricality.construction.task.place_dirt.title": "放置泥土",
+  "advancement.cabricality.construction.task.place_scaffolding.title": "使用并拆毁脚手架",
+
+  "advancement.cabricality.explore.title": "&5漫游指南",
+  "advancement.cabricality.explore.subtitle": "&5永远不要忘记，叫做家的地方。",
+
+  "advancement.cabricality.explore.dimension.nether": "&5下界",
+  "advancement.cabricality.explore.dimension.the_end": "&3末路之地",
+
+  "advancement.cabricality.explore.planet.the_moon": "&8月球",
+  "advancement.cabricality.explore.planet.glacio": "&9霜原星",
+  "advancement.cabricality.explore.planet.mars": "&c火星",
+  "advancement.cabricality.explore.planet.mercury": "&5水星",
+  "advancement.cabricality.explore.planet.venus": "&6金星",
+
+  "advancement.cabricality.explore.orbit.earth": "&2地球&8轨道",
+  "advancement.cabricality.explore.orbit.the_moon": "&8月球&8轨道",
+  "advancement.cabricality.explore.orbit.glacio": "&9霜原星&8轨道",
+  "advancement.cabricality.explore.orbit.mars": "&c火星&8轨道",
+  "advancement.cabricality.explore.orbit.mercury": "&5水星&8轨道",
+  "advancement.cabricality.explore.orbit.venus": "&6金星&8轨道",
+
+  "advancement.cabricality.being_stored.title": "&8被封存的传说",
+  "advancement.cabricality.being_stored.subtitle": "&8地狱一般的鬼地方...",
+
+  "advancement.cabricality.being_stored.task.spatial_storage": "&8钻进&8存储空间",
+
+  "advancement.cabricality.flying_skunk.title": "&d你在做什么啊？",
+  "advancement.cabricality.flying_skunk.subtitle": "&d哼哼哼，啊！仙贝如是说。",
+
+  "advancement.cabricality.flying_skunk.task.fly.title": "&d飞行距离",
+
+  "advancement.cabricality.long_tour.title": "&6路途漫漫",
+  "advancement.cabricality.long_tour.subtitle": "&6你是我永远的朋友。",
+
+  "advancement.cabricality.long_tour.task.play.title": "&5游玩5000天",
+
+  "advancement.cabricality.new.title": "&8未完成的事业",
+  "advancement.cabricality.new.subtitle": "&8不————————",
+
+  "advacnements.cabricality.complete.title": "&f幔缝重生",
+
+  "advancements.cabricality.complete.task.minecraft.title": "&2你的世界",
+  "advancements.cabricality.complete.task.ad_astra.title": "&d无人深空",
+  "advancements.cabricality.complete.task.create.title": "&6机械革命",
+  "advancements.cabricality.complete.task.farmers_delight.title": "&e山肴野蔌",
+
+  "chapter_1.cabricality.title": "&f&l1&r 扬帆起航",
+
+  "chapter_1.cabricality.start.title": "&6&l扬帆起航",
+  "chapter_1.cabricality.start.subtitle": "&6第一章",
+  "chapter_1.cabricality.start.content": "&6欢迎来到科技树！&r\n\n这些任务告诉你接下来的生产线应该如何制作，跟随指引即可以满足工厂的充足材料供应。任务间的连接线代表了&6生产/处理&r不同材料时的顺序。\n\n&6积极出谋划策吧！&r",
+
+  "chapter_1.cabricality.start.task.checkmark.title": "&6开始！",
+
+  "chapter_1.cabricality.speedrun.title": "旁门左道...",
+  "chapter_1.cabricality.speedrun.content": "也许你并不想死板地跟着任务前进，没有问题。你可以选择只建造你想要的机械，甚至全部由双手完成而留下时间去探索，有余力的你还可以试试发掘新的制造方法或使用高阶材料来简化生产流程。但别忘了，这些可不能是你偷工减料的理由。\n&7玩得开心才是最重要的！",
+
+  "chapter_1.cabricality.speedrun.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.1.title": "钢铁之“森”",
+  "contraption.cabricality.1.subtitle": "步骤 1",
+  "contraption.cabricality.1.content": "首先，你需要木头，很多木头以及更多的木头。从大自然一昧地索取总不是个长久的办法，你最好赶快实现木材的自给自足和充足供应。\n\n合成一些&6动力锯&r试试，它们可是伐木好手。\n&7每当你能够自动生产某一物品时，就可以点击上方“自动生产”复选框以继续下一任务了。",
+
+  "contraption.cabricality.1.task.wooden_log.title": "&7任意&r原木",
+
+  "contraption.cabricality.2.title": "浸出液",
+  "contraption.cabricality.2.subtitle": "步骤 2",
+  "contraption.cabricality.2.content": "把&6石灰岩&r和&6水&r混合并压制就可以批量生产滴水石块了，而后者则可以被磨制成粘土球。",
+
+  "contraption.cabricality.3.title": "海底宫殿",
+  "contraption.cabricality.3.subtitle": "步骤 3",
+  "contraption.cabricality.3.content": "海带是&6安山合金&r的必要原材料，而后者正是你第一条生产线上的主角，同时也是许多机械的必要原料之一。\n\n海带可以轻易地被&6动力收割机&r收集。",
+
+  "contraption.cabricality.4.title": "黄金“石”代",
+  "contraption.cabricality.4.subtitle": "步骤 4",
+  "contraption.cabricality.4.content": "在矿洞中寻找安山岩可是件累活。不过万幸的是，基岩可以让上方的岩浆和水迅速变成安山岩...和其它怪石。\n\n&6动力钻头&r可以有效地代替你手中的镐子。但因基岩的阻挡，你必须从其它方向收集石头...",
+
+  "contraption.cabricality.5.title": "安山电梯",
+  "contraption.cabricality.5.subtitle": "步骤 5",
+  "contraption.cabricality.5.content": "你不太可能把你的工厂选址在石缝中，或是搬一块基岩到地面上来。因此，也许你需要一种更加合理的方式来搬运石头。",
+
+  "contraption.cabricality.6.1.title": "磨坊主的帮手",
+  "contraption.cabricality.6.1.subtitle": "步骤 6-1",
+  "contraption.cabricality.6.1.content": "&6石磨&r可以将滴水石块处理成粘土球。",
+
+  "contraption.cabricality.6.2.title": "泡个“藻”",
+  "contraption.cabricality.6.2.subtitle": "步骤 6-2",
+  "contraption.cabricality.6.2.content": "快来搓碟！将海带和黏土球放到&6动力搅拌器&r下的工作盆中并提供动力，把它们搅拌均匀。",
+
+  "contraption.cabricality.6.3.title": "波力海苔",
+  "contraption.cabricality.6.3.subtitle": "步骤 6-3",
+  "contraption.cabricality.6.3.content": "你需要将上一步产出的海藻混合物烧制成为更坚硬的海藻砖。熔炉确实很好用，但为什么不考虑一下不需要燃料的岩浆和&6鼓风机&r的组合呢？",
+
+  "contraption.cabricality.6.4.title": "如果“藻”知道...",
+  "contraption.cabricality.6.4.subtitle": "步骤 6-4",
+  "contraption.cabricality.6.4.content": "没错！你需要将它们再次搅拌——不过这回的主角变成了&6海藻砖&r和你辛苦运上来的&6安山岩。&r",
+
+  "contraption.cabricality.7.1.title": "削去外皮",
+  "contraption.cabricality.7.1.subtitle": "步骤 7-1",
+  "contraption.cabricality.7.1.content": "面向上方的&6动力锯&r可以进一步处理原木...",
+
+  "contraption.cabricality.7.1.task.stripped_log.title": "&7任意&r去皮原木",
+
+  "contraption.cabricality.7.2.title": "二次切割",
+  "contraption.cabricality.7.2.subtitle": "步骤 7-2",
+  "contraption.cabricality.7.2.content": "...枯燥地重复...",
+
+  "contraption.cabricality.7.2.task.planks.title": "&7任意&r木板",
+
+  "contraption.cabricality.7.3.title": "刀法精湛",
+  "contraption.cabricality.7.3.subtitle": "步骤 7-3",
+  "contraption.cabricality.7.3.content": "...再来一次，把它们切割成一切构件的基础材料&6——木质台阶。&r\n&7记得在动力锯的过滤槽中放入这一步需要处理的物品，不然你猜不到它们会想要输出什么。",
+
+  "contraption.cabricality.7.3.task.wooden_slab.title": "&7任意&r木质台阶",
+
+  "contraption.cabricality.8.title": "扭一扭，按一按",
+  "contraption.cabricality.8.subtitle": "步骤 8",
+  "contraption.cabricality.8.content": "将搅拌好的&6安山合金&r华丽地安装到&6木质台阶&r上，优雅地收尾你的第一条生产线！",
+
+  "contraption.cabricality.assemble.title": "武装到手指",
+  "contraption.cabricality.assemble.content": "你肯定需要多贮存些&6手锯&r以便及时更换。\n&7它们并不是即时消耗品，所以手动合成一些就够用了。",
+
+  "contraption.cabricality.assemble.task.saw.title": "&7任意&r手锯",
+
+  "chapter_1.cabricality.complete.title": "&f&l第一章完成！",
+  "chapter_1.cabricality.complete.content": "恭喜！现在你可以自动生产&6动力构件&r了，你的工厂已然初具雏形！不要错过这个完美的契机，继续向前努力！\n\n再次回顾你的生产线，是否有些地方的构造不太合理？或者有些瓶颈你还没有发现？抑或是有什么可以更加优化的地方？\n&7要知道，如果你的安山岩生产机构极其高效，沙子的供应却不足，那你的安山合金产量也不会高到哪去...这可是会被人笑话的！",
+
+  "contraption.cabricality.9.1.title": "不要砍尽劈绝",
+  "contraption.cabricality.9.1.subtitle": "步骤 9-1",
+  "contraption.cabricality.9.1.content": "试着把提取器放置在一棵树木的树干旁然后右击它，你会在下方发现一些&4树脂流体！&r\n",
+
+  "contraption.cabricality.9.2.title": "阿姨，压一压",
+  "contraption.cabricality.9.2.subtitle": "步骤 9-2",
+  "contraption.cabricality.9.2.content": "用流体管道和动力泵将&4树脂流体&r泵到工作盆中，再用辊压机使其压制成型。",
+
+  "contraption.cabricality.9.3.title": "火焰洗礼",
+  "contraption.cabricality.9.3.subtitle": "步骤 9-3",
+  "contraption.cabricality.9.3.content": "最后一步，用火焰洗礼刚刚成型的&4固态橡胶，&r使其硫化！\n&7Bon Appétit!&8&o（祝好胃口！）",
+
+  "bonus_1a.cabricality.assemble.title": "无缝衔接",
+  "bonus_1a.cabricality.assemble.content": "这一步很简单，以至于你完全可以用双手来完成。如果你想自动生产，晚些时候再用&4动力合成器&r替换你的工作台也无妨。",
+
+  "bonus_1a.cabricality.complete.title": "&4&l第一章支线完成！",
+  "bonus_1a.cabricality.complete.content": "好样的，现在你有足够的&4气密构件&r了！以后有的是时间感谢你自己！",
+
+  "chapter_2.cabricality.title": "&f&l2&r 初入门道",
+
+  "chapter_2.cabricality.start.title": "&6&l初入门道",
+  "chapter_2.cabricality.start.subtitle": "&6第二章",
+  "chapter_2.cabricality.start.content": "这一章节自动化的目标是&6电子管&r，把它安装在&6动力构件&r上就可以升往下一级别。\n\n&6积极发挥创意！&r",
+
+  "chapter_2.cabricality.start.task.checkmark.title": "&6开始！",
+
+  "contraption.cabricality.10.title": "炼丹炉",
+  "contraption.cabricality.10.subtitle": "步骤 10",
+  "contraption.cabricality.10.content": "这台装置并不严格是生产线中的一部分，但它举足轻重。\n\n通过灵活使用&6冶炼炉、动力搅拌器&r和&6流体管道，&r你可以锻造出许多合金，&6黄铜&r便是其中之一。\n\n你可以在&6工作盆&r中加热并搅拌&6铜&r和&6锌&r制造&6黄铜。&r如果要制造其它合金，则需要用到&6冶炼炉。&r\n\n如果你不想搞得太麻烦，可以尝试制作一个输入金属锭→输出合金锭的半自动机械装置，够你用了。",
+
+  "contraption.cabricality.10.task.checkmark.title": "完成",
+
+  "chapter_2.cabricality.sand.title": "砂流之庭",
+  "chapter_2.cabricality.sand.content": "首先，我们需要沙子以&6合成赛特斯石英种子&r。但当你制作出一些&6精密构件&r后，就可以用&6动力合成器&r代替这一步骤了。",
+
+  "chapter_2.cabricality.water.title": "农夫山泉",
+  "chapter_2.cabricality.water.content": "第二章的装置需要充足的水源供应。也许你可以考虑建在水源地旁并使用&6流体管道&r和&6流体泵&r建造流体运输网络以满足需求。",
+
+  "contraption.cabricality.11.title": "逆熵陨石",
+  "contraption.cabricality.11.subtitle": "步骤 11",
+  "contraption.cabricality.11.content": "你可以无限压榨它。这些&6陨石&r尽管数次粉身碎骨却并不会失去质量？迈尔的棺材板压不住啦！\n\n四处转转，也许你就能找到一个巨坑，那正是陨石坠落的迹象。如果你找不到，试试让&6陨石罗盘&r为你指路。\n&7自由资都害怕你压榨陨石的样子。",
+
+  "contraption.cabricality.12.1.title": "种下希望...",
+  "contraption.cabricality.12.1.subtitle": "步骤 12-1",
+  "contraption.cabricality.12.1.content": "这片石英也太小了。往里面注水或许能把它变大...\n\n如果你不想等待石英种子在水中泡几小时，你可以合成一些&6注液器&r来加速进程。",
+
+  "contraption.cabricality.12.2.title": "万年孤独",
+  "contraption.cabricality.12.2.subtitle": "步骤 12-2",
+  "contraption.cabricality.12.2.content": "你见证了它们的成长！当然，别忘了及时用一些&6赛特斯石英水晶&r重新合成&6赛特斯石英种子&r以使不断循环成为可能。",
+
+  "contraption.cabricality.13.title": "循环能源",
+  "contraption.cabricality.13.subtitle": "步骤 13",
+  "contraption.cabricality.13.content": "稍稍改造一下你的&6充能器，&r让它能够循环不断地给装置13-2所需要的&6赛特斯石英水晶&r充能。\n\n应用能源2的&6充能器&r和物流系统似乎是个不错的选择，你可以用&6谐振仓&r为其提供临时能源。",
+
+  "contraption.cabricality.14.1.title": "陨石莫吉托",
+  "contraption.cabricality.14.1.subtitle": "步骤 14-1",
+  "contraption.cabricality.14.1.content": "将这种易溶于水的粉末放入&6水&r中搅拌，或许能获得有趣的流体...",
+
+  "contraption.cabricality.14.2.title": "感电",
+  "contraption.cabricality.14.2.subtitle": "步骤 14-2",
+  "contraption.cabricality.14.2.content": "&6充能赛特斯石英水晶&r所蕴含的能量足以让流体中的分子破裂，原子重组，得到&6熔融红石。&r\n&7失去能量的&6赛特斯石英水晶&7并不会消失，你可以将它再次充能。",
+
+  "contraption.cabricality.14.3.title": "搞颜色",
+  "contraption.cabricality.14.3.subtitle": "步骤 14-3",
+  "contraption.cabricality.14.3.content": "最后一个&6动力搅拌器&r会用&6熔融红石&r对平平无奇的&6赛特斯石英水晶&r进行一次彻头彻尾的改造，仿佛为其注入了新的活力...\n&7&o（矿物学家们，对不住了）",
+
+  "contraption.cabricality.15.1.title": "熨烫工艺",
+  "contraption.cabricality.15.1.subtitle": "步骤 15-1",
+  "contraption.cabricality.15.1.content": "你可以从&6圆石&r中源源不断地提取铁，不过这一过程极为缓慢。\n\n先放置一些&6动力钻头&r来破坏和收集刷石机产出的圆石。",
+
+  "contraption.cabricality.15.2.title": "高级缝纫术",
+  "contraption.cabricality.15.2.subtitle": "步骤 15-2",
+  "contraption.cabricality.15.2.content": "先把&6圆石&r磨制成&6沙砾。&r",
+
+  "contraption.cabricality.15.3.title": "微量元素",
+  "contraption.cabricality.15.3.subtitle": "步骤 15-3",
+  "contraption.cabricality.15.3.content": "用&6鼓风机&r洗涤&6沙砾&r也许能让其中的燧石和铁粒重见天日。",
+
+  "contraption.cabricality.15.4.title": "呜哇，化掉啦",
+  "contraption.cabricality.15.4.subtitle": "步骤 15-4",
+  "contraption.cabricality.15.4.content": "把&6铁粒&r扔进你的高温熔炼设备里以生产熔融铁。匠魂的&6冶炼炉&r是最优选择。",
+
+  "contraption.cabricality.15.5.title": "第二面墙",
+  "contraption.cabricality.15.5.subtitle": "步骤 15-5",
+  "contraption.cabricality.15.5.content": "将几滴炽热的&6熔融铁&r注入&6玫瑰石英，&r盘虬在石英内的铁水一旦冷却，&6电子管&r那精密的电路就形成了。",
+
+  "contraption.cabricality.16.title": "继续部署",
+  "contraption.cabricality.16.subtitle": "步骤 16",
+  "contraption.cabricality.16.content": "在&6动力构件&r上安装电子管就可以批量生产&6精密构件&r了，你的第二条生产线就此结束！",
+
+  "chapter_2.cabricality.assemble.title": "武装到牙齿",
+  "chapter_2.cabricality.assemble.content": "多贮存些&2螺丝刀&r是个好习惯。\n&7像&2手锯&7一样，它们消耗得很慢，所以不必制造自动生产线。",
+
+  "chapter_2.cabricality.complete.title": "&f&l第二章完成！",
+  "chapter_2.cabricality.complete.content": "恭喜！你现在不用再为&6精密构件&r供应不足而发愁了！自豪地想想你是如何克服所有困难的吧！\n&7在对生产线上的不足之处进行简要休整后，让我们继续在&a纵览&7中解锁更多内容！",
+
+  "bonus_2a.cabricality.preparation.title": "炎之律者",
+  "bonus_2a.cabricality.preparation.content": "这是你第一次接触这么高的温度——你需要一个&2烈焰人燃烧室&r来使材料达到足够的温度！对着&2烈焰人&r或&2烈焰人刷怪笼&r使用&2烈焰人燃烧室&r就可以将它们收入囊中。",
+
+  "contraption.cabricality.17.1.title": "两面包夹芝士 I",
+  "contraption.cabricality.17.1.subtitle": "步骤 17-1",
+  "contraption.cabricality.17.1.content": "&2酷热构件&r难以驾驭，而生产它们更是需要足够的灵魂精华。幸运的是，生长在&2下界&r的&2缠怨藤&r正以灵魂作为养料。\n\n&2缠怨藤&r向上生长，你可以用&2动力收割机&r收割它们，就像收割海带那样。",
+
+  "contraption.cabricality.17.2.title": "两面包夹芝士 II",
+  "contraption.cabricality.17.2.subtitle": "步骤 17-2",
+  "contraption.cabricality.17.2.content": "&2垂泪藤&r向下生长，但你照样可以用&2动力收割机&r来收割。\n&7如果你嫌烦的话，可以尝试用一套装置同时采集以上两种藤蔓。",
+
+  "contraption.cabricality.17.3.title": "灵魂朗姆酒",
+  "contraption.cabricality.17.3.subtitle": "步骤 17-3",
+  "contraption.cabricality.17.3.content": "把所有藤蔓放进&2工作盆&r中，然后搅拌...\n&7&o勿忘我！",
+
+  "contraption.cabricality.18.1.title": "使鬼推磨",
+  "contraption.cabricality.18.1.subtitle": "步骤 18-1",
+  "contraption.cabricality.18.1.content": "每生产一个&2锌机器&r总计需要&224桶岩浆。&r你也许感觉这并不环保，但是仅仅将一个&2软管滑轮&r伸入岩浆湖就能够解决燃眉之急。",
+
+  "contraption.cabricality.18.2.title": "疯狂星期四",
+  "contraption.cabricality.18.2.subtitle": "步骤 18-2",
+  "contraption.cabricality.18.2.content": "向&2精密构件&r不断浇筑特定流体就能够将其升格为&2酷热构件！&r\n\n请允许我再次重申，将这些支线的生产自动化并不是什么紧迫要务。因为在后续的生产中，支线产物并不是必要的。\n&7一个将&2精密构件&7转换为&2酷热构件&7的半自动化机器就已经足够了。相信我，你不会想要那么多&2酷热构件&7的。",
+
+  "bonus_2a.cabricality.complete.title": "&2&l第二章支线完成！",
+  "bonus_2a.cabricality.complete.content": "宛如天工！你完成了下界带来的许多困难挑战，这肯定给予了你继续前进的莫大信心！",
+
+  "chapter_3.cabricality.title": "&f3&r 钢铁洪流",
+
+  "chapter_3.cabricality.start.title": "&6&l钢铁洪流",
+  "chapter_3.cabricality.start.subtitle": "&6第三章",
+  "chapter_3.cabricality.start.content": "在批量生产&6光辉线圈&r的路上，你会遇到更加困难的挑战。\n\n再一次拿起扳手、挎起工具箱，为你的工厂开辟新地界吧！\n\n&6创造最伟大！&r",
+
+  "chapter_3.cabricality.start.task.checkmark.title": "&6开始！",
+
+  "chapter_3.cabricality.preparation.title": "库存克星",
+  "chapter_3.cabricality.preparation.content": "接下来的几个装置都需要在物品形态（掉落物形态）处理部分材料，然而这些操作都无法自动止损（例如掉落物的拥堵并不会使传送带上的物品停下）。手动增加止损机构和缓冲区因此成为了必要操作。\n\n更具体来说：当输出缓冲区内的物品个数达到设定值的75%时，停止材料生产；当它不足25%时，重新开始材料生产。这类机构能够防止物品到处散落，从而减少不必要的库存损耗。\n\n&6存量转换器&r正是为此而设计的。",
+
+  "contraption.cabricality.19.title": "木棍次日达",
+  "contraption.cabricality.19.subtitle": "步骤 19",
+  "contraption.cabricality.19.content": "下面材料的生产需要许多木棍。你可以选择重新采集木棍，或从你的&6「步骤 1」&r中拿取一些。",
+
+  "contraption.cabricality.20.1.title": "石之海",
+  "contraption.cabricality.20.1.subtitle": "步骤 20-1",
+  "contraption.cabricality.20.1.content": "鹅卵石可真是廉价啊（笑",
+
+  "contraption.cabricality.20.1.task.cobblestone": "&7任意&r圆石",
+
+  "contraption.cabricality.20.2.title": "高墙那边",
+  "contraption.cabricality.20.2.subtitle": "步骤 20-2",
+  "contraption.cabricality.20.2.content": "下一步，我们需要&6粉碎轮。&r不过不仅要用作机器，还要用作原料。\n\n一整面&6动力合成器&r构成的墙可能会迅速阻碍你工厂里的其它基建结构。确保为它们留出足够的空间。",
+
+  "contraption.cabricality.20.3.title": "盗梦空间",
+  "contraption.cabricality.20.3.subtitle": "步骤 20-3",
+  "contraption.cabricality.20.3.content": "当你使用&6粉碎轮&r粉碎&6粉碎轮&r时，一种奇特的现象产生了...我们也许可以稍加利用...",
+
+  "chapter_3.cabricality.slime_fern.title": "利姆露大人的恩惠",
+  "chapter_3.cabricality.slime_fern.content": "如果你想与怪物们友好相处，那也许你可以试试使用&6史莱姆蕨&r来生产&6火药、骨粉&r和&6末影粉...&r\n\n何不漫游大陆，寻找植被中异常鲜艳的颜色呢？别忘了随身带把剪刀。",
+
+  "contraption.cabricality.21.title": "阴魂不散",
+  "contraption.cabricality.21.subtitle": "步骤 21",
+  "contraption.cabricality.21.content": "当接触到&6灵魂火&r时，&6史莱姆蕨叶片&r可以在一瞬间重新生长为蕨。就像之前的&6赛特斯石英种子&r循环一样，我们也许可以对这一特点加以利用。\n\n这一循环相当简单：使用&6机械手&r将每个&6史莱姆蕨&r切成两片叶片，再用&6灵魂火&r将其中之一缠魂。所有颜色的&6史莱姆蕨&r最好以相同速度循环。\n&7啊，留一些用作备份总不是什么坏事。",
+
+  "contraption.cabricality.22.1.title": "神秘生物量",
+  "contraption.cabricality.22.1.subtitle": "步骤 22-1",
+  "contraption.cabricality.22.1.content": "把多余的叶片粉碎，好戏即将开场。",
+
+  "chapter_3.cabricality.mob_cage.title": "其实我更喜欢折磨怪物",
+  "chapter_3.cabricality.mob_cage.subtitle": "&8备选步骤&r 步骤 21 \\& 22",
+  "chapter_3.cabricality.mob_cage.content": "如果你不想搞那么麻烦，几个刷怪塔就可以解决一切。\n\n勾选“使用刷怪塔”以跳过&6史莱姆蕨&r机器的制造任务。",
+
+  "chapter_3.cabricality.mob_cage.task.checkmark.title": "使用刷怪塔",
+
+  "contraption.cabricality.22.2.title": "你需要煮点药",
+  "contraption.cabricality.22.2.subtitle": "步骤 22-2",
+  "contraption.cabricality.22.2.content": "加工这些&2绿色&r生物材料的过程需要特殊的环境温度。目前，只有&6篝火&r和&6炉子&r才能满足这一要求。\n\n设计这一装置时不仅要考虑如何放置原料，更要考虑到如何才能安全地收集产物才行。",
+
+  "contraption.cabricality.22.3.title": "江西炒粉",
+  "contraption.cabricality.22.3.subtitle": "步骤 22-3",
+  "contraption.cabricality.22.3.content": "加工这些&5紫色&r生物材料的过程需要特殊的环境温度。目前，只有&6篝火&r和&6炉子&r才能满足这一要求。\n\n设计这一装置时不仅要考虑如何放置原料，更要考虑到如何才能安全地收集产物才行。",
+
+  "contraption.cabricality.22.4.title": "煎点化肥",
+  "contraption.cabricality.22.4.subtitle": "步骤 22-4",
+  "contraption.cabricality.22.4.content": "加工这些&9蓝色&r生物材料的过程需要特殊的环境温度。目前，只有&6篝火&r和&6炉子&r才能满足这一要求。\n\n设计这一装置时不仅要考虑如何放置原料，更要考虑到如何才能安全地收集产物才行。",
+
+  "contraption.cabricality.23.1.title": "无法自拔",
+  "contraption.cabricality.23.1.subtitle": "步骤 23-1",
+  "contraption.cabricality.23.1.content": "你需要更多沙子以制造反应堆中必须的炸药。可今非昔比的你有了粉碎轮，使这一切变得如此简单。",
+
+  "contraption.cabricality.23.2.title": "不要在这里下国际象棋",
+  "contraption.cabricality.23.2.subtitle": "步骤 23-2",
+  "contraption.cabricality.23.2.content": "用&6动力合成器&r来造些易爆品吧！在合成&6TNT&r时，你需要重复在不相邻的格子中分别放入&6沙子&r和&6火药。&r这时，一些&6动力臂&r或许能派上大用场。",
+
+  "contraption.cabricality.24.title": "切尔诺贝利",
+  "contraption.cabricality.24.subtitle": "步骤 24",
+  "contraption.cabricality.24.content": "你将亲手打造出这一工厂片区的核心装置：反应堆。\n\n要制造&6光辉线圈，&r你必须先让&6奇点&r和&6末影粉&r同时参与一次次的可控爆炸才行。希望你能想出一种万全的方法，使反应堆能够在三种材料的供应下稳定运转...\n\n注意，&6奇点&r和&6末影粉&r需要以1:1的比率供应。他们并不需要离得特别近，且一次爆炸可以同时转换多组物品。最终产物会在&6奇点&r所在位置生成。\n&7由于产物的堆叠规则为2个每组，所以你需要精细控制物品输入数量...抽屉是没用的！",
+
+  "contraption.cabricality.25.title": "选择困难症",
+  "contraption.cabricality.25.subtitle": "步骤 25",
+  "contraption.cabricality.25.content": "你首先需要选择一种颜料以生产&6异彩奇点。&r选择哪种颜色都可以，除了&f白色。&r",
+
+  "contraption.cabricality.25.task.dye.title": "非白色染料",
+
+  "contraption.cabricality.26.1.title": "染上星空的颜色",
+  "contraption.cabricality.26.1.subtitle": "步骤 26-1",
+  "contraption.cabricality.26.1.content": "将&6量子缠绕态奇点&r与染料混合以探索颜色的究极奥秘！有了它，我们才能够着手制作&6异彩化合物。&r",
+
+  "chapter_3.cabricality.correction.red.title": "&c光谱校正&r",
+  "chapter_3.cabricality.correction.red.content": "通过粉碎&6异彩奇点，&r你有概率获得一些&c染色球（红色）。&r\n\n你并不需要&c红色染色球&r来生产&6异彩化合物，&r试着放入&6分液池&r以校正它的光谱。",
+
+  "chapter_3.cabricality.correction.yellow.title": "&e光谱校正&r",
+  "chapter_3.cabricality.correction.yellow.content": "通过粉碎&6异彩奇点，&r你同样有概率获得一些&e染色球（黄色）。&r\n\n就像红色的一样，&e黄色染色球&r也需要被再次分液以校正光谱。",
+
+  "chapter_3.cabricality.correction.green.title": "&a光谱校正&r",
+  "chapter_3.cabricality.correction.green.content": "你还需要继续校正光谱频率。",
+
+  "chapter_3.cabricality.correction.blue.title": "&1光谱校正&r",
+  "chapter_3.cabricality.correction.blue.content": "就快完成了！&1蓝色染色球&r只需再进行一次校正就可以投入使用了！",
+
+  "chapter_3.cabricality.byproduct.title": "光盘行动",
+  "chapter_3.cabricality.byproduct.content": "分液的过程会产生大量流体副产物，你需要在生产线被堵塞之前及时处理它们。",
+
+  "chapter_3.cabricality.byproduct.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.26.2.title": "&d光谱校正&r",
+  "contraption.cabricality.26.2.subtitle": "步骤 26-2",
+  "contraption.cabricality.26.2.content": "&d品红色染色球&r拥有制造&6异彩化合物&r所需的精华。你有几率在粉碎&6异彩奇点&r时直接获得它们，但大多数还是通过光谱校正得到的。",
+
+  "contraption.cabricality.26.3.title": "极致色彩",
+  "contraption.cabricality.26.3.subtitle": "步骤 26-3",
+  "contraption.cabricality.26.3.content": "再次使用&6动力合成器&r以合成&6异彩化合物！&r",
+
+  "chapter_3.cabricality.overcorrection.title": "失去高光",
+  "chapter_3.cabricality.overcorrection.content": "呃，对&6染色球&r的光谱进行过度校正只会使其失去颜色，无法继续处理。",
+
+  "chapter_3.cabricality.overcorrection.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.27.title": "Simibubi说，“要有光”",
+  "contraption.cabricality.27.subtitle": "步骤 27",
+  "contraption.cabricality.27.content": "&6光辉石&r的生产需要稳定供应的&6光源方块，&r或是一条&6信标光柱。&r\n\n选择一种你喜爱的方式并做好充足准备。",
+
+  "contraption.cabricality.27.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.28.1.title": "闪光弹",
+  "contraption.cabricality.28.1.subtitle": "步骤 28-1",
+  "contraption.cabricality.28.1.content": "当&6异彩化合物&r作为物品掉落的时候，它会汲取身旁的光源并进一步转化为&6光辉石&r。你有以下三种方式可以选择：\n\n- &7将物品形态的&6异彩化合物&7投掷到&6光源方块&7旁；&r\n\n- &7在物品形态的&6异彩化合物&7旁使用&6置物台&7或&6传送带&7供应&6光源方块&7；&r\n\n- &7将物品形态的&6异彩化合物&7扔进&6信标光柱&7中，这种剧烈的反应可以使其快速转换。&r",
+
+  "contraption.cabricality.28.2.title": "通天之阶",
+  "contraption.cabricality.28.2.subtitle": "步骤 28-2",
+  "contraption.cabricality.28.2.content": "主要工作已经完成！你只需要最后两步就能生产&6光辉线圈&r了。\n\n第一步，你需要一个&6动力辊压机。&r",
+
+  "contraption.cabricality.28.3.title": "霓虹灯光",
+  "contraption.cabricality.28.3.subtitle": "步骤 28-3",
+  "contraption.cabricality.28.3.content": "第二步，你需要一个&6动力合成器&r将压制好的&6光辉板&r切割并卷起，熠熠生辉的&6光辉线圈&r就做好了。",
+
+  "contraption.cabricality.29.title": "有效载荷",
+  "contraption.cabricality.29.subtitle": "步骤 29",
+  "contraption.cabricality.29.content": "你知道现在应该干什么了吧。是时候将你手中的&6精密构件&r升级一下了！",
+
+  "contraption.cabricality.30.title": "动力重锤",
+  "contraption.cabricality.30.subtitle": "步骤 30",
+  "contraption.cabricality.30.content": "除了&6超频构件，&r你还需要用&6殷钢&r（某种铁镍合金）制造&6殷钢机器&r才能完成&6机器方块&r的制造。\n\n由于精炼&6殷钢&r的过程漫长而又枯燥，所以你可能需要建造一条自动生产线...",
+
+  "contraption.cabricality.30.task.checkmark.title": "知道了",
+
+  "chapter_3.cabricality.assemble.title": "武装到头发",
+  "chapter_3.cabricality.assemble.content": "多贮存些&6共鸣器&r总归是个好习惯。\n&7不必要自动生产它们。",
+
+  "chapter_3.cabricality.complete.title": "&f&l第三章完成！",
+  "chapter_3.cabricality.complete.content": "好耶，欢呼吧！&6超频构件&r正在被源源不断地生产！全新的技术和魔法之门将为你打开！\n&7当你认为你的生产线已经万无一失时，去&a纵览&7解锁新的目标吧！",
+
+  "bonus_3a.cabricality.coin.title": "点赞、投币、收藏",
+  "bonus_3a.cabricality.coin.content": "&6银币&r的特殊属性可以用来制造&6末影机器。&r\n\n事实证明，&6银币&r的唯一来源似乎只有你的口袋。这不禁让你对铸币厂产生了好奇心...",
+
+  "bonus_3a.cabricality.not_the_end.title": "此行未终",
+  "bonus_3a.cabricality.not_the_end.content": "乾坤挪移之术的秘密就在&6末地之门&r的另一端...",
+
+  "bonus_3a.cabricality.dissolved.title": "熔烬",
+  "bonus_3a.cabricality.dissolved.content": "把你手中的银币投入&6冶炼炉&r中以继续...这是不可逆的，记住了。",
+
+  "bonus_3a.cabricality.block.title": "贵重物品",
+  "bonus_3a.cabricality.block.content": "将你的&6熔融银&r铸成方块，并欣赏它的光泽...",
+
+  "bonus_3a.cabricality.garnish.title": "加花",
+  "bonus_3a.cabricality.garnish.content": "从你的反应堆拿点&6末影粉&r来。如果你怕生产线被堵塞，使用末影珍珠也是可以的。",
+
+  "bonus_3a.cabricality.expedition.title": "远征之门",
+  "bonus_3a.cabricality.expedition.content": "在你英勇击败末影龙后，通过&6折跃门&r前往外岛。\n\n在那里，你能够采集到&6末影合金&r的原材料之一——&6暗紫真菌。&r",
+
+  "bonus_3a.cabricality.alloy.title": "地外合金",
+  "bonus_3a.cabricality.alloy.content": "再次点燃你的&6冶炼炉，&r进行两轮处理：\n\n首先，使用&6末影粉（或末影珍珠）&r以及&6暗紫真菌&r加固&6银锭。&r",
+
+  "bonus_3a.cabricality.enderium.title": "注入林魂",
+  "bonus_3a.cabricality.enderium.content": "然后，在&6冶炼炉&r中使用&6熔融末影合金&r升级你的&6超频构件...&r",
+
+  "bonus_3a.cabricality.cycle.title": "暗紫循环",
+  "bonus_3a.cabricality.cycle.content": "感谢&6超频&r技术，现在你可以循环生产&6暗紫真菌&r了。这样一来，稳定生产&6末影合金&r也就不再成问题。",
+
+  "bonus_3a.cabricality.complete.title": "&3&l第三章支线完成！",
+  "bonus_3a.cabricality.complete.content": "无可比拟的乾坤挪移术正掌握在你的手心！在你庞大的工厂中，一定有某处可以利用它们进一步提高效率。看你的了！",
+
+  "chapter_4.cabricality.title": "&f4&r 靶向药物",
+
+  "chapter_4.cabricality.start.title": "&6&l靶向药物",
+  "chapter_4.cabricality.start.subtitle": "&6第四章",
+  "chapter_4.cabricality.start.content": "下一步就是生产&6硅板&r了。已知道路中的一种就是将无数的物品、流体和能量不断地与紧凑的&6殷钢机器&r相结合。\n\n就像前几个章节一样，你需要先进行充足的材料准备。",
+
+  "chapter_4.cabricality.start.task.checkmark.title": "&6开始！",
+
+  "chapter_4.cabricality.preparation.title": "投产！",
+  "chapter_4.cabricality.preparation.content": "接下来的生产线会消耗很多通量能量，确保你找到了合适的发电方式并能够随时增加发电规模，以便后续使用。",
+
+  "chapter_4.cabricality.preparation.task.checkmark.title": "知道了",
+
+  "chapter_4.cabricality.laser.title": "光之巨人",
+  "chapter_4.cabricality.laser.content": "&6炼金激光&r在这一科技阶梯中扮演着举足轻重的角色。",
+
+  "chapter_4.cabricality.laser.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.31.1.title": "寄点沙子过来",
+  "contraption.cabricality.31.1.subtitle": "步骤 31-1",
+  "contraption.cabricality.31.1.content": "是时候提高你的沙子产量了，因为它们富含&6硅！&r",
+
+  "contraption.cabricality.31.2.title": "团团转",
+  "contraption.cabricality.31.2.subtitle": "步骤 31-2",
+  "contraption.cabricality.31.2.content": "新产出的沙子将会被送去清洗并揉成一团。",
+
+  "chapter_4.cabricality.liquid_sand.title": "搅和搅和",
+  "chapter_4.cabricality.liquid_sand.content": "在将&6沙球&r筛成&6粗砂&r的过程中不可避免地产生了副产品。不过先别急着扔掉，我们以后还会用到这些流体...",
+
+  "chapter_4.cabricality.liquid_sand.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.31.3.title": "仍需打磨",
+  "contraption.cabricality.31.3.subtitle": "步骤 31-3",
+  "contraption.cabricality.31.3.content": "将&6沙球&r扔到&6分液池&r中，分离出其中的砂质物。",
+
+  "contraption.cabricality.32.1.title": "赛博石矿",
+  "contraption.cabricality.32.1.subtitle": "步骤 32-1",
+  "contraption.cabricality.32.1.content": "从&6玄武岩&r中分离出微量的惰性&6玄武粉末&r是一种低成本的方案。但前提是，你要有用不完的&6玄武岩&r才行。",
+
+  "contraption.cabricality.32.2.title": "白炽灯",
+  "contraption.cabricality.32.2.subtitle": "步骤 32-2",
+  "contraption.cabricality.32.2.content": "第一台&6激光发射器&r能够将&6玄武碎片&r从&6玄武岩&r中提取出来，等待进一步的处理。\n\n你只需要在&6激光发射器&r上方放置一个&6吸液漏斗，&r再在最上方放置一格&6充能水，&r并向&6激光发射器&r通入红石信号就可使其工作。",
+
+  "contraption.cabricality.33.1.title": "玄武试炼",
+  "contraption.cabricality.33.1.subtitle": "步骤 33-1",
+  "contraption.cabricality.33.1.content": "在投入使用前，你需要将&6玄武碎片&r进一步提纯。",
+
+  "contraption.cabricality.33.2.title": "浓缩热量",
+  "contraption.cabricality.33.2.subtitle": "步骤 33-2",
+  "contraption.cabricality.33.2.content": "将一些处理好的&6玄武粉末&r压制成密度更高的&6岩荷弹&r吧。",
+
+  "contraption.cabricality.33.3.title": "无瑕之玉",
+  "contraption.cabricality.33.3.subtitle": "步骤 33-3",
+  "contraption.cabricality.33.3.content": "在高温下用&6岩荷弹&r富集&6粗砂&r就可以铸成&6高纯砂，&r这时，其中的硅含量已经足够我们制造硅板了。",
+
+  "contraption.cabricality.34.1.title": "行将就木",
+  "contraption.cabricality.34.1.subtitle": "步骤 34-1",
+  "contraption.cabricality.34.1.content": "在原地建造一个全新的树场是件值得考虑的事。它可以使你包括&6硅板&r在内的后续生产方便许多。",
+
+  "contraption.cabricality.34.1.task.wooden_log.title": "&7任意&r原木",
+
+  "contraption.cabricality.34.2.title": "一轮热解",
+  "contraption.cabricality.34.2.subtitle": "步骤 34-2",
+  "contraption.cabricality.34.2.content": "&6木炭&r的生产只需要进行简单的烧炼。",
+
+  "contraption.cabricality.34.2.task.checkmark.title": "知道了",
+
+  "contraption.cabricality.34.3.title": "二轮热解",
+  "contraption.cabricality.34.3.subtitle": "步骤 34-3",
+  "contraption.cabricality.34.3.content": "将&6木炭&r进行更加复杂的处理即可制造&6焦炭，&r它不仅是优秀的固体燃料，更是提纯&6硅&r的必要材料。",
+
+  "contraption.cabricality.35.title": "高压水刀",
+  "contraption.cabricality.35.subtitle": "步骤 35",
+  "contraption.cabricality.35.content": "将&6动力锯&r和水结合，可以将&6焦炭&r切割为小块，以增加催化时的接触表面积。",
+
+  "contraption.cabricality.36.title": "调酒师",
+  "contraption.cabricality.36.subtitle": "步骤 36",
+  "contraption.cabricality.36.content": "将&6高纯砂、小块焦炭&r和&6细砂流体&r混合搅拌，就可以从其中提纯出&6硅&r了。",
+
+  "contraption.cabricality.37.title": "堆雪人",
+  "contraption.cabricality.37.subtitle": "步骤 37",
+  "contraption.cabricality.37.content": "&6殷钢机器&r使得从水中制造&6雪球&r不再是难事。也许我们应该为下一位不速之客预留些雪球订单...",
+
+  "contraption.cabricality.38.title": "冷光灯",
+  "contraption.cabricality.38.subtitle": "步骤 38",
+  "contraption.cabricality.38.content": "第二台&6激光发射器&r可以从&6雪块&r中提取出&6暴雪结晶。&r\n\n你完全可以使用与&6「步骤 32-2」&r中相同的机械\n结构。",
+
+  "contraption.cabricality.39.1.title": "暴雪试炼",
+  "contraption.cabricality.39.1.subtitle": "步骤 39-1",
+  "contraption.cabricality.39.1.content": "就像早些时候一样，你需要将&6暴雪结晶&r进一步提纯。",
+
+  "contraption.cabricality.39.2.title": "浓缩严寒",
+  "contraption.cabricality.39.2.subtitle": "步骤 39-2",
+  "contraption.cabricality.39.2.content": "继续将&6暴雪粉末&r压制成为&6冰荷弹。&r",
+
+  "contraption.cabricality.39.3.title": "终极归纳",
+  "contraption.cabricality.39.3.subtitle": "步骤 39-3",
+  "contraption.cabricality.39.3.content": "在&6冶炼炉&r中将两者再次结合，就可以提纯出一小块高质量的&6硅&r了。",
+
+  "chapter_4.cabricality.chapter_4a.title": "未解之谜",
+  "chapter_4.cabricality.chapter_4a.content": "一条秘密路线被前人发掘，如果利用得当的话，快速获取大量&6智慧构件&r也许不是什么难事...",
+
+  "chapter_4.cabricality.chapter_4a.task.complete.title": "&f&l完成混沌炼金",
+
+  "contraption.cabricality.39.a.title": "拆箱！",
+  "contraption.cabricality.39.a.subtitle": "步骤 39-A",
+  "contraption.cabricality.39.a.content": "使用工业革命的&6锯木机&r把&6硅&r从试剂瓶中提取出来吧。",
+
+  "contraption.cabricality.40.1.title": "压模电路",
+  "contraption.cabricality.40.1.subtitle": "步骤 40-1",
+  "contraption.cabricality.40.1.content": "使用&6机械手&r将&6硅&r压模成&6硅板。&r你需要的&6硅压印模板&r可以在自然生成的陨石内部找到。",
+
+  "contraption.cabricality.40.2.title": "整装待发",
+  "contraption.cabricality.40.2.subtitle": "步骤 40-2",
+  "contraption.cabricality.40.2.content": "你还需要最后三个&6机械手&r将构件升级...",
+
+  "chapter_4.cabricality.assemble.title": "全身武装",
+  "chapter_4.cabricality.assemble.content": "你需要一些&6闪存&r以制造&6智能构件。&r\n&7保管好贵重物品！",
+
+  "chapter_4.cabricality.complete.title": "&f&l第四章完成！",
+  "chapter_4.cabricality.complete.content": "你坚持走到这里了！截至目前，工厂中所有的传统流水线都应组装完成，让我们一起步入智能时代吧！\n&7等你准备好了，就去&a纵览&7看看！",
+
+  "contraption.cabricality.41.1.title": "电路速递 I",
+  "contraption.cabricality.41.1.subtitle": "步骤 41-1",
+  "contraption.cabricality.41.1.content": "组装&6各式ME电路板&r还需要一些额外操作，也许你可以制造一条半自动化流水线。",
+
+  "contraption.cabricality.41.2.title": "电路速递 II",
+  "contraption.cabricality.41.2.subtitle": "步骤 41-2",
+  "contraption.cabricality.41.2.content": "组装它们并不是轻而易举就能完成的事，但看着它们运行很有趣。",
+
+  "chapter_4a.cabricality.title": "&l↓&r 混沌炼金",
+
+  "chapter_4a.cabricality.start.title": "殊途同归",
+  "chapter_4a.cabricality.start.content": "作为另一条通向罗马的路，你可以用更加冒险的方式获得&d高能硅。&r激光冶金工业将你引向了这一条模糊却又高回报的殊途。\n\n你需要发掘不同试剂配方间的秘密规律，最终掌握&b混沌催化剂&r的制造方法！\n\n一旦你推开了这扇大门，你不仅能够轻易地将其他物质转化成&d硅，&r还能够获得点石成金的能力，从废土中提取出更多稀有材料！",
+
+  "chapter_4a.cabricality.start.task.checkmark.title": "&7成为&d炼金术士！&7",
+
+  "chapter_4a.cabricality.preparation.title": "开刃 - 收刃",
+  "chapter_4a.cabriclaity.preparation.content": "除了一台&d炼金镭射器&r结构，你的实验室中还需要几台其它的制备仪器。\n\n- &7&d液体注入机&r可以将材料注入&d熔融玻璃&r中，制成罐装试剂。&r\n\n- &7&d锯木机&r则可以反向进行整个过程。&r",
+
+  "alchemy.cabricality.clueless.title": "一窍不通",
+  "alchemy.cabricality.clueless.content": "当使用&d漏斗矿车&r输入催化剂代码时，你可以选择在左起第五栏中放入&6荧石&r稳定剂和或&c红石&r稳定剂。\n\n这么做也许可以揭幕更多有关正确配方的信息...",
+
+  "alchemy.cabricality.silver.content": "你口袋里的货币似乎也有着对应的试剂。别太想当然，把你的银锭铸成更多的货币肯定是行不通的。",
+  "alchemy.cabricality.igneous.content": "&5此任务会在你拥有所有&d类火山岩试剂&5后解锁。&r\n\n&d火山岩催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。&r\n\n&7记录下先前测试的结果是个好习惯。勤于记录，六次以内找到正确配方的概率也许就会大大增加！",
+  "alchemy.cabricality.herbal.content": "&5此任务会在你拥有所有&d类草药试剂&5后解锁。&r\n\n&d草药催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+  "alchemy.cabricality.volatile.content": "&5此任务会在你拥有所有&d类沸腾试剂&5后解锁。&r\n\n&d沸腾催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+  "alchemy.cabricality.crystalline.content": "&5此任务会在你拥有所有&d类晶化试剂&5后解锁。&r\n\n&d晶化催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+  "alchemy.cabricality.metallurgic.content": "&5此任务会在你拥有所有&d类箔层试剂&5后解锁。&r\n\n&d箔层催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+  "alchemy.cabricality.gemstone.content": "&5此任务会在你拥有所有&d类辉光试剂&5后解锁。&r\n\n&d辉光催化剂&r可以在&d炼金激光&r的作用下通过四种同类试剂合成。\n&7详见催化剂的REI介绍界面。",
+
+  "chapter_4a.cabricality.final_code.title": "宇宙的答案",
+  "chapter_4a.cabricality.final_code.content": "&5此任务会在你拥有所有&d催化剂&5后解锁。&r\n\n在你面前的催化剂，则需要其中的四个以合成。看吧，换汤不换药。\n&7详见催化剂的REI介绍界面。",
+
+  "chapter_4a.cabricality.discovery.title": "「伟大发现」",
+  "chapter_4a.cabricality.discovery.content": "手拿&b混沌催化剂，&r一切试剂的嬗变规律尽收眼底！n\n只需要把&b混沌催化剂&r和四罐其它试剂放在一起，照猫画虎地对其发射炼金激光即可。此过程不会消耗&b混沌催化剂。&r\n\n其中有一种试剂并不会转化为另一种，而是会产出&d高能硅。&r当你一旦成功，这将会大大简化你的生产流程。",
+
+  "contraption.cabricality.31.a.title": "混沌装置",
+  "contraption.cabricality.31.a.subtitle": "步骤 31-A",
+  "contraption.cabricality.31.a.content": "你现在已经得知所有转化的具体配方了。是时候建造一条自动化炼金生产线来源源不断地生产&d硅&r了！\n\n注意，具体步骤会根据你所在世界的不同而产生大幅变化，这也是为什么我们不能像之前一样手把手地带着你一步步建造了。善用REI可以帮助你解决建造过程中的许多必要问题。",
+
+  "chapter_4a.cabricality.complete.title": "&3空间翘曲区域",
+  "chapter_4a.cabricality.complete.content": "现在，你有了充足的&d高能硅试剂&r供应，是时候再次一头扎进第四章的主线内容了！",
+
+  "chapter_4a.cabricality.complete.task.checkmark.title": "&7回到&6第四章：靶向药物&r",
+
+  "chapter_5.cabricality.title": "&f5&r 意识上传",
+
+  "chapter_5.cabricality.start.title": "&6&l意识上传",
+  "chapter_5.cabricality.start.subtitle": "&5最终章",
+  "chapter_5.cabricality.start.content": "我们终于走到了旅途的最终章——你将会建造一栋数据中心！它会不计日夜地吞吐数以万计的数字和符号，川流不息。\n\nB勇敢前进，用你手边的机械开拓新的疆域！\n\n把沸腾奔涌的&5逻辑&r铸成一个个锃亮的数字，在智能时代的风口上无问西东...\n\n如果你有些头绪的话，试着构造一个&5ME系统，&r它也许能为你的数据管理提供一些更加有效的方案。",
+
+  "chapter_5.cabricality.start.task.checkmark.title": "&5开始！",
+
+  "contraption.cabricality.42.title": "能源处理",
+  "contraption.cabricality.42.subtitle": "步骤 42",
+  "contraption.cabricality.42.content": "固态的&5智能构件&r难以加工。要用它们作为数据处理的原材料，你需要先将它们熔至液态。",
+
+  "contraption.cabricality.43.title": "藕断丝连",
+  "contraption.cabricality.43.subtitle": "步骤 43",
+  "contraption.cabricality.43.content": "&5运算符&r就好似战马的蹄铁，无论是远征还是游击，都举足轻重。\n\n自动化供应&5运算符&r是一切数据处理的基础工作。",
+
+  "contraption.cabricality.44.1.subtitle": "步骤 44-1",
+  "contraption.cabricality.44.1.content": "作为最原始的两个数字之一，你可以将&5液态逻辑&r直接处理成&5数字&l3。&r将它与&5数字&l8&r和各种&5运算符&r相结合，就能计算出&5&l0~9&r中的任何整数了。\n\n这一步骤很可能成为日后的产能瓶颈，因为任何数据的处理都要基于最原始的数字。务必确保你的机器工作顺畅无阻。",
+
+  "contraption.cabricality.44.2.subtitle": "步骤 44-2",
+  "contraption.cabricality.44.2.content": "作为除了&5数字&l3&r以外的另一个原始数字，&5数字&l8&r也可以直接由&5液态逻辑&r处理而成。\n\n从这一步起，你需要精确计算并最小化处理每个数字所消耗的&5机械、运算符&r和&5额外步骤。&r记住，你在任何一个步骤中的小失误都会增加处理目标数字所消耗的&5智能构件。&r",
+
+  "contraption.cabricality.45.1.subtitle": "步骤 45-1",
+  "contraption.cabricality.45.1.content": "&5&o3-2、4÷4、8-7...&r\n\n总共有21种方式计算&5数字&l1。&r\n&7&o&o你会选择哪一种呢？",
+
+  "contraption.cabricality.45.2.subtitle": "步骤 45-2",
+  "contraption.cabricality.45.2.content": "&5&o3-1, 8÷4, 1+1...&r\n\n总共有17种方式计算&5数字&l2。&r\n&7&o最中意哪个？",
+
+  "contraption.cabricality.45.4.subtitle": "步骤 45-4",
+  "contraption.cabricality.45.4.content": "&5&o6-2, 2×2, 3+1...&r\n\n总共有16种方式计算&5数字&l4。&r\n&7&o谨慎选择。",
+
+  "contraption.cabricality.45.5.subtitle": "步骤 45-5",
+  "contraption.cabricality.45.5.content": "&5&o3+2, 6-1, 8-3...&r\n\n总共有14种方式计算&5数字&l5。&r\n&7&o你要怎么处理？",
+
+  "contraption.cabricality.45.6.subtitle": "步骤 45-6",
+  "contraption.cabricality.45.6.content": "&5&o3×2, 3+3, 8-2...&r\n\n总共有16种方式计算&5数字&l6。&r\n&7&o愿数学原理与你同在。",
+
+  "contraption.cabricality.45.7.subtitle": "步骤 45-7",
+  "contraption.cabricality.45.7.content": "&5&o9-2, 4+3, 8-1...&r\n\n总共有14种方式计算&5数字&l7。&r\n&7&o天选之子？",
+
+  "contraption.cabricality.45.9.subtitle": "步骤 45-9",
+  "contraption.cabricality.45.9.content": "&5&o3×3, 4+5, 8+1...&r\n\n总共有15种方式计算&5数字&9。&r\n&7&o就由你来选择。",
+
+  "contraption.cabricality.45.0.subtitle": "步骤 45-0",
+  "contraption.cabricality.45.0.content": "&5&o3-3, 2-2, 8-8...&r\n\n总共有39种方式计算&5数字&l0。&r\n&7&o选择困难症！",
+
+  "contraption.cabricality.46.title": "线性代数",
+  "contraption.cabricality.46.subtitle": "步骤 46",
+  "contraption.cabricality.46.content": "为了让数据中心的大脑运行起来，我们需要...很多&5数字&l3。&r\n\n在这些数字离开逻辑循环阈时，请确保每种数字的数量相同。将&5黄铜隧道&r并排摆放可以有效解决这个问题。\n\n现在，你需要把这些数字送进&5冶炼炉，&r重新熔成液态。每当&5冶炼炉&r中同时拥有十种液态数字的时候，它们就会结合成&5编码逻辑。&r只有当这些有形的合金积累的足够多时，才能够被铸成一块&5智能矩阵。&r\n\n指导电脑最低需要8块&5智能矩阵&r才可以投入使用。你在数字生产线中所使用的技术和数据中心的结构，这可能需要花上一点时间。",
+
+  "contraption.cabricality.47.title": "良性进制",
+  "contraption.cabricality.47.subtitle": "步骤 47",
+  "contraption.cabricality.47.content": "&5物质条，&r这种无暇而坚韧的材料是制造星际飞行器的不二之选。而&5物质球&r可以通过&5物质冷凝器&r制造。\n\n向&5物质冷凝器&r中插入一条&51k ME 储存元件，&r调整输出为&5物质球，&r然后塞进你手头最富裕的物质。尽管使用你认为没有什么价值的物品吧！因为在&5物质冷凝器&r中，海底的珍珠和脚下的土同样便宜。",
+
+  "contraption.cabricality.48.title": "奢侈物质",
+  "contraption.cabricality.48.subtitle": "步骤 48",
+  "contraption.cabricality.48.content": "你可以在&5高温液压机&r中制造出&5物质块，&r我们需要用上一些。",
+
+  "contraption.cabricality.49.title": "电蚀工艺",
+  "contraption.cabricality.49.subtitle": "步骤 49",
+  "contraption.cabricality.49.content": "站在&5供氧仪&r上，慢慢装满你的&5氧气罐。&r\n\n而通过&5氧气制造仪，&r你可以从水中电离出氧气以供呼吸和储存。",
+
+  "contraption.cabricality.50.title": "&d千年之隼",
+  "contraption.cabricality.50.subtitle": "步骤 &d50&r",
+  "contraption.cabricality.50.content": "站在空荡的&5发射台&r上，是时候造出属于你自己的飞船了。\n\n发挥出你的全部实力吧，不要在暴风雨前的宁静中倒下！",
+
+  "chapter_5.cabricality.complete.title": "&b自然选择，前进四！",
+  "chapter_5.cabricality.complete.content": "万物归位，蓄势待发。\n\n花点时间准备一面旗子，好趁早将它矗立在全新的大地上！\n\n放轻松，等你准备好了，向着星辰与大海义无反顾地前行吧。",
+
+  "chapter_5.cabricality.attire.title": "&9盛装出席",
+  "chapter_5.cabricality.attire.content": "如果你想在严酷的外星环境中生存，考虑换套更合适的服装？",
+
+  "metallurgy.cabricality.title": "&8▶ 科学冶金",
+
+  "metallurgy.cabricality.start.title": "流水线",
+  "metallurgy.cabricality.start.subtitle": "",
+  "metallurgy.cabricality.start.content": "这里列举了一些能够把原矿冶炼成金属锭的流水线生产方式。\n\n对于这张流程图里的每一条路线来说，原矿的有效产值就是先前所有步骤中比率的乘积。",
+
+  "metallurgy.cabricality.start.task.checkmark.title": "&7成为&f冶金学者！&7",
+
+  "metallurgy.cabricality.pickaxe.title": "徒手挖掘",
+  "metallurgy.cabricality.pickaxe.subtitle": "&81 → &71",
+
+  "metallurgy.cabricality.pickaxe.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.fortune_pickaxe.title": "时运",
+  "metallurgy.cabricality.fortune_pickaxe.subtitle": "&81 → &71 ~ 2",
+
+  "metallurgy.cabricality.fortune_pickaxe.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.i.title": "&f&lI&7 粉碎矿石",
+
+  "metallurgy.cabricality.i.task.checkmark.title": "下一步",
+
+  "metallurgy.cabricality.i.smelting.title": "熔炼",
+  "metallurgy.cabricality.i.smelting.subtitle": "&81 → &73",
+
+  "metallurgy.cabricality.i.smelting.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.i.pulverizing.title": "热解",
+  "metallurgy.cabricality.i.pulverizing.subtitle": "&81 → &76",
+
+  "metallurgy.cabricality.i.pulverizing.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.i.milling.title": "磨粉",
+  "metallurgy.cabricality.i.milling.subtitle": "&81 → &73",
+
+  "metallurgy.cabricality.i.milling.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.i.crushing.title": "粉碎",
+  "metallurgy.cabricality.i.crushing.subtitle": "&81 → &73 ~ 6",
+
+  "metallurgy.cabricality.i.crushing.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.ii.title": "&f&lII&7 矿粉",
+
+  "metallurgy.cabricality.ii.task.checkmark.title": "下一步",
+
+  "metallurgy.cabricality.ii.blocking.title": "融铸\\&冷却成块",
+  "metallurgy.cabricality.ii.blocking.subtitle": "&89 → &71",
+
+  "metallurgy.cabricality.ii.blocking.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.ii.smelting.title": "再次熔炼",
+  "metallurgy.cabricality.ii.smelting.subtitle": "&81 → &71",
+
+  "metallurgy.cabricality.ii.smelting.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.ii.melting.title": "熔融",
+  "metallurgy.cabricality.ii.melting.subtitle": "&81 → &73",
+
+  "metallurgy.cabricality.ii.melting.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.ii.washing.title": "洗涤",
+  "metallurgy.cabricality.ii.washing.subtitle": "&81 → &72",
+
+  "metallurgy.cabricality.ii.washing.task.checkmark.title": "完成",
+
+  "metallurgy.cabricality.iiia.title": "&f&lIIIa&7 金属粒",
+
+  "metallurgy.cabricality.iiia.task.checkmark.title": "下一步",
+
+  "metallurgy.cabricality.iiib.title": "&f&lIIIb&7 液态金属",
+  "metallurgy.cabricality.iiib.subtitle": "[单位：粒]",
+
+  "metallurgy.cabricality.iiib.task.checkmark.title": "下一步",
+
+  "metallurgy.cabricality.iii.compacting.title": "压制",
+
+  "metallurgy.cabricality.iii.compacting.task.checkmark.title": "使用&6动力辊压机&r压制金属",
+
+  "metallurgy.cabricality.iv.title": "&f&lIV&7 金属锭",
+
+  "metallurgy.cabricality.iv.task.checkmark.title": "完成",
+
+  "thanks.cabricality.title": "&8  特别感谢",
+
+  "thanks.cabricality.staff.title": "&c感&a谢&b游&f玩！",
+  "thanks.cabricality.staff.subtitle": "制作人员",
+  "thanks.cabricality.staff.content": "&f&lSimibubi&r\n&7原作者&r\n\n&f&lYjn024&r\n&7整合包作者&r\n\n&f&lKrLite&r\n&7翻译/美术/程序&r\n\n&f&lIcedDog\nRogenDong\nSylviBlossom\nNyakoFox\nMangoJellyPudding&r\n&7贡献者&r"
 }
