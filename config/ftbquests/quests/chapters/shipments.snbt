@@ -4,7 +4,7 @@
 	order_index: 3
 	filename: "shipments"
 	title: "&a Shipments"
-	icon: "cabricality:trade_card_create_andesite_alloy"
+	icon: "cabricality:trade_card_x872778328"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
