@@ -2691,7 +2691,7 @@ disable_toast: true
 x: -1d
 y: 23d
 shape: "hexagon"
-subtitle: "1 x {item.cabricality.gold_coin}"
+subtitle: "6 x {item.cabricality.gold_coin}"
 tasks: [{
 type: "item"
 item: "minecraft:nether_star"
@@ -4525,6 +4525,602 @@ rewards: [
 type: "item"
 auto: "enabled"
 item: "cabricality:trade_card_x253557071"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "{profession.cabricality.smithing}"
+icon: "cabricality:profession_card_x1796343420"
+disable_toast: true
+x: -4d
+y: 34d
+shape: "hexagon"
+tasks: [{
+type: "checkmark"
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:profession_card_x1796343420"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "12 × {item.minecraft.arrow}"
+icon: "minecraft:arrow"
+disable_toast: true
+x: -3d
+y: 34d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:arrow"
+icon: "minecraft:arrow"
+count: 12L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_165523452"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.iron_sword}"
+icon: "minecraft:iron_sword"
+disable_toast: true
+x: -2d
+y: 34d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:iron_sword"
+icon: "minecraft:iron_sword"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1423789127"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.iron_axe}"
+icon: "minecraft:iron_axe"
+disable_toast: true
+x: -1d
+y: 34d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:iron_axe"
+icon: "minecraft:iron_axe"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x237521142"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.iron_helmet}"
+icon: "minecraft:iron_helmet"
+disable_toast: true
+x: 0d
+y: 34d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:iron_helmet"
+icon: "minecraft:iron_helmet"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_602560439"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.iron_chestplate}"
+icon: "minecraft:iron_chestplate"
+disable_toast: true
+x: 1d
+y: 34d
+shape: "hexagon"
+subtitle: "4 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:iron_chestplate"
+icon: "minecraft:iron_chestplate"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1378026369"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.iron_leggings}"
+icon: "minecraft:iron_leggings"
+disable_toast: true
+x: 2d
+y: 34d
+shape: "hexagon"
+subtitle: "3 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:iron_leggings"
+icon: "minecraft:iron_leggings"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_951855604"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.iron_boots}"
+icon: "minecraft:iron_boots"
+disable_toast: true
+x: 3d
+y: 34d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:iron_boots"
+icon: "minecraft:iron_boots"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1439727235"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.golden_sword}"
+icon: "minecraft:golden_sword"
+disable_toast: true
+x: 4d
+y: 34d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:golden_sword"
+icon: "minecraft:golden_sword"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_85475130"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.golden_axe}"
+icon: "minecraft:golden_axe"
+disable_toast: true
+x: -4d
+y: 35d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:golden_axe"
+icon: "minecraft:golden_axe"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x955502901"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.golden_helmet}"
+icon: "minecraft:golden_helmet"
+disable_toast: true
+x: -3d
+y: 35d
+shape: "hexagon"
+subtitle: "4 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:golden_helmet"
+icon: "minecraft:golden_helmet"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_145112150"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.golden_chestplate}"
+icon: "minecraft:golden_chestplate"
+disable_toast: true
+x: -2d
+y: 35d
+shape: "hexagon"
+subtitle: "8 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:golden_chestplate"
+icon: "minecraft:golden_chestplate"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_1388804510"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.golden_leggings}"
+icon: "minecraft:golden_leggings"
+disable_toast: true
+x: -1d
+y: 35d
+shape: "hexagon"
+subtitle: "4 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:golden_leggings"
+icon: "minecraft:golden_leggings"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x569285933"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.golden_boots}"
+icon: "minecraft:golden_boots"
+disable_toast: true
+x: 0d
+y: 35d
+shape: "hexagon"
+subtitle: "4 x {item.cabricality.silver_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:golden_boots"
+icon: "minecraft:golden_boots"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_69537022"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.netherite_sword}"
+icon: "minecraft:netherite_sword"
+disable_toast: true
+x: 1d
+y: 35d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:netherite_sword"
+icon: "minecraft:netherite_sword"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x517313357"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.netherite_axe}"
+icon: "minecraft:netherite_axe"
+disable_toast: true
+x: 2d
+y: 35d
+shape: "hexagon"
+subtitle: "1 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:netherite_axe"
+icon: "minecraft:netherite_axe"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_2123196036"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.netherite_helmet}"
+icon: "minecraft:netherite_helmet"
+disable_toast: true
+x: 3d
+y: 35d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:netherite_helmet"
+icon: "minecraft:netherite_helmet"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x1361461763"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.netherite_chestplate}"
+icon: "minecraft:netherite_chestplate"
+disable_toast: true
+x: 4d
+y: 35d
+shape: "hexagon"
+subtitle: "4 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:netherite_chestplate"
+icon: "minecraft:netherite_chestplate"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x897331259"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.netherite_leggings}"
+icon: "minecraft:netherite_leggings"
+disable_toast: true
+x: -4d
+y: 36d
+shape: "hexagon"
+subtitle: "3 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:netherite_leggings"
+icon: "minecraft:netherite_leggings"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x982837574"
+}
+{
+type: "custom"
+title: "{market.cabricality.shipments.repeatable}"
+icon: "indrev:module_charger"
+tags: ["reset"]
+auto: "no_toast"
+}
+]
+}
+
+{
+title: "1 × {item.minecraft.netherite_boots}"
+icon: "minecraft:netherite_boots"
+disable_toast: true
+x: -3d
+y: 36d
+shape: "hexagon"
+subtitle: "2 x {item.cabricality.gold_coin}"
+tasks: [{
+type: "item"
+item: "minecraft:netherite_boots"
+icon: "minecraft:netherite_boots"
+count: 1L
+}]
+rewards: [
+{
+type: "item"
+auto: "enabled"
+item: "cabricality:trade_card_x533251465"
 }
 {
 type: "custom"
