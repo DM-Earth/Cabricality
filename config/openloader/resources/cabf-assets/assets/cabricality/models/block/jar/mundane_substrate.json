@@ -2,6 +2,6 @@
   "parent": "cabricality:block/substrate",
   "textures": {
     "particle": "block/glass",
-    "0": "cabricality:block/chaos_glass"
+    "0": "cabricality:block/mundane_glass"
   }
 }

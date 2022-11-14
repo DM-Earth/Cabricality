@@ -1,59 +1,59 @@
 onEvent("block.registry", event => {
 	for (let i = 0; i < 15; i++) {
-	  event.create(asIdentifier(`failed_alchemy_${i}`))
-		.material("glass")
-		.color(0, 0x394867)
-		.color(1, 0x14274E)
-		.hardness(0.1)
-		.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-		.model(asIdentifier("block/mundane_substrate"))
-		.displayName(`Mundane Alchemic Blend ${i + 1}`)
-		.renderType("cutout")
-		.item(e => e.color(0, 0x394867).color(1, 0x14274E))
-		.tagBlock("minecraft:mineable/pickaxe")
+		event.create(asIdentifier(`failed_alchemy_${i}`))
+			.material("glass")
+			.color(0, 0x394867)
+			.color(1, 0x14274E)
+			.hardness(0.1)
+			.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
+			.model(asIdentifier("block/mundane_substrate"))
+			.displayName(`Mundane Alchemic Blend ${i + 1}`)
+			.renderType("cutout")
+			.item(e => e.color(0, 0x394867).color(1, 0x14274E))
+			.tagBlock("minecraft:mineable/pickaxe")
 	}
 	global.substrates = []
 	global.substrate_mapping = {}
 	let current_category = []
 	let category_index = 0
 	let substrate_index = 0
-  
+
 	let category = () => {
-	  global.substrates.push(current_category)
-	  current_category = []
-	  category_index++
-	  substrate_index = 0
+		global.substrates.push(current_category)
+		current_category = []
+		category_index++
+		substrate_index = 0
 	}
-  
+
 	let substrate_base = (c1, c2, id, name, localName, model, ingredient, outputItem) => {
-	  global.substrate_mapping[id] = {
-		category: category_index,
-		index: substrate_index,
-		name: name
-	  }
-	  current_category.push({
-		id: asIdentifier(`substrate_${id}`),
-		ingredient: ingredient,
-		outputItem: outputItem
-	  })
-	  event.create(asIdentifier(`substrate_${id}`))
-		.material("glass")
-		.color(0, c1)
-		.color(1, c2)
-		.hardness(0.1)
-		.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-		.model(asIdentifier("block/" + model))
-		.displayName(localName)
-		.renderType("cutout")
-		.item(e => e.rarity(model == "catalyst" ? RARITY_UNCOMMON : RARITY_COMMON).color(0, c1).color(1, c2))
-		.tagBoth(asIdentifier("substrates"))
-		.tagBlock("minecraft:mineable/pickaxe")
-	  substrate_index++
+		global.substrate_mapping[id] = {
+			category: category_index,
+			index: substrate_index,
+			name: name
+		}
+		current_category.push({
+			id: asIdentifier(`substrate_${id}`),
+			ingredient: ingredient,
+			outputItem: outputItem
+		})
+		event.create(asIdentifier(`substrate_${id}`))
+			.material("glass")
+			.color(0, c1)
+			.color(1, c2)
+			.hardness(0.1)
+			.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
+			.model(asIdentifier("block/" + model))
+			.displayName(localName)
+			.renderType("cutout")
+			.item(e => e.rarity(model == "catalyst" ? RARITY_UNCOMMON : RARITY_COMMON).color(0, c1).color(1, c2))
+			.tagBoth(asIdentifier("substrates"))
+			.tagBlock("minecraft:mineable/pickaxe")
+		substrate_index++
 	}
-  
+
 	let reagent = (c1, c2, id, name, localName, ingredient, outputItem) => substrate_base(c1, c2, id, name, `${localName} Reagent`, "substrate", ingredient, outputItem)
 	let catalyst = (c1, c2, id, name, localName, ingredient) => substrate_base(c1, c2, id, name, `${localName} Catalyst`, "catalyst", ingredient)
-  
+
 	reagent(0x5F5F5F, 0x8E8E8E, "andesite", "Andesite", "§7Andesite§r", "minecraft:andesite")
 	reagent(0x7F7F7F, 0xD4D4D4, "diorite", "Diorite", "§7Diorite§r", "minecraft:diorite")
 	reagent(0x563A2F, 0x9A6C5B, "granite", "Granite", "§7Granite§r", "minecraft:granite")
@@ -98,65 +98,65 @@ onEvent("block.registry", event => {
 	catalyst(0x232457, 0x7D97A6, "metal", "Metallurgic", "§dMetallurgic")
 	catalyst(0x3EDBF0, 0xC0FEFC, "gem", "Gemstone", "§dGemstone")
 	category()
-  
+
 	event.create(asIdentifier("substrate_chaos"))
-	  .material("glass")
-	  .color(0, 0xb200ed)
-	  .color(1, 0xff66cc)
-	  .hardness(0.1)
-	  .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-	  .model(asIdentifier("block/chaos_catalyst"))
-	  .displayName("§5Chaos Catalyst")
-	  .renderType("cutout")
-	  .item(e => e.rarity(RARITY_RARE).color(0, 0xb200ed).color(1, 0xff66cc))
-	  .tagBoth(asIdentifier("substrates"))
-	  .tagBlock("minecraft:mineable/pickaxe")
-  
+		.material("glass")
+		.color(0, 0xb200ed)
+		.color(1, 0xff66cc)
+		.hardness(0.1)
+		.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
+		.model(asIdentifier("block/chaos_catalyst"))
+		.displayName("§5Chaos Catalyst")
+		.renderType("cutout")
+		.item(e => e.rarity(RARITY_RARE).color(0, 0xb200ed).color(1, 0xff66cc))
+		.tagBoth(asIdentifier("substrates"))
+		.tagBlock("minecraft:mineable/pickaxe")
+
 	event.create(asIdentifier("substrate_silicon"))
-	  .material("glass")
-	  .color(0, 0x474449)
-	  .color(1, 0x967DA0)
-	  .hardness(0.1)
-	  .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-	  .model(asIdentifier("block/substrate"))
-	  .displayName("§dSilicon Reagent")
-	  .renderType("cutout")
-	  .item(e => e.rarity(RARITY_EPIC).color(0, 0x474449).color(1, 0x967DA0))
-	  .tagBoth(asIdentifier("substrates"))
-	  .tagBlock("minecraft:mineable/pickaxe")
-  
+		.material("glass")
+		.color(0, 0x474449)
+		.color(1, 0x967DA0)
+		.hardness(0.1)
+		.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
+		.model(asIdentifier("block/substrate"))
+		.displayName("§dSilicon Reagent")
+		.renderType("cutout")
+		.item(e => e.rarity(RARITY_EPIC).color(0, 0x474449).color(1, 0x967DA0))
+		.tagBoth(asIdentifier("substrates"))
+		.tagBlock("minecraft:mineable/pickaxe")
+
 	event.create(asIdentifier("substrate_silver"))
-	  .material("glass")
-	  .color(0, 0x9FADB4)
-	  .color(1, 0xBECCD2)
-	  .hardness(0.1)
-	  .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-	  .model(asIdentifier("block/substrate"))
-	  .displayName("§7Silver §rReagent")
-	  .renderType("cutout")
-	  .item(e => e.color(0, 0x9FADB4).color(1, 0xBECCD2))
-	  .tagBoth(asIdentifier("substrates"))
-	  .tagBlock("minecraft:mineable/pickaxe")
-  
+		.material("glass")
+		.color(0, 0x9FADB4)
+		.color(1, 0xBECCD2)
+		.hardness(0.1)
+		.box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
+		.model(asIdentifier("block/substrate"))
+		.displayName("§7Silver §rReagent")
+		.renderType("cutout")
+		.item(e => e.color(0, 0x9FADB4).color(1, 0xBECCD2))
+		.tagBoth(asIdentifier("substrates"))
+		.tagBlock("minecraft:mineable/pickaxe")
+
 	event.create(asIdentifier("accelerator_glowstone"))
-	  .material("glass")
-	  .color(0, 0xFFBC5E)
-	  .hardness(0.1)
-	  .box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
-	  .model(asIdentifier("block/accelerator"))
-	  .displayName("§6Glowstone §rAccelerator")
-	  .renderType("cutout")
-	  .item(e => e.color(0, 0xFFBC5E))
-	  .tagBlock("minecraft:mineable/pickaxe")
-  
+		.material("glass")
+		.color(0, 0xFFBC5E)
+		.hardness(0.1)
+		.box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
+		.model(asIdentifier("block/accelerator"))
+		.displayName("§6Glowstone §rAccelerator")
+		.renderType("cutout")
+		.item(e => e.color(0, 0xFFBC5E))
+		.tagBlock("minecraft:mineable/pickaxe")
+
 	event.create(asIdentifier(`accelerator_redstone`))
-	  .material("glass")
-	  .color(0, 0xAA0F01)
-	  .hardness(0.1)
-	  .box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
-	  .model(asIdentifier("block/accelerator"))
-	  .displayName("§cRedstone §rAccelerator")
-	  .renderType("cutout")
-	  .item(e => e.color(0, 0xAA0F01))
-	  .tagBlock("minecraft:mineable/pickaxe")
-  })
+		.material("glass")
+		.color(0, 0xAA0F01)
+		.hardness(0.1)
+		.box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
+		.model(asIdentifier("block/accelerator"))
+		.displayName("§cRedstone §rAccelerator")
+		.renderType("cutout")
+		.item(e => e.color(0, 0xAA0F01))
+		.tagBlock("minecraft:mineable/pickaxe")
+})
