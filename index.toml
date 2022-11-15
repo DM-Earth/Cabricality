@@ -46,7 +46,7 @@ hash = "a5628ce9adb7c45e9fc1e4e5c94f601b2ea47731907124ef2e8ec9b803eaafc6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "9524f80b175740009b989e3911d6721089df567b3fb81d79c478961ef02a81ec"
+hash = "35b6943fc0fd3e7948f0c34b9ad3ec5e6dc71f131209c4a91fccdfb2a1d04255"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
@@ -62,7 +62,7 @@ hash = "80fbba77a8968efbb78500ec9731bd3f12a6905d60f7856ac263e8246396b6f5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "7681426253a9b23863733ee4cd9e48226d461abe785792859db4ec5113cf9a38"
+hash = "558b97711138a386aa05c8278c0214c066d9a5e902498470255f8d52d063e463"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -126,19 +126,15 @@ hash = "473dd593d3cd68c4a7dc2d27ad3a6dbc650c1300bdfad8829f32ff4c59477c4e"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/en_us.json"
-hash = "f1744b96908a4d9dcc35555b12ebf64c42ff07d7affa6c7cc20a77841a6f8ab1"
+hash = "11739982368955fb4f1a99509ce12f8b7043e67d516209831313be1115373b3e"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/zh_cn.json"
-hash = "5f4b09ff28f8ee1d9a0ca6c248e4e06eb1268e6b774e842e144151102f1e5f24"
+hash = "dbdbd50b074e63448b0e4726c67f819f99da3fb234adb3f86adbb41dcfedc619"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/lang/zh_tw.json"
-hash = "c21a0ce49422538532de2058e2781cd4624c00aba2618386177ddcbea4fd55cc"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/accelerator.json"
-hash = "4311ab21335117bbb9f8f4b36bee9affbedd5d0e20c8c2b38b5848c00c26fd0c"
+hash = "2c641b0715107de183dc37573a58c22e404e51942ac9073585860709eaca06bc"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/casing/enderium_casing.json"
@@ -157,20 +153,44 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/
 hash = "11de30b2f391f4fd3806885a889209e003a79a6eae4f414a2c5f2fbb1aaf07db"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/catalyst.json"
-hash = "a15193b5dfb817b9f9e3484389305d976fdbb6c69ff794b0c70e4ee8b6e0687a"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/chaos_catalyst.json"
-hash = "baee45b2697b0b1b1e199d21c7dbe4879c13246e9e20a085bce4d8f05ed761a6"
-
-[[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/computation_matrix.json"
 hash = "03ac7a1c9784209ae76d69265a8294f91886c8f8dd959b62dd37a39aa89fb588"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/frame_template.json"
 hash = "fc6ac6161aacabc91de2ff189fb21a314bb953532241f650c3a616d0bf0a61c0"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/accelerator.json"
+hash = "e8043c36c5e65fe268ce189c1b2abd05c92f55da1cd19efe0c9a7d829f8e4a32"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/catalyst.json"
+hash = "24030c59d03d64651fc24ca10b1f6f4ddd93a19a98143eb1eca671cf85ebcdae"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/chaos_catalyst.json"
+hash = "b24c63e1579f286e98a6f00bcdfe482e3b7be1c6752caa34b8b82bf09c9f9cfa"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/jar.json"
+hash = "fd27ecb4b3caac9d82be44870d3468a0ef21f227b8cc0d37b31e08b33ea16f0d"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/machine_template.json"
+hash = "ea822cf900e526989f4ae1c24321c10fd1c3a1bfa3b0a618eb45dcd49a95589a"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/mundane_substrate.json"
+hash = "cecbfaf66d545bc9935f110ece0857858275b85726f66102d4f3daf982b764bf"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/reagent.json"
+hash = "1c048e8a068cf5580fa1909fd6b45010ebb09b5417408ae7c1c9861805bc0cb8"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/jar/substrate.json"
+hash = "da1d24d00fb506e485324cfb74ed81a3d3d80c9dfd005cc1935303a256355b60"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/machine/andesite_machine.json"
@@ -209,16 +229,12 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/
 hash = "37cad8dea9ce8f79e7476c63eb02b2400809cd8677cf33630ea214013ae2ac02"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/machine_template.json"
-hash = "cd8c4ac5ca4e925ef12300770e9a9ce6a0da050f19db19ad2375e9501820fd8b"
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/card/profession_card.json"
+hash = "f0f9292b0e1f2275908c82bb0b686c01e6c0484bc937082619717149c42c9954"
 
 [[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/mundane_substrate.json"
-hash = "8e512ce8682d79dbfc3dc2fc7db3f6c37e5f62d775cbdcac72aff138f5d97a28"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/block/substrate.json"
-hash = "f431d630e562bd48aad60c1b989067b86f4c8f7dcb386957144d6ccc5fd5ffa2"
+file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/card/trade_card.json"
+hash = "df4c33c489bd838775ef789dcd3eb8ef9c4685d1c22ddd12c7956b2265bc0df0"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/coin.json"
@@ -267,14 +283,6 @@ hash = "5df8b6a073bb8ec37f4fce608acef95d3d5f59a434bc8e87ab51cb4555b9e6ed"
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/extractor_machine.json"
 hash = "eef902b6568f2eac14617bf867695e5d0bf5ecad3edf520fe75295d28f48e3cd"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/trading/profession_card.json"
-hash = "ab03b4298d02ebba0d62b6fa1526ac169e9a511095411660f74183e21bd583d0"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/models/item/trading/trade_card.json"
-hash = "5615488eaa3ada077136f0922477213c8bc8da6a58d052173cda6953be89d4ae"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/block/accelerator_glass.png"
@@ -661,6 +669,30 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item
 hash = "bf259371127ca534edef9f8f9d553d25207e021f8fd38209baf458ae0d0d68d5"
 
 [[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/card/profession_card_0.png"
+hash = "81b54eb8b38a05d6fccfc3103a85fdbda02bbb157c103e0c4e5940c4a18dd661"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/card/profession_card_1.png"
+hash = "5fa3e14ee10d90050c083ca85918d25ee1c1ce9c4ff6ffa597a1f8817299d668"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/card/profession_card_2.png"
+hash = "f4e79b63563c0efcb1cadbe1ea381beafddf4b2d5f909f893514c547ddd58461"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/card/trade_card_0.png"
+hash = "9cace039746b4e0c433dc029e737eb2cf7b50796e91ee07e11d65990436571b4"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/card/trade_card_1.png"
+hash = "05e06cad4aea0ba306d87510c91ed5c3519a2ec51c06cdae094e39a0ca277cb2"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/card/trade_card_2.png"
+hash = "d0b902b67b73f9858d811ce870896d99a08ae57a1a6b73f0c4049d6e4295dcda"
+
+[[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/cast/divide_cast.png"
 hash = "a72592987949e20d34f54e108abf26ceaf7f8b75d078abb09c4852fcf26677ba"
 
@@ -717,12 +749,20 @@ file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item
 hash = "5893f29d109611f1b73b90b22d3539838f6757b7c29e5727752c119ebebfb769"
 
 [[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/coin/gold_coin.png"
+hash = "f9320dcfe556c16cab78275db5475b645d228a39262fb9f5fe084d07d7e39f77"
+
+[[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/coin/gold_coin_bottom.png"
 hash = "05e6badbd85379d28603f470795bbb95531ac56e41acf5681f0d7a3c56d1e92d"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/coin/gold_coin_top.png"
 hash = "2493cbb6220f05e74ec85305b39a1498ca31d7ddd11749751454615407f19c99"
+
+[[files]]
+file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/coin/silver_coin.png"
+hash = "bb0cd09d45bc29954bdba4707582bb1d85dff2ced05783e94c8bed36d412aaa7"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/coin/silver_coin_bottom.png"
@@ -819,10 +859,6 @@ hash = "43908221e938c87ae2be5782f99b542ec7b357a6f9f33e0d998c5f09d07ea746"
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/fern/slime_fern_paste.png"
 hash = "5c6e3c945043c21f9bfbf7184c49ecd1f6468710c9ddbb94686461c83b9e3126"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/gold_coin.png"
-hash = "f9320dcfe556c16cab78275db5475b645d228a39262fb9f5fe084d07d7e39f77"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/ice_charge.png"
@@ -987,10 +1023,6 @@ hash = "14285592787e878402e3938e7e08e5e5570c9730818d453dbf7f161b35d04544"
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/silicon_compound.png"
 hash = "e4850ce80a4f51c82d2737f5fdf8fb3c81e5918d17a0e4b6f218394c10970860"
-
-[[files]]
-file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/silver_coin.png"
-hash = "bb0cd09d45bc29954bdba4707582bb1d85dff2ced05783e94c8bed36d412aaa7"
 
 [[files]]
 file = "config/openloader/resources/cabf-assets/assets/cabricality/textures/item/stone_rod.png"
@@ -2001,30 +2033,6 @@ file = "kubejs/assets/cabricality/textures/item/mechanism/sturdy_mechanism.png"
 hash = "404b2c4855a672cd75638b75919955c5d9b507ae43bd1acf87693bfd429607a9"
 
 [[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/profession_card_0.png"
-hash = "81b54eb8b38a05d6fccfc3103a85fdbda02bbb157c103e0c4e5940c4a18dd661"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/profession_card_1.png"
-hash = "5fa3e14ee10d90050c083ca85918d25ee1c1ce9c4ff6ffa597a1f8817299d668"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/profession_card_2.png"
-hash = "f4e79b63563c0efcb1cadbe1ea381beafddf4b2d5f909f893514c547ddd58461"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/trade_card_0.png"
-hash = "9cace039746b4e0c433dc029e737eb2cf7b50796e91ee07e11d65990436571b4"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/trade_card_1.png"
-hash = "05e06cad4aea0ba306d87510c91ed5c3519a2ec51c06cdae094e39a0ca277cb2"
-
-[[files]]
-file = "kubejs/assets/cabricality/textures/item/trading/trade_card_2.png"
-hash = "d0b902b67b73f9858d811ce870896d99a08ae57a1a6b73f0c4049d6e4295dcda"
-
-[[files]]
 file = "kubejs/client_scripts/cabricality.js"
 hash = "5dff80611f01d9ddf28548c6083ae326edc996761da658a9c389a9307013089e"
 
@@ -2042,7 +2050,7 @@ hash = "da6bf5cdbf827bb70bd30652636e085b2d53eb00e302c6e459cb00fc81229432"
 
 [[files]]
 file = "kubejs/client_scripts/pondering/ponder.js"
-hash = "7ca6f40727bda9bfd6ece5e20f362533c2e7555e3c6f22122a0109b657699428"
+hash = "ccf94a394dffb2fbdeaafdc85bb70d8e39cb7ccceee99824681250a4578bd061"
 
 [[files]]
 file = "kubejs/data/ad_astra/loot_tables/blocks/deepslate_calorite_ore.json"
@@ -4498,7 +4506,7 @@ hash = "dffb615c013766261ad95429588584279dad1901610c62d66d2e4d678fe7f976"
 
 [[files]]
 file = "kubejs/server_scripts/machine/laser.js"
-hash = "01d44e91591b2e1b93f101e38bea027dd34ad327b841fffa4db9a245f7785f43"
+hash = "c92804d2d8eeec10da764ccd7ec3fdaefa10fb974dbcbbe2779a166d55ab8bdb"
 
 [[files]]
 file = "kubejs/server_scripts/machine/multiblock/rocket_engine.js"
@@ -4561,10 +4569,6 @@ file = "kubejs/server_scripts/recipes/thread/zinc.js"
 hash = "6c45a62cca92e74da3e335764f2738465d7bd60528b8b98ab1b0479824d099d9"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/trader.js"
-hash = "6d0d2ba209b39ba979e592541c4ee8cb57ac7b82285d1a164c1631bd041a111b"
-
-[[files]]
 file = "kubejs/server_scripts/recipes/tweaks/ad_astra.js"
 hash = "667633bce008ce464df3512f76831e9fc8e67717e885c7020e23f0c410906407"
 
@@ -4602,23 +4606,19 @@ hash = "08185d66f23176ea25beeb475ed400df927fc5f7488abc16328b8f17304e9e43"
 
 [[files]]
 file = "kubejs/startup_scripts/registries.js"
-hash = "4b5ecbc1d26e5e23ca8724d4e4c0c6c7d602a7f75ec40081eafbef8d9b50bed5"
+hash = "992ee794ceb69090179d51c8d06a3148fe6caa43afa194a06a8ad122fea40db8"
 
 [[files]]
 file = "kubejs/startup_scripts/substrates.js"
-hash = "a2bea934c643def68595d46abc7949a1c2602e1d9b54415433eef6fd3f692ea9"
-
-[[files]]
-file = "kubejs/startup_scripts/trading.js"
-hash = "4217d17977a569836c62d5aca64fc4b0fc6627258de9757e97049fa9420a9ddb"
+hash = "061f572e1a7bf602341564a08d72665c9757e40407ee54f79c46c205f2668a32"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
 hash = "8dc6ad44a6b0bada5533763f0f7526c8b09498f04fd43adef633be0d46841e4f"
 
 [[files]]
-file = "mods/ad-astra-fabric.pw.toml"
-hash = "c45ea478e0dcbe4ea7172aaa58fee139f76c7d13b6a68c76a66536abadb6c790"
+file = "mods/ad-astra.pw.toml"
+hash = "e5747dab7cf08bee2a062de60685217771615b8276f607e1ad6c6595e9b13197"
 metafile = true
 
 [[files]]
@@ -4628,7 +4628,7 @@ metafile = true
 
 [[files]]
 file = "mods/alloy-forgery.pw.toml"
-hash = "28f3a330db6ec489843622d1c0eeb6a40a92f2892073934e8ed3f974276f3519"
+hash = "fb06b7606250d5efc72cb43fcd862f1ff1be79fac783acea28055f9ff0681147"
 metafile = true
 
 [[files]]
@@ -4780,16 +4780,6 @@ hash = "219d4425679c60fd2855a6a39a6fccb6db3948dcc57b9da7c20907c855c5bd3d"
 metafile = true
 
 [[files]]
-file = "mods/kubejs-create.pw.toml"
-hash = "db91b71e52569b1b2e06b7cd6756cd99bc4795266bb6334abc5cbeff47a6d0f9"
-metafile = true
-
-[[files]]
-file = "mods/kubejs.pw.toml"
-hash = "d852397b08517d967ad5f2295f56306a618b8fc297e6e0ed2fa003a4546b0c30"
-metafile = true
-
-[[files]]
 file = "mods/lazydfu.pw.toml"
 hash = "ea127e8f74006f3a9ce099f9e96adaa3b3f4f281231ece703c4e7f9732137ebd"
 metafile = true
@@ -4800,8 +4790,13 @@ hash = "21da451438c4b95811be685f967b800f0672ac0096bf9a4fc80e08db52902005"
 metafile = true
 
 [[files]]
+file = "mods/led.pw.toml"
+hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
-hash = "83541b1d3e1e936638a6938eb505bf0f508c13aed7f8416af8d064ffc7cda4dc"
+hash = "9009a697370bb3798834b690eda2c418799e4e7bd4f3439cf767bbf0cd345ab3"
 metafile = true
 
 [[files]]
@@ -4850,11 +4845,6 @@ hash = "8c752fa462607344229492d00c45ccd51a209f9338562e2d95b84d88d5cbcf1f"
 metafile = true
 
 [[files]]
-file = "mods/ponder.pw.toml"
-hash = "65edb51604e963fb7b09f06a465e83cd88836a0a5bb07df18efa4838dd95952d"
-metafile = true
-
-[[files]]
 file = "mods/promenade.pw.toml"
 hash = "90c566f04f86546c14ac20a35e45c593a623b862d26e70ad64f3568b3029acb1"
 metafile = true
@@ -4865,18 +4855,13 @@ hash = "b8b8a60a1da87bb84af8236288d98b307f156551435bceceabbc61bb8fef0cd1"
 metafile = true
 
 [[files]]
-file = "mods/rhino.pw.toml"
-hash = "4f4d527dd8856b5f88cf73ab47f83585a55a151b67b8274e48ef4698b18ab508"
-metafile = true
-
-[[files]]
 file = "mods/roughly-enough-characters.pw.toml"
 hash = "86c4ef056d5d2a56d0f69cd988b656a1201651845e40a7027726fec7c9f090b6"
 metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "4d88aae056cb61bd72c1c94a0bc8c50ab15372b872b93e0c80e3d5a7bf646c3d"
+hash = "fe16be666f6ed1c24a2ecb2c50b2e9dd8dedf07dd748f3278e771a994cdbba5b"
 metafile = true
 
 [[files]]

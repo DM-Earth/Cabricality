@@ -1,0 +1,13 @@
+name = "Light Emitting Diode"
+filename = "led-1.2.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nrekn9hP/versions/1.2.4/led-1.2.4.jar"
+hash-format = "sha1"
+hash = "f864a4b84509a84adcf66accb8218bef0304b5e5"
+
+[update]
+[update.modrinth]
+mod-id = "nrekn9hP"
+version = "B6qtHfGU"
