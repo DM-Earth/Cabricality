@@ -4,7 +4,7 @@
 
 ### 如何游玩
 
-1. [从Github Releases下载带最新版本](https://github.com/JieningYu/Cabricality/releases)
+1. [从Github Releases下载最新版本](https://github.com/JieningYu/Cabricality/releases)
 2. [参考此文章安装](https://docs.modrinth.com/docs/modpacks/playing_modpacks/)
 
 ### 我无法启动游戏
