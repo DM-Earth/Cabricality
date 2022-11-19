@@ -1,1 +1,9 @@
-{"fabric:load_conditions":[{"condition":"fabric:all_mods_loaded","values":["indrev"]}],"results":[{"count":1,"item":"indrev:silver_dust"}],"type":"create:crushing","ingredients":[{"tag":"c:silver_ingots"}],"processingTime":500}
+{
+  "fabric:load_conditions": [
+    { "condition": "fabric:all_mods_loaded", "values": ["indrev"] }
+  ],
+  "results": [{ "count": 1, "item": "indrev:silver_dust" }],
+  "type": "create:crushing",
+  "ingredients": [{ "tag": "c:silver_ingots" }],
+  "processingTime": 500
+}

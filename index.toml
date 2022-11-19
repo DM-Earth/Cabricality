@@ -3117,6 +3117,10 @@ file = "kubejs/data/cabricality/recipes/splashing/crushed_nickel_ore.json"
 hash = "9b238e0eaf9d9d06341e3bdf96eb46bc23daa40d802c1b2a764b1623906b8525"
 
 [[files]]
+file = "kubejs/data/cabricality/tags/blocks/laser_source.json"
+hash = "09ec558b7dc030460c05e7ca274d94c59c4e025a267dd57f8c92f626993d926e"
+
+[[files]]
 file = "kubejs/data/cabricality/tags/blocks/rocket_fuel.json"
 hash = "eb711878cbd137c529a6343a7f117613ebe0b39c46f019d62ffcb8c45e37ae29"
 
@@ -4654,6 +4658,11 @@ metafile = true
 [[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
+metafile = true
+
+[[files]]
+file = "mods/brrp.pw.toml"
+hash = "6da5951e4305f02ff190a88eaa4dc6d4be5c59783fd338b6b8d6ded760074ec1"
 metafile = true
 
 [[files]]
