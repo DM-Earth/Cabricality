@@ -1,5 +1,5 @@
 {
-  "parent": "cabricality:block/frame_template",
+  "parent": "cabricality:block/machine/frame_template",
   "textures": {
     "particle": "cabricality:block/machine/zinc/zinc_machine_top",
     "down": "cabricality:block/machine/zinc/zinc_machine_bottom",

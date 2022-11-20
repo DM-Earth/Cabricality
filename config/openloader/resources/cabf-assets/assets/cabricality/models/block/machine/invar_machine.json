@@ -1,5 +1,5 @@
 {
-  "parent": "cabricality:block/frame_template",
+  "parent": "cabricality:block/machine/frame_template",
   "textures": {
     "particle": "cabricality:block/casing/invar/invar_casing_top",
     "down": "cabricality:block/casing/invar/invar_casing_top",
