@@ -10,3 +10,16 @@
 /docs/*
 /assets/*
 /.github/*
+*.gitattributes
+*.gitignore
+/gradle/*
+/.gradle/*
+/run/*
+/src/*
+/build/*
+/bin/*
+/git/*
+/gradlew
+*.gradle
+/gradle.properties
+*.bat

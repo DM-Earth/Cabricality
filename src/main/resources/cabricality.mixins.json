@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.dm.earth.cabricality.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BootstrapMixin",
+    "DiodeLampBlockAccessor",
+    "FluidDrainingBehaviourMixin",
+    "FluidManipulationBehaviourAccessor",
+    "KubeJSMixin",
+    "RecipeManagerMixin",
+    "RegistryMixin",
+    "TagKeyMixin",
+    "WrenchItemMixin"
+  ],
+  "client": [
+    "client.MinecraftClientMixin",
+    "client.ScreenAccessor",
+    "client.SplashTextResourceSupplierMixin",
+    "client.TitleScreenMixin",
+    "client.TranslatableTextMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

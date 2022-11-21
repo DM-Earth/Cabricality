@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "com.dm.earth",
+    "id": "cabricality",
+    "version": "${version}",
+    "metadata": {
+      "name": "Cabricality",
+      "description": "A Create centered challengeable modpack inspired by Create: Above and Beyond",
+      "contributors": {
+        "DM Earth": "Owner"
+      },
+      "contact": {
+        "source": "https://github.com/DM-Earth/Cabricality"
+      },
+      "license": "AGPL-3.0"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": "com.dm.earth.cabricality.Cabricality",
+      "client_init": "com.dm.earth.cabricality.client.CabricalityClient",
+      "server_init": "com.dm.earth.cabricality.server.CabricalityServer",
+      "client_events":[
+        "com.dm.earth.cabricality.client.listener.ClientCommandRegistryListener"
+      ],
+      "events":[
+        "com.dm.earth.cabricality.listener.CommandRegistryListener"
+      ],
+      "rei_client": "com.dm.earth.cabricality.client.rei.CabricalityREIClientPlugin"
+    },
+    "accessWidener": "cabricality.accesswidener",
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": "0.17.6"
+      },
+      {
+        "id": "minecraft",
+        "versions": ">=1.18.2-"
+      },
+      {
+        "id": "quilted_fabric_api",
+        "versions": ">=1.0.0-"
+      }
+    ]
+  },
+  "mixin": "cabricality.mixins.json"
+}

@@ -6,3 +6,33 @@
 /.idea/*
 /.fleet/*
 openloader-resources
+
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+
+# eclipse
+
+*.launch
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# quilt
+
+run/

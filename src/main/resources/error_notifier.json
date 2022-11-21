@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "type": "depends",
+      "modId": "ftblibrary",
+      "modName": "FTB Library",
+      "versions": "*",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric"
+    },
+    {
+      "type": "depends",
+      "modId": "ftbquests",
+      "modName": "FTB Quests",
+      "versions": "*",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric"
+    },
+    {
+      "type": "depends",
+      "modId": "ftbteams",
+      "modName": "FTB Teams",
+      "versions": "*",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric"
+    },
+    {
+      "type": "depends",
+      "modId": "questsadditions",
+      "modName": "Quests Additions",
+      "versions": "*",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric"
+    }
+  ]
+}
