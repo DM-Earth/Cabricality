@@ -8,7 +8,10 @@ import java.util.stream.Collectors;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
+import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
+import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.listener.ColorRegistryListener;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.threads.blocks.MachineBlockEntry;
@@ -39,5 +42,10 @@ public class CabricalityClient implements ClientModInitializer {
 		BlockRenderLayerMap.put(RenderLayer.getCutout(), Reagents.getJarBlocks(true).toArray(new Block[0]));
 		for (MachineBlockEntry entry : MachineBlockEntry.values())
 			BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock());
+
+		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
+				ResourcePackActivationType.DEFAULT_ENABLED, genTranslatableText("pack", "asset_edits"));
+		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
+				ResourcePackActivationType.ALWAYS_ENABLED, genTranslatableText("pack", "quests_lang"));
 	}
 }
