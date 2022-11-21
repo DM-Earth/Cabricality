@@ -3,7 +3,9 @@ package com.dm.earth.cabricality.content.entries;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.threads.ToolMaterialIndex;
 import com.dm.earth.cabricality.content.threads.items.MechanismItem;
+import com.dm.earth.cabricality.content.threads.items.SawItem;
 import com.dm.earth.cabricality.content.trading.Professions;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
@@ -12,10 +14,13 @@ import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
 import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
 
 import net.devtech.arrp.json.models.JModel;
+import net.devtech.arrp.json.tags.JTag;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 
 public class CabfItems {
+	public static final Item SAW_BLADE = registerItemModeled("saw_blade", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/saw_blade"));
 	public static final Item BASALZ_SHARD = registerItemModeled("basalz_shard", new Item(Properties.DEFAULT),
 			ItemModelGenerator.generated("item/basalz_shard"));
 	public static final Item BASALZ_POWDER = registerItemModeled("basalz_powder", new Item(Properties.DEFAULT),
@@ -48,6 +53,16 @@ public class CabfItems {
 			registerItemModeled(type.getIncompleteItemId().getPath(), type.getIncompleteItem(),
 					ItemModelGenerator.generated(type.getItem().getIncompleteTextureId().getPath()));
 		}
+
+		// Saws
+		JTag sawTags = new JTag();
+		for (ToolMaterialIndex materialIndex : ToolMaterialIndex.values()) {
+			String itemId = materialIndex.getName() + "_saw";
+			registerItemModeled(itemId, new SawItem(materialIndex.getMaterial(), Properties.DEFAULT_SINGLE),
+					ItemModelGenerator.generated("item/tool/saw", itemId));
+			sawTags.add(Cabricality.id(itemId));
+		}
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.SAWS.id().getPath()), sawTags);
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
@@ -63,6 +78,7 @@ public class CabfItems {
 		public static final Item.Settings DEFAULT = new QuiltItemSettings().group(Cabricality.MAIN_GROUP);
 		public static final Item.Settings DEFAULT_SINGLE = DEFAULT.maxCount(1);
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
-		public static final Item.Settings JAR = new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP).maxCount(16);
+		public static final Item.Settings JAR = new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP)
+				.maxCount(16);
 	}
 }

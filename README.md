@@ -117,23 +117,23 @@ This modpack is managed and developed using [packwiz](https://github.com/packwiz
 
 ### Build from Sources
 
-Clone this repository and download [packwiz](https://github.com/packwiz/packwiz) to the pack's root dictionary, then run the commands below:
+Clone this repository and run the commands below:
 
 **macOS / Linux:**
 
-```
+```sh
 ./packwiz modrinth export
 ```
 
 **Windows:**
 
-```
+```sh
 packwiz modrinth export
 ```
 
 **If you want to export a CurseForge format pack, you can use command below[^curseforge]:**
 
-```
+```sh
 packwiz curseforge export
 ```
 

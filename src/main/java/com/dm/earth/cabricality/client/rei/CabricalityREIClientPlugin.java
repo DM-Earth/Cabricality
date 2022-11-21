@@ -1,12 +1,8 @@
 package com.dm.earth.cabricality.client.rei;
 
-import static com.dm.earth.cabricality.content.alchemist.data.JarData.CATALYST_JARS;
-import static com.dm.earth.cabricality.content.alchemist.data.JarData.REAGENT_JARS;
-import static com.dm.earth.cabricality.content.trading.data.tag.TradeTags.PROFESSION_CARDS;
-import static com.dm.earth.cabricality.content.trading.data.tag.TradeTags.TRADE_CARDS;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.CabricalityClient;
+import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.util.CabfDebugger;
 
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
@@ -21,11 +17,11 @@ public class CabricalityREIClientPlugin implements REIClientPlugin {
 		CabfDebugger.debug("Registering Collapsible Entries");
 
 		// Trading
-		registry.group(Cabricality.id("trade_cards"), new TranslatableText(CabricalityClient.genTranslationKey("tag", TRADE_CARDS.id().getPath())), EntryIngredients.ofItemTag(TRADE_CARDS));
-		registry.group(Cabricality.id("profession_cards"), new TranslatableText(CabricalityClient.genTranslationKey("tag", PROFESSION_CARDS.id().getPath())), EntryIngredients.ofItemTag(PROFESSION_CARDS));
+		registry.group(Cabricality.id("trade_cards"), new TranslatableText(CabricalityClient.genTranslationKey("tag", CabfItemTags.TRADE_CARDS.id().getPath())), EntryIngredients.ofItemTag(CabfItemTags.TRADE_CARDS));
+		registry.group(Cabricality.id("profession_cards"), new TranslatableText(CabricalityClient.genTranslationKey("tag", CabfItemTags.PROFESSION_CARDS.id().getPath())), EntryIngredients.ofItemTag(CabfItemTags.PROFESSION_CARDS));
 
 		// Alchemist Jars
-		registry.group(Cabricality.id("catalyst_jars"), new TranslatableText(CabricalityClient.genTranslationKey("tag", CATALYST_JARS.id().getPath())), EntryIngredients.ofItemTag(CATALYST_JARS));
-		registry.group(Cabricality.id("reagent_jars"), new TranslatableText(CabricalityClient.genTranslationKey("tag", REAGENT_JARS.id().getPath())), EntryIngredients.ofItemTag(REAGENT_JARS));
+		registry.group(Cabricality.id("catalyst_jars"), new TranslatableText(CabricalityClient.genTranslationKey("tag", CabfItemTags.CATALYST_JARS.id().getPath())), EntryIngredients.ofItemTag(CabfItemTags.CATALYST_JARS));
+		registry.group(Cabricality.id("reagent_jars"), new TranslatableText(CabricalityClient.genTranslationKey("tag", CabfItemTags.REAGENT_JARS.id().getPath())), EntryIngredients.ofItemTag(CabfItemTags.REAGENT_JARS));
 	}
 }

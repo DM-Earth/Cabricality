@@ -6,8 +6,6 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
-import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
-import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +18,7 @@ import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DataFixerListener;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
+import com.dm.earth.cabricality.tweak.RecipeTweaks;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
@@ -54,19 +53,19 @@ public class Cabricality implements ModInitializer {
 		Trading.load();
 		Alchemist.load();
 		DeployerCuttingRecipeHandler.load();
-
 		CabfItems.register();
 		CabfBlocks.register();
 		CabfFluids.register();
 		CabfBlockEntityTypes.register();
-
+		RecipeTweaks.load();
 		DataFixerListener.load();
 		UseEntityListener.load();
-
 		initClientAssets();
+
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(SERVER_RESOURCES));
 
-		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"), ResourcePackActivationType.ALWAYS_ENABLED);
+		// ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
+		// ResourcePackActivationType.ALWAYS_ENABLED);
 	}
 
 	@ClientOnly
