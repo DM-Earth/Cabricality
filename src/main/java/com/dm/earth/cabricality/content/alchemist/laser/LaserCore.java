@@ -30,7 +30,7 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 	@Override
 	public ActionResult interact(PlayerEntity player, @NotNull World rawWorld, Hand hand, BlockPos pos,
 			Direction direction) {
-		if (player.isSneaking() || !(rawWorld instanceof ServerWorld) || !player.getStackInHand(hand).isEmpty())
+		if (player.isSneaking() || !(rawWorld instanceof ServerWorld) || !player.getStackInHand(hand).isEmpty() || !player.getName().getString().equals("Deployer"))
 			return ActionResult.PASS;
 		ServerWorld world = (ServerWorld) rawWorld;
 		// Check if the target block is a laser source
@@ -61,8 +61,8 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 				double x = startPos.getX() + 0.5D + (director.getOffsetX() * i);
 				double y = startPos.getY() + 0.5D + (director.getOffsetY() * i);
 				double z = startPos.getZ() + 0.5D + (director.getOffsetZ() * i);
-				world.spawnParticles(properties.toDustParticleEffect(), x, y, z, (int) properties.power(), 0.0D,
-						0.0D, 0.0D, (properties.power()) / 3);
+				world.spawnParticles(properties.toDustParticleEffect(), x, y, z, (int) Math.pow(properties.power(), 1/3), 0.0D,
+						0.0D, 0.0D, Math.pow(properties.power(), 1/4) / 10);
 			}
 			LaserBehaviors.process(world, startPos, director, properties);
 			world.playSound(null, startPos.getX() + 0.5D, startPos.getY() + 0.5D, startPos.getZ() + 0.5D,
