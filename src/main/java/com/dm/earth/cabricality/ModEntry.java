@@ -12,7 +12,8 @@ public enum ModEntry {
 	AP("architects_palette"),
 	TC("tconstruct"),
 	MLM("malum"),
-	AE2("ae2");
+	AE2("ae2"),
+	TRE("terrestria");
 
 	final String modId;
 

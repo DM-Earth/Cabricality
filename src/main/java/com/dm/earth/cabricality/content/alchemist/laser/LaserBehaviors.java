@@ -20,15 +20,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.World;
 
 public class LaserBehaviors {
-	public static void attackNearby(@NotNull World world, BlockPos pos, float power) {
+	public static void attackNearby(@NotNull ServerWorld world, BlockPos pos, float power) {
 		float len = power * 3F;
 		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
 		List<LivingEntity> entities = world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving);
@@ -37,7 +37,7 @@ public class LaserBehaviors {
 	}
 
 	// pos should be the lamp's blockPos
-	public static ActionResult process(World world, BlockPos pos, Direction direction,
+	public static ActionResult process(ServerWorld world, BlockPos pos, Direction direction,
 			@NotNull LaserProperties properties) {
 		ActionResult returnResult = ActionResult.FAIL;
 
@@ -94,9 +94,9 @@ public class LaserBehaviors {
 	}
 
 	public record LaserRecipe(@NotNull Item output, @Nullable ParticleEffect effect) {
-		public void spawnParticles(World world, Vec3d pos) {
+		public void spawnParticles(ServerWorld world, Vec3d pos) {
 			if (effect != null)
-				world.addParticle(effect, pos.getX(), pos.getY(), pos.getZ(), 0, 0, 0);
+				world.spawnParticles(effect, pos.getX(), pos.getY(), pos.getZ(), 10, 0, 0, 0, 1.D);
 		}
 	}
 }

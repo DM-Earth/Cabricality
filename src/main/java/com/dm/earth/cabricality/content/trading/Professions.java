@@ -1,13 +1,21 @@
 package com.dm.earth.cabricality.content.trading;
 
+import static com.dm.earth.cabricality.ModEntry.AP;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.FD;
+import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.MLM;
+import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.TC;
+import static com.dm.earth.cabricality.ModEntry.TRE;
+import static com.dm.earth.cabricality.content.trading.core.TradingEntry.of;
+import static com.dm.earth.cabricality.content.trading.core.TradingEntry.CoinTypes.GOLD;
+import static com.dm.earth.cabricality.content.trading.core.TradingEntry.CoinTypes.SILVER;
+
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.core.TradingEntryRegistry;
-
-import static com.dm.earth.cabricality.ModEntry.*;
-import static com.dm.earth.cabricality.content.trading.core.TradingEntry.CoinTypes.GOLD;
-import static com.dm.earth.cabricality.content.trading.core.TradingEntry.CoinTypes.SILVER;
-import static com.dm.earth.cabricality.content.trading.core.TradingEntry.of;
 
 public enum Professions {
 	EXCHANGE(Profession.of("exchange",
@@ -41,7 +49,6 @@ public enum Professions {
 			of(PMD.id("blueberries"), 12, SILVER, 1, 0x98afd8)
 	)),
 
-	//TODO: terrestria
 	CARPENTRY(Profession.of("carpentry", 0x735a38,
 			of(MC.id("oak_log"), 32, SILVER, 1, 0x735a38),
 			of(MC.id("spruce_log"), 32, SILVER, 1, 0x3a2715),
@@ -53,7 +60,25 @@ public enum Professions {
 			of(MC.id("warped_stem"), 32, SILVER, 1, 0x1b615b),
 			of(PMD.id("palm_log"), 32, SILVER, 1, 0x4d433a),
 			of(PMD.id("cherry_oak_log"), 32, SILVER, 1, 0x401c15),
-			of(PMD.id("dark_amaranth_stem"), 24, SILVER, 1, 0x4e4053)
+			of(PMD.id("dark_amaranth_stem"), 24, SILVER, 1, 0x4e4053),
+			of(MLM.id("runewood_log"), 24, SILVER, 1, 0x583434),
+			of(MLM.id("exposed_runewood_log"), 16, SILVER, 1, 0x683a30),
+			of(MLM.id("soulwood_log"), 16, SILVER, 1, 0x34232e),
+			// terrestria
+			of(TRE.id("redwood_log"), 32, SILVER, 1, 0x482a22),
+			of(TRE.id("hemlock_log"), 32, SILVER, 1, 0x28281c),
+			of(TRE.id("rubber_log"), 24, SILVER, 1, 0x807d7d),
+			of(TRE.id("cypress_log"), 32, SILVER, 1, 0x463f3c),
+			of(TRE.id("willow_log"), 32, SILVER, 1, 0x252216),
+			of(TRE.id("japanese_maple_log"), 32, SILVER, 1, 0x99605d),
+			of(TRE.id("rainbow_eucalyptus_log"), 24, SILVER, 1, 0x2e5086),
+			of(TRE.id("sakura_log"), 24, SILVER, 1, 0x341d12),
+			of(TRE.id("yucca_palm_log"), 32, SILVER, 1, 0x615941),
+			of(TRE.id("small_oak_log"), 32, SILVER, 1, 0x4f3d25),
+			of(TRE.id("redwood_quarter_log"), 32, SILVER, 1, 0x482a22),
+			of(TRE.id("hemlock_quarter_log"), 32, SILVER, 1, 0x28281c),
+			of(TRE.id("cypress_quarter_log"), 32, SILVER, 1, 0x463f3c),
+			of(TRE.id("rainbow_eucalyptus_quarter_log"), 24, SILVER, 1, 0x2e5086)
 	)),
 
 	MINING(Profession.of("mining", 0x826357,
@@ -69,7 +94,7 @@ public enum Professions {
 //			of(CABF.id("crushed_ostrum_ore"), 1, SILVER, 4, 0x644a59),
 //			of(CABF.id("crushed_desh_ore"), 1, SILVER, 2, 0xdfa562),
 //			of(CABF.id("crushed_cobalt_ore"), 2, SILVER, 3, 0x2a79da),
-//			of(MUL.id("crushed_soulstone"), 1, SILVER, 1, 0x734c77),
+			of(MLM.id("crushed_soulstone"), 1, SILVER, 1, 0x734c77),
 			of(MC.id("andesite"), 64, SILVER, 1, 0x868887),
 			of(MC.id("granite"), 64, SILVER, 1, 0x9e6b5a),
 			of(MC.id("diorite"), 64, SILVER, 1, 0xe6e2e6),

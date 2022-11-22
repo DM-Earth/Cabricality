@@ -1,10 +1,13 @@
 package com.dm.earth.cabricality.tweak.cutting;
 
 import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.MLM;
+import static com.dm.earth.cabricality.ModEntry.PMD;
 
 import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 // TODO: fill this out
 public enum WoodCuttingEntry {
@@ -23,7 +26,18 @@ public enum WoodCuttingEntry {
     CRIMSON(MC.id("crimson"), "crimson_planks", "crimson_slab", null, null, null,
             null),
     WARPED(MC.id("warped"), "warped_planks", "warped_slab", null, null, null,
-            null);
+            null),
+    CHERRY_OAK(PMD.id("cherry_oak"), "cherry_oak_planks", "cherry_oak_slab", "cherry_oak_log",
+            "stripped_cherry_oak_log", "cherry_oak_wood",
+            "stripped_cherry_oak_wood"),
+    PALM(PMD.id("palm"), "palm_planks", "palm_slab", "palm_log", "stripped_palm_log", "palm_wood",
+            "stripped_palm_wood"),
+    RUNEWOOD(MLM.id("runewood"), "runewood_planks", "runewood_planks_slab", "runewood_log", "stripped_runewood_log",
+            "runewood",
+            "stripped_runewood"),
+    SOULWOOD(MLM.id("soulwood"), "soulwood_planks", "soulwood_planks_slab", "soulwood_log", "stripped_soulwood_log",
+            "soulwood",
+            "stripped_soulwood");
 
     private final Identifier id;
     @Nullable
@@ -108,10 +122,34 @@ public enum WoodCuttingEntry {
         return strippedWoodId != null;
     }
 
+    public void check() {
+        if (!Registry.ITEM.containsId(this.getLogId()))
+            throwError(this.getLogId());
+        if (!Registry.ITEM.containsId(this.getStrippedLogId()))
+            throwError(this.getStrippedLogId());
+        if (!Registry.ITEM.containsId(this.getWoodId()))
+            throwError(this.getWoodId());
+        if (!Registry.ITEM.containsId(this.getStrippedWoodId()))
+            throwError(this.getStrippedWoodId());
+        if (!Registry.ITEM.containsId(this.getPlankId()))
+            throwError(this.getPlankId());
+        if (!Registry.ITEM.containsId(this.getPlankSlabId()))
+            throwError(this.getPlankSlabId());
+    }
+
+    private static void throwError(Identifier id) {
+        throw new RuntimeException("WoodCuttingEntry requires " + id + " item which is not valid!");
+    }
+
     public static WoodCuttingEntry get(Identifier id) {
         for (WoodCuttingEntry entry : values())
             if (entry.getId().equals(id))
                 return entry;
         return null;
+    }
+
+    public static void checkAll() {
+        for (WoodCuttingEntry entry : WoodCuttingEntry.values())
+            entry.check();
     }
 }

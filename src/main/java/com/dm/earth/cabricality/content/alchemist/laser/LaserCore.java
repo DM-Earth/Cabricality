@@ -13,8 +13,10 @@ import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.state.property.Properties;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -26,12 +28,13 @@ import net.minecraft.world.World;
 
 public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 	@Override
-	public ActionResult interact(PlayerEntity player, @NotNull World world, Hand hand, BlockPos pos,
+	public ActionResult interact(PlayerEntity player, @NotNull World rawWorld, Hand hand, BlockPos pos,
 			Direction direction) {
+		if (player.isSneaking() || !(rawWorld instanceof ServerWorld) || !player.getStackInHand(hand).isEmpty())
+			return ActionResult.PASS;
+		ServerWorld world = (ServerWorld) rawWorld;
 		// Check if the target block is a laser source
 		BlockState state = world.getBlockState(pos);
-		// TODO
-		// player.getStackInHand(hand).isEmpty()
 		if (!(state.isIn(TagKey.of(Registry.BLOCK_KEY, Cabricality.id("laser_source")))))
 			return ActionResult.PASS;
 		CabfDebugger.debug("Laser source detected");
@@ -41,6 +44,7 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 			if (director == direction)
 				continue;
 			if (world.getBlockState(pos.offset(director)).getBlock() instanceof DirectionalDiodeLampBlock lamp
+					&& world.getBlockState(pos.offset(director)).get(Properties.FACING).getOpposite() == director
 					&& LaserProperties.generate(world.getBlockState(pos.offset(director)), lamp, 1) != null)
 				availableDirections.add(director);
 		}
@@ -57,11 +61,12 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 				double x = startPos.getX() + 0.5D + (director.getOffsetX() * i);
 				double y = startPos.getY() + 0.5D + (director.getOffsetY() * i);
 				double z = startPos.getZ() + 0.5D + (director.getOffsetZ() * i);
-				world.addParticle(properties.toDustParticleEffect(), x, y, z, 0.0D, 0.0D, 0.0D);
+				world.spawnParticles(properties.toDustParticleEffect(), x, y, z, (int) properties.power(), 0.0D,
+						0.0D, 0.0D, (properties.power()) / 3);
 			}
 			LaserBehaviors.process(world, startPos, director, properties);
-			world.playSound(startPos.getX() + 0.5D, startPos.getY() + 0.5D, startPos.getZ() + 0.5D,
-					SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.BLOCKS, 0.55F, 0.5F, false);
+			world.playSound(null, startPos.getX() + 0.5D, startPos.getY() + 0.5D, startPos.getZ() + 0.5D,
+					SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.BLOCKS, 0.55F, 0.5F);
 		}
 
 		return ActionResult.SUCCESS;
@@ -69,7 +74,7 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 
 	@Override
 	public ActionResult interact(PlayerEntity player, World world, Hand hand, @NotNull BlockHitResult hitResult) {
-		if (!player.getStackInHand(hand).isEmpty()  && player.getName().getString().equals("Deployer"))
+		if (!player.getStackInHand(hand).isEmpty() && player.getName().getString().equals("Deployer"))
 			return ActionResult.PASS;
 		return this.interact(player, world, hand, hitResult.getBlockPos(), hitResult.getSide());
 	}
