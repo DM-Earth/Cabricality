@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "cabricality:block/machine_template",
+	"parent": "cabricality:block/machine/machine_template",
 	"textures": {
 		"0": "create:block/axis",
 		"3": "create:block/axis_top",

@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "cabricality:block/machine_template",
+	"parent": "cabricality:block/machine/machine_template",
 	"textures": {
 		"0": "create:block/controls",
 		"1": "create:block/controls_frame",
