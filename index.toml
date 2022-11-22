@@ -4631,11 +4631,6 @@ hash = "573eb46b9d640967c2df271069e34fbddbb3c0d681f332bc06338f112cd3f1d1"
 metafile = true
 
 [[files]]
-file = "mods/alloy-forgery.pw.toml"
-hash = "fb06b7606250d5efc72cb43fcd862f1ff1be79fac783acea28055f9ff0681147"
-metafile = true
-
-[[files]]
 file = "mods/amecs.pw.toml"
 hash = "68c17672bedcc8b65352d63b1bbff131581be1f007c15e621adda9fedcb09fd8"
 metafile = true
@@ -4841,11 +4836,6 @@ metafile = true
 [[files]]
 file = "mods/ok-zoomer.pw.toml"
 hash = "d240a40073a8ae5c5f56b4c3cde5d78951ca71dc5b8279f0405f346a537659b7"
-metafile = true
-
-[[files]]
-file = "mods/open-loader.pw.toml"
-hash = "a259b4f251c2f694f3b07f2ef979e726bee9351e9e9af862d6e21eeb9d9fa4f9"
 metafile = true
 
 [[files]]

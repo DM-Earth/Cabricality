@@ -6,6 +6,7 @@ import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.util.Identifier;
 
+// TODO: fill this out
 public enum WoodCuttingEntry {
     OAK(MC.id("oak"), "oak_planks", "oak_slab", null, null, null,
             null),
