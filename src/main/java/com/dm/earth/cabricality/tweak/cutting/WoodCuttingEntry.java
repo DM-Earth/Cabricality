@@ -9,7 +9,7 @@ import org.jetbrains.annotations.Nullable;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-// TODO: fill this out
+// TODO: Terrestria
 public enum WoodCuttingEntry {
     OAK(MC.id("oak"), "oak_planks", "oak_slab", null, null, null,
             null),
@@ -123,17 +123,17 @@ public enum WoodCuttingEntry {
     }
 
     public void check() {
-        if (!Registry.ITEM.containsId(this.getLogId()))
+        if (!Registry.ITEM.containsId(this.getLogId()) && this.getLogId() != null)
             throwError(this.getLogId());
-        if (!Registry.ITEM.containsId(this.getStrippedLogId()))
+        if (!Registry.ITEM.containsId(this.getStrippedLogId()) && this.getStrippedLogId() != null)
             throwError(this.getStrippedLogId());
-        if (!Registry.ITEM.containsId(this.getWoodId()))
+        if (!Registry.ITEM.containsId(this.getWoodId()) && this.getWoodId() != null)
             throwError(this.getWoodId());
-        if (!Registry.ITEM.containsId(this.getStrippedWoodId()))
+        if (!Registry.ITEM.containsId(this.getStrippedWoodId()) && this.getStrippedWoodId() != null)
             throwError(this.getStrippedWoodId());
-        if (!Registry.ITEM.containsId(this.getPlankId()))
+        if (!Registry.ITEM.containsId(this.getPlankId()) && this.getPlankId() != null)
             throwError(this.getPlankId());
-        if (!Registry.ITEM.containsId(this.getPlankSlabId()))
+        if (!Registry.ITEM.containsId(this.getPlankSlabId()) && this.getPlankSlabId() != null)
             throwError(this.getPlankSlabId());
     }
 

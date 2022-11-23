@@ -16,6 +16,8 @@ import com.dm.earth.cabricality.client.listener.ColorRegistryListener;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.threads.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
+import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
+import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingEntry;
 import com.dm.earth.cabricality.util.ModChecker;
 
 import net.minecraft.block.Block;
@@ -38,6 +40,9 @@ public class CabricalityClient implements ClientModInitializer {
 		FluidRendererRegistry.renderFluidInit();
 		ColorRegistryListener.load();
 		ProfessionDebugHelper.load();
+
+		WoodCuttingEntry.checkAll();
+		OreProcessingEntry.checkAll();
 
 		BlockRenderLayerMap.put(RenderLayer.getCutout(), Reagents.getJarBlocks(true).toArray(new Block[0]));
 		for (MachineBlockEntry entry : MachineBlockEntry.values())

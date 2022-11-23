@@ -16,7 +16,14 @@ repositories {
         }
     }
 
-	maven { url = "https://mvn.devos.one/snapshots/" }
+	maven {
+		url = "https://mvn.devos.one/snapshots/"
+		content {
+            includeGroup "io.github.fabricators_of_create"
+			includeGroup "me.alphamode"
+			includeGroup "io.github.tropheusj"
+        }
+	}
 	maven {
 		url = "https://jitpack.io"
 		content {
@@ -53,6 +60,7 @@ dependencies {
 	modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
 	modImplementation "maven.modrinth:led:${project.led_version}"
 	modImplementation "maven.modrinth:interference:${project.interference_version}"
+    // modCompileOnly "maven.modrinth:hephaestus:${project.minecraft_version}-${project.hephaestus_version}"
 
 	modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
 

@@ -2,10 +2,7 @@ package com.dm.earth.cabricality.content.alchemist.block;
 
 import java.util.Random;
 
-import org.jetbrains.annotations.Nullable;
-
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.client.CabricalityClient;
 import com.dm.earth.cabricality.util.PositionUtil;
 
 import net.minecraft.block.BlockState;
@@ -26,16 +23,6 @@ public class ChaoticCatalystJarBlock extends CatalystJarBlock {
     @Override
     public Identifier getBlockModelId() {
         return Cabricality.id("block/jar/chaos_catalyst");
-    }
-
-    @Override
-    public @Nullable String getContent() {
-        return null;
-    }
-
-    @Override
-    public String getTranslationKey() {
-        return CabricalityClient.genTranslationKey("block", "chaos_catalyst_jar");
     }
 
     @Override

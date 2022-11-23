@@ -18,7 +18,7 @@ import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DataFixerListener;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
+import com.dm.earth.cabricality.tweak.TagTweaks;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
@@ -57,7 +57,7 @@ public class Cabricality implements ModInitializer {
 		CabfBlocks.register();
 		CabfFluids.register();
 		CabfBlockEntityTypes.register();
-		RecipeTweaks.load();
+		TagTweaks.load();
 		DataFixerListener.load();
 		UseEntityListener.load();
 		initClientAssets();
