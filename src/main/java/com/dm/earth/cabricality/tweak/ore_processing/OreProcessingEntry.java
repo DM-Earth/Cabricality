@@ -17,25 +17,33 @@ import net.minecraft.util.registry.Registry;
 
 public enum OreProcessingEntry {
 	IRON(MC.id("iron"), MC.id("iron_ingot"), MC.id("iron_nugget"), MC.id("raw_iron"), CR.id("crushed_iron_ore"),
-			IV.id("iron_dust"), TC.id("molten_iron")),
+			IV.id("iron_dust"), TC.id("molten_iron"), MC.id("iron_ore"), MC.id("deepslate_iron_ore"),
+			AD.id("moon_iron_ore"), AD.id("mars_iron_ore"), AD.id("mercury_iron_ore"), AD.id("glacio_iron_ore")),
 	GOLD(MC.id("gold"), MC.id("gold_ingot"), MC.id("gold_nugget"), MC.id("raw_gold"), CR.id("crushed_gold_ore"),
-			IV.id("gold_dust"), TC.id("molten_gold")),
-	COPPER(MC.id("copper"), MC.id("copper_ingot"), CR.id("copper_nugget"), MC.id("raw_copper"), CR.id("crushed_copper_ore"),
-			IV.id("copper_dust"), TC.id("molten_copper")),
+			IV.id("gold_dust"), TC.id("molten_gold"), MC.id("gold_ore"), MC.id("deepslate_gold_ore"),
+			AD.id("venus_gold_ore")),
+	COPPER(MC.id("copper"), MC.id("copper_ingot"), CR.id("copper_nugget"), MC.id("raw_copper"),
+			CR.id("crushed_copper_ore"),
+			IV.id("copper_dust"), TC.id("molten_copper"), MC.id("copper_ore"), MC.id("deepslate_copper_ore"),
+			AD.id("glacio_copper_ore")),
 	ZINC(CR.id("zinc"), CR.id("zinc_ingot"), CR.id("zinc_nugget"), CR.id("raw_zinc"), CR.id("crushed_zinc_ore"),
-			CABF.id("zinc_dust"), TC.id("molten_zinc")),
+			CABF.id("zinc_dust"), TC.id("molten_zinc"), CR.id("zinc_ore"), CR.id("deepslate_zinc_ore")),
 	TIN(IV.id("tin"), IV.id("tin_ingot"), IV.id("tin_nugget"), IV.id("raw_tin"), CR.id("crushed_tin_ore"),
-			IV.id("tin_dust"), TC.id("molten_tin")),
+			IV.id("tin_dust"), TC.id("molten_tin"), IV.id("tin_ore"), IV.id("deepslate_tin_ore")),
 	LEAD(IV.id("lead"), IV.id("lead_ingot"), IV.id("lead_nugget"), IV.id("raw_lead"), CR.id("crushed_lead_ore"),
-			IV.id("lead_dust"), TC.id("molten_lead")),
+			IV.id("lead_dust"), TC.id("molten_lead"), IV.id("lead_ore"), IV.id("deepslate_lead_ore")),
 	DESH(AD.id("desh"), AD.id("desh_ingot"), AD.id("desh_nugget"), AD.id("raw_desh"), CABF.id("crushed_desh_ore"),
-			CABF.id("desh_dust"), CABF.id("molten_desh")),
-	OSTRUM(AD.id("ostrum"), AD.id("ostrum_ingot"), AD.id("ostrum_nugget"), AD.id("raw_ostrum"), CABF.id("crushed_ostrum_ore"),
-			CABF.id("ostrum_dust"), CABF.id("molten_ostrum")),
-	CALORITE(AD.id("calorite"), AD.id("calorite_ingot"), AD.id("calorite_nugget"), AD.id("raw_calorite"), CABF.id("crushed_calorite_ore"),
-			CABF.id("calorite_dust"), CABF.id("molten_calorite")),
-	COBALT(TC.id("cobalt"), TC.id("cobalt_ingot"), TC.id("cobalt_nugget"), TC.id("raw_cobalt"), CABF.id("crushed_cobalt_ore"),
-			CABF.id("cobalt_dust"), TC.id("molten_cobalt"));
+			CABF.id("desh_dust"), CABF.id("molten_desh"), AD.id("moon_desh_ore"), AD.id("deepslate_desh_ore")),
+	OSTRUM(AD.id("ostrum"), AD.id("ostrum_ingot"), AD.id("ostrum_nugget"), AD.id("raw_ostrum"),
+			CABF.id("crushed_ostrum_ore"),
+			CABF.id("ostrum_dust"), CABF.id("molten_ostrum"), AD.id("mars_ostrum_ore"), AD.id("deepslate_ostrum_ore")),
+	CALORITE(AD.id("calorite"), AD.id("calorite_ingot"), AD.id("calorite_nugget"), AD.id("raw_calorite"),
+			CABF.id("crushed_calorite_ore"),
+			CABF.id("calorite_dust"), CABF.id("molten_calorite"), AD.id("venus_calorite_ore"),
+			AD.id("deepslate_calorite_ore")),
+	COBALT(TC.id("cobalt"), TC.id("cobalt_ingot"), TC.id("cobalt_nugget"), TC.id("raw_cobalt"),
+			CABF.id("crushed_cobalt_ore"),
+			CABF.id("cobalt_dust"), TC.id("molten_cobalt"), TC.id("cobalt_ore"));
 
 	private final Identifier id;
 	private final Identifier ingot;
@@ -146,6 +154,9 @@ public enum OreProcessingEntry {
 			throwError(this.getDust());
 		if (!Registry.FLUID.containsId(this.getMoltenMetal()))
 			throwError(this.getMoltenMetal());
+		for (Identifier ore : this.ores)
+			if (!Registry.ITEM.containsId(ore))
+				throwError(ore);
 	}
 
 	public int getHashCode() {
