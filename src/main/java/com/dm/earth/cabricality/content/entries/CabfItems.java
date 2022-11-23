@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.content.entries;
 
+import java.util.List;
+
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 import com.dm.earth.cabricality.Cabricality;
@@ -12,10 +14,12 @@ import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.item.ProfessionCardItem;
 import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
 import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
+import com.simibubi.create.AllTags.AllItemTags;
 
 import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.tags.JTag;
 import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class CabfItems {
@@ -29,6 +33,14 @@ public class CabfItems {
 			ItemModelGenerator.generated("item/blizz_cube"));
 	public static final Item BLIZZ_POWDER = registerItemModeled("blizz_powder", new Item(Properties.DEFAULT),
 			ItemModelGenerator.generated("item/blizz_powder"));
+	public static final Item ZINC_SHEET = registerItemModeled("zinc_sheet", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/zinc_sheet"));
+	public static final Item STONE_ROD = registerItemModeled("stone_rod", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/stone_rod"));
+
+	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
+	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
+			"emerald", "nickel");
 
 	public static void register() {
 		// Trading Cards
@@ -55,14 +67,36 @@ public class CabfItems {
 		}
 
 		// Saws
-		JTag sawTags = new JTag();
+		JTag sawsTag = new JTag();
 		for (ToolMaterialIndex materialIndex : ToolMaterialIndex.values()) {
 			String itemId = materialIndex.getName() + "_saw";
 			registerItemModeled(itemId, new SawItem(materialIndex.getMaterial(), Properties.DEFAULT_SINGLE),
 					ItemModelGenerator.generated("item/tool/saw", itemId));
-			sawTags.add(Cabricality.id(itemId));
+			sawsTag.add(Cabricality.id(itemId));
 		}
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.SAWS.id().getPath()), sawTags);
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.SAWS.id().getPath()), sawsTag);
+
+		// Dusts
+		for (String variant : DUSTS) {
+			JTag tagT = new JTag();
+			String itemId = variant + "_dust";
+			registerItemModeled(itemId, new Item(Properties.DEFAULT),
+					ItemModelGenerator.generated("item/dust", itemId));
+			tagT.add(Cabricality.id(itemId));
+			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + variant + "_dusts"), tagT);
+			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/dusts/" + variant), tagT);
+		}
+
+		// Crushed Ores
+		JTag crushedOresTag = new JTag();
+		for (String variant : CRUSHED_ORES) {
+			String itemId = "crushed_" + variant + "_ore";
+			registerItemModeled(itemId, new Item(Properties.DEFAULT),
+					ItemModelGenerator.generated("item/crushed_ore", itemId));
+			crushedOresTag.add(Cabricality.id(itemId));
+		}
+		Cabricality.SERVER_RESOURCES.addTag(
+				new Identifier("create", "items/" + AllItemTags.CRUSHED_ORES.tag.id().getPath()), crushedOresTag);
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {

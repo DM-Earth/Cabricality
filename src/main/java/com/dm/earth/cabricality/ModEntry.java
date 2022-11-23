@@ -13,7 +13,8 @@ public enum ModEntry {
 	TC("tconstruct"),
 	MLM("malum"),
 	AE2("ae2"),
-	TRE("terrestria");
+	TRE("terrestria"),
+	AD("ad_astra");
 
 	final String modId;
 

@@ -3,16 +3,21 @@ package com.dm.earth.cabricality.tweak.ore_processing;
 import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.tweak.RecipeTweaks;
+
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.recipe.*;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
@@ -21,30 +26,28 @@ import com.simibubi.create.content.contraptions.components.millstone.MillingReci
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import com.simibubi.create.content.contraptions.processing.ProcessingRecipe;
 
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.AbstractCookingRecipe;
-import net.minecraft.recipe.BlastingRecipe;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.recipe.SmeltingRecipe;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @SuppressWarnings("UnstableApiUsage")
 public class OreProcessingTweaks {
 	public static void register(AddRecipesCallback.RecipeHandler handler) {
 		for (OreProcessingEntry entry : OreProcessingEntry.values()) {
-			// Crushed -> Dust
+			// Crushed -> Nugget
 			handler.register(createId(entry, entry.getCrushedOre(), "smelting"),
 					id -> new SmeltingRecipe(id, "",
 							Ingredient.ofItems(entry.getCrushedOreItem()),
-							new ItemStack(entry.getDustItem(), 3), 0.25F, 100));
+							new ItemStack(entry.getNuggetItem(), 3), 0.1F, 100));
 			handler.register(createId(entry, entry.getCrushedOre(), "blasting"),
 					id -> new BlastingRecipe(id, "",
 							Ingredient.ofItems(entry.getCrushedOreItem()),
-							new ItemStack(entry.getDustItem(), 3), 0.25F, 50));
+							new ItemStack(entry.getNuggetItem(), 3), 0.1F, 50));
+			// Crushed -> Dust
 			handler.register(createId(entry, entry.getCrushedOre(), "milling"),
 					id -> new MillingRecipe(new FreePRP(id)
 							.setIngredient(Ingredient.ofItems(entry.getCrushedOreItem()))
@@ -54,9 +57,9 @@ public class OreProcessingTweaks {
 			handler.register(createId(entry, entry.getCrushedOre(), "crushing"),
 					id -> new CrushingRecipe(
 							new FreePRP(id).setIngredient(
-									Ingredient.ofItems(entry.getCrushedOreItem()))
+											Ingredient.ofItems(entry.getCrushedOreItem()))
 									.setResult(new ProcessingOutput(new ItemStack(
-											entry.getDustItem(), 3), 1),
+													entry.getDustItem(), 3), 1),
 											new ProcessingOutput(
 													new ItemStack(entry
 															.getDustItem(),
@@ -82,6 +85,11 @@ public class OreProcessingTweaks {
 					id -> RecipeManager.deserialize(id,
 							generateMelting(entry.getDust(), entry.getMoltenMetal(), FluidConstants.NUGGET * 3,
 									getByProduct(entry).getMoltenMetal(), FluidConstants.NUGGET / 4)));
+			// Ingot -> Dust
+			handler.register(createId(entry, entry.getIngot(), "crushing"),
+					id -> new CrushingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(entry.getIngotItem()))
+							.setResult(new ProcessingOutput(new ItemStack(entry.getDustItem()), 1))
+							.setProcessingTime(400)));
 		}
 	}
 
@@ -90,8 +98,8 @@ public class OreProcessingTweaks {
 			handler.removeIf(Registry.RECIPE_TYPE.get(new Identifier("tconstruct", "melting")),
 					p -> RecipeTweaks.notCabf(p)
 							&& p.getIngredients().stream()
-									.anyMatch(i -> shouldRemoveIngredient(i,
-											entry)));
+							.anyMatch(i -> shouldRemoveIngredient(i,
+									entry)));
 			handler.removeIf(p -> p instanceof AbstractCookingRecipe cooking
 					&& cooking.getIngredients().stream().anyMatch(i -> shouldRemoveIngredient(i, entry))
 					&& cooking.getOutput().getItem() == entry.getIngotItem()
@@ -102,29 +110,24 @@ public class OreProcessingTweaks {
 		}
 	}
 
-	private static boolean shouldRemoveIngredient(Ingredient ingredient, OreProcessingEntry entry) {
-		return Arrays.stream(ingredient.getMatchingStacks())
-				.anyMatch(stack -> {
-					Item item = stack
-							.getItem();
-					if (item == entry
-							.getDustItem())
-						return true;
-					if (entry.isTargetOre(
-							item))
-						return true;
-					if (item == entry
-							.getCrushedOreItem())
-						return true;
-					if (item == entry
-							.getRawOreItem())
-						return true;
-					return false;
-				});
+	private static boolean shouldRemoveIngredient(Ingredient ingredient, @NotNull OreProcessingEntry entry) {
+		ArrayList<Item> matchItems = new ArrayList<>();
+		matchItems.addAll(List.of(entry.getDustItem(), entry.getCrushedOreItem(), entry.getRawOreItem()));
+		matchItems.addAll(entry.getOreItems());
+		AtomicBoolean returnValue = new AtomicBoolean(false);
+		for (Item item : matchItems) {
+			if (Arrays.stream(ingredient.entries).allMatch(entryT -> {
+				if (entryT instanceof Ingredient.StackEntry stackEntry && stackEntry.stack.getItem() == item)
+					returnValue.set(true);
+				if (entryT instanceof Ingredient.TagEntry tagEntry && Registry.ITEM.getTag(tagEntry.tag).stream().anyMatch(set -> set.stream().anyMatch(itemHolder -> itemHolder.value() == item)))
+					returnValue.set(true);
+				return returnValue.get();
+			})) return true;
+		}
+		return false;
 	}
 
-	private static JsonObject generateMelting(Identifier input, Identifier fluid, long amount, Identifier byProduct,
-			long byAmount) {
+	private static JsonObject generateMelting(Identifier input, Identifier fluid, long amount, Identifier byProduct, long byAmount) {
 		JsonObject json = new JsonObject();
 		json.addProperty("type", (new Identifier("tconstruct", "melting")).toString());
 		json.add("ingredient", itemEntry(input));
