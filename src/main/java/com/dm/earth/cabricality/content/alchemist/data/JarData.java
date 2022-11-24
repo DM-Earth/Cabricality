@@ -10,8 +10,8 @@ import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
-import com.dm.earth.cabricality.content.alchemist.substrate.Catalyst;
-import com.dm.earth.cabricality.content.alchemist.substrate.Reagent;
+import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.util.RandomMathUtil;
 import com.google.gson.JsonArray;

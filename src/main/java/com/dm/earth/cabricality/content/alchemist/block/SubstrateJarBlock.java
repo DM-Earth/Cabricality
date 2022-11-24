@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import com.dm.earth.cabricality.client.CabricalityClient;
-import com.dm.earth.cabricality.content.alchemist.substrate.Substrate;
+import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.core.ISettingableBlockItem;
 

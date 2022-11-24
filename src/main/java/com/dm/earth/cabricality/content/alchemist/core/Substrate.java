@@ -1,6 +1,7 @@
-package com.dm.earth.cabricality.content.alchemist.substrate;
+package com.dm.earth.cabricality.content.alchemist.core;
 
 import com.dm.earth.cabricality.core.IHashStringable;
+
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;

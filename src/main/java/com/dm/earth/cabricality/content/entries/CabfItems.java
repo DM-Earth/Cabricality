@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.content.entries;
 
+import static com.dm.earth.cabricality.ModEntry.C;
+
 import java.util.List;
 
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
@@ -74,7 +76,7 @@ public class CabfItems {
 					ItemModelGenerator.generated("item/tool/saw", itemId));
 			sawsTag.add(Cabricality.id(itemId));
 		}
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.SAWS.id().getPath()), sawsTag);
+		Cabricality.SERVER_RESOURCES.addTag(C.id("items/" + CabfItemTags.SAWS.id().getPath()), sawsTag);
 
 		// Dusts
 		for (String variant : DUSTS) {

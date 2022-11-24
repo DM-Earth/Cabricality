@@ -8,6 +8,8 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IV;
 import static com.dm.earth.cabricality.ModEntry.MC;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
@@ -54,12 +56,13 @@ public class Andesite implements TechThread {
 		return "andesite";
 	}
 
-	private MechAndSmithCraft.Entry entry(Identifier output, int count, @Nullable Identifier other) {
+	@Contract("_, _, _ -> new")
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
 		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("andesite_machine"), output, count, other);
 	}
 
 	@Override
-	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.register(recipeId("smelting", "algal_blend"), id -> VanillaRecipeBuilders.smeltingRecipe(id, "",
 				Ingredient.ofItems(AP.asItem("algal_blend")), AP.asItem("algal_brick").getDefaultStack(), 0, 120));
 
@@ -111,7 +114,7 @@ public class Andesite implements TechThread {
 	}
 
 	@Override
-	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
+	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.remove(CR.id("crafting/materials/andesite_alloy"));
 		handler.remove(CR.id("crafting/materials/andesite_alloy_from_zinc"));
 		handler.remove(CR.id("mixing/andesite_alloy"));

@@ -4,7 +4,7 @@ import org.jetbrains.annotations.Nullable;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
-import com.dm.earth.cabricality.content.alchemist.substrate.Reagent;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.dm.earth.cabricality.util.VoxelShapeUtil;

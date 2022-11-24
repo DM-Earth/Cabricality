@@ -6,7 +6,7 @@ import static com.dm.earth.cabricality.ModEntry.IV;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.MLM;
 import static com.dm.earth.cabricality.ModEntry.PMD;
-import static com.dm.earth.cabricality.content.alchemist.substrate.Reagent.of;
+import static com.dm.earth.cabricality.content.alchemist.core.Reagent.of;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,8 +23,8 @@ import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
-import com.dm.earth.cabricality.content.alchemist.substrate.Catalyst;
-import com.dm.earth.cabricality.content.alchemist.substrate.Reagent;
+import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.Registry;

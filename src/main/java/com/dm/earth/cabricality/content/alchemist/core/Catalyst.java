@@ -1,6 +1,7 @@
-package com.dm.earth.cabricality.content.alchemist.substrate;
+package com.dm.earth.cabricality.content.alchemist.core;
 
 import com.dm.earth.cabricality.Cabricality;
+
 import net.minecraft.util.Identifier;
 
 public class Catalyst extends Substrate {

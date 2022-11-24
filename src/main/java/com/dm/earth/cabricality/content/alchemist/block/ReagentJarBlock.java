@@ -6,8 +6,8 @@ import org.jetbrains.annotations.NotNull;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
-import com.dm.earth.cabricality.content.alchemist.substrate.Reagent;
-import com.dm.earth.cabricality.content.alchemist.substrate.Substrate;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
+import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 
 import net.minecraft.block.BlockState;

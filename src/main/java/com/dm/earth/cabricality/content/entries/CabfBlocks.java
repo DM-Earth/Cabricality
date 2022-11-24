@@ -8,7 +8,7 @@ import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ChaoticCatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
-import com.dm.earth.cabricality.content.alchemist.substrate.Reagent;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.machine.extractor.ExtractorMachineBlock;
 import com.dm.earth.cabricality.core.ISettingableBlockItem;

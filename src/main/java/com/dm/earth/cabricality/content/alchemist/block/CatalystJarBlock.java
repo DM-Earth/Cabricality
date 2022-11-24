@@ -1,10 +1,12 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
+import org.jetbrains.annotations.NotNull;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
-import com.dm.earth.cabricality.content.alchemist.substrate.Substrate;
+import com.dm.earth.cabricality.content.alchemist.core.Substrate;
+
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.NotNull;
 
 public class CatalystJarBlock extends SubstrateJarBlock {
 	public CatalystJarBlock(Settings settings) {

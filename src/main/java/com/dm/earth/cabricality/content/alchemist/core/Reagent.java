@@ -1,12 +1,14 @@
-package com.dm.earth.cabricality.content.alchemist.substrate;
+package com.dm.earth.cabricality.content.alchemist.core;
+
+import java.util.Objects;
+
+import org.jetbrains.annotations.NotNull;
 
 import com.dm.earth.cabricality.Cabricality;
+
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 
 public class Reagent extends Substrate {
 	private final Identifier item;
