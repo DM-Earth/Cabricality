@@ -20,9 +20,9 @@ import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
-import com.simibubi.create.content.contraptions.components.saw.CuttingRecipe;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 
@@ -94,6 +94,13 @@ public class Andesite implements TechThread {
 								Ingredient.ofItems(Items.ANDESITE))
 						.setResult(new ProcessingOutput(new ItemStack(CR.asItem("andesite_alloy")), 2))));
 
+		handler.register(recipeId("crafting", "kinetic_mechanism"), id -> VanillaRecipeBuilders
+				.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack()).ingredient(CR.asItem("cogwheel"))
+				.ingredient(CR.asItem("andesite_alloy")).ingredient(ItemTags.LOGS).build(id, ""));
+
+		handler.register(recipeId("crafting", "andesite_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
+				CR.asItem("andesite_casing"), CABF.asItem("kinetic_mechanism"), CABF.asItem("andesite_machine"), 1));
+
 		handler.register(recipeId("sequenced_assembly", "kinetic_mechanism"),
 				id -> (new SequencedAssemblyRecipeBuilder(id)).require(ItemTags.WOODEN_SLABS)
 						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism")).loops(1)
@@ -101,15 +108,6 @@ public class Andesite implements TechThread {
 						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
 						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
 						.addStep(DeployerApplicationRecipe::new, r -> r.require(CabfItemTags.SAWS))
-						.build());
-
-		handler.register(recipeId("sequenced_assembly", "kinetic_mechanism_2"),
-				id -> (new SequencedAssemblyRecipeBuilder(id)).require(ItemTags.WOODEN_SLABS)
-						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism")).loops(1)
-						.addOutput(CABF.asItem("kinetic_mechanism"), 1)
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(CuttingRecipe::new, r -> r.duration(20))
 						.build());
 	}
 

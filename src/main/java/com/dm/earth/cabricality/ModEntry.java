@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality;
 
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -31,5 +32,9 @@ public enum ModEntry {
 
 	public Item asItem(String name) {
 		return Registry.ITEM.get(id(name));
+	}
+
+	public Fluid asFluid(String name) {
+		return Registry.FLUID.get(id(name));
 	}
 }

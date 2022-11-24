@@ -6,8 +6,6 @@
   "mixins": [
     "BootstrapMixin",
     "DiodeLampBlockAccessor",
-    "FluidDrainingBehaviourMixin",
-    "FluidManipulationBehaviourAccessor",
     "RecipeManagerMixin",
     "RegistryMixin",
     "TagKeyMixin",
