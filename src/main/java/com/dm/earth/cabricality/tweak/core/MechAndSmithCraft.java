@@ -54,7 +54,7 @@ public class MechAndSmithCraft {
 	}
 
 	private static Identifier createId(Entry entry, String type) {
-		return Cabricality.id("threads/" + entry.level() + "/" + type + "/" + entry.output().getPath());
+		return Cabricality.id("threads/" + entry.level() + "/tweak/" + type + "/" + entry.output().getPath());
 	}
 
 	private static MechanicalCraftingRecipe mechanicalFromShaped(ShapedRecipe recipe, boolean acceptMirrored) {

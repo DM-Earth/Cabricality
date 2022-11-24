@@ -14,7 +14,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.listener.ColorRegistryListener;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
-import com.dm.earth.cabricality.content.threads.blocks.MachineBlockEntry;
+import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingEntry;

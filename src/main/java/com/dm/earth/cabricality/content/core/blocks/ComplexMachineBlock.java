@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.threads.blocks;
+package com.dm.earth.cabricality.content.core.blocks;
 
 public class ComplexMachineBlock extends AbstractMachineBlock {
 
@@ -15,5 +15,5 @@ public class ComplexMachineBlock extends AbstractMachineBlock {
     protected boolean isFull() {
         return false;
     }
-    
+
 }

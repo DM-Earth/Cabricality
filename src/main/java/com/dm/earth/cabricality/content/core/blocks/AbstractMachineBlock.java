@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.threads.blocks;
+package com.dm.earth.cabricality.content.core.blocks;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.resource.ResourcedBlock;

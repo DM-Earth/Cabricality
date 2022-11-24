@@ -1,9 +1,12 @@
 package com.dm.earth.cabricality;
 
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public enum ModEntry {
 	MC("minecraft"),
+	C("c"),
 	CR("create"),
 	CABF(Cabricality.ID),
 	PMD("promenade"),
@@ -24,5 +27,9 @@ public enum ModEntry {
 
 	public Identifier id(String path) {
 		return new Identifier(this.modId, path);
+	}
+
+	public Item asItem(String name) {
+		return Registry.ITEM.get(id(name));
 	}
 }

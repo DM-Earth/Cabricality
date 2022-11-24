@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.threads.items;
+package com.dm.earth.cabricality.content.core.items;
 
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
@@ -9,5 +9,5 @@ public class SawItem extends ToolItem implements Vanishable {
     public SawItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
-    
+
 }

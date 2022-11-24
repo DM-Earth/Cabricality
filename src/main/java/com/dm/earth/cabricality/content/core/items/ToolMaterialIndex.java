@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.threads.items;
+package com.dm.earth.cabricality.content.core.items;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;

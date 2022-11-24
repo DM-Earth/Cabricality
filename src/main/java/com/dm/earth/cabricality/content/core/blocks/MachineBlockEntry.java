@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.threads.blocks;
+package com.dm.earth.cabricality.content.core.blocks;
 
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
@@ -16,7 +16,7 @@ public enum MachineBlockEntry {
     ZINC("zinc", RenderLayer.getCutout(), new SolidMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN))),
     OBSIDIAN("obsidian", RenderLayer.getCutout(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BLACK))),
     ENDERIUM("enderium", RenderLayer.getCutout(), new CutoffMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA)));
-    
+
     private final String name;
     private final RenderLayer layer;
     private final AbstractMachineBlock block;

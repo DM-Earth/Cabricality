@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.threads.items;
+package com.dm.earth.cabricality.content.core.items;
 
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
