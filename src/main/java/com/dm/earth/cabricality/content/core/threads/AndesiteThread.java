@@ -32,7 +32,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
-public class Andesite implements TechThread {
+public class AndesiteThread implements TechThread {
 	@Override
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_press"), 1, MC.id("iron_block")));
@@ -103,10 +103,12 @@ public class Andesite implements TechThread {
 
 		handler.register(recipeId("sequenced_assembly", "kinetic_mechanism"),
 				id -> (new SequencedAssemblyRecipeBuilder(id)).require(ItemTags.WOODEN_SLABS)
-						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism")).loops(1)
-						.addOutput(CABF.asItem("kinetic_mechanism"), 1)
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
+						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism"))
+						.addOutput(CABF.asItem("kinetic_mechanism"), 1.0F).loops(1)
+						.addStep(DeployerApplicationRecipe::new,
+								r -> r.require(Ingredient.ofItems(CR.asItem("andesite_alloy"))))
+						.addStep(DeployerApplicationRecipe::new,
+								r -> r.require(Ingredient.ofItems(CR.asItem("andesite_alloy"))))
 						.addStep(CuttingRecipe::new, r -> r)
 						.build());
 	}
