@@ -9,12 +9,11 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.simibubi.create.content.contraptions.components.crafter.MechanicalCraftingRecipe;
+import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.util.Identifier;
@@ -39,7 +38,7 @@ public class MechAndSmithCraft {
 						id -> new SmithingRecipe(id, Ingredient.ofItems(entry.getInputItem()),
 								Ingredient.ofItems(entry.getOtherItem()), entry.getOutputStack()));
 				handler.register(createId(entry, "mechanical_crafting"),
-						id -> mechanicalFromShaped(VanillaRecipeBuilders.shapedRecipe("AB")
+						id -> RecipeBuilderUtil.mechanicalFromShaped(VanillaRecipeBuilders.shapedRecipe("AB")
 								.ingredient('A', Ingredient.ofItems(entry.getInputItem()))
 								.ingredient('B', Ingredient.ofItems(entry.getOtherItem()))
 								.output(entry.getOutputStack()).build(id, ""), true));
@@ -55,11 +54,6 @@ public class MechAndSmithCraft {
 
 	private static Identifier createId(Entry entry, String type) {
 		return Cabricality.id("threads/" + entry.level() + "/tweak/" + type + "/" + entry.output().getPath());
-	}
-
-	private static MechanicalCraftingRecipe mechanicalFromShaped(ShapedRecipe recipe, boolean acceptMirrored) {
-		return new MechanicalCraftingRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
-				recipe.getIngredients(), recipe.getOutput(), acceptMirrored);
 	}
 
 	public static Entry entry(String level, Identifier input, Identifier output, int count,

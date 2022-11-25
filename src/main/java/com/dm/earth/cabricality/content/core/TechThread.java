@@ -8,11 +8,12 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.threads.Andesite;
+import com.dm.earth.cabricality.content.core.threads.Brass;
 
 import net.minecraft.util.Identifier;
 
 public interface TechThread {
-	public static final List<TechThread> THREADS = List.of(new Andesite());
+	public static final List<TechThread> THREADS = List.of(new Andesite(), new Brass());
 
 	default void addRecipes(AddRecipesCallback.RecipeHandler handler) {
 	}

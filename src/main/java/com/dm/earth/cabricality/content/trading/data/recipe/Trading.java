@@ -31,7 +31,7 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 			handler.register(Cabricality.id("crafting/dupe/card/profession_card/" + profession.hashString()),
 					id -> genDupeRecipe(professionCard, id));
 			for (TradingEntry entry : profession.entries()) {
-				CabfDebugger.debug("Registering recipe handler: " + entry.hashString());
+				// CabfDebugger.debug("Registering recipe handler: " + entry.hashString());
 				handler.register(Cabricality.id("trading/buy/" + profession.hashString() + "/" + entry.hashString()),
 						id -> RecipeManager.deserialize(id, JTradingRecipeGenerator.generateBuy(entry)));
 				handler.register(Cabricality.id("trading/sell/" + profession.hashString() + "/" + entry.hashString()),

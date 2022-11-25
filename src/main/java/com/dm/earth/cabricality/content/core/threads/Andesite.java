@@ -16,13 +16,13 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.content.core.TechThread;
-import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
+import com.simibubi.create.content.contraptions.components.saw.CuttingRecipe;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 
@@ -107,7 +107,7 @@ public class Andesite implements TechThread {
 						.addOutput(CABF.asItem("kinetic_mechanism"), 1)
 						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
 						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CabfItemTags.SAWS))
+						.addStep(CuttingRecipe::new, r -> r)
 						.build());
 	}
 
