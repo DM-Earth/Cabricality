@@ -1,0 +1,62 @@
+package com.dm.earth.cabricality.content.core.threads;
+
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.CX;
+import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.KB;
+import static com.dm.earth.cabricality.ModEntry.MC;
+
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
+import com.dm.earth.cabricality.content.core.TechThread;
+import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
+
+public class CopperThread implements TechThread {
+
+	@Override
+	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
+		handler.remove(CR.id("crafting/kinetics/belt_connector"));
+	}
+
+	@Override
+	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
+		handler.register(recipeId("crafting", "belt_connector"),
+				id -> VanillaRecipeBuilders.shapedRecipe("XXX", "XXX").ingredient('X', CABF.asItem("cured_rubber"))
+						.output(new ItemStack(CR.asItem("belt_connector"), 3)).build(id, ""));
+	}
+
+	@Override
+	public void load() {
+		MechAndSmithCraft.addEntry(entry(CR.id("copper_backtank"), 1, MC.id("copper_block")));
+		MechAndSmithCraft.addEntry(entry(CR.id("portable_fluid_interface"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("spout"), 1, KB.id("fluid_hopper")));
+		MechAndSmithCraft.addEntry(entry(IV.id("tier_upgrade_mk2"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(CR.id("hose_pulley"), 1, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("item_drain"), 1, MC.id("iron_bars")));
+		MechAndSmithCraft.addEntry(entry(IV.id("heat_generator_mk4"), 1, IV.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(IV.id("fisher_mk2"), 1, MC.id("bucket")));
+		MechAndSmithCraft.addEntry(entry(CR.id("steam_engine"), 2, MC.id("piston")));
+		MechAndSmithCraft.addEntry(entry(CR.id("smart_fluid_pipe"), 2, CR.id("electron_tube")));
+		MechAndSmithCraft.addEntry(entry(CX.id("fluid_trash_can"), 2, KB.id("trash_can")));
+	}
+
+	@Override
+	public String getLevel() {
+		return "copper";
+	}
+
+	@Contract("_, _, _ -> new")
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("andesite_machine"), output, count, other);
+	}
+
+}

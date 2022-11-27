@@ -39,6 +39,10 @@ public class CabfItems {
 			ItemModelGenerator.generated("item/zinc_sheet"));
 	public static final Item STONE_ROD = registerItemModeled("stone_rod", new Item(Properties.DEFAULT),
 			ItemModelGenerator.generated("item/stone_rod"));
+	public static final Item RUBBER = registerItemModeled("rubber", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/rubber"));
+	public static final Item CURED_RUBBER = registerItemModeled("cured_rubber", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/cured_rubber"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",

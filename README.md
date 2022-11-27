@@ -127,17 +127,9 @@ Clone this repository and run the commands below:
 
 **Windows:**
 
-```sh
+```bat
 packwiz modrinth export
 ```
-
-**If you want to export a CurseForge format pack, you can use command below[^curseforge]:**
-
-```sh
-packwiz curseforge export
-```
-
-[^curseforge]: It's not recommended because all mods were imported from Modrinth.
 
 > *For more information, see [packwiz wiki.](https://packwiz.infra.link)*
 

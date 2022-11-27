@@ -105,10 +105,8 @@ public class AndesiteThread implements TechThread {
 				id -> (new SequencedAssemblyRecipeBuilder(id)).require(ItemTags.WOODEN_SLABS)
 						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism"))
 						.addOutput(CABF.asItem("kinetic_mechanism"), 1.0F).loops(1)
-						.addStep(DeployerApplicationRecipe::new,
-								r -> r.require(Ingredient.ofItems(CR.asItem("andesite_alloy"))))
-						.addStep(DeployerApplicationRecipe::new,
-								r -> r.require(Ingredient.ofItems(CR.asItem("andesite_alloy"))))
+						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
+						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
 						.addStep(CuttingRecipe::new, r -> r)
 						.build());
 	}

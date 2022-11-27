@@ -91,12 +91,10 @@ public class BrassThread implements TechThread {
 				id -> (new SequencedAssemblyRecipeBuilder(id)).require(CABF.asItem("kinetic_mechanism")).loops(1)
 						.transitionTo(CR.asItem("incomplete_precision_mechanism"))
 						.addOutput(CR.asItem("precision_mechanism"), 1.0F)
+						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("electron_tube")))
+						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("electron_tube")))
 						.addStep(DeployerApplicationRecipe::new,
-								r -> r.require(Ingredient.ofItems(CR.asItem("electron_tube"))))
-						.addStep(DeployerApplicationRecipe::new,
-								r -> r.require(Ingredient.ofItems(CR.asItem("electron_tube"))))
-						.addStep(DeployerApplicationRecipe::new,
-								r -> r.require(Ingredient.ofItems(IV.asItem("screwdriver"))).toolNotConsumed())
+								r -> r.require(IV.asItem("screwdriver")).toolNotConsumed())
 						.build());
 	}
 

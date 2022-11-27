@@ -18,7 +18,9 @@ public enum ModEntry {
 	MLM("malum"),
 	AE2("ae2"),
 	TRE("terrestria"),
-	AD("ad_astra");
+	AD("ad_astra"),
+	KB("kibe"),
+	CX("coxinhautilities");
 
 	final String modId;
 
