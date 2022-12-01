@@ -10,11 +10,13 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.threads.AndesiteThread;
 import com.dm.earth.cabricality.content.core.threads.BrassThread;
 import com.dm.earth.cabricality.content.core.threads.CopperThread;
+import com.dm.earth.cabricality.content.core.threads.ZincThread;
 
 import net.minecraft.util.Identifier;
 
 public interface TechThread {
-	public static final List<TechThread> THREADS = List.of(new AndesiteThread(), new BrassThread(), new CopperThread());
+	public static final List<TechThread> THREADS = List.of(new AndesiteThread(), new BrassThread(), new CopperThread(),
+			new ZincThread());
 
 	default void addRecipes(AddRecipesCallback.RecipeHandler handler) {
 	}

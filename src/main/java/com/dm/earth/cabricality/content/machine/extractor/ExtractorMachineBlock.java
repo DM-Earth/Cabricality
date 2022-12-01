@@ -5,8 +5,8 @@ import org.jetbrains.annotations.Nullable;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.dm.earth.cabricality.util.ItemStackUtil;
-import com.dm.earth.cabricality.util.TransferUtil;
 
+import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.minecraft.block.BlockRenderType;
@@ -51,7 +51,7 @@ public class ExtractorMachineBlock extends BlockWithEntity implements ResourcedB
 	}
 
 	@Override
-	@SuppressWarnings("UnstableApiUsage")
+	@SuppressWarnings({"UnstableApiUsage", "deprecation"})
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 		if (!(hit.getSide() == Direction.UP || hit.getSide() == Direction.DOWN || Registry.ITEM.getId(player.getStackInHand(hand).getItem()).equals(new Identifier("minecraft", "bucket"))))
 			return ActionResult.PASS;
@@ -59,7 +59,7 @@ public class ExtractorMachineBlock extends BlockWithEntity implements ResourcedB
 		assert extractor != null;
 		ItemStack stack = player.getStackInHand(hand);
 		if (extractor.storage.getAmount() >= FluidConstants.BUCKET && extractor.storage.getResource().isOf(CabfFluids.RESIN)) {
-			extractor.storage.extract(FluidVariant.of(CabfFluids.RESIN), FluidConstants.BUCKET, TransferUtil.getTransaction());
+			TransferUtil.extract(extractor.storage, FluidVariant.of(CabfFluids.RESIN), FluidConstants.BUCKET);
 			ItemStackUtil.replaceItemStack(stack, new ItemStack(CabfFluids.RESIN.getBucketItem()), 1, player, hand);
 			return ActionResult.SUCCESS;
 		}

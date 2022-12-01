@@ -16,7 +16,6 @@ import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
-import com.dm.earth.cabricality.listener.DataFixerListener;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.tweak.TagTweaks;
@@ -61,7 +60,6 @@ public class Cabricality implements ModInitializer {
 		TagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
-		DataFixerListener.load();
 		UseEntityListener.load();
 		initClientAssets();
 

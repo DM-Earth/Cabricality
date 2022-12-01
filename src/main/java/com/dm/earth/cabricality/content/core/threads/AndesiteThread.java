@@ -21,11 +21,15 @@ import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
+import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.components.saw.CuttingRecipe;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
+import com.simibubi.create.foundation.fluid.FluidIngredient;
 
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -100,6 +104,11 @@ public class AndesiteThread implements TechThread {
 
 		handler.register(recipeId("crafting", "andesite_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
 				CR.asItem("andesite_casing"), CABF.asItem("kinetic_mechanism"), CABF.asItem("andesite_machine"), 1));
+
+		handler.register(recipeId("compacting", "dripstone_block"),
+				id -> new CompactingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(CR.asItem("limestone")))
+						.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE * 2))
+						.setResult(new ProcessingOutput(MC.asItem("dripstone_block").getDefaultStack(), 1))));
 
 		handler.register(recipeId("sequenced_assembly", "kinetic_mechanism"),
 				id -> (new SequencedAssemblyRecipeBuilder(id)).require(ItemTags.WOODEN_SLABS)

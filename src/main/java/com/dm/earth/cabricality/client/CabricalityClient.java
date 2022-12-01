@@ -14,6 +14,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.listener.ColorRegistryListener;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
+import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
@@ -46,6 +47,9 @@ public class CabricalityClient implements ClientModInitializer {
 
 		BlockRenderLayerMap.put(RenderLayer.getCutout(), Reagents.getJarBlocks(true).toArray(new Block[0]));
 		for (MachineBlockEntry entry : MachineBlockEntry.values())
+			BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock());
+
+		for (CasingBlockEntry entry : CasingBlockEntry.values())
 			BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock());
 
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),

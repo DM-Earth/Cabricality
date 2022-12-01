@@ -29,6 +29,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 
+@SuppressWarnings("UnstableApiUsage")
 public class CopperThread implements TechThread {
 
 	@Override

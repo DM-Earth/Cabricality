@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality;
 
+import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -20,7 +21,8 @@ public enum ModEntry {
 	TRE("terrestria"),
 	AD("ad_astra"),
 	KB("kibe"),
-	CX("coxinhautilities");
+	CX("coxinhautilities"),
+	ED("extended_drawers");;
 
 	final String modId;
 
@@ -38,5 +40,9 @@ public enum ModEntry {
 
 	public Fluid asFluid(String name) {
 		return Registry.FLUID.get(id(name));
+	}
+
+	public Block asBlock(String name) {
+		return Registry.BLOCK.get(id(name));
 	}
 }

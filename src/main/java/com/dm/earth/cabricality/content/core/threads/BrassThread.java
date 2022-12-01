@@ -40,6 +40,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+@SuppressWarnings("UnstableApiUsage")
 public class BrassThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
