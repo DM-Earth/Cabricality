@@ -11,7 +11,7 @@ import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
-import com.dm.earth.cabricality.content.machine.extractor.ExtractorMachineBlock;
+import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlock;
 import com.dm.earth.cabricality.core.ISettingableBlockItem;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.simibubi.create.AllTags.AllBlockTags;

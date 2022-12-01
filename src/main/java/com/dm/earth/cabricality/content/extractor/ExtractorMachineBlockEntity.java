@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.machine.extractor;
+package com.dm.earth.cabricality.content.extractor;
 
 import static com.dm.earth.cabricality.util.CabfDebugger.debug;
 

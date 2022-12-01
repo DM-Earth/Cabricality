@@ -1,7 +1,7 @@
 package com.dm.earth.cabricality.content.entries;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.machine.extractor.ExtractorMachineBlockEntity;
+import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlockEntity;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.registry.Registry;

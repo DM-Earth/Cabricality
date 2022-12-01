@@ -12,6 +12,8 @@
 /.github/*
 *.gitattributes
 *.gitignore
+*.classpath
+*.project
 /gradle/*
 /.gradle/*
 /run/*

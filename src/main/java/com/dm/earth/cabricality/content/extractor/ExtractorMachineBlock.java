@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.machine.extractor;
+package com.dm.earth.cabricality.content.extractor;
 
 import org.jetbrains.annotations.Nullable;
 
