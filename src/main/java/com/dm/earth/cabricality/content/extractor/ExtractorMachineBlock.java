@@ -46,19 +46,23 @@ public class ExtractorMachineBlock extends BlockWithEntity implements ResourcedB
 
 	@Nullable
 	@Override
-	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+	public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state,
+			BlockEntityType<T> type) {
 		return checkType(type, ExtractorMachineBlockEntity.TYPE, ExtractorMachineBlockEntity::tick);
 	}
 
 	@Override
-	@SuppressWarnings({"UnstableApiUsage", "deprecation"})
-	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-		if (!(hit.getSide() == Direction.UP || hit.getSide() == Direction.DOWN || Registry.ITEM.getId(player.getStackInHand(hand).getItem()).equals(new Identifier("minecraft", "bucket"))))
+	@SuppressWarnings({ "UnstableApiUsage", "deprecation" })
+	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
+			BlockHitResult hit) {
+		if (!(hit.getSide() == Direction.UP || hit.getSide() == Direction.DOWN || Registry.ITEM
+				.getId(player.getStackInHand(hand).getItem()).equals(new Identifier("minecraft", "bucket"))))
 			return ActionResult.PASS;
 		ExtractorMachineBlockEntity extractor = (ExtractorMachineBlockEntity) world.getBlockEntity(pos);
 		assert extractor != null;
 		ItemStack stack = player.getStackInHand(hand);
-		if (extractor.storage.getAmount() >= FluidConstants.BUCKET && extractor.storage.getResource().isOf(CabfFluids.RESIN)) {
+		if (extractor.storage.getAmount() >= FluidConstants.BUCKET
+				&& extractor.storage.getResource().isOf(CabfFluids.RESIN)) {
 			TransferUtil.extract(extractor.storage, FluidVariant.of(CabfFluids.RESIN), FluidConstants.BUCKET);
 			ItemStackUtil.replaceItemStack(stack, new ItemStack(CabfFluids.RESIN.getBucketItem()), 1, player, hand);
 			return ActionResult.SUCCESS;

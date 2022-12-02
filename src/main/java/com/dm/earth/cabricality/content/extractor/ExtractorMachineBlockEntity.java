@@ -65,7 +65,7 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 	}
 
 	public static void tick(World world, BlockPos blockPos, BlockState blockState,
-	                        ExtractorMachineBlockEntity blockEntity) {
+			ExtractorMachineBlockEntity blockEntity) {
 		if (!world.isClient()) {
 			ExtractorMachineBlock.ticks++;
 			if (ExtractorMachineBlock.ticks >= 360)
@@ -77,13 +77,14 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 			float f = isNextToTree(world, blockPos, blockState, blockEntity);
 			if (f > 0.0F && blockEntity.storage.amount < blockEntity.storage.getCapacity()) {
 				debug("extractor block entity: inserting to storage");
-				TransferUtil.insert(blockEntity.storage, FluidVariant.of(CabfFluids.RESIN), (long) (f * FluidConstants.INGOT));
+				TransferUtil.insert(blockEntity.storage, FluidVariant.of(CabfFluids.RESIN),
+						(long) (f * FluidConstants.INGOT));
 			}
 		}
 	}
 
 	private static float isNextToTree(World world, BlockPos blockPos, BlockState blockState,
-	                                  ExtractorMachineBlockEntity blockEntity) {
+			ExtractorMachineBlockEntity blockEntity) {
 		assert world != null;
 		for (Direction direction : Arrays.stream(Direction.values())
 				.filter((direction -> direction != Direction.UP && direction != Direction.DOWN))
@@ -153,7 +154,7 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 	private static boolean isVecLog(BlockState blockState) {
 		return blockState.getBlock() instanceof PillarBlock block
 				&& Registry.BLOCK.getTag(BlockTags.LOGS).get().stream()
-				.anyMatch(blockHolder -> blockHolder.value() == block)
+						.anyMatch(blockHolder -> blockHolder.value() == block)
 				&& blockState.get(PillarBlock.AXIS) == Direction.Axis.Y;
 	}
 
