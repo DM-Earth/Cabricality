@@ -40,7 +40,7 @@ public class AndesiteThread implements TechThread {
 	@Override
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_press"), 1, MC.id("iron_block")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_mixer"), 1, IV.id("whisk")));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_mixer"), 1, CR.id("whisk")));
 		MechAndSmithCraft.addEntry(entry(CR.id("encased_fan"), 1, IV.id("fan")));
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_drill"), 1, IV.id("iron_drill_head")));
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_saw"), 1, CABF.id("saw_blade")));

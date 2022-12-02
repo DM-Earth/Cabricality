@@ -13,8 +13,8 @@ public enum MachineBlockEntry {
     ANDESITE("andesite", RenderLayer.getSolid(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BROWN))),
     BRASS("brass", RenderLayer.getTranslucent(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.YELLOW))),
     COPPER("copper", RenderLayer.getCutout(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.ORANGE))),
-    ZINC("zinc", RenderLayer.getCutout(), new SolidMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN))),
-    OBSIDIAN("obsidian", RenderLayer.getCutout(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BLACK))),
+    ZINC("zinc", RenderLayer.getSolid(), new SolidMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN))),
+    OBSIDIAN("obsidian", RenderLayer.getTranslucent(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BLACK))),
     ENDERIUM("enderium", RenderLayer.getCutout(), new CutoffMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA)));
 
     private final String name;
