@@ -1,20 +1,21 @@
 package com.dm.earth.cabricality.content.entries;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidBlockStatesGenerator;
-import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidModelGenerator;
 import com.dm.earth.cabricality.content.fluids.MoltenMetalFluid;
 import com.dm.earth.cabricality.content.fluids.NumberFluid;
 import com.dm.earth.cabricality.content.fluids.PoweredWater;
 import com.dm.earth.cabricality.content.fluids.core.BaseFluid;
 import com.dm.earth.cabricality.content.fluids.core.IFluid;
+import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidBlockStatesGenerator;
+import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidModelGenerator;
+
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CabfFluids {
 	// Fluids
@@ -48,24 +49,27 @@ public class CabfFluids {
 	public static final FlowableFluid MOLTEN_CALORITE = new MoltenMetalFluid.Still("calorite", 0x931d3b);
 	public static final FlowableFluid MOLTEN_CALORITE_FLOWING = new MoltenMetalFluid.Flowing("calorite", 0x931d3b);
 
-
 	private static List<Fluid> getNumberFluids() {
-		List<Integer> colors = List.of(0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8);
+		List<Integer> colors = List.of(0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8,
+				0x2778E8, 0x2748E8);
 		ArrayList<Fluid> numbers = new ArrayList<>();
-		for (int i = 0; i < 10; i++) numbers.add(new NumberFluid(i).color(colors.get(i)));
+		for (int i = 0; i < 10; i++)
+			numbers.add(new NumberFluid(i).color(colors.get(i)));
 		return numbers;
 	}
 
 	public static void register() {
 		registerIFluids(RESIN, REDSTONE, WASTE, SKY_STONE, COKE, FINE_SAND, MATRIX, RAW_LOGIC);
 		registerIFluids(POWERED_WATER, POWERED_WATER_FLOWING);
-		registerIFluids(MOLTEN_DESH, MOLTEN_DESH_FLOWING, MOLTEN_OSTRUM, MOLTEN_OSTRUM_FLOWING, MOLTEN_CALORITE, MOLTEN_CALORITE_FLOWING);
+		registerIFluids(MOLTEN_DESH, MOLTEN_DESH_FLOWING, MOLTEN_OSTRUM, MOLTEN_OSTRUM_FLOWING, MOLTEN_CALORITE,
+				MOLTEN_CALORITE_FLOWING);
 		registerIFluids(NUMBERS);
 	}
 
 	private static void registerFluid(Identifier id, Identifier stillId, Fluid fluid) {
 		Registry.register(Registry.FLUID, id, fluid);
-		if (!fluid.isStill(null)) CabfBlocks.registerFluidBlock(stillId, (FlowableFluid) fluid);
+		if (!fluid.isStill(null))
+			CabfBlocks.registerFluidBlock(stillId, (FlowableFluid) fluid);
 	}
 
 	private static void registerIFluid(Fluid fluid) {
@@ -73,17 +77,23 @@ public class CabfFluids {
 		registerFluid(iFluid.getId(), ((IFluid) iFluid.getTypical()).getId(), fluid);
 		iFluid.registerBucketItem(Registry.ITEM);
 		if (fluid.isStill(null)) {
-			Cabricality.CLIENT_RESOURCES.addBlockState(FluidBlockStatesGenerator.simple(iFluid.getName()), iFluid.getId());
-			Cabricality.CLIENT_RESOURCES.addBlockState(FluidBlockStatesGenerator.simple(iFluid.getName()), Cabricality.id(iFluid.getName() + "_flowing"));
-			Cabricality.CLIENT_RESOURCES.addModel(FluidModelGenerator.simple(iFluid.getTextureName() + "_still", iFluid.getTextureName()), Cabricality.id("block/fluid/" + iFluid.getName()));
+			Cabricality.CLIENT_RESOURCES.addBlockState(FluidBlockStatesGenerator.simple(iFluid.getName()),
+					iFluid.getId());
+			Cabricality.CLIENT_RESOURCES.addBlockState(FluidBlockStatesGenerator.simple(iFluid.getName()),
+					Cabricality.id(iFluid.getName() + "_flowing"));
+			Cabricality.CLIENT_RESOURCES.addModel(
+					FluidModelGenerator.simple(iFluid.getTextureName() + "_still", iFluid.getTextureName()),
+					Cabricality.id("block/fluid/" + iFluid.getName()));
 		}
 	}
 
 	private static void registerIFluids(Fluid... fluids) {
-		for (Fluid fluid : fluids) registerIFluid(fluid);
+		for (Fluid fluid : fluids)
+			registerIFluid(fluid);
 	}
 
 	private static void registerIFluids(List<Fluid> fluids) {
-		for (Fluid fluid : fluids) registerIFluid(fluid);
+		for (Fluid fluid : fluids)
+			registerIFluid(fluid);
 	}
 }

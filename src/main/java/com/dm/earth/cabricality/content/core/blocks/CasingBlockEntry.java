@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public enum CasingBlockEntry {
 	ZINC("zinc", RenderLayer.getSolid(),
 			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN), "zinc")),
-	INVAR("invar", RenderLayer.getCutout(),
+	INVAR("invar", RenderLayer.getSolid(),
 			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.GRAY), "invar")),
 	FLUIX("fluix", RenderLayer.getSolid(),
 			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "fluix")),

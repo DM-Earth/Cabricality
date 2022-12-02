@@ -28,7 +28,8 @@ public class FluidBlockMixin {
 
 	@SuppressWarnings("deprecation")
 	@Inject(method = "receiveNeighborFluids", at = @At("HEAD"), cancellable = true)
-	private void cabfReceiveNeighborFluids(World world, BlockPos pos, BlockState state, CallbackInfoReturnable<Boolean> cir) {
+	private void cabfReceiveNeighborFluids(World world, BlockPos pos, BlockState state,
+			CallbackInfoReturnable<Boolean> cir) {
 		if (this.fluid.isIn(FluidTags.LAVA) && world.getBlockState(pos.offset(Direction.DOWN)).isOf(Blocks.BEDROCK)) {
 			for (Direction direction : FluidBlock.FLOW_DIRECTIONS) {
 				FluidState targetState = world.getFluidState(pos.offset(direction));
