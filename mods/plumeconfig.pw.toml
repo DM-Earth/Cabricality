@@ -1,0 +1,13 @@
+name = "Plume Config"
+filename = "plumeconfig-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7A9yfP8h/versions/cetaHGEc/plumeconfig-1.0.0.jar"
+hash-format = "sha1"
+hash = "99827effd3387e1e185eb0e39c5f82c02613c242"
+
+[update]
+[update.modrinth]
+mod-id = "7A9yfP8h"
+version = "cetaHGEc"

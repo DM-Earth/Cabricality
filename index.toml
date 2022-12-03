@@ -4834,6 +4834,11 @@ hash = "8c752fa462607344229492d00c45ccd51a209f9338562e2d95b84d88d5cbcf1f"
 metafile = true
 
 [[files]]
+file = "mods/plumeconfig.pw.toml"
+hash = "b3cb41e475baea3d3081c73edaa00c9a393e332a63dda8cc7990b0096bf66b39"
+metafile = true
+
+[[files]]
 file = "mods/promenade.pw.toml"
 hash = "90c566f04f86546c14ac20a35e45c593a623b862d26e70ad64f3568b3029acb1"
 metafile = true
@@ -4865,7 +4870,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "d52e229c378e2987475e12636f4f96be892e6d0d5bbb528bbdebd31a2be3cd3c"
+hash = "a047f04f4f573deca537d3590b00d452792b9f1022522703cfb2baf74983d542"
 metafile = true
 
 [[files]]
