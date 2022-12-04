@@ -1,11 +1,11 @@
 name = "Plume Config"
-filename = "plumeconfig-1.18.X-1.0.1.jar"
+filename = "plumeconfig-1.18-1.0.1-sources.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/7A9yfP8h/versions/ph80R4Ub/plumeconfig-1.18.X-1.0.1.jar"
+url = "https://cdn.modrinth.com/data/7A9yfP8h/versions/ph80R4Ub/plumeconfig-1.18-1.0.1-sources.jar"
 hash-format = "sha1"
-hash = "35519739fe772ec5de7b371edaafec17ff62fe74"
+hash = "2c05544413a86e6e6e192aadd94a7c1d6f9d3789"
 
 [update]
 [update.modrinth]

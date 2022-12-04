@@ -4835,7 +4835,7 @@ metafile = true
 
 [[files]]
 file = "mods/plumeconfig.pw.toml"
-hash = "aa4f671f1271ae4c5ff58cc0e3c71984cb7565e05f4f87bed0c7181ceb418edd"
+hash = "5230db96984feb9e90bd796cfcc6b4220da3dd3bfbd186e1f1a23ec251c4624a"
 metafile = true
 
 [[files]]
