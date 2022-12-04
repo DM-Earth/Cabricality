@@ -4835,7 +4835,7 @@ metafile = true
 
 [[files]]
 file = "mods/plumeconfig.pw.toml"
-hash = "5c7788eab45d7f18df1f02edec6232ceff6f9184a2b6481fbc8ffec269a70684"
+hash = "aa4f671f1271ae4c5ff58cc0e3c71984cb7565e05f4f87bed0c7181ceb418edd"
 metafile = true
 
 [[files]]
@@ -4870,7 +4870,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "1522710e2214c07523393c9086ec8b8a46f95d6af0f02bf68afcc8ff142a674b"
+hash = "271cc54b0d1853d528d03b753db72790a269e4cbee30f97e8c3519fb4944610c"
 metafile = true
 
 [[files]]

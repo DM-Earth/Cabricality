@@ -1,13 +1,13 @@
 name = "Plume Config"
-filename = "plumeconfig-1.18.2-1.0.1.jar"
+filename = "plumeconfig-1.18.X-1.0.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/7A9yfP8h/versions/x3Qozm1G/plumeconfig-1.18.2-1.0.1.jar"
+url = "https://cdn.modrinth.com/data/7A9yfP8h/versions/ph80R4Ub/plumeconfig-1.18.X-1.0.1.jar"
 hash-format = "sha1"
-hash = "0ebcef11323035aa11fb414ce35d19232598ef6b"
+hash = "35519739fe772ec5de7b371edaafec17ff62fe74"
 
 [update]
 [update.modrinth]
 mod-id = "7A9yfP8h"
-version = "x3Qozm1G"
+version = "ph80R4Ub"
