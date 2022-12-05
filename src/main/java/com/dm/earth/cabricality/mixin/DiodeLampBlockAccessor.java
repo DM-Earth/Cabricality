@@ -1,12 +1,13 @@
 package com.dm.earth.cabricality.mixin;
 
-import net.darktree.led.block.DiodeLampBlock;
-import net.darktree.led.util.DiodeVariant;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
+import net.darktree.led.block.DiodeLampBlock;
+import net.darktree.led.util.DiodeVariant;
+
 @Mixin(DiodeLampBlock.class)
 public interface DiodeLampBlockAccessor {
-	@Accessor
+	@Accessor(remap = false)
 	public DiodeVariant getVariant();
 }

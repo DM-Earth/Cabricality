@@ -52,7 +52,7 @@ public class ExtractorMachineBlock extends BlockWithEntity implements ResourcedB
 	}
 
 	@Override
-	@SuppressWarnings({ "UnstableApiUsage", "deprecation" })
+	@SuppressWarnings("UnstableApiUsage")
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
 			BlockHitResult hit) {
 		if (!(hit.getSide() == Direction.UP || hit.getSide() == Direction.DOWN || Registry.ITEM

@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.content.trading;
 
 import static com.dm.earth.cabricality.ModEntry.AP;
+import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.FD;
 import static com.dm.earth.cabricality.ModEntry.IV;
@@ -89,11 +90,10 @@ public enum Professions {
 			of(CR.id("crushed_nickel_ore"), 3, SILVER, 1, 0xe0dcab),
 			of(CR.id("crushed_lead_ore"), 3, SILVER, 2, 0x535466),
 			of(CR.id("crushed_tin_ore"), 3, SILVER, 1, 0xdcdcdc),
-//TODO
-//			of(CABF.id("crushed_calorite_ore"), 1, SILVER, 5, 0xb22c45),
-//			of(CABF.id("crushed_ostrum_ore"), 1, SILVER, 4, 0x644a59),
-//			of(CABF.id("crushed_desh_ore"), 1, SILVER, 2, 0xdfa562),
-//			of(CABF.id("crushed_cobalt_ore"), 2, SILVER, 3, 0x2a79da),
+			of(CABF.id("crushed_calorite_ore"), 1, SILVER, 5, 0xb22c45),
+			of(CABF.id("crushed_ostrum_ore"), 1, SILVER, 4, 0x644a59),
+			of(CABF.id("crushed_desh_ore"), 1, SILVER, 2, 0xdfa562),
+			of(CABF.id("crushed_cobalt_ore"), 2, SILVER, 3, 0x2a79da),
 			of(MLM.id("crushed_soulstone"), 1, SILVER, 1, 0x734c77),
 			of(MC.id("andesite"), 64, SILVER, 1, 0x868887),
 			of(MC.id("granite"), 64, SILVER, 1, 0x9e6b5a),
