@@ -1,8 +1,12 @@
 package com.dm.earth.cabricality;
 
+import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
+
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -36,6 +40,22 @@ public enum ModEntry {
 
 	public Item asItem(String name) {
 		return Registry.ITEM.get(id(name));
+	}
+
+	public ItemStack asStack(String name, int count) {
+		return new ItemStack(asItem(name), count);
+	}
+
+	public ItemStack asStack(String name) {
+		return new ItemStack(asItem(name), 1);
+	}
+
+	public Ingredient asIngredient(String name) {
+		return Ingredient.ofItems(asItem(name));
+	}
+
+	public ProcessingOutput asProcessingOutput(String name) {
+		return new ProcessingOutput(asStack(name), 1);
 	}
 
 	public Fluid asFluid(String name) {

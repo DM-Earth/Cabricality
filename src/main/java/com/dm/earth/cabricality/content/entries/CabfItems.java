@@ -7,6 +7,7 @@ import java.util.List;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.core.items.MechanismItem;
 import com.dm.earth.cabricality.content.core.items.SawItem;
 import com.dm.earth.cabricality.content.core.items.ToolMaterialIndex;
@@ -43,6 +44,18 @@ public class CabfItems {
 			ItemModelGenerator.generated("item/rubber"));
 	public static final Item CURED_RUBBER = registerItemModeled("cured_rubber", new Item(Properties.DEFAULT),
 			ItemModelGenerator.generated("item/cured_rubber"));
+	public static final Item INVAR_INGOT = registerItemModeled("invar_ingot", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/invar_ingot"));
+	public static final Item NICKEL_INGOT = registerItemModeled("nickel_ingot", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/nickel_ingot"));
+	public static final Item ENDERIUM_INGOT = registerItemModeled("enderium_ingot", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/enderium_ingot"));
+	public static final Item NICKEL_COMPOUND = registerItemModeled("nickel_compound", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/nickel_compound"));
+	public static final Item INVAR_COMPOUND = registerItemModeled("invar_compound", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/invar_compound"));
+	public static final Item SILICON_COMPOUND = registerItemModeled("silicon_compound", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/silicon_compound"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
@@ -103,6 +116,13 @@ public class CabfItems {
 		}
 		Cabricality.SERVER_RESOURCES.addTag(
 				new Identifier("create", "items/" + AllItemTags.CRUSHED_ORES.tag.id().getPath()), crushedOresTag);
+
+		for (ColoredFernItem.Entry entry : ColoredFernItem.Entry.values()) {
+			registerItemModeled(entry.name + "_slime_fern_leaf", new ColoredFernItem.SlimeFernLeaf(entry.tint),
+					ItemModelGenerator.generated("item/fern/slime_fern_leaf"));
+			registerItemModeled(entry.name + "_slime_fern_paste", new ColoredFernItem.SlimeFernPaste(entry.tint),
+					ItemModelGenerator.generated("item/fern/slime_fern_paste"));
+		}
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {

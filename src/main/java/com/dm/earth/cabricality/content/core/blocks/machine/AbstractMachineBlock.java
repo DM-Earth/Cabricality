@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.core.blocks;
+package com.dm.earth.cabricality.content.core.blocks.machine;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.resource.ResourcedBlock;

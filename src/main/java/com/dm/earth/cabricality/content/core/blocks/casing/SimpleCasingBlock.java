@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.core.blocks;
+package com.dm.earth.cabricality.content.core.blocks.casing;
 
 import org.jetbrains.annotations.Nullable;
 

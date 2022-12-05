@@ -3,6 +3,7 @@ package com.dm.earth.cabricality.content.core.blocks;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.core.blocks.casing.SimpleCasingBlock;
 import com.simibubi.create.content.contraptions.base.CasingBlock;
 
 import net.minecraft.block.MapColor;
