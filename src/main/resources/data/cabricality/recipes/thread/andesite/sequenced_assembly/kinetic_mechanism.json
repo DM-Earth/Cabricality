@@ -1,0 +1,30 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": { "tag": "minecraft:wooden_slabs" },
+  "transitionalItem": { "item": "cabricality:incomplete_kinetic_mechanism" },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cabricality:incomplete_kinetic_mechanism" },
+        { "item": "create:andesite_alloy" }
+      ],
+      "results": [{ "item": "cabricality:incomplete_kinetic_mechanism" }]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cabricality:incomplete_kinetic_mechanism" },
+        { "item": "create:andesite_alloy" }
+      ],
+      "results": [{ "item": "cabricality:incomplete_kinetic_mechanism" }]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [{ "item": "cabricality:incomplete_kinetic_mechanism" }],
+      "results": [{ "item": "cabricality:incomplete_kinetic_mechanism" }]
+    }
+  ],
+  "results": [{ "item": "cabricality:kinetic_mechanism", "chance": 1 }],
+  "loops": 1
+}

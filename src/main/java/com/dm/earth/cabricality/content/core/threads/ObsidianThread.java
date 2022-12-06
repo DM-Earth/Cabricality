@@ -12,9 +12,6 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback.RecipeH
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
-import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
-import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
-import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyRecipeBuilder;
 
 import net.minecraft.util.Identifier;
 
@@ -22,15 +19,6 @@ public class ObsidianThread implements TechThread {
 
     @Override
     public void addRecipes(RecipeHandler handler) {
-        handler.register(recipeId("sequenced_assembly", ""),
-                id -> (new SequencedAssemblyRecipeBuilder(id)).require(CR.asItem("precision_mechanism"))
-                        .transitionTo(CABF.asItem("incomplete_sturdy_mechanism"))
-                        .addOutput(CABF.asItem("sturdy_mechanism"), 1.0F).loops(1)
-                        .addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("sturdy_sheet")))
-                        .addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("sturdy_sheet")))
-                        .addStep(PressingRecipe::new, r -> r)
-                        .build());
-
         handler.register(recipeId("crafting", "obsidian_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
                 CR.asItem("railway_casing"), CABF.asItem("sturdy_mechanism"), CABF.asItem("obsidian_machine"), 1));
     }

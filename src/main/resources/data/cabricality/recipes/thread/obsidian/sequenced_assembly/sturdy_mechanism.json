@@ -1,0 +1,30 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "create:precision_mechanism" },
+  "transitionalItem": { "item": "cabricality:incomplete_sturdy_mechanism" },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cabricality:incomplete_sturdy_mechanism" },
+        { "item": "create:sturdy_sheet" }
+      ],
+      "results": [{ "item": "cabricality:incomplete_sturdy_mechanism" }]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "cabricality:incomplete_sturdy_mechanism" },
+        { "item": "create:sturdy_sheet" }
+      ],
+      "results": [{ "item": "cabricality:incomplete_sturdy_mechanism" }]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [{ "item": "cabricality:incomplete_sturdy_mechanism" }],
+      "results": [{ "item": "cabricality:incomplete_sturdy_mechanism" }]
+    }
+  ],
+  "results": [{ "item": "cabricality:sturdy_mechanism", "chance": 1 }],
+  "loops": 1
+}

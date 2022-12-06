@@ -1,0 +1,25 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "create:precision_mechanism" },
+  "transitionalItem": { "item": "cabricality:incomplete_infernal_mechanism" },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        { "item": "cabricality:incomplete_infernal_mechanism" },
+        { "fluid": "tconstruct:liquid_soul", "amount": 27000 }
+      ],
+      "results": [{ "item": "cabricality:incomplete_infernal_mechanism" }]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        { "item": "cabricality:incomplete_infernal_mechanism" },
+        { "fluid": "minecraft:lava", "amount": 81000 }
+      ],
+      "results": [{ "item": "cabricality:incomplete_infernal_mechanism" }]
+    }
+  ],
+  "results": [{ "item": "cabricality:infernal_mechanism", "chance": 1 }],
+  "loops": 1
+}

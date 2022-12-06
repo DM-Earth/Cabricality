@@ -19,13 +19,10 @@ import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
-import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
-import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
-import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
@@ -39,14 +36,6 @@ public class ZincThread implements TechThread {
 				.setIngredient(Ingredient.ofItems(Items.WEEPING_VINES), Ingredient.ofItems(Items.TWISTING_VINES))
 				.setFluidResult(new FluidStack(TC.asFluid("liquid_soul"), FluidConstants.BOTTLE))
 				.setHeatRequirement(HeatCondition.HEATED)));
-
-		handler.register(recipeId("sequenced_assembly", "infernal_mechanism"),
-				id -> (new SequencedAssemblyRecipeBuilder(id)).require(CR.asItem("precision_mechanism")).loops(3)
-						.transitionTo(CABF.asItem("incomplete_infernal_mechanism"))
-						.addOutput(CABF.asItem("infernal_mechanism"), 1.0F)
-						.addStep(FillingRecipe::new, r -> r.require(TC.asFluid("liquid_soul"), FluidConstants.BOTTLE))
-						.addStep(FillingRecipe::new, r -> r.require(Fluids.LAVA, FluidConstants.BLOCK))
-						.build());
 
 		handler.register(recipeId("crafting", "zinc_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
 				CABF.asItem("zinc_casing"), CABF.asItem("infernal_mechanism"), CABF.asItem("zinc_machine"), 1));

@@ -21,18 +21,15 @@ import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.ListUtil;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
-import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
-import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
-import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -87,16 +84,6 @@ public class BrassThread implements TechThread {
 
 		handler.register(recipeId("crafting", "brass_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
 				CR.asItem("brass_casing"), CR.asItem("precision_mechanism"), CABF.asItem("brass_machine"), 1));
-
-		handler.register(recipeId("sequenced_assembly", "precision_mechanism"),
-				id -> (new SequencedAssemblyRecipeBuilder(id)).require(CABF.asItem("kinetic_mechanism")).loops(1)
-						.transitionTo(CR.asItem("incomplete_precision_mechanism"))
-						.addOutput(CR.asItem("precision_mechanism"), 1.0F)
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("electron_tube")))
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("electron_tube")))
-						.addStep(DeployerApplicationRecipe::new,
-								r -> r.require(IV.asItem("screwdriver")).toolNotConsumed())
-						.build());
 	}
 
 	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Identifier crystal, Identifier seed,
@@ -104,7 +91,6 @@ public class BrassThread implements TechThread {
 		Item crystalItem = Registry.ITEM.get(crystal);
 		Item seedItem = Registry.ITEM.get(seed);
 		Item dustItem = Registry.ITEM.get(dust);
-		Fluid targetFluid = Registry.FLUID.get(fluid);
 
 		handler.register(recipeId("milling", crystal.getPath()),
 				id -> new MillingRecipe(new FreePRP(id)
@@ -117,12 +103,6 @@ public class BrassThread implements TechThread {
 						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystalItem)
 								.output(seedItem.getDefaultStack()).build(id, ""),
 						false));
-
-		handler.register(recipeId("sequenced_assembly", crystal.getPath()),
-				id -> (new SequencedAssemblyRecipeBuilder(id)).require(seedItem).transitionTo(seedItem)
-						.addOutput(crystalItem, 1)
-						.addStep(FillingRecipe::new, r -> r.require(targetFluid, FluidConstants.BUCKET))
-						.loops(12).build());
 	}
 
 	@Override
