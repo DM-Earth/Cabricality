@@ -16,6 +16,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.content.core.TechThread;
+import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
@@ -100,7 +101,7 @@ public class AndesiteThread implements TechThread {
 
 		handler.register(recipeId("crafting", "kinetic_mechanism"), id -> VanillaRecipeBuilders
 				.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack()).ingredient(CR.asItem("cogwheel"))
-				.ingredient(CR.asItem("andesite_alloy")).ingredient(ItemTags.LOGS).build(id, ""));
+				.ingredient(CR.asItem("andesite_alloy")).ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS).build(id, ""));
 
 		handler.register(recipeId("crafting", "andesite_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
 				CR.asItem("andesite_casing"), CABF.asItem("kinetic_mechanism"), CABF.asItem("andesite_machine"), 1));

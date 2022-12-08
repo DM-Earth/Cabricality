@@ -26,7 +26,8 @@ public enum ModEntry {
 	AD("ad_astra"),
 	KB("kibe"),
 	CX("coxinhautilities"),
-	ED("extended_drawers");;
+	ED("extended_drawers");
+	;
 
 	final String modId;
 
@@ -55,7 +56,11 @@ public enum ModEntry {
 	}
 
 	public ProcessingOutput asProcessingOutput(String name) {
-		return new ProcessingOutput(asStack(name), 1);
+		return asProcessingOutput(name, 1);
+	}
+
+	public ProcessingOutput asProcessingOutput(String name, float chance) {
+		return new ProcessingOutput(asStack(name), chance);
 	}
 
 	public Fluid asFluid(String name) {

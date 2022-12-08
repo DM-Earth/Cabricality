@@ -1,0 +1,14 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "cabricality:invar_compound" },
+  "transitionalItem": { "item": "cabricality:invar_compound" },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [{ "item": "cabricality:invar_compound" }],
+      "results": [{ "item": "cabricality:invar_compound" }]
+    }
+  ],
+  "results": [{ "item": "cabricality:invar_ingot", "chance": 1 }],
+  "loops": 16
+}

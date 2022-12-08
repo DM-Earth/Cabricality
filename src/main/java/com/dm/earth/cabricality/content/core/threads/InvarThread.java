@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.content.core.threads;
 
+import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.C;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
@@ -26,9 +27,11 @@ import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
+import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.fan.HauntingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
+import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
 
 import me.alphamode.forgetags.Tags;
 import net.minecraft.item.Item;
@@ -103,6 +106,38 @@ public class InvarThread implements TechThread {
                                 MC.asIngredient("stick"), MC.asStack("torch"), 0, 20));
                 handler.register(recipeId("blasting", "nickel_compound"), id -> VanillaRecipeBuilders.blastingRecipe(id,
                                 "", CABF.asIngredient("nickel_compound"), CABF.asStack("invar_compound"), 0.1F, 400));
+                handler.register(recipeId("crushing", "crushing_wheel"), id -> new CrushingRecipe(new FreePRP(id)
+                                .setIngredient(CR.asIngredient("crushing_wheel"))
+                                .setResult(AE2.asProcessingOutput("singularity")).setProcessingTime(250)));
+                handler.register(recipeId("compacting", "dye_entangled_singularity"),
+                                id -> new CompactingRecipe(new FreePRP(id)
+                                                .setIngredient(Ingredient.ofTag(Tags.Items.DYES),
+                                                                AE2.asIngredient("quantum_entangled_singularity"))
+                                                .setResult(AE2.asProcessingOutput("quantum_entangled_singularity"))));
+                handler.register(recipeId("crushing", "dye_entangled_singularity"),
+                                id -> new CrushingRecipe(new FreePRP(id)
+                                                .setIngredient(CABF.asIngredient("dye_entangled_singularity"))
+                                                .setResult(AE2.asProcessingOutput("red_paint_ball", .9F),
+                                                                AE2.asProcessingOutput("yellow_paint_ball", .8F),
+                                                                AE2.asProcessingOutput("green_paint_ball", .7F),
+                                                                AE2.asProcessingOutput("blue_paint_ball", .6F),
+                                                                AE2.asProcessingOutput("magenta_paint_ball", .5F))
+                                                .setProcessingTime(50)));
+                handler.register(recipeId("mechanical_crafting", "chromatic_compound"),
+                                id -> RecipeBuilderUtil.mechanicalFromShaped(
+                                                VanillaRecipeBuilders.shapedRecipe("AA", "AA")
+                                                                .ingredient('A', AE2.asIngredient("magenta_paint_ball"))
+                                                                .output(CR.asStack("chromatic_compound")).build(id, ""),
+                                                false));
+                handler.register(recipeId("crafting", "chromatic_resonator"), id -> VanillaRecipeBuilders
+                                .shapedRecipe(" R ", "R S", "LS ").ingredient('R', CABF.asItem("ruby"))
+                                .ingredient('L', IV.asItem("lead_ingot")).ingredient('S', CABF.asItem("sapphire"))
+                                .output(CABF.asStack("chromatic_resonator")).build(id, ""));
+                handler.register(recipeId("crafting", "machine_block"),
+                                id -> VanillaRecipeBuilders.shapedRecipe("SSS", "SCS", "SSS")
+                                                .ingredient('C', CABF.asItem("invar_casing"))
+                                                .ingredient('S', CABF.asItem("inductive_mechanism"))
+                                                .output(IV.asStack("machine_block")).build(id, ""));
         }
 
         @Override

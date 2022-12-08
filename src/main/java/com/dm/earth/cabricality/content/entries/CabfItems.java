@@ -56,6 +56,20 @@ public class CabfItems {
 			ItemModelGenerator.generated("item/invar_compound"));
 	public static final Item SILICON_COMPOUND = registerItemModeled("silicon_compound", new Item(Properties.DEFAULT),
 			ItemModelGenerator.generated("item/silicon_compound"));
+	public static final Item RUBY = registerItemModeled("ruby", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/ruby"));
+	public static final Item SAPPHIRE = registerItemModeled("sapphire", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/sapphire"));
+	public static final Item RADIANT_SHEET = registerItemModeled("radiant_sheet", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/radiant_sheet"));
+	public static final Item RADIANT_COIL = registerItemModeled("radiant_coil", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/radiant_coil"));
+	public static final Item DYE_ENTANGLED_SINGULARITY = registerItemModeled("dye_entangled_singularity",
+			new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item/dye_entangled_singularity"));
+	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
+			new Item(new QuiltItemSettings().maxCount(512).group(Cabricality.MAIN_GROUP)),
+			ItemModelGenerator.generated("item/chromatic_resonator"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
@@ -89,7 +103,7 @@ public class CabfItems {
 		JTag sawsTag = new JTag();
 		for (ToolMaterialIndex materialIndex : ToolMaterialIndex.values()) {
 			String itemId = materialIndex.getName() + "_saw";
-			registerItemModeled(itemId, new SawItem(materialIndex.getMaterial(), Properties.DEFAULT_SINGLE),
+			registerItemModeled(itemId, new SawItem(materialIndex.getMaterial(), Properties.DEFAULT),
 					ItemModelGenerator.generated("item/tool/saw", itemId));
 			sawsTag.add(Cabricality.id(itemId));
 		}
