@@ -9,6 +9,7 @@ import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
+import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 
 import net.minecraft.recipe.Recipe;
 import net.minecraft.util.Identifier;

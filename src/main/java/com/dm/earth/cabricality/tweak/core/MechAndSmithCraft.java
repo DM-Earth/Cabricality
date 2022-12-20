@@ -49,7 +49,7 @@ public class MechAndSmithCraft {
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
 		for (Entry entry : entries)
-			handler.removeIf(p -> p.getOutput().isOf(entry.getOutputItem()) && RecipeTweaks.notCabf(p));
+			handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(entry.getOutputItem()));
 	}
 
 	private static Identifier createId(Entry entry, String type) {

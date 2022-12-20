@@ -36,6 +36,8 @@ public class ColorRegistryListener {
 				if (item instanceof ColoredFernItem fern)
 					return fern.tint;
 			}
+			if (item instanceof ColoredFernItem fern)
+				return fern.tint;
 			return -1;
 		}, getItems());
 
@@ -56,6 +58,8 @@ public class ColorRegistryListener {
 		for (Map.Entry<RegistryKey<Item>, Item> set : Registry.ITEM.getEntries()) {
 			Item item = set.getValue();
 			if (item instanceof AbstractTradeCardItem)
+				list.add(item);
+			if (item instanceof ColoredFernItem)
 				list.add(item);
 			if (item instanceof BlockItem blockItem
 					&& Arrays.stream(getBlocks()).anyMatch(block -> blockItem.getBlock() == block))

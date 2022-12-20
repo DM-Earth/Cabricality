@@ -33,6 +33,7 @@ import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.AbstractCookingRecipe;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Identifier;
@@ -101,7 +102,8 @@ public class AndesiteThread implements TechThread {
 
 		handler.register(recipeId("crafting", "kinetic_mechanism"), id -> VanillaRecipeBuilders
 				.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack()).ingredient(CR.asItem("cogwheel"))
-				.ingredient(CR.asItem("andesite_alloy")).ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS).build(id, ""));
+				.ingredient(CR.asItem("andesite_alloy")).ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS)
+				.build(id, ""));
 
 		handler.register(recipeId("crafting", "andesite_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
 				CR.asItem("andesite_casing"), CABF.asItem("kinetic_mechanism"), CABF.asItem("andesite_machine"), 1));
@@ -128,7 +130,8 @@ public class AndesiteThread implements TechThread {
 		handler.remove(CR.id("mixing/andesite_alloy"));
 		handler.remove(CR.id("mixing/andesite_alloy_from_zinc"));
 
-		handler.removeIf(p -> p.getOutput().isOf(AP.asItem("algal_brick")) && RecipeTweaks.notCabf(p));
+		handler.removeIf(p -> RecipeTweaks.notCabf(p) && p instanceof AbstractCookingRecipe
+				&& p.getOutput().isOf(AP.asItem("algal_brick")));
 		handler.remove(AP.id("algal_blend_shapeless"));
 	}
 }

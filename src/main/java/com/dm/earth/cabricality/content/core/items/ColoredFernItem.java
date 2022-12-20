@@ -10,59 +10,59 @@ import net.minecraft.util.registry.Registry;
 
 public abstract class ColoredFernItem extends Item {
 
-    public final int tint;
+	public final int tint;
 
-    public ColoredFernItem(int tint) {
-        super(CabfItems.Properties.DEFAULT);
-        this.tint = tint;
-    }
+	public ColoredFernItem(int tint) {
+		super(CabfItems.Properties.DEFAULT);
+		this.tint = tint;
+	}
 
-    public abstract String getType();
+	public abstract String getType();
 
-    public static class SlimeFernLeaf extends ColoredFernItem {
+	public static class SlimeFernLeaf extends ColoredFernItem {
 
-        public SlimeFernLeaf(int tint) {
-            super(tint);
-        }
+		public SlimeFernLeaf(int tint) {
+			super(tint);
+		}
 
-        @Override
-        public String getType() {
-            return "leaf";
-        }
+		@Override
+		public String getType() {
+			return "leaf";
+		}
 
-    }
+	}
 
-    public static class SlimeFernPaste extends ColoredFernItem {
+	public static class SlimeFernPaste extends ColoredFernItem {
 
-        public SlimeFernPaste(int tint) {
-            super(tint);
-        }
+		public SlimeFernPaste(int tint) {
+			super(tint);
+		}
 
-        @Override
-        public String getType() {
-            return "paste";
-        }
-        
-    }
+		@Override
+		public String getType() {
+			return "paste";
+		}
 
-    public static enum Entry {
-        EARTH("earth", 0x8FDB84, MC.id("gunpowder")),
-        SKY("sky", 0x00F9DE, MC.id("bone_meal")),
-        ENDER("ender", 0xAC2EFC, MC.id("ender_dust"));
+	}
 
-        public final String name;
-        public final int tint;
-        public final Identifier output;
+	public static enum Entry {
+		EARTH("earth", 0x8FDB84, MC.id("gunpowder")),
+		SKY("sky", 0x00F9DE, MC.id("bone_meal")),
+		ENDER("ender", 0xAC2EFC, MC.id("ender_dust"));
 
-        Entry(String name, int tint, Identifier output) {
-            this.name = name;
-            this.tint = tint;
-            this.output = output;
-        }
+		public final String name;
+		public final int tint;
+		public final Identifier output;
 
-        public Item getOutpitItem() {
-            return Registry.ITEM.get(output);
-        }
-    }
-    
+		Entry(String name, int tint, Identifier output) {
+			this.name = name;
+			this.tint = tint;
+			this.output = output;
+		}
+
+		public Item getOutputItem() {
+			return Registry.ITEM.get(output);
+		}
+	}
+
 }

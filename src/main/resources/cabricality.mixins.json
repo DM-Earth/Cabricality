@@ -4,6 +4,7 @@
   "package": "com.dm.earth.cabricality.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "CuttingBoardRecipeMixin",
     "DiodeLampBlockAccessor",
     "FluidBlockMixin",
     "LavaFluidMixin",

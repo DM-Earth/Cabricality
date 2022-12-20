@@ -63,6 +63,10 @@ public enum ModEntry {
 		return new ProcessingOutput(asStack(name), chance);
 	}
 
+	public ProcessingOutput asProcessingOutput(String name, float chance, int count) {
+		return new ProcessingOutput(asStack(name, count), chance);
+	}
+
 	public Fluid asFluid(String name) {
 		return Registry.FLUID.get(id(name));
 	}
