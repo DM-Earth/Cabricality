@@ -5,6 +5,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
 import com.dm.earth.cabricality.Cabricality;
+import static com.dm.earth.cabricality.ModEntry.*;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
@@ -36,6 +37,9 @@ public class RecipeTweaks implements AddRecipesCallback, RemoveRecipesCallback, 
 			thread.removeRecipes(handler);
 		OreProcessingTweaks.register(handler);
 		MechAndSmithCraft.register(handler);
+
+		handler.remove(TC.id("smeltery/casting/metal/silver/coin_silver_cast"));
+		handler.remove(TC.id("smeltery/casting/metal/gold/coin_gold_cast"));
 	}
 
 	public static boolean notCabf(Identifier id) {

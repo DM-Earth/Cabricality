@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.content.core.items;
 
+import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.MC;
 
 import com.dm.earth.cabricality.content.entries.CabfItems;
@@ -48,7 +49,7 @@ public abstract class ColoredFernItem extends Item {
 	public static enum Entry {
 		EARTH("earth", 0x8FDB84, MC.id("gunpowder")),
 		SKY("sky", 0x00F9DE, MC.id("bone_meal")),
-		ENDER("ender", 0xAC2EFC, MC.id("ender_dust"));
+		ENDER("ender", 0xAC2EFC, AE2.id("ender_dust"));
 
 		public final String name;
 		public final int tint;

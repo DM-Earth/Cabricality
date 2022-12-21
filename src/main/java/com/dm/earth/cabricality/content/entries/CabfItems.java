@@ -138,6 +138,9 @@ public class CabfItems {
 			registerItemModeled(entry.name + "_slime_fern_paste", new ColoredFernItem.SlimeFernPaste(entry.tint),
 					ItemModelGenerator.generated("item/fern/slime_fern_paste"));
 		}
+
+		Cabricality.SERVER_RESOURCES.addTag(C.id("items/silver_coins"), new JTag().add(Cabricality.id("silver_coin")));
+		Cabricality.SERVER_RESOURCES.addTag(C.id("items/gold_coins"), new JTag().add(Cabricality.id("gold_coin")));
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
