@@ -21,6 +21,8 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
+import com.dm.earth.cabricality.content.entries.CabfFluids;
+import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
@@ -32,8 +34,13 @@ import com.simibubi.create.content.contraptions.components.deployer.DeployerAppl
 import com.simibubi.create.content.contraptions.components.fan.HauntingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
+import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
+import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
+import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 
+import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import me.alphamode.forgetags.Tags;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.CampfireCookingRecipe;
@@ -113,15 +120,37 @@ public class InvarThread implements TechThread {
 						.setIngredient(Ingredient.ofTag(Tags.Items.DYES),
 								AE2.asIngredient("quantum_entangled_singularity"))
 						.setResult(CABF.asProcessingOutput("dye_entangled_singularity"))));
+
+		List<Item> balls = List.of(AE2.asItem("red_paint_ball"), AE2.asItem("yellow_paint_ball"),
+				AE2.asItem("green_paint_ball"), AE2.asItem("blue_paint_ball"),
+				AE2.asItem("magenta_paint_ball"));
+
 		handler.register(recipeId("crushing", "dye_entangled_singularity"),
 				id -> new CrushingRecipe(new FreePRP(id)
 						.setIngredient(CABF.asIngredient("dye_entangled_singularity"))
-						.setResult(AE2.asProcessingOutput("red_paint_ball", .9F),
-								AE2.asProcessingOutput("yellow_paint_ball", .8F),
-								AE2.asProcessingOutput("green_paint_ball", .7F),
-								AE2.asProcessingOutput("blue_paint_ball", .6F),
-								AE2.asProcessingOutput("magenta_paint_ball", .5F))
+						.setResult(balls.stream().map(
+								item -> new ProcessingOutput(item.getDefaultStack(), 0.9f - 0.1f * balls.indexOf(item)))
+								.toList())
 						.setProcessingTime(50)));
+
+		for (Item item : balls) {
+			int index = balls.indexOf(item);
+			Item output = index < balls.size() - 1 ? balls.get(index + 1) : AE2.asItem("black_paint_ball");
+			handler.register(recipeId("emptying", Registry.ITEM.getId(item).getPath()),
+					id -> new EmptyingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(item))
+							.setFluidResult(new FluidStack(CabfFluids.WASTE, FluidConstants.BOTTLE))
+							.setResult(new ProcessingOutput(output.getDefaultStack(), 1))));
+		}
+
+		handler.register(recipeId("pressing", "refined_radiance"),
+				id -> new PressingRecipe(
+						new FreePRP(id).setIngredient(Ingredient.ofItems(CR.asItem("refined_radiance")))
+								.setResult(CABF.asProcessingOutput("radiant_sheet"))));
+		handler.register(recipeId("mechanical_crafting", "radiant_coil"),
+				id -> RecipeBuilderUtil.mechanicalFromShaped(
+						VanillaRecipeBuilders.shapedRecipe("A").ingredient('A', CabfItems.RADIANT_SHEET)
+								.output(CabfItems.RADIANT_COIL.getDefaultStack()).build(id, ""),
+						true));
 		handler.register(recipeId("mechanical_crafting", "chromatic_compound"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
 						VanillaRecipeBuilders.shapedRecipe("AA", "AA")
