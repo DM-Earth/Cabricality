@@ -1,8 +1,7 @@
 package com.dm.earth.cabricality.content.core.items;
 
-import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
-
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.core.IncompleteVariant;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
 
@@ -43,7 +42,7 @@ public class MechanismItem extends Item implements IncompleteVariant {
 
         Type(String name, Rarity rarity) {
             this.name = name;
-            MechanismItem newItem = new MechanismItem(name, new QuiltItemSettings().rarity(rarity));
+            MechanismItem newItem = new MechanismItem(name, CabfItems.Properties.DEFAULT.rarity(rarity));
             this.item = newItem;
             this.incompleteItem = newItem.newIncomplete(rarity);
         }
