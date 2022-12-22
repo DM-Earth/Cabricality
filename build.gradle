@@ -28,7 +28,6 @@ repositories {
 		url = "https://jitpack.io"
 		content {
 			includeGroup("com.github.Chocohead")
-			includeGroup("com.github.LlamaLad7")
 		}
 	}
 
