@@ -3,11 +3,11 @@ filename = "splasher-1.18-3.0.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/4yIZUuyx/versions/BsPAirfL/splasher-1.18-3.0.0.jar"
+url = "https://cdn.modrinth.com/data/4yIZUuyx/versions/ppFoE5Vz/splasher-1.18-3.0.0.jar"
 hash-format = "sha1"
-hash = "a72c27c05d409909b6b77f811c3b2afa4546b1de"
+hash = "2bf238871daa158333e9d5753a47b5948381f58c"
 
 [update]
 [update.modrinth]
 mod-id = "4yIZUuyx"
-version = "BsPAirfL"
+version = "ppFoE5Vz"
