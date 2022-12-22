@@ -1,8 +1,0 @@
-{
-  "enable_splash_texts": "true",
-  "enable_festivals": "true",
-  "follow_client_language": "true",
-  "disable_debug_info": "false",
-  "random_rate": "reload_click",
-  "splash_mode": "both"
-}

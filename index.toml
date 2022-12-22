@@ -3014,6 +3014,11 @@ hash = "d1480fd38a1ac53311baa2d57b92556834372f6ac04c355169441df9a59a161c"
 metafile = true
 
 [[files]]
+file = "mods/splasher.pw.toml"
+hash = "21816df29f06c3a6037705c408ea01d0b032804f582974f090fe3893e6697288"
+metafile = true
+
+[[files]]
 file = "mods/starlight.pw.toml"
 hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
 metafile = true

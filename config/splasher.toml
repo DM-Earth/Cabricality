@@ -1,0 +1,18 @@
+enable_splash_texts = true
+enable_festivals = true
+follow_client_language = true
+
+[debug]
+disable_debug_info = false # Debug info will not be logged if true
+
+[enum]
+random_rate = "Reload and Click" # Splash Texts Refresh Rate
+# Never            - Never show random splash texts
+# Reload           - Refresh splash texts after reloading resources
+# Click            - Refresh splash texts when clicking the lightning icon
+# Reload and Click - Refresh splash texts when reloading and clicking
+splash_mode = "Custom" # Splash Texts Display Mode
+# Disabled - Disable splash texts
+# Vanilla  - Show vanilla splash texts
+# Custom   - Show custom splash texts
+# Both     - Show both vanilla and custom splash texts
