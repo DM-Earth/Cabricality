@@ -3015,12 +3015,17 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "1f174392f9940e3d8ef171f6b051988c4cd673282d26b9b62798d2553bfd773e"
+hash = "9f432461ca036b6f029e3a1993bd9673ea206a101ae3098ace2c564bdc067741"
 metafile = true
 
 [[files]]
 file = "mods/starlight.pw.toml"
 hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
+metafile = true
+
+[[files]]
+file = "mods/stenographer.pw.toml"
+hash = "8d99741fa63b38e494b6dfa3242706d9580c44ebe196902b0151ee0538da3aaf"
 metafile = true
 
 [[files]]
