@@ -1,9 +1,9 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
+import com.dm.earth.cabricality.Cabricality;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import com.dm.earth.cabricality.client.CabricalityClient;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.core.ISettingableBlockItem;
@@ -19,13 +19,13 @@ public abstract class SubstrateJarBlock extends JarBlock implements ISettingable
 	@Override
 	public String getTranslationKey() {
 		if (this.getContent() == null)
-			return CabricalityClient.genTranslatableText("block", this.getDefaultBlockId().getPath()).getString();
+			return Cabricality.genTranslatableText("block", this.getDefaultBlockId().getPath()).getString();
 		return this.getContent();
 	}
 
 	@Nullable
 	public String getContent() {
-		return CabricalityClient.genTranslatableText("block", this.getSubstrate().getType() + "_" + this.getSubstrate().getId().getPath()).getString();
+		return Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_" + this.getSubstrate().getId().getPath()).getString();
 	}
 
 	@Nullable

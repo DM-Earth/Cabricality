@@ -1,5 +1,11 @@
 package com.dm.earth.cabricality;
 
+import com.dm.earth.cabricality.util.ModChecker;
+import com.dm.earth.cabricality.util.ModDownloader;
+
+import dev.architectury.event.events.client.ClientTickEvent;
+import net.minecraft.text.TranslatableText;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -26,29 +32,97 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class Cabricality implements ModInitializer {
+	public static final String NAME = "Cabricality";
 
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
-	// RRPs
+	/* RRPs */
 	public static final RuntimeResourcePack CLIENT_RESOURCES = RuntimeResourcePack.create(id("client_resources"));
 	public static final RuntimeResourcePack SERVER_RESOURCES = RuntimeResourcePack.create(id("server_resources"));
 
-	// Item Groups
+	/* Item Groups */
 	public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
 			() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
 	public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
 			() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 
+	/* Generator Utils */
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String id) {
 		return new Identifier(ID, id);
 	}
 
+	@Contract("_,_ -> new")
+	public static @NotNull String genTranslationKey(String type, String... path) {
+		return type + "." + ID + Arrays.stream(path).map(p -> "." + p).collect(Collectors.joining());
+	}
+
+	@Contract("_,_ -> new")
+	public static @NotNull TranslatableText genTranslatableText(String type, String... path) {
+		return new TranslatableText(genTranslationKey(type, path));
+	}
+
+	/* Loggers */
+	public static void logInfo(@NotNull String message) {
+		LOGGER.info("[" + NAME + "] " + message);
+	}
+
+	public static void logWarn(@NotNull String message) {
+		LOGGER.warn("[" + NAME + "] " + message);
+	}
+
+	public static void logError(@NotNull String message) {
+		LOGGER.error("[" + NAME + "] " + message);
+	}
+
+	public static void logError(@NotNull String message, @NotNull Throwable throwable) {
+		LOGGER.error("[" + NAME + "] " + message, throwable);
+	}
+
+	public static void logDebug(@NotNull String message) {
+		LOGGER.debug("[" + NAME + "] " + message);
+	}
+
+	public static void logDebug(@NotNull String message, @NotNull Throwable throwable) {
+		LOGGER.debug("[" + NAME + "] " + message, throwable);
+	}
+
+	public static void logTrace(@NotNull String message) {
+		LOGGER.trace("[" + NAME + "] " + message);
+	}
+
+	public static void logTrace(@NotNull String message, @NotNull Throwable throwable) {
+		LOGGER.trace("[" + NAME + "] " + message, throwable);
+	}
+
+	public static void logDebugAndError(@NotNull String message, @NotNull Throwable throwable) {
+		logDebug(message, throwable);
+		logError(message);
+	}
+
+	/* Initialization */
 	@Override
 	public void onInitialize(ModContainer mod) {
-		LOGGER.info("Cabricality is initializing! 📦");
+		logInfo("Initializing... 📦");
+
+		ModChecker.check();
+		/*
+		if (!ModChecker.getModUrlList().isEmpty()) {
+			ArrayList<String> succeed = new ModDownloader(ModChecker.getModUrlList()).download();
+			if (succeed != null) {
+				StringBuilder result = succeed.stream()
+											   .reduce(new StringBuilder(), (builder, s) -> builder.append(s).append(", "), StringBuilder::append);
+				logInfo("Successfully downloaded " + result.delete(result.length() - 2, result.length()) + "!");
+			}
+		}
+
+		 */
 
 		Trading.load();
 		Alchemist.load();

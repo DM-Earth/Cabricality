@@ -13,7 +13,8 @@
     "WrenchItemMixin"
   ],
   "client": [
-    "client.MinecraftClientMixin"
+    "client.MinecraftClientMixin",
+    "client.TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

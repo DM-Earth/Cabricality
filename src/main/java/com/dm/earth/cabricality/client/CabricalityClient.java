@@ -1,10 +1,5 @@
 package com.dm.earth.cabricality.client;
 
-import static com.dm.earth.cabricality.Cabricality.ID;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
@@ -19,28 +14,16 @@ import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingEntry;
-import com.dm.earth.cabricality.util.ModChecker;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.text.TranslatableText;
 
 public class CabricalityClient implements ClientModInitializer {
-
-    public static String genTranslationKey(String type, String... path) {
-        return type + "." + ID + Arrays.stream(path).map(p -> "." + p).collect(Collectors.joining());
-    }
-
-    public static TranslatableText genTranslatableText(String type, String... path) {
-        return new TranslatableText(genTranslationKey(type, path));
-    }
-
-    @Override
-    public void onInitializeClient(ModContainer mod) {
-        ModChecker.check();
-        FluidRendererRegistry.renderFluidInit();
-        ColorRegistryListener.load();
-        ProfessionDebugHelper.load();
+	@Override
+	public void onInitializeClient(ModContainer mod) {
+		FluidRendererRegistry.renderFluidInit();
+		ColorRegistryListener.load();
+		ProfessionDebugHelper.load();
 
         WoodCuttingEntry.checkAll();
         OreProcessingEntry.checkAll();
@@ -52,9 +35,9 @@ public class CabricalityClient implements ClientModInitializer {
         for (CasingBlockEntry entry : CasingBlockEntry.values())
             BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock());
 
-        ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
-                ResourcePackActivationType.DEFAULT_ENABLED, genTranslatableText("pack", "asset_edits"));
-        ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
-                ResourcePackActivationType.ALWAYS_ENABLED, genTranslatableText("pack", "quests_lang"));
-    }
+		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
+				ResourcePackActivationType.DEFAULT_ENABLED, Cabricality.genTranslatableText("pack", "asset_edits"));
+		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
+				ResourcePackActivationType.ALWAYS_ENABLED, Cabricality.genTranslatableText("pack", "quests_lang"));
+	}
 }
