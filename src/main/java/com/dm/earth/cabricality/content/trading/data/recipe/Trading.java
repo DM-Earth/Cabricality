@@ -5,7 +5,6 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.trading.Professions;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
@@ -60,6 +59,5 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 	public static void load() {
 		Professions.load();
 		TradeTags.load();
-		JarBlock.load();
 	}
 }

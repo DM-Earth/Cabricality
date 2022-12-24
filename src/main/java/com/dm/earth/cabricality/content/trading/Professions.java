@@ -21,8 +21,7 @@ import com.dm.earth.cabricality.content.trading.core.TradingEntryRegistry;
 public enum Professions {
 	EXCHANGE(Profession.of("exchange",
 			of(SILVER.getId(), 16, GOLD, 1, 0x9fadb4),
-			of(GOLD.getId(), 1, SILVER, 16, 0xfdf470)
-	)),
+			of(GOLD.getId(), 1, SILVER, 16, 0xfdf470))),
 
 	FARMING(Profession.of("farming", 0x7baf4a,
 			// Vanilla
@@ -47,8 +46,7 @@ public enum Professions {
 			of(FD.id("canvas"), 9, SILVER, 1, 0xb69775),
 			of(FD.id("pumpkin_slice"), 32, SILVER, 1, 0xde882e),
 			// Promenade
-			of(PMD.id("blueberries"), 12, SILVER, 1, 0x98afd8)
-	)),
+			of(PMD.id("blueberries"), 12, SILVER, 1, 0x98afd8))),
 
 	CARPENTRY(Profession.of("carpentry", 0x735a38,
 			of(MC.id("oak_log"), 32, SILVER, 1, 0x735a38),
@@ -79,8 +77,7 @@ public enum Professions {
 			of(TRE.id("redwood_quarter_log"), 32, SILVER, 1, 0x482a22),
 			of(TRE.id("hemlock_quarter_log"), 32, SILVER, 1, 0x28281c),
 			of(TRE.id("cypress_quarter_log"), 32, SILVER, 1, 0x463f3c),
-			of(TRE.id("rainbow_eucalyptus_quarter_log"), 24, SILVER, 1, 0x2e5086)
-	)),
+			of(TRE.id("rainbow_eucalyptus_quarter_log"), 24, SILVER, 1, 0x2e5086))),
 
 	MINING(Profession.of("mining", 0x826357,
 			of(CR.id("crushed_iron_ore"), 3, SILVER, 1, 0xe8c8b2),
@@ -113,8 +110,7 @@ public enum Professions {
 			of(MC.id("lapis_lazuli"), 6, SILVER, 1, 0x3761c0),
 			of(MC.id("diamond"), 1, GOLD, 1, 0x54ecd9),
 			of(MC.id("coal"), 16, SILVER, 1, 0x252525),
-			of(MC.id("redstone"), 24, SILVER, 1, 0xfc0d1b)
-	)),
+			of(MC.id("redstone"), 24, SILVER, 1, 0xfc0d1b))),
 	MASONRY(Profession.of("masonry", 0xaf6250,
 			of(AP.id("basalt_tiles"), 12, SILVER, 1, 0x747474),
 			of(AP.id("sunmetal_block"), 8, SILVER, 1, 0x613c3d),
@@ -136,22 +132,19 @@ public enum Professions {
 			of(MC.id("bricks"), 12, SILVER, 1, 0xaf6250),
 			of(MC.id("nether_bricks"), 12, SILVER, 1, 0x37181e),
 			of(MC.id("quartz_bricks"), 8, SILVER, 1, 0xeeeae6),
-			of(MC.id("mossy_cobblestone"), 12, SILVER, 1, 0x738454)
-	)),
+			of(MC.id("mossy_cobblestone"), 12, SILVER, 1, 0x738454))),
 	HUNTING(Profession.of("hunting", 0x4f3c3e,
 			of(MC.id("phantom_membrane"), 1, SILVER, 8, 0x8e7f7a),
 			of(MC.id("rabbit_foot"), 1, SILVER, 8, 0xd7b184),
 			of(MC.id("nether_star"), 1, GOLD, 6, 0xfdfeac),
 			of(MC.id("dragon_breath"), 1, SILVER, 1, 0xaa307a),
 			of(MC.id("ghast_tear"), 1, SILVER, 4, 0xd0f1f1),
-			of(MC.id("dragon_egg"), 1, GOLD, 16, 0x2c0332)
-	)),
+			of(MC.id("dragon_egg"), 1, GOLD, 16, 0x2c0332))),
 	FISHING(Profession.of("fishing", 0x4772e6,
 			of(MC.id("cod"), 8, SILVER, 1, 0xc5a174),
 			of(MC.id("salmon"), 8, SILVER, 1, 0xa93636),
 			of(MC.id("pufferfish"), 8, SILVER, 1, 0xf9a62c),
-			of(MC.id("tropical_fish"), 8, SILVER, 1, 0xf26f2f)
-	)),
+			of(MC.id("tropical_fish"), 8, SILVER, 1, 0xf26f2f))),
 	COOKING(Profession.of("cooking", 0xbd634d,
 			of(CR.id("bar_of_chocolate"), 4, SILVER, 1, 0xb56447),
 			of(CR.id("honeyed_apple"), 4, SILVER, 1, 0xb8410e),
@@ -205,8 +198,7 @@ public enum Professions {
 			of(FD.id("grilled_salmon"), 4, SILVER, 1, 0xae4b29),
 			of(FD.id("roast_chicken"), 4, SILVER, 1, 0xc4845b),
 			of(FD.id("stuffed_pumpkin"), 4, SILVER, 1, 0xe8b05d),
-			of(FD.id("honey_glazed_ham"), 4, SILVER, 1, 0xba6522)
-	)),
+			of(FD.id("honey_glazed_ham"), 4, SILVER, 1, 0xba6522))),
 	SMITHING(Profession.of("smithing", 0xb9b9b9,
 			of(MC.id("arrow"), 12, SILVER, 1, 0xc9c9c9),
 			// Iron
@@ -229,14 +221,14 @@ public enum Professions {
 			of(MC.id("netherite_helmet"), 1, GOLD, 2, 0x45263c),
 			of(MC.id("netherite_chestplate"), 1, GOLD, 4, 0x45263c),
 			of(MC.id("netherite_leggings"), 1, GOLD, 3, 0x45263c),
-			of(MC.id("netherite_boots"), 1, GOLD, 2, 0x45263c)
-	));
+			of(MC.id("netherite_boots"), 1, GOLD, 2, 0x45263c)));
 
 	private final Profession profession;
 
 	Professions(Profession profession) {
 		this.profession = profession;
-		for (TradingEntry entry : profession.entries()) TradingEntryRegistry.register(entry);
+		for (TradingEntry entry : profession.entries())
+			TradingEntryRegistry.register(entry);
 	}
 
 	public Profession get() {
