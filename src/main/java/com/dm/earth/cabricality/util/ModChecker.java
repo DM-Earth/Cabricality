@@ -25,22 +25,19 @@ public class ModChecker {
 						"ftbteams", "FTB Teams",
 						"questsadditions", "Quests Additions"
 				));
-				/* Don't Forget to Add Download Url */
-				/* Not Working Now
+				/* Add Download Url */
 				requiredModUrlList.putAll(ImmutableMap.of(
-						"ftblibrary", "https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4210934", // ftb-library-fabric-1802.3.9-build.167.jar
-						"ftbquests", "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4215548", // ftb-quests-fabric-1802.3.11-build.151.jar
-						"ftbteams", "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4229137", // ftb-teams-fabric-1802.2.9-build.88.jar
-						"questsadditions", "https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/3940981" // questsadditions-fabric-1.18.2-1.4.0.jar
+						"ftblibrary", "https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4210934/file", // ftb-library-fabric-1802.3.9-build.167.jar
+						"ftbquests", "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4215548/file", // ftb-quests-fabric-1802.3.11-build.151.jar
+						"ftbteams", "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4229137/file", // ftb-teams-fabric-1802.2.9-build.88.jar
+						"questsadditions", "https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/3940981/file" // questsadditions-fabric-1.18.2-1.4.0.jar
 				));
-
-				 */
-				/* Don't Forget to Add Dedicated Url */
+				/* Add Dedicated Url, to Download Pages */
 				requiredModDedicatedUrlList.putAll(ImmutableMap.of(
-						"ftblibrary", "https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/files",
-						"ftbquests", "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/files",
-						"ftbteams", "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/files",
-						"questsadditions", "https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/files"
+						"ftblibrary", "https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4210934",
+						"ftbquests", "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4215548",
+						"ftbteams", "https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4229137",
+						"questsadditions", "https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/3940981"
 				));
 			}
 		}
