@@ -43,7 +43,8 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	}
 
 	@Override
-	protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
+	protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid,
+			Direction direction) {
 		return false;
 	}
 
@@ -70,7 +71,8 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	@Override
 	protected BlockState toBlockState(FluidState state) {
 		Block block = Registry.BLOCK.get(((IFluid) this.getTypical()).getId());
-		if (block == Blocks.AIR) return Blocks.AIR.getDefaultState();
+		if (block == Blocks.AIR)
+			return Blocks.AIR.getDefaultState();
 		return block.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
 	}
 
@@ -97,7 +99,8 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	@Override
 	public void setupRendering() {
 		if (this.isStill(null))
-			FluidRendererRegistry.register(this.getName(), this.getTextureName(), this.getTypical(), this.getFlowing(), true);
+			FluidRendererRegistry.register(this.getName(), this.getTextureName(), this.getTypical(), this.getFlowing(),
+					true);
 	}
 
 	@Override
@@ -118,7 +121,8 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	@Override
 	public Item getBucketItem() {
 		Identifier id = Cabricality.id(this.getName() + "_bucket");
-		if (Registry.ITEM.containsId(id)) return Registry.ITEM.get(id);
+		if (Registry.ITEM.containsId(id))
+			return Registry.ITEM.get(id);
 		return Items.AIR;
 	}
 
@@ -130,24 +134,28 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	@Override
 	protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
 		super.appendProperties(builder);
-		if (!this.isStill(null)) builder.add(LEVEL);
+		if (!this.isStill(null))
+			builder.add(LEVEL);
 	}
 
 	@Override
 	public int getLevel(FluidState state) {
-		if (!this.isStill(null)) return 8;
+		if (!this.isStill(null))
+			return 8;
 		return state.get(LEVEL);
 	}
 
 	@Override
 	public Fluid getFlowing() {
-		if (!this.isStill(null)) return this;
+		if (!this.isStill(null))
+			return this;
 		return Registry.FLUID.get(Cabricality.id(this.getName() + "_flowing"));
 	}
 
 	@Override
 	public Fluid getStill() {
-		if (this.isStill(null)) return this;
+		if (this.isStill(null))
+			return this;
 		return Registry.FLUID.get(Cabricality.id(this.getName()));
 	}
 }

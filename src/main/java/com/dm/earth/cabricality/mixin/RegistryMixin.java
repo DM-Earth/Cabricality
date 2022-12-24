@@ -11,7 +11,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Registry.class)
 public class RegistryMixin {
 	@Inject(method = "register(Lnet/minecraft/util/registry/Registry;Lnet/minecraft/util/registry/RegistryKey;Ljava/lang/Object;)Ljava/lang/Object;", at = @At("HEAD"), cancellable = true)
-	private static <V, T extends V> void injected(Registry<V> registry, RegistryKey<V> key, T entry, CallbackInfoReturnable<T> cir) {
-		if (RegistrationUtil.shouldBan(key.getValue())) cir.cancel();
+	private static <V, T extends V> void injected(Registry<V> registry, RegistryKey<V> key, T entry,
+			CallbackInfoReturnable<T> cir) {
+		if (RegistrationUtil.shouldBan(key.getValue()))
+			cir.cancel();
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    { "name": "tconstruct:molten_silver", "amount": 9000 },
+    { "name": "tconstruct:ender_slime", "amount": 20250 },
+    { "name": "tconstruct:molten_ender", "amount": 20250 }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_enderium",
+    "amount": 9000
+  },
+  "temperature": 850
+}

@@ -10,6 +10,8 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
@@ -25,6 +27,15 @@ public class EnderiumThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(IV.id("tier_upgrade_mk4"), 1, MC.id("redstone")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("quantum_ring"), 1, AE2.id("energy_cell")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("quantum_link"), 1, AE2.id("fluix_pearl")));
+	}
+
+	@Override
+	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+		handler.register(recipeId("crafting", "enderium_machine"),
+				id -> VanillaRecipeBuilders.shapedRecipe("SSS", "SCS", "SSS")
+						.ingredient('S', CABF.asIngredient("abstruse_mechanism"))
+						.ingredient('C', CABF.asIngredient("enderium_casing")).output(CABF.asStack("enderium_machine"))
+						.build(id, ""));
 	}
 
 	@Override

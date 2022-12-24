@@ -32,7 +32,8 @@ public class BaseFluid extends Fluid implements IFluid {
 	}
 
 	@Override
-	protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
+	protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid,
+			Direction direction) {
 		return true;
 	}
 
@@ -103,7 +104,8 @@ public class BaseFluid extends Fluid implements IFluid {
 
 	@Override
 	public void setupRendering() {
-		FluidRendererRegistry.register(this.getName(), this.getTextureName(), this.getTypical(), this.getFlowing(), false);
+		FluidRendererRegistry.register(this.getName(), this.getTextureName(), this.getTypical(), this.getFlowing(),
+				false);
 	}
 
 	@Override
@@ -119,7 +121,8 @@ public class BaseFluid extends Fluid implements IFluid {
 	@Override
 	public Item getBucketItem() {
 		Identifier id = Cabricality.id(this.getName() + "_bucket");
-		if (Registry.ITEM.containsId(id)) return Registry.ITEM.get(id);
+		if (Registry.ITEM.containsId(id))
+			return Registry.ITEM.get(id);
 		return Items.AIR;
 	}
 }

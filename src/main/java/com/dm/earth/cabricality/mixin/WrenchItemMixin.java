@@ -24,11 +24,13 @@ public class WrenchItemMixin {
 	private void injected(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
 		World world = context.getWorld();
 		if (world.getBlockState(context.getBlockPos()).getBlock() instanceof Wrenchable block) {
-			block.handleWrench(world, context.getBlockPos(), world.getBlockState(context.getBlockPos()), context.getSide(), context.getPlayer(), context.getHitPos());
+			block.handleWrench(world, context.getBlockPos(), world.getBlockState(context.getBlockPos()),
+					context.getSide(), context.getPlayer(), context.getHitPos());
 			cir.setReturnValue(ActionResult.SUCCESS);
 		}
 
-		if (!context.getWorld().isClient() && context.getWorld().getBlockState(context.getBlockPos()).isOf(BitsAndChisels.BITS_BLOCK)) {
+		if (!context.getWorld().isClient()
+				&& context.getWorld().getBlockState(context.getBlockPos()).isOf(BitsAndChisels.BITS_BLOCK)) {
 			BlockEntity e1 = context.getWorld().getBlockEntity(context.getBlockPos());
 			if (e1 instanceof BitsBlockEntity e) {
 				if (Objects.requireNonNull(context.getPlayer()).isSneaking()) {
@@ -77,7 +79,9 @@ public class WrenchItemMixin {
 		e.sync();
 	}
 
-	//Rotation Algorithm from https://stackoverflow.com/questions/53110374/how-to-rotate-2-d-array-in-java, extended to 3D
+	// Rotation Algorithm from
+	// https://stackoverflow.com/questions/53110374/how-to-rotate-2-d-array-in-java,
+	// extended to 3D
 	void rotate(Axis axis, BitsBlockEntity e) {
 		BlockState[][][] rotated = new BlockState[16][16][16];
 		switch (axis) {

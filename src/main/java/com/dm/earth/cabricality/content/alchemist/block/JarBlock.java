@@ -10,7 +10,6 @@ import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.dm.earth.cabricality.util.VoxelShapeUtil;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
-import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -87,42 +86,34 @@ public class JarBlock extends Block implements ResourcedBlock {
 		return Cabricality.id("block/jar/jar");
 	}
 
-	private static class UseBehavior implements UseBlockCallback {
+	@Override
+	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
+			BlockHitResult hit) {
+		if (world.getBlockState(pos).getBlock() != CabfBlocks.JAR)
+			return ActionResult.PASS;
 
-		@Override
-		public ActionResult interact(PlayerEntity player, World world, Hand hand, BlockHitResult hitResult) {
-			BlockPos pos = hitResult.getBlockPos();
-			if (world.getBlockState(pos).getBlock() != CabfBlocks.JAR)
-				return ActionResult.PASS;
-
-			ItemStack stack = player.getStackInHand(Hand.MAIN_HAND);
-			if (player.isSneaking() || player.getStackInHand(Hand.MAIN_HAND).isEmpty() || world.isClient())
-				return ActionResult.PASS;
-			Reagent reagent = null;
-			for (Reagents reagents : Reagents.values()) {
-				boolean braked = false;
-				for (Reagent reagentT : reagents.getReagents())
-					if (reagentT.getItem() == stack.getItem()) {
-						reagent = reagentT;
-						braked = true;
-						break;
-					}
-				if (braked)
+		ItemStack stack = player.getStackInHand(Hand.MAIN_HAND);
+		if (player.isSneaking() || player.getStackInHand(Hand.MAIN_HAND).isEmpty() || world.isClient())
+			return ActionResult.PASS;
+		Reagent reagent = null;
+		for (Reagents reagents : Reagents.values()) {
+			boolean braked = false;
+			for (Reagent reagentT : reagents.getReagents())
+				if (reagentT.getItem() == stack.getItem()) {
+					reagent = reagentT;
+					braked = true;
 					break;
-			}
-
-			if (reagent == null)
-				return ActionResult.PASS;
-			stack.decrement(1);
-			player.setStackInHand(Hand.MAIN_HAND, stack);
-			world.setBlockState(pos,
-					Registry.BLOCK.get(Cabricality.id("reagent_jar_" + reagent.hashString())).getDefaultState());
-			return ActionResult.SUCCESS;
+				}
+			if (braked)
+				break;
 		}
 
-	}
-
-	public static void load() {
-		UseBlockCallback.EVENT.register(new UseBehavior());
+		if (reagent == null)
+			return ActionResult.PASS;
+		stack.decrement(1);
+		player.setStackInHand(Hand.MAIN_HAND, stack);
+		world.setBlockState(pos,
+				Registry.BLOCK.get(Cabricality.id("reagent_jar_" + reagent.hashString())).getDefaultState());
+		return ActionResult.SUCCESS;
 	}
 }

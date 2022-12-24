@@ -36,3 +36,4 @@ bin/
 # quilt
 
 run/
+.factorypath

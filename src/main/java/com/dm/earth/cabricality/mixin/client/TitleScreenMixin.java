@@ -27,21 +27,21 @@ public class TitleScreenMixin extends Screen {
 	@Inject(method = "init", at = @At("TAIL"))
 	private void init(CallbackInfo ci) {
 		if (!ModChecker.isFullLoaded()) {
-			Text warning =
-					(
-							ModChecker.countMissing() == 1
-									? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
-									: new TranslatableText(Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mods"), ModChecker.countMissing())
-					).formatted(Formatting.RED);
+			Text warning = (ModChecker.countMissing() == 1
+					? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
+					: new TranslatableText(
+							Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mods"),
+							ModChecker.countMissing()))
+					.formatted(Formatting.RED);
 			this.addDrawableChild(
 					new PlainTextButtonWidget(
 							this.width / 2 - this.textRenderer.getWidth(warning) / 2, 2,
 							this.textRenderer.getWidth(warning), 10, warning,
 							buttonWidget -> {
-								if (this.client != null) this.client.setScreen(new MissingModScreen(ModChecker.getMissingModList(), ModChecker.getModDedicatedUrlList(), this.client.currentScreen));
-							}, this.textRenderer
-					)
-			);
+								if (this.client != null)
+									this.client.setScreen(new MissingModScreen(ModChecker.getMissingModList(),
+											ModChecker.getModDedicatedUrlList(), this.client.currentScreen));
+							}, this.textRenderer));
 		}
 	}
 }
