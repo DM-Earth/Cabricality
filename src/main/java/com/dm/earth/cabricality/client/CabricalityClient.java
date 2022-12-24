@@ -1,9 +1,6 @@
 package com.dm.earth.cabricality.client;
 
-import static com.dm.earth.cabricality.Cabricality.ID;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
+import com.dm.earth.cabricality.util.ModDownloader;
 
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
@@ -23,21 +20,12 @@ import com.dm.earth.cabricality.util.ModChecker;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.text.TranslatableText;
+
+import java.util.Arrays;
 
 public class CabricalityClient implements ClientModInitializer {
-
-	public static String genTranslationKey(String type, String... path) {
-		return type + "." + ID + Arrays.stream(path).map(p -> "." + p).collect(Collectors.joining());
-	}
-
-	public static TranslatableText genTranslatableText(String type, String... path) {
-		return new TranslatableText(genTranslationKey(type, path));
-	}
-
 	@Override
 	public void onInitializeClient(ModContainer mod) {
-		ModChecker.check();
 		FluidRendererRegistry.renderFluidInit();
 		ColorRegistryListener.load();
 		ProfessionDebugHelper.load();
@@ -53,8 +41,8 @@ public class CabricalityClient implements ClientModInitializer {
 			BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock());
 
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
-				ResourcePackActivationType.DEFAULT_ENABLED, genTranslatableText("pack", "asset_edits"));
+				ResourcePackActivationType.DEFAULT_ENABLED, Cabricality.genTranslatableText("pack", "asset_edits"));
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
-				ResourcePackActivationType.ALWAYS_ENABLED, genTranslatableText("pack", "quests_lang"));
+				ResourcePackActivationType.ALWAYS_ENABLED, Cabricality.genTranslatableText("pack", "quests_lang"));
 	}
 }

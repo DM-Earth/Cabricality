@@ -6,7 +6,6 @@ import org.jetbrains.annotations.NotNull;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.client.CabricalityClient;
 import com.dm.earth.cabricality.content.trading.Professions;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
@@ -40,7 +39,7 @@ public class BumpQuestCommand implements Command<QuiltClientCommandSource> {
 	@NotNull
 	private static String generateProfessionQuest(int x, int y, @NotNull Profession entry) {
 		return "{\n" +
-				"title: \"{" + CabricalityClient.genTranslationKey("profession", entry.id().getPath()) + "}\"\n" +
+				"title: \"{" + Cabricality.genTranslationKey("profession", entry.id().getPath()) + "}\"\n" +
 				"icon: \"" + Cabricality.id("profession_card_" + entry.hashString()) + "\"\n" +
 				"disable_toast: true\n" +
 				"x: " + x + "d\n" +

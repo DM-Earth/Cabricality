@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.trading.item;
 
-import com.dm.earth.cabricality.client.CabricalityClient;
+import com.dm.earth.cabricality.Cabricality;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -20,7 +20,7 @@ public abstract class AbstractTradeCardItem extends Item {
 
 	@Override
 	public String getTranslationKey() {
-		return CabricalityClient.genTranslatableText("item", this.getType()).getString() + " §r- "
+		return Cabricality.genTranslatableText("item", this.getType()).getString() + " §r- "
 				+ this.getContentString();
 	}
 

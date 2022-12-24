@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.trading.item;
 
-import com.dm.earth.cabricality.client.CabricalityClient;
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.core.TradingEntryRegistry;
@@ -22,7 +22,7 @@ public class ProfessionCardItem extends AbstractTradeCardItem {
 	@Override
 	@SuppressWarnings("ConstantConditions")
 	public String getContentString() {
-		return CabricalityClient.genTranslatableText("profession", ProfessionUtil.fromItem(this).id().getPath()).getString();
+		return Cabricality.genTranslatableText("profession", ProfessionUtil.fromItem(this).id().getPath()).getString();
 	}
 
 	@Override

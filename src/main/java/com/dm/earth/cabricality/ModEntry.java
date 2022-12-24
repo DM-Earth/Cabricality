@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public enum ModEntry {
+	/* Abbreviations */
 	MC("minecraft"),
 	C("c"),
 	CR("create"),
@@ -27,7 +28,6 @@ public enum ModEntry {
 	KB("kibe"),
 	CX("coxinhautilities"),
 	ED("extended_drawers");
-	;
 
 	final String modId;
 
