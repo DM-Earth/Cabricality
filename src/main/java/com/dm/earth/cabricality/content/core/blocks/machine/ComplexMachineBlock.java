@@ -1,7 +1,6 @@
 package com.dm.earth.cabricality.content.core.blocks.machine;
 
 public class ComplexMachineBlock extends AbstractMachineBlock {
-
     public ComplexMachineBlock(Settings settings) {
         super(settings);
     }
@@ -15,5 +14,4 @@ public class ComplexMachineBlock extends AbstractMachineBlock {
     protected boolean isFull() {
         return false;
     }
-
 }

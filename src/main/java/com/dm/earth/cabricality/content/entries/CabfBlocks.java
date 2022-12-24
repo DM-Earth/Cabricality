@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.content.entries;
 
+import java.util.Arrays;
+
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 import com.dm.earth.cabricality.Cabricality;
@@ -8,7 +10,6 @@ import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ChaoticCatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
-import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlock;
@@ -39,30 +40,29 @@ public class CabfBlocks {
 		JTag pickaxeMineableTag = new JTag();
 
 		// Substrate Jars
-		for (Reagents reagents : Reagents.values()) {
+		Arrays.stream(Reagents.values()).forEach(reagents -> {
 			if (reagents == Reagents.CHAOTIC)
 				registerBlock("catalyst_jar_" + reagents.getCatalyst().hashString(),
 						new ChaoticCatalystJarBlock(QuiltBlockSettings.of(Material.GLASS, MapColor.BROWN)));
 			else
 				registerBlock("catalyst_jar_" + reagents.getCatalyst().hashString(),
 						new CatalystJarBlock(QuiltBlockSettings.of(Material.GLASS, MapColor.BROWN)));
-			for (Reagent reagent : reagents.getReagents())
-				registerBlock("reagent_jar_" + reagent.hashString(),
-						new ReagentJarBlock(QuiltBlockSettings.of(Material.GLASS, MapColor.SPRUCE_BROWN)));
-		}
+			reagents.getReagents().forEach(reagent -> registerBlock("reagent_jar_" + reagent.hashString(),
+					new ReagentJarBlock(QuiltBlockSettings.of(Material.GLASS, MapColor.SPRUCE_BROWN))));
+		});
 
-		// Machine Blocks
-		for (MachineBlockEntry entry : MachineBlockEntry.values()) {
+		// Machines
+		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> {
 			registerBlock(entry.getId().getPath(), entry.getBlock());
 			wrenchAbleTag.add(entry.getId());
-		}
+		});
 
-		// Casing Blocks
-		for (CasingBlockEntry entry : CasingBlockEntry.values()) {
+		// Casings
+		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> {
 			registerBlock(entry.getId().getPath(), entry.getBlock());
 			wrenchAbleTag.add(entry.getId());
 			pickaxeMineableTag.add(entry.getId());
-		}
+		});
 
 		Cabricality.SERVER_RESOURCES.addTag(new Identifier(AllBlockTags.WRENCH_PICKUP.tag.id().getNamespace(),
 				"blocks/" + AllBlockTags.WRENCH_PICKUP.tag.id().getPath()), wrenchAbleTag);

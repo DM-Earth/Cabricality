@@ -1,7 +1,6 @@
 package com.dm.earth.cabricality.content.core.blocks.machine;
 
 public class CutoffMachineBlock extends AbstractMachineBlock {
-
     public CutoffMachineBlock(Settings settings) {
         super(settings);
     }
@@ -15,5 +14,4 @@ public class CutoffMachineBlock extends AbstractMachineBlock {
     protected boolean isFull() {
         return true;
     }
-
 }

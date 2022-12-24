@@ -1,8 +1,8 @@
 {
   "comment_event": "Events",
 
-  "event.cabricality.coin_flip": "§8%s flipped a %s, §8it was ",
-  "event.cabricality.dice_roll": "§8%s rolled a %s, §8it was ",
+  "event.cabricality.coin_flip": "You Flipped a %s, It Was %s",
+  "event.cabricality.dice_roll": "You Rolled a %s, It Was %s",
 
 
 
@@ -49,6 +49,11 @@
 
   "item.cabricality.gold_coin"  : "§6Gold Coin",
   "item.cabricality.silver_coin": "§7Silver Coin",
+
+  "item.cabricality.gold_coin_top"     : "§e§l▲",
+  "item.cabricality.gold_coin_bottom"  : "§6§l▼",
+  "item.cabricality.silver_coin_top"   : "§f§l▲",
+  "item.cabricality.silver_coin_bottom": "§7§l▼",
 
   "item.cabricality.sand_ball"    : "Sand Ball",
   "item.cabricality.rough_sand"   : "Rough Sand",
@@ -153,6 +158,13 @@
   "comment_block": "Blocks",
 
   "block.cabricality.dice": "§5Dice",
+
+  "block.cabricality.dice_1": "§d§l1",
+  "block.cabricality.dice_2": "§d§l2",
+  "block.cabricality.dice_3": "§d§l3",
+  "block.cabricality.dice_4": "§d§l4",
+  "block.cabricality.dice_5": "§d§l5",
+  "block.cabricality.dice_6": "§d§l6",
 
   "block.cabricality.extractor_machine": "Extractor Machine",
   "block.cabricality.andesite_machine" : "Andesite Machine",

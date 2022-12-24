@@ -1,8 +1,8 @@
 {
   "comment_event": "事件",
 
-  "event.cabricality.coin_flip": "§8%s翻转了一枚%s，§8结果是",
-  "event.cabricality.dice_roll": "§8%s掷出了一枚%s，§8结果是",
+  "event.cabricality.coin_flip": "你翻转了一枚%s，结果是%s",
+  "event.cabricality.dice_roll": "你掷出了一枚%s，结果是%s",
 
 
 
@@ -49,6 +49,11 @@
 
   "item.cabricality.gold_coin"  : "§6金币",
   "item.cabricality.silver_coin": "§7银币",
+
+  "item.cabricality.gold_coin_top"     : "§e§l▲",
+  "item.cabricality.gold_coin_bottom"  : "§6§l▼",
+  "item.cabricality.silver_coin_top"   : "§f§l▲",
+  "item.cabricality.silver_coin_bottom": "§7§l▼",
 
   "item.cabricality.sand_ball"    : "沙团",
   "item.cabricality.rough_sand"   : "粗砂",
@@ -153,6 +158,13 @@
   "comment_block": "方块",
 
   "block.cabricality.dice": "§5骰子",
+
+  "block.cabricality.dice_1": "§d§l1",
+  "block.cabricality.dice_2": "§d§l2",
+  "block.cabricality.dice_3": "§d§l3",
+  "block.cabricality.dice_4": "§d§l4",
+  "block.cabricality.dice_5": "§d§l5",
+  "block.cabricality.dice_6": "§d§l6",
 
   "block.cabricality.extractor_machine": "提取器",
   "block.cabricality.andesite_machine" : "安山机器",

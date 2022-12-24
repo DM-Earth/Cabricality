@@ -15,11 +15,10 @@ public class CabfDebugger {
 
 	public static void debug(String bug) {
 		if (debug || QuiltLoader.isDevelopmentEnvironment())
-			Cabricality.LOGGER.info("[Cabricality/DEBUG] " + bug);
+			Cabricality.LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + bug);
 	}
 
 	public static class DebugCommand implements Command<ServerCommandSource> {
-
 		@Override
 		public int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
 			if (debug) {
@@ -31,6 +30,5 @@ public class CabfDebugger {
 			}
 			return SINGLE_SUCCESS;
 		}
-
 	}
 }

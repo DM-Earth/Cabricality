@@ -11,7 +11,6 @@ import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.util.Identifier;
 
 public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
-
 	public final String name;
 
 	public SimpleCasingBlock(Settings settings, String name) {
@@ -43,5 +42,4 @@ public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 	public boolean doLootTable() {
 		return true;
 	}
-
 }

@@ -35,8 +35,8 @@ public enum ModEntry {
 		this.modId = modId;
 	}
 
-	public Identifier id(String path) {
-		return new Identifier(this.modId, path);
+	public Identifier id(String... path) {
+		return new Identifier(this.modId, String.join("/", path));
 	}
 
 	public Item asItem(String name) {

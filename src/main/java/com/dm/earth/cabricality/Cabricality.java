@@ -54,13 +54,13 @@ public class Cabricality implements ModInitializer {
 
 	/* Generator Utils */
 	@Contract("_ -> new")
-	public static @NotNull Identifier id(String id) {
-		return new Identifier(ID, id);
+	public static @NotNull Identifier id(String... id) {
+		return new Identifier(ID, String.join("/", id));
 	}
 
 	@Contract("_,_ -> new")
 	public static @NotNull String genTranslationKey(String type, String... path) {
-		return type + "." + ID + Arrays.stream(path).map(p -> "." + p).collect(Collectors.joining());
+		return type + "." + ID + "." + String.join(".", path);
 	}
 
 	@Contract("_,_ -> new")
@@ -121,7 +121,6 @@ public class Cabricality implements ModInitializer {
 				logInfo("Successfully downloaded " + result.delete(result.length() - 2, result.length()) + "!");
 			}
 		}
-
 		 */
 
 		Trading.load();

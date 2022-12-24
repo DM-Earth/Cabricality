@@ -27,13 +27,11 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 
 public abstract class AbstractMachineBlock extends HorizontalFacingBlock implements ResourcedBlock, Waterloggable {
-
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public AbstractMachineBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(
-                this.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH).with(WATERLOGGED, false));
+        this.setDefaultState(this.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 
     @Override
@@ -65,10 +63,7 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing().getOpposite())
-                .with(WATERLOGGED,
-                        this.isWaterLoggable()
-                                ? ctx.getWorld().getFluidState(ctx.getBlockPos()).getFluid() == Fluids.WATER
-                                : false);
+                .with(WATERLOGGED, this.isWaterLoggable() && ctx.getWorld().getFluidState(ctx.getBlockPos()).getFluid() == Fluids.WATER);
     }
 
     @Override
@@ -91,7 +86,7 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
 
     @Override
     public boolean canFillWithFluid(BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
-        return this.isWaterLoggable() ? Waterloggable.super.canFillWithFluid(world, pos, state, fluid) : false;
+        return this.isWaterLoggable() && Waterloggable.super.canFillWithFluid(world, pos, state, fluid);
     }
 
     @Override
@@ -102,5 +97,4 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
     protected abstract boolean isWaterLoggable();
 
     protected abstract boolean isFull();
-
 }
