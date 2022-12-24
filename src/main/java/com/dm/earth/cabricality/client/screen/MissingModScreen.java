@@ -4,6 +4,7 @@ import com.dm.earth.cabricality.Cabricality;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.Drawable;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.gui.screen.Screen;
@@ -41,28 +42,46 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class MissingModScreen extends Screen implements Drawable {
 	private final Map<String, String> missingMods, urls;
 	@Nullable private final Screen parent;
+	private final boolean renderBackgroundTexture;
 
 	public MissingModScreen(@Nullable Map<String, String> missingMods) {
-		this(missingMods, null, null);
+		this(missingMods, null, null, MinecraftClient.getInstance().world == null);
 	}
 
 	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls) {
-		this(missingMods, urls, null);
+		this(missingMods, urls, null, MinecraftClient.getInstance().world == null);
 	}
 
 	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Screen parent) {
-		this(missingMods, null, parent);
+		this(missingMods, null, parent, MinecraftClient.getInstance().world == null);
 	}
 
 	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls, @Nullable Screen parent) {
+		this(missingMods, urls, parent, MinecraftClient.getInstance().world == null);
+	}
+
+	public MissingModScreen(@Nullable Map<String, String> missingMods, boolean renderBackgroundTexture) {
+		this(missingMods, null, null, renderBackgroundTexture);
+	}
+
+	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls, boolean renderBackgroundTexture) {
+		this(missingMods, urls, null, renderBackgroundTexture);
+	}
+
+	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Screen parent, boolean renderBackgroundTexture) {
+		this(missingMods, null, parent, renderBackgroundTexture);
+	}
+
+	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls, @Nullable Screen parent, boolean renderBackgroundTexture) {
 		super(Cabricality.genTranslatableText("screen", "missing_mod", "title"));
 		this.missingMods = missingMods == null ? new HashMap<>() : missingMods;
 		this.urls = urls == null ? new HashMap<>() : urls;
 		this.parent = parent;
+		this.renderBackgroundTexture = renderBackgroundTexture;
 	}
 
 	public boolean isPauseScreen() {
-		return false;
+		return renderBackgroundTexture;
 	}
 
 	public boolean shouldCloseOnEsc() {
@@ -144,8 +163,8 @@ public class MissingModScreen extends Screen implements Drawable {
 	}
 
 	public void renderBackground(MatrixStack matrixStack) {
-		// Render Background Texture
-		super.renderBackground(matrixStack);
+		// Render Background Texture if Allowed
+		if (renderBackgroundTexture) super.renderBackground(matrixStack);
 
 		// Render Colored Overlay
 		Color color = new Color(0x1B1329);

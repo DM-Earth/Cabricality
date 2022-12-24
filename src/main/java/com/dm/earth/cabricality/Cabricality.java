@@ -3,6 +3,7 @@ package com.dm.earth.cabricality;
 import com.dm.earth.cabricality.util.ModChecker;
 import com.dm.earth.cabricality.util.ModDownloader;
 
+import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.text.TranslatableText;
 
 import org.jetbrains.annotations.Contract;
