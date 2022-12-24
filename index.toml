@@ -3020,7 +3020,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "9f432461ca036b6f029e3a1993bd9673ea206a101ae3098ace2c564bdc067741"
+hash = "cc4df76d152ff6a6882ca6c94a5cf3295d466282fba6b3e639863d467e1c8015"
 metafile = true
 
 [[files]]
