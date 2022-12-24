@@ -1,10 +1,7 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.util.ModChecker;
-import com.dm.earth.cabricality.util.ModDownloader;
-
-import dev.architectury.event.events.client.ClientTickEvent;
-import net.minecraft.text.TranslatableText;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -25,16 +22,14 @@ import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.tweak.TagTweaks;
+import com.dm.earth.cabricality.util.ModChecker;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
@@ -113,15 +108,18 @@ public class Cabricality implements ModInitializer {
 
 		ModChecker.check();
 		/*
-		if (!ModChecker.getModUrlList().isEmpty()) {
-			ArrayList<String> succeed = new ModDownloader(ModChecker.getModUrlList()).download();
-			if (succeed != null) {
-				StringBuilder result = succeed.stream()
-											   .reduce(new StringBuilder(), (builder, s) -> builder.append(s).append(", "), StringBuilder::append);
-				logInfo("Successfully downloaded " + result.delete(result.length() - 2, result.length()) + "!");
-			}
-		}
-
+		 * if (!ModChecker.getModUrlList().isEmpty()) {
+		 * ArrayList<String> succeed = new
+		 * ModDownloader(ModChecker.getModUrlList()).download();
+		 * if (succeed != null) {
+		 * StringBuilder result = succeed.stream()
+		 * .reduce(new StringBuilder(), (builder, s) -> builder.append(s).append(", "),
+		 * StringBuilder::append);
+		 * logInfo("Successfully downloaded " + result.delete(result.length() - 2,
+		 * result.length()) + "!");
+		 * }
+		 * }
+		 *
 		 */
 
 		Trading.load();
