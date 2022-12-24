@@ -33,6 +33,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Util;
 
 @ClientOnly
+@SuppressWarnings("all")
 public class MissingModScreen extends Screen {
 	private final Map<String, String> missingMods, urls;
 	@Nullable
