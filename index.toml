@@ -2794,6 +2794,11 @@ hash = "0084c36a5d7f0ce300d60178150d1211308c81d19f929b3382c6b4af0b9e6d4f"
 metafile = true
 
 [[files]]
+file = "mods/architectury-fabric.pw.toml"
+hash = "652a6f02347af12ad23efcb780407aee0a3ba5bd60ec5d9d8c386e6b05a2f7a1"
+metafile = true
+
+[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
 metafile = true

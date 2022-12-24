@@ -215,8 +215,8 @@ public class MissingModScreen extends Screen implements Drawable {
 						this.width / 2 - wideness / 2, y,
 						this.textRenderer.getWidth(quit), 10, quit,
 						buttonWidget -> {
-							if (this.client != null) client.stop();
 							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open Mods Folder
+							if (this.client != null) client.stop();
 						}, this.textRenderer
 				)
 		);
@@ -236,8 +236,8 @@ public class MissingModScreen extends Screen implements Drawable {
 						this.width / 2 - this.textRenderer.getWidth(quit) / 2, y,
 						this.textRenderer.getWidth(quit), 10, quit,
 						buttonWidget -> {
-							if (this.client != null) client.stop();
 							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open Mods Folder
+							if (this.client != null) client.stop();
 						}, this.textRenderer
 				)
 		);
