@@ -25,6 +25,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Util;
 
 import org.jetbrains.annotations.Nullable;
+import org.quiltmc.loader.api.QuiltLoader;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 
 import java.awt.*;
@@ -215,6 +216,7 @@ public class MissingModScreen extends Screen implements Drawable {
 						this.textRenderer.getWidth(quit), 10, quit,
 						buttonWidget -> {
 							if (this.client != null) client.stop();
+							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open Mods Folder
 						}, this.textRenderer
 				)
 		);
@@ -235,6 +237,7 @@ public class MissingModScreen extends Screen implements Drawable {
 						this.textRenderer.getWidth(quit), 10, quit,
 						buttonWidget -> {
 							if (this.client != null) client.stop();
+							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open Mods Folder
 						}, this.textRenderer
 				)
 		);

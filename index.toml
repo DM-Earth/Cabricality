@@ -2790,7 +2790,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "5c067cf953857a327140fca91560dcb225c2f49d8dc5c0e71525812570e8e902"
+hash = "0084c36a5d7f0ce300d60178150d1211308c81d19f929b3382c6b4af0b9e6d4f"
 metafile = true
 
 [[files]]
@@ -2874,6 +2874,11 @@ hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
 metafile = true
 
 [[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "8cf5324d7ab4e2080d3abb786acdc1a2f4fa0a139d296ae056db321362edff77"
+metafile = true
+
+[[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "3cb8e30672e6f29d7a0ee663f4239cb7374eb8ab44c82d1fc9382b56a8dc7b58"
 metafile = true
@@ -2911,6 +2916,11 @@ metafile = true
 [[files]]
 file = "mods/item-filters-fabric.pw.toml"
 hash = "564ffc77434dc01fbe8377b98ed95b3112c7d8978a57fb7a9f325961e5364561"
+metafile = true
+
+[[files]]
+file = "mods/item-filters.pw.toml"
+hash = "5446a135421d4f9cc9c1f43fa7fdad58bd0eed4c2291a6f51eb03f1ec8fdc6bd"
 metafile = true
 
 [[files]]
