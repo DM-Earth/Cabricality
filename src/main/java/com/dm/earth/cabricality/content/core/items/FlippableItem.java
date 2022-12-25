@@ -27,6 +27,7 @@ public class FlippableItem extends Item {
 	}
 
 	@Override
+	@SuppressWarnings("all")
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 		ItemStack stack = player.getStackInHand(hand);
 		if (!player.isSneaking()) {
@@ -52,6 +53,7 @@ public class FlippableItem extends Item {
 		player.playSound(ModSoundEvents.PASSING_SPACESHIP, 0.13F, 1);
 	}
 
+	@SuppressWarnings("all")
 	private void broadcastFlippingResult(boolean side) {
 		MinecraftClient.getInstance().inGameHud.setOverlayMessage(
 				new TranslatableText(
