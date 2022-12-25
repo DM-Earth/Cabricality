@@ -6,18 +6,16 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IV;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.*;
-
+import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.TC;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
-
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
@@ -38,12 +36,13 @@ public class EnderiumThread implements TechThread {
 		handler.register(recipeId("crafting", "enderium_machine"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SSS", "SCS", "SSS")
 						.ingredient('S', CABF.asIngredient("abstruse_mechanism"))
-						.ingredient('C', CABF.asIngredient("enderium_casing")).output(CABF.asStack("enderium_machine"))
-						.build(id, ""));
+						.ingredient('C', CABF.asIngredient("enderium_casing"))
+						.output(CABF.asStack("enderium_machine")).build(id, ""));
 
 		handler.register(recipeId("melting", "dark_amaranth_fungus"),
-				id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(PMD.id("dark_amaranth_fungus"),
-						TC.id("ender_slime"), FluidConstants.BOTTLE, null, 0, 100, 10)));
+				id -> RecipeManager.deserialize(id,
+						RecipeBuilderUtil.generateMelting(PMD.id("dark_amaranth_fungus"),
+								TC.id("ender_slime"), FluidConstants.BOTTLE, null, 0, 100, 10)));
 	}
 
 	@Override
@@ -52,8 +51,10 @@ public class EnderiumThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("enderium_machine"), output, count, other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
+			@Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("enderium_machine"), output, count,
+				other);
 	}
 
 }

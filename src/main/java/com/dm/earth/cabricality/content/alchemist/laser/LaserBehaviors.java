@@ -1,16 +1,12 @@
 package com.dm.earth.cabricality.content.alchemist.laser;
 
 import java.util.ArrayList;
-import java.util.List;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.util.PositionUtil;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -31,14 +27,13 @@ public class LaserBehaviors {
 	public static void attackNearby(@NotNull ServerWorld world, BlockPos pos, float power) {
 		float len = power * 3F;
 		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
-		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving).forEach(entity -> entity.damage(DamageSource.GENERIC, power));
+		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving)
+				.forEach(entity -> entity.damage(DamageSource.GENERIC, power));
 	}
 
 	// pos should be the lamp's blockPos
-	public static ActionResult process(
-			ServerWorld world, BlockPos pos, Direction direction,
-			@NotNull LaserProperties properties
-	) {
+	public static ActionResult process(ServerWorld world, BlockPos pos, Direction direction,
+			@NotNull LaserProperties properties) {
 		ActionResult returnResult = ActionResult.FAIL;
 
 		ArrayList<HopperMinecartEntity> minecarts = new ArrayList<>();

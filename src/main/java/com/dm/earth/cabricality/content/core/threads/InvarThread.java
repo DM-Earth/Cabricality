@@ -9,16 +9,13 @@ import static com.dm.earth.cabricality.ModEntry.IV;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
-
 import java.util.List;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
@@ -37,7 +34,6 @@ import com.simibubi.create.content.contraptions.components.mixer.CompactingRecip
 import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
 import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
-
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import me.alphamode.forgetags.Tags;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
@@ -52,9 +48,10 @@ import net.minecraft.util.registry.Registry;
 
 public class InvarThread implements TechThread {
 
-	private static final List<Identifier> REMOVE_OUTPUTS = List.of(IV.id("compressor_mk1"), IV.id("chopper_mk1"),
-			IV.id("farmer_mk1"), IV.id("slaughter_mk1"), IV.id("rancher_mk1"), IV.id("pump_mk1"),
-			IV.id("mining_rig_mk4"), IV.id("data_card_writer_mk4"), IV.id("drain_mk1"));
+	private static final List<Identifier> REMOVE_OUTPUTS =
+			List.of(IV.id("compressor_mk1"), IV.id("chopper_mk1"), IV.id("farmer_mk1"),
+					IV.id("slaughter_mk1"), IV.id("rancher_mk1"), IV.id("pump_mk1"),
+					IV.id("mining_rig_mk4"), IV.id("data_card_writer_mk4"), IV.id("drain_mk1"));
 
 	@Override
 	public void load() {
@@ -65,8 +62,10 @@ public class InvarThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(IV.id("recycler_mk2"), 1, MC.id("composter")));
 		MechAndSmithCraft.addEntry(entry(IV.id("condenser_mk4"), 1, MC.id("packed_ice")));
 		MechAndSmithCraft.addEntry(entry(IV.id("fluid_infuser_mk1"), 1, CR.id("whisk")));
-		MechAndSmithCraft.addEntry(entry(IV.id("modular_workbench_mk4"), 1, MC.id("crafting_table")));
-		MechAndSmithCraft.addEntry(entry(IV.id("lazuli_flux_container_mk1"), 1, MC.id("redstone_block")));
+		MechAndSmithCraft
+				.addEntry(entry(IV.id("modular_workbench_mk4"), 1, MC.id("crafting_table")));
+		MechAndSmithCraft
+				.addEntry(entry(IV.id("lazuli_flux_container_mk1"), 1, MC.id("redstone_block")));
 		MechAndSmithCraft.addEntry(entry(IV.id("laser_emitter_mk4"), 1, MC.id("lightning_rod")));
 		MechAndSmithCraft.addEntry(entry(CX.id("energy_trash_can"), 1, KB.id("trash_can")));
 	}
@@ -74,13 +73,10 @@ public class InvarThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
 		handler.register(recipeId("mechanical_crafting", "crushing_wheel"),
-				id -> RecipeBuilderUtil.mechanicalFromShaped(
-						VanillaRecipeBuilders
-								.shapedRecipe(" AAA ", "AABAA", "ABBBA", "AABAA", " AAA")
-								.ingredient('A', Tags.Items.COBBLESTONE)
-								.ingredient('B', Items.STICK)
-								.output(CR.asItem("crushing_wheel").getDefaultStack())
-								.build(id, ""),
+				id -> RecipeBuilderUtil.mechanicalFromShaped(VanillaRecipeBuilders
+						.shapedRecipe(" AAA ", "AABAA", "ABBBA", "AABAA", " AAA")
+						.ingredient('A', Tags.Items.COBBLESTONE).ingredient('B', Items.STICK)
+						.output(CR.asItem("crushing_wheel").getDefaultStack()).build(id, ""),
 						false));
 
 		for (ColoredFernItem.Entry entry : ColoredFernItem.Entry.values()) {
@@ -91,30 +87,33 @@ public class InvarThread implements TechThread {
 			DefaultedList<ChanceResult> results = DefaultedList.of();
 			results.add(new ChanceResult(CABF.asStack(leaf, 2), 1));
 			handler.register(recipeId("fd_cutting", fern),
-					id -> new CuttingBoardRecipe(id, "", TC.asIngredient(fern), Ingredient.ofTag(knives), results,
-							"minecraft:block.grass.break"));
+					id -> new CuttingBoardRecipe(id, "", TC.asIngredient(fern),
+							Ingredient.ofTag(knives), results, "minecraft:block.grass.break"));
 			handler.register(recipeId("deploying", fern),
 					id -> new DeployerApplicationRecipe(new FreePRP(id)
 							.setIngredient(TC.asIngredient(fern), Ingredient.ofTag(knives))
 							.setResult(CABF.asProcessingOutput(leaf, 1, 2)).keepHeldItem()));
-			handler.register(recipeId("haunting", leaf), id -> new HauntingRecipe(
-					new FreePRP(id).setIngredient(CABF.asIngredient(leaf))
+			handler.register(recipeId("haunting", leaf),
+					id -> new HauntingRecipe(new FreePRP(id).setIngredient(CABF.asIngredient(leaf))
 							.setResult(TC.asProcessingOutput(fern))));
 			handler.register(recipeId("milling", leaf),
 					id -> new MillingRecipe(new FreePRP(id).setIngredient(CABF.asIngredient(leaf))
-							.setResult(CABF.asProcessingOutput(paste))
-							.setProcessingTime(70)));
-			handler.register(recipeId("campfire_cooking", paste), id -> new CampfireCookingRecipe(id, "",
-					CABF.asIngredient(paste), entry.getOutputItem().getDefaultStack(), 0, 300));
+							.setResult(CABF.asProcessingOutput(paste)).setProcessingTime(70)));
+			handler.register(recipeId("campfire_cooking", paste),
+					id -> new CampfireCookingRecipe(id, "", CABF.asIngredient(paste),
+							entry.getOutputItem().getDefaultStack(), 0, 300));
 		}
 
-		handler.register(recipeId("campfire_cooking", "stick"), id -> new CampfireCookingRecipe(id, "",
-				MC.asIngredient("stick"), MC.asStack("torch"), 0, 20));
-		handler.register(recipeId("blasting", "nickel_compound"), id -> VanillaRecipeBuilders.blastingRecipe(id,
-				"", CABF.asIngredient("nickel_compound"), CABF.asStack("invar_compound"), 0.1F, 400));
-		handler.register(recipeId("crushing", "crushing_wheel"), id -> new CrushingRecipe(new FreePRP(id)
-				.setIngredient(CR.asIngredient("crushing_wheel"))
-				.setResult(AE2.asProcessingOutput("singularity")).setProcessingTime(250)));
+		handler.register(recipeId("campfire_cooking", "stick"), id -> new CampfireCookingRecipe(id,
+				"", MC.asIngredient("stick"), MC.asStack("torch"), 0, 20));
+		handler.register(recipeId("blasting", "nickel_compound"),
+				id -> VanillaRecipeBuilders.blastingRecipe(id, "",
+						CABF.asIngredient("nickel_compound"), CABF.asStack("invar_compound"), 0.1F,
+						400));
+		handler.register(recipeId("crushing", "crushing_wheel"),
+				id -> new CrushingRecipe(new FreePRP(id)
+						.setIngredient(CR.asIngredient("crushing_wheel"))
+						.setResult(AE2.asProcessingOutput("singularity")).setProcessingTime(250)));
 		handler.register(recipeId("compacting", "dye_entangled_singularity"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofTag(Tags.Items.DYES),
@@ -128,14 +127,16 @@ public class InvarThread implements TechThread {
 		handler.register(recipeId("crushing", "dye_entangled_singularity"),
 				id -> new CrushingRecipe(new FreePRP(id)
 						.setIngredient(CABF.asIngredient("dye_entangled_singularity"))
-						.setResult(balls.stream().map(
-								item -> new ProcessingOutput(item.getDefaultStack(), 0.9f - 0.1f * balls.indexOf(item)))
+						.setResult(balls.stream()
+								.map(item -> new ProcessingOutput(item.getDefaultStack(),
+										0.9f - 0.1f * balls.indexOf(item)))
 								.toList())
 						.setProcessingTime(50)));
 
 		for (Item item : balls) {
 			int index = balls.indexOf(item);
-			Item output = index < balls.size() - 1 ? balls.get(index + 1) : AE2.asItem("black_paint_ball");
+			Item output = index < balls.size() - 1 ? balls.get(index + 1)
+					: AE2.asItem("black_paint_ball");
 			handler.register(recipeId("emptying", Registry.ITEM.getId(item).getPath()),
 					id -> new EmptyingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(item))
 							.setFluidResult(new FluidStack(CabfFluids.WASTE, FluidConstants.BOTTLE))
@@ -143,20 +144,22 @@ public class InvarThread implements TechThread {
 		}
 
 		handler.register(recipeId("pressing", "refined_radiance"),
-				id -> new PressingRecipe(
-						new FreePRP(id).setIngredient(Ingredient.ofItems(CR.asItem("refined_radiance")))
-								.setResult(CABF.asProcessingOutput("radiant_sheet"))));
+				id -> new PressingRecipe(new FreePRP(id)
+						.setIngredient(Ingredient.ofItems(CR.asItem("refined_radiance")))
+						.setResult(CABF.asProcessingOutput("radiant_sheet"))));
 		handler.register(recipeId("mechanical_crafting", "radiant_coil"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
-						VanillaRecipeBuilders.shapedRecipe("A").ingredient('A', CabfItems.RADIANT_SHEET)
+						VanillaRecipeBuilders.shapedRecipe("A")
+								.ingredient('A', CabfItems.RADIANT_SHEET)
 								.output(CabfItems.RADIANT_COIL.getDefaultStack()).build(id, ""),
 						true));
 		handler.register(recipeId("mechanical_crafting", "chromatic_compound"),
-				id -> RecipeBuilderUtil.mechanicalFromShaped(
-						VanillaRecipeBuilders.shapedRecipe("AA", "AA")
-								.ingredient('A', AE2.asIngredient("magenta_paint_ball"))
-								.output(CR.asStack("chromatic_compound")).build(id, ""),
-						false));
+				id -> RecipeBuilderUtil
+						.mechanicalFromShaped(
+								VanillaRecipeBuilders.shapedRecipe("AA", "AA")
+										.ingredient('A', AE2.asIngredient("magenta_paint_ball"))
+										.output(CR.asStack("chromatic_compound")).build(id, ""),
+								false));
 		handler.register(recipeId("crafting", "chromatic_resonator"), id -> VanillaRecipeBuilders
 				.shapedRecipe(" R ", "R S", "LS ").ingredient('R', CABF.asItem("ruby"))
 				.ingredient('L', IV.asItem("lead_ingot")).ingredient('S', CABF.asItem("sapphire"))
@@ -174,17 +177,19 @@ public class InvarThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), IV.id("machine_block"), output, count, other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
+			@Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), IV.id("machine_block"), output, count,
+				other);
 	}
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
 		handler.remove(CR.id("mechanical_crafting/crushing_wheel"));
-		handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(IV.asItem("machine_block")));
-		handler.removeIf(p -> RecipeTweaks.notCabf(p)
-				&& REMOVE_OUTPUTS.stream().anyMatch(
-						id -> id.equals(Registry.ITEM.getId(p.getOutput().getItem()))));
+		handler.removeIf(
+				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(IV.asItem("machine_block")));
+		handler.removeIf(p -> RecipeTweaks.notCabf(p) && REMOVE_OUTPUTS.stream()
+				.anyMatch(id -> id.equals(Registry.ITEM.getId(p.getOutput().getItem()))));
 	}
 
 }
