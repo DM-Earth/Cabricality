@@ -1,0 +1,8 @@
+{
+  "coin_flip": {
+    "subtitle": "subtitle.cabricality.coin_flip",
+    "sounds": [
+      "cabricality:coin_flip"
+    ]
+  }
+}

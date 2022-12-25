@@ -1,11 +1,4 @@
 {
-  "comment_event": "Events",
-
-  "event.cabricality.coin_flip": "You Flipped a %s, It Was %s",
-  "event.cabricality.dice_roll": "You Rolled a %s, It Was %s",
-
-
-
   "comment_item": "Items",
 
   "item.cabricality.kinetic_mechanism"    : "Kinetic Mechanism",
@@ -301,15 +294,31 @@
 
 
 
+  "comment_event": "Events",
+
+  "event.cabricality.coin_flip": "You Flipped a %s    It Was %s",
+  "event.cabricality.dice_roll": "You Rolled a %s    It Was %s",
+
+
+
+  "comment_subtitle": "Subtitles",
+
+  "subtitle.cabricality.coin_flip": "Coin Flip",
+
+
+
   "comment_misc": "Miscellaneous",
+
+  "mod.ftblibrary.name": "FTB Library",
+  "mod.ftbquests.name": "FTB Quests",
+  "mod.ftbteams.name": "FTB Teams",
+  "mod.questsadditions.name": "Quests Additions",
 
   "tag.cabricality.trade_cards"     : "Trade Cards",
   "tag.cabricality.profession_cards": "Profession Cards",
 
   "screen.cabricality.missing_mod.title"                 : "Cabricality is Missing Mods",
   "screen.cabricality.missing_mod.subtitle"              : "Click to download",
-  "screen.cabricality.missing_mod.button.download.prefix": "Download ",
-  "screen.cabricality.missing_mod.button.download.suffix": "",
 
   "screen.cabricality.title_screen.warning_missing_mod" : "Missing 1 Mod!",
   "screen.cabricality.title_screen.warning_missing_mods": "Missing %d Mods!",

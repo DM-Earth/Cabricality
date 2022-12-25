@@ -99,23 +99,10 @@ public class MissingModScreen extends Screen {
 			AtomicInteger index = new AtomicInteger(0);
 			int widest = missingMods.values().stream().max(Comparator.comparingInt(String::length)).map(String::length)
 					.orElse(0);
-			String brackets = "[" +
-					String.join(
-							"", Collections.nCopies(
-									this.textRenderer
-											.getWidth(Cabricality.genTranslatableText("screen", "missing_mod", "button",
-													"download", "prefix"))
-											+ this.textRenderer.getWidth(Cabricality.genTranslatableText("screen",
-													"missing_mod", "button", "download", "suffix"))
-											+ widest + 5,
-									" "))
-					+
-					"]";
+			String brackets = "[" + String.join("", Collections.nCopies(widest + 5, " ")) + "]";
+
 			missingMods.forEach((modid, name) -> {
-				Text text = Cabricality.genTranslatableText("screen", "missing_mod", "button", "download", "prefix")
-						.append(name)
-						.append(Cabricality.genTranslatableText("screen", "missing_mod", "button", "download",
-								"suffix"))
+				Text text = new LiteralText(name)
 						.formatted(urls.containsKey(modid) ? Formatting.RESET : Formatting.STRIKETHROUGH)
 						.formatted(Formatting.LIGHT_PURPLE);
 				int y = 60 + (height - 90) * index.incrementAndGet() / (missingMods.size() + 1);
@@ -129,25 +116,9 @@ public class MissingModScreen extends Screen {
 				modDownloadButton(modid, name, text, y);
 			});
 			if (this.shouldCloseOnEsc()) {
-				Text blank = new LiteralText(String.join(
-						"", Collections.nCopies(
-								(this.textRenderer
-										.getWidth(Cabricality.genTranslatableText("screen", "missing_mod", "button",
-												"download", "prefix"))
-										+ this.textRenderer.getWidth(Cabricality.genTranslatableText("screen",
-												"missing_mod", "button", "download", "suffix"))
-										+ widest) / 4,
-								" ")));
-				Text quit = new LiteralText("[")
-						.append(blank)
-						.append("×")
-						.append(blank)
-						.append("]").formatted(Formatting.RED);
-				Text skip = new LiteralText("[")
-						.append(blank)
-						.append("→")
-						.append(blank)
-						.append("]").formatted(Formatting.WHITE);
+				Text blank = new LiteralText(String.join("", Collections.nCopies(widest / 4, " ")));
+				Text quit = new LiteralText("[").append(blank).append("×").append(blank).append("]").formatted(Formatting.RED);
+				Text skip = new LiteralText("[").append(blank).append("→").append(blank).append("]").formatted(Formatting.WHITE);
 				skipAndQuitButton(quit, skip, this.height - 30, this.textRenderer.getWidth(brackets));
 			} else {
 				quitButton(new LiteralText(brackets).formatted(Formatting.RED), this.height - 30);

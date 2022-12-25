@@ -1,11 +1,4 @@
 {
-  "comment_event": "事件",
-
-  "event.cabricality.coin_flip": "你翻轉了一枚%s，結果是%s",
-  "event.cabricality.dice_roll": "你擲出了一枚%s，結果是%s",
-
-
-
   "comment_item": "物品",
 
   "item.cabricality.kinetic_mechanism"    : "動力構件",
@@ -301,12 +294,28 @@
 
 
 
+  "comment_event": "事件",
+
+  "event.cabricality.coin_flip": "你翻轉了一枚%s    結果是%s",
+  "event.cabricality.dice_roll": "你擲出了一枚%s    結果是%s",
+
+
+
+  "comment_subtitle": "字幕",
+
+  "subtitle.cabricality.coin_flip": "硬幣：翻轉",
+
+
+
   "comment_misc": "雜項",
+
+  "mod.ftblibrary.name": "FTB Library模組",
+  "mod.ftbquests.name": "FTB Quests模組",
+  "mod.ftbteams.name": "FTB Teams模組",
+  "mod.questsadditions.name": "Quests Additions模組",
 
   "screen.cabricality.missing_mod.title"                 : "缺少以下模組",
   "screen.cabricality.missing_mod.subtitle"              : "點擊下載",
-  "screen.cabricality.missing_mod.button.download.prefix": "",
-  "screen.cabricality.missing_mod.button.download.suffix": "模組",
 
   "screen.cabricality.title_screen.warning_missing_mod" : "缺少1個模組！",
   "screen.cabricality.title_screen.warning_missing_mods": "缺少%d個模組！",

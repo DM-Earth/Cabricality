@@ -7,6 +7,7 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -73,5 +74,9 @@ public enum ModEntry {
 
 	public Block asBlock(String name) {
 		return Registry.BLOCK.get(id(name));
+	}
+
+	public SoundEvent asSoundEvent(String name) {
+		return Registry.SOUND_EVENT.get(id(name));
 	}
 }

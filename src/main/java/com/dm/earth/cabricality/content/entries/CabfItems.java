@@ -93,7 +93,7 @@ public class CabfItems {
 
 		// Coins
 		Arrays.stream(TradingEntry.CoinTypes.values()).forEach(coinType -> {
-			registerItemModeled(coinType.getId().getPath(), new FlippableItem(Properties.DEFAULT.maxCount(16), coinType.getId().getPath()),
+			registerItemModeled(coinType.getId().getPath(), new FlippableItem(Properties.DEFAULT.maxCount(16)),
 					ItemModelGenerator.generated("item", "coin", coinType.getId().getPath()));
 			// For Flipping
 			registerItemModeled(coinType.getId().getPath() + "_top", new Item(Properties.CARD),

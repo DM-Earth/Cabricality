@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality;
 
+import com.dm.earth.cabricality.content.entries.CabfSounds;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -108,6 +110,7 @@ public class Cabricality implements ModInitializer {
 		CabfItems.register();
 		CabfBlocks.register();
 		CabfFluids.register();
+		CabfSounds.register();
 		CabfBlockEntityTypes.register();
 		TagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)

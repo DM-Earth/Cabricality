@@ -68,7 +68,7 @@ public enum ModDeps {
 	}
 
 	public boolean matchesSide(boolean isServer) {
-		return isServer ? !isClient : true;
+		return !isServer || !isClient;
 	}
 
 	public static Stream<ModDeps> stream() {
@@ -76,11 +76,11 @@ public enum ModDeps {
 	}
 
 	public static Stream<ModDeps> getMissing(boolean required, boolean isServer) {
-		return stream().filter(dep -> (dep.isRequired() || !required) && dep.matchesSide(isServer) ? !dep.isLoaded() : false);
+		return stream().filter(dep -> (dep.isRequired() || !required) && dep.matchesSide(isServer) && !dep.isLoaded());
 	}
 
 	public static boolean isLoaded(boolean required, boolean isServer) {
-		return getMissing(required, isServer).count() == 0;
+		return getMissing(required, isServer).findAny().isEmpty();
 	}
 
 	public static String asString(boolean required, boolean isServer) {
@@ -89,13 +89,11 @@ public enum ModDeps {
 	}
 
 	private static URL getUrl(String spec) {
-		URL ret = null;
 		try {
-			ret = new URL(spec);
+			return new URL(spec);
 		} catch (MalformedURLException e) {
-			ret = null;
+			return null;
 		}
-		return ret;
 	}
 
 }
