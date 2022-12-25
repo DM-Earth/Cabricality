@@ -51,7 +51,7 @@ public class FlippableItem extends Item {
 		// Play sound
 		if (!world.isClient) {
 			world.playSound(null, player.getBlockPos(), CabfSounds.COIN_FLIP, SoundCategory.PLAYERS,
-					1, 1);
+					1, new Random().nextFloat(0.7F, 1.3F));
 		}
 		// Log to debug
 		Cabricality.logDebug("Flipped a " + name + " and got " + (side ? "top" : "bottom") + ".");
