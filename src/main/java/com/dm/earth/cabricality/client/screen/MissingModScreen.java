@@ -3,13 +3,18 @@ package com.dm.earth.cabricality.client.screen;
 import java.awt.Color;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 
 import com.dm.earth.cabricality.Cabricality;
+
+import com.dm.earth.cabricality.util.ModDeps;
 
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
@@ -36,47 +41,30 @@ import net.minecraft.util.Util;
 @ClientOnly
 @SuppressWarnings("all")
 public class MissingModScreen extends Screen {
-	private final Map<String, String> missingMods, urls;
+	@Nullable
+	private final ArrayList<ModDeps> missingMods;
 	@Nullable
 	private final Screen parent;
 	private final boolean renderBackgroundTexture;
 
-	public MissingModScreen(@Nullable Map<String, String> missingMods) {
-		this(missingMods, null, null, MinecraftClient.getInstance().world == null);
+	public MissingModScreen(@Nullable ArrayList<ModDeps> missingMods) {
+		this(missingMods, null, MinecraftClient.getInstance().world == null);
 	}
 
-	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls) {
-		this(missingMods, urls, null, MinecraftClient.getInstance().world == null);
+	public MissingModScreen(@Nullable ArrayList<ModDeps> missingMods, @Nullable Screen parent) {
+		this(missingMods, parent, MinecraftClient.getInstance().world == null);
 	}
 
-	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Screen parent) {
-		this(missingMods, null, parent, MinecraftClient.getInstance().world == null);
+	public MissingModScreen(@Nullable ArrayList<ModDeps> missingMods, boolean renderBackgroundTexture) {
+		this(missingMods, null, renderBackgroundTexture);
 	}
 
-	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls,
-			@Nullable Screen parent) {
-		this(missingMods, urls, parent, MinecraftClient.getInstance().world == null);
-	}
-
-	public MissingModScreen(@Nullable Map<String, String> missingMods, boolean renderBackgroundTexture) {
-		this(missingMods, null, null, renderBackgroundTexture);
-	}
-
-	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls,
-			boolean renderBackgroundTexture) {
-		this(missingMods, urls, null, renderBackgroundTexture);
-	}
-
-	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Screen parent,
-			boolean renderBackgroundTexture) {
-		this(missingMods, null, parent, renderBackgroundTexture);
-	}
-
-	public MissingModScreen(@Nullable Map<String, String> missingMods, @Nullable Map<String, String> urls,
-			@Nullable Screen parent, boolean renderBackgroundTexture) {
-		super(Cabricality.genTranslatableText("screen", "missing_mod", "title"));
-		this.missingMods = missingMods == null ? new HashMap<>() : missingMods;
-		this.urls = urls == null ? new HashMap<>() : urls;
+	public MissingModScreen(
+			@Nullable ArrayList<ModDeps> missingMods,
+			@Nullable Screen parent, boolean renderBackgroundTexture
+	) {
+		super(Cabricality.genTranslatableText("screen", "missing_mod" + (missingMods.size() == 1 ? "" : "_plural"), "title"));
+		this.missingMods = missingMods;
 		this.parent = parent;
 		this.renderBackgroundTexture = renderBackgroundTexture;
 	}
@@ -95,35 +83,36 @@ public class MissingModScreen extends Screen {
 	}
 
 	protected void init() {
-		if (!missingMods.isEmpty()) {
+		if (missingMods != null && !missingMods.isEmpty()) {
+			int widest = missingMods.stream().map(mod -> mod.getRawName().length()).max(Comparator.naturalOrder()).orElse(0);
+			String brackets = "[" + String.join("", Collections.nCopies(widest + 17, " ")) + "]";
 			AtomicInteger index = new AtomicInteger(0);
-			int widest = missingMods.values().stream().max(Comparator.comparingInt(String::length)).map(String::length)
-					.orElse(0);
-			String brackets = "[" + String.join("", Collections.nCopies(widest + 5, " ")) + "]";
 
-			missingMods.forEach((modid, name) -> {
-				Text text = new LiteralText(name)
-						.formatted(urls.containsKey(modid) ? Formatting.RESET : Formatting.STRIKETHROUGH)
-						.formatted(Formatting.LIGHT_PURPLE);
-				int y = 60 + (height - 90) * index.incrementAndGet() / (missingMods.size() + 1);
+			missingMods.forEach(mod -> {
+				Text text = new LiteralText(mod.getRawName())
+									.formatted(mod.hasUrl() ? Formatting.RESET : Formatting.STRIKETHROUGH)
+									.formatted(mod.isRequired() ? Formatting.RED : Formatting.LIGHT_PURPLE);
+				int y = 60 + (height - 90) * index.incrementAndGet() / ((int) missingMods.size() + 1);
 				// Brackets
-				modDownloadButton(modid, name,
-						new LiteralText(brackets)
-								.formatted(urls.containsKey(modid) ? Formatting.RESET : Formatting.STRIKETHROUGH)
-								.formatted(Formatting.DARK_PURPLE),
-						y);
-				// Layered Text
-				modDownloadButton(modid, name, text, y);
+				modDownloadButton(mod, new LiteralText(brackets).formatted(Formatting.DARK_PURPLE), y);
+				// Names
+				modDownloadButton(mod, text, y);
 			});
+
 			if (this.shouldCloseOnEsc()) {
-				Text blank = new LiteralText(String.join("", Collections.nCopies(widest / 4, " ")));
+				Text blank = new LiteralText(String.join("", Collections.nCopies(widest / 2 - 2, " ")));
 				Text quit = new LiteralText("[").append(blank).append("×").append(blank).append("]").formatted(Formatting.RED);
 				Text skip = new LiteralText("[").append(blank).append("→").append(blank).append("]").formatted(Formatting.WHITE);
+				// Bracketed icons
 				skipAndQuitButton(quit, skip, this.height - 30, this.textRenderer.getWidth(brackets));
 			} else {
+				// Brackets
 				quitButton(new LiteralText(brackets).formatted(Formatting.RED), this.height - 30);
+				// Icon
 				quitButton(new LiteralText("×").formatted(Formatting.RED), this.height - 30);
 			}
+		} else {
+			this.client.setScreen(parent);
 		}
 	}
 
@@ -132,12 +121,13 @@ public class MissingModScreen extends Screen {
 		Text title = new LiteralText(this.title.getString()).formatted(Formatting.BOLD);
 		Text subtitle = Cabricality.genTranslatableText("screen", "missing_mod", "subtitle");
 
-		matrixStack.push();
-		scale(matrixStack, 1.7F);
-		DrawableHelper.drawCenteredText(matrixStack, this.textRenderer, title, this.width / 2, 25, 0xFFFFFF);
+		// Subtitle
+		DrawableHelper.drawCenteredText(matrixStack, this.textRenderer, subtitle, this.width / 2, 56, 0xAEAEAE);
 
-		scale(matrixStack, 0.65F);
-		DrawableHelper.drawCenteredText(matrixStack, this.textRenderer, subtitle, this.width / 2, 53, 0xAEAEAE);
+		// Title
+		matrixStack.push();
+		scale(matrixStack, 1.65F);
+		DrawableHelper.drawCenteredText(matrixStack, this.textRenderer, title, this.width / 2, 25, 0xFFFFFF);
 		matrixStack.pop();
 
 		super.render(matrixStack, mouseX, mouseY, delta);
@@ -180,32 +170,12 @@ public class MissingModScreen extends Screen {
 		matrixStack.scale(scale, scale, scale);
 	}
 
-	private void modDownloadButton(String modid, String name, Text text, int y) {
+	private void modDownloadButton(ModDeps mod, Text text, int y) {
 		this.addDrawableChild(
 				new PlainTextButtonWidget(
 						this.width / 2 - this.textRenderer.getWidth(text) / 2, y,
 						this.textRenderer.getWidth(text), 10, text,
-						buttonWidget -> {
-							if (urls.containsKey(modid)) {
-								Cabricality.logInfo("Opening URL for mod " + name + " (" + modid + ")...");
-								try {
-									URL url = Util.make(new URL(urls.get(modid)), (u) -> {
-										try {
-											u.toURI();
-										} catch (Exception exception) {
-											Cabricality.logDebugAndError("Cannot handle URL for mod " + name + "!",
-													exception);
-										}
-									});
-									Util.getOperatingSystem().open(url);
-								} catch (MalformedURLException malformedURLException) {
-									Cabricality.logDebugAndError("Invalid URL for mod " + name + "!",
-											malformedURLException);
-								}
-							} else {
-								Cabricality.logInfo("No URL found for mod " + name + " (" + modid + ")!");
-							}
-						}, this.textRenderer));
+						buttonWidget -> mod.openUrl(), this.textRenderer));
 	}
 
 	private void skipAndQuitButton(Text quit, Text skip, int y, int wideness) {
@@ -215,11 +185,8 @@ public class MissingModScreen extends Screen {
 						this.width / 2 - wideness / 2, y,
 						this.textRenderer.getWidth(quit), 10, quit,
 						buttonWidget -> {
-							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open
-																												// Mods
-																												// Folder
-							if (this.client != null)
-								client.stop();
+							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open mods folder
+							if (this.client != null) client.stop();
 						}, this.textRenderer));
 		// Skip
 		this.addDrawableChild(
@@ -235,11 +202,8 @@ public class MissingModScreen extends Screen {
 						this.width / 2 - this.textRenderer.getWidth(quit) / 2, y,
 						this.textRenderer.getWidth(quit), 10, quit,
 						buttonWidget -> {
-							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open
-																												// Mods
-																												// Folder
-							if (this.client != null)
-								client.stop();
+							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open mods folder
+							if (this.client != null) client.stop();
 						}, this.textRenderer));
 	}
 }

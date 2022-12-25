@@ -94,6 +94,11 @@ public class Cabricality implements ModInitializer {
 		LOGGER.trace("[" + NAME + "] " + message, throwable);
 	}
 
+	public static void logDebugAndError(@NotNull String message) {
+		logDebug(message);
+		logError(message);
+	}
+
 	public static void logDebugAndError(@NotNull String message, @NotNull Throwable throwable) {
 		logDebug(message, throwable);
 		logError(message);

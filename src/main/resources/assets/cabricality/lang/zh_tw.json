@@ -314,11 +314,12 @@
   "mod.ftbteams.name": "FTB Teams模組",
   "mod.questsadditions.name": "Quests Additions模組",
 
-  "screen.cabricality.missing_mod.title"                 : "缺少以下模組",
-  "screen.cabricality.missing_mod.subtitle"              : "點擊下載",
+  "screen.cabricality.missing_mod.title"       : "缺少以下模組",
+  "screen.cabricality.missing_mod.title_plural": "缺少以下模組",
+  "screen.cabricality.missing_mod.subtitle"    : "點擊下載",
 
-  "screen.cabricality.title_screen.warning_missing_mod" : "缺少1個模組！",
-  "screen.cabricality.title_screen.warning_missing_mods": "缺少%d個模組！",
+  "screen.cabricality.title_screen.warning_missing_mod"       : "缺少1個模組！",
+  "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d個模組！",
 
   "itemGroup.cabricality.main": "永無止境：重縫"
 }

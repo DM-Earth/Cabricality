@@ -2,7 +2,6 @@ package com.dm.earth.cabricality.mixin.client;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.ModCheckerDec;
 import com.dm.earth.cabricality.util.ModDeps;
 
 import net.minecraft.client.gui.screen.Screen;
@@ -13,8 +12,6 @@ import net.minecraft.text.Text;
 
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
-
-import java.util.stream.Stream;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -29,13 +26,14 @@ public class TitleScreenMixin extends Screen {
 
 	@Inject(method = "init", at = @At("TAIL"))
 	private void init(CallbackInfo ci) {
-		Stream<ModDeps> missing = ModDeps.getMissing(true, false);
-		if (missing.count() > 0) {
-			Text warning = (missing.count() == 1
-					? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
-					: new TranslatableText(
-							Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mods"),
-							missing.count()))
+		if (!ModDeps.isAllLoaded()) {
+			Text warning = (
+					ModDeps.getAllMissing().size() == 1
+							? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
+							: new TranslatableText(
+									Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mod_plural"),
+									ModDeps.getAllMissing().size())
+							)
 					.formatted(Formatting.RED);
 			this.addDrawableChild(
 					new PlainTextButtonWidget(
@@ -43,9 +41,10 @@ public class TitleScreenMixin extends Screen {
 							this.textRenderer.getWidth(warning), 10, warning,
 							buttonWidget -> {
 								if (this.client != null)
-									this.client.setScreen(new MissingModScreen(ModCheckerDec.getMissingModList(),
-											ModCheckerDec.getModDedicatedUrlList(), this.client.currentScreen));
-							}, this.textRenderer));
+									this.client.setScreen(new MissingModScreen(ModDeps.getAllMissing(), this.client.currentScreen));
+							}, this.textRenderer
+					)
+			);
 		}
 	}
 }

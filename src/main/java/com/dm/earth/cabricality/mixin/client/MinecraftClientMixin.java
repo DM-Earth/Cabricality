@@ -4,34 +4,21 @@ import java.util.Optional;
 
 import com.dm.earth.cabricality.Cabricality;
 
-import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.ModCheckerDec;
 import com.dm.earth.cabricality.util.ModDeps;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.option.GameOptions;
 
 @Mixin(MinecraftClient.class)
 public class MinecraftClientMixin {
-	@Shadow
-	@Final
-	public GameOptions options;
-
-	@Shadow
-	@Nullable
-	public Screen currentScreen;
-
 	@Inject(method = "getWindowTitle", at = @At("HEAD"), cancellable = true)
 	private void getWindowTitle(CallbackInfoReturnable<String> cir) {
 		Optional<String> title = QuiltLoader.getModContainer(Cabricality.ID)
@@ -41,12 +28,11 @@ public class MinecraftClientMixin {
 
 	@Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/MinecraftClient;setScreen(Lnet/minecraft/client/gui/screen/Screen;)V"))
 	private void setScreen(MinecraftClient client, Screen screen) {
-		if (!ModDeps.isLoaded(false, false))
+		if (!ModDeps.isAllLoaded())
 			// If not full loaded, set screen to MissingModScreen
 			client.setScreen(
-					new MissingModScreen(ModCheckerDec.getMissingModList(), ModCheckerDec.getModDedicatedUrlList(),
-							ModDeps.isLoaded(true, false) ? screen : null));
-		else
-			client.setScreen(screen);
+					new MissingModScreen(ModDeps.getAllMissing(), ModDeps.isLoaded(true, false) ? screen : null)
+			);
+		else client.setScreen(screen);
 	}
 }
