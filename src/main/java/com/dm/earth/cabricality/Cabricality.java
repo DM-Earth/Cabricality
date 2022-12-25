@@ -1,8 +1,5 @@
 package com.dm.earth.cabricality;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -22,7 +19,6 @@ import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.tweak.TagTweaks;
-import com.dm.earth.cabricality.util.ModChecker;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
@@ -106,7 +102,6 @@ public class Cabricality implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		logInfo("Initializing... 📦");
 
-		ModChecker.check();
 		/*
 		if (!ModChecker.getModUrlList().isEmpty()) {
 			ArrayList<String> succeed = new ModDownloader(ModChecker.getModUrlList()).download();

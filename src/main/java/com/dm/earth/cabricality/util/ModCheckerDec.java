@@ -8,7 +8,8 @@ import org.quiltmc.loader.api.QuiltLoader;
 
 import com.google.common.collect.ImmutableMap;
 
-public class ModChecker {
+@Deprecated
+public class ModCheckerDec {
 	public static final Map<String, String>
 			requiredModList = new HashMap<>(),
 			requiredModUrlList = new HashMap<>(), // Download Url

@@ -1,8 +1,5 @@
 package com.dm.earth.cabricality.tweak.ore_processing;
 
-import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
-import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -16,8 +13,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
+import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.fan.SplashingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
@@ -84,8 +80,9 @@ public class OreProcessingTweaks {
 			// Dust -> Molten Metal
 			handler.register(createId(entry, entry.getMoltenMetal(), "melting"),
 					id -> RecipeManager.deserialize(id,
-							generateMelting(entry.getDust(), entry.getMoltenMetal(), FluidConstants.NUGGET * 3,
-									getByProduct(entry).getMoltenMetal(), FluidConstants.NUGGET / 4)));
+							RecipeBuilderUtil.generateMelting(entry.getDust(), entry.getMoltenMetal(),
+									FluidConstants.NUGGET * 3,
+									getByProduct(entry).getMoltenMetal(), FluidConstants.NUGGET / 4, 500, 100)));
 			// Ingot -> Dust
 			handler.register(createId(entry, entry.getIngot(), "crushing"),
 					id -> new CrushingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(entry.getIngotItem()))
@@ -129,22 +126,6 @@ public class OreProcessingTweaks {
 				return true;
 		}
 		return false;
-	}
-
-	private static JsonObject generateMelting(Identifier input, Identifier fluid, long amount, Identifier byProduct,
-			long byAmount) {
-		JsonObject json = new JsonObject();
-		json.addProperty("type", (new Identifier("tconstruct", "melting")).toString());
-		json.add("ingredient", itemEntry(input));
-		json.add("result", fluidEntry(fluid, amount));
-		json.addProperty("temperature", 500);
-		json.addProperty("time", 20);
-		if (byProduct != null) {
-			JsonArray byproducts = new JsonArray();
-			byproducts.add(fluidEntry(byProduct, byAmount));
-			json.add("byproducts", byproducts);
-		}
-		return json;
 	}
 
 	private static Identifier createId(OreProcessingEntry entry, Identifier input, String type) {

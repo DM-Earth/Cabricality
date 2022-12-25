@@ -5,12 +5,11 @@ import static com.dm.earth.cabricality.ModEntry.C;
 import java.util.Arrays;
 import java.util.List;
 
-import com.dm.earth.cabricality.content.core.items.FlippableItem;
-
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
+import com.dm.earth.cabricality.content.core.items.FlippableItem;
 import com.dm.earth.cabricality.content.core.items.GlintedItem;
 import com.dm.earth.cabricality.content.core.items.MechanismItem;
 import com.dm.earth.cabricality.content.core.items.SawItem;
