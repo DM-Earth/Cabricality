@@ -63,64 +63,80 @@ public class AndesiteThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("andesite_machine"), output, count, other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
+			@Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("andesite_machine"), output, count,
+				other);
 	}
 
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.register(recipeId("smelting", "algal_blend"), id -> VanillaRecipeBuilders.smeltingRecipe(id, "",
-				Ingredient.ofItems(AP.asItem("algal_blend")), AP.asItem("algal_brick").getDefaultStack(), 0, 120));
+		handler.register(recipeId("smelting", "algal_blend"),
+				id -> VanillaRecipeBuilders.smeltingRecipe(id, "",
+						Ingredient.ofItems(AP.asItem("algal_blend")),
+						AP.asItem("algal_brick").getDefaultStack(), 0, 120));
 
-		handler.register(recipeId("crafting", "algal_blend"), id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA")
-				.ingredient('A', Items.CLAY_BALL).ingredient('S', Items.KELP, Items.SEAGRASS)
-				.output(AP.asItem("algal_blend").getDefaultStack()).build(id, ""));
-		handler.register(recipeId("crafting", "algal_blend_2"), id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS")
-				.ingredient('A', Items.CLAY_BALL).ingredient('S', Items.KELP, Items.SEAGRASS)
-				.output(AP.asItem("algal_blend").getDefaultStack()).build(id, ""));
+		handler.register(recipeId("crafting", "algal_blend"),
+				id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA")
+						.ingredient('A', Items.CLAY_BALL)
+						.ingredient('S', Items.KELP, Items.SEAGRASS)
+						.output(AP.asItem("algal_blend").getDefaultStack()).build(id, ""));
+		handler.register(recipeId("crafting", "algal_blend_2"),
+				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS")
+						.ingredient('A', Items.CLAY_BALL)
+						.ingredient('S', Items.KELP, Items.SEAGRASS)
+						.output(AP.asItem("algal_blend").getDefaultStack()).build(id, ""));
 
 		handler.register(recipeId("crafting", "andesite_alloy"),
-				id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA")
-						.ingredient('A', Items.ANDESITE).ingredient('S', AP.asItem("algal_brick"))
+				id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA").ingredient('A', Items.ANDESITE)
+						.ingredient('S', AP.asItem("algal_brick"))
 						.output(CR.asItem("andesite_alloy").getDefaultStack()).build(id, ""));
 		handler.register(recipeId("crafting", "andesite_alloy_2"),
-				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS")
-						.ingredient('A', Items.ANDESITE).ingredient('S', AP.asItem("algal_brick"))
+				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS").ingredient('A', Items.ANDESITE)
+						.ingredient('S', AP.asItem("algal_brick"))
 						.output(CR.asItem("andesite_alloy").getDefaultStack()).build(id, ""));
 
 		handler.register(recipeId("mixing", "algal_blend"),
 				id -> new MixingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(Items.CLAY_BALL),
 								Ingredient.ofItems(Items.KELP, Items.SEAGRASS))
-						.setResult(new ProcessingOutput(new ItemStack(AP.asItem("algal_blend")), 2))));
+						.setResult(
+								new ProcessingOutput(new ItemStack(AP.asItem("algal_blend")), 2))));
 
 		handler.register(recipeId("mixing", "andesite_alloy"),
 				id -> new MixingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(AP.asItem("algal_brick")),
 								Ingredient.ofItems(Items.ANDESITE))
-						.setResult(new ProcessingOutput(new ItemStack(CR.asItem("andesite_alloy")), 2))));
+						.setResult(new ProcessingOutput(new ItemStack(CR.asItem("andesite_alloy")),
+								2))));
 
-		handler.register(recipeId("crafting", "kinetic_mechanism"), id -> VanillaRecipeBuilders
-				.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack()).ingredient(CR.asItem("cogwheel"))
-				.ingredient(CR.asItem("andesite_alloy")).ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS)
-				.build(id, ""));
+		handler.register(recipeId("crafting", "kinetic_mechanism"),
+				id -> VanillaRecipeBuilders
+						.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack())
+						.ingredient(CR.asItem("cogwheel")).ingredient(CR.asItem("andesite_alloy"))
+						.ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS).build(id, ""));
 
-		handler.register(recipeId("crafting", "andesite_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
-				CR.asItem("andesite_casing"), CABF.asItem("kinetic_mechanism"), CABF.asItem("andesite_machine"), 1));
+		handler.register(recipeId("crafting", "andesite_machine"),
+				id -> RecipeBuilderUtil.donutRecipe(id, CR.asItem("andesite_casing"),
+						CABF.asItem("kinetic_mechanism"), CABF.asItem("andesite_machine"), 1));
 
 		handler.register(recipeId("compacting", "dripstone_block"),
-				id -> new CompactingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(CR.asItem("limestone")))
-						.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE * 2))
-						.setResult(new ProcessingOutput(MC.asItem("dripstone_block").getDefaultStack(), 1))));
+				id -> new CompactingRecipe(new FreePRP(id)
+						.setIngredient(Ingredient.ofItems(CR.asItem("limestone")))
+						.setFluidIngredient(
+								FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE * 2))
+						.setResult(new ProcessingOutput(
+								MC.asItem("dripstone_block").getDefaultStack(), 1))));
 
 		handler.register(recipeId("sequenced_assembly", "kinetic_mechanism"),
 				id -> (new SequencedAssemblyRecipeBuilder(id)).require(ItemTags.WOODEN_SLABS)
 						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism"))
 						.addOutput(CABF.asItem("kinetic_mechanism"), 1.0F).loops(1)
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(CuttingRecipe::new, r -> r)
-						.build());
+						.addStep(DeployerApplicationRecipe::new,
+								r -> r.require(CR.asItem("andesite_alloy")))
+						.addStep(DeployerApplicationRecipe::new,
+								r -> r.require(CR.asItem("andesite_alloy")))
+						.addStep(CuttingRecipe::new, r -> r).build());
 	}
 
 	@Override

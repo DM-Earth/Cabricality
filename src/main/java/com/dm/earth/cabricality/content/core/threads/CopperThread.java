@@ -6,14 +6,12 @@ import static com.dm.earth.cabricality.ModEntry.CX;
 import static com.dm.earth.cabricality.ModEntry.IV;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
@@ -23,7 +21,6 @@ import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -40,11 +37,14 @@ public class CopperThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.register(recipeId("crafting", "belt_connector"),
-				id -> VanillaRecipeBuilders.shapedRecipe("XXX", "XXX").ingredient('X', CabfItems.CURED_RUBBER)
+				id -> VanillaRecipeBuilders.shapedRecipe("XXX", "XXX")
+						.ingredient('X', CabfItems.CURED_RUBBER)
 						.output(new ItemStack(CR.asItem("belt_connector"), 3)).build(id, ""));
 
-		handler.register(recipeId("smelting", "cured_rubber"), id -> VanillaRecipeBuilders.smeltingRecipe(id, "",
-				Ingredient.ofItems(CabfItems.RUBBER), CabfItems.CURED_RUBBER.getDefaultStack(), 0.1F, 120));
+		handler.register(recipeId("smelting", "cured_rubber"),
+				id -> VanillaRecipeBuilders.smeltingRecipe(id, "",
+						Ingredient.ofItems(CabfItems.RUBBER),
+						CabfItems.CURED_RUBBER.getDefaultStack(), 0.1F, 120));
 
 		handler.register(recipeId("crafting", "sealed_mechanism"),
 				id -> VanillaRecipeBuilders.shapedRecipe("XOX")
@@ -52,12 +52,14 @@ public class CopperThread implements TechThread {
 						.ingredient('O', Ingredient.ofItems(CABF.asItem("kinetic_mechanism")))
 						.output(CABF.asItem("sealed_mechanism").getDefaultStack()).build(id, ""));
 
-		handler.register(recipeId("crafting", "copper_machine"), id -> RecipeBuilderUtil.donutRecipe(id,
-				CR.asItem("copper_casing"), CABF.asItem("sealed_mechanism"), CABF.asItem("copper_machine"), 1));
+		handler.register(recipeId("crafting", "copper_machine"),
+				id -> RecipeBuilderUtil.donutRecipe(id, CR.asItem("copper_casing"),
+						CABF.asItem("sealed_mechanism"), CABF.asItem("copper_machine"), 1));
 
 		handler.register(recipeId("compacting", "rubber"),
 				id -> new CompactingRecipe(new FreePRP(id)
-						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.RESIN, FluidConstants.BUCKET / 4))
+						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.RESIN,
+								FluidConstants.BUCKET / 4))
 						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1))));
 	}
 
@@ -82,8 +84,10 @@ public class CopperThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("copper_machine"), output, count, other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
+			@Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("copper_machine"), output, count,
+				other);
 	}
 
 }

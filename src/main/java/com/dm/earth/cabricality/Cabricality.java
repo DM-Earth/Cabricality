@@ -36,14 +36,17 @@ public class Cabricality implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
 	/* RRPs */
-	public static final RuntimeResourcePack CLIENT_RESOURCES = RuntimeResourcePack.create(id("client_resources"));
-	public static final RuntimeResourcePack SERVER_RESOURCES = RuntimeResourcePack.create(id("server_resources"));
+	public static final RuntimeResourcePack CLIENT_RESOURCES =
+			RuntimeResourcePack.create(id("client_resources"));
+	public static final RuntimeResourcePack SERVER_RESOURCES =
+			RuntimeResourcePack.create(id("server_resources"));
 
 	/* Item Groups */
 	public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
 			() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
-	public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
-			() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+	public static ItemGroup SUBSTRATES_GROUP =
+			QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
+					() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 
 	/* Generator Utils */
 	@Contract("_ -> new")
@@ -120,8 +123,8 @@ public class Cabricality implements ModInitializer {
 
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(SERVER_RESOURCES));
 
-		//ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
-		//ResourcePackActivationType.ALWAYS_ENABLED);
+		// ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
+		// ResourcePackActivationType.ALWAYS_ENABLED);
 	}
 
 	@ClientOnly

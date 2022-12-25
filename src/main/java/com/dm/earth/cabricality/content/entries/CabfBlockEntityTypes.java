@@ -10,7 +10,8 @@ import net.minecraft.util.registry.Registry;
 public class CabfBlockEntityTypes {
 	public static void register() {
 		registerBlockEntityType("extractor", ExtractorMachineBlockEntity.TYPE);
-		FluidStorage.SIDED.registerForBlockEntity((tank, direction) -> tank.storage, ExtractorMachineBlockEntity.TYPE);
+		FluidStorage.SIDED.registerForBlockEntity((tank, direction) -> tank.storage,
+				ExtractorMachineBlockEntity.TYPE);
 	}
 
 	private static void registerBlockEntityType(String name, BlockEntityType<?> blockEntityType) {
