@@ -102,17 +102,6 @@ public class Cabricality implements ModInitializer {
 	public void onInitialize(ModContainer mod) {
 		logInfo("Initializing... 📦");
 
-		/*
-		if (!ModChecker.getModUrlList().isEmpty()) {
-			ArrayList<String> succeed = new ModDownloader(ModChecker.getModUrlList()).download();
-			if (succeed != null) {
-				StringBuilder result = succeed.stream()
-											   .reduce(new StringBuilder(), (builder, s) -> builder.append(s).append(", "), StringBuilder::append);
-				logInfo("Successfully downloaded " + result.delete(result.length() - 2, result.length()) + "!");
-			}
-		}
-		 */
-
 		Trading.load();
 		Alchemist.load();
 		DeployerCuttingRecipeHandler.load();
@@ -128,8 +117,8 @@ public class Cabricality implements ModInitializer {
 
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(SERVER_RESOURCES));
 
-		// ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
-		// ResourcePackActivationType.ALWAYS_ENABLED);
+		//ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
+		//ResourcePackActivationType.ALWAYS_ENABLED);
 	}
 
 	@ClientOnly

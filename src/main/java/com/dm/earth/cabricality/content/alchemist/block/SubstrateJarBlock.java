@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
 import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

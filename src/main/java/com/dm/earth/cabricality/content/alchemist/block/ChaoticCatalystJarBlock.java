@@ -15,7 +15,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion.DestructionType;
 
 public class ChaoticCatalystJarBlock extends CatalystJarBlock {
-
     public ChaoticCatalystJarBlock(Settings settings) {
         super(settings);
     }
@@ -34,5 +33,4 @@ public class ChaoticCatalystJarBlock extends CatalystJarBlock {
         }
         super.onBreak(world, pos, state, player);
     }
-
 }

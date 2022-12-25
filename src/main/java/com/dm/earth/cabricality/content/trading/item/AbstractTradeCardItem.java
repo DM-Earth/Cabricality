@@ -11,7 +11,6 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 public abstract class AbstractTradeCardItem extends Item {
-
 	public AbstractTradeCardItem(Settings settings) {
 		super(settings);
 	}

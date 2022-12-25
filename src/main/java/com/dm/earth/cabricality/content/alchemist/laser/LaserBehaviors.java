@@ -31,14 +31,14 @@ public class LaserBehaviors {
 	public static void attackNearby(@NotNull ServerWorld world, BlockPos pos, float power) {
 		float len = power * 3F;
 		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
-		List<LivingEntity> entities = world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving);
-		for (LivingEntity entity : entities)
-			entity.damage(DamageSource.MAGIC, len);
+		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving).forEach(entity -> entity.damage(DamageSource.GENERIC, power));
 	}
 
 	// pos should be the lamp's blockPos
-	public static ActionResult process(ServerWorld world, BlockPos pos, Direction direction,
-			@NotNull LaserProperties properties) {
+	public static ActionResult process(
+			ServerWorld world, BlockPos pos, Direction direction,
+			@NotNull LaserProperties properties
+	) {
 		ActionResult returnResult = ActionResult.FAIL;
 
 		ArrayList<HopperMinecartEntity> minecarts = new ArrayList<>();

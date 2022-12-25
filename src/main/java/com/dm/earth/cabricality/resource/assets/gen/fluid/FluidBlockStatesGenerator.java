@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.resource.assets.gen.fluid;
 
 import com.dm.earth.cabricality.Cabricality;
+
 import net.devtech.arrp.json.blockstate.JBlockStates;
 
 public class FluidBlockStatesGenerator {

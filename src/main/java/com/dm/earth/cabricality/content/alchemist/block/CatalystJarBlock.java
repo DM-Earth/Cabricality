@@ -1,8 +1,9 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.NotNull;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 

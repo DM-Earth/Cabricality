@@ -13,7 +13,6 @@ import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.server.command.ServerCommandSource;
 
 public class CommandRegistryListener implements CommandRegistrationCallback {
-
     @Override
     public void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher, boolean integrated,
             boolean dedicated) {
@@ -26,5 +25,4 @@ public class CommandRegistryListener implements CommandRegistrationCallback {
     private Predicate<ServerCommandSource> requirePermission(int level) {
         return (source) -> source.hasPermissionLevel(level);
     }
-
 }

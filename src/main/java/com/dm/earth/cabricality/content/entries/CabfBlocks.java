@@ -2,9 +2,10 @@ package com.dm.earth.cabricality.content.entries;
 
 import java.util.Arrays;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ChaoticCatalystJarBlock;

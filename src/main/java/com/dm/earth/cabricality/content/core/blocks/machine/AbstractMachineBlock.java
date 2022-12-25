@@ -51,7 +51,7 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
 
     @Override
     public Identifier getBlockModelId() {
-        return Cabricality.id("block/machine/" + Registry.BLOCK.getId(this).getPath());
+        return Cabricality.id("block", "machine", Registry.BLOCK.getId(this).getPath());
     }
 
     @Override

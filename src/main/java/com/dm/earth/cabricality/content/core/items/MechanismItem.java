@@ -20,11 +20,11 @@ public class MechanismItem extends Item implements IncompleteVariant {
 
     @Override
     public Identifier getIncompleteTextureId() {
-        return Cabricality.id("item/mechanism/incomplete/incomplete_" + mechanismName + "_mechanism");
+        return Cabricality.id("item", "mechanism", "incomplete", "incomplete_" + mechanismName + "_mechanism");
     }
 
     public Identifier getTextureId() {
-        return Cabricality.id("item/mechanism/" + mechanismName + "_mechanism");
+        return Cabricality.id("item", "mechanism", mechanismName + "_mechanism");
     }
 
     public static enum Type {

@@ -14,11 +14,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
@@ -98,19 +99,19 @@ public enum Reagents {
 
 	@Nullable
 	public static Reagent getReagentFromHash(String hashStr) {
-		for (Reagents reagents : values())
-			for (Reagent reagent : reagents.getReagents())
-				if (reagent.hashString().equals(hashStr))
-					return reagent;
-		return null;
+		return Arrays.stream(values())
+					   .flatMap(reagents -> reagents.getReagents().stream())
+					   .filter(reagent -> reagent.hashString().equals(hashStr))
+					   .findFirst().orElse(null);
 	}
 
 	@Nullable
 	public static Catalyst getCatalystFromHash(String hashStr) {
-		for (Reagents reagents : values())
-			if (reagents.getCatalyst().hashString().equals(hashStr))
-				return reagents.getCatalyst();
-		return null;
+		return Arrays.stream(values())
+				.map(Reagents::getCatalyst)
+				.filter(catalyst -> catalyst.hashString().equals(hashStr))
+				.findFirst()
+				.orElse(null);
 	}
 
 	@NotNull
@@ -198,30 +199,22 @@ public enum Reagents {
 	}
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {
-		ArrayList<Block> list = new ArrayList<>();
-		for (Map.Entry<RegistryKey<Block>, Block> set : Registry.BLOCK.getEntries()) {
-			Block block = set.getValue();
-			if (block instanceof SubstrateJarBlock || (includeBlank && block instanceof JarBlock))
-				list.add(block);
-		}
-		return list;
+		return Registry.BLOCK.getEntries().stream()
+					   .filter(entry -> entry.getValue() instanceof ReagentJarBlock || includeBlank && entry.getValue() instanceof JarBlock)
+					   .map(Map.Entry::getValue)
+					   .collect(Collectors.toList());
 	}
 
 	@Nullable
 	public static Reagents get(Catalyst catalyst) {
-		for (Reagents reagents : values())
-			if (reagents.getCatalyst().equals(catalyst))
-				return reagents;
-		return null;
+		return Arrays.stream(values())
+					   .filter(value -> value.getCatalyst().equals(catalyst)).findFirst().orElse(null);
 	}
 
 	@Nullable
 	public static Reagents get(Reagent reagent) {
-		for (Reagents reagents : values())
-			for (Reagent reagent1 : reagents.getReagents())
-				if (reagent1.equals(reagent))
-					return reagents;
-		return null;
+		return Arrays.stream(values())
+					   .filter(value -> value.getReagents().contains(reagent)).findFirst().orElse(null);
 	}
 
 	public static void load() {

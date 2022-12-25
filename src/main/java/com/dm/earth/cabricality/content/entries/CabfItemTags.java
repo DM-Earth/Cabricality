@@ -8,7 +8,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class CabfItemTags {
-
     public static final TagKey<Item> SAWS = TagKey.of(Registry.ITEM_KEY, new Identifier("c", "saws"));
     // Trading Cards
     public static final TagKey<Item> TRADE_CARDS = TagKey.of(Registry.ITEM_KEY, Cabricality.id("trade_cards"));
@@ -18,5 +17,4 @@ public class CabfItemTags {
     public static final TagKey<Item> JARS = TagKey.of(Registry.ITEM_KEY, Cabricality.id("jars"));
     public static final TagKey<Item> REAGENT_JARS = TagKey.of(Registry.ITEM_KEY, Cabricality.id("jars/reagent"));
     public static final TagKey<Item> CATALYST_JARS = TagKey.of(Registry.ITEM_KEY, Cabricality.id("jars/catalyst"));
-
 }

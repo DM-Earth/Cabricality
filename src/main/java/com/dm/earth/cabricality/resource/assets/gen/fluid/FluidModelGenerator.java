@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.resource.assets.gen.fluid;
 
 import com.dm.earth.cabricality.Cabricality;
+
 import net.devtech.arrp.json.models.JModel;
 
 public class FluidModelGenerator {

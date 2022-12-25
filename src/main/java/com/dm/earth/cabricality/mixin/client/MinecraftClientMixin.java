@@ -2,6 +2,8 @@ package com.dm.earth.cabricality.mixin.client;
 
 import java.util.Optional;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
 import org.spongepowered.asm.mixin.Final;
@@ -12,7 +14,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
 import com.dm.earth.cabricality.util.ModCheckerDec;
 import com.dm.earth.cabricality.util.ModDeps;

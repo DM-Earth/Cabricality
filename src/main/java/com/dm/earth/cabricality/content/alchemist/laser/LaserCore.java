@@ -3,9 +3,10 @@ package com.dm.earth.cabricality.content.alchemist.laser;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.NotNull;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.util.CabfDebugger;
 
 import net.darktree.led.block.DirectionalDiodeLampBlock;

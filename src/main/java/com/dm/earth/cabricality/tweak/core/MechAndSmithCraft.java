@@ -2,12 +2,13 @@ package com.dm.earth.cabricality.tweak.core;
 
 import java.util.ArrayList;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;
 
@@ -20,7 +21,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class MechAndSmithCraft {
-	private static ArrayList<Entry> entries = new ArrayList<>();
+	private static final ArrayList<Entry> entries = new ArrayList<>();
 
 	/**
 	 * Add a MechAndSmithCraft entry for the given item.
@@ -32,24 +33,24 @@ public class MechAndSmithCraft {
 	}
 
 	public static void register(AddRecipesCallback.RecipeHandler handler) {
-		for (Entry entry : entries)
+		entries.forEach(entry -> {
 			if (entry.isSmithing()) {
 				handler.register(createId(entry, "smithing"),
 						id -> new SmithingRecipe(id, Ingredient.ofItems(entry.getInputItem()),
 								Ingredient.ofItems(entry.getOtherItem()), entry.getOutputStack()));
 				handler.register(createId(entry, "mechanical_crafting"),
 						id -> RecipeBuilderUtil.mechanicalFromShaped(VanillaRecipeBuilders.shapedRecipe("AB")
-								.ingredient('A', Ingredient.ofItems(entry.getInputItem()))
-								.ingredient('B', Ingredient.ofItems(entry.getOtherItem()))
-								.output(entry.getOutputStack()).build(id, ""), true));
+																			 .ingredient('A', Ingredient.ofItems(entry.getInputItem()))
+																			 .ingredient('B', Ingredient.ofItems(entry.getOtherItem()))
+																			 .output(entry.getOutputStack()).build(id, ""), true));
 			} else
 				handler.register(createId(entry, "stonecutting"), id -> new StonecuttingRecipe(id, "",
 						Ingredient.ofItems(entry.getInputItem()), entry.getOutputStack()));
+		});
 	}
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
-		for (Entry entry : entries)
-			handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(entry.getOutputItem()));
+		entries.forEach(entry -> handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(entry.getOutputItem())));
 	}
 
 	private static Identifier createId(Entry entry, String type) {

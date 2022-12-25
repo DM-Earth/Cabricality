@@ -1,8 +1,9 @@
 package com.dm.earth.cabricality.util;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.quiltmc.loader.api.QuiltLoader;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;

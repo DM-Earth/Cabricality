@@ -10,7 +10,6 @@ import org.jetbrains.annotations.Unmodifiable;
 import java.util.List;
 
 public record Profession(Identifier id, List<TradingEntry> entries, int tint) implements IHashStringable {
-
 	@Contract("_, _, _ -> new")
 	@NotNull
 	public static Profession of(String name, int tint, TradingEntry... entries) {

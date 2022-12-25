@@ -5,12 +5,13 @@ import static com.dm.earth.cabricality.util.CabfDebugger.debug;
 import java.util.Arrays;
 import java.util.List;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
 import org.quiltmc.qsl.networking.api.PacketByteBufs;
 import org.quiltmc.qsl.networking.api.PlayerLookup;
 import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.simibubi.create.content.contraptions.goggles.IHaveGoggleInformation;

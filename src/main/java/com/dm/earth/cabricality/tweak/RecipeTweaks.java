@@ -1,10 +1,11 @@
 package com.dm.earth.cabricality.tweak;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
-import com.dm.earth.cabricality.Cabricality;
 import static com.dm.earth.cabricality.ModEntry.*;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;

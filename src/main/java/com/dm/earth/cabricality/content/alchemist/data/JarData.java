@@ -5,10 +5,11 @@ import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
 
 import java.util.ArrayList;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;

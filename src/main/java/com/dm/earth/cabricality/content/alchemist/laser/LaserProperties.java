@@ -16,6 +16,8 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Arrays;
+
 public record LaserProperties(int tint, int length, float power) {
 	public static int DEFAULT_LENGTH = 4;
 	public static int DEFAULT_POWER = 2;
@@ -29,12 +31,13 @@ public record LaserProperties(int tint, int length, float power) {
 	public static LaserProperties generate(BlockState state, DirectionalDiodeLampBlock block, int count) {
 		DiodeVariant variant = ((DiodeLampBlockAccessor) block).getVariant();
 		Identifier id = Registry.BLOCK.getId(block);
-		for (DyeColor color : DyeColor.values())
-			if (id.getPath().contains(color.getName())) {
-				boolean lit = state.get(DirectionalDiodeLampBlock.LIT);
-				if ((!lit) || variant.isShaded()) return null;
-				return new LaserProperties(color.getFireworkColor(), (variant.isReinforced() ? DEFAULT_LENGTH + 2 : DEFAULT_LENGTH), DEFAULT_POWER * (variant.getLightLevel() / (4F * count)));
-			}
-		return null;
+		if (!state.get(DirectionalDiodeLampBlock.LIT) || variant.isShaded()) return null;
+		return Arrays.stream(DyeColor.values())
+					   .filter(color -> id.getPath().contains(color.getName()))
+					   .map(color -> new LaserProperties(
+							   color.getFireworkColor(),
+							   (variant.isReinforced() ? DEFAULT_LENGTH + 2 : DEFAULT_LENGTH),
+							   DEFAULT_POWER * (variant.getLightLevel() / (4F * count)))
+					   ).findFirst().orElse(null);
 	}
 }

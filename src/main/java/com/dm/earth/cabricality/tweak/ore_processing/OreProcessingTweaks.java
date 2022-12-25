@@ -6,11 +6,12 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.util.RecipeBuilderUtil;

@@ -1,8 +1,9 @@
 package com.dm.earth.cabricality.content.core.blocks;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.blocks.machine.AbstractMachineBlock;
 import com.dm.earth.cabricality.content.core.blocks.machine.ComplexMachineBlock;
 import com.dm.earth.cabricality.content.core.blocks.machine.CutoffMachineBlock;

@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public abstract class ColoredFernItem extends Item {
-
 	public final int tint;
 
 	public ColoredFernItem(int tint) {
@@ -65,5 +64,4 @@ public abstract class ColoredFernItem extends Item {
 			return Registry.ITEM.get(output);
 		}
 	}
-
 }

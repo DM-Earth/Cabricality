@@ -1,8 +1,9 @@
 package com.dm.earth.cabricality.content.core.blocks.casing;
 
+import com.dm.earth.cabricality.Cabricality;
+
 import org.jetbrains.annotations.Nullable;
 
-import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.dm.earth.cabricality.resource.assets.gen.block.BlockStatesGenerator;
 import com.simibubi.create.content.contraptions.base.CasingBlock;
@@ -30,7 +31,7 @@ public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block/casing/" + this.name + "_casing");
+		return Cabricality.id("block", "casing", this.name + "_casing");
 	}
 
 	@Override
