@@ -1,1 +1,0 @@
-{"fabric:load_conditions":[{"condition":"fabric:all_mods_loaded","values":["promenade"]}],"results":[{"item":"promenade:wither_rose_pile"}],"type":"create:compacting","ingredients":[{"item":"minecraft:wither_rose"},{"item":"minecraft:wither_rose"},{"item":"minecraft:wither_rose"}]}

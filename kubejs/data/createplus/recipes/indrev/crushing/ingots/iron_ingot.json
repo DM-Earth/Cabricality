@@ -1,1 +1,0 @@
-{"fabric:load_conditions":[{"condition":"fabric:all_mods_loaded","values":["indrev"]}],"results":[{"count":1,"item":"indrev:iron_dust"}],"type":"create:crushing","ingredients":[{"tag":"c:iron_ingots"}],"processingTime":500}

@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "indrev:raw_silver_block",
-            "required": false
-        }
-    ]
-}

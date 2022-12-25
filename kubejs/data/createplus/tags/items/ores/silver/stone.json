@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "indrev:silver_ore",
-            "required": false
-        }
-    ]
-}

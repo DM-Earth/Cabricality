@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "techreborn:sheldonite_ore",
-            "required": false
-        }
-    ]
-}

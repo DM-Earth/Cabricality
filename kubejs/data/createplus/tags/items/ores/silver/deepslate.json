@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "indrev:deepslate_silver_ore",
-            "required": false
-        }
-    ]
-}

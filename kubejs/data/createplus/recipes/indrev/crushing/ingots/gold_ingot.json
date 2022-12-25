@@ -1,1 +1,0 @@
-{"fabric:load_conditions":[{"condition":"fabric:all_mods_loaded","values":["indrev"]}],"results":[{"count":1,"item":"indrev:gold_dust"}],"type":"create:crushing","ingredients":[{"tag":"c:gold_ingots"}],"processingTime":500}

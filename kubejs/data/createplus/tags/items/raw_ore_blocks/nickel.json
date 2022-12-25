@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "alloygery:raw_nickel_block",
-            "required": false
-        }
-    ]
-}

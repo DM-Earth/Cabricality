@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        {
-            "id": "indrev:raw_lead_block",
-            "required": false
-        }
-    ]
-}
