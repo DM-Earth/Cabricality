@@ -1,0 +1,13 @@
+name = "Twerk / Crop Dusting Mod [FABRIC]"
+filename = "twerk-1.0.1-1.18.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "46e38157feb70e98ccfee0e423283c2afa5c682e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3929252
+project-id = 522786
