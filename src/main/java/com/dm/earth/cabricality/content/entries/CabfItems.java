@@ -150,6 +150,10 @@ public class CabfItems {
 			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "dusts", variant), tagT);
 		});
 
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"), new JTag().addItem(ENDERIUM_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"), new JTag().addItem(INVAR_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"), new JTag().addItem(NICKEL_INGOT));
+
 		// Crushed Ores
 		JTag crushedOresTag = new JTag();
 		CRUSHED_ORES.forEach(variant -> {
