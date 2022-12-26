@@ -3024,6 +3024,11 @@ hash = "d3cbfc74109c4ff70f7d61d559c7fee5d675762b9265174aaca5625b1629ec9c"
 metafile = true
 
 [[files]]
+file = "mods/skyblock-creator.pw.toml"
+hash = "bab8bede9ed0c6456da3d85c85c79f0b82de9060368d1d24fbfc924ac86b92be"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "cb6971789015a99f42466ba514753d33eb887c602864b614936fc6d39e0e25be"
 metafile = true
