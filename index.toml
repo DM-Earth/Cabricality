@@ -475,11 +475,11 @@ hash = "69c6d62d958000dc9b46221dedfd50d98a8b937565978c3a10abd3bbe5aece2d"
 metafile = true
 
 [[files]]
-file = "mods/twerk-crop-dusting-mod-fabric.pw.toml"
-hash = "aa8048a2284958e5334dc8d5fbac0f95c826c7a0e8731acc5d160c66afa59bef"
+file = "mods/wthit.pw.toml"
+hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
 metafile = true
 
 [[files]]
-file = "mods/wthit.pw.toml"
-hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
+file = "mods/twerk-crop-dusting-mod-fabric.pw.toml"
+hash = "aa8048a2284958e5334dc8d5fbac0f95c826c7a0e8731acc5d160c66afa59bef"
 metafile = true
