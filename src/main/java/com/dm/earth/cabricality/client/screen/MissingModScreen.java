@@ -63,7 +63,7 @@ public class MissingModScreen extends Screen {
 			@Nullable ArrayList<ModDeps> missingMods,
 			@Nullable Screen parent, boolean renderBackgroundTexture
 	) {
-		super(Cabricality.genTranslatableText("screen", "missing_mod" + (missingMods.size() == 1 ? "" : "_plural"), "title"));
+		super(Cabricality.genTranslatableText("screen", "missing_mod", "title" + (missingMods.size() == 1 ? "" : "_plural")));
 		this.missingMods = missingMods;
 		this.parent = parent;
 		this.renderBackgroundTexture = renderBackgroundTexture;
