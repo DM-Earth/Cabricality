@@ -9,7 +9,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 
 import com.dm.earth.cabricality.client.listener.ColorRegistryListener;
-import com.dm.earth.cabricality.content.alchemist.Reagents;
+import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
@@ -31,7 +31,7 @@ public class CabricalityClient implements ClientModInitializer {
         WoodCuttingEntry.checkAll();
         OreProcessingEntry.checkAll();
 
-        BlockRenderLayerMap.put(RenderLayer.getCutout(), Reagents.getJarBlocks(true).toArray(new Block[0]));
+        BlockRenderLayerMap.put(RenderLayer.getCutout(), Substrate.getJarBlocks(true).toArray(new Block[0]));
 
 		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock()));
 		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock()));

@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Objects;
-
-import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
+import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.trading.core.TradingEntryRegistry;
 import com.dm.earth.cabricality.content.trading.item.AbstractTradeCardItem;
@@ -70,7 +69,7 @@ public class ColorRegistryListener {
 
 	private static Block[] getBlocks() {
 		ArrayList<Block> list = new ArrayList<>();
-		list.addAll(Reagents.getJarBlocks(false));
+		list.addAll(Substrate.getJarBlocks(false));
 		return list.toArray(new Block[0]);
 	}
 }
