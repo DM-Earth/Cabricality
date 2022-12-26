@@ -57,9 +57,14 @@ With this pack, you can follow the quests and build your own factory with [Creat
 [^wiki]: Feel free to check [Cabricality Wiki](https://github.com/DM-Earth/Cabricality/wiki) when you have any problems!
 
 <h3 align="center">
-  English |
+  English
+  |
   <a href="docs/readme/zh_simplified.md">
     简体中文
+  </a>
+  |
+  <a href="docs/readme/zh_traditional.md">
+    繁體中文
   </a>
 </h3>
 
@@ -111,9 +116,9 @@ If you like to write scripts and add your favorites to the game, **you're welcom
 
 ## Technical Assistances
 
-**All development details can be found in this GitHub repository. You can follow this project by watching it.**
+**All development details can be found in this GitHub repository. You can follow this project by `Watching` it.**
 
-This modpack is managed and developed using [packwiz](https://github.com/packwiz/packwiz) and released using [Modrinth format pack.](https://docs.modrinth.com/docs/modpacks/format_definition)
+This modpack is managed and developed using [`packwiz`](https://github.com/packwiz/packwiz) and released using [`Modrinth format pack.`](https://docs.modrinth.com/docs/modpacks/format_definition)
 
 ### Build from Sources
 
@@ -135,10 +140,10 @@ packwiz modrinth export
 
 ### Supported Launchers
 
-We support almost all launchers that compatible with **Modrinth format pack** and **Quilt.** Such as [MultiMC](https://github.com/MultiMC/Launcher) and [Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL)[^pcl2].
+We support almost all launchers that compatible with **Modrinth format pack** and **Quilt.** Such as [MultiMC,](https://multimc.org) [Prism Launcher](https://prismlauncher.org) and [Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2].
 
 [^pcl2]: **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
 
 ### Licence
 
-This project is licenced under **AGPL-3.0.**
+This project is licenced under [**AGPL-3.0.**](LICENSE)
