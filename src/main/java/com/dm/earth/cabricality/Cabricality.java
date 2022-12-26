@@ -2,6 +2,8 @@ package com.dm.earth.cabricality;
 
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 
+import com.dm.earth.cabricality.util.ScreenUtil;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -31,24 +33,28 @@ import net.minecraft.util.registry.Registry;
 
 public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
-
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
-	/* RRPs */
+	// Textures
+	public static final Identifier CABRICALITY_TITLE_TEXTURE = id("textures", "gui", "title", "cabricality.png");
+	public static final Identifier MINECRAFT_SUBTITLE_TEXTURE = id("textures", "gui", "title", "minecraft.png");
+
+	// RRPs
 	public static final RuntimeResourcePack CLIENT_RESOURCES =
 			RuntimeResourcePack.create(id("client_resources"));
 	public static final RuntimeResourcePack SERVER_RESOURCES =
 			RuntimeResourcePack.create(id("server_resources"));
 
-	/* Item Groups */
-	public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
-			() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
+	// Item groups
+	public static ItemGroup MAIN_GROUP =
+			QuiltItemGroup.createWithIcon(Cabricality.id("main"),
+					() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
 	public static ItemGroup SUBSTRATES_GROUP =
 			QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
 					() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 
-	/* Generator Utils */
+	// Generators
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... id) {
 		return new Identifier(ID, String.join("/", id));
@@ -107,7 +113,7 @@ public class Cabricality implements ModInitializer {
 		logError(message);
 	}
 
-	/* Initialization */
+	// Initialization
 	@Override
 	public void onInitialize(ModContainer mod) {
 		logInfo("Initializing... 📦");
@@ -120,6 +126,7 @@ public class Cabricality implements ModInitializer {
 		CabfFluids.register();
 		CabfSounds.register();
 		CabfBlockEntityTypes.register();
+		ScreenUtil.registerEvents();
 		TagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();

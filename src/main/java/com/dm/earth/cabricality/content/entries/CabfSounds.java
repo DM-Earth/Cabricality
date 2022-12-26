@@ -14,6 +14,5 @@ public class CabfSounds {
 	}
 
 	public static void register() {
-
 	}
 }

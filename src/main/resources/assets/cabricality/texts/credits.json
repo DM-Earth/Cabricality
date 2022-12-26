@@ -1,0 +1,107 @@
+[
+    {
+        "section": "Minecraft",
+        "titles": [
+            {
+                "title": "",
+                "names": [
+                    "Mojang Studios, Stockholm, Sweden"
+                ]
+            }
+        ]
+    },
+    {
+        "section": "Create: Above and Beyond",
+        "titles": [
+            {
+                "title": "Original Author",
+                "names": [
+                    "Simibubi"
+                ]
+            }
+        ]
+    },
+    {
+        "section": "Cabricality",
+        "titles": [
+            {
+                "title": "Modpack Author",
+                "names": [
+                    "Yjn024"
+                ]
+            },
+            {
+                "title": "Game Designers",
+                "names": [
+                    "Yjn024",
+                    "KrLite",
+					"IcedDog"
+                ]
+            },
+			{
+				"title": "Translators",
+				"names": [
+					"KrLite",
+					"MangoJellyPudding"
+				]
+			}
+        ]
+    },
+	{
+		"section": "Visual",
+		"titles": [
+			{
+				"title": "Language Experiences",
+				"names": [
+					"Yjn024",
+					"KrLite"
+				]
+			},
+			{
+				"title": "Visual Effects",
+				"names": [
+					"Yjn024",
+					"KrLite"
+				]
+			},
+			{
+				"title": "Visual Promotion",
+				"names": [
+					"KrLite"
+				]
+			}
+		]
+	},
+	{
+		"section": "Programming",
+		"titles": [
+			{
+				"title": "Game Developers",
+				"names": [
+					"Yjn024",
+					"KrLite",
+					"IcedDog"
+				]
+			}
+		]
+	},
+    {
+        "section": "Special Thanks",
+        "titles": [
+			{
+				"title": "",
+				"names": [
+					"Derpford",
+					"hrsthrt74",
+					"IcedDog",
+					"KrLite",
+					"MangoJellyPudding",
+					"Not-too",
+					"NyakoFox",
+					"RogenDong",
+					"SylviBlossom"
+				]
+			}
+        ]
+    }
+]
