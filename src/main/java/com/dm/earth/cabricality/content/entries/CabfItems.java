@@ -74,8 +74,11 @@ public class CabfItems {
 			registerItemModeled("dye_entangled_singularity", new Item(Properties.DEFAULT),
 					ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
-			new GlintedItem(new QuiltItemSettings().maxCount(512).group(Cabricality.MAIN_GROUP)),
+			new GlintedItem(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "chromatic_resonator"));
+	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
+			new Item(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
+			ItemModelGenerator.generated("item", "boot_medium"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =

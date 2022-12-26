@@ -1,10 +1,12 @@
 package com.dm.earth.cabricality.content.core.threads;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.MC;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback.RecipeHandler;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import net.minecraft.util.Identifier;
@@ -26,14 +28,18 @@ public class FluixThread implements TechThread {
 		return "fluix";
 	}
 
+	@Override
+	public void modifyRecipes(ModifyRecipesCallback.RecipeHandler handler) {
+	}
+
+	@Override
+	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	}
+
 	@Contract("_, _, _ -> new")
 	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
 			@Nullable Identifier other) {
 		return MechAndSmithCraft.entry(this.getLevel(), AE2.id("controller"), output, count, other);
-	}
-
-	@Override
-	public void modifyRecipes(RecipeHandler handler) {
 	}
 
 }
