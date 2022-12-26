@@ -84,7 +84,7 @@ public class JarBlock extends Block implements ResourcedBlock {
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block/jar/jar");
+		return Cabricality.id("block", "jar", "jar");
 	}
 
 	@Override

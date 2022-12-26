@@ -4,6 +4,8 @@ import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import com.dm.earth.cabricality.Cabricality;
 
@@ -31,22 +33,22 @@ public class JarData implements AddRecipesCallback {
         JTag reagentJars = new JTag();
         JTag catalystJars = new JTag();
 
-        for (Reagents reagents : Reagents.values()) {
-            Identifier catalystId = Cabricality.id("catalyst_jar_" + reagents.getCatalyst().hashString());
-            jars.add(catalystId);
-            catalystJars.add(catalystId);
+		Arrays.stream(Reagents.values()).forEach(reagents -> {
+			Identifier catalystId = Cabricality.id("catalyst_jar_" + reagents.getCatalyst().hashString());
+			jars.add(catalystId);
+			catalystJars.add(catalystId);
 
-            for (Reagent reagent : reagents.getReagents()) {
-                Identifier reagentId = Cabricality.id("reagent_jar_" + reagent.hashString());
-                jars.add(reagentId);
-                reagentJars.add(reagentId);
-            }
-        }
+			reagents.getReagents().forEach(reagent -> {
+				Identifier reagentId = Cabricality.id("reagent_jar_" + reagent.hashString());
+				jars.add(reagentId);
+				reagentJars.add(reagentId);
+			});
+		});
 
         // Tags
-        Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.JARS.id().getPath()), jars);
-        Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.REAGENT_JARS.id().getPath()), reagentJars);
-        Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.CATALYST_JARS.id().getPath()), catalystJars);
+        Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", CabfItemTags.JARS.id().getPath()), jars);
+        Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", CabfItemTags.REAGENT_JARS.id().getPath()), reagentJars);
+        Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", CabfItemTags.CATALYST_JARS.id().getPath()), catalystJars);
 
         // Recipes
         RecipeManagerHelper.addRecipes(thisL);
@@ -61,37 +63,35 @@ public class JarData implements AddRecipesCallback {
             for (Reagent reagent : reagentsT.getReagents()) {
                 if (reagentsT.isLinked())
                     reagents.add(reagent);
-                handler.register(Cabricality.id("alchemist/fluid_infuse/reagent_jar/" + reagent.hashString()),
+                handler.register(Cabricality.id("alchemist", "fluid_infuse", "reagent_jar", reagent.hashString()),
                         id -> RecipeManager.deserialize(id, generateInfuse(reagent)));
-                handler.register(Cabricality.id("alchemist/sawmill/reagent_jar/" + reagent.hashString()),
+                handler.register(Cabricality.id("alchemist", "sawmill", "reagent_jar", reagent.hashString()),
                         id -> RecipeManager.deserialize(id, generateReagentToItem(reagent)));
             }
 
         // Alchemist Recipes
-        boolean smelt = false;
-        for (Reagents reagentsT : Reagents.values()) {
-            if (!reagentsT.isLinked())
-                continue;
-            for (Reagent reagent : reagentsT.getReagents()) {
-                Identifier recipeId = Cabricality.id("alchemist/alchemist_smelt/" + reagentsT.getCatalyst().hashString()
-                        + "/" + reagent.hashString());
-                var recipe = RecipeManager.deserialize(recipeId, generateAlchemistProcess(reagent, reagents, smelt));
-                handler.register(recipeId,
-                        id -> recipe);
-            }
-            smelt = !smelt;
-        }
+        final AtomicBoolean smelt = new AtomicBoolean(false);
+		Arrays.stream(Reagents.values()).filter(Reagents::isLinked).forEach(r -> {
+			r.getReagents().forEach(reagent -> {
+				Identifier recipeId = Cabricality.id(
+						"alchemist", "alchemist_smelt",
+						r.getCatalyst().hashString() + "/" + reagent.hashString()
+				);
+				var recipe = RecipeManager.deserialize(recipeId, generateAlchemistProcess(reagent, reagents, smelt.get()));
+				handler.register(recipeId, id -> recipe);
+			});
+			smelt.set(!smelt.get());
+		});
     }
 
     private static JsonObject generateAlchemistProcess(Reagent reagent, ArrayList<Reagent> reagents, boolean smelt) {
-        ArrayList<Reagent> reagentsL = new ArrayList<>();
+        ArrayList<Reagent> reagentsList = new ArrayList<>();
         Reagents targetReagents = Reagents.get(reagent);
         long seed = reagent.hashCode();
-        for (Reagent reagentT : reagents)
-            if (!targetReagents.getReagents().contains(reagentT))
-                reagentsL.add(reagentT);
-        Reagent r1 = RandomMathUtil.randomSelect(reagentsL, 1, seed - 1).get(0);
-        Reagent r2 = RandomMathUtil.randomSelect(reagentsL, 1, seed + 1).get(0);
+		reagents.stream().filter(r -> !targetReagents.getReagents().contains(r)).forEach(reagentsList::add);
+
+        Reagent reagentFirst = RandomMathUtil.randomSelect(reagentsList, 1, seed - 1).get(0);
+        Reagent reagentSecond = RandomMathUtil.randomSelect(reagentsList, 1, seed + 1).get(0);
         Catalyst catalyst = targetReagents.getCatalyst();
         int count = targetReagents.getPrice();
 
@@ -101,8 +101,8 @@ public class JarData implements AddRecipesCallback {
         JsonObject json = new JsonObject();
         json.addProperty("type", recipeType.toString());
         JsonArray ingredients = new JsonArray();
-        ingredients.add(itemEntry(Cabricality.id("reagent_jar_" + r1.hashString())));
-        ingredients.add(itemEntry(Cabricality.id("reagent_jar_" + r2.hashString())));
+        ingredients.add(itemEntry(Cabricality.id("reagent_jar_" + reagentFirst.hashString())));
+        ingredients.add(itemEntry(Cabricality.id("reagent_jar_" + reagentSecond.hashString())));
         ingredients.add(itemEntry(Cabricality.id("catalyst_jar_" + catalyst.hashString())));
         json.add("ingredients", ingredients);
         JsonArray results = new JsonArray();

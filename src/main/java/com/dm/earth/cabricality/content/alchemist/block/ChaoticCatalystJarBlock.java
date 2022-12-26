@@ -21,7 +21,7 @@ public class ChaoticCatalystJarBlock extends CatalystJarBlock {
 
     @Override
     public Identifier getBlockModelId() {
-        return Cabricality.id("block/jar/chaos_catalyst");
+        return Cabricality.id("block", "jar", "chaos_catalyst");
     }
 
     @Override

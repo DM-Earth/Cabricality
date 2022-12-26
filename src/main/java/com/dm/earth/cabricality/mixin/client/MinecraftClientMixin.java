@@ -46,11 +46,4 @@ public class MinecraftClientMixin {
 			);
 		else client.setScreen(screen);
 	}
-
-	@Inject(method = "handleInputEvents", at = @At("HEAD"))
-	private void handleInputEvents(CallbackInfo ci) {
-		if (this.options.forwardKey.wasPressed()) {
-			MinecraftClient.getInstance().setScreen(new CabfCreditsScreen(() -> MinecraftClient.getInstance().setScreen(null)));
-		}
-	}
 }

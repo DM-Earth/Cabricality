@@ -26,6 +26,6 @@ public class CatalystJarBlock extends SubstrateJarBlock {
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block/jar/catalyst");
+		return Cabricality.id("block", "jar", "catalyst");
 	}
 }

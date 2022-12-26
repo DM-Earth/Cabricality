@@ -31,6 +31,8 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.Arrays;
+
 public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
@@ -62,7 +64,7 @@ public class Cabricality implements ModInitializer {
 
 	@Contract("_,_ -> new")
 	public static @NotNull String genTranslationKey(String type, String... path) {
-		return type + "." + ID + "." + String.join(".", path);
+		return type + "." + ID + "." + String.join(".", Arrays.stream(path).filter(p -> !p.isEmpty()).toList());
 	}
 
 	@Contract("_,_ -> new")

@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist.core;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.core.IHashStringable;
 
 import net.minecraft.text.Text;
@@ -33,6 +34,10 @@ public abstract class Substrate implements IHashStringable {
 
 	public abstract String getType();
 
+	public boolean isReagent() {
+		return this instanceof Reagent;
+	}
+
 	public abstract boolean consume();
 
 	@Override
@@ -42,6 +47,12 @@ public abstract class Substrate implements IHashStringable {
 
 	@Override
 	public String toString() {
-		return "[" + this.getType() + "] " + this.getId().toString();
+		return Cabricality.genTranslatableText(
+				this.getType(),
+				this.isReagent()
+						? ((Reagent) this).getItemId().getNamespace()
+						: "",
+				this.getId().getPath()
+		).getString() + Cabricality.genTranslatableText("block", this.getType() + "_jar").getString() + "§r";
 	}
 }

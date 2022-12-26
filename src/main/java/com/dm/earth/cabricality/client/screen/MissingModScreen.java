@@ -85,7 +85,7 @@ public class MissingModScreen extends Screen {
 	protected void init() {
 		if (missingMods != null && !missingMods.isEmpty()) {
 			int widest = missingMods.stream().map(mod -> mod.getRawName().length()).max(Comparator.naturalOrder()).orElse(0);
-			String brackets = "[" + String.join("", Collections.nCopies(widest + 17, " ")) + "]";
+			String brackets = "[" + " ".repeat(widest + 17) + "]";
 			AtomicInteger index = new AtomicInteger(0);
 
 			missingMods.forEach(mod -> {
@@ -100,7 +100,7 @@ public class MissingModScreen extends Screen {
 			});
 
 			if (this.shouldCloseOnEsc()) {
-				Text blank = new LiteralText(String.join("", Collections.nCopies(widest / 2 - 2, " ")));
+				Text blank = new LiteralText(" ".repeat(widest / 2 - 2));
 				Text quit = new LiteralText("[").append(blank).append("×").append(blank).append("]").formatted(Formatting.RED);
 				Text skip = new LiteralText("[").append(blank).append("→").append(blank).append("]").formatted(Formatting.WHITE);
 				// Bracketed icons

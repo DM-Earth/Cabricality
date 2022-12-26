@@ -5,7 +5,7 @@ import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.AP;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 
 import org.jetbrains.annotations.Contract;
@@ -43,8 +43,8 @@ public class AndesiteThread implements TechThread {
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_press"), 1, MC.id("iron_block")));
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_mixer"), 1, CR.id("whisk")));
-		MechAndSmithCraft.addEntry(entry(CR.id("encased_fan"), 1, IV.id("fan")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_drill"), 1, IV.id("iron_drill_head")));
+		MechAndSmithCraft.addEntry(entry(CR.id("encased_fan"), 1, IR.id("fan")));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_drill"), 1, IR.id("iron_drill_head")));
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_saw"), 1, CABF.id("saw_blade")));
 		MechAndSmithCraft.addEntry(entry(CR.id("deployer"), 1, CR.id("brass_hand")));
 		MechAndSmithCraft.addEntry(entry(CR.id("andesite_tunnel"), 4, null));
@@ -53,7 +53,7 @@ public class AndesiteThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_plough"), 2, null));
 		MechAndSmithCraft.addEntry(entry(CR.id("portable_storage_interface"), 2, null));
 		MechAndSmithCraft.addEntry(entry(CABF.id("extractor_machine"), 1, MC.id("bucket")));
-		MechAndSmithCraft.addEntry(entry(AD.id("coal_generator"), 1, IV.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(AD.id("coal_generator"), 1, IR.id("heat_coil")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("charger"), 1, AE2.id("fluix_crystal")));
 	}
 

@@ -3,7 +3,7 @@ package com.dm.earth.cabricality.content.core.threads;
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 import org.jetbrains.annotations.Contract;
@@ -133,8 +133,8 @@ public class BrassThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_arm"), 1, null));
 		MechAndSmithCraft.addEntry(entry(CR.id("stockpile_switch"), 2, null));
 		MechAndSmithCraft.addEntry(entry(CR.id("content_observer"), 2, null));
-		MechAndSmithCraft.addEntry(entry(IV.id("solid_infuser_mk1"), 1, MC.id("dropper")));
-		MechAndSmithCraft.addEntry(entry(IV.id("biomass_generator_mk3"), 1, IV.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(IR.id("solid_infuser_mk1"), 1, MC.id("dropper")));
+		MechAndSmithCraft.addEntry(entry(IR.id("biomass_generator_mk3"), 1, IR.id("heat_coil")));
 		MechAndSmithCraft.addEntry(entry(CR.id("brass_funnel"), 4, null));
 		MechAndSmithCraft.addEntry(entry(CR.id("brass_tunnel"), 4, null));
 	}

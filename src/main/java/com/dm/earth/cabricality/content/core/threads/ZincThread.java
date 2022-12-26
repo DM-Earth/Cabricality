@@ -4,7 +4,7 @@ import static com.dm.earth.cabricality.ModEntry.AD;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.ED;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
@@ -48,7 +48,7 @@ public class ZincThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(KB.id("vacuum_hopper"), 1, CR.id("nozzle")));
 		MechAndSmithCraft.addEntry(entry(KB.id("big_torch"), 1, MC.id("torch")));
 		MechAndSmithCraft.addEntry(entry(AD.id("solar_panel"), 1, MC.id("glass")));
-		MechAndSmithCraft.addEntry(entry(IV.id("tier_upgrade_mk3"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(IR.id("tier_upgrade_mk3"), 1, MC.id("redstone")));
 		MechAndSmithCraft.addEntry(entry(ED.id("controller"), 1, ED.id("connector")));
 	}
 
