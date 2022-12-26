@@ -2,7 +2,7 @@ package com.dm.earth.cabricality.mixin.client;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.ModDeps;
+import com.dm.earth.cabricality.util.mod.ModDeps;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 

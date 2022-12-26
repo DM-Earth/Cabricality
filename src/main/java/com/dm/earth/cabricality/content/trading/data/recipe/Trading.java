@@ -11,7 +11,7 @@ import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.data.recipe.gen.JTradingRecipeGenerator;
 import com.dm.earth.cabricality.content.trading.data.tag.TradeTags;
-import com.dm.earth.cabricality.util.CabfDebugger;
+import com.dm.earth.cabricality.util.debug.CabfDebugger;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -2,6 +2,11 @@ package com.dm.earth.cabricality.client;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import com.dm.earth.cabricality.util.SoundUtil;
+
+import net.minecraft.client.MinecraftClient;
+
+import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
@@ -22,6 +27,11 @@ import net.minecraft.client.render.RenderLayer;
 import java.util.Arrays;
 
 public class CabricalityClient implements ClientModInitializer {
+	public static void finishLoading() {
+		SoundUtil.playSound(Cabricality.FINISH_LOADING);
+		GLFW.glfwRequestWindowAttention(MinecraftClient.getInstance().getWindow().getHandle());
+	}
+
 	@Override
 	public void onInitializeClient(ModContainer mod) {
 		FluidRendererRegistry.renderFluidInit();

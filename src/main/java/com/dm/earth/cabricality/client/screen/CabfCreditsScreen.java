@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -111,7 +112,7 @@ public class CabfCreditsScreen extends Screen {
 			this.load("postcredits.txt", this::addPostCreditsFile);
 			this.creditsHeight = this.credits.size() * 12;
 		}
-		Cabricality.logInfo("Showing credits...");
+		CabfLogger.logInfo("Showing credits...");
 	}
 
 	public void render(MatrixStack matrixStack, int mouseX, int mouseY, float delta) {
@@ -243,7 +244,7 @@ public class CabfCreditsScreen extends Screen {
 				InputStreamReader inputStreamReader = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8);
 				reader.read(inputStreamReader);
 			} catch (Exception exception) {
-				Cabricality.logError("Couldn't load credits", exception);
+				CabfLogger.logError("Couldn't load credits", exception);
 			} finally {
 				IOUtils.closeQuietly(resource);
 			}

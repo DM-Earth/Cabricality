@@ -4,6 +4,14 @@ import com.dm.earth.cabricality.content.entries.CabfSounds;
 
 import com.dm.earth.cabricality.util.ScreenUtil;
 
+import com.dm.earth.cabricality.util.debug.CabfLogger;
+
+import net.minecraft.client.sound.PositionedSoundInstance;
+import net.minecraft.client.sound.SoundInstance;
+
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -32,6 +40,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
@@ -41,6 +50,9 @@ public class Cabricality implements ModInitializer {
 	// Textures
 	public static final Identifier CABRICALITY_TITLE_TEXTURE = id("textures", "gui", "title", "cabricality.png");
 	public static final Identifier MINECRAFT_SUBTITLE_TEXTURE = id("textures", "gui", "title", "minecraft.png");
+
+	// Sounds
+	public static final SoundEvent FINISH_LOADING = SoundEvents.BLOCK_AMETHYST_CLUSTER_PLACE;
 
 	// RRPs
 	public static final RuntimeResourcePack CLIENT_RESOURCES =
@@ -72,53 +84,10 @@ public class Cabricality implements ModInitializer {
 		return new TranslatableText(genTranslationKey(type, path));
 	}
 
-	/* Loggers */
-	public static void logInfo(@NotNull String message) {
-		LOGGER.info("[" + NAME + "] " + message);
-	}
-
-	public static void logWarn(@NotNull String message) {
-		LOGGER.warn("[" + NAME + "] " + message);
-	}
-
-	public static void logError(@NotNull String message) {
-		LOGGER.error("[" + NAME + "] " + message);
-	}
-
-	public static void logError(@NotNull String message, @NotNull Throwable throwable) {
-		LOGGER.error("[" + NAME + "] " + message, throwable);
-	}
-
-	public static void logDebug(@NotNull String message) {
-		LOGGER.debug("[" + NAME + "] " + message);
-	}
-
-	public static void logDebug(@NotNull String message, @NotNull Throwable throwable) {
-		LOGGER.debug("[" + NAME + "] " + message, throwable);
-	}
-
-	public static void logTrace(@NotNull String message) {
-		LOGGER.trace("[" + NAME + "] " + message);
-	}
-
-	public static void logTrace(@NotNull String message, @NotNull Throwable throwable) {
-		LOGGER.trace("[" + NAME + "] " + message, throwable);
-	}
-
-	public static void logDebugAndError(@NotNull String message) {
-		logDebug(message);
-		logError(message);
-	}
-
-	public static void logDebugAndError(@NotNull String message, @NotNull Throwable throwable) {
-		logDebug(message, throwable);
-		logError(message);
-	}
-
 	// Initialization
 	@Override
 	public void onInitialize(ModContainer mod) {
-		logInfo("Initializing... 📦");
+		CabfLogger.logInfo("Initializing... 📦");
 
 		Trading.load();
 		Alchemist.load();

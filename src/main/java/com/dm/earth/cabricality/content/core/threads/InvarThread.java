@@ -23,7 +23,7 @@ import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
 import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;

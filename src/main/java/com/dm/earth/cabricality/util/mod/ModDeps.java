@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.util;
+package com.dm.earth.cabricality.util.mod;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -6,9 +6,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Stream;
+
+import com.dm.earth.cabricality.util.debug.CabfLogger;
+
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
-import com.dm.earth.cabricality.Cabricality;
+
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Util;
@@ -61,7 +64,7 @@ public enum ModDeps {
 	@Nullable
 	public URL getUrl() {
 		if (!hasUrl())
-			Cabricality.logDebugAndError("Invalid URL for mod " + getRawName() + "!");
+			CabfLogger.logDebugAndError("Invalid URL for mod " + getRawName() + "!");
 		return url;
 	}
 
@@ -82,11 +85,11 @@ public enum ModDeps {
 			try {
 				Util.getOperatingSystem().open(url.toURI());
 			} catch (URISyntaxException uriSyntaxException) {
-				Cabricality.logDebugAndError("Cannot handle URL for mod " + getRawName() + "!",
+				CabfLogger.logDebugAndError("Cannot handle URL for mod " + getRawName() + "!",
 						uriSyntaxException);
 			}
 		} else {
-			Cabricality.logInfo("No URL found for mod " + getRawName() + " (" + modId + ")!");
+			CabfLogger.logInfo("No URL found for mod " + getRawName() + " (" + modId + ")!");
 		}
 	}
 

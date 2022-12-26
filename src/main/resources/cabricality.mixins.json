@@ -4,17 +4,20 @@
   "package": "com.dm.earth.cabricality.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "QuestMixin",
     "CuttingBoardRecipeMixin",
     "DiodeLampBlockAccessor",
     "FluidBlockMixin",
     "LavaFluidMixin",
+    "QuestMixin",
     "RegistryMixin",
     "TagKeyMixin",
     "WrenchItemMixin"
   ],
   "client": [
+    "client.MinecraftClientGameMixin",
     "client.MinecraftClientMixin",
+    "client.OptimizeWorldScreenMixin",
+    "client.SplashOverlayMixin",
     "client.TitleScreenMixin"
   ],
   "injectors": {

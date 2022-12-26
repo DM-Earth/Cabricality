@@ -16,7 +16,7 @@ import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
-import com.dm.earth.cabricality.util.RandomMathUtil;
+import com.dm.earth.cabricality.util.math.RandomMathUtil;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 

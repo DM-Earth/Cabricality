@@ -1,20 +1,13 @@
 package com.dm.earth.cabricality.client.screen;
 
 import java.awt.Color;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Stream;
 
 import com.dm.earth.cabricality.Cabricality;
 
-import com.dm.earth.cabricality.util.ModDeps;
+import com.dm.earth.cabricality.util.mod.ModDeps;
 
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;

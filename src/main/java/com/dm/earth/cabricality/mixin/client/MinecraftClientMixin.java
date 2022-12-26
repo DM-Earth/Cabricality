@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.ModDeps;
+import com.dm.earth.cabricality.util.mod.ModDeps;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;

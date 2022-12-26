@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist;
 
-import static com.dm.earth.cabricality.util.CabfDebugger.debug;
+import static com.dm.earth.cabricality.util.debug.CabfDebugger.debug;
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,6 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
 import org.jetbrains.annotations.NotNull;
@@ -24,7 +23,7 @@ import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.alchemist.data.JarData;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserProperties;
-import com.dm.earth.cabricality.util.RandomMathUtil;
+import com.dm.earth.cabricality.util.math.RandomMathUtil;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import net.darktree.led.LED;
