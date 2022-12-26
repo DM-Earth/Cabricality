@@ -450,6 +450,11 @@ hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
 metafile = true
 
 [[files]]
+file = "mods/terra.pw.toml"
+hash = "d3df5f333ab62716ee0418ad9654a3bead43f69ccf26dfbcda81d1ab3e6d5606"
+metafile = true
+
+[[files]]
 file = "mods/terrestria.pw.toml"
 hash = "d7390d339169bff9b123b2bc86ca08de1ef10b2991a7923c657bb5bda755c164"
 metafile = true
