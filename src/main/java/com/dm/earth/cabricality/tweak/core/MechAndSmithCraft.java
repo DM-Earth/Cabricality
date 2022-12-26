@@ -10,7 +10,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -4,7 +4,7 @@ import static com.dm.earth.cabricality.ModEntry.AD;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.ED;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
@@ -15,7 +15,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
@@ -48,7 +48,7 @@ public class ZincThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(KB.id("vacuum_hopper"), 1, CR.id("nozzle")));
 		MechAndSmithCraft.addEntry(entry(KB.id("big_torch"), 1, MC.id("torch")));
 		MechAndSmithCraft.addEntry(entry(AD.id("solar_panel"), 1, MC.id("glass")));
-		MechAndSmithCraft.addEntry(entry(IV.id("tier_upgrade_mk3"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(IR.id("tier_upgrade_mk3"), 1, MC.id("redstone")));
 		MechAndSmithCraft.addEntry(entry(ED.id("controller"), 1, ED.id("connector")));
 	}
 

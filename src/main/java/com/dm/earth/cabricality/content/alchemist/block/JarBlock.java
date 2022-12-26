@@ -8,7 +8,7 @@ import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
-import com.dm.earth.cabricality.util.VoxelShapeUtil;
+import com.dm.earth.cabricality.util.math.VoxelShapeUtil;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;
@@ -84,7 +84,7 @@ public class JarBlock extends Block implements ResourcedBlock {
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block/jar/jar");
+		return Cabricality.id("block", "jar", "jar");
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.util;
+package com.dm.earth.cabricality.util.debug;
 
 import com.dm.earth.cabricality.Cabricality;
 

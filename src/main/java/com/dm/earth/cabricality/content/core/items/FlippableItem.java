@@ -4,6 +4,7 @@ import java.util.Random;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -54,7 +55,7 @@ public class FlippableItem extends Item {
 					1, new Random().nextFloat(0.7F, 1.3F));
 		}
 		// Log to debug
-		Cabricality.logDebug("Flipped a " + name + " and got " + (side ? "top" : "bottom") + ".");
+		CabfLogger.logDebug("Flipped a " + name + " and got " + (side ? "top" : "bottom") + ".");
 	}
 
 }

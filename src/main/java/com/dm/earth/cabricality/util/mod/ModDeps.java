@@ -1,14 +1,13 @@
-package com.dm.earth.cabricality.util;
+package com.dm.earth.cabricality.util.mod;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Stream;
 
-import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
@@ -18,26 +17,18 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Util;
 
 public enum ModDeps {
-	FTB_LIBRARY(
-			"ftblibrary", new TranslatableText("mod.ftblibrary.name"),
+	FTB_LIBRARY("ftblibrary", new TranslatableText("mod.ftblibrary.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4210934/file",
-			false, false
-	), // ftb-library-fabric-1802.3.9-build.167.jar
-	FTB_QUESTS(
-			"ftbquests", new TranslatableText("mod.ftbquests.name"),
+			false, false), // ftb-library-fabric-1802.3.9-build.167.jar
+	FTB_QUESTS("ftbquests", new TranslatableText("mod.ftbquests.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4215548/file",
-			false, false
-	), // ftb-quests-fabric-1802.3.11-build.151.jar
-	FTB_TEAMS(
-			"ftbteams", new TranslatableText("mod.ftbteams.name"),
+			false, false), // ftb-quests-fabric-1802.3.11-build.151.jar
+	FTB_TEAMS("ftbteams", new TranslatableText("mod.ftbteams.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4229137/file",
-			false, false
-	), // ftb-teams-fabric-1802.2.9-build.88.jar
-	QUESTS_ADDITIONS(
-			"questsadditions", new TranslatableText("mod.questsadditions.name"),
+			false, false), // ftb-teams-fabric-1802.2.9-build.88.jar
+	QUESTS_ADDITIONS("questsadditions", new TranslatableText("mod.questsadditions.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/3940981/file",
-			false, false
-	); // questsadditions-fabric-1.18.2-1.4.0.jar
+			false, false); // questsadditions-fabric-1.18.2-1.4.0.jar
 
 	final String modId;
 	private final Text name;
@@ -72,7 +63,8 @@ public enum ModDeps {
 
 	@Nullable
 	public URL getUrl() {
-		if (!hasUrl()) Cabricality.logDebugAndError("Invalid URL for mod " + getRawName() + "!");
+		if (!hasUrl())
+			CabfLogger.logDebugAndError("Invalid URL for mod " + getRawName() + "!");
 		return url;
 	}
 
@@ -93,10 +85,11 @@ public enum ModDeps {
 			try {
 				Util.getOperatingSystem().open(url.toURI());
 			} catch (URISyntaxException uriSyntaxException) {
-				Cabricality.logDebugAndError("Cannot handle URL for mod " + getRawName() + "!", uriSyntaxException);
+				CabfLogger.logDebugAndError("Cannot handle URL for mod " + getRawName() + "!",
+						uriSyntaxException);
 			}
 		} else {
-			Cabricality.logInfo("No URL found for mod " + getRawName() + " (" + modId + ")!");
+			CabfLogger.logInfo("No URL found for mod " + getRawName() + " (" + modId + ")!");
 		}
 	}
 
@@ -113,7 +106,8 @@ public enum ModDeps {
 	}
 
 	public static ArrayList<ModDeps> getMissing(boolean required, boolean isServer) {
-		return arrayList(stream().filter(dep -> (dep.isRequired() || !required) && dep.matchesSide(isServer) && !dep.isLoaded()));
+		return arrayList(stream().filter(dep -> (dep.isRequired() || !required)
+				&& dep.matchesSide(isServer) && !dep.isLoaded()));
 	}
 
 	public static ArrayList<ModDeps> getAllMissing() {
@@ -129,8 +123,8 @@ public enum ModDeps {
 	}
 
 	public static String asString(boolean required, boolean isServer) {
-		return getMissing(required, isServer).stream().map(dep -> dep.getName().getString()).reduce((a, b) -> a + ", " + b)
-				.orElse("");
+		return getMissing(required, isServer).stream().map(dep -> dep.getName().getString())
+				.reduce((a, b) -> a + ", " + b).orElse("");
 	}
 
 	private static URL getUrl(String spec) {

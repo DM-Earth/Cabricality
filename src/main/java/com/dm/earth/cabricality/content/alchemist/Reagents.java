@@ -2,7 +2,7 @@ package com.dm.earth.cabricality.content.alchemist;
 
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.MLM;
 import static com.dm.earth.cabricality.ModEntry.PMD;
@@ -11,52 +11,72 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
+
+import net.minecraft.block.Block;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
-import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
-import net.minecraft.block.Block;
 import net.minecraft.util.registry.Registry;
 
 // TODO: fill this out
 public enum Reagents {
-	IGNEOUS("igneous", 0x6c8191, 16, true, of("andesite", MC.id("andesite"), 0x868887),
-			of("diorite", MC.id("diorite"), 0xe6e2e6), of("granite", MC.id("granite"), 0x9e6b5a),
-			of("cobblestone", MC.id("cobblestone"), 0xa6a6a6),
-			of("basalt", MC.id("basalt"), 0x32333D), of("tuff", MC.id("tuff"), 0x85837b),
-			of("limestone", CR.id("limestone"), 0xbbb6a9), of("scoria", CR.id("scoria"), 0x493a34),
-			of("blunite", PMD.id("blunite"), 0x5f6874),
-			of("carbonite", PMD.id("carbonite"), 0x514e52)),
+	IGNEOUS("igneous", 0x6C8191, 16, true,
+			of("andesite", MC.id("andesite"), 0x868887),
+			of("diorite", MC.id("diorite"), 0xE6E2E6),
+			of("granite", MC.id("granite"), 0x9E6B5A),
+			of("cobblestone", MC.id("cobblestone"), 0xA6A6A6),
+			of("basalt", MC.id("basalt"), 0x32333D),
+			of("tuff", MC.id("tuff"), 0x85837B),
+			of("limestone", CR.id("limestone"), 0xBBB6A9),
+			of("scoria", CR.id("scoria"), 0x493A34),
+			of("blunite", PMD.id("blunite"), 0x5F6874),
+			of("carbonite", PMD.id("carbonite"), 0x514E52)
+	),
 
-	HERBAL("herbal", 0xb5cda3, 1, true, of("white", MC.id("lily_of_the_valley"), 0xe8e8e8),
-			of("orange", MC.id("orange_tulip"), 0xfd9e28), of("magenta", MC.id("allium"), 0xba63e2),
-			of("light_blue", MC.id("blue_orchid"), 0x21c1fd),
-			of("yellow", MC.id("dandelion"), 0xffec4e), of("pink", MC.id("pink_tulip"), 0xf7c8fe),
-			of("light_gray", MC.id("white_tulip"), 0xd0e9e9),
-			of("blue", MC.id("cornflower"), 0x2f6eec), of("red", MC.id("red_tulip"), 0xeb3334),
-			of("black", MC.id("wither_rose"), 0x45322b)),
+	HERBAL("herbal", 0xB5CDA3, 1, true,
+			of("white", MC.id("lily_of_the_valley"), 0xE8E8E8),
+			of("orange", MC.id("orange_tulip"), 0xFD9E28),
+			of("magenta", MC.id("allium"), 0xBA63E2),
+			of("light_blue", MC.id("blue_orchid"), 0x21C1FD),
+			of("yellow", MC.id("dandelion"), 0xFFEC4E),
+			of("pink", MC.id("pink_tulip"), 0xF7C8FE),
+			of("light_gray", MC.id("white_tulip"), 0xD0E9E9),
+			of("blue", MC.id("cornflower"), 0x2F6EEC),
+			of("red", MC.id("red_tulip"), 0xEB3334),
+			of("black", MC.id("wither_rose"), 0x45322B)
+	),
 
-	VOLATILE("volatile", 0x9f5f80, 1, true, of("blaze", MC.id("blaze_powder"), 0xfda228),
-			of("slime", MC.id("slime_ball"), 0x8cd382),
-			of("nether", MC.id("nether_wart"), 0xa42733),
-			of("obsidian", CR.id("powdered_obsidian"), 0x271f3c),
+	VOLATILE("volatile", 0x9F5F80, 1, true,
+			of("blaze", MC.id("blaze_powder"), 0xFDA228),
+			of("slime", MC.id("slime_ball"), 0x8CD382),
+			of("nether", MC.id("nether_wart"), 0xA42733),
+			of("obsidian", CR.id("powdered_obsidian"), 0x271F3C),
 			of("gunpowder", MC.id("gunpowder"), 0x727272),
-			of("prismarine", MC.id("prismarine_shard"), 0xa5d1c2),
-			of("hex", MLM.id("hex_ash"), 0xa235bc), of("ender", AE2.id("ender_dust"), 0x38ccb1)),
+			of("prismarine", MC.id("prismarine_shard"), 0xA5D1C2),
+			of("hex", MLM.id("hex_ash"), 0xA235BC),
+			of("ender", AE2.id("ender_dust"), 0x38CCB1)
+	),
 
-	CRYSTAL("crystal", 0xffb037, 1, true, of("sulfur", IV.id("sulfur_dust"), 0xc7a94a),
+	CRYSTAL("crystal", 0xffb037, 1, true,
+			of("sulfur", IR.id("sulfur_dust"), 0xc7a94a),
 			of("certus_quartz", AE2.id("certus_quartz_dust"), 0xbbdcfd),
 			of("cinnabar", MC.id("redstone"), 0xe8364f),
 			of("blazing_quartz", MLM.id("blazing_quartz"), 0xfee568),
-			of("nether_quartz", MC.id("quartz"), 0xddd4c7)),
+			of("nether_quartz", MC.id("quartz"), 0xddd4c7)
+	),
 
-	CHAOTIC("chaos", 0xb200ed, 1, false, of("silver", IV.id("silver_dust"), 0x9fadb4),
-			of("silicon", AE2.id("silicon"), 0x85837b));
+	CHAOTIC("chaos", 0xb200ed, 1, false,
+			of("silver", IR.id("silver_dust"), 0x9fadb4),
+			of("silicon", AE2.id("silicon"), 0x85837b)
+	);
 
 	private final String name;
 	private final int tint;
@@ -154,9 +174,10 @@ public enum Reagents {
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {
 		return Registry.BLOCK.getEntries().stream()
-				.filter(entry -> entry.getValue() instanceof ReagentJarBlock
-						|| includeBlank && entry.getValue() instanceof JarBlock)
-				.map(Map.Entry::getValue).collect(Collectors.toList());
+				.filter(
+						entry -> entry.getValue() instanceof ReagentJarBlock
+										 || includeBlank && entry.getValue() instanceof JarBlock
+				).map(Map.Entry::getValue).collect(Collectors.toList());
 	}
 
 	@Nullable

@@ -3,7 +3,7 @@ package com.dm.earth.cabricality.content.core.threads;
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.PMD;
@@ -15,7 +15,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
@@ -26,7 +26,7 @@ public class EnderiumThread implements TechThread {
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(KB.id("entangled_chest"), 1, MC.id("chest")));
 		MechAndSmithCraft.addEntry(entry(KB.id("entangled_tank"), 1, CR.id("fluid_tank")));
-		MechAndSmithCraft.addEntry(entry(IV.id("tier_upgrade_mk4"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(IR.id("tier_upgrade_mk4"), 1, MC.id("redstone")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("quantum_ring"), 1, AE2.id("energy_cell")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("quantum_link"), 1, AE2.id("fluix_pearl")));
 	}

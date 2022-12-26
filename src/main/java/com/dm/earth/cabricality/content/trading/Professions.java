@@ -4,7 +4,7 @@ import static com.dm.earth.cabricality.ModEntry.AP;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.FD;
-import static com.dm.earth.cabricality.ModEntry.IV;
+import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.MLM;
 import static com.dm.earth.cabricality.ModEntry.PMD;
@@ -106,7 +106,7 @@ public enum Professions {
 			of(CR.id("ochrum"), 16, SILVER, 1, 0xb29561),
 			of(CR.id("crimsite"), 16, SILVER, 1, 0x7f2f3d),
 			of(CR.id("asurine"), 16, SILVER, 1, 0x3f4b68),
-			of(IV.id("sulfur_crystal"), 4, SILVER, 1, 0xbbab53),
+			of(IR.id("sulfur_crystal"), 4, SILVER, 1, 0xbbab53),
 			of(MC.id("lapis_lazuli"), 6, SILVER, 1, 0x3761c0),
 			of(MC.id("diamond"), 1, GOLD, 1, 0x54ecd9),
 			of(MC.id("coal"), 16, SILVER, 1, 0x252525),

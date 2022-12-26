@@ -2,7 +2,7 @@ package com.dm.earth.cabricality.client.rei;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
-import com.dm.earth.cabricality.util.CabfDebugger;
+import com.dm.earth.cabricality.util.debug.CabfDebugger;
 
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
 import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;

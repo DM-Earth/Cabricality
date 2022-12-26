@@ -18,7 +18,7 @@ public enum ModEntry {
 	CR("create"),
 	CABF(Cabricality.ID),
 	PMD("promenade"),
-	IV("indrev"),
+	IR("indrev"),
 	FD("farmersdelight"),
 	AP("architects_palette"),
 	TC("tconstruct"),

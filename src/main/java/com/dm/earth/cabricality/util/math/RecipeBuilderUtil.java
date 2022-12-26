@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.util;
+package com.dm.earth.cabricality.util.math;
 
 import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;

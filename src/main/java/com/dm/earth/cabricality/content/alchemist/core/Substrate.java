@@ -1,10 +1,17 @@
 package com.dm.earth.cabricality.content.alchemist.core;
 
+import com.dm.earth.cabricality.Cabricality;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
+import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
 import com.dm.earth.cabricality.core.IHashStringable;
-
+import net.minecraft.block.Block;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public abstract class Substrate implements IHashStringable {
 	private final Identifier id;
@@ -33,6 +40,10 @@ public abstract class Substrate implements IHashStringable {
 
 	public abstract String getType();
 
+	public boolean isReagent() {
+		return this instanceof Reagent;
+	}
+
 	public abstract boolean consume();
 
 	@Override
@@ -42,6 +53,19 @@ public abstract class Substrate implements IHashStringable {
 
 	@Override
 	public String toString() {
-		return "[" + this.getType() + "] " + this.getId().toString();
+		return Cabricality.genTranslatableText(
+				this.getType(),
+				this.isReagent()
+						? ((Reagent) this).getItemId().getNamespace()
+						: "",
+				this.getId().getPath()
+		).getString() + Cabricality.genTranslatableText("block", this.getType() + "_jar").getString() + "§r";
+	}
+
+	public static List<Block> getJarBlocks(boolean includeBlank) {
+		return Registry.BLOCK.getEntries().stream()
+				.filter(entry -> entry.getValue() instanceof SubstrateJarBlock
+						|| (includeBlank && entry.getValue() instanceof JarBlock))
+				.map(Map.Entry::getValue).collect(Collectors.toList());
 	}
 }

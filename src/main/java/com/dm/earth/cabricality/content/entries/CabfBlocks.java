@@ -83,7 +83,7 @@ public class CabfBlocks {
 	}
 
 	private static Block registerBlock(String name, Block block) {
-		Block block2 = Registry.register(Registry.BLOCK, Cabricality.id(name), block);
+		Block registered = Registry.register(Registry.BLOCK, Cabricality.id(name), block);
 
 		Registry.register(Registry.ITEM, Cabricality.id(name),
 				new BlockItem(block,
@@ -102,6 +102,6 @@ public class CabfBlocks {
 				resourced.writeItemModel(Cabricality.CLIENT_RESOURCES);
 		}
 
-		return block2;
+		return registered;
 	}
 }

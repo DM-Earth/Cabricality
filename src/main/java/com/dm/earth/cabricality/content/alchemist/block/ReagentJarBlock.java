@@ -37,12 +37,14 @@ public class ReagentJarBlock extends SubstrateJarBlock {
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block/jar/reagent");
+		return Cabricality.id("block", "jar", "reagent");
 	}
 
 	@Override
-	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
-			BlockHitResult hit) {
+	public ActionResult onUse(
+			BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
+			BlockHitResult hit
+	) {
 		if ((!player.isSneaking()) || !player.getStackInHand(Hand.MAIN_HAND).isEmpty() || this.getSubstrate() == null)
 			return ActionResult.PASS;
 		world.setBlockState(pos, CabfBlocks.JAR.getDefaultState());
