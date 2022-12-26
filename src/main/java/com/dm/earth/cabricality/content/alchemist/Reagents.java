@@ -11,16 +11,19 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
+
+import net.minecraft.block.Block;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
-import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
-import net.minecraft.block.Block;
 import net.minecraft.util.registry.Registry;
 
 // TODO: fill this out
