@@ -14,7 +14,7 @@ import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlock;
-import com.dm.earth.cabricality.core.ISettingableBlockItem;
+import com.dm.earth.cabricality.core.ISettableBlockItem;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.simibubi.create.AllTags.AllBlockTags;
 
@@ -87,7 +87,7 @@ public class CabfBlocks {
 
 		Registry.register(Registry.ITEM, Cabricality.id(name),
 				new BlockItem(block,
-						(block instanceof ISettingableBlockItem settingable)
+						(block instanceof ISettableBlockItem settingable)
 								? settingable.getSettings()
 								: CabfItems.Properties.DEFAULT));
 
