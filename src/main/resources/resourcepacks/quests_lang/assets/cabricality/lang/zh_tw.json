@@ -38,6 +38,10 @@
   "welcome.cabricality.go.title": "&f&l&o臨門一腳",
   "welcome.cabricality.go.content": "現在你對你的任務目標有了清楚的了解。從這裡你將開始你全新的征程。祝你好運！",
 
+  "shipments.cabricality.title": "&a▶ 貨倉",
+
+  "professions.cabricality.title": "&3▶ 懸賞",
+
   "market.cabricality.title": "&6▶ 市集",
 
   "market.cabricality.start.title": "&6&l市集",
@@ -515,7 +519,7 @@
   "bonus_2a.cabricality.complete.title": "&2&l第二章支線完成！",
   "bonus_2a.cabricality.complete.content": "宛如天工！你完成了地獄帶來的許多困難挑戰，這肯定給予了你繼續前進的莫大信心！",
 
-  "chapter_3.cabricality.title": "&f3&r 鋼鐵洪流",
+  "chapter_3.cabricality.title": "&f&l3&r 鋼鐵洪流",
 
   "chapter_3.cabricality.start.title": "&6&l鋼鐵洪流",
   "chapter_3.cabricality.start.subtitle": "&6第三章",
@@ -689,7 +693,7 @@
   "bonus_3a.cabricality.complete.title": "&3&l第三章支線完成！",
   "bonus_3a.cabricality.complete.content": "無可比擬的乾坤挪移術正掌握在你的手心！在你龐大的工廠中，一定有某處可以利用它們進一步提高效率。看你的了！",
 
-  "chapter_4.cabricality.title": "&f4&r 標靶藥物",
+  "chapter_4.cabricality.title": "&f&l4&r 標靶藥物",
 
   "chapter_4.cabricality.start.title": "&6&l標靶藥物",
   "chapter_4.cabricality.start.subtitle": "&6第四章",
@@ -855,7 +859,7 @@
 
   "chapter_4a.cabricality.complete.task.checkmark.title": "&7回到&6第四章：標靶藥物&r",
 
-  "chapter_5.cabricality.title": "&f5&r 意識上傳",
+  "chapter_5.cabricality.title": "&f&l5&r 意識上傳",
 
   "chapter_5.cabricality.start.title": "&6&l意識上傳",
   "chapter_5.cabricality.start.subtitle": "&5最終章",

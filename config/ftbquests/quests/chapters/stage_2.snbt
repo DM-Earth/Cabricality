@@ -415,7 +415,7 @@
 				id: "7DF53EF0CF55B5D7"
 				type: "item"
 				item: {
-					id: "cabricality:screwdriver"
+					id: "indrev:screwdriver"
 					Count: 1b
 					tag: {
 						Damage: 0

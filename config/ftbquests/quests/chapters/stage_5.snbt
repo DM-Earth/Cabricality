@@ -32,13 +32,13 @@
 			}]
 		}
 		{
-			title: "{ontraption.cabricality.42.title}"
+			title: "{contraption.cabricality.42.title}"
 			icon: "cabricality:raw_logic_bucket"
 			x: 2.0d
 			y: 15.5d
 			shape: "square"
-			subtitle: "{ontraption.cabricality.42.subtitle}"
-			description: ["{ontraption.cabricality.42.content}"]
+			subtitle: "{contraption.cabricality.42.subtitle}"
+			description: ["{contraption.cabricality.42.content}"]
 			dependencies: ["5D0454F977C4F080"]
 			size: 1.5d
 			id: "70D563EF30E9CB97"

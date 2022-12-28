@@ -143,7 +143,7 @@
 		}
 		{
 			title: "{metallurgy.cabricality.ii.title}"
-			icon: "createplus:zinc_dust"
+			icon: "cabricality:zinc_dust"
 			x: -9.0d
 			y: 0.0d
 			shape: "circle"
@@ -190,7 +190,7 @@
 		}
 		{
 			title: "{metallurgy.cabricality.ii.melting.title}"
-			icon: "alloy_forgery:deepslate_bricks_forge_controller"
+			icon: "tconstruct:smeltery_controller"
 			x: -7.0d
 			y: 1.0d
 			subtitle: "{metallurgy.cabricality.ii.melting.subtitle}"

@@ -535,7 +535,8 @@
 				id: "5B4F2E2F7BDEA6A0"
 				type: "stat"
 				title: "{chapter_4.cabricality.chapter_4a.task.complete.title}"
-				icon: "cabricality:substrate_chaos"
+				icon: "cabricality:catalyst_jar_x1331490811"
+				comment: "chaos"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 60
