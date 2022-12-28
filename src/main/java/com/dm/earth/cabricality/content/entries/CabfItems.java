@@ -81,6 +81,20 @@ public class CabfItems {
 			ItemModelGenerator.generated("item", "boot_medium"));
 	public static final Item CIRCUIT_SCRAP = registerItemModeled("circuit_scrap",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "circuit_scrap"));
+	public static final Item SAND_BALL = registerItemModeled("sand_ball",
+			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "sand_ball"));
+	public static final Item ROUGH_SAND = registerItemModeled("rough_sand",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "rough_sand"));
+	public static final Item PURIFIED_SAND = registerItemModeled("purified_sand",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "purified_sand"));
+	public static final Item COAL_COKE = registerItemModeled("coal_coke",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "coal_coke"));
+	public static final Item COKE_CHUNK = registerItemModeled("coke_chunk",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "coke_chunk"));
+	public static final Item EARTH_CHARGE = registerItemModeled("earth_charge",
+			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "earth_charge"));
+	public static final Item ICE_CHARGE = registerItemModeled("ice_charge",
+			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "ice_charge"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =
@@ -206,5 +220,6 @@ public class CabfItems {
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
 		public static final Item.Settings JAR =
 				new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP).maxCount(16);
+		public static final Item.Settings QUARTER = DEFAULT.maxCount(16);
 	}
 }
