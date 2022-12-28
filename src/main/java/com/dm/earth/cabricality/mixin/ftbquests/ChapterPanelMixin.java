@@ -1,6 +1,13 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
+import com.dm.earth.cabricality.util.ColorUtil;
+
+import com.dm.earth.cabricality.util.math.Node;
+import com.dm.earth.cabricality.util.math.Rect;
+
 import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
+
+import net.minecraft.client.MinecraftClient;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -29,7 +36,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ChapterPanelMixin {
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		Color4I.rgb(Cabricality.CABF_BLACK.getRGB()).withAlpha(182).draw(matrixStack, x, y, w, h);
+		Color4I.rgb(Cabricality.CABF_BLACK.getRGB()).withAlpha(170).draw(matrixStack, x, y, w, h);
+		new ColorUtil.Drawer(matrixStack).horizontalGradiant(
+				new Rect(new Node(x, y), new Node(x + w - 7, y + h)),
+				ColorUtil.castAlpha(Cabricality.CABF_PURPLE, 45), ColorUtil.castAlpha(Cabricality.CABF_MID_PURPLE)
+		);
 	}
 }
 

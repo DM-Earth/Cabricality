@@ -18,7 +18,8 @@
     "ftbquests.QuestMixin",
     "ftbquests.QuestObjectMixin",
     "ftbquests.QuestPanelMixin",
-    "ftbquests.QuestScreenMixin"
+    "ftbquests.QuestScreenMixin",
+    "ftbquests.ViewQuestPanelMixin"
   ],
   "client": [
     "client.MinecraftClientGameMixin",

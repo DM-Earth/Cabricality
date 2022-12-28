@@ -1,3 +1,4 @@
 accessWidener   v1	named
 
+# Fields
 accessible field net/minecraft/item/BucketItem fluid Lnet/minecraft/fluid/Fluid;

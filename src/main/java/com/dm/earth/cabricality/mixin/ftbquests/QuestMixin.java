@@ -21,8 +21,6 @@ import dev.ftb.mods.ftbquests.quest.Quest;
 public abstract class QuestMixin {
 	@Inject(method = "onCompleted", at = @At("HEAD"), remap = false)
 	private void onCompleted(QuestProgressEventData<?> data, CallbackInfo ci) {
-		// Cabricality.logError("Quest completed: " + ((Quest) (Object) this).getTitle().getString()
-		// + "(" + ((Quest) (Object) this).getMovableID() + ")");
 		if (((Quest) (Object) this).getMovableID() == 5590341946361687492L) {
 			CabfLogger.logInfo("Congrats, adventurer! You've completed the Cabricality modpack!");
 			ScreenUtil.openScreenInWorld(
