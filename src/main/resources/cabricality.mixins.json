@@ -17,6 +17,7 @@
     "ftbquests.ModpackButtonMixin",
     "ftbquests.QuestMixin",
     "ftbquests.QuestObjectMixin",
+    "ftbquests.QuestPanelMixin",
     "ftbquests.QuestScreenMixin"
   ],
   "client": [

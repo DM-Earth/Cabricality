@@ -521,7 +521,8 @@
 		}
 		{
 			title: "{chapter_4.cabricality.chapter_4a.title}"
-			icon: "cabricality:substrate_silicon"
+			icon: "cabricality:catalyst_jar_666621652"
+			comment: "silicon"
 			disable_toast: true
 			x: -3.0d
 			y: 5.0d
