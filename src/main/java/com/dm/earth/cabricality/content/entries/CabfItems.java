@@ -22,7 +22,7 @@ import com.dm.earth.cabricality.content.trading.item.ProfessionCardItem;
 import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
 import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
 import com.simibubi.create.AllTags.AllItemTags;
-
+import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
 import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.tags.JTag;
 import net.minecraft.item.Item;
@@ -85,6 +85,7 @@ public class CabfItems {
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =
 			List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
+	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
 
 	public static void register() {
 		// Trading Cards
@@ -181,6 +182,12 @@ public class CabfItems {
 					new ColoredFernItem.SlimeFernPaste(entry.tint),
 					ItemModelGenerator.generated("item", "fern", "slime_fern_paste"));
 		});
+
+		// Incomplete Processors
+		PROCESSORS.stream()
+				.forEach(type -> registerItemModeled("incomplete_" + type + "_processor",
+						new SequencedAssemblyItem(new QuiltItemSettings()), ItemModelGenerator
+								.generated("item/processor", "incomplete_" + type + "_processor")));
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
