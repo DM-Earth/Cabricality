@@ -136,7 +136,7 @@
 		{
 			title: "{market.cabricality.screwdriver.title}"
 			icon: {
-				id: "cabricality:screwdriver"
+				id: "indrev:screwdriver"
 				Count: 1b
 				tag: {
 					Damage: 0
