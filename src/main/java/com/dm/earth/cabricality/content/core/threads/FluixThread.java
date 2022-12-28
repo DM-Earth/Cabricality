@@ -10,9 +10,13 @@ import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 import com.dm.earth.cabricality.content.core.TechThread;
+import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class FluixThread implements TechThread {
 
@@ -42,6 +46,28 @@ public class FluixThread implements TechThread {
 		handler.register(recipeId("crafting", "controller"),
 				id -> RecipeBuilderUtil.donutRecipe(id, CABF.asItem("fluix_casing"),
 						CABF.asItem("calculation_mechanism"), AE2.asItem("controller"), 1));
+
+		handler.register(recipeId("stonecutting", "silicon_press"),
+				id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "",
+						Ingredient.ofItems(CABF.asItem("circuit_scrap")),
+						AE2.asStack("silicon_press")));
+		handler.register(recipeId("stonecutting", "engineering_processor_press"),
+				id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "",
+						Ingredient.ofItems(CABF.asItem("circuit_scrap")),
+						AE2.asStack("engineering_processor_press")));
+		handler.register(recipeId("stonecutting", "calculation_processor_press"),
+				id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "",
+						Ingredient.ofItems(CABF.asItem("circuit_scrap")),
+						AE2.asStack("calculation_processor_press")));
+		handler.register(recipeId("stonecutting", "logic_processor_press"),
+				id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "",
+						Ingredient.ofItems(CABF.asItem("circuit_scrap")),
+						AE2.asStack("logic_processor_press")));
+		handler.register(recipeId("crafting", "circuit_scrap"),
+				id -> VanillaRecipeBuilders.shapedRecipe(" A ", "ABA", " A ")
+						.ingredient('A', CabfItems.INVAR_INGOT)
+						.ingredient('B', TagKey.of(Registry.ITEM_KEY, CABF.id("circuit_press")))
+						.output(CABF.asStack("circuit_scrap", 2)).build(id, ""));
 	}
 
 	@Contract("_, _, _ -> new")
