@@ -11,8 +11,11 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
+import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
+import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
@@ -68,6 +71,25 @@ public class FluixThread implements TechThread {
 						.ingredient('A', CabfItems.INVAR_INGOT)
 						.ingredient('B', TagKey.of(Registry.ITEM_KEY, CABF.id("circuit_press")))
 						.output(CABF.asStack("circuit_scrap", 2)).build(id, ""));
+		handler.register(recipeId("deploying", "printed_silicon"),
+				id -> new DeployerApplicationRecipe(new FreePRP(id)
+						.setIngredient(Ingredient.ofItems(AE2.asItem("silicon")),
+								Ingredient.ofItems(AE2.asItem("silicon_press")))
+						.keepHeldItem().setResult(AE2.asProcessingOutput("printed_silicon"))));
+
+		handler.register(recipeId("milling", "blizz_cube"),
+				id -> new MillingRecipe(
+						new FreePRP(id).setIngredient(CABF.asIngredient("blizz_cube"))
+								.setResult(CABF.asProcessingOutput("blizz_powder", 1, 2),
+										CABF.asProcessingOutput("blizz_powder", 0.5f, 1))
+								.setProcessingTime(350)));
+
+								handler.register(recipeId("milling", "basalz_powder"),
+								id -> new MillingRecipe(
+										new FreePRP(id).setIngredient(CABF.asIngredient("basalz_shard"))
+												.setResult(CABF.asProcessingOutput("basalz_powder", 1, 2),
+														CABF.asProcessingOutput("basalz_powder", 0.5f, 1))
+												.setProcessingTime(350)));
 	}
 
 	@Contract("_, _, _ -> new")

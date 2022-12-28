@@ -1,0 +1,64 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "ae2:printed_silicon"
+  },
+  "transitionalItem": {
+    "item": "cabricality:incomplete_logic_processor"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_logic_processor"
+        },
+        {
+          "item": "ae2:printed_logic_processor"
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_logic_processor"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_logic_processor"
+        },
+        {
+          "fluid": "cabricality:redstone",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_logic_processor"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_logic_processor"
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_logic_processor"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:logic_processor",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

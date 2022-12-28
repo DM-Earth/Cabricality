@@ -1,18 +1,6 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.content.entries.CabfSounds;
-
-import com.dm.earth.cabricality.util.ScreenUtil;
-
-import com.dm.earth.cabricality.util.debug.CabfLogger;
-
-import dev.ftb.mods.ftblibrary.ui.ScreenWrapper;
-import net.minecraft.client.sound.PositionedSoundInstance;
-import net.minecraft.client.sound.SoundInstance;
-
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-
+import java.awt.Color;
 import java.util.Arrays;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -20,7 +8,6 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
-import org.quiltmc.qsl.lifecycle.api.client.event.ClientTickEvents;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
@@ -46,10 +33,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.awt.*;
-import java.util.Arrays;
-import java.util.Random;
 
 public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
