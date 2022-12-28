@@ -20,7 +20,7 @@ import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.alchemist.data.JarData;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserProperties;
-import com.dm.earth.cabricality.util.math.RandomMathUtil;
+import com.dm.earth.cabricality.math.util.RandomMathUtil;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import net.darktree.led.LED;

@@ -1,15 +1,18 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
+import com.dm.earth.cabricality.math.Timer;
 import com.dm.earth.cabricality.util.ColorUtil;
 
-import com.dm.earth.cabricality.util.math.Node;
-import com.dm.earth.cabricality.util.math.Rect;
+import com.dm.earth.cabricality.math.Node;
+import com.dm.earth.cabricality.math.Rect;
+
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 
 import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
 
-import net.minecraft.client.MinecraftClient;
-
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
@@ -34,12 +37,28 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ChapterPanel.class)
 public class ChapterPanelMixin {
+	@Shadow(remap = false)
+	public boolean expanded;
+	private Timer timer = new Timer(450);
+
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		Color4I.rgb(Cabricality.CABF_BLACK.getRGB()).withAlpha(170).draw(matrixStack, x, y, w, h);
-		new ColorUtil.Drawer(matrixStack).horizontalGradiant(
-				new Rect(new Node(x, y), new Node(x + w - 7, y + h)),
-				ColorUtil.castAlpha(Cabricality.CABF_PURPLE, 45), ColorUtil.castAlpha(Cabricality.CABF_MID_PURPLE)
+		if (!this.expanded) {
+			timer = timer.reset();
+			return;
+		}
+
+		ColorUtil.Drawer drawer = new ColorUtil.Drawer(matrixStack);
+		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
+
+		drawer.rect(
+				new Rect(x, y, w, h),
+				ColorUtil.castOpacity(Cabricality.CABF_BLACK, 0.73F * (float) lerp)
+		);
+
+		drawer.horizontalGradiant(
+				new Rect(x, y, w * 0.85 * lerp, h),
+				ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.32F * (float) lerp), ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE)
 		);
 	}
 }

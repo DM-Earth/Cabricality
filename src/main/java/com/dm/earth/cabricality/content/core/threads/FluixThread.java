@@ -13,7 +13,7 @@ import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.math.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import net.minecraft.recipe.Ingredient;

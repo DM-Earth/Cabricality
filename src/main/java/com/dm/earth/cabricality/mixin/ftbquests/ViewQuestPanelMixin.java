@@ -1,5 +1,13 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
+import com.dm.earth.cabricality.math.Timer;
+
+import com.dm.earth.cabricality.util.debug.CabfLogger;
+
+import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
+
+import net.minecraft.client.MinecraftClient;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -12,8 +20,8 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.util.ColorUtil;
-import com.dm.earth.cabricality.util.math.Node;
-import com.dm.earth.cabricality.util.math.Rect;
+import com.dm.earth.cabricality.math.Node;
+import com.dm.earth.cabricality.math.Rect;
 
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.icon.Icon;
@@ -28,6 +36,13 @@ import net.minecraft.client.util.math.MatrixStack;
 public abstract class ViewQuestPanelMixin extends Widget {
 	public ViewQuestPanelMixin(Panel p) {
 		super(p);
+	}
+
+	private Timer timer = new Timer(1320);
+
+	@Inject(method = "addWidgets", at = @At("TAIL"), remap = false)
+	private void init(CallbackInfo ci) {
+		timer = timer.reset();
 	}
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
@@ -69,10 +84,11 @@ public abstract class ViewQuestPanelMixin extends Widget {
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
 		Color4I.rgb(Cabricality.CABF_DIM_PURPLE.getRGB()).withAlpha(210).draw(matrixStack, x, y, w, h);
+		Rect rect = new Rect(new Node(x, y), new Node(x + w, y + h));
 		new ColorUtil.Drawer(matrixStack).rectGradiantFromMiddleWithScissor(
-				new Rect(new Node(x, y), new Node(x + w, y + h)),
-				ColorUtil.castAlpha(Cabricality.CABF_PURPLE, 65),
-				ColorUtil.castAlpha(Cabricality.CABF_MID_PURPLE)
+				rect.interpolate(new Rect(), 1 * Math.pow(timer.queueAsPercentage(), 1 / 2.0)), rect,
+				ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.45F * (float) Math.pow(timer.queueAsPercentage(), 1 / 3.0)),
+				ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE)
 		);
 	}
 

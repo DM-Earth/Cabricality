@@ -14,6 +14,7 @@
     "ftbquests.BaseScreenMixin",
     "ftbquests.ChapterButtonMixin",
     "ftbquests.ChapterPanelMixin",
+    "ftbquests.ClientQuestFileMixin",
     "ftbquests.ModpackButtonMixin",
     "ftbquests.QuestMixin",
     "ftbquests.QuestObjectMixin",

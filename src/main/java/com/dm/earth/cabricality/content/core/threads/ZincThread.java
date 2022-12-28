@@ -15,7 +15,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.util.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.math.util.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;

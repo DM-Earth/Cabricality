@@ -1,7 +1,7 @@
 package com.dm.earth.cabricality.util;
 
-import com.dm.earth.cabricality.util.math.Node;
-import com.dm.earth.cabricality.util.math.Rect;
+import com.dm.earth.cabricality.math.Node;
+import com.dm.earth.cabricality.math.Rect;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -23,6 +23,14 @@ public class ColorUtil {
 
 	public static Color castAlpha(Color color, int alpha) {
 		return new Color(color.getRed(), color.getGreen(), color.getBlue(), alpha);
+	}
+
+	public static Color castOpacity(Color color) {
+		return castOpacity(color, 0);
+	}
+
+	public static Color castOpacity(Color color, float opacity) {
+		return new Color(color.getRed() / 255.0F, color.getGreen() / 255.0F, color.getBlue() / 255.0F, opacity);
 	}
 
 	public record Drawer(MatrixStack matrixStack) {
@@ -52,6 +60,14 @@ public class ColorUtil {
 
 		public void verticalGradiant(Rect rect, Color top, Color bottom) {
 			rectGradiant(rect, top, bottom, bottom, top);
+		}
+
+		public void rect(Color color) {
+			rect(new Rect(new Node(0, 0), new Node(MinecraftClient.getInstance().getWindow().getScaledWidth(), MinecraftClient.getInstance().getWindow().getScaledHeight())), color);
+		}
+
+		public void rect(Rect rect, Color color) {
+			rectGradiant(rect, color, color, color, color);
 		}
 
 		public void rectGradiant(Rect rect, Color lu, Color ld, Color rd, Color ru) {

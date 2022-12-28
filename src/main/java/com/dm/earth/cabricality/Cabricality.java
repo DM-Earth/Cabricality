@@ -2,6 +2,9 @@ package com.dm.earth.cabricality;
 
 import java.awt.Color;
 import java.util.Arrays;
+
+import com.dm.earth.cabricality.util.PusherUtil;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -100,6 +103,7 @@ public class Cabricality implements ModInitializer {
 		CabfSounds.register();
 		CabfBlockEntityTypes.register();
 		ScreenUtil.registerEvents();
+		PusherUtil.register();
 		TagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
