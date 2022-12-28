@@ -1,5 +1,9 @@
 package com.dm.earth.cabricality.mixin;
 
+import com.dm.earth.cabricality.content.skyblock.Skyblock;
+
+import com.dm.earth.cabricality.content.skyblock.SkyblockCobbleGen;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -17,8 +21,12 @@ import net.minecraft.world.WorldAccess;
 public class LavaFluidMixin {
 	@Redirect(method = "flow", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/WorldAccess;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z"))
 	protected boolean setState(WorldAccess instance, BlockPos pos, BlockState blockState, int i) {
-		return instance.getBlockState(pos.offset(Direction.DOWN)).isOf(Blocks.BEDROCK)
-				? instance.setBlockState(pos, CobbleGenUtil.getBlock(instance, pos), i)
-				: instance.setBlockState(pos, blockState, i);
+		return Skyblock.isSkyblock?
+					instance.setBlockState(pos, SkyblockCobbleGen.getBlock(instance, pos, blockState), i):
+					instance.getBlockState(pos.offset(Direction.DOWN)).isOf(Blocks.BEDROCK)?
+						instance.setBlockState(pos, CobbleGenUtil.getBlock(instance, pos), i):
+						instance.setBlockState(pos, blockState, i)
+
+				;
 	}
 }

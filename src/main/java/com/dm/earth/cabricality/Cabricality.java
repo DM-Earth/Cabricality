@@ -2,6 +2,7 @@ package com.dm.earth.cabricality;
 
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 
+import com.dm.earth.cabricality.content.skyblock.Skyblock;
 import com.dm.earth.cabricality.util.ScreenUtil;
 
 import org.jetbrains.annotations.Contract;
@@ -120,6 +121,7 @@ public class Cabricality implements ModInitializer {
 
 		Trading.load();
 		Alchemist.load();
+		Skyblock.load();
 		DeployerCuttingRecipeHandler.load();
 		CabfItems.register();
 		CabfBlocks.register();
