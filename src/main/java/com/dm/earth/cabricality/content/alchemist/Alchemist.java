@@ -232,7 +232,7 @@ public class Alchemist {
 			possibleReagentMap(context.getSource().getWorld())
 					.forEach(
 							(key, value) -> context.getSource().sendFeedback(
-									new LiteralText("§8<§r" + key.toString() + "§8>§r\n")
+									new LiteralText(key.toString() + "§r\n")
 											.append(value.toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
 											.append("\n"),
 									false
@@ -240,17 +240,16 @@ public class Alchemist {
 					);
 			context.getSource()
 					.sendFeedback(
-							new LiteralText("§8<§r" + CHAOTIC_CATALYST.toString() + "§8>§r\n")
+							new LiteralText(CHAOTIC_CATALYST.toString() + "§r\n")
 									.append(possibleChaoticCatalystList(context.getSource().getWorld()).toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
 									.append("\n"),
 							false
 					);
 			possibleSpecialReagentChaoticMap(context.getSource().getWorld())
 					.forEach((key, value) -> context.getSource().sendFeedback(
-							new LiteralText("§8<§r" + key.toString() + "§8>§r\n")
-									.append(Cabricality.genTranslatableText("command", "alchemist", "chaotic").formatted(Formatting.DARK_GRAY))
-									.append(" ")
+							new LiteralText(key.toString() + "§r\n")
 									.append(value.toString())
+									.append(Cabricality.genTranslatableText("command", "alchemist", "chaotic"))
 									.append("\n"),
 							false)
 					);

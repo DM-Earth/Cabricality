@@ -8,10 +8,10 @@
     "DiodeLampBlockAccessor",
     "FluidBlockMixin",
     "LavaFluidMixin",
-    "QuestMixin",
     "RegistryMixin",
     "TagKeyMixin",
-    "WrenchItemMixin"
+    "WrenchItemMixin",
+    "ftbquests.QuestMixin"
   ],
   "client": [
     "client.MinecraftClientGameMixin",
