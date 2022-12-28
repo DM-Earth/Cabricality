@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.mixin;
 
+import com.dm.earth.cabricality.content.skyblock.SkyblockCobbleGen;
+
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -20,6 +22,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
+import static com.dm.earth.cabricality.content.skyblock.Skyblock.isSkyblock;
+
 @Mixin(FluidBlock.class)
 public class FluidBlockMixin {
 	@Shadow
@@ -30,13 +34,27 @@ public class FluidBlockMixin {
 	@Inject(method = "receiveNeighborFluids", at = @At("HEAD"), cancellable = true)
 	private void cabfReceiveNeighborFluids(World world, BlockPos pos, BlockState state,
 			CallbackInfoReturnable<Boolean> cir) {
-		if (this.fluid.isIn(FluidTags.LAVA) && world.getBlockState(pos.offset(Direction.DOWN)).isOf(Blocks.BEDROCK)) {
-			for (Direction direction : FluidBlock.FLOW_DIRECTIONS) {
-				FluidState targetState = world.getFluidState(pos.offset(direction));
-				if (targetState.isOf(Fluids.WATER) || targetState.isOf(Fluids.FLOWING_WATER)) {
-					world.setBlockState(pos, CobbleGenUtil.getBlock(world, pos));
-					world.syncWorldEvent(1501, pos, 0);
-					cir.setReturnValue(false);
+		if (this.fluid.isIn(FluidTags.LAVA)) {
+			if(isSkyblock) {
+				for (Direction direction : FluidBlock.FLOW_DIRECTIONS) {
+					FluidState targetState = world.getFluidState(pos.offset(direction));
+					if (targetState.isOf(Fluids.WATER) || targetState.isOf(Fluids.FLOWING_WATER)) {
+						world.setBlockState(pos, SkyblockCobbleGen.getBlock(world, pos, state));
+						world.syncWorldEvent(1501, pos, 0);
+						cir.setReturnValue(false);
+					}
+				}
+			}
+			else{
+				if(world.getBlockState(pos.offset(Direction.DOWN)).isOf(Blocks.BEDROCK)) {
+					for (Direction direction : FluidBlock.FLOW_DIRECTIONS) {
+						FluidState targetState = world.getFluidState(pos.offset(direction));
+						if (targetState.isOf(Fluids.WATER) || targetState.isOf(Fluids.FLOWING_WATER)) {
+							world.setBlockState(pos, CobbleGenUtil.getBlock(world, pos));
+							world.syncWorldEvent(1501, pos, 0);
+							cir.setReturnValue(false);
+						}
+					}
 				}
 			}
 		}

@@ -16,6 +16,8 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldAccess;
 
 public class SkyblockCobbleGen {
+	private static final BlockState DEFAULT_BLOCK = Blocks.COBBLESTONE.getDefaultState();
+
 	// Almost vanilla not-too-deep underground materials
 	private static final BlockGen STONE_GEN = new BlockGen(0.3f, Map.of(
 		Blocks.STONE, Blocks.STONE,
@@ -46,8 +48,8 @@ public class SkyblockCobbleGen {
 		BlockState upState = world.getBlockState(pos.offset(Direction.UP));
 		BlockState downState = world.getBlockState(pos.offset(Direction.DOWN));
 		if(BLOCK_GEN_MAP.containsKey(downState.getBlock())) {
-			BlockState blockGenRandom = BLOCK_GEN_MAP.get(downState.getBlock()).getRandom();
-			return blockGenRandom==null?blockState:blockGenRandom;
+			BlockState blockGenRandom = BLOCK_GEN_MAP.get(downState.getBlock()).getRandom(upState);
+			return blockGenRandom==null?DEFAULT_BLOCK:blockGenRandom;
 		}
 		return blockState;
 	}
