@@ -174,75 +174,63 @@
 
   "block.cabricality.computation_matrix": "Computation Matrix",
 
+  "block.cabricality.jar"         : "Jar",
+  "block.cabricality.reagent_jar" : " Reagent",
+  "block.cabricality.catalyst_jar": " Catalyst",
 
 
-  "comment_substrate": "Substrates",
 
-  "block.cabricality.substrate_andesite"   : "§7Andesite§r Reagent",
-  "block.cabricality.substrate_diorite"    : "§7Diorite§r Reagent",
-  "block.cabricality.substrate_granite"    : "§7Granite§r Reagent",
-  "block.cabricality.substrate_cobblestone": "§7Stone§r Reagent",
-  "block.cabricality.substrate_basalt"     : "§7Basalt§r Reagent",
-  "block.cabricality.substrate_limestone"  : "§7Limestone§r Reagent",
+  "comment_reagent": "Reagents",
 
-  "block.cabricality.substrate_red"    : "§4Crimson§r Reagent",
-  "block.cabricality.substrate_orange" : "§6Orange§r Reagent",
-  "block.cabricality.substrate_yellow" : "§eGoldenrod§r Reagent",
-  "block.cabricality.substrate_green"  : "§2Olive§r Reagent",
-  "block.cabricality.substrate_blue"   : "§3Azure§r Reagent",
-  "block.cabricality.substrate_magenta": "§dFuchsia§r Reagent",
+  "reagent.cabricality.minecraft.andesite"   : "§7Andesite§r",
+  "reagent.cabricality.minecraft.diorite"    : "§7Diorite§r",
+  "reagent.cabricality.minecraft.granite"    : "§7Granite§r",
+  "reagent.cabricality.minecraft.cobblestone": "§7Stone§r",
+  "reagent.cabricality.minecraft.basalt"     : "§7Basalt§r",
+  "reagent.cabricality.minecraft.tuff"       : "§7Tuff§r",
+  "reagent.cabricality.create.limestone"     : "§7Limestone§r",
+  "reagent.cabricality.create.scoria"        : "§8Scoria§r",
+  "reagent.cabricality.promenade.blunite"    : "§7Blunite§r",
+  "reagent.cabricality.promenade.carbonite"  : "§8Carbonite§r",
 
-  "block.cabricality.substrate_blaze"     : "§6Blazing§r Reagent",
-  "block.cabricality.substrate_slime"     : "§aSlimy§r Reagent",
-  "block.cabricality.substrate_nether"    : "§4Nether§r Reagent",
-  "block.cabricality.substrate_obsidian"  : "§8Obsidian§r Reagent",
-  "block.cabricality.substrate_gunpowder" : "§8Gunpowder§r Reagent",
-  "block.cabricality.substrate_prismarine": "§3Aquatic§r Reagent",
+  "reagent.cabricality.minecraft.white"      : "§fPureness§r",
+  "reagent.cabricality.minecraft.orange"     : "§6Orange§r",
+  "reagent.cabricality.minecraft.magenta"    : "§dFuchsia§r",
+  "reagent.cabricality.minecraft.light_blue" : "§bOrchid§r",
+  "reagent.cabricality.minecraft.yellow"     : "§eGoldenrod§r",
+  "reagent.cabricality.minecraft.pink"       : "§dCandy§r",
+  "reagent.cabricality.minecraft.light_gray" : "§7Concrete§r",
+  "reagent.cabricality.minecraft.blue"       : "§3Azure§r",
+  "reagent.cabricality.minecraft.red"        : "§4Crimson§r",
+  "reagent.cabricality.minecraft.black"      : "§8Darkness§r",
 
-  "block.cabricality.substrate_sulfur": "§6Sulfuric§r Reagent",
-  "block.cabricality.substrate_certus": "§bCertus Quartz§r Reagent",
+  "reagent.cabricality.minecraft.blaze"     : "§6Blazing§r",
+  "reagent.cabricality.minecraft.slime"     : "§aSlimy§r",
+  "reagent.cabricality.minecraft.nether"    : "§4Nether§r",
+  "reagent.cabricality.create.obsidian"     : "§8Obsidian§r",
+  "reagent.cabricality.minecraft.gunpowder" : "§8Explosive§r",
+  "reagent.cabricality.minecraft.prismarine": "§bAquatic§r",
+  "reagent.cabricality.malum.hex"           : "§5Ashic§r",
+  "reagent.cabricality.ae2.ender"           : "§2Enderium§r",
 
-  "block.cabricality.substrate_zinc"  : "§3Zinc§r Reagent",
-  "block.cabricality.substrate_copper": "§6Copper§r Reagent",
-  "block.cabricality.substrate_iron"  : "§7Iron§r Reagent",
-  "block.cabricality.substrate_lead"  : "§8Lead§r Reagent",
-  "block.cabricality.substrate_gold"  : "§eGold§r Reagent",
+  "reagent.cabricality.indrev.sulfur"          : "§6Sulfuric§r",
+  "reagent.cabricality.ae2.certus_quartz"      : "§bCertus Quartz§r",
+  "reagent.cabricality.minecraft.cinnabar"     : "§cCinnabar§r",
+  "reagent.cabricality.malum.blazing_quartz"   : "§eBlazing Quartz§r",
+  "reagent.cabricality.minecraft.nether_quartz": "§fNether Quartz§r",
 
-  "block.cabricality.substrate_lapis"   : "§1Lapis Lazuli§r Reagent",
-  "block.cabricality.substrate_emerald" : "§2Emerald§r Reagent",
-  "block.cabricality.substrate_diamond" : "§bDiamond§r Reagent",
-  "block.cabricality.substrate_ruby"    : "§cRuby§r Reagent",
-  "block.cabricality.substrate_sapphire": "§9Sapphire§r Reagent",
+  "reagent.cabricality.indrev.silver": "§7Silver§r",
+  "reagent.cabricality.ae2.silicon"  : "§dSilicon",
 
-  "block.cabricality.substrate_igneous" : "§dIgneous Catalyst",
-  "block.cabricality.substrate_herbal"  : "§dHerbal Catalyst",
-  "block.cabricality.substrate_volatile": "§dVolatile Catalyst",
-  "block.cabricality.substrate_crystal" : "§dCrystalline Catalyst",
-  "block.cabricality.substrate_metal"   : "§dMetallurgic Catalyst",
-  "block.cabricality.substrate_gem"     : "§dGemstone Catalyst",
 
-  "block.cabricality.substrate_chaos"  : "§b§kChaos Catalyst",
-  "block.cabricality.substrate_silicon": "§dSilicon Reagent",
-  "block.cabricality.substrate_silver" : "§7Silver§r Reagent",
 
-  "block.cabricality.accelerator_glowstone": "§6Glowstone§r Accelerator",
-  "block.cabricality.accelerator_redstone" : "§cRedstone§r Accelerator",
+  "comment_catalyst": "Catalysts",
 
-  "block.cabricality.failed_alchemy_0" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_1" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_2" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_3" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_4" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_5" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_6" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_7" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_8" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_9" : "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_10": "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_11": "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_12": "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_13": "Mundane Alchemic Blend",
-  "block.cabricality.failed_alchemy_14": "Mundane Alchemic Blend",
+  "catalyst.cabricality.igneous" : "§dIgneous",
+  "catalyst.cabricality.herbal"  : "§dHerbal",
+  "catalyst.cabricality.volatile": "§dVolatile",
+  "catalyst.cabricality.crystal" : "§dCrystalline",
+  "catalyst.cabricality.chaos" : "§b§kChaos",
 
 
 
@@ -277,8 +265,8 @@
 
   "comment_trading": "Trading",
 
-  "item.cabricality.profession_card": "§dProfession Card",
   "item.cabricality.trade_card"     : "§6Trade Card",
+  "item.cabricality.profession_card": "§dProfession Card",
 
   "trading.cabricality.exchange_currencies": "§6Exchange Currencies",
 
@@ -294,10 +282,26 @@
 
 
 
+  "comment_tag": "Tags",
+
+  "tag.cabricality.trade_cards"     : "§6Trade Cards",
+  "tag.cabricality.profession_cards": "§dProfession Cards",
+
+  "tag.cabricality.jars/reagent" : "§cReagent Jars",
+  "tag.cabricality.jars/catalyst": "§9Catalyst Jars",
+
+
+
   "comment_event": "Events",
 
   "event.cabricality.coin_flip": "You Flipped a %s    It Was %s",
   "event.cabricality.dice_roll": "You Rolled a %s    It Was %s",
+
+
+
+  "comment_command": "Commands",
+
+  "command.cabricality.alchemist.chaotic" : "<Chaotic> ",
 
 
 
@@ -313,9 +317,6 @@
   "mod.ftbquests.name": "FTB Quests",
   "mod.ftbteams.name": "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
-
-  "tag.cabricality.trade_cards"     : "Trade Cards",
-  "tag.cabricality.profession_cards": "Profession Cards",
 
   "screen.cabricality.missing_mod.title"       : "Cabricality is Missing Mod",
   "screen.cabricality.missing_mod.title_plural": "Cabricality is Missing Mods",

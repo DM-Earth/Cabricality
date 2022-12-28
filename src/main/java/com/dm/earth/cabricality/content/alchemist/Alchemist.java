@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist;
 
-import static com.dm.earth.cabricality.util.CabfDebugger.debug;
+import static com.dm.earth.cabricality.util.debug.CabfDebugger.debug;
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,6 +10,9 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
+
+import net.minecraft.util.Formatting;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.dm.earth.cabricality.Cabricality;
@@ -20,7 +23,7 @@ import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.alchemist.data.JarData;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserProperties;
-import com.dm.earth.cabricality.util.RandomMathUtil;
+import com.dm.earth.cabricality.util.math.RandomMathUtil;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import net.darktree.led.LED;
@@ -44,8 +47,10 @@ public class Alchemist {
 		JarData.load();
 	}
 
-	public static void processChaoticRecipe(@NotNull HopperMinecartEntity minecart,
-			LaserProperties properties) {
+	public static void processChaoticRecipe(
+			@NotNull HopperMinecartEntity minecart,
+			LaserProperties properties
+	) {
 		if (!(minecart.getWorld() instanceof ServerWorld world))
 			return;
 
@@ -72,8 +77,8 @@ public class Alchemist {
 		boolean success = false;
 
 		// Reagents -> Catalyst
-		if ((!success) && catalysts.size() == 0) {
-			debug("Init Reagents -> Catalyst");
+		if (catalysts.size() == 0) {
+			debug("Initializing - Reagents -> Catalyst");
 
 			Map<Catalyst, ArrayList<Reagent>> possibleReagentMap = possibleReagentMap(world);
 			Catalyst catalystTargetTemp = getMatchedCatalyst(reagentsList, possibleReagentMap);
@@ -117,7 +122,7 @@ public class Alchemist {
 
 		// Catalysts -> Chaotic Catalyst
 		if (!success && reagents.isEmpty() && catalysts.size() > 1) {
-			debug("Init Catalysts -> Chaotic Catalyst");
+			debug("Initializing - Catalysts -> Chaotic Catalyst");
 
 			ArrayList<Catalyst> existed = mapToList(catalysts);
 			ArrayList<Catalyst> expected = possibleChaoticCatalystList(world);
@@ -161,7 +166,7 @@ public class Alchemist {
 				}
 
 			if (canContinue) {
-				debug("Init Chaotic Catalyst + Reagent -> Reagent");
+				debug("Initializing - Chaotic Catalyst + Reagent -> Reagent");
 
 				Reagent reagent = mapToList(reagents).get(0);
 				Map<Reagent, Reagent> map = possibleSpecialReagentChaoticMap(world);
@@ -213,8 +218,7 @@ public class Alchemist {
 				.map(Map.Entry::getKey).orElse(null);
 	}
 
-	private static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(
-			ServerWorld world) {
+	private static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(ServerWorld world) {
 		return Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 				.collect(Collectors.toMap(Reagents::getCatalyst, reagentsT -> {
 					List<Reagent> reagents = reagentsT.getReagents();
@@ -226,17 +230,30 @@ public class Alchemist {
 		@Override
 		public int run(@NotNull CommandContext<ServerCommandSource> context) {
 			possibleReagentMap(context.getSource().getWorld())
-					.forEach((key, value) -> context.getSource().sendFeedback(
-							new LiteralText(key.toString() + " -> " + value.toString()), false));
+					.forEach(
+							(key, value) -> context.getSource().sendFeedback(
+									new LiteralText("§8<§r" + key.toString() + "§8>§r\n")
+											.append(value.toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
+											.append("\n"),
+									false
+							)
+					);
 			context.getSource()
 					.sendFeedback(
-							new LiteralText(CHAOTIC_CATALYST.toString() + " -> "
-									+ possibleChaoticCatalystList(context.getSource().getWorld())),
-							false);
+							new LiteralText("§8<§r" + CHAOTIC_CATALYST.toString() + "§8>§r\n")
+									.append(possibleChaoticCatalystList(context.getSource().getWorld()).toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
+									.append("\n"),
+							false
+					);
 			possibleSpecialReagentChaoticMap(context.getSource().getWorld())
 					.forEach((key, value) -> context.getSource().sendFeedback(
-							new LiteralText(key.toString() + " -> (Chaotic) " + value.toString()),
-							false));
+							new LiteralText("§8<§r" + key.toString() + "§8>§r\n")
+									.append(Cabricality.genTranslatableText("command", "alchemist", "chaotic").formatted(Formatting.DARK_GRAY))
+									.append(" ")
+									.append(value.toString())
+									.append("\n"),
+							false)
+					);
 			return SINGLE_SUCCESS;
 		}
 	}

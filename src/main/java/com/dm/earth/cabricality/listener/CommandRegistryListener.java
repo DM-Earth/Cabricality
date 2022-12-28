@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 import org.quiltmc.qsl.command.api.CommandRegistrationCallback;
 
 import com.dm.earth.cabricality.content.alchemist.Alchemist.AlchemistInformationCommand;
-import com.dm.earth.cabricality.util.CabfDebugger.DebugCommand;
+import com.dm.earth.cabricality.util.debug.CabfDebugger.DebugCommand;
 import com.mojang.brigadier.CommandDispatcher;
 
 import net.minecraft.server.command.ServerCommandSource;

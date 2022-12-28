@@ -1,20 +1,13 @@
 package com.dm.earth.cabricality.client.screen;
 
 import java.awt.Color;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Stream;
 
 import com.dm.earth.cabricality.Cabricality;
 
-import com.dm.earth.cabricality.util.ModDeps;
+import com.dm.earth.cabricality.util.mod.ModDeps;
 
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
@@ -63,7 +56,7 @@ public class MissingModScreen extends Screen {
 			@Nullable ArrayList<ModDeps> missingMods,
 			@Nullable Screen parent, boolean renderBackgroundTexture
 	) {
-		super(Cabricality.genTranslatableText("screen", "missing_mod" + (missingMods.size() == 1 ? "" : "_plural"), "title"));
+		super(Cabricality.genTranslatableText("screen", "missing_mod", "title" + (missingMods.size() == 1 ? "" : "_plural")));
 		this.missingMods = missingMods;
 		this.parent = parent;
 		this.renderBackgroundTexture = renderBackgroundTexture;
@@ -85,7 +78,7 @@ public class MissingModScreen extends Screen {
 	protected void init() {
 		if (missingMods != null && !missingMods.isEmpty()) {
 			int widest = missingMods.stream().map(mod -> mod.getRawName().length()).max(Comparator.naturalOrder()).orElse(0);
-			String brackets = "[" + String.join("", Collections.nCopies(widest + 17, " ")) + "]";
+			String brackets = "[" + " ".repeat(widest + 17) + "]";
 			AtomicInteger index = new AtomicInteger(0);
 
 			missingMods.forEach(mod -> {
@@ -100,7 +93,7 @@ public class MissingModScreen extends Screen {
 			});
 
 			if (this.shouldCloseOnEsc()) {
-				Text blank = new LiteralText(String.join("", Collections.nCopies(widest / 2 - 2, " ")));
+				Text blank = new LiteralText(" ".repeat(widest / 2 - 2));
 				Text quit = new LiteralText("[").append(blank).append("×").append(blank).append("]").formatted(Formatting.RED);
 				Text skip = new LiteralText("[").append(blank).append("→").append(blank).append("]").formatted(Formatting.WHITE);
 				// Bracketed icons

@@ -2,6 +2,9 @@ package com.dm.earth.cabricality.content.alchemist.block;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,7 +29,15 @@ public abstract class SubstrateJarBlock extends JarBlock implements ISettingable
 
 	@Nullable
 	public String getContent() {
-		return Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_" + this.getSubstrate().getId().getPath()).getString();
+		if (this.getSubstrate() != null) {
+			return Cabricality.genTranslatableText(
+					this.getSubstrate().getType(),
+					this.getSubstrate().isReagent()
+							? ((Reagent) this.getSubstrate()).getItemId().getNamespace()
+							: "",
+					this.getSubstrate().getId().getPath()
+			).getString() + Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_jar").getString();
+		} else return null;
 	}
 
 	@Nullable

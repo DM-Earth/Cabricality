@@ -74,8 +74,11 @@ public class CabfItems {
 			registerItemModeled("dye_entangled_singularity", new Item(Properties.DEFAULT),
 					ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
-			new GlintedItem(new QuiltItemSettings().maxCount(512).group(Cabricality.MAIN_GROUP)),
+			new GlintedItem(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "chromatic_resonator"));
+	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
+			new Item(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
+			ItemModelGenerator.generated("item", "boot_medium"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =
@@ -146,6 +149,10 @@ public class CabfItems {
 			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", variant + "_dusts"), tagT);
 			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "dusts", variant), tagT);
 		});
+
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"), new JTag().addItem(ENDERIUM_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"), new JTag().addItem(INVAR_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"), new JTag().addItem(NICKEL_INGOT));
 
 		// Crushed Ores
 		JTag crushedOresTag = new JTag();

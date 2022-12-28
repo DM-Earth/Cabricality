@@ -7,7 +7,7 @@ import com.dm.earth.cabricality.Cabricality;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.dm.earth.cabricality.util.CabfDebugger;
+import com.dm.earth.cabricality.util.debug.CabfDebugger;
 
 import net.darktree.led.block.DirectionalDiodeLampBlock;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;

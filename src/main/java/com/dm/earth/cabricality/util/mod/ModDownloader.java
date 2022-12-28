@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.util;
+package com.dm.earth.cabricality.util.mod;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -11,7 +11,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Map;
 
-import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -29,15 +29,15 @@ public class ModDownloader {
 	public ArrayList<String> download() {
 		urls.forEach((key, value) -> {
 			try {
-				Cabricality.logInfo("Downloading " + key + "...");
+				CabfLogger.logInfo("Downloading " + key + "...");
 				DownloadThread thread = new DownloadThread(key, new URL(value));
 				while (thread.isAlive()) {
-					Cabricality.logDebug("Downloading " + key + "...");
+					CabfLogger.logDebug("Downloading " + key + "...");
 				}
 				succeed.addAll(thread.getSucceed());
 			} catch (MalformedURLException malformedURLException) {
-				Cabricality.logError("Failed to download mod " + key + ", url is malformed!");
-				Cabricality.logDebug("Failed to download mod " + key + ", url is malformed!", malformedURLException);
+				CabfLogger.logError("Failed to download mod " + key + ", url is malformed!");
+				CabfLogger.logDebug("Failed to download mod " + key + ", url is malformed!", malformedURLException);
 			}
 		});
 		return succeed.isEmpty() ? null : succeed;
@@ -76,8 +76,8 @@ public class ModDownloader {
 				inputStream.close();
 				succeed.add(mod);
 			} catch (IOException ioException) {
-				Cabricality.logError("Failed to download mod " + mod + ", connection failed!");
-				Cabricality.logDebug("Failed to download mod " + mod + ", connection failed!", ioException);
+				CabfLogger.logError("Failed to download mod " + mod + ", connection failed!");
+				CabfLogger.logDebug("Failed to download mod " + mod + ", connection failed!", ioException);
 			}
 		}
 
