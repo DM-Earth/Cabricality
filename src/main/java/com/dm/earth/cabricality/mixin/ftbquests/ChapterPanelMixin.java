@@ -1,19 +1,15 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
-import com.dm.earth.cabricality.util.debug.CabfLogger;
-
-import net.minecraft.text.Style;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
-
 import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Widget;
 import dev.ftb.mods.ftbquests.gui.quests.ChapterPanel;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.MutableText;
+import net.minecraft.text.Style;
 import net.minecraft.util.Formatting;
 
 @Mixin(ChapterPanel.ChapterButton.class)
