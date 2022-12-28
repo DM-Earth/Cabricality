@@ -8,6 +8,6 @@
     "tag": "tconstruct:molten_diamond",
     "amount": 13500
   },
-  "result": "tconstruct:printed_engineering_processor",
+  "result": "ae2:printed_engineering_processor",
   "cooling_time": 50
 }
