@@ -132,10 +132,10 @@ public class MissingModScreen extends Screen {
 			super.renderBackground(matrixStack);
 
 		// Render Colored Overlay
-		Color color = new Color(0x1B1329);
-		float r = color.getRed() / 255.0F,
-				g = color.getGreen() / 255.0F,
-				b = color.getBlue() / 255.0F,
+		float
+				r = Cabricality.CABF_DIM_PURPLE.getRed() / 255.0F,
+				g = Cabricality.CABF_DIM_PURPLE.getGreen() / 255.0F,
+				b = Cabricality.CABF_DIM_PURPLE.getBlue() / 255.0F,
 				a = 0.57F;
 
 		BufferBuilder bufferBuilder = Tessellator.getInstance().getBuffer();

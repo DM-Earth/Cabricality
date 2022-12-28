@@ -6,6 +6,7 @@ import com.dm.earth.cabricality.util.ScreenUtil;
 
 import com.dm.earth.cabricality.util.debug.CabfLogger;
 
+import dev.ftb.mods.ftblibrary.ui.ScreenWrapper;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.sound.SoundInstance;
 
@@ -18,6 +19,7 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
+import org.quiltmc.qsl.lifecycle.api.client.event.ClientTickEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,6 +41,7 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -46,6 +49,14 @@ public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
+
+	// Colors
+	public static final Color CABF_PURPLE = new Color(0x6117DE);
+	public static final Color CABF_MID_PURPLE = new Color(0x3A1677);
+	public static final Color CABF_DIM_PURPLE = new Color(0x1B1329);
+	public static final Color CABF_GRAY_PURPLE = new Color(0x2F2939);
+	public static final Color CABF_BRIGHT_PURPLE = new Color(0xE0DBE8);
+	public static final Color CABF_BLACK = new Color(0x0D0C0E);
 
 	// Textures
 	public static final Identifier CABRICALITY_TITLE_TEXTURE = id("textures", "gui", "title", "cabricality.png");
@@ -105,6 +116,11 @@ public class Cabricality implements ModInitializer {
 		initClientAssets();
 
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(SERVER_RESOURCES));
+
+		ClientTickEvents.END.register(client -> {
+			if (client.currentScreen instanceof ScreenWrapper)
+				CabfLogger.logInfo(((ScreenWrapper) client.currentScreen).getGui().toString());
+		});
 
 		// ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
 		// ResourcePackActivationType.ALWAYS_ENABLED);

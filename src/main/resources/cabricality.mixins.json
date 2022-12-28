@@ -11,8 +11,13 @@
     "RegistryMixin",
     "TagKeyMixin",
     "WrenchItemMixin",
+    "ftbquests.BaseScreenMixin",
+    "ftbquests.ChapterButtonMixin",
     "ftbquests.ChapterPanelMixin",
-    "ftbquests.QuestMixin"
+    "ftbquests.ModpackButtonMixin",
+    "ftbquests.QuestMixin",
+    "ftbquests.QuestObjectMixin",
+    "ftbquests.QuestScreenMixin"
   ],
   "client": [
     "client.MinecraftClientGameMixin",
