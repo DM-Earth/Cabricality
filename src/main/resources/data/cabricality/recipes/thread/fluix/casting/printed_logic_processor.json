@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "ae2:logic_processor_press"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_gold",
+    "amount": 18000
+  },
+  "result": "ae2:printed_logic_processor",
+  "cooling_time": 50
+}

@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cabricality:inductive_mechanism"
+  },
+  "transitionalItem": {
+    "item": "cabricality:incomplete_calculation_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "ae2:printed_silicon"
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_calculation_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "ae2:printed_silicon"
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_calculation_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "cabricality:flash_drive"
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_calculation_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "cabricality:calculation_mechanism",
+      "chance": 1
+    }
+  ],
+  "loops": 1
+}

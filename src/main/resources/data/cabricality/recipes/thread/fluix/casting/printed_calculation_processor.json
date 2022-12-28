@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "ae2:calculation_processor_press"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_copper",
+    "amount": 18000
+  },
+  "result": "ae2:printed_calculation_processor",
+  "cooling_time": 50
+}

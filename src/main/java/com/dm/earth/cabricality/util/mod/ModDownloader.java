@@ -37,7 +37,8 @@ public class ModDownloader {
 				succeed.addAll(thread.getSucceed());
 			} catch (MalformedURLException malformedURLException) {
 				CabfLogger.logError("Failed to download mod " + key + ", url is malformed!");
-				CabfLogger.logDebug("Failed to download mod " + key + ", url is malformed!", malformedURLException);
+				CabfLogger.logDebug("Failed to download mod " + key + ", url is malformed!",
+						malformedURLException);
 			}
 		});
 		return succeed.isEmpty() ? null : succeed;
@@ -62,11 +63,13 @@ public class ModDownloader {
 		public void start() {
 			try {
 				File file = QuiltLoader.getGameDir().resolve("mods").resolve(mod + ".jar").toFile();
-				if (!file.getParentFile().exists()) file.getParentFile().mkdirs();
+				if (!file.getParentFile().exists())
+					file.getParentFile().mkdirs();
 
 				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 				connection.setConnectTimeout(10 * 1000);
-				connection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+				connection.setRequestProperty("User-Agent",
+						"Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
 
 				InputStream inputStream = connection.getInputStream();
 				FileOutputStream fileOutputStream = new FileOutputStream(file);
@@ -77,7 +80,8 @@ public class ModDownloader {
 				succeed.add(mod);
 			} catch (IOException ioException) {
 				CabfLogger.logError("Failed to download mod " + mod + ", connection failed!");
-				CabfLogger.logDebug("Failed to download mod " + mod + ", connection failed!", ioException);
+				CabfLogger.logDebug("Failed to download mod " + mod + ", connection failed!",
+						ioException);
 			}
 		}
 
@@ -85,7 +89,8 @@ public class ModDownloader {
 			byte[] buffer = new byte[1024];
 			int len = 0;
 			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-			while ((len = inputStream.read(buffer)) != -1) byteArrayOutputStream.write(buffer, 0, len);
+			while ((len = inputStream.read(buffer)) != -1)
+				byteArrayOutputStream.write(buffer, 0, len);
 			byteArrayOutputStream.close();
 			return byteArrayOutputStream.toByteArray();
 		}
