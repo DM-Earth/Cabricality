@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "cabricality:calculation_mechanism"
+    },
+    "b": {
+      "item": "ae2:fluix_pearl"
+    },
+    "c": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "ae2:spatial_cell_component_2"
+  }
+}

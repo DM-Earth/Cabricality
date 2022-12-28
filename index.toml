@@ -190,11 +190,6 @@ hash = "0084c36a5d7f0ce300d60178150d1211308c81d19f929b3382c6b4af0b9e6d4f"
 metafile = true
 
 [[files]]
-file = "mods/architectury-fabric.pw.toml"
-hash = "652a6f02347af12ad23efcb780407aee0a3ba5bd60ec5d9d8c386e6b05a2f7a1"
-metafile = true
-
-[[files]]
 file = "mods/badpackets.pw.toml"
 hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
 metafile = true
@@ -285,11 +280,6 @@ hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
 metafile = true
 
 [[files]]
-file = "mods/fabric-api.pw.toml"
-hash = "8cf5324d7ab4e2080d3abb786acdc1a2f4fa0a139d296ae056db321362edff77"
-metafile = true
-
-[[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "3cb8e30672e6f29d7a0ee663f4239cb7374eb8ab44c82d1fc9382b56a8dc7b58"
 metafile = true
@@ -322,6 +312,11 @@ metafile = true
 [[files]]
 file = "mods/inspecio.pw.toml"
 hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
+metafile = true
+
+[[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
 metafile = true
 
 [[files]]
