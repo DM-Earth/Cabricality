@@ -51,7 +51,7 @@ public class CabfBlur {
 				PushUtil.BLUR_FADE.push();
 			} else {
 				BLUR.setUniformValue("Radius", RADIUS);
-				PushUtil.BLUR_FADE.pull(() -> startTime = System.currentTimeMillis());
+				PushUtil.BLUR_FADE.run(() -> startTime = System.currentTimeMillis());
 			}
 		}
 	}

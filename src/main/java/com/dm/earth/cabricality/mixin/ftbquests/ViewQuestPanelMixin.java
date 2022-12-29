@@ -83,7 +83,7 @@ public abstract class ViewQuestPanelMixin extends Widget {
 
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
-		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(() -> timer = timer.reset());
+		PushUtil.ANIMATE_VIEW_QUEST_PANEL.run(() -> timer = timer.reset());
 
 		CabfRenderer.Drawer drawer = new CabfRenderer.Drawer(matrixStack);
 		Rect rect = new Rect(x, y, w, h);

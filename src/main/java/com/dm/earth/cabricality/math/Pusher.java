@@ -20,12 +20,16 @@ public record Pusher(AtomicBoolean ready) {
 		return ready.get() && ready.getAndSet(false);
 	}
 
-	public void pull(Runnable runnable) {
-		pull(false, runnable);
+	public void run(Runnable runnable) {
+		if (pull()) runnable.run();
 	}
 
-	public void pull(boolean shortCircuit, Runnable runnable) {
-		if (shortCircuit || pull()) runnable.run();
+	public void or(boolean or, Runnable runnable) {
+		if (or || pull()) runnable.run();
+	}
+
+	public void and(boolean and, Runnable runnable) {
+		if (and && pull()) runnable.run();
 	}
 
 	public Pusher paste() {

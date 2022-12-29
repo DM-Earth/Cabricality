@@ -41,7 +41,7 @@ public abstract class ChapterPanelMixin {
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		PushUtil.ANIMATE_CHAPTER_PANEL.pull((!this.expanded && !this.isPinned()), () -> timer = timer.reset());
+		PushUtil.ANIMATE_CHAPTER_PANEL.or((!this.expanded && !this.isPinned()), () -> timer = timer.reset());
 
 		CabfRenderer.Drawer drawer = new CabfRenderer.Drawer(matrixStack);
 		Rect rect = new Rect(x, y, w, h);
