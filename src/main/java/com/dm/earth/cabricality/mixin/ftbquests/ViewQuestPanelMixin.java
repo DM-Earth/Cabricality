@@ -51,7 +51,6 @@ public abstract class ViewQuestPanelMixin extends Widget {
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setHeight(I)V"), remap = false)
 	private int modifyHeight(int height) {
-		CabfLogger.logInfo(panelText.widgets.toString());
 		return height + (this.panelText.widgets.isEmpty() ? 18 : 12);
 	}
 
