@@ -91,6 +91,9 @@ public class CabfItems {
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "coal_coke"));
 	public static final Item COKE_CHUNK = registerItemModeled("coke_chunk",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "coke_chunk"));
+	public static final Item INCOMPLETE_COKE_CHUNK = registerItemModeled("incomplete_coke_chunk",
+			new SequencedAssemblyItem(Properties.DEFAULT),
+			ItemModelGenerator.generated("item", "incomplete_coke_chunk"));
 	public static final Item EARTH_CHARGE = registerItemModeled("earth_charge",
 			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "earth_charge"));
 	public static final Item ICE_CHARGE = registerItemModeled("ice_charge",
