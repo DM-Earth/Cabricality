@@ -2,6 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.dm.earth.cabricality.mixin",
+  "plugin": "com.dm.earth.cabricality.core.CabfMixinConfigPlugin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "CuttingBoardRecipeMixin",
