@@ -21,6 +21,7 @@ import com.simibubi.create.content.contraptions.components.crusher.CrushingRecip
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.fan.SplashingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
+import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
@@ -152,6 +153,15 @@ public class FluixThread implements TechThread {
 						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.FINE_SAND,
 								FluidConstants.BOTTLE))
 						.setResult(CABF.asProcessingOutput("silicon_compound"))));
+
+		handler.register(recipeId("mixing", "purified_sand"), id -> new MixingRecipe(new FreePRP(id)
+				.setIngredient(CABF.asIngredient("rough_sand"), CABF.asIngredient("earth_charge"))
+				.setResult(CABF.asProcessingOutput("purified_sand"))
+				.setHeatRequirement(HeatCondition.HEATED)));
+		handler.register(recipeId("mixing", "silicon"), id -> new MixingRecipe(new FreePRP(id)
+				.setIngredient(CABF.asIngredient("purified_sand"), CABF.asIngredient("ice_charge"))
+				.setResult(AE2.asProcessingOutput("silicon"))
+				.setHeatRequirement(HeatCondition.HEATED)));
 	}
 
 	@Contract("_, _, _ -> new")
@@ -163,6 +173,8 @@ public class FluixThread implements TechThread {
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
 		handler.removeIf(r -> RecipeTweaks.notCabf(r) && r.getOutput().isOf(AE2.asItem("silicon")));
+		handler.removeIf(
+				r -> RecipeTweaks.notCabf(r) && r.getOutput().isOf(AE2.asItem("controller")));
 	}
 
 }
