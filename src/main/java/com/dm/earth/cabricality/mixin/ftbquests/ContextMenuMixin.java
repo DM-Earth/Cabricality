@@ -24,7 +24,7 @@ import java.util.List;
 
 @Mixin(ContextMenu.class)
 public class ContextMenuMixin {
-	private Timer timer = new Timer(380);
+	private Timer timer = new Timer(200);
 
 	@Inject(method = "<init>", at = @At("TAIL"))
 	private void init(Panel panel, List<ContextMenuItem> contextMenuItems, CallbackInfo ci) {
@@ -36,13 +36,9 @@ public class ContextMenuMixin {
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		ColorUtil.Drawer drawer = new ColorUtil.Drawer(matrixStack);
-		Rect rect = new Rect(x, y, w, h);
-
-		drawer.rect(rect, ColorUtil.castOpacity(Cabricality.CABF_BRIGHT_PURPLE, 0.27F));
-		drawer.rectGradiantFromMiddleWithScissor(
-				rect, ColorUtil.castOpacity(Cabricality.CABF_BRIGHT_PURPLE, 0.14F * (float) Math.pow(timer.queueAsPercentage(), 1 / 3.0)),
-				ColorUtil.castOpacity(Cabricality.CABF_BRIGHT_PURPLE), 0.17 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
+		new ColorUtil.Drawer(matrixStack).rect(
+				new Rect(x, y, w, h).expand(2.7 * Math.pow(1 - timer.queueAsPercentage(), 1 / 2.0)),
+				ColorUtil.castOpacity(Cabricality.CABF_BRIGHT_PURPLE, 0.6F * (float) Math.pow(timer.queueAsPercentage(), 2))
 		);
 	}
 }

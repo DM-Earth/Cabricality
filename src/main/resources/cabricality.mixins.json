@@ -25,9 +25,11 @@
     "ftbquests.ViewQuestPanelMixin"
   ],
   "client": [
+    "client.ChatScreenMixin",
     "client.MinecraftClientGameMixin",
     "client.MinecraftClientMixin",
     "client.OptimizeWorldScreenMixin",
+    "client.ScreenMixin",
     "client.SplashOverlayMixin",
     "client.TitleScreenMixin"
   ],

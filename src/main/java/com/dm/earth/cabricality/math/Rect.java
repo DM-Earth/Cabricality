@@ -27,12 +27,16 @@ public record Rect(Node lu, Node ld, Node rd, Node ru) {
 		return new Rect(lu.rotate(origin, clockwiseDegree), ld.rotate(origin, clockwiseDegree), rd.rotate(origin, clockwiseDegree), ru.rotate(origin, clockwiseDegree));
 	}
 
-	public Rect scale(double scale) {
-		return new Rect(lu.scale(center(), scale), ld.scale(center(), scale), rd.scale(center(), scale), ru.scale(center(), scale));
+	public Rect scale(double scaling) {
+		return new Rect(lu.scale(center(), scaling), ld.scale(center(), scaling), rd.scale(center(), scaling), ru.scale(center(), scaling));
 	}
 
-	public Rect scale(Node origin, double scale) {
-		return new Rect(lu.scale(origin, scale), ld.scale(origin, scale), rd.scale(origin, scale), ru.scale(origin, scale));
+	public Rect scale(Node origin, double scaling) {
+		return new Rect(lu.scale(origin, scaling), ld.scale(origin, scaling), rd.scale(origin, scaling), ru.scale(origin, scaling));
+	}
+
+	public Rect expand(double expand) {
+		return new Rect(new Node(lu.x() - expand, lu.y() - expand), new Node(ld.x() - expand, ld.y() + expand), new Node(rd.x() + expand, rd.y() + expand), new Node(ru.x() + expand, ru.y() - expand));
 	}
 
 	public Rect interpolate(Rect rect, double ratio) {

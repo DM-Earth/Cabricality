@@ -34,11 +34,21 @@ repositories {
 	}
 
 	maven {
+        name = "Curseforge"
 		url "https://cursemaven.com"
 		content {
 			includeGroup "curse.maven"
 		}
 	}
+
+    maven {
+        name = 'Ladysnake Mods'
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
+        content {
+            includeGroup 'io.github.ladysnake'
+            includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+        }
+    }
 }
 
 dependencies {
@@ -63,6 +73,7 @@ dependencies {
 
 	modImplementation include("maven.modrinth:deferred-registries:${project.deferred_registries_version}")
 	modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
+    modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
 
 	modImplementation "io.github.fabricators_of_create:Porting-Lib:1.2.575-beta+1.18.2-stable"
 }
