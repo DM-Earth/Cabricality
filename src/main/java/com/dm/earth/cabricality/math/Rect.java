@@ -15,6 +15,24 @@ public record Rect(Node lu, Node ld, Node rd, Node ru) {
 		this(new Node(x, y), new Node(x + width, y + height));
 	}
 
+	public Rect min(Rect other) {
+		return new Rect(
+				new Node(Math.min(lu.x(), other.lu.x()), Math.min(lu.y(), other.lu.y())),
+				new Node(Math.max(ld.x(), other.ld.x()), Math.max(ld.y(), other.ld.y())),
+				new Node(Math.max(rd.x(), other.rd.x()), Math.max(rd.y(), other.rd.y())),
+				new Node(Math.min(ru.x(), other.ru.x()), Math.min(ru.y(), other.ru.y()))
+		);
+	}
+
+	public Rect max(Rect other) {
+		return new Rect(
+				new Node(Math.max(lu.x(), other.lu.x()), Math.max(lu.y(), other.lu.y())),
+				new Node(Math.min(ld.x(), other.ld.x()), Math.min(ld.y(), other.ld.y())),
+				new Node(Math.min(rd.x(), other.rd.x()), Math.min(rd.y(), other.rd.y())),
+				new Node(Math.max(ru.x(), other.ru.x()), Math.max(ru.y(), other.ru.y()))
+		);
+	}
+
 	public boolean contains(Node node) {
 		return node.getCross(ld, lu) * node.getCross(ru, rd) >= 0 && node.getCross(lu, ru) * node.getCross(rd, ld) >= 0;
 	}

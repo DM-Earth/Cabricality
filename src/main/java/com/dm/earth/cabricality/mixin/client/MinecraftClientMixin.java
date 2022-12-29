@@ -2,7 +2,7 @@ package com.dm.earth.cabricality.mixin.client;
 
 import java.util.Optional;
 
-import com.dm.earth.cabricality.math.util.BlurUtil;
+import com.dm.earth.cabricality.util.func.CabfBlur;
 
 import org.objectweb.asm.Opcodes;
 import org.quiltmc.loader.api.QuiltLoader;
@@ -41,6 +41,6 @@ public abstract class MinecraftClientMixin {
 
 	@Inject(method = "setScreen", at = @At(value = "FIELD", target = "Lnet/minecraft/client/MinecraftClient;currentScreen:Lnet/minecraft/client/gui/screen/Screen;", opcode = Opcodes.PUTFIELD))
 	private void blurScreen(Screen screen, CallbackInfo ci) {
-		BlurUtil.INSTANCE.onScreenChange(screen);
+		CabfBlur.INSTANCE.onScreenChange(screen);
 	}
 }

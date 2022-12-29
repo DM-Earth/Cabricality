@@ -3,7 +3,7 @@ package com.dm.earth.cabricality;
 import java.awt.Color;
 import java.util.Arrays;
 
-import com.dm.earth.cabricality.math.util.BlurUtil;
+import com.dm.earth.cabricality.util.func.CabfBlur;
 import com.dm.earth.cabricality.util.PushUtil;
 
 import org.jetbrains.annotations.Contract;
@@ -105,7 +105,7 @@ public class Cabricality implements ModInitializer {
 		CabfBlockEntityTypes.register();
 		ScreenUtil.registerEvents();
 		PushUtil.register();
-		BlurUtil.INSTANCE.init();
+		CabfBlur.INSTANCE.init();
 		TagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();

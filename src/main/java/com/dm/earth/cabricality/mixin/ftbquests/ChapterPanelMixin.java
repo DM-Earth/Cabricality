@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.math.Rect;
 import com.dm.earth.cabricality.math.Timer;
-import com.dm.earth.cabricality.util.ColorUtil;
+import com.dm.earth.cabricality.util.func.CabfRenderer;
 
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.ui.Panel;
@@ -43,15 +43,15 @@ public abstract class ChapterPanelMixin {
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
 		PushUtil.ANIMATE_CHAPTER_PANEL.pull((!this.expanded && !this.isPinned()), () -> timer = timer.reset());
 
-		ColorUtil.Drawer drawer = new ColorUtil.Drawer(matrixStack);
+		CabfRenderer.Drawer drawer = new CabfRenderer.Drawer(matrixStack);
 		Rect rect = new Rect(x, y, w, h);
 		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
 
-		drawer.rect(rect, ColorUtil.castOpacity(Cabricality.CABF_BLACK, 0.73F * (float) lerp));
+		drawer.rect(rect, CabfRenderer.castOpacity(Cabricality.CABF_BLACK, 0.73F * (float) lerp));
 
 		drawer.horizontalRectGradiant(
-				rect, ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.2F * (float) lerp),
-				ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE),
+				rect, CabfRenderer.castOpacity(Cabricality.CABF_PURPLE, 0.2F * (float) lerp),
+				CabfRenderer.castOpacity(Cabricality.CABF_MID_PURPLE),
 				0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
 		);
 	}

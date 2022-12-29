@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.math.util;
+package com.dm.earth.cabricality.util.func;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.util.PushUtil;
@@ -15,8 +15,8 @@ import net.minecraft.client.gui.screen.Screen;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlurUtil {
-	public static final BlurUtil INSTANCE = new BlurUtil();
+public class CabfBlur {
+	public static final CabfBlur INSTANCE = new CabfBlur();
 
 	private static final float RADIUS = 35;
 	private static final List<Class<? extends Screen>> EXCLUDED_SCREENS = new ArrayList<>();
@@ -40,7 +40,7 @@ public class BlurUtil {
 		});
 	}
 
-	private float getProgress() {
+	public float getProgress() {
 		return Math.min(1, (System.currentTimeMillis() - startTime) / 320.0F);
 	}
 
@@ -51,7 +51,7 @@ public class BlurUtil {
 				PushUtil.BLUR_FADE.push();
 			} else {
 				BLUR.setUniformValue("Radius", RADIUS);
-				if (PushUtil.BLUR_FADE.pull()) startTime = System.currentTimeMillis();
+				PushUtil.BLUR_FADE.pull(() -> startTime = System.currentTimeMillis());
 			}
 		}
 	}

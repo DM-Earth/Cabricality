@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.util;
+package com.dm.earth.cabricality.util.func;
 
 import com.dm.earth.cabricality.math.Node;
 import com.dm.earth.cabricality.math.Rect;
@@ -17,7 +17,7 @@ import net.minecraft.util.math.MathHelper;
 
 import java.awt.*;
 
-public class ColorUtil {
+public class CabfRenderer {
 	public static Color castAlpha(Color color) {
 		return castAlpha(color, 0);
 	}
