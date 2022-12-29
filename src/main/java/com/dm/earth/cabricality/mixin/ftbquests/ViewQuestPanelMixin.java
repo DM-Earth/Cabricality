@@ -1,14 +1,5 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
-import com.dm.earth.cabricality.math.Timer;
-
-import com.dm.earth.cabricality.util.PushUtil;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
-
-import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.util.math.MathHelper;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -19,11 +10,11 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.Slice;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
-
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.util.func.CabfRenderer;
 import com.dm.earth.cabricality.math.Rect;
-
+import com.dm.earth.cabricality.math.Timer;
+import com.dm.earth.cabricality.util.PushUtil;
+import com.dm.earth.cabricality.util.func.CabfRenderer;
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.icon.Icon;
 import dev.ftb.mods.ftblibrary.ui.BlankPanel;
@@ -31,7 +22,10 @@ import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.Widget;
 import dev.ftb.mods.ftbquests.gui.quests.ViewQuestPanel;
+import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.math.MathHelper;
 
 @Mixin(ViewQuestPanel.class)
 public abstract class ViewQuestPanelMixin extends Widget {

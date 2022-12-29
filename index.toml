@@ -17,10 +17,6 @@ file = ".settings/org.eclipse.jdt.core.prefs"
 hash = "2ee7046323faabd79b85d2cb931ce385dd69a5c8fbd7ee1fe541b61fb816887c"
 
 [[files]]
-file = "config/cobblegen.json5"
-hash = "aa33f53f02b61ecf9077b8739a29cfbc6d2ccb8e00110192505a523468c6b9ed"
-
-[[files]]
 file = "config/create-common.toml"
 hash = "b1cf6e5fdfe9087569a7dd004d891e1b6d7bc4b44a251f00b7f78c51d757d88a"
 
@@ -62,23 +58,23 @@ hash = "a5628ce9adb7c45e9fc1e4e5c94f601b2ea47731907124ef2e8ec9b803eaafc6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "35b6943fc0fd3e7948f0c34b9ad3ec5e6dc71f131209c4a91fccdfb2a1d04255"
+hash = "c3e783f2a1e035e3e551f814895616e52490ef85f0b6f6ec0315b0b3fc75b52e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "6cecaa9809836fbc12eb832d2f04da9bb42e76a8ee9bc74f028cfd522aaa92ed"
+hash = "5b60c093b85d2df1be80afeeffcbf111a6f07362f780a25159bebdac936c7f91"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "3633b38f1fc7f347cf601bb183fefbe37a12332285aea5f42a34306af2125df1"
+hash = "0234d1aee18d79a952edc29fd6aca0ec101fabcf9fc435bfda91af905dc14130"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/professions.snbt"
-hash = "80fbba77a8968efbb78500ec9731bd3f12a6905d60f7856ac263e8246396b6f5"
+hash = "e5e68eea1ca4256a21d6496809866517892fe9c51062e5a0a721a0ede042d28f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "558b97711138a386aa05c8278c0214c066d9a5e902498470255f8d52d063e463"
+hash = "45938d489291b856e313ccc5c8d8a2625c45360912b7a74164fe610ab90fe453"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -86,7 +82,7 @@ hash = "dbc3f870e176621e98e326c532124634f601e43b685a520d69cd62b67d9aee3e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_2.snbt"
-hash = "53cd9226beb9b0488436c940b382e3e6179571b947d7c80e27057bfc052bf385"
+hash = "b7342daae258cdd51bc8bb6b05db5000a6a378c2084648adc8b0b5710ec44a28"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_3.snbt"
@@ -94,15 +90,15 @@ hash = "06a81cf9cae54625cad0bc10b0728073d3079f7b616ba6f40a347f14aec92920"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4.snbt"
-hash = "bbfe898bce0d9c0548f8bcdaa18941a4994bc2dcc765ab402ade3c056bfa6b6a"
+hash = "bab1c5bb92631741e8fead86025c8770b6e8f7f8af7d88db82d99f7600507445"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4a.snbt"
-hash = "8cf120fe733c790f11b0d1e05488a13bb022f1ec392353e5e3853bd5b30c2fd1"
+hash = "8d4fb22b258ed79e49ad2311c5b1af38e70e8ed61b7c4181e037813f75add29b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "746a8afe7c302988c88610daf26635aa16151f7adc320599b874ef1079b430a1"
+hash = "2d591efec6541f0d868b2e8985f50fd676acb2e416a75d3a5bd75d3711b3e74d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
@@ -142,7 +138,7 @@ hash = "d44a94d4b38ebda4e5ccf5086aa05e0101323b385ae110c3b6ad70b912a242ff"
 
 [[files]]
 file = "config/splasher.toml"
-hash = "85b27d9ead0c89e24c4f07320c1eee06fdaf1a92d498e2ad854d2f7ae92f271e"
+hash = "8c13951726dbb453584903ac9d78751fd22984ecb15726d00915c8b6a26ab5e1"
 
 [[files]]
 file = "config/splasher/en_us.txt"
@@ -151,6 +147,10 @@ hash = "c42e812224587ebaddd80dc25dbaea5cabff94653ab3407d246168c047b102b5"
 [[files]]
 file = "config/splasher/zh_cn.txt"
 hash = "6aa8f6dc35b598c69c3c47e5834d14de4511f41c1e24cc3fc4e5c6ffcb2c502e"
+
+[[files]]
+file = "config/tconstruct-client.toml"
+hash = "5603947ab38abc1be7f6d09a34f5d2766762956e8acad160bc74cb944d3c945e"
 
 [[files]]
 file = "config/waila/waila.json"
@@ -230,11 +230,6 @@ hash = "fbdaf57021062d11aeb12a094abba257a13da22e2a8ed4b1cd9ab3bc85274ae7"
 metafile = true
 
 [[files]]
-file = "mods/cloth-config-legacy.pw.toml"
-hash = "ebb8d0a31f63dfb0d248ff7748cebe42913f5541bb0e2b44346ca4b5d1d7544d"
-metafile = true
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "8f07b2408013a7217caacec87c977635fdf94eb21a10bf281f2bba67ff7c4dc1"
 metafile = true
@@ -291,7 +286,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "3cb8e30672e6f29d7a0ee663f4239cb7374eb8ab44c82d1fc9382b56a8dc7b58"
+hash = "c985bc9064cc29094fdfd59a037baa1523778cc2a9e5665c3f1b6ca0efe6a543"
 metafile = true
 
 [[files]]

@@ -3,10 +3,16 @@
   "quilt_loader": {
     "group": "com.dm.earth",
     "id": "cabricality",
+    "provides": [
+      {
+        "id": "kubejs",
+        "version": "1802.5.5"
+      }
+    ],
     "version": "${version}",
     "metadata": {
       "name": "Cabricality",
-      "description": "A Create centered challengeable modpack inspired by Create: Above and Beyond",
+      "description": "A Create centered challengeable mod inspired by Create: Above and Beyond",
       "contributors": {
         "DM Earth": "Owner"
       },
