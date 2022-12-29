@@ -465,11 +465,6 @@ hash = "49f5590e6160266691eaca6948b33a3a2763e590ed4bcf90189f13650066c84e"
 metafile = true
 
 [[files]]
-file = "mods/wall-jump-unofficial-fabric.pw.toml"
-hash = "69c6d62d958000dc9b46221dedfd50d98a8b937565978c3a10abd3bbe5aece2d"
-metafile = true
-
-[[files]]
 file = "mods/wthit.pw.toml"
 hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
 metafile = true
