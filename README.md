@@ -146,4 +146,4 @@ We support almost all launchers that compatible with **Modrinth format pack** an
 
 ### Licence
 
-This project is licenced under [**AGPL-3.0.**](LICENSE)
+This project is licenced under [**GPL-3.0.**](LICENSE)

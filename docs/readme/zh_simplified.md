@@ -146,4 +146,4 @@ packwiz modrinth export
 
 ### 协议
 
-本项目使用[**AGPL-3.0协议。**](LICENSE)
+本项目使用[**GPL-3.0协议。**](LICENSE)
