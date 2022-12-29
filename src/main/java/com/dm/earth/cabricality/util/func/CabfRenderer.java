@@ -152,6 +152,7 @@ public class CabfRenderer {
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		}
 
+		@SuppressWarnings("unused")
 		private void drawRect(BufferBuilder builder, Rect rect, Color color) {
 			drawRect(builder, rect, color, color, color, color);
 		}

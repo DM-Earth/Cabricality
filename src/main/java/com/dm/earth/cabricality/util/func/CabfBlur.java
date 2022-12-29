@@ -44,6 +44,7 @@ public class CabfBlur {
 		return Math.min(1, (System.currentTimeMillis() - startTime) / 320.0F);
 	}
 
+	@SuppressWarnings("all")
 	public void onScreenChange(Screen screen) {
 		if (MinecraftClient.getInstance().world != null) {
 			if (screen == null || EXCLUDED_SCREENS.contains(screen.getClass())) {

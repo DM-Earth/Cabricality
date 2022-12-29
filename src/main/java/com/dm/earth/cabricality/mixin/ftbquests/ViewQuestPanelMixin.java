@@ -114,6 +114,7 @@ public abstract class ViewQuestPanelMixin extends Widget {
 	)
 	private void drawBorder(BlankPanel panel, Widget widget) {}
 
+	@SuppressWarnings("all")
 	@Redirect(method = "tick", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;withTint(Ldev/ftb/mods/ftblibrary/icon/Color4I;)Ldev/ftb/mods/ftblibrary/icon/Icon;"), remap = false)
 	private Icon tintLeftArrow(Icon icon, Color4I color4I) {
 		Color4I color = ThemeProperties.QUEST_VIEW_TITLE.get()
