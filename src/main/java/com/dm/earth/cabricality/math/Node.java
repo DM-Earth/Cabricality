@@ -23,8 +23,4 @@ public record Node(double x, double y) {
 	public Node scale(Node origin, double scale) {
 		return new Node((this.x - origin.x) * scale + origin.x, (this.y - origin.y) * scale + origin.y);
 	}
-
-	public Node interpolate(Node lu, double ratio) {
-		return new Node(this.x + (lu.x - this.x) * ratio, this.y + (lu.y - this.y) * ratio);
-	}
 }

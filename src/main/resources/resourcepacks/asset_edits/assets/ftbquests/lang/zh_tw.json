@@ -206,7 +206,7 @@
 	"ftbquests.gui.move_tooltip"                              : "鼠标中键单击",
 	"ftbquests.gui.reload_theme"                              : "重新加载主题",
 	"ftbquests.gui.view_dependencies"                         : "查阅前置任务",
-	"ftbquests.gui.view_dependants"                           : "查阅前置任务",
+	"ftbquests.gui.view_dependants"                           : "查阅后置任务",
 	"ftbquests.gui.no_dependencies"                           : "无前置任务",
 	"ftbquests.gui.no_dependants"                             : "无前置任务",
 	"ftbquests.gui.edit_text"                                 : "编辑文本",

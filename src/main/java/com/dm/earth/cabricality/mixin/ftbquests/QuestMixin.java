@@ -23,8 +23,7 @@ public abstract class QuestMixin {
 	private void onCompleted(QuestProgressEventData<?> data, CallbackInfo ci) {
 		if (((Quest) (Object) this).getMovableID() == 5590341946361687492L) {
 			CabfLogger.logInfo("Congrats, adventurer! You've completed the Cabricality modpack!");
-			ScreenUtil.openScreenInWorld(
-					new CabfCreditsScreen(() -> MinecraftClient.getInstance().setScreen(null)));
+			ScreenUtil.openScreenInWorld(new CabfCreditsScreen(() -> MinecraftClient.getInstance().setScreen(null)));
 		}
 	}
 }

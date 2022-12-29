@@ -20,7 +20,7 @@ public record Rect(Node lu, Node ld, Node rd, Node ru) {
 	}
 
 	public Node center() {
-		return new Node(((lu.x() + rd.x()) / 2 + (ru.x() + rd.x()) / 2), ((lu.y() + rd.y()) / 2 + (ru.y() + rd.y()) / 2));
+		return new Node(((lu.x() + ld.x()) / 2 + (ru.x() + rd.x()) / 2) / 2, ((lu.y() + ld.y()) / 2 + (ru.y() + rd.y()) / 2) / 2);
 	}
 
 	public Rect rotate(Node origin, double clockwiseDegree) {
@@ -36,6 +36,6 @@ public record Rect(Node lu, Node ld, Node rd, Node ru) {
 	}
 
 	public Rect interpolate(Rect rect, double ratio) {
-		return new Rect(lu.interpolate(rect.lu, ratio), ld.interpolate(rect.ld, ratio), rd.interpolate(rect.rd, ratio), ru.interpolate(rect.ru, ratio));
+		return new Rect(lu.scale(rect.lu, ratio), ld.scale(rect.ld, ratio), rd.scale(rect.rd, ratio), ru.scale(rect.ru, ratio));
 	}
 }

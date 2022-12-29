@@ -2,13 +2,15 @@ package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.math.Timer;
 
+import com.dm.earth.cabricality.util.PushUtil;
 import com.dm.earth.cabricality.util.debug.CabfLogger;
 
-import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
-
+import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.util.math.MathHelper;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
@@ -34,16 +36,14 @@ import net.minecraft.client.util.math.MatrixStack;
 
 @Mixin(ViewQuestPanel.class)
 public abstract class ViewQuestPanelMixin extends Widget {
+	@Shadow(remap = false)
+	public BlankPanel panelText;
+
 	public ViewQuestPanelMixin(Panel p) {
 		super(p);
 	}
 
 	private Timer timer = new Timer(1320);
-
-	@Inject(method = "addWidgets", at = @At("TAIL"), remap = false)
-	private void init(CallbackInfo ci) {
-		timer = timer.reset();
-	}
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {
@@ -52,7 +52,8 @@ public abstract class ViewQuestPanelMixin extends Widget {
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setHeight(I)V"), remap = false)
 	private int modifyHeight(int height) {
-		return height + 12;
+		CabfLogger.logInfo(panelText.widgets.toString());
+		return height + (this.panelText.widgets.isEmpty() ? 18 : 12);
 	}
 
 	private void modifyPos(Args args, int xIndex, int yIndex) {
@@ -83,12 +84,15 @@ public abstract class ViewQuestPanelMixin extends Widget {
 
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
-		Color4I.rgb(Cabricality.CABF_DIM_PURPLE.getRGB()).withAlpha(210).draw(matrixStack, x, y, w, h);
-		Rect rect = new Rect(new Node(x, y), new Node(x + w, y + h));
-		new ColorUtil.Drawer(matrixStack).rectGradiantFromMiddleWithScissor(
-				rect.interpolate(new Rect(), 1 * Math.pow(timer.queueAsPercentage(), 1 / 2.0)), rect,
-				ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.45F * (float) Math.pow(timer.queueAsPercentage(), 1 / 3.0)),
-				ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE)
+		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(() -> timer = timer.reset());
+
+		ColorUtil.Drawer drawer = new ColorUtil.Drawer(matrixStack);
+		Rect rect = new Rect(x, y, w, h);
+
+		drawer.rect(rect, ColorUtil.castOpacity(Cabricality.CABF_DIM_PURPLE, 0.87F));
+		drawer.rectGradiantFromMiddleWithScissor(
+				rect, ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.45F * (float) Math.pow(timer.queueAsPercentage(), 1 / 3.0)),
+				ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE), 0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
 		);
 	}
 
@@ -110,4 +114,15 @@ public abstract class ViewQuestPanelMixin extends Widget {
 			), remap = false
 	)
 	private void drawBorder(BlankPanel panel, Widget widget) {}
+
+	@Redirect(method = "tick", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;withTint(Ldev/ftb/mods/ftblibrary/icon/Color4I;)Ldev/ftb/mods/ftblibrary/icon/Icon;"), remap = false)
+	private Icon tintLeftArrow(Icon icon, Color4I color4I) {
+		Color4I color = ThemeProperties.QUEST_VIEW_TITLE.get()
+							   .withAlphaf((float) sinusoidal((Math.abs(MinecraftClient.getInstance().world.getTime() % 40 - 20) - 6) / 8.0, 0.03, 0.97));
+		return icon.withColor(color);
+	}
+
+	private double sinusoidal(double percentage, double origin, double shift) {
+		return origin + -shift / 2 * (Math.cos(Math.PI * MathHelper.clamp(percentage, 0, 1)) - 1);
+	}
 }

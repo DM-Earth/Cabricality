@@ -3,7 +3,7 @@ package com.dm.earth.cabricality;
 import java.awt.Color;
 import java.util.Arrays;
 
-import com.dm.earth.cabricality.util.PusherUtil;
+import com.dm.earth.cabricality.util.PushUtil;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -57,7 +57,7 @@ public class Cabricality implements ModInitializer {
 			id("textures", "gui", "title", "minecraft.png");
 
 	// Sounds
-	public static final SoundEvent FINISH_LOADING = SoundEvents.BLOCK_AMETHYST_CLUSTER_PLACE;
+	public static final SoundEvent FINISH_LOADING = SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE;
 
 	// RRPs
 	public static final RuntimeResourcePack CLIENT_RESOURCES =
@@ -103,7 +103,7 @@ public class Cabricality implements ModInitializer {
 		CabfSounds.register();
 		CabfBlockEntityTypes.register();
 		ScreenUtil.registerEvents();
-		PusherUtil.register();
+		PushUtil.register();
 		TagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();

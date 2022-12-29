@@ -1,24 +1,19 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
-import com.dm.earth.cabricality.math.Timer;
-import com.dm.earth.cabricality.util.ColorUtil;
+import com.dm.earth.cabricality.util.PushUtil;
 
-import com.dm.earth.cabricality.math.Node;
-import com.dm.earth.cabricality.math.Rect;
-
-import com.dm.earth.cabricality.util.debug.CabfLogger;
-
-import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
-
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.math.Rect;
+import com.dm.earth.cabricality.math.Timer;
+import com.dm.earth.cabricality.util.ColorUtil;
 
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.ui.Panel;
@@ -27,38 +22,37 @@ import dev.ftb.mods.ftblibrary.ui.Widget;
 import dev.ftb.mods.ftblibrary.util.TooltipList;
 import dev.ftb.mods.ftbquests.client.ClientQuestFile;
 import dev.ftb.mods.ftbquests.gui.quests.ChapterPanel;
+import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.util.Formatting;
 
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
 @Mixin(ChapterPanel.class)
-public class ChapterPanelMixin {
+public abstract class ChapterPanelMixin {
 	@Shadow(remap = false)
 	public boolean expanded;
+
+	@Shadow(remap = false)
+	abstract boolean isPinned();
+
 	private Timer timer = new Timer(450);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		if (!this.expanded) {
-			timer = timer.reset();
-			return;
-		}
+		PushUtil.ANIMATE_CHAPTER_PANEL.pull((!this.expanded && !this.isPinned()), () -> timer = timer.reset());
 
 		ColorUtil.Drawer drawer = new ColorUtil.Drawer(matrixStack);
+		Rect rect = new Rect(x, y, w, h);
 		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
 
-		drawer.rect(
-				new Rect(x, y, w, h),
-				ColorUtil.castOpacity(Cabricality.CABF_BLACK, 0.73F * (float) lerp)
-		);
+		drawer.rect(rect, ColorUtil.castOpacity(Cabricality.CABF_BLACK, 0.73F * (float) lerp));
 
-		drawer.horizontalGradiant(
-				new Rect(x, y, w * 0.85 * lerp, h),
-				ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.32F * (float) lerp), ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE)
+		drawer.horizontalRectGradiant(
+				rect, ColorUtil.castOpacity(Cabricality.CABF_PURPLE, 0.2F * (float) lerp),
+				ColorUtil.castOpacity(Cabricality.CABF_MID_PURPLE),
+				0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
 		);
 	}
 }

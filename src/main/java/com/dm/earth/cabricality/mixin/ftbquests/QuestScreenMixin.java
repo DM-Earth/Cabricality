@@ -2,16 +2,28 @@ package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import com.dm.earth.cabricality.math.Pusher;
+
+import com.dm.earth.cabricality.util.PushUtil;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
 import net.minecraft.client.util.math.MatrixStack;
 
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
 @Mixin(QuestScreen.class)
 public class QuestScreenMixin {
+	@Inject(method = "addWidgets", at = @At("TAIL"), remap = false)
+	private void init(CallbackInfo ci) {
+		PushUtil.ANIMATE_VIEW_QUEST_PANEL.push();
+	}
+
 	@Redirect(
 			method = "drawBackground",
 			at = @At(

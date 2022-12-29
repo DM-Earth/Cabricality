@@ -11,7 +11,24 @@ public record Pusher(AtomicBoolean ready) {
 		ready.set(true);
 	}
 
+	public void push(Runnable runnable) {
+		push();
+		runnable.run();
+	}
+
 	public boolean pull() {
-		return ready.getAndSet(false);
+		return ready.get() && ready.getAndSet(false);
+	}
+
+	public void pull(Runnable runnable) {
+		pull(false, runnable);
+	}
+
+	public void pull(boolean shortCircuit, Runnable runnable) {
+		if (shortCircuit || pull()) runnable.run();
+	}
+
+	public Pusher paste() {
+		return new Pusher(new AtomicBoolean(ready.get()));
 	}
 }
