@@ -160,7 +160,7 @@ public class FluixThread implements TechThread {
 				.setHeatRequirement(HeatCondition.HEATED)));
 		handler.register(recipeId("mixing", "silicon"), id -> new MixingRecipe(new FreePRP(id)
 				.setIngredient(CABF.asIngredient("purified_sand"), CABF.asIngredient("ice_charge"))
-				.setResult(CABF.asProcessingOutput("silicon"))
+				.setResult(AE2.asProcessingOutput("silicon"))
 				.setHeatRequirement(HeatCondition.HEATED)));
 	}
 
