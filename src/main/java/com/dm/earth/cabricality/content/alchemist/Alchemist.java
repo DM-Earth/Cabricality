@@ -44,10 +44,8 @@ public class Alchemist {
 		JarData.load();
 	}
 
-	public static void processChaoticRecipe(
-			@NotNull HopperMinecartEntity minecart,
-			LaserProperties properties
-	) {
+	public static void processChaoticRecipe(@NotNull HopperMinecartEntity minecart,
+			LaserProperties properties) {
 		if (!(minecart.getWorld() instanceof ServerWorld world))
 			return;
 
@@ -215,7 +213,8 @@ public class Alchemist {
 				.map(Map.Entry::getKey).orElse(null);
 	}
 
-	private static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(ServerWorld world) {
+	private static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(
+			ServerWorld world) {
 		return Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 				.collect(Collectors.toMap(Reagents::getCatalyst, reagentsT -> {
 					List<Reagent> reagents = reagentsT.getReagents();
@@ -227,29 +226,21 @@ public class Alchemist {
 		@Override
 		public int run(@NotNull CommandContext<ServerCommandSource> context) {
 			possibleReagentMap(context.getSource().getWorld())
-					.forEach(
-							(key, value) -> context.getSource().sendFeedback(
-									new LiteralText(key.toString() + "§r\n")
-											.append(value.toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
-											.append("\n"),
-									false
-							)
-					);
-			context.getSource()
-					.sendFeedback(
-							new LiteralText(CHAOTIC_CATALYST.toString() + "§r\n")
-									.append(possibleChaoticCatalystList(context.getSource().getWorld()).toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
-									.append("\n"),
-							false
-					);
+					.forEach((key, value) -> context.getSource()
+							.sendFeedback(new LiteralText(key.toString() + "§r\n")
+									.append(value.toString().replaceAll("\\[", "")
+											.replaceAll("]", "").replaceAll(", ", "\n"))
+									.append("\n"), false));
+			context.getSource().sendFeedback(new LiteralText(CHAOTIC_CATALYST.toString() + "§r\n")
+					.append(possibleChaoticCatalystList(context.getSource().getWorld()).toString()
+							.replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
+					.append("\n"), false);
 			possibleSpecialReagentChaoticMap(context.getSource().getWorld())
-					.forEach((key, value) -> context.getSource().sendFeedback(
-							new LiteralText(key.toString() + "§r\n")
-									.append(value.toString())
-									.append(Cabricality.genTranslatableText("command", "alchemist", "chaotic"))
-									.append("\n"),
-							false)
-					);
+					.forEach((key, value) -> context.getSource()
+							.sendFeedback(new LiteralText(key.toString() + "§r\n")
+									.append(value.toString()).append(Cabricality
+											.genTranslatableText("command", "alchemist", "chaotic"))
+									.append("\n"), false));
 			return SINGLE_SUCCESS;
 		}
 	}

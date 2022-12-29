@@ -1,7 +1,5 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
-import com.dm.earth.cabricality.util.PushUtil;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -9,12 +7,11 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.math.Rect;
 import com.dm.earth.cabricality.math.Timer;
+import com.dm.earth.cabricality.util.PushUtil;
 import com.dm.earth.cabricality.util.func.CabfRenderer;
-
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
