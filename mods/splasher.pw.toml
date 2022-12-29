@@ -1,13 +1,13 @@
 name = "Splasher!"
-filename = "splasher-1.18-3.1.2.jar"
+filename = "splasher-1.18-3.1.3.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/4yIZUuyx/versions/MkpTrz2r/splasher-1.18-3.1.2.jar"
+url = "https://cdn.modrinth.com/data/4yIZUuyx/versions/4wuDtGdw/splasher-1.18-3.1.3.jar"
 hash-format = "sha1"
-hash = "62d4806a8700943b6a2a1d39f860f7bd89ae3c49"
+hash = "d63aa3fb692e592f47229e435910e4998b7dc8c8"
 
 [update]
 [update.modrinth]
 mod-id = "4yIZUuyx"
-version = "MkpTrz2r"
+version = "4wuDtGdw"
