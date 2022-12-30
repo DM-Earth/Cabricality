@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import com.dm.earth.cabricality.Cabricality;
 
-import com.dm.earth.cabricality.util.mod.ModDeps;
+import com.dm.earth.cabricality.util.mod.CabfModDeps;
 
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
@@ -35,25 +35,25 @@ import net.minecraft.util.Util;
 @SuppressWarnings("all")
 public class MissingModScreen extends Screen {
 	@Nullable
-	private final ArrayList<ModDeps> missingMods;
+	private final ArrayList<CabfModDeps> missingMods;
 	@Nullable
 	private final Screen parent;
 	private final boolean renderBackgroundTexture;
 
-	public MissingModScreen(@Nullable ArrayList<ModDeps> missingMods) {
+	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods) {
 		this(missingMods, null, MinecraftClient.getInstance().world == null);
 	}
 
-	public MissingModScreen(@Nullable ArrayList<ModDeps> missingMods, @Nullable Screen parent) {
+	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods, @Nullable Screen parent) {
 		this(missingMods, parent, MinecraftClient.getInstance().world == null);
 	}
 
-	public MissingModScreen(@Nullable ArrayList<ModDeps> missingMods, boolean renderBackgroundTexture) {
+	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods, boolean renderBackgroundTexture) {
 		this(missingMods, null, renderBackgroundTexture);
 	}
 
 	public MissingModScreen(
-			@Nullable ArrayList<ModDeps> missingMods,
+			@Nullable ArrayList<CabfModDeps> missingMods,
 			@Nullable Screen parent, boolean renderBackgroundTexture
 	) {
 		super(Cabricality.genTranslatableText("screen", "missing_mod", "title" + (missingMods.size() == 1 ? "" : "_plural")));
@@ -163,7 +163,7 @@ public class MissingModScreen extends Screen {
 		matrixStack.scale(scale, scale, scale);
 	}
 
-	private void modDownloadButton(ModDeps mod, Text text, int y) {
+	private void modDownloadButton(CabfModDeps mod, Text text, int y) {
 		this.addDrawableChild(
 				new PlainTextButtonWidget(
 						this.width / 2 - this.textRenderer.getWidth(text) / 2, y,
