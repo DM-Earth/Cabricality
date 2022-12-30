@@ -16,7 +16,7 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Util;
 
-public enum ModDeps {
+public enum CabfModDeps {
 	FTB_LIBRARY("ftblibrary", new TranslatableText("mod.ftblibrary.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4210934/file",
 			false, false), // ftb-library-fabric-1802.3.9-build.167.jar
@@ -37,7 +37,7 @@ public enum ModDeps {
 	private final boolean required;
 	private final boolean isClient;
 
-	ModDeps(String id, Text name, String url, boolean required, boolean isClient) {
+	CabfModDeps(String id, Text name, String url, boolean required, boolean isClient) {
 		this.modId = id;
 		this.name = name;
 		this.required = required;
@@ -97,20 +97,20 @@ public enum ModDeps {
 		return !isServer || !isClient;
 	}
 
-	public static Stream<ModDeps> stream() {
+	public static Stream<CabfModDeps> stream() {
 		return Arrays.stream(values());
 	}
 
-	private static ArrayList<ModDeps> arrayList(Stream<ModDeps> stream) {
+	private static ArrayList<CabfModDeps> arrayList(Stream<CabfModDeps> stream) {
 		return stream.collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
 	}
 
-	public static ArrayList<ModDeps> getMissing(boolean required, boolean isServer) {
+	public static ArrayList<CabfModDeps> getMissing(boolean required, boolean isServer) {
 		return arrayList(stream().filter(dep -> (dep.isRequired() || !required)
 				&& dep.matchesSide(isServer) && !dep.isLoaded()));
 	}
 
-	public static ArrayList<ModDeps> getAllMissing() {
+	public static ArrayList<CabfModDeps> getAllMissing() {
 		return arrayList(stream().filter(dep -> !dep.isLoaded()));
 	}
 

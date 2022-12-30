@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.mod.ModDeps;
+import com.dm.earth.cabricality.util.mod.CabfModDeps;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
@@ -24,10 +24,10 @@ import net.minecraft.client.gui.screen.Screen;
 public abstract class MinecraftClientMixin {
 	@Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/MinecraftClient;setScreen(Lnet/minecraft/client/gui/screen/Screen;)V"))
 	private void checkMods(MinecraftClient client, Screen screen) {
-		if (!ModDeps.isAllLoaded())
+		if (!CabfModDeps.isAllLoaded())
 			// If not full loaded, set screen to MissingModScreen
 			client.setScreen(
-					new MissingModScreen(ModDeps.getAllMissing(), ModDeps.isLoaded(true, false) ? screen : null)
+					new MissingModScreen(CabfModDeps.getAllMissing(), CabfModDeps.isLoaded(true, false) ? screen : null)
 			);
 		else client.setScreen(screen);
 	}
