@@ -1,5 +1,5 @@
 {
-  "data.cabricality.title": "&f 永無止境：重縫",
+  "data.cabricality.title": "&f  永無止境：重縫",
 
   "contraption.cabricality.automated": "&a自動生產",
 
@@ -33,10 +33,14 @@
   "welcome.cabricality.iv.content": "不想總被死板的科技束縛？\n\n在這裡，你還可以通過完成任務和職業交易募集資金。\n\n你獲得的銀幣可以在&6市集&r購買許多東西，資源、特殊物品和建築方塊...合理使用它們肯定有所增益！",
 
   "welcome.cabricality.overview.title": "&6&l任務總覽",
-  "welcome.cabricality.overview.content": "&5&l「成就」&r     不斷地達成&5成就&r可以振奮人心！\n\n&5這些成就和Minecraft的進度不太一樣。他們會更加困難，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r購物。\n\n&6就和逛商場一樣，不過我們包郵。\n\n&7&l「科技樹」&r   &7科技樹&r會指導你一步步發展科技。\n\n&7這裡的所有任務都為你整理好了，保證考慮周全。隨著你對這個世界的探索腳步不斷前進，你會解鎖更多有趣的任務和成就。&8&m當然，還有隱藏任務。&r&7不過你不必被限制在條框中，自由發揮才是真正的樂趣所在！",
+  "welcome.cabricality.overview.content": "&5&l「成就」&r     不斷地達成&5成就&r可以振奮人心！\n\n&5這些成就和Minecraft的進度不太一樣。它們會更加困難，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r購物。\n\n&6就和逛商場一樣，不過我們包郵。\n\n&7&l「科技樹」&r   &7科技樹&r會指導你一步步發展科技。\n\n&7這裡的所有任務都為你整理好了，保證考慮周全。隨著你對這個世界的探索腳步不斷前進，你會解鎖更多有趣的任務和成就。&8&m當然，還有隱藏任務。&r&7不過你不必被限制在條框中，自由發揮才是真正的樂趣所在！",
 
   "welcome.cabricality.go.title": "&f&l&o臨門一腳",
   "welcome.cabricality.go.content": "現在你對你的任務目標有了清楚的了解。從這裡你將開始你全新的征程。祝你好運！",
+
+  "shipments.cabricality.title": "&a▶ 貨倉",
+
+  "professions.cabricality.title": "&3▶ 懸賞",
 
   "market.cabricality.title": "&6▶ 市集",
 
@@ -515,7 +519,7 @@
   "bonus_2a.cabricality.complete.title": "&2&l第二章支線完成！",
   "bonus_2a.cabricality.complete.content": "宛如天工！你完成了地獄帶來的許多困難挑戰，這肯定給予了你繼續前進的莫大信心！",
 
-  "chapter_3.cabricality.title": "&f3&r 鋼鐵洪流",
+  "chapter_3.cabricality.title": "&f&l3&r 鋼鐵洪流",
 
   "chapter_3.cabricality.start.title": "&6&l鋼鐵洪流",
   "chapter_3.cabricality.start.subtitle": "&6第三章",
@@ -583,7 +587,7 @@
 
   "contraption.cabricality.24.title": "車諾比",
   "contraption.cabricality.24.subtitle": "步驟 24",
-  "contraption.cabricality.24.content": "你將親手打造出這一工廠片區的核心裝置：反應爐。\n\n要製造&6光輝線圈，&r你必須先讓&6奇點&r和&6終界粉&r同時參與一次次的可控爆炸才行。希望你能想出一種萬全的方法，使反應爐能夠在三種材料的供應下穩定運轉...\n\n注意，&6奇點&r和&6終界珍珠粉&r需要以1:1的比率供應。他們並不需要離得特別近，且一次爆炸可以同時轉換多組物品。最終產物會在&6奇點&r所在位置生成。\n&7由於產物的堆疊規則為2個每組，所以你需要精細控制物品輸入數量...抽屜是沒用的！",
+  "contraption.cabricality.24.content": "你將親手打造出這一工廠片區的核心裝置：反應爐。\n\n要製造&6光輝線圈，&r你必須先讓&6奇點&r和&6終界粉&r同時參與一次次的可控爆炸才行。希望你能想出一種萬全的方法，使反應爐能夠在三種材料的供應下穩定運轉...\n\n注意，&6奇點&r和&6終界珍珠粉&r需要以1:1的比率供應。它們並不需要離得特別近，且一次爆炸可以同時轉換多組物品。最終產物會在&6奇點&r所在位置生成。\n&7由於產物的堆疊規則為2個每組，所以你需要精細控制物品輸入數量...抽屜是沒用的！",
 
   "contraption.cabricality.25.title": "選擇困難症",
   "contraption.cabricality.25.subtitle": "步驟 25",
@@ -689,7 +693,7 @@
   "bonus_3a.cabricality.complete.title": "&3&l第三章支線完成！",
   "bonus_3a.cabricality.complete.content": "無可比擬的乾坤挪移術正掌握在你的手心！在你龐大的工廠中，一定有某處可以利用它們進一步提高效率。看你的了！",
 
-  "chapter_4.cabricality.title": "&f4&r 標靶藥物",
+  "chapter_4.cabricality.title": "&f&l4&r 標靶藥物",
 
   "chapter_4.cabricality.start.title": "&6&l標靶藥物",
   "chapter_4.cabricality.start.subtitle": "&6第四章",
@@ -855,7 +859,7 @@
 
   "chapter_4a.cabricality.complete.task.checkmark.title": "&7回到&6第四章：標靶藥物&r",
 
-  "chapter_5.cabricality.title": "&f5&r 意識上傳",
+  "chapter_5.cabricality.title": "&f&l5&r 意識上傳",
 
   "chapter_5.cabricality.start.title": "&6&l意識上傳",
   "chapter_5.cabricality.start.subtitle": "&5最終章",

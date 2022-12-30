@@ -65,6 +65,7 @@
   "item.cabricality.calorite_dust": "Calorite Dust",
   "item.cabricality.emerald_dust" : "Emerald Dust",
   "item.cabricality.diamond_dust" : "Diamond Dust",
+  "item.cabricality.zinc_dust"    : "Zinc Dust",
 
   "item.cabricality.basalz_shard" : "Basalz Shard",
   "item.cabricality.basalz_powder": "Basalz Powder",
@@ -250,16 +251,16 @@
   "fluid.cabricality.molten_ostrum"  : "Molten Ostrum",
   "fluid.cabricality.molten_calorite": "Molten Calorite",
 
-  "fluid.cabricality.number_0": "Liquefied Computation (0)",
-  "fluid.cabricality.number_1": "Liquefied Computation (1)",
-  "fluid.cabricality.number_2": "Liquefied Computation (2)",
-  "fluid.cabricality.number_3": "Liquefied Computation (3)",
-  "fluid.cabricality.number_4": "Liquefied Computation (4)",
-  "fluid.cabricality.number_5": "Liquefied Computation (5)",
-  "fluid.cabricality.number_6": "Liquefied Computation (6)",
-  "fluid.cabricality.number_7": "Liquefied Computation (7)",
-  "fluid.cabricality.number_8": "Liquefied Computation (8)",
-  "fluid.cabricality.number_9": "Liquefied Computation (9)",
+  "fluid.cabricality.number_0": "§eLiquefied Computation (0)",
+  "fluid.cabricality.number_1": "§eLiquefied Computation (1)",
+  "fluid.cabricality.number_2": "§aLiquefied Computation (2)",
+  "fluid.cabricality.number_3": "§aLiquefied Computation (3)",
+  "fluid.cabricality.number_4": "§bLiquefied Computation (4)",
+  "fluid.cabricality.number_5": "§bLiquefied Computation (5)",
+  "fluid.cabricality.number_6": "§3Liquefied Computation (6)",
+  "fluid.cabricality.number_7": "§3Liquefied Computation (7)",
+  "fluid.cabricality.number_8": "§1Liquefied Computation (8)",
+  "fluid.cabricality.number_9": "§1Liquefied Computation (9)",
 
 
 
@@ -301,7 +302,7 @@
 
   "comment_command": "Commands",
 
-  "command.cabricality.alchemist.chaotic" : "<Chaotic> ",
+  "command.cabricality.alchemist.chaotic" : " §8(Chaotic)",
 
 
 

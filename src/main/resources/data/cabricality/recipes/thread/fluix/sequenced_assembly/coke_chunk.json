@@ -1,0 +1,49 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cabricality:coal_coke"
+  },
+  "transitionalItem": {
+    "item": "cabricality:incomplete_coke_chunk"
+  },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_coke_chunk"
+        },
+        {
+          "fluid": "minecraft:water",
+          "amount": 27000
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_coke_chunk"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "cabricality:incomplete_coke_chunk"
+        }
+      ],
+      "results": [
+        {
+          "item": "cabricality:incomplete_coke_chunk"
+        }
+      ],
+      "processingTime": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "cabricality:coke_chunk",
+      "chance": 1
+    }
+  ],
+  "loops": 2
+}

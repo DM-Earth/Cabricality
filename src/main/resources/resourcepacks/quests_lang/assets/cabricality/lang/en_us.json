@@ -1,5 +1,5 @@
 {
-  "data.cabricality.title": "&f Cabricality",
+  "data.cabricality.title": "&f  Cabricality",
 
   "contraption.cabricality.automated": "&aAutomated",
 
@@ -37,6 +37,10 @@
 
   "welcome.cabricality.go.title": "&f&l&oOff you go!",
   "welcome.cabricality.go.content": "Now that you have an idea of what is new and what is not, settle in and start your Journey.",
+
+  "shipments.cabricality.title": "&a> Shipments",
+
+  "professions.cabricality.title": "&3> Bulletin Board",
 
   "market.cabricality.title": "&6> Market",
 

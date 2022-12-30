@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "ae2:quartz_glass"
+    },
+    "b": {
+      "item": "cabricality:calculation_mechanism"
+    },
+    "c": {
+      "tag": "ae2:all_certus_quartz"
+    },
+    "d": {
+      "tag": "c:iron_ingots"
+    }
+  },
+  "result": {
+    "item": "ae2:blank_pattern",
+    "count": 2
+  }
+}

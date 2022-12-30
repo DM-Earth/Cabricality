@@ -8,7 +8,7 @@ import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
-import com.dm.earth.cabricality.util.math.VoxelShapeUtil;
+import com.dm.earth.cabricality.math.util.VoxelShapeUtil;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;

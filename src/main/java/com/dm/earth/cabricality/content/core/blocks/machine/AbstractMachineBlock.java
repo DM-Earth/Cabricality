@@ -3,7 +3,7 @@ package com.dm.earth.cabricality.content.core.blocks.machine;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.dm.earth.cabricality.resource.assets.gen.block.BlockStatesGenerator;
-import com.dm.earth.cabricality.util.math.VoxelShapeUtil;
+import com.dm.earth.cabricality.math.util.VoxelShapeUtil;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;

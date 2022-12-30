@@ -1,5 +1,5 @@
 {
-  "data.cabricality.title": "&f 永无止境：重缝",
+  "data.cabricality.title": "&f  永无止境：重缝",
 
   "contraption.cabricality.automated": "&a自动生产",
 
@@ -33,10 +33,14 @@
   "welcome.cabricality.iv.content": "不想总被死板的科技束缚？\n\n在这里，你还可以通过完成任务和职业交易募集资金。\n\n你获得的银币可以在&6市集&r购买许多东西，资源、特殊物品和建筑方块...合理使用它们肯定有所增益！",
 
   "welcome.cabricality.overview.title": "&6&l任务总览",
-  "welcome.cabricality.overview.content": "&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！\n\n&5这些成就和Minecraft的进度不太一样。他们会更加困难，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r购物。\n\n&6就和逛商场一样，不过我们包邮。\n\n&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。\n\n&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！",
+  "welcome.cabricality.overview.content": "&5&l「成就」&r     不断地达成&5成就&r可以振奋人心！\n\n&5这些成就和Minecraft的进度不太一样。它们会更加困难，也更加...奇怪。\n\n&6&l「市集」&r     你可以在&6市集&r购物。\n\n&6就和逛商场一样，不过我们包邮。\n\n&7&l「科技树」&r   &7科技树&r会指导你一步步发展科技。\n\n&7这里的所有任务都为你整理好了，保证考虑周全。随着你对这个世界的探索脚步不断前进，你会解锁更多有趣的任务和成就。&8&m当然，还有隐藏任务。&r&7不过你不必被限制在条框中，自由发挥才是真正的乐趣所在！",
 
   "welcome.cabricality.go.title": "&f&l&o临门一脚",
   "welcome.cabricality.go.content": "现在你对你的任务目标有了清楚的了解。从这里你将开始你全新的征程。祝好运！",
+
+  "shipments.cabricality.title": "&a▶ 货仓",
+
+  "professions.cabricality.title": "&3▶ 悬赏",
 
   "market.cabricality.title": "&6▶ 市集",
 
@@ -515,7 +519,7 @@
   "bonus_2a.cabricality.complete.title": "&2&l第二章支线完成！",
   "bonus_2a.cabricality.complete.content": "宛如天工！你完成了下界带来的许多困难挑战，这肯定给予了你继续前进的莫大信心！",
 
-  "chapter_3.cabricality.title": "&f3&r 钢铁洪流",
+  "chapter_3.cabricality.title": "&f&l3&r 钢铁洪流",
 
   "chapter_3.cabricality.start.title": "&6&l钢铁洪流",
   "chapter_3.cabricality.start.subtitle": "&6第三章",
@@ -583,7 +587,7 @@
 
   "contraption.cabricality.24.title": "切尔诺贝利",
   "contraption.cabricality.24.subtitle": "步骤 24",
-  "contraption.cabricality.24.content": "你将亲手打造出这一工厂片区的核心装置：反应堆。\n\n要制造&6光辉线圈，&r你必须先让&6奇点&r和&6末影粉&r同时参与一次次的可控爆炸才行。希望你能想出一种万全的方法，使反应堆能够在三种材料的供应下稳定运转...\n\n注意，&6奇点&r和&6末影粉&r需要以1:1的比率供应。他们并不需要离得特别近，且一次爆炸可以同时转换多组物品。最终产物会在&6奇点&r所在位置生成。\n&7由于产物的堆叠规则为2个每组，所以你需要精细控制物品输入数量...抽屉是没用的！",
+  "contraption.cabricality.24.content": "你将亲手打造出这一工厂片区的核心装置：反应堆。\n\n要制造&6光辉线圈，&r你必须先让&6奇点&r和&6末影粉&r同时参与一次次的可控爆炸才行。希望你能想出一种万全的方法，使反应堆能够在三种材料的供应下稳定运转...\n\n注意，&6奇点&r和&6末影粉&r需要以1:1的比率供应。它们并不需要离得特别近，且一次爆炸可以同时转换多组物品。最终产物会在&6奇点&r所在位置生成。\n&7由于产物的堆叠规则为2个每组，所以你需要精细控制物品输入数量...抽屉是没用的！",
 
   "contraption.cabricality.25.title": "选择困难症",
   "contraption.cabricality.25.subtitle": "步骤 25",
@@ -689,7 +693,7 @@
   "bonus_3a.cabricality.complete.title": "&3&l第三章支线完成！",
   "bonus_3a.cabricality.complete.content": "无可比拟的乾坤挪移术正掌握在你的手心！在你庞大的工厂中，一定有某处可以利用它们进一步提高效率。看你的了！",
 
-  "chapter_4.cabricality.title": "&f4&r 靶向药物",
+  "chapter_4.cabricality.title": "&f&l4&r 靶向药物",
 
   "chapter_4.cabricality.start.title": "&6&l靶向药物",
   "chapter_4.cabricality.start.subtitle": "&6第四章",
@@ -855,7 +859,7 @@
 
   "chapter_4a.cabricality.complete.task.checkmark.title": "&7回到&6第四章：靶向药物&r",
 
-  "chapter_5.cabricality.title": "&f5&r 意识上传",
+  "chapter_5.cabricality.title": "&f&l5&r 意识上传",
 
   "chapter_5.cabricality.start.title": "&6&l意识上传",
   "chapter_5.cabricality.start.subtitle": "&5最终章",

@@ -22,7 +22,7 @@ import com.dm.earth.cabricality.content.trading.item.ProfessionCardItem;
 import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
 import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
 import com.simibubi.create.AllTags.AllItemTags;
-
+import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
 import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.tags.JTag;
 import net.minecraft.item.Item;
@@ -79,10 +79,30 @@ public class CabfItems {
 	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
 			new Item(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "boot_medium"));
+	public static final Item CIRCUIT_SCRAP = registerItemModeled("circuit_scrap",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "circuit_scrap"));
+	public static final Item SAND_BALL = registerItemModeled("sand_ball",
+			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "sand_ball"));
+	public static final Item ROUGH_SAND = registerItemModeled("rough_sand",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "rough_sand"));
+	public static final Item PURIFIED_SAND = registerItemModeled("purified_sand",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "purified_sand"));
+	public static final Item COAL_COKE = registerItemModeled("coal_coke",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "coal_coke"));
+	public static final Item COKE_CHUNK = registerItemModeled("coke_chunk",
+			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "coke_chunk"));
+	public static final Item INCOMPLETE_COKE_CHUNK = registerItemModeled("incomplete_coke_chunk",
+			new SequencedAssemblyItem(Properties.DEFAULT),
+			ItemModelGenerator.generated("item", "incomplete_coke_chunk"));
+	public static final Item EARTH_CHARGE = registerItemModeled("earth_charge",
+			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "earth_charge"));
+	public static final Item ICE_CHARGE = registerItemModeled("ice_charge",
+			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "ice_charge"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =
 			List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
+	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
 
 	public static void register() {
 		// Trading Cards
@@ -150,9 +170,12 @@ public class CabfItems {
 			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "dusts", variant), tagT);
 		});
 
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"), new JTag().addItem(ENDERIUM_INGOT));
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"), new JTag().addItem(INVAR_INGOT));
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"), new JTag().addItem(NICKEL_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"),
+				new JTag().addItem(ENDERIUM_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"),
+				new JTag().addItem(INVAR_INGOT));
+		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"),
+				new JTag().addItem(NICKEL_INGOT));
 
 		// Crushed Ores
 		JTag crushedOresTag = new JTag();
@@ -176,6 +199,12 @@ public class CabfItems {
 					new ColoredFernItem.SlimeFernPaste(entry.tint),
 					ItemModelGenerator.generated("item", "fern", "slime_fern_paste"));
 		});
+
+		// Incomplete Processors
+		PROCESSORS.stream()
+				.forEach(type -> registerItemModeled("incomplete_" + type + "_processor",
+						new SequencedAssemblyItem(new QuiltItemSettings()), ItemModelGenerator
+								.generated("item/processor", "incomplete_" + type + "_processor")));
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
@@ -194,5 +223,6 @@ public class CabfItems {
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
 		public static final Item.Settings JAR =
 				new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP).maxCount(16);
+		public static final Item.Settings QUARTER = DEFAULT.maxCount(16);
 	}
 }

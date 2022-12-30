@@ -4,7 +4,8 @@
 	order_index: 5
 	filename: "stage_4a"
 	title: "{chapter_4a.cabricality.title}"
-	icon: "cabricality:substrate_chaos"
+	icon: "cabricality:catalyst_jar_x1331490811"
+	comment: "chaos"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -62,7 +63,8 @@
 			tasks: [{
 				id: "1E93F39E5F1F678E"
 				type: "item"
-				item: "cabricality:substrate_andesite"
+				item: "cabricality:reagent_jar_1923641914"
+				comment: "andesite"
 				consume_items: false
 			}]
 		}
@@ -75,7 +77,8 @@
 			tasks: [{
 				id: "5D98554C2EF24A62"
 				type: "item"
-				item: "cabricality:substrate_diorite"
+				item: "cabricality:reagent_jar_242012919"
+				comment: "diorite"
 				consume_items: false
 			}]
 		}
@@ -88,7 +91,8 @@
 			tasks: [{
 				id: "090BAD8069B5962C"
 				type: "item"
-				item: "cabricality:substrate_granite"
+				item: "cabricality:reagent_jar_x1145829433"
+				comment: "granite"
 				consume_items: false
 			}]
 		}
@@ -101,7 +105,8 @@
 			tasks: [{
 				id: "739A22504FFAC363"
 				type: "item"
-				item: "cabricality:substrate_cobblestone"
+				item: "cabricality:reagent_jar_x1246527515"
+				comment: "cobblestone"
 				consume_items: false
 			}]
 		}
@@ -114,7 +119,8 @@
 			tasks: [{
 				id: "2F714B82CD1A3FDD"
 				type: "item"
-				item: "cabricality:substrate_basalt"
+				item: "cabricality:reagent_jar_1472646554"
+				comment: "basalt"
 				consume_items: false
 			}]
 		}
@@ -127,7 +133,8 @@
 			tasks: [{
 				id: "217E5A578A83222B"
 				type: "item"
-				item: "cabricality:substrate_magenta"
+				item: "cabricality:reagent_jar_x597192402"
+				comment: "magenta"
 				consume_items: false
 			}]
 		}
@@ -140,7 +147,8 @@
 			tasks: [{
 				id: "6FD70BEFECE67F2C"
 				type: "item"
-				item: "cabricality:substrate_orange"
+				item: "cabricality:reagent_jar_1860001459"
+				comment: "orange"
 				consume_items: false
 			}]
 		}
@@ -153,7 +161,8 @@
 			tasks: [{
 				id: "183677E3CD7A38E0"
 				type: "item"
-				item: "cabricality:substrate_green"
+				item: "cabricality:reagent_jar_green"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -166,7 +175,8 @@
 			tasks: [{
 				id: "0A7F5C2865C6F5F5"
 				type: "item"
-				item: "cabricality:substrate_red"
+				item: "cabricality:reagent_jar_x1426001642"
+				comment: "red"
 				consume_items: false
 			}]
 		}
@@ -179,7 +189,8 @@
 			tasks: [{
 				id: "2A79E5D1D6C6787F"
 				type: "item"
-				item: "cabricality:substrate_yellow"
+				item: "cabricality:reagent_jar_2134613241"
+				comment: "yellow"
 				consume_items: false
 			}]
 		}
@@ -192,7 +203,8 @@
 			tasks: [{
 				id: "7E01B9B59066FD90"
 				type: "item"
-				item: "cabricality:substrate_blue"
+				item: "cabricality:reagent_jar_x1428037393"
+				comment: "blue"
 				consume_items: false
 			}]
 		}
@@ -205,7 +217,8 @@
 			tasks: [{
 				id: "3D85594FB65E7A91"
 				type: "item"
-				item: "cabricality:substrate_gunpowder"
+				item: "cabricality:reagent_jar_1288793274"
+				comment: "gunpowder"
 				consume_items: false
 			}]
 		}
@@ -218,7 +231,8 @@
 			tasks: [{
 				id: "6BE52A47FB071345"
 				type: "item"
-				item: "cabricality:substrate_prismarine"
+				item: "cabricality:reagent_jar_x1343309837"
+				comment: "prismarine"
 				consume_items: false
 			}]
 		}
@@ -231,7 +245,8 @@
 			tasks: [{
 				id: "0F0273B7441B6840"
 				type: "item"
-				item: "cabricality:substrate_nether"
+				item: "cabricality:reagent_jar_1819926749"
+				comment: "nether"
 				consume_items: false
 			}]
 		}
@@ -244,7 +259,8 @@
 			tasks: [{
 				id: "465B3645832D5B9A"
 				type: "item"
-				item: "cabricality:substrate_obsidian"
+				item: "cabricality:reagent_jar_x1074242848"
+				comment: "obsidian"
 				consume_items: false
 			}]
 		}
@@ -257,7 +273,8 @@
 			tasks: [{
 				id: "119E7FC4D7BB242F"
 				type: "item"
-				item: "cabricality:substrate_blaze"
+				item: "cabricality:reagent_jar_x1332294841"
+				comment: "blaze"
 				consume_items: false
 			}]
 		}
@@ -270,7 +287,8 @@
 			tasks: [{
 				id: "6B17F1E13DF99E50"
 				type: "item"
-				item: "cabricality:substrate_slime"
+				item: "cabricality:reagent_jar_x1316587699"
+				comment: "slime"
 				consume_items: false
 			}]
 		}
@@ -283,7 +301,8 @@
 			tasks: [{
 				id: "6C839FAE45EC2AB4"
 				type: "item"
-				item: "cabricality:substrate_certus"
+				item: "cabricality:reagent_jar_x969939395"
+				comment: "certus_quartz"
 				consume_items: false
 			}]
 		}
@@ -296,7 +315,8 @@
 			tasks: [{
 				id: "3106C362414AB238"
 				type: "item"
-				item: "cabricality:substrate_sulfur"
+				item: "cabricality:reagent_jar_1977609086"
+				comment: "sulfur"
 				consume_items: false
 			}]
 		}
@@ -309,7 +329,8 @@
 			tasks: [{
 				id: "08F2F111C97B57CD"
 				type: "item"
-				item: "cabricality:substrate_lead"
+				item: "cabricality:reagent_jar_lead"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -322,7 +343,8 @@
 			tasks: [{
 				id: "4A4C9D6E372A5466"
 				type: "item"
-				item: "cabricality:substrate_gold"
+				item: "cabricality:reagent_jar_gold"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -335,7 +357,8 @@
 			tasks: [{
 				id: "185775BFC6FE2D89"
 				type: "item"
-				item: "cabricality:substrate_zinc"
+				item: "cabricality:reagent_jar_zinc"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -348,7 +371,8 @@
 			tasks: [{
 				id: "3FA02655BC1E99A6"
 				type: "item"
-				item: "cabricality:substrate_copper"
+				item: "cabricality:reagent_jar_copper"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -361,7 +385,8 @@
 			tasks: [{
 				id: "4932CD6D8FE77BB7"
 				type: "item"
-				item: "cabricality:substrate_iron"
+				item: "cabricality:reagent_jar_iron"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -374,7 +399,8 @@
 			tasks: [{
 				id: "2D94A57470F15112"
 				type: "item"
-				item: "cabricality:substrate_lapis"
+				item: "cabricality:reagent_jar_lapis"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -387,7 +413,8 @@
 			tasks: [{
 				id: "09ADE0525C1D7379"
 				type: "item"
-				item: "cabricality:substrate_sapphire"
+				item: "cabricality:reagent_jar_sapphire"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -400,7 +427,8 @@
 			tasks: [{
 				id: "36A7406CD330E7AB"
 				type: "item"
-				item: "cabricality:substrate_emerald"
+				item: "cabricality:reagent_jar_emerald"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -413,7 +441,8 @@
 			tasks: [{
 				id: "68CD031A5C815200"
 				type: "item"
-				item: "cabricality:substrate_ruby"
+				item: "cabricality:reagent_jar_ruby"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -426,7 +455,8 @@
 			tasks: [{
 				id: "61BF1495FCB27EEB"
 				type: "item"
-				item: "cabricality:substrate_diamond"
+				item: "cabricality:reagent_jar_diamond"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -445,12 +475,14 @@
 					id: "6A30FCE70C7C7289"
 					type: "item"
 					item: "cabricality:accelerator_redstone"
+					comment: "DEPRECATED"
 					consume_items: false
 				}
 				{
 					id: "3D9F64E8128BB9A6"
 					type: "item"
 					item: "cabricality:accelerator_glowstone"
+					comment: "DEPRECATED"
 					consume_items: false
 				}
 			]
@@ -466,7 +498,8 @@
 			tasks: [{
 				id: "7EA2895F0FB5A5D6"
 				type: "item"
-				item: "cabricality:substrate_silver"
+				item: "cabricality:reagent_jar_1966541714"
+				comment: "silver"
 				consume_items: false
 			}]
 		}
@@ -487,7 +520,8 @@
 			tasks: [{
 				id: "34B1FAA6107B2411"
 				type: "item"
-				item: "cabricality:substrate_igneous"
+				item: "cabricality:catalyst_jar_326000733"
+				comment: "igneous"
 				consume_items: false
 			}]
 		}
@@ -509,7 +543,8 @@
 			tasks: [{
 				id: "1F5A37CC8E10B3DB"
 				type: "item"
-				item: "cabricality:substrate_herbal"
+				item: "cabricality:catalyst_jar_1648086365"
+				comment: "herbal"
 				consume_items: false
 			}]
 		}
@@ -531,7 +566,8 @@
 			tasks: [{
 				id: "744E156650A1F4B3"
 				type: "item"
-				item: "cabricality:substrate_volatile"
+				item: "cabricality:catalyst_jar_980825633"
+				comment: "volatile"
 				consume_items: false
 			}]
 		}
@@ -549,7 +585,8 @@
 			tasks: [{
 				id: "0881E44E3823D060"
 				type: "item"
-				item: "cabricality:substrate_crystal"
+				item: "cabricality:catalyst_jar_x378553413"
+				comment: "crystal"
 				consume_items: false
 			}]
 		}
@@ -570,7 +607,8 @@
 			tasks: [{
 				id: "4E81FAFD3B80DFE9"
 				type: "item"
-				item: "cabricality:substrate_metal"
+				item: "cabricality:catalyst_jar_metal"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -591,7 +629,8 @@
 			tasks: [{
 				id: "10F212525DABED77"
 				type: "item"
-				item: "cabricality:substrate_gem"
+				item: "cabricality:catalyst_jar_gem"
+				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -613,7 +652,8 @@
 			tasks: [{
 				id: "3299FF447F8110CF"
 				type: "item"
-				item: "cabricality:substrate_chaos"
+				item: "cabricality:catalyst_jar_x1331490811"
+				comment: "chaos"
 				consume_items: false
 			}]
 		}
@@ -628,7 +668,8 @@
 			tasks: [{
 				id: "68FBEFA1BC6479ED"
 				type: "item"
-				item: "cabricality:substrate_silicon"
+				item: "cabricality:reagent_jar_666621652"
+				comment: "silicon"
 				consume_items: false
 			}]
 		}
