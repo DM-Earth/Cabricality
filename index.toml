@@ -285,6 +285,11 @@ hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
 metafile = true
 
 [[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "145dbcbac757622ec415041cdcabf07654981f84d5044c8fc16f6aa88a03ccb3"
+metafile = true
+
+[[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "c985bc9064cc29094fdfd59a037baa1523778cc2a9e5665c3f1b6ca0efe6a543"
 metafile = true
@@ -321,7 +326,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
-hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
+hash = "b06e230460e29041e981794292bf002fa03c5572558e8c8f454d05df5a369db5"
 metafile = true
 
 [[files]]
@@ -352,6 +357,11 @@ metafile = true
 [[files]]
 file = "mods/led.pw.toml"
 hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "7c2779362482a58ce23b6b9c4b377c0aacf80a25bb860c466c4df951052a1b4b"
 metafile = true
 
 [[files]]
