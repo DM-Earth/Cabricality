@@ -1,20 +1,19 @@
 package com.dm.earth.cabricality.content.entries;
 
 import static com.dm.earth.cabricality.ModEntry.C;
-
 import java.util.Arrays;
 import java.util.List;
-
-import com.dm.earth.cabricality.Cabricality;
-
+import java.util.Map;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
-
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.core.items.FlippableItem;
 import com.dm.earth.cabricality.content.core.items.GlintedItem;
 import com.dm.earth.cabricality.content.core.items.MechanismItem;
 import com.dm.earth.cabricality.content.core.items.SawItem;
 import com.dm.earth.cabricality.content.core.items.ToolMaterialIndex;
+import com.dm.earth.cabricality.content.math.item.NumberItem;
+import com.dm.earth.cabricality.content.math.item.OperatorItem;
 import com.dm.earth.cabricality.content.trading.Professions;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
@@ -81,8 +80,9 @@ public class CabfItems {
 			ItemModelGenerator.generated("item", "boot_medium"));
 	public static final Item CIRCUIT_SCRAP = registerItemModeled("circuit_scrap",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "circuit_scrap"));
-	public static final Item SAND_BALL = registerItemModeled("sand_ball",
-			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "sand_ball"));
+	public static final Item SAND_BALL =
+			registerItemModeled("sand_ball", new Item(Properties.DEFAULT_QUARTER),
+					ItemModelGenerator.generated("item", "sand_ball"));
 	public static final Item ROUGH_SAND = registerItemModeled("rough_sand",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "rough_sand"));
 	public static final Item PURIFIED_SAND = registerItemModeled("purified_sand",
@@ -94,15 +94,22 @@ public class CabfItems {
 	public static final Item INCOMPLETE_COKE_CHUNK = registerItemModeled("incomplete_coke_chunk",
 			new SequencedAssemblyItem(Properties.DEFAULT),
 			ItemModelGenerator.generated("item", "incomplete_coke_chunk"));
-	public static final Item EARTH_CHARGE = registerItemModeled("earth_charge",
-			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "earth_charge"));
-	public static final Item ICE_CHARGE = registerItemModeled("ice_charge",
-			new Item(Properties.QUARTER), ItemModelGenerator.generated("item", "ice_charge"));
+	public static final Item EARTH_CHARGE =
+			registerItemModeled("earth_charge", new Item(Properties.DEFAULT_QUARTER),
+					ItemModelGenerator.generated("item", "earth_charge"));
+	public static final Item ICE_CHARGE =
+			registerItemModeled("ice_charge", new Item(Properties.DEFAULT_QUARTER),
+					ItemModelGenerator.generated("item", "ice_charge"));
+	public static final Item NAN = registerItemModeled("nan", new Item(Properties.DEFAULT_SINGLE),
+			ItemModelGenerator.generated("item", "math/nan"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =
 			List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
 	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
+	public static final Map<String, String> OPERATORS =
+			Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
+	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
 	public static void register() {
 		// Trading Cards
@@ -201,10 +208,17 @@ public class CabfItems {
 		});
 
 		// Incomplete Processors
-		PROCESSORS.stream()
-				.forEach(type -> registerItemModeled("incomplete_" + type + "_processor",
-						new SequencedAssemblyItem(new QuiltItemSettings()), ItemModelGenerator
-								.generated("item/processor", "incomplete_" + type + "_processor")));
+		PROCESSORS.forEach(type -> registerItemModeled("incomplete_" + type + "_processor",
+				new SequencedAssemblyItem(new QuiltItemSettings()), ItemModelGenerator
+						.generated("item/processor", "incomplete_" + type + "_processor")));
+
+		// Math
+		NUMBERS.forEach(num -> registerItemModeled(NumberItem.getNumberItemName(num),
+				new NumberItem(Properties.DEFAULT_SINGLE),
+				ItemModelGenerator.generated("item/math/number", "number_" + num)));
+		OPERATORS.forEach((key, value) -> registerItemModeled(key,
+				new OperatorItem(value, Properties.DEFAULT_SINGLE),
+				ItemModelGenerator.generated("item/math/operator", key)));
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
@@ -223,6 +237,6 @@ public class CabfItems {
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
 		public static final Item.Settings JAR =
 				new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP).maxCount(16);
-		public static final Item.Settings QUARTER = DEFAULT.maxCount(16);
+		public static final Item.Settings DEFAULT_QUARTER = DEFAULT.maxCount(16);
 	}
 }
