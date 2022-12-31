@@ -110,6 +110,8 @@ public class CabfItems {
 	public static final Map<String, String> OPERATORS =
 			Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
 	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+	public static final List<String> MATH_CASTS =
+			List.of("plus", "minus", "multiply", "divide", "three", "eight");
 
 	public static void register() {
 		// Trading Cards
@@ -219,6 +221,9 @@ public class CabfItems {
 		OPERATORS.forEach((key, value) -> registerItemModeled(key,
 				new OperatorItem(value, Properties.DEFAULT_SINGLE),
 				ItemModelGenerator.generated("item/math/operator", key)));
+		MATH_CASTS.forEach(
+				str -> registerItemModeled(str + "_cast", new Item(Properties.DEFAULT_SINGLE),
+						ItemModelGenerator.generated("item/math/cast", str + "_cast")));
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
