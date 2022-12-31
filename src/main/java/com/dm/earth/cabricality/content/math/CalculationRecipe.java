@@ -20,10 +20,8 @@ public class CalculationRecipe extends SpecialCraftingRecipe {
 	}
 
 	@Override
-	public ItemStack craft(CraftingInventory inventoryRaw) {
+	public ItemStack craft(CraftingInventory inv) {
 		ItemStack nan = new ItemStack(CabfItems.NAN);
-		if (!(inventoryRaw instanceof MechanicalCraftingInventory inv))
-			return nan;
 		try {
 			ArrayList<ItemStack> stacks = new ArrayList<>();
 			for (int i = 0; i < inv.getWidth(); i++)
