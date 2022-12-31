@@ -30,8 +30,8 @@ public class ColorRegistryListener {
 				if (item instanceof TradeCardItem card)
 					return TradingEntryRegistry.fromItem(card).getTint();
 				if (item instanceof ProfessionCardItem card)
-					return Objects.requireNonNull(ProfessionUtil.fromItem(card), "The profession can't be null!")
-							.tint();
+					return Objects.requireNonNull(ProfessionUtil.fromItem(card),
+							"The profession can't be null!").tint();
 				if (item instanceof ColoredFernItem fern)
 					return fern.tint;
 			}
@@ -40,13 +40,16 @@ public class ColorRegistryListener {
 			return -1;
 		}, getItems());
 
-		ColorProviderRegistry.BLOCK.register(
-				(blockState, blockRenderView, blockPos, tintIndex) -> getBlockTint(blockState.getBlock(), tintIndex),
-				getBlocks());
+		ColorProviderRegistry.BLOCK
+				.register(
+						(blockState, blockRenderView, blockPos,
+								tintIndex) -> getBlockTint(blockState.getBlock(), tintIndex),
+						getBlocks());
 	}
 
 	private static int getBlockTint(Block block, int tintIndex) {
-		if (block instanceof SubstrateJarBlock jar && (tintIndex == 1 || tintIndex == 0 || tintIndex < 0)
+		if (block instanceof SubstrateJarBlock jar
+				&& (tintIndex == 1 || tintIndex == 0 || tintIndex < 0)
 				&& jar.getSubstrate() != null)
 			return jar.getSubstrate().getTint();
 		return -1;
