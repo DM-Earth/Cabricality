@@ -11,6 +11,7 @@ import com.dm.earth.cabricality.content.core.threads.CopperThread;
 import com.dm.earth.cabricality.content.core.threads.EnderiumThread;
 import com.dm.earth.cabricality.content.core.threads.FluixThread;
 import com.dm.earth.cabricality.content.core.threads.InvarThread;
+import com.dm.earth.cabricality.content.core.threads.MathThread;
 import com.dm.earth.cabricality.content.core.threads.ObsidianThread;
 import com.dm.earth.cabricality.content.core.threads.ZincThread;
 import net.minecraft.util.Identifier;
@@ -18,7 +19,7 @@ import net.minecraft.util.Identifier;
 public interface TechThread {
 	List<TechThread> THREADS = List.of(new AndesiteThread(), new BrassThread(), new CopperThread(),
 			new ZincThread(), new ObsidianThread(), new InvarThread(), new EnderiumThread(),
-			new FluixThread());
+			new FluixThread(), new MathThread());
 
 	default void addRecipes(AddRecipesCallback.RecipeHandler handler) {}
 
@@ -26,7 +27,7 @@ public interface TechThread {
 
 	default void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {}
 
-	void load();
+	default void load() {};
 
 	String getLevel();
 
