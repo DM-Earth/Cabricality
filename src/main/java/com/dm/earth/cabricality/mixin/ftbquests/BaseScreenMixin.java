@@ -1,12 +1,12 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
+import net.krlite.equator.util.Timer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.math.Rect;
-import com.dm.earth.cabricality.math.Timer;
 import com.dm.earth.cabricality.util.func.CabfRenderer;
 import com.dm.earth.cabricality.util.PushUtil;
 

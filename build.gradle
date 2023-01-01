@@ -30,6 +30,7 @@ repositories {
 		content {
 			includeGroup("com.github.Chocohead")
             includeGroup("com.github.LlamaLad7")
+            includeGroup("com.github.KrLite")
 		}
 	}
 
@@ -76,6 +77,9 @@ dependencies {
     implementation include("net.objecthunter:exp4j:0.4.8")
 
 	modImplementation "io.github.fabricators_of_create:Porting-Lib:1.2.575-beta+1.18.2-stable"
+
+    /* Equator Utils v1.0.4 */
+    implementation include("com.github.KrLite:Equator-Utils:v1.0.4")
 }
 
 processResources {
