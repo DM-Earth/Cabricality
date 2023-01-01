@@ -3,6 +3,7 @@ package com.dm.earth.cabricality.math.util;
 import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
 
+import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.google.gson.JsonArray;
@@ -26,7 +27,7 @@ public class RecipeBuilderUtil {
 				recipe.getIngredients(), recipe.getOutput(), acceptMirrored);
 	}
 
-	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount, Identifier byProduct,
+	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount, @Nullable Identifier byProduct,
 			long byAmount, int temperature, int time) {
 		JsonObject json = new JsonObject();
 		json.addProperty("type", (new Identifier("tconstruct", "melting")).toString());
