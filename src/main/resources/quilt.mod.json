@@ -24,7 +24,6 @@
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
       "init": "com.dm.earth.cabricality.Cabricality",
-      "pre_launch": "com.dm.earth.cabricality.Cabricality",
       "client_init": "com.dm.earth.cabricality.client.CabricalityClient",
       "server_init": "com.dm.earth.cabricality.server.CabricalityServer",
       "client_events": [

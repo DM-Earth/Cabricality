@@ -11,7 +11,6 @@ import net.krlite.equator.color.PreciseColor;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
@@ -41,7 +40,7 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class Cabricality implements ModInitializer, PreLaunchEntrypoint {
+public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
@@ -96,6 +95,8 @@ public class Cabricality implements ModInitializer, PreLaunchEntrypoint {
 	// Initialization
 	@Override
 	public void onInitialize(ModContainer mod) {
+		CabfModConflict.checkAndExit();
+
 		CabfLogger.logInfo("Initializing... 📦");
 
 		Trading.load();
@@ -124,10 +125,5 @@ public class Cabricality implements ModInitializer, PreLaunchEntrypoint {
 	@ClientOnly
 	private static void initClientAssets() {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(CLIENT_RESOURCES));
-	}
-
-	@Override
-	public void onPreLaunch(ModContainer mod) {
-		CabfModConflict.checkAndExit();
 	}
 }
