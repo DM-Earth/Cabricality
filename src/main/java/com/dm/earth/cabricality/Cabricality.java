@@ -51,26 +51,21 @@ public class Cabricality implements ModInitializer {
 	public static final PreciseColor CABF_BLACK = PreciseColor.of(0x0D0C0E);
 
 	// Textures
-	public static final Identifier CABRICALITY_TITLE_TEXTURE =
-			id("textures", "gui", "title", "cabricality.png");
-	public static final Identifier MINECRAFT_SUBTITLE_TEXTURE =
-			id("textures", "gui", "title", "minecraft.png");
+	public static final Identifier CABRICALITY_TITLE_TEXTURE = id("textures", "gui", "title", "cabricality.png");
+	public static final Identifier MINECRAFT_SUBTITLE_TEXTURE = id("textures", "gui", "title", "minecraft.png");
 
 	// Sounds
 	public static final SoundEvent FINISH_LOADING = SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE;
 
 	// RRPs
-	public static final RuntimeResourcePack CLIENT_RESOURCES =
-			RuntimeResourcePack.create(id("client_resources"));
-	public static final RuntimeResourcePack SERVER_RESOURCES =
-			RuntimeResourcePack.create(id("server_resources"));
+	public static final RuntimeResourcePack CLIENT_RESOURCES = RuntimeResourcePack.create(id("client_resources"));
+	public static final RuntimeResourcePack SERVER_RESOURCES = RuntimeResourcePack.create(id("server_resources"));
 
 	// Item groups
 	public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
 			() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
-	public static ItemGroup SUBSTRATES_GROUP =
-			QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
-					() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+	public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
+			() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 
 	// Generators
 	@Contract("_ -> new")
