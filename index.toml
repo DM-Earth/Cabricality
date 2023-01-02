@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".editorconfig"
-hash = "01ab41f0e32d559e2fb8868026a8607f9da86c71564d64fc26437fa17ddeefb2"
+hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = ".settings/org.eclipse.buildship.core.prefs"
@@ -290,11 +290,6 @@ hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
 metafile = true
 
 [[files]]
-file = "mods/fabric-api.pw.toml"
-hash = "145dbcbac757622ec415041cdcabf07654981f84d5044c8fc16f6aa88a03ccb3"
-metafile = true
-
-[[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "c985bc9064cc29094fdfd59a037baa1523778cc2a9e5665c3f1b6ca0efe6a543"
 metafile = true
@@ -331,7 +326,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
-hash = "b06e230460e29041e981794292bf002fa03c5572558e8c8f454d05df5a369db5"
+hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
 metafile = true
 
 [[files]]
@@ -430,18 +425,13 @@ hash = "57a8bedb0057a988cc3a02ed62ef5dcc3331d65df1e7cbebac3789e92858bea0"
 metafile = true
 
 [[files]]
-file = "mods/roughly-enough-characters.pw.toml"
-hash = "86c4ef056d5d2a56d0f69cd988b656a1201651845e40a7027726fec7c9f090b6"
-metafile = true
-
-[[files]]
 file = "mods/roughly-enough-items.pw.toml"
 hash = "d3cbfc74109c4ff70f7d61d559c7fee5d675762b9265174aaca5625b1629ec9c"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "eb43d1152713f0a0c568bb566d451a276e92cb86ec97918468ad0a62cb416658"
+hash = "ee3aa9ab24522ccb8cbfcc4ceacab517416594c9ee93e68f82a00b56792e1c3e"
 metafile = true
 
 [[files]]
