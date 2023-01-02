@@ -2,6 +2,7 @@ package com.dm.earth.cabricality.mixin.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
+import net.krlite.equator.render.Equator;
 import net.krlite.equator.util.Timer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -36,7 +37,7 @@ public abstract class ViewQuestPanelMixin extends Widget {
 		super(panel);
 	}
 
-	private Timer timer = new Timer(1320);
+	private Timer timer = new Timer(720);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {
@@ -77,16 +78,17 @@ public abstract class ViewQuestPanelMixin extends Widget {
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
 		PushUtil.ANIMATE_VIEW_QUEST_PANEL.run(() -> timer = timer.reset());
-		double lerp = 0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0);
+		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
 
-		new TintedRect(
+		TintedRect shadowRect = new TintedRect(
 				new Rect(x, y, w, h),
-				Cabricality.CABF_DIM_PURPLE.withOpacity(0.87)
-		).draw(matrixStack).drawFixedShadow(
-				matrixStack,
-				Cabricality.CABF_PURPLE.withOpacity(lerp), Cabricality.CABF_MID_PURPLE.withOpacity(lerp),
-				Cabricality.CABF_MID_PURPLE.withOpacity(lerp), Cabricality.CABF_PURPLE.withOpacity(lerp),
-				lerp, 0
+				Cabricality.CABF_PURPLE, Cabricality.CABF_MID_PURPLE,
+				Cabricality.CABF_MID_PURPLE, Cabricality.CABF_PURPLE
+		);
+
+		new Equator.Drawer(matrixStack).rectShadow(
+				shadowRect.swap(shadowRect.toRect().interpolate(Rect.full(), lerp)).transparent(),
+				shadowRect.withOpacity(lerp), 0.2 * lerp
 		);
 	}
 

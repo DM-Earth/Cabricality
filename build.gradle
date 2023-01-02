@@ -79,7 +79,7 @@ dependencies {
 	modImplementation "io.github.fabricators_of_create:Porting-Lib:${project.porting_lib_version}"
 
     /* Equator */
-    modImplementation "com.github.KrLite:Equator:${project.equator_version}"
+    modImplementation "maven.modrinth:equator:${project.equator_version}"
     implementation "com.github.KrLite:Equator-Utils:${project.equator_utils_version}"
 }
 
