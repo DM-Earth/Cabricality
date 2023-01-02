@@ -173,7 +173,7 @@
   "block.cabricality.zinc_casing"    : "锌机壳",
   "block.cabricality.enderium_casing": "谐振末影机壳",
 
-  "block.cabricality.computation_matrix": "智能矩阵",
+  "item.cabricality.computation_matrix": "智能矩阵",
 
   "block.cabricality.jar"         : "空瓶",
   "block.cabricality.reagent_jar" : "试剂",
@@ -327,4 +327,4 @@
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d个模组！",
 
   "itemGroup.cabricality.main": "永无止境：重缝"
-}
+
