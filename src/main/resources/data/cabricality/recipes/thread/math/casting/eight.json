@@ -5,7 +5,7 @@
   },
   "cast_consumed": false,
   "fluid": {
-    "tag": "cabricality:raw_logic",
+    "name": "cabricality:raw_logic",
     "amount": 8
   },
   "result": "cabricality:number_8",
