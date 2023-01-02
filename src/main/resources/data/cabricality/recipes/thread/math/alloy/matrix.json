@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    { "name": "cabricality:number_0", "amount": 1000 },
+    { "name": "cabricality:number_1", "amount": 1000 },
+    { "name": "cabricality:number_2", "amount": 1000 },
+    { "name": "cabricality:number_3", "amount": 1000 },
+    { "name": "cabricality:number_4", "amount": 1000 },
+    { "name": "cabricality:number_5", "amount": 1000 },
+    { "name": "cabricality:number_6", "amount": 1000 },
+    { "name": "cabricality:number_7", "amount": 1000 },
+    { "name": "cabricality:number_8", "amount": 1000 },
+    { "name": "cabricality:number_9", "amount": 1000 }
+  ],
+  "result": {
+    "fluid": "cabricality:matrix",
+    "amount": 9000
+  },
+  "temperature": 200
+}
