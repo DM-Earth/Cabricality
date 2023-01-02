@@ -38,10 +38,10 @@ public class CabricalityClient implements ClientModInitializer {
 		ColorRegistryListener.load();
 		ProfessionDebugHelper.load();
 
-        WoodCuttingEntry.checkAll();
-        OreProcessingEntry.checkAll();
+        	WoodCuttingEntry.checkAll();
+        	OreProcessingEntry.checkAll();
 
-        BlockRenderLayerMap.put(RenderLayer.getCutout(), Substrate.getJarBlocks(true).toArray(new Block[0]));
+        	BlockRenderLayerMap.put(RenderLayer.getCutout(), Substrate.getJarBlocks(true).toArray(new Block[0]));
 
 		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock()));
 		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock()));
