@@ -1,11 +1,5 @@
 package com.dm.earth.cabricality.mixin.client;
 
-import com.dm.earth.cabricality.util.func.CabfBlur;
-
-import net.krlite.equator.color.PreciseColor;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.screen.Screen;
-
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -14,8 +8,10 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
-
-import java.awt.*;
+import com.dm.earth.cabricality.util.func.CabfBlur;
+import net.krlite.equator.color.PreciseColor;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
 
 @Mixin(Screen.class)
 public class ScreenMixin {
