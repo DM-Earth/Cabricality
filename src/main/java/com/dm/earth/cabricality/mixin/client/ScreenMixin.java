@@ -2,8 +2,7 @@ package com.dm.earth.cabricality.mixin.client;
 
 import com.dm.earth.cabricality.util.func.CabfBlur;
 
-import com.dm.earth.cabricality.util.func.CabfRenderer;
-
+import net.krlite.equator.color.PreciseColor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
@@ -32,8 +31,8 @@ public class ScreenMixin {
 	@ModifyArgs(method = "renderBackground(Lnet/minecraft/client/util/math/MatrixStack;I)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/Screen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"))
 	private void renderBackground(Args args) {
 		float lerp = (float) Math.pow(CabfBlur.INSTANCE.getProgress(), 1 / 3.0);
-		Color first = new Color((args.get(5)), true), second = new Color((args.get(6)), true);
-		args.set(5, CabfRenderer.castOpacity(first, (first.getAlpha() / 255.0F * lerp)).getRGB());
-		args.set(6, CabfRenderer.castOpacity(second, (second.getAlpha() / 255.0F * lerp)).getRGB());
+		PreciseColor first = PreciseColor.of((int) (args.get(5))), second = PreciseColor.of((int) (args.get(6)));
+		args.set(5, first.withOpacity(first.alpha() * lerp).toColor().getRGB());
+		args.set(6, second.withOpacity(second.alpha() * lerp).toColor().getRGB());
 	}
 }

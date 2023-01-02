@@ -11,7 +11,7 @@ import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.content.math.CalculationRecipe;
 import com.dm.earth.cabricality.content.math.item.NumberItem;
-import com.dm.earth.cabricality.math.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;

@@ -74,12 +74,13 @@ dependencies {
 
 	modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
     modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
-    implementation include("net.objecthunter:exp4j:0.4.8")
+    implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
 
-	modImplementation "io.github.fabricators_of_create:Porting-Lib:1.2.575-beta+1.18.2-stable"
+	modImplementation "io.github.fabricators_of_create:Porting-Lib:${project.porting_lib_version}"
 
-    /* Equator Utils v1.0.4 */
-    implementation include("com.github.KrLite:Equator-Utils:v1.0.4")
+    /* Equator */
+    modImplementation "com.github.KrLite:Equator:${project.equator_version}"
+    implementation "com.github.KrLite:Equator-Utils:${project.equator_utils_version}"
 }
 
 processResources {

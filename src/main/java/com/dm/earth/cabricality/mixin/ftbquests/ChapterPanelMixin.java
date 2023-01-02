@@ -1,5 +1,8 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
+import net.krlite.equator.geometry.Rect;
+import net.krlite.equator.geometry.TintedRect;
+import net.krlite.equator.render.Equator;
 import net.krlite.equator.util.Timer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -9,9 +12,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.math.Rect;
 import com.dm.earth.cabricality.util.PushUtil;
-import com.dm.earth.cabricality.util.func.CabfRenderer;
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
@@ -39,17 +40,17 @@ public abstract class ChapterPanelMixin {
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
 		PushUtil.ANIMATE_CHAPTER_PANEL.or((!this.expanded && !this.isPinned()), () -> timer = timer.reset());
-
-		CabfRenderer.Drawer drawer = new CabfRenderer.Drawer(matrixStack);
-		Rect rect = new Rect(x, y, w, h);
 		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
 
-		drawer.rect(rect, CabfRenderer.castOpacity(Cabricality.CABF_BLACK, 0.73F * (float) lerp));
-
-		drawer.horizontalRectGradiant(
-				rect, CabfRenderer.castOpacity(Cabricality.CABF_PURPLE, 0.2F * (float) lerp),
-				CabfRenderer.castOpacity(Cabricality.CABF_MID_PURPLE),
-				0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
+		new TintedRect(new Rect(x, y, w, h), Cabricality.CABF_BLACK.withOpacity(0.73 * lerp)).draw(matrixStack);
+		new Equator.Drawer(matrixStack).horizontalGradiant(
+				new TintedRect(
+						new Rect(x, y, w, h),
+						Cabricality.CABF_PURPLE.withOpacity(0.2 * lerp),
+						Cabricality.CABF_MID_PURPLE.transparent(),
+						Cabricality.CABF_MID_PURPLE.transparent(),
+						Cabricality.CABF_PURPLE.withOpacity(0.2 * lerp)
+				), 0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
 		);
 	}
 }

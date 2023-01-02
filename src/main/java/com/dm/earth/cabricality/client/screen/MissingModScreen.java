@@ -133,9 +133,9 @@ public class MissingModScreen extends Screen {
 
 		// Render Colored Overlay
 		float
-				r = Cabricality.CABF_DIM_PURPLE.getRed() / 255.0F,
-				g = Cabricality.CABF_DIM_PURPLE.getGreen() / 255.0F,
-				b = Cabricality.CABF_DIM_PURPLE.getBlue() / 255.0F,
+				r = Cabricality.CABF_DIM_PURPLE.redFloat(),
+				g = Cabricality.CABF_DIM_PURPLE.greenFloat(),
+				b = Cabricality.CABF_DIM_PURPLE.blueFloat(),
 				a = 0.57F;
 
 		BufferBuilder bufferBuilder = Tessellator.getInstance().getBuffer();

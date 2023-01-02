@@ -1,11 +1,10 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
-
-import com.dm.earth.cabricality.math.Rect;
-import com.dm.earth.cabricality.util.func.CabfRenderer;
 import com.dm.earth.cabricality.util.PushUtil;
 
+import net.krlite.equator.geometry.Rect;
+import net.krlite.equator.geometry.TintedRect;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -43,10 +42,10 @@ public class QuestScreenMixin {
 			)
 	)
 	private void drawLeftSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
-		new CabfRenderer.Drawer(matrixStack).rect(
+		new TintedRect(
 				new Rect(x - 1, y - 1, w + 2, h + 2),
-				CabfRenderer.castOpacity(Cabricality.CABF_BLACK, 0.127F)
-		);
+				Cabricality.CABF_BLACK.withOpacity(0.127)
+		).draw(matrixStack);
 	}
 
 	@Redirect(
@@ -68,9 +67,9 @@ public class QuestScreenMixin {
 			)
 	)
 	private void drawRightSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
-		new CabfRenderer.Drawer(matrixStack).rect(
+		new TintedRect(
 				new Rect(x - 1, y - 1, w + 2, h + 2),
-				CabfRenderer.castOpacity(Cabricality.CABF_BLACK, 0.127F)
-		);
+				Cabricality.CABF_BLACK.withOpacity(0.127)
+		).draw(matrixStack);
 	}
 }

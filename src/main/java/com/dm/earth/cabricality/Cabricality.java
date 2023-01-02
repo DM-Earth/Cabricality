@@ -7,6 +7,7 @@ import com.dm.earth.cabricality.util.func.CabfBlur;
 import com.dm.earth.cabricality.util.mod.CabfModConflict;
 import com.dm.earth.cabricality.util.PushUtil;
 
+import net.krlite.equator.color.PreciseColor;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -46,12 +47,12 @@ public class Cabricality implements ModInitializer, PreLaunchEntrypoint {
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 
 	// Colors
-	public static final Color CABF_PURPLE = new Color(0x6117DE);
-	public static final Color CABF_MID_PURPLE = new Color(0x3A1677);
-	public static final Color CABF_DIM_PURPLE = new Color(0x1B1329);
-	public static final Color CABF_GRAY_PURPLE = new Color(0x2F2939);
-	public static final Color CABF_BRIGHT_PURPLE = new Color(0xE0DBE8);
-	public static final Color CABF_BLACK = new Color(0x0D0C0E);
+	public static final PreciseColor CABF_PURPLE = PreciseColor.of(0x6117DE);
+	public static final PreciseColor CABF_MID_PURPLE = PreciseColor.of(0x3A1677);
+	public static final PreciseColor CABF_DIM_PURPLE = PreciseColor.of(0x1B1329);
+	public static final PreciseColor CABF_GRAY_PURPLE = PreciseColor.of(0x2F2939);
+	public static final PreciseColor CABF_BRIGHT_PURPLE = PreciseColor.of(0xE0DBE8);
+	public static final PreciseColor CABF_BLACK = PreciseColor.of(0x0D0C0E);
 
 	// Textures
 	public static final Identifier CABRICALITY_TITLE_TEXTURE =

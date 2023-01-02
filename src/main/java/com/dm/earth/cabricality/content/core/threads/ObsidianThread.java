@@ -9,7 +9,7 @@ import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback.RecipeHandler;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.math.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import net.minecraft.util.Identifier;
 
 public class ObsidianThread implements TechThread {

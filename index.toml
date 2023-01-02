@@ -280,6 +280,11 @@ hash = "1e3d4b62d2b1224356261ca5f9aece724ed2cc6c8f31c77d64867e6bc173ee9d"
 metafile = true
 
 [[files]]
+file = "mods/equator.pw.toml"
+hash = "333f6e801adfadd073deaad3477d50c999212d64c934fbe6160ad2092a46a8f6"
+metafile = true
+
+[[files]]
 file = "mods/extended-drawers.pw.toml"
 hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
 metafile = true

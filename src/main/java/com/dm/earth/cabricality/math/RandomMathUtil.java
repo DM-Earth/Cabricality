@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.math.util;
+package com.dm.earth.cabricality.math;
 
 import java.util.ArrayList;
 import java.util.List;

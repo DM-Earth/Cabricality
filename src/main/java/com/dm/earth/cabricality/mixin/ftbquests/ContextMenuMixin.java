@@ -1,13 +1,13 @@
 package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.math.Rect;
-import com.dm.earth.cabricality.util.func.CabfRenderer;
 
 import dev.ftb.mods.ftblibrary.ui.ContextMenuItem;
 import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 
+import net.krlite.equator.geometry.Rect;
+import net.krlite.equator.geometry.TintedRect;
 import net.krlite.equator.util.Timer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -36,9 +36,9 @@ public class ContextMenuMixin {
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		new CabfRenderer.Drawer(matrixStack).rect(
+		new TintedRect(
 				new Rect(x, y, w, h).expand(2.7 * Math.pow(1 - timer.queueAsPercentage(), 1 / 2.0)),
-				CabfRenderer.castOpacity(Cabricality.CABF_BRIGHT_PURPLE, 0.6F * (float) Math.pow(timer.queueAsPercentage(), 2))
-		);
+				Cabricality.CABF_BRIGHT_PURPLE.withOpacity(0.6 * Math.pow(timer.queueAsPercentage(), 2))
+		).draw(matrixStack);
 	}
 }

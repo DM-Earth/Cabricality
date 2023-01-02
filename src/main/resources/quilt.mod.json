@@ -50,6 +50,10 @@
       {
         "id": "quilted_fabric_api",
         "versions": ">=1.0.0-"
+      },
+      {
+        "id": "equator",
+        "versions": "*"
       }
     ]
   },
