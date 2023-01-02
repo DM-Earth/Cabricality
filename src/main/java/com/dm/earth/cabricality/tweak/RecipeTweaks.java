@@ -41,6 +41,8 @@ public class RecipeTweaks implements AddRecipesCallback, RemoveRecipesCallback, 
 
 		handler.remove(TC.id("smeltery/casting/metal/silver/coin_silver_cast"));
 		handler.remove(TC.id("smeltery/casting/metal/gold/coin_gold_cast"));
+
+		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
 	}
 
 	public static boolean notCabf(Identifier id) {
@@ -49,6 +51,11 @@ public class RecipeTweaks implements AddRecipesCallback, RemoveRecipesCallback, 
 
 	public static boolean notCabf(Recipe<?> recipe) {
 		return notCabf(recipe.getId());
+	}
+
+	@SuppressWarnings("unused")
+	private static Identifier recipeId(String type, String name) {
+		return Cabricality.id(type + "/" + name);
 	}
 
 }
