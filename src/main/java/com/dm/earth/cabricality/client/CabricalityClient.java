@@ -22,7 +22,7 @@ import net.minecraft.client.render.RenderLayer;
 
 public class CabricalityClient implements ClientModInitializer {
 	public static void finishLoading() {
-		SoundUtil.playSound(Cabricality.FINISH_LOADING);
+		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);
 		GLFW.glfwRequestWindowAttention(MinecraftClient.getInstance().getWindow().getHandle());
 	}
 

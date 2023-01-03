@@ -82,8 +82,8 @@ public abstract class ViewQuestPanelMixin extends Widget {
 
 		TintedRect shadowRect = new TintedRect(
 				new Rect(x, y, w, h),
-				Cabricality.CABF_PURPLE, Cabricality.CABF_MID_PURPLE,
-				Cabricality.CABF_MID_PURPLE, Cabricality.CABF_PURPLE
+				Cabricality.Colors.CABF_PURPLE, Cabricality.Colors.CABF_MID_PURPLE,
+				Cabricality.Colors.CABF_MID_PURPLE, Cabricality.Colors.CABF_PURPLE
 		);
 
 		new Equator.Drawer(matrixStack).rectShadow(

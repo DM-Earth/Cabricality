@@ -42,14 +42,14 @@ public abstract class ChapterPanelMixin {
 		PushUtil.ANIMATE_CHAPTER_PANEL.or((!this.expanded && !this.isPinned()), () -> timer = timer.reset());
 		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
 
-		new TintedRect(new Rect(x, y, w, h), Cabricality.CABF_BLACK.withOpacity(0.73 * lerp)).draw(matrixStack);
+		new TintedRect(new Rect(x, y, w, h), Cabricality.Colors.CABF_BLACK.withOpacity(0.73 * lerp)).draw(matrixStack);
 		new Equator.Drawer(matrixStack).horizontalGradiant(
 				new TintedRect(
 						new Rect(x, y, w, h),
-						Cabricality.CABF_PURPLE.withOpacity(0.2 * lerp),
-						Cabricality.CABF_MID_PURPLE.transparent(),
-						Cabricality.CABF_MID_PURPLE.transparent(),
-						Cabricality.CABF_PURPLE.withOpacity(0.2 * lerp)
+						Cabricality.Colors.CABF_PURPLE.withOpacity(0.2 * lerp),
+						Cabricality.Colors.CABF_MID_PURPLE.transparent(),
+						Cabricality.Colors.CABF_MID_PURPLE.transparent(),
+						Cabricality.Colors.CABF_PURPLE.withOpacity(0.2 * lerp)
 				), 0.45 * Math.pow(timer.queueAsPercentage(), 1 / 3.0)
 		);
 	}

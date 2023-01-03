@@ -16,7 +16,7 @@ public class TradeTags {
 			for (TradingEntry entry : professionEntry.get().entries())
 				tradeCardTags.add(Cabricality.id("trade_card_" + entry.hashString()));
 		}
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.TRADE_CARDS.id().getPath()), tradeCardTags);
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.PROFESSION_CARDS.id().getPath()), professionCardTags);
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.TRADE_CARDS.id().getPath()), tradeCardTags);
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items/" + CabfItemTags.PROFESSION_CARDS.id().getPath()), professionCardTags);
 	}
 }

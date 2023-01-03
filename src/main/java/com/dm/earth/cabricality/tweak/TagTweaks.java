@@ -19,7 +19,7 @@ public class TagTweaks {
             if (entry.isStrippedLogExist()) strippedLogs.add(entry.getStrippedLogId());
             if (entry.isStrippedWoodExist()) strippedWoods.add(entry.getStrippedWoodId());
         }
-        Cabricality.SERVER_RESOURCES.addTag(new Identifier(AllItemTags.MODDED_STRIPPED_LOGS.tag.id().getNamespace(), "items/" + AllItemTags.MODDED_STRIPPED_LOGS.tag.id().getPath()), strippedLogs);
-        Cabricality.SERVER_RESOURCES.addTag(new Identifier(AllItemTags.MODDED_STRIPPED_WOOD.tag.id().getNamespace(), "items/" + AllItemTags.MODDED_STRIPPED_WOOD.tag.id().getPath()), strippedWoods);
+        Cabricality.RRPs.SERVER_RESOURCES.addTag(new Identifier(AllItemTags.MODDED_STRIPPED_LOGS.tag.id().getNamespace(), "items/" + AllItemTags.MODDED_STRIPPED_LOGS.tag.id().getPath()), strippedLogs);
+        Cabricality.RRPs.SERVER_RESOURCES.addTag(new Identifier(AllItemTags.MODDED_STRIPPED_WOOD.tag.id().getNamespace(), "items/" + AllItemTags.MODDED_STRIPPED_WOOD.tag.id().getPath()), strippedWoods);
     }
 }

@@ -69,10 +69,10 @@ public class CabfBlocks {
 			pickaxeMineableTag.add(entry.getId());
 		});
 
-		Cabricality.SERVER_RESOURCES
+		Cabricality.RRPs.SERVER_RESOURCES
 				.addTag(new Identifier(AllBlockTags.WRENCH_PICKUP.tag.id().getNamespace(),
 						"blocks/" + AllBlockTags.WRENCH_PICKUP.tag.id().getPath()), wrenchAbleTag);
-		Cabricality.SERVER_RESOURCES
+		Cabricality.RRPs.SERVER_RESOURCES
 				.addTag(new Identifier(BlockTags.PICKAXE_MINEABLE.id().getNamespace(),
 						"blocks/" + BlockTags.PICKAXE_MINEABLE.id().getPath()), pickaxeMineableTag);
 	}
@@ -93,13 +93,13 @@ public class CabfBlocks {
 
 		if (block instanceof ResourcedBlock resourced) {
 			if (resourced.doModel())
-				resourced.writeBlockModel(Cabricality.CLIENT_RESOURCES);
+				resourced.writeBlockModel(Cabricality.RRPs.CLIENT_RESOURCES);
 			if (resourced.doLootTable())
-				resourced.writeLootTable(Cabricality.SERVER_RESOURCES);
+				resourced.writeLootTable(Cabricality.RRPs.SERVER_RESOURCES);
 			if (resourced.doBlockStates())
-				resourced.writeBlockStates(Cabricality.CLIENT_RESOURCES);
+				resourced.writeBlockStates(Cabricality.RRPs.CLIENT_RESOURCES);
 			if (resourced.doItemModel())
-				resourced.writeItemModel(Cabricality.CLIENT_RESOURCES);
+				resourced.writeItemModel(Cabricality.RRPs.CLIENT_RESOURCES);
 		}
 
 		return registered;
