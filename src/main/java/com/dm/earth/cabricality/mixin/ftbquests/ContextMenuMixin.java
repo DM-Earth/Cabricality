@@ -38,7 +38,7 @@ public class ContextMenuMixin {
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
 		new TintedRect(
 				new Rect(x, y, w, h).expand(2.7 * Math.pow(1 - timer.queueAsPercentage(), 1 / 2.0)),
-				Cabricality.CABF_BRIGHT_PURPLE.withOpacity(0.6 * Math.pow(timer.queueAsPercentage(), 2))
+				Cabricality.Colors.CABF_BRIGHT_PURPLE.withOpacity(0.6 * Math.pow(timer.queueAsPercentage(), 2))
 		).draw(matrixStack);
 	}
 }

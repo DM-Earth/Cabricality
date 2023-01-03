@@ -27,7 +27,7 @@ public interface IFluid {
 		if (this.getTypical() != this || !this.hasBucketItem()) return;
 		Identifier bucketId = Cabricality.id(this.getName() + "_bucket");
 		Registry.register(registry, bucketId, new BucketItem((Fluid) this, CabfItems.Properties.DEFAULT_SINGLE));
-		Cabricality.CLIENT_RESOURCES.addModel(ItemModelGenerator.generated("item/bucket", bucketId.getPath()), Cabricality.id("item/" + bucketId.getPath()));
+		Cabricality.RRPs.CLIENT_RESOURCES.addModel(ItemModelGenerator.generated("item/bucket", bucketId.getPath()), Cabricality.id("item/" + bucketId.getPath()));
 	}
 
 	default String getTextureName() {

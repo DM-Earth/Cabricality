@@ -44,7 +44,7 @@ public class QuestScreenMixin {
 	private void drawLeftSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
 		new TintedRect(
 				new Rect(x - 1, y - 1, w + 2, h + 2),
-				Cabricality.CABF_BLACK.withOpacity(0.127)
+				Cabricality.Colors.CABF_BLACK.withOpacity(0.127)
 		).draw(matrixStack);
 	}
 
@@ -69,7 +69,7 @@ public class QuestScreenMixin {
 	private void drawRightSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
 		new TintedRect(
 				new Rect(x - 1, y - 1, w + 2, h + 2),
-				Cabricality.CABF_BLACK.withOpacity(0.127)
+				Cabricality.Colors.CABF_BLACK.withOpacity(0.127)
 		).draw(matrixStack);
 	}
 }

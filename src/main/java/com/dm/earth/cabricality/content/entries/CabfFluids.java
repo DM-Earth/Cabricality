@@ -82,12 +82,12 @@ public class CabfFluids {
 		registerFluid(iFluid.getId(), ((IFluid) iFluid.getTypical()).getId(), fluid);
 		iFluid.registerBucketItem(Registry.ITEM);
 		if (fluid.isStill(null)) {
-			Cabricality.CLIENT_RESOURCES.addBlockState(
+			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
 					FluidBlockStatesGenerator.simple(iFluid.getName()), iFluid.getId());
-			Cabricality.CLIENT_RESOURCES.addBlockState(
+			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
 					FluidBlockStatesGenerator.simple(iFluid.getName()),
 					Cabricality.id(iFluid.getName() + "_flowing"));
-			Cabricality.CLIENT_RESOURCES.addModel(
+			Cabricality.RRPs.CLIENT_RESOURCES.addModel(
 					FluidModelGenerator.simple(iFluid.getTextureName() + "_still",
 							iFluid.getTextureName()),
 					Cabricality.id("block/fluid/" + iFluid.getName()));

@@ -125,7 +125,7 @@ public class CabfCreditsScreen extends Screen {
 		matrixStack.push();
 		matrixStack.translate(0.0, -this.time, 0.0);
 
-		RenderSystem.setShaderTexture(0, Cabricality.CABRICALITY_TITLE_TEXTURE);
+		RenderSystem.setShaderTexture(0, Cabricality.Textures.CABRICALITY_TITLE_TEXTURE);
 		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 		RenderSystem.enableBlend();
 
@@ -135,7 +135,7 @@ public class CabfCreditsScreen extends Screen {
 		});
 
 		RenderSystem.disableBlend();
-		RenderSystem.setShaderTexture(0, Cabricality.MINECRAFT_SUBTITLE_TEXTURE);
+		RenderSystem.setShaderTexture(0, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE);
 
 		drawTexture(matrixStack, width + 88, height + 37, 0.0F, 0.0F, 98, 14, 128, 16);
 

@@ -73,10 +73,10 @@ public class CabfItems {
 			registerItemModeled("dye_entangled_singularity", new Item(Properties.DEFAULT),
 					ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
-			new GlintedItem(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
+			new GlintedItem(new QuiltItemSettings().maxDamage(512).group(Cabricality.ItemGroups.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "chromatic_resonator"));
 	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
-			new Item(new QuiltItemSettings().maxDamage(512).group(Cabricality.MAIN_GROUP)),
+			new Item(new QuiltItemSettings().maxDamage(512).group(Cabricality.ItemGroups.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "boot_medium"));
 	public static final Item CIRCUIT_SCRAP = registerItemModeled("circuit_scrap",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "circuit_scrap"));
@@ -141,9 +141,9 @@ public class CabfItems {
 									.toString()));
 		});
 
-		Cabricality.SERVER_RESOURCES.addTag(C.id("items", "silver_coins"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(C.id("items", "silver_coins"),
 				new JTag().add(Cabricality.id("silver_coin")));
-		Cabricality.SERVER_RESOURCES.addTag(C.id("items", "gold_coins"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(C.id("items", "gold_coins"),
 				new JTag().add(Cabricality.id("gold_coin")));
 
 		// Mechanisms
@@ -165,7 +165,7 @@ public class CabfItems {
 			sawsTag.add(Cabricality.id(itemId));
 		});
 
-		Cabricality.SERVER_RESOURCES.addTag(C.id("items", CabfItemTags.SAWS.id().getPath()),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(C.id("items", CabfItemTags.SAWS.id().getPath()),
 				sawsTag);
 
 		// Dusts
@@ -175,15 +175,15 @@ public class CabfItems {
 			registerItemModeled(itemId, new Item(Properties.DEFAULT),
 					ItemModelGenerator.generated("item", "dust", itemId));
 			tagT.add(Cabricality.id(itemId));
-			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", variant + "_dusts"), tagT);
-			Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "dusts", variant), tagT);
+			Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", variant + "_dusts"), tagT);
+			Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "dusts", variant), tagT);
 		});
 
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"),
 				new JTag().addItem(ENDERIUM_INGOT));
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"),
 				new JTag().addItem(INVAR_INGOT));
-		Cabricality.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"),
 				new JTag().addItem(NICKEL_INGOT));
 
 		// Crushed Ores
@@ -195,7 +195,7 @@ public class CabfItems {
 			crushedOresTag.add(Cabricality.id(itemId));
 		});
 
-		Cabricality.SERVER_RESOURCES.addTag(
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(
 				new Identifier("create", "items/" + AllItemTags.CRUSHED_ORES.tag.id().getPath()),
 				crushedOresTag);
 
@@ -227,7 +227,7 @@ public class CabfItems {
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
-		Cabricality.CLIENT_RESOURCES.addModel(model, Cabricality.id("item", name));
+		Cabricality.RRPs.CLIENT_RESOURCES.addModel(model, Cabricality.id("item", name));
 		return registerItem(name, item);
 	}
 
@@ -237,11 +237,11 @@ public class CabfItems {
 
 	public static final class Properties {
 		public static final Item.Settings DEFAULT =
-				new QuiltItemSettings().group(Cabricality.MAIN_GROUP);
+				new QuiltItemSettings().group(Cabricality.ItemGroups.MAIN_GROUP);
 		public static final Item.Settings DEFAULT_SINGLE = DEFAULT.maxCount(1);
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
 		public static final Item.Settings JAR =
-				new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP).maxCount(16);
+				new QuiltItemSettings().group(Cabricality.ItemGroups.SUBSTRATES_GROUP).maxCount(16);
 		public static final Item.Settings DEFAULT_QUARTER = DEFAULT.maxCount(16);
 	}
 }

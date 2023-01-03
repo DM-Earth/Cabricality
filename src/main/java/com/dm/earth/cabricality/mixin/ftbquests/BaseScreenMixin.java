@@ -24,7 +24,7 @@ public class BaseScreenMixin {
 		PushUtil.ANIMATE_BASE_SCREEN.run(() -> PushUtil.ANIMATE_CHAPTER_PANEL.push(() -> timer = timer.reset()));
 		new TintedRect(
 				new Rect(x, y, w, h),
-				Cabricality.CABF_GRAY_PURPLE.withOpacity(0.85 * Math.pow(timer.queueAsPercentage(), 1 / 3.0))
+				Cabricality.Colors.CABF_GRAY_PURPLE.withOpacity(0.85 * Math.pow(timer.queueAsPercentage(), 1 / 3.0))
 		).draw(matrixStack);
 	}
 }
