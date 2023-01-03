@@ -14,6 +14,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
+import com.dm.earth.cabricality.content.skyblock.Skyblock;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfBlockEntityTypes;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
