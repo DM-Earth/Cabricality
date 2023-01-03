@@ -30,6 +30,7 @@ repositories {
 		content {
 			includeGroup("com.github.Chocohead")
             includeGroup("com.github.LlamaLad7")
+            includeGroup("com.github.KrLite")
 		}
 	}
 
@@ -71,11 +72,15 @@ dependencies {
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
 
-	modImplementation include("maven.modrinth:deferred-registries:${project.deferred_registries_version}")
 	modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
     modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
+    implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
 
-	modImplementation "io.github.fabricators_of_create:Porting-Lib:1.2.575-beta+1.18.2-stable"
+	modImplementation "io.github.fabricators_of_create:Porting-Lib:${project.porting_lib_version}"
+
+    /* Equator */
+    modImplementation "maven.modrinth:equator:${project.equator_version}"
+    implementation "com.github.KrLite:Equator-Utils:${project.equator_utils_version}"
 }
 
 processResources {

@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "cabricality:eight_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "name": "cabricality:raw_logic",
+    "amount": 8
+  },
+  "result": "cabricality:number_8",
+  "cooling_time": 1
+}

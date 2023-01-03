@@ -2,7 +2,7 @@ package com.dm.earth.cabricality.mixin.client;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.mod.ModDeps;
+import com.dm.earth.cabricality.util.mod.CabfModDeps;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -32,13 +32,13 @@ public class TitleScreenMixin extends Screen {
 	// Redirects the title screen to the missing mod screen if mods are missing
 	@Inject(method = "init", at = @At("TAIL"))
 	private void init(CallbackInfo ci) {
-		if (!ModDeps.isAllLoaded()) {
+		if (!CabfModDeps.isAllLoaded()) {
 			Text warning = (
-					ModDeps.getAllMissing().size() == 1
+					CabfModDeps.getAllMissing().size() == 1
 							? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
 							: new TranslatableText(
 									Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mod_plural"),
-									ModDeps.getAllMissing().size())
+									CabfModDeps.getAllMissing().size())
 							)
 					.formatted(Formatting.RED);
 			this.addDrawableChild(
@@ -47,7 +47,7 @@ public class TitleScreenMixin extends Screen {
 							this.textRenderer.getWidth(warning), 10, warning,
 							buttonWidget -> {
 								if (this.client != null)
-									this.client.setScreen(new MissingModScreen(ModDeps.getAllMissing(), this.client.currentScreen));
+									this.client.setScreen(new MissingModScreen(CabfModDeps.getAllMissing(), this.client.currentScreen));
 							}, this.textRenderer
 					)
 			);
@@ -64,7 +64,7 @@ public class TitleScreenMixin extends Screen {
 			)
 	)
 	private void renderCabricalityTitle(int layer, Identifier identifier) {
-		RenderSystem.setShaderTexture(layer, Cabricality.CABRICALITY_TITLE_TEXTURE);
+		RenderSystem.setShaderTexture(layer, Cabricality.Textures.CABRICALITY_TITLE_TEXTURE);
 	}
 
 	// Set subtitle to Minecraft
@@ -77,6 +77,6 @@ public class TitleScreenMixin extends Screen {
 			)
 	)
 	private void renderMinecraftSubtitle(int layer, Identifier identifier) {
-		RenderSystem.setShaderTexture(layer, Cabricality.MINECRAFT_SUBTITLE_TEXTURE);
+		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE);
 	}
 }

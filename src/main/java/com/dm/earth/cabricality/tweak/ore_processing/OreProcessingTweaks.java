@@ -14,7 +14,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.math.util.RecipeBuilderUtil;
+import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.fan.SplashingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;

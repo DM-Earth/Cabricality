@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.math.util;
+package com.dm.earth.cabricality.math;
 
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;

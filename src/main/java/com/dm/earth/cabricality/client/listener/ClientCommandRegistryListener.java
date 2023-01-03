@@ -1,7 +1,6 @@
 package com.dm.earth.cabricality.client.listener;
 
 import static org.quiltmc.qsl.command.api.client.ClientCommandManager.literal;
-
 import org.quiltmc.qsl.command.api.client.ClientCommandRegistrationCallback;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 import com.dm.earth.cabricality.client.command.HeldItemInfoCommand;

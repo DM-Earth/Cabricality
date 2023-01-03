@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "cabricality:minus_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "name": "cabricality:raw_logic",
+    "amount": 1
+  },
+  "result": "cabricality:minus",
+  "cooling_time": 1
+}

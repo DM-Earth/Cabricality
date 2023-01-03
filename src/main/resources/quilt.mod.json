@@ -19,7 +19,7 @@
       "contact": {
         "source": "https://github.com/DM-Earth/Cabricality"
       },
-      "license": "AGPL-3.0"
+      "license": "GPL-3.0"
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
@@ -49,6 +49,10 @@
       {
         "id": "quilted_fabric_api",
         "versions": ">=1.0.0-"
+      },
+      {
+        "id": "equator",
+        "versions": "*"
       }
     ]
   },
