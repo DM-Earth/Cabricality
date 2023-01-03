@@ -239,10 +239,10 @@ public class CabfItems {
 	}
 
 	public static final class Properties {
-		public static final Item.Settings DEFAULT = new QuiltItemSettings().group(Cabricality.MAIN_GROUP);
+		public static final Item.Settings DEFAULT = new QuiltItemSettings().group(Cabricality.ItemGroups.MAIN_GROUP);
 		public static final Item.Settings DEFAULT_SINGLE = DEFAULT.maxCount(1);
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
-		public static final Item.Settings JAR = new QuiltItemSettings().group(Cabricality.SUBSTRATES_GROUP)
+		public static final Item.Settings JAR = new QuiltItemSettings().group(Cabricality.ItemGroups.SUBSTRATES_GROUP)
 				.maxCount(16);
 		public static final Item.Settings DEFAULT_QUARTER = DEFAULT.maxCount(16);
 	}
