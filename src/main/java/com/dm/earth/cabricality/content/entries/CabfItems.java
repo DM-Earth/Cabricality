@@ -101,8 +101,8 @@ public class CabfItems {
 			ItemModelGenerator.generated("item", "math/nan"));
 	public static final Item COMPUTATION_MATRIX = registerItem("computation_matrix",
 			new GlintedItem(Properties.DEFAULT));
-	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics",
-			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "matter_plastics"));
+	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item", "matter_plastics"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
