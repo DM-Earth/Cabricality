@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".editorconfig"
-hash = "01ab41f0e32d559e2fb8868026a8607f9da86c71564d64fc26437fa17ddeefb2"
+hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = ".settings/org.eclipse.buildship.core.prefs"
@@ -225,11 +225,6 @@ hash = "66aa4f271d3c852806c5158f199c507ae4895fcbe5f075278b16bae7b160714b"
 metafile = true
 
 [[files]]
-file = "mods/chat-heads.pw.toml"
-hash = "fbdaf57021062d11aeb12a094abba257a13da22e2a8ed4b1cd9ab3bc85274ae7"
-metafile = true
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "8f07b2408013a7217caacec87c977635fdf94eb21a10bf281f2bba67ff7c4dc1"
 metafile = true
@@ -247,11 +242,6 @@ metafile = true
 [[files]]
 file = "mods/coxinha-utilities.pw.toml"
 hash = "289cf2fb15222b03ed588377b920dcb8dbd8d242b3ea8b76c7e3950925b88d56"
-metafile = true
-
-[[files]]
-file = "mods/create-crystal-clear-fabric.pw.toml"
-hash = "6e34e6b12a4140c3a673fcfeef6fbd5dfeb65eb5019d5ef42b89ffc58197fec5"
 metafile = true
 
 [[files]]
@@ -287,11 +277,6 @@ metafile = true
 [[files]]
 file = "mods/extended-drawers.pw.toml"
 hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
-metafile = true
-
-[[files]]
-file = "mods/fabric-api.pw.toml"
-hash = "145dbcbac757622ec415041cdcabf07654981f84d5044c8fc16f6aa88a03ccb3"
 metafile = true
 
 [[files]]
@@ -331,7 +316,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
-hash = "b06e230460e29041e981794292bf002fa03c5572558e8c8f454d05df5a369db5"
+hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
 metafile = true
 
 [[files]]
@@ -385,11 +370,6 @@ hash = "58168b0555e2ff4977a482707eb58fe2c38fd10322ba7a27b00b2866e19a481e"
 metafile = true
 
 [[files]]
-file = "mods/minecraft024.pw.toml"
-hash = "8249b0b96ee6b4e165ae0b7f63280fb7529f7ef518a47a22579ab074bbb8c946"
-metafile = true
-
-[[files]]
 file = "mods/modmenu.pw.toml"
 hash = "ec64297b6b7f82ede5ecc46a82e8a0e8dc8b730ee2ad763427b7043389b7a072"
 metafile = true
@@ -430,18 +410,13 @@ hash = "57a8bedb0057a988cc3a02ed62ef5dcc3331d65df1e7cbebac3789e92858bea0"
 metafile = true
 
 [[files]]
-file = "mods/roughly-enough-characters.pw.toml"
-hash = "86c4ef056d5d2a56d0f69cd988b656a1201651845e40a7027726fec7c9f090b6"
-metafile = true
-
-[[files]]
 file = "mods/roughly-enough-items.pw.toml"
 hash = "d3cbfc74109c4ff70f7d61d559c7fee5d675762b9265174aaca5625b1629ec9c"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "eb43d1152713f0a0c568bb566d451a276e92cb86ec97918468ad0a62cb416658"
+hash = "ee3aa9ab24522ccb8cbfcc4ceacab517416594c9ee93e68f82a00b56792e1c3e"
 metafile = true
 
 [[files]]

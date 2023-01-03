@@ -173,7 +173,7 @@
   "block.cabricality.zinc_casing"    : "鋅機殼",
   "block.cabricality.enderium_casing": "諧振終界機殼",
 
-  "block.cabricality.computation_matrix": "智慧矩陣",
+  "item.cabricality.computation_matrix": "智慧矩陣",
 
   "block.cabricality.jar": "空瓶",
   "block.cabricality.reagent_jar": "試劑",

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "name": "cabricality:matrix",
+    "amount": 81000
+  },
+  "result": "cabricality:computation_matrix",
+  "cooling_time": 20
+}

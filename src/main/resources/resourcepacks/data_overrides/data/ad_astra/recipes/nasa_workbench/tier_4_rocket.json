@@ -1,0 +1,41 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "   R   ",
+    "  SBS  ",
+    "  SBS  ",
+    "  BCB  ",
+    "  SBS  ",
+    " SFBSF ",
+    "FTBTBTF",
+    "FEEEEEF"
+  ],
+  "key": {
+    "R": {
+      "item": "ad_astra:rocket_nose_cone"
+    },
+    "S": {
+      "item": "ad_astra:calorite_pillar"
+    },
+    "B": {
+      "item": "ad_astra:calorite_block"
+    },
+    "T": {
+      "item": "ad_astra:calorite_tank"
+    },
+    "E": {
+      "item": "ad_astra:calorite_engine"
+    },
+    "F": {
+      "item": "ad_astra:rocket_fin"
+    },
+    "C": {
+      "item": "indrev:controller"
+    }
+  },
+  "result": {
+    "item": "ad_astra:tier_4_rocket",
+    "count": 1
+  },
+  "acceptMirrored": true
+}

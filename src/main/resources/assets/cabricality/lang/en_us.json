@@ -173,7 +173,7 @@
   "block.cabricality.zinc_casing"    : "Zinc Casing",
   "block.cabricality.enderium_casing": "Enderium Casing",
 
-  "block.cabricality.computation_matrix": "Computation Matrix",
+  "item.cabricality.computation_matrix": "Computation Matrix",
 
   "block.cabricality.jar"         : "Jar",
   "block.cabricality.reagent_jar" : " Reagent",
