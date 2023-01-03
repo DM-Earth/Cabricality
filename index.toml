@@ -225,11 +225,6 @@ hash = "66aa4f271d3c852806c5158f199c507ae4895fcbe5f075278b16bae7b160714b"
 metafile = true
 
 [[files]]
-file = "mods/chat-heads.pw.toml"
-hash = "fbdaf57021062d11aeb12a094abba257a13da22e2a8ed4b1cd9ab3bc85274ae7"
-metafile = true
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "8f07b2408013a7217caacec87c977635fdf94eb21a10bf281f2bba67ff7c4dc1"
 metafile = true
@@ -247,11 +242,6 @@ metafile = true
 [[files]]
 file = "mods/coxinha-utilities.pw.toml"
 hash = "289cf2fb15222b03ed588377b920dcb8dbd8d242b3ea8b76c7e3950925b88d56"
-metafile = true
-
-[[files]]
-file = "mods/create-crystal-clear-fabric.pw.toml"
-hash = "6e34e6b12a4140c3a673fcfeef6fbd5dfeb65eb5019d5ef42b89ffc58197fec5"
 metafile = true
 
 [[files]]
@@ -377,11 +367,6 @@ metafile = true
 [[files]]
 file = "mods/malum-quilt.pw.toml"
 hash = "58168b0555e2ff4977a482707eb58fe2c38fd10322ba7a27b00b2866e19a481e"
-metafile = true
-
-[[files]]
-file = "mods/minecraft024.pw.toml"
-hash = "8249b0b96ee6b4e165ae0b7f63280fb7529f7ef518a47a22579ab074bbb8c946"
 metafile = true
 
 [[files]]
