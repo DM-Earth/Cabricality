@@ -1,6 +1,6 @@
 plugins {
-	id 'maven-publish'
-	alias(libs.plugins.quilt.loom)
+    id 'maven-publish'
+    alias(libs.plugins.quilt.loom)
 }
 
 archivesBaseName = project.archives_base_name
@@ -9,38 +9,39 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "Modrinth"
-        url = "https://api.modrinth.com/maven"
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
         content {
-            includeGroup "maven.modrinth"
+            includeGroup 'maven.modrinth'
         }
     }
 
-	maven {
-		url = "https://mvn.devos.one/snapshots/"
-		content {
-            includeGroup "io.github.fabricators_of_create"
-			includeGroup "me.alphamode"
-			includeGroup "io.github.tropheusj"
+    maven {
+        url = 'https://mvn.devos.one/snapshots/'
+        content {
+            includeGroup 'io.github.fabricators_of_create'
+            includeGroup 'me.alphamode'
+            includeGroup 'io.github.tropheusj'
         }
-	}
+    }
 
-	maven {
-		url = "https://jitpack.io"
-		content {
-			includeGroup("com.github.Chocohead")
-            includeGroup("com.github.LlamaLad7")
-            includeGroup("com.github.KrLite")
-		}
-	}
+    maven {
+        url = 'https://jitpack.io'
+        content {
+            includeGroup('com.github.Chocohead')
+            includeGroup('com.github.LlamaLad7')
+            includeGroup('com.github.KrLite')
+            includeGroup('com.github.DM-Earth')
+        }
+    }
 
-	maven {
-        name = "Curseforge"
-		url "https://cursemaven.com"
-		content {
-			includeGroup "curse.maven"
-		}
-	}
+    maven {
+        name = 'Curseforge'
+        url 'https://cursemaven.com'
+        content {
+            includeGroup 'curse.maven'
+        }
+    }
 
     maven {
         name = 'Ladysnake Mods'
@@ -54,72 +55,72 @@ repositories {
 
 dependencies {
     minecraft libs.minecraft
-	mappings variantOf(libs.quilt.mappings) { classifier 'intermediary-v2' }
-	modImplementation libs.quilt.loader
+    mappings variantOf(libs.quilt.mappings) { classifier 'intermediary-v2' }
+    modImplementation libs.quilt.loader
 
-	modImplementation libs.quilted.fabric.api
+    modImplementation libs.quilted.fabric.api
 
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
     modImplementation "maven.modrinth:create-fabric:${project.create_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
     modImplementation "maven.modrinth:bits-and-chisels:${project.bits_and_chisels_version}"
-	modImplementation "maven.modrinth:farmers-delight-fabric:${project.farmers_delight_version}"
-	modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
-	modImplementation "maven.modrinth:led:${project.led_version}"
-	modImplementation "maven.modrinth:interference:${project.interference_version}"
+    modImplementation "maven.modrinth:farmers-delight-fabric:${project.farmers_delight_version}"
+    modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
+    modImplementation "maven.modrinth:led:${project.led_version}"
+    modImplementation "maven.modrinth:interference:${project.interference_version}"
 
-	modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
+    modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
 
-	modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
+    modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
     modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
+    modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
 
-	modImplementation "io.github.fabricators_of_create:Porting-Lib:${project.porting_lib_version}"
+    modImplementation "io.github.fabricators_of_create:Porting-Lib:${project.porting_lib_version}"
 
-    /* Equator */
     modImplementation "maven.modrinth:equator:${project.equator_version}"
     implementation "com.github.KrLite:Equator-Utils:${project.equator_utils_version}"
 }
 
 processResources {
-	inputs.property "version", version
+    inputs.property 'version', version
 
-	filesMatching('quilt.mod.json') {
-		expand "version": version
-	}
+    filesMatching('quilt.mod.json') {
+        expand 'version': version
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.encoding = "UTF-8"
-	it.options.release = 17
+    it.options.encoding = 'UTF-8'
+    it.options.release = 17
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 
-	withSourcesJar()
+    withSourcesJar()
 }
 
 jar {
-	from("LICENSE") {
-		rename { "${it}_${archivesBaseName}" }
-	}
+    from('LICENSE') {
+        rename { "${it}_${archivesBaseName}" }
+    }
 }
 
 publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
-		}
-	}
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 
-	repositories {
-	}
+    repositories {
+    }
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/cabricality.accesswidener")
+    accessWidenerPath = file('src/main/resources/cabricality.accesswidener')
 }

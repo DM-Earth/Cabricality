@@ -1,8 +1,5 @@
 package com.dm.earth.cabricality;
 
-import java.util.Arrays;
-
-import net.krlite.equator.util.IdentifierBuilder;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -13,6 +10,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfBlockEntityTypes;
@@ -29,9 +27,11 @@ import com.dm.earth.cabricality.util.ScreenUtil;
 import com.dm.earth.cabricality.util.debug.CabfLogger;
 import com.dm.earth.cabricality.util.func.CabfBlur;
 import com.dm.earth.cabricality.util.mod.CabfModConflict;
+
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.krlite.equator.color.PreciseColor;
+import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -52,10 +52,8 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final Identifier CABRICALITY_TITLE_TEXTURE =
-				id("textures", "gui", "title", "cabricality.png");
-		public static final Identifier MINECRAFT_SUBTITLE_TEXTURE =
-				id("textures", "gui", "title", "minecraft.png");
+		public static final Identifier CABRICALITY_TITLE_TEXTURE = id("textures", "gui", "title", "cabricality.png");
+		public static final Identifier MINECRAFT_SUBTITLE_TEXTURE = id("textures", "gui", "title", "minecraft.png");
 	}
 
 	public static class Sounds {
@@ -65,16 +63,13 @@ public class Cabricality implements ModInitializer {
 	public static class ItemGroups {
 		public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
 				() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
-		public static ItemGroup SUBSTRATES_GROUP =
-				QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
-						() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+		public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
+				() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 	}
 
 	public static class RRPs {
-		public static final RuntimeResourcePack CLIENT_RESOURCES =
-				RuntimeResourcePack.create(id("client_resources"));
-		public static final RuntimeResourcePack SERVER_RESOURCES =
-				RuntimeResourcePack.create(id("server_resources"));
+		public static final RuntimeResourcePack CLIENT_RESOURCES = RuntimeResourcePack.create(id("client_resources"));
+		public static final RuntimeResourcePack SERVER_RESOURCES = RuntimeResourcePack.create(id("server_resources"));
 	}
 
 	public static final String NAME = "Cabricality";
@@ -94,7 +89,7 @@ public class Cabricality implements ModInitializer {
 
 	@Contract("_,_ -> new")
 	public static @NotNull TranslatableText genTranslatableText(String type, String... path) {
-		return ID_BUILDER.localization(type, path);
+		return (@NotNull TranslatableText) ID_BUILDER.localization(type, path);
 	}
 
 	@Override

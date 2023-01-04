@@ -1,10 +1,13 @@
 package com.dm.earth.cabricality.content.entries;
 
 import static com.dm.earth.cabricality.ModEntry.C;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.core.items.FlippableItem;
@@ -22,6 +25,7 @@ import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
 import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
 import com.simibubi.create.AllTags.AllItemTags;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
+
 import net.devtech.arrp.json.models.JModel;
 import net.devtech.arrp.json.tags.JTag;
 import net.minecraft.item.Item;
