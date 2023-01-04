@@ -72,7 +72,8 @@ public class CabfItems {
 			new Item(Properties.DEFAULT),
 			ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
-			new GlintedItem(new QuiltItemSettings().maxDamage(512).group(Cabricality.ItemGroups.MAIN_GROUP)),
+			new GlintedItem(new QuiltItemSettings().maxDamage(512)
+					.group(Cabricality.ItemGroups.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "chromatic_resonator"));
 	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
 			new Item(new QuiltItemSettings().maxDamage(512).group(Cabricality.ItemGroups.MAIN_GROUP)),
@@ -101,8 +102,8 @@ public class CabfItems {
 			ItemModelGenerator.generated("item", "math/nan"));
 	public static final Item COMPUTATION_MATRIX = registerItem("computation_matrix",
 			new GlintedItem(Properties.DEFAULT));
-	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics",
-			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "matter_plastics"));
+	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics", new Item(Properties.DEFAULT),
+			ItemModelGenerator.generated("item", "matter_plastics"));
 
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
@@ -182,11 +183,11 @@ public class CabfItems {
 			Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "dusts", variant), tagT);
 		});
 
-		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "enderium_ingots"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(C.id("items", "enderium_ingots"),
 				new JTag().addItem(ENDERIUM_INGOT));
-		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "invar_ingots"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(C.id("items", "invar_ingots"),
 				new JTag().addItem(INVAR_INGOT));
-		Cabricality.RRPs.SERVER_RESOURCES.addTag(Cabricality.id("items", "nickel_ingots"),
+		Cabricality.RRPs.SERVER_RESOURCES.addTag(C.id("items", "nickel_ingots"),
 				new JTag().addItem(NICKEL_INGOT));
 
 		// Crushed Ores
@@ -239,10 +240,12 @@ public class CabfItems {
 	}
 
 	public static final class Properties {
-		public static final Item.Settings DEFAULT = new QuiltItemSettings().group(Cabricality.ItemGroups.MAIN_GROUP);
+		public static final Item.Settings DEFAULT = new QuiltItemSettings()
+				.group(Cabricality.ItemGroups.MAIN_GROUP);
 		public static final Item.Settings DEFAULT_SINGLE = DEFAULT.maxCount(1);
 		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
-		public static final Item.Settings JAR = new QuiltItemSettings().group(Cabricality.ItemGroups.SUBSTRATES_GROUP)
+		public static final Item.Settings JAR = new QuiltItemSettings()
+				.group(Cabricality.ItemGroups.SUBSTRATES_GROUP)
 				.maxCount(16);
 		public static final Item.Settings DEFAULT_QUARTER = DEFAULT.maxCount(16);
 	}
