@@ -21,7 +21,7 @@ import com.dm.earth.cabricality.content.entries.CabfSounds;
 import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
-import com.dm.earth.cabricality.tweak.TagTweaks;
+import com.dm.earth.cabricality.tweak.ItemTagTweaks;
 import com.dm.earth.cabricality.util.PushUtil;
 import com.dm.earth.cabricality.util.ScreenUtil;
 import com.dm.earth.cabricality.util.debug.CabfLogger;
@@ -109,7 +109,7 @@ public class Cabricality implements ModInitializer {
 		ScreenUtil.registerEvents();
 		PushUtil.register();
 		CabfBlur.INSTANCE.init();
-		TagTweaks.load();
+		ItemTagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
 		UseEntityListener.load();
