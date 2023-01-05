@@ -201,7 +201,7 @@ metafile = true
 
 [[files]]
 file = "mods/bounced.pw.toml"
-hash = "f8ef9fcbdfcc82e596028c56f57863f7a4c1e1ee81e6ac04a4fbb257897bd65d"
+hash = "51b93384900a79dd30281a79478719733e86a9cab82fbb4281c2d1880f67b9ad"
 metafile = true
 
 [[files]]
@@ -236,7 +236,7 @@ metafile = true
 
 [[files]]
 file = "mods/conveniented-forge-tags.pw.toml"
-hash = "5f3bb35946391d5ee2ce7a9182a3605510d2774c7fbcd92ab49a07e4c436039c"
+hash = "0b9a0d9c612d052f45128dc4f37aaed1eafe714dae869899931a565a4a780944"
 metafile = true
 
 [[files]]
@@ -312,11 +312,6 @@ metafile = true
 [[files]]
 file = "mods/inspecio.pw.toml"
 hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
-metafile = true
-
-[[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "277253078831fc78a710a827b49a325edfdd3e699b2f50e0091ff1ecba231933"
 metafile = true
 
 [[files]]
