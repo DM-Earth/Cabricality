@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "indrev:lead_purified_ore"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_lead",
+    "amount": 45000
+  },
+  "processTime": 600
+}

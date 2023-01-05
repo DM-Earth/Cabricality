@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "indrev:gold_purified_ore"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_gold",
+    "amount": 45000
+  },
+  "processTime": 600
+}

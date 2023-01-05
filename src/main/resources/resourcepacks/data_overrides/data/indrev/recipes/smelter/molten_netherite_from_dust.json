@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "tag": "c:netherite_scrap_dusts"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_netherite",
+    "amount": 250
+  },
+  "processTime": 600
+}
