@@ -61,17 +61,6 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 		LoadTagsCallback.BLOCK.register(new CabfBlocks());
 	}
 
-	@Override
-	public void load(TagHandler<Block> handler) {
-		Arrays.stream(MachineBlockEntry.values())
-				.forEach(entry -> handler.register(AllBlockTags.WRENCH_PICKUP.tag, Registry.BLOCK.get(entry.getId())));
-		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> {
-			var block = Registry.BLOCK.get(entry.getId());
-			handler.register(AllBlockTags.WRENCH_PICKUP.tag, block);
-			handler.register(BlockTags.PICKAXE_MINEABLE, block);
-		});
-	}
-
 	public static FluidBlock registerFluidBlock(Identifier id, FlowableFluid fluid) {
 		return Registry.register(Registry.BLOCK, id,
 				new FluidBlock(fluid, QuiltBlockSettings.copy(Blocks.WATER)));
@@ -84,7 +73,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 				new BlockItem(block,
 						(block instanceof ISettableBlockItem settingable)
 								? settingable.getSettings()
-								: CabfItems.Properties.DEFAULT));
+								: CabfItems.Properties.DEFAULT.get()));
 
 		if (block instanceof ResourcedBlock resourced) {
 			if (resourced.doModel())
@@ -98,5 +87,16 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 		}
 
 		return registered;
+	}
+
+	@Override
+	public void load(TagHandler<Block> handler) {
+		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> handler
+				.register(AllBlockTags.WRENCH_PICKUP.tag, Registry.BLOCK.get(entry.getId())));
+		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> {
+			var block = Registry.BLOCK.get(entry.getId());
+			handler.register(AllBlockTags.WRENCH_PICKUP.tag, block);
+			handler.register(BlockTags.PICKAXE_MINEABLE, block);
+		});
 	}
 }

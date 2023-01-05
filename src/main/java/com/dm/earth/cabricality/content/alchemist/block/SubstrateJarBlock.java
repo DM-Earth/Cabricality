@@ -46,6 +46,6 @@ public abstract class SubstrateJarBlock extends JarBlock implements ISettableBlo
 
 	@Override
 	public Item.Settings getSettings() {
-		return CabfItems.Properties.JAR;
+		return CabfItems.Properties.JAR.get();
 	}
 }
