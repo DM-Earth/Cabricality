@@ -23,7 +23,8 @@ public class TradingEntry implements IHashStringable {
 		this.tint = tint;
 	}
 
-	public static TradingEntry of(Identifier item, int itemCount, CoinTypes coin, int coinCount, int tint) {
+	public static TradingEntry of(Identifier item, int itemCount, CoinTypes coin, int coinCount,
+			int tint) {
 		return new TradingEntry(item, itemCount, coin.getId(), coinCount, tint);
 	}
 
@@ -78,6 +79,10 @@ public class TradingEntry implements IHashStringable {
 
 		public Identifier getId() {
 			return coin;
+		}
+
+		public String getName() {
+			return coin.getPath().replaceAll("_coin", "");
 		}
 	}
 
