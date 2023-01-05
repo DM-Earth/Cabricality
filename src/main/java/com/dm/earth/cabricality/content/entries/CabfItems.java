@@ -32,6 +32,16 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
+	public static final class Properties {
+		public static final Item.Settings DEFAULT =
+				new QuiltItemSettings().group(Cabricality.ItemGroups.MAIN_GROUP);
+		public static final Item.Settings DEFAULT_SINGLE = DEFAULT.maxCount(1);
+		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
+		public static final Item.Settings JAR =
+				new QuiltItemSettings().group(Cabricality.ItemGroups.SUBSTRATES_GROUP).maxCount(16);
+		public static final Item.Settings DEFAULT_QUARTER = DEFAULT.maxCount(16);
+	}
+
 	public static final Item SAW_BLADE = registerItemModeled("saw_blade",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "saw_blade"));
 	public static final Item BASALZ_SHARD = registerItemModeled("basalz_shard",
@@ -109,9 +119,9 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			ItemModelGenerator.generated("item", "math/nan"));
 	public static final Item COMPUTATION_MATRIX =
 			registerItem("computation_matrix", new GlintedItem(Properties.DEFAULT));
+
 	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics",
 			new Item(Properties.DEFAULT), ItemModelGenerator.generated("item", "matter_plastics"));
-
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS =
 			List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
@@ -119,6 +129,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	public static final Map<String, String> OPERATORS =
 			Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
 	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+
 	public static final List<String> MATH_CASTS =
 			List.of("plus", "minus", "multiply", "divide", "three", "eight");
 
@@ -213,6 +224,15 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		ResourceConditionCheckTagCallback.ITEM.register(instance);
 	}
 
+	private static Item registerItemModeled(String name, Item item, JModel model) {
+		Cabricality.RRPs.CLIENT_RESOURCES.addModel(model, Cabricality.id("item", name));
+		return registerItem(name, item);
+	}
+
+	private static Item registerItem(String name, Item item) {
+		return Registry.register(Registry.ITEM, Cabricality.id(name), item);
+	}
+
 	@Override
 	public ActionResult apply(TagKey<Item> key) {
 		Identifier id = key.id();
@@ -248,24 +268,5 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		handler.register(C.id("enderium_ingots"), ENDERIUM_INGOT);
 		handler.register(C.id("invar_ingots"), INVAR_INGOT);
 		handler.register(C.id("nickel_ingots"), NICKEL_INGOT);
-	}
-
-	private static Item registerItemModeled(String name, Item item, JModel model) {
-		Cabricality.RRPs.CLIENT_RESOURCES.addModel(model, Cabricality.id("item", name));
-		return registerItem(name, item);
-	}
-
-	private static Item registerItem(String name, Item item) {
-		return Registry.register(Registry.ITEM, Cabricality.id(name), item);
-	}
-
-	public static final class Properties {
-		public static final Item.Settings DEFAULT =
-				new QuiltItemSettings().group(Cabricality.ItemGroups.MAIN_GROUP);
-		public static final Item.Settings DEFAULT_SINGLE = DEFAULT.maxCount(1);
-		public static final Item.Settings CARD = new QuiltItemSettings().maxCount(1);
-		public static final Item.Settings JAR =
-				new QuiltItemSettings().group(Cabricality.ItemGroups.SUBSTRATES_GROUP).maxCount(16);
-		public static final Item.Settings DEFAULT_QUARTER = DEFAULT.maxCount(16);
 	}
 }
