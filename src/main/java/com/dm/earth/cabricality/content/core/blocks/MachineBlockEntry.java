@@ -1,9 +1,8 @@
 package com.dm.earth.cabricality.content.core.blocks;
 
-import com.dm.earth.cabricality.Cabricality;
-
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.blocks.machine.AbstractMachineBlock;
 import com.dm.earth.cabricality.content.core.blocks.machine.ComplexMachineBlock;
 import com.dm.earth.cabricality.content.core.blocks.machine.CutoffMachineBlock;
@@ -15,36 +14,42 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
 public enum MachineBlockEntry {
-    ANDESITE("andesite", RenderLayer.getSolid(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BROWN))),
-    BRASS("brass", RenderLayer.getTranslucent(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.YELLOW))),
-    COPPER("copper", RenderLayer.getCutout(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.ORANGE))),
-    ZINC("zinc", RenderLayer.getSolid(), new SolidMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN))),
-    OBSIDIAN("obsidian", RenderLayer.getTranslucent(), new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BLACK))),
-    ENDERIUM("enderium", RenderLayer.getCutout(), new CutoffMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA)));
+	ANDESITE("andesite", RenderLayer.getSolid(),
+			new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BROWN))),
+	BRASS("brass", RenderLayer.getTranslucent(),
+			new ComplexMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.YELLOW))),
+	COPPER("copper", RenderLayer.getCutout(),
+			new ComplexMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.ORANGE))),
+	ZINC("zinc", RenderLayer.getSolid(),
+			new SolidMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN))),
+	OBSIDIAN("obsidian", RenderLayer.getTranslucent(),
+			new ComplexMachineBlock(QuiltBlockSettings.of(Material.STONE, MapColor.BLACK))),
+	ENDERIUM("enderium", RenderLayer.getCutout(),
+			new CutoffMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA)));
 
-    private final String name;
-    private final RenderLayer layer;
-    private final AbstractMachineBlock block;
+	private final String name;
+	private final RenderLayer layer;
+	private final AbstractMachineBlock block;
 
-    MachineBlockEntry(String name, RenderLayer layer, AbstractMachineBlock block) {
-        this.name = name;
-        this.layer = layer;
-        this.block = block;
-    }
+	MachineBlockEntry(String name, RenderLayer layer, AbstractMachineBlock block) {
+		this.name = name;
+		this.layer = layer;
+		this.block = block;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public RenderLayer getLayer() {
-        return layer;
-    }
+	public RenderLayer getLayer() {
+		return layer;
+	}
 
-    public AbstractMachineBlock getBlock() {
-        return block;
-    }
+	public AbstractMachineBlock getBlock() {
+		return block;
+	}
 
-    public Identifier getId() {
-        return Cabricality.id(name + "_machine");
-    }
+	public Identifier getId() {
+		return Cabricality.id(name + "_machine");
+	}
 }

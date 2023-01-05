@@ -17,7 +17,9 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
 
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;
@@ -46,6 +48,11 @@ public class EnderiumThread implements TechThread {
 				id -> RecipeManager.deserialize(id,
 						RecipeBuilderUtil.generateMelting(PMD.id("dark_amaranth_fungus"),
 								TC.id("ender_slime"), FluidConstants.BOTTLE, null, 0, 100, 10)));
+
+		handler.register(recipeId("item_application", "enderium_casing"),
+				id -> new ManualApplicationRecipe(new FreePRP(id)
+						.setIngredient(MC.asIngredient("obsidian"), CABF.asIngredient("enderium_ingot"))
+						.setResult(CABF.asProcessingOutput("enderium_casing"))));
 	}
 
 	@Override

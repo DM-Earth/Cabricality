@@ -9,31 +9,36 @@ import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
 import java.util.List;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
+import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.fan.HauntingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
 import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
 import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
+
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import me.alphamode.forgetags.Tags;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
@@ -48,10 +53,9 @@ import net.minecraft.util.registry.Registry;
 
 public class InvarThread implements TechThread {
 
-	private static final List<Identifier> REMOVE_OUTPUTS =
-			List.of(IR.id("compressor_mk1"), IR.id("chopper_mk1"), IR.id("farmer_mk1"),
-					IR.id("slaughter_mk1"), IR.id("rancher_mk1"), IR.id("pump_mk1"),
-					IR.id("mining_rig_mk4"), IR.id("data_card_writer_mk4"), IR.id("drain_mk1"));
+	private static final List<Identifier> REMOVE_OUTPUTS = List.of(IR.id("compressor_mk1"), IR.id("chopper_mk1"),
+			IR.id("farmer_mk1"), IR.id("slaughter_mk1"), IR.id("rancher_mk1"), IR.id("pump_mk1"),
+			IR.id("mining_rig_mk4"), IR.id("data_card_writer_mk4"), IR.id("drain_mk1"));
 
 	@Override
 	public void load() {
@@ -62,10 +66,8 @@ public class InvarThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(IR.id("recycler_mk2"), 1, MC.id("composter")));
 		MechAndSmithCraft.addEntry(entry(IR.id("condenser_mk4"), 1, MC.id("packed_ice")));
 		MechAndSmithCraft.addEntry(entry(IR.id("fluid_infuser_mk1"), 1, CR.id("whisk")));
-		MechAndSmithCraft
-				.addEntry(entry(IR.id("modular_workbench_mk4"), 1, MC.id("crafting_table")));
-		MechAndSmithCraft
-				.addEntry(entry(IR.id("lazuli_flux_container_mk1"), 1, MC.id("redstone_block")));
+		MechAndSmithCraft.addEntry(entry(IR.id("modular_workbench_mk4"), 1, MC.id("crafting_table")));
+		MechAndSmithCraft.addEntry(entry(IR.id("lazuli_flux_container_mk1"), 1, MC.id("redstone_block")));
 		MechAndSmithCraft.addEntry(entry(IR.id("laser_emitter_mk4"), 1, MC.id("lightning_rod")));
 		MechAndSmithCraft.addEntry(entry(CX.id("energy_trash_can"), 1, KB.id("trash_can")));
 	}
@@ -90,18 +92,17 @@ public class InvarThread implements TechThread {
 					id -> new CuttingBoardRecipe(id, "", TC.asIngredient(fern),
 							Ingredient.ofTag(knives), results, "minecraft:block.grass.break"));
 			handler.register(recipeId("deploying", fern),
-					id -> new DeployerApplicationRecipe(new FreePRP(id)
-							.setIngredient(TC.asIngredient(fern), Ingredient.ofTag(knives))
-							.setResult(CABF.asProcessingOutput(leaf, 1, 2)).keepHeldItem()));
+					id -> new DeployerApplicationRecipe(
+							new FreePRP(id).setIngredient(TC.asIngredient(fern), Ingredient.ofTag(knives))
+									.setResult(CABF.asProcessingOutput(leaf, 1, 2)).keepHeldItem()));
 			handler.register(recipeId("haunting", leaf),
 					id -> new HauntingRecipe(new FreePRP(id).setIngredient(CABF.asIngredient(leaf))
 							.setResult(TC.asProcessingOutput(fern))));
 			handler.register(recipeId("milling", leaf),
 					id -> new MillingRecipe(new FreePRP(id).setIngredient(CABF.asIngredient(leaf))
 							.setResult(CABF.asProcessingOutput(paste)).setProcessingTime(70)));
-			handler.register(recipeId("campfire_cooking", paste),
-					id -> new CampfireCookingRecipe(id, "", CABF.asIngredient(paste),
-							entry.getOutputItem().getDefaultStack(), 0, 300));
+			handler.register(recipeId("campfire_cooking", paste), id -> new CampfireCookingRecipe(id, "",
+					CABF.asIngredient(paste), entry.getOutputItem().getDefaultStack(), 0, 300));
 		}
 
 		handler.register(recipeId("campfire_cooking", "stick"), id -> new CampfireCookingRecipe(id,
@@ -169,6 +170,11 @@ public class InvarThread implements TechThread {
 						.ingredient('C', CABF.asItem("invar_casing"))
 						.ingredient('S', CABF.asItem("inductive_mechanism"))
 						.output(IR.asStack("machine_block")).build(id, ""));
+
+		handler.register(recipeId("item_application", "invar_casing"),
+				id -> new ManualApplicationRecipe(new FreePRP(id)
+						.setIngredient(CR.asIngredient("refined_radiance_casing"), CABF.asIngredient("invar_ingot"))
+						.setResult(CABF.asProcessingOutput("invar_casing"))));
 	}
 
 	@Override

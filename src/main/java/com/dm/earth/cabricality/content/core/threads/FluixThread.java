@@ -4,12 +4,14 @@ import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
@@ -19,6 +21,7 @@ import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
+import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.fan.SplashingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
@@ -26,6 +29,7 @@ import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.fluid.Fluids;
@@ -162,6 +166,11 @@ public class FluixThread implements TechThread {
 				.setIngredient(CABF.asIngredient("purified_sand"), CABF.asIngredient("ice_charge"))
 				.setResult(AE2.asProcessingOutput("silicon"))
 				.setHeatRequirement(HeatCondition.HEATED)));
+
+		handler.register(recipeId("item_application", "fluix_casing"),
+				id -> new ManualApplicationRecipe(new FreePRP(id)
+						.setIngredient(MC.asIngredient("obsidian"), AE2.asIngredient("fluix_crystal"))
+						.setResult(CABF.asProcessingOutput("fluix_casing"))));
 	}
 
 	@Contract("_, _, _ -> new")
