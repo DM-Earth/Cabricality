@@ -173,7 +173,7 @@ public class InvarThread implements TechThread {
 
 		handler.register(recipeId("item_application", "invar_casing"),
 				id -> new ManualApplicationRecipe(new FreePRP(id)
-						.setIngredient(CR.asIngredient("refined_radiance_casing"), CABF.asIngredient("invar_ingot"))
+						.setIngredient(MC.asIngredient("calcite"), CABF.asIngredient("invar_ingot"))
 						.setResult(CABF.asProcessingOutput("invar_casing"))));
 	}
 

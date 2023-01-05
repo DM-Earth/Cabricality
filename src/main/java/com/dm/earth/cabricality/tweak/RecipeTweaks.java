@@ -112,6 +112,10 @@ public class RecipeTweaks
 				id -> RecipeBuilderUtil.donutRecipe(id, Items.EMERALD, Items.BLUE_DYE, CABF.asItem("sapphire"), 1));
 		handler.register(recipeId("pressing", "zinc_sheet"), id -> new PressingRecipe(new FreePRP(id)
 				.setIngredient(CR.asIngredient("zinc_ingot")).setResult(CABF.asProcessingOutput("zinc_sheet"))));
+		handler.register(recipeId("crafting", "nickel_ingot_from_nugget"),
+				id -> VanillaRecipeBuilders.shapedRecipe("AAA", "AAA", "AAA")
+						.ingredient('A', CABF.asIngredient("nickel_nugget")).output(CABF.asStack("nickel_ingot"))
+						.build(id, ""));
 	}
 
 	@Override
@@ -129,6 +133,10 @@ public class RecipeTweaks
 
 		handler.remove(TC.id("smeltery/casting/metal/silver/coin_silver_cast"));
 		handler.remove(TC.id("smeltery/casting/metal/gold/coin_gold_cast"));
+
+		handler.remove(TC.id("smeltery/alloys/molten_enderium"));
+		handler.remove(TC.id("smeltery/alloys/molten_brass"));
+		handler.remove(TC.id("smeltery/alloys/molten_invar"));
 
 		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
 
