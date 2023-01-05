@@ -84,7 +84,7 @@ public class RecipeTweaks
 		handler.register(recipeId("filling", "nickel_compound"),
 				id -> new FillingRecipe(new FreePRP(id).setIngredient(CABF.asIngredient("nickel_ingot"))
 						.setFluidIngredient(
-								FluidIngredient.fromFluid(TC.asFluid("molten_iron"), FluidConstants.NUGGET * 3))
+								FluidIngredient.fromFluid(TC.asFluid("molten_iron"), FluidConstants.NUGGET * 6))
 						.setResult(CABF.asProcessingOutput("nickel_compound"))));
 
 		// Saws

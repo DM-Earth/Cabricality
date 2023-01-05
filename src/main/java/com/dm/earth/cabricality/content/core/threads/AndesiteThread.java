@@ -144,7 +144,7 @@ public class AndesiteThread implements TechThread {
 						.ingredient('L', IR.asIngredient("lead_ingot")).output(CABF.asStack("saw_blade"))
 						.build(id, ""));
 		handler.register(recipeId("crafting", "iron_drill_head"),
-				id -> VanillaRecipeBuilders.shapedRecipe("NN", "NLP", " PL")
+				id -> VanillaRecipeBuilders.shapedRecipe("NN ", "NLP", " PL")
 						.ingredient('N', MC.asIngredient("iron_nugget")).ingredient('P', CR.asIngredient("iron_sheet"))
 						.ingredient('L', IR.asIngredient("lead_ingot")).output(IR.asStack("iron_drill_head"))
 						.build(id, ""));
