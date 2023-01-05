@@ -13,6 +13,7 @@
 *.gitattributes
 *.gitignore
 *.classpath
+*.factorypath
 *.project
 /gradle/*
 /.gradle/*

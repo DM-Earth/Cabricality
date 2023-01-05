@@ -86,7 +86,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			registerItemModeled("dye_entangled_singularity", new Item(Properties.DEFAULT),
 					ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
-			new GlintedItem(new QuiltItemSettings().maxDamage(512)
+			new Item(new QuiltItemSettings().maxDamage(512)
 					.group(Cabricality.ItemGroups.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "chromatic_resonator"));
 	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
