@@ -50,10 +50,8 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final Identifier CABRICALITY_TITLE_TEXTURE =
-				id("textures", "gui", "title", "cabricality.png");
-		public static final Identifier MINECRAFT_SUBTITLE_TEXTURE =
-				id("textures", "gui", "title", "minecraft.png");
+		public static final Identifier CABRICALITY_TITLE_TEXTURE = id("textures", "gui", "title", "cabricality.png");
+		public static final Identifier MINECRAFT_SUBTITLE_TEXTURE = id("textures", "gui", "title", "minecraft.png");
 	}
 
 	public static class Sounds {
@@ -63,23 +61,19 @@ public class Cabricality implements ModInitializer {
 	public static class ItemGroups {
 		public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
 				() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
-		public static ItemGroup SUBSTRATES_GROUP =
-				QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
-						() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+		public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
+				() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 	}
 
 	public static class RRPs {
-		public static final RuntimeResourcePack CLIENT_RESOURCES =
-				RuntimeResourcePack.create(id("client_resources"));
-		public static final RuntimeResourcePack SERVER_RESOURCES =
-				RuntimeResourcePack.create(id("server_resources"));
+		public static final RuntimeResourcePack CLIENT_RESOURCES = RuntimeResourcePack.create(id("client_resources"));
+		public static final RuntimeResourcePack SERVER_RESOURCES = RuntimeResourcePack.create(id("server_resources"));
 	}
 
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
-	public static final IdentifierBuilder.Specified ID_BUILDER =
-			new IdentifierBuilder.Specified(ID);
+	public static final IdentifierBuilder.Specified ID_BUILDER = new IdentifierBuilder.Specified(ID);
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
