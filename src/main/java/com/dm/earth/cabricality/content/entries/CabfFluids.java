@@ -54,6 +54,16 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 	public static final FlowableFluid MOLTEN_CALORITE_FLOWING =
 			new MoltenMetalFluid.Flowing("calorite", 0x931d3b);
 
+	public static void register() {
+		registerIFluids(RESIN, REDSTONE, WASTE, SKY_STONE, COKE, FINE_SAND, MATRIX, RAW_LOGIC);
+		registerIFluids(POWERED_WATER, POWERED_WATER_FLOWING);
+		registerIFluids(MOLTEN_DESH, MOLTEN_DESH_FLOWING, MOLTEN_OSTRUM, MOLTEN_OSTRUM_FLOWING,
+				MOLTEN_CALORITE, MOLTEN_CALORITE_FLOWING);
+		registerIFluids(NUMBERS);
+
+		LoadTagsCallback.FLUID.register(new CabfFluids());
+	}
+
 	private static List<Fluid> getNumberFluids() {
 		List<Integer> colors = List.of(0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8,
 				0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8);
@@ -61,14 +71,6 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 		for (int i = 0; i < 10; i++)
 			numbers.add(new NumberFluid(i).color(colors.get(i)));
 		return numbers;
-	}
-
-	public static void register() {
-		registerIFluids(RESIN, REDSTONE, WASTE, SKY_STONE, COKE, FINE_SAND, MATRIX, RAW_LOGIC);
-		registerIFluids(POWERED_WATER, POWERED_WATER_FLOWING);
-		registerIFluids(MOLTEN_DESH, MOLTEN_DESH_FLOWING, MOLTEN_OSTRUM, MOLTEN_OSTRUM_FLOWING,
-				MOLTEN_CALORITE, MOLTEN_CALORITE_FLOWING);
-		registerIFluids(NUMBERS);
 	}
 
 	private static void registerFluid(Identifier id, Identifier stillId, Fluid fluid) {
