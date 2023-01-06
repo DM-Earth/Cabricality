@@ -1,13 +1,13 @@
 {
-    "ModSettings": {
-        "highlight_foused_items": false,
-        "first_run": false
-    },
-    "Hotkeys": {
-        "sort_inventory": {
-            "main": {
-                "keys": "BACKSLASH"
-            }
-        }
+  "ModSettings": {
+    "highlight_foused_items": false,
+    "first_run": false
+  },
+  "Hotkeys": {
+    "sort_inventory": {
+      "main": {
+        "keys": "BACKSLASH"
+      }
     }
+  }
 }

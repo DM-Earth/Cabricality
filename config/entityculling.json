@@ -6,18 +6,13 @@
     "minecraft:beacon",
     "create:hose_pulley"
   ],
-  "entityWhitelist": [
-    "create:carriage_contraption"
-  ],
+  "entityWhitelist": ["create:carriage_contraption"],
   "tracingDistance": 128,
   "debugMode": false,
   "sleepDelay": 10,
   "hitboxLimit": 50,
   "skipMarkerArmorStands": true,
   "tickCulling": true,
-  "tickCullingWhitelist": [
-    "minecraft:boat",
-    "minecraft:firework_rocket"
-  ],
+  "tickCullingWhitelist": ["minecraft:boat", "minecraft:firework_rocket"],
   "disableF3": false
 }

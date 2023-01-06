@@ -12,7 +12,6 @@ random_rate = "Both" # Splash Texts Refresh Rate
 # Reload - Refresh after reloading resources
 # Click  - Refresh when clicking the splash text
 # Both   - Refresh splash texts when reloading and clicking
-
 splash_mode = "Custom" # Splash Texts Display Mode
 # Disabled - Disable splash texts, only show debug info
 # Vanilla  - Only show vanilla splash texts

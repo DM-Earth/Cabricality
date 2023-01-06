@@ -16,14 +16,14 @@ Flywheel + Sodium!
 11*14+51.4!=?
 >=19-18.1*0!
 Messy Code!
-public final boolean FORGE = false;
+public final boolean FORGE = false         ;
 Pog!!
 §1C§2o§3l§4o§5r§6m§7a§8t§9i§ac
 100.00% pure!
 Crreeeeeppper!
 Don't lose your kungfu!
 Hello world!
-while(sleeping){money++;}
+while(sleeping){money++                    ;}
 1893~1976!
 @Yjn024
 @KrLite
