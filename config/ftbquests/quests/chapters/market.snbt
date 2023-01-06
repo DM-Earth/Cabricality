@@ -159,7 +159,7 @@
 					id: "1E25EB2883C9A960"
 					type: "item"
 					item: {
-						id: "cabricality:screwdriver"
+						id: "indrev:screwdriver"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -177,7 +177,7 @@
 				id: "743730BBE32A0875"
 				type: "item"
 				item: {
-					id: "cabricality:screwdriver"
+					id: "indrev:screwdriver"
 					Count: 1b
 					tag: {
 						display: {

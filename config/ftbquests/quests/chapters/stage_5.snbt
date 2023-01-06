@@ -98,7 +98,7 @@
 			]
 		}
 		{
-			icon: "cabricality:three"
+			icon: "cabricality:number_3"
 			x: 0.5d
 			y: 13.5d
 			subtitle: "{contraption.cabricality.44.1.subtitle}"
@@ -109,7 +109,7 @@
 				{
 					id: "343E4ED28EA67219"
 					type: "item"
-					item: "cabricality:three"
+					item: "cabricality:number_3"
 					consume_items: false
 				}
 				{
@@ -120,7 +120,7 @@
 			]
 		}
 		{
-			icon: "cabricality:eight"
+			icon: "cabricality:number_8"
 			x: 3.5d
 			y: 13.5d
 			subtitle: "{contraption.cabricality.44.2.subtitle}"
@@ -131,7 +131,7 @@
 				{
 					id: "18BB7C8E32701CB6"
 					type: "item"
-					item: "cabricality:eight"
+					item: "cabricality:number_8"
 					consume_items: false
 				}
 				{
@@ -142,7 +142,7 @@
 			]
 		}
 		{
-			icon: "cabricality:one"
+			icon: "cabricality:number_1"
 			x: -1.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.1.subtitle}"
@@ -157,7 +157,7 @@
 				{
 					id: "61A3EF7882F2A31E"
 					type: "item"
-					item: "cabricality:one"
+					item: "cabricality:number_1"
 					consume_items: false
 				}
 				{
@@ -168,7 +168,7 @@
 			]
 		}
 		{
-			icon: "cabricality:two"
+			icon: "cabricality:number_2"
 			x: -0.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.2.subtitle}"
@@ -183,7 +183,7 @@
 				{
 					id: "2AD655BD7E1A0EBF"
 					type: "item"
-					item: "cabricality:two"
+					item: "cabricality:number_2"
 					consume_items: false
 				}
 				{
@@ -194,7 +194,7 @@
 			]
 		}
 		{
-			icon: "cabricality:four"
+			icon: "cabricality:number_4"
 			x: 0.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.4.subtitle}"
@@ -209,7 +209,7 @@
 				{
 					id: "54FEAD9C942788CF"
 					type: "item"
-					item: "cabricality:four"
+					item: "cabricality:number_4"
 					consume_items: false
 				}
 				{
@@ -220,7 +220,7 @@
 			]
 		}
 		{
-			icon: "cabricality:five"
+			icon: "cabricality:number_5"
 			x: 1.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.5.subtitle}"
@@ -235,7 +235,7 @@
 				{
 					id: "0B94D4B1C2A131DA"
 					type: "item"
-					item: "cabricality:five"
+					item: "cabricality:number_5"
 					consume_items: false
 				}
 				{
@@ -246,7 +246,7 @@
 			]
 		}
 		{
-			icon: "cabricality:six"
+			icon: "cabricality:number_6"
 			x: 2.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.6.subtitle}"
@@ -261,7 +261,7 @@
 				{
 					id: "0127797E6B5249A2"
 					type: "item"
-					item: "cabricality:six"
+					item: "cabricality:number_6"
 					consume_items: false
 				}
 				{
@@ -272,7 +272,7 @@
 			]
 		}
 		{
-			icon: "cabricality:seven"
+			icon: "cabricality:number_7"
 			x: 3.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.7.subtitle}"
@@ -287,7 +287,7 @@
 				{
 					id: "7FA25AD87CBD6B62"
 					type: "item"
-					item: "cabricality:seven"
+					item: "cabricality:number_7"
 					consume_items: false
 				}
 				{
@@ -298,7 +298,7 @@
 			]
 		}
 		{
-			icon: "cabricality:nine"
+			icon: "cabricality:number_9"
 			x: 4.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.9.subtitle}"
@@ -313,7 +313,7 @@
 				{
 					id: "2F81E83410906BB5"
 					type: "item"
-					item: "cabricality:nine"
+					item: "cabricality:number_9"
 					consume_items: false
 				}
 				{
@@ -324,7 +324,7 @@
 			]
 		}
 		{
-			icon: "cabricality:zero"
+			icon: "cabricality:number_0"
 			x: 5.5d
 			y: 11.5d
 			subtitle: "{contraption.cabricality.45.0.subtitle}"
@@ -339,7 +339,7 @@
 				{
 					id: "6FF94B3F20E69F43"
 					type: "item"
-					item: "cabricality:zero"
+					item: "cabricality:number_0"
 					consume_items: false
 				}
 				{

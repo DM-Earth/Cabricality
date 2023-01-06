@@ -81,22 +81,7 @@
 					id: "1900BA945C62D0CC"
 					type: "item"
 					title: "{overview.cabricality.preparation.task.forgery.title}"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "tconstruct:smeltery_controller"
-									Count: 1b
-								}
-								{
-									id: "alloy_forgery:deepslate_bricks_forge_controller"
-									Count: 1b
-								}
-							]
-						}
-					}
+					item: "tconstruct:smeltery_controller"
 					consume_items: false
 				}
 				{
