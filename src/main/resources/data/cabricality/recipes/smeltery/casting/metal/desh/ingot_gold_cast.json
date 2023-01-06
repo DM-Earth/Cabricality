@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:ingots/desh",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "fluid": {
+    "tag": "c:molten_desh",
+    "amount": 90
+  },
+  "result": {
+    "tag": "c:ingots/desh"
+  },
+  "cooling_time": 63
+}

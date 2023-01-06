@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:rods/calorite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:rods/calorite"
+  },
+  "result": {
+    "fluid": "cabricality:molten_calorite",
+    "amount": 45
+  },
+  "temperature": 900,
+  "time": 13
+}

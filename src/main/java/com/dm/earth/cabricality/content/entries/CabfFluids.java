@@ -1,8 +1,8 @@
 package com.dm.earth.cabricality.content.entries;
 
+import static com.dm.earth.cabricality.ModEntry.C;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.fluids.MoltenMetalFluid;
 import com.dm.earth.cabricality.content.fluids.NumberFluid;
@@ -11,13 +11,13 @@ import com.dm.earth.cabricality.content.fluids.core.BaseFluid;
 import com.dm.earth.cabricality.content.fluids.core.IFluid;
 import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidBlockStatesGenerator;
 import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidModelGenerator;
-
+import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class CabfFluids {
+public class CabfFluids implements LoadTagsCallback<Fluid> {
 	// Fluids
 	public static final List<Fluid> NUMBERS = getNumberFluids();
 	public static final Fluid RESIN = new BaseFluid("resin");
@@ -102,5 +102,12 @@ public class CabfFluids {
 	private static void registerIFluids(List<Fluid> fluids) {
 		for (Fluid fluid : fluids)
 			registerIFluid(fluid);
+	}
+
+	@Override
+	public void load(TagHandler<Fluid> handler) {
+		handler.register(C.id("molten_desh"), MOLTEN_DESH);
+		handler.register(C.id("molten_ostrum"), MOLTEN_OSTRUM);
+		handler.register(C.id("molten_calorite"), MOLTEN_CALORITE);
 	}
 }

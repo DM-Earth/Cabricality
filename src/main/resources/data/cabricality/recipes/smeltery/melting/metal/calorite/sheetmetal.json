@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:sheetmetals/calorite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:sheetmetals/calorite"
+  },
+  "result": {
+    "fluid": "cabricality:molten_calorite",
+    "amount": 90
+  },
+  "temperature": 900,
+  "time": 63
+}
