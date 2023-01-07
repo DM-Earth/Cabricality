@@ -201,7 +201,7 @@ metafile = true
 
 [[files]]
 file = "mods/bounced.pw.toml"
-hash = "f8ef9fcbdfcc82e596028c56f57863f7a4c1e1ee81e6ac04a4fbb257897bd65d"
+hash = "2cf8ebde5f3d992ca4a5222419e08647d568db9bf7e2eecf7f4bab44e568491f"
 metafile = true
 
 [[files]]
@@ -416,7 +416,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "7cf9d7f5d5e071d246c5c5c33eaa1ff7905071caf5bde89b9eca49a2c874da39"
+hash = "3c23d8ee202890bb7636389a757136fe419a0216ecbb42a2f7e244cd9dd93ae1"
 metafile = true
 
 [[files]]
@@ -426,7 +426,7 @@ metafile = true
 
 [[files]]
 file = "mods/stenographer.pw.toml"
-hash = "9fcde313a87692ef831a450618793f39de69e10805a79e498006840e0cc68914"
+hash = "d9c0ac5c5a3e941cd92fa51c43356645e6ed11f5a6e60f3362e5a8ab55473738"
 metafile = true
 
 [[files]]
