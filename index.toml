@@ -416,7 +416,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "3c23d8ee202890bb7636389a757136fe419a0216ecbb42a2f7e244cd9dd93ae1"
+hash = "591869592afcf4a808f7c6fb957ab43d3cd0d512f1e5c12e777ee1df0634ced7"
 metafile = true
 
 [[files]]
@@ -426,7 +426,7 @@ metafile = true
 
 [[files]]
 file = "mods/stenographer.pw.toml"
-hash = "d9c0ac5c5a3e941cd92fa51c43356645e6ed11f5a6e60f3362e5a8ab55473738"
+hash = "9d83928fbdd768b1a2918f81440ed3190f5285b95348721bada2141c5f24d883"
 metafile = true
 
 [[files]]
