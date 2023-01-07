@@ -294,5 +294,12 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		handler.register(C.id("enderium_ingots"), ENDERIUM_INGOT);
 		handler.register(C.id("invar_ingots"), INVAR_INGOT);
 		handler.register(C.id("nickel_ingots"), NICKEL_INGOT);
+
+		handler.register(C.id("ingots", "enderium"), ENDERIUM_INGOT);
+		handler.register(C.id("ingots", "invar"), INVAR_INGOT);
+		handler.register(C.id("ingots", "nickel"), NICKEL_INGOT);
+
+		handler.register(C.id("nickel_nuggets"), NICKEL_NUGGET);
+		handler.register(C.id("nuggets/nickel"), NICKEL_NUGGET);
 	}
 }

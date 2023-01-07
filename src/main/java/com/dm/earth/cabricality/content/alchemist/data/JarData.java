@@ -29,53 +29,9 @@ import net.minecraft.util.registry.Registry;
 public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 	public static void load() {
 		JarData thisL = new JarData();
-		LoadTagsCallback.ITEM.register(thisL);
+		//TODO
+		// LoadTagsCallback.ITEM.register(thisL);
 		RecipeManagerHelper.addRecipes(thisL);
-	}
-
-	@Override
-	public void load(TagHandler<Item> handler) {
-		Arrays.stream(Reagents.values()).forEach(reagents -> {
-			Identifier catalystId = Cabricality.id("catalyst_jar_" + reagents.getCatalyst().hashString());
-			handler.register(CabfItemTags.JARS, Registry.ITEM.get(catalystId));
-			handler.register(CabfItemTags.CATALYST_JARS, Registry.ITEM.get(catalystId));
-
-			reagents.getReagents().forEach(reagent -> {
-				Identifier reagentId = Cabricality.id("reagent_jar_" + reagent.hashString());
-				handler.register(CabfItemTags.JARS, Registry.ITEM.get(reagentId));
-				handler.register(CabfItemTags.REAGENT_JARS, Registry.ITEM.get(reagentId));
-			});
-		});
-	}
-
-	@Override
-	public void addRecipes(RecipeHandler handler) {
-		ArrayList<Reagent> reagents = new ArrayList<>();
-
-		// Scan substrates
-		for (Reagents reagentsT : Reagents.values())
-			for (Reagent reagent : reagentsT.getReagents()) {
-				if (reagentsT.isLinked())
-					reagents.add(reagent);
-				handler.register(Cabricality.id("alchemist", "fluid_infuse", "reagent_jar", reagent.hashString()),
-						id -> RecipeManager.deserialize(id, generateInfuse(reagent)));
-				handler.register(Cabricality.id("alchemist", "sawmill", "reagent_jar", reagent.hashString()),
-						id -> RecipeManager.deserialize(id, generateReagentToItem(reagent)));
-			}
-
-		// Alchemist Recipes
-		final AtomicBoolean smelt = new AtomicBoolean(false);
-		Arrays.stream(Reagents.values()).filter(Reagents::isLinked).forEach(r -> {
-			r.getReagents().forEach(reagent -> {
-				Identifier recipeId = Cabricality.id(
-						"alchemist", "alchemist_smelt",
-						r.getCatalyst().hashString() + "/" + reagent.hashString());
-				var recipe = RecipeManager.deserialize(recipeId,
-						generateAlchemistProcess(reagent, reagents, smelt.get()));
-				handler.register(recipeId, id -> recipe);
-			});
-			smelt.set(!smelt.get());
-		});
 	}
 
 	private static JsonObject generateAlchemistProcess(Reagent reagent, ArrayList<Reagent> reagents, boolean smelt) {
@@ -130,5 +86,50 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 		json.add("output", outputs);
 		json.addProperty("processTime", 64);
 		return json;
+	}
+
+	@Override
+	public void load(TagHandler<Item> handler) {
+		Arrays.stream(Reagents.values()).forEach(reagents -> {
+			Identifier catalystId = Cabricality.id("catalyst_jar_" + reagents.getCatalyst().hashString());
+			handler.register(CabfItemTags.JARS, Registry.ITEM.get(catalystId));
+			handler.register(CabfItemTags.CATALYST_JARS, Registry.ITEM.get(catalystId));
+
+			reagents.getReagents().forEach(reagent -> {
+				Identifier reagentId = Cabricality.id("reagent_jar_" + reagent.hashString());
+				handler.register(CabfItemTags.JARS, Registry.ITEM.get(reagentId));
+				handler.register(CabfItemTags.REAGENT_JARS, Registry.ITEM.get(reagentId));
+			});
+		});
+	}
+
+	@Override
+	public void addRecipes(RecipeHandler handler) {
+		ArrayList<Reagent> reagents = new ArrayList<>();
+
+		// Scan substrates
+		for (Reagents reagentsT : Reagents.values())
+			for (Reagent reagent : reagentsT.getReagents()) {
+				if (reagentsT.isLinked())
+					reagents.add(reagent);
+				handler.register(Cabricality.id("alchemist", "fluid_infuse", "reagent_jar", reagent.hashString()),
+						id -> RecipeManager.deserialize(id, generateInfuse(reagent)));
+				handler.register(Cabricality.id("alchemist", "sawmill", "reagent_jar", reagent.hashString()),
+						id -> RecipeManager.deserialize(id, generateReagentToItem(reagent)));
+			}
+
+		// Alchemist Recipes
+		final AtomicBoolean smelt = new AtomicBoolean(false);
+		Arrays.stream(Reagents.values()).filter(Reagents::isLinked).forEach(r -> {
+			r.getReagents().forEach(reagent -> {
+				Identifier recipeId = Cabricality.id(
+						"alchemist", "alchemist_smelt",
+						r.getCatalyst().hashString() + "/" + reagent.hashString());
+				var recipe = RecipeManager.deserialize(recipeId,
+						generateAlchemistProcess(reagent, reagents, smelt.get()));
+				handler.register(recipeId, id -> recipe);
+			});
+			smelt.set(!smelt.get());
+		});
 	}
 }
