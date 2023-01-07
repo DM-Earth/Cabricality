@@ -26,7 +26,6 @@ import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import net.minecraft.util.registry.Registry;
 
-// TODO: fill this out
 public enum Reagents {
 	IGNEOUS("igneous", 0x6C8191, 16, true,
 			of("andesite", MC.id("andesite"), 0x868887),

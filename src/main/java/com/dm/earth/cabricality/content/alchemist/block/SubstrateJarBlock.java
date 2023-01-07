@@ -3,7 +3,6 @@ package com.dm.earth.cabricality.content.alchemist.block;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.core.ISettableBlockItem;

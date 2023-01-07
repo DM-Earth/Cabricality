@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
-
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
@@ -263,17 +262,13 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	public ActionResult apply(TagKey<Item> key) {
 		Identifier id = key.id();
 		if (id.getNamespace().equals("c")) {
-			if (id.getPath().startsWith("ingots/"))
-				switch (id.getPath().substring("ingots/".length())) {
-					case "enderium":
-						return ActionResult.SUCCESS;
-					case "nickel":
-						return ActionResult.SUCCESS;
-					case "invar":
-						return ActionResult.SUCCESS;
-					default:
-						break;
-				}
+			String name = id.getPath();
+			if (name.equals("ingots/enderium"))
+				return ActionResult.SUCCESS;
+			if (name.equals("ingots/invar"))
+				return ActionResult.SUCCESS;
+			if (name.equals("ingots/nickel"))
+				return ActionResult.SUCCESS;
 		}
 		return ActionResult.PASS;
 	}
@@ -294,5 +289,12 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		handler.register(C.id("enderium_ingots"), ENDERIUM_INGOT);
 		handler.register(C.id("invar_ingots"), INVAR_INGOT);
 		handler.register(C.id("nickel_ingots"), NICKEL_INGOT);
+
+		handler.register(C.id("ingots", "enderium"), ENDERIUM_INGOT);
+		handler.register(C.id("ingots", "invar"), INVAR_INGOT);
+		handler.register(C.id("ingots", "nickel"), NICKEL_INGOT);
+
+		handler.register(C.id("nickel_nuggets"), NICKEL_NUGGET);
+		handler.register(C.id("nuggets/nickel"), NICKEL_NUGGET);
 	}
 }

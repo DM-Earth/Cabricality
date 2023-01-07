@@ -306,5 +306,6 @@
   "screen.cabricality.title_screen.warning_missing_mod": "Missing 1 Mod!",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "Missing %d Mods!",
 
-  "itemGroup.cabricality.main": "Cabricality"
+  "itemGroup.cabricality.main": "Cabricality",
+  "itemGroup.cabricality.substrates": "Cabricality Substrates"
 }
