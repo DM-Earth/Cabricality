@@ -1,19 +1,27 @@
-enable_splash_texts = true
-enable_festivals = true
-follow_client_language = true
-colorful = true # Make splash texts a little colorful
+enableSplashTexts = true
+enableFestivals = true
+followClientLanguage = true
 
 [debug]
-disable_debug_info = true # Debug info will not be logged if true
+debugInfo = false
+# Show debug info
 
-[enum]
-random_rate = "Both" # Splash Texts Refresh Rate
-# Never  - Never show random splash texts
-# Reload - Refresh after reloading resources
-# Click  - Refresh when clicking the splash text
-# Both   - Refresh splash texts when reloading and clicking
-splash_mode = "Custom" # Splash Texts Display Mode
-# Disabled - Disable splash texts, only show debug info
-# Vanilla  - Only show vanilla splash texts
-# Custom   - Only show custom splash texts
+[splash]
+colorful = true
+# Make splash texts a little colorful
+
+randomRate = 'Both'
+# Controls the splash text random rate
+
+# Never  - Never reload splash texts
+# Reload - Reload after reloading resources
+# Click  - Reload when clicking on the splash text
+# Both   - Reload both at reloading and clicking
+
+splashMode = 'Custom'
+# Controls the splash text contents
+
+# Disabled - Disable splash texts
+# Vanilla  - Show only vanilla splash texts
+# Custom   - Show only custom splash texts
 # Both     - Show both vanilla and custom splash texts
