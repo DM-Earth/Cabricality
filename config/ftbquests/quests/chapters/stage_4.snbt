@@ -48,7 +48,7 @@
 		}
 		{
 			title: "{chapter_4.cabricality.laser.title}"
-			icon: "indrev:laser_emitter_mk4"
+			icon: "led:bulb"
 			x: 3.0d
 			y: -2.5d
 			shape: "circle"
@@ -59,12 +59,6 @@
 				id: "16897A4EF323B02E"
 				type: "checkmark"
 				title: "{chapter_4.cabricality.laser.task.checkmark.title}"
-			}]
-			rewards: [{
-				id: "24B631E93DB0C8F7"
-				type: "item"
-				team_reward: true
-				item: "cabricality:powered_water_bucket"
 			}]
 		}
 		{
@@ -522,7 +516,6 @@
 		{
 			title: "{chapter_4.cabricality.chapter_4a.title}"
 			icon: "cabricality:reagent_jar_666621652"
-			comment: "silicon"
 			disable_toast: true
 			x: -3.0d
 			y: 5.0d
@@ -537,7 +530,6 @@
 				type: "stat"
 				title: "{chapter_4.cabricality.chapter_4a.task.complete.title}"
 				icon: "cabricality:catalyst_jar_x1331490811"
-				comment: "chaos"
 				disable_toast: true
 				stat: "minecraft:play_time"
 				value: 60
@@ -736,4 +728,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

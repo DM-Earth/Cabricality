@@ -14,7 +14,7 @@
 				id: "tconstruct:pickaxe"
 				Count: 1b
 				tag: {
-					tic_multipliers: { }
+					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 2.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -22,8 +22,12 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.2f
 					}
-					Damage: 0
-					tic_broken: 0b
+					tic_multipliers: { }
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -42,11 +46,7 @@
 							level: 1s
 						}
 					]
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					tic_broken: 0b
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -90,9 +90,7 @@
 				id: "tconstruct:kama"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:attack_damage": 0.5f
-					}
+					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 1.625f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -100,8 +98,14 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.6f
 					}
-					Damage: 0
-					tic_broken: 0b
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.5f
+					}
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -124,11 +128,7 @@
 							level: 1s
 						}
 					]
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					tic_broken: 0b
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -172,7 +172,7 @@
 				id: "tconstruct:hand_axe"
 				Count: 1b
 				tag: {
-					tic_multipliers: { }
+					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 8.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -180,8 +180,12 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 0.9f
 					}
-					Damage: 0
-					tic_broken: 0b
+					tic_multipliers: { }
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -208,11 +212,7 @@
 							level: 1s
 						}
 					]
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					tic_broken: 0b
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -296,11 +296,7 @@
 				id: "tconstruct:sledge_hammer"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.4f
-						"tconstruct:durability": 4.0f
-						"tconstruct:attack_damage": 1.35f
-					}
+					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 6.58125f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -308,8 +304,17 @@
 						"tconstruct:mining_speed": 3.45f
 						"tconstruct:attack_speed": 0.75f
 					}
-					Damage: 0
-					tic_broken: 0b
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:durability": 4.0f
+						"tconstruct:attack_damage": 1.35f
+					}
+					tic_materials: [
+						"tconstruct:electrum"
+						"tconstruct:constantan"
+						"tconstruct:bronze"
+						"tconstruct:bronze"
+					]
 					tic_modifiers: [
 						{
 							name: "tconstruct:experienced"
@@ -328,12 +333,7 @@
 							level: 1s
 						}
 					]
-					tic_materials: [
-						"tconstruct:electrum"
-						"tconstruct:constantan"
-						"tconstruct:bronze"
-						"tconstruct:bronze"
-					]
+					tic_broken: 0b
 					tic_persistent_data: {
 						upgrades: 2
 						abilities: 1
@@ -377,10 +377,7 @@
 				id: "tconstruct:sword"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.5f
-						"tconstruct:durability": 1.1f
-					}
+					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 5.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -388,8 +385,15 @@
 						"tconstruct:mining_speed": 3.7375f
 						"tconstruct:attack_speed": 1.6f
 					}
-					Damage: 0
-					tic_broken: 0b
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:constantan"
+					]
 					tic_modifiers: [
 						{
 							name: "tconstruct:maintained"
@@ -404,11 +408,7 @@
 							level: 1s
 						}
 					]
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:constantan"
-					]
+					tic_broken: 0b
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -688,7 +688,7 @@
 		}
 		{
 			title: "Mineral Collection"
-			icon: "cabricality:substrate_sulfur"
+			icon: "cabricality:reagent_jar_1977609086"
 			x: -1.0d
 			y: -4.5d
 			subtitle: "25 Silver"
@@ -730,7 +730,7 @@
 		}
 		{
 			title: "Plentiful Mineral Collection"
-			icon: "cabricality:accelerator_redstone"
+			icon: "cabricality:reagent_jar_1265803837"
 			x: -1.0d
 			y: -3.0d
 			subtitle: "45 Silver"
@@ -856,7 +856,7 @@
 				{
 					id: "76F8080C0E176A08"
 					type: "item"
-				icon: "cabricality:silver_coin"
+					icon: "cabricality:silver_coin"
 					auto: "enabled"
 					item: "cabricality:silver_coin"
 					count: 32
@@ -1324,10 +1324,10 @@
 						id: "minecraft:white_banner"
 						Count: 1b
 						tag: {
-							HideFlags: 32
 							display: {
 								Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
 							}
+							HideFlags: 32
 							BlockEntityTag: {
 								Patterns: [
 									{
@@ -1385,7 +1385,7 @@
 				{
 					id: "72ADE787CA674127"
 					type: "item"
-				icon: "cabricality:silver_coin"
+					icon: "cabricality:silver_coin"
 					auto: "enabled"
 					item: "cabricality:silver_coin"
 					count: 10
@@ -1439,4 +1439,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

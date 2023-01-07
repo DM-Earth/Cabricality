@@ -349,7 +349,6 @@
 		{
 			title: "{overview.cabricality.chapter_4a.start.title}"
 			icon: "cabricality:catalyst_jar_x1331490811"
-			comment: "chaos"
 			x: -2.5d
 			y: -1.25d
 			shape: "circle"
@@ -437,4 +436,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

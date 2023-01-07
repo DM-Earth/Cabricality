@@ -33,7 +33,7 @@
 		}
 		{
 			title: "{contraption.cabricality.42.title}"
-			icon: "cabricality:raw_logic_bucket"
+			icon: "cabricality:plus_cast"
 			x: 2.0d
 			y: 15.5d
 			shape: "square"
@@ -561,4 +561,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

@@ -118,17 +118,17 @@
 					id: "cabricality:netherite_saw"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Saw\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 						Enchantments: [{
 							id: "minecraft:unbreaking"
 							lvl: 10s
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "[\"§5Enchanted Saw\"]"
-							Lore: ["[\"§7Do not use in manual crafting\"]"]
-						}
+						HideFlags: 1
 					}
 				}
 			}]
@@ -180,17 +180,17 @@
 					id: "indrev:screwdriver"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "[\"§5Enchanted Screwdriver\"]"
-							Lore: ["[\"§7Do not use in manual crafting\"]"]
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Screwdriver\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 					}
 				}
 			}]
@@ -240,17 +240,17 @@
 					id: "cabricality:chromatic_resonator"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "[\"§5Enchanted Resonator\"]"
-							Lore: ["[\"§7Do not use in manual crafting\"]"]
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Resonator\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 					}
 				}
 			}]
@@ -299,17 +299,17 @@
 					id: "cabricality:flash_drive"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "[\"§5Enchanted Flash Drive\"]"
-							Lore: ["[\"§7Do not use in manual crafting\"]"]
-						}
+						HideFlags: 1
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "[\"§5Enchanted Flash Drive\"]"
+							Lore: ["[\"§7Do not use in manual crafting\"]"]
+						}
 					}
 				}
 			}]
@@ -475,17 +475,19 @@
 							Items: [
 								{
 									Slot: 11b
+									id: "minecraft:paper"
+									Count: 1b
 									tag: {
 										display: {
 											Name: "{\"italic\": false, \"text\":\"Welcome, Challenger\"}"
 											bold: 0b
 										}
 									}
-									Count: 1b
-									id: "minecraft:paper"
 								}
 								{
 									Slot: 15b
+									id: "minecraft:barrel"
+									Count: 1b
 									tag: {
 										display: {
 											Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -495,17 +497,19 @@
 											Items: [
 												{
 													Slot: 3b
+													id: "minecraft:paper"
+													Count: 1b
 													tag: {
 														RepairCost: 0
 														display: {
 															Name: "{\"italic\": false, \"text\":\"You'll have to unbox a few of these\"}"
 														}
 													}
-													Count: 1b
-													id: "minecraft:paper"
 												}
 												{
 													Slot: 23b
+													id: "minecraft:barrel"
+													Count: 1b
 													tag: {
 														display: {
 															Lore: ["{\"text\": \"The fabled prize awaits at the bottom...\",\"italic\": true,\"color\": \"gray\"}"]
@@ -515,6 +519,8 @@
 															Items: [
 																{
 																	Slot: 11b
+																	id: "minecraft:barrel"
+																	Count: 1b
 																	tag: {
 																		display: {
 																			Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
@@ -523,49 +529,43 @@
 																			LootTable: "cabricality:chests/patience_1"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:barrel"
 																}
 																{
 																	Slot: 13b
+																	id: "minecraft:paper"
+																	Count: 1b
 																	tag: {
 																		RepairCost: 0
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Good luck, see you at the bottom!\"}"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:paper"
 																}
 																{
 																	Slot: 14b
+																	id: "minecraft:apple"
+																	Count: 1b
 																	tag: {
 																		display: {
 																			Name: "{\"italic\": false, \"text\":\"Motivational Apple\"}"
 																		}
 																	}
-																	Count: 1b
-																	id: "minecraft:apple"
 																}
 															]
 														}
 													}
-													Count: 1b
-													id: "minecraft:barrel"
 												}
 											]
 										}
 									}
-									Count: 1b
-									id: "minecraft:barrel"
 								}
 							]
 						}
+						HideFlags: 1
 						display: {
 							Name: "{\"italic\":false,\"text\":\"Test of Patience\",\"color\":\"dark_purple\"}"
 							Lore: ["{\"italic\":true,\"color\":\"gray\",\"text\":\"The fabled prize awaits at the bottom...\"}"]
 						}
-						HideFlags: 1
 					}
 				}
 			}]
@@ -955,4 +955,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }
