@@ -7,7 +7,6 @@
   "mixins": [
     "FluidBlockMixin",
     "LavaFluidMixin",
-    "RegistryMixin",
     "WrenchItemMixin",
     "farmersdelight.CuttingBoardRecipeMixin",
     "ftbquests.QuestMixin",
