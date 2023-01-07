@@ -18,7 +18,7 @@ hash = "2ee7046323faabd79b85d2cb931ce385dd69a5c8fbd7ee1fe541b61fb816887c"
 
 [[files]]
 file = "config/create-common.toml"
-hash = "b1cf6e5fdfe9087569a7dd004d891e1b6d7bc4b44a251f00b7f78c51d757d88a"
+hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
 [[files]]
 file = "config/customsplashscreen.json5"
@@ -46,7 +46,7 @@ hash = "6e2fa0adee9638b3e8f36e75ad048f0abb0de2d06b591961c6b2aff943fd46f2"
 
 [[files]]
 file = "config/entityculling.json"
-hash = "eb36f41d05b79a93a42a3d68581040526cac7ec51192ae9db5ecc46cec4a9d3f"
+hash = "a7395d0ba0d91fad7d584e159dc5428a22554cbb9f4f2c5c5262edfe74362418"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -58,7 +58,7 @@ hash = "a5628ce9adb7c45e9fc1e4e5c94f601b2ea47731907124ef2e8ec9b803eaafc6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "c3e783f2a1e035e3e551f814895616e52490ef85f0b6f6ec0315b0b3fc75b52e"
+hash = "81ee3cb0b58d755b3b48e2f1f295118686328b9bea50e7ba82e92fadff3956b1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
@@ -66,7 +66,7 @@ hash = "5b60c093b85d2df1be80afeeffcbf111a6f07362f780a25159bebdac936c7f91"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "0234d1aee18d79a952edc29fd6aca0ec101fabcf9fc435bfda91af905dc14130"
+hash = "6f3849689b627076b41732d8123210801b3af8815111cd0c12597e9fd32e366e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/professions.snbt"
@@ -98,7 +98,7 @@ hash = "8d4fb22b258ed79e49ad2311c5b1af38e70e8ed61b7c4181e037813f75add29b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "2d591efec6541f0d868b2e8985f50fd676acb2e416a75d3a5bd75d3711b3e74d"
+hash = "e1286bf9c5bedece417ab7860cbcc1dd30a2003e45c59350b3d6c67b644dc2af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
@@ -122,11 +122,11 @@ hash = "4549a5bf6d2e30fc997325b0321e82bc2db6797cbfa4212c7c4978531755cc81"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "c0f24436bee0c7f30378d90f0ebf5a5ad10b12440d22e7cfc6863ad10c8851e0"
+hash = "2b006b4a7a087547e840168976cda7fe11d567c571f8e6f9e996506586765426"
 
 [[files]]
 file = "config/modmenu.json"
-hash = "7ddcfd9d74337936e78b4c2feaf06e62c1584a72ab1e5e725004207711bba0ad"
+hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
@@ -134,31 +134,31 @@ hash = "6991409f47b44a87f45441f1c43955c65c09997b1b728751dfa65a0f9ad8e7cc"
 
 [[files]]
 file = "config/sodium-extra-options.json"
-hash = "d44a94d4b38ebda4e5ccf5086aa05e0101323b385ae110c3b6ad70b912a242ff"
+hash = "682a2cbed83501eb45b11fe9b4b8b56a26c10a777842f8649822547245162ca6"
 
 [[files]]
 file = "config/splasher.toml"
-hash = "8c13951726dbb453584903ac9d78751fd22984ecb15726d00915c8b6a26ab5e1"
+hash = "0f79abb921355ab2c07b8b46b1efa7c9952478e2cf2760627fb5e729a61e002d"
 
 [[files]]
 file = "config/splasher/en_us.txt"
-hash = "c42e812224587ebaddd80dc25dbaea5cabff94653ab3407d246168c047b102b5"
+hash = "e0e9812e25b26e5ab5aeddc23fd217679a31882860b287a2b69cc72fb46dc218"
 
 [[files]]
 file = "config/splasher/zh_cn.txt"
-hash = "6aa8f6dc35b598c69c3c47e5834d14de4511f41c1e24cc3fc4e5c6ffcb2c502e"
+hash = "c1889a77209ecf71fae5ae3925768e160288bd13b258e3cb3d39a34c510dffae"
 
 [[files]]
 file = "config/tconstruct-client.toml"
-hash = "5603947ab38abc1be7f6d09a34f5d2766762956e8acad160bc74cb944d3c945e"
+hash = "78b9a13c7cae6b3106053dbf3d6561457d7ca4dd439fdd3cf865eb604858ec23"
 
 [[files]]
 file = "config/waila/waila.json"
-hash = "4597fde5d576f236df3cdb1e9049601e766780ca9b245263a0fc0aa886286624"
+hash = "b31359a6ce1057ded98eeeb05e2a10f17a8af2b3023626bd08bae76d9cb72184"
 
 [[files]]
 file = "config/waila/waila_plugins.json"
-hash = "8f666e774766b366f5aa33845edb80ebaa4dd3b610d76be8308523b01c7dd2e2"
+hash = "4ffaeae69f28f4dda6f817311170e4295e737d4178852587aad97b89c8146420"
 
 [[files]]
 file = "icon.png"
@@ -197,11 +197,6 @@ metafile = true
 [[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
-metafile = true
-
-[[files]]
-file = "mods/bounced.pw.toml"
-hash = "51b93384900a79dd30281a79478719733e86a9cab82fbb4281c2d1880f67b9ad"
 metafile = true
 
 [[files]]
