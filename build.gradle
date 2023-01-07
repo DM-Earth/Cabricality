@@ -1,5 +1,5 @@
 plugins {
-    id 'maven-publish'
+    id "maven-publish"
     alias(libs.plugins.quilt.loom)
 }
 
@@ -9,59 +9,61 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = 'Modrinth'
-        url = 'https://api.modrinth.com/maven'
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
         content {
-            includeGroup 'maven.modrinth'
+            includeGroup "maven.modrinth"
+        }
+    }
+
+    maven { url = "https://mvn.devos.one/snapshots/" }
+
+    maven {
+        name = "Curseforge"
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
         }
     }
 
     maven {
-        url = 'https://mvn.devos.one/snapshots/'
-        content {
-            includeGroup 'io.github.fabricators_of_create'
-            includeGroup 'me.alphamode'
-            includeGroup 'io.github.tropheusj'
-        }
+        name = "Ladysnake Mods"
+        url = "https://ladysnake.jfrog.io/artifactory/mods"
     }
 
+    maven { url = "https://maven.parchmentmc.org" }
+    maven { url = "https://maven.fabricmc.net/" }
+    maven { url = "https://maven.tterrag.com/" }
+    maven { url = "https://storage.googleapis.com/devan-maven/" }
+    maven { url = "https://maven.shedaniel.me/" }
+    maven { url = "https://aperlambda.github.io/maven" }
+    maven { url = "https://maven.kotlindiscord.com/repository/terraformers/" }
+    maven { url = "https://mvn.devos.one/snapshots/" }
+    maven { url = "https://maven.terraformersmc.com/" }
+    maven { url = "https://maven.cafeteria.dev/releases/" }
+    maven { url = "https://jitpack.io/" }
+    maven { url = "https://maven.gegy.dev" }
+    maven { url = "https://dvs1.progwml6.com/files/maven/" }
+    maven { url = "https://maven.wispforest.io" }
+    maven { url = "https://modmaven.dev" }
     maven {
-        url = 'https://jitpack.io'
+        url = "https://maven.jamieswhiteshirt.com/libs-release"
         content {
-            includeGroup('com.github.Chocohead')
-            includeGroup('com.github.LlamaLad7')
-            includeGroup('com.github.KrLite')
-            includeGroup('com.github.DM-Earth')
-        }
-    }
-
-    maven {
-        name = 'Curseforge'
-        url 'https://cursemaven.com'
-        content {
-            includeGroup 'curse.maven'
-        }
-    }
-
-    maven {
-        name = 'Ladysnake Mods'
-        url = 'https://ladysnake.jfrog.io/artifactory/mods'
-        content {
-            includeGroup 'io.github.ladysnake'
-            includeGroupByRegex 'io\\.github\\.onyxstudios.*'
+            includeGroup("com.jamieswhiteshirt")
         }
     }
 }
 
 dependencies {
     minecraft libs.minecraft
-    mappings variantOf(libs.quilt.mappings) { classifier 'intermediary-v2' }
+    mappings variantOf(libs.quilt.mappings) { classifier "intermediary-v2" }
     modImplementation libs.quilt.loader
 
     modImplementation libs.quilted.fabric.api
 
+    modImplementation "com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}"
+
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
-    modImplementation "maven.modrinth:create-fabric:${project.create_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
     modImplementation "maven.modrinth:bits-and-chisels:${project.bits_and_chisels_version}"
     modImplementation "maven.modrinth:farmers-delight-fabric:${project.farmers_delight_version}"
@@ -78,22 +80,21 @@ dependencies {
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
 
-    modImplementation "io.github.fabricators_of_create:Porting-Lib:${project.porting_lib_version}"
-
     modImplementation "maven.modrinth:equator:${project.equator_version}"
+    modImplementation "slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}"
     implementation "com.github.KrLite:Equator-Utils:${project.equator_utils_version}"
 }
 
 processResources {
-    inputs.property 'version', version
+    inputs.property "version", version
 
-    filesMatching('quilt.mod.json') {
-        expand 'version': version
+    filesMatching("quilt.mod.json") {
+        expand "version": version
     }
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.encoding = 'UTF-8'
+    it.options.encoding = "UTF-8"
     it.options.release = 17
 }
 
@@ -105,7 +106,7 @@ java {
 }
 
 jar {
-    from('LICENSE') {
+    from("LICENSE") {
         rename { "${it}_${archivesBaseName}" }
     }
 }
@@ -122,5 +123,5 @@ publishing {
 }
 
 loom {
-    accessWidenerPath = file('src/main/resources/cabricality.accesswidener')
+    accessWidenerPath = file("src/main/resources/cabricality.accesswidener")
 }
