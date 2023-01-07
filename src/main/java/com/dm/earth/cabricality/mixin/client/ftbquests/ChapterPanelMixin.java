@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;

@@ -2,14 +2,17 @@ package com.dm.earth.cabricality;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfBlockEntityTypes;
@@ -26,10 +29,12 @@ import com.dm.earth.cabricality.util.ScreenUtil;
 import com.dm.earth.cabricality.util.debug.CabfLogger;
 import com.dm.earth.cabricality.util.func.CabfBlur;
 import com.dm.earth.cabricality.util.mod.CabfModConflict;
+
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.krlite.equator.color.PreciseColor;
 import net.krlite.equator.util.IdentifierBuilder;
+
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -87,7 +92,7 @@ public class Cabricality implements ModInitializer {
 
 	@Contract("_,_ -> new")
 	public static @NotNull TranslatableText genTranslatableText(String type, String... path) {
-		return (@NotNull TranslatableText) ID_BUILDER.localization(type, path);
+		return ID_BUILDER.localization(type, path);
 	}
 
 	@ClientOnly

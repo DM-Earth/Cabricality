@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin;
+package com.dm.earth.cabricality.mixin.farmersdelight;
 
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

@@ -5,24 +5,15 @@
   "plugin": "com.dm.earth.cabricality.core.CabfMixinConfigPlugin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "CuttingBoardRecipeMixin",
-    "DiodeLampBlockAccessor",
     "FluidBlockMixin",
     "LavaFluidMixin",
     "RegistryMixin",
-    "TagKeyMixin",
     "WrenchItemMixin",
-    "ftbquests.BaseScreenMixin",
-    "ftbquests.ChapterButtonMixin",
-    "ftbquests.ChapterPanelMixin",
-    "ftbquests.ClientQuestFileMixin",
-    "ftbquests.ContextMenuMixin",
-    "ftbquests.ModpackButtonMixin",
+    "farmersdelight.CuttingBoardRecipeMixin",
     "ftbquests.QuestMixin",
     "ftbquests.QuestObjectMixin",
-    "ftbquests.QuestPanelMixin",
-    "ftbquests.QuestScreenMixin",
-    "ftbquests.ViewQuestPanelMixin"
+    "led.DiodeLampBlockAccessor",
+    "mantle.ItemOutputMixin"
   ],
   "client": [
     "client.ChatScreenMixin",
@@ -31,7 +22,16 @@
     "client.OptimizeWorldScreenMixin",
     "client.ScreenMixin",
     "client.SplashOverlayMixin",
-    "client.TitleScreenMixin"
+    "client.TitleScreenMixin",
+    "client.ftbquests.BaseScreenMixin",
+    "client.ftbquests.ChapterButtonMixin",
+    "client.ftbquests.ChapterPanelMixin",
+    "client.ftbquests.ClientQuestFileMixin",
+    "client.ftbquests.ContextMenuMixin",
+    "client.ftbquests.ModpackButtonMixin",
+    "client.ftbquests.QuestPanelMixin",
+    "client.ftbquests.QuestScreenMixin",
+    "client.ftbquests.ViewQuestPanelMixin"
   ],
   "injectors": {
     "defaultRequire": 0
