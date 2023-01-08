@@ -121,6 +121,10 @@ public class RecipeTweaks
 				id -> new PressingRecipe(
 						new FreePRP(id).setIngredient(CR.asIngredient("zinc_ingot"))
 								.setResult(CABF.asProcessingOutput("zinc_sheet"))));
+		handler.register(recipeId("pressing", "steel_plate"),
+				id -> new PressingRecipe(
+						new FreePRP(id).setIngredient(AD.asIngredient("steel_ingot"))
+								.setResult(IR.asProcessingOutput("steel_plate"))));
 		handler.register(recipeId("crafting", "nickel_ingot_from_nugget"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AAA", "AAA", "AAA")
 						.ingredient('A', CABF.asIngredient("nickel_nugget"))
