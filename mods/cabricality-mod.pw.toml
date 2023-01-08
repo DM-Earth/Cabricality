@@ -1,13 +1,13 @@
 name = "Cabricality"
-filename = "cabricality-0.2-beta2.jar"
+filename = "cabricality-0.2-beta3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/BHRmiEC5/versions/Y1EuIog7/cabricality-0.2-beta2.jar"
+url = "https://cdn.modrinth.com/data/BHRmiEC5/versions/nrpEmuac/cabricality-0.2-beta3.jar"
 hash-format = "sha1"
-hash = "1eba4b21c9192e4f992d98f556c00db6bfd7e708"
+hash = "fee3767cc587e4fad90b059cbab7b01b175cc951"
 
 [update]
 [update.modrinth]
 mod-id = "BHRmiEC5"
-version = "Y1EuIog7"
+version = "nrpEmuac"
