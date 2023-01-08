@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.content.core.blocks;
 
+import java.util.function.Supplier;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 import com.dm.earth.cabricality.Cabricality;
@@ -12,20 +13,23 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
 public enum CasingBlockEntry {
-	ZINC("zinc", RenderLayer.getSolid(),
-			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN), "zinc")),
-	INVAR("invar", RenderLayer.getSolid(),
+	ZINC("zinc", () -> RenderLayer.getSolid(), new SimpleCasingBlock(
+			QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN), "zinc")),
+
+	INVAR("invar", () -> RenderLayer.getSolid(),
 			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.GRAY), "invar")),
-	FLUIX("fluix", RenderLayer.getSolid(),
-			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "fluix")),
-	ENDERIUM("enderium", RenderLayer.getSolid(),
-			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "enderium"));
+
+	FLUIX("fluix", () -> RenderLayer.getSolid(), new SimpleCasingBlock(
+			QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "fluix")),
+
+	ENDERIUM("enderium", () -> RenderLayer.getSolid(), new SimpleCasingBlock(
+			QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "enderium"));
 
 	private final String name;
-	private final RenderLayer layer;
+	private final Supplier<Object> layer;
 	private final CasingBlock block;
 
-	CasingBlockEntry(String name, RenderLayer layer, CasingBlock block) {
+	CasingBlockEntry(String name, Supplier<Object> layer, CasingBlock block) {
 		this.name = name;
 		this.layer = layer;
 		this.block = block;
@@ -36,7 +40,7 @@ public enum CasingBlockEntry {
 	}
 
 	public RenderLayer getLayer() {
-		return layer;
+		return (RenderLayer) layer.get();
 	}
 
 	public CasingBlock getBlock() {

@@ -453,3 +453,8 @@ metafile = true
 file = "mods/wthit.pw.toml"
 hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
 metafile = true
+
+[[files]]
+file = "mods/xl-packets-fabric.pw.toml"
+hash = "bb48e2f46c2ab8c1f4b81cb086ffdf39b4cb5cf6267748d7fc094f42d4bd31c5"
+metafile = true

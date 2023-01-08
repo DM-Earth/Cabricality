@@ -3,6 +3,7 @@ package com.dm.earth.cabricality.client;
 import java.util.Arrays;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
@@ -15,11 +16,15 @@ import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingEntry;
+import com.dm.earth.cabricality.util.PushUtil;
+import com.dm.earth.cabricality.util.ScreenUtil;
 import com.dm.earth.cabricality.util.SoundUtil;
+import com.dm.earth.cabricality.util.func.CabfBlur;
 import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
 
+@ClientOnly
 public class CabricalityClient implements ClientModInitializer {
 	public static void finishLoading() {
 		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);
@@ -49,5 +54,10 @@ public class CabricalityClient implements ClientModInitializer {
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
 				ResourcePackActivationType.ALWAYS_ENABLED,
 				Cabricality.genTranslatableText("pack", "quests_lang"));
+
+		PushUtil.register();
+		CabfBlur.INSTANCE.init();
+
+		ScreenUtil.registerEvents();
 	}
 }

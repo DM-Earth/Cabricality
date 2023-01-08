@@ -21,13 +21,12 @@ import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
-import com.dm.earth.cabricality.util.PushUtil;
-import com.dm.earth.cabricality.util.ScreenUtil;
 import com.dm.earth.cabricality.util.debug.CabfLogger;
-import com.dm.earth.cabricality.util.func.CabfBlur;
 import com.dm.earth.cabricality.util.mod.CabfModConflict;
+import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
+import net.fabricmc.api.EnvType;
 import net.krlite.equator.color.PreciseColor;
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.ItemGroup;
@@ -115,15 +114,12 @@ public class Cabricality implements ModInitializer {
 		CabfFluids.register();
 		CabfSounds.register();
 		CabfBlockEntityTypes.register();
-		ScreenUtil.registerEvents();
-		PushUtil.register();
-		CabfBlur.INSTANCE.init();
+
 		ItemTagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
 		UseEntityListener.load();
-		initClientAssets();
-
+		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> () -> initClientAssets());
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
 		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
