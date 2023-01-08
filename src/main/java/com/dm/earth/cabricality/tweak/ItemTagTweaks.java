@@ -1,11 +1,10 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.C;
+import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
-import com.simibubi.create.AllTags.AllItemTags;
-
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.ActionResult;
@@ -41,10 +40,10 @@ public class ItemTagTweaks
 	public void load(TagHandler<Item> handler) {
 		for (WoodCuttingEntry entry : WoodCuttingEntry.values()) {
 			if (entry.isStrippedLogExist())
-				handler.register(AllItemTags.MODDED_STRIPPED_LOGS.tag,
+				handler.register(CabfItemTags.STRIPPED_LOGS,
 						Registry.ITEM.get(entry.getStrippedLogId()));
 			if (entry.isStrippedWoodExist())
-				handler.register(AllItemTags.MODDED_STRIPPED_WOOD.tag,
+				handler.register(CabfItemTags.STRIPPED_WOODS,
 						Registry.ITEM.get(entry.getStrippedWoodId()));
 		}
 
@@ -52,7 +51,7 @@ public class ItemTagTweaks
 			Item[] items = handler.get(C.id("compressed_" + mat)).toArray(new Item[0]);
 			handler.register(C.id(mat + "_plates"), items);
 			handler.register(C.id("plates", mat), items);
-			// handler.remove(C.id("compressed_" + mat));
+			handler.remove(C.id("compressed_" + mat));
 		}
 	}
 }
