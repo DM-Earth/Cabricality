@@ -1,11 +1,13 @@
 package com.dm.earth.cabricality.tweak.cutting;
 
+import static com.dm.earth.cabricality.ModEntry.AD;
+import static com.dm.earth.cabricality.ModEntry.AP;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.MLM;
-import static com.dm.earth.cabricality.ModEntry.*;
-
+import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.TC;
+import static com.dm.earth.cabricality.ModEntry.TRE;
 import org.jetbrains.annotations.Nullable;
-
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -52,27 +54,27 @@ public enum WoodCuttingEntry {
 	TWISTED(AP.id("twisted"), "twisted_planks", "twisted_slab", "twisted_log",
 			"stripped_twisted_log", "twisted_wood", "stripped_twisted_wood"),
 
-	RAINBOW_EUCALYPTUS(TR.id("rainbow_eucalyptus"), "rainbow_eucalyptus_planks",
+	RAINBOW_EUCALYPTUS(TRE.id("rainbow_eucalyptus"), "rainbow_eucalyptus_planks",
 			"rainbow_eucalyptus_slab", "rainbow_eucalyptus_log", "stripped_rainbow_eucalyptus_log",
 			"rainbow_eucalyptus_wood", "stripped_rainbow_eucalyptus_wood"),
 
-	CYPRESS(TR.id("cypress"), "cypress_planks", "cypress_slab", "cypress_log",
+	CYPRESS(TRE.id("cypress"), "cypress_planks", "cypress_slab", "cypress_log",
 			"stripped_cypress_log", "cypress_wood", "stripped_cypress_wood"),
 
-	HEMLOCK(TR.id("hemlock"), "hemlock_planks", "hemlock_slab", "hemlock_log",
+	HEMLOCK(TRE.id("hemlock"), "hemlock_planks", "hemlock_slab", "hemlock_log",
 			"stripped_hemlock_log", "hemlock_wood", "stripped_hemlock_wood"),
 
-	REDWOOD(TR.id("redwood"), "redwood_planks", "redwood_slab", "redwood_log",
+	REDWOOD(TRE.id("redwood"), "redwood_planks", "redwood_slab", "redwood_log",
 			"stripped_redwood_log", "redwood_wood", "stripped_redwood_wood"),
 
-	JAPANESE_MAPLE(TR.id("japanese_maple"), "japanese_maple_planks", "japanese_maple_slab",
+	JAPANESE_MAPLE(TRE.id("japanese_maple"), "japanese_maple_planks", "japanese_maple_slab",
 			"japanese_maple_log", "stripped_japanese_maple_log", "japanese_maple_wood",
 			"stripped_japanese_maple_wood"),
 
-	WILLOW(TR.id("willow"), "willow_planks", "willow_slab", "willow_log", "stripped_willow_log",
+	WILLOW(TRE.id("willow"), "willow_planks", "willow_slab", "willow_log", "stripped_willow_log",
 			"willow_wood", "stripped_willow_wood"),
 
-	RUBBER(TR.id("rubber"), "rubber_planks", "rubber_slab", "rubber_log", "stripped_rubber_log",
+	RUBBER(TRE.id("rubber"), "rubber_planks", "rubber_slab", "rubber_log", "stripped_rubber_log",
 			"rubber_wood", "stripped_rubber_wood");
 
 	private final Identifier id;
