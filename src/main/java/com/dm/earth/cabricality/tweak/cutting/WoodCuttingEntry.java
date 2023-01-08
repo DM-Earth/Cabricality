@@ -9,7 +9,6 @@ import org.jetbrains.annotations.Nullable;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-// TODO: Terrestria
 public enum WoodCuttingEntry {
 	OAK(MC.id("oak"), "oak_planks", "oak_slab", null, null, null, null),
 

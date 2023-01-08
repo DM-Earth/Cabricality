@@ -29,8 +29,7 @@ import net.minecraft.util.registry.Registry;
 public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 	public static void load() {
 		JarData thisL = new JarData();
-		//TODO
-		// LoadTagsCallback.ITEM.register(thisL);
+		LoadTagsCallback.ITEM.register(thisL);
 		RecipeManagerHelper.addRecipes(thisL);
 	}
 
