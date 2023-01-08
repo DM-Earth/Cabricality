@@ -426,7 +426,7 @@ metafile = true
 
 [[files]]
 file = "mods/stenographer.pw.toml"
-hash = "9d83928fbdd768b1a2918f81440ed3190f5285b95348721bada2141c5f24d883"
+hash = "5c411f588dd6f97f0fbbfe59b8153290b45398e9ad9986e631e7dd96f011c6ee"
 metafile = true
 
 [[files]]
