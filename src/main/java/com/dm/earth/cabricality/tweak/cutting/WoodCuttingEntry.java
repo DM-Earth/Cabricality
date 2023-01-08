@@ -45,7 +45,13 @@ public enum WoodCuttingEntry {
 	SKYROOT(TC.id("skyroot"), "skyroot_planks", "skyroot_planks_slab", null, null, null, null),
 
 	GREENHEART(TC.id("greenheart"), "greenheart_planks", "greenheart_planks_slab", null, null, null,
-			null);
+			null),
+
+	GLACIAN(AD.id("glacian"), "glacian_planks", "glacian_slab", "glacian_log",
+			"stripped_glacian_log", null, null),
+
+	TWISTED(AP.id("twisted"), "twisted_planks", "twisted_slab", "twisted_log",
+			"stripped_twisted_log", "twisted_wood", "stripped_twisted_wood");
 
 	private final Identifier id;
 	@Nullable
