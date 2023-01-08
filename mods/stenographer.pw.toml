@@ -1,13 +1,13 @@
 name = "Stenographer"
-filename = "stenographer-1.18-1.0.1-patch1.jar"
+filename = "stenographer-1.18-1.0.1-patch2.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/cu290YRp/versions/VNi7fBVc/stenographer-1.18-1.0.1-patch1.jar"
+url = "https://cdn.modrinth.com/data/cu290YRp/versions/HzjYafTH/stenographer-1.18-1.0.1-patch2.jar"
 hash-format = "sha1"
-hash = "67ce8611ecf0a019b4f2f1f1582a21e7f24bcc1f"
+hash = "22a42a9d73555b03861a741db7d8882cdeb0bf8e"
 
 [update]
 [update.modrinth]
 mod-id = "cu290YRp"
-version = "VNi7fBVc"
+version = "HzjYafTH"
