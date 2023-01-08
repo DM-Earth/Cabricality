@@ -210,6 +210,11 @@ hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
 metafile = true
 
 [[files]]
+file = "mods/cabricality-mod.pw.toml"
+hash = "44dafe859ef5d0231aae58122a4248850142468ebd218d1acf7a6b0fcded8b48"
+metafile = true
+
+[[files]]
 file = "mods/catwalks-inc.pw.toml"
 hash = "435e8b58159a75643f301ec8fd5b9bf984bc0dfa7a60a1e401413a04d5e7ff4c"
 metafile = true
