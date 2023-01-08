@@ -22,15 +22,12 @@ public class CabfBlur {
 	private static final List<Class<? extends Screen>> EXCLUDED_SCREENS = new ArrayList<>();
 	private final ManagedShaderEffect BLUR = ShaderEffectManager.getInstance().manage(
 			Cabricality.id("shaders", "post", "fade_in_blur.json"),
-			managedShaderEffect -> managedShaderEffect.setUniformValue("Radius", RADIUS)
-	);
+			managedShaderEffect -> managedShaderEffect.setUniformValue("Radius", RADIUS));
 	private final Uniform1f PROGRESS = BLUR.findUniform1f("Progress");
 	private long startTime;
 
 	public void init() {
-		EXCLUDED_SCREENS.addAll(ImmutableList.of(
-				ChatScreen.class
-		));
+		EXCLUDED_SCREENS.addAll(ImmutableList.of(ChatScreen.class));
 
 		ShaderEffectRenderCallback.EVENT.register(tickDelta -> {
 			if (startTime > 0) {
@@ -52,7 +49,7 @@ public class CabfBlur {
 				PushUtil.BLUR_FADE.push();
 			} else {
 				BLUR.setUniformValue("Radius", RADIUS);
-				PushUtil.BLUR_FADE.push(() -> startTime = System.currentTimeMillis());
+				PushUtil.BLUR_FADE.pull(() -> startTime = System.currentTimeMillis());
 			}
 		}
 	}
