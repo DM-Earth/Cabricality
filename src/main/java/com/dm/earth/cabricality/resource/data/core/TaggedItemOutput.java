@@ -1,17 +1,15 @@
 package com.dm.earth.cabricality.resource.data.core;
 
+import java.util.Optional;
+import org.jetbrains.annotations.NotNull;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.HolderSet;
 import net.minecraft.util.registry.Registry;
-
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import org.jetbrains.annotations.NotNull;
 import slimeknights.mantle.recipe.helper.ItemOutput;
-
-import java.util.Optional;
 
 public class TaggedItemOutput extends ItemOutput {
 
