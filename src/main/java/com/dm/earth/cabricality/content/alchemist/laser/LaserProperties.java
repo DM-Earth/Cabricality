@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist.laser;
 
-import com.dm.earth.cabricality.mixin.DiodeLampBlockAccessor;
+import com.dm.earth.cabricality.mixin.led.DiodeLampBlockAccessor;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.particle.DustParticleEffect;

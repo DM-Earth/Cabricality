@@ -4,14 +4,12 @@ import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
@@ -29,7 +27,6 @@ import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.fluid.Fluids;
@@ -114,7 +111,7 @@ public class FluixThread implements TechThread {
 		handler.register(recipeId("splashing", "sandstone"),
 				id -> new SplashingRecipe(
 						new FreePRP(id).setIngredient(MC.asIngredient("sandstone"))
-								.setResult(CABF.asProcessingOutput("sand_ball", 0.125f))));
+								.setResult(CABF.asProcessingOutput("sand_ball", 0.65f))));
 		handler.register(recipeId("compacting", "ice_charge"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setIngredient(blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz)
@@ -169,7 +166,8 @@ public class FluixThread implements TechThread {
 
 		handler.register(recipeId("item_application", "fluix_casing"),
 				id -> new ManualApplicationRecipe(new FreePRP(id)
-						.setIngredient(MC.asIngredient("obsidian"), AE2.asIngredient("fluix_crystal"))
+						.setIngredient(MC.asIngredient("obsidian"),
+								AE2.asIngredient("fluix_crystal"))
 						.setResult(CABF.asProcessingOutput("fluix_casing"))));
 	}
 
