@@ -82,7 +82,7 @@ dependencies {
 
     modImplementation "maven.modrinth:equator:${project.equator_version}"
     modImplementation "slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}"
-    implementation "com.github.KrLite:Equator-Utils:${project.equator_utils_version}"
+    implementation include("com.github.KrLite:Equator-Utils:${project.equator_utils_version}")
 }
 
 processResources {
