@@ -1,6 +1,6 @@
 # Cabricality
 
-### Wiki Index
+## Wiki Index
 
 Current Language: `English (US)`
 
