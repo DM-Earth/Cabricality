@@ -186,7 +186,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "0084c36a5d7f0ce300d60178150d1211308c81d19f929b3382c6b4af0b9e6d4f"
+hash = "5c067cf953857a327140fca91560dcb225c2f49d8dc5c0e71525812570e8e902"
 metafile = true
 
 [[files]]
@@ -226,7 +226,7 @@ metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "8f07b2408013a7217caacec87c977635fdf94eb21a10bf281f2bba67ff7c4dc1"
+hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
 metafile = true
 
 [[files]]
@@ -251,7 +251,7 @@ metafile = true
 
 [[files]]
 file = "mods/ctm-refabricated.pw.toml"
-hash = "3313ae2e4364baa48c96b7dcc8d356af55024e76bd7a590ca0de580366d4e77d"
+hash = "daeb1bc740f2e5dbedff29790e3339418b172cce29b674dbf8eb87fbd6f6d60c"
 metafile = true
 
 [[files]]
@@ -321,7 +321,7 @@ metafile = true
 
 [[files]]
 file = "mods/kibe.pw.toml"
-hash = "16b56edc050c5ff4b1d2bcc9cfe0bd932d14286332bf25165d9c7259dd688e4c"
+hash = "3e47e98487168bea70eca4a17fd42530ce9fe4b4e1c62d882674e51d181c369a"
 metafile = true
 
 [[files]]
