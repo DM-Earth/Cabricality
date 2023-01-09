@@ -199,6 +199,14 @@
   "reagent.cabricality.hex": "§5Ashic§r",
   "reagent.cabricality.ender": "§2Enderium§r",
 
+  "reagent.cabricality.iron": "§fIron§r",
+  "reagent.cabricality.gold": "§6Golden§r",
+  "reagent.cabricality.copper": "§cCopper§r",
+  "reagent.cabricality.tin": "§3Tin§r",
+  "reagent.cabricality.lead": "§1Lead§r",
+  "reagent.cabricality.zinc": "§aZinc§r",
+  "reagent.cabricality.nickel": "§eNickel§r",
+
   "reagent.cabricality.sulfur": "§6Sulfuric§r",
   "reagent.cabricality.certus_quartz": "§bCertus Quartz§r",
   "reagent.cabricality.cinnabar": "§cCinnabar§r",
@@ -213,6 +221,7 @@
   "catalyst.cabricality.igneous": "§dIgneous",
   "catalyst.cabricality.herbal": "§dHerbal",
   "catalyst.cabricality.volatile": "§dVolatile",
+  "catalyst.cabricality.metal":"§dMetal",
   "catalyst.cabricality.crystal": "§dCrystalline",
   "catalyst.cabricality.chaos": "§b§kChaos",
 
