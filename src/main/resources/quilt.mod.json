@@ -34,7 +34,8 @@
         "com.dm.earth.cabricality.tweak.RecipeTweaks",
         "com.dm.earth.cabricality.content.trading.data.recipe.Trading"
       ],
-      "rei_client": "com.dm.earth.cabricality.client.rei.CabricalityREIClientPlugin"
+      "rei_client": "com.dm.earth.cabricality.client.rei.CabricalityREIClientPlugin",
+      "modmenu": "com.dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
     },
     "accessWidener": "cabricality.accesswidener",
     "depends": [
@@ -49,6 +50,10 @@
       {
         "id": "quilted_fabric_api",
         "versions": ">=1.0.0-"
+      },
+      {
+        "id": "fabric-key-binding-api-v1",
+        "versions": "*"
       },
       {
         "id": "equator",

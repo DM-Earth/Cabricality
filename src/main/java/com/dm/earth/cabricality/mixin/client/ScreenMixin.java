@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.mixin.client;
 
+import com.dm.earth.cabricality.Cabricality;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
