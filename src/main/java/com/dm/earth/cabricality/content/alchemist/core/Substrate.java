@@ -1,13 +1,14 @@
 package com.dm.earth.cabricality.content.alchemist.core;
 
-import com.dm.earth.cabricality.Cabricality;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
 import com.dm.earth.cabricality.core.IHashStringable;
 import net.minecraft.block.Block;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
@@ -53,13 +54,12 @@ public abstract class Substrate implements IHashStringable {
 
 	@Override
 	public String toString() {
-		return Cabricality.genTranslatableText(
-				this.getType(),
-				this.isReagent()
-						? ((Reagent) this).getItemId().getNamespace()
-						: "",
-				this.getId().getPath()
-		).getString() + Cabricality.genTranslatableText("block", this.getType() + "_jar").getString() + "§r";
+		return this.id.toString();
+	}
+
+	public Text getJarName() {
+		return ((MutableText) this.getName())
+				.append(Cabricality.genTranslatableText("block", this.getType() + "_jar"));
 	}
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {

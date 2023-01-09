@@ -1,7 +1,5 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.config.CabfConfig;
-import com.dm.earth.cabricality.util.func.CabfBlur;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -13,6 +11,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.dm.earth.cabricality.config.CabfConfig;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfBlockEntityTypes;
@@ -83,7 +82,8 @@ public class Cabricality implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 	public static final IdentifierBuilder.Specified ID_BUILDER =
 			new IdentifierBuilder.Specified(ID);
-	public static final CabfConfig CONFIG = new CabfConfig(QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
+	public static final CabfConfig CONFIG =
+			new CabfConfig(QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {

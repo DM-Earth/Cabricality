@@ -6,7 +6,6 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.core.ISettableBlockItem;
-import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
@@ -26,14 +25,12 @@ public abstract class SubstrateJarBlock extends JarBlock implements ISettableBlo
 
 	@Nullable
 	public String getContent() {
-		if (this.getSubstrate() != null) {
-			return new TranslatableText(IdentifierBuilder.translationKey(
-					this.getSubstrate().getType(), this.getSubstrate().getId().getNamespace(),
-					this.getSubstrate().getId().getPath())).getString()
+		if (this.getSubstrate() != null)
+			return new TranslatableText(this.getSubstrate().getTranslationKey()).getString()
 					+ Cabricality
 							.genTranslatableText("block", this.getSubstrate().getType() + "_jar")
 							.getString();
-		} else
+		else
 			return null;
 	}
 
