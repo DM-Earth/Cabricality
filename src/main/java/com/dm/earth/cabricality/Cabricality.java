@@ -113,7 +113,7 @@ public class Cabricality implements ModInitializer {
 
 		CabfModConflict.checkAndExit();
 
-		CabfLogger.logInfo("Initializing... 📦");
+		LOGGER.info("Initializing " + NAME + "... 📦");
 
 		Trading.load();
 		Alchemist.load();
@@ -129,7 +129,7 @@ public class Cabricality implements ModInitializer {
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
 		UseEntityListener.load();
-		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> () -> initClientAssets());
+		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> Cabricality::initClientAssets);
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
 		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),

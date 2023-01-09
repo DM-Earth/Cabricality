@@ -15,7 +15,9 @@
     "log.log4j.RoughlyEnoughItemsStateLogger",
     "log.log4j.WailaLogger",
     "log.slf4j.ArchitecturyLogger",
+    "MinecraftServerLogger",
     "log.slf4j.ReloadableResourceManagerLogger",
+    "log.slf4j.UtilLogger",
     "mantle.ItemOutputMixin"
   ],
   "client": [
@@ -37,8 +39,7 @@
     "client.ftbquests.QuestObjectMixin",
     "client.ftbquests.QuestPanelMixin",
     "client.ftbquests.QuestScreenMixin",
-    "client.ftbquests.ViewQuestPanelMixin",
-    "log.slf4j.MinecraftLogger"
+    "client.ftbquests.ViewQuestPanelMixin"
   ],
   "injectors": {
     "defaultRequire": 0

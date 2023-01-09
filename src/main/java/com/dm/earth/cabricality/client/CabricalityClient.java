@@ -3,6 +3,7 @@ package com.dm.earth.cabricality.client;
 import java.util.Arrays;
 
 import com.dm.earth.cabricality.config.key.CabfKeyBinds;
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -28,22 +29,30 @@ import net.minecraft.client.render.RenderLayer;
 
 @ClientOnly
 public class CabricalityClient implements ClientModInitializer {
+	private static long initTime = -1;
+
 	public static void finishLoading() {
+		if (initTime != -1) {
+			Cabricality.LOGGER.info("Cabricality has initialized in " + (System.currentTimeMillis() - initTime) + "ms! ⚙️");
+			initTime = -1;
+		}
 		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);
 		GLFW.glfwRequestWindowAttention(MinecraftClient.getInstance().getWindow().getHandle());
 	}
 
 	@Override
 	public void onInitializeClient(ModContainer mod) {
+		initTime = System.currentTimeMillis();
+
 		PushUtil.register();
 		ScreenUtil.registerEvents();
-
 		CabfKeyBinds.registerKenBinds();
-		CabfBlur.INSTANCE.init();
-
 		FluidRendererRegistry.renderFluidInit();
+
 		ColorRegistryListener.load();
 		ProfessionDebugHelper.load();
+
+		CabfBlur.INSTANCE.init();
 
 		WoodCuttingEntry.checkAll();
 		OreProcessingEntry.checkAll();
