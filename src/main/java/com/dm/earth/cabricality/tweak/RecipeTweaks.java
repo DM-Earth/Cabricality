@@ -161,6 +161,7 @@ public class RecipeTweaks
 		handler.remove(TC.id("smeltery/alloys/molten_invar"));
 
 		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
+		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AD.asItem("wrench")));
 
 		for (String material : ASTRA_MATERIALS)
 			for (String decor : ASTRA_DECOR_TYPES)
