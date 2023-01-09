@@ -28,9 +28,10 @@
 
   "item.cabricality.stone_rod": "Stone Rod",
 
-  "item.cabricality.invar_ingot"   : "Invar Ingot",
-  "item.cabricality.nickel_ingot"  : "Nickel Ingot",
-  "item.cabricality.nickel_nugget" : "Nickel Nugget",
+  "item.cabricality.invar_ingot": "Invar Ingot",
+  "item.cabricality.nickel_ingot": "Nickel Ingot",
+  "item.cabricality.nickel_nugget": "Nickel Nugget",
+  "item.cabricality.raw_nickel": "Raw Nickel",
   "item.cabricality.enderium_ingot": "Enderium Ingot",
 
   "item.cabricality.nickel_compound" : "Nickel Compound",
