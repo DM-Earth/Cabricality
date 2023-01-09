@@ -20,6 +20,11 @@ public class NumberItem extends GlintedItem implements CalculationNumber {
 				Registry.ITEM.getId(this).getPath().replaceAll("number_", "").replaceAll("x", "-"));
 	}
 
+	@Override
+	public String getTranslationKey() {
+		return "" + getNumber();
+	}
+
 	public static String getNumberItemName(int number) {
 		return "number_" + (number < 0 ? "x" + Math.abs(number) : number);
 	}

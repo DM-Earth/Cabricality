@@ -123,22 +123,11 @@
   "item.cabricality.molten_ostrum_bucket"  : "熔融紫金桶",
   "item.cabricality.molten_calorite_bucket": "熔融耐熱金屬桶",
 
-  "item.cabricality.zero" : "0",
-  "item.cabricality.one"  : "1",
-  "item.cabricality.two"  : "2",
-  "item.cabricality.three": "3",
-  "item.cabricality.four" : "4",
-  "item.cabricality.five" : "5",
-  "item.cabricality.six"  : "6",
-  "item.cabricality.seven": "7",
-  "item.cabricality.eight": "8",
-  "item.cabricality.nine" : "9",
-
   "item.cabricality.plus"     : "+",
   "item.cabricality.minus"    : "-",
   "item.cabricality.multiply" : "×",
   "item.cabricality.divide"   : "÷",
-  "item.cabricality.missingno": "א",
+  "item.cabricality.nan": "א",
 
   "item.cabricality.three_cast"   : "整數鑄模（3）",
   "item.cabricality.eight_cast"   : "整數鑄模（8）",
