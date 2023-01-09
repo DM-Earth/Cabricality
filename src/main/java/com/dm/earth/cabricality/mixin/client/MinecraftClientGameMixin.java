@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.mixin.client;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.CabricalityClient;
 
 import net.minecraft.client.MinecraftClientGame;

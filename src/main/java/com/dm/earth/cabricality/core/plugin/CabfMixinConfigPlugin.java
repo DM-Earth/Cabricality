@@ -1,7 +1,10 @@
-package com.dm.earth.cabricality.core;
+package com.dm.earth.cabricality.core.plugin;
 
 import java.util.List;
 import java.util.Set;
+
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 import org.objectweb.asm.tree.ClassNode;
 import org.quiltmc.loader.api.QuiltLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -21,6 +24,10 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 		if (targetClassName.contains("ftbquests"))
 			return QuiltLoader.isModLoaded("ftbquests");
+		if (mixinClassName.matches(".*\\.log\\..*")) {
+			Cabricality.CONFIG.load();
+			return Cabricality.CONFIG.cleanerLog;
+		}
 		return true;
 	}
 
@@ -33,11 +40,8 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 	}
 
 	@Override
-	public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName,
-			IMixinInfo mixinInfo) {}
+	public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
 
 	@Override
-	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName,
-			IMixinInfo mixinInfo) {}
-
+	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
 }

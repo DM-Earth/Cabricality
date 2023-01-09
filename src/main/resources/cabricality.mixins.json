@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.dm.earth.cabricality.mixin",
-  "plugin": "com.dm.earth.cabricality.core.CabfMixinConfigPlugin",
+  "plugin": "com.dm.earth.cabricality.core.plugin.CabfMixinConfigPlugin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "FluidBlockMixin",
@@ -11,6 +11,11 @@
     "WrenchItemMixin",
     "farmersdelight.CuttingBoardRecipeMixin",
     "led.DiodeLampBlockAccessor",
+    "log.log4j.InternalsLogger",
+    "log.log4j.RoughlyEnoughItemsStateLogger",
+    "log.log4j.WailaLogger",
+    "log.slf4j.ArchitecturyLogger",
+    "log.slf4j.ReloadableResourceManagerLogger",
     "mantle.ItemOutputMixin"
   ],
   "client": [
@@ -21,6 +26,7 @@
     "client.ScreenMixin",
     "client.SplashOverlayMixin",
     "client.TitleScreenMixin",
+    "client.cloth.ClothConfigScreenMixin",
     "client.ftbquests.BaseScreenMixin",
     "client.ftbquests.ChapterButtonMixin",
     "client.ftbquests.ChapterPanelMixin",
@@ -32,7 +38,7 @@
     "client.ftbquests.QuestPanelMixin",
     "client.ftbquests.QuestScreenMixin",
     "client.ftbquests.ViewQuestPanelMixin",
-    "client.cloth.ClothConfigScreenMixin"
+    "log.slf4j.MinecraftLogger"
   ],
   "injectors": {
     "defaultRequire": 0

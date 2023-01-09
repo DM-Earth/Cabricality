@@ -1,7 +1,6 @@
 package com.dm.earth.cabricality;
 
 import com.dm.earth.cabricality.config.CabfConfig;
-import com.dm.earth.cabricality.util.func.CabfBlur;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;

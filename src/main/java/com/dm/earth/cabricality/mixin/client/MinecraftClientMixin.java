@@ -6,6 +6,7 @@ import com.dm.earth.cabricality.util.func.CabfBlur;
 
 import org.objectweb.asm.Opcodes;
 import org.quiltmc.loader.api.QuiltLoader;
+import org.slf4j.Logger;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

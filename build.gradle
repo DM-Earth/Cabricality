@@ -61,6 +61,8 @@ dependencies {
     modImplementation libs.quilted.fabric.api
 
     modImplementation "com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}"
+    modImplementation "slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}"
+    implementation "com.github.KrLite:Pierced:${project.pierced_version}"
 
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
@@ -69,24 +71,26 @@ dependencies {
     modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
     modImplementation "maven.modrinth:led:${project.led_version}"
     modImplementation "maven.modrinth:interference:${project.interference_version}"
+    modImplementation "maven.modrinth:equator:${project.equator_version}"
+    modImplementation "maven.modrinth:wthit:fabric-${project.wthit_version}"
 
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
 
-    modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
-    modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
-    modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
-    implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
-
-    modImplementation "maven.modrinth:equator:${project.equator_version}"
-    modImplementation "slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}"
-
-    implementation "com.github.KrLite:Pierced:${project.pierced_version}"
     modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
+
+    // Included
+    modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
+    modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
+    modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
+    implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
+
+    // Develop
+    compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
 }
 
 processResources {
