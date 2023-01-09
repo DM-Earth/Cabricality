@@ -282,6 +282,31 @@
 
 
 
+  "comment_config": "设置",
+
+  "config.cabricality.category.general": "通用",
+
+  "config.cabricality.general.background_blur"        : "背景模糊",
+  "config.cabricality.general.background_blur.tooltip": "§7是否启用背景模糊效果",
+
+  "config.cabricality.general.background_blur_radius"        : "背景模糊半径",
+  "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半径大小（像素）",
+
+  "config.cabricality.category.debug": "调试",
+
+  "config.cabricality.debug.debug_info" : "调试信息",
+  "config.cabricality.debug.cleaner_log": "日志清理",
+
+
+
+  "comment_key_binds": "键位绑定",
+
+  "key.cabricality.category.general": "永无止境：重缝",
+
+  "key.cabricality.general.config_screen": "打开整合包设置界面",
+
+
+
   "comment_event": "事件",
 
   "event.cabricality.coin_flip": "你翻转了一枚%s    结果是%s",
@@ -291,7 +316,7 @@
 
   "comment_command": "命令",
 
-  "command.cabricality.alchemist.chaotic" : "§8（混沌）",
+  "command.cabricality.alchemist.chaotic": "§8（混沌）",
 
 
 
@@ -303,11 +328,12 @@
 
   "comment_misc": "杂项",
 
-  "mod.ftblibrary.name": "FTB Library模组",
-  "mod.ftbquests.name": "FTB Quests模组",
-  "mod.ftbteams.name": "FTB Teams模组",
+  "mod.ftblibrary.name"     : "FTB Library模组",
+  "mod.ftbquests.name"      : "FTB Quests模组",
+  "mod.ftbteams.name"       : "FTB Teams模组",
   "mod.questsadditions.name": "Quests Additions模组",
 
+  "screen.cabricality.config.title"            : "永无止境：重缝",
   "screen.cabricality.missing_mod.title"       : "缺少以下模组",
   "screen.cabricality.missing_mod.title_plural": "缺少以下模组",
   "screen.cabricality.missing_mod.subtitle"    : "点击下载",
@@ -316,4 +342,4 @@
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d个模组！",
 
   "itemGroup.cabricality.main": "永无止境：重缝"
-
+}

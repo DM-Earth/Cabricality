@@ -1,6 +1,8 @@
 package com.dm.earth.cabricality.client;
 
 import java.util.Arrays;
+
+import com.dm.earth.cabricality.config.key.CabfKeyBinds;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -33,6 +35,12 @@ public class CabricalityClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient(ModContainer mod) {
+		PushUtil.register();
+		ScreenUtil.registerEvents();
+
+		CabfKeyBinds.registerKenBinds();
+		CabfBlur.INSTANCE.init();
+
 		FluidRendererRegistry.renderFluidInit();
 		ColorRegistryListener.load();
 		ProfessionDebugHelper.load();
@@ -54,10 +62,5 @@ public class CabricalityClient implements ClientModInitializer {
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
 				ResourcePackActivationType.ALWAYS_ENABLED,
 				Cabricality.genTranslatableText("pack", "quests_lang"));
-
-		PushUtil.register();
-		CabfBlur.INSTANCE.init();
-
-		ScreenUtil.registerEvents();
 	}
 }

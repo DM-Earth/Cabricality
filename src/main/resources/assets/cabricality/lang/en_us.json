@@ -136,6 +136,8 @@
   "item.cabricality.multiply_cast": "Multiply Cast",
   "item.cabricality.divide_cast": "Divide Cast",
 
+
+
   "comment_block": "Blocks",
 
   "block.cabricality.dice": "§5Dice",
@@ -165,6 +167,8 @@
   "block.cabricality.jar": "Jar",
   "block.cabricality.reagent_jar": " Reagent",
   "block.cabricality.catalyst_jar": " Catalyst",
+
+
 
   "comment_reagent": "Reagents",
 
@@ -216,6 +220,8 @@
   "reagent.cabricality.silver": "§7Silver§r",
   "reagent.cabricality.silicon": "§dSilicon",
 
+
+
   "comment_catalyst": "Catalysts",
 
   "catalyst.cabricality.igneous": "§dIgneous",
@@ -224,6 +230,8 @@
   "catalyst.cabricality.metal":"§dMetal",
   "catalyst.cabricality.crystal": "§dCrystalline",
   "catalyst.cabricality.chaos": "§b§kChaos",
+
+
 
   "comment_fluid": "Fluids",
 
@@ -252,6 +260,8 @@
   "fluid.cabricality.number_8": "§1Liquefied Computation (8)",
   "fluid.cabricality.number_9": "§1Liquefied Computation (9)",
 
+
+
   "comment_trading": "Trading",
 
   "item.cabricality.trade_card": "§6Trade Card",
@@ -269,6 +279,8 @@
   "profession.cabricality.fishing": "§bFishing",
   "profession.cabricality.smithing": "§bSmithing",
 
+
+
   "comment_tag": "Tags",
 
   "tag.cabricality.trade_cards": "§6Trade Cards",
@@ -277,26 +289,60 @@
   "tag.cabricality.jars/reagent": "§cReagent Jars",
   "tag.cabricality.jars/catalyst": "§9Catalyst Jars",
 
+
+
+  "comment_config": "Configs",
+
+  "config.cabricality.category.general": "General",
+
+  "config.cabricality.general.background_blur"        : "Background Blur",
+  "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
+
+  "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
+  "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
+
+  "config.cabricality.category.debug": "Debug",
+
+  "config.cabricality.debug.debug_info" : "Debug Info",
+  "config.cabricality.debug.cleaner_log": "Cleaner Log",
+
+
+
+  "comment_key_binds": "Key Binds",
+
+  "key.cabricality.category.general": "Cabricality",
+
+  "key.cabricality.general.config_screen": "Open Cabricality Config",
+
+
+
   "comment_event": "Events",
 
   "event.cabricality.coin_flip": "You Flipped a %s    It Was %s",
   "event.cabricality.dice_roll": "You Rolled a %s    It Was %s",
 
+
+
   "comment_command": "Commands",
 
   "command.cabricality.alchemist.chaotic": " §8(Chaotic)",
+
+
 
   "comment_subtitle": "Subtitles",
 
   "subtitle.cabricality.coin_flip": "Coin Flip",
 
+
+
   "comment_misc": "Miscellaneous",
 
-  "mod.ftblibrary.name": "FTB Library",
-  "mod.ftbquests.name": "FTB Quests",
-  "mod.ftbteams.name": "FTB Teams",
+  "mod.ftblibrary.name"     : "FTB Library",
+  "mod.ftbquests.name"      : "FTB Quests",
+  "mod.ftbteams.name"       : "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
 
+  "screen.cabricality.config.title": "Cabricality",
   "screen.cabricality.missing_mod.title": "Cabricality is Missing Mod",
   "screen.cabricality.missing_mod.title_plural": "Cabricality is Missing Mods",
   "screen.cabricality.missing_mod.subtitle": "Click to download",

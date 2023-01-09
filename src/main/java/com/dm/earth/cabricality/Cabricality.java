@@ -1,8 +1,11 @@
 package com.dm.earth.cabricality;
 
+import com.dm.earth.cabricality.config.CabfConfig;
+import com.dm.earth.cabricality.util.func.CabfBlur;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.loader.api.QuiltLoader;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
@@ -80,6 +83,7 @@ public class Cabricality implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 	public static final IdentifierBuilder.Specified ID_BUILDER =
 			new IdentifierBuilder.Specified(ID);
+	public static final CabfConfig CONFIG = new CabfConfig(QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
@@ -103,6 +107,9 @@ public class Cabricality implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
+		CONFIG.load();
+		CONFIG.save();
+
 		CabfModConflict.checkAndExit();
 
 		CabfLogger.logInfo("Initializing... 📦");

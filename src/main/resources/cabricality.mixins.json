@@ -27,11 +27,12 @@
     "client.ftbquests.ClientQuestFileMixin",
     "client.ftbquests.ContextMenuMixin",
     "client.ftbquests.ModpackButtonMixin",
+    "client.ftbquests.QuestMixin",
+    "client.ftbquests.QuestObjectMixin",
     "client.ftbquests.QuestPanelMixin",
     "client.ftbquests.QuestScreenMixin",
     "client.ftbquests.ViewQuestPanelMixin",
-    "client.ftbquests.QuestMixin",
-    "client.ftbquests.QuestObjectMixin"
+    "client.cloth.ClothConfigScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 0
