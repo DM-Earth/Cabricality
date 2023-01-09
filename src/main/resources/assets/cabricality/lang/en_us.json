@@ -123,22 +123,11 @@
   "item.cabricality.molten_ostrum_bucket": "Molten Ostrum Bucket",
   "item.cabricality.molten_calorite_bucket": "Molten Calorite Bucket",
 
-  "item.cabricality.zero": "0",
-  "item.cabricality.one": "1",
-  "item.cabricality.two": "2",
-  "item.cabricality.three": "3",
-  "item.cabricality.four": "4",
-  "item.cabricality.five": "5",
-  "item.cabricality.six": "6",
-  "item.cabricality.seven": "7",
-  "item.cabricality.eight": "8",
-  "item.cabricality.nine": "9",
-
   "item.cabricality.plus": "Plus",
   "item.cabricality.minus": "Minus",
   "item.cabricality.multiply": "Multiply",
   "item.cabricality.divide": "Divide",
-  "item.cabricality.missingno": "א",
+  "item.cabricality.nan": "א",
 
   "item.cabricality.three_cast": "Interger Cast (3)",
   "item.cabricality.eight_cast": "Interger Cast (8)",
