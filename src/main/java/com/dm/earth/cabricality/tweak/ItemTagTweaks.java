@@ -51,7 +51,6 @@ public class ItemTagTweaks
 			Item[] items = handler.get(C.id("compressed_" + mat)).toArray(new Item[0]);
 			handler.register(C.id(mat + "_plates"), items);
 			handler.register(C.id("plates", mat), items);
-			handler.remove(C.id("compressed_" + mat));
 		}
 	}
 }
