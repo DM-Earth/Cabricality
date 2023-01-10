@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.tweak.ore_processing;
 
+import static com.dm.earth.cabricality.ModEntry.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -107,6 +109,10 @@ public class OreProcessingTweaks {
 			handler.removeIf(p -> p instanceof ProcessingRecipe<?> recipe
 					&& recipe.getIngredients().stream().anyMatch(i -> shouldRemoveIngredient(i, entry))
 					&& RecipeTweaks.notCabf(recipe));
+
+			Identifier dustSmelt = TC.id("smeltery/smelting/metal", entry.getId().getPath(), "dust");
+			if (handler.contains(dustSmelt))
+				handler.remove(dustSmelt);
 		}
 	}
 
