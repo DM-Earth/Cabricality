@@ -1,10 +1,9 @@
 package com.dm.earth.cabricality.util.debug;
 
-import com.dm.earth.cabricality.Cabricality;
-
+import static com.dm.earth.cabricality.Cabricality.CONFIG;
+import static com.dm.earth.cabricality.Cabricality.LOGGER;
+import static com.dm.earth.cabricality.Cabricality.NAME;
 import org.jetbrains.annotations.NotNull;
-
-import static com.dm.earth.cabricality.Cabricality.*;
 
 public class CabfLogger {
 	public static void logInfo(@NotNull String message) {
