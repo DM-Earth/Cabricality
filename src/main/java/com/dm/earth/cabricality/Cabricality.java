@@ -1,6 +1,5 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.config.CabfConfig;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -25,7 +24,6 @@ import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
 import com.dm.earth.cabricality.util.mod.CabfModConflict;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;

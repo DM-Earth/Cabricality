@@ -1,9 +1,6 @@
 package com.dm.earth.cabricality.client;
 
 import java.util.Arrays;
-
-import com.dm.earth.cabricality.config.key.CabfKeyBinds;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -13,6 +10,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.listener.ColorRegistryListener;
+import com.dm.earth.cabricality.config.key.CabfKeyBinds;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
@@ -33,7 +31,8 @@ public class CabricalityClient implements ClientModInitializer {
 
 	public static void finishLoading() {
 		if (initTime != -1) {
-			Cabricality.LOGGER.info("Cabricality has initialized in " + (System.currentTimeMillis() - initTime) + "ms! ⚙️");
+			Cabricality.LOGGER.info("Cabricality has initialized in "
+					+ (System.currentTimeMillis() - initTime) + "ms! ⚙️");
 			initTime = -1;
 		}
 		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);
