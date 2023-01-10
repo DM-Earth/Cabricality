@@ -6,7 +6,7 @@ hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = ".settings/org.eclipse.buildship.core.prefs"
-hash = "44d8c681b833c7c943ce16ccd02fafab1506d6ca8bcb6d3fd80bec0197a7a229"
+hash = "fe1a099d5f73761d05f08c95be5118546531d692293f09144a8420fa07ce0afb"
 
 [[files]]
 file = ".settings/org.eclipse.jdt.apt.core.prefs"
@@ -14,7 +14,7 @@ hash = "d064be8479ef27b4b59d8d1069a4f259b4a98f39d58aec052da77678989aea0d"
 
 [[files]]
 file = ".settings/org.eclipse.jdt.core.prefs"
-hash = "42668eb2fa1d91294dffd94c2319f92d8b1ecbea29bd9b84a4adc8e5e0d7f5a1"
+hash = "6c42af9afdfcb546c1e02e9018c44ef1908d969ddb36adeb8d4135f9c870e3af"
 
 [[files]]
 file = "config/create-common.toml"
@@ -142,11 +142,11 @@ hash = "504cc5cf23da31f870e3f763fe256698e9a86db9d8853aedaf3802081b1341f5"
 
 [[files]]
 file = "config/splasher/en_us.txt"
-hash = "e0e9812e25b26e5ab5aeddc23fd217679a31882860b287a2b69cc72fb46dc218"
+hash = "e03f5b4e97de403ae8561fcb67d4f828042d1c2221b1c5539e294fff38698506"
 
 [[files]]
 file = "config/splasher/zh_cn.txt"
-hash = "c1889a77209ecf71fae5ae3925768e160288bd13b258e3cb3d39a34c510dffae"
+hash = "90c573249a87a5b4f2c8dc34b661e7a2066c2e8c0804eaf03c8912151e125b81"
 
 [[files]]
 file = "config/tconstruct-client.toml"
