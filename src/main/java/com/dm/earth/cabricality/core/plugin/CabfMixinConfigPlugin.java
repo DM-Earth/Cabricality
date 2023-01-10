@@ -2,13 +2,11 @@ package com.dm.earth.cabricality.core.plugin;
 
 import java.util.List;
 import java.util.Set;
-
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
 import org.objectweb.asm.tree.ClassNode;
 import org.quiltmc.loader.api.QuiltLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+import com.dm.earth.cabricality.Cabricality;
 
 public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 
@@ -40,8 +38,10 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 	}
 
 	@Override
-	public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
+	public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName,
+			IMixinInfo mixinInfo) {}
 
 	@Override
-	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
+	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName,
+			IMixinInfo mixinInfo) {}
 }

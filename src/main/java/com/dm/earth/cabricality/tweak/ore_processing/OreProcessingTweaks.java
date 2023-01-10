@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.tweak.ore_processing;
 
+import static com.dm.earth.cabricality.ModEntry.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -81,13 +83,17 @@ public class OreProcessingTweaks {
 			// Dust -> Molten Metal
 			handler.register(createId(entry, entry.getMoltenMetal(), "melting"),
 					id -> RecipeManager.deserialize(id,
-							RecipeBuilderUtil.generateMelting(entry.getDust(), entry.getMoltenMetal(),
+							RecipeBuilderUtil.generateMelting(entry.getDust(),
+									entry.getMoltenMetal(),
 									FluidConstants.NUGGET * 3,
-									getByProduct(entry).getMoltenMetal(), FluidConstants.NUGGET / 4, 500, 100)));
+									getByProduct(entry).getMoltenMetal(),
+									FluidConstants.NUGGET / 4, 500, 60)));
 			// Ingot -> Dust
 			handler.register(createId(entry, entry.getIngot(), "crushing"),
-					id -> new CrushingRecipe(new FreePRP(id).setIngredient(Ingredient.ofItems(entry.getIngotItem()))
-							.setResult(new ProcessingOutput(new ItemStack(entry.getDustItem()), 1))
+					id -> new CrushingRecipe(new FreePRP(id)
+							.setIngredient(Ingredient.ofItems(entry.getIngotItem()))
+							.setResult(new ProcessingOutput(
+									new ItemStack(entry.getDustItem()), 1))
 							.setProcessingTime(400)));
 		}
 	}
@@ -100,13 +106,18 @@ public class OreProcessingTweaks {
 									.anyMatch(i -> shouldRemoveIngredient(i,
 											entry)));
 			handler.removeIf(p -> p instanceof AbstractCookingRecipe cooking
-					&& (cooking.getIngredients().stream().anyMatch(i -> shouldRemoveIngredient(i, entry))
+					&& (cooking.getIngredients().stream()
+							.anyMatch(i -> shouldRemoveIngredient(i, entry))
 							|| (p.getId().getPath().contains(entry.getId().getPath())))
 					&& cooking.getOutput().getItem() == entry.getIngotItem()
 					&& RecipeTweaks.notCabf(cooking));
 			handler.removeIf(p -> p instanceof ProcessingRecipe<?> recipe
-					&& recipe.getIngredients().stream().anyMatch(i -> shouldRemoveIngredient(i, entry))
+					&& recipe.getIngredients().stream()
+							.anyMatch(i -> shouldRemoveIngredient(i, entry))
 					&& RecipeTweaks.notCabf(recipe));
+
+			Identifier dustSmelt = TC.id("smeltery/melting/metal/" + entry.getId().getPath() + "/dust");
+			handler.remove(dustSmelt);
 		}
 	}
 
@@ -117,10 +128,13 @@ public class OreProcessingTweaks {
 		AtomicBoolean returnValue = new AtomicBoolean(false);
 		for (Item item : matchItems) {
 			if (Arrays.stream(ingredient.entries).allMatch(entryT -> {
-				if (entryT instanceof Ingredient.StackEntry stackEntry && stackEntry.stack.getItem() == item)
+				if (entryT instanceof Ingredient.StackEntry stackEntry
+						&& stackEntry.stack.getItem() == item)
 					returnValue.set(true);
-				if (entryT instanceof Ingredient.TagEntry tagEntry && Registry.ITEM.getTag(tagEntry.tag).stream()
-						.anyMatch(set -> set.stream().anyMatch(itemHolder -> itemHolder.value() == item)))
+				if (entryT instanceof Ingredient.TagEntry tagEntry && Registry.ITEM.getTag(tagEntry.tag)
+						.stream()
+						.anyMatch(set -> set.stream()
+								.anyMatch(itemHolder -> itemHolder.value() == item)))
 					returnValue.set(true);
 				return returnValue.get();
 			}))

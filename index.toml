@@ -5,18 +5,6 @@ file = ".editorconfig"
 hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
-file = ".settings/org.eclipse.buildship.core.prefs"
-hash = "44d8c681b833c7c943ce16ccd02fafab1506d6ca8bcb6d3fd80bec0197a7a229"
-
-[[files]]
-file = ".settings/org.eclipse.jdt.apt.core.prefs"
-hash = "d064be8479ef27b4b59d8d1069a4f259b4a98f39d58aec052da77678989aea0d"
-
-[[files]]
-file = ".settings/org.eclipse.jdt.core.prefs"
-hash = "42668eb2fa1d91294dffd94c2319f92d8b1ecbea29bd9b84a4adc8e5e0d7f5a1"
-
-[[files]]
 file = "config/create-common.toml"
 hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
@@ -142,11 +130,11 @@ hash = "504cc5cf23da31f870e3f763fe256698e9a86db9d8853aedaf3802081b1341f5"
 
 [[files]]
 file = "config/splasher/en_us.txt"
-hash = "e0e9812e25b26e5ab5aeddc23fd217679a31882860b287a2b69cc72fb46dc218"
+hash = "e03f5b4e97de403ae8561fcb67d4f828042d1c2221b1c5539e294fff38698506"
 
 [[files]]
 file = "config/splasher/zh_cn.txt"
-hash = "c1889a77209ecf71fae5ae3925768e160288bd13b258e3cb3d39a34c510dffae"
+hash = "90c573249a87a5b4f2c8dc34b661e7a2066c2e8c0804eaf03c8912151e125b81"
 
 [[files]]
 file = "config/tconstruct-client.toml"
@@ -211,7 +199,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "61898c894cd4fef231aa22a7b7c7230621f5a15b9ac70c706667dd3b530ada4f"
+hash = "c178dae39004acaabc346e82f49bc1214ed0cee8ab371c4b822857435ad9877a"
 metafile = true
 
 [[files]]
@@ -230,6 +218,10 @@ hash = "66aa4f271d3c852806c5158f199c507ae4895fcbe5f075278b16bae7b160714b"
 metafile = true
 
 [[files]]
+file = "mods/cftags-0.1.2.jar"
+hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
 metafile = true
@@ -237,11 +229,6 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
-metafile = true
-
-[[files]]
-file = "mods/conveniented-forge-tags.pw.toml"
-hash = "0b9a0d9c612d052f45128dc4f37aaed1eafe714dae869899931a565a4a780944"
 metafile = true
 
 [[files]]
