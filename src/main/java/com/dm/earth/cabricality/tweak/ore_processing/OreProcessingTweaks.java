@@ -87,7 +87,7 @@ public class OreProcessingTweaks {
 									entry.getMoltenMetal(),
 									FluidConstants.NUGGET * 3,
 									getByProduct(entry).getMoltenMetal(),
-									FluidConstants.NUGGET / 4, 500, 100)));
+									FluidConstants.NUGGET / 4, 500, 60)));
 			// Ingot -> Dust
 			handler.register(createId(entry, entry.getIngot(), "crushing"),
 					id -> new CrushingRecipe(new FreePRP(id)
@@ -116,9 +116,8 @@ public class OreProcessingTweaks {
 							.anyMatch(i -> shouldRemoveIngredient(i, entry))
 					&& RecipeTweaks.notCabf(recipe));
 
-			Identifier dustSmelt = TC.id("smeltery/smelting/metal", entry.getId().getPath(), "dust");
-			if (handler.contains(dustSmelt))
-				handler.remove(dustSmelt);
+			Identifier dustSmelt = TC.id("smeltery/melting/metal/" + entry.getId().getPath() + "/dust");
+			handler.remove(dustSmelt);
 		}
 	}
 
