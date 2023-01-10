@@ -5,18 +5,6 @@ file = ".editorconfig"
 hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
-file = ".settings/org.eclipse.buildship.core.prefs"
-hash = "fe1a099d5f73761d05f08c95be5118546531d692293f09144a8420fa07ce0afb"
-
-[[files]]
-file = ".settings/org.eclipse.jdt.apt.core.prefs"
-hash = "d064be8479ef27b4b59d8d1069a4f259b4a98f39d58aec052da77678989aea0d"
-
-[[files]]
-file = ".settings/org.eclipse.jdt.core.prefs"
-hash = "6c42af9afdfcb546c1e02e9018c44ef1908d969ddb36adeb8d4135f9c870e3af"
-
-[[files]]
 file = "config/create-common.toml"
 hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
