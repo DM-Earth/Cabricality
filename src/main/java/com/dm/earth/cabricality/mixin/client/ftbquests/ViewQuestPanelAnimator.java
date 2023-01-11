@@ -1,9 +1,10 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
 import net.krlite.equator.render.Equator;
 import net.krlite.equator.util.Timer;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -28,6 +29,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 
+@ClientOnly
 @Mixin(ViewQuestPanel.class)
 public abstract class ViewQuestPanelAnimator extends Widget {
 	@Shadow(remap = false)

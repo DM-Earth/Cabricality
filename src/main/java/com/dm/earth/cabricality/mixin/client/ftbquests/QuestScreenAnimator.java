@@ -1,10 +1,11 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.util.PushUtil;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -16,6 +17,7 @@ import net.minecraft.client.util.math.MatrixStack;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+@ClientOnly
 @Mixin(QuestScreen.class)
 public class QuestScreenAnimator {
 	@Inject(method = "addWidgets", at = @At("TAIL"), remap = false)

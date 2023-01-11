@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.client.screen.CabfCreditsScreen;
 
