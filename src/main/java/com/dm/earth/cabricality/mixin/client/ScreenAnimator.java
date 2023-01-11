@@ -14,7 +14,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
 @Mixin(Screen.class)
-public class ScreenMixin {
+public class ScreenAnimator {
 	@Shadow
 	@Nullable
 	protected MinecraftClient client;

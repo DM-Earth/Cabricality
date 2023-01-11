@@ -24,8 +24,8 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
-public class TitleScreenMixin extends Screen {
-	protected TitleScreenMixin(Text title) {
+public class TitleScreenWidgets extends Screen {
+	protected TitleScreenWidgets(Text title) {
 		super(title);
 	}
 

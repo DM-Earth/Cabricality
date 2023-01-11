@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.client.screen.CabfCreditsScreen;
 
@@ -18,7 +18,7 @@ import dev.ftb.mods.ftbquests.quest.Quest;
 
 @ClientOnly
 @Mixin(Quest.class)
-public abstract class QuestMixin {
+public abstract class QuestAnimator {
 	@Inject(method = "onCompleted", at = @At("HEAD"), remap = false)
 	private void onCompleted(QuestProgressEventData<?> data, CallbackInfo ci) {
 		if (((Quest) (Object) this).getMovableID() == 5590341946361687492L) {

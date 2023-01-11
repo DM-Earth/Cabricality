@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.util.PushUtil;
@@ -17,7 +17,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(QuestScreen.class)
-public class QuestScreenMixin {
+public class QuestScreenAnimator {
 	@Inject(method = "addWidgets", at = @At("TAIL"), remap = false)
 	private void init(CallbackInfo ci) {
 		PushUtil.ANIMATE_VIEW_QUEST_PANEL.push();

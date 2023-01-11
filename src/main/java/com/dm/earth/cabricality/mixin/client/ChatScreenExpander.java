@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 @Mixin(ChatScreen.class)
-public class ChatScreenMixin extends Screen {
-	protected ChatScreenMixin(Text title) {
+public class ChatScreenExpander extends Screen {
+	protected ChatScreenExpander(Text title) {
 		super(title);
 	}
 

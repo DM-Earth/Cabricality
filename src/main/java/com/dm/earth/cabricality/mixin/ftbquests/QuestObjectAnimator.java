@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftbquests.quest.QuestObject;
@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(QuestObject.class)
-public class QuestObjectMixin {
+public class QuestObjectAnimator {
 	@Redirect(
 			method = "getProgressColor(Ldev/ftb/mods/ftbquests/quest/TeamData;)Ldev/ftb/mods/ftblibrary/icon/Color4I;",
 			at = @At(value = "FIELD", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;WHITE:Ldev/ftb/mods/ftblibrary/icon/Color4I;"),

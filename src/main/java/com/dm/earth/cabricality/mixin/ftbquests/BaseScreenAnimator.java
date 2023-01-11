@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
@@ -16,7 +16,7 @@ import dev.ftb.mods.ftblibrary.ui.WidgetType;
 import net.minecraft.client.util.math.MatrixStack;
 
 @Mixin(BaseScreen.class)
-public class BaseScreenMixin {
+public class BaseScreenAnimator {
 	private Timer timer = new Timer(175);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawGui(Lnet/minecraft/client/util/math/MatrixStack;IIIILdev/ftb/mods/ftblibrary/ui/WidgetType;)V"))

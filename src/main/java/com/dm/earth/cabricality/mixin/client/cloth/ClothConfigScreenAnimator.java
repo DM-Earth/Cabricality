@@ -9,7 +9,7 @@ import me.shedaniel.clothconfig2.gui.ClothConfigScreen;
 import net.krlite.equator.color.PreciseColor;
 
 @Mixin(ClothConfigScreen.class)
-public class ClothConfigScreenMixin {
+public class ClothConfigScreenAnimator {
 	@ModifyArgs(method = "render", at = @At(value = "INVOKE",
 			target = "Lme/shedaniel/clothconfig2/gui/ClothConfigScreen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"))
 	private void renderBackground(Args args) {

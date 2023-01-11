@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 
@@ -23,7 +23,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.List;
 
 @Mixin(ContextMenu.class)
-public class ContextMenuMixin {
+public class ContextMenuAnimator {
 	private Timer timer = new Timer(200);
 
 	@Inject(method = "<init>", at = @At("TAIL"))

@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
@@ -29,11 +29,11 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 
 @Mixin(ViewQuestPanel.class)
-public abstract class ViewQuestPanelMixin extends Widget {
+public abstract class ViewQuestPanelAnimator extends Widget {
 	@Shadow(remap = false)
 	public BlankPanel panelText;
 
-	public ViewQuestPanelMixin(Panel panel) {
+	public ViewQuestPanelAnimator(Panel panel) {
 		super(panel);
 	}
 

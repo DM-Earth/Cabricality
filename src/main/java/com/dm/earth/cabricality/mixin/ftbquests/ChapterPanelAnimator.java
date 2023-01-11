@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.client.ftbquests;
+package com.dm.earth.cabricality.mixin.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
@@ -28,7 +28,7 @@ import net.minecraft.text.Style;
 import net.minecraft.util.Formatting;
 
 @Mixin(ChapterPanel.class)
-public abstract class ChapterPanelMixin {
+public abstract class ChapterPanelAnimator {
 	@Shadow(remap = false)
 	public boolean expanded;
 
@@ -56,8 +56,8 @@ public abstract class ChapterPanelMixin {
 }
 
 @Mixin(ChapterPanel.ChapterButton.class)
-class ChapterButtonMixin extends Widget {
-	public ChapterButtonMixin(Panel p) {
+class ChapterButtonAnimator extends Widget {
+	public ChapterButtonAnimator(Panel p) {
 		super(p);
 	}
 
@@ -85,7 +85,7 @@ class ChapterButtonMixin extends Widget {
 }
 
 @Mixin(ChapterPanel.ModpackButton.class)
-class ModpackButtonMixin {
+class ModpackButtonAnimator {
 	@Redirect(method = "addMouseOverText", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/util/TooltipList;string(Ljava/lang/String;)V"), remap = false)
 	private void translatePin(TooltipList list, String text) {
 		list.translate(ClientQuestFile.INSTANCE.self.isChapterPinned() ? "ftbquests.gui.unpin" : "ftbquests.gui.pin");

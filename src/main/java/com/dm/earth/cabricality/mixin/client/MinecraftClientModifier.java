@@ -1,8 +1,6 @@
 package com.dm.earth.cabricality.mixin.client;
 
-import java.util.Optional;
 import org.objectweb.asm.Opcodes;
-import org.quiltmc.loader.api.QuiltLoader;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -17,7 +15,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
 @Mixin(MinecraftClient.class)
-public abstract class MinecraftClientMixin {
+public abstract class MinecraftClientModifier {
 	@Redirect(method = "<init>", at = @At(value = "INVOKE",
 			target = "Lnet/minecraft/client/MinecraftClient;setScreen(Lnet/minecraft/client/gui/screen/Screen;)V"))
 	private void checkMods(MinecraftClient client, Screen screen) {
@@ -31,9 +29,14 @@ public abstract class MinecraftClientMixin {
 
 	@Inject(method = "getWindowTitle", at = @At("HEAD"), cancellable = true)
 	private void modifyWindowTitle(CallbackInfoReturnable<String> cir) {
+		/*
 		Optional<String> title = QuiltLoader.getModContainer(Cabricality.ID)
 				.map(container -> container.metadata().version().raw());
-		title.ifPresent(t -> cir.setReturnValue("Cabricality " + t)); // If present, set title
+		title.ifPresent(t -> cir.setReturnValue(Cabricality.NAME + " " + t)); // If present, set title
+
+		 */
+
+		cir.setReturnValue(Cabricality.NAME);
 	}
 
 	@Inject(method = "setScreen", at = @At(value = "FIELD",
