@@ -3,7 +3,6 @@ package com.dm.earth.cabricality.client.command;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.ClickEvent;
 import net.minecraft.text.HoverEvent;
