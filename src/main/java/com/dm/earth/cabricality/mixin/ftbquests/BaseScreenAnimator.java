@@ -21,7 +21,8 @@ public class BaseScreenAnimator {
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawGui(Lnet/minecraft/client/util/math/MatrixStack;IIIILdev/ftb/mods/ftblibrary/ui/WidgetType;)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h, WidgetType widgetType) {
-		PushUtil.ANIMATE_BASE_SCREEN.push(() -> PushUtil.ANIMATE_CHAPTER_PANEL.pull(() -> timer = timer.reset()));
+		PushUtil.ANIMATE_BASE_SCREEN.pull(() -> PushUtil.ANIMATE_CHAPTER_PANEL.push(() -> timer = timer.reset()));
+
 		new TintedRect(
 				new Rect(x, y, w, h),
 				Cabricality.Colors.CABF_GRAY_PURPLE.withOpacity(0.85 * Math.pow(timer.queueAsPercentage(), 1 / 3.0))
