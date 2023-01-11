@@ -64,7 +64,7 @@ public class TitleScreenWidgets extends Screen {
 			)
 	)
 	private void renderCabricalityTitle(int layer, Identifier identifier) {
-		RenderSystem.setShaderTexture(layer, Cabricality.Textures.CABRICALITY_TITLE_TEXTURE);
+		RenderSystem.setShaderTexture(layer, Cabricality.Textures.CABRICALITY_TITLE_TEXTURE.identifier());
 	}
 
 	// Set subtitle to Minecraft
@@ -77,6 +77,6 @@ public class TitleScreenWidgets extends Screen {
 			)
 	)
 	private void renderMinecraftSubtitle(int layer, Identifier identifier) {
-		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE);
+		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE.identifier());
 	}
 }

@@ -15,10 +15,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
-
 	@Override
 	@SuppressWarnings("deprecation")
-	public int run(CommandContext<QuiltClientCommandSource> context) throws CommandSyntaxException {
+	public int run(CommandContext<QuiltClientCommandSource> context) {
 		ItemStack stack = context.getSource().getPlayer().getMainHandStack();
 		Identifier itemId = Registry.ITEM.getId(stack.getItem());
 		MutableText heading = ((MutableText) stack.getName()).styled(style -> style
@@ -39,5 +38,4 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 		context.getSource().sendFeedback(tags);
 		return SINGLE_SUCCESS;
 	}
-
 }

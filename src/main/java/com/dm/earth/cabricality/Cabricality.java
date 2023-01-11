@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality;
 
+import net.krlite.equator.render.sprite.IdentifierSprite;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -51,10 +52,10 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final Identifier CABRICALITY_TITLE_TEXTURE =
-				id("textures", "gui", "title", "cabricality.png");
-		public static final Identifier MINECRAFT_SUBTITLE_TEXTURE =
-				id("textures", "gui", "title", "minecraft.png");
+		public static final IdentifierSprite CABRICALITY_TITLE_TEXTURE =
+				sprite("textures", "gui", "title", "cabricality.png");
+		public static final IdentifierSprite MINECRAFT_SUBTITLE_TEXTURE =
+				sprite("textures", "gui", "title", "minecraft.png");
 	}
 
 	public static class Sounds {
@@ -87,6 +88,11 @@ public class Cabricality implements ModInitializer {
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
 		return ID_BUILDER.id(paths);
+	}
+
+	@Contract("_ -> new")
+	public static @NotNull IdentifierSprite sprite(String... paths) {
+		return ID_BUILDER.sprite(paths);
 	}
 
 	@Contract("_,_ -> new")
