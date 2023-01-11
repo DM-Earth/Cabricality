@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
