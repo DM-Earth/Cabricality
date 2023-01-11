@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.mixin.client.ftbquests;
 
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -9,6 +10,7 @@ import dev.ftb.mods.ftbquests.gui.quests.QuestPanel;
 import dev.ftb.mods.ftbquests.quest.QuestObjectBase;
 import dev.ftb.mods.ftbquests.quest.theme.property.ColorProperty;
 
+@ClientOnly
 @Mixin(QuestPanel.class)
 public class QuestPanelAnimator {
 	@Redirect(
