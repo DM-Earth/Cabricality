@@ -1,9 +1,10 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
 import net.krlite.equator.render.Equator;
 import net.krlite.equator.util.Timer;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,6 +28,7 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.util.Formatting;
 
+@ClientOnly
 @Mixin(ChapterPanel.class)
 public abstract class ChapterPanelAnimator {
 	@Shadow(remap = false)

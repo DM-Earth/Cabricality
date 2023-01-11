@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 
@@ -9,6 +9,7 @@ import dev.ftb.mods.ftblibrary.ui.Theme;
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
 import net.krlite.equator.util.Timer;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -22,6 +23,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
 
+@ClientOnly
 @Mixin(ContextMenu.class)
 public class ContextMenuAnimator {
 	private Timer timer = new Timer(200);

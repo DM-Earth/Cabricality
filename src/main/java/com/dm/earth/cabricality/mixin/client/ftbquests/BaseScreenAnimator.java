@@ -1,8 +1,9 @@
-package com.dm.earth.cabricality.mixin.ftbquests;
+package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import net.krlite.equator.geometry.Rect;
 import net.krlite.equator.geometry.TintedRect;
 import net.krlite.equator.util.Timer;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -15,6 +16,7 @@ import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.WidgetType;
 import net.minecraft.client.util.math.MatrixStack;
 
+@ClientOnly
 @Mixin(BaseScreen.class)
 public class BaseScreenAnimator {
 	private Timer timer = new Timer(175);
