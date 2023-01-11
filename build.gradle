@@ -60,8 +60,12 @@ dependencies {
 
     modImplementation libs.quilted.fabric.api
 
-    modImplementation "com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}"
-    modImplementation "slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}"
+    modImplementation ("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}") {
+        exclude group:"com.github.AlphaMode"
+    }
+    modImplementation ("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}") {
+        exclude group:"com.github.AlphaMode"
+    }
     implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
 
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
