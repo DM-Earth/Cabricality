@@ -327,6 +327,7 @@
   "comment_command": "Commands",
 
   "command.cabricality.alchemist.chaotic": " (Chaotic)",
+  "command.cabricality.alchemist.copy"   : "[Copy]",
 
   "command.cabriclaity.debug.disabled": "Debug Disabled",
   "command.cabriclaity.debug.enabled" : "Debug Enabled",

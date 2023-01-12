@@ -325,7 +325,8 @@
 
   "comment_command": "命令",
 
-  "command.cabricality.alchemist.chaotic": "（混沌）",
+  "command.cabricality.alchemist.chaotic": " [混沌]",
+  "command.cabricality.alchemist.copy"   : "[复制]",
 
   "command.cabriclaity.debug.disabled": "调试禁用",
   "command.cabriclaity.debug.enabled" : "调试启用",
