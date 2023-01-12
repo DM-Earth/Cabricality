@@ -4,6 +4,7 @@ import java.util.Objects;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
 
 import net.minecraft.item.Item;

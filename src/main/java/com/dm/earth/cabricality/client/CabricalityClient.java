@@ -27,6 +27,7 @@ import net.minecraft.client.render.RenderLayer;
 
 @ClientOnly
 public class CabricalityClient implements ClientModInitializer {
+	public static String ID = Cabricality.ID + "Client";
 	private static long initTime = -1;
 
 	public static void finishLoading() {

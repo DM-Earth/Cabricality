@@ -1,7 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.text.MutableText;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
@@ -15,33 +14,26 @@ public abstract class SubstrateJarBlock extends JarBlock implements ISettableBlo
 		super(settings);
 	}
 
+	// Super toxic
 	@Override
 	public String getTranslationKey() {
-		if (this.getContent() == null)
-			return Cabricality.genTranslatableText("block", this.getDefaultBlockId().getPath())
-					.getString();
-		return this.getContent();
+		return getName().getString();
 	}
 
-	@Nullable
-	public String getContent() {
-		if (this.getSubstrate() != null)
-			return new TranslatableText(this.getSubstrate().getTranslationKey()).getString()
-					+ Cabricality
-							.genTranslatableText("block", this.getSubstrate().getType() + "_jar")
-							.getString();
-		else
-			return null;
+	@Override
+	public MutableText getName() {
+		return new TranslatableText(this.getSubstrate().getTranslationKey())
+					   .append(Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_jar"));
 	}
 
-	@Nullable
 	public abstract Substrate getSubstrate();
 
-	@NotNull
 	public abstract Identifier getDefaultBlockId();
 
 	@Override
-	public abstract Identifier getBlockModelId();
+	public Identifier getBlockModelId() {
+		return Cabricality.id("block", "jar", this.getSubstrate().getType());
+	}
 
 	@Override
 	public Item.Settings getSettings() {

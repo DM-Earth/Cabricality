@@ -186,7 +186,7 @@ public class Alchemist {
 				.collect(ArrayList::new, (list, i) -> list.add(map.get(i)), ArrayList::addAll);
 	}
 
-	private static Map<Reagent, Reagent> possibleSpecialReagentChaoticMap(ServerWorld world) {
+	public static Map<Reagent, Reagent> possibleSpecialReagentChaoticMap(ServerWorld world) {
 		ArrayList<Reagent> reagents = Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 				.flatMap(reagentsT -> reagentsT.getReagents().stream())
 				.collect(Collectors.toCollection(ArrayList::new));
@@ -198,7 +198,7 @@ public class Alchemist {
 		}).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 	}
 
-	private static @NotNull ArrayList<Catalyst> possibleChaoticCatalystList(ServerWorld world) {
+	public static @NotNull ArrayList<Catalyst> possibleChaoticCatalystList(ServerWorld world) {
 		return RandomMathUtil.randomSelect(
 				Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 						.map(Reagents::getCatalyst)
@@ -213,35 +213,12 @@ public class Alchemist {
 				.map(Map.Entry::getKey).orElse(null);
 	}
 
-	private static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(
+	public static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(
 			ServerWorld world) {
 		return Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 				.collect(Collectors.toMap(Reagents::getCatalyst, reagentsT -> {
 					List<Reagent> reagents = reagentsT.getReagents();
 					return RandomMathUtil.randomSelect(reagents, MAX_REAGENT_JARS, world.getSeed());
 				}));
-	}
-
-	public static class AlchemistInformationCommand implements Command<ServerCommandSource> {
-		@Override
-		public int run(@NotNull CommandContext<ServerCommandSource> context) {
-			possibleReagentMap(context.getSource().getWorld())
-					.forEach((key, value) -> context.getSource()
-							.sendFeedback(new LiteralText(key.toString() + "§r\n")
-									.append(value.toString().replaceAll("\\[", "")
-											.replaceAll("]", "").replaceAll(", ", "\n"))
-									.append("\n"), false));
-			context.getSource().sendFeedback(new LiteralText(CHAOTIC_CATALYST.toString() + "§r\n")
-					.append(possibleChaoticCatalystList(context.getSource().getWorld()).toString()
-							.replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
-					.append("\n"), false);
-			possibleSpecialReagentChaoticMap(context.getSource().getWorld())
-					.forEach((key, value) -> context.getSource()
-							.sendFeedback(new LiteralText(key.toString() + "§r\n")
-									.append(value.toString()).append(Cabricality
-											.genTranslatableText("command", "alchemist", "chaotic"))
-									.append("\n"), false));
-			return SINGLE_SUCCESS;
-		}
 	}
 }

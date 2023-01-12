@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.content.trading.quest.command;
+package com.dm.earth.cabricality.client.command;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ import com.mojang.brigadier.context.CommandContext;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 
-public class BumpQuestCommand implements Command<QuiltClientCommandSource> {
+public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource> {
 	@NotNull
 	private static String generateQuest(int x, int y, @NotNull TradingEntry entry) {
 		return "{\n" +

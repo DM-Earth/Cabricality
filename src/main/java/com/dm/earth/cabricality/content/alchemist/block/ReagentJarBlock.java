@@ -26,18 +26,13 @@ public class ReagentJarBlock extends SubstrateJarBlock {
 	}
 
 	@Override
-	public Substrate getSubstrate() {
-		return Reagents.getReagentFromBlock(this);
-	}
-
-	@Override
-	public @NotNull Identifier getDefaultBlockId() {
+	public Identifier getDefaultBlockId() {
 		return Cabricality.id("reagent_jar");
 	}
 
 	@Override
-	public Identifier getBlockModelId() {
-		return Cabricality.id("block", "jar", "reagent");
+	public Substrate getSubstrate() {
+		return Reagents.getReagentFromBlock(this);
 	}
 
 	@Override

@@ -12,24 +12,10 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class CabfDebugger {
-	private static boolean debug = false;
+	public static boolean debug = false;
 
 	public static void debug(String bug) {
 		if (debug || QuiltLoader.isDevelopmentEnvironment())
 			Cabricality.LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + bug);
-	}
-
-	public static class DebugCommand implements Command<ServerCommandSource> {
-		@Override
-		public int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
-			if (debug) {
-				debug = false;
-				context.getSource().sendFeedback(Text.of("Debug mode disabled"), true);
-			} else {
-				debug = true;
-				context.getSource().sendFeedback(Text.of("Debug mode enabled"), true);
-			}
-			return SINGLE_SUCCESS;
-		}
 	}
 }

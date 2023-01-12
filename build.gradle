@@ -81,6 +81,7 @@ dependencies {
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
+    modImplementation "curse.maven:catwalks-inc-554340:${project.catwalks_version}"
 
     modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {

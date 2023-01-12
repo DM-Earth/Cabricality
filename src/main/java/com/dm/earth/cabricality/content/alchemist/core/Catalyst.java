@@ -2,7 +2,14 @@ package com.dm.earth.cabricality.content.alchemist.core;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import com.dm.earth.cabricality.content.alchemist.Alchemist;
+import com.dm.earth.cabricality.content.alchemist.Reagents;
+import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
+import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
+import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.Nullable;
 
 public class Catalyst extends Substrate {
 	private Catalyst(Identifier id, int tint) {

@@ -230,7 +230,7 @@
   "catalyst.cabricality.volatile": "§dVolatile",
   "catalyst.cabricality.metal"   : "§dMetal",
   "catalyst.cabricality.crystal" : "§dCrystalline",
-  "catalyst.cabricality.chaos"   : "§b§kChaos",
+  "catalyst.cabricality.chaos"   : "§b§kC.hi*混c",
 
 
 
@@ -326,7 +326,15 @@
 
   "comment_command": "Commands",
 
-  "command.cabricality.alchemist.chaotic": " §8(Chaotic)",
+  "command.cabricality.alchemist.chaotic": " (Chaotic)",
+
+  "command.cabriclaity.debug.disabled": "Debug Disabled",
+  "command.cabriclaity.debug.enabled" : "Debug Enabled",
+
+  "command.cabricality.held_item_info.count"     : "§8[%d/%d] ",
+  "command.cabricality.held_item_info.tag"       : "Tag: ",
+  "command.cabricality.held_item_info.tags"      : "Tags: ",
+  "command.cabricality.held_item_info.tag_prefix": "#",
 
 
 

@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
+import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.core.IHashStringable;
 import net.minecraft.block.Block;
 import net.minecraft.text.MutableText;
@@ -54,12 +55,11 @@ public abstract class Substrate implements IHashStringable {
 
 	@Override
 	public String toString() {
-		return this.id.toString();
+		return this.getId().toString();
 	}
 
-	public Text getJarName() {
-		return ((MutableText) this.getName())
-				.append(Cabricality.genTranslatableText("block", this.getType() + "_jar"));
+	public SubstrateJarBlock getJarBlock() {
+		return (SubstrateJarBlock) Registry.BLOCK.get(Cabricality.id(this.getType() + "_jar_" + this.hashString()));
 	}
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {

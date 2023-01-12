@@ -36,7 +36,6 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 			new JarBlock(QuiltBlockSettings.of(Material.METAL, MapColor.SPRUCE_BROWN)));
 
 	public static void register() {
-
 		// Substrate Jars
 		Arrays.stream(Reagents.values()).forEach(reagents -> {
 			if (reagents == Reagents.CHAOTIC)

@@ -229,7 +229,7 @@
   "catalyst.cabricality.volatile": "§d沸騰",
   "catalyst.cabricality.metal"   : "§d金屬",
   "catalyst.cabricality.crystal" : "§d晶化",
-  "catalyst.cabricality.chaos"   : "§b§k混沌",
+  "catalyst.cabricality.chaos"   : "§b§kC.hi*混c",
 
 
 
@@ -325,7 +325,15 @@
 
   "comment_command": "命令",
 
-  "command.cabricality.alchemist.chaotic": "§8（混沌）",
+  "command.cabricality.alchemist.chaotic": "（混沌）",
+
+  "command.cabriclaity.debug.disabled": "調試禁用",
+  "command.cabriclaity.debug.enabled" : "調試啟用",
+
+  "command.cabricality.held_item_info.count"     : "§8[%d/%d] ",
+  "command.cabricality.held_item_info.tag"       : "標籤：",
+  "command.cabricality.held_item_info.tags"      : "標籤：",
+  "command.cabricality.held_item_info.tag_prefix": "#",
 
 
 
