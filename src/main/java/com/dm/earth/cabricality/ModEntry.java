@@ -16,32 +16,32 @@ public enum ModEntry {
 
 	C("c"),
 
-	CR("create"), 
+	CR("create"),
 
-	CABF(Cabricality.ID), 
-	
-	PMD("promenade"), 
-	
-	IR("indrev"), 
-	
+	CABF(Cabricality.ID),
+
+	PMD("promenade"),
+
+	IR("indrev"),
+
 	FD("farmersdelight"),
-	
-	AP("architects_palette"), 
-	
+
+	AP("architects_palette"),
+
 	TC("tconstruct"),
-	
+
 	MLM("malum"),
-	
+
 	AE2("ae2"),
-	
-	TRE("terrestria"), 
-	
+
+	TRE("terrestria"),
+
 	AD("ad_astra"),
-	
+
 	KB("kibe"),
-	
+
 	CX("coxinhautilities"),
-	
+
 	ED("extended_drawers");
 
 	final String modId;

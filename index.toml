@@ -109,6 +109,34 @@ file = "config/ftbquests/quests/reward_tables/64_silver_coin.snbt"
 hash = "4549a5bf6d2e30fc997325b0321e82bc2db6797cbfa4212c7c4978531755cc81"
 
 [[files]]
+file = "config/indrev/cables.json"
+hash = "9183a2eadef32624ee9a8ed193ac1b61d3b2ce0511f6e0c182f3a2d9bb170a83"
+
+[[files]]
+file = "config/indrev/generators.json"
+hash = "7e76e3fd7ff40190b24aa76efdea7afc315a87e426ac8d7ce0e0f42a1f4e52c6"
+
+[[files]]
+file = "config/indrev/hud.json"
+hash = "273c14e99b9b938007693c86b53cd7d697080b38705b1962cfe38104656bcf2d"
+
+[[files]]
+file = "config/indrev/machines.json"
+hash = "6fbf00f4491111f1be29b4a6dbe172aa90df35cadd5d5ce2cf350bd10e11cbe7"
+
+[[files]]
+file = "config/indrev/mining_rig_config.json"
+hash = "c9a0a12c14e6d0b9c88d9ed8aa5586ee41435408d814dbf081ae207484b1dc5b"
+
+[[files]]
+file = "config/indrev/oregen.json"
+hash = "48a06034fee5b6c99870a0a78bad88c1b61c1c82c210b2a6d11d60bf9a601c75"
+
+[[files]]
+file = "config/indrev/upgrades.json"
+hash = "ebbb00fcd5f6a560a60c43c86b71a49a035f154799b6135c1627f14d5f5f72b5"
+
+[[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "2b006b4a7a087547e840168976cda7fe11d567c571f8e6f9e996506586765426"
 
@@ -130,11 +158,11 @@ hash = "504cc5cf23da31f870e3f763fe256698e9a86db9d8853aedaf3802081b1341f5"
 
 [[files]]
 file = "config/splasher/en_us.txt"
-hash = "e03f5b4e97de403ae8561fcb67d4f828042d1c2221b1c5539e294fff38698506"
+hash = "99d25f4f78baff58bbe49099793ee1132c92ef551ebc815a1cb24869d5021ee9"
 
 [[files]]
 file = "config/splasher/zh_cn.txt"
-hash = "90c573249a87a5b4f2c8dc34b661e7a2066c2e8c0804eaf03c8912151e125b81"
+hash = "d868560ae52763e97b3ec7a6eb9b784f325f9f549e4e1b35ad91d7d024676542"
 
 [[files]]
 file = "config/tconstruct-client.toml"
