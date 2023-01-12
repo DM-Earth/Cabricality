@@ -57,7 +57,7 @@ public class BrassThread implements TechThread {
 						.build(id, ""));
 
 		registerCrystalProcess(handler, AE2.id("certus_quartz_crystal"),
-				AE2.id("certus_crystal_seed"), AE2.id("fluix_dust"), MC.id("water"));
+				AE2.id("certus_crystal_seed"), AE2.id("certus_quartz_dust"), MC.id("water"));
 		registerCrystalProcess(handler, AE2.id("fluix_crystal"), AE2.id("fluix_crystal_seed"),
 				AE2.id("fluix_dust"), CABF.id("waste"));
 
