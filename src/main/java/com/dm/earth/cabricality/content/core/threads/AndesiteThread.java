@@ -80,40 +80,44 @@ public class AndesiteThread implements TechThread {
 				id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA")
 						.ingredient('A', Items.CLAY_BALL)
 						.ingredient('S', Items.KELP, Items.SEAGRASS)
-						.output(AP.asItem("algal_blend").getDefaultStack()).build(id, ""));
+						.output(AP.asStack("algal_blend", 2)).build(id, ""));
 		handler.register(recipeId("crafting", "algal_blend_2"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS")
 						.ingredient('A', Items.CLAY_BALL)
 						.ingredient('S', Items.KELP, Items.SEAGRASS)
-						.output(AP.asItem("algal_blend").getDefaultStack()).build(id, ""));
+						.output(AP.asStack("algal_blend", 2)).build(id, ""));
 
 		handler.register(recipeId("crafting", "andesite_alloy"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA").ingredient('A', Items.ANDESITE)
 						.ingredient('S', AP.asItem("algal_brick"))
-						.output(CR.asItem("andesite_alloy").getDefaultStack()).build(id, ""));
+						.output(CR.asStack("andesite_alloy", 2)).build(id, ""));
 		handler.register(recipeId("crafting", "andesite_alloy_2"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS").ingredient('A', Items.ANDESITE)
 						.ingredient('S', AP.asItem("algal_brick"))
-						.output(CR.asItem("andesite_alloy").getDefaultStack()).build(id, ""));
+						.output(CR.asStack("andesite_alloy", 2)).build(id, ""));
 
 		handler.register(recipeId("mixing", "algal_blend"),
 				id -> new MixingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(Items.CLAY_BALL),
 								Ingredient.ofItems(Items.KELP, Items.SEAGRASS))
 						.setResult(
-								new ProcessingOutput(new ItemStack(AP.asItem("algal_blend")), 2))));
+								new ProcessingOutput(
+										new ItemStack(AP.asItem("algal_blend")),
+										2))));
 
 		handler.register(recipeId("mixing", "andesite_alloy"),
 				id -> new MixingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(AP.asItem("algal_brick")),
 								Ingredient.ofItems(Items.ANDESITE))
-						.setResult(new ProcessingOutput(new ItemStack(CR.asItem("andesite_alloy")),
+						.setResult(new ProcessingOutput(
+								new ItemStack(CR.asItem("andesite_alloy")),
 								2))));
 
 		handler.register(recipeId("crafting", "kinetic_mechanism"),
 				id -> VanillaRecipeBuilders
 						.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack())
-						.ingredient(CR.asItem("cogwheel")).ingredient(CR.asItem("andesite_alloy"))
+						.ingredient(CR.asItem("cogwheel"))
+						.ingredient(CR.asItem("andesite_alloy"))
 						.ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS).build(id, ""));
 
 		handler.register(recipeId("crafting", "andesite_machine"),
@@ -124,7 +128,8 @@ public class AndesiteThread implements TechThread {
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(CR.asItem("limestone")))
 						.setFluidIngredient(
-								FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE * 2))
+								FluidIngredient.fromFluid(Fluids.WATER,
+										FluidConstants.BOTTLE * 2))
 						.setResult(new ProcessingOutput(
 								MC.asItem("dripstone_block").getDefaultStack(), 1))));
 
