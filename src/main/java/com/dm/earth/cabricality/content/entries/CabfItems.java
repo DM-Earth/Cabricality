@@ -269,6 +269,10 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 				return ActionResult.SUCCESS;
 			if (name.equals("ingots/nickel"))
 				return ActionResult.SUCCESS;
+			if (name.equals("coins/silver"))
+				return ActionResult.SUCCESS;
+			if (name.equals("coins/gold"))
+				return ActionResult.SUCCESS;
 		}
 		return ActionResult.PASS;
 	}
