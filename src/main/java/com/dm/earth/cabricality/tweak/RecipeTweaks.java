@@ -153,8 +153,10 @@ public class RecipeTweaks
 		OreProcessingTweaks.register(handler);
 		MechAndSmithCraft.register(handler);
 
-		handler.remove(TC.id("smeltery/casting/metal/silver/coin_silver_cast"));
+		handler.remove(TC.id("smeltery/casting/metal/gold/coin_sand_cast"));
 		handler.remove(TC.id("smeltery/casting/metal/gold/coin_gold_cast"));
+		handler.remove(TC.id("smeltery/casting/metal/silver/coin_sand_cast"));
+		handler.remove(TC.id("smeltery/casting/metal/silver/coin_gold_cast"));
 
 		handler.remove(TC.id("smeltery/alloys/molten_enderium"));
 		handler.remove(TC.id("smeltery/alloys/molten_brass"));
