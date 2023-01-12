@@ -350,5 +350,6 @@
   "screen.cabricality.title_screen.warning_missing_mod"       : "缺少1个模组！",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d个模组！",
 
-  "itemGroup.cabricality.main": "永无止境：重缝"
+  "itemGroup.cabricality.main"      : "永无止境：重缝",
+  "itemGroup.cabricality.substrates": "永无止境：重缝 | 试剂"
 }
