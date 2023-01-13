@@ -28,6 +28,7 @@
     "client.MinecraftClientModifier",
     "client.ScreenAnimator",
     "client.cloth.ClothConfigScreenAnimator",
+    "client.ftblibrary.BooleanConfigTranslator",
     "client.ftbquests.BaseScreenAnimator",
     "client.ftbquests.ChapterButtonAnimator",
     "client.ftbquests.ChapterPanelAnimator",
