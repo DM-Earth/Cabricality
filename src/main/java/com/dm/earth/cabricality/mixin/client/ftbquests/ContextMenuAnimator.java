@@ -40,7 +40,7 @@ public class ContextMenuAnimator {
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
 		new TintedRect(
 				new Rect(x, y, w, h).expand(2.7 * Math.pow(1 - timer.queueAsPercentage(), 1 / 2.0)),
-				Cabricality.Colors.CABF_BRIGHT_PURPLE.withOpacity(0.87 * Math.pow(timer.queueAsPercentage(), 2))
+				Cabricality.Colors.CABF_BRIGHT_PURPLE.withOpacity(0.32 * Math.pow(timer.queueAsPercentage(), 2))
 		).draw(matrixStack);
 	}
 }
