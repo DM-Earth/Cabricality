@@ -35,6 +35,12 @@
 	"gui.infinite"     : "无限",
 	"gui.true"         : "开",
 	"gui.false"        : "关",
+	"gui.default"      : "默认",
+	"gui.min"          : "最小值",
+	"gui.max"          : "最大值",
+	"gui.regex"        : "正则表达式",
+	"gui.list"         : "列表",
+	"gui.colon"        : "：",
 
 	"delete_item": "确认要删除“%s”吗？",
 	"lat_support": "喜欢此模组？请考虑捐赠！",
