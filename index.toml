@@ -365,11 +365,6 @@ hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
 metafile = true
 
 [[files]]
-file = "mods/libipn.pw.toml"
-hash = "7c2779362482a58ce23b6b9c4b377c0aacf80a25bb860c466c4df951052a1b4b"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "9480f9e11e91eb82ba616c5c622c218d7b7ceff6599a3348d557eb1a1ddd41f9"
 metafile = true
