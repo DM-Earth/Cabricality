@@ -35,11 +35,6 @@ import net.minecraft.util.Identifier;
 @SuppressWarnings("UnstableApiUsage")
 public class CopperThread implements TechThread {
 	@Override
-	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.remove(CR.id("crafting", "kinetics", "belt_connector"));
-	}
-
-	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.register(recipeId("crafting", "belt_connector"),
 				id -> VanillaRecipeBuilders.shapedRecipe("XXX", "XXX")
@@ -79,6 +74,11 @@ public class CopperThread implements TechThread {
 						.setIngredient(Ingredient.ofItems(Items.VINE), Ingredient.ofItems(Items.VINE),
 								Ingredient.ofItems(Items.VINE), Ingredient.ofItems(Items.VINE))
 						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1))));
+	}
+
+	@Override
+	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
+		handler.remove(CR.id("crafting", "kinetics", "belt_connector"));
 	}
 
 	@Override

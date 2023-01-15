@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality;
 
+import com.dm.earth.cabricality.networking.CabfReceiver;
 import net.krlite.equator.render.sprite.IdentifierSprite;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -118,6 +119,8 @@ public class Cabricality implements ModInitializer {
 		CabfModConflict.checkAndExit();
 
 		LOGGER.info("Initializing " + NAME + "... 📦");
+
+		CabfReceiver.registerServer();
 
 		Trading.load();
 		Alchemist.load();

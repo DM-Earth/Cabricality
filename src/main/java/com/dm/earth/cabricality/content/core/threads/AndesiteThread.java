@@ -40,24 +40,6 @@ import net.minecraft.util.Identifier;
 
 public class AndesiteThread implements TechThread {
 	@Override
-	public void load() {
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_press"), 1, MC.id("iron_block")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_mixer"), 1, CR.id("whisk")));
-		MechAndSmithCraft.addEntry(entry(CR.id("encased_fan"), 1, IR.id("fan")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_drill"), 1, IR.id("iron_drill_head")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_saw"), 1, CABF.id("saw_blade")));
-		MechAndSmithCraft.addEntry(entry(CR.id("deployer"), 1, CR.id("brass_hand")));
-		MechAndSmithCraft.addEntry(entry(CR.id("andesite_tunnel"), 4, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("andesite_funnel"), 4, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_harvester"), 2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_plough"), 2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("portable_storage_interface"), 2, null));
-		MechAndSmithCraft.addEntry(entry(CABF.id("extractor_machine"), 1, MC.id("bucket")));
-		MechAndSmithCraft.addEntry(entry(AD.id("coal_generator"), 1, IR.id("heat_coil")));
-		MechAndSmithCraft.addEntry(entry(AE2.id("charger"), 1, AE2.id("fluix_crystal")));
-	}
-
-	@Override
 	public String getLevel() {
 		return "andesite";
 	}
@@ -160,15 +142,33 @@ public class AndesiteThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.remove(CR.id("crafting/materials/andesite_alloy"));
-		handler.remove(CR.id("crafting/materials/andesite_alloy_from_zinc"));
-		handler.remove(CR.id("mixing/andesite_alloy"));
-		handler.remove(CR.id("mixing/andesite_alloy_from_zinc"));
+		handler.remove(CR.id("crafting", "materials", "andesite_alloy"));
+		handler.remove(CR.id("crafting", "materials", "andesite_alloy_from_zinc"));
+		handler.remove(CR.id("mixing", "andesite_alloy"));
+		handler.remove(CR.id("mixing", "andesite_alloy_from_zinc"));
 
 		handler.removeIf(p -> RecipeTweaks.notCabf(p) && p instanceof AbstractCookingRecipe
 				&& p.getOutput().isOf(AP.asItem("algal_brick")));
 		handler.removeIf(
 				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(IR.asItem("iron_drill_head")));
 		handler.remove(AP.id("algal_blend_shapeless"));
+	}
+
+	@Override
+	public void load() {
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_press"), 1, MC.id("iron_block")));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_mixer"), 1, CR.id("whisk")));
+		MechAndSmithCraft.addEntry(entry(CR.id("encased_fan"), 1, IR.id("fan")));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_drill"), 1, IR.id("iron_drill_head")));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_saw"), 1, CABF.id("saw_blade")));
+		MechAndSmithCraft.addEntry(entry(CR.id("deployer"), 1, CR.id("brass_hand")));
+		MechAndSmithCraft.addEntry(entry(CR.id("andesite_tunnel"), 4, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("andesite_funnel"), 4, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_harvester"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_plough"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("portable_storage_interface"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CABF.id("extractor_machine"), 1, MC.id("bucket")));
+		MechAndSmithCraft.addEntry(entry(AD.id("coal_generator"), 1, IR.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(AE2.id("charger"), 1, AE2.id("fluix_crystal")));
 	}
 }

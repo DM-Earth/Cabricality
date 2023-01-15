@@ -431,7 +431,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "9cc11b493efba66e3c481fb317c62a6b96e01a7b82a5d77fe75d0328551c444c"
+hash = "28b6278d40de6ee5942ef099d4044fcd91ed41f6a50631c7742ef84f79011760"
 metafile = true
 
 [[files]]

@@ -3,6 +3,12 @@ package com.dm.earth.cabricality.math;
 import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
 
+import com.dm.earth.cabricality.Cabricality;
+import net.minecraft.recipe.CraftingRecipe;
+import net.minecraft.recipe.Recipe;
+import net.minecraft.recipe.ShapelessRecipe;
+import net.minecraft.util.collection.DefaultedList;
+import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
@@ -15,6 +21,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.util.Identifier;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class RecipeBuilderUtil {
 	public static ShapedRecipe donutRecipe(Identifier id, Item center, Item other, Item output, int count) {
@@ -41,5 +50,48 @@ public class RecipeBuilderUtil {
 			json.add("byproducts", byproducts);
 		}
 		return json;
+	}
+
+	public static Recipe<?> swapRecipeOutput(Recipe<?> recipe, ItemStack output) {
+		if (recipe instanceof ShapelessRecipe) return swapShapelessRecipeOutput((ShapelessRecipe) recipe, output);
+		if (recipe instanceof ShapedRecipe) return swapShapedRecipeOutput((ShapedRecipe) recipe, output);
+		return recipe;
+	}
+
+	@Deprecated
+	public static Recipe<?> swapRecipeIngredient(Recipe<?> recipe, Ingredient from, Ingredient to) {
+		if (recipe instanceof ShapelessRecipe) return swapShapelessRecipeIngredient((ShapelessRecipe) recipe, from, to);
+		if (recipe instanceof ShapedRecipe) return swapShapedRecipeIngredient((ShapedRecipe) recipe, from, to);
+		return recipe;
+	}
+
+	public static ShapelessRecipe swapShapelessRecipeOutput(ShapelessRecipe recipe, ItemStack output) {
+		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), output, recipe.getIngredients());
+	}
+
+	@Deprecated
+	public static ShapelessRecipe swapShapelessRecipeIngredient(ShapelessRecipe recipe, Ingredient from, Ingredient to) {
+		DefaultedList<Ingredient> ingredients = recipe.getIngredients();
+		for (int i = 0; i < ingredients.size(); i++) {
+			if (ingredients.get(i).equals(from)) {
+				ingredients.set(i, to);
+			}
+		}
+		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), recipe.getOutput(), ingredients);
+	}
+
+	public static ShapedRecipe swapShapedRecipeOutput(ShapedRecipe recipe, ItemStack output) {
+		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), recipe.getIngredients(), output);
+	}
+
+	@Deprecated
+	public static ShapedRecipe swapShapedRecipeIngredient(ShapedRecipe recipe, Ingredient from, Ingredient to) {
+		DefaultedList<Ingredient> ingredients = recipe.getIngredients();
+		for (int i = 0; i < ingredients.size(); i++) {
+			if (ingredients.get(i).equals(from)) {
+				ingredients.set(i, to);
+			}
+		}
+		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), ingredients, recipe.getOutput());
 	}
 }

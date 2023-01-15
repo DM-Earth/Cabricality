@@ -290,6 +290,8 @@
   "tag.cabricality.jars/reagent" : "§cReagent Jars",
   "tag.cabricality.jars/catalyst": "§9Catalyst Jars",
 
+  "tag.cabricality.deprecations": "§c§oDeprecations",
+
 
 
   "comment_config": "Configs",
@@ -326,16 +328,17 @@
 
   "comment_command": "Commands",
 
+  "command.cabricality.actions.copy"  : "[Copy]",
+  "command.cabricality.actions.copied": "Copied to Clipboard!",
+
+  "command.cabricality.alchemist.header" : "[Alchemist Information]",
   "command.cabricality.alchemist.chaotic": " (Chaotic)",
-  "command.cabricality.alchemist.copy"   : "[Copy]",
 
-  "command.cabriclaity.debug.disabled": "Debug Disabled",
-  "command.cabriclaity.debug.enabled" : "Debug Enabled",
+  "command.cabricality.debug.disabled": "Debug Disabled",
+  "command.cabricality.debug.enabled" : "Debug Enabled",
 
-  "command.cabricality.held_item_info.count"     : "§8[%d/%d] ",
-  "command.cabricality.held_item_info.tag"       : "Tag: ",
-  "command.cabricality.held_item_info.tags"      : "Tags: ",
   "command.cabricality.held_item_info.tag_prefix": "#",
+  "command.cabricality.held_item_info.showing"   : " is showing ",
 
 
 

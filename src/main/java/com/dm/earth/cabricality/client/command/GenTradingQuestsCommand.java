@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import net.minecraft.util.Formatting;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 
@@ -82,7 +83,7 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 		MinecraftClient client = MinecraftClient.getInstance();
 		if (client != null) {
 			client.keyboard.setClipboard(String.join("\n\n", list));
-			context.getSource().sendFeedback(Text.of("Copied to clipboard!"));
+			context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "actions", "copied").formatted(Formatting.GREEN, Formatting.ITALIC));
 			return SINGLE_SUCCESS;
 		}
 		return 0;

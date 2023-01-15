@@ -116,7 +116,7 @@ public class OreProcessingTweaks {
 							.anyMatch(i -> shouldRemoveIngredient(i, entry))
 					&& RecipeTweaks.notCabf(recipe));
 
-			Identifier dustSmelt = TC.id("smeltery/melting/metal/" + entry.getId().getPath() + "/dust");
+			Identifier dustSmelt = TC.id("smeltery", "melting", "metal", entry.getId().getPath(), "dust");
 			handler.remove(dustSmelt);
 		}
 	}
@@ -137,15 +137,13 @@ public class OreProcessingTweaks {
 								.anyMatch(itemHolder -> itemHolder.value() == item)))
 					returnValue.set(true);
 				return returnValue.get();
-			}))
-				return true;
+			})) return true;
 		}
 		return false;
 	}
 
 	private static Identifier createId(OreProcessingEntry entry, Identifier input, String type) {
-		return Cabricality.id("tweaks/ore_processing/" + entry.getId().getPath() + "/" + type + "/"
-				+ input.getPath());
+		return Cabricality.id("tweaks", "ore_processing", entry.getId().getPath(), type, input.getPath());
 	}
 
 	private static OreProcessingEntry getByProduct(OreProcessingEntry entry) {

@@ -1,40 +1,40 @@
-{	
+{
 	"advancements.ad_astra.ad_astra.title"      : "Ad Astra",
 	"advancements.ad_astra.ad_astra.description": "§b建造一个NASA工作台，开启你的星际探索之旅！",
 
 	"advancements.ad_astra.astro_cuisine.title"      : "§b转基因食品",
 	"advancements.ad_astra.astro_cuisine.description": "§b将生食物扔到近地轨道的太空中，使其煮熟。",
-	
+
 	"advancements.ad_astra.challenger.title"      : "挑战者",
 	"advancements.ad_astra.challenger.description": "§b收集所有星球仪",
-	
+
 	"advancements.ad_astra.glacio_dungeon.title"      : "海底两万里",
 	"advancements.ad_astra.glacio_dungeon.description": "§b找到一个坚冰要塞",
-	
+
 	"advancements.ad_astra.interstellar.title"      : "星际穿越",
 	"advancements.ad_astra.interstellar.description": "§b进入一个全新的星系",
-	
+
 	"advancements.ad_astra.jet_suit.title"      : "正式升级！",
 	"advancements.ad_astra.jet_suit.description": "§b穿上喷气式宇航服，体验超乎想象的飞行能力！",
-	
+
 	"advancements.ad_astra.mars.title"      : "红色星球",
 	"advancements.ad_astra.mars.description": "§b登陆火星",
-	
+
 	"advancements.ad_astra.mars_dungeon.title"      : "尘封遗迹",
 	"advancements.ad_astra.mars_dungeon.description": "§b找到一个深红要塞",
-	
+
 	"advancements.ad_astra.mercury.title"      : "晒得挺黑",
 	"advancements.ad_astra.mercury.description": "§b登陆水星",
-	
+
 	"advancements.ad_astra.mercury_dungeon.title"      : "回到未来",
 	"advancements.ad_astra.mercury_dungeon.description": "§b找到一个旱海要塞",
-	
+
 	"advancements.ad_astra.moon.title"      : "一小步",
 	"advancements.ad_astra.moon.description": "§b登陆月球",
-	
+
 	"advancements.ad_astra.moon_dungeon.title"      : "深埋的秘密",
 	"advancements.ad_astra.moon_dungeon.description": "§b找到一个月球要塞",
-	
+
 	"advancements.ad_astra.netherite_space_suit.title"      : "打败高温",
 	"advancements.ad_astra.netherite_space_suit.description": "§b穿上太空合金宇航服，在最酷热的地方行动！",
 
@@ -487,8 +487,8 @@
 	"gauge_text.ad_astra.blocked_warning[2]": "有足够的氧气和能量供应。",
 
 	"gauge_text.ad_astra.energy_per_tick": "每刻 %s ⚡ 能量",
-	"gauge_text.ad_astra.fluid_per_tick" : "每刻 %s 🪣 流体",
-	"gauge_text.ad_astra.liquid_storage" : "%s 🪣 / %d 🪣 流体",
+	"gauge_text.ad_astra.fluid_per_tick" : "每刻 %s 🪣",
+	"gauge_text.ad_astra.liquid_storage" : "%s 🪣 / %d 🪣",
 	"gauge_text.ad_astra.max_generation" : "最大能量供应",
 
 	"gauge_text.ad_astra.oxygen_blocks"         : "供氧空间：",
@@ -579,12 +579,12 @@
 	"item.ad_astra.engine_fan"  : "引擎涡轮",
 	"item.ad_astra.engine_frame": "引擎框架",
 
-	"item.ad_astra.fluid_transfer_rate.tooltip": "每刻转化 %s 🪣 流体",
+	"item.ad_astra.fluid_transfer_rate.tooltip": "每刻转化 %s 🪣",
 
 	"item.ad_astra.fuel_bucket"          : "燃油桶",
 	"item.ad_astra.fuel_refinery.tooltip": "将原油转化为燃油。",
 
-	"item.ad_astra.generator_energy.tooltip": "每刻产生 %s ⚡️ 能量",
+	"item.ad_astra.generator_energy.tooltip": "每刻产生 %s ⚡️",
 
 	"item.ad_astra.glacian_ram_spawn_egg": "融冰仿生羊刷怪蛋",
 
@@ -662,7 +662,7 @@
 	"item.ad_astra.steel_engine": "钢火箭引擎",
 	"item.ad_astra.steel_ingot" : "钢锭",
 	"item.ad_astra.steel_nugget": "钢粒",
-	"item.ad_astra.steel_plate" : "钢板",
+	"item.ad_astra.compressed_steel" : "钢板",
 	"item.ad_astra.steel_tank"  : "钢燃料储罐",
 
 	"item.ad_astra.sulfur_creeper_spawn_egg": "硫力怕刷怪蛋",
@@ -700,7 +700,7 @@
 
 
 	"rei.category.ad_astra.space_station": "空间站",
-	
+
 	"rei.text.ad_astra.amount": "总量：%s 🪣",
 
 	"rei.text.ad_astra.conversion_ratio": "转化比： %s%%",
@@ -711,8 +711,8 @@
 
 	"rei.text.ad_astra.seconds": "%s 秒",
 
-	"rei.tooltip.ad_astra.energy_generating": "每刻产生 %s ⚡️ 能量",
-	"rei.tooltip.ad_astra.energy_using"     : "每刻消耗 %s ⚡️ 能量",
+	"rei.tooltip.ad_astra.energy_generating": "每刻产生 %s ⚡️",
+	"rei.tooltip.ad_astra.energy_using"     : "每刻消耗 %s ⚡️",
 
 
 

@@ -1,6 +1,10 @@
 package com.dm.earth.cabricality.client.command;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.networking.CabfNetworking;
+import io.netty.buffer.Unpooled;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.tag.TagKey;
 import net.minecraft.text.TranslatableText;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
@@ -14,6 +18,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.quiltmc.qsl.networking.api.PacketByteBufs;
+import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
+import org.quiltmc.qsl.networking.api.client.ClientPlayNetworking;
 
 import java.util.stream.Collectors;
 
@@ -24,33 +31,20 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 		ItemStack stack = context.getSource().getPlayer().getMainHandStack();
 		Identifier itemId = Registry.ITEM.getId(stack.getItem());
 
+		// Broadcast
+		ClientPlayNetworking.send(CabfNetworking.HELD_ITEM_INFO, new PacketByteBuf(Unpooled.buffer()).writeItemStack(stack));
+
+		// Show
+		MinecraftClient.getInstance().gameRenderer.showFloatingItem(stack);
+
 		// Heading
-		context.getSource().sendFeedback(stack.getName().shallowCopy().styled(
-				style -> style.withColor(Formatting.GREEN)
-								 .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
-										 new TranslatableText(Cabricality.genTranslationKey("command", "held_item_info", "count"),
-												 stack.getCount(), stack.getMaxCount()).formatted(Formatting.DARK_GRAY)
-												 .append(new LiteralText(itemId.toString()).formatted(Formatting.GREEN))))
-								 .withClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD,
-										 itemId.toString()))));
+		context.getSource().sendFeedback(stack.getName().shallowCopy().styled(style -> Registry.ITEM.get(itemId).asItem().getName().getStyle()).styled(
+				style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM, new HoverEvent.ItemStackContent(stack)))
+								 .withClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, itemId.toString()))));
 
 		// Tags
-		if (stack.getItem().getBuiltInRegistryHolder().streamTags().findAny().isPresent()) {
-			if (stack.getItem().getBuiltInRegistryHolder().streamTags().count() == 1)
-				context.getSource().sendFeedback(
-						Cabricality.genTranslatableText("command", "held_item_info", "tag")
-								.styled(style -> style.withClickEvent(new ClickEvent(
-										ClickEvent.Action.COPY_TO_CLIPBOARD,
-										stack.getItem().getBuiltInRegistryHolder().streamTags().map(t -> t.id().toString())
-												.collect(Collectors.joining(", "))
-								)))
-								.append(streamTags(stack))
-				);
-			else
-				context.getSource().sendFeedback(
-						Cabricality.genTranslatableText("command", "held_item_info", "tags").append(streamTags(stack))
-				);
-		}
+		if (stack.getItem().getBuiltInRegistryHolder().streamTags().findAny().isPresent())
+			context.getSource().sendFeedback(streamTags(stack));
 
 		return SINGLE_SUCCESS;
 	}

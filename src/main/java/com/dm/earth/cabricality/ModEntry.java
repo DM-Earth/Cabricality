@@ -51,6 +51,10 @@ public enum ModEntry {
 		this.modId = modId;
 	}
 
+	public String getModId() {
+		return modId;
+	}
+
 	public Identifier id(String... path) {
 		return new IdentifierBuilder.Specified(this.modId).id(path);
 	}

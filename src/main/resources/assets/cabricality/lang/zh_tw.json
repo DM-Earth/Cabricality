@@ -289,6 +289,8 @@
   "tag.cabricality.jars/reagent" : "§c試劑瓶",
   "tag.cabricality.jars/catalyst": "§9催化劑瓶",
 
+  "tag.cabricality.deprecations": "§c§o棄用物品",
+
 
 
   "comment_config": "設置",
@@ -312,7 +314,7 @@
 
   "key.cabricality.category.general": "永無止境：重縫",
 
-  "key.cabricality.general.config_screen": "打開整合包設置界面",
+  "key.cabricality.general.config_screen": "配置整合包",
 
 
 
@@ -325,16 +327,17 @@
 
   "comment_command": "命令",
 
+  "command.cabricality.actions.copy"  : "[複製]",
+  "command.cabricality.actions.copied": "已複製到剪貼板！",
+
+  "command.cabricality.alchemist.header" : "[混沌煉金]",
   "command.cabricality.alchemist.chaotic": " [混沌]",
-  "command.cabricality.alchemist.copy"   : "[複製]",
 
-  "command.cabriclaity.debug.disabled": "調試禁用",
-  "command.cabriclaity.debug.enabled" : "調試啟用",
+  "command.cabricality.debug.disabled": "禁用調試",
+  "command.cabricality.debug.enabled" : "啟用調試",
 
-  "command.cabricality.held_item_info.count"     : "§8[%d/%d] ",
-  "command.cabricality.held_item_info.tag"       : "標籤：",
-  "command.cabricality.held_item_info.tags"      : "標籤：",
   "command.cabricality.held_item_info.tag_prefix": "#",
+  "command.cabricality.held_item_info.showing"   : "正在展示",
 
 
 

@@ -15,6 +15,7 @@ public class ClientCommandRegistryListener implements ClientCommandRegistrationC
 		dispatcher.register(literal(CabricalityClient.ID)
 				.then(literal("genTradingQuests").executes(new GenTradingQuestsCommand()))
 				.then(literal("heldItemInfo").executes(new HeldItemInfoCommand())));
+
 		dispatcher.register(literal("i").executes(new HeldItemInfoCommand())); // Alias
 	}
 }

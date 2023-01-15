@@ -32,8 +32,6 @@ public class ColorRegistryListener {
 				if (item instanceof ProfessionCardItem card)
 					return Objects.requireNonNull(ProfessionUtil.fromItem(card),
 							"The profession can't be null!").tint();
-				if (item instanceof ColoredFernItem fern)
-					return fern.tint;
 			}
 			if (item instanceof ColoredFernItem fern)
 				return fern.tint;
@@ -71,8 +69,7 @@ public class ColorRegistryListener {
 	}
 
 	private static Block[] getBlocks() {
-		ArrayList<Block> list = new ArrayList<>();
-		list.addAll(Substrate.getJarBlocks(false));
+		ArrayList<Block> list = new ArrayList<>(Substrate.getJarBlocks(false));
 		return list.toArray(new Block[0]);
 	}
 }
