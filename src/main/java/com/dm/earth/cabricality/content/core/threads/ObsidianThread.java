@@ -13,7 +13,6 @@ import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import net.minecraft.util.Identifier;
 
 public class ObsidianThread implements TechThread {
-
 	@Override
 	public void addRecipes(RecipeHandler handler) {
 		handler.register(recipeId("crafting", "obsidian_machine"),
@@ -35,10 +34,7 @@ public class ObsidianThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("obsidian_machine"), output, count,
-				other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("obsidian_machine"), output, count, other);
 	}
-
 }

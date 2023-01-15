@@ -63,10 +63,8 @@ public class AndesiteThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("andesite_machine"), output, count,
-				other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("andesite_machine"), output, count, other);
 	}
 
 	@Override
@@ -81,6 +79,7 @@ public class AndesiteThread implements TechThread {
 						.ingredient('A', Items.CLAY_BALL)
 						.ingredient('S', Items.KELP, Items.SEAGRASS)
 						.output(AP.asStack("algal_blend", 2)).build(id, ""));
+
 		handler.register(recipeId("crafting", "algal_blend_2"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS")
 						.ingredient('A', Items.CLAY_BALL)
@@ -91,6 +90,7 @@ public class AndesiteThread implements TechThread {
 				id -> VanillaRecipeBuilders.shapedRecipe("SS", "AA").ingredient('A', Items.ANDESITE)
 						.ingredient('S', AP.asItem("algal_brick"))
 						.output(CR.asStack("andesite_alloy", 2)).build(id, ""));
+
 		handler.register(recipeId("crafting", "andesite_alloy_2"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AA", "SS").ingredient('A', Items.ANDESITE)
 						.ingredient('S', AP.asItem("algal_brick"))
@@ -149,6 +149,7 @@ public class AndesiteThread implements TechThread {
 						.ingredient('P', CR.asIngredient("iron_sheet"))
 						.ingredient('L', IR.asIngredient("lead_ingot"))
 						.output(CABF.asStack("saw_blade")).build(id, ""));
+
 		handler.register(recipeId("crafting", "iron_drill_head"),
 				id -> VanillaRecipeBuilders.shapedRecipe("NN ", "NLP", " PL")
 						.ingredient('N', MC.asIngredient("iron_nugget"))

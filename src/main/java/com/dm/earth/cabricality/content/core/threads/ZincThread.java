@@ -31,7 +31,6 @@ import net.minecraft.util.Identifier;
 
 @SuppressWarnings("UnstableApiUsage")
 public class ZincThread implements TechThread {
-
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.register(recipeId("mixing", "liquid_soul"), id -> new MixingRecipe(new FreePRP(id)
@@ -69,10 +68,7 @@ public class ZincThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("zinc_machine"), output, count,
-				other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("zinc_machine"), output, count, other);
 	}
-
 }

@@ -58,6 +58,7 @@ public class BrassThread implements TechThread {
 
 		registerCrystalProcess(handler, AE2.id("certus_quartz_crystal"),
 				AE2.id("certus_crystal_seed"), AE2.id("certus_quartz_dust"), MC.id("water"));
+
 		registerCrystalProcess(handler, AE2.id("fluix_crystal"), AE2.id("fluix_crystal_seed"),
 				AE2.id("fluix_dust"), CABF.id("waste"));
 
@@ -145,9 +146,7 @@ public class BrassThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private @NotNull MechAndSmithCraft.Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("brass_machine"), output, count,
-				other);
+	private @NotNull MechAndSmithCraft.Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("brass_machine"), output, count, other);
 	}
 }

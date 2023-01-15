@@ -34,13 +34,16 @@ import net.minecraft.util.registry.Registry;
 
 public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 	public static final class Properties {
+		// Default
 		public static final Supplier<Item.Settings> DEFAULT = () -> new QuiltItemSettings()
 				.group(Cabricality.ItemGroups.MAIN_GROUP);
 		public static final Supplier<Item.Settings> DEFAULT_SINGLE = () -> DEFAULT.get().maxCount(1);
+		public static final Supplier<Item.Settings> DEFAULT_QUARTER = () -> DEFAULT.get().maxCount(16);
+
+		// Specialized
 		public static final Supplier<Item.Settings> CARD = () -> new QuiltItemSettings().maxCount(1);
 		public static final Supplier<Item.Settings> JAR = () -> new QuiltItemSettings()
 				.group(Cabricality.ItemGroups.SUBSTRATES_GROUP).maxCount(16);
-		public static final Supplier<Item.Settings> DEFAULT_QUARTER = () -> DEFAULT.get().maxCount(16);
 	}
 
 	public static final Item SAW_BLADE = registerItemModeled("saw_blade",
@@ -138,11 +141,9 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			new Item(Properties.DEFAULT.get()),
 			ItemModelGenerator.generated("item", "matter_plastics"));
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
-	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
-			"emerald", "nickel");
+	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
 	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
-	public static final Map<String, String> OPERATORS = Map.of("plus", "+", "minus", "-", "multiply", "*", "divide",
-			"/");
+	public static final Map<String, String> OPERATORS = Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
 	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
 	public static final List<String> MATH_CASTS = List.of("plus", "minus", "multiply", "divide", "three", "eight");
@@ -297,6 +298,6 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		handler.register(C.id("ingots", "nickel"), NICKEL_INGOT);
 
 		handler.register(C.id("nickel_nuggets"), NICKEL_NUGGET);
-		handler.register(C.id("nuggets/nickel"), NICKEL_NUGGET);
+		handler.register(C.id("nuggets", "nickel"), NICKEL_NUGGET);
 	}
 }

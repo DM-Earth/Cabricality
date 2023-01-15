@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public enum ModEntry {
-	/* Abbreviations */
+	// Abbreviations
 	MC("minecraft"),
 
 	C("c"),

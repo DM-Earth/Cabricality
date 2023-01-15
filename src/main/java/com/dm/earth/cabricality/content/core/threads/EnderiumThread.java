@@ -26,7 +26,6 @@ import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
 
 public class EnderiumThread implements TechThread {
-
 	@Override
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(KB.id("entangled_chest"), 1, MC.id("chest")));
@@ -61,10 +60,7 @@ public class EnderiumThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("enderium_machine"), output, count,
-				other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("enderium_machine"), output, count, other);
 	}
-
 }

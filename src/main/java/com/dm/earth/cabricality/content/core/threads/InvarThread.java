@@ -52,7 +52,6 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.registry.Registry;
 
 public class InvarThread implements TechThread {
-
 	private static final List<Identifier> REMOVE_OUTPUTS = List.of(IR.id("compressor_mk1"), IR.id("chopper_mk1"),
 			IR.id("farmer_mk1"), IR.id("slaughter_mk1"), IR.id("rancher_mk1"), IR.id("pump_mk1"),
 			IR.id("mining_rig_mk4"), IR.id("data_card_writer_mk4"), IR.id("drain_mk1"));
@@ -107,14 +106,17 @@ public class InvarThread implements TechThread {
 
 		handler.register(recipeId("campfire_cooking", "stick"), id -> new CampfireCookingRecipe(id,
 				"", MC.asIngredient("stick"), MC.asStack("torch"), 0, 20));
+
 		handler.register(recipeId("blasting", "nickel_compound"),
 				id -> VanillaRecipeBuilders.blastingRecipe(id, "",
 						CABF.asIngredient("nickel_compound"), CABF.asStack("invar_compound"), 0.1F,
 						400));
+
 		handler.register(recipeId("crushing", "crushing_wheel"),
 				id -> new CrushingRecipe(new FreePRP(id)
 						.setIngredient(CR.asIngredient("crushing_wheel"))
 						.setResult(AE2.asProcessingOutput("singularity")).setProcessingTime(250)));
+
 		handler.register(recipeId("compacting", "dye_entangled_singularity"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofTag(Tags.Items.DYES),
@@ -148,12 +150,14 @@ public class InvarThread implements TechThread {
 				id -> new PressingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(CR.asItem("refined_radiance")))
 						.setResult(CABF.asProcessingOutput("radiant_sheet"))));
+
 		handler.register(recipeId("mechanical_crafting", "radiant_coil"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
 						VanillaRecipeBuilders.shapedRecipe("A")
 								.ingredient('A', CabfItems.RADIANT_SHEET)
 								.output(CabfItems.RADIANT_COIL.getDefaultStack()).build(id, ""),
 						true));
+
 		handler.register(recipeId("mechanical_crafting", "chromatic_compound"),
 				id -> RecipeBuilderUtil
 						.mechanicalFromShaped(
@@ -161,10 +165,12 @@ public class InvarThread implements TechThread {
 										.ingredient('A', AE2.asIngredient("magenta_paint_ball"))
 										.output(CR.asStack("chromatic_compound")).build(id, ""),
 								false));
+
 		handler.register(recipeId("crafting", "chromatic_resonator"), id -> VanillaRecipeBuilders
 				.shapedRecipe(" R ", "R S", "LS ").ingredient('R', CABF.asItem("ruby"))
 				.ingredient('L', IR.asItem("lead_ingot")).ingredient('S', CABF.asItem("sapphire"))
 				.output(CABF.asStack("chromatic_resonator")).build(id, ""));
+
 		handler.register(recipeId("crafting", "machine_block"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SSS", "SCS", "SSS")
 						.ingredient('C', CABF.asItem("invar_casing"))
@@ -183,19 +189,15 @@ public class InvarThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), IR.id("machine_block"), output, count,
-				other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), IR.id("machine_block"), output, count, other);
 	}
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
 		handler.remove(CR.id("mechanical_crafting/crushing_wheel"));
-		handler.removeIf(
-				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(IR.asItem("machine_block")));
+		handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(IR.asItem("machine_block")));
 		handler.removeIf(p -> RecipeTweaks.notCabf(p) && REMOVE_OUTPUTS.stream()
 				.anyMatch(id -> id.equals(Registry.ITEM.getId(p.getOutput().getItem()))));
 	}
-
 }
