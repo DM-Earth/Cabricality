@@ -43,7 +43,9 @@ public enum OreProcessingEntry {
 			AD.id("deepslate_calorite_ore")),
 	COBALT(TC.id("cobalt"), TC.id("cobalt_ingot"), TC.id("cobalt_nugget"), TC.id("raw_cobalt"),
 			CABF.id("crushed_cobalt_ore"),
-			CABF.id("cobalt_dust"), TC.id("molten_cobalt"), TC.id("cobalt_ore"));
+			CABF.id("cobalt_dust"), TC.id("molten_cobalt"), TC.id("cobalt_ore")),
+	NICKEL(CABF.id("nickel"), CABF.id("nickel_ingot"), CABF.id("nickel_nugget"), CABF.id("raw_nickel"),
+			CR.id("crushed_nickel_ore"), CABF.id("nickel_dust"), TC.id("molten_nickel"));
 
 	private final Identifier id;
 	private final Identifier ingot;

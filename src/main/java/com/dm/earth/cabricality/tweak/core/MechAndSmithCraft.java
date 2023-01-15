@@ -39,22 +39,29 @@ public class MechAndSmithCraft {
 						id -> new SmithingRecipe(id, Ingredient.ofItems(entry.getInputItem()),
 								Ingredient.ofItems(entry.getOtherItem()), entry.getOutputStack()));
 				handler.register(createId(entry, "mechanical_crafting"),
-						id -> RecipeBuilderUtil.mechanicalFromShaped(VanillaRecipeBuilders.shapedRecipe("AB")
-																			 .ingredient('A', Ingredient.ofItems(entry.getInputItem()))
-																			 .ingredient('B', Ingredient.ofItems(entry.getOtherItem()))
-																			 .output(entry.getOutputStack()).build(id, ""), true));
+						id -> RecipeBuilderUtil
+								.mechanicalFromShaped(
+										VanillaRecipeBuilders.shapedRecipe("AB")
+												.ingredient('A',
+														Ingredient.ofItems(entry.getInputItem()))
+												.ingredient('B',
+														Ingredient.ofItems(entry.getOtherItem()))
+												.output(entry.getOutputStack()).build(id, ""),
+										true));
 			} else
-				handler.register(createId(entry, "stonecutting"), id -> new StonecuttingRecipe(id, "",
-						Ingredient.ofItems(entry.getInputItem()), entry.getOutputStack()));
+				handler.register(createId(entry, "stonecutting"), id -> new StonecuttingRecipe(id,
+						"", Ingredient.ofItems(entry.getInputItem()), entry.getOutputStack()));
 		});
 	}
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
-		entries.forEach(entry -> handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(entry.getOutputItem())));
+		entries.forEach(entry -> handler.removeIf(
+				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(entry.getOutputItem())));
 	}
 
 	private static Identifier createId(Entry entry, String type) {
-		return Cabricality.id("threads/" + entry.level() + "/tweak/" + type + "/" + entry.output().getPath());
+		return Cabricality
+				.id("threads/" + entry.level() + "/tweak/" + type + "/" + entry.output().getPath());
 	}
 
 	public static Entry entry(String level, Identifier input, Identifier output, int count,
@@ -62,7 +69,8 @@ public class MechAndSmithCraft {
 		return new Entry(level, input, output, count, other);
 	}
 
-	public record Entry(String level, Identifier input, Identifier output, int count, @Nullable Identifier other) {
+	public record Entry(String level, Identifier input, Identifier output, int count,
+			@Nullable Identifier other) {
 		public boolean isSmithing() {
 			return other != null;
 		}

@@ -5,15 +5,14 @@
 	filename: "stage_4a"
 	title: "{chapter_4a.cabricality.title}"
 	icon: "cabricality:catalyst_jar_x1331490811"
-	comment: "chaos"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "{chapter_4a.cabricality.start.title}"
 			icon: "cabricality:inductive_mechanism"
-			x: 1.75d
-			y: 2.0d
+			x: 2.0d
+			y: 1.0d
 			shape: "hexagon"
 			description: ["{chapter_4a.cabricality.start.content}"]
 			dependencies: ["5DF206B1738D08A0"]
@@ -33,8 +32,8 @@
 		}
 		{
 			title: "{chapter_4a.cabricality.preparation.title}"
-			x: -0.25d
-			y: 2.0d
+			x: 0.0d
+			y: 1.0d
 			shape: "circle"
 			description: ["{chapter_4a.cabricality.preparation.content}"]
 			dependencies: ["05446225038D260A"]
@@ -55,8 +54,8 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 1.0d
+			x: -6.0d
+			y: 2.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
 			id: "36A2C5B3E20C28DF"
@@ -64,13 +63,12 @@
 				id: "1E93F39E5F1F678E"
 				type: "item"
 				item: "cabricality:reagent_jar_1923641914"
-				comment: "andesite"
 				consume_items: false
 			}]
 		}
 		{
-			x: -5.0d
-			y: 2.0d
+			x: -6.0d
+			y: 3.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
 			id: "60F7A50F984284F1"
@@ -78,13 +76,12 @@
 				id: "5D98554C2EF24A62"
 				type: "item"
 				item: "cabricality:reagent_jar_242012919"
-				comment: "diorite"
 				consume_items: false
 			}]
 		}
 		{
-			x: -5.0d
-			y: 3.0d
+			x: -6.0d
+			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
 			id: "35406FED565B7EFF"
@@ -92,13 +89,12 @@
 				id: "090BAD8069B5962C"
 				type: "item"
 				item: "cabricality:reagent_jar_x1145829433"
-				comment: "granite"
 				consume_items: false
 			}]
 		}
 		{
-			x: -5.0d
-			y: 4.0d
+			x: -6.0d
+			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
 			id: "6CBB7512CDFF4C2E"
@@ -106,13 +102,12 @@
 				id: "739A22504FFAC363"
 				type: "item"
 				item: "cabricality:reagent_jar_x1246527515"
-				comment: "cobblestone"
 				consume_items: false
 			}]
 		}
 		{
-			x: -5.0d
-			y: 5.0d
+			x: -6.0d
+			y: 6.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
 			id: "0F688EAF792BAE96"
@@ -120,105 +115,6 @@
 				id: "2F714B82CD1A3FDD"
 				type: "item"
 				item: "cabricality:reagent_jar_1472646554"
-				comment: "basalt"
-				consume_items: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: 3.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "3377A2C391B6F03A"
-			tasks: [{
-				id: "217E5A578A83222B"
-				type: "item"
-				item: "cabricality:reagent_jar_x597192402"
-				comment: "magenta"
-				consume_items: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "122D3D6743D1DD04"
-			tasks: [{
-				id: "6FD70BEFECE67F2C"
-				type: "item"
-				item: "cabricality:reagent_jar_1860001459"
-				comment: "orange"
-				consume_items: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "49957428564E8101"
-			tasks: [{
-				id: "183677E3CD7A38E0"
-				type: "item"
-				item: "cabricality:reagent_jar_green"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: -2.5d
-			y: 3.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "3978E4B39C9DB44D"
-			tasks: [{
-				id: "0A7F5C2865C6F5F5"
-				type: "item"
-				item: "cabricality:reagent_jar_x1426001642"
-				comment: "red"
-				consume_items: false
-			}]
-		}
-		{
-			x: -2.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "1E856F69C03B1D75"
-			tasks: [{
-				id: "2A79E5D1D6C6787F"
-				type: "item"
-				item: "cabricality:reagent_jar_2134613241"
-				comment: "yellow"
-				consume_items: false
-			}]
-		}
-		{
-			x: -2.5d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "678C5FC6A898E988"
-			tasks: [{
-				id: "7E01B9B59066FD90"
-				type: "item"
-				item: "cabricality:reagent_jar_x1428037393"
-				comment: "blue"
-				consume_items: false
-			}]
-		}
-		{
-			x: -1.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "35A6E3BBD80FB00F"
-			tasks: [{
-				id: "3D85594FB65E7A91"
-				type: "item"
-				item: "cabricality:reagent_jar_1288793274"
-				comment: "gunpowder"
 				consume_items: false
 			}]
 		}
@@ -232,7 +128,6 @@
 				id: "6BE52A47FB071345"
 				type: "item"
 				item: "cabricality:reagent_jar_x1343309837"
-				comment: "prismarine"
 				consume_items: false
 			}]
 		}
@@ -246,7 +141,6 @@
 				id: "0F0273B7441B6840"
 				type: "item"
 				item: "cabricality:reagent_jar_1819926749"
-				comment: "nether"
 				consume_items: false
 			}]
 		}
@@ -260,7 +154,6 @@
 				id: "465B3645832D5B9A"
 				type: "item"
 				item: "cabricality:reagent_jar_x1074242848"
-				comment: "obsidian"
 				consume_items: false
 			}]
 		}
@@ -274,7 +167,6 @@
 				id: "119E7FC4D7BB242F"
 				type: "item"
 				item: "cabricality:reagent_jar_x1332294841"
-				comment: "blaze"
 				consume_items: false
 			}]
 		}
@@ -288,12 +180,11 @@
 				id: "6B17F1E13DF99E50"
 				type: "item"
 				item: "cabricality:reagent_jar_x1316587699"
-				comment: "slime"
 				consume_items: false
 			}]
 		}
 		{
-			x: 3.5d
+			x: 3.0d
 			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
@@ -302,12 +193,11 @@
 				id: "6C839FAE45EC2AB4"
 				type: "item"
 				item: "cabricality:reagent_jar_x969939395"
-				comment: "certus_quartz"
 				consume_items: false
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["05446225038D260A"]
@@ -316,180 +206,12 @@
 				id: "3106C362414AB238"
 				type: "item"
 				item: "cabricality:reagent_jar_1977609086"
-				comment: "sulfur"
-				consume_items: false
-			}]
-		}
-		{
-			x: 6.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "394A502BD8B5B1A0"
-			tasks: [{
-				id: "08F2F111C97B57CD"
-				type: "item"
-				item: "cabricality:reagent_jar_lead"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 6.0d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "22F0C935130ADCF4"
-			tasks: [{
-				id: "4A4C9D6E372A5466"
-				type: "item"
-				item: "cabricality:reagent_jar_gold"
-				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
 		{
 			x: 7.0d
-			y: 3.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "5C0CE1EDF9BF49C9"
-			tasks: [{
-				id: "185775BFC6FE2D89"
-				type: "item"
-				item: "cabricality:reagent_jar_zinc"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 7.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "5A957C9B5D8DE1A1"
-			tasks: [{
-				id: "3FA02655BC1E99A6"
-				type: "item"
-				item: "cabricality:reagent_jar_copper"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 7.0d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "2995ADCCB6496A22"
-			tasks: [{
-				id: "4932CD6D8FE77BB7"
-				type: "item"
-				item: "cabricality:reagent_jar_iron"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 1.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "235264EC150EDB4B"
-			tasks: [{
-				id: "2D94A57470F15112"
-				type: "item"
-				item: "cabricality:reagent_jar_lapis"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 2.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "58A6D5414035EEA1"
-			tasks: [{
-				id: "09ADE0525C1D7379"
-				type: "item"
-				item: "cabricality:reagent_jar_sapphire"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 3.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "2EECFBC4E2BF1F37"
-			tasks: [{
-				id: "36A7406CD330E7AB"
-				type: "item"
-				item: "cabricality:reagent_jar_emerald"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "2FD7D312EE63EA53"
-			tasks: [{
-				id: "68CD031A5C815200"
-				type: "item"
-				item: "cabricality:reagent_jar_ruby"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			id: "2644760FA76D5F30"
-			tasks: [{
-				id: "61BF1495FCB27EEB"
-				type: "item"
-				item: "cabricality:reagent_jar_diamond"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			title: "{alchemy.cabricality.clueless.title}"
-			x: -6.5d
-			y: 5.0d
-			shape: "circle"
-			description: ["{alchemy.cabricality.clueless.content}"]
-			hide_dependency_lines: true
-			dependencies: ["05446225038D260A"]
-			optional: true
-			id: "1BCFB709E97A74FA"
-			tasks: [
-				{
-					id: "6A30FCE70C7C7289"
-					type: "item"
-					item: "cabricality:accelerator_redstone"
-					comment: "DEPRECATED"
-					consume_items: false
-				}
-				{
-					id: "3D9F64E8128BB9A6"
-					type: "item"
-					item: "cabricality:accelerator_glowstone"
-					comment: "DEPRECATED"
-					consume_items: false
-				}
-			]
-		}
-		{
-			x: 10.0d
-			y: 5.0d
+			y: 7.0d
 			shape: "circle"
 			description: ["{alchemy.cabricality.silver.content}"]
 			hide_dependency_lines: true
@@ -499,13 +221,12 @@
 				id: "7EA2895F0FB5A5D6"
 				type: "item"
 				item: "cabricality:reagent_jar_1966541714"
-				comment: "silver"
 				consume_items: false
 			}]
 		}
 		{
-			x: -5.0d
-			y: 7.0d
+			x: -6.0d
+			y: 8.0d
 			shape: "circle"
 			description: ["{alchemy.cabricality.igneous.content}"]
 			hide_dependency_lines: true
@@ -521,30 +242,32 @@
 				id: "34B1FAA6107B2411"
 				type: "item"
 				item: "cabricality:catalyst_jar_326000733"
-				comment: "igneous"
 				consume_items: false
 			}]
 		}
 		{
-			x: -2.5d
-			y: 6.5d
+			x: -3.0d
+			y: 7.0d
 			shape: "circle"
 			description: ["{alchemy.cabricality.herbal.content}"]
 			hide_dependency_lines: true
 			dependencies: [
-				"3377A2C391B6F03A"
-				"3978E4B39C9DB44D"
-				"678C5FC6A898E988"
-				"49957428564E8101"
-				"1E856F69C03B1D75"
-				"122D3D6743D1DD04"
+				"4C45AC3D91DB88E0"
+				"56D34BDE412CA172"
+				"607E5DFBBE509571"
+				"0C15E3E6C74A1AA1"
+				"28A2FF221AA615CF"
+				"03E3FAAF1F01CCB7"
+				"1CD9A1421E4A8E6B"
+				"422D32885EDB0A72"
+				"2825FE0059C10679"
+				"6DE6AB75614D6D30"
 			]
 			id: "2B195E5B195246F5"
 			tasks: [{
 				id: "1F5A37CC8E10B3DB"
 				type: "item"
 				item: "cabricality:catalyst_jar_1648086365"
-				comment: "herbal"
 				consume_items: false
 			}]
 		}
@@ -560,14 +283,15 @@
 				"758B836F53187B8C"
 				"03DB1FCC30B7321C"
 				"20AA864C5201C638"
-				"35A6E3BBD80FB00F"
+				"2D58B20DCA3355EF"
+				"77548F3CAFBFDBAE"
+				"0F68EA332564ACD2"
 			]
 			id: "62EB94758A862091"
 			tasks: [{
 				id: "744E156650A1F4B3"
 				type: "item"
 				item: "cabricality:catalyst_jar_980825633"
-				comment: "volatile"
 				consume_items: false
 			}]
 		}
@@ -580,57 +304,15 @@
 			dependencies: [
 				"58A0EA80BB3A3262"
 				"7CA6AC3B07E07D81"
+				"0A1AF88285BAB8C3"
+				"43EED1D97F542A6A"
+				"5B1AD22C3D69CDD2"
 			]
 			id: "549D7F67A97CD2CE"
 			tasks: [{
 				id: "0881E44E3823D060"
 				type: "item"
 				item: "cabricality:catalyst_jar_x378553413"
-				comment: "crystal"
-				consume_items: false
-			}]
-		}
-		{
-			x: 6.0d
-			y: 6.5d
-			shape: "circle"
-			description: ["{alchemy.cabricality.metallurgic.content}"]
-			hide_dependency_lines: true
-			dependencies: [
-				"2995ADCCB6496A22"
-				"5C0CE1EDF9BF49C9"
-				"5A957C9B5D8DE1A1"
-				"22F0C935130ADCF4"
-				"394A502BD8B5B1A0"
-			]
-			id: "0CC92E94D10E681D"
-			tasks: [{
-				id: "4E81FAFD3B80DFE9"
-				type: "item"
-				item: "cabricality:catalyst_jar_metal"
-				comment: "DEPRECATED"
-				consume_items: false
-			}]
-		}
-		{
-			x: 8.5d
-			y: 7.0d
-			shape: "circle"
-			description: ["{alchemy.cabricality.gemstone.content}"]
-			hide_dependency_lines: true
-			dependencies: [
-				"235264EC150EDB4B"
-				"2644760FA76D5F30"
-				"2FD7D312EE63EA53"
-				"58A6D5414035EEA1"
-				"2EECFBC4E2BF1F37"
-			]
-			id: "5200AD3B32D219C6"
-			tasks: [{
-				id: "10F212525DABED77"
-				type: "item"
-				item: "cabricality:catalyst_jar_gem"
-				comment: "DEPRECATED"
 				consume_items: false
 			}]
 		}
@@ -645,15 +327,13 @@
 				"549D7F67A97CD2CE"
 				"2B195E5B195246F5"
 				"62EB94758A862091"
-				"0CC92E94D10E681D"
-				"5200AD3B32D219C6"
+				"026C956C82C5AFD9"
 			]
 			id: "7A9AA27029185035"
 			tasks: [{
 				id: "3299FF447F8110CF"
 				type: "item"
 				item: "cabricality:catalyst_jar_x1331490811"
-				comment: "chaos"
 				consume_items: false
 			}]
 		}
@@ -669,7 +349,6 @@
 				id: "68FBEFA1BC6479ED"
 				type: "item"
 				item: "cabricality:reagent_jar_666621652"
-				comment: "silicon"
 				consume_items: false
 			}]
 		}
@@ -704,5 +383,364 @@
 				title: "{chapter_4a.cabricality.complete.task.checkmark.title}"
 			}]
 		}
+		{
+			x: -7.0d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "7D396D617518E3CE"
+			tasks: [{
+				id: "6C565882928BF16F"
+				type: "item"
+				item: "cabricality:reagent_jar_x1422542970"
+				consume_items: false
+			}]
+		}
+		{
+			x: -7.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "183842B424C928CF"
+			tasks: [{
+				id: "704A608F42A2107B"
+				type: "item"
+				item: "cabricality:reagent_jar_203759157"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "336B6DDB1B3EA096"
+			tasks: [{
+				id: "6672B2472735F770"
+				type: "item"
+				item: "cabricality:reagent_jar_1961086224"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "0FA4CECD1DCAED6E"
+			tasks: [{
+				id: "0F7A9D5924E3DA05"
+				type: "item"
+				item: "cabricality:reagent_jar_x1441685028"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 6.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "187F325C5F37B2A8"
+			tasks: [{
+				id: "3838022100FFCF7A"
+				type: "item"
+				item: "cabricality:reagent_jar_x1713815406"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "607E5DFBBE509571"
+			tasks: [{
+				id: "5BF727A4B1459C66"
+				type: "item"
+				item: "cabricality:reagent_jar_x1313012562"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "4C45AC3D91DB88E0"
+			tasks: [{
+				id: "46CECD01BDE10FD1"
+				type: "item"
+				item: "cabricality:reagent_jar_1860001459"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "28A2FF221AA615CF"
+			tasks: [{
+				id: "671A8A07A88B7D5B"
+				type: "item"
+				item: "cabricality:reagent_jar_x597192402"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2825FE0059C10679"
+			tasks: [{
+				id: "42FB232FAFA6EFD5"
+				type: "item"
+				item: "cabricality:reagent_jar_x1635210648"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "0C15E3E6C74A1AA1"
+			tasks: [{
+				id: "15B5D5A85A58CE66"
+				type: "item"
+				item: "cabricality:reagent_jar_2134613241"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "56D34BDE412CA172"
+			tasks: [{
+				id: "35AEC375D0339620"
+				type: "item"
+				item: "cabricality:reagent_jar_x1422673413"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "6DE6AB75614D6D30"
+			tasks: [{
+				id: "352FD3C1370AB892"
+				type: "item"
+				item: "cabricality:reagent_jar_x1635056527"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "422D32885EDB0A72"
+			tasks: [{
+				id: "0B88E97B681233ED"
+				type: "item"
+				item: "cabricality:reagent_jar_x1423087393"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "03E3FAAF1F01CCB7"
+			tasks: [{
+				id: "746CB601C5C3A3D9"
+				type: "item"
+				item: "cabricality:reagent_jar_x1426001642"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "1CD9A1421E4A8E6B"
+			tasks: [{
+				id: "06EB9879AC48170D"
+				type: "item"
+				item: "cabricality:reagent_jar_x1332295548"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "0F68EA332564ACD2"
+			tasks: [{
+				id: "78FC0C549538D21F"
+				type: "item"
+				item: "cabricality:reagent_jar_1288793214"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "2D58B20DCA3355EF"
+			tasks: [{
+				id: "7D6D8B8C4019B6F2"
+				type: "item"
+				item: "cabricality:reagent_jar_x1426011232"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "77548F3CAFBFDBAE"
+			tasks: [{
+				id: "141E506C266C0689"
+				type: "item"
+				item: "cabricality:reagent_jar_x1329462451"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "5B1AD22C3D69CDD2"
+			tasks: [{
+				id: "5957C240A423369A"
+				type: "item"
+				item: "cabricality:reagent_jar_1265803837"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "0A1AF88285BAB8C3"
+			tasks: [{
+				id: "4AD9B59DBD83BEBA"
+				type: "item"
+				item: "cabricality:reagent_jar_x1132703648"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "43EED1D97F542A6A"
+			tasks: [{
+				id: "56ABF8AF651EBDD2"
+				type: "item"
+				item: "cabricality:reagent_jar_268511463"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			shape: "circle"
+			hide_dependency_lines: true
+			dependencies: [
+				"55A706C844713F4E"
+				"11D220DC4BF9E943"
+				"4CE0538A991B4DA6"
+				"68C9EF0258D25432"
+				"0D60B81A34EDAA7B"
+				"7928042D44D508FE"
+				"44265D99C8AEA46F"
+			]
+			id: "026C956C82C5AFD9"
+			tasks: [{
+				id: "038BD007EF367753"
+				type: "item"
+				item: "cabricality:catalyst_jar_x1322327156"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "55A706C844713F4E"
+			tasks: [{
+				id: "255E9A03E96FD4BA"
+				type: "item"
+				item: "cabricality:reagent_jar_x1422873267"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "4CE0538A991B4DA6"
+			tasks: [{
+				id: "40FB9541D2125480"
+				type: "item"
+				item: "cabricality:reagent_jar_x1422935835"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "11D220DC4BF9E943"
+			tasks: [{
+				id: "69DD88EFFBA9A73E"
+				type: "item"
+				item: "cabricality:reagent_jar_1514129822"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "44265D99C8AEA46F"
+			tasks: [{
+				id: "21D5FAE7520FA7F5"
+				type: "item"
+				item: "cabricality:reagent_jar_x1425999586"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "7928042D44D508FE"
+			tasks: [{
+				id: "7518DBB21DAF1E99"
+				type: "item"
+				item: "cabricality:reagent_jar_x1422796831"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "68C9EF0258D25432"
+			tasks: [{
+				id: "4431619C1D2648F2"
+				type: "item"
+				item: "cabricality:reagent_jar_x1422375511"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["05446225038D260A"]
+			id: "0D60B81A34EDAA7B"
+			tasks: [{
+				id: "679DAD16E263DBA4"
+				type: "item"
+				item: "cabricality:reagent_jar_1823117263"
+			}]
+		}
 	]
+	quest_links: [ ]
 }

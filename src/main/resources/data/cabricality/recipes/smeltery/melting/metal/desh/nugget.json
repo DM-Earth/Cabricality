@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:nuggets/desh",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:nuggets/desh"
+  },
+  "result": {
+    "fluid": "cabricality:molten_desh",
+    "amount": 10
+  },
+  "temperature": 900,
+  "time": 21
+}

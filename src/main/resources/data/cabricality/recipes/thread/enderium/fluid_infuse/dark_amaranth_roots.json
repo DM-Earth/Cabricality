@@ -7,11 +7,11 @@
   ],
   "fluidInput": {
     "fluid": "minecraft:water",
-    "amount": 0
+    "amount": 81000
   },
   "output": {
     "item": "promenade:dark_amaranth_roots",
     "count": 3
   },
-  "processTime": 1200
+  "processTime": 180
 }

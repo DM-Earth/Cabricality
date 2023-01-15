@@ -10,9 +10,11 @@
 /docs/*
 /assets/*
 /.github/*
+/.settings/*
 *.gitattributes
 *.gitignore
 *.classpath
+*.factorypath
 *.project
 /gradle/*
 /.gradle/*

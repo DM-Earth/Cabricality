@@ -12,7 +12,7 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class CabfDebugger {
-	private static boolean debug = true;
+	private static boolean debug = false;
 
 	public static void debug(String bug) {
 		if (debug || QuiltLoader.isDevelopmentEnvironment())

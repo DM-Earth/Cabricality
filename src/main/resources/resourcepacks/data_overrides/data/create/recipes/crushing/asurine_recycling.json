@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "create:stone_types/asurine"
+    }
+  ],
+  "results": [
+    {
+      "item": "cabricality:crushed_cobalt_ore",
+      "chance": 0.8
+    },
+    {
+      "item": "create:crushed_zinc_ore",
+      "chance": 0.3
+    },
+    {
+      "item": "create:zinc_nugget",
+      "chance": 0.3
+    }
+  ],
+  "processingTime": 250
+}

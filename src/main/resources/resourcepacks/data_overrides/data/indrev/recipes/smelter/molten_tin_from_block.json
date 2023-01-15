@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "tag": "c:tin_blocks"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_tin",
+    "amount": 81000
+  },
+  "processTime": 600
+}

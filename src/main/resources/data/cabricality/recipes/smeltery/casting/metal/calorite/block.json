@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:casting_basin",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:storage_blocks/calorite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "fluid": {
+    "tag": "c:molten_calorite",
+    "amount": 810
+  },
+  "result": {
+    "tag": "c:storage_blocks/calorite"
+  },
+  "cooling_time": 190
+}

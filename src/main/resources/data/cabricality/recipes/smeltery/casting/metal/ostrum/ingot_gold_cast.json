@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:ingots/ostrum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "fluid": {
+    "tag": "c:molten_ostrum",
+    "amount": 90
+  },
+  "result": {
+    "tag": "c:ingots/ostrum"
+  },
+  "cooling_time": 63
+}

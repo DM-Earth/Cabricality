@@ -4,7 +4,7 @@ import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.MLM;
+import static com.dm.earth.cabricality.ModEntry.*;
 import static com.dm.earth.cabricality.ModEntry.PMD;
 import static com.dm.earth.cabricality.content.alchemist.core.Reagent.of;
 import java.util.Arrays;
@@ -26,7 +26,6 @@ import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import net.minecraft.util.registry.Registry;
 
-// TODO: fill this out
 public enum Reagents {
 	IGNEOUS("igneous", 0x6C8191, 16, true,
 			of("andesite", MC.id("andesite"), 0x868887),
@@ -38,8 +37,7 @@ public enum Reagents {
 			of("limestone", CR.id("limestone"), 0xBBB6A9),
 			of("scoria", CR.id("scoria"), 0x493A34),
 			of("blunite", PMD.id("blunite"), 0x5F6874),
-			of("carbonite", PMD.id("carbonite"), 0x514E52)
-	),
+			of("carbonite", PMD.id("carbonite"), 0x514E52)),
 
 	HERBAL("herbal", 0xB5CDA3, 1, true,
 			of("white", MC.id("lily_of_the_valley"), 0xE8E8E8),
@@ -51,8 +49,7 @@ public enum Reagents {
 			of("light_gray", MC.id("white_tulip"), 0xD0E9E9),
 			of("blue", MC.id("cornflower"), 0x2F6EEC),
 			of("red", MC.id("red_tulip"), 0xEB3334),
-			of("black", MC.id("wither_rose"), 0x45322B)
-	),
+			of("black", MC.id("wither_rose"), 0x45322B)),
 
 	VOLATILE("volatile", 0x9F5F80, 1, true,
 			of("blaze", MC.id("blaze_powder"), 0xFDA228),
@@ -62,21 +59,27 @@ public enum Reagents {
 			of("gunpowder", MC.id("gunpowder"), 0x727272),
 			of("prismarine", MC.id("prismarine_shard"), 0xA5D1C2),
 			of("hex", MLM.id("hex_ash"), 0xA235BC),
-			of("ender", AE2.id("ender_dust"), 0x38CCB1)
-	),
+			of("ender", AE2.id("ender_dust"), 0x38CCB1)),
 
 	CRYSTAL("crystal", 0xffb037, 1, true,
 			of("sulfur", IR.id("sulfur_dust"), 0xc7a94a),
 			of("certus_quartz", AE2.id("certus_quartz_dust"), 0xbbdcfd),
 			of("cinnabar", MC.id("redstone"), 0xe8364f),
 			of("blazing_quartz", MLM.id("blazing_quartz"), 0xfee568),
-			of("nether_quartz", MC.id("quartz"), 0xddd4c7)
-	),
+			of("nether_quartz", MC.id("quartz"), 0xddd4c7)),
+
+	METAL("metal", 0xc9c9c9, 1, true,
+			of("iron", IR.id("iron_dust"), 0xd1d1d1),
+			of("gold", IR.id("gold_dust"), 0xeed73c),
+			of("copper", IR.id("copper_dust"), 0xe7763a),
+			of("tin", IR.id("tin_dust"), 0xb6b9ba),
+			of("lead", IR.id("lead_dust"), 0x313150),
+			of("zinc", CABF.id("zinc_dust"), 0xaecbb9),
+			of("nickel", CABF.id("nickel_dust"), 0xd9b669)),
 
 	CHAOTIC("chaos", 0xb200ed, 1, false,
 			of("silver", IR.id("silver_dust"), 0x9fadb4),
-			of("silicon", AE2.id("silicon"), 0x85837b)
-	);
+			of("silicon", AE2.id("silicon"), 0x85837b));
 
 	private final String name;
 	private final int tint;
@@ -176,8 +179,8 @@ public enum Reagents {
 		return Registry.BLOCK.getEntries().stream()
 				.filter(
 						entry -> entry.getValue() instanceof ReagentJarBlock
-										 || includeBlank && entry.getValue() instanceof JarBlock
-				).map(Map.Entry::getValue).collect(Collectors.toList());
+								|| includeBlank && entry.getValue() instanceof JarBlock)
+				.map(Map.Entry::getValue).collect(Collectors.toList());
 	}
 
 	@Nullable
@@ -192,5 +195,6 @@ public enum Reagents {
 				.findFirst().orElse(null);
 	}
 
-	public static void load() {}
+	public static void load() {
+	}
 }

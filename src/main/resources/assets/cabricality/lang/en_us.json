@@ -28,9 +28,10 @@
 
   "item.cabricality.stone_rod": "Stone Rod",
 
-  "item.cabricality.invar_ingot"   : "Invar Ingot",
-  "item.cabricality.nickel_ingot"  : "Nickel Ingot",
-  "item.cabricality.nickel_nugget" : "Nickel Nugget",
+  "item.cabricality.invar_ingot": "Invar Ingot",
+  "item.cabricality.nickel_ingot": "Nickel Ingot",
+  "item.cabricality.nickel_nugget": "Nickel Nugget",
+  "item.cabricality.raw_nickel": "Raw Nickel",
   "item.cabricality.enderium_ingot": "Enderium Ingot",
 
   "item.cabricality.nickel_compound" : "Nickel Compound",
@@ -123,22 +124,11 @@
   "item.cabricality.molten_ostrum_bucket"  : "Molten Ostrum Bucket",
   "item.cabricality.molten_calorite_bucket": "Molten Calorite Bucket",
 
-  "item.cabricality.zero" : "0",
-  "item.cabricality.one"  : "1",
-  "item.cabricality.two"  : "2",
-  "item.cabricality.three": "3",
-  "item.cabricality.four" : "4",
-  "item.cabricality.five" : "5",
-  "item.cabricality.six"  : "6",
-  "item.cabricality.seven": "7",
-  "item.cabricality.eight": "8",
-  "item.cabricality.nine" : "9",
-
-  "item.cabricality.plus"     : "Plus",
-  "item.cabricality.minus"    : "Minus",
-  "item.cabricality.multiply" : "Multiply",
-  "item.cabricality.divide"   : "Divide",
-  "item.cabricality.missingno": "א",
+  "item.cabricality.plus"    : "Plus",
+  "item.cabricality.minus"   : "Minus",
+  "item.cabricality.multiply": "Multiply",
+  "item.cabricality.divide"  : "Divide",
+  "item.cabricality.nan"     : "א",
 
   "item.cabricality.three_cast"   : "Interger Cast (3)",
   "item.cabricality.eight_cast"   : "Interger Cast (8)",
@@ -183,45 +173,53 @@
 
   "comment_reagent": "Reagents",
 
-  "reagent.cabricality.minecraft.andesite"   : "§7Andesite§r",
-  "reagent.cabricality.minecraft.diorite"    : "§7Diorite§r",
-  "reagent.cabricality.minecraft.granite"    : "§7Granite§r",
-  "reagent.cabricality.minecraft.cobblestone": "§7Stone§r",
-  "reagent.cabricality.minecraft.basalt"     : "§7Basalt§r",
-  "reagent.cabricality.minecraft.tuff"       : "§7Tuff§r",
-  "reagent.cabricality.create.limestone"     : "§7Limestone§r",
-  "reagent.cabricality.create.scoria"        : "§8Scoria§r",
-  "reagent.cabricality.promenade.blunite"    : "§7Blunite§r",
-  "reagent.cabricality.promenade.carbonite"  : "§8Carbonite§r",
+  "reagent.cabricality.andesite"   : "§7Andesite§r",
+  "reagent.cabricality.diorite"    : "§7Diorite§r",
+  "reagent.cabricality.granite"    : "§7Granite§r",
+  "reagent.cabricality.cobblestone": "§7Stone§r",
+  "reagent.cabricality.basalt"     : "§7Basalt§r",
+  "reagent.cabricality.tuff"       : "§7Tuff§r",
+  "reagent.cabricality.limestone"  : "§7Limestone§r",
+  "reagent.cabricality.scoria"     : "§8Scoria§r",
+  "reagent.cabricality.blunite"    : "§7Blunite§r",
+  "reagent.cabricality.carbonite"  : "§8Carbonite§r",
 
-  "reagent.cabricality.minecraft.white"      : "§fPureness§r",
-  "reagent.cabricality.minecraft.orange"     : "§6Orange§r",
-  "reagent.cabricality.minecraft.magenta"    : "§dFuchsia§r",
-  "reagent.cabricality.minecraft.light_blue" : "§bOrchid§r",
-  "reagent.cabricality.minecraft.yellow"     : "§eGoldenrod§r",
-  "reagent.cabricality.minecraft.pink"       : "§dCandy§r",
-  "reagent.cabricality.minecraft.light_gray" : "§7Concrete§r",
-  "reagent.cabricality.minecraft.blue"       : "§3Azure§r",
-  "reagent.cabricality.minecraft.red"        : "§4Crimson§r",
-  "reagent.cabricality.minecraft.black"      : "§8Darkness§r",
+  "reagent.cabricality.white"     : "§fPureness§r",
+  "reagent.cabricality.orange"    : "§6Orange§r",
+  "reagent.cabricality.magenta"   : "§dFuchsia§r",
+  "reagent.cabricality.light_blue": "§bOrchid§r",
+  "reagent.cabricality.yellow"    : "§eGoldenrod§r",
+  "reagent.cabricality.pink"      : "§dCandy§r",
+  "reagent.cabricality.light_gray": "§7Concrete§r",
+  "reagent.cabricality.blue"      : "§3Azure§r",
+  "reagent.cabricality.red"       : "§4Crimson§r",
+  "reagent.cabricality.black"     : "§8Darkness§r",
 
-  "reagent.cabricality.minecraft.blaze"     : "§6Blazing§r",
-  "reagent.cabricality.minecraft.slime"     : "§aSlimy§r",
-  "reagent.cabricality.minecraft.nether"    : "§4Nether§r",
-  "reagent.cabricality.create.obsidian"     : "§8Obsidian§r",
-  "reagent.cabricality.minecraft.gunpowder" : "§8Explosive§r",
-  "reagent.cabricality.minecraft.prismarine": "§bAquatic§r",
-  "reagent.cabricality.malum.hex"           : "§5Ashic§r",
-  "reagent.cabricality.ae2.ender"           : "§2Enderium§r",
+  "reagent.cabricality.blaze"     : "§6Blazing§r",
+  "reagent.cabricality.slime"     : "§aSlimy§r",
+  "reagent.cabricality.nether"    : "§4Nether§r",
+  "reagent.cabricality.obsidian"  : "§8Obsidian§r",
+  "reagent.cabricality.gunpowder" : "§8Explosive§r",
+  "reagent.cabricality.prismarine": "§bAquatic§r",
+  "reagent.cabricality.hex"       : "§5Ashic§r",
+  "reagent.cabricality.ender"     : "§2Enderium§r",
 
-  "reagent.cabricality.indrev.sulfur"          : "§6Sulfuric§r",
-  "reagent.cabricality.ae2.certus_quartz"      : "§bCertus Quartz§r",
-  "reagent.cabricality.minecraft.cinnabar"     : "§cCinnabar§r",
-  "reagent.cabricality.malum.blazing_quartz"   : "§eBlazing Quartz§r",
-  "reagent.cabricality.minecraft.nether_quartz": "§fNether Quartz§r",
+  "reagent.cabricality.iron"  : "§fFerrum§r",
+  "reagent.cabricality.gold"  : "§6Aurum§r",
+  "reagent.cabricality.copper": "§cCuprum§r",
+  "reagent.cabricality.tin"   : "§3Stannum§r",
+  "reagent.cabricality.lead"  : "§1Plumbum§r",
+  "reagent.cabricality.zinc"  : "§aZincum§r",
+  "reagent.cabricality.nickel": "§eNickel§r",
+  "reagent.cabricality.silver": "§7Argentum§r",
 
-  "reagent.cabricality.indrev.silver": "§7Silver§r",
-  "reagent.cabricality.ae2.silicon"  : "§dSilicon",
+  "reagent.cabricality.sulfur"        : "§6Sulfuric§r",
+  "reagent.cabricality.certus_quartz" : "§bCertus Quartz§r",
+  "reagent.cabricality.cinnabar"      : "§cCinnabar§r",
+  "reagent.cabricality.blazing_quartz": "§eBlazing Quartz§r",
+  "reagent.cabricality.nether_quartz" : "§fNether Quartz§r",
+
+  "reagent.cabricality.silicon": "§dSilicon",
 
 
 
@@ -230,8 +228,9 @@
   "catalyst.cabricality.igneous" : "§dIgneous",
   "catalyst.cabricality.herbal"  : "§dHerbal",
   "catalyst.cabricality.volatile": "§dVolatile",
+  "catalyst.cabricality.metal"   : "§dMetal",
   "catalyst.cabricality.crystal" : "§dCrystalline",
-  "catalyst.cabricality.chaos" : "§b§kChaos",
+  "catalyst.cabricality.chaos"   : "§b§kChaos",
 
 
 
@@ -293,6 +292,31 @@
 
 
 
+  "comment_config": "Configs",
+
+  "config.cabricality.category.general": "General",
+
+  "config.cabricality.general.background_blur"        : "Background Blur",
+  "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
+
+  "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
+  "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
+
+  "config.cabricality.category.debug": "Debug",
+
+  "config.cabricality.debug.debug_info" : "Debug Info",
+  "config.cabricality.debug.cleaner_log": "Cleaner Log",
+
+
+
+  "comment_key_binds": "Key Binds",
+
+  "key.cabricality.category.general": "Cabricality",
+
+  "key.cabricality.general.config_screen": "Open Cabricality Config",
+
+
+
   "comment_event": "Events",
 
   "event.cabricality.coin_flip": "You Flipped a %s    It Was %s",
@@ -302,7 +326,7 @@
 
   "comment_command": "Commands",
 
-  "command.cabricality.alchemist.chaotic" : " §8(Chaotic)",
+  "command.cabricality.alchemist.chaotic": " §8(Chaotic)",
 
 
 
@@ -314,11 +338,12 @@
 
   "comment_misc": "Miscellaneous",
 
-  "mod.ftblibrary.name": "FTB Library",
-  "mod.ftbquests.name": "FTB Quests",
-  "mod.ftbteams.name": "FTB Teams",
+  "mod.ftblibrary.name"     : "FTB Library",
+  "mod.ftbquests.name"      : "FTB Quests",
+  "mod.ftbteams.name"       : "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
 
+  "screen.cabricality.config.title"            : "Cabricality",
   "screen.cabricality.missing_mod.title"       : "Cabricality is Missing Mod",
   "screen.cabricality.missing_mod.title_plural": "Cabricality is Missing Mods",
   "screen.cabricality.missing_mod.subtitle"    : "Click to download",
@@ -326,5 +351,6 @@
   "screen.cabricality.title_screen.warning_missing_mod"       : "Missing 1 Mod!",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "Missing %d Mods!",
 
-  "itemGroup.cabricality.main": "Cabricality"
+  "itemGroup.cabricality.main"      : "Cabricality",
+  "itemGroup.cabricality.substrates": "Cabricality Substrates"
 }

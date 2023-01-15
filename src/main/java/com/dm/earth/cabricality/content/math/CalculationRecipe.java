@@ -2,6 +2,7 @@ package com.dm.earth.cabricality.content.math;
 
 import java.util.ArrayList;
 import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import com.dm.earth.cabricality.content.math.core.Calculable;
 import com.dm.earth.cabricality.content.math.item.NumberItem;
 import com.simibubi.create.content.contraptions.components.crafter.MechanicalCraftingInventory;
@@ -46,7 +47,7 @@ public class CalculationRecipe extends SpecialCraftingRecipe {
 
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return null;
+		return CabfRecipeSerializers.CALCULATION;
 	}
 
 	@Override

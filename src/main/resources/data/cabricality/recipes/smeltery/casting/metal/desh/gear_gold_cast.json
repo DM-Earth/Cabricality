@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:gears/desh",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/gear"
+  },
+  "fluid": {
+    "tag": "c:molten_desh",
+    "amount": 360
+  },
+  "result": {
+    "tag": "c:gears/desh"
+  },
+  "cooling_time": 127
+}

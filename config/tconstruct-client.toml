@@ -1,8 +1,7 @@
-
 #Client only settings
 [client]
-	#Settings related to compatibility
-	[client.compatibility]
-		#Disables the REI deprecation warning when joining a world.
-		disableREIMessage = true
 
+#Settings related to compatibility
+[client.compatibility]
+#Disables the REI deprecation warning when joining a world.
+disableREIMessage = true

@@ -688,7 +688,7 @@
 		}
 		{
 			title: "Mineral Collection"
-			icon: "cabricality:substrate_sulfur"
+			icon: "cabricality:reagent_jar_1977609086"
 			x: -1.0d
 			y: -4.5d
 			subtitle: "25 Silver"
@@ -730,7 +730,7 @@
 		}
 		{
 			title: "Plentiful Mineral Collection"
-			icon: "cabricality:accelerator_redstone"
+			icon: "cabricality:reagent_jar_1265803837"
 			x: -1.0d
 			y: -3.0d
 			subtitle: "45 Silver"
@@ -856,7 +856,7 @@
 				{
 					id: "76F8080C0E176A08"
 					type: "item"
-				icon: "cabricality:silver_coin"
+					icon: "cabricality:silver_coin"
 					auto: "enabled"
 					item: "cabricality:silver_coin"
 					count: 32
@@ -1385,7 +1385,7 @@
 				{
 					id: "72ADE787CA674127"
 					type: "item"
-				icon: "cabricality:silver_coin"
+					icon: "cabricality:silver_coin"
 					auto: "enabled"
 					item: "cabricality:silver_coin"
 					count: 10
@@ -1439,4 +1439,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

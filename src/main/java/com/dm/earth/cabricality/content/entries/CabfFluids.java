@@ -1,8 +1,8 @@
 package com.dm.earth.cabricality.content.entries;
 
+import static com.dm.earth.cabricality.ModEntry.C;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.fluids.MoltenMetalFluid;
 import com.dm.earth.cabricality.content.fluids.NumberFluid;
@@ -11,13 +11,13 @@ import com.dm.earth.cabricality.content.fluids.core.BaseFluid;
 import com.dm.earth.cabricality.content.fluids.core.IFluid;
 import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidBlockStatesGenerator;
 import com.dm.earth.cabricality.resource.assets.gen.fluid.FluidModelGenerator;
-
+import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class CabfFluids {
+public class CabfFluids implements LoadTagsCallback<Fluid> {
 	// Fluids
 	public static final List<Fluid> NUMBERS = getNumberFluids();
 	public static final Fluid RESIN = new BaseFluid("resin");
@@ -54,6 +54,16 @@ public class CabfFluids {
 	public static final FlowableFluid MOLTEN_CALORITE_FLOWING =
 			new MoltenMetalFluid.Flowing("calorite", 0x931d3b);
 
+	public static void register() {
+		registerIFluids(RESIN, REDSTONE, WASTE, SKY_STONE, COKE, FINE_SAND, MATRIX, RAW_LOGIC);
+		registerIFluids(POWERED_WATER, POWERED_WATER_FLOWING);
+		registerIFluids(MOLTEN_DESH, MOLTEN_DESH_FLOWING, MOLTEN_OSTRUM, MOLTEN_OSTRUM_FLOWING,
+				MOLTEN_CALORITE, MOLTEN_CALORITE_FLOWING);
+		registerIFluids(NUMBERS);
+
+		LoadTagsCallback.FLUID.register(new CabfFluids());
+	}
+
 	private static List<Fluid> getNumberFluids() {
 		List<Integer> colors = List.of(0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8,
 				0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8);
@@ -61,14 +71,6 @@ public class CabfFluids {
 		for (int i = 0; i < 10; i++)
 			numbers.add(new NumberFluid(i).color(colors.get(i)));
 		return numbers;
-	}
-
-	public static void register() {
-		registerIFluids(RESIN, REDSTONE, WASTE, SKY_STONE, COKE, FINE_SAND, MATRIX, RAW_LOGIC);
-		registerIFluids(POWERED_WATER, POWERED_WATER_FLOWING);
-		registerIFluids(MOLTEN_DESH, MOLTEN_DESH_FLOWING, MOLTEN_OSTRUM, MOLTEN_OSTRUM_FLOWING,
-				MOLTEN_CALORITE, MOLTEN_CALORITE_FLOWING);
-		registerIFluids(NUMBERS);
 	}
 
 	private static void registerFluid(Identifier id, Identifier stillId, Fluid fluid) {
@@ -102,5 +104,12 @@ public class CabfFluids {
 	private static void registerIFluids(List<Fluid> fluids) {
 		for (Fluid fluid : fluids)
 			registerIFluid(fluid);
+	}
+
+	@Override
+	public void load(TagHandler<Fluid> handler) {
+		handler.register(C.id("molten_desh"), MOLTEN_DESH);
+		handler.register(C.id("molten_ostrum"), MOLTEN_OSTRUM);
+		handler.register(C.id("molten_calorite"), MOLTEN_CALORITE);
 	}
 }

@@ -1,0 +1,17 @@
+{
+  "type": "indrev:fluid_infuse",
+  "ingredients": [
+    {
+      "item": "cabricality:inductive_mechanism"
+    }
+  ],
+  "fluidInput": {
+    "fluid": "tconstruct:molten_enderium",
+    "amount": 9000
+  },
+  "output": {
+    "item": "cabricality:abstruse_mechanism",
+    "count": 1
+  },
+  "processTime": 60
+}

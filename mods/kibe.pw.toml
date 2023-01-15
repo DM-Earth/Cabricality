@@ -1,13 +1,13 @@
-name = "Kibe Utilities"
+name = "Kibe"
 filename = "kibe-1.9.10-BETA+1.18.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/OvlwmUdC/versions/bevNrLtU/kibe-1.9.10-BETA%2B1.18.jar"
 hash-format = "sha1"
 hash = "21d7a09c18e4e5434ce7166d28ca3237fce33fff"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 4023623
-project-id = 388832
+[update.modrinth]
+mod-id = "OvlwmUdC"
+version = "bevNrLtU"

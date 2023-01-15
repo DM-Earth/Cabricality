@@ -86,8 +86,8 @@
 					}]
 				}
 			}
-			x: -8.5d
-			y: -6.5d
+			x: -8.0d
+			y: -6.0d
 			subtitle: "{market.cabricality.saw.subtitle}"
 			description: ["{market.cabricality.saw.content}"]
 			hide_dependency_lines: true
@@ -134,68 +134,6 @@
 			}]
 		}
 		{
-			title: "{market.cabricality.screwdriver.title}"
-			icon: {
-				id: "indrev:screwdriver"
-				Count: 1b
-				tag: {
-					Damage: 0
-					display: {
-						Name: "[\"§5Enchanted Screwdriver\"]"
-					}
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 3s
-					}]
-				}
-			}
-			x: -7.0d
-			y: -6.5d
-			subtitle: "{market.cabricality.screwdriver.subtitle}"
-			description: ["{market.cabricality.screwdriver.content}"]
-			id: "72CACE8F0E4701B1"
-			tasks: [
-				{
-					id: "1E25EB2883C9A960"
-					type: "item"
-					item: {
-						id: "cabricality:screwdriver"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "74585BB7E80CF010"
-					type: "item"
-					item: "cabricality:gold_coin"
-					count: 5L
-				}
-			]
-			rewards: [{
-				id: "743730BBE32A0875"
-				type: "item"
-				item: {
-					id: "cabricality:screwdriver"
-					Count: 1b
-					tag: {
-						display: {
-							Name: "[\"§5Enchanted Screwdriver\"]"
-							Lore: ["[\"§7Do not use in manual crafting\"]"]
-						}
-						Enchantments: [{
-							lvl: 10s
-							id: "minecraft:unbreaking"
-						}]
-						Unbreakable: 1
-						Damage: 0
-						HideFlags: 1
-					}
-				}
-			}]
-		}
-		{
 			title: "{market.cabricality.resonator.title}"
 			icon: {
 				id: "cabricality:chromatic_resonator"
@@ -208,8 +146,8 @@
 					}]
 				}
 			}
-			x: -5.0d
-			y: -6.5d
+			x: -6.0d
+			y: -7.0d
 			subtitle: "{market.cabricality.resonator.subtitle}"
 			description: ["{market.cabricality.resonator.content}"]
 			id: "43FC566E833BE834"
@@ -268,8 +206,8 @@
 					}]
 				}
 			}
-			x: -3.5d
-			y: -6.5d
+			x: -4.0d
+			y: -6.0d
 			subtitle: "{market.cabricality.flash_drive.subtitle}"
 			description: ["{market.cabricality.flash_drive.content}"]
 			id: "00D6DD6AE8E3C014"
@@ -955,4 +893,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

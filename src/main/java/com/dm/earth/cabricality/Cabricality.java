@@ -1,11 +1,9 @@
 package com.dm.earth.cabricality;
 
-import java.util.Arrays;
-
-import net.krlite.equator.util.IdentifierBuilder;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.loader.api.QuiltLoader;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
@@ -13,6 +11,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.dm.earth.cabricality.config.CabfConfig;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.skyblock.Skyblock;
 import com.dm.earth.cabricality.content.core.TechThread;
@@ -20,19 +19,19 @@ import com.dm.earth.cabricality.content.entries.CabfBlockEntityTypes;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
-import com.dm.earth.cabricality.tweak.TagTweaks;
-import com.dm.earth.cabricality.util.PushUtil;
-import com.dm.earth.cabricality.util.ScreenUtil;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
-import com.dm.earth.cabricality.util.func.CabfBlur;
+import com.dm.earth.cabricality.tweak.ItemTagTweaks;
 import com.dm.earth.cabricality.util.mod.CabfModConflict;
+import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
+import net.fabricmc.api.EnvType;
 import net.krlite.equator.color.PreciseColor;
+import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -81,7 +80,10 @@ public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
-	public static final IdentifierBuilder.Specified ID_BUILDER = new IdentifierBuilder.Specified(ID);
+	public static final IdentifierBuilder.Specified ID_BUILDER =
+			new IdentifierBuilder.Specified(ID);
+	public static final CabfConfig CONFIG =
+			new CabfConfig(QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
@@ -98,11 +100,19 @@ public class Cabricality implements ModInitializer {
 		return ID_BUILDER.localization(type, path);
 	}
 
+	@ClientOnly
+	private static void initClientAssets() {
+		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
+	}
+
 	@Override
 	public void onInitialize(ModContainer mod) {
+		CONFIG.load();
+		CONFIG.save();
+
 		CabfModConflict.checkAndExit();
 
-		CabfLogger.logInfo("Initializing... 📦");
+		LOGGER.info("Initializing " + NAME + "... 📦");
 
 		Trading.load();
 		Alchemist.load();
@@ -113,23 +123,16 @@ public class Cabricality implements ModInitializer {
 		CabfFluids.register();
 		CabfSounds.register();
 		CabfBlockEntityTypes.register();
-		ScreenUtil.registerEvents();
-		PushUtil.register();
-		CabfBlur.INSTANCE.init();
-		TagTweaks.load();
+		CabfRecipeSerializers.register();
+
+		ItemTagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
 		UseEntityListener.load();
-		initClientAssets();
-
+		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> Cabricality::initClientAssets);
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
 		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
 				ResourcePackActivationType.ALWAYS_ENABLED);
-	}
-
-	@ClientOnly
-	private static void initClientAssets() {
-		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 }

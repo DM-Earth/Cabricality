@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "tag": "c:silver_blocks"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_silver",
+    "amount": 81000
+  },
+  "processTime": 600
+}

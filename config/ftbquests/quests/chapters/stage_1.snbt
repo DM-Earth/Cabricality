@@ -419,7 +419,7 @@
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "fabric:saws"
+						value: "c:saws"
 					}
 				}
 				consume_items: false
@@ -589,4 +589,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

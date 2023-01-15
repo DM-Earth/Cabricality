@@ -1,0 +1,12 @@
+{
+  "type": "indrev:condenser",
+  "output": {
+    "item": "indrev:lead_chunk",
+    "count": 1
+  },
+  "fluidInput": {
+    "fluid": "tconstruct:molten_lead",
+    "amount": 9000
+  },
+  "processTime": 500
+}

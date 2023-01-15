@@ -161,20 +161,6 @@
 			}]
 		}
 		{
-			title: "{metallurgy.cabricality.ii.blocking.title}"
-			icon: "cabricality:extractor_machine"
-			x: -6.0d
-			y: 0.0d
-			subtitle: "{metallurgy.cabricality.ii.blocking.subtitle}"
-			dependencies: ["6B03056FA21424C0"]
-			id: "1A5A81CA749DAB2A"
-			tasks: [{
-				id: "7B5CAD7F1C63A9EC"
-				type: "checkmark"
-				title: "{metallurgy.cabricality.ii.blocking.task.checkmark.title}"
-			}]
-		}
-		{
 			title: "{metallurgy.cabricality.ii.smelting.title}"
 			icon: "minecraft:furnace"
 			x: -12.0d
@@ -242,7 +228,6 @@
 			y: 2.0d
 			shape: "circle"
 			subtitle: "{metallurgy.cabricality.iiib.subtitle}"
-			dependencies: ["1A5A81CA749DAB2A"]
 			dependency_requirement: "one_completed"
 			id: "6509024553997AB0"
 			tasks: [{
@@ -271,7 +256,6 @@
 			y: 4.0d
 			shape: "circle"
 			dependencies: [
-				"1A5A81CA749DAB2A"
 				"2D33D7864925BFF9"
 				"715BBD0DF0136FF1"
 			]
@@ -284,4 +268,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

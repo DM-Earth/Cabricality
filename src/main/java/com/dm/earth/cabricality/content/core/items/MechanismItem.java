@@ -42,7 +42,7 @@ public class MechanismItem extends Item implements IncompleteVariant {
 
         Type(String name, Rarity rarity) {
             this.name = name;
-            MechanismItem newItem = new MechanismItem(name, CabfItems.Properties.DEFAULT.rarity(rarity));
+            MechanismItem newItem = new MechanismItem(name, CabfItems.Properties.DEFAULT.get().rarity(rarity));
             this.item = newItem;
             this.incompleteItem = newItem.newIncomplete(rarity);
         }

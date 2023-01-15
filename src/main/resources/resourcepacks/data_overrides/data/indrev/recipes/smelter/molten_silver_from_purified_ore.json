@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "item": "indrev:silver_purified_ore"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_silver",
+    "amount": 45000
+  },
+  "processTime": 600
+}

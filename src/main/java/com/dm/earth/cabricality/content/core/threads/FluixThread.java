@@ -19,6 +19,7 @@ import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
+import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.fan.SplashingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
@@ -110,7 +111,7 @@ public class FluixThread implements TechThread {
 		handler.register(recipeId("splashing", "sandstone"),
 				id -> new SplashingRecipe(
 						new FreePRP(id).setIngredient(MC.asIngredient("sandstone"))
-								.setResult(CABF.asProcessingOutput("sand_ball", 0.125f))));
+								.setResult(CABF.asProcessingOutput("sand_ball", 0.65f))));
 		handler.register(recipeId("compacting", "ice_charge"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setIngredient(blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz)
@@ -162,6 +163,12 @@ public class FluixThread implements TechThread {
 				.setIngredient(CABF.asIngredient("purified_sand"), CABF.asIngredient("ice_charge"))
 				.setResult(AE2.asProcessingOutput("silicon"))
 				.setHeatRequirement(HeatCondition.HEATED)));
+
+		handler.register(recipeId("item_application", "fluix_casing"),
+				id -> new ManualApplicationRecipe(new FreePRP(id)
+						.setIngredient(MC.asIngredient("obsidian"),
+								AE2.asIngredient("fluix_crystal"))
+						.setResult(CABF.asProcessingOutput("fluix_casing"))));
 	}
 
 	@Contract("_, _, _ -> new")

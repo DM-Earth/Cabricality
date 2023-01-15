@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "c:nuggets/ostrum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:nuggets/ostrum"
+  },
+  "result": {
+    "fluid": "cabricality:molten_ostrum",
+    "amount": 10
+  },
+  "temperature": 900,
+  "time": 21
+}

@@ -2,10 +2,9 @@ package com.dm.earth.cabricality.content.entries;
 
 import java.util.Arrays;
 
-import com.dm.earth.cabricality.Cabricality;
-
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ChaoticCatalystJarBlock;
@@ -16,9 +15,9 @@ import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlock;
 import com.dm.earth.cabricality.core.ISettableBlockItem;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
+import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.simibubi.create.AllTags.AllBlockTags;
 
-import net.devtech.arrp.json.tags.JTag;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FluidBlock;
@@ -30,15 +29,13 @@ import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class CabfBlocks {
+public class CabfBlocks implements LoadTagsCallback<Block> {
 	public static Block EXTRACTOR = registerBlock("extractor_machine",
 			new ExtractorMachineBlock(QuiltBlockSettings.of(Material.METAL, MapColor.BROWN)));
 	public static Block JAR = registerBlock("jar",
 			new JarBlock(QuiltBlockSettings.of(Material.METAL, MapColor.SPRUCE_BROWN)));
 
 	public static void register() {
-		JTag wrenchAbleTag = new JTag();
-		JTag pickaxeMineableTag = new JTag();
 
 		// Substrate Jars
 		Arrays.stream(Reagents.values()).forEach(reagents -> {
@@ -56,25 +53,12 @@ public class CabfBlocks {
 									QuiltBlockSettings.of(Material.GLASS, MapColor.SPRUCE_BROWN))));
 		});
 
-		// Machines
-		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> {
-			registerBlock(entry.getId().getPath(), entry.getBlock());
-			wrenchAbleTag.add(entry.getId());
-		});
+		Arrays.stream(MachineBlockEntry.values())
+				.forEach(entry -> registerBlock(entry.getId().getPath(), entry.getBlock()));
+		Arrays.stream(CasingBlockEntry.values())
+				.forEach(entry -> registerBlock(entry.getId().getPath(), entry.getBlock()));
 
-		// Casings
-		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> {
-			registerBlock(entry.getId().getPath(), entry.getBlock());
-			wrenchAbleTag.add(entry.getId());
-			pickaxeMineableTag.add(entry.getId());
-		});
-
-		Cabricality.RRPs.SERVER_RESOURCES
-				.addTag(new Identifier(AllBlockTags.WRENCH_PICKUP.tag.id().getNamespace(),
-						"blocks/" + AllBlockTags.WRENCH_PICKUP.tag.id().getPath()), wrenchAbleTag);
-		Cabricality.RRPs.SERVER_RESOURCES
-				.addTag(new Identifier(BlockTags.PICKAXE_MINEABLE.id().getNamespace(),
-						"blocks/" + BlockTags.PICKAXE_MINEABLE.id().getPath()), pickaxeMineableTag);
+		LoadTagsCallback.BLOCK.register(new CabfBlocks());
 	}
 
 	public static FluidBlock registerFluidBlock(Identifier id, FlowableFluid fluid) {
@@ -89,7 +73,7 @@ public class CabfBlocks {
 				new BlockItem(block,
 						(block instanceof ISettableBlockItem settingable)
 								? settingable.getSettings()
-								: CabfItems.Properties.DEFAULT));
+								: CabfItems.Properties.DEFAULT.get()));
 
 		if (block instanceof ResourcedBlock resourced) {
 			if (resourced.doModel())
@@ -103,5 +87,16 @@ public class CabfBlocks {
 		}
 
 		return registered;
+	}
+
+	@Override
+	public void load(TagHandler<Block> handler) {
+		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> handler
+				.register(AllBlockTags.WRENCH_PICKUP.tag, Registry.BLOCK.get(entry.getId())));
+		Arrays.stream(CasingBlockEntry.values()).forEach(entry -> {
+			var block = Registry.BLOCK.get(entry.getId());
+			handler.register(AllBlockTags.WRENCH_PICKUP.tag, block);
+			handler.register(BlockTags.PICKAXE_MINEABLE, block);
+		});
 	}
 }

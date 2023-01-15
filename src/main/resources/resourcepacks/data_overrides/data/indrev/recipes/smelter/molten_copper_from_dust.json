@@ -1,0 +1,11 @@
+{
+  "type": "indrev:smelter",
+  "ingredients": {
+    "tag": "c:copper_dusts"
+  },
+  "fluidOutput": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 9000
+  },
+  "processTime": 600
+}

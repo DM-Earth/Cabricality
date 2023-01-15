@@ -13,7 +13,7 @@ blaze3d Sucks!
 Also try ME!
 Flywheel + Sodium!
 !yƚilɒɔiɿdɒƆ
-11*14+51.4!=?
+11*4+51.4!=?
 >=19-18.1*0!
 Messy Code!
 public final boolean FORGE = false;

@@ -123,22 +123,11 @@
   "item.cabricality.molten_ostrum_bucket"  : "熔融紫金桶",
   "item.cabricality.molten_calorite_bucket": "熔融耐热金属桶",
 
-  "item.cabricality.zero" : "0",
-  "item.cabricality.one"  : "1",
-  "item.cabricality.two"  : "2",
-  "item.cabricality.three": "3",
-  "item.cabricality.four" : "4",
-  "item.cabricality.five" : "5",
-  "item.cabricality.six"  : "6",
-  "item.cabricality.seven": "7",
-  "item.cabricality.eight": "8",
-  "item.cabricality.nine" : "9",
-
-  "item.cabricality.plus"     : "+",
-  "item.cabricality.minus"    : "-",
-  "item.cabricality.multiply" : "×",
-  "item.cabricality.divide"   : "÷",
-  "item.cabricality.missingno": "א",
+  "item.cabricality.plus"    : "+",
+  "item.cabricality.minus"   : "-",
+  "item.cabricality.multiply": "×",
+  "item.cabricality.divide"  : "÷",
+  "item.cabricality.nan"     : "א",
 
   "item.cabricality.three_cast"   : "整数铸模（3）",
   "item.cabricality.eight_cast"   : "整数铸模（8）",
@@ -183,45 +172,53 @@
 
   "comment_reagent": "试剂",
 
-  "reagent.cabricality.minecraft.andesite"   : "§7安山岩§r",
-  "reagent.cabricality.minecraft.diorite"    : "§7闪长岩§r",
-  "reagent.cabricality.minecraft.granite"    : "§7花岗岩§r",
-  "reagent.cabricality.minecraft.cobblestone": "§7岩石§r",
-  "reagent.cabricality.minecraft.basalt"     : "§7玄武岩§r",
-  "reagent.cabricality.minecraft.tuff"       : "§7凝灰岩§r",
-  "reagent.cabricality.create.limestone"     : "§7石灰岩§r",
-  "reagent.cabricality.create.scoria"        : "§8熔渣§r",
-  "reagent.cabricality.promenade.blunite"    : "§7深岩§r",
-  "reagent.cabricality.promenade.carbonite"  : "§8碳纤维§r",
+  "reagent.cabricality.andesite"   : "§7安山岩§r",
+  "reagent.cabricality.diorite"    : "§7闪长岩§r",
+  "reagent.cabricality.granite"    : "§7花岗岩§r",
+  "reagent.cabricality.cobblestone": "§7岩石§r",
+  "reagent.cabricality.basalt"     : "§7玄武岩§r",
+  "reagent.cabricality.tuff"       : "§7凝灰岩§r",
+  "reagent.cabricality.limestone"  : "§7石灰岩§r",
+  "reagent.cabricality.scoria"     : "§8熔渣§r",
+  "reagent.cabricality.blunite"    : "§7深岩§r",
+  "reagent.cabricality.carbonite"  : "§8碳纤维§r",
 
-  "reagent.cabricality.minecraft.white"      : "§f纯净§r",
-  "reagent.cabricality.minecraft.orange"     : "§6赭石§r",
-  "reagent.cabricality.minecraft.magenta"    : "§d苋菜红§r",
-  "reagent.cabricality.minecraft.light_blue" : "§b缥色§r",
-  "reagent.cabricality.minecraft.yellow"     : "§e藤黄§r",
-  "reagent.cabricality.minecraft.pink"       : "§d海棠§r",
-  "reagent.cabricality.minecraft.light_gray" : "§7土灰§r",
-  "reagent.cabricality.minecraft.blue"       : "§3品绿§r",
-  "reagent.cabricality.minecraft.red"        : "§4烟栗§r",
-  "reagent.cabricality.minecraft.black"      : "§8污浊§r",
+  "reagent.cabricality.white"     : "§f纯净§r",
+  "reagent.cabricality.orange"    : "§6赭石§r",
+  "reagent.cabricality.magenta"   : "§d苋菜红§r",
+  "reagent.cabricality.light_blue": "§b缥色§r",
+  "reagent.cabricality.yellow"    : "§e藤黄§r",
+  "reagent.cabricality.pink"      : "§d海棠§r",
+  "reagent.cabricality.light_gray": "§7土灰§r",
+  "reagent.cabricality.blue"      : "§3品绿§r",
+  "reagent.cabricality.red"       : "§4烟栗§r",
+  "reagent.cabricality.black"     : "§8污浊§r",
 
-  "reagent.cabricality.minecraft.blaze"     : "§6烈焰§r",
-  "reagent.cabricality.minecraft.slime"     : "§a莱姆§r",
-  "reagent.cabricality.minecraft.nether"    : "§4异度§r",
-  "reagent.cabricality.create.obsidian"     : "§8曜黑§r",
-  "reagent.cabricality.minecraft.gunpowder" : "§8易爆§r",
-  "reagent.cabricality.minecraft.prismarine": "§b亲水§r",
-  "reagent.cabricality.malum.hex"           : "§5灰烬§r",
-  "reagent.cabricality.ae2.ender"           : "§2谐振§r",
+  "reagent.cabricality.blaze"     : "§6烈焰§r",
+  "reagent.cabricality.slime"     : "§a莱姆§r",
+  "reagent.cabricality.nether"    : "§4异度§r",
+  "reagent.cabricality.obsidian"  : "§8曜黑§r",
+  "reagent.cabricality.gunpowder" : "§8易爆§r",
+  "reagent.cabricality.prismarine": "§b亲水§r",
+  "reagent.cabricality.hex"       : "§5灰烬§r",
+  "reagent.cabricality.ender"     : "§2谐振§r",
 
-  "reagent.cabricality.indrev.sulfur"          : "§6硫化§r",
-  "reagent.cabricality.ae2.certus_quartz"      : "§b亮色石英§r",
-  "reagent.cabricality.minecraft.cinnabar"     : "§c朱砂§r",
-  "reagent.cabricality.malum.blazing_quartz"   : "§e焰色石英§r",
-  "reagent.cabricality.minecraft.nether_quartz": "§f异度石英§r",
+  "reagent.cabricality.iron"  : "§f铁元素§r",
+  "reagent.cabricality.gold"  : "§6金元素§r",
+  "reagent.cabricality.copper": "§c铜元素§r",
+  "reagent.cabricality.tin"   : "§3锡元素§r",
+  "reagent.cabricality.lead"  : "§1铅元素§r",
+  "reagent.cabricality.zinc"  : "§a锌元素§r",
+  "reagent.cabricality.nickel": "§e镍元素§r",
+  "reagent.cabricality.silver": "§7银元素§r",
 
-  "reagent.cabricality.indrev.silver": "§7银元素§r",
-  "reagent.cabricality.ae2.silicon"  : "§d高能硅",
+  "reagent.cabricality.sulfur"        : "§6硫化§r",
+  "reagent.cabricality.certus_quartz" : "§b亮色石英§r",
+  "reagent.cabricality.cinnabar"      : "§c朱砂§r",
+  "reagent.cabricality.blazing_quartz": "§e焰色石英§r",
+  "reagent.cabricality.nether_quartz" : "§f异度石英§r",
+
+  "reagent.cabricality.silicon": "§d高能硅",
 
 
 
@@ -230,8 +227,9 @@
   "catalyst.cabricality.igneous" : "§d火山岩",
   "catalyst.cabricality.herbal"  : "§d草药",
   "catalyst.cabricality.volatile": "§d沸腾",
+  "catalyst.cabricality.metal"   : "§d金属",
   "catalyst.cabricality.crystal" : "§d晶化",
-  "catalyst.cabricality.chaos" : "§b§k混沌",
+  "catalyst.cabricality.chaos"   : "§b§k混沌",
 
 
 
@@ -293,6 +291,31 @@
 
 
 
+  "comment_config": "设置",
+
+  "config.cabricality.category.general": "通用",
+
+  "config.cabricality.general.background_blur"        : "背景模糊",
+  "config.cabricality.general.background_blur.tooltip": "§7是否启用背景模糊效果",
+
+  "config.cabricality.general.background_blur_radius"        : "背景模糊半径",
+  "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半径大小（像素）",
+
+  "config.cabricality.category.debug": "调试",
+
+  "config.cabricality.debug.debug_info" : "调试信息",
+  "config.cabricality.debug.cleaner_log": "日志清理",
+
+
+
+  "comment_key_binds": "键位绑定",
+
+  "key.cabricality.category.general": "永无止境：重缝",
+
+  "key.cabricality.general.config_screen": "打开整合包设置界面",
+
+
+
   "comment_event": "事件",
 
   "event.cabricality.coin_flip": "你翻转了一枚%s    结果是%s",
@@ -302,7 +325,7 @@
 
   "comment_command": "命令",
 
-  "command.cabricality.alchemist.chaotic" : "§8（混沌）",
+  "command.cabricality.alchemist.chaotic": "§8（混沌）",
 
 
 
@@ -314,11 +337,12 @@
 
   "comment_misc": "杂项",
 
-  "mod.ftblibrary.name": "FTB Library模组",
-  "mod.ftbquests.name": "FTB Quests模组",
-  "mod.ftbteams.name": "FTB Teams模组",
+  "mod.ftblibrary.name"     : "FTB Library模组",
+  "mod.ftbquests.name"      : "FTB Quests模组",
+  "mod.ftbteams.name"       : "FTB Teams模组",
   "mod.questsadditions.name": "Quests Additions模组",
 
+  "screen.cabricality.config.title"            : "永无止境：重缝",
   "screen.cabricality.missing_mod.title"       : "缺少以下模组",
   "screen.cabricality.missing_mod.title_plural": "缺少以下模组",
   "screen.cabricality.missing_mod.subtitle"    : "点击下载",
@@ -327,4 +351,4 @@
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d个模组！",
 
   "itemGroup.cabricality.main": "永无止境：重缝"
-
+}

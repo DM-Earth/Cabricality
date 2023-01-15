@@ -1,7 +1,6 @@
 package com.dm.earth.cabricality;
 
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
-
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
@@ -13,22 +12,10 @@ import net.minecraft.util.registry.Registry;
 
 public enum ModEntry {
 	/* Abbreviations */
-	MC("minecraft"),
-	C("c"),
-	CR("create"),
-	CABF(Cabricality.ID),
-	PMD("promenade"),
-	IR("indrev"),
-	FD("farmersdelight"),
-	AP("architects_palette"),
-	TC("tconstruct"),
-	MLM("malum"),
-	AE2("ae2"),
-	TRE("terrestria"),
-	AD("ad_astra"),
-	KB("kibe"),
-	CX("coxinhautilities"),
-	ED("extended_drawers");
+	MC("minecraft"), C("c"), CR("create"), CABF(Cabricality.ID), PMD("promenade"), IR("indrev"), FD(
+			"farmersdelight"), AP("architects_palette"), TC("tconstruct"), MLM("malum"), AE2(
+					"ae2"), TRE("terrestria"), AD(
+							"ad_astra"), KB("kibe"), CX("coxinhautilities"), ED("extended_drawers");
 
 	final String modId;
 
