@@ -121,9 +121,9 @@ public class BrassThread implements TechThread {
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		handler.removeIf(
 				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(AE2.asItem("sky_dust")));
-		handler.remove(CR.id("crafting/materials/electron_tube"));
-		handler.remove(CR.id("crafting/materials/rose_quartz"));
-		handler.remove(CR.id("sequenced_assembly/precision_mechanism"));
+		handler.remove(CR.id("crafting", "materials", "electron_tube"));
+		handler.remove(CR.id("crafting", "materials", "rose_quartz"));
+		handler.remove(CR.id("sequenced_assembly", "precision_mechanism"));
 	}
 
 	@Override

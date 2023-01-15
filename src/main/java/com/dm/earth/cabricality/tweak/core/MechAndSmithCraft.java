@@ -61,7 +61,7 @@ public class MechAndSmithCraft {
 
 	private static Identifier createId(Entry entry, String type) {
 		return Cabricality
-				.id("threads/" + entry.level() + "/tweak/" + type + "/" + entry.output().getPath());
+				.id("threads", entry.level(), "tweak", type, entry.output().getPath());
 	}
 
 	public static Entry entry(String level, Identifier input, Identifier output, int count, @Nullable Identifier other) {

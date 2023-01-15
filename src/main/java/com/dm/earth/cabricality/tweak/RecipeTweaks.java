@@ -12,6 +12,7 @@ import static com.dm.earth.cabricality.ModEntry.TC;
 import com.google.common.collect.ImmutableMap;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
@@ -43,11 +44,12 @@ import net.minecraft.util.registry.Registry;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 public class RecipeTweaks
 		implements AddRecipesCallback, RemoveRecipesCallback, ModifyRecipesCallback {
-	private static final String[] AD_ASTRA_MATERIALS = {"steel", "desh", "ostrum", "calorite", "iron"};
-	private static final String[] AD_ASTRA_DECOR_TYPES = {"pillar", "plating"};
+	private static final String[] AD_ASTRA_MATERIALS = { "steel", "desh", "ostrum", "calorite", "iron" };
+	private static final String[] AD_ASTRA_DECOR_TYPES = { "pillar", "plating" };
 
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
@@ -57,7 +59,6 @@ public class RecipeTweaks
 		OreProcessingTweaks.register(handler);
 		MechAndSmithCraft.register(handler);
 
-		// Recipe Additions
 		// AE2
 		{
 			Ingredient matterBall = AE2.asIngredient("matter_ball");
@@ -90,7 +91,7 @@ public class RecipeTweaks
 			));
 
 			INDREV_PLATES.forEach((ingredients, output) -> handler.register(recipeId("pressing", Registry.ITEM.getId(output.getStack().getItem()).getPath()),
-					id -> new CompactingRecipe(new FreePRP(id).setIngredient(ingredients).setResult(output))));
+					id -> new PressingRecipe(new FreePRP(id).setIngredient(ingredients).setResult(output))));
 		}
 
 		// Dusts
@@ -184,8 +185,6 @@ public class RecipeTweaks
 	@Override
 	public void modifyRecipes(ModifyRecipesCallback.RecipeHandler handler) {
 		TechThread.THREADS.forEach(thread -> thread.modifyRecipes(handler));
-
-
 	}
 
 	@Override
@@ -204,19 +203,20 @@ public class RecipeTweaks
 		handler.remove(TC.id("smeltery", "alloys", "molten_brass"));
 		handler.remove(TC.id("smeltery", "alloys", "molten_invar"));
 
-		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
-		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AD.asItem("wrench")));
+		// Remove wrenches except Create's
+		handler.removeIf(r -> notCabf(r) && Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("ae2") && Registry.ITEM.getId(r.getOutput().getItem()).getPath().contains("wrench"));
 
-		// Ad Astra
+		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
+		handler.removeIf(r -> notCabf(r) && (r.getOutput().isOf(IR.asItem("hammer")) || contains(r, IR.asItem("hammer"))));
+		{
+			final String[] plates = { "gold", "iron", "copper" };
+			Arrays.stream(plates).forEach(plate -> handler.removeIf(
+					r -> notCabf(r) && (r.getOutput().isOf(IR.asItem(plate + "_plate")) || contains(r, IR.asItem(plate + "_plate")))));
+		}
+
+		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
 				type -> handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AD.asItem(material + "_" + type)))));
-
-		// Indrev
-		{
-			final Item[] INDREV_PLATES = {IR.asItem("golden_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate")};
-
-			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.removeIf(r -> notCabf(r) && (r.getOutput().isOf(plate) || r.getIngredients().contains(Ingredient.ofItems(plate)))));
-		}
 	}
 
 	public static boolean notCabf(Identifier id) {
@@ -225,6 +225,11 @@ public class RecipeTweaks
 
 	public static boolean notCabf(Recipe<?> recipe) {
 		return notCabf(recipe.getId());
+	}
+
+	public static boolean contains(Recipe<?> recipe, Item ingredient) {
+		return recipe.getIngredients().stream().map(Ingredient::getMatchingStacks).flatMap(Arrays::stream).map(ItemStack::getItem)
+					   .anyMatch(i -> i.equals(ingredient));
 	}
 
 	private static Identifier recipeId(String type, String name) {

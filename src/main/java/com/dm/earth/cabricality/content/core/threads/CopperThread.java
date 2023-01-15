@@ -36,7 +36,7 @@ import net.minecraft.util.Identifier;
 public class CopperThread implements TechThread {
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.remove(CR.id("crafting/kinetics/belt_connector"));
+		handler.remove(CR.id("crafting", "kinetics", "belt_connector"));
 	}
 
 	@Override
