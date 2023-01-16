@@ -8,6 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -43,7 +44,9 @@ public enum ModEntry {
 
 	CX("coxinhautilities"),
 
-	ED("extended_drawers");
+	ED("extended_drawers"),
+	LED("led"),
+	CC("computercraft");
 
 	final String modId;
 
@@ -61,6 +64,14 @@ public enum ModEntry {
 
 	public Item asItem(String name) {
 		return Registry.ITEM.get(id(name));
+	}
+
+	public TagKey<Item> asItemTag(String... paths) {
+		return asItemTag(String.join("/", paths));
+	}
+
+	public TagKey<Item> asItemTag(String name) {
+		return TagKey.of(Registry.ITEM_KEY, id(name));
 	}
 
 	public ItemStack asStack(String name, int count) {

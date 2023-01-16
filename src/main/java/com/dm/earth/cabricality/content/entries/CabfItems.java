@@ -145,7 +145,6 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
 	public static final Map<String, String> OPERATORS = Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
 	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-
 	public static final List<String> MATH_CASTS = List.of("plus", "minus", "multiply", "divide", "three", "eight");
 
 	public static void register() {
