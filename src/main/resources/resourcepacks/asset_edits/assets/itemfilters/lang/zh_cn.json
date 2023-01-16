@@ -1,0 +1,64 @@
+{
+	"itemGroup.itemfilters.main"       : "物品过滤器",
+	"itemGroup.itemfilters.itemfilters": "物品过滤器",
+
+	"item.itemfilters.filter": "物品过滤器",
+
+	"item.itemfilters.always_true"            : "§a真§r过滤器",
+	"item.itemfilters.always_true.description": "匹配所有物品",
+
+	"item.itemfilters.always_false"            : "§c假§r过滤器",
+	"item.itemfilters.always_false.description": "不匹配任何物品",
+
+	"item.itemfilters.or"            : "§9或§r过滤器",
+	"item.itemfilters.or.description": "匹配指定物品之一",
+
+	"item.itemfilters.and"            : "§9和§r过滤器",
+	"item.itemfilters.and.description": "匹配所有指定物品",
+
+	"item.itemfilters.not"            : "§9非§r过滤器",
+	"item.itemfilters.not.description": "反转匹配规则",
+
+	"item.itemfilters.xor"            : "§9异或§r过滤器",
+	"item.itemfilters.xor.description": "必须匹配两者之一，不能匹配全部",
+
+	"item.itemfilters.tag"            : "§6标签§r过滤器",
+	"item.itemfilters.tag.description": "匹配标签，例如“minecraft:wool”",
+
+	"item.itemfilters.item_group"            : "§6物品栏§r过滤器",
+	"item.itemfilters.item_group.description": "匹配指定创造模式物品栏ID下的任意物品",
+
+	"item.itemfilters.mod"            : "§6模组§r过滤器",
+	"item.itemfilters.mod.description": "匹配指定模组ID下的任意物品",
+
+	"item.itemfilters.id_regex"            : "§dID正则表达式§r过滤器",
+	"item.itemfilters.id_regex.description": "使用正则表达式匹配物品ID",
+
+	"item.itemfilters.damage"            : "§d伤害§r过滤器",
+	"item.itemfilters.damage.description": "匹配伤害值符合条件的任意物品",
+
+	"item.itemfilters.block"            : "§d方块§r过滤器",
+	"item.itemfilters.block.description": "匹配任意方块",
+
+	"item.itemfilters.max_count"            : "§d最大堆叠§r过滤器",
+	"item.itemfilters.max_count.description": "匹配最大堆叠数符合条件的任意物品",
+
+	"item.itemfilters.strong_nbt"            : "§dNBT§r过滤器 §d[强]§r",
+	"item.itemfilters.strong_nbt.description": "仅匹配NBT完全符合条件的物品",
+
+	"item.itemfilters.weak_nbt"            : "§dNBT§r过滤器 §d[弱]§r",
+	"item.itemfilters.weak_nbt.description": "匹配NBT任意部分符合条件的物品",
+
+	"item.itemfilters.custom"            : "§b自定义规则§b过滤器",
+	"item.itemfilters.custom.description": "通常依赖KubeJs或其他模组的脚本文件工作",
+
+	"itemfilters.variants": "过滤规则 [%d]",
+
+	"itemfilters.help_text.variants" : "Tab、鼠标滚轮、鼠标指针：选择规则\n回车、鼠标单击：应用规则",
+	"itemfilters.help_text.filter"   : "规则（右击清除）",
+	"itemfilters.help_text.nbt"      : "NBT\n▶ 例如 { text:\"hello\", value: 1, active: true }",
+	"itemfilters.help_text.weak_nbt" : "弱匹配NBT\n▶ 例如 { text:\"hello\", value: 1, active: true }\n▶ 忽略其它NBT值，只检查规则内已有的NBT值",
+	"itemfilters.help_text.regex"    : "正则表达式\n 匹配物品ID\n▶ 例如“^minecraft:” 会匹配任意原版物品",
+	"itemfilters.help_text.max_count": "最大堆叠数\n▶ 可以使用不等式，例如“<64” 或 “>=16”",
+	"itemfilters.help_text.damage"   : "物品伤害值\n▶ 可以使用不等式，例如“<10” 或 “>=5”\n 也可以使用百分比，例如“>50%”"
+}

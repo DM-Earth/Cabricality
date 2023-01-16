@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.core.plugin;
+package com.dm.earth.cabricality.plugin;
 
 import java.util.List;
 import java.util.Set;

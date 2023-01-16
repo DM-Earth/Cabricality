@@ -1,0 +1,115 @@
+{
+  "lootr.message.should_sneak" : "破坏箱子将会清除其中的所有物品你的独特战利品！潜行以继续破坏。",
+  "lootr.message.should_sneak2": "由于战利品是%s，仅在必要时破坏。",
+  "lootr.message.should_sneak3": "每玩家每箱子",
+
+  "lootr.message.cart_should_sneak" : "破坏箱子将会清除其中的所有物品你的独特战利品！潜行以继续破坏。",
+  "lootr.message.cart_should_sneak3": "每玩家每矿车",
+
+  "lootr.message.cannot_break"      : "战利品容器和矿车不可破坏。",
+  "lootr.message.cannot_break_sneak": "在创造模式下潜行以破坏战利品容器和矿车。",
+
+  "lootr.message.decayed"    : "腐朽的容器一碰就碎了！",
+  "lootr.message.decay_in"   : "此容器会在%s秒后腐朽殆尽。",
+  "lootr.message.decay_start": "腐朽的容器开始瓦解！它会在%s秒后腐朽殆尽！",
+
+  "lootr.message.refreshed"    : "容器中的物品已刷新！",
+  "lootr.message.refresh_in"   : "此容器中的物品会在%s秒后刷新。",
+  "lootr.message.refresh_start": "此容器中的物品会在%s秒后完全刷新。",
+
+  "lootr.message.invalid_table": "此容器“%s”的战利品表解析为空，无法生成战利品。查看游戏日志以获取更多信息。",
+
+
+
+  "block.lootr.lootr_chest"        : "战利品箱子",
+  "block.lootr.lootr_trapped_chest": "战利品箱子",
+  "block.lootr.lootr_barrel"       : "战利品木桶",
+  "block.lootr.lootr_inventory"    : "战利品箱子",
+  "block.lootr.lootr_shulker"      : "战利品潜影盒",
+  "block.lootr.trophy"             : "世纪奖杯",
+
+  "entity.lootr.lootr_minecart": "运输矿车",
+
+  "lootr.commands.usage"   : "/lootr barrel | barrel <战利品表> | chest | chest <战利品表> | cart | cart <战利品表> | shulker | shulker <战利品表> | convert | custom <id> | refresh | decay",
+  "lootr.commands.create"  : "已创建战利品箱子“%s”（%s，使用战利品表“%s”）",
+  "lootr.commands.summon"  : "已生成运输矿车“%s”（%s，使用战利品表“%s”）",
+  "lootr.commands.blockpos": "%s,%s,%s",
+
+  "stat.lootr.looted_stat": "已填充战利品",
+
+
+
+  "lootr.advancements.100loot.title"      : "世纪猎者",
+  "lootr.advancements.100loot.description": "找到100个战利品箱子并收集所有奖励！",
+
+  "lootr.advancements.50loot.title"      : "目光长远",
+  "lootr.advancements.50loot.description": "找到50个战利品箱子并收集所有奖励！",
+
+  "lootr.advancements.25loot.title"      : "值点小钱",
+  "lootr.advancements.25loot.description": "找到25个战利品箱子并收集所有奖励！",
+
+  "lootr.advancements.10loot.title"      : "开箱即用",
+  "lootr.advancements.10loot.description": "找到10个战利品箱子并收集所有奖励！",
+
+  "lootr.advancements.1chest.title"      : "神秘记号",
+  "lootr.advancements.1chest.description": "找到一个战利品箱子！",
+
+  "lootr.advancements.1barrel.title"      : "这是酒桶吗",
+  "lootr.advancements.1barrel.description": "找到一个战利品木桶！",
+
+  "lootr.advancements.1cart.title"      : "矮人宝藏",
+  "lootr.advancements.1cart.description": "找到一个装满战利品的运输矿车！",
+
+  "lootr.advancements.1shulker.title"      : "私房钱",
+  "lootr.advancements.1shulker.description": "找到一个战利品潜影盒！",
+
+  "lootr.advancements.social.title"      : "见多识广",
+  "lootr.advancements.social.description": "找到并开启所有种类的战利品容器！",
+
+  "lootr.advancements.root.title"      : "古董拍卖",
+  "lootr.advancements.root.description": "把战利品容器放在世界中。",
+
+  "itemGroup.lootr.lootr": "Lootr",
+
+
+
+  "text.autoconfig.lootr.title": "Lootr",
+
+  "text.autoconfig.lootr.option.debug"                         : "调试",
+  "text.autoconfig.lootr.option.debug.debugMode"               : "调试模式",
+  "text.autoconfig.lootr.option.debug.report_unresolved_tables": "报告未解析的战利品表",
+
+  "text.autoconfig.lootr.option.seed"               : "种子",
+  "text.autoconfig.lootr.option.seed.randomize_seed": "随机种子",
+
+  "text.autoconfig.lootr.option.conversion"                   : "转换",
+  "text.autoconfig.lootr.option.conversion.skip_unloaded"     : "跳过未加载的部分",
+  "text.autoconfig.lootr.option.conversion.maximum_age"       : "最大年龄",
+  "text.autoconfig.lootr.option.conversion.convert_mineshafts": "转换矿井",
+
+  "text.autoconfig.lootr.option.breaking"              : "破坏",
+  "text.autoconfig.lootr.option.breaking.disable_break": "禁止破坏",
+
+  "text.autoconfig.lootr.option.lists"                         : "列表",
+  "text.autoconfig.lootr.option.lists.dimension_whitelist"     : "维度白名单",
+  "text.autoconfig.lootr.option.lists.dimension_blacklist"     : "维度黑名单",
+  "text.autoconfig.lootr.option.lists.loot_table_blacklist"    : "战利品表黑名单",
+  "text.autoconfig.lootr.option.lists.loot_modid_blacklist"    : "战利品模组ID黑名单",
+  "text.autoconfig.lootr.option.lists.loot_structure_blacklist": "战利品结构黑名单",
+
+  "text.autoconfig.lootr.option.decay"                  : "腐朽",
+  "text.autoconfig.lootr.option.decay.decay_value"      : "腐朽值",
+  "text.autoconfig.lootr.option.decay.decay_all"        : "腐朽所有",
+  "text.autoconfig.lootr.option.decay.decay_modids"     : "腐朽指定模组ID",
+  "text.autoconfig.lootr.option.decay.decay_loot_tables": "腐朽战利品表",
+  "text.autoconfig.lootr.option.decay.decay_dimensions" : "腐朽维度",
+  "text.autoconfig.lootr.option.decay.decay_structures" : "腐朽结构",
+
+  "text.autoconfig.lootr.option.refresh"                    : "刷新",
+  "text.autoconfig.lootr.option.refresh.refresh_value"      : "刷新值",
+  "text.autoconfig.lootr.option.refresh.refresh_all"        : "刷新所有",
+  "text.autoconfig.lootr.option.refresh.refresh_modids"     : "刷新模组ID",
+  "text.autoconfig.lootr.option.refresh.refresh_loot_tables": "刷新战利品表",
+  "text.autoconfig.lootr.option.refresh.refresh_dimensions" : "刷新维度",
+  "text.autoconfig.lootr.option.refresh.refresh_structures" : "刷新结构"
+}
