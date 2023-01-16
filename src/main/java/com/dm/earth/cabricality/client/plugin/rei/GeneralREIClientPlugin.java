@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.client.plugin.rei;
 
+import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.util.debug.CabfDebugger;
 import com.github.alexnijjar.ad_astra.registry.ModItems;
 import com.github.reoseah.catwalksinc.CIncItems;
@@ -19,6 +20,12 @@ public class GeneralREIClientPlugin implements REIClientPlugin {
 	@Override
 	public void registerBasicEntryFiltering(BasicFilteringRule<?> rule) {
 		CabfDebugger.debug("Filtering Entries");
+
+		// Flippable substitutes
+		rule.hide(EntryIngredients.ofItems(ImmutableList.of(
+				ModEntry.CABF.asItem("gold_coin_top"), ModEntry.CABF.asItem("gold_coin_bottom"),
+				ModEntry.CABF.asItem("silver_coin_top"), ModEntry.CABF.asItem("silver_coin_bottom")
+		)));
 
 		// Deprecations
 		rule.hide(EntryIngredients.ofItems(ImmutableList.of(
