@@ -45,7 +45,8 @@
     "client.ftbquests.ViewQuestPanelAnimator",
     "client.rei.BatchedEntryRendererManagerFixer",
     "client.rei.EntryListStackEntryFixer",
-    "client.rei.ItemEntryRendererFixer"
+    "client.rei.ItemEntryRendererFixer",
+    "client.rei.ScrolledEntryListWidgetFixer"
   ],
   "injectors": {
     "defaultRequire": 0
