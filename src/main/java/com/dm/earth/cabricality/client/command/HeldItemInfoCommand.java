@@ -4,6 +4,7 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.networking.CabfNetworking;
 import io.netty.buffer.Unpooled;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.tag.TagKey;
 import net.minecraft.text.TranslatableText;
@@ -31,6 +32,8 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 		ItemStack stack = context.getSource().getPlayer().getMainHandStack();
 		Identifier itemId = Registry.ITEM.getId(stack.getItem());
 
+		if (stack.isOf(Items.AIR)) return 0;
+
 		// Broadcast
 		ClientPlayNetworking.send(CabfNetworking.HELD_ITEM_INFO, new PacketByteBuf(Unpooled.buffer()).writeItemStack(stack));
 
@@ -38,8 +41,7 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 		MinecraftClient.getInstance().gameRenderer.showFloatingItem(stack);
 
 		// Heading
-		context.getSource().sendFeedback(stack.getName().shallowCopy().styled(style -> Registry.ITEM.get(itemId).asItem().getName().getStyle()).styled(
-				style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM, new HoverEvent.ItemStackContent(stack)))
+		context.getSource().sendFeedback(stack.toHoverableText().shallowCopy().styled(style -> style.withItalic(true)
 								 .withClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, itemId.toString()))));
 
 		// Tags
@@ -53,6 +55,7 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 	private Text streamTags(ItemStack stack) {
 		return stack.getItem().getBuiltInRegistryHolder().streamTags()
 					   .map(tag -> Cabricality.genTranslatableText("command", "held_item_info", "tag_prefix")
+										   .formatted(Formatting.GRAY, Formatting.ITALIC)
 										   .append(new LiteralText(tag.id().toString()).styled(
 												   style -> style.withColor(Formatting.YELLOW)
 																	.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
