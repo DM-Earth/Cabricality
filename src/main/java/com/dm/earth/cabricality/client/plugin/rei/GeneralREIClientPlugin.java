@@ -21,7 +21,7 @@ public class GeneralREIClientPlugin implements REIClientPlugin {
 	public void registerBasicEntryFiltering(BasicFilteringRule<?> rule) {
 		CabfDebugger.debug("Filtering Entries");
 
-		// Flippable substitutes
+		// Substitutes
 		rule.hide(EntryIngredients.ofItems(ImmutableList.of(
 				ModEntry.CABF.asItem("gold_coin_top"), ModEntry.CABF.asItem("gold_coin_bottom"),
 				ModEntry.CABF.asItem("silver_coin_top"), ModEntry.CABF.asItem("silver_coin_bottom")

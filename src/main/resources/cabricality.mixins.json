@@ -42,7 +42,10 @@
     "client.ftbquests.QuestPanelAnimator",
     "client.ftbquests.QuestScreenAnimator",
     "client.ftbquests.QuestTrigger",
-    "client.ftbquests.ViewQuestPanelAnimator"
+    "client.ftbquests.ViewQuestPanelAnimator",
+    "client.rei.BatchedEntryRendererManagerFixer",
+    "client.rei.EntryListStackEntryFixer",
+    "client.rei.ItemEntryRendererFixer"
   ],
   "injectors": {
     "defaultRequire": 0
