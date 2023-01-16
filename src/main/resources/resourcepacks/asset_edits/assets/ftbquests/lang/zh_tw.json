@@ -174,7 +174,7 @@
 	"ftbquests.quest.hide_dependency_lines"                   : "隐藏前置任务依赖线",
 	"ftbquests.quest.locked"                                  : "§o任务已锁定：前置任务未完成",
 	"ftbquests.quest.min_required_dependencies"               : "最小前置任务需求",
-	"ftbquests.quest.min_required_dependencies.tooltip"       : "当设置的数值>0时会产生选择性前置任务，只需完成其中一些便可解锁",
+	"ftbquests.quest.min_required_dependencies.tooltip"       : "如果值大于0，只需完成指定数量的前置任务便可解锁此任务",
 	"ftbquests.quest.hide_text_until_complete"                : "在完成任务前隐藏文本",
 	"ftbquests.quest.disable_jei"                             : "禁用合成配方",
 	"ftbquests.quest.optional"                                : "选择性",
