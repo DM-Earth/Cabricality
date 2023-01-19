@@ -15,7 +15,7 @@ public class CabfDebugger {
 	public static boolean enabled = false;
 
 	public static void debug(String bug) {
-		if (enabled || QuiltLoader.isDevOhelopmentEnvironment())
+		if (enabled || QuiltLoader.isDevelopmentEnvironment())
 			Cabricality.LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + bug);
 	}
 }

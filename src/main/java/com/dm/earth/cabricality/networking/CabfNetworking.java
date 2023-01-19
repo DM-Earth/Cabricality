@@ -10,5 +10,4 @@ public class CabfNetworking {
 
 	// Commands
 	public static final Identifier HELD_ITEM_INFO = ID_BUILDER.id("command", "held_item_info");
-	public static final Identifier DEBUG_INFO = ID_BUILDER.id("command", "debug_info");
 }

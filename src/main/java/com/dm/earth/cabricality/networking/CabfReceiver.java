@@ -11,6 +11,5 @@ public class CabfReceiver {
 
 	public static void registerServer() {
 		ServerPlayNetworking.registerGlobalReceiver(HELD_ITEM_INFO, new HeldItemInfoReceiver());
-		ServerPlayNetworking.registerGlobalReceiver(DEBUG_INFO, new DebugInfoReceiver());
 	}
 }

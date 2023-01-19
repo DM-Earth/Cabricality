@@ -19,8 +19,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.quiltmc.qsl.networking.api.PacketByteBufs;
-import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
 import org.quiltmc.qsl.networking.api.client.ClientPlayNetworking;
 
 import java.util.stream.Collectors;
