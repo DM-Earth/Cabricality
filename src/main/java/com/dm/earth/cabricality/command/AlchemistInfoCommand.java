@@ -71,8 +71,8 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 		// Copy widget
 		context.getSource().sendFeedback(
 				Cabricality.genTranslatableText("command", "actions", "copy")
-						.styled(style -> style.withColor(Formatting.GRAY, Formatting.ITALIC)
-												 .withClickEvent(new ClickEvent(
+						.formatted(Formatting.GRAY, Formatting.ITALIC)
+						.styled(style -> style.withClickEvent(new ClickEvent(
 														 ClickEvent.Action.COPY_TO_CLIPBOARD, result.toString()))),
 				false
 		);
