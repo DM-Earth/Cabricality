@@ -1,5 +1,4 @@
-package com.dm.earth.cabricality.util enabled
-;
+package com.dm.earth.cabricality.util.debug;
 
 import com.dm.earth.cabricality.Cabricality;
 
@@ -16,7 +15,7 @@ public class CabfDebugger {
 	public static boolean enabled = false;
 
 	public static void debug(String bug) {
-		if (enabled || QuiltLoader.isDevelopmentEnvironment())
+		if (enabled || QuiltLoader.isDevOhelopmentEnvironment())
 			Cabricality.LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + bug);
 	}
 }
