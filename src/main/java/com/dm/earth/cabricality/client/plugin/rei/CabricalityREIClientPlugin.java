@@ -1,24 +1,18 @@
 package com.dm.earth.cabricality.client.plugin.rei;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.entries.CabfItemTags;
-import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.util.debug.CabfDebugger;
-import com.github.alexnijjar.ad_astra.registry.ModItems;
-import com.github.reoseah.catwalksinc.CIncItems;
-import com.google.common.collect.ImmutableList;
-import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
-import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
-import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
-import me.shedaniel.rei.api.common.util.EntryIngredients;
-import me.steven.indrev.registry.IRItemRegistry;
-import net.minecraft.util.registry.Registry;
+import static com.dm.earth.cabricality.ModEntry.CABF;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.IR;
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.entries.CabfItemTags;
+import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.util.debug.CabfDebugger;
+
+import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
+import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
+import me.shedaniel.rei.api.common.util.EntryIngredients;
 
 @SuppressWarnings("UnstableApiUsage")
 public class CabricalityREIClientPlugin implements REIClientPlugin {
@@ -55,6 +49,7 @@ public class CabricalityREIClientPlugin implements REIClientPlugin {
 		// Math casts
 		registry.group(Cabricality.id("math_casts"),
 				Cabricality.genTranslatableText("col", "math_casts"),
-				EntryIngredients.ofItems(CabfItems.MATH_CASTS.stream().map(c -> CABF.asItem(c + "_cast")).collect(Collectors.toList())));
+				EntryIngredients.ofItems(
+						CabfItems.MATH_CASTS.stream().map(c -> CABF.asItem(c + "_cast")).collect(Collectors.toList())));
 	}
 }

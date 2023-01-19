@@ -1,15 +1,8 @@
 package com.dm.earth.cabricality.util.debug;
 
-import com.dm.earth.cabricality.Cabricality;
-
 import org.quiltmc.loader.api.QuiltLoader;
 
-import com.mojang.brigadier.Command;
-import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
-
-import net.minecraft.server.command.ServerCommandSource;
-import net.minecraft.text.Text;
+import com.dm.earth.cabricality.Cabricality;
 
 public class CabfDebugger {
 	public static boolean debug = false;

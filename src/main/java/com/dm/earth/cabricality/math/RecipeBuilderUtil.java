@@ -3,12 +3,6 @@ package com.dm.earth.cabricality.math;
 import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
 
-import com.dm.earth.cabricality.Cabricality;
-import net.minecraft.recipe.CraftingRecipe;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.ShapelessRecipe;
-import net.minecraft.util.collection.DefaultedList;
-import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
@@ -19,11 +13,11 @@ import com.simibubi.create.content.contraptions.components.crafter.MechanicalCra
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.ShapedRecipe;
+import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.util.Identifier;
-
-import java.util.Arrays;
-import java.util.List;
+import net.minecraft.util.collection.DefaultedList;
 
 public class RecipeBuilderUtil {
 	public static ShapedRecipe donutRecipe(Identifier id, Item center, Item other, Item output, int count) {
@@ -36,7 +30,8 @@ public class RecipeBuilderUtil {
 				recipe.getIngredients(), recipe.getOutput(), acceptMirrored);
 	}
 
-	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount, @Nullable Identifier byProduct,
+	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount,
+			@Nullable Identifier byProduct,
 			long byAmount, int temperature, int time) {
 		JsonObject json = new JsonObject();
 		json.addProperty("type", (new Identifier("tconstruct", "melting")).toString());
@@ -53,15 +48,19 @@ public class RecipeBuilderUtil {
 	}
 
 	public static Recipe<?> swapRecipeOutput(Recipe<?> recipe, ItemStack output) {
-		if (recipe instanceof ShapelessRecipe) return swapShapelessRecipeOutput((ShapelessRecipe) recipe, output);
-		if (recipe instanceof ShapedRecipe) return swapShapedRecipeOutput((ShapedRecipe) recipe, output);
+		if (recipe instanceof ShapelessRecipe)
+			return swapShapelessRecipeOutput((ShapelessRecipe) recipe, output);
+		if (recipe instanceof ShapedRecipe)
+			return swapShapedRecipeOutput((ShapedRecipe) recipe, output);
 		return recipe;
 	}
 
 	@Deprecated
 	public static Recipe<?> swapRecipeIngredient(Recipe<?> recipe, Ingredient from, Ingredient to) {
-		if (recipe instanceof ShapelessRecipe) return swapShapelessRecipeIngredient((ShapelessRecipe) recipe, from, to);
-		if (recipe instanceof ShapedRecipe) return swapShapedRecipeIngredient((ShapedRecipe) recipe, from, to);
+		if (recipe instanceof ShapelessRecipe)
+			return swapShapelessRecipeIngredient((ShapelessRecipe) recipe, from, to);
+		if (recipe instanceof ShapedRecipe)
+			return swapShapedRecipeIngredient((ShapedRecipe) recipe, from, to);
 		return recipe;
 	}
 
@@ -70,7 +69,8 @@ public class RecipeBuilderUtil {
 	}
 
 	@Deprecated
-	public static ShapelessRecipe swapShapelessRecipeIngredient(ShapelessRecipe recipe, Ingredient from, Ingredient to) {
+	public static ShapelessRecipe swapShapelessRecipeIngredient(ShapelessRecipe recipe, Ingredient from,
+			Ingredient to) {
 		DefaultedList<Ingredient> ingredients = recipe.getIngredients();
 		for (int i = 0; i < ingredients.size(); i++) {
 			if (ingredients.get(i).equals(from)) {
@@ -81,7 +81,8 @@ public class RecipeBuilderUtil {
 	}
 
 	public static ShapedRecipe swapShapedRecipeOutput(ShapedRecipe recipe, ItemStack output) {
-		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), recipe.getIngredients(), output);
+		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
+				recipe.getIngredients(), output);
 	}
 
 	@Deprecated
@@ -92,6 +93,7 @@ public class RecipeBuilderUtil {
 				ingredients.set(i, to);
 			}
 		}
-		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), ingredients, recipe.getOutput());
+		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), ingredients,
+				recipe.getOutput());
 	}
 }

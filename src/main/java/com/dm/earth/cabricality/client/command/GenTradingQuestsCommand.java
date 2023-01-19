@@ -2,12 +2,10 @@ package com.dm.earth.cabricality.client.command;
 
 import java.util.ArrayList;
 
-import com.dm.earth.cabricality.Cabricality;
-
-import net.minecraft.util.Formatting;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.trading.Professions;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
@@ -15,7 +13,7 @@ import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 
 public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource> {
 	@NotNull
@@ -83,7 +81,8 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 		MinecraftClient client = MinecraftClient.getInstance();
 		if (client != null) {
 			client.keyboard.setClipboard(String.join("\n\n", list));
-			context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "actions", "copied").formatted(Formatting.GREEN, Formatting.ITALIC));
+			context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "actions", "copied")
+					.formatted(Formatting.GREEN, Formatting.ITALIC));
 			return SINGLE_SUCCESS;
 		}
 		return 0;

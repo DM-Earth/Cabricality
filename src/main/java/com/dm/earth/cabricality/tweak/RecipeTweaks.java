@@ -9,23 +9,13 @@ import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
-import com.dm.earth.cabricality.ModEntry;
-import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
-import com.google.common.collect.ImmutableMap;
-import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
-import me.steven.indrev.recipes.machines.CompressorRecipe;
-import me.steven.indrev.recipes.machines.entries.OutputEntry;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.CraftingRecipe;
-import net.minecraft.recipe.ShapedRecipe;
-import net.minecraft.recipe.ShapelessRecipe;
-import net.minecraft.util.Pair;
+import java.util.Arrays;
+
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.math.RecipeBuilderUtil;
@@ -33,6 +23,7 @@ import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
+import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
@@ -40,23 +31,20 @@ import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+
 import me.alphamode.forgetags.Tags;
+import me.steven.indrev.recipes.machines.CompressorRecipe;
+import me.steven.indrev.recipes.machines.entries.OutputEntry;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeManager;
+import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class RecipeTweaks
 		implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
@@ -76,10 +64,10 @@ public class RecipeTweaks
 			Ingredient matterBall = AE2.asIngredient("matter_ball");
 			handler.register(AE2.id("compacting", "matter_plastics"),
 					id -> new CompactingRecipe(new FreePRP(id)
-													   .setIngredient(matterBall, matterBall, matterBall, matterBall,
-															   matterBall, matterBall, matterBall, matterBall, matterBall)
-													   .setResult(CABF.asProcessingOutput("matter_plastics"))
-													   .setHeatRequirement(HeatCondition.SUPERHEATED)));
+							.setIngredient(matterBall, matterBall, matterBall, matterBall,
+									matterBall, matterBall, matterBall, matterBall, matterBall)
+							.setResult(CABF.asProcessingOutput("matter_plastics"))
+							.setHeatRequirement(HeatCondition.SUPERHEATED)));
 		}
 
 		// Ad Astra
@@ -87,34 +75,36 @@ public class RecipeTweaks
 			Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
 					type -> handler.register(AD.id("stonecutting", material + "_" + type),
 							id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "", Ingredient.ofTag(
-									TagKey.of(Registry.ITEM_KEY, C.id(material + "_plates"))), AD.asStack(material + "_" + type, 2)))));
+									TagKey.of(Registry.ITEM_KEY, C.id(material + "_plates"))),
+									AD.asStack(material + "_" + type, 2)))));
 
-			final String[] AD_ASTRA_COMPRESSED_MATERIALS = {"desh", "ostrum", "calorite"};
+			final String[] AD_ASTRA_COMPRESSED_MATERIALS = { "desh", "ostrum", "calorite" };
 			Arrays.stream(AD_ASTRA_COMPRESSED_MATERIALS).forEach(material -> handler.register(
 					AD.id("pressing", "compressed_" + material),
 					id -> new PressingRecipe(new FreePRP(id)
-													 .setIngredient(AD.asIngredient(material + "ingot"))
-													 .setResult(AD.asProcessingOutput("compressed_" + material)))));
+							.setIngredient(AD.asIngredient(material + "ingot"))
+							.setResult(AD.asProcessingOutput("compressed_" + material)))));
 		}
 
 		// Indrev
 		{
-			final String[] INDREV_PLATES = {"bronze", "electrum", "lead", "silver", "steel", "tin", "tungsten"};
+			final String[] INDREV_PLATES = { "bronze", "electrum", "lead", "silver", "steel", "tin", "tungsten" };
 
 			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.register(recipeId("pressing", plate + "_plate"),
-					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "ingot")).setResult(IR.asProcessingOutput(plate + "plate")))));
+					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "ingot"))
+							.setResult(IR.asProcessingOutput(plate + "plate")))));
 		}
 
 		// Dusts
 		handler.register(recipeId("milling", "emerald"),
 				id -> new MillingRecipe(new FreePRP(id).setIngredient(MC.asIngredient("emerald"))
-												.setResult(CABF.asProcessingOutput("emerald_dust"))
-												.setProcessingTime(450)));
+						.setResult(CABF.asProcessingOutput("emerald_dust"))
+						.setProcessingTime(450)));
 
 		handler.register(recipeId("crushing", "diamond"),
 				id -> new CrushingRecipe(new FreePRP(id).setIngredient(MC.asIngredient("diamond"))
-												 .setResult(CABF.asProcessingOutput("diamond_dust"))
-												 .setProcessingTime(650)));
+						.setResult(CABF.asProcessingOutput("diamond_dust"))
+						.setProcessingTime(650)));
 
 		// Nickel compound
 		handler.register(recipeId("filling", "nickel_compound"),
@@ -127,29 +117,29 @@ public class RecipeTweaks
 		// Saws
 		handler.register(recipeId("crafting", "stone_rod"),
 				id -> VanillaRecipeBuilders.shapedRecipe("S", "S")
-							  .ingredient('S', Tags.Items.COBBLESTONE).output(CABF.asStack("stone_rod"))
-							  .build(id, ""));
+						.ingredient('S', Tags.Items.COBBLESTONE).output(CABF.asStack("stone_rod"))
+						.build(id, ""));
 
 		handler.register(recipeId("crafting", "stone_saw"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SRR", "SMR")
-							  .ingredient('S', MC.asIngredient("stick"))
-							  .ingredient('R', CABF.asIngredient("stone_rod"))
-							  .ingredient('M', MC.asIngredient("flint")).output(CABF.asStack("stone_saw"))
-							  .build(id, ""));
+						.ingredient('S', MC.asIngredient("stick"))
+						.ingredient('R', CABF.asIngredient("stone_rod"))
+						.ingredient('M', MC.asIngredient("flint")).output(CABF.asStack("stone_saw"))
+						.build(id, ""));
 
 		handler.register(recipeId("crafting", "iron_saw"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SRR", "SMR")
-							  .ingredient('S', MC.asIngredient("stick"))
-							  .ingredient('R', CABF.asIngredient("stone_rod"))
-							  .ingredient('M', TagKey.of(Registry.ITEM_KEY, C.id("iron_ingots")))
-							  .output(CABF.asStack("iron_saw")).build(id, ""));
+						.ingredient('S', MC.asIngredient("stick"))
+						.ingredient('R', CABF.asIngredient("stone_rod"))
+						.ingredient('M', TagKey.of(Registry.ITEM_KEY, C.id("iron_ingots")))
+						.output(CABF.asStack("iron_saw")).build(id, ""));
 
 		handler.register(recipeId("crafting", "diamond_saw"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SRR", "SMR")
-							  .ingredient('S', MC.asIngredient("stick"))
-							  .ingredient('R', CABF.asIngredient("stone_rod"))
-							  .ingredient('M', MC.asIngredient("diamond"))
-							  .output(CABF.asStack("diamond_saw")).build(id, ""));
+						.ingredient('S', MC.asIngredient("stick"))
+						.ingredient('R', CABF.asIngredient("stone_rod"))
+						.ingredient('M', MC.asIngredient("diamond"))
+						.output(CABF.asStack("diamond_saw")).build(id, ""));
 
 		handler.register(recipeId("smithing", "netherite_saw"),
 				id -> new SmithingRecipe(id, CABF.asIngredient("diamond_saw"),
@@ -175,8 +165,8 @@ public class RecipeTweaks
 
 		handler.register(recipeId("crafting", "nickel_ingot_from_nugget"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AAA", "AAA", "AAA")
-							  .ingredient('A', CABF.asIngredient("nickel_nugget"))
-							  .output(CABF.asStack("nickel_ingot")).build(id, ""));
+						.ingredient('A', CABF.asIngredient("nickel_nugget"))
+						.output(CABF.asStack("nickel_ingot")).build(id, ""));
 
 		// Redstone
 		handler.register(recipeId("melting", "redstone"),
@@ -201,41 +191,38 @@ public class RecipeTweaks
 						if (recipe.getOutput().isOf(AD.asItem("iron_plate")))
 							handler.replace(new CompressingRecipe(
 									recipe.getId(), ((CompressingRecipe) recipe).getInputIngredient(),
-									CR.asStack("iron_sheet"), (short) 200
-							));
+									CR.asStack("iron_sheet"), (short) 200));
 						if (recipe.getOutput().isOf(AD.asItem("compressed_steel")))
 							handler.replace(new CompressingRecipe(
 									recipe.getId(), ((CompressingRecipe) recipe).getInputIngredient(),
-									IR.asStack("steel_plate"), (short) 200
-							));
+									IR.asStack("steel_plate"), (short) 200));
 					}
 
 					if (recipe instanceof ShapelessRecipe)
 						if (recipe.getOutput().isOf(AD.asItem("iron_plate")))
-							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe, CR.asStack("iron_sheet")));
+							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
+									CR.asStack("iron_sheet")));
 
 					// Indrev
 					if (recipe instanceof CompressorRecipe) {
 						if (recipe.getOutput().isOf(IR.asItem("gold_plate")))
 							handler.replace(new CompressorRecipe(
 									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[]{new OutputEntry(CR.asStack("golden_sheet"), 1)}, 400
-							));
+									new OutputEntry[] { new OutputEntry(CR.asStack("golden_sheet"), 1) }, 400));
 						if (recipe.getOutput().isOf(IR.asItem("iron_plate")))
 							handler.replace(new CompressorRecipe(
 									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[]{new OutputEntry(CR.asStack("iron_sheet"), 1)}, 400
-							));
+									new OutputEntry[] { new OutputEntry(CR.asStack("iron_sheet"), 1) }, 400));
 						if (recipe.getOutput().isOf(IR.asItem("copper_plate")))
 							handler.replace(new CompressorRecipe(
 									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[]{new OutputEntry(CR.asStack("copper_sheet"), 1)}, 400
-							));
+									new OutputEntry[] { new OutputEntry(CR.asStack("copper_sheet"), 1) }, 400));
 					}
 
 					if (recipe instanceof ShapelessRecipe)
 						if (recipe.getOutput().isOf(IR.asItem("copper_plate")))
-							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe, CR.asStack("copper_sheet")));
+							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
+									CR.asStack("copper_sheet")));
 				});
 	}
 
@@ -257,9 +244,9 @@ public class RecipeTweaks
 
 		// Remove wrenches except Create's and AE2's
 		handler.removeIf(r -> notCabf(r) &&
-									  !Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("create") &&
-									  !Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("ae2") &&
-									  Registry.ITEM.getId(r.getOutput().getItem()).getPath().contains("wrench"));
+				!Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("create") &&
+				!Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("ae2") &&
+				Registry.ITEM.getId(r.getOutput().getItem()).getPath().contains("wrench"));
 
 		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
 

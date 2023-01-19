@@ -3,9 +3,6 @@ package com.dm.earth.cabricality.content.alchemist.block;
 import java.util.Objects;
 
 import com.dm.earth.cabricality.Cabricality;
-
-import org.jetbrains.annotations.NotNull;
-
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
@@ -38,8 +35,7 @@ public class ReagentJarBlock extends SubstrateJarBlock {
 	@Override
 	public ActionResult onUse(
 			BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
-			BlockHitResult hit
-	) {
+			BlockHitResult hit) {
 		if ((!player.isSneaking()) || !player.getStackInHand(Hand.MAIN_HAND).isEmpty() || this.getSubstrate() == null)
 			return ActionResult.PASS;
 		world.setBlockState(pos, CabfBlocks.JAR.getDefaultState());

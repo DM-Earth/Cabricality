@@ -2,10 +2,9 @@ package com.dm.earth.cabricality.content.alchemist.core;
 
 import java.util.Objects;
 
-import com.dm.earth.cabricality.Cabricality;
-
-import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
+
+import com.dm.earth.cabricality.Cabricality;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
