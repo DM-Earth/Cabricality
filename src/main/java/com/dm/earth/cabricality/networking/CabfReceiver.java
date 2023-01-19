@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.networking;
 
-import com.dm.earth.cabricality.networking.receiver.HeldItemInfoReceiver;
+import com.dm.earth.cabricality.networking.receiver.*;
 import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
 
 import static com.dm.earth.cabricality.networking.CabfNetworking.*;

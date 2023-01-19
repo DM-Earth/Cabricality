@@ -421,6 +421,9 @@
   "command.cabricality.debug.disabled": "Debug Disabled",
   "command.cabricality.debug.enabled" : "Debug Enabled",
 
+  "command.cabricality.debug_info.disabled": " disabled debug",
+  "command.cabricality.debug_info.enabled" : " enabled debug",
+
   "command.cabricality.held_item_info.tag_prefix": "#",
   "command.cabricality.held_item_info.showing"   : " is showing ",
 
