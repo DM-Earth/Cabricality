@@ -216,11 +216,6 @@ hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
 
 [[files]]
-file = "mods/bounced.pw.toml"
-hash = "51b93384900a79dd30281a79478719733e86a9cab82fbb4281c2d1880f67b9ad"
-metafile = true
-
-[[files]]
 file = "mods/brrp.pw.toml"
 hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
 metafile = true
@@ -265,8 +260,8 @@ hash = "289cf2fb15222b03ed588377b920dcb8dbd8d242b3ea8b76c7e3950925b88d56"
 metafile = true
 
 [[files]]
-file = "mods/create-fabric.pw.toml"
-hash = "62725420fd0cb7d11824524ba68be4a0fe70761faee601a7efdadf61c2405c24"
+file = "mods/create.pw.toml"
+hash = "3e241de103e98ff06965002e2675e0acfec99bab9230df61cecbe4496a371f59"
 metafile = true
 
 [[files]]
