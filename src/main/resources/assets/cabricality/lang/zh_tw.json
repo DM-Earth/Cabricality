@@ -331,8 +331,11 @@
   "command.cabricality.alchemist.header" : "[混沌煉金]",
   "command.cabricality.alchemist.chaotic": " [混沌]",
 
-  "command.cabricality.debug.disabled": "禁用調試",
-  "command.cabricality.debug.enabled" : "啟用調試",
+  "command.cabricality.debug.disabled": "調試已禁用",
+  "command.cabricality.debug.enabled" : "調試已啟用",
+
+  "command.cabricality.debug_info.disabled": "禁用了調試",
+  "command.cabricality.debug_info.enabled" : "啟用了調試",
 
   "command.cabricality.held_item_info.tag_prefix": "#",
   "command.cabricality.held_item_info.showing"   : "正在展示",

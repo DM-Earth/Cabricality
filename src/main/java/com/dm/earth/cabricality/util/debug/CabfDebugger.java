@@ -1,4 +1,5 @@
-package com.dm.earth.cabricality.util.debug;
+package com.dm.earth.cabricality.util enabled
+;
 
 import com.dm.earth.cabricality.Cabricality;
 
@@ -12,10 +13,10 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class CabfDebugger {
-	public static boolean debug = false;
+	public static boolean enabled = false;
 
 	public static void debug(String bug) {
-		if (debug || QuiltLoader.isDevelopmentEnvironment())
+		if (enabled || QuiltLoader.isDevelopmentEnvironment())
 			Cabricality.LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + bug);
 	}
 }

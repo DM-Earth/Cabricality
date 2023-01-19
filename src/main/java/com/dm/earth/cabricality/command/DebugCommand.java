@@ -10,14 +10,12 @@ import net.minecraft.util.Formatting;
 public class DebugCommand implements Command<ServerCommandSource> {
 	@Override
 	public int run(CommandContext<ServerCommandSource> context) {
-		if (CabfDebugger.debug) {
-			CabfDebugger.debug = false;
-			context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "debug", "disabled").formatted(Formatting.GRAY, Formatting.ITALIC), true);
-			Cabricality.LOGGER.error(Cabricality.genTranslatableText("command", "debug", "disabled").getString());
-		} else {
-			CabfDebugger.debug = true;
-			context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "debug", "enabled").formatted(Formatting.GRAY, Formatting.ITALIC), true);
-		}
+		CabfDebugger.enabled = !CabfDebugger.enabled;
+		context.getSource().sendFeedback(
+				Cabricality.genTranslatableText("command", "debug", CabfDebugger.enabled ? "enabled" : "disabled").formatted(Formatting.GRAY, Formatting.ITALIC),
+				false
+		);
+		ClientPlayNetworking.send(CabfNetworking.DEBUG_INFO, new PacketByteBuf(Unpooled.buffer()).writeBoolean(CabfDebugger.enabled));
 		return SINGLE_SUCCESS;
 	}
 }
