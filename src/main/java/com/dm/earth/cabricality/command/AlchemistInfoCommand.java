@@ -26,8 +26,7 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 		final HashMap<String, ArrayList<String>> result = new HashMap<>();
 
 		// Header
-		newLine(pusher, context.getSource());
-		context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "alchemist", "header").formatted(Formatting.YELLOW), false);
+		context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "alchemist", "header").formatted(Formatting.GRAY, Formatting.ITALIC), false);
 
 		// Possible reagents
 		Alchemist.possibleReagentMap(context.getSource().getWorld())
@@ -69,11 +68,10 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 					putPair(result, key.getJarBlock().getName().getString(), value.getJarBlock().getName().getString());
 				});
 
-		// Copy
-		newLine(pusher, context.getSource());
+		// Copy widget
 		context.getSource().sendFeedback(
 				Cabricality.genTranslatableText("command", "actions", "copy")
-						.styled(style -> style.withColor(Formatting.YELLOW)
+						.styled(style -> style.withColor(Formatting.GRAY, Formatting.ITALIC)
 												 .withClickEvent(new ClickEvent(
 														 ClickEvent.Action.COPY_TO_CLIPBOARD, result.toString()))),
 				false
