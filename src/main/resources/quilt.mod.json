@@ -35,8 +35,7 @@
         "com.dm.earth.cabricality.content.trading.data.recipe.Trading"
       ],
       "rei_client": [
-        "com.dm.earth.cabricality.client.plugin.rei.CabricalityREIClientPlugin",
-        "com.dm.earth.cabricality.client.plugin.rei.GeneralREIClientPlugin"
+        "com.dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin"
       ],
       "modmenu": "com.dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
     },

@@ -11,6 +11,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.Nullable;
 
 public enum ModEntry {
 	// Abbreviations
@@ -22,7 +23,7 @@ public enum ModEntry {
 
 	CABF(Cabricality.ID),
 
-	PMD("promenade"),
+	PM("promenade"),
 
 	IR("indrev"),
 
@@ -46,7 +47,9 @@ public enum ModEntry {
 
 	ED("extended_drawers"),
 	LED("led"),
-	CC("computercraft");
+	CC("computercraft"),
+	IF("itemfilters"),
+	CI("catwalksinc");
 
 	final String modId;
 
@@ -58,20 +61,20 @@ public enum ModEntry {
 		return modId;
 	}
 
+	public boolean checkContains(@Nullable Identifier id) {
+		return id != null && id.getNamespace().equals(modId);
+	}
+
 	public Identifier id(String... path) {
 		return new IdentifierBuilder.Specified(this.modId).id(path);
 	}
 
-	public Item asItem(String name) {
-		return Registry.ITEM.get(id(name));
+	public Item asItem(String... paths) {
+		return Registry.ITEM.get(id(paths));
 	}
 
 	public TagKey<Item> asItemTag(String... paths) {
-		return asItemTag(String.join("/", paths));
-	}
-
-	public TagKey<Item> asItemTag(String name) {
-		return TagKey.of(Registry.ITEM_KEY, id(name));
+		return TagKey.of(Registry.ITEM_KEY, id(paths));
 	}
 
 	public ItemStack asStack(String name, int count) {
@@ -82,8 +85,8 @@ public enum ModEntry {
 		return new ItemStack(asItem(name), 1);
 	}
 
-	public Ingredient asIngredient(String name) {
-		return Ingredient.ofItems(asItem(name));
+	public Ingredient asIngredient(String... paths) {
+		return Ingredient.ofItems(asItem(paths));
 	}
 
 	public ProcessingOutput asProcessingOutput(String name) {
@@ -98,15 +101,15 @@ public enum ModEntry {
 		return new ProcessingOutput(asStack(name, count), chance);
 	}
 
-	public Fluid asFluid(String name) {
-		return Registry.FLUID.get(id(name));
+	public Fluid asFluid(String... paths) {
+		return Registry.FLUID.get(id(paths));
 	}
 
-	public Block asBlock(String name) {
-		return Registry.BLOCK.get(id(name));
+	public Block asBlock(String... paths) {
+		return Registry.BLOCK.get(id(paths));
 	}
 
-	public SoundEvent asSoundEvent(String name) {
-		return Registry.SOUND_EVENT.get(id(name));
+	public SoundEvent asSoundEvent(String... paths) {
+		return Registry.SOUND_EVENT.get(id(paths));
 	}
 }

@@ -166,7 +166,7 @@
 	"block.ad_astra.coal_lantern": "熄灭的灯笼",
 	"block.ad_astra.coal_torch"  : "熄灭的火把",
 
-	"block.ad_astra.flag_white"     : "浅色基地旗帜",
+	"block.ad_astra.flag"           : "浅色基地旗帜",
 	"block.ad_astra.flag_blue"      : "蓝色基地旗帜",
 	"block.ad_astra.flag_brown"     : "棕色基地旗帜",
 	"block.ad_astra.flag_cyan"      : "青色基地旗帜",
