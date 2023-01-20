@@ -291,6 +291,90 @@
 
 
 
+  "comment_col": "集合",
+
+  "col.minecraft.enchanted_books": "附魔书",
+  "col.minecraft.tipped_arrows"  : "药箭",
+
+  "col.minecraft.lingering_potions": "滞留型药水",
+  "col.minecraft.splash_potions"   : "喷溅型药水",
+  "col.minecraft.potions"          : "药水",
+
+  "col.cabricality.numbers"   : "数字和符号",
+  "col.cabricality.math_casts": "数学铸模",
+
+  "col.ae2.paint_balls"      : "染色球",
+  "col.ae2.lumen_paint_balls": "光通染色球",
+
+  "col.tconstruct.modofiers": "强化",
+
+  "col.tconstruct.slime_helmets": "黏液头颅",
+
+  "col.tconstruct.tools/cleaver"      : "劈刀",
+  "col.tconstruct.tools/sword"        : "剑",
+  "col.tconstruct.tools/dagger"       : "匕首",
+  "col.tconstruct.tools/scythe"       : "镰刀",
+  "col.tconstruct.tools/kama"         : "短刀镰",
+  "col.tconstruct.tools/broad_axe"    : "板斧",
+  "col.tconstruct.tools/hand_axe"     : "短柄斧",
+  "col.tconstruct.tools/excavator"    : "开掘铲",
+  "col.tconstruct.tools/pickadze"     : "凿石锹",
+  "col.tconstruct.tools/mattock"      : "鹤嘴锄",
+  "col.tconstruct.tools/vein_hammer"  : "矿脉锤",
+  "col.tconstruct.tools/sledge_hammer": "锤",
+  "col.tconstruct.tools/pickaxe"      : "镐",
+
+  "col.tconstruct.parts/tough_handle"  : "坚韧手柄",
+  "col.tconstruct.parts/tool_handle"   : "工具手柄",
+  "col.tconstruct.parts/tool_binding"  : "绑定节",
+  "col.tconstruct.parts/large_plate"   : "大板",
+  "col.tconstruct.parts/round_plate"   : "圆板",
+  "col.tconstruct.parts/broad_blade"   : "宽刃",
+  "col.tconstruct.parts/small_blade"   : "小型剑刃",
+  "col.tconstruct.parts/broad_axe_head": "板斧刃",
+  "col.tconstruct.parts/small_axe_head": "小型斧刃",
+  "col.tconstruct.parts/hammer_head"   : "锤头",
+  "col.tconstruct.parts/pick_head"     : "镐头",
+  "col.tconstruct.parts/repair_kit"    : "修补件",
+
+  "col.tconstruct.stations/part_builder"    : "部件制造台",
+  "col.tconstruct.stations/tinker_station"  : "匠作站",
+  "col.tconstruct.stations/crafting_station": "工作站",
+
+  "col.computercraft.disks": "软盘",
+
+  "col.computercraft.things/turtle"         : "海龟",
+  "col.computercraft.things/pocket_computer": "手提计算机",
+
+  "col.led.lamps/shaded_reinforced_flat_fixture"  : "加固照灯板",
+  "col.led.lamps/shaded_reinforced_large_fixture" : "大型加固罩灯",
+  "col.led.lamps/shaded_reinforced_medium_fixture": "中型加固罩灯",
+  "col.led.lamps/shaded_reinforced_small_fixture" : "小型加固罩灯",
+  "col.led.lamps/shaded_reinforced_clear_full"    : "加固罩灯",
+
+  "col.led.lamps/shaded_flat_fixture"  : "罩灯板",
+  "col.led.lamps/shaded_large_fixture" : "大型罩灯板",
+  "col.led.lamps/shaded_medium_fixture": "中型罩灯板",
+  "col.led.lamps/shaded_small_fixture" : "小型罩灯板",
+  "col.led.lamps/shaded_clear_full"    : "罩灯",
+
+  "col.led.lamps/reinforced_flat_fixture"  : "加固灯板",
+  "col.led.lamps/reinforced_large_fixture" : "大型加固灯板",
+  "col.led.lamps/reinforced_medium_fixture": "中型加固灯板",
+  "col.led.lamps/reinforced_small_fixture" : "小型加固灯板",
+  "col.led.lamps/reinforced_clear_full"    : "加固灯",
+
+  "col.led.lamps/flat_fixture"  : "灯板",
+  "col.led.lamps/large_fixture" : "大型灯",
+  "col.led.lamps/medium_fixture": "中型灯",
+  "col.led.lamps/small_fixture" : "小型灯",
+  "col.led.lamps/clear_full"    : "灯",
+
+  "col.led.blocks/switch": "多彩开关",
+  "col.led.blocks/button": "多彩按钮",
+
+
+
   "comment_config": "設置",
 
   "config.cabricality.category.general": "通用",
@@ -363,6 +447,6 @@
   "screen.cabricality.title_screen.warning_missing_mod"       : "缺少1個模組！",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d個模組！",
 
-  "itemGroup.cabricality.main": "永無止境: 重縫",
+  "itemGroup.cabricality.main"      : "永無止境: 重縫",
   "itemGroup.cabricality.substrates": "永無止境: 重縫 | 試劑"
 }

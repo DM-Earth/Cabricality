@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.networking.receiver;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.command.helper.BroadcastContent;
 import io.netty.channel.EventLoop;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -41,8 +42,7 @@ public class HeldItemInfoReceiver implements ServerPlayNetworking.ChannelReceive
 	public void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler, PacketByteBuf buf, PacketSender responseSender) {
 		ItemStack stack = buf.readItemStack();
 		server.execute(() -> server.getPlayerManager().getPlayerList().stream().filter(p -> p != player).forEach(
-				p -> p.sendMessage(player.getDisplayName().shallowCopy().formatted(Formatting.GRAY, Formatting.ITALIC)
-										   .append(Cabricality.genTranslatableText("command", "held_item_info", "showing").formatted(Formatting.GRAY, Formatting.ITALIC))
-										   .append(stack.toHoverableText()), false)));
+				new BroadcastContent(player, Cabricality.genTranslatableText("command", "held_item_info", "showing")
+													 .append(stack.toHoverableText()))));
 	}
 }

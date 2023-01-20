@@ -10,6 +10,7 @@ import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
 import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
 import me.shedaniel.rei.api.common.entry.EntryStack;
+import me.shedaniel.rei.api.common.entry.type.EntryType;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
 import me.steven.indrev.registry.IRItemRegistry;
 import net.krlite.equator.util.IdentifierBuilder;
@@ -75,10 +76,12 @@ public class GeneralREIClientPlugin implements REIClientPlugin {
 
 		/*
 		 * Hephaestus
-		 *
-		 * That is toxic and cannot be implemented, so we won't do them
-		 * But tags are okay
 		 */
+		// Modifiers
+		registry.group(TC.id("modifiers"),
+				col(TC.id("modifiers")),
+				EntryType.deferred(TC.id("modifier_entry")),
+				es -> es.getIdentifier() != null && es.getIdentifier().getNamespace().equals(TC.getModId()));
 		// Slime helmets
 		registry.group(TC.id("slime_helmets"),
 				col(TC.id("slime_helmets")),

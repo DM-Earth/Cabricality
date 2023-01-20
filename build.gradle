@@ -57,7 +57,6 @@ dependencies {
     minecraft libs.minecraft
     mappings variantOf(libs.quilt.mappings) { classifier "intermediary-v2" }
     modImplementation libs.quilt.loader
-
     modImplementation libs.quilted.fabric.api
 
     modImplementation ("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}") {
