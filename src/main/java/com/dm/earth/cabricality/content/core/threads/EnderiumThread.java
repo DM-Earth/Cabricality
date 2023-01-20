@@ -6,7 +6,7 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.KB;
 import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.PM;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
 import org.jetbrains.annotations.Contract;
@@ -45,7 +45,7 @@ public class EnderiumThread implements TechThread {
 
 		handler.register(recipeId("melting", "dark_amaranth_fungus"),
 				id -> RecipeManager.deserialize(id,
-						RecipeBuilderUtil.generateMelting(PMD.id("dark_amaranth_fungus"),
+						RecipeBuilderUtil.generateMelting(PM.id("dark_amaranth_fungus"),
 								TC.id("ender_slime"), FluidConstants.BOTTLE, null, 0, 100, 10)));
 
 		handler.register(recipeId("item_application", "enderium_casing"),

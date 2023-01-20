@@ -284,34 +284,88 @@
 
   "comment_tag": "Tags",
 
+  "tag.c.glass"        : "Glass",
+  "tag.c.glass_panes"  : "Glass Panes",
+  "tag.c.shulker_boxes": "Shulker Boxes",
+
+  "tag.minecraft.carpets"    : "Carpets",
+  "tag.minecraft.beds"       : "Beds",
+  "tag.minecraft.banners"    : "Banners",
+  "tag.minecraft.candles"    : "Candles",
+  "tag.minecraft.music_discs": "Music Discs",
+  "tag.minecraft.leaves"     : "Leaves",
+  "tag.minecraft.signs"      : "Signs",
+  "tag.minecraft.logs"       : "Logs",
+  "tag.minecraft.planks"     : "Planks",
+  "tag.minecraft.stairs"     : "Stairs",
+  "tag.minecraft.slabs"      : "Slabs",
+
   "tag.cabricality.trade_cards"     : "§6Trade Cards",
   "tag.cabricality.profession_cards": "§dProfession Cards",
 
   "tag.cabricality.jars/reagent" : "§cReagent Jars",
   "tag.cabricality.jars/catalyst": "§9Catalyst Jars",
 
+  "tag.catwalksinc.filled_paint_rolls": "§6Filled Paint Rollers",
+
+  "tag.create.stone_types/veridium" : "Veridiums",
+  "tag.create.stone_types/scorchia" : "Scorchias",
+  "tag.create.stone_types/scoria"   : "Scorias",
+  "tag.create.stone_types/ochrum"   : "Ochrums",
+  "tag.create.stone_types/limestone": "Limestones",
+  "tag.create.stone_types/crimsite" : "Crimsites",
+  "tag.create.stone_types/asurine"  : "Asurines",
+  "tag.create.stone_types/tuff"     : "Tuffs",
+  "tag.create.stone_types/deepslate": "Deepslates",
+  "tag.create.stone_types/dripstone": "Dripstones",
+  "tag.create.stone_types/calcite"  : "Calcites",
+  "tag.create.stone_types/andesite" : "Andesites",
+  "tag.create.stone_types/diorite"  : "Diorites",
+  "tag.create.stone_types/granite"  : "Granites",
+
+  "tag.farmersdelight.canvas_signs": "Canvas Signs",
+
+  "tag.itemfilters.filters": "Item Filters",
+
   "tag.tconstruct.casts/red_sand": "Red Sand Casts",
   "tag.tconstruct.casts/sand"    : "Sand Casts",
   "tag.tconstruct.casts/gold"    : "Gold Casts",
+
+  "tag.tconstruct.blocks/foundry" : "Foundry",
+  "tag.tconstruct.blocks/smeltery": "Smeltery",
 
 
 
   "comment_col": "Collections",
 
-  "col.minecraft.enchanted_books": "Enchanted Books",
-  "col.minecraft.tipped_arrows"  : "Tipped Arrows",
+  "col.minecraft.fluids": "Fluids",
+
+  "col.minecraft.enchanted_books"   : "Enchanted Books",
+  "col.minecraft.tipped_arrows"     : "Tipped Arrows",
+  "col.minecraft.spawn_eggs"        : "Spawn Eggs",
+  "col.minecraft.glazed_terracottas": "Glazed Terracottas",
+  "col.tconstruct.buckets"          : "Fluid Buckets",
 
   "col.minecraft.lingering_potions": "Lingering Potions",
   "col.minecraft.splash_potions"   : "Splash Potions",
   "col.minecraft.potions"          : "Potions",
 
+  "col.cabricality.processors": "Processors",
+  "col.cabricality.mechanisms": "Mechanisms",
   "col.cabricality.numbers"   : "Numbers and Operators",
   "col.cabricality.math_casts": "Mathematics Casts",
+
+  "col.create.blocks/copper_tile"   : "Copper Tiles",
+  "col.create.blocks/copper_shingle": "Copper Shingles",
+
+  "col.ad_astra:flags": "Flags",
 
   "col.ae2.paint_balls"      : "Paint Balls",
   "col.ae2.lumen_paint_balls": "Lumen Paint Balls",
 
-  "col.tconstruct.modofiers": "Modifiers",
+  "col.indrev.modules": "Modules",
+
+  "col.tconstruct.modifiers": "Modifiers",
 
   "col.tconstruct.slime_helmets": "Slime Helmets",
 
@@ -346,6 +400,20 @@
   "col.tconstruct.stations/tinker_station"  : "Tinker Stations",
   "col.tconstruct.stations/crafting_station": "Crafting Stations",
 
+  "col.tconstruct.slime_grasses/ichor"  : "Ichor Grasses",
+  "col.tconstruct.slime_grasses/ender"  : "Enderslime Grasses",
+  "col.tconstruct.slime_grasses/sky"    : "Skyslime Grasses",
+  "col.tconstruct.slime_grasses/earth"  : "Earthslime Grasses",
+  "col.tconstruct.slime_grasses/vanilla": "Slime Grasses",
+
+  "col.tconstruct.blocks/slime_dirt"     : "Slime Dirts",
+  "col.tconstruct.blocks/congealed_slime": "Congealed Slime Blocks",
+  "col.tconstruct.blocks/slime"          : "Slime Blocks",
+
+  "col.tconstruct.buckets/potion": "Potion Buckets",
+
+  "col.tconstruct.anvils": "Anvils",
+
   "col.computercraft.disks": "Disks",
 
   "col.computercraft.things/turtle"         : "Turtles",
@@ -377,6 +445,16 @@
 
   "col.led.blocks/switch": "Colorful Switches",
   "col.led.blocks/button": "Colorful Buttons",
+
+  "col.kibe.things/sleeping_bag": "Sleeping Bags",
+  "col.kibe.things/glider"      : "Gliders",
+  "col.kibe.things/rune"        : "Runes",
+  "col.kibe.things/elevator"    : "Elevators",
+
+  "col.promenade.piles": "Piles",
+
+  "col.promenade.blocks/mushroom"      : "Mushrooms",
+  "col.promenade.blocks/mushroom_block": "Mushroom Blocks",
 
 
 

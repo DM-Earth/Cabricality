@@ -5,7 +5,7 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.*;
-import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.PM;
 import static com.dm.earth.cabricality.content.alchemist.core.Reagent.of;
 import java.util.Arrays;
 import java.util.List;
@@ -36,8 +36,8 @@ public enum Reagents {
 			of("tuff", MC.id("tuff"), 0x85837B),
 			of("limestone", CR.id("limestone"), 0xBBB6A9),
 			of("scoria", CR.id("scoria"), 0x493A34),
-			of("blunite", PMD.id("blunite"), 0x5F6874),
-			of("carbonite", PMD.id("carbonite"), 0x514E52)),
+			of("blunite", PM.id("blunite"), 0x5F6874),
+			of("carbonite", PM.id("carbonite"), 0x514E52)),
 
 	HERBAL("herbal", 0xB5CDA3, 1, true,
 			of("white", MC.id("lily_of_the_valley"), 0xE8E8E8),
