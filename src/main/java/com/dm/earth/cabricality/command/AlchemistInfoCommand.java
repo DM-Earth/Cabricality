@@ -26,7 +26,8 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 		final HashMap<String, ArrayList<String>> result = new HashMap<>();
 
 		// Header
-		context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "alchemist", "header").formatted(Formatting.GRAY, Formatting.ITALIC), false);
+		context.getSource().sendFeedback(Cabricality.genTranslatableText("command", "alchemist", "header")
+				.formatted(Formatting.GRAY, Formatting.ITALIC), false);
 
 		// Possible reagents
 		Alchemist.possibleReagentMap(context.getSource().getWorld())
@@ -35,10 +36,21 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 					value.forEach(reagent -> {
 						context.getSource().sendFeedback(
 								reagent.getJarBlock().getName()
-										.styled(style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM,
-														new HoverEvent.ItemStackContent(Registry.ITEM.get(reagent.getJarBlock().getItemId()).getDefaultStack())))
-																 .withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, suggestGiveCommand(reagent.getJarBlock().getBlockId())))), false);
-						putPair(result, key.getJarBlock().getName().getString(), reagent.getJarBlock().getName().getString());
+										.styled(style -> style.withHoverEvent(
+												new HoverEvent(HoverEvent.Action.SHOW_ITEM,
+														new HoverEvent.ItemStackContent(
+																Registry.ITEM.get(
+																		reagent.getJarBlock()
+																				.getItemId())
+																		.getDefaultStack())))
+												.withClickEvent(new ClickEvent(
+														ClickEvent.Action.SUGGEST_COMMAND,
+														suggestGiveCommand(
+																reagent.getJarBlock()
+																		.getBlockId())))),
+								false);
+						putPair(result, key.getJarBlock().getName().getString(),
+								reagent.getJarBlock().getName().getString());
 					});
 				});
 
@@ -48,10 +60,21 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 				.forEach(catalyst -> {
 					context.getSource().sendFeedback(
 							catalyst.getJarBlock().getName()
-									.styled(style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM,
-											new HoverEvent.ItemStackContent(Registry.ITEM.get(catalyst.getJarBlock().getItemId()).getDefaultStack())))
-															 .withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, suggestGiveCommand(catalyst.getJarBlock().getBlockId())))), false);
-					putPair(result, Alchemist.CHAOTIC_CATALYST.getJarBlock().getName().getString(), catalyst.getJarBlock().getName().getString());
+									.styled(style -> style.withHoverEvent(
+											new HoverEvent(HoverEvent.Action.SHOW_ITEM,
+													new HoverEvent.ItemStackContent(
+															Registry.ITEM.get(
+																	catalyst.getJarBlock()
+																			.getItemId())
+																	.getDefaultStack())))
+											.withClickEvent(new ClickEvent(
+													ClickEvent.Action.SUGGEST_COMMAND,
+													suggestGiveCommand(
+															catalyst.getJarBlock()
+																	.getBlockId())))),
+							false);
+					putPair(result, Alchemist.CHAOTIC_CATALYST.getJarBlock().getName().getString(),
+							catalyst.getJarBlock().getName().getString());
 				});
 
 		// Possible special reagents(chaotic)
@@ -60,12 +83,27 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 					headerFeedback(context, pusher, key.getJarBlock());
 					context.getSource().sendFeedback(
 							value.getJarBlock().getName()
-									.styled(style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM,
-													new HoverEvent.ItemStackContent(Registry.ITEM.get(value.getJarBlock().getItemId()).getDefaultStack())))
-															 .withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, suggestGiveCommand(value.getJarBlock().getBlockId())))).append(
-									Cabricality.genTranslatableText("command", "alchemist", "chaotic").formatted(Formatting.AQUA)),
+									.styled(style -> style.withHoverEvent(
+											new HoverEvent(HoverEvent.Action.SHOW_ITEM,
+													new HoverEvent.ItemStackContent(
+															Registry.ITEM.get(
+																	value.getJarBlock()
+																			.getItemId())
+																	.getDefaultStack())))
+											.withClickEvent(new ClickEvent(
+													ClickEvent.Action.SUGGEST_COMMAND,
+													suggestGiveCommand(
+															value.getJarBlock()
+																	.getBlockId()))))
+									.append(
+											Cabricality.genTranslatableText(
+													"command",
+													"alchemist",
+													"chaotic")
+													.formatted(Formatting.AQUA)),
 							false);
-					putPair(result, key.getJarBlock().getName().getString(), value.getJarBlock().getName().getString());
+					putPair(result, key.getJarBlock().getName().getString(),
+							value.getJarBlock().getName().getString());
 				});
 
 		// Copy widget
@@ -73,20 +111,28 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 				Cabricality.genTranslatableText("command", "actions", "copy")
 						.formatted(Formatting.GRAY, Formatting.ITALIC)
 						.styled(style -> style.withClickEvent(new ClickEvent(
-														 ClickEvent.Action.COPY_TO_CLIPBOARD, result.toString()))),
-				false
-		);
+								ClickEvent.Action.COPY_TO_CLIPBOARD,
+								result.toString()))),
+				false);
 
 		return SINGLE_SUCCESS;
 	}
 
-	private void headerFeedback(@NotNull CommandContext<ServerCommandSource> context, Pusher pusher, SubstrateJarBlock jarBlock) {
+	private void headerFeedback(@NotNull CommandContext<ServerCommandSource> context, Pusher pusher,
+			SubstrateJarBlock jarBlock) {
 		newLine(pusher, context.getSource());
 		context.getSource().sendFeedback(
 				new LiteralText("● ").append(jarBlock.getName())
-						.styled(style -> style.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_ITEM,
-								new HoverEvent.ItemStackContent(Registry.ITEM.get(jarBlock.getItemId()).getDefaultStack())))
-												 .withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, suggestGiveCommand(jarBlock.getBlockId())))),false);
+						.styled(style -> style.withHoverEvent(new HoverEvent(
+								HoverEvent.Action.SHOW_ITEM,
+								new HoverEvent.ItemStackContent(
+										Registry.ITEM.get(jarBlock.getItemId())
+												.getDefaultStack())))
+								.withClickEvent(new ClickEvent(
+										ClickEvent.Action.SUGGEST_COMMAND,
+										suggestGiveCommand(jarBlock
+												.getBlockId())))),
+				false);
 	}
 
 	private void newLine(Pusher pusher, ServerCommandSource source) {
@@ -105,7 +151,7 @@ public class AlchemistInfoCommand implements Command<ServerCommandSource> {
 			ArrayList<String> values = result.get(key);
 			values.add(value);
 			result.put(key, values);
-		}
-		else result.put(key, new ArrayList<>(ImmutableList.of(value)));
+		} else
+			result.put(key, new ArrayList<>(ImmutableList.of(value)));
 	}
 }
