@@ -27,6 +27,7 @@
     "client.FinishLoadingTrigger$SplashOverlayMixin",
     "client.MinecraftClientModifier",
     "client.ScreenAnimator",
+    "client.SplashOverlayMixin",
     "client.cloth.ClothConfigScreenAnimator",
     "client.ftblibrary.BooleanConfigTranslator",
     "client.ftblibrary.ConfigValueTranslator",
