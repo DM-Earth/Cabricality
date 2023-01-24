@@ -12,6 +12,7 @@ import java.util.List;
 
 import static me.shedaniel.rei.impl.client.gui.widget.entrylist.EntryListWidget.entrySize;
 
+@SuppressWarnings("UnstableApiUsage")
 @Mixin(ScrolledEntryListWidget.class)
 public class ScrolledEntryListWidgetFixer {
 	private int offset;

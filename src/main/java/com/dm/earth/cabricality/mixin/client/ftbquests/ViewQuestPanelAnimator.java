@@ -1,9 +1,21 @@
 package com.dm.earth.cabricality.mixin.client.ftbquests;
 
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.util.PushUtil;
+import dev.ftb.mods.ftblibrary.icon.Color4I;
+import dev.ftb.mods.ftblibrary.icon.Icon;
+import dev.ftb.mods.ftblibrary.ui.BlankPanel;
+import dev.ftb.mods.ftblibrary.ui.Panel;
+import dev.ftb.mods.ftblibrary.ui.Theme;
+import dev.ftb.mods.ftblibrary.ui.Widget;
+import dev.ftb.mods.ftbquests.gui.quests.ViewQuestPanel;
+import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
 import net.krlite.equator.geometry.Rect;
-import net.krlite.equator.geometry.TintedRect;
 import net.krlite.equator.render.Equator;
 import net.krlite.equator.util.Timer;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.math.MathHelper;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -15,19 +27,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.Slice;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.util.PushUtil;
-import dev.ftb.mods.ftblibrary.icon.Color4I;
-import dev.ftb.mods.ftblibrary.icon.Icon;
-import dev.ftb.mods.ftblibrary.ui.BlankPanel;
-import dev.ftb.mods.ftblibrary.ui.Panel;
-import dev.ftb.mods.ftblibrary.ui.Theme;
-import dev.ftb.mods.ftblibrary.ui.Widget;
-import dev.ftb.mods.ftbquests.gui.quests.ViewQuestPanel;
-import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.util.math.MathHelper;
 
 @ClientOnly
 @Mixin(ViewQuestPanel.class)
@@ -39,7 +38,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		super(panel);
 	}
 
-	private Timer timer = new Timer(720);
+	private final Timer timer = new Timer(720);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {
@@ -79,19 +78,14 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
-		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(() -> timer = timer.reset());
+		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(timer::reset);
 		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
 
-		TintedRect shadowRect = new TintedRect(
-				new Rect(x, y, w, h),
-				Cabricality.Colors.CABF_PURPLE, Cabricality.Colors.CABF_MID_PURPLE,
-				Cabricality.Colors.CABF_MID_PURPLE, Cabricality.Colors.CABF_PURPLE
-		);
+		Rect.Tinted shadow = new Rect(x, y, w, h).tint(Cabricality.Colors.CABF_PURPLE, Cabricality.Colors.CABF_MID_PURPLE,
+				Cabricality.Colors.CABF_MID_PURPLE, Cabricality.Colors.CABF_PURPLE);
 
-		new Equator.Drawer(matrixStack).rectShadow(
-				shadowRect.swap(shadowRect.toRect().interpolate(Rect.full(), lerp)).transparent(),
-				shadowRect.withOpacity(lerp), 0.2 * lerp
-		);
+		new Equator.Painter(matrixStack).rectShadow(shadow.operate(rect -> rect.interpolate(Rect.fullScreen(), lerp)).transparent(),
+				shadow.withOpacity(lerp), 0.2 * lerp);
 	}
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
