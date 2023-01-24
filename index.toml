@@ -10,7 +10,7 @@ hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
 [[files]]
 file = "config/customsplashscreen.json5"
-hash = "0c4ebb39d1bcd398d6c2c7b42c9f2ac641741294e0efe96c6f30a86a7934b8fa"
+hash = "34774866b59351d88c3dfac4b6c97cc05fb25dcafdfc7aa255a328aceaf1854d"
 
 [[files]]
 file = "config/customsplashscreen/background.png"
@@ -23,6 +23,10 @@ hash = "27b2ea2946ca5b00841ce7d1813b42dfb7e36b12ad50c7c9bea09053ac226cf3"
 [[files]]
 file = "config/customsplashscreen/mojank.png"
 hash = "bb2080abef56e6ec5ab6bd4576e9e3dc7e15817410e02051553475f4cd3fcd8d"
+
+[[files]]
+file = "config/customsplashscreen/mojank_disabled.png"
+hash = "dc76c863350f4418b6c1788edab16a64822f345b9efdb2a6fc4b239b609cfb44"
 
 [[files]]
 file = "config/customsplashscreen/progressbar.png"
@@ -42,7 +46,7 @@ hash = "684a97145572aba3c5dc320716c6cb66ff36180ae8f149b9d60249414c83d309"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advancements.snbt"
-hash = "5580728781a920621990b3fcf16c5f77e8b0337245a5b17f82951c519e109f98"
+hash = "073f2d2c9d9cabaf9955f1a7e0b976159ef048847d4d63bb62242558aa2cc65f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
@@ -146,7 +150,7 @@ hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "6991409f47b44a87f45441f1c43955c65c09997b1b728751dfa65a0f9ad8e7cc"
+hash = "8c2157400c266099774e19c0678f89cdaf9bb99bf242031d7c3392bde98b5d58"
 
 [[files]]
 file = "config/sodium-extra-options.json"
@@ -286,7 +290,7 @@ metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "c3845a5fbb8959c5c6a56afe889f8c0e304daa7849bb8df8bb06fd8d1e06c51f"
+hash = "33b9561975cf0c471d79b8f8709807a3a8e8f9893e9bf53024bf29479015d1b8"
 metafile = true
 
 [[files]]
@@ -416,7 +420,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "d3cbfc74109c4ff70f7d61d559c7fee5d675762b9265174aaca5625b1629ec9c"
+hash = "3d586e00562d465d1b477fa287d5c070e62d6fe4e2a580f268960d6fedd55a3c"
 metafile = true
 
 [[files]]
