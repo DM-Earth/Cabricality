@@ -9,15 +9,15 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "Modrinth"
-        url = "https://api.modrinth.com/maven"
+        name "Modrinth"
+        url "https://api.modrinth.com/maven"
         content {
             includeGroup "maven.modrinth"
         }
     }
 
     maven {
-        name = "Curseforge"
+        name "Curseforge"
         url "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
@@ -25,28 +25,28 @@ repositories {
     }
 
     maven {
-        name = "Ladysnake Mods"
-        url = "https://ladysnake.jfrog.io/artifactory/mods"
+        name "Ladysnake Mods"
+        url "https://ladysnake.jfrog.io/artifactory/mods"
     }
 
-    maven { url = "https://mvn.devos.one/snapshots/" }
-    maven { url = "https://maven.parchmentmc.org" }
-    maven { url = "https://maven.fabricmc.net/" }
-    maven { url = "https://maven.tterrag.com/" }
-    maven { url = "https://storage.googleapis.com/devan-maven/" }
-    maven { url = "https://maven.shedaniel.me/" }
-    maven { url = "https://aperlambda.github.io/maven" }
-    maven { url = "https://maven.kotlindiscord.com/repository/terraformers/" }
-    maven { url = "https://mvn.devos.one/snapshots/" }
-    maven { url = "https://maven.terraformersmc.com/" }
-    maven { url = "https://maven.cafeteria.dev/releases/" }
-    maven { url = "https://jitpack.io/" } // JitPack
-    maven { url = "https://maven.gegy.dev" }
-    maven { url = "https://dvs1.progwml6.com/files/maven/" }
-    maven { url = "https://maven.wispforest.io" }
-    maven { url = "https://modmaven.dev" }
+    maven { url "https://mvn.devos.one/snapshots/" }
+    maven { url "https://maven.parchmentmc.org" }
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://maven.tterrag.com/" }
+    maven { url "https://storage.googleapis.com/devan-maven/" }
+    maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://aperlambda.github.io/maven" }
+    maven { url "https://maven.kotlindiscord.com/repository/terraformers/" }
+    maven { url "https://mvn.devos.one/snapshots/" }
+    maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://maven.cafeteria.dev/releases/" }
+    maven { url "https://jitpack.io/" } // JitPack
+    maven { url "https://maven.gegy.dev" }
+    maven { url "https://dvs1.progwml6.com/files/maven/" }
+    maven { url "https://maven.wispforest.io" }
+    maven { url "https://modmaven.dev" }
     maven {
-        url = "https://maven.jamieswhiteshirt.com/libs-release"
+        url "https://maven.jamieswhiteshirt.com/libs-release"
         content {
             includeGroup("com.jamieswhiteshirt")
         }
@@ -65,7 +65,6 @@ dependencies {
     modImplementation ("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}") {
         exclude group:"com.github.AlphaMode"
     }
-    implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
 
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
@@ -92,6 +91,8 @@ dependencies {
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
+    implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
+    implementation include("com.github.KrLite:Equator-Utils:${project.equator_utils_version}")
 
     // Develop
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
