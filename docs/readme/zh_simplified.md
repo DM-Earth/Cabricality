@@ -2,19 +2,19 @@
 <h4 align="center">
   <sup>
     为获得最佳游戏体验，请手动安装&ensp;
+    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
+      FTB Library ｜
+    </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
       FTB Quests ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
       FTB Teams |
     </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library ｜
-    </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
-      &ensp;Quests Additions
+      Quests Additions
     </a>
-    模组。
+    &ensp;模组。
   </sup>
   <br>
   </br>
