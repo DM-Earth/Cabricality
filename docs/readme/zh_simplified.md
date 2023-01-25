@@ -1,18 +1,18 @@
 
 <h4 align="center">
   <sup>
-    为获得最佳游戏体验，请手动安装
+    为获得最佳游戏体验，请手动安装&ensp;
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
-      FTB Quests |
+      FTB Quests ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
       FTB Teams |
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library |
+      FTB Library ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
-      Quests Additions
+      &ensp;Quests Additions
     </a>
     模组。
   </sup>
@@ -58,13 +58,11 @@
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
-    English
+    English ｜
   </a>
-  |
   简体中文
-  |
   <a href="zh_traditional.md">
-    繁體中文
+    ｜ 繁體中文
   </a>
 </h3>
 
