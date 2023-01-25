@@ -1,20 +1,20 @@
 
 <h4 align="center">
   <sup>
-    為獲得最佳遊戲體驗，請手動安裝
+    為獲得最佳遊戲體驗，請手動安裝&ensp;
+    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
+      FTB Library ｜
+    </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
-      FTB Quests |
+      FTB Quests ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
-      FTB Teams |
-    </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library |
+      FTB Teams ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
       Quests Additions
     </a>
-    模組。
+    &ensp;模組。
   </sup>
   <br>
   </br>
@@ -58,13 +58,11 @@
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
-    English
+    English ｜
   </a>
-  |
   <a href="zh_simplified.md">
-    简体中文
+    简体中文 ｜
   </a>
-  |
   繁體中文
 </h3>
 
@@ -90,11 +88,11 @@
 
 當你擁有足够的黃銅之後，就能够製造**交易站**了。為這精密的儀器通上電源，聽它轟鳴吧！放入`交易銘牌`和`職業銘牌`後，你就可以用手頭的錢幣交換一些罕見的資料了。當然，你也可以用材料**換回**錢幣！*噢，我的寶物啊！*
 
-當你需要生產`諧振終界`材料的時候，交易系統是必需品。這種異世界誕生的怪異材料為什麼會將銀幣融進自身是一個未解之謎...如果那時你還不是一名**煉金術士，**那麼交易就會成為獲取銀幣的唯一方式。
+當你需要生產`諧振終界`材料的時候，交易系統是必需品。這種異世界誕生的怪異材料為什麼會將銀幣融進自身是一個未解之謎...如果那時你還不是一名<b>煉金術士，</b>那麼交易就會成為獲取銀幣的唯一方式。
 
 ### 混沌煉金
 
-在煉金術士手中，珍稀材料從平平無奇的試劑瓶中破蛹而出。現在，你也可以做到！將原材料磨成粉末，摻進熔融玻璃中，能夠方便地生產罐裝試劑。在**煉金催化劑**的作用下攪拌、融合，**點石成金。**這就是魔法！
+在煉金術士手中，珍稀材料從平平無奇的試劑瓶中破蛹而出。現在，你也可以做到！將原材料磨成粉末，摻進熔融玻璃中，能夠方便地生產罐裝試劑。在**煉金催化劑**的作用下攪拌、融合，<b>點石成金。</b>這就是魔法！
 
 催化劑並不是什麼可以簡單製造的材料。要製造催化劑，首先你需要構築一個**煉金雷射發射器**結構，然後對著一些特定的試劑發射高能射線。運氣好的話，你就能得到一瓶催化劑。對於每個世界，催化劑配方都是不同的。所以打起精神來，永遠不要放棄嘗試！
 
@@ -108,7 +106,7 @@
 
 我們建議你根據實際情況對遊戲進行適當最佳化。
 
-**如果你想要更順滑流暢的FPS，**開啟垂直同步也許會有所幫助[^fps]。
+<b>如果你想要更順滑流暢的FPS，</b>開啟垂直同步也許會有所幫助[^fps]。
 
 [^fps]: 若遊戲鎖在30FPS，則請嘗試關閉垂直同步。
 
