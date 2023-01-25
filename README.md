@@ -50,9 +50,9 @@
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
 
-With **Cabricality,** you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
+With **Cabricality,** you can follow the quests and build your own factory along with **[Create](https://github.com/Fabricators-of-Create/Create)** and **[Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution).** From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
-> ***Cabricality** is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
+> ***Cabricality** is inspired by **[Create: Above and Beyond,](https://github.com/simibubi/Above-and-Beyond)** but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
 
 [^wiki]: Having problems? Feel free to check [Cabricality Wiki!](https://github.com/DM-Earth/Cabricality/wiki)
 
