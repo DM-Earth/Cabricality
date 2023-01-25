@@ -217,7 +217,7 @@ metafile = true
 
 [[files]]
 file = "mods/bounced.pw.toml"
-hash = "cc2b5f4ce443892f7ae278347fda034bdb33a4522917d08b5dd057fe1113b013"
+hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
 metafile = true
 
 [[files]]
@@ -291,7 +291,7 @@ metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "63338bf3aac6807f168c48726fd854b2e48c69d032ead97e885c82f878d355ca"
+hash = "183a52109463d74b4feac99770bfeb3c8759e7fa183271067097b742420fcd86"
 metafile = true
 
 [[files]]
