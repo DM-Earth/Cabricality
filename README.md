@@ -1,20 +1,20 @@
 
 <h4 align="center">
   <sup>
-    Please Install
+    Please Install&ensp;
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
-      FTB Quests |
+      FTB Quests ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
-      FTB Teams |
+      FTB Teams ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library |
+      FTB Library ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
       Quests Additions
     </a>
-    Manually!
+    &ensp;Manually!
   </sup>
   <br>
   </br>
@@ -54,17 +54,15 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 > *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
 
-[^wiki]: Feel free to check [Cabricality Wiki](https://github.com/DM-Earth/Cabricality/wiki) when you have any problems!
+[^wiki]: Having problems? Feel free to check [Cabricality Wiki!](https://github.com/DM-Earth/Cabricality/wiki)
 
 <h3 align="center">
   English
-  |
   <a href="docs/readme/zh_simplified.md">
-    简体中文
+    ｜ 简体中文
   </a>
-  |
   <a href="docs/readme/zh_traditional.md">
-    繁體中文
+    ｜ 繁體中文
   </a>
 </h3>
 
