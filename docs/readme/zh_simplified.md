@@ -134,7 +134,7 @@
 packwiz modrinth export
 ```
 
-> *更多信息请翻阅[packwiz wiki。](https://packwiz.infra.link)*
+> *更多信息请翻阅<b>[packwiz wiki。](https://packwiz.infra.link)</b>*
 
 ### 启动器支持
 
