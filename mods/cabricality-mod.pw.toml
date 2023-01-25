@@ -1,5 +1,5 @@
 name = "Cabricality"
-filename = "cabricality-0.2-beta5.jar"
+filename = "cabricality-0.2-beta7.jar"
 side = "both"
 
 [download]
@@ -10,4 +10,4 @@ hash = "7945fba48e60c86a91e048d08477fb754ae60188"
 [update]
 [update.modrinth]
 mod-id = "BHRmiEC5"
-version = "QIS3EF8u"
+version = "xhJN1Dkk"
