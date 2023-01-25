@@ -48,13 +48,13 @@
   永无止境：重缝
 </h1>
 
-**永无止境：重缝是一个以 *机械动力* 为中心的Minecraft整合包，依赖 *Quilt 1.18.2* 运行。**
+**永无止境：重缝是一个以*机械动力*为中心的Minecraft整合包，依赖*Quilt 1.18.2*运行。**
 
-在这里，你可以跟随任务的指引，通过**[机械动力](https://github.com/Fabricators-of-Create/Create)**和**[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)**模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
+在这里，你可以跟随任务的指引，通过<b>[机械动力](https://github.com/Fabricators-of-Create/Create)</b>和<b>[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)</b>模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
 
-> ***永无止境：重缝**在**[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)**的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
+> ***永无止境：重缝**在<b>[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)</b>的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
 
-[^wiki]: 随时欢迎翻阅**[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)**
+[^wiki]: 随时欢迎翻阅<b>[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)</b>
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
