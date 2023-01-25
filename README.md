@@ -134,7 +134,7 @@ Clone this repository and run the commands below:
 packwiz modrinth export
 ```
 
-> *For more information, see [packwiz wiki.](https://packwiz.infra.link)*
+> *For more information, see **[packwiz wiki.](https://packwiz.infra.link)***
 
 ### Supported Launchers
 
