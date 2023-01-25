@@ -20,7 +20,7 @@
 	"textures": {
 		"BackgroundTexture": "background.png",
 		"MojangLogo": "mojangstudios.png",
-		"Aspect1to1Logo": "mojank_disabled.png",
+		"Aspect1to1Logo": "mojank.png",
 		"BossBarTexture": "textures/gui/bars.png",
 		"CustomBarTexture": "progressbar.png",
 		"CustomBarBackgroundTexture": "progressbar_background.png"

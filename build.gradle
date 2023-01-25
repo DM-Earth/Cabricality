@@ -4,7 +4,7 @@ plugins {
 }
 
 archivesBaseName = project.archives_base_name
-version = project.version
+version = project.modpack_version
 group = project.maven_group
 
 repositories {
@@ -99,10 +99,10 @@ dependencies {
 }
 
 processResources {
-    inputs.property "version", version
+    inputs.property "modpack_version", version
 
     filesMatching("quilt.mod.json") {
-        expand "version": version
+        expand modpack_version: version
     }
 }
 

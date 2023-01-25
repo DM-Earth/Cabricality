@@ -53,10 +53,8 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final IdentifierSprite CABRICALITY_TITLE_TEXTURE = sprite("textures", "gui", "title",
-				"cabricality.png");
-		public static final IdentifierSprite MINECRAFT_SUBTITLE_TEXTURE = sprite("textures", "gui", "title",
-				"minecraft.png");
+		public static final IdentifierSprite CABRICALITY_TITLE_TEXTURE = sprite("gui", "title", "cabricality");
+		public static final IdentifierSprite MINECRAFT_SUBTITLE_TEXTURE = sprite("gui", "title", "minecraft");
 	}
 
 	public static class Sounds {

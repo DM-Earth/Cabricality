@@ -9,7 +9,7 @@
         "version": "1802.5.5"
       }
     ],
-    "version": "${version}",
+    "version": "${modpack_version}",
     "metadata": {
       "name": "Cabricality",
       "description": "A Create centered challengeable mod inspired by Create: Above and Beyond",

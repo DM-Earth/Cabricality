@@ -10,7 +10,7 @@ hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
 [[files]]
 file = "config/customsplashscreen.json5"
-hash = "34774866b59351d88c3dfac4b6c97cc05fb25dcafdfc7aa255a328aceaf1854d"
+hash = "0c4ebb39d1bcd398d6c2c7b42c9f2ac641741294e0efe96c6f30a86a7934b8fa"
 
 [[files]]
 file = "config/customsplashscreen/background.png"
@@ -23,10 +23,6 @@ hash = "27b2ea2946ca5b00841ce7d1813b42dfb7e36b12ad50c7c9bea09053ac226cf3"
 [[files]]
 file = "config/customsplashscreen/mojank.png"
 hash = "bb2080abef56e6ec5ab6bd4576e9e3dc7e15817410e02051553475f4cd3fcd8d"
-
-[[files]]
-file = "config/customsplashscreen/mojank_disabled.png"
-hash = "dc76c863350f4418b6c1788edab16a64822f345b9efdb2a6fc4b239b609cfb44"
 
 [[files]]
 file = "config/customsplashscreen/progressbar.png"
@@ -220,6 +216,11 @@ hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
 
 [[files]]
+file = "mods/bounced.pw.toml"
+hash = "cc2b5f4ce443892f7ae278347fda034bdb33a4522917d08b5dd057fe1113b013"
+metafile = true
+
+[[files]]
 file = "mods/brrp.pw.toml"
 hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
 metafile = true
@@ -290,7 +291,7 @@ metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "33b9561975cf0c471d79b8f8709807a3a8e8f9893e9bf53024bf29479015d1b8"
+hash = "63338bf3aac6807f168c48726fd854b2e48c69d032ead97e885c82f878d355ca"
 metafile = true
 
 [[files]]
