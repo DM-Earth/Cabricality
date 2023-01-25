@@ -52,7 +52,7 @@
 
 在這裡，你可以跟隨任務的指引，通過<b>[機械動力](https://github.com/Fabricators-of-Create/Create)</b>和<b>[工業革命](https://github.com/GabrielOlvH/Industrial-Revolution)</b>模組建造屬於自己的工廠！從山谷中徘徊走向空間站裡遨遊，科技發展的可能性由你决定！
 
-> ***永無止境：重縫**在[機械動力：永無止境](https://github.com/simibubi/Above-and-Beyond)的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
+> ***永無止境：重縫**在<b>[機械動力：永無止境](https://github.com/simibubi/Above-and-Beyond)</b>的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
 
 [^wiki]: 隨時歡迎翻閱<b>[永無止境：重縫 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)</b>
 
