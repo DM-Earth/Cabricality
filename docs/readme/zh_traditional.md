@@ -48,13 +48,13 @@
   永無止境：重縫
 </h1>
 
-**永無止境：重縫是一個以 *機械動力* 為中心的Minecraft模組包，依賴 *Quilt 1.18.2* 運行。**
+**永無止境：重縫是一個以*機械動力*為中心的Minecraft模組包，依賴*Quilt 1.18.2*運行。**
 
-在這裡，你可以跟隨任務的指引，通過[機械動力](https://github.com/Fabricators-of-Create/Create)和[工業革命](https://github.com/GabrielOlvH/Industrial-Revolution)模組建造屬於自己的工廠！從山谷中徘徊走向空間站裡遨遊，科技發展的可能性由你决定！
+在這裡，你可以跟隨任務的指引，通過<b>[機械動力](https://github.com/Fabricators-of-Create/Create)</b>和<b>[工業革命](https://github.com/GabrielOlvH/Industrial-Revolution)</b>模組建造屬於自己的工廠！從山谷中徘徊走向空間站裡遨遊，科技發展的可能性由你决定！
 
-> *此模組包在[機械動力：永無止境](https://github.com/simibubi/Above-and-Beyond)的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
+> ***永無止境：重縫**在[機械動力：永無止境](https://github.com/simibubi/Above-and-Beyond)的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
 
-[^wiki]: 隨時歡迎翻閱[永無止境：重縫 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)
+[^wiki]: 隨時歡迎翻閱<b>[永無止境：重縫 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)</b>
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
@@ -70,7 +70,7 @@
 
 ### 主線流程
 
-作為科技向模組包，永無止境：重縫以科技發展作為遊戲主線。在此之外，許多可選的有趣支線內容讓科技樹顯得更加花繁葉茂。
+作為科技向模組包，**永無止境：重縫**以科技發展作為遊戲主線。在此之外，許多可選的有趣支線內容讓科技樹顯得更加花繁葉茂。
 
 每個任務都經過了精心安排，且大部分都有著豐富的描述。別擔心！只要跟緊了它們，絕不會讓你原地打轉、踟蹰不前！
 
@@ -106,7 +106,7 @@
 
 我們建議你根據實際情況對遊戲進行適當最佳化。
 
-<b>如果你想要更順滑流暢的FPS，</b>開啟垂直同步也許會有所幫助[^fps]。
+<b>如果你想要更順滑流暢的<abbr title="帧每秒">FPS</abbr>，</b>開啟垂直同步也許會有所幫助[^fps]。
 
 [^fps]: 若遊戲鎖在30FPS，則請嘗試關閉垂直同步。
 
@@ -134,11 +134,11 @@
 packwiz modrinth export
 ```
 
-> *更多資訊請翻閱[packwiz wiki。](https://packwiz.infra.link)*
+> *更多資訊請翻閱<b>[packwiz wiki。](https://packwiz.infra.link)</b>*
 
 ### 啟動器支援
 
-你可以在任意支援**Modrinth整合包**和**Quilt**的啟動器中安裝並運行這個模組包，如[MultiMC、](https://multimcorg)[Prism Launcher](https://prismlauncher.org)和[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2]。
+你可以在任意支援**Modrinth整合包**和**Quilt**的啟動器中安裝並運行<b>永無止境：重縫，</b>如<b>[MultiMC、](https://multimcorg)</b><b>[Prism Launcher](https://prismlauncher.org)</b>和<b>[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2]。</b>
 
 [^pcl2]: **注意，[PCL2啟動器](https://github.com/Hex-Dragon/PCL2)不受支援。**
 
