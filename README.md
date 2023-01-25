@@ -138,7 +138,7 @@ packwiz modrinth export
 
 ### Supported Launchers
 
-We support almost all launchers that compatible with **Modrinth format pack** and **Quilt.** Such as **[MultiMC,](https://multimc.org)** **[Prism Launcher](https://prismlauncher.org)** and **[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2].**
+**Cabricality** is supporting any launcher that compatibles with **Modrinth format pack** and **Quilt.** Such as **[MultiMC,](https://multimc.org)** **[Prism Launcher](https://prismlauncher.org)** and **[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2].**
 
 [^pcl2]: **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
 
