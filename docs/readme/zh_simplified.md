@@ -50,11 +50,11 @@
 
 **永无止境：重缝是一个以 *机械动力* 为中心的Minecraft整合包，依赖 *Quilt 1.18.2* 运行。**
 
-在这里，你可以跟随任务的指引，通过[机械动力](https://github.com/Fabricators-of-Create/Create)和[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
+在这里，你可以跟随任务的指引，通过**[机械动力](https://github.com/Fabricators-of-Create/Create)**和**[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)**模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
 
-> *此整合包在[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
+> ***永无止境：重缝**在**[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)**的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
 
-[^wiki]: 随时欢迎翻阅[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)
+[^wiki]: 随时欢迎翻阅**[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)**
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
@@ -70,7 +70,7 @@
 
 ### 主线流程
 
-作为科技向整合包，永无止境：重缝以科技发展作为游戏主线。在此之外，许多可选的有趣支线内容让科技树显得更加花繁叶茂。
+作为科技向整合包，**永无止境：重缝**以科技发展作为游戏主线。在此之外，许多可选的有趣支线内容让科技树显得更加花繁叶茂。
 
 每个任务都经过了精心安排，且大部分都有着丰富的描述。别担心！只要跟紧了它们，绝不会让你原地打转、踟蹰不前！
 
@@ -106,7 +106,7 @@
 
 我们建议你根据实际情况对游戏进行适当优化。
 
-<b>如果你想要更顺滑流畅的FPS（帧每秒），</b>开启垂直同步也许会有所帮助[^fps]。
+<b>如果你想要更顺滑流畅的<abbr title="帧每秒">FPS</abbr>，</b>开启垂直同步也许会有所帮助[^fps]。
 
 [^fps]: 若游戏锁在30FPS，则请尝试关闭垂直同步。
 
