@@ -138,7 +138,7 @@ packwiz modrinth export
 
 ### 启动器支持
 
-你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行这个整合包，如[MultiMC、](https://multimcorg)[Prism Launcher](https://prismlauncher.org)和[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2]。
+你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行<b>永无止境：重缝，</b>如<b>[MultiMC、](https://multimcorg)</b><b>[Prism Launcher](https://prismlauncher.org)</b>和<b>[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2]。</b>
 
 [^pcl2]: **注意，[PCL2启动器](https://github.com/Hex-Dragon/PCL2)不受支持。**
 
