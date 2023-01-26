@@ -211,6 +211,11 @@ hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
 metafile = true
 
 [[files]]
+file = "mods/better-combat.pw.toml"
+hash = "0f8b611bca879a67417762a2d2d6a6880cef2816b0797cabda4fc7255819b0d5"
+metafile = true
+
+[[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
@@ -407,6 +412,11 @@ metafile = true
 [[files]]
 file = "mods/ok-zoomer.pw.toml"
 hash = "d240a40073a8ae5c5f56b4c3cde5d78951ca71dc5b8279f0405f346a537659b7"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "bc64c339008a7663bac57ad2f5ab24c3d71f83070359b6f9a82efee15d0f0c26"
 metafile = true
 
 [[files]]
