@@ -296,7 +296,7 @@ metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "183a52109463d74b4feac99770bfeb3c8759e7fa183271067097b742420fcd86"
+hash = "a4fc2e1dbaebcb472a18667b6a24f0790de24525f4da3d30d4ac30028fe358aa"
 metafile = true
 
 [[files]]
