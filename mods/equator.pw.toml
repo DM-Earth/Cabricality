@@ -5,7 +5,7 @@ side = "client"
 [download]
 url = "https://cdn.modrinth.com/data/XUTlQITd/versions/SvqE7RHn/equator-lib-1.18.2-1.17.jar"
 hash-format = "sha1"
-hash = "3cad3b2b43b6ca5c19676051a7c42bc6743ee761"
+hash = "8a8ba587251514d9a51dc0a3833886b24899cf4c"
 
 [update]
 [update.modrinth]
