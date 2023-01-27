@@ -1,13 +1,13 @@
 name = "Equator Lib"
-filename = "equator-lib-1.18.2-1.16.jar"
+filename = "equator-lib-1.18.2-1.17.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/XUTlQITd/versions/TohG3khP/equator-lib-1.18.2-1.16.jar"
+url = "https://cdn.modrinth.com/data/XUTlQITd/versions/SvqE7RHn/equator-lib-1.18.2-1.17.jar"
 hash-format = "sha1"
-hash = "bf9f1b4f41ab6541fc7a69d305b8284dfde61ee4"
+hash = "3cad3b2b43b6ca5c19676051a7c42bc6743ee761"
 
 [update]
 [update.modrinth]
 mod-id = "XUTlQITd"
-version = "TohG3khP"
+version = "SvqE7RHn"
