@@ -92,7 +92,7 @@ dependencies {
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
     implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
-    implementation include("com.github.KrLite:Equator-Utils:${project.equator_utils_version}")
+    implementation include("com.github.KrLite:Equator-Utils:${project.eu_version}")
 
     // Develop
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
