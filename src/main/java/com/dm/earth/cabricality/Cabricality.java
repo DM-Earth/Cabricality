@@ -40,6 +40,8 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Cabricality implements ModInitializer {
 	public static class Colors {
 		public static final PreciseColor CABF_PURPLE = PreciseColor.of(0x6117DE);
@@ -81,6 +83,8 @@ public class Cabricality implements ModInitializer {
 	public static final IdentifierBuilder.Specified ID_BUILDER = new IdentifierBuilder.Specified(ID);
 	public static final CabfConfig CONFIG = new CabfConfig(
 			QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
+
+	public static final AtomicInteger IR_TOOL_MODIFY_INDEX = new AtomicInteger(0);
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {

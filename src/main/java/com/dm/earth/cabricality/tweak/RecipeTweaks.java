@@ -10,7 +10,12 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
+import com.simibubi.create.AllRecipeTypes;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.recipe.RecipeType;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
@@ -261,6 +266,10 @@ public class RecipeTweaks
 		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
 				type -> handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AD.asItem(material + "_" + type)))));
+
+		// AE2
+		handler.removeIf(r -> r.getType().equals(RecipeType.CRAFTING) && notCabf(r) && r.getOutput().isOf(AE2.asItem("certus_crystal_seed")));
+		handler.removeIf(r -> r.getType().equals(AllRecipeTypes.MILLING.getType()) && notCabf(r) && !contains(r, AE2.asIngredient("certus_quartz_crystal")));
 	}
 
 	public static boolean notCabf(Identifier id) {

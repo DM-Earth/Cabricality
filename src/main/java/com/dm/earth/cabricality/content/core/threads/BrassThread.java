@@ -6,6 +6,8 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
+import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -56,11 +58,9 @@ public class BrassThread implements TechThread {
 						.ingredient(redstone).ingredient(redstone).ingredient(redstone)
 						.build(id, ""));
 
-		registerCrystalProcess(handler, AE2.id("certus_quartz_crystal"),
-				AE2.id("certus_crystal_seed"), AE2.id("certus_quartz_dust"), MC.id("water"));
+		registerCrystalProcess(handler, AE2.asItem("certus_quartz_crystal"), AE2.asItem("certus_crystal_seed"), AE2.asItem("certus_quartz_dust"));
 
-		registerCrystalProcess(handler, AE2.id("fluix_crystal"), AE2.id("fluix_crystal_seed"),
-				AE2.id("fluix_dust"), CABF.id("waste"));
+		registerCrystalProcess(handler, AE2.asItem("fluix_crystal"), AE2.asItem("fluix_crystal_seed"), AE2.asItem("fluix_dust"));
 
 		handler.register(recipeId("mixing", "sky_stone"), id -> new MixingRecipe(new FreePRP(id)
 				.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
@@ -98,22 +98,17 @@ public class BrassThread implements TechThread {
 						CR.asItem("precision_mechanism"), CABF.asItem("brass_machine"), 1));
 	}
 
-	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler,
-			Identifier crystal, Identifier seed, Identifier dust, Identifier fluid) {
-		Item crystalItem = Registry.ITEM.get(crystal);
-		Item seedItem = Registry.ITEM.get(seed);
-		Item dustItem = Registry.ITEM.get(dust);
-
-		handler.register(recipeId("milling", crystal.getPath()),
+	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
+		handler.register(recipeId("milling", crystal.getRegistryName().getPath()),
 				id -> new MillingRecipe(
-						new FreePRP(id).setIngredient(Ingredient.ofItems(crystalItem))
-								.setResult(new ProcessingOutput(dustItem.getDefaultStack(), 1))
+						new FreePRP(id).setIngredient(Ingredient.ofItems(crystal))
+								.setResult(new ProcessingOutput(dust.getDefaultStack(), 1))
 								.setProcessingTime(200)));
 
-		handler.register(recipeId("mechanical_crafting", seed.getPath()),
+		handler.register(recipeId("mechanical_crafting", seed.getRegistryName().getPath()),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
-						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystalItem)
-								.output(seedItem.getDefaultStack()).build(id, ""),
+						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystal)
+								.output(new ItemStack(seed, 2)).build(id, ""),
 						false));
 	}
 
