@@ -32,7 +32,7 @@ public class Log4jHandler {
 	}
 
 	@Mixin(Waila.class)
-	static class WailaLogger {
+	static class WthitLogger {
 		@Mutable
 		@Shadow(remap = false)
 		@Final

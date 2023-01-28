@@ -462,8 +462,14 @@
   "config.cabricality.general.background_blur"        : "背景模糊",
   "config.cabricality.general.background_blur.tooltip": "§7是否啟用背景模糊效果",
 
+  "config.cabricality.general.background_blur_darken"        : "背景模糊時降低亮度",
+  "config.cabricality.general.background_blur_darken.tooltip": "§7是否在背景模糊時降低亮度",
+
   "config.cabricality.general.background_blur_radius"        : "背景模糊半徑",
   "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半徑大小（像素）",
+
+  "config.cabricality.general.transparent_wthit_tooltip"        : "透明WTHIT提示框",
+  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7是否使WTHIT提示框透明",
 
   "config.cabricality.category.debug": "調試",
 

@@ -111,11 +111,13 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 
-	@Override
-	public void onInitialize(ModContainer mod) {
+	static {
 		CONFIG.load();
 		CONFIG.save();
+	}
 
+	@Override
+	public void onInitialize(ModContainer mod) {
 		CabfModConflict.checkAndExit();
 
 		LOGGER.info("Initializing " + NAME + "... 📦");

@@ -9,7 +9,6 @@ import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import com.dm.earth.cabricality.util.func.CabfBlur;
-import net.krlite.equator.color.PreciseColor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
@@ -29,9 +28,6 @@ public class ScreenAnimator {
 			at = @At(value = "INVOKE",
 					target = "Lnet/minecraft/client/gui/screen/Screen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"))
 	private void renderBackground(Args args) {
-		float lerp = (float) Math.pow(CabfBlur.INSTANCE.getProgress(), 1 / 3.0);
-		PreciseColor first = PreciseColor.of(0xC0101010L), second = PreciseColor.of(0xD0101010L);
-		args.set(5, first.withOpacity(first.getAlpha() * lerp).toColor().getRGB());
-		args.set(6, second.withOpacity(second.getAlpha() * lerp).toColor().getRGB());
+		CabfBlur.blurBackground(args, 5, 6);
 	}
 }

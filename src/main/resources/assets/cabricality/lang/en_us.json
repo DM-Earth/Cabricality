@@ -465,8 +465,14 @@
   "config.cabricality.general.background_blur"        : "Background Blur",
   "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
 
+  "config.cabricality.general.background_blur_darken"        : "Background Blur Darken",
+  "config.cabricality.general.background_blur_darken.tooltip": "§7Whether to darken the background of the GUIs when blurring",
+
   "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
   "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
+
+  "config.cabricality.general.transparent_wthit_tooltip"        : "Transparent Waila Tooltip",
+  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7Whether to make Waila's tooltip transparent",
 
   "config.cabricality.category.debug": "Debug",
 

@@ -60,11 +60,7 @@ public class OreProcessingTweaks {
 									Ingredient.ofItems(entry.getCrushedOreItem()))
 									.setResult(new ProcessingOutput(new ItemStack(
 											entry.getDustItem(), 3), 1),
-											new ProcessingOutput(
-													new ItemStack(entry
-															.getDustItem(),
-															3),
-													0.5F))
+											new ProcessingOutput(new ItemStack(entry.getDustItem(), 3), 0.5F))
 									.setProcessingTime(200)));
 			// Dust -> Nugget
 			handler.register(createId(entry, entry.getNugget(), "smelting"),

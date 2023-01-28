@@ -8,6 +8,7 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import net.minecraft.fluid.Fluid;
@@ -137,10 +138,7 @@ public enum OreProcessingEntry {
 	}
 
 	public static OreProcessingEntry get(Identifier id) {
-		for (OreProcessingEntry entry : values())
-			if (entry.getId().equals(id))
-				return entry;
-		return null;
+		return Arrays.stream(values()).filter(entry -> entry.getId().equals(id)).findFirst().orElse(null);
 	}
 
 	public void check() {
@@ -170,7 +168,6 @@ public enum OreProcessingEntry {
 	}
 
 	public static void checkAll() {
-		for (OreProcessingEntry entry : OreProcessingEntry.values())
-			entry.check();
+		Arrays.stream(values()).forEach(OreProcessingEntry::check);
 	}
 }
