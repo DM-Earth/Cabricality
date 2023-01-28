@@ -211,11 +211,6 @@ hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
 metafile = true
 
 [[files]]
-file = "mods/better-combat.pw.toml"
-hash = "0f8b611bca879a67417762a2d2d6a6880cef2816b0797cabda4fc7255819b0d5"
-metafile = true
-
-[[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
@@ -262,6 +257,11 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
+metafile = true
+
+[[files]]
+file = "mods/conveniented-forge-tags.pw.toml"
+hash = "0b9a0d9c612d052f45128dc4f37aaed1eafe714dae869899931a565a4a780944"
 metafile = true
 
 [[files]]
@@ -345,11 +345,6 @@ hash = "4260894fd18d9e593e8364a0ac3aab1ac7ba6b654010a928f05f12f1e1a83006"
 metafile = true
 
 [[files]]
-file = "mods/item-filters.pw.toml"
-hash = "5446a135421d4f9cc9c1f43fa7fdad58bd0eed4c2291a6f51eb03f1ec8fdc6bd"
-metafile = true
-
-[[files]]
 file = "mods/kibe.pw.toml"
 hash = "0fd789b8973507de511c9ab3931934b8f4536e912c1127a10f77a0a80add3684"
 metafile = true
@@ -412,11 +407,6 @@ metafile = true
 [[files]]
 file = "mods/ok-zoomer.pw.toml"
 hash = "d240a40073a8ae5c5f56b4c3cde5d78951ca71dc5b8279f0405f346a537659b7"
-metafile = true
-
-[[files]]
-file = "mods/playeranimator.pw.toml"
-hash = "bc64c339008a7663bac57ad2f5ab24c3d71f83070359b6f9a82efee15d0f0c26"
 metafile = true
 
 [[files]]
