@@ -3,9 +3,9 @@ filename = "cabricality-0.2-beta7.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/BHRmiEC5/versions/QIS3EF8u/cabricality-0.2-beta5.jar"
+url = "https://cdn.modrinth.com/data/BHRmiEC5/versions/xhJN1Dkk/cabricality-0.2-beta7.jar"
 hash-format = "sha1"
-hash = "7945fba48e60c86a91e048d08477fb754ae60188"
+hash = "7bf8cd46efa847f6b3f4bf5225b9a81a2a698a31"
 
 [update]
 [update.modrinth]
