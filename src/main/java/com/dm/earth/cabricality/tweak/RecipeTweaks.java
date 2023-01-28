@@ -10,12 +10,7 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
-import com.simibubi.create.AllRecipeTypes;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeType;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
@@ -29,6 +24,7 @@ import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
+import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
@@ -45,6 +41,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeManager;
+import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.tag.TagKey;
@@ -268,8 +265,10 @@ public class RecipeTweaks
 				type -> handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AD.asItem(material + "_" + type)))));
 
 		// AE2
-		handler.removeIf(r -> r.getType().equals(RecipeType.CRAFTING) && notCabf(r) && r.getOutput().isOf(AE2.asItem("certus_crystal_seed")));
-		handler.removeIf(r -> r.getType().equals(AllRecipeTypes.MILLING.getType()) && notCabf(r) && !contains(r, AE2.asIngredient("certus_quartz_crystal")));
+		handler.removeIf(r -> r.getType().equals(RecipeType.CRAFTING) && notCabf(r)
+				&& r.getOutput().isOf(AE2.asItem("certus_crystal_seed")));
+		handler.removeIf(r -> r.getType().equals(AllRecipeTypes.MILLING.getType()) && notCabf(r)
+				&& !contains(r, AE2.asIngredient("certus_quartz_crystal")));
 	}
 
 	public static boolean notCabf(Identifier id) {

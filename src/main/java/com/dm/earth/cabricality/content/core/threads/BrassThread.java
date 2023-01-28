@@ -7,34 +7,35 @@ import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
-import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
+import com.dm.earth.cabricality.math.ListUtil;
+import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.math.ListUtil;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 @SuppressWarnings("UnstableApiUsage")
 public class BrassThread implements TechThread {
@@ -58,9 +59,11 @@ public class BrassThread implements TechThread {
 						.ingredient(redstone).ingredient(redstone).ingredient(redstone)
 						.build(id, ""));
 
-		registerCrystalProcess(handler, AE2.asItem("certus_quartz_crystal"), AE2.asItem("certus_crystal_seed"), AE2.asItem("certus_quartz_dust"));
+		registerCrystalProcess(handler, AE2.asItem("certus_quartz_crystal"), AE2.asItem("certus_crystal_seed"),
+				AE2.asItem("certus_quartz_dust"));
 
-		registerCrystalProcess(handler, AE2.asItem("fluix_crystal"), AE2.asItem("fluix_crystal_seed"), AE2.asItem("fluix_dust"));
+		registerCrystalProcess(handler, AE2.asItem("fluix_crystal"), AE2.asItem("fluix_crystal_seed"),
+				AE2.asItem("fluix_dust"));
 
 		handler.register(recipeId("mixing", "sky_stone"), id -> new MixingRecipe(new FreePRP(id)
 				.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
