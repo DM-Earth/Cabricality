@@ -2,41 +2,13 @@ package com.dm.earth.cabricality.tweak;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.TechThread;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
-import com.github.alexnijjar.ad_astra.registry.ModItems;
-import com.github.reoseah.catwalksinc.CIncItems;
 import com.google.common.collect.ImmutableList;
-import static com.dm.earth.cabricality.ModEntry.AD;
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.C;
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IR;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.TC;
-
-import java.util.Arrays;
-
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.core.TechThread;
-import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
-import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
-import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
-import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
-import com.simibubi.create.AllItems;
-import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
@@ -44,15 +16,11 @@ import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import me.alphamode.forgetags.Tags;
 import me.steven.indrev.recipes.machines.CompressorRecipe;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
-import me.steven.indrev.registry.IRItemRegistry;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeManager;
@@ -69,7 +37,16 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.AD;
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.BC;
+import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CI;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(

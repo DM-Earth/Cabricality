@@ -4,13 +4,9 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.util.debug.CabfDebugger;
 import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
-import com.github.alexnijjar.ad_astra.registry.ModItems;
-import com.github.reoseah.catwalksinc.CIncItems;
+import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.google.common.collect.ImmutableList;
-import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
 import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
@@ -18,7 +14,6 @@ import me.shedaniel.rei.api.common.entry.EntryStack;
 import me.shedaniel.rei.api.common.entry.type.EntryType;
 import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
-import me.steven.indrev.registry.IRItemRegistry;
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.tag.TagKey;
@@ -32,7 +27,21 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.AD;
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CC;
+import static com.dm.earth.cabricality.ModEntry.CI;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.FD;
+import static com.dm.earth.cabricality.ModEntry.IF;
+import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.KB;
+import static com.dm.earth.cabricality.ModEntry.LED;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.PM;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 @SuppressWarnings("UnstableApiUsage")
 public class CabfREIClientPlugin implements REIClientPlugin {
@@ -451,11 +460,12 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				ModEntry.CABF.asItem("gold_coin_top"), ModEntry.CABF.asItem("gold_coin_bottom"),
 				ModEntry.CABF.asItem("silver_coin_top"), ModEntry.CABF.asItem("silver_coin_bottom"))));
 
-		// Indrev's toxic tools
+		// Indrev
 		{
 			final String[] POSTFIX = { "pickaxe", "axe", "shovel", "hoe", "sword" };
 			Arrays.stream(new String[]{ "tin", "copper", "steel", "bronze", "lead", "silver" }).forEach(
 					prefix -> Arrays.stream(POSTFIX).forEach(postfix -> rule.hide(EntryIngredients.of(IR.asItem(joinAll(prefix, postfix))))));
 		}
+		rule.hide(EntryIngredients.of(IR.asItem("fan")));
 	}
 }
