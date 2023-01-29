@@ -1,11 +1,12 @@
 package com.dm.earth.cabricality.plugin;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import com.dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import org.objectweb.asm.tree.ClassNode;
+import org.quiltmc.loader.api.QuiltLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import com.dm.earth.cabricality.Cabricality;
@@ -23,9 +24,10 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 		AtomicBoolean ret = new AtomicBoolean(true);
-		CabfModDeps.stream().filter(d -> !d.isRequired()).forEach(dep -> {
-			if (targetClassName.matches(".*\\." + dep.getModId() + "\\..*"))
-				ret.set(dep.isLoaded());
+		String[] modIds = {"ftbquests", "ftblibrary"};
+		Arrays.stream(modIds).forEach(id -> {
+			if (targetClassName.matches(".*\\." + id + "\\..*"))
+				ret.set(QuiltLoader.isModLoaded(id));
 		});
 		if (mixinClassName.matches(".*\\.log\\..*"))
 			return Cabricality.CONFIG.cleanerLog;

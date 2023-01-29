@@ -207,54 +207,6 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 	@Override
 	public void modifyRecipes(ModifyRecipesCallback.RecipeHandler handler) {
 		TechThread.THREADS.forEach(thread -> thread.modifyRecipes(handler));
-
-		handler.getRecipes().values().stream().flatMap(m -> m.values().stream())
-				.forEach(recipe -> {
-					// Ad Astra!
-					if (recipe instanceof CompressingRecipe) {
-						if (AD.predicateOutput("iron_plate").test(recipe))
-							handler.replace(new CompressingRecipe(
-									recipe.getId(), ((CompressingRecipe) recipe).getInputIngredient(),
-									CR.asStack("iron_sheet"), (short) 200));
-						if (AD.predicateOutput("compressed_steel").test(recipe))
-							handler.replace(new CompressingRecipe(
-									recipe.getId(), ((CompressingRecipe) recipe).getInputIngredient(),
-									IR.asStack("steel_plate"), (short) 200));
-					}
-
-					if (recipe instanceof ShapelessRecipe) {
-						if (AD.predicateOutput("iron_plate").test(recipe))
-							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
-									CR.asStack("iron_sheet")));
-					}
-
-					// Indrev
-					if (recipe instanceof CompressorRecipe) {
-						if (IR.predicateOutput("gold_plate").test(recipe))
-							handler.replace(new CompressorRecipe(
-									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[]{new OutputEntry(CR.asStack("golden_sheet"), 1)}, 400));
-						if (IR.predicateOutput("iron_plate").test(recipe))
-							handler.replace(new CompressorRecipe(
-									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[]{new OutputEntry(CR.asStack("iron_sheet"), 1)}, 400));
-						if (IR.predicateOutput("copper_plate").test(recipe))
-							handler.replace(new CompressorRecipe(
-									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[]{new OutputEntry(CR.asStack("copper_sheet"), 1)}, 400));
-					}
-					if (recipe instanceof ShapelessRecipe) {
-						if (IR.predicateOutput("gold_plate").test(recipe))
-							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
-									CR.asStack("golden_sheet")));
-						if (IR.predicateOutput("iron_plate").test(recipe))
-							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
-									CR.asStack("iron_sheet")));
-						if (IR.predicateOutput("copper_plate").test(recipe))
-							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
-									CR.asStack("copper_sheet")));
-					}
-				});
 	}
 
 	@Override

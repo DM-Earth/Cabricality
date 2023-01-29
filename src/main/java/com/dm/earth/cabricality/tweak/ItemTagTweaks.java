@@ -1,7 +1,8 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.*;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
+import com.dm.earth.cabricality.tweak.base.TagUnifyEntry;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
@@ -19,6 +20,15 @@ public class ItemTagTweaks
 	public static void load() {
 		LoadTagsCallback.ITEM.register(INSTANCE);
 		ResourceConditionCheckTagCallback.ITEM.register(INSTANCE);
+		unifyTags();
+	}
+
+	private static void unifyTags() {
+		TagUnifyEntry.register(C.id("iron_plates"), CR.asItem("iron_sheet"));
+		TagUnifyEntry.register(C.id("gold_plates"), CR.asItem("gold_sheet"));
+		TagUnifyEntry.register(C.id("copper_plates"), CR.asItem("copper_sheet"));
+		TagUnifyEntry.register(C.id("steel_ingots"), IR.asItem("steel_ingot"));
+		TagUnifyEntry.register(C.id("steel_plates"), IR.asItem("steel_plate"));
 	}
 
 	@Override
