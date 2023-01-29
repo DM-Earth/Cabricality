@@ -466,6 +466,5 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 			Arrays.stream(new String[]{ "tin", "copper", "steel", "bronze", "lead", "silver" }).forEach(
 					prefix -> Arrays.stream(POSTFIX).forEach(postfix -> rule.hide(EntryIngredients.of(IR.asItem(joinAll(prefix, postfix))))));
 		}
-		rule.hide(EntryIngredients.of(IR.asItem("fan")));
 	}
 }
