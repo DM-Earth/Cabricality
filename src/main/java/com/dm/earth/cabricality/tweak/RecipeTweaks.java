@@ -1,6 +1,13 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.AD;
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 import java.util.Arrays;
 
@@ -17,6 +24,7 @@ import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
+import com.simibubi.create.AllItems;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
@@ -265,8 +273,11 @@ public class RecipeTweaks
 				&& !contains(r, AE2.asIngredient("certus_quartz_crystal")));
 
 		// Indrev's toxic tools
-		handler.removeIf(r -> notCabf(r) && r.getOutput().getItem().getRegistryName().getPath()
-													.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
+		handler.removeIf(r -> r.getId().getNamespace().equals(IR.getModId())
+				&& Registry.ITEM.getId(r.getOutput().getItem()).getPath()
+						.matches(".*_(pickaxe|axe|shovel|hoe|sword|helmet|chestplate|leggings|boots)$"));
+
+		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AllItems.PROPELLER.get()));
 	}
 
 	public static boolean notCabf(Identifier id) {
