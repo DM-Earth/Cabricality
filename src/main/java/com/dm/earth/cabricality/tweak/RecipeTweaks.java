@@ -9,6 +9,7 @@ import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
 import com.google.common.collect.ImmutableList;
+import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
@@ -57,7 +58,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			AD.asItem("hammer"), IR.asItem("hammer"),
 
 			// Indrev
-			IR.asItem("gold_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate"),
+			IR.asItem("gold_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate"), IR.asItem("fan"),
 
 			// Ad Astra
 			AD.asItem("compressed_steel"), AD.asItem("iron_plate")
@@ -280,6 +281,10 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
 				type -> handler.removeIf(AD.predicateOutput(material + "_" + type))));
+
+		// AE2
+		handler.removeIf(AllRecipeTypes.MILLING.getType(), AE2.predicateOutput("certus_quartz_dust").and(
+				AE2.predicateIngredient("certus_quartz_crystal").negate()));
 
 		// Indrev
 		handler.removeIf(r -> IR.checkContains(r) && r.getOutput().getItem().getRegistryName().getPath()
