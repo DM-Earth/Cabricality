@@ -1,10 +1,9 @@
 package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.client.screen.CabfCreditsScreen;
+import com.dm.earth.cabricality.lib.util.ScreenUtil;
+import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
 
-import com.dm.earth.cabricality.util.ScreenUtil;
-
-import com.dm.earth.cabricality.util.debug.CabfLogger;
 import net.minecraft.client.MinecraftClient;
 
 import org.quiltmc.loader.api.minecraft.ClientOnly;

@@ -3,8 +3,8 @@ package com.dm.earth.cabricality.content.extractor;
 import org.jetbrains.annotations.Nullable;
 
 import com.dm.earth.cabricality.content.entries.CabfFluids;
-import com.dm.earth.cabricality.resource.ResourcedBlock;
-import com.dm.earth.cabricality.util.ItemStackUtil;
+import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
+import com.dm.earth.cabricality.lib.util.ItemStackUtil;
 
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;

@@ -7,7 +7,7 @@ import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.util.mod.CabfModDeps;
+import com.dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawableHelper;

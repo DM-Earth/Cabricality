@@ -1,7 +1,7 @@
 package com.dm.earth.cabricality.listener;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;

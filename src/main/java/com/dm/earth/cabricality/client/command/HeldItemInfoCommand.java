@@ -4,7 +4,7 @@ import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 import org.quiltmc.qsl.networking.api.client.ClientPlayNetworking;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.networking.CabfNetworking;
+import com.dm.earth.cabricality.network.CabfNetworking;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 

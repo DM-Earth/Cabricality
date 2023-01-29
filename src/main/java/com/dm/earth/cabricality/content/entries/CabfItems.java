@@ -20,7 +20,7 @@ import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.item.ProfessionCardItem;
 import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
-import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
+import com.dm.earth.cabricality.lib.resource.assets.gen.item.ItemModelGenerator;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
 import com.simibubi.create.AllTags.AllItemTags;

@@ -2,8 +2,8 @@ package com.dm.earth.cabricality.command;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.command.helper.BroadcastContent;
-import com.dm.earth.cabricality.util.debug.CabfDebugger;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
+import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
+import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;

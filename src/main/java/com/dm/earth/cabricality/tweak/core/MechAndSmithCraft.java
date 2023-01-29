@@ -3,6 +3,7 @@ package com.dm.earth.cabricality.tweak.core;
 import java.util.ArrayList;
 
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
@@ -10,7 +11,6 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

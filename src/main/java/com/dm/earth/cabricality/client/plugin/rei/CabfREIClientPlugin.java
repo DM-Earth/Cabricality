@@ -4,7 +4,7 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.util.debug.CabfDebugger;
+import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
 import com.github.alexnijjar.ad_astra.registry.ModItems;
 import com.github.reoseah.catwalksinc.CIncItems;
 import com.google.common.collect.ImmutableList;

@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.extractor;
 
-import static com.dm.earth.cabricality.util.debug.CabfDebugger.debug;
+import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
 
 import java.util.Arrays;
 import java.util.List;

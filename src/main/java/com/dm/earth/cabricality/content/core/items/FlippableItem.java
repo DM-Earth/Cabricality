@@ -4,7 +4,8 @@ import java.util.Random;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
+import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
+
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

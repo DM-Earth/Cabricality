@@ -1,7 +1,8 @@
 package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.util.PushUtil;
+import com.dm.earth.cabricality.lib.util.PushUtil;
+
 import dev.ftb.mods.ftblibrary.ui.BaseScreen;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.WidgetType;

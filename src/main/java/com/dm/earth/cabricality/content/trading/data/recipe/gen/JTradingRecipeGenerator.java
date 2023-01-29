@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.trading.data.recipe.gen;
 
-import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
+import static com.dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;

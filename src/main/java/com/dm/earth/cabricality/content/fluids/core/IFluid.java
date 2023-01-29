@@ -1,8 +1,9 @@
 package com.dm.earth.cabricality.content.fluids.core;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.resource.assets.gen.item.ItemModelGenerator;
 import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.lib.resource.assets.gen.item.ItemModelGenerator;
+
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
