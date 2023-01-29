@@ -30,14 +30,19 @@ public record TagUnifyEntry<T>(TagKey<T> tag, T instance) {
 
 		@Override
 		public @Nullable ItemStack processOutput(ItemStack stack) {
-			if (stack.isIn(entry.tag()) && !stack.isOf(entry.instance())) {
+			System.out.println("Triggered: " + stack);
+			if (isIn(stack.getItem(), entry.tag()) && !stack.isOf(entry.instance())) {
 				var retStack = new ItemStack(entry.instance(), stack.getCount());
-				retStack.setNbt(stack.getNbt());
+				System.out.println(stack + " is in " + entry.tag() + " and has been replaced by " + entry.instance());
 				return retStack;
 			}
 			return null;
 		}
 
+	}
+
+	private static boolean isIn(Item item, TagKey<Item> tag) {
+		return Registry.ITEM.getTag(tag).isPresent() && Registry.ITEM.getTag(tag).get().stream().anyMatch(h -> h.value() == item);
 	}
 
 }

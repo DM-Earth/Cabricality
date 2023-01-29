@@ -12,7 +12,7 @@ public class AbstractCookingRecipeMixin {
 
 	@ModifyVariable(method = "<init>", at = @At("HEAD"), argsOnly = true)
 	private static ItemStack modifyOutput(ItemStack itemStack) {
-		return ProcessItemOutputCallback.EVENT.invoker().processOutput(itemStack);
+		return ProcessItemOutputCallback.process(itemStack);
 	}
 
 }
