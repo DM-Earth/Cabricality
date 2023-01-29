@@ -1,7 +1,12 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
+import java.util.function.Predicate;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
+
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
@@ -13,11 +18,6 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.Arrays;
-import java.util.function.Predicate;
 
 public enum ModEntry {
 	// Abbreviations

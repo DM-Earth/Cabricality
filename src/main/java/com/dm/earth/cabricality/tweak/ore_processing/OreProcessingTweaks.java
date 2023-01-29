@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.tweak.ore_processing;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,15 +9,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
-import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
-
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.fan.SplashingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
