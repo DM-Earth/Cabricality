@@ -1,6 +1,8 @@
 package com.dm.earth.cabricality.lib.resource.data.core;
 
 import java.util.Optional;
+
+import com.dm.earth.cabricality.lib.resource.data.recipe.ProcessItemOutputCallback;
 import org.jetbrains.annotations.NotNull;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -25,13 +27,13 @@ public class TaggedItemOutput extends ItemOutput {
 	public @NotNull ItemStack get() {
 		Optional<HolderSet.NamedSet<Item>> set = Registry.ITEM.getTag(this.tagKey);
 		if (set.isPresent() && set.get().size() > 0) {
-			return new ItemStack(set.get().get(0).value(), this.count);
+			return ProcessItemOutputCallback.process(new ItemStack(set.get().get(0).value(), this.count));
 		}
 		return ItemStack.EMPTY;
 	}
 
 	@Override
-	public JsonElement serialize() {
+	public @NotNull JsonElement serialize() {
 		JsonObject json = new JsonObject();
 		json.addProperty("tag", this.tagKey.id().toString());
 		if (count != 1) {

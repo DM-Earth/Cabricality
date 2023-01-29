@@ -6,6 +6,8 @@ import org.quiltmc.qsl.base.api.event.EventAwareListener;
 
 import net.minecraft.item.ItemStack;
 
+import java.util.Objects;
+
 public interface ProcessItemOutputCallback extends EventAwareListener {
 
 	/**
@@ -18,7 +20,7 @@ public interface ProcessItemOutputCallback extends EventAwareListener {
 
 	Event<ProcessItemOutputCallback> EVENT = Event.create(ProcessItemOutputCallback.class,
 			listeners -> stack -> {
-				ItemStack ret = stack;
+				ItemStack ret = stack == null ? ItemStack.EMPTY : stack;
 				for (var listener : listeners) {
 					ItemStack r = listener.processOutput(ret);
 					if (r != null)
@@ -26,5 +28,9 @@ public interface ProcessItemOutputCallback extends EventAwareListener {
 				}
 				return ret;
 			});
+
+	static ItemStack process(ItemStack stack) {
+		return Objects.requireNonNull(EVENT.invoker().processOutput(stack));
+	}
 
 }
