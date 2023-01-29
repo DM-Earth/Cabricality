@@ -343,7 +343,7 @@
   "col.minecraft.tipped_arrows"     : "药箭",
   "col.minecraft.spawn_eggs"        : "刷怪蛋",
   "col.minecraft.glazed_terracottas": "带釉陶瓦",
-  "col.tconstruct.buckets"          : "流体桶",
+  "col.minecraft.buckets"           : "流体桶",
 
   "col.minecraft.lingering_potions": "滞留型药水",
   "col.minecraft.splash_potions"   : "喷溅型药水",

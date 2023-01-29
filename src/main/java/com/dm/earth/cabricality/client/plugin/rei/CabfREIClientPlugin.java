@@ -1,27 +1,5 @@
 package com.dm.earth.cabricality.client.plugin.rei;
 
-import static com.dm.earth.cabricality.ModEntry.AD;
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.C;
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.CC;
-import static com.dm.earth.cabricality.ModEntry.CI;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.FD;
-import static com.dm.earth.cabricality.ModEntry.IF;
-import static com.dm.earth.cabricality.ModEntry.IR;
-import static com.dm.earth.cabricality.ModEntry.KB;
-import static com.dm.earth.cabricality.ModEntry.LED;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.PM;
-import static com.dm.earth.cabricality.ModEntry.TC;
-
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
@@ -30,7 +8,6 @@ import com.dm.earth.cabricality.util.debug.CabfDebugger;
 import com.github.alexnijjar.ad_astra.registry.ModItems;
 import com.github.reoseah.catwalksinc.CIncItems;
 import com.google.common.collect.ImmutableList;
-
 import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
@@ -42,14 +19,23 @@ import me.shedaniel.rei.api.common.util.EntryIngredients;
 import me.steven.indrev.registry.IRItemRegistry;
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.tag.TagKey;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static com.dm.earth.cabricality.ModEntry.*;
+
 @SuppressWarnings("UnstableApiUsage")
 public class CabfREIClientPlugin implements REIClientPlugin {
 	/**
-	 * Registers a collapsible entry from the given {@link TagKey<Item>}.
+	 * Registers a collapsible entry from the given {@link TagKey}.
 	 *
 	 * @param registry The registry to register the entry to.
 	 * @param modEntry The mod entry to register the entry for.
@@ -355,20 +341,18 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 
 		// Buckets
 		registry.group(MC.id("buckets"),
-				col(MC.id("buckets")),
-				entryStack -> ((MC.checkContains(entryStack.getIdentifier()) ||
-						CABF.checkContains(entryStack.getIdentifier()) /* Also including CABF's buckets */ ||
-						TC.checkContains(entryStack.getIdentifier()) /* Also including TC's buckets */ ||
-						CR.checkContains(entryStack.getIdentifier()) /* Also including CR's buckets */ ||
-						IR.checkContains(entryStack.getIdentifier()) /* Also including IR's buckets */ ||
-						AD.checkContains(entryStack.getIdentifier()) /* Also including AD's buckets */ ) &&
-						entryStack.getIdentifier().getPath().endsWith("bucket") &&
-						!entryStack.getIdentifier().getPath().equals("potion_bucket")) /*
-																						 * Avoid including potion
-																						 * buckets
-																						 */ ||
-				// Also including KB's liquid xp bucket
-						entryStack.getIdentifier().equals(KB.id("liquid_xp_bucket")));
+				col(MC.id("buckets")), entryStack -> (
+						(MC.checkContains(entryStack.getIdentifier()) ||
+								 CABF.checkContains(entryStack.getIdentifier()) /* Also including CABF's buckets */ ||
+								 TC.checkContains(entryStack.getIdentifier()) /* Also including TC's buckets */ ||
+								 CR.checkContains(entryStack.getIdentifier()) /* Also including CR's buckets */ ||
+								 IR.checkContains(entryStack.getIdentifier()) /* Also including IR's buckets */ ||
+								 AD.checkContains(entryStack.getIdentifier()) /* Also including AD's buckets */ ) &&
+								entryStack.getIdentifier().getPath().endsWith("bucket") &&
+								// Avoid including potion buckets
+								!entryStack.getIdentifier().getPath().equals("potion_bucket")) /* Avoid including potion buckets */ ||
+															 // Also including KB's liquid xp bucket
+															 entryStack.getIdentifier().equals(KB.id("liquid_xp_bucket")));
 		// Potion buckets
 		registry.group(TC.id("buckets", "potion"),
 				col(TC.id("buckets", "potion")),
@@ -475,6 +459,14 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				Registry.ITEM.get(IR.id("copper_plate")),
 
 				// Ad Astra
-				ModItems.COMPRESSED_STEEL, ModItems.IRON_PLATE)));
+				ModItems.COMPRESSED_STEEL, ModItems.IRON_PLATE
+		)));
+
+		// Indrev's toxic tools
+		{
+			final String[] POSTFIX = { "pickaxe", "axe", "shovel", "hoe", "sword" };
+			Arrays.stream(new String[]{ "tin", "copper", "steel", "bronze", "lead", "silver" }).forEach(
+					prefix -> Arrays.stream(POSTFIX).forEach(postfix -> rule.hide(EntryIngredients.of(IR.asItem(joinAll(prefix, postfix))))));
+		}
 	}
 }

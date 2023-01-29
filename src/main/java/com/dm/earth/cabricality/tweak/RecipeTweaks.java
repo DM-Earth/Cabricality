@@ -1,13 +1,6 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.AD;
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.C;
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IR;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.TC;
+import static com.dm.earth.cabricality.ModEntry.*;
 
 import java.util.Arrays;
 
@@ -53,6 +46,7 @@ public class RecipeTweaks
 	private static final String[] AD_ASTRA_MATERIALS = { "steel", "desh", "ostrum", "calorite", "iron" };
 	private static final String[] AD_ASTRA_DECOR_TYPES = { "pillar", "plating" };
 
+	@SuppressWarnings("UnstableApiUsage")
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
 		TechThread.THREADS.forEach(thread -> thread.addRecipes(handler));
@@ -254,9 +248,9 @@ public class RecipeTweaks
 
 		// Remove wrenches except Create's and AE2's
 		handler.removeIf(r -> notCabf(r) &&
-				!Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("create") &&
-				!Registry.ITEM.getId(r.getOutput().getItem()).getNamespace().equals("ae2") &&
-				Registry.ITEM.getId(r.getOutput().getItem()).getPath().contains("wrench"));
+				!r.getOutput().getItem().getRegistryName().getNamespace().equals("create") &&
+				!r.getOutput().getItem().getRegistryName().getNamespace().equals("ae2") &&
+				r.getOutput().getItem().getRegistryName().getPath().contains("wrench"));
 
 		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
 
@@ -269,6 +263,10 @@ public class RecipeTweaks
 				&& r.getOutput().isOf(AE2.asItem("certus_crystal_seed")));
 		handler.removeIf(r -> r.getType().equals(AllRecipeTypes.MILLING.getType()) && notCabf(r)
 				&& !contains(r, AE2.asIngredient("certus_quartz_crystal")));
+
+		// Indrev's toxic tools
+		handler.removeIf(r -> notCabf(r) && r.getOutput().getItem().getRegistryName().getPath()
+													.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
 	}
 
 	public static boolean notCabf(Identifier id) {

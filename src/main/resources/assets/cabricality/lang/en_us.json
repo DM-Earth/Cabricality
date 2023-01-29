@@ -344,7 +344,7 @@
   "col.minecraft.tipped_arrows"     : "Tipped Arrows",
   "col.minecraft.spawn_eggs"        : "Spawn Eggs",
   "col.minecraft.glazed_terracottas": "Glazed Terracottas",
-  "col.tconstruct.buckets"          : "Fluid Buckets",
+  "col.minecraft.buckets"           : "Fluid Buckets",
 
   "col.minecraft.lingering_potions": "Lingering Potions",
   "col.minecraft.splash_potions"   : "Splash Potions",
