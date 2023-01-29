@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.mixin.farmersdelight;
+package com.dm.earth.cabricality.mixin.recipe.farmersdelight;
 
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,6 +15,7 @@ import net.minecraft.util.collection.DefaultedList;
 
 @Mixin(CuttingBoardRecipe.class)
 public class CuttingBoardRecipeMixin {
+
 	@Shadow
 	@Final
 	private DefaultedList<ChanceResult> resultList;
@@ -24,4 +25,5 @@ public class CuttingBoardRecipeMixin {
 		if (this.resultList.size() == 0)
 			cir.setReturnValue(ItemStack.EMPTY);
 	}
+
 }
