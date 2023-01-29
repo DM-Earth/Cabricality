@@ -255,6 +255,11 @@ file = "mods/cftags-0.1.2.jar"
 hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
 
 [[files]]
+file = "mods/cftags.pw.toml"
+hash = "accf40d3e1c13c7430eb947298056ee86cbb3d717addf362633e2ea92fdd2ba5"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
 metafile = true
@@ -472,11 +477,6 @@ metafile = true
 [[files]]
 file = "mods/terrestria.pw.toml"
 hash = "d7390d339169bff9b123b2bc86ca08de1ef10b2991a7923c657bb5bda755c164"
-metafile = true
-
-[[files]]
-file = "mods/tips.pw.toml"
-hash = "32829f6707e89329937a430f0d736e50925ebc78311ceb0acc3c147d4f7bf4de"
 metafile = true
 
 [[files]]

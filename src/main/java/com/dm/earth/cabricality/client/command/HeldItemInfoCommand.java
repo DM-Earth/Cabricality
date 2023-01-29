@@ -9,7 +9,6 @@ import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 
 import io.netty.buffer.Unpooled;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
@@ -34,9 +33,6 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 		// Broadcast
 		ClientPlayNetworking.send(CabfNetworking.HELD_ITEM_INFO,
 				new PacketByteBuf(Unpooled.buffer()).writeItemStack(stack));
-
-		// Show
-		MinecraftClient.getInstance().gameRenderer.showFloatingItem(stack);
 
 		// Heading
 		context.getSource().sendFeedback(stack.toHoverableText().shallowCopy().styled(style -> style.withItalic(true)

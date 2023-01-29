@@ -1,15 +1,14 @@
 package com.dm.earth.cabricality.mixin.client.wthit;
 
-import com.dm.earth.cabricality.Cabricality;
-import mcp.mobius.waila.gui.hud.TooltipRenderer;
-import net.minecraft.client.render.BufferBuilder;
-import net.minecraft.util.math.Matrix4f;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
-import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
+
+import com.dm.earth.cabricality.Cabricality;
+
+import mcp.mobius.waila.gui.hud.TooltipRenderer;
 
 @ClientOnly
 @Mixin(TooltipRenderer.class)
