@@ -16,7 +16,7 @@ public interface ProcessItemOutputCallback extends EventAwareListener {
 	@Nullable
 	ItemStack processOutput(ItemStack stack);
 
-	static final Event<ProcessItemOutputCallback> EVENT = Event.create(ProcessItemOutputCallback.class,
+	Event<ProcessItemOutputCallback> EVENT = Event.create(ProcessItemOutputCallback.class,
 			listeners -> stack -> {
 				ItemStack ret = stack;
 				for (var listener : listeners) {
