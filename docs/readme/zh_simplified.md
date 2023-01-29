@@ -1,20 +1,20 @@
 
 <h4 align="center">
   <sup>
-    为获得最佳游戏体验，请手动安装
+    为获得最佳游戏体验，请手动安装&ensp;
+    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
+      FTB Library ｜
+    </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
-      FTB Quests |
+      FTB Quests ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
       FTB Teams |
     </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library |
-    </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
       Quests Additions
     </a>
-    模组。
+    &ensp;模组。
   </sup>
   <br>
   </br>
@@ -48,23 +48,21 @@
   永无止境：重缝
 </h1>
 
-**永无止境：重缝是一个以 *机械动力* 为中心的Minecraft整合包，依赖 *Quilt 1.18.2* 运行。**
+**永无止境：重缝是一个以*机械动力*为中心的Minecraft整合包，依赖*Quilt 1.18.2*运行。**
 
-在这里，你可以跟随任务的指引，通过[机械动力](https://github.com/Fabricators-of-Create/Create)和[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
+在这里，你可以跟随任务的指引，通过<b>[机械动力](https://github.com/Fabricators-of-Create/Create)</b>和<b>[工业革命](https://github.com/GabrielOlvH/Industrial-Revolution)</b>模组建造属于自己的工厂！从山谷中徘徊走向空间站里遨游，技术发展的可能性由你决定！
 
-> *此整合包在[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
+> ***永无止境：重缝**在<b>[机械动力：永无止境](https://github.com/simibubi/Above-and-Beyond)</b>的启发下，重新设计并实现了全部的游戏流程。我们欢迎每一个挑战者，并发自内心地希望你们徜徉在Minecraft的游戏世界中[^wiki]！*
 
-[^wiki]: 随时欢迎翻阅[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)
+[^wiki]: 随时欢迎翻阅<b>[永无止境：重缝 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)</b>
 
 <h3 align="center">
   <a href="https://github.com/DM-Earth/Cabricality">
-    English
+    English ｜
   </a>
-  |
   简体中文
-  |
   <a href="zh_traditional.md">
-    繁體中文
+    ｜ 繁體中文
   </a>
 </h3>
 
@@ -72,7 +70,7 @@
 
 ### 主线流程
 
-作为科技向整合包，永无止境：重缝以科技发展作为游戏主线。在此之外，许多可选的有趣支线内容让科技树显得更加花繁叶茂。
+作为科技向整合包，**永无止境：重缝**以科技发展作为游戏主线。在此之外，许多可选的有趣支线内容让科技树显得更加花繁叶茂。
 
 每个任务都经过了精心安排，且大部分都有着丰富的描述。别担心！只要跟紧了它们，绝不会让你原地打转、踟蹰不前！
 
@@ -90,11 +88,11 @@
 
 当你拥有足够的黄铜之后，就能够制造**交易站**了。为这精密的仪器通上电源，听它轰鸣吧！放入`交易铭牌`和`职业铭牌`后，你就可以用手头的钱币交换一些罕见的材料了。当然，你也可以用材料**换回**钱币！*噢，我的宝物啊！*
 
-当你需要生产`谐振末影`材料的时候，交易系统是必需品。这种异界诞生的怪异材料为什么会将银币融进自身是一个未解之谜...如果那时你还不是一名**炼金术士，**那么交易就会成为获取银币的唯一方式。
+当你需要生产`谐振末影`材料的时候，交易系统是必需品。这种异界诞生的怪异材料为什么会将银币融进自身是一个未解之谜...如果那时你还不是一名<b>炼金术士，</b>那么交易就会成为获取银币的唯一方式。
 
 ### 混沌炼金
 
-在炼金术士手中，珍稀材料从平平无奇的试剂瓶中破蛹而出。现在，你也可以做到！将原材料磨成粉末，掺进熔融玻璃中，能够方便地生产罐装试剂。在**炼金催化剂**的作用下搅拌、融合，**点石成金。**这就是魔法！
+在炼金术士手中，珍稀材料从平平无奇的试剂瓶中破蛹而出。现在，你也可以做到！将原材料磨成粉末，掺进熔融玻璃中，能够方便地生产罐装试剂。在**炼金催化剂**的作用下搅拌、融合，<b>点石成金。</b>这就是魔法！
 
 催化剂并不是什么可以简单制造的材料。要制造催化剂，首先你需要构筑一个**炼金镭射器**结构，然后对着一些特定的试剂发射高能射线。运气好的话，你才能得到一瓶催化剂。对于每个世界，催化剂配方都是不同的。所以打起精神来，永远不要放弃尝试！
 
@@ -108,7 +106,7 @@
 
 我们建议你根据实际情况对游戏进行适当优化。
 
-**如果你想要更顺滑流畅的FPS（帧每秒），**开启垂直同步也许会有所帮助[^fps]。
+<b>如果你想要更顺滑流畅的<abbr title="帧每秒">FPS</abbr>，</b>开启垂直同步也许会有所帮助[^fps]。
 
 [^fps]: 若游戏锁在30FPS，则请尝试关闭垂直同步。
 
@@ -136,11 +134,11 @@
 packwiz modrinth export
 ```
 
-> *更多信息请翻阅[packwiz wiki。](https://packwiz.infra.link)*
+> *更多信息请翻阅<b>[packwiz wiki。](https://packwiz.infra.link)</b>*
 
 ### 启动器支持
 
-你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行这个整合包，如[MultiMC、](https://multimcorg)[Prism Launcher](https://prismlauncher.org)和[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2]。
+你可以在任意支持**Modrinth整合包**和**Quilt**的启动器中安装并运行<b>永无止境：重缝，</b>如<b>[MultiMC、](https://multimcorg)</b><b>[Prism Launcher](https://prismlauncher.org)</b>和<b>[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2]。</b>
 
 [^pcl2]: **注意，[PCL2启动器](https://github.com/Hex-Dragon/PCL2)不受支持。**
 

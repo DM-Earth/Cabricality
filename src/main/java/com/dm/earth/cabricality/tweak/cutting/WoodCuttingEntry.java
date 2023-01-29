@@ -4,7 +4,7 @@ import static com.dm.earth.cabricality.ModEntry.AD;
 import static com.dm.earth.cabricality.ModEntry.AP;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.MLM;
-import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.PM;
 import static com.dm.earth.cabricality.ModEntry.TC;
 import static com.dm.earth.cabricality.ModEntry.TRE;
 import org.jetbrains.annotations.Nullable;
@@ -28,10 +28,10 @@ public enum WoodCuttingEntry {
 
 	WARPED(MC.id("warped"), "warped_planks", "warped_slab", null, null, null, null),
 
-	CHERRY_OAK(PMD.id("cherry_oak"), "cherry_oak_planks", "cherry_oak_slab", "cherry_oak_log",
+	CHERRY_OAK(PM.id("cherry_oak"), "cherry_oak_planks", "cherry_oak_slab", "cherry_oak_log",
 			"stripped_cherry_oak_log", "cherry_oak_wood", "stripped_cherry_oak_wood"),
 
-	PALM(PMD.id("palm"), "palm_planks", "palm_slab", "palm_log", "stripped_palm_log", "palm_wood",
+	PALM(PM.id("palm"), "palm_planks", "palm_slab", "palm_log", "stripped_palm_log", "palm_wood",
 			"stripped_palm_wood"),
 
 	RUNEWOOD(MLM.id("runewood"), "runewood_planks", "runewood_planks_slab", "runewood_log",

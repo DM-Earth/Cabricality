@@ -1,42 +1,42 @@
-{	
+{
 	"advancements.ad_astra.ad_astra.title"      : "Ad Astra",
-	"advancements.ad_astra.ad_astra.description": "§b建造一个NASA工作台，开启你的星际探索之旅！",
+	"advancements.ad_astra.ad_astra.description": "§b建造一个NASA工程装配台，开启你的星际探索之旅！",
 
 	"advancements.ad_astra.astro_cuisine.title"      : "§b转基因食品",
 	"advancements.ad_astra.astro_cuisine.description": "§b将生食物扔到近地轨道的太空中，使其煮熟。",
-	
+
 	"advancements.ad_astra.challenger.title"      : "挑战者",
 	"advancements.ad_astra.challenger.description": "§b收集所有星球仪",
-	
+
 	"advancements.ad_astra.glacio_dungeon.title"      : "海底两万里",
 	"advancements.ad_astra.glacio_dungeon.description": "§b找到一个坚冰要塞",
-	
+
 	"advancements.ad_astra.interstellar.title"      : "星际穿越",
 	"advancements.ad_astra.interstellar.description": "§b进入一个全新的星系",
-	
+
 	"advancements.ad_astra.jet_suit.title"      : "正式升级！",
 	"advancements.ad_astra.jet_suit.description": "§b穿上喷气式宇航服，体验超乎想象的飞行能力！",
-	
+
 	"advancements.ad_astra.mars.title"      : "红色星球",
 	"advancements.ad_astra.mars.description": "§b登陆火星",
-	
+
 	"advancements.ad_astra.mars_dungeon.title"      : "尘封遗迹",
 	"advancements.ad_astra.mars_dungeon.description": "§b找到一个深红要塞",
-	
+
 	"advancements.ad_astra.mercury.title"      : "晒得挺黑",
 	"advancements.ad_astra.mercury.description": "§b登陆水星",
-	
+
 	"advancements.ad_astra.mercury_dungeon.title"      : "回到未来",
 	"advancements.ad_astra.mercury_dungeon.description": "§b找到一个旱海要塞",
-	
+
 	"advancements.ad_astra.moon.title"      : "一小步",
 	"advancements.ad_astra.moon.description": "§b登陆月球",
-	
+
 	"advancements.ad_astra.moon_dungeon.title"      : "深埋的秘密",
 	"advancements.ad_astra.moon_dungeon.description": "§b找到一个月球要塞",
-	
-	"advancements.ad_astra.netherite_space_suit.title"      : "打败高温",
-	"advancements.ad_astra.netherite_space_suit.description": "§b穿上太空合金宇航服，在最酷热的地方行动！",
+
+	"advancements.ad_astra.netherite_space_suit.title"      : "上天入海",
+	"advancements.ad_astra.netherite_space_suit.description": "§b穿上合金宇航服，在极端环境中生存！",
 
 	"advancements.ad_astra.rocket_destroyed.title"      : "§b追上旅行者一号...了吗...",
 	"advancements.ad_astra.rocket_destroyed.description": "§b发射一枚没有宇航员的火箭，使其在近地轨道爆炸。",
@@ -99,7 +99,7 @@
 	"block.ad_astra.calorite_plating_pressure_plate": "耐热合金板材压力板",
 	"block.ad_astra.calorite_plating_slab"          : "耐热合金板材台阶",
 	"block.ad_astra.calorite_plating_stairs"        : "耐热合金板材楼梯",
-	"block.ad_astra.calorite_sliding_door": "耐热合金重型舱门",
+	"block.ad_astra.calorite_sliding_door"          : "耐热合金重型舱门",
 
 	"block.ad_astra.cheese_block": "奶酪",
 
@@ -118,7 +118,7 @@
 	"block.ad_astra.chiseled_moon_stone_bricks": "錾制月岩砖",
 	"block.ad_astra.chiseled_moon_stone_slab"  : "錾制月岩台阶",
 	"block.ad_astra.chiseled_moon_stone_stairs": "錾制月岩楼梯",
-	
+
 	"block.ad_astra.chiseled_permafrost_brick_slab"  : "錾制冻土砖台阶",
 	"block.ad_astra.chiseled_permafrost_brick_stairs": "錾制冻土砖楼梯",
 	"block.ad_astra.chiseled_permafrost_brick_wall"  : "錾制冻土砖墙",
@@ -163,25 +163,25 @@
 
 	"block.ad_astra.energizer": "能源站",
 
-	"block.ad_astra.extinguished_lantern": "熄灭的灯笼",
-	"block.ad_astra.extinguished_torch"  : "熄灭的火把",
+	"block.ad_astra.coal_lantern": "熄灭的灯笼",
+	"block.ad_astra.coal_torch"  : "熄灭的火把",
 
-	"block.ad_astra.white_flag"     : "浅色基地旗帜",
-	"block.ad_astra.blue_flag"      : "蓝色基地旗帜",
-	"block.ad_astra.brown_flag"     : "棕色基地旗帜",
-	"block.ad_astra.cyan_flag"      : "青色基地旗帜",
-	"block.ad_astra.gray_flag"      : "深色基地旗帜",
-	"block.ad_astra.green_flag"     : "绿色基地旗帜",
-	"block.ad_astra.light_blue_flag": "浅蓝色基地旗帜",
-	"block.ad_astra.lime_flag"      : "黄绿色基地旗帜",
-	"block.ad_astra.magenta_flag"   : "品红色基地旗帜",
-	"block.ad_astra.orange_flag"    : "橙色基地旗帜",
-	"block.ad_astra.pink_flag"      : "粉色基地旗帜",
-	"block.ad_astra.purple_flag"    : "紫色基地旗帜",
-	"block.ad_astra.red_flag"       : "红色基地旗帜",
-	"block.ad_astra.yellow_flag"    : "黄色基地旗帜",
-	"block.ad_astra.light_gray_flag": "浅灰色基地旗帜",
-	"block.ad_astra.black_flag"     : "深色基地旗帜",
+	"block.ad_astra.flag"           : "浅色基地旗帜",
+	"block.ad_astra.flag_blue"      : "蓝色基地旗帜",
+	"block.ad_astra.flag_brown"     : "棕色基地旗帜",
+	"block.ad_astra.flag_cyan"      : "青色基地旗帜",
+	"block.ad_astra.flag_gray"      : "深色基地旗帜",
+	"block.ad_astra.flag_green"     : "绿色基地旗帜",
+	"block.ad_astra.flag_light_blue": "浅蓝色基地旗帜",
+	"block.ad_astra.flag_lime"      : "黄绿色基地旗帜",
+	"block.ad_astra.flag_magenta"   : "品红色基地旗帜",
+	"block.ad_astra.flag_orange"    : "橙色基地旗帜",
+	"block.ad_astra.flag_pink"      : "粉色基地旗帜",
+	"block.ad_astra.flag_purple"    : "紫色基地旗帜",
+	"block.ad_astra.flag_red"       : "红色基地旗帜",
+	"block.ad_astra.flag_yellow"    : "黄色基地旗帜",
+	"block.ad_astra.flag_light_gray": "浅灰色基地旗帜",
+	"block.ad_astra.flag_black"     : "深色基地旗帜",
 
 	"block.ad_astra.fuel"         : "燃油",
 	"block.ad_astra.fuel_refinery": "燃油精炼厂",
@@ -221,7 +221,7 @@
 
 	"block.ad_astra.glowing_calorite_pillar": "上漆耐热金属柱",
 	"block.ad_astra.glowing_desh_pillar"    : "上漆戴斯柱",
-	"block.ad_astra.glowing_iron_pillar"    : "上漆铁柱",
+	"block.ad_astra.blue_iron_pillar"       : "上漆铁柱",
 	"block.ad_astra.glowing_ostrum_pillar"  : "上漆紫金柱",
 	"block.ad_astra.glowing_steel_pillar"   : "上漆钢柱",
 
@@ -457,7 +457,7 @@
 	"entity.ad_astra.sulfur_creeper": "硫力怕",
 
 	"entity.ad_astra.tier_1_rocket": "初级火箭",
-	"entity.ad_astra.tier_1_rover" : "星球车",
+	"entity.ad_astra.tier_1_rover" : "巡游者",
 	"entity.ad_astra.tier_2_rocket": "二级火箭",
 	"entity.ad_astra.tier_3_rocket": "三级火箭",
 	"entity.ad_astra.tier_4_rocket": "四级火箭",
@@ -466,6 +466,11 @@
 	"entity.ad_astra.zombified_pygro" : "僵尸犴豸",
 
 
+
+	"fluid_type.ad_astra.cryo_fuel": "深低温燃油",
+	"fluid_type.ad_astra.fuel"     : "燃油",
+	"fluid_type.ad_astra.oil"      : "原油",
+	"fluid_type.ad_astra.oxygen"   : "氧气",
 
 	"fluid.ad_astra.cryo_fuel": "深低温燃油",
 	"fluid.ad_astra.fuel"     : "燃油",
@@ -498,7 +503,7 @@
 	"gauge_text.ad_astra.oxygen_leak_warning[3]": "密闭空间体积超过供氧",
 	"gauge_text.ad_astra.oxygen_leak_warning[4]": "仪处理上限。",
 
-	"gauge_text.ad_astra.storage": "§e%s ⚡ / %d ⚡ 能量",
+	"gauge_text.ad_astra.storage": "§e能量：%s ⚡ / %d ⚡",
 
 
 
@@ -508,8 +513,9 @@
 	"gui.ad_astra.text.show"    : "显示",
 	"gui.ad_astra.text.category": "名称",
 	"gui.ad_astra.text.type"    : "类别",
+	"gui.ad_astra.text.confirm" : "确认",
 
-	"gui.ad_astra.text.name"       : "目标行星",
+	"gui.ad_astra.text.name"       : "目标天体",
 	"gui.ad_astra.text.gravity"    : "重力",
 	"gui.ad_astra.text.no_gravity" : "微重力",
 	"gui.ad_astra.text.oxygen"     : "氧气",
@@ -527,7 +533,7 @@
 	"gui.ad_astra.text.galaxy"          : "星系",
 	"gui.ad_astra.text.milky_way"       : "银河系",
 	"gui.ad_astra.text.solar_system"    : "太阳系",
-	"gui.ad_astra.text.proxima_centauri": "比邻星",
+	"gui.ad_astra.text.proxima_centauri": "半人马座比邻星",
 
 	"gui.ad_astra.text.provided"        : "需要",
 	"gui.ad_astra.text.oxygen.true"     : "有",
@@ -535,12 +541,15 @@
 	"gui.ad_astra.text.space_station"   : "空间站",
 	"gui.ad_astra.text.item_requirement": "需要材料",
 
+	"gui.ad_astra.text.flag_url": "旗帜图片URL（https://i.imgur.com/urURL.png）",
+	"gui.ad_astra.text.warning" : " §e⚠ §c警告 §e⚠",
 
 
-	"info.ad_astra.extract": "提取",
-	"info.ad_astra.insert" : "插入",
+
+	"info.ad_astra.extract": "并流",
+	"info.ad_astra.insert" : "分流",
 	"info.ad_astra.none"   : "无",
-	"info.ad_astra.normal" : "正常",
+	"info.ad_astra.normal" : "标准",
 
 	"info.ad_astra.install_patchouli": "下载帕秋莉手册！",
 
@@ -548,11 +557,11 @@
 
 	"item.ad_astra.astrodux": "§9银河系漫游指南",
 
-	"item.ad_astra.calorite_engine": "耐热金属火箭引擎",
-	"item.ad_astra.calorite_ingot" : "耐热金属锭",
-	"item.ad_astra.calorite_nugget": "耐热金属粒",
-	"item.ad_astra.calorite_plate" : "耐热金属板",
-	"item.ad_astra.calorite_tank"  : "耐热金属燃料储罐",
+	"item.ad_astra.calorite_engine"    : "耐热金属火箭引擎",
+	"item.ad_astra.calorite_ingot"     : "耐热金属锭",
+	"item.ad_astra.calorite_nugget"    : "耐热金属粒",
+	"item.ad_astra.compressed_calorite": "耐热金属板",
+	"item.ad_astra.calorite_tank"      : "耐热金属燃料储罐",
 
 	"item.ad_astra.cheese": "奶酪",
 
@@ -565,20 +574,22 @@
 	"item.ad_astra.cryo_freezer.tooltip": "将冰晶转化为深低温燃油。",
 	"item.ad_astra.cryo_fuel_bucket"    : "深低温燃油桶",
 
-	"item.ad_astra.desh_engine": "戴斯火箭引擎",
-	"item.ad_astra.desh_ingot" : "戴斯锭",
-	"item.ad_astra.desh_nugget": "戴斯粒",
-	"item.ad_astra.desh_plate" : "戴斯板",
-	"item.ad_astra.desh_tank"  : "戴斯燃料储罐",
+	"item.ad_astra.desh_engine"    : "戴斯火箭引擎",
+	"item.ad_astra.desh_ingot"     : "戴斯锭",
+	"item.ad_astra.desh_nugget"    : "戴斯粒",
+	"item.ad_astra.compressed_desh": "戴斯板",
+	"item.ad_astra.desh_tank"      : "戴斯燃料储罐",
 
 	"item.ad_astra.empty_tank": "空",
 
-	"item.ad_astra.energizer.tooltip[0]": "存储大量的能量，并供给",
-	"item.ad_astra.energizer.tooltip[1]": "附近的机器运行。",
+	"item.ad_astra.energizer.tooltip[0]"        : "储存大量的能量，并",
+	"item.ad_astra.energizer.tooltip[1]"        : "为附近的机器供电。",
+	"item.ad_astra.energy_transfer_rate.tooltip": "每刻转化 %s ⚡ 能量",
 
 	"item.ad_astra.engine_fan"  : "引擎涡轮",
 	"item.ad_astra.engine_frame": "引擎框架",
 
+	"item.ad_astra.flag.tooltip"               : "右击基地旗帜以设置图像URL",
 	"item.ad_astra.fluid_transfer_rate.tooltip": "每刻转化 %s 🪣 流体",
 
 	"item.ad_astra.fuel_bucket"          : "燃油桶",
@@ -593,7 +604,7 @@
 	"item.ad_astra.ice_shard": "冰晶",
 
 	"item.ad_astra.iron_plate": "铁板",
-	"item.ad_astra.iron_rod"  : "铁棍",
+	"item.ad_astra.iron_stick": "铁棍",
 
 	"item.ad_astra.jet_suit"       : "喷气式宇航服",
 	"item.ad_astra.jet_suit_boots" : "喷气式重靴",
@@ -620,11 +631,11 @@
 
 	"item.ad_astra.oil_bucket": "原油桶",
 
-	"item.ad_astra.ostrum_engine": "紫金火箭引擎",
-	"item.ad_astra.ostrum_ingot" : "紫金锭",
-	"item.ad_astra.ostrum_nugget": "紫金粒",
-	"item.ad_astra.ostrum_plate" : "紫金板",
-	"item.ad_astra.ostrum_tank"  : "紫金燃料储罐",
+	"item.ad_astra.ostrum_engine"    : "紫金火箭引擎",
+	"item.ad_astra.ostrum_ingot"     : "紫金锭",
+	"item.ad_astra.ostrum_nugget"    : "紫金粒",
+	"item.ad_astra.compressed_ostrum": "紫金板",
+	"item.ad_astra.ostrum_tank"      : "紫金燃料储罐",
 
 	"item.ad_astra.oxygen_bucket"                : "氧气桶",
 	"item.ad_astra.oxygen_distributor.tooltip[0]": "将氧气扩散进",
@@ -651,27 +662,29 @@
 	"item.ad_astra.solar_panel.tooltip[0]": "当直接暴露在阳光下",
 	"item.ad_astra.solar_panel.tooltip[1]": "时，不断产生能量。",
 
-	"item.ad_astra.space_boots"   : "宇航重靴",
-	"item.ad_astra.space_helmet"  : "宇航盔",
 	"item.ad_astra.space_painting": "空间艺术画",
-	"item.ad_astra.space_pants"   : "宇航裤",
-	"item.ad_astra.space_suit"    : "宇航服",
+
+	"item.ad_astra.space_boots" : "宇航重靴",
+	"item.ad_astra.space_helmet": "宇航盔",
+	"item.ad_astra.space_pants" : "宇航裤",
+	"item.ad_astra.space_suit"  : "宇航服",
 
 	"item.ad_astra.star_crawler_spawn_egg": "沙虫幼虫刷怪蛋",
 
-	"item.ad_astra.steel_engine": "钢火箭引擎",
-	"item.ad_astra.steel_ingot" : "钢锭",
-	"item.ad_astra.steel_nugget": "钢粒",
-	"item.ad_astra.steel_plate" : "钢板",
-	"item.ad_astra.steel_tank"  : "钢燃料储罐",
+	"item.ad_astra.steel_engine"    : "钢火箭引擎",
+	"item.ad_astra.steel_ingot"     : "钢锭",
+	"item.ad_astra.steel_nugget"    : "钢粒",
+	"item.ad_astra.compressed_steel": "钢板",
+	"item.ad_astra.steel_tank"      : "钢燃料储罐",
 
 	"item.ad_astra.sulfur_creeper_spawn_egg": "硫力怕刷怪蛋",
 
-	"item.ad_astra.tier_1_rocket"             : "初级火箭",
-	"item.ad_astra.tier_1_rover"              : "星球车",
-	"item.ad_astra.tier_2_rocket"             : "二级火箭",
-	"item.ad_astra.tier_3_rocket"             : "三级火箭",
-	"item.ad_astra.tier_4_rocket"             : "四级火箭",
+	"item.ad_astra.tier_1_rocket": "初级火箭",
+	"item.ad_astra.tier_2_rocket": "二级火箭",
+	"item.ad_astra.tier_3_rocket": "三级火箭",
+	"item.ad_astra.tier_4_rocket": "四级火箭",
+	"item.ad_astra.tier_1_rover" : "巡游者",
+
 	"item.ad_astra.water_pump"                : "水泵",
 	"item.ad_astra.water_pump.tooltip[0]"     : "从水源泵水，并输入",
 	"item.ad_astra.water_pump.tooltip[1]"     : "到附近的机器中。",
@@ -700,7 +713,7 @@
 
 
 	"rei.category.ad_astra.space_station": "空间站",
-	
+
 	"rei.text.ad_astra.amount": "总量：%s 🪣",
 
 	"rei.text.ad_astra.conversion_ratio": "转化比： %s%%",
@@ -736,14 +749,14 @@
 	"tag.c.calorite_ingots"    : "耐热金属锭",
 	"tag.c.calorite_nuggets"   : "耐热金属粒",
 	"tag.c.calorite_ores"      : "耐热金属矿石",
-	"tag.c.calorite_plate"     : "耐热金属板",
-	"tag.c.calorite_plates"    : "耐热金属板材",
+	"tag.c.compressed_calorite": "耐热金属板",
 	"tag.c.cheese_ores"        : "奶酪矿石",
 	"tag.c.cheeses"            : "奶酪",
 	"tag.c.desh_blocks"        : "戴斯块",
 	"tag.c.desh_ingots"        : "戴斯锭",
 	"tag.c.desh_nuggets"       : "戴斯粒",
 	"tag.c.desh_ores"          : "戴斯矿石",
+	"tag.c.compressed_desh"    : "戴斯板",
 	"tag.c.ice_shard_ores"     : "冰晶矿石",
 	"tag.c.iron_plates"        : "铁板",
 	"tag.c.iron_rods"          : "铁棒",
@@ -751,180 +764,173 @@
 	"tag.c.ostrum_ingots"      : "紫金锭",
 	"tag.c.ostrum_nuggets"     : "紫金粒",
 	"tag.c.ostrum_ores"        : "紫金矿石",
-	"tag.c.ostrum_plate"       : "紫金板",
-	"tag.c.ostrum_plates"      : "紫金板材",
+	"tag.c.compressed_ostrum"  : "紫金板",
 	"tag.c.raw_calorite_ores"  : "粗耐热金属矿石",
 	"tag.c.raw_desh_ores"      : "粗戴斯矿石",
-	"tag.c.desh_plate"         : "戴斯板",
-	"tag.c.desh_plates"        : "戴斯板材",
 	"tag.c.raw_ostrum_ores"    : "粗紫金矿石",
 	"tag.c.steel_blocks"       : "钢块",
 	"tag.c.steel_ingots"       : "钢锭",
 	"tag.c.steel_nuggets"      : "钢粒",
-	"tag.c.steel_plate"        : "钢板",
-	"tag.c.steel_plates"       : "钢板材",
+	"tag.c.compressed_steel"   : "钢板",
 
 
 
-	"text.autoconfig.ad_astra.category.Main": "设置",
+	"text.resourcefulconfig.ad_astra.category.Main": "设置",
 
-	"text.autoconfig.ad_astra.option.coalGenerator": "火力发电机设置",
+	"text.resourcefulconfig.ad_astra.option.coalGenerator": "火力发电机设置",
 
-	"text.autoconfig.ad_astra.option.coalGenerator.energyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.coalGenerator.maxEnergy"    : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.coalGenerator.energyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.coalGenerator.maxEnergy"    : "最大能量",
 
-	"text.autoconfig.ad_astra.option.compressor": "压缩机设置",
+	"text.resourcefulconfig.ad_astra.option.compressor": "压缩机设置",
 
-	"text.autoconfig.ad_astra.option.compressor.energyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.compressor.maxEnergy"    : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.compressor.energyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.compressor.maxEnergy"    : "最大能量",
 
-	"text.autoconfig.ad_astra.option.cryoFreezer": "深低温冷冻器设置",
+	"text.resourcefulconfig.ad_astra.option.cryoFreezer": "深低温冷冻器设置",
 
-	"text.autoconfig.ad_astra.option.cryoFreezer.energyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.cryoFreezer.maxEnergy"    : "最大能量",
-	"text.autoconfig.ad_astra.option.cryoFreezer.tankSize"     : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.cryoFreezer.energyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.cryoFreezer.maxEnergy"    : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.cryoFreezer.tankSize"     : "储罐容量",
 
-	"text.autoconfig.ad_astra.option.energizer": "能源站设置",
+	"text.resourcefulconfig.ad_astra.option.energizer": "能源站设置",
 
-	"text.autoconfig.ad_astra.option.energizer.energyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.energizer.maxEnergy"    : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.energizer.energyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.energizer.maxEnergy"    : "最大能量",
 
-	"text.autoconfig.ad_astra.option.fuelRefinery": "燃油精炼厂设置",
+	"text.resourcefulconfig.ad_astra.option.fuelRefinery": "燃油精炼厂设置",
 
-	"text.autoconfig.ad_astra.option.fuelRefinery.energyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.fuelRefinery.maxEnergy"    : "最大能量",
-	"text.autoconfig.ad_astra.option.fuelRefinery.tankSize"     : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.fuelRefinery.energyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.fuelRefinery.maxEnergy"    : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.fuelRefinery.tankSize"     : "储罐容量",
 
-	"text.autoconfig.ad_astra.option.general": "常规设置",
+	"text.resourcefulconfig.ad_astra.option.general": "常规设置",
 
-	"text.autoconfig.ad_astra.option.general.acidRainBurns"                 : "酸雨烧伤",
-	"text.autoconfig.ad_astra.option.general.doEntityGravity"               : "开启实体重力效应",
-	"text.autoconfig.ad_astra.option.general.doEntityGravity.@Tooltip"      : "决定物品、船和箭等实体是否受重力影响。",
-	"text.autoconfig.ad_astra.option.general.doLivingEntityGravity"         : "是否开启活体重力效应",
-	"text.autoconfig.ad_astra.option.general.doLivingEntityGravity.@Tooltip": "决定玩家、生物等活体是否受重力影响。",
-	"text.autoconfig.ad_astra.option.general.doOxygen"                      : "允许氧气",
-	"text.autoconfig.ad_astra.option.general.doSpaceMuffler"                : "开启宇宙空间声音压制",
-	"text.autoconfig.ad_astra.option.general.doSpaceMuffler.@Tooltip[0]"    : "决定玩家身处宇宙空间时，听到的声音是否经过",
-	"text.autoconfig.ad_astra.option.general.doSpaceMuffler.@Tooltip[1]"    : "压制。如果听起来不舒服，请及时调整此选项。",
-	"text.autoconfig.ad_astra.option.general.energyBarXOffset"              : "能量显示条X轴预设",
-	"text.autoconfig.ad_astra.option.general.energyBarYOffset"              : "能量显示条Y轴预设",
-	"text.autoconfig.ad_astra.option.general.giveAstroduxAtSpawn"           : "在玩家出生时给予指导手册",
-	"text.autoconfig.ad_astra.option.general.hammerDurability"              : "工程锤耐久",
-	"text.autoconfig.ad_astra.option.general.orbitGravity"                  : "近地轨道重力大小",
-	"text.autoconfig.ad_astra.option.general.oxygenBarXOffset"              : "氧气显示条X轴预设",
-	"text.autoconfig.ad_astra.option.general.oxygenBarYOffset"              : "氧气显示条Y轴预设",
-	"text.autoconfig.ad_astra.option.general.oxygenTankSize"                : "氧气储罐容量",
-	"text.autoconfig.ad_astra.option.general.spawnCorruptedLunarians"       : "生成堕落的月球原住民",
-	"text.autoconfig.ad_astra.option.general.spawnLunarianWanderingTrader"  : "生成月球流浪商人",
-	"text.autoconfig.ad_astra.option.general.spawnMartianRaptors"           : "生成深红掠食者",
-	"text.autoconfig.ad_astra.option.general.spawnMoglers"                  : "生成虬虫",
-	"text.autoconfig.ad_astra.option.general.spawnStarCrawlers"             : "生成沙虫幼虫",
-	"text.autoconfig.ad_astra.option.general.spawnSulfurCreepers"           : "生成硫力怕",
+	"text.resourcefulconfig.ad_astra.option.general.acidRainBurns"                 : "酸雨烧伤",
+	"text.resourcefulconfig.ad_astra.option.general.doEntityGravity"               : "开启实体重力效应",
+	"text.resourcefulconfig.ad_astra.option.general.doEntityGravity.@Tooltip"      : "决定物品、船和箭等实体是否受重力影响。",
+	"text.resourcefulconfig.ad_astra.option.general.doLivingEntityGravity"         : "是否开启活体重力效应",
+	"text.resourcefulconfig.ad_astra.option.general.doLivingEntityGravity.@Tooltip": "决定玩家、生物等活体是否受重力影响。",
+	"text.resourcefulconfig.ad_astra.option.general.doOxygen"                      : "允许氧气",
+	"text.resourcefulconfig.ad_astra.option.general.doSpaceMuffler"                : "开启宇宙空间声音压制",
+	"text.resourcefulconfig.ad_astra.option.general.doSpaceMuffler.@Tooltip[0]"    : "决定玩家身处宇宙空间时，听到的声音是否经过",
+	"text.resourcefulconfig.ad_astra.option.general.doSpaceMuffler.@Tooltip[1]"    : "压制。如果听起来不舒服，请及时调整此选项。",
+	"text.resourcefulconfig.ad_astra.option.general.energyBarXOffset"              : "能量显示条X轴预设",
+	"text.resourcefulconfig.ad_astra.option.general.energyBarYOffset"              : "能量显示条Y轴预设",
+	"text.resourcefulconfig.ad_astra.option.general.giveAstroduxAtSpawn"           : "在玩家出生时给予指导手册",
+	"text.resourcefulconfig.ad_astra.option.general.hammerDurability"              : "工程锤耐久",
+	"text.resourcefulconfig.ad_astra.option.general.orbitGravity"                  : "近地轨道重力大小",
+	"text.resourcefulconfig.ad_astra.option.general.oxygenBarXOffset"              : "氧气显示条X轴预设",
+	"text.resourcefulconfig.ad_astra.option.general.oxygenBarYOffset"              : "氧气显示条Y轴预设",
+	"text.resourcefulconfig.ad_astra.option.general.oxygenTankSize"                : "氧气储罐容量",
+	"text.resourcefulconfig.ad_astra.option.general.spawnCorruptedLunarians"       : "生成堕落的月球原住民",
+	"text.resourcefulconfig.ad_astra.option.general.spawnLunarianWanderingTrader"  : "生成月球流浪商人",
+	"text.resourcefulconfig.ad_astra.option.general.spawnMartianRaptors"           : "生成深红掠食者",
+	"text.resourcefulconfig.ad_astra.option.general.spawnMoglers"                  : "生成虬虫",
+	"text.resourcefulconfig.ad_astra.option.general.spawnStarCrawlers"             : "生成沙虫幼虫",
+	"text.resourcefulconfig.ad_astra.option.general.spawnSulfurCreepers"           : "生成硫力怕",
 
-	"text.autoconfig.ad_astra.option.lander": "着陆舱设置",
+	"text.resourcefulconfig.ad_astra.option.lander": "着陆舱设置",
 
-	"text.autoconfig.ad_astra.option.lander.boosterSpeed"                : "坠落速度",
-	"text.autoconfig.ad_astra.option.lander.boosterThreshold"            : "坠落速度阈值",
-	"text.autoconfig.ad_astra.option.lander.boosterThreshold.@Tooltip[0]": "着陆舱下降时可以达到的最大速度。",
-	"text.autoconfig.ad_astra.option.lander.boosterThreshold.@Tooltip[1]": "如果数值是正整数，那么着陆舱会向上飞。",
+	"text.resourcefulconfig.ad_astra.option.lander.boosterSpeed"                : "坠落速度",
+	"text.resourcefulconfig.ad_astra.option.lander.boosterThreshold"            : "坠落速度阈值",
+	"text.resourcefulconfig.ad_astra.option.lander.boosterThreshold.@Tooltip[0]": "着陆舱下降时可以达到的最大速度。",
+	"text.resourcefulconfig.ad_astra.option.lander.boosterThreshold.@Tooltip[1]": "如果数值是正整数，那么着陆舱会向上飞。",
 
-	"text.autoconfig.ad_astra.option.oxygenDistributor": "供氧仪设置",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor": "供氧仪设置",
 
-	"text.autoconfig.ad_astra.option.oxygenDistributor.energyMultiplier"            : "能量倍乘器",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.energyMultiplier.@Tooltip"   : "当供氧仪需要为更大的空间供氧时，增加能量消耗。",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.fluidConversionEnergyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxBlockChecks"              : "最大检测范围",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[0]"  : "决定供氧仪最多可以为多少格内的环境大气供氧。不要",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[1]"  : "盲目增加这个数值，因为它可能会大幅影响服务端性能。",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[2]"  : "如果你必须要设置一个很大的值，请考虑同时调大“供氧",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[3]"  : "仪刷新频率”，以保证服务端不会每时每刻地检查几千个",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[4]"  : "需要被供氧的方块。",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.maxEnergy"                   : "最大能量",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.oxygenMultiplier"            : "氧气倍乘器",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.oxygenMultiplier.@Tooltip"   : "当供氧仪需要为更大的空间供氧时，增加氧气消耗。",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.refreshTicks"                : "刷新频率",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.refreshTicks.@Tooltip[0]"    : "决定供氧仪每隔多少刻检查一次环境大气的密闭性。把这个数值",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.refreshTicks.@Tooltip[1]"    : "调得太小（刷新频率过快）会影响服务端TPS，请保持谨慎。",
-	"text.autoconfig.ad_astra.option.oxygenDistributor.tankSize"                    : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.energyMultiplier"            : "能量倍乘器",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.energyMultiplier.@Tooltip"   : "当供氧仪需要为更大的空间供氧时，增加能量消耗。",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.fluidConversionEnergyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxBlockChecks"              : "最大检测范围",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[0]"  : "决定供氧仪最多可以为多少立方米的环境大气供氧。不要",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[1]"  : "盲目增加这个数值，因为它可能会大幅影响服务端性能。",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[2]"  : "如果你必须要设置一个很大的值，请考虑同时调大“供氧",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[3]"  : "仪刷新频率”，以保证服务端不会每时每刻地检查几千个",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxBlockChecks.@Tooltip[4]"  : "需要被供氧的方块。",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.maxEnergy"                   : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.oxygenMultiplier"            : "氧气倍乘器",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.oxygenMultiplier.@Tooltip"   : "当供氧仪需要为更大的空间供氧时，增加氧气消耗。",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.refreshTicks"                : "刷新频率",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.refreshTicks.@Tooltip[0]"    : "决定供氧仪每隔多少刻检查一次环境大气的密闭性。把这个数值",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.refreshTicks.@Tooltip[1]"    : "调得太小（刷新频率过快）会影响服务端TPS，请保持谨慎。",
+	"text.resourcefulconfig.ad_astra.option.oxygenDistributor.tankSize"                    : "储罐容量",
 
-	"text.autoconfig.ad_astra.option.oxygenLoader": "氧气装载器设置",
+	"text.resourcefulconfig.ad_astra.option.oxygenLoader": "氧气装载器设置",
 
-	"text.autoconfig.ad_astra.option.oxygenLoader.energyPerTick": "能量每刻",
-	"text.autoconfig.ad_astra.option.oxygenLoader.maxEnergy"    : "最大能量",
-	"text.autoconfig.ad_astra.option.oxygenLoader.tankSize"     : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.oxygenLoader.energyPerTick": "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.oxygenLoader.maxEnergy"    : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.oxygenLoader.tankSize"     : "储罐容量",
 
-	"text.autoconfig.ad_astra.option.rocket": "火箭设置",
+	"text.resourcefulconfig.ad_astra.option.rocket": "火箭设置",
 
-	"text.autoconfig.ad_astra.option.rocket.acceleration"                    : "加速度",
-	"text.autoconfig.ad_astra.option.rocket.atmosphereLeave"                 : "大气层厚度",
-	"text.autoconfig.ad_astra.option.rocket.atmosphereLeave.@Tooltip"        : "决定火箭何时离开大气层并显示星图。",
-	"text.autoconfig.ad_astra.option.rocket.countDownTicks"                  : "火箭发射倒计时（刻）",
-	"text.autoconfig.ad_astra.option.rocket.countDownTicks.@Tooltip"         : "默认时间为200刻（10秒）。",
-	"text.autoconfig.ad_astra.option.rocket.efficientFuelLaunchCost"         : "有效燃油发射消耗",
-	"text.autoconfig.ad_astra.option.rocket.fuelLaunchCost"                  : "燃油发射消耗",
-	"text.autoconfig.ad_astra.option.rocket.entitiesBurnUnderRocket"         : "开启火箭引擎烧伤",
-	"text.autoconfig.ad_astra.option.rocket.entitiesBurnUnderRocket.@Tooltip": "决定站在火箭引擎下的实体是否受到伤害。",
-	"text.autoconfig.ad_astra.option.rocket.maxSpeed"                        : "最大速度",
-	"text.autoconfig.ad_astra.option.rocket.tankSize"                        : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.rocket.acceleration"                    : "加速度",
+	"text.resourcefulconfig.ad_astra.option.rocket.atmosphereLeave"                 : "大气层厚度",
+	"text.resourcefulconfig.ad_astra.option.rocket.atmosphereLeave.@Tooltip"        : "决定火箭何时离开大气层并显示星图。",
+	"text.resourcefulconfig.ad_astra.option.rocket.countDownTicks"                  : "火箭发射倒计时（刻）",
+	"text.resourcefulconfig.ad_astra.option.rocket.countDownTicks.@Tooltip"         : "默认时间为200刻（10秒）。",
+	"text.resourcefulconfig.ad_astra.option.rocket.efficientFuelLaunchCost"         : "有效燃油发射消耗",
+	"text.resourcefulconfig.ad_astra.option.rocket.fuelLaunchCost"                  : "燃油发射消耗",
+	"text.resourcefulconfig.ad_astra.option.rocket.entitiesBurnUnderRocket"         : "开启火箭引擎烧伤",
+	"text.resourcefulconfig.ad_astra.option.rocket.entitiesBurnUnderRocket.@Tooltip": "决定站在火箭引擎下的实体是否受到伤害。",
+	"text.resourcefulconfig.ad_astra.option.rocket.maxSpeed"                        : "最大速度",
+	"text.resourcefulconfig.ad_astra.option.rocket.tankSize"                        : "储罐容量",
 
-	"text.autoconfig.ad_astra.option.rover": "星球车设置",
+	"text.resourcefulconfig.ad_astra.option.rover": "巡游者设置",
 
-	"text.autoconfig.ad_astra.option.rover.deceleration"      : "减速度",
-	"text.autoconfig.ad_astra.option.rover.explodeRoverInLava": "驶入熔岩时爆炸",
-	"text.autoconfig.ad_astra.option.rover.fuelPerSecond"     : "燃油每秒",
-	"text.autoconfig.ad_astra.option.rover.maxSpeed"          : "最大速度",
-	"text.autoconfig.ad_astra.option.rover.maxTurnSpeed"      : "最大转向速度",
-	"text.autoconfig.ad_astra.option.rover.minSpeed"          : "最小速度",
-	"text.autoconfig.ad_astra.option.rover.tankSize"          : "储罐容量",
-	"text.autoconfig.ad_astra.option.rover.turnSpeed"         : "转向速度",
+	"text.resourcefulconfig.ad_astra.option.rover.deceleration"      : "减速度",
+	"text.resourcefulconfig.ad_astra.option.rover.explodeRoverInLava": "驶入熔岩时爆炸",
+	"text.resourcefulconfig.ad_astra.option.rover.fuelPerSecond"     : "燃油每秒",
+	"text.resourcefulconfig.ad_astra.option.rover.maxSpeed"          : "最大速度",
+	"text.resourcefulconfig.ad_astra.option.rover.maxTurnSpeed"      : "最大转向速度",
+	"text.resourcefulconfig.ad_astra.option.rover.minSpeed"          : "最小速度",
+	"text.resourcefulconfig.ad_astra.option.rover.tankSize"          : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.rover.turnSpeed"         : "转向速度",
 
-	"text.autoconfig.ad_astra.option.solarPanel": "太阳能板设置",
-	
-	"text.autoconfig.ad_astra.option.solarPanel.energyMultiplier": "能量倍乘器",
-	"text.autoconfig.ad_astra.option.solarPanel.maxEnergy"       : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.solarPanel": "太阳能板设置",
 
-	"text.autoconfig.ad_astra.option.spaceSuit": "宇航服设置",
+	"text.resourcefulconfig.ad_astra.option.solarPanel.energyMultiplier": "能量倍乘器",
+	"text.resourcefulconfig.ad_astra.option.solarPanel.maxEnergy"       : "最大能量",
 
-	"text.autoconfig.ad_astra.option.spaceSuit.enableJetSuitFlight"                : "允许喷气式宇航服飞行功能",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitArmorToughness"              : "喷气式宇航服硬度",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitEnergyPerTick"               : "喷气式宇航服能量每刻",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitMaxEnergy"                   : "喷气式宇航服最大能量",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitProtectionMultiplier"        : "喷气式宇航服护甲值倍乘器",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitSpeed"                       : "喷气式宇航服速度",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitSpeed.@Tooltip"              : "喷气式宇航服喷气飞行时的前进速度。",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitTankSize"                    : "喷气式宇航服储罐容量",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitUpwardsSpeed"                : "喷气式宇航服上升速度",
-	"text.autoconfig.ad_astra.option.spaceSuit.jetSuitUpwardsSpeed.@Tooltip"       : "喷气式宇航服怠速飞行时的上升速度。",
-	"text.autoconfig.ad_astra.option.spaceSuit.netheriteSpaceSuitHasFireResistance": "合金宇航服是否具有火焰抗性",
-	"text.autoconfig.ad_astra.option.spaceSuit.netheriteSpaceSuitTankSize"         : "合金宇航服储罐容量",
-	"text.autoconfig.ad_astra.option.spaceSuit.spaceSuitTankSize"                  : "宇航服储罐容量",
-	"text.autoconfig.ad_astra.option.spaceSuit.spawnJetSuitParticles"              : "显示喷气式宇航服粒子效果",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit": "宇航服设置",
 
-	"text.autoconfig.ad_astra.option.vehicles": "载具设置",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.enableJetSuitFlight"                : "允许喷气式宇航服飞行功能",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitArmorToughness"              : "喷气式宇航服硬度",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitEnergyPerTick"               : "喷气式宇航服能量每刻",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitMaxEnergy"                   : "喷气式宇航服最大能量",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitProtectionMultiplier"        : "喷气式宇航服护甲值倍乘器",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitSpeed"                       : "喷气式宇航服速度",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitSpeed.@Tooltip"              : "喷气式宇航服喷气飞行时的前进速度。",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitTankSize"                    : "喷气式宇航服储罐容量",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitUpwardsSpeed"                : "喷气式宇航服上升速度",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.jetSuitUpwardsSpeed.@Tooltip"       : "喷气式宇航服怠速飞行时的上升速度。",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.netheriteSpaceSuitHasFireResistance": "合金宇航服是否具有火焰抗性",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.netheriteSpaceSuitTankSize"         : "合金宇航服储罐容量",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.spaceSuitTankSize"                  : "宇航服储罐容量",
+	"text.resourcefulconfig.ad_astra.option.spaceSuit.spawnJetSuitParticles"              : "显示喷气式宇航服粒子效果",
 
-	"text.autoconfig.ad_astra.option.vehicles.fallingExplosionMultiplier"         : "坠落爆炸伤害倍乘器",
-	"text.autoconfig.ad_astra.option.vehicles.fallingExplosionMultiplier.@Tooltip": "决定载具坠落并爆炸时造成的伤害大小。",
-	"text.autoconfig.ad_astra.option.vehicles.fallingExplosionThreshold"          : "坠落爆炸力度阈值",
-	"text.autoconfig.ad_astra.option.vehicles.fallingExplosionThreshold.@Tooltip" : "决定载具坠落时爆炸所需的力度大小。",
-	"text.autoconfig.ad_astra.option.vehicles.gravity"                            : "重力",
-	"text.autoconfig.ad_astra.option.vehicles.moveCameraInVehicle"                : "跟随载具移动视角",
-	"text.autoconfig.ad_astra.option.vehicles.moveCameraInVehicle.@Tooltip[0]"    : "决定在乘坐火箭和着陆舱时是否自动切换为",
-	"text.autoconfig.ad_astra.option.vehicles.moveCameraInVehicle.@Tooltip[1]"    : "第三人称视角显示以获得更佳视野。",
+	"text.resourcefulconfig.ad_astra.option.vehicles": "载具设置",
 
-	"text.autoconfig.ad_astra.option.waterPump": "水泵设置",
+	"text.resourcefulconfig.ad_astra.option.vehicles.fallingExplosionMultiplier"         : "坠落爆炸伤害倍乘器",
+	"text.resourcefulconfig.ad_astra.option.vehicles.fallingExplosionMultiplier.@Tooltip": "决定载具坠落并爆炸时造成的伤害大小。",
+	"text.resourcefulconfig.ad_astra.option.vehicles.fallingExplosionThreshold"          : "坠落爆炸力度阈值",
+	"text.resourcefulconfig.ad_astra.option.vehicles.fallingExplosionThreshold.@Tooltip" : "决定载具坠落时爆炸所需的力度大小。",
+	"text.resourcefulconfig.ad_astra.option.vehicles.gravity"                            : "重力",
+	"text.resourcefulconfig.ad_astra.option.vehicles.moveCameraInVehicle"                : "跟随载具移动视角",
+	"text.resourcefulconfig.ad_astra.option.vehicles.moveCameraInVehicle.@Tooltip[0]"    : "决定在乘坐火箭和着陆舱时是否自动切换为",
+	"text.resourcefulconfig.ad_astra.option.vehicles.moveCameraInVehicle.@Tooltip[1]"    : "第三人称视角显示以获得更佳视野。",
 
-	"text.autoconfig.ad_astra.option.waterPump.deleteWaterBelowWaterPump": "允许抽干水泵下方的水",
-	"text.autoconfig.ad_astra.option.waterPump.energyPerTick"            : "能量每刻",
-	"text.autoconfig.ad_astra.option.waterPump.maxEnergy"                : "最大能量",
-	"text.autoconfig.ad_astra.option.waterPump.tankSize"                 : "储罐容量",
-	"text.autoconfig.ad_astra.option.waterPump.transferPerTick"          : "每秒转化",
+	"text.resourcefulconfig.ad_astra.option.waterPump": "水泵设置",
 
-	"text.autoconfig.ad_astra.title": "Ad Astra设置",
-
+	"text.resourcefulconfig.ad_astra.option.waterPump.deleteWaterBelowWaterPump": "允许抽干水泵下方的水",
+	"text.resourcefulconfig.ad_astra.option.waterPump.energyPerTick"            : "能量每刻",
+	"text.resourcefulconfig.ad_astra.option.waterPump.maxEnergy"                : "最大能量",
+	"text.resourcefulconfig.ad_astra.option.waterPump.tankSize"                 : "储罐容量",
+	"text.resourcefulconfig.ad_astra.option.waterPump.transferPerTick"          : "每秒转化",
 
 
 	"tooltip.ad_astra.consumable"  : "§2消耗品",
 	"tooltip.ad_astra.hold_shift"  : "§8按住 [§7Shift§8] 查看详情",
-	"tooltip.ad_astra.space_suit"  : "§b§%s/%d 🪣 氧气",
-	"tooltip.ad_astra.vehicle_fuel": "§b§%s/%d 🪣 燃油"
+	"tooltip.ad_astra.space_suit"  : "§b氧气：§%s/%d 🪣",
+	"tooltip.ad_astra.vehicle_fuel": "§b燃油：§%s/%d 🪣"
 }

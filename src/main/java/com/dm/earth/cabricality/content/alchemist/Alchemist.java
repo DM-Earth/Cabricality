@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.content.alchemist;
 
 import static com.dm.earth.cabricality.util.debug.CabfDebugger.debug;
+
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,8 +11,10 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
@@ -21,17 +24,14 @@ import com.dm.earth.cabricality.content.alchemist.data.JarData;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserProperties;
 import com.dm.earth.cabricality.math.RandomMathUtil;
-import com.mojang.brigadier.Command;
-import com.mojang.brigadier.context.CommandContext;
+
 import net.darktree.led.LED;
 import net.minecraft.block.Block;
 import net.minecraft.entity.vehicle.HopperMinecartEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.LiteralText;
 import net.minecraft.util.registry.Registry;
 
 public class Alchemist {
@@ -186,7 +186,7 @@ public class Alchemist {
 				.collect(ArrayList::new, (list, i) -> list.add(map.get(i)), ArrayList::addAll);
 	}
 
-	private static Map<Reagent, Reagent> possibleSpecialReagentChaoticMap(ServerWorld world) {
+	public static Map<Reagent, Reagent> possibleSpecialReagentChaoticMap(ServerWorld world) {
 		ArrayList<Reagent> reagents = Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 				.flatMap(reagentsT -> reagentsT.getReagents().stream())
 				.collect(Collectors.toCollection(ArrayList::new));
@@ -198,7 +198,7 @@ public class Alchemist {
 		}).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 	}
 
-	private static @NotNull ArrayList<Catalyst> possibleChaoticCatalystList(ServerWorld world) {
+	public static @NotNull ArrayList<Catalyst> possibleChaoticCatalystList(ServerWorld world) {
 		return RandomMathUtil.randomSelect(
 				Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 						.map(Reagents::getCatalyst)
@@ -213,35 +213,12 @@ public class Alchemist {
 				.map(Map.Entry::getKey).orElse(null);
 	}
 
-	private static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(
+	public static @NotNull Map<Catalyst, ArrayList<Reagent>> possibleReagentMap(
 			ServerWorld world) {
 		return Arrays.stream(Reagents.values()).filter(Reagents::isLinked)
 				.collect(Collectors.toMap(Reagents::getCatalyst, reagentsT -> {
 					List<Reagent> reagents = reagentsT.getReagents();
 					return RandomMathUtil.randomSelect(reagents, MAX_REAGENT_JARS, world.getSeed());
 				}));
-	}
-
-	public static class AlchemistInformationCommand implements Command<ServerCommandSource> {
-		@Override
-		public int run(@NotNull CommandContext<ServerCommandSource> context) {
-			possibleReagentMap(context.getSource().getWorld())
-					.forEach((key, value) -> context.getSource()
-							.sendFeedback(new LiteralText(key.toString() + "§r\n")
-									.append(value.toString().replaceAll("\\[", "")
-											.replaceAll("]", "").replaceAll(", ", "\n"))
-									.append("\n"), false));
-			context.getSource().sendFeedback(new LiteralText(CHAOTIC_CATALYST.toString() + "§r\n")
-					.append(possibleChaoticCatalystList(context.getSource().getWorld()).toString()
-							.replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "\n"))
-					.append("\n"), false);
-			possibleSpecialReagentChaoticMap(context.getSource().getWorld())
-					.forEach((key, value) -> context.getSource()
-							.sendFeedback(new LiteralText(key.toString() + "§r\n")
-									.append(value.toString()).append(Cabricality
-											.genTranslatableText("command", "alchemist", "chaotic"))
-									.append("\n"), false));
-			return SINGLE_SUCCESS;
-		}
 	}
 }

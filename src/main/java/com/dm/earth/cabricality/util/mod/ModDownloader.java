@@ -11,11 +11,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Map;
 
-import com.dm.earth.cabricality.util.debug.CabfLogger;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.QuiltLoader;
+
+import com.dm.earth.cabricality.util.debug.CabfLogger;
 
 public class ModDownloader {
 	private final Map<String, String> urls;

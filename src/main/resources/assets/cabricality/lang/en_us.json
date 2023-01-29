@@ -28,10 +28,10 @@
 
   "item.cabricality.stone_rod": "Stone Rod",
 
-  "item.cabricality.invar_ingot": "Invar Ingot",
-  "item.cabricality.nickel_ingot": "Nickel Ingot",
-  "item.cabricality.nickel_nugget": "Nickel Nugget",
-  "item.cabricality.raw_nickel": "Raw Nickel",
+  "item.cabricality.invar_ingot"   : "Invar Ingot",
+  "item.cabricality.nickel_ingot"  : "Nickel Ingot",
+  "item.cabricality.nickel_nugget" : "Nickel Nugget",
+  "item.cabricality.raw_nickel"    : "Raw Nickel",
   "item.cabricality.enderium_ingot": "Enderium Ingot",
 
   "item.cabricality.nickel_compound" : "Nickel Compound",
@@ -230,7 +230,7 @@
   "catalyst.cabricality.volatile": "§dVolatile",
   "catalyst.cabricality.metal"   : "§dMetal",
   "catalyst.cabricality.crystal" : "§dCrystalline",
-  "catalyst.cabricality.chaos"   : "§b§kChaos",
+  "catalyst.cabricality.chaos"   : "§b§kC.hi*混c",
 
 
 
@@ -284,11 +284,177 @@
 
   "comment_tag": "Tags",
 
+  "tag.c.glass"        : "Glass",
+  "tag.c.glass_panes"  : "Glass Panes",
+  "tag.c.shulker_boxes": "Shulker Boxes",
+
+  "tag.minecraft.carpets"    : "Carpets",
+  "tag.minecraft.beds"       : "Beds",
+  "tag.minecraft.banners"    : "Banners",
+  "tag.minecraft.candles"    : "Candles",
+  "tag.minecraft.music_discs": "Music Discs",
+  "tag.minecraft.leaves"     : "Leaves",
+  "tag.minecraft.signs"      : "Signs",
+  "tag.minecraft.logs"       : "Logs",
+  "tag.minecraft.planks"     : "Planks",
+  "tag.minecraft.stairs"     : "Stairs",
+  "tag.minecraft.slabs"      : "Slabs",
+
   "tag.cabricality.trade_cards"     : "§6Trade Cards",
   "tag.cabricality.profession_cards": "§dProfession Cards",
 
   "tag.cabricality.jars/reagent" : "§cReagent Jars",
   "tag.cabricality.jars/catalyst": "§9Catalyst Jars",
+
+  "tag.catwalksinc.filled_paint_rolls": "§6Filled Paint Rollers",
+
+  "tag.create.stone_types/veridium" : "Veridiums",
+  "tag.create.stone_types/scorchia" : "Scorchias",
+  "tag.create.stone_types/scoria"   : "Scorias",
+  "tag.create.stone_types/ochrum"   : "Ochrums",
+  "tag.create.stone_types/limestone": "Limestones",
+  "tag.create.stone_types/crimsite" : "Crimsites",
+  "tag.create.stone_types/asurine"  : "Asurines",
+  "tag.create.stone_types/tuff"     : "Tuffs",
+  "tag.create.stone_types/deepslate": "Deepslates",
+  "tag.create.stone_types/dripstone": "Dripstones",
+  "tag.create.stone_types/calcite"  : "Calcites",
+  "tag.create.stone_types/andesite" : "Andesites",
+  "tag.create.stone_types/diorite"  : "Diorites",
+  "tag.create.stone_types/granite"  : "Granites",
+
+  "tag.farmersdelight.canvas_signs": "Canvas Signs",
+
+  "tag.itemfilters.filters": "Item Filters",
+
+  "tag.tconstruct.casts/red_sand": "Red Sand Casts",
+  "tag.tconstruct.casts/sand"    : "Sand Casts",
+  "tag.tconstruct.casts/gold"    : "Gold Casts",
+
+  "tag.tconstruct.blocks/foundry" : "Foundry",
+  "tag.tconstruct.blocks/smeltery": "Smeltery",
+
+
+
+  "comment_col": "Collections",
+
+  "col.minecraft.fluids": "Fluids",
+
+  "col.minecraft.enchanted_books"   : "Enchanted Books",
+  "col.minecraft.tipped_arrows"     : "Tipped Arrows",
+  "col.minecraft.spawn_eggs"        : "Spawn Eggs",
+  "col.minecraft.glazed_terracottas": "Glazed Terracottas",
+  "col.tconstruct.buckets"          : "Fluid Buckets",
+
+  "col.minecraft.lingering_potions": "Lingering Potions",
+  "col.minecraft.splash_potions"   : "Splash Potions",
+  "col.minecraft.potions"          : "Potions",
+
+  "col.cabricality.processors": "Processors",
+  "col.cabricality.mechanisms": "Mechanisms",
+  "col.cabricality.numbers"   : "Numbers and Operators",
+  "col.cabricality.math_casts": "Mathematics Casts",
+
+  "col.create.blocks/copper_tile"   : "Copper Tiles",
+  "col.create.blocks/copper_shingle": "Copper Shingles",
+
+  "col.ad_astra:flags": "Flags",
+
+  "col.ae2.paint_balls"      : "Paint Balls",
+  "col.ae2.lumen_paint_balls": "Lumen Paint Balls",
+
+  "col.indrev.modules": "Modules",
+
+  "col.tconstruct.modifiers": "Modifiers",
+
+  "col.tconstruct.slime_helmets": "Slime Helmets",
+
+  "col.tconstruct.tools/cleaver"      : "Cleavers",
+  "col.tconstruct.tools/sword"        : "Swords",
+  "col.tconstruct.tools/dagger"       : "Daggers",
+  "col.tconstruct.tools/scythe"       : "Scythes",
+  "col.tconstruct.tools/kama"         : "Kama",
+  "col.tconstruct.tools/broad_axe"    : "Broad Axes",
+  "col.tconstruct.tools/hand_axe"     : "Hand Axes",
+  "col.tconstruct.tools/excavator"    : "Excavators",
+  "col.tconstruct.tools/pickadze"     : "Pickadzes",
+  "col.tconstruct.tools/mattock"      : "Mattocks",
+  "col.tconstruct.tools/vein_hammer"  : "Vein Hammers",
+  "col.tconstruct.tools/sledge_hammer": "Sledge Hammers",
+  "col.tconstruct.tools/pickaxe"      : "Pickaxes",
+
+  "col.tconstruct.parts/tough_handle"  : "Tough Handles",
+  "col.tconstruct.parts/tool_handle"   : "Tool Handles",
+  "col.tconstruct.parts/tool_binding"  : "Tool Bindings",
+  "col.tconstruct.parts/large_plate"   : "Large Plates",
+  "col.tconstruct.parts/round_plate"   : "Round Plates",
+  "col.tconstruct.parts/broad_blade"   : "Broad Blades",
+  "col.tconstruct.parts/small_blade"   : "Small Blades",
+  "col.tconstruct.parts/broad_axe_head": "Broad Axe Heads",
+  "col.tconstruct.parts/small_axe_head": "Small Axe Heads",
+  "col.tconstruct.parts/hammer_head"   : "Hammer Heads",
+  "col.tconstruct.parts/pick_head"     : "Pick Heads",
+  "col.tconstruct.parts/repair_kit"    : "Repair Kits",
+
+  "col.tconstruct.stations/part_builder"    : "Part Builders",
+  "col.tconstruct.stations/tinker_station"  : "Tinker Stations",
+  "col.tconstruct.stations/crafting_station": "Crafting Stations",
+
+  "col.tconstruct.slime_grasses/ichor"  : "Ichor Grasses",
+  "col.tconstruct.slime_grasses/ender"  : "Enderslime Grasses",
+  "col.tconstruct.slime_grasses/sky"    : "Skyslime Grasses",
+  "col.tconstruct.slime_grasses/earth"  : "Earthslime Grasses",
+  "col.tconstruct.slime_grasses/vanilla": "Slime Grasses",
+
+  "col.tconstruct.blocks/slime_dirt"     : "Slime Dirts",
+  "col.tconstruct.blocks/congealed_slime": "Congealed Slime Blocks",
+  "col.tconstruct.blocks/slime"          : "Slime Blocks",
+
+  "col.tconstruct.buckets/potion": "Potion Buckets",
+
+  "col.tconstruct.anvils": "Anvils",
+
+  "col.computercraft.disks": "Disks",
+
+  "col.computercraft.things/turtle"         : "Turtles",
+  "col.computercraft.things/pocket_computer": "Pocket Computers",
+
+  "col.led.lamps/shaded_reinforced_flat_fixture"  : "Shaded Reinforced Flat Lamps",
+  "col.led.lamps/shaded_reinforced_large_fixture" : "Shaded Reinforced Large Lamps",
+  "col.led.lamps/shaded_reinforced_medium_fixture": "Shaded Reinforced Medium Lamps",
+  "col.led.lamps/shaded_reinforced_small_fixture" : "Shaded Reinforced Small Lamps",
+  "col.led.lamps/shaded_reinforced_clear_full"    : "Shaded Reinforced Lamp Blocks",
+
+  "col.led.lamps/shaded_flat_fixture"  : "Shaded Flat Lamps",
+  "col.led.lamps/shaded_large_fixture" : "Shaded Large Lamps",
+  "col.led.lamps/shaded_medium_fixture": "Shaded Medium Lamps",
+  "col.led.lamps/shaded_small_fixture" : "Shaded Small Lamps",
+  "col.led.lamps/shaded_clear_full"    : "Shaded Lamp Blocks",
+
+  "col.led.lamps/reinforced_flat_fixture"  : "Reinforced Flat Lamps",
+  "col.led.lamps/reinforced_large_fixture" : "Reinforced Large Lamps",
+  "col.led.lamps/reinforced_medium_fixture": "Reinforced Medium Lamps",
+  "col.led.lamps/reinforced_small_fixture" : "Reinforced Small Lamps",
+  "col.led.lamps/reinforced_clear_full"    : "Reinforced Lamp Blocks",
+
+  "col.led.lamps/flat_fixture"  : "Flat Lamps",
+  "col.led.lamps/large_fixture" : "Large Lamps",
+  "col.led.lamps/medium_fixture": "Medium Lamps",
+  "col.led.lamps/small_fixture" : "Small Lamps",
+  "col.led.lamps/clear_full"    : "Lamp Blocks",
+
+  "col.led.blocks/switch": "Colorful Switches",
+  "col.led.blocks/button": "Colorful Buttons",
+
+  "col.kibe.things/sleeping_bag": "Sleeping Bags",
+  "col.kibe.things/glider"      : "Gliders",
+  "col.kibe.things/rune"        : "Runes",
+  "col.kibe.things/elevator"    : "Elevators",
+
+  "col.promenade.piles": "Piles",
+
+  "col.promenade.blocks/mushroom"      : "Mushrooms",
+  "col.promenade.blocks/mushroom_block": "Mushroom Blocks",
 
 
 
@@ -299,8 +465,14 @@
   "config.cabricality.general.background_blur"        : "Background Blur",
   "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
 
+  "config.cabricality.general.background_blur_darken"        : "Background Blur Darken",
+  "config.cabricality.general.background_blur_darken.tooltip": "§7Whether to darken the background of the GUIs when blurring",
+
   "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
   "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
+
+  "config.cabricality.general.transparent_wthit_tooltip"        : "Transparent Waila Tooltip",
+  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7Whether to make Waila's tooltip transparent",
 
   "config.cabricality.category.debug": "Debug",
 
@@ -326,7 +498,20 @@
 
   "comment_command": "Commands",
 
-  "command.cabricality.alchemist.chaotic": " §8(Chaotic)",
+  "command.cabricality.actions.copy"  : "[Copy]",
+  "command.cabricality.actions.copied": "Copied to Clipboard!",
+
+  "command.cabricality.alchemist.header" : "[Alchemist Information]",
+  "command.cabricality.alchemist.chaotic": " (Chaotic)",
+
+  "command.cabricality.debug.disabled": "Debug Disabled",
+  "command.cabricality.debug.enabled" : "Debug Enabled",
+
+  "command.cabricality.debug_info.disabled": " disabled debug",
+  "command.cabricality.debug_info.enabled" : " enabled debug",
+
+  "command.cabricality.held_item_info.tag_prefix": "#",
+  "command.cabricality.held_item_info.showing"   : " is showing ",
 
 
 
@@ -352,5 +537,5 @@
   "screen.cabricality.title_screen.warning_missing_mod_plural": "Missing %d Mods!",
 
   "itemGroup.cabricality.main"      : "Cabricality",
-  "itemGroup.cabricality.substrates": "Cabricality Substrates"
+  "itemGroup.cabricality.substrates": "Cabricality | Substrates"
 }

@@ -229,7 +229,7 @@
   "catalyst.cabricality.volatile": "§d沸騰",
   "catalyst.cabricality.metal"   : "§d金屬",
   "catalyst.cabricality.crystal" : "§d晶化",
-  "catalyst.cabricality.chaos"   : "§b§k混沌",
+  "catalyst.cabricality.chaos"   : "§b§kC.hi*混c",
 
 
 
@@ -283,11 +283,175 @@
 
   "comment_tag": "標籤",
 
-  "tag.cabricality.trade_cards"     : "§6交易銘牌",
-  "tag.cabricality.profession_cards": "§d職業銘牌",
+  "tag.c.glass"        : "玻璃",
+  "tag.c.glass_panes"  : "玻璃板",
+  "tag.c.shulker_boxes": "潜影盒",
 
-  "tag.cabricality.jars/reagent" : "§c試劑瓶",
-  "tag.cabricality.jars/catalyst": "§9催化劑瓶",
+  "tag.minecraft.carpets"    : "地毯",
+  "tag.minecraft.beds"       : "床",
+  "tag.minecraft.banners"    : "旗帜",
+  "tag.minecraft.candles"    : "蜡烛",
+  "tag.minecraft.music_discs": "唱片",
+  "tag.minecraft.leaves"     : "树叶",
+  "tag.minecraft.signs"      : "告示牌",
+  "tag.minecraft.logs"       : "原木",
+  "tag.minecraft.planks"     : "木板",
+  "tag.minecraft.stairs"     : "楼梯",
+  "tag.minecraft.slabs"      : "台阶",
+
+  "tag.cabricality.trade_cards"     : "§6交易铭牌",
+  "tag.cabricality.profession_cards": "§d职业铭牌",
+
+  "tag.cabricality.jars/reagent" : "§c试剂瓶",
+  "tag.cabricality.jars/catalyst": "§9催化剂瓶",
+
+  "tag.catwalksinc.filled_paint_rolls": "§6油漆滚筒",
+
+  "tag.create.stone_types/veridium" : "辉绿岩系",
+  "tag.create.stone_types/scorchia" : "焦黑熔渣岩系",
+  "tag.create.stone_types/scoria"   : "熔渣岩系",
+  "tag.create.stone_types/ochrum"   : "赭金砂岩系",
+  "tag.create.stone_types/limestone": "石灰岩系",
+  "tag.create.stone_types/crimsite" : "绯红岩系",
+  "tag.create.stone_types/asurine"  : "皓蓝岩系",
+  "tag.create.stone_types/tuff"     : "凝灰岩系",
+  "tag.create.stone_types/deepslate": "深板岩系",
+  "tag.create.stone_types/dripstone": "滴水岩系",
+  "tag.create.stone_types/calcite"  : "放解岩系",
+  "tag.create.stone_types/andesite" : "安山岩系",
+  "tag.create.stone_types/diorite"  : "闪长岩系",
+  "tag.create.stone_types/granite"  : "花岗岩系",
+
+  "tag.farmersdelight.canvas_signs": "粗布告示牌",
+
+  "tag.itemfilters.filters": "物品过滤器",
+
+  "tag.tconstruct.casts/red_sand": "红沙铸模",
+  "tag.tconstruct.casts/sand"    : "沙子铸模",
+  "tag.tconstruct.casts/gold"    : "黄金铸模",
+
+  "tag.tconstruct.blocks/foundry" : "熔铸炉",
+  "tag.tconstruct.blocks/smeltery": "冶炼炉",
+
+
+
+  "comment_col": "集合",
+
+  "col.minecraft.fluids": "流体",
+
+  "col.minecraft.enchanted_books"   : "附魔书",
+  "col.minecraft.tipped_arrows"     : "药箭",
+  "col.minecraft.spawn_eggs"        : "刷怪蛋",
+  "col.minecraft.glazed_terracottas": "带釉陶瓦",
+  "col.tconstruct.buckets"          : "流体桶",
+
+  "col.minecraft.lingering_potions": "滞留型药水",
+  "col.minecraft.splash_potions"   : "喷溅型药水",
+  "col.minecraft.potions"          : "药水",
+
+  "col.cabricality.numbers"   : "数字和符号",
+  "col.cabricality.math_casts": "数学铸模",
+
+  "col.create.blocks/copper_tile"   : "铜瓦",
+  "col.create.blocks/copper_shingle": "铜砖瓦",
+
+  "col.ad_astra:flags": "基地旗帜",
+
+  "col.ae2.paint_balls"      : "染色球",
+  "col.ae2.lumen_paint_balls": "光通染色球",
+
+  "col.indrev.modules": "模块",
+
+  "col.tconstruct.modifiers": "强化",
+
+  "col.tconstruct.slime_helmets": "黏液头颅",
+
+  "col.tconstruct.tools/cleaver"      : "劈刀",
+  "col.tconstruct.tools/sword"        : "剑",
+  "col.tconstruct.tools/dagger"       : "匕首",
+  "col.tconstruct.tools/scythe"       : "镰刀",
+  "col.tconstruct.tools/kama"         : "短刀镰",
+  "col.tconstruct.tools/broad_axe"    : "板斧",
+  "col.tconstruct.tools/hand_axe"     : "短柄斧",
+  "col.tconstruct.tools/excavator"    : "开掘铲",
+  "col.tconstruct.tools/pickadze"     : "凿石锹",
+  "col.tconstruct.tools/mattock"      : "鹤嘴锄",
+  "col.tconstruct.tools/vein_hammer"  : "矿脉锤",
+  "col.tconstruct.tools/sledge_hammer": "锤",
+  "col.tconstruct.tools/pickaxe"      : "镐",
+
+  "col.tconstruct.parts/tough_handle"  : "坚韧手柄",
+  "col.tconstruct.parts/tool_handle"   : "工具手柄",
+  "col.tconstruct.parts/tool_binding"  : "绑定节",
+  "col.tconstruct.parts/large_plate"   : "大板",
+  "col.tconstruct.parts/round_plate"   : "圆板",
+  "col.tconstruct.parts/broad_blade"   : "宽刃",
+  "col.tconstruct.parts/small_blade"   : "小型剑刃",
+  "col.tconstruct.parts/broad_axe_head": "板斧刃",
+  "col.tconstruct.parts/small_axe_head": "小型斧刃",
+  "col.tconstruct.parts/hammer_head"   : "锤头",
+  "col.tconstruct.parts/pick_head"     : "镐头",
+  "col.tconstruct.parts/repair_kit"    : "修补件",
+
+  "col.tconstruct.stations/part_builder"    : "部件制造台",
+  "col.tconstruct.stations/tinker_station"  : "匠作站",
+  "col.tconstruct.stations/crafting_station": "工作站",
+
+  "col.tconstruct.slime_grasses/ichor"  : "灵浆黏性草方块",
+  "col.tconstruct.slime_grasses/ender"  : "末影黏性草方块",
+  "col.tconstruct.slime_grasses/sky"    : "碧空黏性草方块",
+  "col.tconstruct.slime_grasses/earth"  : "大地黏性草方块",
+  "col.tconstruct.slime_grasses/vanilla": "黏性草方块",
+
+  "col.tconstruct.blocks/slime_dirt"     : "黏性泥土",
+  "col.tconstruct.blocks/congealed_slime": "凝固黏液块",
+  "col.tconstruct.blocks/slime"          : "黏液块",
+
+  "col.tconstruct.buckets/potion": "药水桶",
+
+  "col.computercraft.disks": "软盘",
+
+  "col.computercraft.things/turtle"         : "海龟",
+  "col.computercraft.things/pocket_computer": "手提计算机",
+
+  "col.led.lamps/shaded_reinforced_flat_fixture"  : "加固照灯板",
+  "col.led.lamps/shaded_reinforced_large_fixture" : "大型加固罩灯",
+  "col.led.lamps/shaded_reinforced_medium_fixture": "中型加固罩灯",
+  "col.led.lamps/shaded_reinforced_small_fixture" : "小型加固罩灯",
+  "col.led.lamps/shaded_reinforced_clear_full"    : "加固罩灯",
+
+  "col.led.lamps/shaded_flat_fixture"  : "罩灯板",
+  "col.led.lamps/shaded_large_fixture" : "大型罩灯板",
+  "col.led.lamps/shaded_medium_fixture": "中型罩灯板",
+  "col.led.lamps/shaded_small_fixture" : "小型罩灯板",
+  "col.led.lamps/shaded_clear_full"    : "罩灯",
+
+  "col.led.lamps/reinforced_flat_fixture"  : "加固灯板",
+  "col.led.lamps/reinforced_large_fixture" : "大型加固灯板",
+  "col.led.lamps/reinforced_medium_fixture": "中型加固灯板",
+  "col.led.lamps/reinforced_small_fixture" : "小型加固灯板",
+  "col.led.lamps/reinforced_clear_full"    : "加固灯",
+
+  "col.led.lamps/flat_fixture"  : "灯板",
+  "col.led.lamps/large_fixture" : "大型灯",
+  "col.led.lamps/medium_fixture": "中型灯",
+  "col.led.lamps/small_fixture" : "小型灯",
+  "col.led.lamps/clear_full"    : "灯",
+
+  "col.led.blocks/switch": "多彩开关",
+  "col.led.blocks/button": "多彩按钮",
+
+  "col.kibe.things/sleeping_bag": "睡袋",
+  "col.kibe.things/glider"      : "滑翔翼",
+  "col.kibe.things/rune"        : "符文",
+  "col.kibe.things/elevator"    : "电梯",
+
+  "col.promenade.piles": "树叶堆和花丛",
+
+  "col.promenade.blocks/mushroom"      : "蘑菇",
+  "col.promenade.blocks/mushroom_block": "蘑菇块",
+
+  "col.tconstruct.anvils": "匠作砧",
 
 
 
@@ -298,8 +462,14 @@
   "config.cabricality.general.background_blur"        : "背景模糊",
   "config.cabricality.general.background_blur.tooltip": "§7是否啟用背景模糊效果",
 
+  "config.cabricality.general.background_blur_darken"        : "背景模糊時降低亮度",
+  "config.cabricality.general.background_blur_darken.tooltip": "§7是否在背景模糊時降低亮度",
+
   "config.cabricality.general.background_blur_radius"        : "背景模糊半徑",
   "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半徑大小（像素）",
+
+  "config.cabricality.general.transparent_wthit_tooltip"        : "透明WTHIT提示框",
+  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7是否使WTHIT提示框透明",
 
   "config.cabricality.category.debug": "調試",
 
@@ -312,7 +482,7 @@
 
   "key.cabricality.category.general": "永無止境：重縫",
 
-  "key.cabricality.general.config_screen": "打開整合包設置界面",
+  "key.cabricality.general.config_screen": "配置整合包",
 
 
 
@@ -325,7 +495,20 @@
 
   "comment_command": "命令",
 
-  "command.cabricality.alchemist.chaotic": "§8（混沌）",
+  "command.cabricality.actions.copy"  : "[複製]",
+  "command.cabricality.actions.copied": "已複製到剪貼板！",
+
+  "command.cabricality.alchemist.header" : "[混沌煉金]",
+  "command.cabricality.alchemist.chaotic": " [混沌]",
+
+  "command.cabricality.debug.disabled": "調試已禁用",
+  "command.cabricality.debug.enabled" : "調試已啟用",
+
+  "command.cabricality.debug_info.disabled": "禁用了調試",
+  "command.cabricality.debug_info.enabled" : "啟用了調試",
+
+  "command.cabricality.held_item_info.tag_prefix": "#",
+  "command.cabricality.held_item_info.showing"   : "正在展示",
 
 
 
@@ -350,5 +533,6 @@
   "screen.cabricality.title_screen.warning_missing_mod"       : "缺少1個模組！",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d個模組！",
 
-  "itemGroup.cabricality.main": "永無止境: 重縫"
+  "itemGroup.cabricality.main"      : "永無止境: 重縫",
+  "itemGroup.cabricality.substrates": "永無止境: 重縫 | 試劑"
 }

@@ -134,9 +134,9 @@ public class MissingModScreen extends Screen {
 			super.renderBackground(matrixStack);
 
 		// Render Colored Overlay
-		float r = Cabricality.Colors.CABF_DIM_PURPLE.redFloat(),
-				g = Cabricality.Colors.CABF_DIM_PURPLE.greenFloat(),
-				b = Cabricality.Colors.CABF_DIM_PURPLE.blueFloat(), a = 0.57F;
+		float r = Cabricality.Colors.CABF_DIM_PURPLE.getRedFloat(),
+				g = Cabricality.Colors.CABF_DIM_PURPLE.getGreenFloat(),
+				b = Cabricality.Colors.CABF_DIM_PURPLE.getBlueFloat(), a = 0.57F;
 
 		BufferBuilder bufferBuilder = Tessellator.getInstance().getBuffer();
 
@@ -195,9 +195,7 @@ public class MissingModScreen extends Screen {
 				new PlainTextButtonWidget(this.width / 2 - this.textRenderer.getWidth(quit) / 2, y,
 						this.textRenderer.getWidth(quit), 10, quit, buttonWidget -> {
 							Util.getOperatingSystem()
-									.open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open
-																								// mods
-																								// folder
+									.open(QuiltLoader.getGameDir().resolve("mods").toFile()); // Open mods folder
 							if (this.client != null)
 								client.stop();
 						}, this.textRenderer));

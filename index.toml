@@ -42,7 +42,7 @@ hash = "684a97145572aba3c5dc320716c6cb66ff36180ae8f149b9d60249414c83d309"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advancements.snbt"
-hash = "5580728781a920621990b3fcf16c5f77e8b0337245a5b17f82951c519e109f98"
+hash = "073f2d2c9d9cabaf9955f1a7e0b976159ef048847d4d63bb62242558aa2cc65f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
@@ -109,6 +109,34 @@ file = "config/ftbquests/quests/reward_tables/64_silver_coin.snbt"
 hash = "4549a5bf6d2e30fc997325b0321e82bc2db6797cbfa4212c7c4978531755cc81"
 
 [[files]]
+file = "config/indrev/cables.json"
+hash = "9183a2eadef32624ee9a8ed193ac1b61d3b2ce0511f6e0c182f3a2d9bb170a83"
+
+[[files]]
+file = "config/indrev/generators.json"
+hash = "7e76e3fd7ff40190b24aa76efdea7afc315a87e426ac8d7ce0e0f42a1f4e52c6"
+
+[[files]]
+file = "config/indrev/hud.json"
+hash = "273c14e99b9b938007693c86b53cd7d697080b38705b1962cfe38104656bcf2d"
+
+[[files]]
+file = "config/indrev/machines.json"
+hash = "6fbf00f4491111f1be29b4a6dbe172aa90df35cadd5d5ce2cf350bd10e11cbe7"
+
+[[files]]
+file = "config/indrev/mining_rig_config.json"
+hash = "c9a0a12c14e6d0b9c88d9ed8aa5586ee41435408d814dbf081ae207484b1dc5b"
+
+[[files]]
+file = "config/indrev/oregen.json"
+hash = "48a06034fee5b6c99870a0a78bad88c1b61c1c82c210b2a6d11d60bf9a601c75"
+
+[[files]]
+file = "config/indrev/upgrades.json"
+hash = "ebbb00fcd5f6a560a60c43c86b71a49a035f154799b6135c1627f14d5f5f72b5"
+
+[[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "2b006b4a7a087547e840168976cda7fe11d567c571f8e6f9e996506586765426"
 
@@ -118,7 +146,7 @@ hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
 
 [[files]]
 file = "config/roughlyenoughitems/config.json5"
-hash = "6991409f47b44a87f45441f1c43955c65c09997b1b728751dfa65a0f9ad8e7cc"
+hash = "8c2157400c266099774e19c0678f89cdaf9bb99bf242031d7c3392bde98b5d58"
 
 [[files]]
 file = "config/sodium-extra-options.json"
@@ -130,11 +158,11 @@ hash = "504cc5cf23da31f870e3f763fe256698e9a86db9d8853aedaf3802081b1341f5"
 
 [[files]]
 file = "config/splasher/en_us.txt"
-hash = "e03f5b4e97de403ae8561fcb67d4f828042d1c2221b1c5539e294fff38698506"
+hash = "99d25f4f78baff58bbe49099793ee1132c92ef551ebc815a1cb24869d5021ee9"
 
 [[files]]
 file = "config/splasher/zh_cn.txt"
-hash = "90c573249a87a5b4f2c8dc34b661e7a2066c2e8c0804eaf03c8912151e125b81"
+hash = "d868560ae52763e97b3ec7a6eb9b784f325f9f549e4e1b35ad91d7d024676542"
 
 [[files]]
 file = "config/tconstruct-client.toml"
@@ -189,7 +217,7 @@ metafile = true
 
 [[files]]
 file = "mods/bounced.pw.toml"
-hash = "2cf8ebde5f3d992ca4a5222419e08647d568db9bf7e2eecf7f4bab44e568491f"
+hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
 metafile = true
 
 [[files]]
@@ -199,7 +227,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "c178dae39004acaabc346e82f49bc1214ed0cee8ab371c4b822857435ad9877a"
+hash = "b1fc0bde5c43d1c7f9f837feba44dae49dde2949474f13066b99e7a13e56287c"
 metafile = true
 
 [[files]]
@@ -232,13 +260,18 @@ hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
 metafile = true
 
 [[files]]
+file = "mods/conveniented-forge-tags.pw.toml"
+hash = "0b9a0d9c612d052f45128dc4f37aaed1eafe714dae869899931a565a4a780944"
+metafile = true
+
+[[files]]
 file = "mods/coxinha-utilities.pw.toml"
 hash = "289cf2fb15222b03ed588377b920dcb8dbd8d242b3ea8b76c7e3950925b88d56"
 metafile = true
 
 [[files]]
-file = "mods/create-fabric.pw.toml"
-hash = "d17801cdbcb90392e921548c26a123b6ce389d48cb910ae43d828b38ff4fb183"
+file = "mods/create.pw.toml"
+hash = "3e241de103e98ff06965002e2675e0acfec99bab9230df61cecbe4496a371f59"
 metafile = true
 
 [[files]]
@@ -263,12 +296,12 @@ metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "0a67d114167bfdc3bb31d46b9fe43886ff9ac1279f3c0082dc5d85624bd9ca6a"
+hash = "ec3fa413e380758707fd4a790f93613be18d0252a156cc3b28be2ecf234efbe4"
 metafile = true
 
 [[files]]
 file = "mods/extended-drawers.pw.toml"
-hash = "06a9e9d6bc4c512962af46073dcc1b39a21428211159b48c6cac8a99eae6f859"
+hash = "052b23c8acff447c0817589aed00f32bdc0b145ca4be4768707ff5a86dacba95"
 metafile = true
 
 [[files]]
@@ -307,13 +340,13 @@ hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
 metafile = true
 
 [[files]]
-file = "mods/item-filters.pw.toml"
-hash = "5446a135421d4f9cc9c1f43fa7fdad58bd0eed4c2291a6f51eb03f1ec8fdc6bd"
+file = "mods/inventory-tabs-updated.pw.toml"
+hash = "4260894fd18d9e593e8364a0ac3aab1ac7ba6b654010a928f05f12f1e1a83006"
 metafile = true
 
 [[files]]
 file = "mods/kibe.pw.toml"
-hash = "3e47e98487168bea70eca4a17fd42530ce9fe4b4e1c62d882674e51d181c369a"
+hash = "0fd789b8973507de511c9ab3931934b8f4536e912c1127a10f77a0a80add3684"
 metafile = true
 
 [[files]]
@@ -337,11 +370,6 @@ hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
 metafile = true
 
 [[files]]
-file = "mods/libipn.pw.toml"
-hash = "7c2779362482a58ce23b6b9c4b377c0aacf80a25bb860c466c4df951052a1b4b"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "9480f9e11e91eb82ba616c5c622c218d7b7ceff6599a3348d557eb1a1ddd41f9"
 metafile = true
@@ -354,6 +382,11 @@ metafile = true
 [[files]]
 file = "mods/malum-quilt.pw.toml"
 hash = "58168b0555e2ff4977a482707eb58fe2c38fd10322ba7a27b00b2866e19a481e"
+metafile = true
+
+[[files]]
+file = "mods/map-atlases.pw.toml"
+hash = "30651c3624624e4f3ed1f7de2e15a040c7fb8d0179807aac691f2a331b5f10df"
 metafile = true
 
 [[files]]
@@ -393,7 +426,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "d3cbfc74109c4ff70f7d61d559c7fee5d675762b9265174aaca5625b1629ec9c"
+hash = "3d586e00562d465d1b477fa287d5c070e62d6fe4e2a580f268960d6fedd55a3c"
 metafile = true
 
 [[files]]
@@ -413,7 +446,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "9cc11b493efba66e3c481fb317c62a6b96e01a7b82a5d77fe75d0328551c444c"
+hash = "28b6278d40de6ee5942ef099d4044fcd91ed41f6a50631c7742ef84f79011760"
 metafile = true
 
 [[files]]
@@ -423,12 +456,17 @@ metafile = true
 
 [[files]]
 file = "mods/stenographer.pw.toml"
-hash = "5c411f588dd6f97f0fbbfe59b8153290b45398e9ad9986e631e7dd96f011c6ee"
+hash = "9fcde313a87692ef831a450618793f39de69e10805a79e498006840e0cc68914"
 metafile = true
 
 [[files]]
 file = "mods/structures-compass.pw.toml"
 hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
+metafile = true
+
+[[files]]
+file = "mods/taptab.pw.toml"
+hash = "21eb1c3ee8d1b20b6d7c0a336a341c95bc786a4897e4f24930cc133e8e645e0f"
 metafile = true
 
 [[files]]
@@ -443,7 +481,7 @@ metafile = true
 
 [[files]]
 file = "mods/wthit.pw.toml"
-hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
+hash = "4a83125400dcc7ece90e27995f899b315fba1e31e8a0897c26b7fcb3b8f7176e"
 metafile = true
 
 [[files]]

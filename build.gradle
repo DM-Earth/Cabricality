@@ -1,23 +1,24 @@
 plugins {
     id "maven-publish"
     alias(libs.plugins.quilt.loom)
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'
 }
 
 archivesBaseName = project.archives_base_name
-version = project.version
+version = project.modpack_version
 group = project.maven_group
 
 repositories {
     maven {
-        name = "Modrinth"
-        url = "https://api.modrinth.com/maven"
+        name "Modrinth"
+        url "https://api.modrinth.com/maven"
         content {
             includeGroup "maven.modrinth"
         }
     }
 
     maven {
-        name = "Curseforge"
+        name "Curseforge"
         url "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
@@ -25,44 +26,47 @@ repositories {
     }
 
     maven {
-        name = "Ladysnake Mods"
-        url = "https://ladysnake.jfrog.io/artifactory/mods"
+        name "Ladysnake Mods"
+        url "https://ladysnake.jfrog.io/artifactory/mods"
     }
 
-    maven { url = "https://mvn.devos.one/snapshots/" }
-    maven { url = "https://maven.parchmentmc.org" }
-    maven { url = "https://maven.fabricmc.net/" }
-    maven { url = "https://maven.tterrag.com/" }
-    maven { url = "https://storage.googleapis.com/devan-maven/" }
-    maven { url = "https://maven.shedaniel.me/" }
-    maven { url = "https://aperlambda.github.io/maven" }
-    maven { url = "https://maven.kotlindiscord.com/repository/terraformers/" }
-    maven { url = "https://mvn.devos.one/snapshots/" }
-    maven { url = "https://maven.terraformersmc.com/" }
-    maven { url = "https://maven.cafeteria.dev/releases/" }
-    maven { url = "https://jitpack.io/" } // JitPack
-    maven { url = "https://maven.gegy.dev" }
-    maven { url = "https://dvs1.progwml6.com/files/maven/" }
-    maven { url = "https://maven.wispforest.io" }
-    maven { url = "https://modmaven.dev" }
+    maven { url "https://mvn.devos.one/snapshots/" }
+    maven { url "https://maven.parchmentmc.org" }
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://maven.tterrag.com/" }
+    maven { url "https://storage.googleapis.com/devan-maven/" }
+    maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://aperlambda.github.io/maven" }
+    maven { url "https://maven.kotlindiscord.com/repository/terraformers/" }
+    maven { url "https://mvn.devos.one/snapshots/" }
+    maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://maven.cafeteria.dev/releases/" }
+    maven { url "https://jitpack.io/" } // JitPack
+    maven { url "https://maven.gegy.dev" }
+    maven { url "https://dvs1.progwml6.com/files/maven/" }
+    maven { url "https://maven.wispforest.io" }
+    maven { url "https://modmaven.dev" }
     maven {
-        url = "https://maven.jamieswhiteshirt.com/libs-release"
+        url "https://maven.jamieswhiteshirt.com/libs-release"
         content {
             includeGroup("com.jamieswhiteshirt")
         }
     }
+    mavenCentral()
 }
 
 dependencies {
     minecraft libs.minecraft
     mappings variantOf(libs.quilt.mappings) { classifier "intermediary-v2" }
     modImplementation libs.quilt.loader
-
     modImplementation libs.quilted.fabric.api
 
-    modImplementation "com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}"
-    modImplementation "slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}"
-    implementation "com.github.KrLite:Pierced:${project.pierced_version}"
+    modImplementation ("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}") {
+        exclude group:"com.github.AlphaMode"
+    }
+    modImplementation ("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}") {
+        exclude group:"com.github.AlphaMode"
+    }
 
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
@@ -77,6 +81,7 @@ dependencies {
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
+    modImplementation "curse.maven:catwalks-inc-554340:${project.catwalks_version}"
 
     modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
@@ -88,16 +93,19 @@ dependencies {
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
+    implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
+    implementation include("com.github.KrLite:Equator-Utils:${project.eu_version}")
 
     // Develop
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 processResources {
-    inputs.property "version", version
+    inputs.property "modpack_version", version
 
     filesMatching("quilt.mod.json") {
-        expand "version": version
+        expand modpack_version: version
     }
 }
 
@@ -132,4 +140,16 @@ publishing {
 
 loom {
     accessWidenerPath = file("src/main/resources/cabricality.accesswidener")
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }

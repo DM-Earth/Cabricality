@@ -1,0 +1,10 @@
+{
+	"gui.true"   : "True",
+	"gui.false"  : "False",
+	"gui.default": "Default",
+	"gui.min"    : "Min",
+	"gui.max"    : "Max",
+	"gui.regex"  : "Regex",
+	"gui.list"   : "List",
+	"gui.colon"  : ": "
+}

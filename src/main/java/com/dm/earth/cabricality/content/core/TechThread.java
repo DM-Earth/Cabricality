@@ -17,9 +17,11 @@ import com.dm.earth.cabricality.content.core.threads.ZincThread;
 import net.minecraft.util.Identifier;
 
 public interface TechThread {
-	List<TechThread> THREADS = List.of(new AndesiteThread(), new BrassThread(), new CopperThread(),
-			new ZincThread(), new ObsidianThread(), new InvarThread(), new EnderiumThread(),
-			new FluixThread(), new MathThread());
+	List<TechThread> THREADS = List.of(
+			new AndesiteThread(), new BrassThread(), new CopperThread(),
+			new ZincThread(), new ObsidianThread(), new InvarThread(),
+			new EnderiumThread(), new FluixThread(), new MathThread()
+	);
 
 	default void addRecipes(AddRecipesCallback.RecipeHandler handler) {}
 

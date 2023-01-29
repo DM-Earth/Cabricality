@@ -13,7 +13,7 @@ import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlock;
-import com.dm.earth.cabricality.core.ISettableBlockItem;
+import com.dm.earth.cabricality.core.BlockItemSettable;
 import com.dm.earth.cabricality.resource.ResourcedBlock;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.simibubi.create.AllTags.AllBlockTags;
@@ -36,7 +36,6 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 			new JarBlock(QuiltBlockSettings.of(Material.METAL, MapColor.SPRUCE_BROWN)));
 
 	public static void register() {
-
 		// Substrate Jars
 		Arrays.stream(Reagents.values()).forEach(reagents -> {
 			if (reagents == Reagents.CHAOTIC)
@@ -71,7 +70,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 
 		Registry.register(Registry.ITEM, Cabricality.id(name),
 				new BlockItem(block,
-						(block instanceof ISettableBlockItem settingable)
+						(block instanceof BlockItemSettable settingable)
 								? settingable.getSettings()
 								: CabfItems.Properties.DEFAULT.get()));
 

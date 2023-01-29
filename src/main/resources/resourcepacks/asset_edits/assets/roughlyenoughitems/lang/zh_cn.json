@@ -1,0 +1,6 @@
+{
+  "text.rei.collapsed.entry.hint.expand"        : "§8按住 [§7Alt§8] 单击以展开所有 %s（共%d条）",
+  "text.rei.collapsed.entry.hint.expand.macos"  : "§8按住 [§7Option§8] 单击以展开所有 %s（共%d条）",
+  "text.rei.collapsed.entry.hint.collapse"      : "§8按住 [§7Alt§8] 单击以折叠所有 %s (共%d条)",
+  "text.rei.collapsed.entry.hint.collapse.macos": "§8按住 [§7Option§8] 单击以折叠所有 %s (共%d条)"
+}

@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality;
 
+import com.dm.earth.cabricality.networking.CabfReceiver;
+import net.krlite.equator.render.sprite.IdentifierSprite;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -39,6 +41,8 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Cabricality implements ModInitializer {
 	public static class Colors {
 		public static final PreciseColor CABF_PURPLE = PreciseColor.of(0x6117DE);
@@ -52,10 +56,8 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final Identifier CABRICALITY_TITLE_TEXTURE =
-				id("textures", "gui", "title", "cabricality.png");
-		public static final Identifier MINECRAFT_SUBTITLE_TEXTURE =
-				id("textures", "gui", "title", "minecraft.png");
+		public static final IdentifierSprite CABRICALITY_TITLE_TEXTURE = sprite("gui", "title", "cabricality");
+		public static final IdentifierSprite MINECRAFT_SUBTITLE_TEXTURE = sprite("gui", "title", "minecraft");
 	}
 
 	public static class Sounds {
@@ -65,29 +67,34 @@ public class Cabricality implements ModInitializer {
 	public static class ItemGroups {
 		public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
 				() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
-		public static ItemGroup SUBSTRATES_GROUP =
-				QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
-						() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+		public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
+				() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
 	}
 
 	public static class RRPs {
-		public static final RuntimeResourcePack CLIENT_RESOURCES =
-				RuntimeResourcePack.create(id("client_resources"));
-		public static final RuntimeResourcePack SERVER_RESOURCES =
-				RuntimeResourcePack.create(id("server_resources"));
+		public static final RuntimeResourcePack CLIENT_RESOURCES = RuntimeResourcePack
+				.create(id("client_resources"));
+		public static final RuntimeResourcePack SERVER_RESOURCES = RuntimeResourcePack
+				.create(id("server_resources"));
 	}
 
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
-	public static final IdentifierBuilder.Specified ID_BUILDER =
-			new IdentifierBuilder.Specified(ID);
-	public static final CabfConfig CONFIG =
-			new CabfConfig(QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
+	public static final IdentifierBuilder.Specified ID_BUILDER = new IdentifierBuilder.Specified(ID);
+	public static final CabfConfig CONFIG = new CabfConfig(
+			QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
+
+	public static final AtomicInteger IR_TOOL_MODIFY_INDEX = new AtomicInteger(0);
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
 		return ID_BUILDER.id(paths);
+	}
+
+	@Contract("_ -> new")
+	public static @NotNull IdentifierSprite sprite(String... paths) {
+		return ID_BUILDER.sprite(paths);
 	}
 
 	@Contract("_,_ -> new")
@@ -105,14 +112,18 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 
-	@Override
-	public void onInitialize(ModContainer mod) {
+	static {
 		CONFIG.load();
 		CONFIG.save();
+	}
 
+	@Override
+	public void onInitialize(ModContainer mod) {
 		CabfModConflict.checkAndExit();
 
 		LOGGER.info("Initializing " + NAME + "... 📦");
+
+		CabfReceiver.registerServer();
 
 		Trading.load();
 		Alchemist.load();

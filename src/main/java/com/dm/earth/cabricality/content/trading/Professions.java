@@ -7,7 +7,7 @@ import static com.dm.earth.cabricality.ModEntry.FD;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.MLM;
-import static com.dm.earth.cabricality.ModEntry.PMD;
+import static com.dm.earth.cabricality.ModEntry.PM;
 import static com.dm.earth.cabricality.ModEntry.TC;
 import static com.dm.earth.cabricality.ModEntry.TRE;
 import static com.dm.earth.cabricality.content.trading.core.TradingEntry.of;
@@ -41,7 +41,7 @@ public enum Professions {
 			of(FD.id("canvas"), 9, SILVER, 1, 0xb69775),
 			of(FD.id("pumpkin_slice"), 32, SILVER, 1, 0xde882e),
 			// Promenade
-			of(PMD.id("blueberries"), 12, SILVER, 1, 0x98afd8))),
+			of(PM.id("blueberries"), 12, SILVER, 1, 0x98afd8))),
 
 	CARPENTRY(Profession.of("carpentry", 0x735a38, of(MC.id("oak_log"), 32, SILVER, 1, 0x735a38),
 			of(MC.id("spruce_log"), 32, SILVER, 1, 0x3a2715),
@@ -51,9 +51,9 @@ public enum Professions {
 			of(MC.id("birch_log"), 32, SILVER, 1, 0xf0eeeb),
 			of(MC.id("crimson_stem"), 32, SILVER, 1, 0x871115),
 			of(MC.id("warped_stem"), 32, SILVER, 1, 0x1b615b),
-			of(PMD.id("palm_log"), 32, SILVER, 1, 0x4d433a),
-			of(PMD.id("cherry_oak_log"), 32, SILVER, 1, 0x401c15),
-			of(PMD.id("dark_amaranth_stem"), 24, SILVER, 1, 0x4e4053),
+			of(PM.id("palm_log"), 32, SILVER, 1, 0x4d433a),
+			of(PM.id("cherry_oak_log"), 32, SILVER, 1, 0x401c15),
+			of(PM.id("dark_amaranth_stem"), 24, SILVER, 1, 0x4e4053),
 			of(MLM.id("runewood_log"), 24, SILVER, 1, 0x583434),
 			of(MLM.id("exposed_runewood_log"), 16, SILVER, 1, 0x683a30),
 			of(MLM.id("soulwood_log"), 16, SILVER, 1, 0x34232e),
@@ -92,8 +92,8 @@ public enum Professions {
 			of(MC.id("calcite"), 48, SILVER, 1, 0xedece6),
 			of(MC.id("sandstone"), 64, SILVER, 1, 0xdfd3a9),
 			of(CR.id("limestone"), 64, SILVER, 1, 0xbbb6a9),
-			of(PMD.id("blunite"), 64, SILVER, 1, 0x5f6874),
-			of(PMD.id("carbonite"), 64, SILVER, 1, 0x514e52),
+			of(PM.id("blunite"), 64, SILVER, 1, 0x5f6874),
+			of(PM.id("carbonite"), 64, SILVER, 1, 0x514e52),
 			of(CR.id("scoria"), 16, SILVER, 1, 0x493a34),
 			of(CR.id("veridium"), 16, SILVER, 1, 0x205f4f),
 			of(CR.id("ochrum"), 16, SILVER, 1, 0xb29561),

@@ -1,9 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
 import com.dm.earth.cabricality.Cabricality;
-
-import org.jetbrains.annotations.NotNull;
-
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 
@@ -15,17 +12,12 @@ public class CatalystJarBlock extends SubstrateJarBlock {
 	}
 
 	@Override
-	public Substrate getSubstrate() {
-		return Reagents.getCatalystFromBlock(this);
-	}
-
-	@Override
-	public @NotNull Identifier getDefaultBlockId() {
+	public Identifier getDefaultBlockId() {
 		return Cabricality.id("catalyst_jar");
 	}
 
 	@Override
-	public Identifier getBlockModelId() {
-		return Cabricality.id("block", "jar", "catalyst");
+	public Substrate getSubstrate() {
+		return Reagents.getCatalystFromBlock(this);
 	}
 }

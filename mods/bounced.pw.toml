@@ -1,13 +1,13 @@
 name = "Bounced"
-filename = "bounced-1.18-1.0.2-patch1.jar"
+filename = "bounced-1.18-1.0.4.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/2mlOZXZr/versions/DaimiUiQ/bounced-1.18-1.0.2-patch1.jar"
+url = "https://cdn.modrinth.com/data/2mlOZXZr/versions/zUwMVEK4/bounced-1.18-1.0.4.jar"
 hash-format = "sha1"
-hash = "206ecde8cfc85c00c9be8195e70b5e52db334780"
+hash = "93ccdd19e988d7f25a9756fdeedab6a9e06db498"
 
 [update]
 [update.modrinth]
 mod-id = "2mlOZXZr"
-version = "DaimiUiQ"
+version = "zUwMVEK4"

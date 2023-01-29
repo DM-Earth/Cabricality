@@ -34,12 +34,6 @@ import net.minecraft.util.Identifier;
 
 @SuppressWarnings("UnstableApiUsage")
 public class CopperThread implements TechThread {
-
-	@Override
-	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.remove(CR.id("crafting/kinetics/belt_connector"));
-	}
-
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.register(recipeId("crafting", "belt_connector"),
@@ -83,6 +77,11 @@ public class CopperThread implements TechThread {
 	}
 
 	@Override
+	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
+		handler.remove(CR.id("crafting", "kinetics", "belt_connector"));
+	}
+
+	@Override
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(CR.id("copper_backtank"), 1, MC.id("copper_block")));
 		MechAndSmithCraft.addEntry(entry(CR.id("portable_fluid_interface"), 2, null));
@@ -103,10 +102,7 @@ public class CopperThread implements TechThread {
 	}
 
 	@Contract("_, _, _ -> new")
-	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count,
-			@Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("copper_machine"), output, count,
-				other);
+	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
+		return MechAndSmithCraft.entry(this.getLevel(), CABF.id("copper_machine"), output, count, other);
 	}
-
 }

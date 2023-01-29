@@ -1,0 +1,71 @@
+{
+  "itemGroup.catwalksinc.main": "猫爬架",
+
+  "block.catwalksinc.catwalk"          : "猫爬架",
+  "block.catwalksinc.catwalk_stairs"   : "猫爬架楼梯",
+  "block.catwalksinc.industrial_ladder": "金属梯子",
+  "block.catwalksinc.caged_ladder"     : "笼式梯子",
+  "block.catwalksinc.cage_lamp"        : "笼式灯",
+  "block.catwalksinc.crank_wheel"      : "曲柄盘",
+
+  "misc.catwalksinc.painted_catwalk"       : "染色猫爬架",
+  "misc.catwalksinc.painted_catwalk_stairs": "染色猫爬架楼梯",
+  "misc.catwalksinc.painted_ladder"        : "染色金属梯子",
+  "misc.catwalksinc.painted_caged_ladder"  : "染色笼式梯子",
+
+  "misc.catwalksinc.forced_handrail"   : "扶手：始终",
+  "misc.catwalksinc.forced_no_handrail": "扶手：从不",
+  "misc.catwalksinc.default_handrail"  : "扶手：自动",
+  "misc.catwalksinc.forced_ladder"     : "梯子：始终",
+  "misc.catwalksinc.forced_no_ladder"  : "梯子：从不",
+  "misc.catwalksinc.default_ladder"    : "梯子：自动",
+
+  "item.catwalksinc.iron_rod": "铁棍",
+  "item.catwalksinc.axle"    : "轴体",
+  "item.catwalksinc.wrench"  : "扳手",
+
+  "item.catwalksinc.paint_scraper"     : "油漆刮刀",
+  "item.catwalksinc.paint_roller"      : "油漆滚筒",
+  "misc.catwalksinc.paint_roller.usage": "与1~4个染料合成以填充颜色，每个染料对应8点耐久。
+
+你只能给那些拥有染色配方的方块染色。染色配方就是指某个染料可以被八个同种方块围绕，并合成八个染色方块。现在，你可以用油漆滚筒直接为世界内的方块染色，每次消耗一点耐久。
+
+手持有颜色的油漆滚筒对着装水的炼药锅右击即可清除颜色。",
+  "misc.catwalksinc.white"     : "白色",
+  "misc.catwalksinc.orange"    : "橙色",
+  "misc.catwalksinc.magenta"   : "品红色",
+  "misc.catwalksinc.light_blue": "淡蓝色",
+  "misc.catwalksinc.yellow"    : "黄色",
+  "misc.catwalksinc.lime"      : "黄绿色",
+  "misc.catwalksinc.pink"      : "粉色",
+  "misc.catwalksinc.gray"      : "灰色",
+  "misc.catwalksinc.light_gray": "淡灰色",
+  "misc.catwalksinc.cyan"      : "青色",
+  "misc.catwalksinc.purple"    : "紫色",
+  "misc.catwalksinc.blue"      : "蓝色",
+  "misc.catwalksinc.brown"     : "棕色",
+  "misc.catwalksinc.green"     : "绿色",
+  "misc.catwalksinc.red"       : "红色",
+  "misc.catwalksinc.black"     : "黑色",
+
+  "misc.catwalksinc.catwalk.usage": "猫爬架会在放置时自动适应周围的方块。
+
+猫爬架可以与其它猫爬架、大部分门和梯子，以及一些特殊方块相连。如果猫爬架放置在这些方块的一旁且上方一格无遮挡方块，它就会变成猫爬架楼梯。
+
+注意，在一些可交互方块前方的猫爬架不会拥有扶手，例如漏斗和箱子。
+
+你可以使用扳手更改猫爬架的连接模式。
+
+手持扳手右击猫爬架楼梯可以切换扶手模式，而潜行时手持扳手右击则可以旋转猫爬架楼梯。",
+  "misc.catwalksinc.caged_ladder.usage": "笼式梯子会在放置时自动适应周围的方块。
+
+如果笼式梯子的后侧是猫爬架或任何可行走的方块，那么笼式梯子会取消攀爬功能，变成一个笼子。
+
+换而言之，当笼式梯子放置在可行走的方块上方时，可以使笼子向梯子上方延伸一格。
+
+当然，你也可以手持扳手右击笼式梯子以单独启用或禁用梯子。潜行时手持扳手右击则可以旋转笼式梯子。",
+  "misc.catwalksinc.crank_wheel.usage": "可以输出任意等级的红石信号，左侧降低一级，右侧升高一级。",
+
+  "subtitles.catwalksinc.wrench_use"     : "扳手：使用",
+  "subtitles.catwalksinc.crank_wheel_use": "曲柄盘：转动"
+}

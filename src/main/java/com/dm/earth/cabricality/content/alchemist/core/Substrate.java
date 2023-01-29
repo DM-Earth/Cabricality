@@ -3,18 +3,19 @@ package com.dm.earth.cabricality.content.alchemist.core;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
-import com.dm.earth.cabricality.core.IHashStringable;
+import com.dm.earth.cabricality.core.HashStringable;
+
 import net.minecraft.block.Block;
-import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public abstract class Substrate implements IHashStringable {
+public abstract class Substrate implements HashStringable {
 	private final Identifier id;
 	private final int tint;
 
@@ -54,12 +55,11 @@ public abstract class Substrate implements IHashStringable {
 
 	@Override
 	public String toString() {
-		return this.id.toString();
+		return this.getId().toString();
 	}
 
-	public Text getJarName() {
-		return ((MutableText) this.getName())
-				.append(Cabricality.genTranslatableText("block", this.getType() + "_jar"));
+	public SubstrateJarBlock getJarBlock() {
+		return (SubstrateJarBlock) Registry.BLOCK.get(Cabricality.id(this.getType() + "_jar_" + this.hashString()));
 	}
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {

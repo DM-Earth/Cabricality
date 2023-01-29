@@ -1,20 +1,20 @@
 
 <h4 align="center">
   <sup>
-    Please Install
+    Please Install&ensp;
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
-      FTB Quests |
+      FTB Quests ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
-      FTB Teams |
+      FTB Teams ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library |
+      FTB Library ｜
     </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
       Quests Additions
     </a>
-    Manually!
+    &ensp;Manually!
   </sup>
   <br>
   </br>
@@ -50,21 +50,19 @@
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
 
-With this pack, you can follow the quests and build your own factory with [Create](https://github.com/Fabricators-of-Create/Create) and [Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution). From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
+With **Cabricality,** you can follow the quests and build your own factory along with **[Create](https://github.com/Fabricators-of-Create/Create)** and **[Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution).** From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
-> *This modpack is inspired by [Create: Above and Beyond (CAB),](https://github.com/simibubi/Above-and-Beyond) but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
+> ***Cabricality** is inspired by **[Create: Above and Beyond,](https://github.com/simibubi/Above-and-Beyond)** but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
 
-[^wiki]: Feel free to check [Cabricality Wiki](https://github.com/DM-Earth/Cabricality/wiki) when you have any problems!
+[^wiki]: Having problems? Feel free to check **[The Cabricality Wiki!](https://github.com/DM-Earth/Cabricality/wiki)**
 
 <h3 align="center">
   English
-  |
   <a href="docs/readme/zh_simplified.md">
-    简体中文
+    ｜ 简体中文
   </a>
-  |
   <a href="docs/readme/zh_traditional.md">
-    繁體中文
+    ｜ 繁體中文
   </a>
 </h3>
 
@@ -72,7 +70,7 @@ With this pack, you can follow the quests and build your own factory with [Creat
 
 ### Thread Basing
 
-As a technical modpack, Cabricality has a **main thread** of technology developments. Aside from it, there are **sub threads** of unnecessary technologies.
+As a technical modpack, **Cabricality** has a **main thread** of technology developments. Aside from it, there are **sub threads** of unnecessary technologies.
 
 The **well-described** quests will surely set you up goals before every tech term. Don't worry, with us, you will be neither stressed out nor puzzled.
 
@@ -108,9 +106,9 @@ You might leave behind quests by landing on the moon, but your story never ends.
 
 We prefer you to optimize your games on your own.
 
-**If you want a higher FPS(Frames per second),** vsync may help[^fps].
+**If you want a higher <abbr title="Frames per Second">FPS</abbr>,** vsync may help[^fps].
 
-[^fps]: If the game's FPS is locked to 30, please consider to turn of vsync.
+[^fps]: If the game's FPS is locked to 30, please consider to turn off vsync.
 
 If you like to write scripts and add your favorites to the game, **you're welcome!**
 
@@ -136,14 +134,14 @@ Clone this repository and run the commands below:
 packwiz modrinth export
 ```
 
-> *For more information, see [packwiz wiki.](https://packwiz.infra.link)*
+> *For more information, please refer to **[packwiz wiki.](https://packwiz.infra.link)***
 
 ### Supported Launchers
 
-We support almost all launchers that compatible with **Modrinth format pack** and **Quilt.** Such as [MultiMC,](https://multimc.org) [Prism Launcher](https://prismlauncher.org) and [Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2].
+**Cabricality** is supporting any launcher that compatibles with **Modrinth format pack** and **Quilt.** Such as **[MultiMC,](https://multimc.org)** **[Prism Launcher](https://prismlauncher.org)** and **[Hello Minecraft! Launcher](https://hmcl.huangyuhui.net)[^pcl2].**
 
 [^pcl2]: **Note that [PCL2 Launcher](https://github.com/Hex-Dragon/PCL2) is not compatible.**
 
 ### Licence
 
-This project is licenced under [**GPL-3.0.**](LICENSE)
+**Cabricality** is licenced under [**GPL-3.0.**](LICENSE)

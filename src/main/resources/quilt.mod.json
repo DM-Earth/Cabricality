@@ -9,7 +9,7 @@
         "version": "1802.5.5"
       }
     ],
-    "version": "${version}",
+    "version": "${modpack_version}",
     "metadata": {
       "name": "Cabricality",
       "description": "A Create centered challengeable mod inspired by Create: Above and Beyond",
@@ -34,7 +34,9 @@
         "com.dm.earth.cabricality.tweak.RecipeTweaks",
         "com.dm.earth.cabricality.content.trading.data.recipe.Trading"
       ],
-      "rei_client": "com.dm.earth.cabricality.client.rei.CabricalityREIClientPlugin",
+      "rei_client": [
+        "com.dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin"
+      ],
       "modmenu": "com.dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
     },
     "accessWidener": "cabricality.accesswidener",

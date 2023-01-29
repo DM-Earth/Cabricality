@@ -1,6 +1,8 @@
 package com.dm.earth.cabricality.client;
 
 import java.util.Arrays;
+
+import com.dm.earth.cabricality.networking.CabfReceiver;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -27,6 +29,7 @@ import net.minecraft.client.render.RenderLayer;
 
 @ClientOnly
 public class CabricalityClient implements ClientModInitializer {
+	public static String ID = Cabricality.ID + "Client";
 	private static long initTime = -1;
 
 	public static void finishLoading() {
@@ -42,6 +45,8 @@ public class CabricalityClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient(ModContainer mod) {
 		initTime = System.currentTimeMillis();
+
+		CabfReceiver.registerClient();
 
 		PushUtil.register();
 		ScreenUtil.registerEvents();

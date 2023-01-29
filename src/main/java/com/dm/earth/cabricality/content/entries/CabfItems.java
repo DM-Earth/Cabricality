@@ -34,77 +34,72 @@ import net.minecraft.util.registry.Registry;
 
 public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 	public static final class Properties {
-		public static final Supplier<Item.Settings> DEFAULT =
-				() -> new QuiltItemSettings().group(Cabricality.ItemGroups.MAIN_GROUP);
-		public static final Supplier<Item.Settings> DEFAULT_SINGLE =
-				() -> DEFAULT.get().maxCount(1);
-		public static final Supplier<Item.Settings> CARD =
-				() -> new QuiltItemSettings().maxCount(1);
+		// Default
+		public static final Supplier<Item.Settings> DEFAULT = () -> new QuiltItemSettings()
+				.group(Cabricality.ItemGroups.MAIN_GROUP);
+		public static final Supplier<Item.Settings> DEFAULT_SINGLE = () -> DEFAULT.get().maxCount(1);
+		public static final Supplier<Item.Settings> DEFAULT_QUARTER = () -> DEFAULT.get().maxCount(16);
+
+		// Specialized
+		public static final Supplier<Item.Settings> CARD = () -> new QuiltItemSettings().maxCount(1);
 		public static final Supplier<Item.Settings> JAR = () -> new QuiltItemSettings()
 				.group(Cabricality.ItemGroups.SUBSTRATES_GROUP).maxCount(16);
-		public static final Supplier<Item.Settings> DEFAULT_QUARTER =
-				() -> DEFAULT.get().maxCount(16);
 	}
 
 	public static final Item SAW_BLADE = registerItemModeled("saw_blade",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "saw_blade"));
-	public static final Item BASALZ_SHARD =
-			registerItemModeled("basalz_shard", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "basalz_shard"));
-	public static final Item BASALZ_POWDER =
-			registerItemModeled("basalz_powder", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "basalz_powder"));
+	public static final Item BASALZ_SHARD = registerItemModeled("basalz_shard", new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "basalz_shard"));
+	public static final Item BASALZ_POWDER = registerItemModeled("basalz_powder",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "basalz_powder"));
 	public static final Item BLIZZ_CUBE = registerItemModeled("blizz_cube",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "blizz_cube"));
-	public static final Item BLIZZ_POWDER =
-			registerItemModeled("blizz_powder", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "blizz_powder"));
+	public static final Item BLIZZ_POWDER = registerItemModeled("blizz_powder", new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "blizz_powder"));
 	public static final Item ZINC_SHEET = registerItemModeled("zinc_sheet",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "zinc_sheet"));
 	public static final Item STONE_ROD = registerItemModeled("stone_rod",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "stone_rod"));
 	public static final Item RUBBER = registerItemModeled("rubber",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "rubber"));
-	public static final Item CURED_RUBBER =
-			registerItemModeled("cured_rubber", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "cured_rubber"));
-	public static final Item INVAR_INGOT =
-			registerItemModeled("invar_ingot", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "invar_ingot"));
-	public static final Item NICKEL_INGOT =
-			registerItemModeled("nickel_ingot", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "nickel_ingot"));
-	public static final Item NICKEL_NUGGET =
-			registerItemModeled("nickel_nugget", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "nickel_nugget"));
+	public static final Item CURED_RUBBER = registerItemModeled("cured_rubber", new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "cured_rubber"));
+	public static final Item INVAR_INGOT = registerItemModeled("invar_ingot", new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "invar_ingot"));
+	public static final Item NICKEL_INGOT = registerItemModeled("nickel_ingot", new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "nickel_ingot"));
+	public static final Item NICKEL_NUGGET = registerItemModeled("nickel_nugget",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "nickel_nugget"));
 	// Placeholder
 	public static final Item RAW_NICKEL = registerItemModeled("raw_nickel",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "raw_nickel"));
-	public static final Item ENDERIUM_INGOT =
-			registerItemModeled("enderium_ingot", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "enderium_ingot"));
-	public static final Item NICKEL_COMPOUND =
-			registerItemModeled("nickel_compound", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "nickel_compound"));
-	public static final Item INVAR_COMPOUND =
-			registerItemModeled("invar_compound", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "invar_compound"));
-	public static final Item SILICON_COMPOUND =
-			registerItemModeled("silicon_compound", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "silicon_compound"));
+	public static final Item ENDERIUM_INGOT = registerItemModeled("enderium_ingot",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "enderium_ingot"));
+	public static final Item NICKEL_COMPOUND = registerItemModeled("nickel_compound",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "nickel_compound"));
+	public static final Item INVAR_COMPOUND = registerItemModeled("invar_compound",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "invar_compound"));
+	public static final Item SILICON_COMPOUND = registerItemModeled("silicon_compound",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "silicon_compound"));
 	public static final Item RUBY = registerItemModeled("ruby", new Item(Properties.DEFAULT.get()),
 			ItemModelGenerator.generated("item", "ruby"));
 	public static final Item SAPPHIRE = registerItemModeled("sapphire",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "sapphire"));
-	public static final Item RADIANT_SHEET =
-			registerItemModeled("radiant_sheet", new GlintedItem(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "radiant_sheet"));
-	public static final Item RADIANT_COIL =
-			registerItemModeled("radiant_coil", new GlintedItem(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "radiant_coil"));
-	public static final Item DYE_ENTANGLED_SINGULARITY =
-			registerItemModeled("dye_entangled_singularity", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "dye_entangled_singularity"));
+	public static final Item RADIANT_SHEET = registerItemModeled("radiant_sheet",
+			new GlintedItem(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "radiant_sheet"));
+	public static final Item RADIANT_COIL = registerItemModeled("radiant_coil",
+			new GlintedItem(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "radiant_coil"));
+	public static final Item DYE_ENTANGLED_SINGULARITY = registerItemModeled("dye_entangled_singularity",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
 			new Item(new QuiltItemSettings().maxDamage(512)
 					.group(Cabricality.ItemGroups.MAIN_GROUP)),
@@ -113,17 +108,17 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			new Item(new QuiltItemSettings().maxDamage(512)
 					.group(Cabricality.ItemGroups.MAIN_GROUP)),
 			ItemModelGenerator.generated("item", "boot_medium"));
-	public static final Item CIRCUIT_SCRAP =
-			registerItemModeled("circuit_scrap", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "circuit_scrap"));
-	public static final Item SAND_BALL =
-			registerItemModeled("sand_ball", new Item(Properties.DEFAULT_QUARTER.get()),
-					ItemModelGenerator.generated("item", "sand_ball"));
+	public static final Item CIRCUIT_SCRAP = registerItemModeled("circuit_scrap",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "circuit_scrap"));
+	public static final Item SAND_BALL = registerItemModeled("sand_ball",
+			new Item(Properties.DEFAULT_QUARTER.get()),
+			ItemModelGenerator.generated("item", "sand_ball"));
 	public static final Item ROUGH_SAND = registerItemModeled("rough_sand",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "rough_sand"));
-	public static final Item PURIFIED_SAND =
-			registerItemModeled("purified_sand", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "purified_sand"));
+	public static final Item PURIFIED_SAND = registerItemModeled("purified_sand",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "purified_sand"));
 	public static final Item COAL_COKE = registerItemModeled("coal_coke",
 			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "coal_coke"));
 	public static final Item COKE_CHUNK = registerItemModeled("coke_chunk",
@@ -131,31 +126,26 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	public static final Item INCOMPLETE_COKE_CHUNK = registerItemModeled("incomplete_coke_chunk",
 			new SequencedAssemblyItem(Properties.DEFAULT.get()),
 			ItemModelGenerator.generated("item", "incomplete_coke_chunk"));
-	public static final Item EARTH_CHARGE =
-			registerItemModeled("earth_charge", new Item(Properties.DEFAULT_QUARTER.get()),
-					ItemModelGenerator.generated("item", "earth_charge"));
-	public static final Item ICE_CHARGE =
-			registerItemModeled("ice_charge", new Item(Properties.DEFAULT_QUARTER.get()),
-					ItemModelGenerator.generated("item", "ice_charge"));
-	public static final Item NAN =
-			registerItemModeled("nan", new Item(Properties.DEFAULT_SINGLE.get()),
-					ItemModelGenerator.generated("item", "math/nan"));
-	public static final Item COMPUTATION_MATRIX =
-			registerItem("computation_matrix", new GlintedItem(Properties.DEFAULT.get()));
+	public static final Item EARTH_CHARGE = registerItemModeled("earth_charge",
+			new Item(Properties.DEFAULT_QUARTER.get()),
+			ItemModelGenerator.generated("item", "earth_charge"));
+	public static final Item ICE_CHARGE = registerItemModeled("ice_charge",
+			new Item(Properties.DEFAULT_QUARTER.get()),
+			ItemModelGenerator.generated("item", "ice_charge"));
+	public static final Item NAN = registerItemModeled("nan", new Item(Properties.DEFAULT_SINGLE.get()),
+			ItemModelGenerator.generated("item", "math/nan"));
+	public static final Item COMPUTATION_MATRIX = registerItem("computation_matrix",
+			new GlintedItem(Properties.DEFAULT.get()));
 
-	public static final Item MATTER_PLASTICS =
-			registerItemModeled("matter_plastics", new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "matter_plastics"));
+	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics",
+			new Item(Properties.DEFAULT.get()),
+			ItemModelGenerator.generated("item", "matter_plastics"));
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
-	public static final List<String> DUSTS =
-			List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
+	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
 	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
-	public static final Map<String, String> OPERATORS =
-			Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
+	public static final Map<String, String> OPERATORS = Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
 	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-
-	public static final List<String> MATH_CASTS =
-			List.of("plus", "minus", "multiply", "divide", "three", "eight");
+	public static final List<String> MATH_CASTS = List.of("plus", "minus", "multiply", "divide", "three", "eight");
 
 	public static void register() {
 		// Trading Cards
@@ -166,8 +156,10 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 							Cabricality.id("item", "card", "profession_card").toString()));
 			profession.entries()
 					.forEach(entry -> registerItemModeled("trade_card_" + entry.hashString(),
-							new TradeCardItem(Properties.CARD.get()), ItemModelGenerator.parented(
-									Cabricality.id("item", "card", "trade_card").toString())));
+							new TradeCardItem(Properties.CARD.get()),
+							ItemModelGenerator.parented(
+									Cabricality.id("item", "card", "trade_card")
+											.toString())));
 		});
 
 		// Coins
@@ -179,11 +171,13 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			// For Flipping
 			registerItemModeled(coinType.getId().getPath() + "_top",
 					new Item(Properties.CARD.get()), ItemModelGenerator.parented(Cabricality
-							.id("item", "coin", coinType.getId().getPath() + "_top").toString()));
+							.id("item", "coin", coinType.getId().getPath() + "_top")
+							.toString()));
 			registerItemModeled(coinType.getId().getPath() + "_bottom",
 					new Item(Properties.CARD.get()),
 					ItemModelGenerator.parented(
-							Cabricality.id("item", "coin", coinType.getId().getPath() + "_bottom")
+							Cabricality.id("item", "coin",
+									coinType.getId().getPath() + "_bottom")
 									.toString()));
 		});
 
@@ -269,6 +263,10 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 				return ActionResult.SUCCESS;
 			if (name.equals("ingots/nickel"))
 				return ActionResult.SUCCESS;
+			if (name.equals("coins/silver"))
+				return ActionResult.SUCCESS;
+			if (name.equals("coins/gold"))
+				return ActionResult.SUCCESS;
 		}
 		return ActionResult.PASS;
 	}
@@ -276,8 +274,12 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	@Override
 	public void load(TagHandler<Item> handler) {
 		Arrays.stream(TradingEntry.CoinTypes.values())
-				.forEach(coinType -> handler.register(C.id(coinType.getName() + "_coins"),
-						Registry.ITEM.get(coinType.getId())));
+				.forEach(coinType -> {
+					handler.register(C.id(coinType.getName() + "_coins"),
+							Registry.ITEM.get(coinType.getId()));
+					handler.register(C.id("coins", coinType.getName()),
+							Registry.ITEM.get(coinType.getId()));
+				});
 		Arrays.stream(ToolMaterialIndex.values())
 				.forEach(materialIndex -> handler.register(CabfItemTags.SAWS,
 						Registry.ITEM.get(Cabricality.id(materialIndex.getName() + "_saw"))));
@@ -295,6 +297,6 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		handler.register(C.id("ingots", "nickel"), NICKEL_INGOT);
 
 		handler.register(C.id("nickel_nuggets"), NICKEL_NUGGET);
-		handler.register(C.id("nuggets/nickel"), NICKEL_NUGGET);
+		handler.register(C.id("nuggets", "nickel"), NICKEL_NUGGET);
 	}
 }

@@ -1,24 +1,20 @@
 {
 	"basics": {
-		"favorites": [
+		"favorites": [],
+		"hiddenFavorites": [
 			"{id:\"ftbteams:my_team\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbteams:textures/teams.png\",\"x\":0,\"click\":\"ftbteams:open_gui\",\"loading_screen\":true}',type:\"ftblibrary:sidebar_button\"}",
 			"{id:\"ftbquests:quests\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbquests:item/book\",\"x\":610,\"click\":\"ftbquests:open_gui\",\"required_server_mods\":[\"ftbquests\"],\"custom_text\":true}',type:\"ftblibrary:sidebar_button\"}"
 		],
-		"hiddenFavorites": [],
-		"displayHistory": [
-			"{DisplayHistoryCategory:\"indrev:smelter\",DisplayHistoryContains:0b,DisplayHistoryUUID:\"7e10153e-16ca-4770-8d78-fbcbdf140952\"}",
-			"{DisplayHistoryCategory:\"indrev:smelter\",DisplayHistoryContains:0b,DisplayHistoryUUID:\"febdd6a9-76c4-45e1-9046-e4b819d0aeea\"}"
-		],
 		// Declares whether cheating mode is on.
-		"cheating": true,
+		"cheating": false,
 		"favoritesEnabled": true,
 		"keyBindings": {
 			"recipeKeybind": {
-				"keyCode": "key.keyboard.r",
+				"keyCode": "key.keyboard.i",
 				"modifier": 0
 			},
 			"usageKeybind": {
-				"keyCode": "key.keyboard.u",
+				"keyCode": "key.keyboard.o",
 				"modifier": 0
 			},
 			"hideKeybind": {
@@ -65,16 +61,19 @@
 		"filtering": {
 			"shouldFilterDisplays": true,
 			"filteringRules": [
-				"{id:\"roughlyenoughitems:manual\",rule:{}}"
+				"{id:\"roughlyenoughitems:manual\",rule:{}}",
+				"{id:\"roughlyenoughitems:basic\",rule:{}}"
 			],
+			"filteringQuickCraftCategories": { },
 			"filteredStacks": []
 		},
 		"enableJeiCompatibilityLayer": true,
 		"tooltips": {
 			// Declares whether REI should append mod names to entries.
-			"appendModNames": false,
+			"appendModNames": true,
 			// Declares whether favorites tooltip should be displayed.
-			"displayFavoritesTooltip": false
+			"displayFavoritesTooltip": false,
+			"displayIMEHints": true
 		},
 		"layout": {
 			// The ordering of the items on the entry panel.
@@ -87,7 +86,7 @@
 			"debugRenderTimeRequired": false,
 			// Merges displays with equal contents under 1 display.
 			"mergeDisplayUnderOne": true,
-			"favoriteAddWidgetMode": "ALWAYS_VISIBLE"
+			"favoriteAddWidgetMode": "AUTO_HIDE"
 		},
 		"accessibility": {
 			"entrySize": 1.0,
@@ -133,29 +132,29 @@
 		}
 	},
 	"appearance": {
-		"recipeScreenType": "ORIGINAL",
+		"recipeScreenType": "COMPOSITE",
 		// Declares the appearance of REI windows.
 		"theme": "LIGHT",
 		"layout": {
 			// Declares the position of the search field.
-			"searchFieldLocation": "TOP_SIDE",
+			"searchFieldLocation": "CENTER",
 			// Declares the position of the config button.
-			"configButtonLocation": "UPPER",
+			"configButtonLocation": "LOWER",
 			// Declares whether the craftable filter button is enabled.
 			"showCraftableOnlyButton": true
 		},
 		// Declares the appearance of recipe's border.
 		"recipeBorder": "DEFAULT",
 		// Declares whether entry panel is scrolled.
-		"scrollingEntryListWidget": false,
-		"horizontalEntriesBoundaries": 1.0,
+		"scrollingEntryListWidget": true,
+		"horizontalEntriesBoundaries": 0.96,
 		"verticalEntriesBoundaries": 1.0,
 		"horizontalEntriesBoundariesColumns": 50,
 		"verticalEntriesBoundariesRows": 1000,
 		"favoritesHorizontalEntriesBoundaries": 1.0,
 		"favoritesHorizontalEntriesBoundariesColumns": 50,
-		"syntaxHighlightingMode": "PLAIN_UNDERSCORED",
-		"isFocusModeZoomed": false
+		"syntaxHighlightingMode": "COLORFUL",
+		"isFocusModeZoomed": true
 	},
 	"functionality": {
 		"inputMethod": "rei:pinyin",

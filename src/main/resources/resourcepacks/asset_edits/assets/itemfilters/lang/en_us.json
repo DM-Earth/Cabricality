@@ -1,0 +1,64 @@
+{
+	"itemGroup.itemfilters.main"       : "Item Filters",
+	"itemGroup.itemfilters.itemfilters": "Item Filters",
+
+	"item.itemfilters.filter": "Item Filter",
+
+	"item.itemfilters.always_true"            : "§aAlways True §rFilter",
+	"item.itemfilters.always_true.description": "Matches all items",
+
+	"item.itemfilters.always_false"            : "§cAlways False §rFilter",
+	"item.itemfilters.always_false.description": "Matches no items",
+
+	"item.itemfilters.or"            : "§9OR §rFilter",
+	"item.itemfilters.or.description": "One of filters must match",
+
+	"item.itemfilters.and"            : "§9AND §rFilter",
+	"item.itemfilters.and.description": "All filters must match",
+
+	"item.itemfilters.not"            : "§9NOT §rFilter",
+	"item.itemfilters.not.description": "Invert filter",
+
+	"item.itemfilters.xor"            : "§9XOR §rFilter",
+	"item.itemfilters.xor.description": "One of two filters must match, but not both",
+
+	"item.itemfilters.tag"            : "§6Tag §rFilter",
+	"item.itemfilters.tag.description": "Tags names, such as 'minecraft:wool' or 'forge:cobblestone'",
+
+	"item.itemfilters.item_group"            : "§6Item Group §rFilter",
+	"item.itemfilters.item_group.description": "Use Item Group / Creative Tab ID",
+
+	"item.itemfilters.mod"            : "§6Mod §rFilter",
+	"item.itemfilters.mod.description": "Use Mod ID",
+
+	"item.itemfilters.id_regex"            : "§dID RegEx §rFilter",
+	"item.itemfilters.id_regex.description": "Checks item ID with regular expressions",
+
+	"item.itemfilters.damage"            : "§dDamage §rFilter",
+	"item.itemfilters.damage.description": "Checks item damage",
+
+	"item.itemfilters.block"            : "§dBlock §rFilter",
+	"item.itemfilters.block.description": "Checks of item is a block",
+
+	"item.itemfilters.max_count"            : "§dMax Count §rFilter",
+	"item.itemfilters.max_count.description": "Checks item max count",
+
+	"item.itemfilters.strong_nbt"            : "§dNBT §rFilter §d(Strong)§r",
+	"item.itemfilters.strong_nbt.description": "Matches if entire NBT is equal",
+
+	"item.itemfilters.weak_nbt"            : "§dNBT §rFilter §d(Weak)§r",
+	"item.itemfilters.weak_nbt.description": "Matches if only specified part of NBT is present",
+
+	"item.itemfilters.custom"            : "§bCustom §bFilter",
+	"item.itemfilters.custom.description": "Requires a mod or a script, usually KubeJS, to make it work",
+
+	"itemfilters.variants": "Variants [%d]",
+
+	"itemfilters.help_text.variants" : "Tab, Scroll Wheel, Cursor Up/Down: adjust highlight\nEnter: select highlighted",
+	"itemfilters.help_text.filter"   : "Filter (Right-Click to clear)",
+	"itemfilters.help_text.nbt"      : "NBT String\n▶ e.g. { text:\"hello\", value: 1, active: true }",
+	"itemfilters.help_text.weak_nbt" : "Weak NBT String\n▶ e.g. { text:\"hello\", value: 1, active: true }\n▶ Only the NBT fields supplied will be checked (any other fields in the item are ignored)",
+	"itemfilters.help_text.regex"    : "Regular Expression\n Matched against the item ID\n▶ e.g. \"^minecraft:\" matches all vanilla items",
+	"itemfilters.help_text.max_count": "Maximum Stack Size\n▶ May also include relational operators, e.g. \"<64\" or \">=16\"",
+	"itemfilters.help_text.damage"   : "Item Damage\n▶ May also include relational operators, e.g. \"<10\" or \">=5\"\n and optionally by percentage, e.g. \">50%\""
+}
