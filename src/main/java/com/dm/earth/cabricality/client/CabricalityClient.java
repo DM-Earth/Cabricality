@@ -2,7 +2,6 @@ package com.dm.earth.cabricality.client;
 
 import java.util.Arrays;
 
-import com.dm.earth.cabricality.networking.CabfReceiver;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -17,12 +16,14 @@ import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
+import com.dm.earth.cabricality.lib.util.PushUtil;
+import com.dm.earth.cabricality.lib.util.ScreenUtil;
+import com.dm.earth.cabricality.lib.util.SoundUtil;
+import com.dm.earth.cabricality.lib.util.func.CabfBlur;
+import com.dm.earth.cabricality.network.CabfReceiver;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingEntry;
-import com.dm.earth.cabricality.util.PushUtil;
-import com.dm.earth.cabricality.util.ScreenUtil;
-import com.dm.earth.cabricality.util.SoundUtil;
-import com.dm.earth.cabricality.util.func.CabfBlur;
+
 import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;

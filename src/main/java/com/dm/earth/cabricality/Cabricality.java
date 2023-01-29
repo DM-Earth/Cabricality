@@ -1,6 +1,5 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.networking.CabfReceiver;
 import net.krlite.equator.render.sprite.IdentifierSprite;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -23,10 +22,12 @@ import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
+import com.dm.earth.cabricality.lib.util.mod.CabfModConflict;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
+import com.dm.earth.cabricality.network.CabfReceiver;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
-import com.dm.earth.cabricality.util.mod.CabfModConflict;
+
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;

@@ -1,5 +1,7 @@
 package com.dm.earth.cabricality.listener;
 
+import static com.dm.earth.cabricality.lib.util.ItemStackUtil.replaceItemStack;
+
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.BlazeEntity;
@@ -8,8 +10,6 @@ import net.minecraft.item.Items;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import static com.dm.earth.cabricality.util.ItemStackUtil.replaceItemStack;
 
 public class UseEntityListener {
 	public static void load() {

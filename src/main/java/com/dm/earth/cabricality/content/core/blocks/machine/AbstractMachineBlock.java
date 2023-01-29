@@ -1,9 +1,9 @@
 package com.dm.earth.cabricality.content.core.blocks.machine;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.resource.ResourcedBlock;
-import com.dm.earth.cabricality.resource.assets.gen.block.BlockStatesGenerator;
-import com.dm.earth.cabricality.math.VoxelShapeUtil;
+import com.dm.earth.cabricality.lib.math.VoxelShapeUtil;
+import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
+import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;

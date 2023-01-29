@@ -10,6 +10,9 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback.RecipeH
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.dm.earth.cabricality.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+
 import net.minecraft.util.Identifier;
 
 public class ObsidianThread implements TechThread {

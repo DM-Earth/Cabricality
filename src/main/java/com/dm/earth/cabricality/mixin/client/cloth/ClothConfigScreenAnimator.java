@@ -4,7 +4,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
-import com.dm.earth.cabricality.util.func.CabfBlur;
+
+import com.dm.earth.cabricality.lib.util.func.CabfBlur;
+
 import me.shedaniel.clothconfig2.gui.ClothConfigScreen;
 
 @Mixin(ClothConfigScreen.class)

@@ -4,12 +4,11 @@ import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 import org.quiltmc.qsl.networking.api.client.ClientPlayNetworking;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.networking.CabfNetworking;
+import com.dm.earth.cabricality.network.CabfNetworking;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 
 import io.netty.buffer.Unpooled;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
@@ -34,9 +33,6 @@ public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
 		// Broadcast
 		ClientPlayNetworking.send(CabfNetworking.HELD_ITEM_INFO,
 				new PacketByteBuf(Unpooled.buffer()).writeItemStack(stack));
-
-		// Show
-		MinecraftClient.getInstance().gameRenderer.showFloatingItem(stack);
 
 		// Heading
 		context.getSource().sendFeedback(stack.toHoverableText().shallowCopy().styled(style -> style.withItalic(true)

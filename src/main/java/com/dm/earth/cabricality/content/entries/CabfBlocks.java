@@ -13,8 +13,8 @@ import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import com.dm.earth.cabricality.content.core.blocks.CasingBlockEntry;
 import com.dm.earth.cabricality.content.core.blocks.MachineBlockEntry;
 import com.dm.earth.cabricality.content.extractor.ExtractorMachineBlock;
-import com.dm.earth.cabricality.core.BlockItemSettable;
-import com.dm.earth.cabricality.resource.ResourcedBlock;
+import com.dm.earth.cabricality.lib.core.BlockItemSettable;
+import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.simibubi.create.AllTags.AllBlockTags;
 

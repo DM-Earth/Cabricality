@@ -9,8 +9,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.func.CabfBlur;
-import com.dm.earth.cabricality.util.mod.CabfModDeps;
+import com.dm.earth.cabricality.lib.util.func.CabfBlur;
+import com.dm.earth.cabricality.lib.util.mod.CabfModDeps;
+
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
