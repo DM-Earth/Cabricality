@@ -18,7 +18,7 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
 
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;

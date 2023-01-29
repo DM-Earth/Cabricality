@@ -1,23 +1,16 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.*;
-
-import java.util.Arrays;
-
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
-import com.simibubi.create.AllRecipeTypes;
+import com.github.alexnijjar.ad_astra.registry.ModItems;
+import com.github.reoseah.catwalksinc.CIncItems;
+import com.google.common.collect.ImmutableList;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
@@ -25,24 +18,47 @@ import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-
+import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import me.alphamode.forgetags.Tags;
 import me.steven.indrev.recipes.machines.CompressorRecipe;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
+import me.steven.indrev.registry.IRItemRegistry;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeManager;
-import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
-public class RecipeTweaks
-		implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
+import java.util.Arrays;
+import java.util.Collection;
+
+import static com.dm.earth.cabricality.ModEntry.*;
+
+public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
+	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(
+			// Wrenches
+			AD.asItem("wrench"), IR.asItem("wrench"), CI.asItem("wrench"), BC.asItem("wrench"),
+
+			// Hammers
+			AD.asItem("hammer"), IR.asItem("hammer"),
+
+			// Indrev
+			IR.asItem("gold_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate"),
+
+			// Ad Astra
+			AD.asItem("compressed_steel"), AD.asItem("iron_plate")
+	);
 	private static final String[] AD_ASTRA_MATERIALS = { "steel", "desh", "ostrum", "calorite", "iron" };
 	private static final String[] AD_ASTRA_DECOR_TYPES = { "pillar", "plating" };
 
@@ -72,7 +88,7 @@ public class RecipeTweaks
 					type -> handler.register(AD.id("stonecutting", material + "_" + type),
 							id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "", Ingredient.ofTag(
 									TagKey.of(Registry.ITEM_KEY, C.id(material + "_plates"))),
-									AD.asStack(material + "_" + type, 2)))));
+									AD.asStack(2, material + "_" + type)))));
 
 			final String[] AD_ASTRA_COMPRESSED_MATERIALS = { "desh", "ostrum", "calorite" };
 			Arrays.stream(AD_ASTRA_COMPRESSED_MATERIALS).forEach(material -> handler.register(
@@ -192,41 +208,48 @@ public class RecipeTweaks
 				.forEach(recipe -> {
 					// Ad Astra!
 					if (recipe instanceof CompressingRecipe) {
-						if (recipe.getOutput().isOf(AD.asItem("iron_plate")))
+						if (AD.predicateOutput("iron_plate").test(recipe))
 							handler.replace(new CompressingRecipe(
 									recipe.getId(), ((CompressingRecipe) recipe).getInputIngredient(),
 									CR.asStack("iron_sheet"), (short) 200));
-						if (recipe.getOutput().isOf(AD.asItem("compressed_steel")))
+						if (AD.predicateOutput("compressed_steel").test(recipe))
 							handler.replace(new CompressingRecipe(
 									recipe.getId(), ((CompressingRecipe) recipe).getInputIngredient(),
 									IR.asStack("steel_plate"), (short) 200));
 					}
 
-					if (recipe instanceof ShapelessRecipe)
-						if (recipe.getOutput().isOf(AD.asItem("iron_plate")))
+					if (recipe instanceof ShapelessRecipe) {
+						if (AD.predicateOutput("iron_plate").test(recipe))
 							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
 									CR.asStack("iron_sheet")));
+					}
 
 					// Indrev
 					if (recipe instanceof CompressorRecipe) {
-						if (recipe.getOutput().isOf(IR.asItem("gold_plate")))
+						if (IR.predicateOutput("gold_plate").test(recipe))
 							handler.replace(new CompressorRecipe(
 									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[] { new OutputEntry(CR.asStack("golden_sheet"), 1) }, 400));
-						if (recipe.getOutput().isOf(IR.asItem("iron_plate")))
+									new OutputEntry[]{new OutputEntry(CR.asStack("golden_sheet"), 1)}, 400));
+						if (IR.predicateOutput("iron_plate").test(recipe))
 							handler.replace(new CompressorRecipe(
 									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[] { new OutputEntry(CR.asStack("iron_sheet"), 1) }, 400));
-						if (recipe.getOutput().isOf(IR.asItem("copper_plate")))
+									new OutputEntry[]{new OutputEntry(CR.asStack("iron_sheet"), 1)}, 400));
+						if (IR.predicateOutput("copper_plate").test(recipe))
 							handler.replace(new CompressorRecipe(
 									recipe.getId(), ((CompressorRecipe) recipe).getInput(),
-									new OutputEntry[] { new OutputEntry(CR.asStack("copper_sheet"), 1) }, 400));
+									new OutputEntry[]{new OutputEntry(CR.asStack("copper_sheet"), 1)}, 400));
 					}
-
-					if (recipe instanceof ShapelessRecipe)
-						if (recipe.getOutput().isOf(IR.asItem("copper_plate")))
+					if (recipe instanceof ShapelessRecipe) {
+						if (IR.predicateOutput("gold_plate").test(recipe))
+							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
+									CR.asStack("golden_sheet")));
+						if (IR.predicateOutput("iron_plate").test(recipe))
+							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
+									CR.asStack("iron_sheet")));
+						if (IR.predicateOutput("copper_plate").test(recipe))
 							handler.replace(RecipeBuilderUtil.swapShapelessRecipeOutput((ShapelessRecipe) recipe,
 									CR.asStack("copper_sheet")));
+					}
 				});
 	}
 
@@ -247,38 +270,18 @@ public class RecipeTweaks
 		handler.remove(TC.id("smeltery", "alloys", "molten_invar"));
 
 		// Remove wrenches except Create's and AE2's
-		handler.removeIf(r -> notCabf(r) &&
-				!r.getOutput().getItem().getRegistryName().getNamespace().equals("create") &&
-				!r.getOutput().getItem().getRegistryName().getNamespace().equals("ae2") &&
-				r.getOutput().getItem().getRegistryName().getPath().contains("wrench"));
-
-		handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(IR.asItem("controller")));
+		handler.removeIf(r -> !CR.checkContains(r) && !AE2.checkContains(r) &&
+									  r.getOutput().getItem().getRegistryName().getPath().contains("wrench"));
+		handler.removeIf(IR.predicateOutput("controller"));
 
 		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
-				type -> handler.removeIf(r -> notCabf(r) && r.getOutput().isOf(AD.asItem(material + "_" + type)))));
+				type -> handler.removeIf(AD.predicateOutput(material + "_" + type))));
 
-		// AE2
-		handler.removeIf(r -> r.getType().equals(RecipeType.CRAFTING) && notCabf(r)
-				&& r.getOutput().isOf(AE2.asItem("certus_crystal_seed")));
-		handler.removeIf(r -> r.getType().equals(AllRecipeTypes.MILLING.getType()) && notCabf(r)
-				&& !contains(r, AE2.asIngredient("certus_quartz_crystal")));
-
-		// Indrev's toxic tools
-		handler.removeIf(r -> notCabf(r) && r.getOutput().getItem().getRegistryName().getPath()
-													.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
-	}
-
-	public static boolean notCabf(Identifier id) {
-		return !id.getNamespace().equals(Cabricality.ID);
-	}
-
-	public static boolean notCabf(Recipe<?> recipe) {
-		return notCabf(recipe.getId());
-	}
-
-	public static boolean contains(Recipe<?> recipe, Ingredient ingredient) {
-		return recipe.getIngredients().stream().anyMatch(i -> i.equals(ingredient));
+		// Indrev
+		handler.removeIf(r -> IR.checkContains(r) && r.getOutput().getItem().getRegistryName().getPath()
+									  .matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
+		handler.removeIf(IR.predicateIngredient("fan"));
 	}
 
 	private static Identifier recipeId(String type, String name) {

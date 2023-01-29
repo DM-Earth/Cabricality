@@ -4,6 +4,7 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.tweak.RecipeTweaks;
 import com.dm.earth.cabricality.util.debug.CabfDebugger;
 import com.github.alexnijjar.ad_astra.registry.ModItems;
 import com.github.reoseah.catwalksinc.CIncItems;
@@ -441,26 +442,13 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	public void registerBasicEntryFiltering(BasicFilteringRule<?> rule) {
 		CabfDebugger.debug("Filtering Entries");
 
+		// Deprecations
+		rule.hide(EntryIngredients.ofItems(RecipeTweaks.DEPRECATED_ITEMS));
+
 		// Substitutes
 		rule.hide(EntryIngredients.ofItems(ImmutableList.of(
 				ModEntry.CABF.asItem("gold_coin_top"), ModEntry.CABF.asItem("gold_coin_bottom"),
 				ModEntry.CABF.asItem("silver_coin_top"), ModEntry.CABF.asItem("silver_coin_bottom"))));
-
-		// Deprecations
-		rule.hide(EntryIngredients.ofItems(ImmutableList.of(
-				// Wrenches
-				ModItems.WRENCH, IRItemRegistry.INSTANCE.getWRENCH(), CIncItems.WRENCH, BitsAndChisels.WRENCH_ITEM,
-
-				// Hammers
-				ModItems.HAMMER, IRItemRegistry.INSTANCE.getHAMMER(),
-
-				// Indrev
-				Registry.ITEM.get(IR.id("gold_plate")), Registry.ITEM.get(IR.id("iron_plate")),
-				Registry.ITEM.get(IR.id("copper_plate")),
-
-				// Ad Astra
-				ModItems.COMPRESSED_STEEL, ModItems.IRON_PLATE
-		)));
 
 		// Indrev's toxic tools
 		{

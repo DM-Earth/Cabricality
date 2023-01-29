@@ -20,7 +20,7 @@ import com.dm.earth.cabricality.math.ListUtil;
 import com.dm.earth.cabricality.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
@@ -117,8 +117,7 @@ public class BrassThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(
-				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(AE2.asItem("sky_dust")));
+		handler.removeIf(AE2.predicateOutput(false, "sky_dust"));
 		handler.remove(CR.id("crafting", "materials", "electron_tube"));
 		handler.remove(CR.id("crafting", "materials", "rose_quartz"));
 		handler.remove(CR.id("sequenced_assembly", "precision_mechanism"));

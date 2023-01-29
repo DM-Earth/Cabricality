@@ -97,7 +97,7 @@ public class OreProcessingTweaks {
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
 		for (OreProcessingEntry entry : OreProcessingEntry.values()) {
 			handler.removeIf(Registry.RECIPE_TYPE.get(new Identifier("tconstruct", "melting")),
-					p -> RecipeTweaks.notCabf(p)
+					p -> !CABF.checkContains(p)
 							&& p.getIngredients().stream()
 									.anyMatch(i -> shouldRemoveIngredient(i,
 											entry)));
@@ -106,11 +106,11 @@ public class OreProcessingTweaks {
 							.anyMatch(i -> shouldRemoveIngredient(i, entry))
 							|| (p.getId().getPath().contains(entry.getId().getPath())))
 					&& cooking.getOutput().getItem() == entry.getIngotItem()
-					&& RecipeTweaks.notCabf(cooking));
+					&& !CABF.checkContains(cooking));
 			handler.removeIf(p -> p instanceof ProcessingRecipe<?> recipe
 					&& recipe.getIngredients().stream()
 							.anyMatch(i -> shouldRemoveIngredient(i, entry))
-					&& RecipeTweaks.notCabf(recipe));
+					&& !CABF.checkContains(recipe));
 
 			Identifier dustSmelt = TC.id("smeltery", "melting", "metal", entry.getId().getPath(), "dust");
 			handler.remove(dustSmelt);

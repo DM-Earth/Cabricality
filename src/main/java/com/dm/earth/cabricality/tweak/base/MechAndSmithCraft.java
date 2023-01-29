@@ -1,9 +1,10 @@
-package com.dm.earth.cabricality.tweak.core;
+package com.dm.earth.cabricality.tweak.base;
 
 import java.util.ArrayList;
 
 import com.dm.earth.cabricality.Cabricality;
 
+import com.dm.earth.cabricality.ModEntry;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
@@ -56,7 +57,7 @@ public class MechAndSmithCraft {
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
 		entries.forEach(entry -> handler.removeIf(
-				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(entry.getOutputItem())));
+				p -> !ModEntry.CABF.checkContains(p) && p.getOutput().isOf(entry.getOutputItem())));
 	}
 
 	private static Identifier createId(Entry entry, String type) {
