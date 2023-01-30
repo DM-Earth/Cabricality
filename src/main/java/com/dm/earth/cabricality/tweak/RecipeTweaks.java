@@ -1,43 +1,5 @@
 package com.dm.earth.cabricality.tweak;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.core.TechThread;
-import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
-import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
-import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
-import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
-import com.github.alexnijjar.ad_astra.recipes.CompressingRecipe;
-import com.google.common.collect.ImmutableList;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
-import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
-import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
-import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
-import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
-import com.simibubi.create.content.contraptions.processing.HeatCondition;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
-import me.alphamode.forgetags.Tags;
-import me.steven.indrev.recipes.machines.CompressorRecipe;
-import me.steven.indrev.recipes.machines.entries.OutputEntry;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.recipe.ShapelessRecipe;
-import net.minecraft.recipe.SmithingRecipe;
-import net.minecraft.tag.TagKey;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
-import java.util.Arrays;
-import java.util.Collection;
-
 import static com.dm.earth.cabricality.ModEntry.AD;
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.BC;
@@ -48,6 +10,42 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.core.TechThread;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
+import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
+import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
+import com.google.common.collect.ImmutableList;
+import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
+import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
+import com.simibubi.create.content.contraptions.components.mixer.CompactingRecipe;
+import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
+import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
+import com.simibubi.create.content.contraptions.processing.HeatCondition;
+import com.simibubi.create.foundation.fluid.FluidIngredient;
+
+import me.alphamode.forgetags.Tags;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeManager;
+import net.minecraft.recipe.SmithingRecipe;
+import net.minecraft.tag.TagKey;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(
@@ -61,8 +59,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			IR.asItem("gold_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate"), IR.asItem("fan"),
 
 			// Ad Astra
-			AD.asItem("compressed_steel"), AD.asItem("iron_plate")
-	);
+			AD.asItem("compressed_steel"), AD.asItem("iron_plate"));
 	private static final String[] AD_ASTRA_MATERIALS = { "steel", "desh", "ostrum", "calorite", "iron" };
 	private static final String[] AD_ASTRA_DECOR_TYPES = { "pillar", "plating" };
 
@@ -227,7 +224,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 
 		// Remove wrenches except Create's and AE2's
 		handler.removeIf(r -> !CR.checkContains(r) && !AE2.checkContains(r) &&
-									  r.getOutput().getItem().getRegistryName().getPath().contains("wrench"));
+				r.getOutput().getItem().getRegistryName().getPath().contains("wrench"));
 		handler.removeIf(IR.predicateOutput("controller"));
 
 		// Ad Astra!
@@ -240,7 +237,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 
 		// Indrev
 		handler.removeIf(r -> IR.checkContains(r) && r.getOutput().getItem().getRegistryName().getPath()
-									  .matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
+				.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
 		handler.removeIf(IR.predicateIngredient("fan"));
 	}
 

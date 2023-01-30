@@ -24,13 +24,13 @@ public class ItemTagTweaks
 	}
 
 	private static void unifyTags() {
-		TagUnifyEntry.register(C.id("iron_plates"), CR.asItem("iron_sheet"));
-		TagUnifyEntry.register(C.id("gold_plates"), CR.asItem("gold_sheet"));
-		TagUnifyEntry.register(C.id("copper_plates"), CR.asItem("copper_sheet"));
-		TagUnifyEntry.register(C.id("steel_ingots"), IR.asItem("steel_ingot"));
-		TagUnifyEntry.register(C.id("steel_plates"), IR.asItem("steel_plate"));
+		TagUnifyEntry.register(CR.asItem("iron_sheet"), "iron_plate");
+		TagUnifyEntry.register(CR.asItem("gold_sheet"), "gold_plate");
+		TagUnifyEntry.register(CR.asItem("copper_sheet"), "copper_plate");
+		TagUnifyEntry.register(IR.asItem("steel_ingot"), "steel_ingot");
+		TagUnifyEntry.register(IR.asItem("steel_plate"), "steel_plate", "compressed_steel");
 
-		TagUnifyEntry.register(C.id("iron_ingots"), MC.asItem("netherite_ingot"));
+		TagUnifyEntry.register(MC.asItem("netherite_ingot"), "iron_ingot");
 	}
 
 	@Override
