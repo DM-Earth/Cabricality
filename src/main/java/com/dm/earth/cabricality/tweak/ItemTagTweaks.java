@@ -29,8 +29,6 @@ public class ItemTagTweaks
 		TagUnifyEntry.register(CR.asItem("copper_sheet"), "copper_plate");
 		TagUnifyEntry.register(IR.asItem("steel_ingot"), "steel_ingot");
 		TagUnifyEntry.register(IR.asItem("steel_plate"), "steel_plate", "compressed_steel");
-
-		TagUnifyEntry.register(MC.asItem("netherite_ingot"), "iron_ingot");
 	}
 
 	@Override
