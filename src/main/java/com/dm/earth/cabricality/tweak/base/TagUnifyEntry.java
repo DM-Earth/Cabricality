@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.tweak.base;
 
 import java.util.Arrays;
+import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -20,7 +21,7 @@ public interface TagUnifyEntry<T> {
 		ProcessItemOutputCallback.EVENT.register(new ItemStackCallback(itemEntry));
 	}
 
-	static void register(Item item, String... tokens) {
+	static void register(Supplier<Item> item, String... tokens) {
 		register(new StringArrayItemTagUnifyEntry(item, tokens));
 	}
 
@@ -34,18 +35,21 @@ public interface TagUnifyEntry<T> {
 
 		@Override
 		public @Nullable ItemStack processOutput(ItemStack stack) {
-			if (entry.test(stack.getItem()) && !stack.isOf(entry.getInstance()))
-				return new ItemStack(entry.getInstance(), stack.getCount());
+			if (entry.test(stack.getItem()) && !stack.isOf(entry.getInstance())) {
+				var ret = new ItemStack(entry.getInstance(), stack.getCount());
+				System.out.println("replaced " + stack + " with " + ret + "; Item is " + entry.getInstance());
+				return ret;
+			}
 			return null;
 		}
 
 	}
 
-	record StringArrayItemTagUnifyEntry(Item instance, String[] tokens) implements TagUnifyEntry<Item> {
+	record StringArrayItemTagUnifyEntry(Supplier<Item> instance, String[] tokens) implements TagUnifyEntry<Item> {
 
 		@Override
 		public Item getInstance() {
-			return instance();
+			return instance().get();
 		}
 
 		@Override
