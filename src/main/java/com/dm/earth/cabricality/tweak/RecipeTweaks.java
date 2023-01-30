@@ -51,13 +51,10 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(
 			// Wrenches
 			AD.asItem("wrench"), IR.asItem("wrench"), CI.asItem("wrench"), BC.asItem("wrench"),
-
 			// Hammers
 			AD.asItem("hammer"), IR.asItem("hammer"),
-
 			// Indrev
 			IR.asItem("gold_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate"), IR.asItem("fan"),
-
 			// Ad Astra
 			AD.asItem("compressed_steel"), AD.asItem("iron_plate"));
 	private static final String[] AD_ASTRA_MATERIALS = { "steel", "desh", "ostrum", "calorite", "iron" };
@@ -104,8 +101,8 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			final String[] INDREV_PLATES = { "bronze", "electrum", "lead", "silver", "steel", "tin", "tungsten" };
 
 			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.register(recipeId("pressing", plate + "_plate"),
-					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "ingot"))
-							.setResult(IR.asProcessingOutput(plate + "plate")))));
+					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "_ingot"))
+							.setResult(IR.asProcessingOutput(plate + "_plate")))));
 		}
 
 		// Dusts
@@ -170,19 +167,6 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 				id -> new PressingRecipe(
 						new FreePRP(id).setIngredient(CR.asIngredient("zinc_ingot"))
 								.setResult(CABF.asProcessingOutput("zinc_sheet"))));
-
-		handler.register(IR.id("pressing", "steel_plate"),
-				id -> new PressingRecipe(
-						new FreePRP(id).setIngredient(AD.asIngredient("steel_ingot"))
-								.setResult(IR.asProcessingOutput("steel_plate"))));
-		handler.register(IR.id("pressing", "tin_plate"),
-				id -> new PressingRecipe(
-						new FreePRP(id).setIngredient(IR.asIngredient("tin_ingot"))
-								.setResult(IR.asProcessingOutput("tin_plate"))));
-		handler.register(IR.id("pressing", "lead_plate"),
-				id -> new PressingRecipe(
-						new FreePRP(id).setIngredient(IR.asIngredient("lead_ingot"))
-								.setResult(IR.asProcessingOutput("lead_plate"))));
 
 		handler.register(recipeId("crafting", "nickel_ingot_from_nugget"),
 				id -> VanillaRecipeBuilders.shapedRecipe("AAA", "AAA", "AAA")
