@@ -1,6 +1,0 @@
-{
-    "githubPullRequests.ignoredPullRequestBranches": [
-        "packwiz/1.18.2/quilt/dev"
-    ],
-    "java.compile.nullAnalysis.mode": "automatic"
-}
