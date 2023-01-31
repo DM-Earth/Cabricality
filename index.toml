@@ -149,10 +149,6 @@ file = "config/modmenu.json"
 hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
 
 [[files]]
-file = "config/roughlyenoughitems/config.json5"
-hash = "8c2157400c266099774e19c0678f89cdaf9bb99bf242031d7c3392bde98b5d58"
-
-[[files]]
 file = "config/sodium-extra-options.json"
 hash = "682a2cbed83501eb45b11fe9b4b8b56a26c10a777842f8649822547245162ca6"
 
