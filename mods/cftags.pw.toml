@@ -1,7 +1,0 @@
-name = "cftags"
-filename = "cftags-0.1.2.jar"
-
-[download]
-url = "https://cdn.modrinth.com/data/AyiRHxpO/versions/99KluJZk/cftags-0.1.2.jar"
-hash-format = "sha1"
-hash = "b149fd307a7745aca0a7010c6564c9660400f119"

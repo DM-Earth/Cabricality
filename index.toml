@@ -5,6 +5,10 @@ file = ".editorconfig"
 hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
+file = "config/architects_palette.json5"
+hash = "a1f8935578d7e7593204c4b42c46af32b435f3cecc2182ac8c5fd7f6c9b503bf"
+
+[[files]]
 file = "config/create-common.toml"
 hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
@@ -255,11 +259,6 @@ file = "mods/cftags-0.1.2.jar"
 hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
 
 [[files]]
-file = "mods/cftags.pw.toml"
-hash = "accf40d3e1c13c7430eb947298056ee86cbb3d717addf362633e2ea92fdd2ba5"
-metafile = true
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
 metafile = true
@@ -267,11 +266,6 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
-metafile = true
-
-[[files]]
-file = "mods/conveniented-forge-tags.pw.toml"
-hash = "0b9a0d9c612d052f45128dc4f37aaed1eafe714dae869899931a565a4a780944"
 metafile = true
 
 [[files]]
@@ -436,7 +430,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "3d586e00562d465d1b477fa287d5c070e62d6fe4e2a580f268960d6fedd55a3c"
+hash = "8872e1e3b9e0a1825d5b88c72de3f92b41ccd9c6c169ff12a5877528ca46de45"
 metafile = true
 
 [[files]]
