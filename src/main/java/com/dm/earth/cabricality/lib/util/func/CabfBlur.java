@@ -12,11 +12,14 @@ import net.krlite.equator.color.PreciseColor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ChatScreen;
 import net.minecraft.client.gui.screen.Screen;
+
+import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@ClientOnly
 public class CabfBlur {
 	public static final CabfBlur INSTANCE = new CabfBlur();
 

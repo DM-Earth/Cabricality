@@ -11,18 +11,11 @@
             {
               "condition": "minecraft:match_tool",
               "predicate": {
-                "items": [
-                  "minecraft:shears"
-                ]
+                "items": ["minecraft:shears"]
               }
             }
           ],
           "name": "tconstruct:ichor_slime_fern"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
         }
       ]
     }

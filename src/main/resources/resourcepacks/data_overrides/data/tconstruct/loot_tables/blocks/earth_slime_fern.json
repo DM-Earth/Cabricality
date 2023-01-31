@@ -11,19 +11,11 @@
             {
               "condition": "minecraft:match_tool",
               "predicate": {
-                "items": [
-                  "minecraft:shears"
-                ]
+                "items": ["minecraft:shears"]
               }
             }
           ],
           "name": "tconstruct:earth_slime_fern"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "forge:can_tool_perform_action",
-          "action": "shears_dig"
         }
       ]
     }
