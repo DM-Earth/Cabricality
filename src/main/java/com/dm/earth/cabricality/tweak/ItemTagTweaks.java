@@ -1,11 +1,15 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.*;
+import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.tweak.base.TagUnifyEntry;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
+
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.ActionResult;
@@ -24,13 +28,11 @@ public class ItemTagTweaks
 	}
 
 	private static void unifyTags() {
-		TagUnifyEntry.register(C.id("iron_plates"), CR.asItem("iron_sheet"));
-		TagUnifyEntry.register(C.id("gold_plates"), CR.asItem("gold_sheet"));
-		TagUnifyEntry.register(C.id("copper_plates"), CR.asItem("copper_sheet"));
-		TagUnifyEntry.register(C.id("steel_ingots"), IR.asItem("steel_ingot"));
-		TagUnifyEntry.register(C.id("steel_plates"), IR.asItem("steel_plate"));
-
-		TagUnifyEntry.register(C.id("iron_ingots"), MC.asItem("netherite_ingot"));
+		TagUnifyEntry.register(() -> CR.asItem("iron_sheet"), "iron_plate");
+		TagUnifyEntry.register(() -> CR.asItem("gold_sheet"), "gold_plate");
+		TagUnifyEntry.register(() -> CR.asItem("copper_sheet"), "copper_plate");
+		TagUnifyEntry.register(() -> IR.asItem("steel_ingot"), "steel_ingot");
+		TagUnifyEntry.register(() -> IR.asItem("steel_plate"), "steel_plate", "compressed_steel");
 	}
 
 	@Override
