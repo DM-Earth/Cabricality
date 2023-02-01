@@ -32,7 +32,7 @@ Follow the steps below to assembly:
 
 You need to place a **Rose Quartz Lamp** and 1 or more **Fixture Lamps** (which are non-shaded and from the LED mod) depend on it, then use redstone signals to light up these small lamps.
 
-To activate the structure, use some kinetic force and a **Deployer** in attack mode (Hold \[W\] in order to figure out how to make it in attack mode) to hit the **Rose Quartz Lamp**. You will discover that there are 'laser beams' (in fact they're just vanilla particles) emitted by these small, activated lamps. No you can use the laser and **Hopper Minecarts** to process materials and substrates.
+To activate the structure, use some kinetic force and a **Deployer** in attack mode (Hold \[W\] in order to figure out how to make it in attack mode) to hit the **Rose Quartz Lamp**. You will discover that there are 'laser beams' (in fact they're just vanilla particles) emitted by these small, activated lamps. Now you can use the laser and **Hopper Minecarts** to process materials and substrates.
 
 ### Non-chaotic laser recipes
 
@@ -48,7 +48,7 @@ To process these recipes, put the ingredient in a **Hopper Minecart** and use a 
 
 > Cheating: you can use `/cabricality getAlchemistInformation` in order to get the chaotic recipes if you have OP permission.
 
-In _Chapter 4a_ you will need to make a **Chaotic Catalyst** jar and use it to speed up silicon and nickel production. If you follow the quests, you will discover that chaotic catalysts are made from typical catalysts, and typical catalysts are made from typical reagents. These typical reagents are grouped and linked into different catalysts so if you want to make a certain catalyst, you will only need to make these linked reagents.
+In _Chapter 4a_ you will need to make a **Chaotic Catalyst** jar and use it to speed up silicon and silver production. If you follow the quests, you will discover that chaotic catalysts are made from typical catalysts, and typical catalysts are made from typical reagents. These typical reagents are grouped and linked into different catalysts so if you want to make a certain catalyst, you will only need to make these linked reagents.
 
 To produce a typical catalyst you need to first obtain all the reagents linked to it, and you'd better make 16+ of each reagent. For example, Crystalline Catalyst is linked with Certus Quartz, Sulfuric, Blazing Quartz, Cinnabar and Nether Quartz Reagents. Then start to find out the recipe of that catalyst (All chaotic recipes are different by world seed).
 
