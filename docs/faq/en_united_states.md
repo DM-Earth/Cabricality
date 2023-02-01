@@ -28,6 +28,8 @@ Follow the steps below to assembly:
 
 ## About the Chaotic Alchemist
 
+### Structure
+
 You need to place a **Rose Quartz Lamp** and 1 or more **Fixture Lamps** (which are non-shaded and from the LED mod) depend on it, then use redstone signals to light up these small lamps.
 
 To activate the structure, use some kinetic force and a **Deployer** in attack mode (Hold \[W\] in order to figure out how to make it in attack mode) to hit the **Rose Quartz Lamp**. You will discover that there are 'laser beams' (in fact they're just vanilla particles) emitted by these small, activated lamps. No you can use the laser and **Hopper Minecarts** to process materials and substrates.
