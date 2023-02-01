@@ -527,6 +527,7 @@
   "mod.ftbquests.name"      : "FTB Quests",
   "mod.ftbteams.name"       : "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
+  "mod.itemfilters.name": "Item Filters",
 
   "screen.cabricality.config.title"            : "Cabricality",
   "screen.cabricality.missing_mod.title"       : "Cabricality is Missing Mod",

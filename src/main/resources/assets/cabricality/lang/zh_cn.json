@@ -524,6 +524,7 @@
   "mod.ftbquests.name"      : "FTB Quests模组",
   "mod.ftbteams.name"       : "FTB Teams模组",
   "mod.questsadditions.name": "Quests Additions模组",
+  "mod.itemfilters.name": "Item Filters模组",
 
   "screen.cabricality.config.title"            : "永无止境：重缝",
   "screen.cabricality.missing_mod.title"       : "缺少以下模组",
