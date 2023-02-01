@@ -17,14 +17,14 @@
     "log.Slf4jHandler$MinecraftServerLogger",
     "log.Slf4jHandler$ReloadableResourceManagerLogger",
     "log.Slf4jHandler$UtilLogger",
-    "recipe.mantle.ItemOutputMixin",
     "recipe.AbstractCookingRecipeMixin",
     "recipe.ShapedRecipeMixin",
     "recipe.ShapelessRecipeMixin",
     "recipe.create.ProcessingOutputMixin",
     "recipe.farmersdelight.ChanceResultMixin",
     "recipe.farmersdelight.CuttingBoardRecipeMixin",
-    "recipe.indrev.OutputEntryMixin"
+    "recipe.indrev.OutputEntryMixin",
+    "recipe.mantle.ItemOutputMixin"
   ],
   "client": [
     "client.ChatScreenExpander",
@@ -34,6 +34,7 @@
     "client.MinecraftClientModifier",
     "client.ScreenAnimator",
     "client.TitleScreenWidgets",
+    "client.create.TagDependentIngredientItemMixin",
     "client.cloth.ClothConfigScreenAnimator",
     "client.ftblibrary.BooleanConfigTranslator",
     "client.ftblibrary.ConfigValueTranslator",

@@ -47,6 +47,13 @@ public class ItemTagTweaks
 				if (m.equals(mat))
 					return ActionResult.SUCCESS;
 		}
+		if (id.startsWith("ores/")) {
+			String mat = id.replaceAll("ores/", "");
+			String[] allowList = {"tin", "lead", "nickel"};
+			for (String m : allowList)
+				if (mat.equals(m))
+					return ActionResult.CONSUME;
+		}
 		return ActionResult.PASS;
 	}
 
