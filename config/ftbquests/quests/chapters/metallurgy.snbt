@@ -228,7 +228,7 @@
 			y: 2.0d
 			shape: "circle"
 			subtitle: "{metallurgy.cabricality.iiib.subtitle}"
-			dependency_requirement: "one_completed"
+			dependencies: ["715BBD0DF0136FF1"]
 			id: "6509024553997AB0"
 			tasks: [{
 				id: "63C79158B9BD32FF"

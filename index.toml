@@ -54,7 +54,7 @@ hash = "8dd239ca07a9c7420537e3d8b8a357b8848e94fa508527e2d585cc083c43af86"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "cb7ef2285b9620830a0abfa0fa6323f3a2e48f648fdadd696e0ae1f6cc958e97"
+hash = "cf0a610e4614377cf95b852051b39a68fc1695882fadeb674a1bfba5eccaaecc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
