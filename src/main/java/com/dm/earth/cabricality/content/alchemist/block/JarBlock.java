@@ -7,8 +7,8 @@ import org.jetbrains.annotations.Nullable;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
-import com.dm.earth.cabricality.resource.ResourcedBlock;
-import com.dm.earth.cabricality.math.VoxelShapeUtil;
+import com.dm.earth.cabricality.lib.math.VoxelShapeUtil;
+import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;

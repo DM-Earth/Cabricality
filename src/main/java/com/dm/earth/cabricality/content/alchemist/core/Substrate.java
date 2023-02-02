@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
-import com.dm.earth.cabricality.core.HashStringable;
+import com.dm.earth.cabricality.lib.core.HashStringable;
 
 import net.minecraft.block.Block;
 import net.minecraft.text.Text;

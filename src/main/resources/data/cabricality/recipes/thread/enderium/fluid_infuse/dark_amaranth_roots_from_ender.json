@@ -1,0 +1,17 @@
+{
+  "type": "indrev:fluid_infuse",
+  "ingredients": [
+    {
+      "item": "minecraft:hanging_roots"
+    }
+  ],
+  "fluidInput": {
+    "fluid": "tconstruct:ender_slime",
+    "amount": 9000
+  },
+  "output": {
+    "item": "promenade:dark_amaranth_roots",
+    "count": 1
+  },
+  "processTime": 60
+}

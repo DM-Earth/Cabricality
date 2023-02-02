@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#P#",
+    "#M#",
+    "#P#"
+  ],
+  "key": {
+    "#": {
+      "item": "cabricality:matter_plastics"
+    },
+    "P": {
+      "item": "create:iron_sheet"
+    },
+    "M": {
+      "item": "indrev:machine_block"
+    }
+  },
+  "result": {
+    "item": "ad_astra:compressor"
+  }
+}

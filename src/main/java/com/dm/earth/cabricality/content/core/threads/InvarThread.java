@@ -23,10 +23,9 @@ import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
@@ -86,14 +85,14 @@ public class InvarThread implements TechThread {
 			String paste = entry.name + "_slime_fern_paste";
 			TagKey<Item> knives = TagKey.of(Registry.ITEM_KEY, C.id("tools/knives"));
 			DefaultedList<ChanceResult> results = DefaultedList.of();
-			results.add(new ChanceResult(CABF.asStack(leaf, 2), 1));
+			results.add(new ChanceResult(CABF.asStack(2, leaf), 1));
 			handler.register(recipeId("fd_cutting", fern),
 					id -> new CuttingBoardRecipe(id, "", TC.asIngredient(fern),
 							Ingredient.ofTag(knives), results, "minecraft:block.grass.break"));
 			handler.register(recipeId("deploying", fern),
 					id -> new DeployerApplicationRecipe(
 							new FreePRP(id).setIngredient(TC.asIngredient(fern), Ingredient.ofTag(knives))
-									.setResult(CABF.asProcessingOutput(leaf, 1, 2)).keepHeldItem()));
+									.setResult(CABF.asProcessingOutput(1, 2, leaf)).keepHeldItem()));
 			handler.register(recipeId("haunting", leaf),
 					id -> new HauntingRecipe(new FreePRP(id).setIngredient(CABF.asIngredient(leaf))
 							.setResult(TC.asProcessingOutput(fern))));
@@ -195,9 +194,9 @@ public class InvarThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
-		handler.remove(CR.id("mechanical_crafting/crushing_wheel"));
-		handler.removeIf(p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(IR.asItem("machine_block")));
-		handler.removeIf(p -> RecipeTweaks.notCabf(p) && REMOVE_OUTPUTS.stream()
+		handler.remove(CR.id("mechanical_crafting", "crushing_wheel"));
+		handler.removeIf(IR.predicateOutput(false, "machine_block"));
+		handler.removeIf(p -> !CABF.checkContains(p) && REMOVE_OUTPUTS.stream()
 				.anyMatch(id -> id.equals(Registry.ITEM.getId(p.getOutput().getItem()))));
 	}
 }

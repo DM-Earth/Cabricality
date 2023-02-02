@@ -6,33 +6,35 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
-import com.dm.earth.cabricality.math.ListUtil;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.math.ListUtil;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.millstone.MillingRecipe;
 import com.simibubi.create.content.contraptions.components.mixer.MixingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 @SuppressWarnings("UnstableApiUsage")
 public class BrassThread implements TechThread {
@@ -56,11 +58,11 @@ public class BrassThread implements TechThread {
 						.ingredient(redstone).ingredient(redstone).ingredient(redstone)
 						.build(id, ""));
 
-		registerCrystalProcess(handler, AE2.id("certus_quartz_crystal"),
-				AE2.id("certus_crystal_seed"), AE2.id("certus_quartz_dust"), MC.id("water"));
+		registerCrystalProcess(handler, AE2.asItem("certus_quartz_crystal"), AE2.asItem("certus_crystal_seed"),
+				AE2.asItem("certus_quartz_dust"));
 
-		registerCrystalProcess(handler, AE2.id("fluix_crystal"), AE2.id("fluix_crystal_seed"),
-				AE2.id("fluix_dust"), CABF.id("waste"));
+		registerCrystalProcess(handler, AE2.asItem("fluix_crystal"), AE2.asItem("fluix_crystal_seed"),
+				AE2.asItem("fluix_dust"));
 
 		handler.register(recipeId("mixing", "sky_stone"), id -> new MixingRecipe(new FreePRP(id)
 				.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
@@ -98,29 +100,23 @@ public class BrassThread implements TechThread {
 						CR.asItem("precision_mechanism"), CABF.asItem("brass_machine"), 1));
 	}
 
-	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler,
-			Identifier crystal, Identifier seed, Identifier dust, Identifier fluid) {
-		Item crystalItem = Registry.ITEM.get(crystal);
-		Item seedItem = Registry.ITEM.get(seed);
-		Item dustItem = Registry.ITEM.get(dust);
-
-		handler.register(recipeId("milling", crystal.getPath()),
+	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
+		handler.register(recipeId("milling", crystal.getRegistryName().getPath()),
 				id -> new MillingRecipe(
-						new FreePRP(id).setIngredient(Ingredient.ofItems(crystalItem))
-								.setResult(new ProcessingOutput(dustItem.getDefaultStack(), 1))
+						new FreePRP(id).setIngredient(Ingredient.ofItems(crystal))
+								.setResult(new ProcessingOutput(dust.getDefaultStack(), 1))
 								.setProcessingTime(200)));
 
-		handler.register(recipeId("mechanical_crafting", seed.getPath()),
+		handler.register(recipeId("mechanical_crafting", seed.getRegistryName().getPath()),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
-						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystalItem)
-								.output(seedItem.getDefaultStack()).build(id, ""),
+						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystal)
+								.output(new ItemStack(seed, 2)).build(id, ""),
 						false));
 	}
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(
-				p -> RecipeTweaks.notCabf(p) && p.getOutput().isOf(AE2.asItem("sky_dust")));
+		handler.removeIf(AE2.predicateOutput(false, "sky_dust"));
 		handler.remove(CR.id("crafting", "materials", "electron_tube"));
 		handler.remove(CR.id("crafting", "materials", "rose_quartz"));
 		handler.remove(CR.id("sequenced_assembly", "precision_mechanism"));

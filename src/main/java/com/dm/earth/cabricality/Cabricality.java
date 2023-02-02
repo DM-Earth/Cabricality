@@ -1,6 +1,5 @@
 package com.dm.earth.cabricality;
 
-import com.dm.earth.cabricality.networking.CabfReceiver;
 import net.krlite.equator.render.sprite.IdentifierSprite;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -23,10 +22,13 @@ import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
+import com.dm.earth.cabricality.lib.util.mod.CabfModConflict;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
+import com.dm.earth.cabricality.network.CabfReceiver;
+import com.dm.earth.cabricality.tweak.BlockTagTweaks;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
-import com.dm.earth.cabricality.util.mod.CabfModConflict;
+
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
@@ -39,6 +41,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
@@ -82,6 +86,8 @@ public class Cabricality implements ModInitializer {
 	public static final CabfConfig CONFIG = new CabfConfig(
 			QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
 
+	public static final AtomicInteger IR_TOOL_MODIFY_INDEX = new AtomicInteger(0);
+
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
 		return ID_BUILDER.id(paths);
@@ -107,11 +113,13 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 
-	@Override
-	public void onInitialize(ModContainer mod) {
+	static {
 		CONFIG.load();
 		CONFIG.save();
+	}
 
+	@Override
+	public void onInitialize(ModContainer mod) {
 		CabfModConflict.checkAndExit();
 
 		LOGGER.info("Initializing " + NAME + "... 📦");
@@ -129,6 +137,7 @@ public class Cabricality implements ModInitializer {
 		CabfRecipeSerializers.register();
 
 		ItemTagTweaks.load();
+		BlockTagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
 		UseEntityListener.load();

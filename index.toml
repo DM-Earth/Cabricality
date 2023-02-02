@@ -5,6 +5,10 @@ file = ".editorconfig"
 hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
+file = "config/architects_palette.json5"
+hash = "a1f8935578d7e7593204c4b42c46af32b435f3cecc2182ac8c5fd7f6c9b503bf"
+
+[[files]]
 file = "config/create-common.toml"
 hash = "c0e90fd1c6d4a0498cdbd259936812e35b1461eb0d11b4967e2ba32032a5bd44"
 
@@ -50,7 +54,7 @@ hash = "8dd239ca07a9c7420537e3d8b8a357b8848e94fa508527e2d585cc083c43af86"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "cb7ef2285b9620830a0abfa0fa6323f3a2e48f648fdadd696e0ae1f6cc958e97"
+hash = "cf0a610e4614377cf95b852051b39a68fc1695882fadeb674a1bfba5eccaaecc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
@@ -82,7 +86,7 @@ hash = "e633f08a5ab08591cbf56a2270e2a3dbc5abeeeab631d08cf045d4ba03623181"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4a.snbt"
-hash = "a6048ee9920224aa02cb70313fd5f5595bd4281d85a0e9205449b7eb3eef089f"
+hash = "aedf5348e90c7181402394e8f649598b33685b85cd9f1b235cb4f99819b1c9e0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
@@ -130,7 +134,7 @@ hash = "c9a0a12c14e6d0b9c88d9ed8aa5586ee41435408d814dbf081ae207484b1dc5b"
 
 [[files]]
 file = "config/indrev/oregen.json"
-hash = "48a06034fee5b6c99870a0a78bad88c1b61c1c82c210b2a6d11d60bf9a601c75"
+hash = "4d7e068bbcd4c51bc53e51395384fc91f05a59092e86a851583e45327c7a0206"
 
 [[files]]
 file = "config/indrev/upgrades.json"
@@ -143,10 +147,6 @@ hash = "2b006b4a7a087547e840168976cda7fe11d567c571f8e6f9e996506586765426"
 [[files]]
 file = "config/modmenu.json"
 hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
-
-[[files]]
-file = "config/roughlyenoughitems/config.json5"
-hash = "8c2157400c266099774e19c0678f89cdaf9bb99bf242031d7c3392bde98b5d58"
 
 [[files]]
 file = "config/sodium-extra-options.json"
@@ -216,6 +216,11 @@ hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
 
 [[files]]
+file = "mods/bookshelf.pw.toml"
+hash = "e0fa82d595ac5544b2bebd196bdddbdc9702e281d6f9496bbeac2058c7968126"
+metafile = true
+
+[[files]]
 file = "mods/bounced.pw.toml"
 hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
 metafile = true
@@ -227,7 +232,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "7897ffdd01df16be147e2f735d872c4892aa63746bb3f5924cfd4627e69758e0"
+hash = "155620ad5554d44e8f32fc04dff763dda6ed5065e38215332667e5c3a99690a6"
 metafile = true
 
 [[files]]
@@ -291,7 +296,7 @@ metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "183a52109463d74b4feac99770bfeb3c8759e7fa183271067097b742420fcd86"
+hash = "ec3fa413e380758707fd4a790f93613be18d0252a156cc3b28be2ecf234efbe4"
 metafile = true
 
 [[files]]
@@ -335,8 +340,8 @@ hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
 metafile = true
 
 [[files]]
-file = "mods/item-filters.pw.toml"
-hash = "5446a135421d4f9cc9c1f43fa7fdad58bd0eed4c2291a6f51eb03f1ec8fdc6bd"
+file = "mods/inventory-tabs-updated.pw.toml"
+hash = "4260894fd18d9e593e8364a0ac3aab1ac7ba6b654010a928f05f12f1e1a83006"
 metafile = true
 
 [[files]]
@@ -352,11 +357,6 @@ metafile = true
 [[files]]
 file = "mods/lazydfu.pw.toml"
 hash = "ea127e8f74006f3a9ce099f9e96adaa3b3f4f281231ece703c4e7f9732137ebd"
-metafile = true
-
-[[files]]
-file = "mods/leaves-us-in-peace.pw.toml"
-hash = "21da451438c4b95811be685f967b800f0672ac0096bf9a4fc80e08db52902005"
 metafile = true
 
 [[files]]
@@ -421,7 +421,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "3d586e00562d465d1b477fa287d5c070e62d6fe4e2a580f268960d6fedd55a3c"
+hash = "8872e1e3b9e0a1825d5b88c72de3f92b41ccd9c6c169ff12a5877528ca46de45"
 metafile = true
 
 [[files]]
@@ -455,6 +455,11 @@ hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
 metafile = true
 
 [[files]]
+file = "mods/taptab.pw.toml"
+hash = "21eb1c3ee8d1b20b6d7c0a336a341c95bc786a4897e4f24930cc133e8e645e0f"
+metafile = true
+
+[[files]]
 file = "mods/terrestria.pw.toml"
 hash = "d7390d339169bff9b123b2bc86ca08de1ef10b2991a7923c657bb5bda755c164"
 metafile = true
@@ -466,7 +471,7 @@ metafile = true
 
 [[files]]
 file = "mods/wthit.pw.toml"
-hash = "c23e19e793df2ee017103c37c239fb4d7d888641e2f0a02c933f377d9c905390"
+hash = "4a83125400dcc7ece90e27995f899b315fba1e31e8a0897c26b7fcb3b8f7176e"
 metafile = true
 
 [[files]]

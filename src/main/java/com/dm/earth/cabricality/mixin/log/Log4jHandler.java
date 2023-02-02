@@ -1,6 +1,5 @@
 package com.dm.earth.cabricality.mixin.log;
 
-import com.dm.earth.cabricality.util.debug.Log4jLogger;
 import mcp.mobius.waila.Waila;
 import me.shedaniel.rei.RoughlyEnoughItemsState;
 import me.shedaniel.rei.impl.Internals;
@@ -13,6 +12,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import com.dm.earth.cabricality.lib.util.debug.Log4jLogger;
 
 public class Log4jHandler {
 	@Mixin(RoughlyEnoughItemsState.class)
@@ -27,12 +28,12 @@ public class Log4jHandler {
 	static class InternalsLogger {
 		@Inject(method = "getInternalLogger", at = @At("RETURN"), cancellable = true, remap = false)
 		private static void getInternalLogger(CallbackInfoReturnable<InternalLogger> cir) {
-			cir.setReturnValue(new com.dm.earth.cabricality.util.debug.InternalLogger());
+			cir.setReturnValue(new com.dm.earth.cabricality.lib.util.debug.InternalLogger());
 		}
 	}
 
 	@Mixin(Waila.class)
-	static class WailaLogger {
+	static class WthitLogger {
 		@Mutable
 		@Shadow(remap = false)
 		@Final

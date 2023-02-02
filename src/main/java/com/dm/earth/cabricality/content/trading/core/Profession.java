@@ -1,7 +1,8 @@
 package com.dm.earth.cabricality.content.trading.core;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.core.HashStringable;
+import com.dm.earth.cabricality.lib.core.HashStringable;
+
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

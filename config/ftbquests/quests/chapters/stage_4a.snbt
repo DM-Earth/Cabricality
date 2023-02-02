@@ -354,7 +354,7 @@
 		}
 		{
 			title: "{contraption.cabricality.31.a.title}"
-			icon: "indrev:laser_emitter_mk4"
+			icon: "led:bulb"
 			x: 2.5d
 			y: 9.0d
 			subtitle: "{contraption.cabricality.31.a.subtitle}"

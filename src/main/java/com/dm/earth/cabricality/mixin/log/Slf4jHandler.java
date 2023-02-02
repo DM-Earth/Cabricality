@@ -1,6 +1,5 @@
 package com.dm.earth.cabricality.mixin.log;
 
-import com.dm.earth.cabricality.util.debug.Slf4jLogger;
 import dev.architectury.networking.fabric.NetworkManagerImpl;
 import net.minecraft.resource.ReloadableResourceManager;
 import net.minecraft.server.MinecraftServer;
@@ -12,6 +11,8 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
+
+import com.dm.earth.cabricality.lib.util.debug.Slf4jLogger;
 
 public class Slf4jHandler {
 	@Mixin(NetworkManagerImpl.class)

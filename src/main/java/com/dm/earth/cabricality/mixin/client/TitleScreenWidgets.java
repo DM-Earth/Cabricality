@@ -1,38 +1,23 @@
 package com.dm.earth.cabricality.mixin.client;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.client.screen.MissingModScreen;
-import com.dm.earth.cabricality.util.mod.CabfModDeps;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
-import com.simibubi.create.AllBlocks;
-import net.krlite.equator.color.PreciseColor;
-import net.krlite.equator.geometry.Node;
-import net.krlite.equator.geometry.Rect;
-import net.krlite.equator.math.EasingFunctions;
-import net.krlite.equator.render.Equator;
-import net.krlite.equator.util.QuaternionAdapter;
-import net.krlite.equator.util.SystemClock;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.TitleScreen;
-
-import net.minecraft.client.gui.widget.PlainTextButtonWidget;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.text.Text;
-
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Formatting;
-
-import net.minecraft.util.Identifier;
-
-import net.minecraft.util.math.Quaternion;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.client.screen.MissingModScreen;
+import com.dm.earth.cabricality.lib.util.mod.CabfModDeps;
+import com.mojang.blaze3d.systems.RenderSystem;
+
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.client.gui.widget.PlainTextButtonWidget;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
 
 @Mixin(TitleScreen.class)
 public class TitleScreenWidgets extends Screen {
@@ -44,13 +29,11 @@ public class TitleScreenWidgets extends Screen {
 	@Inject(method = "init", at = @At("TAIL"))
 	private void init(CallbackInfo ci) {
 		if (!CabfModDeps.isAllLoaded()) {
-			Text warning = (
-					CabfModDeps.getAllMissing().size() == 1
-							? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
-							: new TranslatableText(
-									Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mod_plural"),
-									CabfModDeps.getAllMissing().size())
-							)
+			Text warning = (CabfModDeps.getAllMissing().size() == 1
+					? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
+					: new TranslatableText(
+							Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mod_plural"),
+							CabfModDeps.getAllMissing().size()))
 					.formatted(Formatting.RED);
 			this.addDrawableChild(
 					new PlainTextButtonWidget(
@@ -58,35 +41,20 @@ public class TitleScreenWidgets extends Screen {
 							this.textRenderer.getWidth(warning), 10, warning,
 							buttonWidget -> {
 								if (this.client != null)
-									this.client.setScreen(new MissingModScreen(CabfModDeps.getAllMissing(), this.client.currentScreen));
-							}, this.textRenderer
-					)
-			);
+									this.client.setScreen(new MissingModScreen(CabfModDeps.getAllMissing(),
+											this.client.currentScreen));
+							}, this.textRenderer));
 		}
 	}
 
 	// Sets title to Cabricality
-	@Redirect(
-			method = "render",
-			at = @At(
-					value = "INVOKE",
-					target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V",
-					ordinal = 1
-			)
-	)
+	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V", ordinal = 1))
 	private void renderCabricalityTitle(int layer, Identifier identifier) {
 		RenderSystem.setShaderTexture(layer, Cabricality.Textures.CABRICALITY_TITLE_TEXTURE.identifier());
 	}
 
 	// Sets subtitle to Minecraft
-	@Redirect(
-			method = "render",
-			at = @At(
-					value = "INVOKE",
-					target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V",
-					ordinal = 2
-			)
-	)
+	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V", ordinal = 2))
 	private void renderMinecraftSubtitle(int layer, Identifier identifier) {
 		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE.identifier());
 	}

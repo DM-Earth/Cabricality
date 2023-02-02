@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "BFB",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "indrev:iron_plate"
+    },
+    "F": {
+      "item": "indrev:machine_block"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "ad_astra:fuel_refinery"
+  }
+}

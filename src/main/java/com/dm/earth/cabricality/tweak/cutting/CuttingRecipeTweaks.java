@@ -3,7 +3,7 @@ package com.dm.earth.cabricality.tweak.cutting;
 import java.util.Arrays;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.simibubi.create.content.contraptions.components.saw.CuttingRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import net.minecraft.item.ItemStack;

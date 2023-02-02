@@ -4,7 +4,8 @@ import net.minecraft.text.MutableText;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.core.BlockItemSettable;
+import com.dm.earth.cabricality.lib.core.BlockItemSettable;
+
 import net.minecraft.item.Item;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;

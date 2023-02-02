@@ -17,6 +17,7 @@ classes/
 # eclipse
 
 *.launch
+*.project
 
 # idea
 
@@ -31,7 +32,8 @@ classes/
 .vscode/
 bin/
 .classpath
-.project
+.project/
+.VSCodeCounter/
 
 # quilt
 

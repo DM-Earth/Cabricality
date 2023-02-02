@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.content.alchemist;
 
-import static com.dm.earth.cabricality.util.debug.CabfDebugger.debug;
+import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.alchemist.data.JarData;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserProperties;
-import com.dm.earth.cabricality.math.RandomMathUtil;
+import com.dm.earth.cabricality.lib.math.RandomMathUtil;
 
 import net.darktree.led.LED;
 import net.minecraft.block.Block;

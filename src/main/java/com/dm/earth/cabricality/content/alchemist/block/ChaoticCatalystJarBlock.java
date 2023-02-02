@@ -3,7 +3,7 @@ package com.dm.earth.cabricality.content.alchemist.block;
 import java.util.Random;
 
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.math.PositionUtil;
+import com.dm.earth.cabricality.lib.math.PositionUtil;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.damage.DamageSource;

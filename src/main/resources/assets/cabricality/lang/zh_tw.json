@@ -343,7 +343,7 @@
   "col.minecraft.tipped_arrows"     : "药箭",
   "col.minecraft.spawn_eggs"        : "刷怪蛋",
   "col.minecraft.glazed_terracottas": "带釉陶瓦",
-  "col.tconstruct.buckets"          : "流体桶",
+  "col.minecraft.buckets"           : "流体桶",
 
   "col.minecraft.lingering_potions": "滞留型药水",
   "col.minecraft.splash_potions"   : "喷溅型药水",
@@ -462,8 +462,14 @@
   "config.cabricality.general.background_blur"        : "背景模糊",
   "config.cabricality.general.background_blur.tooltip": "§7是否啟用背景模糊效果",
 
+  "config.cabricality.general.background_blur_darken"        : "背景模糊時降低亮度",
+  "config.cabricality.general.background_blur_darken.tooltip": "§7是否在背景模糊時降低亮度",
+
   "config.cabricality.general.background_blur_radius"        : "背景模糊半徑",
   "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半徑大小（像素）",
+
+  "config.cabricality.general.transparent_wthit_tooltip"        : "透明WTHIT提示框",
+  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7是否使WTHIT提示框透明",
 
   "config.cabricality.category.debug": "調試",
 
@@ -518,6 +524,7 @@
   "mod.ftbquests.name"      : "FTB Quests模組",
   "mod.ftbteams.name"       : "FTB Teams模組",
   "mod.questsadditions.name": "Quests Additions模組",
+  "mod.itemfilters.name": "Item Filters模組",
 
   "screen.cabricality.config.title"            : "永無止境：重縫",
   "screen.cabricality.missing_mod.title"       : "缺少以下模組",

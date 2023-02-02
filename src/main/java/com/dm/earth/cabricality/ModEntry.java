@@ -1,17 +1,23 @@
 package com.dm.earth.cabricality;
 
+import java.util.function.Predicate;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
+
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.jetbrains.annotations.Nullable;
 
 public enum ModEntry {
 	// Abbreviations
@@ -46,23 +52,37 @@ public enum ModEntry {
 	CX("coxinhautilities"),
 
 	ED("extended_drawers"),
+
 	LED("led"),
+
 	CC("computercraft"),
+
 	IF("itemfilters"),
-	CI("catwalksinc");
+
+	CI("catwalksinc"),
+
+	BC("bitsandchisels");
 
 	final String modId;
-
-	ModEntry(String modId) {
-		this.modId = modId;
-	}
 
 	public String getModId() {
 		return modId;
 	}
 
+	ModEntry(String modId) {
+		this.modId = modId;
+	}
+
 	public boolean checkContains(@Nullable Identifier id) {
 		return id != null && id.getNamespace().equals(modId);
+	}
+
+	public boolean checkContains(@NotNull Item item) {
+		return checkContains(Registry.ITEM.getId(item));
+	}
+
+	public boolean checkContains(@NotNull Recipe<?> recipe) {
+		return checkContains(recipe.getId());
 	}
 
 	public Identifier id(String... path) {
@@ -77,28 +97,28 @@ public enum ModEntry {
 		return TagKey.of(Registry.ITEM_KEY, id(paths));
 	}
 
-	public ItemStack asStack(String name, int count) {
-		return new ItemStack(asItem(name), count);
+	public ItemStack asStack(int count, String... paths) {
+		return new ItemStack(asItem(paths), count);
 	}
 
-	public ItemStack asStack(String name) {
-		return new ItemStack(asItem(name), 1);
+	public ItemStack asStack(String... paths) {
+		return new ItemStack(asItem(paths), 1);
 	}
 
 	public Ingredient asIngredient(String... paths) {
 		return Ingredient.ofItems(asItem(paths));
 	}
 
-	public ProcessingOutput asProcessingOutput(String name) {
-		return asProcessingOutput(name, 1);
+	public ProcessingOutput asProcessingOutput(String... paths) {
+		return asProcessingOutput(1, paths);
 	}
 
-	public ProcessingOutput asProcessingOutput(String name, float chance) {
-		return new ProcessingOutput(asStack(name), chance);
+	public ProcessingOutput asProcessingOutput(float chance, String... paths) {
+		return new ProcessingOutput(asStack(paths), chance);
 	}
 
-	public ProcessingOutput asProcessingOutput(String name, float chance, int count) {
-		return new ProcessingOutput(asStack(name, count), chance);
+	public ProcessingOutput asProcessingOutput(float chance, int count, String... paths) {
+		return new ProcessingOutput(asStack(count, paths), chance);
 	}
 
 	public Fluid asFluid(String... paths) {
@@ -111,5 +131,35 @@ public enum ModEntry {
 
 	public SoundEvent asSoundEvent(String... paths) {
 		return Registry.SOUND_EVENT.get(id(paths));
+	}
+
+	public Predicate<Recipe<?>> predicateOutput(boolean containsCabf, int count, String... paths) {
+		return recipe -> recipe.getOutput().isItemEqualIgnoreDamage(asStack(count, paths))
+				&& (containsCabf || !CABF.checkContains(recipe.getId()));
+	}
+
+	public Predicate<Recipe<?>> predicateOutput(boolean containsCabf, String... paths) {
+		return predicateOutput(containsCabf, 1, paths);
+	}
+
+	public Predicate<Recipe<?>> predicateOutput(String... paths) {
+		return predicateOutput(false, paths);
+	}
+
+	public static Predicate<Recipe<?>> predicateOutput(ItemStack stack) {
+		return recipe -> recipe.getOutput().isItemEqualIgnoreDamage(stack);
+	}
+
+	public Predicate<Recipe<?>> predicateIngredient(boolean containsCabf, String... paths) {
+		return recipe -> recipe.getIngredients().stream().anyMatch(asIngredient(paths)::equals)
+				&& (containsCabf || !CABF.checkContains(recipe.getId()));
+	}
+
+	public Predicate<Recipe<?>> predicateIngredient(String... paths) {
+		return predicateIngredient(false, paths);
+	}
+
+	public static Predicate<Recipe<?>> predicateIngredient(Item item) {
+		return recipe -> recipe.getIngredients().stream().anyMatch(Ingredient.ofItems(item)::equals);
 	}
 }

@@ -1,7 +1,7 @@
 package com.dm.earth.cabricality.content.alchemist.data;
 
-import static com.dm.earth.cabricality.util.JRecipeUtil.fluidEntry;
-import static com.dm.earth.cabricality.util.JRecipeUtil.itemEntry;
+import static com.dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
+import static com.dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
-import com.dm.earth.cabricality.math.RandomMathUtil;
+import com.dm.earth.cabricality.lib.math.RandomMathUtil;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

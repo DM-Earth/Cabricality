@@ -344,7 +344,7 @@
   "col.minecraft.tipped_arrows"     : "Tipped Arrows",
   "col.minecraft.spawn_eggs"        : "Spawn Eggs",
   "col.minecraft.glazed_terracottas": "Glazed Terracottas",
-  "col.tconstruct.buckets"          : "Fluid Buckets",
+  "col.minecraft.buckets"           : "Fluid Buckets",
 
   "col.minecraft.lingering_potions": "Lingering Potions",
   "col.minecraft.splash_potions"   : "Splash Potions",
@@ -465,8 +465,14 @@
   "config.cabricality.general.background_blur"        : "Background Blur",
   "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
 
+  "config.cabricality.general.background_blur_darken"        : "Background Blur Darken",
+  "config.cabricality.general.background_blur_darken.tooltip": "§7Whether to darken the background of the GUIs when blurring",
+
   "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
   "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
+
+  "config.cabricality.general.transparent_wthit_tooltip"        : "Transparent Waila Tooltip",
+  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7Whether to make Waila's tooltip transparent",
 
   "config.cabricality.category.debug": "Debug",
 
@@ -521,6 +527,7 @@
   "mod.ftbquests.name"      : "FTB Quests",
   "mod.ftbteams.name"       : "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
+  "mod.itemfilters.name": "Item Filters",
 
   "screen.cabricality.config.title"            : "Cabricality",
   "screen.cabricality.missing_mod.title"       : "Cabricality is Missing Mod",

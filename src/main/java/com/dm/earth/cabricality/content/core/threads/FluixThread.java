@@ -4,19 +4,20 @@ import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.CABF;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.math.RecipeBuilderUtil;
-import com.dm.earth.cabricality.resource.data.core.FreePRP;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.dm.earth.cabricality.tweak.core.MechAndSmithCraft;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
@@ -27,6 +28,7 @@ import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.EmptyingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.fluid.Fluids;
@@ -52,6 +54,7 @@ public class FluixThread implements TechThread {
 		return "fluix";
 	}
 
+	@SuppressWarnings("UnstableApiUsage")
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
 		handler.register(recipeId("crafting", "flash_drive"),
@@ -89,7 +92,7 @@ public class FluixThread implements TechThread {
 				id -> VanillaRecipeBuilders.shapedRecipe(" A ", "ABA", " A ")
 						.ingredient('A', CabfItems.INVAR_INGOT)
 						.ingredient('B', TagKey.of(Registry.ITEM_KEY, CABF.id("circuit_press")))
-						.output(CABF.asStack("circuit_scrap", 2)).build(id, ""));
+						.output(CABF.asStack(2, "circuit_scrap")).build(id, ""));
 
 		handler.register(recipeId("deploying", "printed_silicon"),
 				id -> new DeployerApplicationRecipe(new FreePRP(id)
@@ -100,15 +103,15 @@ public class FluixThread implements TechThread {
 		handler.register(recipeId("crushing", "blizz_cube"),
 				id -> new CrushingRecipe(
 						new FreePRP(id).setIngredient(CABF.asIngredient("blizz_cube"))
-								.setResult(CABF.asProcessingOutput("blizz_powder", 1, 2),
-										CABF.asProcessingOutput("blizz_powder", 0.5f, 1))
+								.setResult(CABF.asProcessingOutput(1, 2, "blizz_powder"),
+										CABF.asProcessingOutput(0.5F, 1, "blizz_powder"))
 								.setProcessingTime(350)));
 
 		handler.register(recipeId("crushing", "basalz_shard"),
 				id -> new CrushingRecipe(
 						new FreePRP(id).setIngredient(CABF.asIngredient("basalz_shard"))
-								.setResult(CABF.asProcessingOutput("basalz_powder", 1, 2),
-										CABF.asProcessingOutput("basalz_powder", 0.5f, 1))
+								.setResult(CABF.asProcessingOutput(1, 2, "basalz_powder"),
+										CABF.asProcessingOutput(0.5F, 1, "basalz_powder"))
 								.setProcessingTime(350)));
 
 		var blizz = CABF.asIngredient("blizz_powder");
@@ -116,7 +119,7 @@ public class FluixThread implements TechThread {
 		handler.register(recipeId("splashing", "sandstone"),
 				id -> new SplashingRecipe(
 						new FreePRP(id).setIngredient(MC.asIngredient("sandstone"))
-								.setResult(CABF.asProcessingOutput("sand_ball", 0.65f))));
+								.setResult(CABF.asProcessingOutput(0.65F, "sand_ball"))));
 
 		handler.register(recipeId("compacting", "ice_charge"),
 				id -> new CompactingRecipe(new FreePRP(id)
@@ -190,7 +193,7 @@ public class FluixThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(r -> RecipeTweaks.notCabf(r) && r.getOutput().isOf(AE2.asItem("silicon")));
-		handler.removeIf(r -> RecipeTweaks.notCabf(r) && r.getOutput().isOf(AE2.asItem("controller")));
+		handler.removeIf(AE2.predicateOutput(false, "silicon"));
+		handler.removeIf(AE2.predicateOutput(false, "controller"));
 	}
 }

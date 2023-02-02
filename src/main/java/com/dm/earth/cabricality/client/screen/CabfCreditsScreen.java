@@ -8,7 +8,7 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.util.debug.CabfLogger;
+import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
 import com.google.common.collect.Lists;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
