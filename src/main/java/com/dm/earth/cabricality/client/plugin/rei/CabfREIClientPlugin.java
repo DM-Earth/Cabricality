@@ -1,32 +1,5 @@
 package com.dm.earth.cabricality.client.plugin.rei;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.ModEntry;
-import com.dm.earth.cabricality.content.entries.CabfItemTags;
-import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.google.common.collect.ImmutableList;
-import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
-import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
-import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
-import me.shedaniel.rei.api.common.entry.EntryStack;
-import me.shedaniel.rei.api.common.entry.type.EntryType;
-import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
-import me.shedaniel.rei.api.common.util.EntryIngredients;
-import net.krlite.equator.util.IdentifierBuilder;
-import net.minecraft.item.Items;
-import net.minecraft.tag.TagKey;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import static com.dm.earth.cabricality.ModEntry.AD;
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.C;
@@ -42,6 +15,34 @@ import static com.dm.earth.cabricality.ModEntry.LED;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.PM;
 import static com.dm.earth.cabricality.ModEntry.TC;
+
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.ModEntry;
+import com.dm.earth.cabricality.content.entries.CabfItemTags;
+import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
+import com.dm.earth.cabricality.tweak.RecipeTweaks;
+import com.google.common.collect.ImmutableList;
+
+import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
+import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
+import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
+import me.shedaniel.rei.api.common.entry.EntryStack;
+import me.shedaniel.rei.api.common.entry.type.EntryType;
+import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
+import me.shedaniel.rei.api.common.util.EntryIngredients;
+import net.krlite.equator.util.IdentifierBuilder;
+import net.minecraft.item.Items;
+import net.minecraft.tag.TagKey;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 @SuppressWarnings("UnstableApiUsage")
 public class CabfREIClientPlugin implements REIClientPlugin {
@@ -352,18 +353,20 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 
 		// Buckets
 		registry.group(MC.id("buckets"),
-				col(MC.id("buckets")), entryStack -> (
-						(MC.checkContains(entryStack.getIdentifier()) ||
-								 CABF.checkContains(entryStack.getIdentifier()) /* Also including CABF's buckets */ ||
-								 TC.checkContains(entryStack.getIdentifier()) /* Also including TC's buckets */ ||
-								 CR.checkContains(entryStack.getIdentifier()) /* Also including CR's buckets */ ||
-								 IR.checkContains(entryStack.getIdentifier()) /* Also including IR's buckets */ ||
-								 AD.checkContains(entryStack.getIdentifier()) /* Also including AD's buckets */ ) &&
-								entryStack.getIdentifier().getPath().endsWith("bucket") &&
-								// Avoid including potion buckets
-								!entryStack.getIdentifier().getPath().equals("potion_bucket")) /* Avoid including potion buckets */ ||
-															 // Also including KB's liquid xp bucket
-															 entryStack.getIdentifier().equals(KB.id("liquid_xp_bucket")));
+				col(MC.id("buckets")), entryStack -> ((MC.checkContains(entryStack.getIdentifier()) ||
+						CABF.checkContains(entryStack.getIdentifier()) /* Also including CABF's buckets */ ||
+						TC.checkContains(entryStack.getIdentifier()) /* Also including TC's buckets */ ||
+						CR.checkContains(entryStack.getIdentifier()) /* Also including CR's buckets */ ||
+						IR.checkContains(entryStack.getIdentifier()) /* Also including IR's buckets */ ||
+						AD.checkContains(entryStack.getIdentifier()) /* Also including AD's buckets */ ) &&
+						entryStack.getIdentifier().getPath().endsWith("bucket") &&
+						// Avoid including potion buckets
+						!entryStack.getIdentifier().getPath().equals("potion_bucket")) /*
+																						 * Avoid including potion
+																						 * buckets
+																						 */ ||
+				// Also including KB's liquid xp bucket
+						entryStack.getIdentifier().equals(KB.id("liquid_xp_bucket")));
 		// Potion buckets
 		registry.group(TC.id("buckets", "potion"),
 				col(TC.id("buckets", "potion")),
@@ -463,8 +466,9 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		// Indrev
 		{
 			final String[] POSTFIX = { "pickaxe", "axe", "shovel", "hoe", "sword" };
-			Arrays.stream(new String[]{ "tin", "copper", "steel", "bronze", "lead", "silver" }).forEach(
-					prefix -> Arrays.stream(POSTFIX).forEach(postfix -> rule.hide(EntryIngredients.of(IR.asItem(joinAll(prefix, postfix))))));
+			Arrays.stream(new String[] { "tin", "copper", "steel", "bronze", "lead", "silver" }).forEach(
+					prefix -> Arrays.stream(POSTFIX)
+							.forEach(postfix -> rule.hide(EntryIngredients.of(IR.asItem(joinAll(prefix, postfix))))));
 		}
 	}
 }
