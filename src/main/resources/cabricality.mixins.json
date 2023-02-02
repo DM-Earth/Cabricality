@@ -5,6 +5,7 @@
   "plugin": "com.dm.earth.cabricality.plugin.CabfMixinConfigPlugin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
     "FluidBlockMixin",
     "LavaFluidMixin",
     "WrenchItemMixin",

@@ -86,7 +86,7 @@ hash = "e633f08a5ab08591cbf56a2270e2a3dbc5abeeeab631d08cf045d4ba03623181"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_4a.snbt"
-hash = "a6048ee9920224aa02cb70313fd5f5595bd4281d85a0e9205449b7eb3eef089f"
+hash = "aedf5348e90c7181402394e8f649598b33685b85cd9f1b235cb4f99819b1c9e0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
@@ -134,7 +134,7 @@ hash = "c9a0a12c14e6d0b9c88d9ed8aa5586ee41435408d814dbf081ae207484b1dc5b"
 
 [[files]]
 file = "config/indrev/oregen.json"
-hash = "48a06034fee5b6c99870a0a78bad88c1b61c1c82c210b2a6d11d60bf9a601c75"
+hash = "4d7e068bbcd4c51bc53e51395384fc91f05a59092e86a851583e45327c7a0206"
 
 [[files]]
 file = "config/indrev/upgrades.json"
