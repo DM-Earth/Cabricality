@@ -79,10 +79,7 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 
 	private static InfuserRecipe generateBuy(Identifier id, TradingEntry entry) {
 		InputEntry[] inputs = { new InputEntry(Ingredient.ofItems(entry.getCoin()), entry.getCoinCount()),
-				new InputEntry(
-						Ingredient.ofItems(
-								CABF.asItem("profession_card_" + ProfessionUtil.fromTradingEntry(entry).hashString())),
-						0) };
+				new InputEntry(Ingredient.ofItems(CABF.asItem("trade_card_" + entry.hashString())), 0) };
 
 		OutputEntry[] outputs = { new OutputEntry(new ItemStack(entry.getItem(), entry.getItemCount()), 1) };
 
