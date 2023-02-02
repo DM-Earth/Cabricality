@@ -22,6 +22,8 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import org.quiltmc.loader.api.QuiltLoader;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
@@ -227,11 +229,12 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 									color -> AE2.asItem(joinAll(color, type, postfix))).collect(Collectors.toList()))));
 		}
 
-		/*
-		 * Item Filters
-		 */
-		// Filters
-		registerCollapsibleEntryFromTag(registry, IF, "filters");
+		if (QuiltLoader.isModLoaded(IF.getModId()))
+			/*
+			 * Item Filters
+			 */
+			// Filters
+			registerCollapsibleEntryFromTag(registry, IF, "filters");
 
 		/*
 		 * Catwalks Inc.

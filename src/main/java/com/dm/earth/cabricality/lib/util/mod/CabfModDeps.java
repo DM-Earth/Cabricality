@@ -34,7 +34,7 @@ public enum CabfModDeps {
 			false, false), // questsadditions-fabric-1.18.2-1.4.0.jar
 
 	ITEM_FILTERS("itemfilters", new TranslatableText("mod.itemfilters.name"),
-			"https://www.curseforge.com/minecraft/mc-mods/item-filters/files/4055444/file",
+			"https://www.curseforge.com/minecraft/mc-mods/item-filters/download/4055444/file",
 			false, false); // item-filters-fabric-1802.2.8-build.47.jar
 
 	final String modId;
