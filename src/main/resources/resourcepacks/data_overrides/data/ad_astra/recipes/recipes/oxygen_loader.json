@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#F#",
+    "TLT",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "indrev:steel_plate"
+    },
+    "T": {
+      "item": "ad_astra:oxygen_tank"
+    },
+    "L": {
+      "item": "indrev:machine_block"
+    },
+    "R": {
+      "item": "minecraft:lightning_rod"
+    },
+    "F": {
+      "item": "ad_astra:engine_fan"
+    }
+  },
+  "result": {
+    "item": "ad_astra:oxygen_loader"
+  }
+}

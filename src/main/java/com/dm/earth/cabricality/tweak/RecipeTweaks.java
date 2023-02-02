@@ -214,13 +214,14 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
 				type -> handler.removeIf(AD.predicateOutput(material + "_" + type))));
+		handler.remove(AD.id("recipes/nasa_workbench"));
 
 		// AE2
 		handler.removeIf(AllRecipeTypes.MILLING.getType(), AE2.predicateOutput("certus_quartz_dust").and(
 				AE2.predicateIngredient("certus_quartz_crystal").negate()));
 
 		// Indrev
-		handler.removeIf(r -> IR.checkContains(r) && r.getOutput().getItem().getRegistryName().getPath()
+		handler.removeIf(r -> IR.checkContains(r) && Registry.ITEM.getId(r.getOutput().getItem()).getPath()
 				.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
 		handler.removeIf(IR.predicateIngredient("fan"));
 	}
