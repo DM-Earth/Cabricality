@@ -92,7 +92,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			Arrays.stream(AD_ASTRA_COMPRESSED_MATERIALS).forEach(material -> handler.register(
 					AD.id("pressing", "compressed_" + material),
 					id -> new PressingRecipe(new FreePRP(id)
-							.setIngredient(AD.asIngredient(material + "ingot"))
+							.setIngredient(AD.asIngredient(material + "_ingot"))
 							.setResult(AD.asProcessingOutput("compressed_" + material)))));
 		}
 

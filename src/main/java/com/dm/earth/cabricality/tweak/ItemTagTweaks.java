@@ -19,7 +19,7 @@ import net.minecraft.util.registry.Registry;
 public class ItemTagTweaks
 		implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 	private static final ItemTagTweaks INSTANCE = new ItemTagTweaks();
-	private static final String[] COMPRESSED_TO_PLATE_CONVERSION = {"desh", "ostrum", "calorite"};
+	private static final String[] COMPRESSED_TO_PLATE_CONVERSION = { "desh", "ostrum", "calorite" };
 
 	public static void load() {
 		LoadTagsCallback.ITEM.register(INSTANCE);
@@ -33,6 +33,7 @@ public class ItemTagTweaks
 		TagUnifyEntry.register(() -> CR.asItem("copper_sheet"), "copper_plate");
 		TagUnifyEntry.register(() -> IR.asItem("steel_ingot"), "steel_ingot");
 		TagUnifyEntry.register(() -> IR.asItem("steel_plate"), "steel_plate", "compressed_steel");
+		TagUnifyEntry.register(() -> CR.asItem("copper_nugget"), "copper_nugget");
 	}
 
 	@Override
@@ -49,7 +50,7 @@ public class ItemTagTweaks
 		}
 		if (id.startsWith("ores/")) {
 			String mat = id.replaceAll("ores/", "");
-			String[] allowList = {"tin", "lead", "nickel"};
+			String[] allowList = { "tin", "lead", "nickel" };
 			for (String m : allowList)
 				if (mat.equals(m))
 					return ActionResult.CONSUME;
@@ -68,10 +69,6 @@ public class ItemTagTweaks
 						Registry.ITEM.get(entry.getStrippedWoodId()));
 		}
 
-		for (String mat : COMPRESSED_TO_PLATE_CONVERSION) {
-			Item[] items = handler.get(C.id("compressed_" + mat)).toArray(new Item[0]);
-			handler.register(C.id(mat + "_plates"), items);
-			handler.register(C.id("plates", mat), items);
-		}
+		handler.register(C.id("compressed_steel"), IR.asItem("steel_plate"));
 	}
 }
