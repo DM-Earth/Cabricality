@@ -29,14 +29,12 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 
 	@Override
 	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
-		System.out.println("trading");
 		for (Professions rawProfession : Professions.values()) {
 			Profession profession = rawProfession.get();
 			Item professionCard = Registry.ITEM.get(Cabricality.id("profession_card_" + profession.hashString()));
 			handler.register(Cabricality.id("crafting/dupe/card/profession_card/" + profession.hashString()),
 					id -> genDupeRecipe(professionCard, id));
 			for (TradingEntry entry : profession.entries()) {
-				System.out.println("Registering recipe handler: " + entry.hashString());
 				handler.register(Cabricality.id("trading/buy/" + profession.hashString() + "/" + entry.hashString()),
 						id -> generateBuy(id, entry));
 				handler.register(Cabricality.id("trading/sell/" + profession.hashString() + "/" + entry.hashString()),
