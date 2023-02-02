@@ -26,6 +26,7 @@ import com.dm.earth.cabricality.lib.util.mod.CabfModConflict;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.network.CabfReceiver;
+import com.dm.earth.cabricality.tweak.BlockTagTweaks;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
@@ -136,6 +137,7 @@ public class Cabricality implements ModInitializer {
 		CabfRecipeSerializers.register();
 
 		ItemTagTweaks.load();
+		BlockTagTweaks.load();
 		for (TechThread thread : TechThread.THREADS)
 			thread.load();
 		UseEntityListener.load();

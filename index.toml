@@ -360,11 +360,6 @@ hash = "ea127e8f74006f3a9ce099f9e96adaa3b3f4f281231ece703c4e7f9732137ebd"
 metafile = true
 
 [[files]]
-file = "mods/leaves-us-in-peace.pw.toml"
-hash = "21da451438c4b95811be685f967b800f0672ac0096bf9a4fc80e08db52902005"
-metafile = true
-
-[[files]]
 file = "mods/led.pw.toml"
 hash = "df9b4bc65e9295704e893adcd1c2bb89d32564b5f13c94743422aa1d62f43fb5"
 metafile = true

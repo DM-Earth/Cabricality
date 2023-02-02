@@ -18,6 +18,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ItemTagTweaks
 		implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
+
 	private static final ItemTagTweaks INSTANCE = new ItemTagTweaks();
 	private static final String[] COMPRESSED_TO_PLATE_CONVERSION = { "desh", "ostrum", "calorite" };
 
@@ -71,4 +72,5 @@ public class ItemTagTweaks
 
 		handler.register(C.id("compressed_steel"), IR.asItem("steel_plate"));
 	}
+
 }

@@ -52,10 +52,15 @@ public enum ModEntry {
 	CX("coxinhautilities"),
 
 	ED("extended_drawers"),
+
 	LED("led"),
+
 	CC("computercraft"),
+
 	IF("itemfilters"),
+
 	CI("catwalksinc"),
+
 	BC("bitsandchisels");
 
 	final String modId;
@@ -129,7 +134,8 @@ public enum ModEntry {
 	}
 
 	public Predicate<Recipe<?>> predicateOutput(boolean containsCabf, int count, String... paths) {
-		return recipe -> recipe.getOutput().isItemEqualIgnoreDamage(asStack(count, paths)) && (containsCabf || !CABF.checkContains(recipe.getId()));
+		return recipe -> recipe.getOutput().isItemEqualIgnoreDamage(asStack(count, paths))
+				&& (containsCabf || !CABF.checkContains(recipe.getId()));
 	}
 
 	public Predicate<Recipe<?>> predicateOutput(boolean containsCabf, String... paths) {
@@ -145,7 +151,8 @@ public enum ModEntry {
 	}
 
 	public Predicate<Recipe<?>> predicateIngredient(boolean containsCabf, String... paths) {
-		return recipe -> recipe.getIngredients().stream().anyMatch(asIngredient(paths)::equals) && (containsCabf || !CABF.checkContains(recipe.getId()));
+		return recipe -> recipe.getIngredients().stream().anyMatch(asIngredient(paths)::equals)
+				&& (containsCabf || !CABF.checkContains(recipe.getId()));
 	}
 
 	public Predicate<Recipe<?>> predicateIngredient(String... paths) {
