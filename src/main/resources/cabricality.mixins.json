@@ -9,6 +9,7 @@
     "FluidBlockMixin",
     "LavaFluidMixin",
     "WrenchItemMixin",
+    "ad_astra.VehicleEntityMixin",
     "led.DiodeLampBlockAccessor",
     "log.Log4jHandler$InternalsLogger",
     "log.Log4jHandler$RoughlyEnoughItemsStateLogger",
