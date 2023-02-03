@@ -83,14 +83,14 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		// Ad Astra
 		{
 			Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
-					type -> handler.register(AD.id("stonecutting", material + "_" + type),
+					type -> handler.register(recipeId("stonecutting", material + "_" + type),
 							id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "", Ingredient.ofTag(
 									TagKey.of(Registry.ITEM_KEY, C.id(material + "_plates"))),
 									AD.asStack(2, material + "_" + type)))));
 
 			final String[] AD_ASTRA_COMPRESSED_MATERIALS = { "desh", "ostrum", "calorite" };
 			Arrays.stream(AD_ASTRA_COMPRESSED_MATERIALS).forEach(material -> handler.register(
-					AD.id("pressing", "compressed_" + material),
+					recipeId("pressing", "compressed_" + material),
 					id -> new PressingRecipe(new FreePRP(id)
 							.setIngredient(AD.asIngredient(material + "_ingot"))
 							.setResult(AD.asProcessingOutput("compressed_" + material)))));
