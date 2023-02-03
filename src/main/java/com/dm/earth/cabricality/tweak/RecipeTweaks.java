@@ -37,7 +37,9 @@ import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 
 import me.alphamode.forgetags.Tags;
+import me.steven.indrev.blocks.machine.pipes.FluidPipeBlock;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -224,6 +226,8 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.removeIf(r -> IR.checkContains(r) && Registry.ITEM.getId(r.getOutput().getItem()).getPath()
 				.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
 		handler.removeIf(IR.predicateIngredient("fan"));
+		handler.removeIf(recipe -> recipe.getOutput().getItem() instanceof BlockItem bi
+				&& bi.getBlock() instanceof FluidPipeBlock);
 	}
 
 	private static Identifier recipeId(String type, String name) {
