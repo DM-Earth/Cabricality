@@ -224,7 +224,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "45bdba6fc084f9f601ec5e95fbb95737b367cf10cc5e152c5598c41be706b153"
+hash = "c615c3d6b8dbb68c1e2e8ad66d42f4a75e783668e08cdf4402c71a559cfffb2a"
 metafile = true
 
 [[files]]
