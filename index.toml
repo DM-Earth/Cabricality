@@ -253,7 +253,7 @@ metafile = true
 
 [[files]]
 file = "mods/continuity.pw.toml"
-hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
+hash = "4b0fa19ea767d239fad702863b87571bc7ab22981168d9715efe9bb14fe3e5d7"
 metafile = true
 
 [[files]]
