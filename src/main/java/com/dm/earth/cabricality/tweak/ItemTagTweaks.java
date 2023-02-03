@@ -2,7 +2,7 @@ package com.dm.earth.cabricality.tweak;
 
 import static com.dm.earth.cabricality.ModEntry.C;
 import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.*;
 
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.tweak.base.TagUnifyEntry;
@@ -71,6 +71,9 @@ public class ItemTagTweaks
 		}
 
 		handler.register(C.id("compressed_steel"), IR.asItem("steel_plate"));
+		handler.register(C.id("desh_plates"), AD.asItem("compressed_desh"));
+		handler.register(C.id("ostrum_plates"), AD.asItem("compressed_ostrum"));
+		handler.register(C.id("calorite_plates"), AD.asItem("compressed_calorite"));
 	}
 
 }

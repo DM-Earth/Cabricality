@@ -33,6 +33,7 @@
 			subtitle: "{market.cabricality.exchange.gold.subtitle}"
 			description: ["{market.cabricality.exchange.gold.content}"]
 			dependencies: ["0F870BEA235D662D"]
+			repeatable: true
 			id: "1A566C74B1F7F050"
 			tasks: [{
 				id: "2387D852CA97AD1A"
@@ -41,10 +42,9 @@
 				count: 16L
 			}]
 			rewards: [{
-				id: "341C8CC09CDE7DE6"
-				type: "questsadditions:repeat"
-				icon: "cabricality:gold_coin"
-				table_id: 6372636554880692939L
+				id: "1B1147961F472368"
+				type: "item"
+				item: "cabricality:gold_coin"
 			}]
 		}
 		{
@@ -56,6 +56,7 @@
 			subtitle: "{market.cabricality.exchange.silver.subtitle}"
 			description: ["{market.cabricality.exchange.silver.content}"]
 			dependencies: ["0F870BEA235D662D"]
+			repeatable: true
 			id: "5326F6482C45D22A"
 			tasks: [{
 				id: "772821832EE93341"
@@ -63,11 +64,10 @@
 				item: "cabricality:gold_coin"
 			}]
 			rewards: [{
-				id: "73CB9C5EC1BED6EC"
-				type: "questsadditions:repeat"
-				icon: "cabricality:silver_coin"
-				auto: "disabled"
-				table_id: 477886174531820947L
+				id: "1730C0C2CBCBB9A1"
+				type: "item"
+				item: "cabricality:silver_coin"
+				count: 16
 			}]
 		}
 		{

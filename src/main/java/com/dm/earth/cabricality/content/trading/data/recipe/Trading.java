@@ -40,9 +40,8 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 				handler.register(Cabricality.id("trading/sell/" + profession.hashString() + "/" + entry.hashString()),
 						id -> generateSell(id, entry));
 
-				Item tradeCard = Registry.ITEM.get(Cabricality.id("trade_card_" + entry.hashString()));
 				handler.register(Cabricality.id("crafting/dupe/card/trade_card/" + entry.hashString()),
-						id -> genDupeRecipe(tradeCard, id));
+						id -> genDupeRecipe(Registry.ITEM.get(Cabricality.id("trade_card_" + entry.hashString())), id));
 			}
 		}
 	}

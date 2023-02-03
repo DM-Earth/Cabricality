@@ -37,7 +37,9 @@ import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 
 import me.alphamode.forgetags.Tags;
+import me.steven.indrev.blocks.machine.pipes.FluidPipeBlock;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -83,14 +85,14 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		// Ad Astra
 		{
 			Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
-					type -> handler.register(AD.id("stonecutting", material + "_" + type),
+					type -> handler.register(recipeId("stonecutting", material + "_" + type),
 							id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "", Ingredient.ofTag(
 									TagKey.of(Registry.ITEM_KEY, C.id(material + "_plates"))),
 									AD.asStack(2, material + "_" + type)))));
 
 			final String[] AD_ASTRA_COMPRESSED_MATERIALS = { "desh", "ostrum", "calorite" };
 			Arrays.stream(AD_ASTRA_COMPRESSED_MATERIALS).forEach(material -> handler.register(
-					AD.id("pressing", "compressed_" + material),
+					recipeId("pressing", "compressed_" + material),
 					id -> new PressingRecipe(new FreePRP(id)
 							.setIngredient(AD.asIngredient(material + "_ingot"))
 							.setResult(AD.asProcessingOutput("compressed_" + material)))));
@@ -224,6 +226,8 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.removeIf(r -> IR.checkContains(r) && Registry.ITEM.getId(r.getOutput().getItem()).getPath()
 				.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
 		handler.removeIf(IR.predicateIngredient("fan"));
+		handler.removeIf(recipe -> recipe.getOutput().getItem() instanceof BlockItem bi
+				&& bi.getBlock() instanceof FluidPipeBlock);
 	}
 
 	private static Identifier recipeId(String type, String name) {

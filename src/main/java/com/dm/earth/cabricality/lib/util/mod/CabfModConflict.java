@@ -25,8 +25,7 @@ public enum CabfModConflict {
 	}
 
 	public static void checkAndExit() {
-		if (isAnyLoaded()) {
-			System.exit(6);
-		}
+		if (isAnyLoaded())
+			throw new RuntimeException();
 	}
 }
