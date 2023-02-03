@@ -207,6 +207,11 @@ hash = "1a502fb1c76f562ee994a7189f57069109dbcafd381e757f1bb447582bf76541"
 metafile = true
 
 [[files]]
+file = "mods/better-runtime-resource-pack.pw.toml"
+hash = "fda10e1d5a441fbb9742cef27146bd37d9238e67a43268413ce913b2f8a59344"
+metafile = true
+
+[[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "5917e203247bb1fbfd2c8129636f5eecc22c67c7de36f120dcfdd225576f84a3"
 metafile = true
@@ -219,11 +224,6 @@ metafile = true
 [[files]]
 file = "mods/bounced.pw.toml"
 hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
-metafile = true
-
-[[files]]
-file = "mods/brrp.pw.toml"
-hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
 metafile = true
 
 [[files]]
