@@ -3,11 +3,11 @@ filename = "terrestria-4.0.6.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/lsUDPMOT/versions/Jjr0kRLm/terrestria-4.0.6.jar"
 hash-format = "sha1"
 hash = "1fad85516e98f978e1f5cd52186838d43f582aea"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "lsUDPMOT"
-version = "Jjr0kRLm"
+[update.curseforge]
+file-id = 4166789
+project-id = 323974
