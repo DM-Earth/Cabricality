@@ -58,6 +58,7 @@ public class InvarThread implements TechThread {
 	@Override
 	public void load() {
 		MechAndSmithCraft.addEntry(entry(IR.id("electric_furnace_mk1"), 1, MC.id("furnace")));
+		MechAndSmithCraft.addEntry(entry(IR.id("compressor_mk1"), 1, MC.id("iron_block")));
 		MechAndSmithCraft.addEntry(entry(IR.id("smelter_mk4"), 1, MC.id("blast_furnace")));
 		MechAndSmithCraft.addEntry(entry(IR.id("pulverizer_mk1"), 1, MC.id("flint")));
 		MechAndSmithCraft.addEntry(entry(IR.id("sawmill_mk1"), 1, CABF.id("saw_blade")));
