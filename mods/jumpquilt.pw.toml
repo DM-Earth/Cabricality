@@ -1,0 +1,13 @@
+name = "JumpQuilt"
+filename = "jumpquilt-2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4db556f65e0d1d802aa5e9a184ff2a9e86e65ffd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3903968
+project-id = 640265

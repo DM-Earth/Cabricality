@@ -137,6 +137,10 @@ file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "2b006b4a7a087547e840168976cda7fe11d567c571f8e6f9e996506586765426"
 
 [[files]]
+file = "config/jumpquilt.json"
+hash = "7e4ce5be7df1d4f45a33e461c71b45bf756899429035608660ca2b4ac4f93214"
+
+[[files]]
 file = "config/modmenu.json"
 hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
 
@@ -243,10 +247,6 @@ hash = "46f44c0c96b8e50a2815d08aca9d212ec9d9f1dfce46c3629fe76aefc035388a"
 metafile = true
 
 [[files]]
-file = "mods/cftags-0.1.2.jar"
-hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "8f07b2408013a7217caacec87c977635fdf94eb21a10bf281f2bba67ff7c4dc1"
 metafile = true
@@ -339,6 +339,11 @@ metafile = true
 [[files]]
 file = "mods/inventory-tabs-updated.pw.toml"
 hash = "22f69887e8b7f97a149ba8008592ab9a25d1a437e48015e33e1a56f96b714840"
+metafile = true
+
+[[files]]
+file = "mods/jumpquilt.pw.toml"
+hash = "a62463fff9d15ef9630bed73bd8d5b4a6fbbb49b92009f69b7f3862c5c8018a5"
 metafile = true
 
 [[files]]
