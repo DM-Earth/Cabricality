@@ -3,11 +3,11 @@ filename = "appliedenergistics2-fabric-11.7.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/XxWD5pD3/versions/MPdVG6oo/appliedenergistics2-fabric-11.7.0.jar"
 hash-format = "sha1"
 hash = "f10c97250cbe6367c4e5f4899474b993bab26cd2"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "XxWD5pD3"
-version = "MPdVG6oo"
+[update.curseforge]
+file-id = 4136237
+project-id = 223794

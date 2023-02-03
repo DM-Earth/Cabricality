@@ -3,11 +3,11 @@ filename = "create-fabric-0.5.0.i-921+1.18.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Xbc0uyRg/versions/8wJieFuI/create-fabric-0.5.0.i-921%2B1.18.2.jar"
 hash-format = "sha1"
 hash = "25736253e22cc33153ee5afff3884e3b88927e71"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "Xbc0uyRg"
-version = "8wJieFuI"
+[update.curseforge]
+file-id = 4377610
+project-id = 624165

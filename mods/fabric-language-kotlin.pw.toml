@@ -3,11 +3,11 @@ filename = "fabric-language-kotlin-1.9.0+kotlin.1.8.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Ha28R6CL/versions/esSFbyFg/fabric-language-kotlin-1.9.0%2Bkotlin.1.8.0.jar"
 hash-format = "sha1"
 hash = "da5adc0695672002bf5d95d1da29bbd9e2c5dfb7"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "Ha28R6CL"
-version = "esSFbyFg"
+[update.curseforge]
+file-id = 4276483
+project-id = 308769

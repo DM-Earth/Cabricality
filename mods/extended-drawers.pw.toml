@@ -3,11 +3,11 @@ filename = "ExtendedDrawers-1.3.6+mc.1.18.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/AhtxbnpG/versions/KQWwv5Pb/ExtendedDrawers-1.3.6%2Bmc.1.18.2.jar"
 hash-format = "sha1"
 hash = "cac121249d3df04fcfb9db39105fd55ce5cd5254"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "AhtxbnpG"
-version = "KQWwv5Pb"
+[update.curseforge]
+file-id = 4353178
+project-id = 616602

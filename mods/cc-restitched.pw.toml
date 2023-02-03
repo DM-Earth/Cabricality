@@ -3,11 +3,11 @@ filename = "cc-restitched-1.100.8.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/eldBwa5V/versions/1.100.8+1.18.2/cc-restitched-1.100.8.jar"
 hash-format = "sha1"
 hash = "3c2291e1b3b7bcc238a2c38522afc274c5f83525"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "eldBwa5V"
-version = "FbQHIk33"
+[update.curseforge]
+file-id = 3838648
+project-id = 462672
