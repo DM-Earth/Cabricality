@@ -51,11 +51,11 @@
   "market.cabricality.start.task.checkmark.title": "四处逛逛",
 
   "market.cabricality.exchange.gold.title": "货币&6兑换",
-  "market.cabricality.exchange.gold.subtitle": "&7银&r -> &6金&r   汇率 64:1",
+  "market.cabricality.exchange.gold.subtitle": "&7银&r -> &6金&r   汇率 16:1",
   "market.cabricality.exchange.gold.content": "有些交易需要用金币支付，每一枚金币价值一组银币。",
 
   "market.cabricality.exchange.silver.title": "货币&7兑换",
-  "market.cabricality.exchange.silver.subtitle": "&6金&r -> &7银&r   汇率 1:64",
+  "market.cabricality.exchange.silver.subtitle": "&6金&r -> &7银&r   汇率 1:16",
   "market.cabricality.exchange.silver.content": "你也可以用一枚金币换回一组银币。",
 
   "market.cabricality.shipments.gold": "&6金币",
