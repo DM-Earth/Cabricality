@@ -332,11 +332,6 @@ hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
 metafile = true
 
 [[files]]
-file = "mods/inventory-tabs-updated.pw.toml"
-hash = "4260894fd18d9e593e8364a0ac3aab1ac7ba6b654010a928f05f12f1e1a83006"
-metafile = true
-
-[[files]]
 file = "mods/kibe.pw.toml"
 hash = "0fd789b8973507de511c9ab3931934b8f4536e912c1127a10f77a0a80add3684"
 metafile = true
