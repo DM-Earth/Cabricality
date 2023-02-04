@@ -90,7 +90,7 @@ hash = "aedf5348e90c7181402394e8f649598b33685b85cd9f1b235cb4f99819b1c9e0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "1def5fd8dbe74d51209fbdac83402b6808e66293e9b6d69d6c08ef0760646dea"
+hash = "51e4986ffb62847dea33b1d04d68dff51b236e3a54771ffe3ad67eb593667663"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
@@ -224,7 +224,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "c615c3d6b8dbb68c1e2e8ad66d42f4a75e783668e08cdf4402c71a559cfffb2a"
+hash = "27c53fe4dfe67d7b9ba806444f110029f0083682f0916a2097a7ec61b6b77ef9"
 metafile = true
 
 [[files]]
