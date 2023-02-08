@@ -442,11 +442,6 @@ hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
 metafile = true
 
 [[files]]
-file = "mods/taptab.pw.toml"
-hash = "21eb1c3ee8d1b20b6d7c0a336a341c95bc786a4897e4f24930cc133e8e645e0f"
-metafile = true
-
-[[files]]
 file = "mods/terrestria.pw.toml"
 hash = "d7390d339169bff9b123b2bc86ca08de1ef10b2991a7923c657bb5bda755c164"
 metafile = true
