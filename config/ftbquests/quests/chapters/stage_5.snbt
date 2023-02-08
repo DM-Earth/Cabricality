@@ -42,13 +42,11 @@
 			dependencies: ["5D0454F977C4F080"]
 			size: 1.5d
 			id: "70D563EF30E9CB97"
-			tasks: [
-				{
-					id: "406AAC43EBD44F6A"
-					type: "checkmark"
-					title: "{contraption.cabricality.automated}"
-				}
-			]
+			tasks: [{
+				id: "406AAC43EBD44F6A"
+				type: "checkmark"
+				title: "{contraption.cabricality.automated}"
+			}]
 		}
 		{
 			title: "{contraption.cabricality.43.title}"
