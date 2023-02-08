@@ -21,6 +21,7 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.TechThread;
+import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
@@ -105,6 +106,12 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.register(recipeId("pressing", plate + "_plate"),
 					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "_ingot"))
 							.setResult(IR.asProcessingOutput(plate + "_plate")))));
+
+			handler.register(recipeId("compacting", "nikolite_dust"),
+					id -> new CompactingRecipe(new FreePRP(id).setIngredient(IR.asIngredient("nikolite_dust"))
+							.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE, FluidConstants.NUGGET))
+							.setResult(IR.asProcessingOutput("nikolite_ingot"))
+							.setHeatRequirement(HeatCondition.HEATED)));
 		}
 
 		// Dusts

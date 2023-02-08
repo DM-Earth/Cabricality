@@ -45,6 +45,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeManager;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
@@ -181,6 +182,9 @@ public class InvarThread implements TechThread {
 				id -> new ManualApplicationRecipe(new FreePRP(id)
 						.setIngredient(MC.asIngredient("calcite"), CABF.asIngredient("invar_ingot"))
 						.setResult(CABF.asProcessingOutput("invar_casing"))));
+
+		handler.register(recipeId("melting", "ender_dust"), id -> RecipeManager.deserialize(id, RecipeBuilderUtil
+				.generateMelting(AE2.id("ender_dust"), TC.id("molten_ender"), FluidConstants.INGOT, null, 0, 350, 35)));
 	}
 
 	@Override
