@@ -50,7 +50,7 @@ hash = "073f2d2c9d9cabaf9955f1a7e0b976159ef048847d4d63bb62242558aa2cc65f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "8dd239ca07a9c7420537e3d8b8a357b8848e94fa508527e2d585cc083c43af86"
+hash = "4b84273f863a189a6b5bd08d35befa66c8dbfb1debbc6f3917ba50193ddbb21d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
@@ -66,7 +66,7 @@ hash = "40fa98d2f0eeed923e2d69b635ab9f2e14c1800bda2b2068666028136200c86a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "45938d489291b856e313ccc5c8d8a2625c45360912b7a74164fe610ab90fe453"
+hash = "0695122157987a5dee7de22954d0f17bfd0f8f28df7a6d881c5b4f99834578a6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -103,14 +103,6 @@ hash = "bc46250afb2d07eece268a470c07094e2282be0a784fe739e78613d811e71ae7"
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e1c35b6eb83293aa6ff91a45e482679a945d16669d405a5feb41606a741cef1d"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/1_gold_coin.snbt"
-hash = "d37793a5f8a65514d4b81dd78f9b1731ae2aa71523b12a4003fc10535f53331f"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/64_silver_coin.snbt"
-hash = "4549a5bf6d2e30fc997325b0321e82bc2db6797cbfa4212c7c4978531755cc81"
 
 [[files]]
 file = "config/indrev/cables.json"
@@ -232,7 +224,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "45bdba6fc084f9f601ec5e95fbb95737b367cf10cc5e152c5598c41be706b153"
+hash = "c615c3d6b8dbb68c1e2e8ad66d42f4a75e783668e08cdf4402c71a559cfffb2a"
 metafile = true
 
 [[files]]
@@ -270,8 +262,8 @@ hash = "289cf2fb15222b03ed588377b920dcb8dbd8d242b3ea8b76c7e3950925b88d56"
 metafile = true
 
 [[files]]
-file = "mods/create.pw.toml"
-hash = "3e241de103e98ff06965002e2675e0acfec99bab9230df61cecbe4496a371f59"
+file = "mods/create-fabric.pw.toml"
+hash = "993795915e0c216aab262479482c5328efa31635704906a2ca7bf0e88f13c85f"
 metafile = true
 
 [[files]]

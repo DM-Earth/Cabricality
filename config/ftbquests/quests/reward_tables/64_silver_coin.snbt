@@ -1,8 +1,0 @@
-{
-	id: "06A1CAF19C0A1D93"
-	order_index: 0
-	title: "64 Silver Coin"
-	icon: "cabricality:silver_coin"
-	loot_size: 1
-	rewards: [{ item: "cabricality:silver_coin", count: 64 }]
-}

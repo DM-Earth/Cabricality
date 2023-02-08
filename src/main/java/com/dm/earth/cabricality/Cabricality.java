@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality;
 
-import net.krlite.equator.render.sprite.IdentifierSprite;
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -12,6 +13,7 @@ import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.dm.earth.cabricality.config.CabfConfig;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.core.TechThread;
@@ -22,7 +24,6 @@ import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 import com.dm.earth.cabricality.content.trading.data.recipe.Trading;
-import com.dm.earth.cabricality.lib.util.mod.CabfModConflict;
 import com.dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.network.CabfReceiver;
@@ -34,6 +35,7 @@ import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.EnvType;
 import net.krlite.equator.color.PreciseColor;
+import net.krlite.equator.render.sprite.IdentifierSprite;
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.SoundEvent;
@@ -41,8 +43,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
@@ -120,8 +120,6 @@ public class Cabricality implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
-		CabfModConflict.checkAndExit();
-
 		LOGGER.info("Initializing " + NAME + "... 📦");
 
 		CabfReceiver.registerServer();

@@ -25,15 +25,14 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 				"x: " + x + "d\n" +
 				"y: " + y + "d\n" +
 				"shape: \"hexagon\"\n" +
-				"subtitle: \"" + entry.getCoinCount() + " x {" + entry.getCoin().getTranslationKey() + "}\"\n" +
+				"subtitle: \"" + entry.getCoinCount() + " x {" + entry.getCoin().getTranslationKey()
+				+ "}\"\nrepeatable: true\n" +
 				"tasks: [{\ntype: \"item\"\n" +
 				"item: \"" + entry.getItemId() + "\"\n" +
 				"icon: \"" + entry.getItemId() + "\"\n" +
 				"count: " + entry.getItemCount() + "L\n" +
 				"}]\nrewards: [\n{\ntype: \"item\"\nauto: \"enabled\"\n" +
-				"item: \"" + "cabricality:trade_card_" + entry.hashString() + "\"\n}\n{\ntype: \"custom\"\n" +
-				"title: \"{market.cabricality.shipments.repeatable}\"\n" +
-				"icon: \"indrev:module_charger\"\ntags: [\"reset\"]\nauto: \"no_toast\"\n}\n]\n}";
+				"item: \"" + "cabricality:trade_card_" + entry.hashString() + "\"\n}\n]\n}";
 	}
 
 	@NotNull
@@ -45,11 +44,10 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 				"x: " + x + "d\n" +
 				"y: " + y + "d\n" +
 				"shape: \"hexagon\"\n" +
+				"repeatable: true\n" +
 				"tasks: [{\ntype: \"checkmark\"\n" +
 				"}]\nrewards: [\n{\ntype: \"item\"\nauto: \"enabled\"\n" +
-				"item: \"" + "cabricality:profession_card_" + entry.hashString() + "\"\n}\n{\ntype: \"custom\"\n" +
-				"title: \"{market.cabricality.shipments.repeatable}\"\n" +
-				"icon: \"indrev:module_charger\"\ntags: [\"reset\"]\nauto: \"no_toast\"\n}\n]\n}";
+				"item: \"" + "cabricality:profession_card_" + entry.hashString() + "\"\n}\n]\n}";
 	}
 
 	@Override
