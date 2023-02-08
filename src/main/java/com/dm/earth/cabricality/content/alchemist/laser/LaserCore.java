@@ -3,10 +3,10 @@ package com.dm.earth.cabricality.content.alchemist.laser;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import org.jetbrains.annotations.NotNull;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
-
-import org.jetbrains.annotations.NotNull;
 
 import net.darktree.led.block.DirectionalDiodeLampBlock;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
@@ -30,7 +30,8 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 	@Override
 	public ActionResult interact(PlayerEntity player, @NotNull World rawWorld, Hand hand, BlockPos pos,
 			Direction direction) {
-		if (player.isSneaking() || !(rawWorld instanceof ServerWorld) || !player.getStackInHand(hand).isEmpty() || !player.getName().getString().equals("Deployer"))
+		if (player.isSneaking() || !(rawWorld instanceof ServerWorld) || !player.getStackInHand(hand).isEmpty()
+				|| !player.getName().getString().equals("Deployer"))
 			return ActionResult.PASS;
 		ServerWorld world = (ServerWorld) rawWorld;
 		// Check if the target block is a laser source
@@ -57,12 +58,13 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 			BlockPos startPos = pos.offset(director);
 			LaserProperties properties = Objects.requireNonNull(LaserProperties.generate(world.getBlockState(startPos),
 					(DirectionalDiodeLampBlock) world.getBlockState(startPos).getBlock(), availableDirections.size()));
-			for (float i = 0.0F; i < properties.length(); i += 0.1F) {
+			for (float i = 0.0F; i < properties.length(); i += 0.35F) {
 				double x = startPos.getX() + 0.5D + (director.getOffsetX() * i);
 				double y = startPos.getY() + 0.5D + (director.getOffsetY() * i);
 				double z = startPos.getZ() + 0.5D + (director.getOffsetZ() * i);
-				world.spawnParticles(properties.toDustParticleEffect(), x, y, z, (int) Math.pow(properties.power(), 1/3), 0.0D,
-						0.0D, 0.0D, Math.pow(properties.power(), 1/4) / 10);
+				world.spawnParticles(properties.toDustParticleEffect(), x, y, z,
+						(int) Math.pow(properties.power(), 1 / 3), 0.0D,
+						0.0D, 0.0D, Math.pow(properties.power(), 1 / 4) / 10);
 			}
 			LaserBehaviors.process(world, startPos, director, properties);
 			world.playSound(null, startPos.getX() + 0.5D, startPos.getY() + 0.5D, startPos.getZ() + 0.5D,

@@ -50,7 +50,7 @@ hash = "073f2d2c9d9cabaf9955f1a7e0b976159ef048847d4d63bb62242558aa2cc65f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/market.snbt"
-hash = "4b84273f863a189a6b5bd08d35befa66c8dbfb1debbc6f3917ba50193ddbb21d"
+hash = "6d93a2942179cbbd9da43523f38208d446f0c1ad7215994b0c72cfd5748c7f88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
@@ -62,7 +62,7 @@ hash = "1573137f6fc2afef9fca929fbbfc6179f03794cae9eb5a6d49c929ff46384429"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/professions.snbt"
-hash = "40fa98d2f0eeed923e2d69b635ab9f2e14c1800bda2b2068666028136200c86a"
+hash = "6a85320a244480c8f9e8efd0637f6442227fce1df30320cbebd804893a475c11"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
@@ -90,7 +90,7 @@ hash = "aedf5348e90c7181402394e8f649598b33685b85cd9f1b235cb4f99819b1c9e0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_5.snbt"
-hash = "1def5fd8dbe74d51209fbdac83402b6808e66293e9b6d69d6c08ef0760646dea"
+hash = "03e5ec081d12831f589148a6fcc26de9957ca464ea0c63b6e94e92ad3c2e6733"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/thanks.snbt"
@@ -198,7 +198,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "0084c36a5d7f0ce300d60178150d1211308c81d19f929b3382c6b4af0b9e6d4f"
+hash = "7c32561dc768e8acb98c8dfe323fbaa167c7a0d1c9b6c4a07af5e3e6ab0e539e"
 metafile = true
 
 [[files]]
@@ -228,7 +228,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "c615c3d6b8dbb68c1e2e8ad66d42f4a75e783668e08cdf4402c71a559cfffb2a"
+hash = "60b2872cee95d3fb537d4dc777c49243060800903b17f0c937b0473acb09d70f"
 metafile = true
 
 [[files]]
@@ -303,7 +303,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "454c2cb0c46a3332b2b6952709ba55067031a9aa7b1cff8d529f0882997faba6"
+hash = "617ad00be9c1d9df4cd143bae57279e63d744e3441774e633d421ac5daccc955"
 metafile = true
 
 [[files]]
@@ -428,7 +428,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "1268a3a1da775947c10854602b5155e0bcba361f3624fe0e6d12c017e2d7f5a0"
+hash = "702ebb2e06d41dc40708f9800fdd2fb129fc346af36910260d4ce111f3be5531"
 metafile = true
 
 [[files]]

@@ -22,6 +22,9 @@ import com.simibubi.create.content.contraptions.components.millstone.MillingReci
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 import com.simibubi.create.content.contraptions.processing.ProcessingRecipe;
 
+import me.steven.indrev.recipes.machines.PulverizerRecipe;
+import me.steven.indrev.recipes.machines.entries.InputEntry;
+import me.steven.indrev.recipes.machines.entries.OutputEntry;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -46,6 +49,7 @@ public class OreProcessingTweaks {
 					id -> new BlastingRecipe(id, "",
 							Ingredient.ofItems(entry.getCrushedOreItem()),
 							new ItemStack(entry.getNuggetItem(), 3), 0.1F, 50));
+
 			// Crushed -> Dust
 			handler.register(createId(entry, entry.getCrushedOre(), "milling"),
 					id -> new MillingRecipe(new FreePRP(id)
@@ -61,6 +65,13 @@ public class OreProcessingTweaks {
 											entry.getDustItem(), 3), 1),
 											new ProcessingOutput(new ItemStack(entry.getDustItem(), 3), 0.5F))
 									.setProcessingTime(200)));
+			{
+				InputEntry[] inputs = { new InputEntry(Ingredient.ofItems(entry.getCrushedOreItem()), 1) };
+				OutputEntry[] outputs = { new OutputEntry(new ItemStack(entry.getDustItem(), 6), 1) };
+				handler.register(createId(entry, entry.getCrushedOre(), "pulverizing"),
+						id -> new PulverizerRecipe(id, inputs, outputs, 45));
+			}
+
 			// Dust -> Nugget
 			handler.register(createId(entry, entry.getNugget(), "smelting"),
 					id -> new SmeltingRecipe(id, "",
@@ -75,6 +86,7 @@ public class OreProcessingTweaks {
 							.setIngredient(Ingredient.ofItems(entry.getDustItem()))
 							.setResult(new ProcessingOutput(
 									new ItemStack(entry.getNuggetItem(), 2), 1))));
+
 			// Dust -> Molten Metal
 			handler.register(createId(entry, entry.getMoltenMetal(), "melting"),
 					id -> RecipeManager.deserialize(id,
@@ -83,6 +95,7 @@ public class OreProcessingTweaks {
 									FluidConstants.NUGGET * 3,
 									getByProduct(entry).getMoltenMetal(),
 									FluidConstants.NUGGET / 4, 500, 60)));
+
 			// Ingot -> Dust
 			handler.register(createId(entry, entry.getIngot(), "crushing"),
 					id -> new CrushingRecipe(new FreePRP(id)
@@ -132,7 +145,8 @@ public class OreProcessingTweaks {
 								.anyMatch(itemHolder -> itemHolder.value() == item)))
 					returnValue.set(true);
 				return returnValue.get();
-			})) return true;
+			}))
+				return true;
 		}
 		return false;
 	}

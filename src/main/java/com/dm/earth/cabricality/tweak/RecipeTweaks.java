@@ -21,6 +21,7 @@ import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.TechThread;
+import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
@@ -37,7 +38,9 @@ import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 
 import me.alphamode.forgetags.Tags;
+import me.steven.indrev.blocks.machine.pipes.FluidPipeBlock;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -103,6 +106,12 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.register(recipeId("pressing", plate + "_plate"),
 					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "_ingot"))
 							.setResult(IR.asProcessingOutput(plate + "_plate")))));
+
+			handler.register(recipeId("compacting", "nikolite_dust"),
+					id -> new CompactingRecipe(new FreePRP(id).setIngredient(IR.asIngredient("nikolite_dust"))
+							.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE, FluidConstants.NUGGET))
+							.setResult(IR.asProcessingOutput("nikolite_ingot"))
+							.setHeatRequirement(HeatCondition.HEATED)));
 		}
 
 		// Dusts
@@ -224,6 +233,8 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.removeIf(r -> IR.checkContains(r) && Registry.ITEM.getId(r.getOutput().getItem()).getPath()
 				.matches(".*_(pickaxe|axe|shovel|hoe|sword)$"));
 		handler.removeIf(IR.predicateIngredient("fan"));
+		handler.removeIf(recipe -> recipe.getOutput().getItem() instanceof BlockItem bi
+				&& bi.getBlock() instanceof FluidPipeBlock);
 	}
 
 	private static Identifier recipeId(String type, String name) {
