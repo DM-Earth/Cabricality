@@ -42,19 +42,11 @@
 			dependencies: ["5D0454F977C4F080"]
 			size: 1.5d
 			id: "70D563EF30E9CB97"
-			tasks: [
-				{
-					id: "2A4A54EBAFBEB39F"
-					type: "item"
-					item: "cabricality:raw_logic_bucket"
-					consume_items: false
-				}
-				{
-					id: "406AAC43EBD44F6A"
-					type: "checkmark"
-					title: "{contraption.cabricality.automated}"
-				}
-			]
+			tasks: [{
+				id: "406AAC43EBD44F6A"
+				type: "checkmark"
+				title: "{contraption.cabricality.automated}"
+			}]
 		}
 		{
 			title: "{contraption.cabricality.43.title}"

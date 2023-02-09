@@ -24,6 +24,8 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 
+import static com.dm.earth.cabricality.ModEntry.*;
+
 public class LaserBehaviors {
 	public static void attackNearby(@NotNull ServerWorld world, BlockPos pos, float power) {
 		float len = power * 3F;
@@ -86,6 +88,10 @@ public class LaserBehaviors {
 			return new LaserRecipe(CabfItems.BASALZ_SHARD, ParticleTypes.FLAME);
 		if (item == Items.SNOWBALL)
 			return new LaserRecipe(CabfItems.BLIZZ_CUBE, ParticleTypes.SNOWFLAKE);
+		if (item == IR.asItem("nikolite_ingot"))
+			return new LaserRecipe(IR.asItem("enriched_nikolite_ingot"), ParticleTypes.ELECTRIC_SPARK);
+			if (item == IR.asItem("nikolite_dust"))
+			return new LaserRecipe(IR.asItem("enriched_nikolite_dust"), ParticleTypes.ELECTRIC_SPARK);
 		return null;
 	}
 

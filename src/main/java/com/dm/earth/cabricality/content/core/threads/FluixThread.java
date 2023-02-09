@@ -17,6 +17,7 @@ import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
+import com.dm.earth.cabricality.lib.util.ArrayUtil;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.contraptions.components.crusher.CrushingRecipe;
 import com.simibubi.create.content.contraptions.components.deployer.DeployerApplicationRecipe;
@@ -30,7 +31,12 @@ import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 
 import io.github.fabricators_of_create.porting_lib.util.FluidStack;
+import me.steven.indrev.recipes.machines.FluidInfuserRecipe;
+import me.steven.indrev.recipes.machines.entries.InputEntry;
+import me.steven.indrev.recipes.machines.entries.OutputEntry;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
+import net.fabricmc.fabric.api.transfer.v1.storage.base.ResourceAmount;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
@@ -174,7 +180,7 @@ public class FluixThread implements TechThread {
 				.setHeatRequirement(HeatCondition.HEATED)));
 
 		handler.register(recipeId("mixing", "silicon"), id -> new MixingRecipe(new FreePRP(id)
-				.setIngredient(CABF.asIngredient("purified_sand"), CABF.asIngredient("ice_charge"))
+				.setIngredient(CABF.asIngredient("silicon_compound"), CABF.asIngredient("ice_charge"))
 				.setResult(AE2.asProcessingOutput("silicon"))
 				.setHeatRequirement(HeatCondition.HEATED)));
 
@@ -183,6 +189,12 @@ public class FluixThread implements TechThread {
 						.setIngredient(MC.asIngredient("obsidian"),
 								AE2.asIngredient("fluix_crystal"))
 						.setResult(CABF.asProcessingOutput("fluix_casing"))));
+
+		handler.register(recipeId("fluid_infuse", "snow"),
+				id -> new FluidInfuserRecipe(id, ArrayUtil.of(new InputEntry(MC.asIngredient("ice"), 0)),
+						ArrayUtil.of(new OutputEntry(MC.asStack("snowball"), 0.5)),
+						ArrayUtil.of(new ResourceAmount<>(FluidVariant.of(Fluids.WATER), FluidConstants.BOTTLE)),
+						ArrayUtil.<ResourceAmount<FluidVariant>>of(), 120));
 	}
 
 	@Contract("_, _, _ -> new")
