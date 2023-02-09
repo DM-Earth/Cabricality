@@ -32,7 +32,8 @@ public class LaserBehaviors {
 		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
 		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving)
 				.forEach(entity -> entity.damage(DamageSource.GENERIC,
-						(float) (Math.max(0, entity.getBlockPos().getSquaredDistance(pos) / len) * power)));
+						(float) (Math.max(Math.max(0, entity.getBlockPos().getSquaredDistance(pos) / len), 1)
+								* power)));
 	}
 
 	// pos should be the lamp's blockPos
