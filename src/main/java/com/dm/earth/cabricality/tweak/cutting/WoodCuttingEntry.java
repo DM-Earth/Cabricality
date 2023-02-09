@@ -58,14 +58,26 @@ public enum WoodCuttingEntry {
 			"rainbow_eucalyptus_slab", "rainbow_eucalyptus_log", "stripped_rainbow_eucalyptus_log",
 			"rainbow_eucalyptus_wood", "stripped_rainbow_eucalyptus_wood"),
 
+	RAINBOW_EUCALYPTUS_QUARTER(TRE.id("rainbow_eucalyptus_quarter"), "rainbow_eucalyptus_planks", null,
+			"rainbow_eucalyptus_quarter_log", "stripped_rainbow_eucalyptus_quarter_log", null, null),
+
 	CYPRESS(TRE.id("cypress"), "cypress_planks", "cypress_slab", "cypress_log",
 			"stripped_cypress_log", "cypress_wood", "stripped_cypress_wood"),
+
+	CYPRESS_QUARTER(TRE.id("cypress_quarter"), "cypress_planks", "cypress_planks", "cypress_quarter_log",
+			"stripped_cypress_quarter_log", null, null),
 
 	HEMLOCK(TRE.id("hemlock"), "hemlock_planks", "hemlock_slab", "hemlock_log",
 			"stripped_hemlock_log", "hemlock_wood", "stripped_hemlock_wood"),
 
+	HEMLOCK_QUARTER(TRE.id("hemlock_quarter"), "hemlock_planks", null, "hemlock_quarter_log",
+			"stripped_hemlock_quarter_log", null, null),
+
 	REDWOOD(TRE.id("redwood"), "redwood_planks", "redwood_slab", "redwood_log",
 			"stripped_redwood_log", "redwood_wood", "stripped_redwood_wood"),
+
+	REDWOOD_QUARTER(TRE.id("redwood_quarter"), "redwood_planks", null, "redwood_quarter_log",
+			"stripped_redwood_quarter_log", null, null),
 
 	JAPANESE_MAPLE(TRE.id("japanese_maple"), "japanese_maple_planks", "japanese_maple_slab",
 			"japanese_maple_log", "stripped_japanese_maple_log", "japanese_maple_wood",
@@ -95,14 +107,11 @@ public enum WoodCuttingEntry {
 			String wood, String strippedWood) {
 		this.id = id;
 		this.plankId = (plank == null) ? null : new Identifier(id.getNamespace(), plank);
-		this.plankSlabId =
-				(plankSlab == null) ? null : new Identifier(id.getNamespace(), plankSlab);
+		this.plankSlabId = (plankSlab == null) ? null : new Identifier(id.getNamespace(), plankSlab);
 		this.logId = (log == null) ? null : new Identifier(id.getNamespace(), log);
-		this.strippedLogId =
-				(strippedLog == null) ? null : new Identifier(id.getNamespace(), strippedLog);
+		this.strippedLogId = (strippedLog == null) ? null : new Identifier(id.getNamespace(), strippedLog);
 		this.woodId = (wood == null) ? null : new Identifier(id.getNamespace(), wood);
-		this.strippedWoodId =
-				(strippedWood == null) ? null : new Identifier(id.getNamespace(), strippedWood);
+		this.strippedWoodId = (strippedWood == null) ? null : new Identifier(id.getNamespace(), strippedWood);
 	}
 
 	public Identifier getId() {

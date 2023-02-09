@@ -28,10 +28,11 @@ import static com.dm.earth.cabricality.ModEntry.*;
 
 public class LaserBehaviors {
 	public static void attackNearby(@NotNull ServerWorld world, BlockPos pos, float power) {
-		float len = power * 3F;
+		float len = power * 2.5F;
 		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
 		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving)
-				.forEach(entity -> entity.damage(DamageSource.GENERIC, power));
+				.forEach(entity -> entity.damage(DamageSource.GENERIC,
+						(float) (Math.max(0, entity.getBlockPos().getSquaredDistance(pos) / len) * power)));
 	}
 
 	// pos should be the lamp's blockPos
@@ -90,7 +91,7 @@ public class LaserBehaviors {
 			return new LaserRecipe(CabfItems.BLIZZ_CUBE, ParticleTypes.SNOWFLAKE);
 		if (item == IR.asItem("nikolite_ingot"))
 			return new LaserRecipe(IR.asItem("enriched_nikolite_ingot"), ParticleTypes.ELECTRIC_SPARK);
-			if (item == IR.asItem("nikolite_dust"))
+		if (item == IR.asItem("nikolite_dust"))
 			return new LaserRecipe(IR.asItem("enriched_nikolite_dust"), ParticleTypes.ELECTRIC_SPARK);
 		return null;
 	}
