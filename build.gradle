@@ -75,7 +75,7 @@ dependencies {
     modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
     modImplementation "maven.modrinth:led:${project.led_version}"
     modImplementation "maven.modrinth:interference:${project.interference_version}"
-    modImplementation "maven.modrinth:equator:${project.equator_version}"
+    modImplementation include("maven.modrinth:equator:${project.equator_version}")
     modImplementation "maven.modrinth:wthit:fabric-${project.wthit_version}"
 
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
