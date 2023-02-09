@@ -7,6 +7,7 @@
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
     "FluidBlockMixin",
+    "ItemStackMixin",
     "LavaFluidMixin",
     "WrenchItemMixin",
     "ad_astra.VehicleEntityMixin",

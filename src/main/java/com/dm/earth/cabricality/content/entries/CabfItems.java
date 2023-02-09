@@ -1,11 +1,14 @@
 package com.dm.earth.cabricality.content.entries;
 
 import static com.dm.earth.cabricality.ModEntry.C;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
+
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
+
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
 import com.dm.earth.cabricality.content.core.items.FlippableItem;
@@ -25,6 +28,7 @@ import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
 import com.simibubi.create.AllTags.AllItemTags;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
+
 import net.devtech.arrp.json.models.JModel;
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
@@ -136,14 +140,18 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			ItemModelGenerator.generated("item", "math/nan"));
 	public static final Item COMPUTATION_MATRIX = registerItem("computation_matrix",
 			new GlintedItem(Properties.DEFAULT.get()));
+	public static final Item AQUAMARINE_QUARTZ = registerItemModeled("aquamarine_quartz",
+			new Item(Properties.DEFAULT.get()), ItemModelGenerator.generated("item", "aquamarine_quartz"));
 
 	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics",
 			new Item(Properties.DEFAULT.get()),
 			ItemModelGenerator.generated("item", "matter_plastics"));
 	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
-	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond", "emerald", "nickel");
+	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
+			"emerald", "nickel");
 	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
-	public static final Map<String, String> OPERATORS = Map.of("plus", "+", "minus", "-", "multiply", "*", "divide", "/");
+	public static final Map<String, String> OPERATORS = Map.of("plus", "+", "minus", "-", "multiply", "*", "divide",
+			"/");
 	public static final List<Integer> NUMBERS = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 	public static final List<String> MATH_CASTS = List.of("plus", "minus", "multiply", "divide", "three", "eight");
 
