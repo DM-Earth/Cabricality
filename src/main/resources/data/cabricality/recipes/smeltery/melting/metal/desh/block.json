@@ -3,18 +3,18 @@
   "conditions": [
     {
       "value": {
-        "tag": "c:storage_blocks/desh",
+        "tag": "c:desh_blocks",
         "type": "forge:tag_empty"
       },
       "type": "forge:not"
     }
   ],
   "ingredient": {
-    "tag": "c:storage_blocks/desh"
+    "tag": "c:desh_blocks"
   },
   "result": {
     "fluid": "cabricality:molten_desh",
-    "amount": 810
+    "amount": 81000
   },
   "temperature": 900,
   "time": 190

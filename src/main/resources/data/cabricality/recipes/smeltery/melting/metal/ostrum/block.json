@@ -3,18 +3,18 @@
   "conditions": [
     {
       "value": {
-        "tag": "c:storage_blocks/ostrum",
+        "tag": "c:ostrum_blocks",
         "type": "forge:tag_empty"
       },
       "type": "forge:not"
     }
   ],
   "ingredient": {
-    "tag": "c:storage_blocks/ostrum"
+    "tag": "c:ostrum_blocks"
   },
   "result": {
     "fluid": "cabricality:molten_ostrum",
-    "amount": 810
+    "amount": 81000
   },
   "temperature": 900,
   "time": 190

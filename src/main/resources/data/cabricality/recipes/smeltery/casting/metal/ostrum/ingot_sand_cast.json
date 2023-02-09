@@ -3,7 +3,7 @@
   "conditions": [
     {
       "value": {
-        "tag": "c:ingots/ostrum",
+        "tag": "c:ostrum_ingots",
         "type": "forge:tag_empty"
       },
       "type": "forge:not"
@@ -15,10 +15,10 @@
   "cast_consumed": true,
   "fluid": {
     "tag": "c:molten_ostrum",
-    "amount": 90
+    "amount": 9000
   },
   "result": {
-    "tag": "c:ingots/ostrum"
+    "tag": "c:ostrum_ingots"
   },
   "cooling_time": 63
 }

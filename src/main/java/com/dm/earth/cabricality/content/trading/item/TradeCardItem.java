@@ -27,17 +27,21 @@ public class TradeCardItem extends AbstractTradeCardItem {
 	@Override
 	public TypedActionResult<ItemStack> tradeInWorld(World world, PlayerEntity player, Hand hand) {
 		ItemStack cardStack = player.getStackInHand(hand);
-		if (hand == Hand.OFF_HAND) return TypedActionResult.fail(cardStack);
+		if (hand == Hand.OFF_HAND || player.getItemCooldownManager().isCoolingDown(cardStack.getItem()))
+			return TypedActionResult.fail(cardStack);
 		ItemStack stack = player.getStackInHand(Hand.OFF_HAND);
-		TradingEntry entry = TradingEntryRegistry.fromItem((AbstractTradeCardItem) player.getStackInHand(hand).getItem());
+		TradingEntry entry = TradingEntryRegistry
+				.fromItem((AbstractTradeCardItem) player.getStackInHand(hand).getItem());
 		if (stack.getItem() != entry.getCoin() || stack.getCount() < entry.getCoinCount())
 			return TypedActionResult.fail(cardStack);
 		ItemStack item = entry.asItemStack();
-		if (stack.getCount() == entry.getCoinCount()) player.setStackInHand(Hand.OFF_HAND, item);
+		if (stack.getCount() == entry.getCoinCount())
+			player.setStackInHand(Hand.OFF_HAND, item);
 		else {
 			stack.decrement(entry.getCoinCount());
 			player.giveItemStack(item);
 		}
+		player.getItemCooldownManager().set(cardStack.getItem(), 20);
 		return TypedActionResult.success(cardStack);
 	}
 }
