@@ -243,6 +243,10 @@ hash = "66aa4f271d3c852806c5158f199c507ae4895fcbe5f075278b16bae7b160714b"
 metafile = true
 
 [[files]]
+file = "mods/cftags-0.1.2.jar"
+hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
 metafile = true
@@ -250,11 +254,6 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "b508bb6b509b96b2e297e94ca2ce365623730b938f32c74d49c574a7ef1ecb24"
-metafile = true
-
-[[files]]
-file = "mods/conveniented-forge-tags.pw.toml"
-hash = "0b9a0d9c612d052f45128dc4f37aaed1eafe714dae869899931a565a4a780944"
 metafile = true
 
 [[files]]
