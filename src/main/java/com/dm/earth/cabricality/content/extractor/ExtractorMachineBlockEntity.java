@@ -5,12 +5,7 @@ import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
 import java.util.Arrays;
 import java.util.List;
 
-import com.dm.earth.cabricality.Cabricality;
-
 import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
-import org.quiltmc.qsl.networking.api.PacketByteBufs;
-import org.quiltmc.qsl.networking.api.PlayerLookup;
-import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
 
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
@@ -26,7 +21,6 @@ import net.minecraft.block.PillarBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.PacketByteBuf;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
@@ -50,12 +44,6 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 		@Override
 		protected void onFinalCommit() {
 			markDirty();
-			assert world != null;
-			if (!world.isClient()) {
-				PacketByteBuf buf = PacketByteBufs.create();
-				PlayerLookup.tracking(ExtractorMachineBlockEntity.this)
-						.forEach(player -> ServerPlayNetworking.send(player, Cabricality.id("extractor_buf"), buf));
-			}
 		}
 	};
 	public static final BlockEntityType<ExtractorMachineBlockEntity> TYPE = QuiltBlockEntityTypeBuilder

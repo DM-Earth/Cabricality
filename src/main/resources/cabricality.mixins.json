@@ -54,8 +54,7 @@
     "client.ftbquests.QuestPanelAnimator",
     "client.ftbquests.QuestScreenAnimator",
     "client.ftbquests.QuestTrigger",
-    "client.ftbquests.ViewQuestPanelAnimator",
-    "client.wthit.TooltipRendererCatcher"
+    "client.ftbquests.ViewQuestPanelAnimator"
   ],
   "injectors": {
     "defaultRequire": 0

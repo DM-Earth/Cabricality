@@ -312,6 +312,11 @@ hash = "d7d04009eba5c1068bd9aa5214c7ef87dcf426c4f23229b3dbfa6996952fd7c5"
 metafile = true
 
 [[files]]
+file = "mods/hudium.pw.toml"
+hash = "a914336f1f601eeb58e3943f4646e4bb876339a5ffaeb33b336a75187ecdc955"
+metafile = true
+
+[[files]]
 file = "mods/indium.pw.toml"
 hash = "f5751b1f49dfd5d0a78a4573b334651748e02e65dfe093774ab0d0c0886d950c"
 metafile = true
@@ -444,11 +449,6 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "49f5590e6160266691eaca6948b33a3a2763e590ed4bcf90189f13650066c84e"
-metafile = true
-
-[[files]]
-file = "mods/wthit.pw.toml"
-hash = "4a83125400dcc7ece90e27995f899b315fba1e31e8a0897c26b7fcb3b8f7176e"
 metafile = true
 
 [[files]]
