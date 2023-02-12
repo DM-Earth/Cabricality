@@ -19,6 +19,7 @@
     "log.Slf4jHandler$MinecraftServerLogger",
     "log.Slf4jHandler$ReloadableResourceManagerLogger",
     "log.Slf4jHandler$UtilLogger",
+    "porting_lib.ItemStackHandlerMixin",
     "recipe.AbstractCookingRecipeMixin",
     "recipe.ShapedRecipeMixin",
     "recipe.ShapelessRecipeMixin",
