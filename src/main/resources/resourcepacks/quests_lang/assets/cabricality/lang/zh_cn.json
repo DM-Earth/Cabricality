@@ -707,7 +707,7 @@
   "chapter_4.cabricality.preparation.task.checkmark.title": "知道了",
 
   "chapter_4.cabricality.laser.title": "光之巨人",
-  "chapter_4.cabricality.laser.content": "&6炼金激光&r在这一科技阶梯中扮演着举足轻重的角色。",
+  "chapter_4.cabricality.laser.content": "&6炼金激光&r在这一科技阶梯中扮演着举足轻重的角色，详见Cabricality Wiki的FAQ部分。",
 
   "chapter_4.cabricality.laser.task.checkmark.title": "知道了",
 
@@ -734,7 +734,7 @@
 
   "contraption.cabricality.32.2.title": "白炽灯",
   "contraption.cabricality.32.2.subtitle": "步骤 32-2",
-  "contraption.cabricality.32.2.content": "第一台&6激光发射器&r能够将&6玄武碎片&r从&6玄武岩&r中提取出来，等待进一步的处理。\n\n你只需要在&6激光发射器&r上方放置一个&6吸液漏斗，&r再在最上方放置一格&6充能水，&r并向&6激光发射器&r通入红石信号就可使其工作。",
+  "contraption.cabricality.32.2.content": "第一台&6激光发射器&r能够将&6玄武碎片&r从&6玄武岩&r中提取出来，等待进一步的处理。",
 
   "contraption.cabricality.33.1.title": "玄武试炼",
   "contraption.cabricality.33.1.subtitle": "步骤 33-1",
@@ -778,7 +778,7 @@
 
   "contraption.cabricality.38.title": "冷光灯",
   "contraption.cabricality.38.subtitle": "步骤 38",
-  "contraption.cabricality.38.content": "第二台&6激光发射器&r可以从&6雪块&r中提取出&6暴雪结晶。&r\n\n你完全可以使用与&6「步骤 32-2」&r中相同的机械\n结构。",
+  "contraption.cabricality.38.content": "第二台&6激光发射器&r可以从&6雪球&r中提取出&6暴雪结晶。&r\n\n你完全可以使用与&6「步骤 32-2」&r中相同的机械\n结构。",
 
   "contraption.cabricality.39.1.title": "暴雪试炼",
   "contraption.cabricality.39.1.subtitle": "步骤 39-1",

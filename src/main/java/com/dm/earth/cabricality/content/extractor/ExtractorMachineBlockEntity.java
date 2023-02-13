@@ -5,12 +5,7 @@ import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
 import java.util.Arrays;
 import java.util.List;
 
-import com.dm.earth.cabricality.Cabricality;
-
 import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
-import org.quiltmc.qsl.networking.api.PacketByteBufs;
-import org.quiltmc.qsl.networking.api.PlayerLookup;
-import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
 
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
@@ -26,7 +21,6 @@ import net.minecraft.block.PillarBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.network.PacketByteBuf;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
@@ -50,12 +44,6 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 		@Override
 		protected void onFinalCommit() {
 			markDirty();
-			assert world != null;
-			if (!world.isClient()) {
-				PacketByteBuf buf = PacketByteBufs.create();
-				PlayerLookup.tracking(ExtractorMachineBlockEntity.this)
-						.forEach(player -> ServerPlayNetworking.send(player, Cabricality.id("extractor_buf"), buf));
-			}
 		}
 	};
 	public static final BlockEntityType<ExtractorMachineBlockEntity> TYPE = QuiltBlockEntityTypeBuilder
@@ -124,13 +112,14 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 				if (enoughLogs) {
 					debug("extractor block entity: found enough logs at " + targetPos.toShortString());
 					// check if there are leaves
-					boolean enoughLeaves = true;
-					for (Direction leafDirection : Arrays.stream(Direction.values())
-							.filter((leafDirection -> leafDirection != Direction.DOWN)).toArray(Direction[]::new)) {
-						if (!isPersistentLeaves(world, upPos, leafDirection))
-							enoughLeaves = false;
+					var count = 0;
+					var iter = BlockPos.iterate(upPos.offset(Direction.DOWN, 2).offset(Direction.WEST, 2),
+							upPos.offset(Direction.UP, 2).offset(Direction.EAST, 2)).iterator();
+					while (iter.hasNext()) {
+						if (isPersistentLeaves(world.getBlockState(iter.next())))
+							count++;
 					}
-					if (enoughLeaves) {
+					if (count > 4) {
 						debug("extractor block entity: found enough leaves at " + upPos.toShortString());
 						if (Registry.BLOCK.getId(world.getBlockState(targetPos).getBlock()).getPath()
 								.contains("rubber"))
@@ -146,10 +135,8 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 		return 0.0F;
 	}
 
-	private static boolean isPersistentLeaves(World world, BlockPos blockPos, Direction direction) {
-		BlockState blockState = world.getBlockState(blockPos.offset(direction));
-		return Registry.BLOCK.getTag(BlockTags.LEAVES).get().stream().anyMatch(
-				blockHolder -> blockHolder.value() == blockState.getBlock()) && !blockState.get(LeavesBlock.PERSISTENT);
+	private static boolean isPersistentLeaves(BlockState state) {
+		return state.isIn(BlockTags.LEAVES) && !state.get(LeavesBlock.PERSISTENT);
 	}
 
 	private static boolean isVecLog(BlockState blockState) {

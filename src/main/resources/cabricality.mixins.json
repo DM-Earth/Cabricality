@@ -7,6 +7,7 @@
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
     "FluidBlockMixin",
+    "ItemStackMixin",
     "LavaFluidMixin",
     "WrenchItemMixin",
     "ad_astra.VehicleEntityMixin",
@@ -18,6 +19,7 @@
     "log.Slf4jHandler$MinecraftServerLogger",
     "log.Slf4jHandler$ReloadableResourceManagerLogger",
     "log.Slf4jHandler$UtilLogger",
+    "porting_lib.ItemStackHandlerMixin",
     "recipe.AbstractCookingRecipeMixin",
     "recipe.ShapedRecipeMixin",
     "recipe.ShapelessRecipeMixin",
@@ -52,8 +54,7 @@
     "client.ftbquests.QuestPanelAnimator",
     "client.ftbquests.QuestScreenAnimator",
     "client.ftbquests.QuestTrigger",
-    "client.ftbquests.ViewQuestPanelAnimator",
-    "client.wthit.TooltipRendererCatcher"
+    "client.ftbquests.ViewQuestPanelAnimator"
   ],
   "injectors": {
     "defaultRequire": 0

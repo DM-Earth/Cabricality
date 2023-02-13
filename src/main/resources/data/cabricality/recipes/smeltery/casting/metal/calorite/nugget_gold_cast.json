@@ -3,7 +3,7 @@
   "conditions": [
     {
       "value": {
-        "tag": "c:nuggets/calorite",
+        "tag": "c:calorite_nuggets",
         "type": "forge:tag_empty"
       },
       "type": "forge:not"
@@ -14,10 +14,10 @@
   },
   "fluid": {
     "tag": "c:molten_calorite",
-    "amount": 10
+    "amount": 1000
   },
   "result": {
-    "tag": "c:nuggets/calorite"
+    "tag": "c:calorite_nuggets"
   },
   "cooling_time": 21
 }
