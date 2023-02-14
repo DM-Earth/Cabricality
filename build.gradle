@@ -38,7 +38,7 @@ repositories {
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://aperlambda.github.io/maven" }
     maven { url "https://maven.kotlindiscord.com/repository/terraformers/" }
-    maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://maven.terraformersmc.com/releases/" }
     maven { url "https://maven.cafeteria.dev/releases/" }
     maven { url "https://jitpack.io/" } // JitPack
     maven { url "https://maven.gegy.dev" }
