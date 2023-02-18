@@ -706,8 +706,8 @@
 
   "chapter_4.cabricality.preparation.task.checkmark.title": "Checkmark",
 
-  "chapter_4.cabricality.laser.title": "The Alchemical Laser &dBOOM&r",
-  "chapter_4.cabricality.laser.content": "A central role in this age of technology is played by the Alchemical Laser.",
+  "chapter_4.cabricality.laser.title": "The Alchemical Laser",
+  "chapter_4.cabricality.laser.content": "A central role in this age of technology is played by the Alchemical Laser. Please check the FAQ in Cabricality Wiki for details.",
 
   "chapter_4.cabricality.laser.task.checkmark.title": "Checkmark",
 
@@ -734,7 +734,7 @@
 
   "contraption.cabricality.32.2.title": "Hot Laser",
   "contraption.cabricality.32.2.subtitle": "Contraption 32-2",
-  "contraption.cabricality.32.2.content": "The first Alchemical Laser forms activated basalz essence from Basalt. This works only if powered water is above the Fluid Hopper.",
+  "contraption.cabricality.32.2.content": "The first Alchemical Laser forms activated basalz essence from Basalt.",
 
   "contraption.cabricality.33.1.title": "Basalz Mill",
   "contraption.cabricality.33.1.subtitle": "Contraption 33-1",
@@ -778,7 +778,7 @@
 
   "contraption.cabricality.38.title": "Cool Laser",
   "contraption.cabricality.38.subtitle": "Contraption 38",
-  "contraption.cabricality.38.content": "The second Alchemical Laser forms activated blizz essence from Snow Blocks.\n\nYour automation strategy from Contraption 32 will perform just as effective here.",
+  "contraption.cabricality.38.content": "The second Alchemical Laser forms activated blizz essence from Snow Balls.\n\nYour automation strategy from Contraption 32 will perform just as effective here.",
 
   "contraption.cabricality.39.1.title": "Blizz Mill",
   "contraption.cabricality.39.1.subtitle": "Contraption 39-1",

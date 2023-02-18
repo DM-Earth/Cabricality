@@ -35,6 +35,7 @@ import com.simibubi.create.content.contraptions.components.mixer.CompactingRecip
 import com.simibubi.create.content.contraptions.components.press.PressingRecipe;
 import com.simibubi.create.content.contraptions.fluids.actors.FillingRecipe;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
+import com.simibubi.create.content.curiosities.tools.SandPaperPolishingRecipe;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 
 import me.alphamode.forgetags.Tags;
@@ -107,11 +108,16 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "_ingot"))
 							.setResult(IR.asProcessingOutput(plate + "_plate")))));
 
-			handler.register(recipeId("compacting", "nikolite_dust"),
+			handler.register(recipeId("compacting", "aquamarine_quartz"),
 					id -> new CompactingRecipe(new FreePRP(id).setIngredient(IR.asIngredient("nikolite_dust"))
 							.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE, FluidConstants.NUGGET))
-							.setResult(IR.asProcessingOutput("nikolite_ingot"))
+							.setResult(CABF.asProcessingOutput("aquamarine_quartz"))
 							.setHeatRequirement(HeatCondition.HEATED)));
+
+			handler.register(recipeId("sandpaper_polishing", "aquamarine_quartz"),
+					id -> new SandPaperPolishingRecipe(
+							new FreePRP(id).setIngredient(CABF.asIngredient("aquamarine_quartz"))
+									.setResult(IR.asProcessingOutput("nikolite_ingot"))));
 		}
 
 		// Dusts
@@ -235,6 +241,9 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.removeIf(IR.predicateIngredient("fan"));
 		handler.removeIf(recipe -> recipe.getOutput().getItem() instanceof BlockItem bi
 				&& bi.getBlock() instanceof FluidPipeBlock);
+		handler.remove(IR.id("shaped/coal_generator_mk1"));
+		handler.remove(IR.id("shaped/solar_generator_mk1"));
+		handler.remove(IR.id("shaped/solar_generator_mk3"));
 	}
 
 	private static Identifier recipeId(String type, String name) {

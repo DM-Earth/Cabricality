@@ -33,23 +33,28 @@ public class ProfessionCardItem extends AbstractTradeCardItem {
 	@Override
 	public TypedActionResult<ItemStack> tradeInWorld(World world, PlayerEntity player, Hand hand) {
 		ItemStack cardStack = player.getStackInHand(hand);
-		if (hand == Hand.OFF_HAND) return TypedActionResult.fail(cardStack);
+		if (hand == Hand.OFF_HAND || player.getItemCooldownManager().isCoolingDown(cardStack.getItem()))
+			return TypedActionResult.fail(cardStack);
 		ItemStack stack = player.getStackInHand(Hand.OFF_HAND);
 		Profession profession = ProfessionUtil.fromItem(cardStack.getItem());
 
 		Identifier itemId = Registry.ITEM.getId(stack.getItem());
 		assert profession != null;
-		TradingEntry entry = TradingEntryRegistry.fromHashString(String.valueOf(itemId.hashCode()).replaceAll("-", "x"));
-		if (entry == null || !profession.entries().contains(entry)) return TypedActionResult.fail(cardStack);
+		TradingEntry entry = TradingEntryRegistry
+				.fromHashString(String.valueOf(itemId.hashCode()).replaceAll("-", "x"));
+		if (entry == null || !profession.entries().contains(entry))
+			return TypedActionResult.fail(cardStack);
 
 		if (stack.getItem() != entry.getItem() || stack.getCount() < entry.getItemCount())
 			return TypedActionResult.fail(cardStack);
 		ItemStack coin = entry.asCoinStack();
-		if (stack.getCount() == entry.getItemCount()) player.setStackInHand(Hand.OFF_HAND, coin);
+		if (stack.getCount() == entry.getItemCount())
+			player.setStackInHand(Hand.OFF_HAND, coin);
 		else {
 			stack.decrement(entry.getItemCount());
 			player.giveItemStack(coin);
 		}
+		player.getItemCooldownManager().set(cardStack.getItem(), 20);
 		return TypedActionResult.success(cardStack);
 	}
 }

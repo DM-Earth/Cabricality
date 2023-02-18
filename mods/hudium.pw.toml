@@ -1,0 +1,13 @@
+name = "Hudium"
+filename = "hudium-fabric-1.0.4+mc1.18.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/6nAozjsh/versions/1.0.4-public/hudium-fabric-1.0.4%2Bmc1.18.2.jar"
+hash-format = "sha1"
+hash = "4bc6f01ab0992e95a6d6e53e0a1cf3ce29729d7a"
+
+[update]
+[update.modrinth]
+mod-id = "6nAozjsh"
+version = "OcKNkRVR"

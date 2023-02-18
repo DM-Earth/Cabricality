@@ -38,8 +38,7 @@ repositories {
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://aperlambda.github.io/maven" }
     maven { url "https://maven.kotlindiscord.com/repository/terraformers/" }
-    maven { url "https://mvn.devos.one/snapshots/" }
-    maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://maven.terraformersmc.com/releases/" }
     maven { url "https://maven.cafeteria.dev/releases/" }
     maven { url "https://jitpack.io/" } // JitPack
     maven { url "https://maven.gegy.dev" }
@@ -75,7 +74,7 @@ dependencies {
     modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
     modImplementation "maven.modrinth:led:${project.led_version}"
     modImplementation "maven.modrinth:interference:${project.interference_version}"
-    modImplementation "maven.modrinth:equator:${project.equator_version}"
+    modImplementation include("maven.modrinth:equator:${project.equator_version}")
     modImplementation "maven.modrinth:wthit:fabric-${project.wthit_version}"
 
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"

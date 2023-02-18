@@ -14,16 +14,16 @@ import net.minecraft.util.Identifier;
 
 public enum CasingBlockEntry {
 	ZINC("zinc", () -> RenderLayer.getSolid(), new SimpleCasingBlock(
-			QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN), "zinc")),
+			QuiltBlockSettings.of(Material.METAL, MapColor.LICHEN_GREEN).strength(2.0F, 6.0F), "zinc")),
 
 	INVAR("invar", () -> RenderLayer.getSolid(),
-			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.GRAY), "invar")),
+			new SimpleCasingBlock(QuiltBlockSettings.of(Material.METAL, MapColor.GRAY).strength(2.0F, 6.0F), "invar")),
 
 	FLUIX("fluix", () -> RenderLayer.getSolid(), new SimpleCasingBlock(
-			QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "fluix")),
+			QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA).strength(2.0F, 6.0F), "fluix")),
 
 	ENDERIUM("enderium", () -> RenderLayer.getSolid(), new SimpleCasingBlock(
-			QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA), "enderium"));
+			QuiltBlockSettings.of(Material.METAL, MapColor.DARK_AQUA).strength(2.0F, 6.0F), "enderium"));
 
 	private final String name;
 	private final Supplier<Object> layer;

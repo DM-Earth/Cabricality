@@ -43,8 +43,8 @@ public class ItemTagTweaks
 		if (!rid.getNamespace().equals("c"))
 			return ActionResult.PASS;
 		String id = rid.getPath();
-		if (id.startsWith("plates/")) {
-			String mat = id.replaceAll("plates/", "");
+		if (id.startsWith("plates/") || id.endsWith("_plates")) {
+			String mat = id.replaceAll("plates/", "").replaceAll("_plates", "");
 			for (String m : COMPRESSED_TO_PLATE_CONVERSION)
 				if (m.equals(mat))
 					return ActionResult.SUCCESS;

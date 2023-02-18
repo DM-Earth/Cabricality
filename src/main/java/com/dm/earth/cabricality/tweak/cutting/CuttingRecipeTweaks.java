@@ -11,6 +11,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static com.dm.earth.cabricality.ModEntry.*;
+
 public class CuttingRecipeTweaks {
 	public static void register(AddRecipesCallback.RecipeHandler handler) {
 		Arrays.stream(WoodCuttingEntry.values()).forEach(entry -> {
@@ -32,6 +34,11 @@ public class CuttingRecipeTweaks {
 				handler.register(createId(entry.getPlankId()),
 						id -> createRecipe(id, entry.getPlankId(), entry.getPlankSlabId(), 2, 50));
 		});
+
+		handler.register(createId(TRE.id("small_oak_log")),
+				id -> createRecipe(id, TRE.id("small_oak_log"), TRE.id("stripped_small_oak_log"), 1, 50));
+		handler.register(createId(TRE.id("stripped_small_oak_log")),
+				id -> createRecipe(id, TRE.id("stripped_small_oak_log"), MC.id("oak_planks"), 6, 50));
 	}
 
 	private static CuttingRecipe createRecipe(Identifier id, Identifier inputId,
