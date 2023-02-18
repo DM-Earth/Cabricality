@@ -223,6 +223,11 @@ hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
 metafile = true
 
 [[files]]
+file = "mods/bugjump.pw.toml"
+hash = "7ba5c5431478e67cb1f4359a2577b36224cc2c2e3748786eba2831dd1548ad46"
+metafile = true
+
+[[files]]
 file = "mods/cabricality-mod.pw.toml"
 hash = "a94869a03acf3144f854caef96fac7ae95fa59e758f600f644b42951cbc52d26"
 metafile = true
