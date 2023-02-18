@@ -241,6 +241,9 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.removeIf(IR.predicateIngredient("fan"));
 		handler.removeIf(recipe -> recipe.getOutput().getItem() instanceof BlockItem bi
 				&& bi.getBlock() instanceof FluidPipeBlock);
+		handler.remove(IR.id("shaped/coal_generator_mk1"));
+		handler.remove(IR.id("shaped/solar_generator_mk1"));
+		handler.remove(IR.id("shaped/solar_generator_mk3"));
 	}
 
 	private static Identifier recipeId(String type, String name) {
