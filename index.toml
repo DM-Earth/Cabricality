@@ -178,7 +178,7 @@ hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "47ab326bdcf1346b7255300ff0e4f8f598fb0831a6b01475600f414a6d6d2de3"
+hash = "d3ff528a268762147d083ed96f71b2fbfbbf7960761cc6514c3f04ba4ee076ad"
 metafile = true
 
 [[files]]
@@ -227,8 +227,13 @@ hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
 metafile = true
 
 [[files]]
+file = "mods/bugjump.pw.toml"
+hash = "7ba5c5431478e67cb1f4359a2577b36224cc2c2e3748786eba2831dd1548ad46"
+metafile = true
+
+[[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "60b2872cee95d3fb537d4dc777c49243060800903b17f0c937b0473acb09d70f"
+hash = "a94869a03acf3144f854caef96fac7ae95fa59e758f600f644b42951cbc52d26"
 metafile = true
 
 [[files]]
@@ -268,7 +273,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "472fdb6d4497349150ff5dad810173c6a64350792b73db6b56a2475994370f62"
+hash = "5d224d0454a68e0e6cce03a37fe95edac930e407b17a75734031315535e762fb"
 metafile = true
 
 [[files]]
@@ -289,11 +294,6 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "65370d3a87c7eadaa75ebf3c00cbff34cf206f88fa54c0d13da1225d7c4bf862"
-metafile = true
-
-[[files]]
-file = "mods/equator.pw.toml"
-hash = "ec3fa413e380758707fd4a790f93613be18d0252a156cc3b28be2ecf234efbe4"
 metafile = true
 
 [[files]]
@@ -319,6 +319,11 @@ metafile = true
 [[files]]
 file = "mods/here-be-no-dragons.pw.toml"
 hash = "d7d04009eba5c1068bd9aa5214c7ef87dcf426c4f23229b3dbfa6996952fd7c5"
+metafile = true
+
+[[files]]
+file = "mods/hudium.pw.toml"
+hash = "e895cea103b9c0acf0c83e769d067b495f2d16e79e9a12e8ffe4eace709154e2"
 metafile = true
 
 [[files]]
@@ -452,11 +457,6 @@ hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
 metafile = true
 
 [[files]]
-file = "mods/taptab.pw.toml"
-hash = "21eb1c3ee8d1b20b6d7c0a336a341c95bc786a4897e4f24930cc133e8e645e0f"
-metafile = true
-
-[[files]]
 file = "mods/terrablender-fabric.pw.toml"
 hash = "32a91a3014d6ebbd94bfd3b72f2381f0ee079a8e83b0f7d4e66e1a955e32c528"
 metafile = true
@@ -469,11 +469,6 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "712e87884c53ad1c8891e7ea384318750051684144972ad11a15c44cf327a864"
-metafile = true
-
-[[files]]
-file = "mods/wthit.pw.toml"
-hash = "d39bbda7320d1083a435dc3f466cd0b787244eba6c1e817cdb20048e5cec0624"
 metafile = true
 
 [[files]]
