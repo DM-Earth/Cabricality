@@ -79,18 +79,24 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 			handler.register(AE2.id("compacting", "matter_plastics"),
 					id -> new CompactingRecipe(new FreePRP(id)
 							.setIngredient(matterBall, matterBall, matterBall, matterBall,
-									matterBall, matterBall, matterBall, matterBall, matterBall)
+									matterBall, matterBall, matterBall, matterBall,
+									matterBall)
 							.setResult(CABF.asProcessingOutput("matter_plastics"))
 							.setHeatRequirement(HeatCondition.SUPERHEATED)));
 		}
 
 		// Ad Astra
 		{
-			Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
-					type -> handler.register(recipeId("stonecutting", material + "_" + type),
-							id -> VanillaRecipeBuilders.stonecuttingRecipe(id, "", Ingredient.ofTag(
-									TagKey.of(Registry.ITEM_KEY, C.id(material + "_plates"))),
-									AD.asStack(2, material + "_" + type)))));
+			Arrays.stream(AD_ASTRA_MATERIALS)
+					.forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
+							type -> handler.register(
+									recipeId("stonecutting", material + "_" + type),
+									id -> VanillaRecipeBuilders.stonecuttingRecipe(
+											id, "", Ingredient.ofTag(
+													TagKey.of(Registry.ITEM_KEY,
+															C.id(material + "_plates"))),
+											AD.asStack(2, material + "_"
+													+ type)))));
 
 			final String[] AD_ASTRA_COMPRESSED_MATERIALS = { "desh", "ostrum", "calorite" };
 			Arrays.stream(AD_ASTRA_COMPRESSED_MATERIALS).forEach(material -> handler.register(
@@ -102,22 +108,29 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 
 		// Indrev
 		{
-			final String[] INDREV_PLATES = { "bronze", "electrum", "lead", "silver", "steel", "tin", "tungsten" };
+			final String[] INDREV_PLATES = { "bronze", "electrum", "lead", "silver", "steel", "tin",
+					"tungsten" };
 
-			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.register(recipeId("pressing", plate + "_plate"),
-					id -> new PressingRecipe(new FreePRP(id).setIngredient(IR.asIngredient(plate + "_ingot"))
+			Arrays.stream(INDREV_PLATES).forEach(plate -> handler.register(
+					recipeId("pressing", plate + "_plate"),
+					id -> new PressingRecipe(new FreePRP(id)
+							.setIngredient(IR.asIngredient(plate + "_ingot"))
 							.setResult(IR.asProcessingOutput(plate + "_plate")))));
 
 			handler.register(recipeId("compacting", "aquamarine_quartz"),
-					id -> new CompactingRecipe(new FreePRP(id).setIngredient(IR.asIngredient("nikolite_dust"))
-							.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE, FluidConstants.NUGGET))
+					id -> new CompactingRecipe(new FreePRP(id)
+							.setIngredient(IR.asIngredient("nikolite_dust"))
+							.setFluidIngredient(FluidIngredient.fromFluid(
+									CabfFluids.REDSTONE, FluidConstants.NUGGET))
 							.setResult(CABF.asProcessingOutput("aquamarine_quartz"))
 							.setHeatRequirement(HeatCondition.HEATED)));
 
 			handler.register(recipeId("sandpaper_polishing", "aquamarine_quartz"),
 					id -> new SandPaperPolishingRecipe(
-							new FreePRP(id).setIngredient(CABF.asIngredient("aquamarine_quartz"))
-									.setResult(IR.asProcessingOutput("nikolite_ingot"))));
+							new FreePRP(id).setIngredient(
+									CABF.asIngredient("aquamarine_quartz"))
+									.setResult(IR.asProcessingOutput(
+											"nikolite_ingot"))));
 		}
 
 		// Dusts
@@ -136,20 +149,24 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 				id -> new FillingRecipe(
 						new FreePRP(id).setIngredient(CABF.asIngredient("nickel_ingot"))
 								.setFluidIngredient(FluidIngredient.fromFluid(
-										TC.asFluid("molten_iron"), FluidConstants.NUGGET * 6))
-								.setResult(CABF.asProcessingOutput("nickel_compound"))));
+										TC.asFluid("molten_iron"),
+										FluidConstants.NUGGET * 6))
+								.setResult(CABF.asProcessingOutput(
+										"nickel_compound"))));
 
 		// Saws
 		handler.register(recipeId("crafting", "stone_rod"),
 				id -> VanillaRecipeBuilders.shapedRecipe("S", "S")
-						.ingredient('S', Tags.Items.COBBLESTONE).output(CABF.asStack("stone_rod"))
+						.ingredient('S', Tags.Items.COBBLESTONE)
+						.output(CABF.asStack("stone_rod"))
 						.build(id, ""));
 
 		handler.register(recipeId("crafting", "stone_saw"),
 				id -> VanillaRecipeBuilders.shapedRecipe("SRR", "SMR")
 						.ingredient('S', MC.asIngredient("stick"))
 						.ingredient('R', CABF.asIngredient("stone_rod"))
-						.ingredient('M', MC.asIngredient("flint")).output(CABF.asStack("stone_saw"))
+						.ingredient('M', MC.asIngredient("flint"))
+						.output(CABF.asStack("stone_saw"))
 						.build(id, ""));
 
 		handler.register(recipeId("crafting", "iron_saw"),
@@ -191,13 +208,15 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		// Redstone
 		handler.register(recipeId("melting", "redstone"),
 				id -> RecipeManager.deserialize(id,
-						RecipeBuilderUtil.generateMelting(MC.id("redstone"), CABF.id("redstone"),
+						RecipeBuilderUtil.generateMelting(MC.id("redstone"),
+								CABF.id("redstone"),
 								FluidConstants.INGOT, null, 0, 250, 15)));
 
 		handler.register(recipeId("melting", "redstone_block"),
 				id -> RecipeManager.deserialize(id,
 						RecipeBuilderUtil.generateMelting(MC.id("redstone_block"),
-								CABF.id("redstone"), FluidConstants.BLOCK, null, 0, 250, 135)));
+								CABF.id("redstone"), FluidConstants.BLOCK, null, 0, 250,
+								135)));
 	}
 
 	@Override
@@ -220,6 +239,9 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.remove(TC.id("smeltery", "alloys", "molten_enderium"));
 		handler.remove(TC.id("smeltery", "alloys", "molten_brass"));
 		handler.remove(TC.id("smeltery", "alloys", "molten_invar"));
+
+		handler.removeIf(r -> r.getId().getNamespace().equals(TC.getModId())
+				&& r.getId().getPath().startsWith("compat/create"));
 
 		// Remove wrenches except Create's and AE2's
 		handler.removeIf(r -> !CR.checkContains(r) && !AE2.checkContains(r) &&
