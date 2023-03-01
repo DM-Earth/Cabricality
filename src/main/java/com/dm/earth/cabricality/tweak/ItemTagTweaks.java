@@ -30,6 +30,8 @@ public class ItemTagTweaks
 
 	private static void unifyTags() {
 		TagUnifyEntry.register(() -> CR.asItem("iron_sheet"), "iron_plate");
+		TagUnifyEntry.register(() -> AD.asItem("steel_block"), "steel_block");
+		TagUnifyEntry.register(() -> AD.asItem("steel_nugget"), "steel_nugget");
 		TagUnifyEntry.register(() -> CR.asItem("gold_sheet"), "gold_plate");
 		TagUnifyEntry.register(() -> CR.asItem("copper_sheet"), "copper_plate");
 		TagUnifyEntry.register(() -> IR.asItem("steel_ingot"), "steel_ingot");
