@@ -105,6 +105,10 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "e1c35b6eb83293aa6ff91a45e482679a945d16669d405a5feb41606a741cef1d"
 
 [[files]]
+file = "config/hudium-config.json"
+hash = "3dabab178c5d00d133bac15768640b7199f90ddaecc274d5efe55a6cdb2ffae4"
+
+[[files]]
 file = "config/indrev/cables.json"
 hash = "9183a2eadef32624ee9a8ed193ac1b61d3b2ce0511f6e0c182f3a2d9bb170a83"
 
@@ -208,11 +212,6 @@ hash = "e0fa82d595ac5544b2bebd196bdddbdc9702e281d6f9496bbeac2058c7968126"
 metafile = true
 
 [[files]]
-file = "mods/bounced.pw.toml"
-hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
-metafile = true
-
-[[files]]
 file = "mods/brrp.pw.toml"
 hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
 metafile = true
@@ -224,7 +223,7 @@ metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "a49d2bcbece8a0e85c971f4ae6ca5d7b9ea2e19fa70c7dfe0f940d52d044088e"
+hash = "2de439bec9a95b08b6299b5e9cfaad1ad9649eb40a12a0538f98e866d3432f16"
 metafile = true
 
 [[files]]
@@ -429,11 +428,6 @@ metafile = true
 [[files]]
 file = "mods/starlight.pw.toml"
 hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
-metafile = true
-
-[[files]]
-file = "mods/stenographer.pw.toml"
-hash = "9fcde313a87692ef831a450618793f39de69e10805a79e498006840e0cc68914"
 metafile = true
 
 [[files]]
