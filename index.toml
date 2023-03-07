@@ -213,7 +213,7 @@ metafile = true
 
 [[files]]
 file = "mods/brrp.pw.toml"
-hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
+hash = "32cce4fed76e26b313dd560a26f463b301af79b02f349c93d2996d6d60d2d3a9"
 metafile = true
 
 [[files]]
