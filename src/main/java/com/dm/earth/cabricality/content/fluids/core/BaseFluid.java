@@ -82,7 +82,6 @@ public class BaseFluid extends Fluid implements IFluid {
 		return VoxelShapes.empty();
 	}
 
-	@Override
 	public Identifier getRegistryName() {
 		return this.getId();
 	}

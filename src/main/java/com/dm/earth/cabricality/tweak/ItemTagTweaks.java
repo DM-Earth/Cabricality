@@ -40,7 +40,7 @@ public class ItemTagTweaks
 	}
 
 	@Override
-	public ActionResult apply(TagKey<Item> arg0) {
+	public ActionResult resourceConditionCheckTag(TagKey<Item> arg0) {
 		Identifier rid = arg0.id();
 		if (!rid.getNamespace().equals("c"))
 			return ActionResult.PASS;
@@ -62,7 +62,7 @@ public class ItemTagTweaks
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		for (WoodCuttingEntry entry : WoodCuttingEntry.values()) {
 			if (entry.isStrippedLogExist())
 				handler.register(CabfItemTags.STRIPPED_LOGS,

@@ -14,7 +14,7 @@ public class TradeTags implements LoadTagsCallback<Item> {
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		Arrays.stream(Professions.values()).forEach(professionEntry -> {
 			handler.register(CabfItemTags.PROFESSION_CARDS, Registry.ITEM
 					.get(Cabricality.id("profession_card_" + professionEntry.get().hashString())));

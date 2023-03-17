@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.command.helper;
 
-import net.krlite.equator.color.PreciseColor;
+import net.krlite.equator.core.PreciseColor;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
@@ -27,7 +27,7 @@ public record BroadcastContent(
 	}
 
 	public BroadcastContent(ServerPlayerEntity sender, Text message, boolean exclude, boolean actionBar, boolean bold, boolean italic, PreciseColor color) {
-		this(sender, message, exclude, actionBar, Style.EMPTY.withBold(bold).withItalic(italic).withColor(color.toColor().getRGB()));
+		this(sender, message, exclude, actionBar, Style.EMPTY.withBold(bold).withItalic(italic).withColor(color.getRGBA()));
 	}
 
 	@Override

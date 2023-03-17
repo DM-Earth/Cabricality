@@ -161,12 +161,12 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			Profession profession = professionEntry.get();
 			registerItemModeled("profession_card_" + profession.hashString(),
 					new ProfessionCardItem(Properties.CARD.get()), ItemModelGenerator.parented(
-							Cabricality.id("item", "card", "profession_card").toString()));
+							Cabricality.id("item/card/profession_card").toString()));
 			profession.entries()
 					.forEach(entry -> registerItemModeled("trade_card_" + entry.hashString(),
 							new TradeCardItem(Properties.CARD.get()),
 							ItemModelGenerator.parented(
-									Cabricality.id("item", "card", "trade_card")
+									Cabricality.id("item/card/trade_card")
 											.toString())));
 		});
 
@@ -252,7 +252,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	}
 
 	private static Item registerItemModeled(String name, Item item, JModel model) {
-		Cabricality.RRPs.CLIENT_RESOURCES.addModel(model, Cabricality.id("item", name));
+		Cabricality.RRPs.CLIENT_RESOURCES.addModel(model, Cabricality.id("item/" + name));
 		return registerItem(name, item);
 	}
 

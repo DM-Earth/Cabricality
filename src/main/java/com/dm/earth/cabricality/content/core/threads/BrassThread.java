@@ -7,6 +7,7 @@ import static com.dm.earth.cabricality.ModEntry.IR;
 import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
+import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -101,13 +102,13 @@ public class BrassThread implements TechThread {
 	}
 
 	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
-		handler.register(recipeId("milling", crystal.getRegistryName().getPath()),
+		handler.register(recipeId("milling", Registry.ITEM.getId(crystal).getPath()),
 				id -> new MillingRecipe(
 						new FreePRP(id).setIngredient(Ingredient.ofItems(crystal))
 								.setResult(new ProcessingOutput(dust.getDefaultStack(), 1))
 								.setProcessingTime(200)));
 
-		handler.register(recipeId("mechanical_crafting", seed.getRegistryName().getPath()),
+		handler.register(recipeId("mechanical_crafting", seed.getName().getString()),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
 						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystal)
 								.output(new ItemStack(seed, 2)).build(id, ""),

@@ -88,7 +88,7 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		Arrays.stream(Reagents.values()).forEach(reagents -> {
 			Identifier catalystId = Cabricality.id("catalyst_jar_" + reagents.getCatalyst().hashString());
 			handler.register(CabfItemTags.JARS, Registry.ITEM.get(catalystId));
@@ -111,9 +111,9 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 			for (Reagent reagent : reagentsT.getReagents()) {
 				if (reagentsT.isLinked())
 					reagents.add(reagent);
-				handler.register(Cabricality.id("alchemist", "fluid_infuse", "reagent_jar", reagent.hashString()),
+				handler.register(Cabricality.id("alchemist/fluid_infuse/reagent_jar/" + reagent.hashString()),
 						id -> RecipeManager.deserialize(id, generateInfuse(reagent)));
-				handler.register(Cabricality.id("alchemist", "sawmill", "reagent_jar", reagent.hashString()),
+				handler.register(Cabricality.id("alchemist/sawmill/reagent_jar/" + reagent.hashString()),
 						id -> RecipeManager.deserialize(id, generateReagentToItem(reagent)));
 			}
 
@@ -122,7 +122,7 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 		Arrays.stream(Reagents.values()).filter(Reagents::isLinked).forEach(r -> {
 			r.getReagents().forEach(reagent -> {
 				Identifier recipeId = Cabricality.id(
-						"alchemist", "alchemist_smelt",
+						"alchemist/alchemist_smelt/" +
 						r.getCatalyst().hashString() + "/" + reagent.hashString());
 				var recipe = RecipeManager.deserialize(recipeId,
 						generateAlchemistProcess(reagent, reagents, smelt.get()));

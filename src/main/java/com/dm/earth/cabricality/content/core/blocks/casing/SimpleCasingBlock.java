@@ -31,7 +31,7 @@ public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block", "casing", this.name + "_casing");
+		return Cabricality.id("block/casing/" + this.name + "_casing");
 	}
 
 	@Override

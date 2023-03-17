@@ -9,15 +9,14 @@ import com.dm.earth.cabricality.lib.resource.data.core.TaggedItemOutput;
 
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
-import slimeknights.mantle.recipe.helper.ItemOutput;
 
-@Mixin(ItemOutput.class)
 public class ItemOutputMixin {
 
+	/*
 	@Inject(method = "fromTag", at = @At("HEAD"), cancellable = true)
 	private static void fromTag(TagKey<Item> tag, int count,
 			CallbackInfoReturnable<ItemOutput> cir) {
 		cir.setReturnValue(new TaggedItemOutput(tag, count));
 	}
-
+	*/
 }

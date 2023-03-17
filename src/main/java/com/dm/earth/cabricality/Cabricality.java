@@ -1,20 +1,5 @@
 package com.dm.earth.cabricality;
 
-import java.awt.*;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.QuiltLoader;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
-import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
-import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
-import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
-import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.dm.earth.cabricality.config.CabfConfig;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.core.TechThread;
@@ -30,7 +15,6 @@ import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.network.CabfReceiver;
 import com.dm.earth.cabricality.tweak.BlockTagTweaks;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
-
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
@@ -44,6 +28,20 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.loader.api.QuiltLoader;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
+import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
+import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
+import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
+import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.awt.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
