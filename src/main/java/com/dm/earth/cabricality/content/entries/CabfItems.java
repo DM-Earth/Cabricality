@@ -179,12 +179,12 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			// For Flipping
 			registerItemModeled(coinType.getId().getPath() + "_top",
 					new Item(Properties.CARD.get()), ItemModelGenerator.parented(Cabricality
-							.id("item", "coin", coinType.getId().getPath() + "_top")
+							.id("item/coin/" + coinType.getId().getPath() + "_top")
 							.toString()));
 			registerItemModeled(coinType.getId().getPath() + "_bottom",
 					new Item(Properties.CARD.get()),
 					ItemModelGenerator.parented(
-							Cabricality.id("item", "coin",
+							Cabricality.id("item/coin" +
 									coinType.getId().getPath() + "_bottom")
 									.toString()));
 		});
@@ -261,7 +261,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	}
 
 	@Override
-	public ActionResult apply(TagKey<Item> key) {
+	public ActionResult resourceConditionCheckTag(TagKey<Item> key) {
 		Identifier id = key.id();
 		if (id.getNamespace().equals("c")) {
 			String name = id.getPath();
@@ -280,7 +280,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		Arrays.stream(TradingEntry.CoinTypes.values())
 				.forEach(coinType -> {
 					handler.register(C.id(coinType.getName() + "_coins"),
