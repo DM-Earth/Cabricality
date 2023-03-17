@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality;
 
+import java.awt.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.jetbrains.annotations.Contract;
@@ -34,8 +35,8 @@ import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.EnvType;
-import net.krlite.equator.color.PreciseColor;
-import net.krlite.equator.render.sprite.IdentifierSprite;
+import net.krlite.equator.core.PreciseColor;
+import net.krlite.equator.core.sprite.IdentifierSprite;
 import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.SoundEvent;
@@ -46,14 +47,14 @@ import net.minecraft.util.registry.Registry;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
-		public static final PreciseColor CABF_PURPLE = PreciseColor.of(0x6117DE);
-		public static final PreciseColor CABF_MID_PURPLE = PreciseColor.of(0x3A1677);
-		public static final PreciseColor CABF_DIM_PURPLE = PreciseColor.of(0x1B1329);
-		public static final PreciseColor CABF_GRAY_PURPLE = PreciseColor.of(0x2F2939);
-		public static final PreciseColor CABF_BRIGHT_PURPLE = PreciseColor.of(0xE0DBE8);
-		public static final PreciseColor CABF_BLACK = PreciseColor.of(0x0D0C0E);
-		public static final PreciseColor QUEST_DEPENDENCY = PreciseColor.of(0x4BFE90);
-		public static final PreciseColor QUEST_DEPENDENT = PreciseColor.of(0x7B62FF);
+		public static final PreciseColor CABF_PURPLE = new PreciseColor(new Color(0x6117DE));
+		public static final PreciseColor CABF_MID_PURPLE = new PreciseColor(new Color(0x3A1677));
+		public static final PreciseColor CABF_DIM_PURPLE = new PreciseColor(new Color(0x1B1329));
+		public static final PreciseColor CABF_GRAY_PURPLE = new PreciseColor(new Color(0x2F2939));
+		public static final PreciseColor CABF_BRIGHT_PURPLE = new PreciseColor(new Color(0xE0DBE8));
+		public static final PreciseColor CABF_BLACK = new PreciseColor(new Color(0x0D0C0E));
+		public static final PreciseColor QUEST_DEPENDENCY = new PreciseColor(new Color(0x4BFE90));
+		public static final PreciseColor QUEST_DEPENDENT = new PreciseColor(new Color(0x7B62FF));
 	}
 
 	public static class Textures {
@@ -82,20 +83,20 @@ public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
-	public static final IdentifierBuilder.Specified ID_BUILDER = new IdentifierBuilder.Specified(ID);
+	public static final IdentifierBuilder ID_BUILDER = new IdentifierBuilder(ID);
 	public static final CabfConfig CONFIG = new CabfConfig(
 			QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
 
 	public static final AtomicInteger IR_TOOL_MODIFY_INDEX = new AtomicInteger(0);
 
 	@Contract("_ -> new")
-	public static @NotNull Identifier id(String... paths) {
-		return ID_BUILDER.id(paths);
+	public static @NotNull Identifier id(String paths) {
+		return new Identifier(ID, paths);
 	}
 
 	@Contract("_ -> new")
 	public static @NotNull IdentifierSprite sprite(String... paths) {
-		return ID_BUILDER.sprite(paths);
+		return IdentifierSprite.of(ID_BUILDER.texture(paths));
 	}
 
 	@Contract("_,_ -> new")
@@ -105,7 +106,7 @@ public class Cabricality implements ModInitializer {
 
 	@Contract("_,_ -> new")
 	public static @NotNull TranslatableText genTranslatableText(String type, String... path) {
-		return ID_BUILDER.localization(type, path);
+		return new TranslatableText(ID_BUILDER.translationKey(type, path));
 	}
 
 	@ClientOnly

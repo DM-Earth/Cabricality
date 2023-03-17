@@ -230,7 +230,7 @@ public class CabfCreditsScreen extends Screen {
 		if (client != null) {
 			try {
 				resource = this.client.getResourceManager()
-						.getResource(Cabricality.id("texts", fileName));
+						.getResource(Cabricality.id("texts/"+fileName));
 				InputStreamReader inputStreamReader =
 						new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8);
 				reader.read(inputStreamReader);

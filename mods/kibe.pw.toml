@@ -1,13 +1,13 @@
 name = "Kibe"
-filename = "kibe-1.9.11-BETA+1.18.jar"
+filename = "kibe-1.9.11-BETA+1.19.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/OvlwmUdC/versions/ONMvUMXi/kibe-1.9.11-BETA%2B1.18.jar"
+url = "https://cdn.modrinth.com/data/OvlwmUdC/versions/nfMLEeVC/kibe-1.9.11-BETA%2B1.19.jar"
 hash-format = "sha1"
-hash = "0db569c02dd961be594a6dd839839006500c243e"
+hash = "9200e804366d561822c46041ec17ef62c48cec49"
 
 [update]
 [update.modrinth]
 mod-id = "OvlwmUdC"
-version = "ONMvUMXi"
+version = "nfMLEeVC"
