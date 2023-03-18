@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "S#S",
+    "SSS"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:book"
+    },
+    "S": {
+      "item": "indrev:steel_plate"
+    }
+  },
+  "result": {
+    "item": "ad_astra:astrodux"
+  }
+}

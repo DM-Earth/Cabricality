@@ -105,6 +105,10 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "e1c35b6eb83293aa6ff91a45e482679a945d16669d405a5feb41606a741cef1d"
 
 [[files]]
+file = "config/hudium-config.json"
+hash = "3dabab178c5d00d133bac15768640b7199f90ddaecc274d5efe55a6cdb2ffae4"
+
+[[files]]
 file = "config/indrev/cables.json"
 hash = "9183a2eadef32624ee9a8ed193ac1b61d3b2ce0511f6e0c182f3a2d9bb170a83"
 
@@ -179,7 +183,7 @@ metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "2369de3d3641a7980452bd69816c35e00db7eeab79b6e723b23cd94d879baa1d"
+hash = "af97f4df397b3939b909d9c22b61366b637ed164931274f767fa5b41044a708e"
 metafile = true
 
 [[files]]
@@ -198,11 +202,6 @@ hash = "6ea9158f11c6bc2c088173b88c8aeafc4fb065e2417a0e7a39aec57c443b9763"
 metafile = true
 
 [[files]]
-file = "mods/badpackets.pw.toml"
-hash = "c3d163564b8c89694cdcc76060ccd67ea9178a08e18e5d57243a704809f4defc"
-metafile = true
-
-[[files]]
 file = "mods/bits-and-chisels.pw.toml"
 hash = "1dea45a775887e68b1cafb587498dfa5514b3ea8d17ea58783920397f89ff7d7"
 metafile = true
@@ -213,18 +212,18 @@ hash = "e0fa82d595ac5544b2bebd196bdddbdc9702e281d6f9496bbeac2058c7968126"
 metafile = true
 
 [[files]]
-file = "mods/bounced.pw.toml"
-hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
+file = "mods/brrp.pw.toml"
+hash = "32cce4fed76e26b313dd560a26f463b301af79b02f349c93d2996d6d60d2d3a9"
 metafile = true
 
 [[files]]
-file = "mods/brrp.pw.toml"
-hash = "7df4d9dc987ad76a0d62a599c609dffb94d7b5103cabfce837c65e56dad969fe"
+file = "mods/bugjump.pw.toml"
+hash = "7ba5c5431478e67cb1f4359a2577b36224cc2c2e3748786eba2831dd1548ad46"
 metafile = true
 
 [[files]]
 file = "mods/cabricality-mod.pw.toml"
-hash = "ee3350b1c8744b6bb5725be1ab8631e2a806d2fb203119eb34a58af9c71bb288"
+hash = "2de439bec9a95b08b6299b5e9cfaad1ad9649eb40a12a0538f98e866d3432f16"
 metafile = true
 
 [[files]]
@@ -263,7 +262,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "39892dcc291de8e8a0a53aa47026060052115ee8c1a33b9cd933e7e80f63a413"
+hash = "97edebb98ececc37c50b661eb557297e5c375fc229ca681fdb4b944d0077ac57"
 metafile = true
 
 [[files]]
@@ -283,7 +282,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "1e3d4b62d2b1224356261ca5f9aece724ed2cc6c8f31c77d64867e6bc173ee9d"
+hash = "e4368d03d9745fa609d706cac8f595f061af10fdd0833c17e4e027c2d607e1fa"
 metafile = true
 
 [[files]]
@@ -408,7 +407,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "8872e1e3b9e0a1825d5b88c72de3f92b41ccd9c6c169ff12a5877528ca46de45"
+hash = "0838663b83b485f5aaa3b0a8726e08c8bbb42f366a420520d88d69ee29275e78"
 metafile = true
 
 [[files]]
@@ -429,11 +428,6 @@ metafile = true
 [[files]]
 file = "mods/starlight.pw.toml"
 hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
-metafile = true
-
-[[files]]
-file = "mods/stenographer.pw.toml"
-hash = "9fcde313a87692ef831a450618793f39de69e10805a79e498006840e0cc68914"
 metafile = true
 
 [[files]]
