@@ -3,7 +3,7 @@
   "conditions": [
     {
       "value": {
-        "tag": "c:storage_blocks/ostrum",
+        "tag": "c:ostrum_blocks",
         "type": "forge:tag_empty"
       },
       "type": "forge:not"
@@ -11,10 +11,10 @@
   ],
   "fluid": {
     "tag": "c:molten_ostrum",
-    "amount": 810
+    "amount": 81000
   },
   "result": {
-    "tag": "c:storage_blocks/ostrum"
+    "tag": "c:ostrum_blocks"
   },
   "cooling_time": 190
 }

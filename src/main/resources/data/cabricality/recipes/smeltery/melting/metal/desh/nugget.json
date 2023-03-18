@@ -3,18 +3,18 @@
   "conditions": [
     {
       "value": {
-        "tag": "c:nuggets/desh",
+        "tag": "c:desh_nuggets",
         "type": "forge:tag_empty"
       },
       "type": "forge:not"
     }
   ],
   "ingredient": {
-    "tag": "c:nuggets/desh"
+    "tag": "c:desh_nuggets"
   },
   "result": {
     "fluid": "cabricality:molten_desh",
-    "amount": 10
+    "amount": 1000
   },
   "temperature": 900,
   "time": 21
