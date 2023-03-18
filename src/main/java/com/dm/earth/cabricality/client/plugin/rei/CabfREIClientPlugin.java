@@ -96,7 +96,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @return The tagged text.
 	 */
 	private TranslatableText tag(Identifier identifier) {
-		return new IdentifierBuilder.Specified(identifier.getNamespace()).localization("tag", identifier.getPath());
+		return new TranslatableText(new IdentifierBuilder(identifier.getNamespace()).translationKey("tag", identifier.getPath()));
 	}
 
 	/**
@@ -107,7 +107,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @return The coled text.
 	 */
 	private TranslatableText col(Identifier identifier) {
-		return new IdentifierBuilder.Specified(identifier.getNamespace()).localization("col", identifier.getPath());
+		return new TranslatableText(new IdentifierBuilder(identifier.getNamespace()).translationKey("col", identifier.getPath()));
 	}
 
 	private static final String[] COLORS = {

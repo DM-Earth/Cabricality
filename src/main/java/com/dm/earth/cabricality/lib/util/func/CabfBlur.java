@@ -8,7 +8,7 @@ import ladysnake.satin.api.event.ShaderEffectRenderCallback;
 import ladysnake.satin.api.managed.ManagedShaderEffect;
 import ladysnake.satin.api.managed.ShaderEffectManager;
 import ladysnake.satin.api.managed.uniform.Uniform1f;
-import net.krlite.equator.color.PreciseColor;
+import net.krlite.equator.core.PreciseColor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ChatScreen;
 import net.minecraft.client.gui.screen.Screen;
@@ -25,7 +25,7 @@ public class CabfBlur {
 
 	private static final List<Class<? extends Screen>> EXCLUDED_SCREENS = new ArrayList<>();
 	private final ManagedShaderEffect BLUR = ShaderEffectManager.getInstance().manage(
-			Cabricality.id("shaders", "post", "fade_in_blur.json"),
+			Cabricality.id("shaders/post/fade_in_blur.json"),
 			managedShaderEffect -> managedShaderEffect.setUniformValue("Radius", Cabricality.CONFIG.backgroundBlurRadius));
 	private final Uniform1f PROGRESS = BLUR.findUniform1f("Progress");
 	private long startTime;
@@ -63,7 +63,7 @@ public class CabfBlur {
 		if (!Cabricality.CONFIG.backgroundBlur || Cabricality.CONFIG.backgroundBlurDarken) {
 			float lerp = (float) Math.pow(INSTANCE.getProgress(), 1 / 3.0);
 			PreciseColor first = PreciseColor.of(0xC0101010L), second = PreciseColor.of(0xD0101010L);
-			args.set(argColorFirst, first.withOpacity(first.getAlpha() * lerp).toColor().getRGB());
+			args.set(argColorFirst, first.withOpacity(first.alpha() * lerp).toColor().getRGB());
 			args.set(argColorSecond, second.withOpacity(second.getAlpha() * lerp).toColor().getRGB());
 		} else {
 			args.set(argColorFirst, 0x0);

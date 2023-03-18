@@ -17,7 +17,7 @@ public class BlockTagTweaks implements LoadTagsCallback<Block> {
 	}
 
 	@Override
-	public void load(TagHandler<Block> handler) {
+	public void onTagsLoad(TagHandler<Block> handler) {
 		// Promenade
 		compatLeaves(handler, PM.asBlock("autumn_birch_leaves"), Blocks.BIRCH_LOG);
 		compatLeaves(handler, PM.asBlock("autumn_oak_leaves"), Blocks.OAK_LOG);

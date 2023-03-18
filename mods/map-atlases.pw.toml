@@ -1,13 +1,13 @@
 name = "Map Atlases"
-filename = "map-atlases-2.3.0+1.18.jar"
+filename = "map-atlases-2.3.1+1.19.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/C255PPUX/versions/FNog9kK9/map-atlases-2.3.0%2B1.18.jar"
+url = "https://cdn.modrinth.com/data/C255PPUX/versions/FbzWPUmP/map-atlases-2.3.1%2B1.19.jar"
 hash-format = "sha1"
-hash = "e640886b0ec56cb89c983177ac9d8df90dc3529e"
+hash = "32e1a1e9555a806664730de1e341946bb9e3ebba"
 
 [update]
 [update.modrinth]
 mod-id = "C255PPUX"
-version = "FNog9kK9"
+version = "FbzWPUmP"

@@ -26,6 +26,6 @@ public enum CabfModConflict {
 
 	public static void checkAndExit() {
 		if (isAnyLoaded())
-			throw new RuntimeException();
+			throw new RuntimeException("Oh no! You installed the ESSENTIAL :(, Delete it please");
 	}
 }

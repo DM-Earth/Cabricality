@@ -19,7 +19,7 @@ public class TagDependentIngredientItemMixin {
 
 	@Inject(method = "shouldHide", at = @At("HEAD"), cancellable = true, remap = false)
 	private void inserted(CallbackInfoReturnable<Boolean> cir) {
-		ActionResult result = ResourceConditionCheckTagCallback.ITEM.invoker().apply(this.tag);
+		ActionResult result = ResourceConditionCheckTagCallback.ITEM.invoker().resourceConditionCheckTag(this.tag);
 		if (result.isAccepted())
 			cir.setReturnValue(false);
 		else if (result == ActionResult.FAIL)

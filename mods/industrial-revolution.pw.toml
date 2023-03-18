@@ -1,13 +1,13 @@
 name = "Industrial Revolution"
-filename = "indrev-1.14.1-BETA.jar"
+filename = "indrev-1.15.1-BETA.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "8cb63dbcda2d8a5fd31d30c2350fed8f2121d67e"
+hash = "a97d030526f2dad874ff1684791885bbc8928a76"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4195667
+file-id = 4020957
 project-id = 391708

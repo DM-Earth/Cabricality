@@ -245,7 +245,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 
 		// Remove wrenches except Create's and AE2's
 		handler.removeIf(r -> !CR.checkContains(r) && !AE2.checkContains(r) &&
-				r.getOutput().getItem().getRegistryName().getPath().contains("wrench"));
+				Registry.ITEM.getId(r.getOutput().getItem()).getPath().contains("wrench"));
 		handler.removeIf(IR.predicateOutput("controller"));
 
 		// Ad Astra!
@@ -269,6 +269,6 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 	}
 
 	private static Identifier recipeId(String type, String name) {
-		return Cabricality.id(type, name);
+		return Cabricality.id(type+ "/" + name);
 	}
 }

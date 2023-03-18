@@ -76,7 +76,6 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 		return block.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
 	}
 
-	@Override
 	public Identifier getRegistryName() {
 		return this.getId();
 	}

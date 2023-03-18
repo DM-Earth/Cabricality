@@ -152,7 +152,7 @@ public class OreProcessingTweaks {
 	}
 
 	private static Identifier createId(OreProcessingEntry entry, Identifier input, String type) {
-		return Cabricality.id("tweaks", "ore_processing", entry.getId().getPath(), type, input.getPath());
+		return Cabricality.id("tweaks/ore_processing/" + entry.getId().getPath() + "/" + type + "/" + input.getPath());
 	}
 
 	private static OreProcessingEntry getByProduct(OreProcessingEntry entry) {

@@ -11,9 +11,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.HolderSet;
 import net.minecraft.util.registry.Registry;
-import slimeknights.mantle.recipe.helper.ItemOutput;
 
-public class TaggedItemOutput extends ItemOutput {
+public class TaggedItemOutput {
 
 	public final TagKey<Item> tagKey;
 	public final int count;
@@ -23,7 +22,6 @@ public class TaggedItemOutput extends ItemOutput {
 		this.count = count;
 	}
 
-	@Override
 	public @NotNull ItemStack get() {
 		Optional<HolderSet.NamedSet<Item>> set = Registry.ITEM.getTag(this.tagKey);
 		if (set.isPresent() && set.get().size() > 0) {
@@ -32,7 +30,6 @@ public class TaggedItemOutput extends ItemOutput {
 		return ItemStack.EMPTY;
 	}
 
-	@Override
 	public @NotNull JsonElement serialize() {
 		JsonObject json = new JsonObject();
 		json.addProperty("tag", this.tagKey.id().toString());

@@ -33,7 +33,7 @@ public abstract class SubstrateJarBlock extends JarBlock implements BlockItemSet
 
 	@Override
 	public Identifier getBlockModelId() {
-		return Cabricality.id("block", "jar", this.getSubstrate().getType());
+		return Cabricality.id("block/jar/" + this.getSubstrate().getType());
 	}
 
 	@Override

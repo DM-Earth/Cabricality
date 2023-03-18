@@ -1,13 +1,13 @@
 name = "Light Emitting Diode"
-filename = "led-1.2.4.jar"
+filename = "led-1.3.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/nrekn9hP/versions/1.2.4/led-1.2.4.jar"
+url = "https://cdn.modrinth.com/data/nrekn9hP/versions/ncLSAzNR/led-1.3.0.jar"
 hash-format = "sha1"
-hash = "f864a4b84509a84adcf66accb8218bef0304b5e5"
+hash = "f863f9627f7b0da18c0cc99f647b2d9b5f5fc62c"
 
 [update]
 [update.modrinth]
 mod-id = "nrekn9hP"
-version = "B6qtHfGU"
+version = "ncLSAzNR"

@@ -33,13 +33,13 @@ public record LaserProperties(int tint, int length, float power) {
 	public static LaserProperties generate(BlockState state, DirectionalDiodeLampBlock block, int count) {
 		DiodeVariant variant = ((DiodeLampBlockAccessor) block).getVariant();
 		Identifier id = Registry.BLOCK.getId(block);
-		if (!state.get(DirectionalDiodeLampBlock.LIT) || variant.isShaded())
+		if (!state.get(DirectionalDiodeLampBlock.LIT) || variant == DiodeVariant.REINFORCED)
 			return null;
 		return Arrays.stream(DyeColor.values())
 				.filter(color -> id.getPath().contains(color.getName()))
 				.map(color -> new LaserProperties(
 						color.getFireworkColor(),
-						(variant.isReinforced() ? DEFAULT_LENGTH + 2 : DEFAULT_LENGTH),
+						(variant == DiodeVariant.REINFORCED ? DEFAULT_LENGTH + 2 : DEFAULT_LENGTH),
 						DEFAULT_POWER * (variant.getLightLevel() / (4F * count))))
 				.findFirst().orElse(null);
 	}
