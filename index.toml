@@ -266,6 +266,11 @@ hash = "97edebb98ececc37c50b661eb557297e5c375fc229ca681fdb4b944d0077ac57"
 metafile = true
 
 [[files]]
+file = "mods/createfabricreibugfix.pw.toml"
+hash = "74e6a9e8599f304c1b7c79d0b2c8b3e24cacefbebb5dcb68f27908e51d3941e4"
+metafile = true
+
+[[files]]
 file = "mods/ctm-refabricated.pw.toml"
 hash = "daeb1bc740f2e5dbedff29790e3339418b172cce29b674dbf8eb87fbd6f6d60c"
 metafile = true
