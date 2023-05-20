@@ -18,23 +18,23 @@ import net.minecraft.util.Util;
 
 public enum CabfModDeps {
 	FTB_LIBRARY("ftblibrary", new TranslatableText("mod.ftblibrary.name"),
-			"https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4210934/file",
+			"https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4396791/file",
 			false, false), // ftb-library-fabric-1802.3.9-build.167.jar
 
 	FTB_QUESTS("ftbquests", new TranslatableText("mod.ftbquests.name"),
-			"https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4215548/file",
+			"https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4398374/file",
 			false, false), // ftb-quests-fabric-1802.3.11-build.151.jar
 
 	FTB_TEAMS("ftbteams", new TranslatableText("mod.ftbteams.name"),
-			"https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4229137/file",
+			"https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4375187/file",
 			false, false), // ftb-teams-fabric-1802.2.9-build.88.jar
 
 	QUESTS_ADDITIONS("questsadditions", new TranslatableText("mod.questsadditions.name"),
-			"https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/3940981/file",
+			"https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/4269973/file",
 			false, false), // questsadditions-fabric-1.18.2-1.4.0.jar
 
 	ITEM_FILTERS("itemfilters", new TranslatableText("mod.itemfilters.name"),
-			"https://www.curseforge.com/minecraft/mc-mods/item-filters/download/4055444/file",
+			"https://www.curseforge.com/minecraft/mc-mods/item-filters/download/4055445/file",
 			false, false); // item-filters-fabric-1802.2.8-build.47.jar
 
 	final String modId;
