@@ -299,7 +299,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 						col(KB.id("things", type)),
 						EntryIngredients.ofItems(Stream.concat(
 								Arrays.stream(COLORS).map(color -> KB.asItem(joinAll(color, type))),
-								Objects.equals(type, "glider") ? // Glider has a special case: right/left wings
+								Objects.equals(type, "glider") ? // The glider has a special case: right/left wings
 										Stream.of(KB.asItem("glider_right_wing"), KB.asItem("glider_left_wing"))
 										: Stream.empty())
 								.collect(Collectors.toList()))));

@@ -9,5 +9,5 @@ import net.darktree.led.util.DiodeVariant;
 @Mixin(DiodeLampBlock.class)
 public interface DiodeLampBlockAccessor {
 	@Accessor(remap = false)
-	public DiodeVariant getVariant();
+	DiodeVariant getVariant();
 }

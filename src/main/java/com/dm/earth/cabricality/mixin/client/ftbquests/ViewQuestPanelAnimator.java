@@ -2,7 +2,6 @@ package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.PushUtil;
-
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftblibrary.icon.Icon;
 import dev.ftb.mods.ftblibrary.ui.BlankPanel;
@@ -11,9 +10,13 @@ import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.Widget;
 import dev.ftb.mods.ftbquests.gui.quests.ViewQuestPanel;
 import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
-import net.krlite.equator.geometry.Rect;
-import net.krlite.equator.render.Equator;
-import net.krlite.equator.util.Timer;
+import net.krlite.equator.math.algebra.Curves;
+import net.krlite.equator.math.geometry.flat.Box;
+import net.krlite.equator.math.geometry.flat.Vector;
+import net.krlite.equator.math.logic.flat.FlatGate;
+import net.krlite.equator.math.logic.flat.FlatTransform;
+import net.krlite.equator.render.renderer.Flat;
+import net.krlite.equator.visual.animation.Animation;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
@@ -39,7 +42,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		super(panel);
 	}
 
-	private final Timer timer = new Timer(720);
+	private final Animation animation = new Animation(0, 1, 720, Curves.LINEAR);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {
@@ -79,14 +82,25 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
-		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(timer::reset);
-		double lerp = Math.pow(timer.queueAsPercentage(), 1 / 3.0);
+		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(animation::restart);
+		double lerp = Math.pow(animation.value(), 1 / 3.0);
 
-		Rect.Tinted shadow = new Rect(x, y, w, h).tint(Cabricality.Colors.CABF_PURPLE, Cabricality.Colors.CABF_MID_PURPLE,
-				Cabricality.Colors.CABF_MID_PURPLE, Cabricality.Colors.CABF_PURPLE);
+		Box.fromCartesian(x, y, w, h).render(matrixStack, 0,
+				flat -> flat.new Rectangle()
+								.colorTop(Cabricality.Colors.CABF_PURPLE)
+								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)
+								.new Transformed(FlatTransform.NONE, FlatGate.TRUE)
+								.new Outlined(Vector.fromCartesian(350 * lerp, 350 * lerp),
+						Flat.Rectangle.Transformed.Outlined.OutliningMode.SCISSORED,
+						Flat.Rectangle.Transformed.Outlined.OutliningStyle.EDGE_FADED)
+		);
 
-		new Equator.Painter(matrixStack).rectShadow(shadow.operate(rect -> rect.interpolate(Rect.fullScreen(), lerp)).transparent(),
-				shadow.withOpacity(lerp), 0.2 * lerp);
+		// Normal mode has a bug, so use scissored mode and the renderer below
+		Box.fromCartesian(x, y, w, h).render(matrixStack, 0,
+				flat -> flat.new Rectangle()
+								.colorTop(Cabricality.Colors.CABF_PURPLE)
+								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)
+		);
 	}
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))

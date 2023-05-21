@@ -8,7 +8,7 @@ import ladysnake.satin.api.event.ShaderEffectRenderCallback;
 import ladysnake.satin.api.managed.ManagedShaderEffect;
 import ladysnake.satin.api.managed.ShaderEffectManager;
 import ladysnake.satin.api.managed.uniform.Uniform1f;
-import net.krlite.equator.color.AccurateColor;
+import net.krlite.equator.visual.color.AccurateColor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ChatScreen;
 import net.minecraft.client.gui.screen.Screen;
@@ -62,9 +62,9 @@ public class CabfBlur {
 	public static void blurBackground(Args args, int argColorFirst, int argColorSecond) {
 		if (!Cabricality.CONFIG.backgroundBlur || Cabricality.CONFIG.backgroundBlurDarken) {
 			float lerp = (float) Math.pow(INSTANCE.getProgress(), 1 / 3.0);
-			AccurateColor first = AccurateColor.of(0xC0101010L), second = AccurateColor.of(0xD0101010L);
-			args.set(argColorFirst, first.withOpacity(first.getAlpha() * lerp).toColor().getRGB());
-			args.set(argColorSecond, second.withOpacity(second.getAlpha() * lerp).toColor().getRGB());
+			AccurateColor first = AccurateColor.fromARGB(0xC0101010L), second = AccurateColor.fromARGB(0xD0101010L);
+			args.set(argColorFirst, first.opacity(first.opacity() * lerp).toColor().getRGB());
+			args.set(argColorSecond, second.opacity(second.opacity() * lerp).toColor().getRGB());
 		} else {
 			args.set(argColorFirst, 0x0);
 			args.set(argColorSecond, 0x0);

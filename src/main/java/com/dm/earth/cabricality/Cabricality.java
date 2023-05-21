@@ -1,12 +1,10 @@
 package com.dm.earth.cabricality;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import net.krlite.equator.visual.color.AccurateColor;
+import net.krlite.equator.visual.texture.Texture;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.QuiltLoader;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
@@ -45,18 +43,18 @@ import net.minecraft.util.registry.Registry;
 public class Cabricality implements ModInitializer {
 	public static class Colors {
 		public static final AccurateColor CABF_PURPLE = AccurateColor.fromARGB(0x6117DE);
-		public static final AccurateColor CABF_MID_PURPLE = AccurateColor.of(0x3A1677);
-		public static final AccurateColor CABF_DIM_PURPLE = AccurateColor.of(0x1B1329);
-		public static final AccurateColor CABF_GRAY_PURPLE = AccurateColor.of(0x2F2939);
-		public static final AccurateColor CABF_BRIGHT_PURPLE = AccurateColor.of(0xE0DBE8);
-		public static final AccurateColor CABF_BLACK = AccurateColor.of(0x0D0C0E);
-		public static final AccurateColor QUEST_DEPENDENCY = AccurateColor.of(0x4BFE90);
-		public static final AccurateColor QUEST_DEPENDENT = AccurateColor.of(0x7B62FF);
+		public static final AccurateColor CABF_MID_PURPLE = AccurateColor.fromARGB(0x3A1677);
+		public static final AccurateColor CABF_DIM_PURPLE = AccurateColor.fromARGB(0x1B1329);
+		public static final AccurateColor CABF_GRAY_PURPLE = AccurateColor.fromARGB(0x2F2939);
+		public static final AccurateColor CABF_BRIGHT_PURPLE = AccurateColor.fromARGB(0xE0DBE8);
+		public static final AccurateColor CABF_BLACK = AccurateColor.fromARGB(0x0D0C0E);
+		public static final AccurateColor QUEST_DEPENDENCY = AccurateColor.fromARGB(0x4BFE90);
+		public static final AccurateColor QUEST_DEPENDENT = AccurateColor.fromARGB(0x7B62FF);
 	}
 
 	public static class Textures {
-		public static final IdentifierSprite CABRICALITY_TITLE_TEXTURE = sprite("gui", "title", "cabricality");
-		public static final IdentifierSprite MINECRAFT_SUBTITLE_TEXTURE = sprite("gui", "title", "minecraft");
+		public static final Texture CABRICALITY_TITLE_TEXTURE = texture("gui", "title", "cabricality");
+		public static final Texture MINECRAFT_SUBTITLE_TEXTURE = texture("gui", "title", "minecraft");
 	}
 
 	public static class Sounds {
@@ -80,30 +78,26 @@ public class Cabricality implements ModInitializer {
 	public static final String NAME = "Cabricality";
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
-	public static final IdentifierBuilder.Specified ID_BUILDER = new IdentifierBuilder.Specified(ID);
-	public static final CabfConfig CONFIG = new CabfConfig(
-			QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile());
-
-	public static final AtomicInteger IR_TOOL_MODIFY_INDEX = new AtomicInteger(0);
+	public static final CabfConfig CONFIG = new CabfConfig();
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
-		return ID_BUILDER.id(paths);
+		return new Identifier(ID, String.join("/", paths));
 	}
 
 	@Contract("_ -> new")
-	public static @NotNull IdentifierSprite sprite(String... paths) {
-		return ID_BUILDER.sprite(paths);
+	public static @NotNull Texture texture(String... paths) {
+		return Texture.fromNamespacePath(ID, paths);
 	}
 
 	@Contract("_,_ -> new")
 	public static @NotNull String genTranslationKey(String type, String... path) {
-		return ID_BUILDER.translationKey(type, path);
+		return type + "." + ID + "." + String.join(".", path);
 	}
 
 	@Contract("_,_ -> new")
 	public static @NotNull TranslatableText genTranslatableText(String type, String... path) {
-		return ID_BUILDER.localization(type, path);
+		return new TranslatableText(genTranslationKey(type, path));
 	}
 
 	@ClientOnly

@@ -2,11 +2,9 @@ package com.dm.earth.cabricality.mixin.client.ftbquests;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.PushUtil;
-
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
-import net.krlite.equator.geometry.Rect;
-import net.krlite.equator.render.Equator;
+import net.krlite.equator.math.geometry.flat.Box;
 import net.minecraft.client.util.math.MatrixStack;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
@@ -42,7 +40,9 @@ public class QuestScreenAnimator {
 			)
 	)
 	private void drawLeftSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
-		new Equator.Painter(matrixStack).paintRect(new Rect(x - 1, y - 1, w + 2, h + 2).tint(Cabricality.Colors.CABF_BLACK.withOpacity(0.127)));
+		Box.fromCartesian(x - 1, y - 1, w + 2, h + 2).render(matrixStack, 0,
+				flat -> flat.new Rectangle(Cabricality.Colors.CABF_BLACK.opacity(0.127))
+		);
 	}
 
 	@Redirect(
@@ -63,7 +63,8 @@ public class QuestScreenAnimator {
 					ordinal = 3
 			)
 	)
-	private void drawRightSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
-		new Equator.Painter(matrixStack).paintRect(new Rect(x - 1, y - 1, w + 2, h + 2).tint(Cabricality.Colors.CABF_BLACK.withOpacity(0.127)));
+	private void drawRightSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {Box.fromCartesian(x - 1, y - 1, w + 2, h + 2).render(matrixStack, 0,
+			flat -> flat.new Rectangle(Cabricality.Colors.CABF_BLACK.opacity(0.127))
+	);
 	}
 }
