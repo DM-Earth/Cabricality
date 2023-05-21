@@ -71,10 +71,9 @@ dependencies {
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
     modImplementation "maven.modrinth:bits-and-chisels:${project.bits_and_chisels_version}"
     modImplementation "maven.modrinth:farmers-delight-fabric:${project.farmers_delight_version}"
-    modImplementation "maven.modrinth:roughly-enough-items:${project.rei_version}+fabric"
+    modImplementation "maven.modrinth:rei:${project.rei_version}+fabric"
     modImplementation "maven.modrinth:led:${project.led_version}"
     modImplementation "maven.modrinth:interference:${project.interference_version}"
-    modImplementation include("maven.modrinth:equator:${project.equator_version}")
     modImplementation "maven.modrinth:wthit:fabric-${project.wthit_version}"
 
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
@@ -92,8 +91,10 @@ dependencies {
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}-mc${project.minecraft_version}-fabric")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
+
     implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
-    implementation include("com.github.KrLite:Equator-Utils:${project.eu_version}")
+    //implementation include("com.github.KrLite:Equator-Utils:${project.eu_version}")
+    modImplementation "com.github.KrLite.Equator-v2:build:${project.minecraft_major_version}-${project.equator_version}"
 
     // Develop
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"

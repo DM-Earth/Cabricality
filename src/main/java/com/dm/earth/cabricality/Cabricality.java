@@ -2,6 +2,7 @@ package com.dm.earth.cabricality;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+import net.krlite.equator.visual.color.AccurateColor;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.quiltmc.loader.api.ModContainer;
@@ -34,9 +35,6 @@ import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.EnvType;
-import net.krlite.equator.color.PreciseColor;
-import net.krlite.equator.render.sprite.IdentifierSprite;
-import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -46,14 +44,14 @@ import net.minecraft.util.registry.Registry;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
-		public static final PreciseColor CABF_PURPLE = PreciseColor.of(0x6117DE);
-		public static final PreciseColor CABF_MID_PURPLE = PreciseColor.of(0x3A1677);
-		public static final PreciseColor CABF_DIM_PURPLE = PreciseColor.of(0x1B1329);
-		public static final PreciseColor CABF_GRAY_PURPLE = PreciseColor.of(0x2F2939);
-		public static final PreciseColor CABF_BRIGHT_PURPLE = PreciseColor.of(0xE0DBE8);
-		public static final PreciseColor CABF_BLACK = PreciseColor.of(0x0D0C0E);
-		public static final PreciseColor QUEST_DEPENDENCY = PreciseColor.of(0x4BFE90);
-		public static final PreciseColor QUEST_DEPENDENT = PreciseColor.of(0x7B62FF);
+		public static final AccurateColor CABF_PURPLE = AccurateColor.fromARGB(0x6117DE);
+		public static final AccurateColor CABF_MID_PURPLE = AccurateColor.of(0x3A1677);
+		public static final AccurateColor CABF_DIM_PURPLE = AccurateColor.of(0x1B1329);
+		public static final AccurateColor CABF_GRAY_PURPLE = AccurateColor.of(0x2F2939);
+		public static final AccurateColor CABF_BRIGHT_PURPLE = AccurateColor.of(0xE0DBE8);
+		public static final AccurateColor CABF_BLACK = AccurateColor.of(0x0D0C0E);
+		public static final AccurateColor QUEST_DEPENDENCY = AccurateColor.of(0x4BFE90);
+		public static final AccurateColor QUEST_DEPENDENT = AccurateColor.of(0x7B62FF);
 	}
 
 	public static class Textures {
@@ -113,14 +111,10 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 
-	static {
-		CONFIG.load();
-		CONFIG.save();
-	}
-
 	@Override
 	public void onInitialize(ModContainer mod) {
 		LOGGER.info("Initializing " + NAME + "... 📦");
+		CONFIG.save();
 
 		CabfReceiver.registerServer();
 
