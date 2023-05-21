@@ -212,6 +212,11 @@ hash = "e0fa82d595ac5544b2bebd196bdddbdc9702e281d6f9496bbeac2058c7968126"
 metafile = true
 
 [[files]]
+file = "mods/bounced.pw.toml"
+hash = "03503663ac763a738f79324a4dd106012d5a466ed7d36cb34f62ddae5f3aa204"
+metafile = true
+
+[[files]]
 file = "mods/brrp.pw.toml"
 hash = "32cce4fed76e26b313dd560a26f463b301af79b02f349c93d2996d6d60d2d3a9"
 metafile = true
@@ -427,7 +432,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "28b6278d40de6ee5942ef099d4044fcd91ed41f6a50631c7742ef84f79011760"
+hash = "70dab83167cb3edb54f252ed6f74a6f94b69177bc5bce631fe2b92f06365c941"
 metafile = true
 
 [[files]]
@@ -438,6 +443,11 @@ metafile = true
 [[files]]
 file = "mods/structures-compass.pw.toml"
 hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
+metafile = true
+
+[[files]]
+file = "mods/taptab.pw.toml"
+hash = "00c85907f81c5993d891637eca069bb8f9516e2667064b0cc44c9771628a34f8"
 metafile = true
 
 [[files]]
