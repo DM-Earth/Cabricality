@@ -1,0 +1,13 @@
+name = "Tap Tab"
+filename = "taptab-1.18-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PZiy3tTe/versions/AGuWJFEG/taptab-1.18-2.1.0.jar"
+hash-format = "sha1"
+hash = "d02933fa7afca6eb1fd978362d7145123841a838"
+
+[update]
+[update.modrinth]
+mod-id = "PZiy3tTe"
+version = "AGuWJFEG"
