@@ -128,8 +128,7 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 							return 1.0F;
 					} else
 						debug("extractor block entity: not enough leaves at " + upPos.toShortString());
-				} else
-					return 0.0F;
+				}
 			}
 		}
 		return 0.0F;
