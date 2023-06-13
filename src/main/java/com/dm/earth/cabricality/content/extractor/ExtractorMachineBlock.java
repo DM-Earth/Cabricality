@@ -27,8 +27,6 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class ExtractorMachineBlock extends BlockWithEntity implements ResourcedBlock {
-	public static int ticks = 0;
-
 	public ExtractorMachineBlock(Settings settings) {
 		super(settings);
 	}

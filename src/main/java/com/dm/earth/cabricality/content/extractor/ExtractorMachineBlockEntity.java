@@ -46,6 +46,9 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 			markDirty();
 		}
 	};
+
+	public int ticks = 0;
+
 	public static final BlockEntityType<ExtractorMachineBlockEntity> TYPE = QuiltBlockEntityTypeBuilder
 			.create(ExtractorMachineBlockEntity::new, CabfBlocks.EXTRACTOR).build();
 
@@ -56,80 +59,72 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 	public static void tick(World world, BlockPos blockPos, BlockState blockState,
 			ExtractorMachineBlockEntity blockEntity) {
 		if (!world.isClient()) {
-			ExtractorMachineBlock.ticks++;
-			if (ExtractorMachineBlock.ticks >= 360)
-				ExtractorMachineBlock.ticks = 0;
-			else
-				return;
-			debug("randomTick from extractor block entity at " + blockPos.toShortString() + " capacity: "
-					+ blockEntity.storage.getCapacity());
-			float f = isNextToTree(world, blockPos, blockState, blockEntity);
-			if (f > 0.0F && blockEntity.storage.amount < blockEntity.storage.getCapacity()) {
-				debug("extractor block entity: inserting to storage");
-				TransferUtil.insert(blockEntity.storage, FluidVariant.of(CabfFluids.RESIN),
-						(long) (f * FluidConstants.INGOT));
+			blockEntity.ticks++;
+			if (blockEntity.ticks >= 360) {
+				blockEntity.ticks = 0;
+				debug("tick from extractor block entity at " + blockPos.toShortString() + " capacity: "
+						+ blockEntity.storage.getCapacity());
+
+				float f = isNextToTree(world, blockPos);
+				if (f > 0.0F && blockEntity.storage.amount < blockEntity.storage.getCapacity()) {
+					debug("extractor block entity: inserting to storage");
+					TransferUtil.insert(blockEntity.storage, FluidVariant.of(CabfFluids.RESIN),
+							(long) (f * FluidConstants.INGOT));
+				}
 			}
 		}
 	}
 
-	private static float isNextToTree(World world, BlockPos blockPos, BlockState blockState,
-			ExtractorMachineBlockEntity blockEntity) {
+	private static float isNextToTree(World world, BlockPos blockPos) {
 		assert world != null;
+
 		for (Direction direction : Arrays.stream(Direction.values())
 				.filter((direction -> direction != Direction.UP && direction != Direction.DOWN))
 				.toArray(Direction[]::new)) {
-			BlockState targetState = world.getBlockState(blockPos.offset(direction));
+
+			BlockPos targetPos = blockPos.offset(direction);
+			BlockState targetState = world.getBlockState(targetPos);
+
 			if (isVecLog(targetState)) {
 				debug("extractor block entity: found log at " + blockPos.offset(direction).toShortString());
 				// check if there are enough logs
-				boolean enoughLogs = false;
-				BlockPos targetPos = blockPos.offset(direction);
-				int i = 1;
-				int ii = 1;
-				BlockPos upPos = blockPos;
-				while (true) {
-					if (ii >= 4) {
-						upPos = targetPos.offset(Direction.UP, i - 1);
-						enoughLogs = true;
-					}
-					if (isVecLog(world.getBlockState(targetPos.offset(Direction.UP, i)))) {
-						i++;
-						ii++;
-					} else
-						break;
+				BlockPos topBlock = targetPos;
+				BlockPos bottomBlock = targetPos;
+
+				// Get top and bottom coordinates of the tree
+				while (isVecLog(world.getBlockState(topBlock.offset(Direction.UP, 1)))) {
+					topBlock = topBlock.offset(Direction.UP, 1);
 				}
-				i = 1;
-				while (true) {
-					if (ii >= 4) {
-						enoughLogs = true;
-					}
-					if (isVecLog(world.getBlockState(targetPos.offset(Direction.DOWN, i)))) {
-						i++;
-						ii++;
-					} else
-						break;
+
+				while (isVecLog(world.getBlockState(bottomBlock.offset(Direction.DOWN, 1)))) {
+					bottomBlock = bottomBlock.offset(Direction.DOWN, 1);
 				}
-				if (enoughLogs) {
+
+				// Add an extra block, since we're measuring from the top of topBlock to the bottom of bottomBlock (inclusive)
+				int difference = topBlock.getY() - bottomBlock.getY() + 1;
+				debug("extractor block entity: tree spans from " + bottomBlock.toShortString() + " to " + topBlock.toShortString() + " (" + difference + " blocks)");
+
+				if (difference >= 5) {
 					debug("extractor block entity: found enough logs at " + targetPos.toShortString());
+
 					// check if there are leaves
 					var count = 0;
-					var iter = BlockPos.iterate(upPos.offset(Direction.DOWN, 2).offset(Direction.WEST, 2),
-							upPos.offset(Direction.UP, 2).offset(Direction.EAST, 2)).iterator();
-					while (iter.hasNext()) {
-						if (isPersistentLeaves(world.getBlockState(iter.next())))
+
+					// Get a range of 2 blocks in every direction
+					var bottomPoint = topBlock.offset(Direction.DOWN, 2).offset(Direction.WEST, 2).offset(Direction.SOUTH, 2);
+					var topPoint = topBlock.offset(Direction.UP, 2).offset(Direction.EAST, 2).offset(Direction.NORTH, 2);
+					for (BlockPos value : BlockPos.iterate(bottomPoint, topPoint)) {
+						if (isPersistentLeaves(world.getBlockState(value)))
 							count++;
 					}
+
 					if (count > 4) {
-						debug("extractor block entity: found enough leaves at " + upPos.toShortString());
-						if (Registry.BLOCK.getId(world.getBlockState(targetPos).getBlock()).getPath()
-								.contains("rubber"))
-							return 1.5F;
-						else
-							return 1.0F;
-					} else
-						debug("extractor block entity: not enough leaves at " + upPos.toShortString());
-				} else
-					return 0.0F;
+						debug("extractor block entity: found enough leaves at " + topBlock.toShortString());
+						return isRubberTree(world.getBlockState(targetPos)) ? 1.5F : 1.0F;
+					} else {
+						debug("extractor block entity: not enough leaves at " + topBlock.toShortString());
+					}
+				}
 			}
 		}
 		return 0.0F;
@@ -146,11 +141,17 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 				&& blockState.get(PillarBlock.AXIS) == Direction.Axis.Y;
 	}
 
+	private static boolean isRubberTree(BlockState state) {
+		return Registry.BLOCK.getId(state.getBlock()).getPath().contains("rubber");
+	}
+
 	@Override
 	public void readNbt(NbtCompound nbt) {
 		super.readNbt(nbt);
 		storage.variant = FluidVariant.fromNbt(nbt.getCompound("fluid"));
 		storage.amount = nbt.getLong("amount");
+
+		ticks = nbt.getInt("ticks");
 	}
 
 	@Override
@@ -158,6 +159,8 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 		super.writeNbt(nbt);
 		nbt.put("fluid", storage.variant.toNbt());
 		nbt.putLong("amount", storage.amount);
+
+		nbt.putInt("ticks", ticks);
 	}
 
 	@Override
