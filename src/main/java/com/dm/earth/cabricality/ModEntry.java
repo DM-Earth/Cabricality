@@ -7,7 +7,6 @@ import org.jetbrains.annotations.Nullable;
 
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
 
-import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
@@ -86,7 +85,7 @@ public enum ModEntry {
 	}
 
 	public Identifier id(String... path) {
-		return new IdentifierBuilder.Specified(this.modId).id(path);
+		return new Identifier(this.modId, String.join("/", path));
 	}
 
 	public Item asItem(String... paths) {
