@@ -39,7 +39,6 @@ import me.shedaniel.rei.api.common.entry.EntryStack;
 import me.shedaniel.rei.api.common.entry.type.EntryType;
 import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
-import net.krlite.equator.util.IdentifierBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.tag.TagKey;
 import net.minecraft.text.TranslatableText;
@@ -88,6 +87,10 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				.orElse(subs[0]);
 	}
 
+	private TranslatableText convertToTranslatableText(String prefix, Identifier identifier) {
+		return new TranslatableText(prefix + "." + identifier.getNamespace() + "." + String.join(".", identifier.getPath()));
+	}
+
 	/**
 	 * Gets a {@link TranslatableText} from the given {@link Identifier}, prefixed
 	 * with <code>"tag"</code>.
@@ -96,7 +99,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @return The tagged text.
 	 */
 	private TranslatableText tag(Identifier identifier) {
-		return new IdentifierBuilder.Specified(identifier.getNamespace()).localization("tag", identifier.getPath());
+		return convertToTranslatableText("tag", identifier);
 	}
 
 	/**
@@ -107,7 +110,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @return The coled text.
 	 */
 	private TranslatableText col(Identifier identifier) {
-		return new IdentifierBuilder.Specified(identifier.getNamespace()).localization("col", identifier.getPath());
+		return convertToTranslatableText("col", identifier);
 	}
 
 	private static final String[] COLORS = {
