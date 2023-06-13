@@ -11,6 +11,9 @@
     <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
       FTB Library ｜
     </a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/item-filters">
+      Item Filters ｜
+    </a>
     <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
       Quests Additions
     </a>
