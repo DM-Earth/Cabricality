@@ -1,9 +1,6 @@
 package com.dm.earth.cabricality;
 
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
