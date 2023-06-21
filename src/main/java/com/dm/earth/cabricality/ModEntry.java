@@ -1,12 +1,6 @@
 package com.dm.earth.cabricality;
 
-import java.util.function.Predicate;
-
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
 import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
-
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
@@ -17,6 +11,10 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.function.Predicate;
 
 public enum ModEntry {
 	// Abbreviations
@@ -62,18 +60,18 @@ public enum ModEntry {
 
 	BC("bitsandchisels");
 
-	final String modId;
+	final String modid;
 
-	public String getModId() {
-		return modId;
+	public String getModid() {
+		return modid;
 	}
 
-	ModEntry(String modId) {
-		this.modId = modId;
+	ModEntry(String modid) {
+		this.modid = modid;
 	}
 
 	public boolean checkContains(@Nullable Identifier id) {
-		return id != null && id.getNamespace().equals(modId);
+		return id != null && id.getNamespace().equals(modid);
 	}
 
 	public boolean checkContains(@NotNull Item item) {

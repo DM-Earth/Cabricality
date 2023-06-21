@@ -232,7 +232,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 									color -> AE2.asItem(joinAll(color, type, postfix))).collect(Collectors.toList()))));
 		}
 
-		if (QuiltLoader.isModLoaded(IF.getModId()))
+		if (QuiltLoader.isModLoaded(IF.getModid()))
 			/*
 			 * Item Filters
 			 */

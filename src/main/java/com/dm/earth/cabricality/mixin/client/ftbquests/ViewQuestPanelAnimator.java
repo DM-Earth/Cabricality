@@ -89,17 +89,9 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 				flat -> flat.new Rectangle()
 								.colorTop(Cabricality.Colors.CABF_PURPLE)
 								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)
-								.new Transformed(FlatTransform.NONE, FlatGate.TRUE)
-								.new Outlined(Vector.fromCartesian(350 * lerp, 350 * lerp),
-						Flat.Rectangle.Transformed.Outlined.OutliningMode.SCISSORED,
-						Flat.Rectangle.Transformed.Outlined.OutliningStyle.EDGE_FADED)
-		);
-
-		// Normal mode has a bug, so use scissored mode and the renderer below
-		Box.fromCartesian(x, y, w, h).render(matrixStack, 0,
-				flat -> flat.new Rectangle()
-								.colorTop(Cabricality.Colors.CABF_PURPLE)
-								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)
+								.new Outlined(Vector.fromCartesian(240 * lerp, 240 * lerp),
+						Flat.Rectangle.Outlined.OutliningMode.NORMAL,
+						Flat.Rectangle.Outlined.OutliningStyle.EDGE_FADED)
 		);
 	}
 

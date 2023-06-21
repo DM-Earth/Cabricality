@@ -240,7 +240,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.remove(TC.id("smeltery", "alloys", "molten_brass"));
 		handler.remove(TC.id("smeltery", "alloys", "molten_invar"));
 
-		handler.removeIf(r -> r.getId().getNamespace().equals(TC.getModId())
+		handler.removeIf(r -> r.getId().getNamespace().equals(TC.getModid())
 				&& r.getId().getPath().startsWith("compat/create"));
 
 		// Remove wrenches except Create's and AE2's
