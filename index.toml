@@ -213,12 +213,12 @@ metafile = true
 
 [[files]]
 file = "mods/bounced.pw.toml"
-hash = "e2066f284decfeed5dcd1265ef6e185cfa3ffcd824460b3b86d08d0661aefbf3"
+hash = "03503663ac763a738f79324a4dd106012d5a466ed7d36cb34f62ddae5f3aa204"
 metafile = true
 
 [[files]]
 file = "mods/brrp.pw.toml"
-hash = "cab9d99e901deb17f0e49392d1f15f60cab5545a1059a7c6f2a7b6efe9d16955"
+hash = "d4802c0bbb6bd10baa7d05bd3871e482f4af39297d16a6fbe0e2447db738ede0"
 metafile = true
 
 [[files]]
@@ -267,12 +267,12 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "e06a03d1dc605742915f9a8ce69f7865547cc9b66440fd4dbae673016ba1bc66"
+hash = "162cc4db9177cd873c39629c0f25d3b061fa4c8aaec08f5cab74032896752475"
 metafile = true
 
 [[files]]
 file = "mods/createfabricreibugfix.pw.toml"
-hash = "d4f92cf30a65cf81e5c712db911dbffe510646a8e9a706e1a07939ee4ecf2096"
+hash = "6ad2865f488d8e2f1126ddfd3e1270a4f110070938650f1d517b4a52fb83208e"
 metafile = true
 
 [[files]]
@@ -302,7 +302,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "7be1e122e9ef8f1b7f2df9ffccf02cf83a52d0a53ae5ba7d07ea7bd3cc149101"
+hash = "de9b5bac4165fb069bf6df9da2bb6028d50dd51fa0d294f0fb62d1d0c64b707b"
 metafile = true
 
 [[files]]
@@ -367,7 +367,7 @@ metafile = true
 
 [[files]]
 file = "mods/lootr-fabric.pw.toml"
-hash = "7154b0157b492f51427845a28530ad4c5181b98f5ceae42d800a83e27167f4ce"
+hash = "a482daa2c369c020deb40e717613a50ebbee27078c042a8794a45b41cdfec65d"
 metafile = true
 
 [[files]]
@@ -392,7 +392,7 @@ metafile = true
 
 [[files]]
 file = "mods/no-unused-chunks.pw.toml"
-hash = "73f8c3c2aafcf7c4c504050acdce3f2ca4c9314c6ebbb97258cafabd34c8dce0"
+hash = "d034e811e2b3113da2835affc87d94fbaae7300f0e3bf265abcbc4daac3b0c17"
 metafile = true
 
 [[files]]
@@ -417,7 +417,7 @@ metafile = true
 
 [[files]]
 file = "mods/rei.pw.toml"
-hash = "3aee504744169e480f9f4d82227ba5557e306a4f151afe8b38720df63ad12873"
+hash = "9dff70d8d47e1a70bfc6a6a677e59d9528a61c0daab647902018b03587e262bb"
 metafile = true
 
 [[files]]
@@ -432,7 +432,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "28b6278d40de6ee5942ef099d4044fcd91ed41f6a50631c7742ef84f79011760"
+hash = "70dab83167cb3edb54f252ed6f74a6f94b69177bc5bce631fe2b92f06365c941"
 metafile = true
 
 [[files]]
@@ -447,7 +447,7 @@ metafile = true
 
 [[files]]
 file = "mods/taptab.pw.toml"
-hash = "21eb1c3ee8d1b20b6d7c0a336a341c95bc786a4897e4f24930cc133e8e645e0f"
+hash = "00c85907f81c5993d891637eca069bb8f9516e2667064b0cc44c9771628a34f8"
 metafile = true
 
 [[files]]
