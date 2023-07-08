@@ -38,7 +38,7 @@ public abstract class ChapterPanelAnimator {
 	abstract boolean isPinned();
 
 	@Unique
-	private final Animation animation = new Animation(0, 1, 450, Curves.Elastic.OUT);
+	private final Animation animation = new Animation(0, 1, 450, Curves.Back.OUT);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
