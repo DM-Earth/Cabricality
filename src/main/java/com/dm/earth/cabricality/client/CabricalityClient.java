@@ -37,7 +37,7 @@ public class CabricalityClient implements ClientModInitializer {
 		if (initTime != -1) {
 			double millis = System.currentTimeMillis() - initTime;
 			Cabricality.LOGGER.info("Cabricality has initialized in "
-											+ (millis >= 1000 ? (millis / 1000.0 + "ms") : (millis + "ms"))
+											+ (millis >= 1000 ? (millis / 1000.0 + "s") : (millis + "ms"))
 											+ "! ⚙️");
 			initTime = -1;
 		}
