@@ -48,7 +48,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "create:crushed_tin_ore"
+              "name": "create:crushed_raw_tin"
             }
           ]
         }

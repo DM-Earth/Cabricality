@@ -7,11 +7,11 @@
   ],
   "results": [
     {
-      "item": "cabricality:crushed_cobalt_ore",
+      "item": "cabricality:crushed_raw_cobalt",
       "chance": 0.8
     },
     {
-      "item": "create:crushed_zinc_ore",
+      "item": "create:crushed_raw_zinc",
       "chance": 0.3
     },
     {

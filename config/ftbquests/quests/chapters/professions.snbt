@@ -715,7 +715,7 @@
 		}
 		{
 			title: "Ore Collection"
-			icon: "create:crushed_gold_ore"
+			icon: "create:crushed_raw_gold"
 			x: 2.5d
 			y: -3.0d
 			subtitle: "30 Silver"
@@ -724,37 +724,37 @@
 				{
 					id: "592A29507FE620D0"
 					type: "item"
-					item: "create:crushed_iron_ore"
+					item: "create:crushed_raw_iron"
 					count: 5L
 				}
 				{
 					id: "5CAA30D3A26DE48A"
 					type: "item"
-					item: "create:crushed_copper_ore"
+					item: "create:crushed_raw_copper"
 					count: 5L
 				}
 				{
 					id: "58D69FCA7C1035F5"
 					type: "item"
-					item: "create:crushed_zinc_ore"
+					item: "create:crushed_raw_zinc"
 					count: 5L
 				}
 				{
 					id: "4C2DB8A65AD97FAB"
 					type: "item"
-					item: "create:crushed_nickel_ore"
+					item: "create:crushed_raw_nickel"
 					count: 5L
 				}
 				{
 					id: "73726468F48CE993"
 					type: "item"
-					item: "create:crushed_lead_ore"
+					item: "create:crushed_raw_lead"
 					count: 5L
 				}
 				{
 					id: "176CF773DF3BBBD0"
 					type: "item"
-					item: "create:crushed_gold_ore"
+					item: "create:crushed_raw_gold"
 					count: 5L
 				}
 			]
