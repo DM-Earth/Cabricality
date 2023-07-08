@@ -1,7 +1,0 @@
-name = "CreateFabric&REIBugFix"
-filename = "CreateFabricREIBugFix-0.1.4-mc1.18.x.jar"
-side = "client"
-
-[download]
-hash-format = "sha256"
-hash = "b0edb6b88f03e18935427c9f2601647ed6131f3b6dfcd426b95d2def5e761f92"
