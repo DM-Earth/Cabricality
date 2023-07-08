@@ -13,8 +13,6 @@ import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.math.geometry.flat.Vector;
-import net.krlite.equator.math.logic.flat.FlatGate;
-import net.krlite.equator.math.logic.flat.FlatTransform;
 import net.krlite.equator.render.renderer.Flat;
 import net.krlite.equator.visual.animation.Animation;
 import net.minecraft.client.MinecraftClient;
@@ -23,6 +21,7 @@ import net.minecraft.util.math.MathHelper;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
@@ -42,6 +41,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		super(panel);
 	}
 
+	@Unique
 	private final Animation animation = new Animation(0, 1, 720, Curves.LINEAR);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
@@ -54,6 +54,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		return height + (this.panelText.widgets.isEmpty() ? 18 : 12);
 	}
 
+	@Unique
 	private void modifyPos(Args args, int xIndex, int yIndex) {
 		args.set(xIndex, (int) args.get(xIndex) + 8);
 		args.set(yIndex, (int) args.get(yIndex) + 6);
@@ -122,6 +123,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		return icon.withColor(color);
 	}
 
+	@Unique
 	private double sinusoidal(double percentage, double origin, double shift) {
 		return origin + -shift / 2 * (Math.cos(Math.PI * MathHelper.clamp(percentage, 0, 1)) - 1);
 	}

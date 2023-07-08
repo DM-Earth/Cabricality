@@ -21,6 +21,7 @@ import net.minecraft.util.Formatting;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
@@ -36,6 +37,7 @@ public abstract class ChapterPanelAnimator {
 	@Shadow(remap = false)
 	abstract boolean isPinned();
 
+	@Unique
 	private final Animation animation = new Animation(0, 1, 450, Curves.LINEAR);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))

@@ -16,6 +16,7 @@ import com.simibubi.create.content.contraptions.wrench.WrenchItem;
 import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import io.github.coolmineman.bitsandchisels.BitsBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -69,6 +70,7 @@ public class WrenchItemMixin {
 		}
 	}
 
+	@Unique
 	void invert(Axis axis, BitsBlockEntity bitsBlockEntity) {
 		BlockState[][][] rotated = new BlockState[16][16][16];
 		switch (axis) {
@@ -108,6 +110,7 @@ public class WrenchItemMixin {
 	// Rotation Algorithm from
 	// https://stackoverflow.com/questions/53110374/how-to-rotate-2-d-array-in-java,
 	// extended to 3D
+	@Unique
 	void rotate(Axis axis, BitsBlockEntity e) {
 		BlockState[][][] rotated = new BlockState[16][16][16];
 		switch (axis) {

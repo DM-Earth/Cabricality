@@ -11,7 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = FluidTank.class, remap = false)
 public class FluidTankMixin {
-
 	@Inject(method = "insert(Lnet/fabricmc/fabric/api/transfer/v1/fluid/FluidVariant;JLnet/fabricmc/fabric/api/transfer/v1/transaction/TransactionContext;)J", at = @At("HEAD"), cancellable = true, remap = false)
 	private void patch1(FluidVariant insertedVariant, long maxAmount, TransactionContext transaction, CallbackInfoReturnable<Long> cir) {
 		try {
@@ -29,5 +28,4 @@ public class FluidTankMixin {
 			cir.setReturnValue(0L);
 		}
 	}
-
 }

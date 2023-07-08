@@ -12,6 +12,7 @@ import net.krlite.equator.visual.animation.Animation;
 import net.minecraft.client.util.math.MatrixStack;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -22,6 +23,7 @@ import java.util.List;
 @ClientOnly
 @Mixin(ContextMenu.class)
 public class ContextMenuAnimator {
+	@Unique
 	private final Animation animation = new Animation(0, 1, 200, Curves.LINEAR);
 
 	@Inject(method = "<init>", at = @At("TAIL"))

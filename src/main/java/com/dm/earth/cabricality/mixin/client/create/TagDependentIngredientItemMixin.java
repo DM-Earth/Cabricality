@@ -13,7 +13,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(TagDependentIngredientItem.class)
 public class TagDependentIngredientItemMixin {
-
 	@Shadow(remap = false)
 	private TagKey<Item> tag;
 
@@ -25,5 +24,4 @@ public class TagDependentIngredientItemMixin {
 		else if (result == ActionResult.FAIL)
 			cir.setReturnValue(true);
 	}
-
 }

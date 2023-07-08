@@ -11,7 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ItemStack.class)
 public class ItemStackMixin {
-
 	@Shadow
 	private boolean empty;
 
@@ -22,5 +21,4 @@ public class ItemStackMixin {
 			cir.setReturnValue(Items.AIR);
 		}
 	}
-
 }

@@ -11,12 +11,14 @@ import net.krlite.equator.visual.animation.Animation;
 import net.minecraft.client.util.math.MatrixStack;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @ClientOnly
 @Mixin(BaseScreen.class)
 public class BaseScreenAnimator {
+	@Unique
 	private final Animation animation = new Animation(0, 1, 175, Curves.LINEAR);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawGui(Lnet/minecraft/client/util/math/MatrixStack;IIIILdev/ftb/mods/ftblibrary/ui/WidgetType;)V"))
