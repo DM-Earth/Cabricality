@@ -177,6 +177,10 @@ file = "icon.png"
 hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
 
 [[files]]
+file = "mods/CreateFabricREIBugFix-0.1.4-mc1.18.x.jar"
+hash = "b0edb6b88f03e18935427c9f2601647ed6131f3b6dfcd426b95d2def5e761f92"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "10ebf91164da29c3c7576e539ce25aa5e6c4c447fc94e621367b8658ce452060"
 metafile = true
@@ -272,7 +276,7 @@ metafile = true
 
 [[files]]
 file = "mods/createfabricreibugfix.pw.toml"
-hash = "6ad2865f488d8e2f1126ddfd3e1270a4f110070938650f1d517b4a52fb83208e"
+hash = "dcf6baf0aa85f9eb6e0ddb4bdf4d69961d1d2fe61ff31cb160ce8c556e2ee944"
 metafile = true
 
 [[files]]
