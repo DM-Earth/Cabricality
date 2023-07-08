@@ -31,12 +31,4 @@ public class Log4jHandler {
 			cir.setReturnValue(new com.dm.earth.cabricality.lib.util.debug.InternalLogger());
 		}
 	}
-
-	@Mixin(Waila.class)
-	static class WthitLogger {
-		@Mutable
-		@Shadow(remap = false)
-		@Final
-		public static Logger LOGGER = new Log4jLogger();
-	}
 }

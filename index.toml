@@ -340,6 +340,11 @@ hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
 metafile = true
 
 [[files]]
+file = "mods/item-filters.pw.toml"
+hash = "3fd6c3023e220fe708024d6151ee74f0f86589e75e1214daaf39ddb82d7b9e5e"
+metafile = true
+
+[[files]]
 file = "mods/kibe.pw.toml"
 hash = "0fd789b8973507de511c9ab3931934b8f4536e912c1127a10f77a0a80add3684"
 metafile = true

@@ -14,7 +14,6 @@
     "led.DiodeLampBlockAccessor",
     "log.Log4jHandler$InternalsLogger",
     "log.Log4jHandler$RoughlyEnoughItemsStateLogger",
-    "log.Log4jHandler$WthitLogger",
     "log.Slf4jHandler$ArchitecturyLogger",
     "log.Slf4jHandler$MinecraftServerLogger",
     "log.Slf4jHandler$ReloadableResourceManagerLogger",
