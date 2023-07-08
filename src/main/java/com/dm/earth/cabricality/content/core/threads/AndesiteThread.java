@@ -166,5 +166,7 @@ public class AndesiteThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(CABF.id("extractor_machine"), 1, MC.id("bucket")));
 		MechAndSmithCraft.addEntry(entry(AD.id("coal_generator"), 1, IR.id("heat_coil")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("charger"), 1, AE2.id("fluix_crystal")));
+		MechAndSmithCraft.addEntry(entry(CR.id("contraption_controls"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_roller"), 1, CR.id("crushing_wheel")));
 	}
 }
