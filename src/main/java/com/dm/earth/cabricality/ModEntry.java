@@ -17,7 +17,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.function.Predicate;
 
 public enum ModEntry {
-	// Abbreviations
 	MC("minecraft"),
 
 	C("c"),

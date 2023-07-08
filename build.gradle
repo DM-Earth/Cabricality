@@ -1,6 +1,7 @@
 plugins {
     id "maven-publish"
     alias(libs.plugins.quilt.loom)
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'
 }
 
 archivesBaseName = project.archives_base_name
