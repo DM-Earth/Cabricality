@@ -1,3 +1,20 @@
+<blockquote>
+  <details>
+    <summary>
+      <code>あ ←→ A</code>
+    </summary>
+    <!--Head-->
+    &emsp;&ensp;<sub><b>Cabricality</b> 支持以下語言。<a href="/docs/add_a_localization.md"><code>↗ 添加一種語言</code></a></sub>
+    <br />
+    <!--Body-->
+    <br />
+    &emsp;&ensp;<a href="https://github.com/DM-Earth/Cabricality">English</a>
+    <br />
+    &emsp;&ensp;<a href="/docs/readme/zh_simplified.md">简体中文</a>
+    <br />
+    &emsp;&ensp;繁體中文
+  </details>
+</blockquote>
 
 <h4 align="center">
   <sup>
@@ -23,7 +40,7 @@
 <div align="center">
   <br>
   </br>
-  <img src="https://github.com/DM-Earth/Cabricality/blob/packwiz/1.18.2/quilt/dev/assets/cabricality_banner.png?raw=true" width = 575 alt="Cabricality">
+  <img src="https://github.com/DM-Earth/Cabricality/blob/1.18.2/modrinth/dev/assets/cabricality_banner.png?raw=true" width = 575 alt="Cabricality">
   </img>
   <br>
   </br>
@@ -55,16 +72,6 @@
 > ***永無止境：重縫**在<b>[機械動力：永無止境](https://github.com/simibubi/Above-and-Beyond)</b>的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
 
 [^wiki]: 隨時歡迎翻閱<b>[永無止境：重縫 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)</b>
-
-<h3 align="center">
-  <a href="https://github.com/DM-Earth/Cabricality">
-    English ｜
-  </a>
-  <a href="zh_simplified.md">
-    简体中文 ｜
-  </a>
-  繁體中文
-</h3>
 
 ## 遊戲內容
 
