@@ -101,10 +101,10 @@
 
   "item.cabricality.flash_drive": "隨身碟",
 
-  "item.cabricality.crushed_cobalt_ore"  : "粉碎鈷礦石",
-  "item.cabricality.crushed_desh_ore"    : "粉碎戴斯礦石",
-  "item.cabricality.crushed_ostrum_ore"  : "粉碎紫金礦石",
-  "item.cabricality.crushed_calorite_ore": "粉碎耐熱金屬礦石",
+  "item.cabricality.crushed_raw_cobalt"  : "粉碎鈷礦石",
+  "item.cabricality.crushed_raw_desh"    : "粉碎戴斯礦石",
+  "item.cabricality.crushed_raw_ostrum"  : "粉碎紫金礦石",
+  "item.cabricality.crushed_raw_calorite": "粉碎耐熱金屬礦石",
 
   "item.cabricality.incomplete_calculation_processor": "運算處理器（半成品）",
   "item.cabricality.incomplete_logic_processor"      : "邏輯處理器（半成品）",
@@ -473,9 +473,6 @@
   "config.cabricality.general.background_blur_radius"        : "背景模糊半徑",
   "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半徑大小（像素）",
 
-  "config.cabricality.general.transparent_wthit_tooltip"        : "透明WTHIT提示框",
-  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7是否使WTHIT提示框透明",
-
   "config.cabricality.category.debug": "調試",
 
   "config.cabricality.debug.debug_info" : "調試信息",
@@ -529,7 +526,7 @@
   "mod.ftbquests.name"      : "FTB Quests 模組",
   "mod.ftbteams.name"       : "FTB Teams 模組",
   "mod.questsadditions.name": "Quests Additions 模組",
-  "mod.itemfilters.name": "Item Filters 模組",
+  "mod.itemfilters.name"    : "Item Filters 模組",
 
   "screen.cabricality.config.title"            : "永無止境：重縫",
   "screen.cabricality.missing_mod.title"       : "缺少以下模組",

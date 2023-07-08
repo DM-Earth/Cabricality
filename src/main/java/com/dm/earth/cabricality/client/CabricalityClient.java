@@ -35,8 +35,10 @@ public class CabricalityClient implements ClientModInitializer {
 
 	public static void finishLoading() {
 		if (initTime != -1) {
+			double millis = System.currentTimeMillis() - initTime;
 			Cabricality.LOGGER.info("Cabricality has initialized in "
-					+ (System.currentTimeMillis() - initTime) + "ms! ⚙️");
+											+ (millis >= 1000 ? (millis / 1000.0 + "ms") : (millis + "ms"))
+											+ "! ⚙️");
 			initTime = -1;
 		}
 		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);

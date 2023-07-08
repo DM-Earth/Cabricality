@@ -36,7 +36,7 @@ public class ContextMenuAnimator {
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		Box.fromCartesian(x, y, w, h).scaleCenter(2.7 * Math.pow(1 - animation.value(), 1 / 2.0))
+		Box.fromCartesian(x, y, w, h).scaleCenter(1 + 1.7 * Math.pow(1 - animation.value(), 1 / 2.0))
 				.render(matrixStack, 0,
 						flat -> flat.new Rectangle(Cabricality.Colors.CABF_BRIGHT_PURPLE.opacity(0.32 * Math.pow(animation.value(), 2)))
 				);

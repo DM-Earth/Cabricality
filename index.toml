@@ -450,6 +450,11 @@ hash = "722031c0ae5d2de71783d6c4bfbf1c5cd25c65e55cb42d8bb4f7cadf478c4368"
 metafile = true
 
 [[files]]
+file = "mods/stenographer.pw.toml"
+hash = "9fcde313a87692ef831a450618793f39de69e10805a79e498006840e0cc68914"
+metafile = true
+
+[[files]]
 file = "mods/structures-compass.pw.toml"
 hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
 metafile = true

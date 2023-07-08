@@ -52,12 +52,6 @@ public class CabfConfigScreen extends Screen {
 								 .setSaveConsumer(value -> CONFIG.backgroundBlurRadius = value.floatValue())
 								 .build());
 
-		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "transparent_wthit_tooltip"), CONFIG.transparentWthitTooltip)
-								 .setDefaultValue(true)
-								 .setTooltip(Cabricality.genTranslatableText("config", "general", "transparent_wthit_tooltip", "tooltip"))
-								 .setSaveConsumer(value -> CONFIG.transparentWthitTooltip = value)
-								 .build());
-
 		// Debug
 		debug.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "debug", "debug_info"), CONFIG.debugInfo)
 							   .setDefaultValue(false)

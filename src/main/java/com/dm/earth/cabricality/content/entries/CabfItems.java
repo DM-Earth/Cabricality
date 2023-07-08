@@ -215,9 +215,9 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 
 		// Crushed Ores
 		CRUSHED_RAW_MATERIALS.forEach(variant -> {
-			String itemId = "crushed_" + variant + "_ore";
+			String itemId = "crushed_raw_" + variant;
 			registerItemModeled(itemId, new Item(Properties.DEFAULT.get()),
-					ItemModelGenerator.generated("item", "crushed_raw_ore", itemId));
+					ItemModelGenerator.generated("item", "crushed_raw_material", itemId));
 		});
 
 		// Colored Ferns
@@ -294,7 +294,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		DUSTS.forEach(variant -> handler.register(C.id(variant, "_dusts"),
 				Registry.ITEM.get(Cabricality.id(variant + "_dust"))));
 		CRUSHED_RAW_MATERIALS.forEach(variant -> handler.register(AllItemTags.CRUSHED_RAW_MATERIALS.tag,
-				Registry.ITEM.get(Cabricality.id("crushed_raw_" + variant + "_ore"))));
+				Registry.ITEM.get(Cabricality.id("crushed_raw_" + variant))));
 
 		handler.register(C.id("enderium_ingots"), ENDERIUM_INGOT);
 		handler.register(C.id("invar_ingots"), INVAR_INGOT);

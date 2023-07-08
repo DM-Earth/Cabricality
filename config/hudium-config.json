@@ -10,7 +10,7 @@
   //Specify whether the air value (oxygen in the water) will be displayed.
   "displayAirValue": true,
   //Specify the x value the info is going to be placed
-  "displayInfoX": 450,
+  "displayInfoX": 4,
   //Specify the y value the info is going to be placed
   "displayInfoY": 4,
   //Specify whether the block info will be displayed.

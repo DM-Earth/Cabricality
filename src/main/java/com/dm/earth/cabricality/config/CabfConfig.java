@@ -14,13 +14,11 @@ public class CabfConfig extends Pierced {
 		load();
 	}
 
-	public boolean backgroundBlur = true;
+	public boolean backgroundBlur = false;
 
 	public boolean backgroundBlurDarken = true;
 
-	public float backgroundBlurRadius = 35;
-
-	public boolean transparentWthitTooltip = true;
+	public float backgroundBlurRadius = 9;
 
 	@Table("debug")
 	public boolean debugInfo = false;

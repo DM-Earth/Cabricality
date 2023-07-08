@@ -101,10 +101,10 @@
 
   "item.cabricality.flash_drive": "Flash Drive",
 
-  "item.cabricality.crushed_raw_cobalt_ore"  : "Crushed Cobalt Ore",
-  "item.cabricality.crushed_raw_desh_ore"    : "Crushed Desh Ore",
-  "item.cabricality.crushed_raw_ostrum_ore"  : "Crushed Ostrum Ore",
-  "item.cabricality.crushed_raw_calorite_ore": "Crushed Calorite Ore",
+  "item.cabricality.crushed_raw_cobalt"  : "Crushed Cobalt Ore",
+  "item.cabricality.crushed_raw_desh"    : "Crushed Desh Ore",
+  "item.cabricality.crushed_raw_ostrum"  : "Crushed Ostrum Ore",
+  "item.cabricality.crushed_raw_calorite": "Crushed Calorite Ore",
 
   "item.cabricality.incomplete_calculation_processor": "Incomplete Calculation Processor",
   "item.cabricality.incomplete_logic_processor"      : "Incomplete Logic Processor",
@@ -473,9 +473,6 @@
   "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
   "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
 
-  "config.cabricality.general.transparent_wthit_tooltip"        : "Transparent Waila Tooltip",
-  "config.cabricality.general.transparent_wthit_tooltip.tooltip": "§7Whether to make Waila's tooltip transparent",
-
   "config.cabricality.category.debug": "Debug",
 
   "config.cabricality.debug.debug_info" : "Debug Info",
@@ -529,7 +526,7 @@
   "mod.ftbquests.name"      : "FTB Quests",
   "mod.ftbteams.name"       : "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
-  "mod.itemfilters.name": "Item Filters",
+  "mod.itemfilters.name"    : "Item Filters",
 
   "screen.cabricality.config.title"            : "Cabricality",
   "screen.cabricality.missing_mod.title"       : "Cabricality is Missing Mod",

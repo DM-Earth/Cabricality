@@ -45,10 +45,12 @@ public abstract class ChapterPanelAnimator {
 		PushUtil.ANIMATE_CHAPTER_PANEL.or((!this.expanded && !this.isPinned()), animation::restart);
 		double lerp = Math.pow(animation.value(), 1 / 3.0);
 
-		Box chapterBox = Box.fromCartesian(x, y, w, h);
+		Box chapterBox = Box.fromCartesian(x, y, w * lerp, h);
 
 		chapterBox.render(matrixStack, 0,
-				flat -> flat.new Rectangle(Cabricality.Colors.CABF_BLACK.opacity(0.73 * lerp))
+				flat -> flat.new Rectangle()
+								.colorLeft(Cabricality.Colors.CABF_BLACK.opacity(0.73))
+								.colorRight(Cabricality.Colors.CABF_BLACK.opacity(0.73 * lerp))
 		);
 
 		chapterBox.render(matrixStack, 0,
