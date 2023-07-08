@@ -54,7 +54,7 @@ hash = "6d93a2942179cbbd9da43523f38208d446f0c1ad7215994b0c72cfd5748c7f88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/metallurgy.snbt"
-hash = "cf0a610e4614377cf95b852051b39a68fc1695882fadeb674a1bfba5eccaaecc"
+hash = "d4f09e567763cead0b366ea5952e34a799e0be55f6b513fc86fc73659e44817c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
@@ -62,11 +62,11 @@ hash = "1573137f6fc2afef9fca929fbbfc6179f03794cae9eb5a6d49c929ff46384429"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/professions.snbt"
-hash = "6a85320a244480c8f9e8efd0637f6442227fce1df30320cbebd804893a475c11"
+hash = "cb36119bdcf903adbdd825ca947f4f1437d80173bbf88a9a52a0cad56bff1a46"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "0695122157987a5dee7de22954d0f17bfd0f8f28df7a6d881c5b4f99834578a6"
+hash = "e7ec16207ee6fe5f4e1a10ed9ffd8288c0cb6c7cfedec0d2db6730c50a29e1f3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -143,6 +143,10 @@ hash = "2b006b4a7a087547e840168976cda7fe11d567c571f8e6f9e996506586765426"
 [[files]]
 file = "config/modmenu.json"
 hash = "4e46fecfc73d155cb3f46337f338cd68810687b8dff3d5614c75722a29b0b30a"
+
+[[files]]
+file = "config/roughlyenoughitems/config.json5"
+hash = "ede540a5d9c30280a7668c36afc153f76bc325706e6e961b7ba9ef8dac6f38cf"
 
 [[files]]
 file = "config/sodium-extra-options.json"
