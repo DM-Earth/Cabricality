@@ -31,6 +31,7 @@
   "item.cabricality.invar_ingot"   : "殷钢锭",
   "item.cabricality.nickel_ingot"  : "镍锭",
   "item.cabricality.nickel_nugget" : "镍粒",
+  "item.cabricality.raw_nickel"    : "粗镍",
   "item.cabricality.enderium_ingot": "谐振末影锭",
 
   "item.cabricality.nickel_compound" : "镍混合物",
@@ -100,10 +101,10 @@
 
   "item.cabricality.flash_drive": "闪存",
 
-  "item.cabricality.crushed_cobalt_ore"  : "粉碎钴矿石",
-  "item.cabricality.crushed_desh_ore"    : "粉碎戴斯矿石",
-  "item.cabricality.crushed_ostrum_ore"  : "粉碎紫金矿石",
-  "item.cabricality.crushed_calorite_ore": "粉碎耐热金属矿石",
+  "item.cabricality.crushed_raw_cobalt_ore"  : "粉碎钴矿石",
+  "item.cabricality.crushed_raw_desh_ore"    : "粉碎戴斯矿石",
+  "item.cabricality.crushed_raw_ostrum_ore"  : "粉碎紫金矿石",
+  "item.cabricality.crushed_raw_calorite_ore": "粉碎耐热金属矿石",
 
   "item.cabricality.incomplete_calculation_processor": "运算处理器（半成品）",
   "item.cabricality.incomplete_logic_processor"      : "逻辑处理器（半成品）",
@@ -127,7 +128,7 @@
   "item.cabricality.minus"   : "-",
   "item.cabricality.multiply": "×",
   "item.cabricality.divide"  : "÷",
-  "item.cabricality.nan"     : "א",
+  "item.cabricality.nan"     : "§k0",
 
   "item.cabricality.three_cast"   : "整数铸模（3）",
   "item.cabricality.eight_cast"   : "整数铸模（8）",
@@ -351,6 +352,8 @@
   "col.minecraft.splash_potions"   : "喷溅型药水",
   "col.minecraft.potions"          : "药水",
 
+  "col.cabricality.processors": "处理器",
+  "col.cabricality.mechanisms": "动力机械",
   "col.cabricality.numbers"   : "数字和符号",
   "col.cabricality.math_casts": "数学铸模",
 
@@ -411,6 +414,8 @@
 
   "col.tconstruct.buckets/potion": "药水桶",
 
+  "col.tconstruct.anvils": "匠作砧",
+
   "col.computercraft.disks": "软盘",
 
   "col.computercraft.things/turtle"         : "海龟",
@@ -452,8 +457,6 @@
 
   "col.promenade.blocks/mushroom"      : "蘑菇",
   "col.promenade.blocks/mushroom_block": "蘑菇块",
-
-  "col.tconstruct.anvils": "匠作砧",
 
 
 
@@ -522,11 +525,11 @@
 
   "comment_misc": "杂项",
 
-  "mod.ftblibrary.name"     : "FTB Library模组",
-  "mod.ftbquests.name"      : "FTB Quests模组",
-  "mod.ftbteams.name"       : "FTB Teams模组",
-  "mod.questsadditions.name": "Quests Additions模组",
-  "mod.itemfilters.name": "Item Filters模组",
+  "mod.ftblibrary.name"     : "FTB Library 模组",
+  "mod.ftbquests.name"      : "FTB Quests 模组",
+  "mod.ftbteams.name"       : "FTB Teams 模组",
+  "mod.questsadditions.name": "Quests Additions 模组",
+  "mod.itemfilters.name": "Item Filters 模组",
 
   "screen.cabricality.config.title"            : "永无止境：重缝",
   "screen.cabricality.missing_mod.title"       : "缺少以下模组",

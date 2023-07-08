@@ -31,6 +31,7 @@
   "item.cabricality.invar_ingot"   : "不變鋼錠",
   "item.cabricality.nickel_ingot"  : "鎳錠",
   "item.cabricality.nickel_nugget" : "鎳粒",
+  "item.cabricality.raw_nickel"    : "粗鎳",
   "item.cabricality.enderium_ingot": "諧振終界錠",
 
   "item.cabricality.nickel_compound" : "鎳混合物",
@@ -127,7 +128,7 @@
   "item.cabricality.minus"   : "-",
   "item.cabricality.multiply": "×",
   "item.cabricality.divide"  : "÷",
-  "item.cabricality.nan"     : "א",
+  "item.cabricality.nan"     : "§k0",
 
   "item.cabricality.three_cast"   : "整數鑄模（3）",
   "item.cabricality.eight_cast"   : "整數鑄模（8）",
@@ -135,6 +136,8 @@
   "item.cabricality.minus_cast"   : "運算符鑄模（-）",
   "item.cabricality.multiply_cast": "運算符鑄模（×）",
   "item.cabricality.divide_cast"  : "運算符鑄模（÷）",
+
+  "item.cabricality.aquamarine_quartz": "海藍石英",
 
 
 
@@ -349,6 +352,8 @@
   "col.minecraft.splash_potions"   : "喷溅型药水",
   "col.minecraft.potions"          : "药水",
 
+  "col.cabricality.processors": "处理器",
+  "col.cabricality.mechanisms": "动力机械",
   "col.cabricality.numbers"   : "数字和符号",
   "col.cabricality.math_casts": "数学铸模",
 
@@ -409,6 +414,8 @@
 
   "col.tconstruct.buckets/potion": "药水桶",
 
+  "col.tconstruct.anvils": "匠作砧",
+
   "col.computercraft.disks": "软盘",
 
   "col.computercraft.things/turtle"         : "海龟",
@@ -450,8 +457,6 @@
 
   "col.promenade.blocks/mushroom"      : "蘑菇",
   "col.promenade.blocks/mushroom_block": "蘑菇块",
-
-  "col.tconstruct.anvils": "匠作砧",
 
 
 
@@ -520,11 +525,11 @@
 
   "comment_misc": "雜項",
 
-  "mod.ftblibrary.name"     : "FTB Library模組",
-  "mod.ftbquests.name"      : "FTB Quests模組",
-  "mod.ftbteams.name"       : "FTB Teams模組",
-  "mod.questsadditions.name": "Quests Additions模組",
-  "mod.itemfilters.name": "Item Filters模組",
+  "mod.ftblibrary.name"     : "FTB Library 模組",
+  "mod.ftbquests.name"      : "FTB Quests 模組",
+  "mod.ftbteams.name"       : "FTB Teams 模組",
+  "mod.questsadditions.name": "Quests Additions 模組",
+  "mod.itemfilters.name": "Item Filters 模組",
 
   "screen.cabricality.config.title"            : "永無止境：重縫",
   "screen.cabricality.missing_mod.title"       : "缺少以下模組",

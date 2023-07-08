@@ -101,10 +101,10 @@
 
   "item.cabricality.flash_drive": "Flash Drive",
 
-  "item.cabricality.crushed_cobalt_ore"  : "Crushed Cobalt Ore",
-  "item.cabricality.crushed_desh_ore"    : "Crushed Desh Ore",
-  "item.cabricality.crushed_ostrum_ore"  : "Crushed Ostrum Ore",
-  "item.cabricality.crushed_calorite_ore": "Crushed Calorite Ore",
+  "item.cabricality.crushed_raw_cobalt_ore"  : "Crushed Cobalt Ore",
+  "item.cabricality.crushed_raw_desh_ore"    : "Crushed Desh Ore",
+  "item.cabricality.crushed_raw_ostrum_ore"  : "Crushed Ostrum Ore",
+  "item.cabricality.crushed_raw_calorite_ore": "Crushed Calorite Ore",
 
   "item.cabricality.incomplete_calculation_processor": "Incomplete Calculation Processor",
   "item.cabricality.incomplete_logic_processor"      : "Incomplete Logic Processor",
@@ -124,18 +124,18 @@
   "item.cabricality.molten_ostrum_bucket"  : "Molten Ostrum Bucket",
   "item.cabricality.molten_calorite_bucket": "Molten Calorite Bucket",
 
-  "item.cabricality.plus"    : "Plus",
-  "item.cabricality.minus"   : "Minus",
-  "item.cabricality.multiply": "Multiply",
-  "item.cabricality.divide"  : "Divide",
-  "item.cabricality.nan"     : "א",
+  "item.cabricality.plus"    : "+",
+  "item.cabricality.minus"   : "-",
+  "item.cabricality.multiply": "×",
+  "item.cabricality.divide"  : "÷",
+  "item.cabricality.nan"     : "§k0",
 
   "item.cabricality.three_cast"   : "Interger Cast (3)",
   "item.cabricality.eight_cast"   : "Interger Cast (8)",
-  "item.cabricality.plus_cast"    : "Plus Cast",
-  "item.cabricality.minus_cast"   : "Minus Cast",
-  "item.cabricality.multiply_cast": "Multiply Cast",
-  "item.cabricality.divide_cast"  : "Divide Cast",
+  "item.cabricality.plus_cast"    : "Operator Cast (+)",
+  "item.cabricality.minus_cast"   : "Operator Cast (-)",
+  "item.cabricality.multiply_cast": "Operator Cast (×)",
+  "item.cabricality.divide_cast"  : "Operator Cast (÷)",
 
   "item.cabricality.aquamarine_quartz": "Aquamarine Quartz",
 
