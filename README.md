@@ -1,3 +1,20 @@
+<blockquote>
+  <details>
+    <summary>
+      <code>あ ←→ A</code>
+    </summary>
+    <!--Head-->
+    &emsp;&ensp;<sub><b>Cabricality</b> supports the following languages. <a href="/docs/add_a_localization.md"><code>↗ Add a localization</code></a></sub>
+    <br />
+    <!--Body-->
+    <br />
+    &emsp;&ensp;English
+    <br />
+    &emsp;&ensp;<a href="/docs/readme/zh_simplified.md">简体中文</a>
+    <br />
+    &emsp;&ensp;<a href="/docs/readme/zh_traditional.md">繁體中文</a>
+  </details>
+</blockquote>
 
 <h4 align="center">
   <sup>
@@ -58,16 +75,6 @@ With **Cabricality,** you can follow the quests and build your own factory along
 > ***Cabricality** is inspired by **[Create: Above and Beyond,](https://github.com/simibubi/Above-and-Beyond)** but reimplemented on the base of the original pack. Welcome, challenger, we hope you to enjoy our work[^wiki]!*
 
 [^wiki]: Having problems? Feel free to check **[The Cabricality Wiki!](https://github.com/DM-Earth/Cabricality/wiki)**
-
-<h3 align="center">
-  English
-  <a href="docs/readme/zh_simplified.md">
-    ｜ 简体中文
-  </a>
-  <a href="docs/readme/zh_traditional.md">
-    ｜ 繁體中文
-  </a>
-</h3>
 
 ## Features
 
