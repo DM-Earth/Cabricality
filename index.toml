@@ -106,7 +106,7 @@ hash = "e1c35b6eb83293aa6ff91a45e482679a945d16669d405a5feb41606a741cef1d"
 
 [[files]]
 file = "config/hudium-config.json"
-hash = "3dabab178c5d00d133bac15768640b7199f90ddaecc274d5efe55a6cdb2ffae4"
+hash = "4995c850be45957633b2148f18683aa43413773ee2991bfced691348bd1c0e85"
 
 [[files]]
 file = "config/indrev/cables.json"
@@ -246,11 +246,6 @@ hash = "1fb3cbb8ef71a59fbbc722afff7f4f9a9bbaa45838caf0a99f1ed4fce96a4c6c"
 metafile = true
 
 [[files]]
-file = "mods/cccbridge.pw.toml"
-hash = "66aa4f271d3c852806c5158f199c507ae4895fcbe5f075278b16bae7b160714b"
-metafile = true
-
-[[files]]
 file = "mods/cftags-0.1.2.jar"
 hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
 
@@ -342,11 +337,6 @@ metafile = true
 [[files]]
 file = "mods/inspecio.pw.toml"
 hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
-metafile = true
-
-[[files]]
-file = "mods/item-filters.pw.toml"
-hash = "3fd6c3023e220fe708024d6151ee74f0f86589e75e1214daaf39ddb82d7b9e5e"
 metafile = true
 
 [[files]]
