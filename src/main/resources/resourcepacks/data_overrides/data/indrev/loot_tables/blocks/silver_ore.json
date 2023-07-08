@@ -39,7 +39,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "create:crushed_silver_ore"
+              "name": "create:crushed_raw_silver"
             }
           ]
         }

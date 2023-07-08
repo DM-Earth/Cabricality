@@ -1317,8 +1317,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_iron_ore}"
-			icon: "create:crushed_iron_ore"
+			title: "3 × {item.create.crushed_raw_iron}"
+			icon: "create:crushed_raw_iron"
 			disable_toast: true
 			x: -3.0d
 			y: 16.0d
@@ -1329,8 +1329,8 @@
 			tasks: [{
 				id: "39E62B4873A9F5C0"
 				type: "item"
-				icon: "create:crushed_iron_ore"
-				item: "create:crushed_iron_ore"
+				icon: "create:crushed_raw_iron"
+				item: "create:crushed_raw_iron"
 				count: 3L
 			}]
 			rewards: [{
@@ -1341,8 +1341,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_copper_ore}"
-			icon: "create:crushed_copper_ore"
+			title: "3 × {item.create.crushed_raw_copper}"
+			icon: "create:crushed_raw_copper"
 			disable_toast: true
 			x: -2.0d
 			y: 16.0d
@@ -1353,8 +1353,8 @@
 			tasks: [{
 				id: "555F126B733A022E"
 				type: "item"
-				icon: "create:crushed_copper_ore"
-				item: "create:crushed_copper_ore"
+				icon: "create:crushed_raw_copper"
+				item: "create:crushed_raw_copper"
 				count: 3L
 			}]
 			rewards: [{
@@ -1365,8 +1365,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_zinc_ore}"
-			icon: "create:crushed_zinc_ore"
+			title: "3 × {item.create.crushed_raw_zinc}"
+			icon: "create:crushed_raw_zinc"
 			disable_toast: true
 			x: -1.0d
 			y: 16.0d
@@ -1377,8 +1377,8 @@
 			tasks: [{
 				id: "50048128B7A21784"
 				type: "item"
-				icon: "create:crushed_zinc_ore"
-				item: "create:crushed_zinc_ore"
+				icon: "create:crushed_raw_zinc"
+				item: "create:crushed_raw_zinc"
 				count: 3L
 			}]
 			rewards: [{
@@ -1389,8 +1389,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_gold_ore}"
-			icon: "create:crushed_gold_ore"
+			title: "3 × {item.create.crushed_raw_gold}"
+			icon: "create:crushed_raw_gold"
 			disable_toast: true
 			x: 0.0d
 			y: 16.0d
@@ -1401,8 +1401,8 @@
 			tasks: [{
 				id: "17D7004619F39E4F"
 				type: "item"
-				icon: "create:crushed_gold_ore"
-				item: "create:crushed_gold_ore"
+				icon: "create:crushed_raw_gold"
+				item: "create:crushed_raw_gold"
 				count: 3L
 			}]
 			rewards: [{
@@ -1413,8 +1413,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_nickel_ore}"
-			icon: "create:crushed_nickel_ore"
+			title: "3 × {item.create.crushed_raw_nickel}"
+			icon: "create:crushed_raw_nickel"
 			disable_toast: true
 			x: 1.0d
 			y: 16.0d
@@ -1425,8 +1425,8 @@
 			tasks: [{
 				id: "10AE84D84D3D75A1"
 				type: "item"
-				icon: "create:crushed_nickel_ore"
-				item: "create:crushed_nickel_ore"
+				icon: "create:crushed_raw_nickel"
+				item: "create:crushed_raw_nickel"
 				count: 3L
 			}]
 			rewards: [{
@@ -1437,8 +1437,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_lead_ore}"
-			icon: "create:crushed_lead_ore"
+			title: "3 × {item.create.crushed_raw_lead}"
+			icon: "create:crushed_raw_lead"
 			disable_toast: true
 			x: 2.0d
 			y: 16.0d
@@ -1449,8 +1449,8 @@
 			tasks: [{
 				id: "7B5D1446A60C082D"
 				type: "item"
-				icon: "create:crushed_lead_ore"
-				item: "create:crushed_lead_ore"
+				icon: "create:crushed_raw_lead"
+				item: "create:crushed_raw_lead"
 				count: 3L
 			}]
 			rewards: [{
@@ -1461,8 +1461,8 @@
 			}]
 		}
 		{
-			title: "3 × {item.create.crushed_tin_ore}"
-			icon: "create:crushed_tin_ore"
+			title: "3 × {item.create.crushed_raw_tin}"
+			icon: "create:crushed_raw_tin"
 			disable_toast: true
 			x: 3.0d
 			y: 16.0d
@@ -1473,8 +1473,8 @@
 			tasks: [{
 				id: "28A6F51C780AF412"
 				type: "item"
-				icon: "create:crushed_tin_ore"
-				item: "create:crushed_tin_ore"
+				icon: "create:crushed_raw_tin"
+				item: "create:crushed_raw_tin"
 				count: 3L
 			}]
 			rewards: [{
@@ -1485,8 +1485,8 @@
 			}]
 		}
 		{
-			title: "1 × {item.cabricality.crushed_calorite_ore}"
-			icon: "cabricality:crushed_calorite_ore"
+			title: "1 × {item.cabricality.crushed_raw_calorite}"
+			icon: "cabricality:crushed_raw_calorite"
 			disable_toast: true
 			x: 4.0d
 			y: 16.0d
@@ -1497,8 +1497,8 @@
 			tasks: [{
 				id: "3F8536FBB821DBAE"
 				type: "item"
-				icon: "cabricality:crushed_calorite_ore"
-				item: "cabricality:crushed_calorite_ore"
+				icon: "cabricality:crushed_raw_calorite"
+				item: "cabricality:crushed_raw_calorite"
 			}]
 			rewards: [{
 				id: "64BAA092015A3527"
@@ -1508,8 +1508,8 @@
 			}]
 		}
 		{
-			title: "1 × {item.cabricality.crushed_ostrum_ore}"
-			icon: "cabricality:crushed_ostrum_ore"
+			title: "1 × {item.cabricality.crushed_raw_ostrum}"
+			icon: "cabricality:crushed_raw_ostrum"
 			disable_toast: true
 			x: -4.0d
 			y: 17.0d
@@ -1520,8 +1520,8 @@
 			tasks: [{
 				id: "2B878C6B548BD8E4"
 				type: "item"
-				icon: "cabricality:crushed_ostrum_ore"
-				item: "cabricality:crushed_ostrum_ore"
+				icon: "cabricality:crushed_raw_ostrum"
+				item: "cabricality:crushed_raw_ostrum"
 			}]
 			rewards: [{
 				id: "509DFDD124D392DC"
@@ -1531,8 +1531,8 @@
 			}]
 		}
 		{
-			title: "1 × {item.cabricality.crushed_desh_ore}"
-			icon: "cabricality:crushed_desh_ore"
+			title: "1 × {item.cabricality.crushed_raw_desh}"
+			icon: "cabricality:crushed_raw_desh"
 			disable_toast: true
 			x: -3.0d
 			y: 17.0d
@@ -1543,8 +1543,8 @@
 			tasks: [{
 				id: "074E78F9082905A0"
 				type: "item"
-				icon: "cabricality:crushed_desh_ore"
-				item: "cabricality:crushed_desh_ore"
+				icon: "cabricality:crushed_raw_desh"
+				item: "cabricality:crushed_raw_desh"
 			}]
 			rewards: [{
 				id: "0BC411257E6A9E2F"
@@ -1554,8 +1554,8 @@
 			}]
 		}
 		{
-			title: "2 × {item.cabricality.crushed_cobalt_ore}"
-			icon: "cabricality:crushed_cobalt_ore"
+			title: "2 × {item.cabricality.crushed_raw_cobalt}"
+			icon: "cabricality:crushed_raw_cobalt"
 			disable_toast: true
 			x: -2.0d
 			y: 17.0d
@@ -1566,8 +1566,8 @@
 			tasks: [{
 				id: "41CFBF555E9BA272"
 				type: "item"
-				icon: "cabricality:crushed_cobalt_ore"
-				item: "cabricality:crushed_cobalt_ore"
+				icon: "cabricality:crushed_raw_cobalt"
+				item: "cabricality:crushed_raw_cobalt"
 				count: 2L
 			}]
 			rewards: [{

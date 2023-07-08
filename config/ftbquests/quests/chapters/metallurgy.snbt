@@ -69,7 +69,7 @@
 		}
 		{
 			title: "{metallurgy.cabricality.i.title}"
-			icon: "create:crushed_zinc_ore"
+			icon: "create:crushed_raw_zinc"
 			x: -9.0d
 			y: -2.0d
 			shape: "circle"

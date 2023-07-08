@@ -134,6 +134,7 @@ public class BrassThread implements TechThread {
 		MechAndSmithCraft.addEntry(entry(IR.id("biomass_generator_mk3"), 1, IR.id("heat_coil")));
 		MechAndSmithCraft.addEntry(entry(CR.id("brass_funnel"), 4, null));
 		MechAndSmithCraft.addEntry(entry(CR.id("brass_tunnel"), 4, null));
+		MechAndSmithCraft.addEntry(entry(CR.id("elevator_pulley"), 1, MC.id("dried_kelp_block")));
 	}
 
 	@Override
