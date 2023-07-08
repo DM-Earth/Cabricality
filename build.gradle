@@ -10,7 +10,7 @@ group = project.maven_group
 
 repositories {
     maven {
-        name "Modrinth"
+        name "Modrinth Maven"
         url "https://api.modrinth.com/maven"
         content {
             includeGroup "maven.modrinth"
@@ -18,7 +18,7 @@ repositories {
     }
 
     maven {
-        name "Curseforge"
+        name "Curse Maven"
         url "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
@@ -30,11 +30,7 @@ repositories {
         url "https://jitpack.io/"
     }
 
-    maven {
-        name "Ladysnake Mods"
-        url "https://ladysnake.jfrog.io/artifactory/mods"
-    }
-
+    maven { url "https://ladysnake.jfrog.io/artifactory/mods" }
     maven { url "https://mvn.devos.one/snapshots/" }
     maven { url "https://maven.parchmentmc.org" }
     maven { url "https://maven.fabricmc.net/" }
@@ -59,18 +55,28 @@ repositories {
 }
 
 dependencies {
+    // Minecraft
     minecraft libs.minecraft
+
+    // Mappings
     mappings variantOf(libs.quilt.mappings) { classifier "intermediary-v2" }
+
+    // Quilt
     modImplementation libs.quilt.loader
     modImplementation libs.quilted.fabric.api
 
+    // Create
     modImplementation ("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}") {
         exclude group:"com.github.AlphaMode"
     }
+
+    // Linkaged Mods
+    // - Miscellaneous
     modImplementation ("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}") {
         exclude group:"com.github.AlphaMode"
     }
 
+    // - Modrinth Maven
     modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
     modImplementation "maven.modrinth:bits-and-chisels:${project.bits_and_chisels_version}"
@@ -80,27 +86,29 @@ dependencies {
     modImplementation "maven.modrinth:interference:${project.interference_version}"
     modImplementation "maven.modrinth:wthit:fabric-${project.wthit_version}"
 
+    // - Curse Maven
     modImplementation "curse.maven:industrial-revolution-391708:${project.indrev_version}"
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
     modImplementation "curse.maven:catwalks-inc-554340:${project.catwalks_version}"
 
+    // - JitPack
+    modImplementation "com.github.KrLite.Equator-v2:build:${project.minecraft_major_version}-${project.equator_version}"
+
+    // Mod Apis
     modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
-    modImplementation "com.github.KrLite.Equator-v2:build:${project.minecraft_major_version}-${project.equator_version}"
-
-    // Included
+    // Included Mods
     modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}-mc${project.minecraft_version}-fabric")
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
-
     implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
 
-    // Develop
+    // Development Envorinments
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
