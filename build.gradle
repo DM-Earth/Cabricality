@@ -108,7 +108,7 @@ dependencies {
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
     implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
 
-    // Development Envorinments
+    // Development Environments
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
