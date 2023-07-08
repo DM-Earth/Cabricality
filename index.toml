@@ -315,6 +315,11 @@ hash = "c2d32ced6373731bf691287a6d2daa8c333f38a003d0032264e3174d4aca5eb7"
 metafile = true
 
 [[files]]
+file = "mods/flash.pw.toml"
+hash = "472847198a4151f4c6d9cd376af47b0b745e8a797282321af8a6ffd49ca8acc3"
+metafile = true
+
+[[files]]
 file = "mods/hephaestus.pw.toml"
 hash = "6050b847bd07bbcd6ed9c5801149cde8a4f2393ba308fc7b86dc3c5ccabfa414"
 metafile = true

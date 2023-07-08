@@ -1,0 +1,13 @@
+name = "Flash"
+filename = "flash-1.18-1.1.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Zmu8jXWA/versions/VweWlWfd/flash-1.18-1.1.1.jar"
+hash-format = "sha1"
+hash = "6c136f7cf0bb65867900a63cffdbcd0002e9fa80"
+
+[update]
+[update.modrinth]
+mod-id = "Zmu8jXWA"
+version = "VweWlWfd"

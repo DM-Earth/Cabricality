@@ -20,7 +20,7 @@ public class ClothConfigScreenAnimator {
 	@ModifyArgs(method = "render", at = @At(value = "INVOKE",
 			target = "Lme/shedaniel/clothconfig2/gui/ClothConfigScreen;overlayBackground(Lnet/minecraft/client/util/math/MatrixStack;Lme/shedaniel/math/Rectangle;IIIII)V"))
 	private void renderOverlayBackground(Args args) {
-		float lerp = (int) Math.pow(CabfBlur.INSTANCE.getProgress() * 255, 1 / 3.0);
+		int lerp = (int) (Math.pow(CabfBlur.INSTANCE.getProgress(), 1 / 3.0) * 255);
 		args.set(5, lerp);
 		args.set(6, lerp);
 	}

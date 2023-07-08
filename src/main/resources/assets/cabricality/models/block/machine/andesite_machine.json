@@ -5,9 +5,11 @@
 		"0": "create:block/axis",
 		"3": "create:block/axis_top",
 		"4": "create:block/andesite_casing_short",
-		"5": "create:block/andesite_funnel_plating",
+		"5": "create:block/funnel/andesite_funnel",
 		"6": "create:block/andesite_casing",
 		"7": "create:block/andesite_casing_very_short",
+		"8": "create:block/andesite_block",
+		"9": "create:block/chute_hole",
 		"particle": "create:block/andesite_casing",
 		"1_2": "create:block/cogwheel",
 		"mechanical_press_pole": "create:block/mechanical_press_pole"
@@ -17,11 +19,11 @@
 			"from": [0, 0, 4],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [8, 1, 16, 9], "texture": "#5"},
+				"north": {"uv": [0, 0, 16, 16], "texture": "#9"},
 				"east": {"uv": [0, 4, 16, 16], "rotation": 270, "texture": "#4"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#6"},
 				"west": {"uv": [0, 4, 16, 16], "rotation": 270, "texture": "#4"},
-				"up": {"uv": [8, 1, 16, 7], "texture": "#5"},
+				"up": {"uv": [0, 8, 6, 16], "rotation": 90, "texture": "#5"},
 				"down": {"uv": [0, 4, 16, 16], "texture": "#4"}
 			}
 		},
@@ -29,10 +31,10 @@
 			"from": [3, 14, 3],
 			"to": [13, 18, 17],
 			"faces": {
-				"north": {"uv": [12, 6, 16, 16], "rotation": 90, "texture": "#7"},
-				"east": {"uv": [0, 0, 14, 4], "texture": "#4"},
-				"south": {"uv": [0, 0, 10, 4], "texture": "#4"},
-				"west": {"uv": [0, 0, 14, 4], "texture": "#4"},
+				"north": {"uv": [0, 6, 4, 16], "rotation": 270, "texture": "#7"},
+				"east": {"uv": [2, 0, 16, 4], "texture": "#8"},
+				"south": {"uv": [3, 0, 13, 4], "texture": "#8"},
+				"west": {"uv": [0, 0, 14, 4], "texture": "#8"},
 				"up": {"uv": [2, 6, 16, 16], "rotation": 90, "texture": "#7"},
 				"down": {"uv": [0, 4, 16, 16], "texture": "#4"}
 			}

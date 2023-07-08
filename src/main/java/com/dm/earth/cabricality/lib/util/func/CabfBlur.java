@@ -43,7 +43,7 @@ public class CabfBlur {
 	}
 
 	public float getProgress() {
-		return Math.min(1, (System.currentTimeMillis() - startTime) / 320.0F);
+		return Math.min(1, (System.currentTimeMillis() - startTime) / 230.0F);
 	}
 
 	@SuppressWarnings("all")
