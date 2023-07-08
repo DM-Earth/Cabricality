@@ -27,7 +27,7 @@ import com.dm.earth.cabricality.lib.resource.assets.gen.item.ItemModelGenerator;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
 import com.simibubi.create.AllTags.AllItemTags;
-import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 
 import net.devtech.arrp.json.models.JModel;
 import net.minecraft.item.Item;
@@ -146,7 +146,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	public static final Item MATTER_PLASTICS = registerItemModeled("matter_plastics",
 			new Item(Properties.DEFAULT.get()),
 			ItemModelGenerator.generated("item", "matter_plastics"));
-	public static final List<String> CRUSHED_ORES = List.of("desh", "ostrum", "calorite", "cobalt");
+	public static final List<String> CRUSHED_RAW_MATERIALS = List.of("desh", "ostrum", "calorite", "cobalt");
 	public static final List<String> DUSTS = List.of("zinc", "desh", "ostrum", "calorite", "cobalt", "diamond",
 			"emerald", "nickel");
 	public static final List<String> PROCESSORS = List.of("calculation", "logic", "engineering");
@@ -214,7 +214,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		});
 
 		// Crushed Ores
-		CRUSHED_ORES.forEach(variant -> {
+		CRUSHED_RAW_MATERIALS.forEach(variant -> {
 			String itemId = "crushed_" + variant + "_ore";
 			registerItemModeled(itemId, new Item(Properties.DEFAULT.get()),
 					ItemModelGenerator.generated("item", "crushed_ore", itemId));
@@ -293,7 +293,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 						Registry.ITEM.get(Cabricality.id(materialIndex.getName() + "_saw"))));
 		DUSTS.forEach(variant -> handler.register(C.id(variant, "_dusts"),
 				Registry.ITEM.get(Cabricality.id(variant + "_dust"))));
-		CRUSHED_ORES.forEach(variant -> handler.register(AllItemTags.CRUSHED_ORES.tag,
+		CRUSHED_RAW_MATERIALS.forEach(variant -> handler.register(AllItemTags.CRUSHED_RAW_MATERIALS.tag,
 				Registry.ITEM.get(Cabricality.id("crushed_" + variant + "_ore"))));
 
 		handler.register(C.id("enderium_ingots"), ENDERIUM_INGOT);

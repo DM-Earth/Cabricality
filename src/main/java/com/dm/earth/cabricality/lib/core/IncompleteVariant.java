@@ -1,8 +1,8 @@
 package com.dm.earth.cabricality.lib.core;
 
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
-import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;

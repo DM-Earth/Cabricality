@@ -4,7 +4,7 @@ import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
-import com.simibubi.create.content.contraptions.components.deployer.ManualApplicationRecipe;
+import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;

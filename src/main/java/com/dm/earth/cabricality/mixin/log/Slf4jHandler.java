@@ -1,6 +1,5 @@
 package com.dm.earth.cabricality.mixin.log;
 
-import dev.architectury.networking.fabric.NetworkManagerImpl;
 import net.minecraft.resource.ReloadableResourceManager;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.Util;
@@ -15,14 +14,6 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import com.dm.earth.cabricality.lib.util.debug.Slf4jLogger;
 
 public class Slf4jHandler {
-	@Mixin(NetworkManagerImpl.class)
-	static class ArchitecturyLogger {
-		@Mutable
-		@Shadow(remap = false)
-		@Final
-		private static Logger LOGGER = new Slf4jLogger();
-	}
-
 	@Mixin(MinecraftServer.class)
 	static class MinecraftServerLogger {
 		@ModifyArg(method = "save", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/MinecraftServer;saveAllWorlds(ZZZ)Z"), index = 0)

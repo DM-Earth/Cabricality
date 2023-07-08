@@ -12,7 +12,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction.Axis;
 import net.minecraft.world.World;
 
-import com.simibubi.create.content.contraptions.wrench.WrenchItem;
+import com.simibubi.create.content.equipment.wrench.WrenchItem;
 import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import io.github.coolmineman.bitsandchisels.BitsBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;

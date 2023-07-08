@@ -26,7 +26,7 @@ public class ContextMenuAnimator {
 	@Unique
 	private final Animation animation = new Animation(0, 1, 200, Curves.LINEAR);
 
-	@Inject(method = "<init>", at = @At("TAIL"))
+	@Inject(method = "<init>", at = @At("TAIL"), remap = false)
 	private void init(Panel panel, List<ContextMenuItem> contextMenuItems, CallbackInfo ci) {
 		animation.restart();
 	}

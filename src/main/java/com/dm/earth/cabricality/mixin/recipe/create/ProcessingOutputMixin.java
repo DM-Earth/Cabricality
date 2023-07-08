@@ -1,7 +1,7 @@
 package com.dm.earth.cabricality.mixin.recipe.create;
 
 import com.dm.earth.cabricality.lib.resource.data.recipe.ProcessItemOutputCallback;
-import com.simibubi.create.content.contraptions.processing.ProcessingOutput;
+import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

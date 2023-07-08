@@ -3,12 +3,12 @@ package com.dm.earth.cabricality.lib.math;
 import static com.dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
+import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.simibubi.create.content.contraptions.components.crafter.MechanicalCraftingRecipe;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -5,11 +5,11 @@ import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
 import java.util.Arrays;
 import java.util.List;
 
+import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
 import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
 
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
-import com.simibubi.create.content.contraptions.goggles.IHaveGoggleInformation;
 
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;

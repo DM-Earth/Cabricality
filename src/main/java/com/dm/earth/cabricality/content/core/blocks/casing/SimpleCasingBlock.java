@@ -6,7 +6,7 @@ import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerat
 
 import org.jetbrains.annotations.Nullable;
 
-import com.simibubi.create.content.contraptions.base.CasingBlock;
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
 
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.util.Identifier;

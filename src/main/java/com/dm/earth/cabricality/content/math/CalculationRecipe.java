@@ -5,7 +5,7 @@ import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import com.dm.earth.cabricality.content.math.core.Calculable;
 import com.dm.earth.cabricality.content.math.item.NumberItem;
-import com.simibubi.create.content.contraptions.components.crafter.MechanicalCraftingInventory;
+import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingInventory;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
