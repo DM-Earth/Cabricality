@@ -83,7 +83,7 @@ public enum ModEntry {
 	}
 
 	public Identifier id(String... path) {
-		return new Identifier(this.modId, String.join("/", path));
+		return new Identifier(this.modid, String.join("/", path));
 	}
 
 	public Item asItem(String... paths) {
