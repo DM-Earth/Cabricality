@@ -66,9 +66,7 @@ dependencies {
     modImplementation libs.quilted.fabric.api
 
     // Create
-    modImplementation ("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_version}+${project.minecraft_version}") {
-        exclude group:"com.github.AlphaMode"
-    }
+    modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
 
     // Linkaged Mods
     // - Miscellaneous
