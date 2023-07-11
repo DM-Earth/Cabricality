@@ -23,17 +23,25 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+		final AtomicBoolean shouldApply = new AtomicBoolean(true);
+
 		if (mixinClassName.startsWith("com.dm.earth.cabricality")) {
-			AtomicBoolean ret = new AtomicBoolean(true);
-			String[] modIds = { "ftbquests", "ftblibrary" };
-			Arrays.stream(modIds).forEach(id -> {
-				if (targetClassName.matches(".*\\." + id + "\\..*"))
-					ret.set(QuiltLoader.isModLoaded(id));
-			});
-			if (mixinClassName.matches(".*\\.log\\..*"))
-				return Cabricality.CONFIG.cleanerLog;
+			// Required mods
+			requiredMods: {
+				String[] modIds = { "ftbquests", "ftblibrary" };
+				Arrays.stream(modIds).forEach(id -> {
+					if (targetClassName.matches(".*\\." + id + "\\..*"))
+						shouldApply.set(QuiltLoader.isModLoaded(id));
+				});
+			}
+
+			// Loggers
+			loggers: {
+				if (mixinClassName.matches(".*\\.log\\..*"))
+					shouldApply.set(Cabricality.CONFIG.cleanerLog);
+			}
 		}
-		return true;
+		return shouldApply.get();
 	}
 
 	@Override
