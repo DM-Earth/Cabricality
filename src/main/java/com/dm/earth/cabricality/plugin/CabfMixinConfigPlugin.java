@@ -41,6 +41,7 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 					shouldApply.set(Cabricality.CONFIG.cleanerLog);
 			}
 		}
+		
 		return shouldApply.get();
 	}
 
