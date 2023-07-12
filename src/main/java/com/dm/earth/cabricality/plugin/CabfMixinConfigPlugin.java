@@ -38,10 +38,10 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 			// Loggers
 			loggers: {
 				if (mixinClassName.matches(".*\\.log\\..*"))
-					shouldApply.set(Cabricality.CONFIG.cleanerLog);
+					shouldApply.set(Cabricality.CONFIG.cleanerLog());
 			}
 		}
-		
+
 		return shouldApply.get();
 	}
 

@@ -8,7 +8,7 @@ import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
-import net.krlite.equator.visual.animation.Animation;
+import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.minecraft.client.util.math.MatrixStack;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,11 +24,11 @@ import java.util.List;
 @Mixin(ContextMenu.class)
 public class ContextMenuAnimator {
 	@Unique
-	private final Animation animation = new Animation(0, 1, 200, Curves.Back.OUT);
+	private final AnimatedDouble animation = new AnimatedDouble(0, 1, 200, Curves.Back.OUT);
 
 	@Inject(method = "<init>", at = @At("TAIL"), remap = false)
 	private void init(Panel panel, List<ContextMenuItem> contextMenuItems, CallbackInfo ci) {
-		animation.restart();
+		animation.replay();
 	}
 
 	@Redirect(method = "draw", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))

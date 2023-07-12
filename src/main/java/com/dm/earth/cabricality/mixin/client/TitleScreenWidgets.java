@@ -1,6 +1,11 @@
 package com.dm.earth.cabricality.mixin.client;
 
+import com.dm.earth.cabricality.client.CabricalityClient;
+import net.minecraft.client.gui.RotatingCubeMapRenderer;
+import net.minecraft.client.util.math.MatrixStack;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -21,6 +26,10 @@ import net.minecraft.util.Identifier;
 
 @Mixin(TitleScreen.class)
 public class TitleScreenWidgets extends Screen {
+	@Shadow
+	@Final
+	private RotatingCubeMapRenderer backgroundRenderer;
+
 	protected TitleScreenWidgets(Text title) {
 		super(title);
 	}
@@ -33,8 +42,8 @@ public class TitleScreenWidgets extends Screen {
 					? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
 					: new TranslatableText(
 							Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mod_plural"),
-							CabfModDeps.getAllMissing().size()))
-					.formatted(Formatting.RED);
+							CabfModDeps.getAllMissing().size()
+			)).formatted(Formatting.RED);
 			this.addDrawableChild(
 					new PlainTextButtonWidget(
 							this.width / 2 - this.textRenderer.getWidth(warning) / 2, 2,
@@ -57,5 +66,10 @@ public class TitleScreenWidgets extends Screen {
 	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V", ordinal = 2))
 	private void renderMinecraftSubtitle(int layer, Identifier identifier) {
 		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE.identifier());
+	}
+
+	@Inject(method = "render", at = @At("RETURN"))
+	private void updateCubeMapRenderer(MatrixStack matrixStack, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+		CabricalityClient.cubeMapRenderer(backgroundRenderer);
 	}
 }

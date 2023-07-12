@@ -464,6 +464,9 @@
 
   "config.cabricality.category.general": "通用",
 
+  "config.cabricality.general.include_version_in_window_title"        : "窗口标题显示整合包版本",
+  "config.cabricality.general.include_version_in_window_title.tooltip": "§7是否在窗口标题中显示整合包版版本\n§c你需要关闭此设置界面以使改动生效",
+
   "config.cabricality.general.background_blur"        : "背景模糊",
   "config.cabricality.general.background_blur.tooltip": "§7是否启用背景模糊效果",
 
@@ -528,10 +531,13 @@
   "mod.questsadditions.name": "Quests Additions 模组",
   "mod.itemfilters.name"    : "Item Filters 模组",
 
-  "screen.cabricality.config.title"            : "永无止境：重缝",
-  "screen.cabricality.missing_mod.title"       : "缺少以下模组",
-  "screen.cabricality.missing_mod.title_plural": "缺少以下模组",
-  "screen.cabricality.missing_mod.subtitle"    : "点击下载",
+  "screen.cabricality.config.title": "永无止境：重缝",
+
+  "screen.cabricality.missing_mod.title"          : "§l你需要手动下载以下模组",
+  "screen.cabricality.missing_mod.title_plural"   : "§l你需要手动下载以下§c§l%d个§r§l模组",
+  "screen.cabricality.missing_mod.subtitle"       : "因为许可证不允许，永无止境：重缝无法为你下载这个模组",
+  "screen.cabricality.missing_mod.subtitle_plural": "因为许可证不允许，永无止境：重缝无法为你下载这些模组",
+  "screen.cabricality.missing_mod.description"    : "§7§o（点击下载）",
 
   "screen.cabricality.title_screen.warning_missing_mod"       : "缺少1个模组！",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "缺少%d个模组！",

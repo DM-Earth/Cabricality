@@ -7,42 +7,42 @@ import org.jetbrains.annotations.NotNull;
 
 public class CabfLogger {
 	public static void logInfo(@NotNull String message) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.info("[" + NAME + "] " + message);
 	}
 
 	public static void logWarn(@NotNull String message) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.warn("[" + NAME + "] " + message);
 	}
 
 	public static void logError(@NotNull String message) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.error("[" + NAME + "] " + message);
 	}
 
 	public static void logError(@NotNull String message, @NotNull Throwable throwable) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.error("[" + NAME + "] " + message, throwable);
 	}
 
 	public static void logDebug(@NotNull String message) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.debug("[" + NAME + "] " + message);
 	}
 
 	public static void logDebug(@NotNull String message, @NotNull Throwable throwable) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.debug("[" + NAME + "] " + message, throwable);
 	}
 
 	public static void logTrace(@NotNull String message) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.trace("[" + NAME + "] " + message);
 	}
 
 	public static void logTrace(@NotNull String message, @NotNull Throwable throwable) {
-		if (CONFIG.debugInfo)
+		if (CONFIG.debugInfo())
 			LOGGER.trace("[" + NAME + "] " + message, throwable);
 	}
 

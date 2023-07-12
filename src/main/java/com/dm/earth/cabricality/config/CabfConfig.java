@@ -14,15 +14,71 @@ public class CabfConfig extends Pierced {
 		load();
 	}
 
-	public boolean backgroundBlur = false;
+	private boolean includeVersionInWindowTitle = false;
 
-	public boolean backgroundBlurDarken = true;
+	public boolean includeVersionInWindowTitle() {
+		return includeVersionInWindowTitle;
+	}
 
-	public float backgroundBlurRadius = 9;
+	public void includeVersionInWindowTitle(boolean includeVersionInGameTitle) {
+		this.includeVersionInWindowTitle = includeVersionInGameTitle;
+		save();
+	}
+
+	private boolean backgroundBlur = false;
+
+	public boolean backgroundBlur() {
+		return backgroundBlur;
+	}
+
+	public void backgroundBlur(boolean backgroundBlur) {
+		this.backgroundBlur = backgroundBlur;
+		save();
+	}
+
+	private boolean backgroundBlurDarken = true;
+
+	public boolean backgroundBlurDarken() {
+		return backgroundBlurDarken;
+	}
+
+	public void backgroundBlurDarken(boolean backgroundBlurDarken) {
+		this.backgroundBlurDarken = backgroundBlurDarken;
+		save();
+	}
+
+	private float backgroundBlurRadius = 9;
+
+	public float backgroundBlurRadius() {
+		return backgroundBlurRadius;
+	}
+
+	public void backgroundBlurRadius(float backgroundBlurRadius) {
+		this.backgroundBlurRadius = backgroundBlurRadius;
+		save();
+	}
 
 	@Table("debug")
-	public boolean debugInfo = false;
+	private boolean debugInfo = false;
+
+	public boolean debugInfo() {
+		return debugInfo;
+	}
+
+	public void debugInfo(boolean debugInfo) {
+		this.debugInfo = debugInfo;
+		save();
+	}
 
 	@Table("debug")
-	public boolean cleanerLog = true;
+	private boolean cleanerLog = true;
+
+	public boolean cleanerLog() {
+		return cleanerLog;
+	}
+
+	public void cleanerLog(boolean cleanerLog) {
+		this.cleanerLog = cleanerLog;
+		save();
+	}
 }

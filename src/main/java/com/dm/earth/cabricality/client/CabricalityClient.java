@@ -2,6 +2,8 @@ package com.dm.earth.cabricality.client;
 
 import java.util.Arrays;
 
+import net.minecraft.client.gui.RotatingCubeMapRenderer;
+import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -31,6 +33,8 @@ import net.minecraft.client.render.RenderLayer;
 @ClientOnly
 public class CabricalityClient implements ClientModInitializer {
 	public static String ID = Cabricality.ID + "Client";
+	@Nullable
+	private static RotatingCubeMapRenderer cubeMapRenderer;
 	private static long initTime = -1;
 
 	public static void finishLoading() {
@@ -78,5 +82,14 @@ public class CabricalityClient implements ClientModInitializer {
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
 				ResourcePackActivationType.ALWAYS_ENABLED,
 				Cabricality.genTranslatableText("pack", "quests_lang"));
+	}
+
+	public static void cubeMapRenderer(RotatingCubeMapRenderer cubeMapRenderer) {
+		CabricalityClient.cubeMapRenderer = cubeMapRenderer;
+	}
+
+	@Nullable
+	public static RotatingCubeMapRenderer cubeMapRenderer() {
+		return cubeMapRenderer;
 	}
 }

@@ -34,33 +34,39 @@ public class CabfConfigScreen extends Screen {
 
 	private void initEntries() {
 		// General
-		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "background_blur"), CONFIG.backgroundBlur)
+		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "include_version_in_window_title"), CONFIG.includeVersionInWindowTitle())
+								 .setDefaultValue(true)
+								 .setTooltip(Cabricality.genTranslatableText("config", "general", "include_version_in_window_title", "tooltip"))
+								 .setSaveConsumer(CONFIG::includeVersionInWindowTitle)
+								 .build());
+
+		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "background_blur"), CONFIG.backgroundBlur())
 								 .setDefaultValue(true)
 								 .setTooltip(Cabricality.genTranslatableText("config", "general", "background_blur", "tooltip"))
-								 .setSaveConsumer(value -> CONFIG.backgroundBlur = value)
+								 .setSaveConsumer(CONFIG::backgroundBlur)
 								 .build());
 
-		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "background_blur_darken"), CONFIG.backgroundBlurDarken)
+		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "background_blur_darken"), CONFIG.backgroundBlurDarken())
 								 .setDefaultValue(true)
 								 .setTooltip(Cabricality.genTranslatableText("config", "general", "background_blur_darken", "tooltip"))
-								 .setSaveConsumer(value -> CONFIG.backgroundBlurDarken = value)
+								 .setSaveConsumer(CONFIG::backgroundBlurDarken)
 								 .build());
 
-		general.addEntry(entryBuilder.startIntSlider(Cabricality.genTranslatableText("config", "general", "background_blur_radius"), Math.round(CONFIG.backgroundBlurRadius), 1, 128)
+		general.addEntry(entryBuilder.startIntSlider(Cabricality.genTranslatableText("config", "general", "background_blur_radius"), Math.round(CONFIG.backgroundBlurRadius()), 1, 128)
 								 .setDefaultValue(35)
 								 .setTooltip(Cabricality.genTranslatableText("config", "general", "background_blur_radius", "tooltip"))
-								 .setSaveConsumer(value -> CONFIG.backgroundBlurRadius = value.floatValue())
+								 .setSaveConsumer(value -> CONFIG.backgroundBlurRadius(value.floatValue()))
 								 .build());
 
 		// Debug
-		debug.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "debug", "debug_info"), CONFIG.debugInfo)
+		debug.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "debug", "debug_info"), CONFIG.debugInfo())
 							   .setDefaultValue(false)
-							   .setSaveConsumer(value -> CONFIG.debugInfo = value)
+							   .setSaveConsumer(CONFIG::debugInfo)
 							   .build());
 
-		debug.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "debug", "cleaner_log"), CONFIG.cleanerLog)
+		debug.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "debug", "cleaner_log"), CONFIG.cleanerLog())
 							   .setDefaultValue(true)
-							   .setSaveConsumer(value -> CONFIG.cleanerLog = value)
+							   .setSaveConsumer(CONFIG::cleanerLog)
 							   .build());
 	}
 }

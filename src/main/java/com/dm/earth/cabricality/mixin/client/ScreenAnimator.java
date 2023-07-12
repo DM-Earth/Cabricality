@@ -22,13 +22,10 @@ public class ScreenAnimator {
 
 	@Inject(method = "tick", at = @At("HEAD"))
 	private void tick(CallbackInfo ci) {
-		if (this.client != null)
-			CabfBlur.INSTANCE.onScreenChange(this.client.currentScreen);
+		if (this.client != null) CabfBlur.INSTANCE.onScreenChange(this.client.currentScreen);
 	}
 
-	@ModifyArgs(method = "renderBackground(Lnet/minecraft/client/util/math/MatrixStack;I)V",
-			at = @At(value = "INVOKE",
-					target = "Lnet/minecraft/client/gui/screen/Screen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"))
+	@ModifyArgs(method = "renderBackground(Lnet/minecraft/client/util/math/MatrixStack;I)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/Screen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"))
 	private void renderBackground(Args args) {
 		CabfBlur.blurBackground(args, 5, 6);
 	}

@@ -14,7 +14,7 @@ import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.math.geometry.flat.Vector;
 import net.krlite.equator.render.renderer.Flat;
-import net.krlite.equator.visual.animation.Animation;
+import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
@@ -42,7 +42,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 	}
 
 	@Unique
-	private final Animation animation = new Animation(0, 1, 720, Curves.LINEAR);
+	private final AnimatedDouble animation = new AnimatedDouble(0, 1, 720, Curves.LINEAR);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {
@@ -83,7 +83,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 
 	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
 	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
-		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(animation::restart);
+		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(animation::replay);
 		double lerp = Math.pow(animation.value(), 1 / 3.0);
 
 		Box.fromCartesian(x, y, w, h).render(matrixStack, 0,

@@ -12,7 +12,7 @@ import dev.ftb.mods.ftbquests.gui.quests.ChapterPanel;
 import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
-import net.krlite.equator.visual.animation.Animation;
+import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.MutableText;
@@ -38,11 +38,11 @@ public abstract class ChapterPanelAnimator {
 	abstract boolean isPinned();
 
 	@Unique
-	private final Animation animation = new Animation(0, 1, 320, Curves.Bounce.OUT);
+	private final AnimatedDouble animation = new AnimatedDouble(0, 1, 320, Curves.Bounce.OUT);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		PushUtil.ANIMATE_CHAPTER_PANEL.or((!this.expanded && !this.isPinned()), animation::restart);
+		PushUtil.ANIMATE_CHAPTER_PANEL.or((!this.expanded && !this.isPinned()), animation::replay);
 
 		Box chapterBox = Box.fromCartesian(x, y, w * animation.value(), h);
 

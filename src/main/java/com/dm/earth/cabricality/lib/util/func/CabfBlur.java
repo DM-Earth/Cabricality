@@ -26,7 +26,7 @@ public class CabfBlur {
 	private static final List<Class<? extends Screen>> EXCLUDED_SCREENS = new ArrayList<>();
 	private final ManagedShaderEffect BLUR = ShaderEffectManager.getInstance().manage(
 			Cabricality.id("shaders", "post", "fade_in_blur.json"),
-			managedShaderEffect -> managedShaderEffect.setUniformValue("Radius", Cabricality.CONFIG.backgroundBlurRadius));
+			managedShaderEffect -> managedShaderEffect.setUniformValue("Radius", Cabricality.CONFIG.backgroundBlurRadius()));
 	private final Uniform1f PROGRESS = BLUR.findUniform1f("Progress");
 	private long startTime;
 
@@ -36,7 +36,7 @@ public class CabfBlur {
 		ShaderEffectRenderCallback.EVENT.register(tickDelta -> {
 			if (startTime > 0) {
 				PROGRESS.set(getProgress());
-				if (Cabricality.CONFIG.backgroundBlur)
+				if (Cabricality.CONFIG.backgroundBlur())
 					BLUR.render(tickDelta);
 			}
 		});
@@ -53,14 +53,14 @@ public class CabfBlur {
 				startTime = -1;
 				PushUtil.BLUR_FADE.push();
 			} else {
-				BLUR.setUniformValue("Radius", Cabricality.CONFIG.backgroundBlurRadius);
+				BLUR.setUniformValue("Radius", Cabricality.CONFIG.backgroundBlurRadius());
 				PushUtil.BLUR_FADE.pull(() -> startTime = System.currentTimeMillis());
 			}
 		}
 	}
 
 	public static void blurBackground(Args args, int argColorFirst, int argColorSecond) {
-		if (!Cabricality.CONFIG.backgroundBlur || Cabricality.CONFIG.backgroundBlurDarken) {
+		if (!Cabricality.CONFIG.backgroundBlur() || Cabricality.CONFIG.backgroundBlurDarken()) {
 			float lerp = (float) Math.pow(INSTANCE.getProgress(), 1 / 3.0);
 			AccurateColor first = AccurateColor.fromARGB(0xC0101010L), second = AccurateColor.fromARGB(0xD0101010L);
 			args.set(argColorFirst, first.opacity(first.opacity() * lerp).toColor().getRGB());

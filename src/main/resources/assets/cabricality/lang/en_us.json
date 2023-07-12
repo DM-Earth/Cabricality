@@ -464,6 +464,9 @@
 
   "config.cabricality.category.general": "General",
 
+  "config.cabricality.general.include_version_in_window_title"        : "Include Version in Window Title",
+  "config.cabricality.general.include_version_in_window_title.tooltip": "§7Whether to include version components in the window title\n§cYou may need to close this config screen to see changes",
+
   "config.cabricality.general.background_blur"        : "Background Blur",
   "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
 
@@ -528,10 +531,13 @@
   "mod.questsadditions.name": "Quests Additions",
   "mod.itemfilters.name"    : "Item Filters",
 
-  "screen.cabricality.config.title"            : "Cabricality",
-  "screen.cabricality.missing_mod.title"       : "Cabricality is Missing Mod",
-  "screen.cabricality.missing_mod.title_plural": "Cabricality is Missing Mods",
-  "screen.cabricality.missing_mod.subtitle"    : "Click to download",
+  "screen.cabricality.config.title": "Cabricality",
+
+  "screen.cabricality.missing_mod.title"          : "§lYou Need to Download §c§l1§r§l Mod Manually",
+  "screen.cabricality.missing_mod.title_plural"   : "§lYou Need to Download §c§l%d§r§l Mods Manually",
+  "screen.cabricality.missing_mod.subtitle"       : "Due to some licensing reasons, Cabricality cannot download it for you",
+  "screen.cabricality.missing_mod.subtitle_plural": "Due to some licensing reasons, Cabricality cannot download them for you",
+  "screen.cabricality.missing_mod.description"    : "§7§o(Click to download)",
 
   "screen.cabricality.title_screen.warning_missing_mod"       : "Missing 1 Mod!",
   "screen.cabricality.title_screen.warning_missing_mod_plural": "Missing %d Mods!",
