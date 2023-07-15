@@ -24,7 +24,7 @@ body:
     attributes:
       label: Steps to Reproduce
       description: Tell us how to reproduce the bug.
-      placeholder: |
+      placeholder: ｜
         E.g.,
         1. Nevigate to ...
         2. Click on ...
@@ -32,29 +32,12 @@ body:
         ...
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Minecraft Version
-      description: What is your `Minecraft` version?
-      options:
-        - 1.18.2 (Default)
-    validations:
-      required: true
   - type: input
-    id: create-version
+    id: cabf-version
     attributes:
-      label: Create Version
-      description: What is your `Create` version?
-      placeholder: E.g., 0.5.0.g-836
-    validations:
-      required: true
-  - type: input
-    id: create-encases-version
-    attributes:
-      label: "Create: Encases Version"
-      description: "What is your `Create: Encases` version?"
-      placeholder: E.g., 1.0.0
+      label: "Cabricality Version"
+      description: "What is your `Cabricality` version?"
+      placeholder: E.g., 0.3
     validations:
       required: true
   - type: input
