@@ -8,7 +8,7 @@ import net.minecraft.client.gui.screen.Screen;
 
 import static com.dm.earth.cabricality.Cabricality.CONFIG;
 
-public class CabfConfigScreen extends Screen {
+public class CabfConfigScreen {
 	private final ConfigBuilder builder = ConfigBuilder.create()
 												  .setTitle(Cabricality.genTranslatableText("screen", "config", "title"))
 												  .transparentBackground()
@@ -16,8 +16,7 @@ public class CabfConfigScreen extends Screen {
 	private final ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
 	public CabfConfigScreen(Screen parent) {
-		super(Cabricality.genTranslatableText("screen", "config", "title"));
-		this.builder.setParentScreen(parent);
+		builder.setParentScreen(parent);
 		initEntries();
 	}
 
