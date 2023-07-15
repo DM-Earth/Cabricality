@@ -1,0 +1,25 @@
+name: Mod Propose
+description: Propose a mod
+title: "[MOD]: "
+labels: ["mod propose"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this mod propose!
+  - type: input
+    id: mod-link
+    attributes:
+      label: "Mod Link"
+      description: "Put the mod's link here."
+      placeholder: E.g., https://modrinth.com/mod/fabric-api
+    validations:
+      required: true
+  - type: textarea
+    id: propose-reason
+    attributes:
+      label: Propose Reason?
+      description: Inform us your reason to propose the mod.
+      placeholder: E.g., it has a convenient feature that is benificial to players...
+    validations:
+      required: true
