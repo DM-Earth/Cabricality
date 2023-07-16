@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.entity.player.PlayerEntity;
 import org.apache.commons.io.IOUtils;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import com.dm.earth.cabricality.Cabricality;
@@ -254,6 +257,7 @@ public class CabfCreditsScreen extends Screen {
 	}
 
 	private void addCreditsFile(InputStreamReader reader) {
+		// Implemented from CreditsScreen so it may be a mess
 		JsonArray jsonArray = JsonHelper.m_lxlopfmi(reader);
 
 		for (JsonElement jsonElement : jsonArray) {
@@ -273,7 +277,9 @@ public class CabfCreditsScreen extends Screen {
 				this.addText((new LiteralText(string2)).formatted(Formatting.GRAY), false);
 
 				for (JsonElement jsonElement3 : jsonArray3) {
+					PlayerEntity player = MinecraftClient.getInstance().player;
 					String string3 = jsonElement3.getAsString();
+					if (player != null) string3 = string3.replaceAll("PLAYERNAME", player.getName().asString());
 					this.addText((new LiteralText("           ")).append(string3)
 							.formatted(Formatting.WHITE), false);
 				}

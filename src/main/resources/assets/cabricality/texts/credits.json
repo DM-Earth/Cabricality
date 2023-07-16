@@ -4,9 +4,7 @@
     "titles": [
       {
         "title": "",
-        "names": [
-          "Mojang Studios, Stockholm, Sweden"
-        ]
+        "names": ["Mojang Studios, Stockholm, Sweden"]
       }
     ]
   },
@@ -15,9 +13,7 @@
     "titles": [
       {
         "title": "Original Author",
-        "names": [
-          "Simibubi"
-        ]
+        "names": ["Simibubi"]
       }
     ]
   },
@@ -26,24 +22,15 @@
     "titles": [
       {
         "title": "Modpack Author",
-        "names": [
-          "Yjn024"
-        ]
+        "names": ["Yjn024"]
       },
       {
         "title": "Game Designers",
-        "names": [
-          "Yjn024",
-          "KrLite",
-          "IcedDog"
-        ]
+        "names": ["Yjn024", "KrLite", "IcedDog"]
       },
       {
         "title": "Translators",
-        "names": [
-          "KrLite",
-          "MangoJellyPudding"
-        ]
+        "names": ["KrLite", "MangoJellyPudding"]
       }
     ]
   },
@@ -52,22 +39,15 @@
     "titles": [
       {
         "title": "UI Designer",
-        "names": [
-          "KrLite"
-        ]
+        "names": ["KrLite"]
       },
       {
         "title": "Language Experiencing",
-        "names": [
-          "KrLite",
-          "Yjn024"
-        ]
+        "names": ["KrLite", "Yjn024"]
       },
       {
         "title": "Visual Promotion",
-        "names": [
-          "KrLite"
-        ]
+        "names": ["KrLite"]
       }
     ]
   },
@@ -76,11 +56,7 @@
     "titles": [
       {
         "title": "Game Developers",
-        "names": [
-          "Yjn024",
-          "KrLite",
-          "IcedDog"
-        ]
+        "names": ["Yjn024", "KrLite", "IcedDog"]
       }
     ]
   },
@@ -91,15 +67,19 @@
         "title": "",
         "names": [
           "Derpford",
+          "EvanHsieh0415 §7@MangoJellyPudding",
           "hrsthrt74",
           "IcedDog",
-          "KrLite",
-          "MangoJellyPudding",
+		  "LaoZuan §7@虾虾",
+		  "letrad",
           "Not-too",
           "NyakoFox",
+		  "Ratismal",
           "RogenDong",
           "SylviBlossom",
-          "§cAnd You"
+		  "TexBlock §7@Tex-Bocchi-True",
+		  "ZZZank",
+          "§cAnd You, PLAYERNAME"
         ]
       }
     ]

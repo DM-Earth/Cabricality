@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.mixin.client;
 
 import com.dm.earth.cabricality.lib.util.PushUtil;
+import com.dm.earth.cabricality.lib.util.ScreenUtil;
 import com.dm.earth.cabricality.lib.util.func.Pusher;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.render.frame.FrameInfo;
@@ -26,6 +27,8 @@ import com.dm.earth.cabricality.lib.util.func.CabfBlur;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 
+import java.util.Arrays;
+
 @Mixin(Screen.class)
 public class ScreenAnimator {
 	@Shadow
@@ -45,9 +48,20 @@ public class ScreenAnimator {
 
 @Mixin(MinecraftClient.class)
 class PostScreenTriggerer {
+	@Shadow
+	@Nullable
+	public Screen currentScreen;
+
 	@Inject(method = "setScreen", at = @At("HEAD"))
 	private void setScreen(@Nullable Screen screen, CallbackInfo ci) {
-		if (screen == null) PushUtil.POST_SCREEN.push();
+		if (
+				screen == null && (
+						currentScreen != null
+								&& !Arrays.asList(ScreenUtil.UNEXTENDED_SCREENS).contains(currentScreen.getClass())
+				)
+		) {
+			PushUtil.POST_SCREEN.push();
+		}
 	}
 }
 
