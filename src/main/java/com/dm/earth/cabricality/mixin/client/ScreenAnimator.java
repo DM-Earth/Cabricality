@@ -13,6 +13,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
@@ -52,6 +53,7 @@ class PostScreenTriggerer {
 
 @Mixin(GameRenderer.class)
 class PostScreenAnimator {
+	@Unique
 	private static final Animation<Double> opacity = new AnimatedDouble(1, 0, 450, Curves.Exponential.Quadratic.OUT);
 
 	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/hud/InGameHud;render(Lnet/minecraft/client/util/math/MatrixStack;F)V"))
