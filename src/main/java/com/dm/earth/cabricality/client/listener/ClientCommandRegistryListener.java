@@ -12,9 +12,11 @@ import com.mojang.brigadier.CommandDispatcher;
 public class ClientCommandRegistryListener implements ClientCommandRegistrationCallback {
 	@Override
 	public void registerCommands(CommandDispatcher<QuiltClientCommandSource> dispatcher) {
-		dispatcher.register(literal(CabricalityClient.ID)
-				.then(literal("genTradingQuests").executes(new GenTradingQuestsCommand()))
-				.then(literal("heldItemInfo").executes(new HeldItemInfoCommand())));
+		dispatcher.register(
+				literal(CabricalityClient.ID)
+						.then(literal("genTradingQuests").executes(new GenTradingQuestsCommand()))
+						.then(literal("heldItemInfo").executes(new HeldItemInfoCommand()))
+		);
 
 		dispatcher.register(literal("i").executes(new HeldItemInfoCommand())); // Alias
 	}

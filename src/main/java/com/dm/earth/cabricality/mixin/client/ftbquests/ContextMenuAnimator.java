@@ -9,6 +9,7 @@ import dev.ftb.mods.ftblibrary.ui.Theme;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
+import net.krlite.equator.visual.animation.base.Animation;
 import net.minecraft.client.util.math.MatrixStack;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,7 +25,7 @@ import java.util.List;
 @Mixin(ContextMenu.class)
 public class ContextMenuAnimator {
 	@Unique
-	private final AnimatedDouble animation = new AnimatedDouble(0, 1, 200, Curves.Back.OUT);
+	private static final Animation<Double> animation = new AnimatedDouble(0, 1, 250, Curves.Back.OUT);
 
 	@Inject(method = "<init>", at = @At("TAIL"), remap = false)
 	private void init(Panel panel, List<ContextMenuItem> contextMenuItems, CallbackInfo ci) {
@@ -36,9 +37,9 @@ public class ContextMenuAnimator {
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
-		Box.fromCartesian(x, y, w, h).scaleCenter(1 + 1.7 * (1 - animation.value()))
-				.render(matrixStack, 0,
-						flat -> flat.new Rectangle(Cabricality.Colors.CABF_BRIGHT_PURPLE.opacity(Math.min(1, 0.32 * Math.pow(animation.value(), 2))))
+		Box.fromCartesian(x, y, w, h).scaleCenter(1 + 1.2 * (1 - animation.value()))
+				.render(matrixStack,
+						flat -> flat.new Rectangle(Cabricality.Colors.CABF_DIM_PURPLE.opacity(Math.min(1, 0.75 * Math.pow(animation.value(), 2))))
 				);
 	}
 }

@@ -48,7 +48,7 @@ public class SplashModifier {
 		Mouse.Callbacks.Move.EVENT.register(position -> {
 			if (FrameInfo.scaled().contains(position)) {
 				Vector diff = position.subtract(FrameInfo.scaled().center());
-				double scalar = diff.magnitude() / FrameInfo.scaled().d();
+				double scalar = diff.magnitude() / (FrameInfo.scaled().d() / 2);
 
 				shifting.target(diff.scale(Theory.approximation(scalar, 0.1, 1)));
 			} else shifting.target(Vector.ZERO);
@@ -86,6 +86,8 @@ public class SplashModifier {
 			opacity = logoOpacity = 1;
 		}
 
+		Vector shift = shifting.value().interpolate(Vector.ZERO, 1 - opacity);
+
 		// Background
 		background: {
 			FrameInfo.scaled()
@@ -104,7 +106,7 @@ public class SplashModifier {
 			FrameInfo.scaled()
 					.squareInner()
 					.scaleCenter(0.8)
-					.shift(shifting.value().scale(0.85))
+					.shift(shift.scale(-0.05))
 					.render(matrixStack,
 							flat -> flat.new Oval()
 											.offset(offset)
@@ -125,7 +127,7 @@ public class SplashModifier {
 					.squareInner()
 					.scaleCenter(0.7)
 					.scaleCenter(1 + 1.1 * Math.pow(1 - logoOpacity, 1D / 2D))
-					.shift(shifting.value())
+					.shift(shift.scale(0.05))
 					.render(matrixStack,
 							flat -> flat.new Oval()
 											.colorCenter(Cabricality.Colors.CABF_MID_PURPLE)
@@ -139,7 +141,8 @@ public class SplashModifier {
 			FrameInfo.scaled()
 					.squareInner()
 					.scaleCenter(0.55)
-					.shift(shifting.value().scale(2))
+					.scaleCenter(1 + 0.1 * shifting.value().magnitude() / (FrameInfo.scaled().d() / 2))
+					.shift(shift)
 					.render(matrixStack,
 							flat -> flat.new Rectangle()
 											.texture(Cabricality.Textures.CABRICALITY_LOGO_NEON)

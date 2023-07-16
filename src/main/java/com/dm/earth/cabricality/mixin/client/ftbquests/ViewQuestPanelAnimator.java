@@ -15,6 +15,7 @@ import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.math.geometry.flat.Vector;
 import net.krlite.equator.render.renderer.Flat;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
+import net.krlite.equator.visual.animation.base.Animation;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
@@ -42,7 +43,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 	}
 
 	@Unique
-	private final AnimatedDouble animation = new AnimatedDouble(0, 1, 720, Curves.LINEAR);
+	private static final Animation<Double> animation = new AnimatedDouble(0, 1, 720, Curves.Sinusoidal.EASE);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {
@@ -86,7 +87,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(animation::replay);
 		double lerp = Math.pow(animation.value(), 1 / 3.0);
 
-		Box.fromCartesian(x, y, w, h).render(matrixStack, 0,
+		Box.fromCartesian(x, y, w, h).render(matrixStack,
 				flat -> flat.new Rectangle()
 								.colorTop(Cabricality.Colors.CABF_PURPLE)
 								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)

@@ -13,8 +13,11 @@ import com.dm.earth.cabricality.lib.util.PushUtil;
 @ClientOnly
 @Mixin(ClientQuestFile.class)
 public class ClientQuestFileAnimator {
+	/*
 	@Inject(method = "openQuestGui", at = @At("TAIL"), remap = false)
 	private void animateBaseScreen(CallbackInfo ci) {
 		PushUtil.ANIMATE_BASE_SCREEN.push();
 	}
+
+	 */
 }

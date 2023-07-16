@@ -40,7 +40,7 @@ public class QuestScreenAnimator {
 			)
 	)
 	private void drawLeftSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
-		Box.fromCartesian(x - 1, y - 1, w + 2, h + 2).render(matrixStack, 0,
+		Box.fromCartesian(x - 1, y - 1, w + 2, h + 2).render(matrixStack,
 				flat -> flat.new Rectangle(Cabricality.Colors.CABF_BLACK.opacity(0.127))
 		);
 	}
@@ -64,7 +64,7 @@ public class QuestScreenAnimator {
 			)
 	)
 	private void drawRightSide(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {
-		Box.fromCartesian(x - 1, y - 1, w + 2, h + 2).render(matrixStack, 0,
+		Box.fromCartesian(x - 1, y - 1, w + 2, h + 2).render(matrixStack,
 			flat -> flat.new Rectangle(Cabricality.Colors.CABF_BLACK.opacity(0.127))
 		);
 	}

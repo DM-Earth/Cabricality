@@ -81,6 +81,7 @@ public class Cabricality implements ModInitializer {
 	public static final String ID = "cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 	public static final CabfConfig CONFIG = new CabfConfig();
+	private static long initTime = -1;
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
@@ -109,8 +110,9 @@ public class Cabricality implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
-		LOGGER.info("Initializing " + NAME + "... 📦");
 		CONFIG.save();
+		LOGGER.info("📦 Initializing " + NAME + "...");
+		initTime = System.currentTimeMillis();
 
 		CabfReceiver.registerServer();
 
@@ -134,5 +136,19 @@ public class Cabricality implements ModInitializer {
 
 		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
 				ResourcePackActivationType.ALWAYS_ENABLED);
+	}
+
+	public static void finishLoading() {
+		if (initTime != -1) {
+			double millis = System.currentTimeMillis() - initTime;
+
+			Cabricality.LOGGER.info(
+					"⚙️ " + NAME + " has initialized in "
+							+ (millis >= 1000 ? (millis / 1000.0 + "s") : (millis + "ms"))
+							+ "!"
+			);
+
+			initTime = -1;
+		}
 	}
 }

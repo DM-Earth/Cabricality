@@ -40,7 +40,7 @@ public class CabfConfigScreen {
 								 .build());
 
 		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "background_blur"), CONFIG.backgroundBlur())
-								 .setDefaultValue(true)
+								 .setDefaultValue(false)
 								 .setTooltip(Cabricality.genTranslatableText("config", "general", "background_blur", "tooltip"))
 								 .setSaveConsumer(CONFIG::backgroundBlur)
 								 .build());
@@ -52,7 +52,7 @@ public class CabfConfigScreen {
 								 .build());
 
 		general.addEntry(entryBuilder.startIntSlider(Cabricality.genTranslatableText("config", "general", "background_blur_radius"), Math.round(CONFIG.backgroundBlurRadius()), 1, 128)
-								 .setDefaultValue(35)
+								 .setDefaultValue(9)
 								 .setTooltip(Cabricality.genTranslatableText("config", "general", "background_blur_radius", "tooltip"))
 								 .setSaveConsumer(value -> CONFIG.backgroundBlurRadius(value.floatValue()))
 								 .build());

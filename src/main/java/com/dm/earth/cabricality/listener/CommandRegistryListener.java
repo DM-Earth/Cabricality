@@ -17,10 +17,13 @@ public class CommandRegistryListener implements CommandRegistrationCallback {
     @Override
     public void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher, boolean integrated,
             boolean dedicated) {
-        dispatcher.register(literal(Cabricality.ID)
-                .then(literal("alchemistInfo").executes(new AlchemistInfoCommand())
-                        .requires(requirePermission(2)))
-                .then(literal("debug").executes(new DebugCommand()).requires(requirePermission(2))));
+        dispatcher.register(
+				literal(Cabricality.ID)
+						.then(literal("alchemistInfo").executes(new AlchemistInfoCommand())
+									  .requires(requirePermission(2)))
+						.then(literal("debug").executes(new DebugCommand())
+									  .requires(requirePermission(2)))
+		);
     }
 
     private Predicate<ServerCommandSource> requirePermission(int level) {

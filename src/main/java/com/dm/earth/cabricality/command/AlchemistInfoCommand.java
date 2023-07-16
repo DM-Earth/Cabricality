@@ -3,7 +3,7 @@ package com.dm.earth.cabricality.command;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
-import com.dm.earth.cabricality.lib.util.Pusher;
+import com.dm.earth.cabricality.lib.util.func.Pusher;
 import com.google.common.collect.ImmutableList;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;

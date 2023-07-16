@@ -1,4 +1,4 @@
-package com.dm.earth.cabricality.lib.util;
+package com.dm.earth.cabricality.lib.util.func;
 
 import org.jetbrains.annotations.NotNull;
 

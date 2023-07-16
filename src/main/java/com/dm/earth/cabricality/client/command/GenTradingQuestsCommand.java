@@ -57,6 +57,7 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 		int group = 0;
 		int row = 0;
 		boolean down = false;
+
 		for (Professions p : Professions.values()) {
 			Profession profession = p.get();
 			group++;
@@ -76,6 +77,7 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 				col++;
 			}
 		}
+
 		MinecraftClient client = MinecraftClient.getInstance();
 		if (client != null) {
 			client.keyboard.setClipboard(String.join("\n\n", list));
@@ -83,6 +85,7 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 					.formatted(Formatting.GREEN, Formatting.ITALIC));
 			return SINGLE_SUCCESS;
 		}
+
 		return 0;
 	}
 }

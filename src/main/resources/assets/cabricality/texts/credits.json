@@ -1,106 +1,107 @@
 [
-    {
-        "section": "Minecraft",
-        "titles": [
-            {
-                "title": "",
-                "names": [
-                    "Mojang Studios, Stockholm, Sweden"
-                ]
-            }
+  {
+    "section": "Minecraft",
+    "titles": [
+      {
+        "title": "",
+        "names": [
+          "Mojang Studios, Stockholm, Sweden"
         ]
-    },
-    {
-        "section": "Create: Above and Beyond",
-        "titles": [
-            {
-                "title": "Original Author",
-                "names": [
-                    "Simibubi"
-                ]
-            }
+      }
+    ]
+  },
+  {
+    "section": "Create: Above and Beyond",
+    "titles": [
+      {
+        "title": "Original Author",
+        "names": [
+          "Simibubi"
         ]
-    },
-    {
-        "section": "Cabricality",
-        "titles": [
-            {
-                "title": "Modpack Author",
-                "names": [
-                    "Yjn024"
-                ]
-            },
-            {
-                "title": "Game Designers",
-                "names": [
-                    "Yjn024",
-                    "KrLite",
-					"IcedDog"
-                ]
-            },
-			{
-				"title": "Translators",
-				"names": [
-					"KrLite",
-					"MangoJellyPudding"
-				]
-			}
+      }
+    ]
+  },
+  {
+    "section": "Cabricality",
+    "titles": [
+      {
+        "title": "Modpack Author",
+        "names": [
+          "Yjn024"
         ]
-    },
-	{
-		"section": "Visual",
-		"titles": [
-			{
-				"title": "UI Designer",
-				"names": [
-					"KrLite"
-				]
-			},
-			{
-				"title": "Language Experiencing",
-				"names": [
-					"KrLite",
-					"Yjn024"
-				]
-			},
-			{
-				"title": "Visual Promotion",
-				"names": [
-					"KrLite"
-				]
-			}
-		]
-	},
-	{
-		"section": "Programming",
-		"titles": [
-			{
-				"title": "Game Developers",
-				"names": [
-					"Yjn024",
-					"KrLite",
-					"IcedDog"
-				]
-			}
-		]
-	},
-    {
-        "section": "Special Thanks",
-        "titles": [
-			{
-				"title": "",
-				"names": [
-					"Derpford",
-					"hrsthrt74",
-					"IcedDog",
-					"KrLite",
-					"MangoJellyPudding",
-					"Not-too",
-					"NyakoFox",
-					"RogenDong",
-					"SylviBlossom"
-				]
-			}
+      },
+      {
+        "title": "Game Designers",
+        "names": [
+          "Yjn024",
+          "KrLite",
+          "IcedDog"
         ]
-    }
+      },
+      {
+        "title": "Translators",
+        "names": [
+          "KrLite",
+          "MangoJellyPudding"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Visual",
+    "titles": [
+      {
+        "title": "UI Designer",
+        "names": [
+          "KrLite"
+        ]
+      },
+      {
+        "title": "Language Experiencing",
+        "names": [
+          "KrLite",
+          "Yjn024"
+        ]
+      },
+      {
+        "title": "Visual Promotion",
+        "names": [
+          "KrLite"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Programming",
+    "titles": [
+      {
+        "title": "Game Developers",
+        "names": [
+          "Yjn024",
+          "KrLite",
+          "IcedDog"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Special Thanks",
+    "titles": [
+      {
+        "title": "",
+        "names": [
+          "Derpford",
+          "hrsthrt74",
+          "IcedDog",
+          "KrLite",
+          "MangoJellyPudding",
+          "Not-too",
+          "NyakoFox",
+          "RogenDong",
+          "SylviBlossom",
+          "§cAnd You"
+        ]
+      }
+    ]
+  }
 ]

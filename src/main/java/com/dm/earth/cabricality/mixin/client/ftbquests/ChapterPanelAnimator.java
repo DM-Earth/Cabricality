@@ -13,6 +13,7 @@ import dev.ftb.mods.ftbquests.gui.quests.QuestScreen;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
+import net.krlite.equator.visual.animation.base.Animation;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.MutableText;
@@ -26,6 +27,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @ClientOnly
@@ -38,7 +40,7 @@ public abstract class ChapterPanelAnimator {
 	abstract boolean isPinned();
 
 	@Unique
-	private final AnimatedDouble animation = new AnimatedDouble(0, 1, 320, Curves.Bounce.OUT);
+	private static final Animation<Double> animation = new AnimatedDouble(0, 1, 400, Curves.Bounce.OUT);
 
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawContextMenuBackground(Lnet/minecraft/client/util/math/MatrixStack;IIII)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h) {
@@ -46,16 +48,16 @@ public abstract class ChapterPanelAnimator {
 
 		Box chapterBox = Box.fromCartesian(x, y, w * animation.value(), h);
 
-		chapterBox.render(matrixStack, 0,
+		chapterBox.render(matrixStack,
 				flat -> flat.new Rectangle()
-								.colorLeft(Cabricality.Colors.CABF_BLACK.opacity(0.73))
-								.colorRight(Cabricality.Colors.CABF_BLACK.opacity(Math.min(1, 0.73 * animation.value())))
+								.colors(Cabricality.Colors.CABF_BLACK)
+								.opacityMultiplier(0.73)
 		);
 
-		chapterBox.render(matrixStack, 0,
+		chapterBox.render(matrixStack,
 				flat -> flat.new Rectangle()
-								.colorLeft(Cabricality.Colors.CABF_PURPLE.opacity(Math.min(1, 0.2 * animation.value())))
-								.colorRight(Cabricality.Colors.CABF_MID_PURPLE.transparent())
+								.colorLeft(Cabricality.Colors.CABF_PURPLE.opacity(0.2))
+								.colorRight(Cabricality.Colors.CABF_MID_PURPLE.opacity(1 - animation.value()))
 		);
 	}
 }

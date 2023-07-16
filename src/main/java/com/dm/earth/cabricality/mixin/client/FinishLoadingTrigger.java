@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.mixin.client;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.CabricalityClient;
 import net.minecraft.client.MinecraftClientGame;
 import net.minecraft.client.gui.screen.SplashOverlay;
@@ -16,6 +17,7 @@ public class FinishLoadingTrigger {
 		@Inject(method = "onStartGameSession", at = @At("HEAD"))
 		private void onWorldLoaded(CallbackInfo ci) {
 			CabricalityClient.finishLoading();
+			Cabricality.finishLoading();
 		}
 	}
 

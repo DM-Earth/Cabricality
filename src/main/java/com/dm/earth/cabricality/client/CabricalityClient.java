@@ -35,24 +35,14 @@ public class CabricalityClient implements ClientModInitializer {
 	public static String ID = Cabricality.ID + "Client";
 	@Nullable
 	private static RotatingCubeMapRenderer cubeMapRenderer;
-	private static long initTime = -1;
 
 	public static void finishLoading() {
-		if (initTime != -1) {
-			double millis = System.currentTimeMillis() - initTime;
-			Cabricality.LOGGER.info("Cabricality has initialized in "
-											+ (millis >= 1000 ? (millis / 1000.0 + "s") : (millis + "ms"))
-											+ "! ⚙️");
-			initTime = -1;
-		}
 		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);
 		GLFW.glfwRequestWindowAttention(MinecraftClient.getInstance().getWindow().getHandle());
 	}
 
 	@Override
 	public void onInitializeClient(ModContainer mod) {
-		initTime = System.currentTimeMillis();
-
 		CabfReceiver.registerClient();
 
 		PushUtil.register();
