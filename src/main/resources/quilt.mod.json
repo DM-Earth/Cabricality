@@ -58,7 +58,7 @@
       },
       {
         "id": "equator",
-        "versions": ">=2.5.2.2"
+        "versions": ">=2.5.3"
       }
     ]
   },
