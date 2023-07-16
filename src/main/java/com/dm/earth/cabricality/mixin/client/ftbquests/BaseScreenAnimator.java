@@ -22,7 +22,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(BaseScreen.class)
 public class BaseScreenAnimator {
 	@Unique
-	private static final Animation<Double> animation = new AnimatedDouble(0, 1, 175, Curves.LINEAR);
+	private static final AnimatedDouble animation = new AnimatedDouble(0, 1, 175, Curves.LINEAR);
 
 	@Inject(method = "initGui", at = @At("TAIL"), remap = false)
 	private void trigger(CallbackInfo ci) {

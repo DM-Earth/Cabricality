@@ -25,7 +25,7 @@ import java.util.List;
 @Mixin(ContextMenu.class)
 public class ContextMenuAnimator {
 	@Unique
-	private static final Animation<Double> animation = new AnimatedDouble(0, 1, 250, Curves.Back.OUT);
+	private static final AnimatedDouble animation = new AnimatedDouble(0, 1, 250, Curves.Back.OUT);
 
 	@Inject(method = "<init>", at = @At("TAIL"), remap = false)
 	private void init(Panel panel, List<ContextMenuItem> contextMenuItems, CallbackInfo ci) {

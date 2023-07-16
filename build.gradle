@@ -89,6 +89,7 @@ dependencies {
     modImplementation "curse.maven:ftb-quests-fabric-438496:${project.ftb_quests_version}"
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
     modImplementation "curse.maven:catwalks-inc-554340:${project.catwalks_version}"
+    modImplementation "curse.maven:malum-quilt-627875:${project.malum_version}"
 
     // - JitPack
     modImplementation "com.github.KrLite.Equator-v2:build:${project.minecraft_major_version}-${project.equator_version}"
@@ -103,8 +104,11 @@ dependencies {
     modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}-mc${project.minecraft_version}-fabric")
+
     implementation include("net.objecthunter:exp4j:${project.exp4j_version}")
     implementation include("com.github.KrLite:Pierced:${project.pierced_version}")
+    implementation include("com.github.davidmoten:word-wrap:${project.word_wrap_version}")
+    implementation include("com.github.davidmoten:guava-mini:${project.guava_mini_version}")
 
     // Development Environments
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"

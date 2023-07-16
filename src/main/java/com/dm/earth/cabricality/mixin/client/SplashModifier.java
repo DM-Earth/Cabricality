@@ -42,7 +42,7 @@ public class SplashModifier {
 	private long reloadStartTime;
 
 	@Unique
-	private static final Interpolation<Vector> shifting = new InterpolatedVector.Linear(Vector.ZERO, 0.01);
+	private static final InterpolatedVector.Linear shifting = new InterpolatedVector.Linear(Vector.ZERO, 0.01);
 
 	static {
 		Mouse.Callbacks.Move.EVENT.register(position -> {

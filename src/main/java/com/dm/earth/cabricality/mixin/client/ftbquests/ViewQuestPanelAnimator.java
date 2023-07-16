@@ -43,7 +43,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 	}
 
 	@Unique
-	private static final Animation<Double> animation = new AnimatedDouble(0, 1, 720, Curves.Sinusoidal.EASE);
+	private static final AnimatedDouble animation = new AnimatedDouble(0, 1, 720, Curves.Sinusoidal.EASE);
 
 	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
 	private int modifyWidth(int width) {

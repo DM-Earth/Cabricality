@@ -3,40 +3,30 @@
   "attribute.name.generic.malum.heart_of_stone_hunger_cost": "石之心饥饿消耗",
   "attribute.name.generic.malum.heart_of_stone_recovery_speed": "石之心恢复速度",
   "attribute.name.generic.malum.heart_of_stone_strength": "石之心力量",
-
   "attribute.name.generic.malum.magic_damage": "秘术伤害",
   "attribute.name.generic.malum.magic_proficiency": "秘术熟练度",
   "attribute.name.generic.malum.magic_resistance": "秘术抗性",
-
   "attribute.name.generic.malum.scythe_proficiency": "镰刀熟练度",
-
   "attribute.name.generic.malum.soul_ward_capacity": "灵魂圣典耐久度",
   "attribute.name.generic.malum.soul_ward_recovery_speed": "灵魂圣典恢复速度",
   "attribute.name.generic.malum.soul_ward_shatter_cooldown": "灵魂圣典冷却时间",
   "attribute.name.generic.malum.soul_ward_strength": "灵魂圣典力量",
-
   "attribute.name.generic.malum.spirit_reach": "灵神吸引",
   "attribute.name.generic.malum.spirit_spoils": "灵神掠夺",
-
-
-
   "block.malum.blazing_quartz_ore": "烈焰石英矿石",
-
   "block.malum.block_of_arcane_charcoal": "秘术木炭块",
   "block.malum.block_of_blazing_quartz": "烈焰石英块",
   "block.malum.block_of_brilliance": "经验晶块",
   "block.malum.block_of_hallowed_gold": "神圣金块",
+  "block.malum.block_of_raw_soulstone": "神圣粗灵魂岩",
   "block.malum.block_of_soul_stained_steel": "魂染钢块",
-  "block.malum.block_of_soulstone": "灵魂石块",
-
+  "block.malum.block_of_soulstone": "灵魂岩块",
   "block.malum.brilliant_deepslate": "经验晶深板岩",
   "block.malum.brilliant_obelisk": "经验晶方尖碑",
   "block.malum.brilliant_obelisk_component": "经验晶方尖碑构件",
   "block.malum.brilliant_stone": "经验晶石",
-
   "block.malum.chiseled_tainted_rock": "錾制附圣石",
   "block.malum.chiseled_twisted_rock": "錾制扭曲石",
-
   "block.malum.cracked_small_tainted_rock_bricks": "裂附圣石小型砖",
   "block.malum.cracked_small_tainted_rock_bricks_slab": "裂附圣石小型砖台阶",
   "block.malum.cracked_small_tainted_rock_bricks_stairs": "裂附圣石小型砖楼梯",
@@ -45,7 +35,6 @@
   "block.malum.cracked_small_twisted_rock_bricks_slab": "裂扭曲石小型砖台阶",
   "block.malum.cracked_small_twisted_rock_bricks_stairs": "裂扭曲石小型砖楼梯",
   "block.malum.cracked_small_twisted_rock_bricks_wall": "裂扭曲石小型砖墙",
-
   "block.malum.cracked_tainted_rock_bricks": "裂附圣石砖",
   "block.malum.cracked_tainted_rock_bricks_slab": "裂附圣石砖台阶",
   "block.malum.cracked_tainted_rock_bricks_stairs": "裂附圣石砖楼梯",
@@ -62,35 +51,26 @@
   "block.malum.cracked_twisted_rock_tiles_slab": "裂扭曲石方砖台阶",
   "block.malum.cracked_twisted_rock_tiles_stairs": "裂扭曲石方砖楼梯",
   "block.malum.cracked_twisted_rock_tiles_wall": "裂扭曲石方砖墙",
-
   "block.malum.cut_runewood_planks": "切制符文木木板",
   "block.malum.cut_soulwood_planks": "切制灵魂木木板",
   "block.malum.cut_tainted_rock": "切制附圣石",
   "block.malum.cut_twisted_rock": "切制扭曲石",
-  
-  "block.malum.deepslate_soulstone_ore": "深层灵魂石矿石",
-
+  "block.malum.deepslate_soulstone_ore": "深层灵魂岩矿石",
   "block.malum.emitter_mirror": "辉光魔镜",
-
   "block.malum.ether": "灵火",
   "block.malum.ether_torch": "灵火火把",
-  
   "block.malum.exposed_runewood_log": "富脂符文木原木",
   "block.malum.exposed_soulwood_log": "富脂灵魂木原木",
-
   "block.malum.iridescent_ether": "虹色灵火",
   "block.malum.iridescent_ether_torch": "虹色灵火火把",
-
   "block.malum.polished_tainted_rock": "磨制附圣石",
   "block.malum.polished_tainted_rock_slab": "磨制附圣石台阶",
   "block.malum.polished_tainted_rock_stairs": "磨制附圣石楼梯",
   "block.malum.polished_twisted_rock": "磨制扭曲石",
   "block.malum.polished_twisted_rock_slab": "磨制扭曲石台阶",
   "block.malum.polished_twisted_rock_stairs": "磨制扭曲石楼梯",
-
   "block.malum.revealed_runewood_log": "去皮富脂符文木原木",
   "block.malum.revealed_soulwood_log": "去皮富脂灵魂木原木",
-
   "block.malum.runewood": "符文木",
   "block.malum.runewood_beam": "符文木梁",
   "block.malum.runewood_door": "符文木门",
@@ -118,30 +98,24 @@
   "block.malum.runewood_totem_base": "符文木图腾基座",
   "block.malum.runewood_totem_pole": "符文木图腾柱",
   "block.malum.runewood_trapdoor": "符文木活板门",
-  
   "block.malum.small_tainted_rock_bricks": "附圣石小型砖",
   "block.malum.small_tainted_rock_bricks_slab": "附圣石小型砖台阶",
   "block.malum.small_tainted_rock_bricks_stairs": "附圣石小型砖楼梯",
   "block.malum.small_tainted_rock_bricks_wall": "附圣石小型砖墙",
-
   "block.malum.small_twisted_rock_bricks": "扭曲石小型砖",
   "block.malum.small_twisted_rock_bricks_slab": "扭曲石小型砖台阶",
   "block.malum.small_twisted_rock_bricks_stairs": "扭曲石小型砖楼梯",
   "block.malum.small_twisted_rock_bricks_wall": "扭曲石小型砖墙",
-
   "block.malum.smooth_tainted_rock": "平滑附圣石",
   "block.malum.smooth_tainted_rock_slab": "平滑附圣石台阶",
   "block.malum.smooth_tainted_rock_stairs": "平滑附圣石楼梯",
-
   "block.malum.smooth_twisted_rock": "平滑扭曲石",
   "block.malum.smooth_twisted_rock_slab": "平滑扭曲石台阶",
   "block.malum.smooth_twisted_rock_stairs": "平滑扭曲石楼梯",
-
   "block.malum.solid_runewood_trapdoor": "符文木无窗活板门",
   "block.malum.solid_soulwood_trapdoor": "灵魂木无窗活板门",
-
   "block.malum.soul_vial": "灵魂药瓶",
-  "block.malum.soulstone_ore": "灵魂石矿石",
+  "block.malum.soulstone_ore": "灵魂岩矿石",
   "block.malum.soulwood": "灵魂木",
   "block.malum.soulwood_beam": "灵魂木梁",
   "block.malum.soulwood_door": "灵魂木门",
@@ -171,19 +145,16 @@
   "block.malum.soulwood_totem_base": "灵魂木图腾基座",
   "block.malum.soulwood_totem_pole": "灵魂木图腾柱",
   "block.malum.soulwood_trapdoor": "灵魂木活板门",
-  
   "block.malum.spirit_altar": "灵神祭坛",
-  "block.malum.spirit_crucible": "灵神坩埚",
   "block.malum.spirit_catalyzer": "灵神催化剂",
   "block.malum.spirit_catalyzer_component": "灵神催化剂构件",
+  "block.malum.spirit_crucible": "灵神坩埚",
   "block.malum.spirit_crucible_component": "灵神坩埚构件",
   "block.malum.spirit_jar": "灵神罐",
-
   "block.malum.stripped_runewood": "去皮符文木",
   "block.malum.stripped_runewood_log": "去皮符文木原木",
   "block.malum.stripped_soulwood": "去皮灵魂木",
   "block.malum.stripped_soulwood_log": "去皮灵魂木原木",
-
   "block.malum.tainted_ether_brazier": "附圣石灵火火盆",
   "block.malum.tainted_iridescent_ether_brazier": "附圣石虹色灵火火盆",
   "block.malum.tainted_rock": "附圣石",
@@ -204,9 +175,7 @@
   "block.malum.tainted_rock_tiles_stairs": "附圣石方砖楼梯",
   "block.malum.tainted_rock_tiles_wall": "附圣石方砖墙",
   "block.malum.tainted_rock_wall": "附圣石墙",
-
   "block.malum.the_device": "设备",
-
   "block.malum.twisted_ether_brazier": "扭曲石灵火火盆",
   "block.malum.twisted_iridescent_ether_brazier": "扭曲石虹色灵火火盆",
   "block.malum.twisted_rock": "扭曲石",
@@ -228,16 +197,12 @@
   "block.malum.twisted_rock_tiles_wall": "扭曲石方砖墙",
   "block.malum.twisted_rock_wall": "扭曲石墙",
   "block.malum.twisted_tablet": "扭曲平板",
-  
   "block.malum.vertical_runewood_planks": "符文木竖纹木板",
   "block.malum.vertical_runewood_planks_slab": "符文木竖纹台阶",
   "block.malum.vertical_runewood_planks_stairs": "符文木竖纹楼梯",
   "block.malum.vertical_soulwood_planks": "灵魂木竖纹木板",
   "block.malum.vertical_soulwood_planks_slab": "灵魂木竖纹台阶",
   "block.malum.vertical_soulwood_planks_stairs": "灵魂木竖纹楼梯",
-
-
-
   "death.attack.magebane": "灵魂猎人%s自负而死",
   "death.attack.magebane.player": "%s因%s自负而死",
   "death.attack.scythe_sweep": "%s被腰斩",
@@ -246,9 +211,6 @@
   "death.attack.voodoo.player": "%s的灵魂被%s破灭了",
   "death.attack.voodoo_no_shatter": "%s的灵魂破灭了",
   "death.attack.voodoo_no_shatter.player": "%s的灵魂被%s破灭了",
-
-
-
   "effect.malum.aerial_aura": "澄空光环",
   "effect.malum.aqueous_aura": "碧水光环",
   "effect.malum.corrupted_aerial_aura": "腐化澄空光环",
@@ -256,52 +218,36 @@
   "effect.malum.earthen_aura": "大地光环",
   "effect.malum.infernal_aura": "狱火光环",
   "effect.malum.sacred_aura": "神圣光环",
-
-
-
   "enchantment.malum.haunted": "缚灵",
   "enchantment.malum.haunted.desc": "攻击敌人造成额外魔法伤害。",
   "enchantment.malum.rebound": "回旋",
   "enchantment.malum.rebound.desc": "允许将镰刀像回旋镖一样被扔出，冷却时间随等级增加减少。",
   "enchantment.malum.spirit_plunder": "灵神劫掠",
   "enchantment.malum.spirit_plunder.desc": "增加击碎灵魂时的灵神掉落，额外消耗耐久。",
-  
- 
- 
   "entity.malum.mirror_item": "镜面实体",
   "entity.malum.natural_soul": "野生灵魂",
   "entity.malum.natural_spirit": "野生灵神",
   "entity.malum.runewood_boat": "符文木船",
   "entity.malum.scythe_boomerang": "镰镖",
   "entity.malum.soulwood_boat": "灵魂木船",
-
-
-  
   "item.malum.aerial_spirit": "澄空灵神",
-
   "item.malum.alchemical_impetus": "炼金促符",
-  "item.malum.aluminum_impetus": "A铝合金促符",
+  "item.malum.aluminum_impetus": "铝合金促符",
   "item.malum.aluminum_node": "铝合金祀结",
   "item.malum.aqueous_spirit": "碧水灵神",
-
   "item.malum.arcane_charcoal": "秘术木炭",
   "item.malum.arcane_charcoal_fragment": "秘术木炭碎块",
   "item.malum.arcane_spirit": "秘术灵神",
-
   "item.malum.blazing_quartz": "烈焰石英",
   "item.malum.blazing_quartz_fragment": "烈焰石英碎块",
-  
   "item.malum.ceaseless_impetus": "生命促符",
   "item.malum.charcoal_fragment": "木炭碎块",
   "item.malum.chunk_of_brilliance": "经验晶小块",
   "item.malum.cluster_of_brilliance": "经验晶簇",
   "item.malum.coal_fragment": "煤炭碎块",
-
   "item.malum.copper_impetus": "铜炼金促符",
   "item.malum.copper_node": "铜祀结",
   "item.malum.copper_nugget": "铜粒",
-
-  
   "item.malum.cracked_alchemical_impetus": "碎裂的炼金促符",
   "item.malum.cracked_aluminum_impetus": "碎裂的铝合金炼金促符",
   "item.malum.cracked_ceaseless_impetus": "碎裂的生命促符",
@@ -315,83 +261,60 @@
   "item.malum.cracked_tin_impetus": "碎裂的锡炼金促符",
   "item.malum.cracked_uranium_impetus": "碎裂的铀炼金促符",
   "item.malum.cracked_zinc_impetus": "碎裂的锌炼金促符",
-
   "item.malum.creative_scythe": "创造模式镰刀",
   "item.malum.crude_scythe": "粗制镰刀",
-  "item.malum.crushed_soulstone": "灵魂石粉",
-
+  "item.malum.crushed_soulstone": "灵魂岩粉",
   "item.malum.earthen_spirit": "大地灵神",
   "item.malum.eldritch_spirit": "邪术灵神",
   "item.malum.encyclopedia_arcana": "秘术百科",
-
   "item.malum.fancy_boots": "礼服靴子",
   "item.malum.fancy_jacket": "礼服夹克",
   "item.malum.fancy_leggings": "礼服长裤",
   "item.malum.fancy_tophat": "高顶礼帽",
-  
   "item.malum.filled_soul_vial": "装满的灵魂药瓶",
   "item.malum.filled_soulwood_stave": "装满的灵魂木桶",
   "item.malum.filled_spirit_jar": "装满的灵神罐",
-
   "item.malum.gilded_belt": "镀金腰带",
   "item.malum.gilded_ring": "镀金戒指",
   "item.malum.gold_impetus": "金炼金促符",
   "item.malum.gold_node": "金祀结",
-
   "item.malum.hallowed_gold_ingot": "神圣金锭",
   "item.malum.hallowed_gold_nugget": "神圣金粒",
   "item.malum.hallowed_spirit_resonator": "神圣金灵神共振器",
-  
   "item.malum.hex_ash": "咒灰",
   "item.malum.holy_sap": "神圣树脂",
   "item.malum.holy_sapball": "神圣树脂球",
   "item.malum.holy_syrup": "神圣树脂浆",
-
   "item.malum.infernal_spirit": "狱火灵神",
-  
   "item.malum.iron_impetus": "铁炼金促符",
   "item.malum.iron_node": "铁祀结",
-
   "item.malum.lead_impetus": "铅炼金促符",
   "item.malum.lead_node": "铅祀结",
-  
   "item.malum.magebane_belt": "折射腰带",
-
   "item.malum.necklace_of_the_mystic_mirror": "神秘透镜项链",
   "item.malum.necklace_of_the_narrow_edge": "精准镰刃项链",
-
   "item.malum.nickel_impetus": "镍炼金促符",
   "item.malum.nickel_node": "镍祀结",
-
   "item.malum.ornate_necklace": "华丽项链",
   "item.malum.ornate_ring": "华丽戒指",
-
   "item.malum.osmium_impetus": "锇炼金促符",
   "item.malum.osmium_node": "锇祀结",
-  
   "item.malum.poppet": "巫毒人偶",
-
-  "item.malum.processed_soulstone": "精制灵魂石",
-
-  "item.malum.raw_soulstone": "粗灵魂石",
-
+  "item.malum.processed_soulstone": "精制灵魂岩",
+  "item.malum.raw_soulstone": "粗灵魂岩",
   "item.malum.ring_of_arcane_reach": "灵神吸引戒指",
   "item.malum.ring_of_arcane_spoil": "灵神掠夺戒指",
   "item.malum.ring_of_curative_talent": "疗愈魔能戒指",
   "item.malum.ring_of_prowess": "经验晶石戒指",
   "item.malum.ring_of_wicked_intent": "凋灵魔能戒指",
-
   "item.malum.runewood_boat": "符文木船",
-
   "item.malum.sacred_spirit": "神圣灵神",
   "item.malum.silver_impetus": "银炼金促符",
   "item.malum.silver_node": "银祀结",
-
   "item.malum.soul_hunter_boots": "灵魂猎人靴子",
   "item.malum.soul_hunter_cloak": "灵魂猎人斗篷",
   "item.malum.soul_hunter_leggings": "灵魂猎人护腿",
   "item.malum.soul_hunter_robe": "灵魂猎人长袍",
-  
   "item.malum.soul_stained_steel_axe": "魂染钢斧",
   "item.malum.soul_stained_steel_boots": "魂染钢靴子",
   "item.malum.soul_stained_steel_chestplate": "魂染钢胸甲",
@@ -405,46 +328,30 @@
   "item.malum.soul_stained_steel_scythe": "魂染钢镰刀",
   "item.malum.soul_stained_steel_shovel": "魂染钢锹",
   "item.malum.soul_stained_steel_sword": "魂染钢剑",
-
   "item.malum.soulwood_boat": "灵魂木船",
   "item.malum.soulwood_stave": "灵魂木桶",
-
   "item.malum.spectral_lens": "灵魂透镜",
   "item.malum.spirit_fabric": "灵神布匹",
   "item.malum.spirit_pouch": "灵神布袋",
-
   "item.malum.stained_spirit_resonator": "魂染钢灵神共振器",
-
   "item.malum.tin_impetus": "锡炼金促符",
   "item.malum.tin_node": "锡祀结",
-
   "item.malum.token_of_gratitude": "感恩代币",
-
   "item.malum.tyrving": "提尔锋",
-
   "item.malum.unholy_sap": "渎神树脂",
   "item.malum.unholy_sapball": "渎神树脂球",
   "item.malum.unholy_syrup": "渎神树脂浆",
-
   "item.malum.uranium_impetus": "铀炼金促符",
   "item.malum.uranium_node": "铀祀结",
-
   "item.malum.warded_belt": "护卫腰带",
   "item.malum.wicked_spirit": "邪恶灵神",
-
   "item.malum.zinc_impetus": "锌炼金促符",
   "item.malum.zinc_node": "锌祀结",
-
-
-
   "itemGroup.malum.malum": "灵灾",
   "itemGroup.malum.malum_metallurgic_magic": "灵灾｜冶金秘术",
   "itemGroup.malum.malum_natural_wonders": "灵灾｜自然奇观",
   "itemGroup.malum.malum_shaped_stones": "灵灾｜形制石头",
   "itemGroup.malum.malum_spirits": "灵灾｜灵神",
-
-
-
   "malum.gui.book.entry.aerial_rite": "澄空仪式",
   "malum.gui.book.entry.aerial_rite.description": "轻盈的仪式",
   "malum.gui.book.entry.altar_acceleration": "灵动祭坛",
@@ -455,14 +362,12 @@
   "malum.gui.book.entry.arcane_rite.description": "使用灵神腐化仪式",
   "malum.gui.book.entry.arcane_rock": "秘术石头",
   "malum.gui.book.entry.arcane_rock.description": "巫师塔的绝配",
-  
   "malum.gui.book.entry.ceaseless_impetus": "生命促符",
   "malum.gui.book.entry.ceaseless_impetus.description": "重生",
   "malum.gui.book.entry.crucible_acceleration": "灵动坩锅",
   "malum.gui.book.entry.crucible_acceleration.description": "不断加热",
   "malum.gui.book.entry.crystal_creation": "晶体造物",
   "malum.gui.book.entry.crystal_creation.description": "眼前的珠宝",
-  
   "malum.gui.book.entry.earthen_rite": "大地仪式",
   "malum.gui.book.entry.earthen_rite.description": "土石",
   "malum.gui.book.entry.eldritch_arcana": "晦涩的邪术",
@@ -471,65 +376,52 @@
   "malum.gui.book.entry.elemental_arcana.description": "聚焦秘术",
   "malum.gui.book.entry.ether": "灵火",
   "malum.gui.book.entry.ether.description": "晚霞亦不可比",
-
   "malum.gui.book.entry.huh": "呵",
   "malum.gui.book.entry.huh.description": "用微波炉加热",
-
   "malum.gui.book.entry.impetus_restoration": "再生的炼金促符",
   "malum.gui.book.entry.impetus_restoration.description": "修补的巫术",
   "malum.gui.book.entry.infernal_rite": "狱火仪式",
   "malum.gui.book.entry.infernal_rite.description": "大量温暖",
   "malum.gui.book.entry.introduction": "介绍",
   "malum.gui.book.entry.introduction.description": "欢迎来到邪恶秘术的领地",
-  
   "malum.gui.book.entry.magebane_belt": "折射腰带",
   "malum.gui.book.entry.magebane_belt.description": "报复",
-  "malum.gui.book.entry.metallurgy_with_spirits": "冶金灵神聚焦",
-  "malum.gui.book.entry.metallurgy_with_spirits.description": "将灵神聚焦入五金制品",
+  "malum.gui.book.entry.metallurgic_magic": "冶金灵术",
+  "malum.gui.book.entry.metallurgic_magic.description": "铁杵磨成针",
   "malum.gui.book.entry.mirror_magic": "镜面秘术",
   "malum.gui.book.entry.mirror_magic.description": "快速且简易地传输秘术能量",
-
   "malum.gui.book.entry.necklace_of_the_mystic_mirror": "神秘透镜项链",
   "malum.gui.book.entry.necklace_of_the_mystic_mirror.description": "反射",
   "malum.gui.book.entry.necklace_of_the_narrow_edge": "精准镰刃项链",
   "malum.gui.book.entry.necklace_of_the_narrow_edge.description": "权衡",
-
   "malum.gui.book.entry.page.headline.aerial_spirit": "澄空灵神",
   "malum.gui.book.entry.page.headline.aqueous_spirit": "碧水灵神",
   "malum.gui.book.entry.page.headline.arcane_charcoal": "秘术木炭",
   "malum.gui.book.entry.page.headline.arcane_reach": "灵神吸引戒指",
   "malum.gui.book.entry.page.headline.arcane_spirit": "秘术灵神",
   "malum.gui.book.entry.page.headline.arcane_spoil": "灵神掠夺戒指",
-
   "malum.gui.book.entry.page.headline.brilliant_obelisk": "方尖碑顶",
-
   "malum.gui.book.entry.page.headline.ceaseless_impetus": "生命促符",
   "malum.gui.book.entry.page.headline.corrupted_rite_effect": "腐化仪式效果：",
   "malum.gui.book.entry.page.headline.crucible_acceleration": "灵动坩锅",
   "malum.gui.book.entry.page.headline.crystal_creation": "晶体造物",
-
   "malum.gui.book.entry.page.headline.earthen_spirit": "大地灵神",
   "malum.gui.book.entry.page.headline.eldritch_spirit": "邪术灵神",
   "malum.gui.book.entry.page.headline.ether": "灵火",
   "malum.gui.book.entry.page.headline.expanded_focusing": "扩展修复",
-
   "malum.gui.book.entry.page.headline.hallowed_gold": "神圣金",
   "malum.gui.book.entry.page.headline.haunted": "缚灵",
   "malum.gui.book.entry.page.headline.hex_ash": "咒灰",
   "malum.gui.book.entry.page.headline.holy_sap": "神圣树脂",
-
   "malum.gui.book.entry.page.headline.impetus_restoration": "再生的炼金促符",
   "malum.gui.book.entry.page.headline.infernal_spirit": "狱火灵神",
   "malum.gui.book.entry.page.headline.introduction": "介绍",
   "malum.gui.book.entry.page.headline.iridescent_ether": "虹色灵火",
-
   "malum.gui.book.entry.page.headline.magebane_belt": "折射腰带",
   "malum.gui.book.entry.page.headline.metallurgic_magic": "冶金秘术",
   "malum.gui.book.entry.page.headline.mirror_magic": "镜面秘术",
-
   "malum.gui.book.entry.page.headline.necklace_of_the_mystic_mirror": "神秘透镜项链",
   "malum.gui.book.entry.page.headline.necklace_of_the_narrow_edge": "精准镰刀项链",
-
   "malum.gui.book.entry.page.headline.rebound": "回旋",
   "malum.gui.book.entry.page.headline.ring_of_curative_talent": "疗愈魔能戒指",
   "malum.gui.book.entry.page.headline.ring_of_prowess": "经验晶石戒指",
@@ -537,14 +429,13 @@
   "malum.gui.book.entry.page.headline.rite_effect": "仪式效果：",
   "malum.gui.book.entry.page.headline.runewood": "符文树",
   "malum.gui.book.entry.page.headline.runewood_obelisk": "符文方尖碑",
-
   "malum.gui.book.entry.page.headline.sacred_spirit": "神圣灵神",
   "malum.gui.book.entry.page.headline.scythes": "镰刀",
   "malum.gui.book.entry.page.headline.soul_hunter_armor": "灵魂猎人套装",
   "malum.gui.book.entry.page.headline.soul_stained_armor": "魂染钢盔甲",
   "malum.gui.book.entry.page.headline.soul_stained_scythe": "魂染钢镰刀",
   "malum.gui.book.entry.page.headline.soul_stained_steel": "魂染钢",
-  "malum.gui.book.entry.page.headline.soulstone": "灵魂石",
+  "malum.gui.book.entry.page.headline.soulstone": "灵魂岩",
   "malum.gui.book.entry.page.headline.soulwood": "灵魂树",
   "malum.gui.book.entry.page.headline.spirit_fabric": "灵神布匹",
   "malum.gui.book.entry.page.headline.spirit_focusing": "灵神聚焦",
@@ -554,7 +445,6 @@
   "malum.gui.book.entry.page.headline.spirit_plunder": "灵神劫掠",
   "malum.gui.book.entry.page.headline.spirit_pouch": "灵神布袋",
   "malum.gui.book.entry.page.headline.spirit_trinkets": "灵神护符",
-  
   "malum.gui.book.entry.page.headline.tainted_rock": "附圣石",
   "malum.gui.book.entry.page.headline.the_device": "设备",
   "malum.gui.book.entry.page.headline.totem_corruption": "图腾的腐化",
@@ -562,12 +452,10 @@
   "malum.gui.book.entry.page.headline.twisted_rock": "扭曲石",
   "malum.gui.book.entry.page.headline.trans_rite": "仪式转换！",
   "malum.gui.book.entry.page.headline.tyrving": "提尔锋",
-
   "malum.gui.book.entry.page.headline.voodoo_magic": "巫毒秘术",
   "malum.gui.book.entry.page.headline.warded_belt": "护卫腰带",
   "malum.gui.book.entry.page.headline.wicked_spirit": "邪恶灵神",
-  "malum.gui.book.entry.page.headline.working_with_ashes": "Working with Ashes",
-
+  "malum.gui.book.entry.page.headline.working_with_ashes": "玩弄尘世",
   "malum.gui.book.entry.page.text.aerial_rite": "澄空仪式给予光环效果。周围的玩家获得移动速度提升。",
   "malum.gui.book.entry.page.text.aerial_spirit_a": "澄空秘术，轻盈且多变，效果较弱但用途极广且潜力极大。",
   "malum.gui.book.entry.page.text.aerial_spirit_b": "所有人都想学会飞行，这种能力实在是方便。研究灵活的幻翼会得到两个结果：第一，它有不可控的盛怒；第二，澄空秘术能被用于协助移动。任何灵活轻快的灵魂内都有澄空灵神。",
@@ -581,9 +469,7 @@
   "malum.gui.book.entry.page.text.arcane_spirit_b": "一具身体被创造出来后，其灵魂会含有与身体构造与特性符合的灵神，比如一个浴火的灵魂会有狱火灵神。但是，灵神也不是一成不变的，例如女巫。女巫是在初生时就有秘术力量，还是后来才学会秘术的？",
   "malum.gui.book.entry.page.text.arcane_spirit_c": "和女巫灵魂的情况一样，所有灵魂都能适应恒定量的秘术并吸收一部分，经年累月就会产生新的灵神，灾厄村民和守卫者都是这样。秘术灵神能在拥有秘术能力的灵魂中找到。",
   "malum.gui.book.entry.page.text.arcane_spoil": "你的贪婪有时是不可控的，你想要所有的东西，还想要更多。灵神掠夺戒指能使灵魂在被击碎时破裂出更多的灵神。细思恐极的是，我们是如何获得比灵魂容量还多的灵神的呢？",
-  
-  "malum.gui.book.entry.page.text.brilliant_obelisk": "If we replace the spirit resonator with a set of brilliance, the result instead becomes a brilliant obelisk. Each one of these boosts the power of a nearby enchantment table, reaching full efficiency with just three obelisks.",
- 
+  "malum.gui.book.entry.page.text.brilliant_obelisk": "你可以将灵神共振器换成神圣晶石以得到一个经验晶方尖碑。每一个经验晶方尖碑都会进一步助增附近附魔台的力量，这下你只需三个方尖碑就可以使用全部附魔台功能了。",
   "malum.gui.book.entry.page.text.ceaseless_impetus_a": "不死图腾是许多人所追求的神奇护符，好像是某位立于某种未被记录过的邪恶反面的神祇的塑像。我们可以利用高等神圣灵神来进行灵神聚焦来改变其效果。",
   "malum.gui.book.entry.page.text.ceaseless_impetus_b": "由于生命促符由坚韧的神圣金铸就，它在损坏需要修复之前能生效两次。但这也造成其带来的涅槃祝福效果相对较弱，需要多次激活才能达成其应有的效果。",
   "malum.gui.book.entry.page.text.corrupted_aerial_rite": "仪式的效果被改变，使周围的玩家受到的重力减弱。",
@@ -599,11 +485,10 @@
   "malum.gui.book.entry.page.text.corrupted_infernal_rite": "简单却有用，周围的玩家获得防火效果。",
   "malum.gui.book.entry.page.text.corrupted_sacred_rite": "在灵魂木图腾上使用时，疗愈效果变为催熟效果。周围的动物迅速成长成熟为成年形态。",
   "malum.gui.book.entry.page.text.corrupted_wicked_rite": "与原本的邪恶仪式完全相反，腐化邪恶仪式会击碎周围将死生物的灵魂。",
-  "malum.gui.book.entry.page.text.crucible_acceleration_a": "The crucible is a rather heavy and slow piece of spirit engineering, and that is not without a reason. For you see; the impetus can be really easily damaged, the process of spirit focusing heavily relies on a slow and constant input of arcana to not cause unnecessary damage to the catalyst.",
-  "malum.gui.book.entry.page.text.crucible_acceleration_b": "Increasing the rate at which arcana is streamed into the impetus would yield a faster result but it could lead to your catalyst getting damaged more than necessary. With that in mind the spirit catalyzer is a heavily augmented pedestal designed specifically for utilizing solid fuel to accelerate a nearby machination.",
-  "malum.gui.book.entry.page.text.crucible_acceleration_c": "Each nearby spirit catalyzer will amplify the speed of the crucible at the cost of greater risk of catalyst instability, you may observe exponentially higher results with each new catalyzer; reaching the limit at 8.",
-  "malum.gui.book.entry.page.text.crystal_creation": "By utilizing more complex combinations of spirits in spirit focusing you may naturally expect more complex results, this is very much the case. You may create various gems from all corners of your world using spirit focusing.",
- 
+  "malum.gui.book.entry.page.text.crucible_acceleration_a": "在灵神制造中，灵神坩锅相对更重、更慢，但它也有它的优势：促符可是很脆弱的，而只有稳定而缓慢地提供秘术才能不在灵神聚焦的过程中损毁催化剂。",
+  "malum.gui.book.entry.page.text.crucible_acceleration_b": "提高秘术输入促符的速率会显著地加速产出，但同时也会对催化剂造成不必要的损伤。考虑到此，灵神催化剂是一个高度增强的底座，专门利用固体燃料加速附近的机械加工。",
+  "malum.gui.book.entry.page.text.crucible_acceleration_c": "附近的每一个灵神催化剂都会提升灵神坩锅的速度，但同时也会增加损伤催化剂的概率。这种效应每增加一种催化剂就会指数级上升，在8种时达到极限。",
+  "malum.gui.book.entry.page.text.crystal_creation": "在灵神聚焦中善用各种不同的灵神，你可能会获得各种有趣的结果。凭此，你就可以在世界的各个角落创造各种各样的宝石了。",
   "malum.gui.book.entry.page.text.earthen_rite": "大地仪式给予光环效果。周围的玩家获得额外护甲值。",
   "malum.gui.book.entry.page.text.earthen_spirit_a": "大地秘术可以总括为三个词：强力、大地与自然。这类秘术就算只施放少量也十分强力。",
   "malum.gui.book.entry.page.text.earthen_spirit_b": "大地的力量能做成很多事。例如，将大地秘术注入物品能使它们变得更坚硬耐用；又例如，大地秘术能用于创造基础形态的生命。这种强大的秘术能力不常见，只能在某几类被动且坚毅的灵魂中发现。",
@@ -617,22 +502,20 @@
   "malum.gui.book.entry.page.text.eldritch_wicked_rite": "在邪恶仪式中加入邪术灵神进一步加强了本就十分危险的仪式，让其能够杀戮。",
   "malum.gui.book.entry.page.text.ether_a": "现在许多种类的魔法都提供它们独有的万用光源，灵神魔法也是一样。灵火，也被叫做闪耀之光，是一种能永远燃烧发光的秘术火焰。它能被放置在火把或秘术石火盆上，而后放在地上或悬挂在墙上提供光亮。",
   "malum.gui.book.entry.page.text.ether_b": "灵火也能被染成任意一种颜色。将灵火与任意染色结合就能染色了。由于技术原因，单色的灵火可能会导致某些不想要的后果。",
-  "malum.gui.book.entry.page.text.expanded_focusing_a": "Furthermore, arcane restoration isn't restricted to just repairing your impetus; it extends much further. Using the restoring process you may repair any one of your damaged items.",
-  "malum.gui.book.entry.page.text.expanded_focusing_b": "Each item will require a unique set of spirits that need to be slotted in the crucible as well as a valid repair ingredient aimed at the crucible in the twisted tablet.",
-  "malum.gui.book.entry.page.text.expanded_focusing_c": "Additionally, gear closely connected with spirit arcana can be repaired more efficiently.",
-  
+  "malum.gui.book.entry.page.text.expanded_focusing_a": "在此之外，秘术修复不仅局限于可以修复你的促符，你甚至可以用它来修复任何物品。",
+  "malum.gui.book.entry.page.text.expanded_focusing_b": "在坩锅中，你需要针对每种物品放入唯一对应的灵神组合，且将可用的修复材料在扭曲平板中指向灵神坩锅。",
+  "malum.gui.book.entry.page.text.expanded_focusing_c": "多提一嘴，与秘术紧密相连的材料更易被修复。",
   "malum.gui.book.entry.page.text.hallowed_gold_a": "金是许多秘术的基础，灵神魔法也是一样。将秘术灵神与神圣灵神注入金锭就能给予其秘术能量并得到一种更理想的秘术金属。这一过程也需要一些额外反应触媒。",
   "malum.gui.book.entry.page.text.hallowed_gold_b": "虽然它在邪恶计划和强力装备中没有多大用处，神圣金是用于灵神操纵与传递的一种极佳金属。",
-  "malum.gui.book.entry.page.text.haunted": "灵魂石靠近灵魂时会辐射出少量秘术能量。缚灵附魔会将其变为额外秘术伤害。越高等级的附魔造成的秘术伤害越多。",
+  "malum.gui.book.entry.page.text.haunted": "灵魂岩靠近灵魂时会辐射出少量秘术能量。缚灵附魔会将其变为额外秘术伤害。越高等级的附魔造成的秘术伤害越多。",
   "malum.gui.book.entry.page.text.hex_ash": "咒灰是一种简单的秘术粉末，它在许多注入过程中作为副合成品存在。咒灰能使无生命的事物动起来，甚至在某些情况下给予它们生命。",
   "malum.gui.book.entry.page.text.holy_sap_a": "符文树内部有一种特殊的树脂，获取它需要一柄斧。先将富脂的原木去皮，再用玻璃瓶装取。",
   "malum.gui.book.entry.page.text.holy_sap_b": "神圣树脂有多种用途。第一，将其与黏液球组合就得到了树脂球。因为树脂球和黏液球本质上是一样的，合成之后就相当于得到了三倍的黏液。",
   "malum.gui.book.entry.page.text.holy_sap_c": "第二，加热神圣树脂能得到神圣树脂浆。饮用这种具有强大恢复能力的浆液能回复大量饥饿值并清除某些负面效果。在白天饮用会同时回复生命并给予生命恢复效果。",
   "malum.gui.book.entry.page.text.holy_sap_d": "最好不要有用某个热力系列的离心机从树脂球中分离出黏液球的想法。",
- 
-  "malum.gui.book.entry.page.text.impetus_restoration_a": "When an impetus sustains enough damage it will crack, becoming unusable for spirit focusing. To combat this issue, the crucible has a secondary function known to most as arcane restoration. This process expands on spirit focusing and flips it upside down.",
-  "malum.gui.book.entry.page.text.impetus_restoration_b": "Instead of splitting off mass from our catalyst such as the impetus, arcane restoration utilizes spirit arcana to recover the form of your item. While repairing an impetus with the crucible alone is theorized to be possible, there's no reason not to take the easy way out.",
-  "malum.gui.book.entry.page.text.impetus_restoration_c": "The twisted tablet is a simple augmentation of your usual item stand; the difference is that the tablet has the ability to channel spirit arcana without the need for an outside source to draw it out. It must be placed facing the crucible on a matching axis position.",
+  "malum.gui.book.entry.page.text.impetus_restoration_a": "当某个促符受到太多损伤后，就会损坏，不再能够用于灵神聚焦。而坩锅拥有的一个次级功能可以解决这个问题————秘术修复。这个过程本质上就是将灵神聚焦颠倒。",
+  "malum.gui.book.entry.page.text.impetus_restoration_b": "秘术修复不是从促符中拿取物质，而是使用灵神秘术来恢复物品的形态。虽然你用坩锅也可以做到这一点，但为什么不用一种更简单的方法呢？",
+  "malum.gui.book.entry.page.text.impetus_restoration_c": "扭曲平板是物品架的一种简单扩展。有趣的是，它不需要外部提取就可以传送灵神秘术。你需要将它放置在灵神坩锅面对的轴上的位置。",
   "malum.gui.book.entry.page.text.infernal_rite": "狱火仪式给予光环效果。周围的玩家获得急迫效果。",
   "malum.gui.book.entry.page.text.infernal_spirit_a": "狱火秘术是十分危险的，也是十分邪恶的。玩火通常没有好下场，除非你是一个灵魂猎人。",
   "malum.gui.book.entry.page.text.infernal_spirit_b": "狱火秘术在许多方面都能力颇强：光源，爆炸，火焰等等许多。这种秘术只和一束火苗差不多强，且只能在某些特殊位置发现，我想其所处位置不言自明。",
@@ -642,47 +525,43 @@
   "malum.gui.book.entry.page.text.introduction_d": "灵魂在秘术层面上的存在形式基本上完全由其核心内能发现的灵神种类决定。灵神可能表现为惰性的状态，难以被发现，但它们的确存在。每一个灵魂都是独一无二的，且都由不同数量的不同灵神组成。",
   "malum.gui.book.entry.page.text.iridescent_ether_a": "与其他类型的魔法光源不同，灵火有一个双色变种——虹色灵火。这种灵火的原始形态能被染第二次色来改变其外焰的颜色。它也能像普通灵火一样被放置在火盆和火把上。",
   "malum.gui.book.entry.page.text.iridescent_ether_b": "不过得到你想要的颜色可能会有些难。灵火的第一种颜色在其被转变为虹色灵火的时候就固定了，染色只会改变外焰的颜色。",
- 
   "malum.gui.book.entry.page.text.magebane_belt": "折射腰带是护卫腰带的邪恶版本。这一转变将防御变为攻击，提供更多秘术伤害防御。任何魔法伤害都会被返还给其施放者。",
-  "malum.gui.book.entry.page.text.metallurgic_magic_a": "With some clever tricks you may imbue your impetus with a metallic shell, when fed spirits it'll sprout a metallic node of your desired metal which you may then smelt directly into nuggets. Due to the more rigid material of the impetus, more durability is lost in the process.",
-  "malum.gui.book.entry.page.text.metallurgic_magic_b": "It is speculated that these catalysts were previously used as some sort of ashen aspects in an infernal arcana focused alchemical exchange system. It might be possible to replicate the process by studying the history of infernal arcana.",
+  "malum.gui.book.entry.page.text.metallurgic_magic_a": "稍微使些小技巧，你也许可以用金属充满你的促符，进而获得一些金属芽，他们可以被直接熔炼为对应金属。在此过程中，促符会损伤更多。",
+  "malum.gui.book.entry.page.text.metallurgic_magic_b": "据推测，这些催化剂曾经为某种炼金结构遗留的灰烬。也许研究研究秘术历史可以帮助你重现这一神奇的过程。",
   "malum.gui.book.entry.page.text.mirror_magic": "未来版本见！",
-  
   "malum.gui.book.entry.page.text.necklace_of_the_mystic_mirror": "很多装备、护符与盔甲都在收集灵神时给予某些加成。通过使用原始的镜面秘术，我们能从自己的秘术攻击中抽取一些秘术能量出来加以利用。这枚项链就能做到这一点。",
   "malum.gui.book.entry.page.text.necklace_of_the_narrow_edge": "镰刀的横扫攻击在清理大量杂兵的时候很管用，但在其他情景下这种横扫效果通常不必要甚至是没用。这枚铁制项链能完全移除镰刀的横扫攻击并大幅提升其攻击力。",
- 
   "malum.gui.book.entry.page.text.rebound": "回旋附魔是一种很奇特的附魔。它使你能将镰刀像回旋镖一样掷出，造成远程伤害。高等级附魔使你能更频繁地掷出镰刀。",
   "malum.gui.book.entry.page.text.ring_of_curative_talent": "恶魂之泪有着极强的疗愈功效。将恶魂之泪与神圣灵神注入镀金戒指就得到了疗愈魔能戒指。这枚简单的护符能在收获灵神的时候给予大幅度生命回复。",
   "malum.gui.book.entry.page.text.ring_of_prowess_a": "除灵神之外，灵魂中还有“才能”的存在，它也被称为“经验”。和灵神不同，才能和身体有着足够强的联系纽带，一些才能在身体被击溃时就会从灵魂中剥离出来。",
   "malum.gui.book.entry.page.text.ring_of_prowess_b": "我们不能让灵魂保有任何未被分离出的东西。通过巧妙地将灵神注入自然界中形成的才能，也即经验晶，我们就能在灵神被分离出时收获额外的才能。经验晶石戒指就能做到这一点。",
   "malum.gui.book.entry.page.text.ring_of_wicked_intent": "凋灵魔能戒指是一种简单且实用的战斗用护符。从凋灵大军处得到的秘术使得这枚戒指会与周围的灵神产生反应，并在收获灵神时给予你力量。",
-  "malum.gui.book.entry.page.text.runewood_a": "与灵魂石类似，符文木也是一种不受控的灵神注入的产物，但这与大多数灵神魔法的产物不大一样。虽同为极佳的秘术材料，符文树不会对周围环境与生物构成任何威胁。挺无聊的。",
-  "malum.gui.book.entry.page.text.runewood_b": "符文树是秘术灵神与神圣灵神注入环境的产物，这也造就其温顺的本质。和灵魂石不同，这种注入过程相对较快，容易复现。",
-  "malum.gui.book.entry.page.text.runewood_c": "Additionally, item holders such as pedestals or stands can be created using runewood planks. These simple receptacles are often used as means of supplying your magical processes with ingredients.",
-  "malum.gui.book.entry.page.text.runewood_d": "The runewood tree can be found commonly within various plains and fields alike, and also rarely within forest biomes.",
-  "malum.gui.book.entry.page.text.runewood_obelisk": "If you've ever wished for a means of speeding up your spirit infusion, the runewood obelisk is perfect for your needs. It functions as a booster pillar of sorts, the spirit arcana imbued within allow it to accelerate the infusion process.",
- 
+  "malum.gui.book.entry.page.text.runewood_a": "与灵魂岩类似，符文木也是一种不受控的灵神注入的产物，但这与大多数灵神魔法的产物不大一样。虽同为极佳的秘术材料，符文树不会对周围环境与生物构成任何威胁。挺无聊的。",
+  "malum.gui.book.entry.page.text.runewood_b": "符文树是秘术灵神与神圣灵神注入环境的产物，这也造就其温顺的本质。和灵魂岩不同，这种注入过程相对较快，容易复现。",
+  "malum.gui.book.entry.page.text.runewood_c": "此外，你可以用符文木板制造物品支架，比如基座。这些东西通常用来为你的施法过程提供原料。",
+  "malum.gui.book.entry.page.text.runewood_d": "符文树在平原或丘陵地形很常见，但在森林里出现得比较少。",
+  "malum.gui.book.entry.page.text.runewood_obelisk": "如果你曾设想过有一种东西能够加速你的灵神注入过程，那么符文木方尖碑肯定是你的首选。它有点像一根加速柱子，你可以通过向其中通入灵神来加速注入过程。",
   "malum.gui.book.entry.page.text.sacred_rite": "神圣仪式是最简单的仪式。给予周围的玩家较弱的生命回复效果。",
   "malum.gui.book.entry.page.text.sacred_spirit_a": "神圣灵神代表纯洁与神圣。以神圣灵神发展而来的秘术主要有各种治疗效果和其他正面效果。",
   "malum.gui.book.entry.page.text.sacred_spirit_b": "神圣灵神主要在被动的、舒缓的灵魂内发现。它们真的是很听话的猎物。",
   "malum.gui.book.entry.page.text.scythes_a": "镰刀是很受灵魂猎人们欢迎的工具。它能造成强力的横扫攻击，比剑还强，是居家旅行、清理杂兵的必备武器。当然，重要的是它的每一击都同时对灵魂和身体造成伤害。",
   "malum.gui.book.entry.page.text.scythes_b": "当身体被摧毁时，仅有灵魂的实体容器被摧毁；但如果同时摧毁身体和灵魂，个体就被完全消灭了。这种冷血的处决方式被称为“击碎灵魂”，也是获取灵神的最基础方式。",
-  "malum.gui.book.entry.page.text.scythes_c": "最为基础的镰刀是粗制镰刀，由铁与一块灵魂石制成。",
+  "malum.gui.book.entry.page.text.scythes_c": "最为基础的镰刀是粗制镰刀，由铁与一块灵魂岩制成。",
   "malum.gui.book.entry.page.text.soul_hunter_armor": "灵魂猎人套装是一套攻击性强大的灵神布匹制套装。它的防御效果不好但能提升使用者的秘术与镰刀伤害。",
   "malum.gui.book.entry.page.text.soul_stained_armor_a": "就像粗制镰刀需要升级一样，铁盔甲也可以用魂染钢加强。除了能提供接近钻石盔甲的防御力外，魂染钢盔甲也能抵抗一定秘术伤害。在穿着全套魂染钢盔甲时收割灵魂会给予短时间的抗性提升效果。",
   "malum.gui.book.entry.page.text.soul_stained_armor_b": "穿着一整套只由魂染钢制成的盔甲就好比穿着一整套铀制成的盔甲一样，你会缓慢地死亡。为避免这种情况发生，魂染钢盔甲内部都衬有一层保护性的扭曲石来避免伤害。",
-  "malum.gui.book.entry.page.text.soul_stained_armor_c": "Wearing an armor set made out of soul stained steel is not a sane thought, the nature of the metal would quickly rend the soul. To prevent this unfortunate scenario, the armor is built with a protective twisted rock layer underneath the dangerous steel.",
+  "malum.gui.book.entry.page.text.soul_stained_armor_c": "穿上一套魂染钢制成的盔甲可不是什么明智的想法。它们拥有的力量会很快撕裂你的灵魂。为避免此类惨案的发生，魂染钢盔甲内侧附有一层扭曲石制成的保护层。",
   "malum.gui.book.entry.page.text.soul_stained_scythe": "长时间使用粗制镰刀后，你可能会想要一柄更强的镰刀，就像魂染钢制的镰刀那样。魂染钢镰刀是粗制镰刀的升级版，拥有更强的物理伤害与额外的秘术伤害。",
   "malum.gui.book.entry.page.text.soul_stained_steel_a": "神圣金制作方式的神圣性使其不可能用于伤害。魂染钢则完全不同，它是一种邪恶得无可救药的坚韧金属。魂染钢尤其擅长冷血的伤害，是多种装备与护符的绝佳原材料。",
   "malum.gui.book.entry.page.text.soul_stained_steel_b": "任何由魂染钢制作的装备都具备击碎灵魂的能力。神圣金和魂染钢都能制成一种秘术传递器——灵神共振器，一种复杂的灵魂操纵合成用仪器。",
-  "malum.gui.book.entry.page.text.soulstone_a": "灵魂石是一种能在主世界表层和深板岩层发现的奇怪矿石。这种矿石本身是邪恶灵神注入碳类矿石而形成的，例如煤炭和钻石。",
-  "malum.gui.book.entry.page.text.soulstone_b": "可惜的是这一过程会持续很长时间才结束，人工复现是基本上不可能的。这一过程结束后就会产生这种灵魂活性高的材料。由其形成方式所致，灵魂石是灵神魔法及其他邪恶秘术的一种极佳触媒。",
-  "malum.gui.book.entry.page.text.soulstone_c": "更确切地说，灵魂石内的邪恶灵神含量极高，以致一旦靠近任何秘术现象便会受到损耗。由灵魂石制作的任意装备武器都有伤害灵魂的能力。",
+  "malum.gui.book.entry.page.text.soulstone_a": "灵魂岩是一种能在主世界表层和深板岩层发现的奇怪矿石。这种矿石本身是邪恶灵神注入碳类矿石而形成的，例如煤炭和钻石。",
+  "malum.gui.book.entry.page.text.soulstone_b": "可惜的是这一过程会持续很长时间才结束，人工复现是基本上不可能的。这一过程结束后就会产生这种灵魂活性高的材料。由其形成方式所致，灵魂岩是灵神魔法及其他邪恶秘术的一种极佳触媒。",
+  "malum.gui.book.entry.page.text.soulstone_c": "更确切地说，灵魂岩内的邪恶灵神含量极高，以致一旦靠近任何秘术现象便会受到损耗。由灵魂岩制作的任意装备武器都有伤害灵魂的能力。",
   "malum.gui.book.entry.page.text.soulwood_a": "灵神魔法主要是为了将所有美好的事物变得邪恶。但有时因为巧合，却会完全无害的事物，符文树就是一个例子。认识到这一错误并加以改正是十分重要的。",
   "malum.gui.book.entry.page.text.soulwood_b": "我们可以通过危险的秘术仪式将所有周围的符文木质方块嬗变为灵魂木质。正如其名，灵魂树与灵神魔法有着更直接的联系。它一定会很有用的。",
   "malum.gui.book.entry.page.text.spirit_fabric": "灵神布匹是一种用于重要注入与合成配方的轻质纺织物。这种布匹十分坚韧且有微弱的邪恶气息。",
-  "malum.gui.book.entry.page.text.spirit_focusing_a": "The spirit crucible is a wondrous device created to operate on items using an alchemical process named spirit focusing. It revolves around a single key catalyst and the interactions of it and spirit arcana. One of the more common catalysts found in this magical process is an alchemical impetus.",
-  "malum.gui.book.entry.page.text.spirit_focusing_b": "The impetus is a clay-made artifact of ancient design, it's very easy to shape it's earthen mass into new form. By utilizing spirits in the crucible you may shape some of the impetus' mass into something new at the cost of a slight toll on the clay artifact's durability.",
+  "malum.gui.book.entry.page.text.spirit_focusing_a": "灵神坩锅是一种奇妙的装置，可以用于灵神聚焦。它围绕着一些关键催化剂工作，依赖着这些催化剂与灵神秘术之间的联系而存在。在探索的过程中，你会发现促符就是一种非常常见的催化剂。",
+  "malum.gui.book.entry.page.text.spirit_focusing_b": "促符是粘土制成的小玩意，看上去有着浓厚的历史风格。在坩锅中可以利用灵神将促符转化成其它什么东西，因为粘土制品并不是很牢固。这个过程只会轻微损耗这个小玩意。",
   "malum.gui.book.entry.page.text.spirit_infusion_a": "灵神注入是一种主要把各类灵神注入物品之中的合成过程，可以用于各类邪恶用途。所有注入配方中都需求一个主物品与注入用的灵神。这些原料必须直接被放置在灵神祭坛上。",
   "malum.gui.book.entry.page.text.spirit_infusion_b": "某些配方可能需要额外的触媒物品注入。这些物品必须被放置在周围的物品座上，比如符文木物品台与基座。这些物品台能被放在距离祭坛 4 格之内的任意位置。",
   "malum.gui.book.entry.page.text.spirit_infusion_c": "当所有准备都完成后，灵神注入就会开始。灵神和额外触媒会同时接连被吸收入主物品。当这个漫长的合成过程结束后就会出现对应产物了。",
@@ -690,13 +569,12 @@
   "malum.gui.book.entry.page.text.spirit_magics_a": "读到这里，你可能会有“怎么才能获取灵神”的疑问。首先，一柄可靠且邪恶的武器是获取灵神的基础。之后，对具体狩猎何种灵魂应有清楚认知。",
   "malum.gui.book.entry.page.text.spirit_magics_b": "每个灵魂都有其唯一的灵神配比，不同灵魂的灵神种类及含量也是不同的。开始狩猎之前要清楚哪种猎物有你所需要的灵神。",
   "malum.gui.book.entry.page.text.spirit_magics_c": "狩猎灵魂时要注意的是不要遗漏。遗漏的灵神会慢慢消散注入并转变周围环境，这种不受控制的灵神魔法是非常不稳定且危险的。",
-  "malum.gui.book.entry.page.text.spirit_plunder": "灵神劫掠附魔使得镰刀的灵魂石使用更多的秘术能量，任何这把镰刀击碎的灵魂都会分裂出额外灵神。这也会损耗灵魂石，对镰刀造成更多耐久值损耗。",
+  "malum.gui.book.entry.page.text.spirit_plunder": "灵神劫掠附魔使得镰刀的灵魂岩使用更多的秘术能量，任何这把镰刀击碎的灵魂都会分裂出额外灵神。这也会损耗灵魂岩，对镰刀造成更多耐久值损耗。",
   "malum.gui.book.entry.page.text.spirit_pouch": "如果你曾想要过一个灵神背包啥的，灵神布袋就是你想要的。这件物品使你能储存大量灵神，所有身上的与收割的灵神都会自动进入灵神布袋。",
   "malum.gui.book.entry.page.text.spirit_trinkets_a": "护符是能给予你有益效果的装饰品，也有人将它们成为“饰品”（Baubles）或是“奇异品”（Curios）。神圣金和魂染钢都能被制成两种基础护符，以此作为灵神注入的主物品来得到高级护符。",
   "malum.gui.book.entry.page.text.spirit_trinkets_b": "镀金护符给予盔甲值加成，而华丽护符提供盔甲韧性提升。",
- 
   "malum.gui.book.entry.page.text.tainted_rock": "将秘术灵神和神圣灵神注入圆石就得到了一种多用的建筑石头。附圣石是一种有若干用途的简单的秘术建筑方块，它也能被制成物品台与物品基座。",
-  "malum.gui.book.entry.page.text.the_device": "even works while bended",
+  "malum.gui.book.entry.page.text.the_device": "对折之后也可以工作",
   "malum.gui.book.entry.page.text.totem_corruption_a": "秘术灵神通常被用于增强其他秘术的能力，一般作为灵神仪式的起点。但假如我们激活一个完全由秘术灵神构成的仪式，累积起的秘术能量会变成什么呢？答案是“腐化”。",
   "malum.gui.book.entry.page.text.totem_corruption_b": "秘术灵神将所有累积起的秘术能量一起传导的不可控且不稳定的后果便是图腾本身受到腐化，将原本正常的符文木变为阴郁的紫色。任何在灵魂木图腾上激活的仪式都会产生不同的效果。",
   "malum.gui.book.entry.page.text.totem_corruption_c": "也可以通过不同的原料合成一个灵魂木图腾基座。",
@@ -705,30 +583,24 @@
   "malum.gui.book.entry.page.text.totem_magic_c": "独立的灵神仪式不能处于其他仪式的范围之内，但如果是不同的仪式就可以靠得略近些。",
   "malum.gui.book.entry.page.text.trans_rite": "",
   "malum.gui.book.entry.page.text.twisted_rock": "如果将神圣灵神换成邪恶灵神，产物会是更阴暗的石头。扭曲石和附圣石完全一样，除了其较为深暗的色调。",
-  "malum.gui.book.entry.page.text.tyrving_a": "The Tyrving is a rather esoteric blade. It's strange design makes it appear as a weak weapon not suited for combat. However, it's hex ash lining and twisted rock form cause it to deal extra magic damage to the soul, the greater the soul the more benefit.",
-  "malum.gui.book.entry.page.text.tyrving_b": "The weapon can also be repaired using arcane restoration quite efficiently.",
- 
+  "malum.gui.book.entry.page.text.tyrving_a": "提尔锋是一种相当晦涩难懂的刀具。它看起来也许不是什么强力武器，但它灰烬制成的六角形内衬和镶嵌的扭曲石使其能够对灵神造成巨大伤害。灵神越强大，提尔锋的威力也就越大。",
+  "malum.gui.book.entry.page.text.tyrving_b": "提尔锋的损伤可以有效地通过秘术修复过程恢复。",
   "malum.gui.book.entry.page.text.voodoo_magic": "未来版本见！",
- 
   "malum.gui.book.entry.page.text.warded_belt": "将大地灵神与附圣石注入本就十分坚韧的镀金腰带，就会得到具有强大防御能力的护卫腰带。",
   "malum.gui.book.entry.page.text.wicked_rite": "邪恶仪式是具有伤害性的一种仪式。周围的攻击生物会受到不致命的秘术伤害。",
   "malum.gui.book.entry.page.text.wicked_spirit_a": "与神圣灵神相反，邪恶灵神代表不纯洁与黑暗的秘术力量。仅仅只是拿着它就能造成轻微的疼痛。会使用邪恶秘术的人由恶念施放这些秘术是很危险的。",
   "malum.gui.book.entry.page.text.wicked_spirit_b": "通常身体被摧毁后，灵魂会缓慢地消散。假如生物在死去后较短时间内被死灵秘术复活，灵魂可能会与身体再次合一。这一过程会对灵魂造成特殊损害，从而出现邪恶灵神。",
-  "malum.gui.book.entry.page.text.working_with_ashes": "With primitive spirit focusing you may successfully create simple powders often needed in all sorts of studies of arcana.",
-  
-  "malum.gui.book.entry.primary_arcana": "Primary Arcana",
-  "malum.gui.book.entry.primary_arcana.description": "Basic Spellforms",
-
+  "malum.gui.book.entry.page.text.working_with_ashes": "通过最基础的灵神聚焦，你可以造出各种秘术研究中最常用的一些粉末材料。",
+  "malum.gui.book.entry.primary_arcana": "基础秘术",
+  "malum.gui.book.entry.primary_arcana.description": "可以脱口而出的咒语",
   "malum.gui.book.entry.ring_of_curative_talent": "疗愈魔能戒指",
   "malum.gui.book.entry.ring_of_curative_talent.description": "秘术的生命力",
   "malum.gui.book.entry.ring_of_prowess": "经验晶石戒指",
   "malum.gui.book.entry.ring_of_prowess.description": "好奇心",
   "malum.gui.book.entry.ring_of_wicked_intent": "凋灵魔能戒指",
   "malum.gui.book.entry.ring_of_wicked_intent.description": "秘术的暴怒",
-
   "malum.gui.book.entry.runewood": "符文树",
   "malum.gui.book.entry.runewood.description": "秘术橡树",
-
   "malum.gui.book.entry.sacred_rite": "神圣仪式",
   "malum.gui.book.entry.sacred_rite.description": "基础疗愈学",
   "malum.gui.book.entry.scythes": "镰刀",
@@ -739,7 +611,7 @@
   "malum.gui.book.entry.soul_stained_armor.description": "匠作",
   "malum.gui.book.entry.soul_stained_scythe": "魂染镰刀",
   "malum.gui.book.entry.soul_stained_scythe.description": "打磨",
-  "malum.gui.book.entry.soulstone": "灵魂石",
+  "malum.gui.book.entry.soulstone": "灵魂岩",
   "malum.gui.book.entry.soulstone.description": "转变后的矿物",
   "malum.gui.book.entry.soulwood": "灵魂树",
   "malum.gui.book.entry.soulwood.description": "扭曲的根须",
@@ -755,24 +627,20 @@
   "malum.gui.book.entry.spirit_metals.description": "灵力",
   "malum.gui.book.entry.spirit_trinkets": "灵神护符",
   "malum.gui.book.entry.spirit_trinkets.description": "锻造",
-
   "malum.gui.book.entry.totem_magic": "图腾秘术",
   "malum.gui.book.entry.totem_magic.description": "灵神仪式",
   "malum.gui.book.entry.trans_rite": "仪式转换！",
   "malum.gui.book.entry.trans_rite.description": "￣へ￣",
   "malum.gui.book.entry.tyrving": "提尔锋",
   "malum.gui.book.entry.tyrving.description": "古代遗物",
-
   "malum.gui.book.entry.voodoo_magic": "巫毒秘术",
   "malum.gui.book.entry.voodoo_magic.description": "禁忌的秘术",
-
   "malum.gui.book.entry.warded_belt": "护卫腰带",
   "malum.gui.book.entry.warded_belt.description": "岿然不动",
   "malum.gui.book.entry.wicked_rite": "邪恶仪式",
   "malum.gui.book.entry.wicked_rite.description": "自动化谋杀",
-  "malum.gui.book.entry.working_with_ashes": "Working With Ashes",
-  "malum.gui.book.entry.working_with_ashes.description": "Spirits to ashes, ashes to soot",
-
+  "malum.gui.book.entry.working_with_ashes": "玩弄尘世",
+  "malum.gui.book.entry.working_with_ashes.description": "灵神化为灰烬，灰烬化为尘土",
   "malum.gui.rite.aerial_rite": "澄空仪式",
   "malum.gui.rite.aqueous_rite": "碧水仪式",
   "malum.gui.rite.arcane_rite": "秘术仪式",
@@ -786,14 +654,11 @@
   "malum.gui.rite.infernal_rite": "狱火仪式",
   "malum.gui.rite.sacred_rite": "神圣仪式",
   "malum.gui.rite.wicked_rite": "邪恶仪式",
-
   "malum.jei.block_transmutation": "方块嬗变",
-
   "malum.jei.spirit_focusing": "灵神聚焦",
   "malum.jei.spirit_infusion": "灵神注入",
   "malum.jei.spirit_repair": "灵神修复",
   "malum.jei.spirit_rite": "灵神仪式",
-  
   "malum.spirit.description.aerial": "澄空灵神",
   "malum.spirit.description.aqueous": "碧水灵神",
   "malum.spirit.description.arcane": "秘术灵神",
@@ -804,7 +669,6 @@
   "malum.spirit.description.stored_soul": "存储灵魂：",
   "malum.spirit.description.stored_spirit": "存储灵神：",
   "malum.spirit.description.wicked": "邪恶灵神",
-
   "malum.subtitle.altar_consume": "灵神祭坛：消耗物品",
   "malum.subtitle.altar_craft": "灵神祭坛：合成完成",
   "malum.subtitle.altar_loop": "灵神祭坛：循环吸收",
@@ -823,10 +687,10 @@
   "malum.subtitle.brilliance_place": "经验晶石：被破坏",
   "malum.subtitle.crucible_craft": "灵神坩埚：合成完成",
   "malum.subtitle.crucible_loop": "灵神坩埚：循环吸收",
-  "malum.subtitle.deepslate_soulstone_break": "深层灵魂石：被破坏",
-  "malum.subtitle.deepslate_soulstone_hit": "深层灵魂石：损坏中",
-  "malum.subtitle.deepslate_soulstone_place": "深层灵魂石块：被放置",
-  "malum.subtitle.deepslate_soulstone_step": "脚步声：深层灵魂石块",
+  "malum.subtitle.deepslate_soulstone_break": "深层灵魂岩：被破坏",
+  "malum.subtitle.deepslate_soulstone_hit": "深层灵魂岩：损坏中",
+  "malum.subtitle.deepslate_soulstone_place": "深层灵魂岩块：被放置",
+  "malum.subtitle.deepslate_soulstone_step": "脚步声：深层灵魂岩块",
   "malum.subtitle.ether_break": "灵火：被破坏",
   "malum.subtitle.ether_place": "灵火：被放置",
   "malum.subtitle.hallowed_gold_break": "神圣金块：被破坏",
@@ -846,27 +710,23 @@
   "malum.subtitle.soul_ward_charge": "灵魂圣典：充能",
   "malum.subtitle.soul_ward_grow": "灵魂圣典：生长",
   "malum.subtitle.soul_ward_hit": "灵魂圣典：损坏中",
-  "malum.subtitle.soulstone_break": "灵魂石块：被破坏",
-  "malum.subtitle.soulstone_hit": "灵魂石块：损坏中",
-  "malum.subtitle.soulstone_place": "灵魂石块：被放置",
-  "malum.subtitle.soulstone_step": "脚步声：灵魂石块",
+  "malum.subtitle.soulstone_break": "灵魂岩块：被破坏",
+  "malum.subtitle.soulstone_hit": "灵魂岩块：损坏中",
+  "malum.subtitle.soulstone_place": "灵魂岩块：被放置",
+  "malum.subtitle.soulstone_step": "脚步声：灵魂岩块",
   "malum.subtitle.spirit_harvest": "灵魂收割",
   "malum.subtitle.suspicious_sound": "可疑的声音",
   "malum.subtitle.tainted_rock_break": "秘术石：被破坏",
   "malum.subtitle.tainted_rock_hit": "秘术石：损坏中",
   "malum.subtitle.tainted_rock_place": "秘术石：被放置",
   "malum.subtitle.tainted_rock_step": "脚步声：秘术石",
-  "malum.subtitle.totem_activated": "Totem Activated",
-  "malum.subtitle.totem_cancelled": "Totem Cancelled",
+  "malum.subtitle.totem_activated": "图腾仪式：激活",
+  "malum.subtitle.totem_cancelled": "图腾仪式：取消",
   "malum.subtitle.totem_charge": "图腾仪式：充能",
   "malum.subtitle.totem_engrave": "图腾仪式：铭刻",
   "malum.subtitle.void_slash": "虚空斩击",
-
-
-
   "tetra.improvement.malum.soul_strike.description": "允许物品破灭灵魂",
   "tetra.improvement.malum.soul_strike.name": "灵魂斩击",
-
   "tetra.material.hallowed_gold": "神圣金",
   "tetra.material.hallowed_gold.prefix": "神圣金",
   "tetra.material.runewood": "符文木",
@@ -881,17 +741,11 @@
   "tetra.material.tainted_rock.prefix": "秘术石",
   "tetra.material.twisted_rock": "扭曲石",
   "tetra.material.twisted_rock.prefix": "扭曲石",
-
-
-
   "tag.malum.soul_hunter_weapon": "灵魂猎者",
   "tag.malum.soulwood_logs": "灵魂木原木",
   "tag.malum.runewood_logs": "符文木原木",
   "tag.malum.sapballs": "树脂球",
   "tag.malum.scythe": "镰刀",
-
-
-
   "emi.category.malum.block_transmutation": "方块嬗变",
   "emi.category.malum.spirit_infusion": "灵神注入",
   "emi.category.malum.spirit_focusing": "灵神聚焦",

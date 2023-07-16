@@ -54,7 +54,8 @@
     "client.ftbquests.QuestObjectAnimator",
     "client.ftbquests.QuestPanelAnimator",
     "client.ftbquests.QuestScreenAnimator",
-    "client.ftbquests.ViewQuestPanelAnimator"
+    "client.ftbquests.ViewQuestPanelAnimator",
+    "client.malum.ProgressionBookScreenTextWrapper"
   ],
   "injectors": {
     "defaultRequire": 0

@@ -68,7 +68,7 @@ class PostScreenTriggerer {
 @Mixin(GameRenderer.class)
 class PostScreenAnimator {
 	@Unique
-	private static final Animation<Double> opacity = new AnimatedDouble(1, 0, 450, Curves.Exponential.Quadratic.OUT);
+	private static final AnimatedDouble opacity = new AnimatedDouble(1, 0, 450, Curves.Exponential.Quadratic.OUT);
 
 	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/hud/InGameHud;render(Lnet/minecraft/client/util/math/MatrixStack;F)V"))
 	private void renderVignette(InGameHud inGameHud, MatrixStack matrixStack, float tickDelta) {
