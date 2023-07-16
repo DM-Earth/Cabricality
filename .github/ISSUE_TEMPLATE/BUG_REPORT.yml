@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug
-title: "[BUG]:"
+title: "[BUG]: "
 labels: ["bug"]
 body:
   - type: markdown
@@ -32,19 +32,29 @@ body:
         ...
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: cabf-version
     attributes:
       label: "Cabricality Version"
       description: "What is your `Cabricality` version?"
-      placeholder: E.g., 0.3
+      options:
+        - 0.2.4
+        - 0.2.3
+        - 0.2.2
+        - 0.2
+        - 0.2 Pre-release 3
+        - 0.2 Pre-release 2
+        - 0.2 Beta 4
+        - 0.2 Beta 3
+        - 0.2 Beta 2
+        - 0.2 Beta 1
     validations:
       required: true
   - type: input
     id: crash-log
     attributes:
       label: Crash Log
-      description: Please use a pastebin service(e.g., [`Ubuntu Pastebin`](https://paste.ubuntu.com)) to hold your log and paste the link below.
+      description: If crashed, please use a pastebin service(e.g., [`Ubuntu Pastebin`](https://paste.ubuntu.com)) to hold your log and paste the link below.
   - type: textarea
     id: anything-else
     attributes:

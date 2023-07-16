@@ -1,0 +1,17 @@
+name: Feature Propose
+description: Propose a feature
+title: "[FEATURE]: "
+labels: ["feature propose"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature propose!
+  - type: textarea
+    id: propose-reason
+    attributes:
+      label: Propose Reason?
+      description: Inform us your reason to propose the feature.
+      placeholder: E.g., implementing this feature would greatly improve user experience in these ways...
+    validations:
+      required: true
