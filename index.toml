@@ -309,6 +309,11 @@ hash = "de9b5bac4165fb069bf6df9da2bb6028d50dd51fa0d294f0fb62d1d0c64b707b"
 metafile = true
 
 [[files]]
+file = "mods/faded-widgets.pw.toml"
+hash = "18e1a0e9b8eed452608054c2e272af75499a3bca8c12cb417e6b003fe29ff13a"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "c2d32ced6373731bf691287a6d2daa8c333f38a003d0032264e3174d4aca5eb7"
 metafile = true

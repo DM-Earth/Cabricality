@@ -59,13 +59,13 @@ public class TitleScreenWidgets extends Screen {
 	// Sets title to Cabricality
 	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V", ordinal = 1))
 	private void renderCabricalityTitle(int layer, Identifier identifier) {
-		RenderSystem.setShaderTexture(layer, Cabricality.Textures.CABRICALITY_TITLE_TEXTURE.identifier());
+		RenderSystem.setShaderTexture(layer, Cabricality.Textures.CABRICALITY_TITLE.identifier());
 	}
 
 	// Sets subtitle to Minecraft
 	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V", ordinal = 2))
 	private void renderMinecraftSubtitle(int layer, Identifier identifier) {
-		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE_TEXTURE.identifier());
+		RenderSystem.setShaderTexture(layer, Cabricality.Textures.MINECRAFT_SUBTITLE.identifier());
 	}
 
 	@Inject(method = "render", at = @At("RETURN"))

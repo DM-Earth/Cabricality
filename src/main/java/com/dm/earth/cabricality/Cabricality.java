@@ -53,8 +53,10 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final Texture CABRICALITY_TITLE_TEXTURE = texture("gui", "title", "cabricality");
-		public static final Texture MINECRAFT_SUBTITLE_TEXTURE = texture("gui", "title", "minecraft");
+		public static final Texture CABRICALITY_TITLE = texture("gui", "title", "cabricality");
+		public static final Texture MINECRAFT_SUBTITLE = texture("gui", "title", "minecraft");
+		public static final Texture CABRICALITY_LOGO = texture("gui", "title", "logo");
+		public static final Texture CABRICALITY_LOGO_NEON = texture("gui", "title", "logo_neon");
 	}
 
 	public static class Sounds {
