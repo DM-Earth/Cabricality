@@ -4,8 +4,8 @@
 	"textures": {
 		"0": "create:block/andesite_casing",
 		"1": "create:block/fan_side",
-		"2": "create:block/andesite_funnel_plating",
-		"3": "create:block/andesite_funnel_back",
+		"2": "create:block/funnel/andesite_funnel_push",
+		"3": "create:block/funnel/andesite_funnel",
 		"4": "ae2:block/charger",
 		"particle": "create:block/andesite_casing"
 	},
@@ -18,8 +18,8 @@
 				"east": {"uv": [2, 0, 14, 2], "texture": "#1"},
 				"south": {"uv": [2, 0, 14, 2], "texture": "#1"},
 				"west": {"uv": [2, 0, 14, 2], "texture": "#1"},
-				"up": {"uv": [6, 8, 12, 14], "texture": "#3"},
-				"down": {"uv": [6, 8, 12, 14], "rotation": 90, "texture": "#3"}
+				"up": {"uv": [6, 0, 12, 6], "texture": "#3"},
+				"down": {"uv": [6, 0, 12, 6], "rotation": 90, "texture": "#3"}
 			}
 		},
 		{
@@ -30,8 +30,8 @@
 				"east": {"uv": [2, 14, 14, 16], "texture": "#1"},
 				"south": {"uv": [2, 14, 14, 16], "texture": "#1"},
 				"west": {"uv": [2, 14, 14, 16], "texture": "#1"},
-				"up": {"uv": [6, 8, 12, 14], "rotation": 90, "texture": "#3"},
-				"down": {"uv": [6, 8, 12, 14], "texture": "#3"}
+				"up": {"uv": [6, 0, 12, 6], "rotation": 90, "texture": "#3"},
+				"down": {"uv": [6, 0, 12, 6], "texture": "#3"}
 			}
 		},
 		{
@@ -54,8 +54,8 @@
 				"east": {"uv": [2, 0, 4, 16], "texture": "#1"},
 				"south": {"uv": [3, 0, 13, 16], "texture": "#1"},
 				"west": {"uv": [12, 0, 14, 16], "texture": "#1"},
-				"up": {"uv": [0.5, 14, 5.5, 15], "texture": "#2"},
-				"down": {"uv": [0.5, 14, 5.5, 15], "texture": "#2"}
+				"up": {"uv": [0, 5.5, 1, 10.5], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [7, 5.5, 8, 10.5], "rotation": 270, "texture": "#2"}
 			}
 		},
 		{
