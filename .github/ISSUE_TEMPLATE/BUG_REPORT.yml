@@ -33,21 +33,13 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: cabf-version
+    id: cabf-version-check
     attributes:
-      label: "Cabricality Version"
-      description: "What is your `Cabricality` version?"
+      label: "Cabricality Version Check"
+      description: "Are you playing with an up-to-date version of Cabricality? If not, your report might be ignored."
       options:
-        - 0.2.4
-        - 0.2.3
-        - 0.2.2
-        - 0.2
-        - 0.2 Pre-release 3
-        - 0.2 Pre-release 2
-        - 0.2 Beta 4
-        - 0.2 Beta 3
-        - 0.2 Beta 2
-        - 0.2 Beta 1
+        - Yes, I'm playing with Cabricality 0.3
+        - No, I'm playing with an outdated version
     validations:
       required: true
   - type: input
