@@ -1,18 +1,17 @@
 package com.dm.earth.cabricality.lib.util;
 
 import net.minecraft.client.gui.screen.ChatScreen;
-import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.client.gui.screen.GameModeSelectionScreen;
+import net.minecraft.client.gui.screen.Screen;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.quiltmc.qsl.lifecycle.api.client.event.ClientTickEvents;
-import net.minecraft.client.gui.screen.Screen;
-
-import java.lang.reflect.Method;
+import slimeknights.mantle.client.screen.book.BookScreen;
 
 @ClientOnly
 public class ScreenUtil {
 	public static final Class<?>[] UNEXTENDED_SCREENS = {
-			ChatScreen.class
+			ChatScreen.class, GameModeSelectionScreen.class, BookScreen.class
 	};
 
 	@Nullable
@@ -34,5 +33,13 @@ public class ScreenUtil {
 				nextScreen = null;
 			}
 		});
+	}
+
+	public static boolean isUnextendedScreen(@Nullable Class<?> clazz) {
+		if (clazz == null) return false;
+		for (Class<?> unextendedScreen : UNEXTENDED_SCREENS) {
+			if (unextendedScreen.isAssignableFrom(clazz)) return true;
+		}
+		return false;
 	}
 }

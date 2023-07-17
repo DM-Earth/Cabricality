@@ -86,7 +86,7 @@ public class SplashModifier {
 			opacity = logoOpacity = 1;
 		}
 
-		Vector shift = shifting.value().interpolate(Vector.ZERO, 1 - opacity);
+		Vector shift = shifting.value().interpolate(Vector.ZERO, Math.pow(Theory.clamp(complete, 0, 1), 1D / 3D));
 
 		// Background
 		background: {

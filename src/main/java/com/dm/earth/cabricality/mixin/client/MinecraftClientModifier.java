@@ -1,6 +1,7 @@
 package com.dm.earth.cabricality.mixin.client;
 
 import com.dm.earth.cabricality.client.screen.MissingModScreen;
+import com.dm.earth.cabricality.lib.util.ScreenUtil;
 import org.objectweb.asm.Opcodes;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.QuiltLoader;

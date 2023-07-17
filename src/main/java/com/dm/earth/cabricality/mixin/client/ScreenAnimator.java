@@ -55,10 +55,7 @@ class PostScreenTriggerer {
 	@Inject(method = "setScreen", at = @At("HEAD"))
 	private void setScreen(@Nullable Screen screen, CallbackInfo ci) {
 		if (
-				screen == null && (
-						currentScreen != null
-								&& !Arrays.asList(ScreenUtil.UNEXTENDED_SCREENS).contains(currentScreen.getClass())
-				)
+				screen == null && (currentScreen != null && !ScreenUtil.isUnextendedScreen(currentScreen.getClass()))
 		) {
 			PushUtil.POST_SCREEN.push();
 		}

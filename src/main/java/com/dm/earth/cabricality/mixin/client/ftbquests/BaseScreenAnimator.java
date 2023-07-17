@@ -24,11 +24,6 @@ public class BaseScreenAnimator {
 	@Unique
 	private static final AnimatedDouble animation = new AnimatedDouble(0, 1, 175, Curves.LINEAR);
 
-	@Inject(method = "initGui", at = @At("TAIL"), remap = false)
-	private void trigger(CallbackInfo ci) {
-		PushUtil.ANIMATE_BASE_SCREEN.push();
-	}
-
 	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Theme;drawGui(Lnet/minecraft/client/util/math/MatrixStack;IIIILdev/ftb/mods/ftblibrary/ui/WidgetType;)V"))
 	private void drawBackground(Theme theme, MatrixStack matrixStack, int x, int y, int w, int h, WidgetType widgetType) {
 		PushUtil.ANIMATE_BASE_SCREEN.pull(() -> PushUtil.ANIMATE_CHAPTER_PANEL.push(animation::replay));
