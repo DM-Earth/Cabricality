@@ -11,6 +11,7 @@
 	"LavaFluidMixin",
 	"WrenchItemMixin",
 	"ad_astra.VehicleEntityMixin",
+    "malum.EldritchInfernalRiteFixer",
 	"led.DiodeLampBlockAccessor",
 	"log.Slf4jHandler$MinecraftServerLogger",
 	"log.Slf4jHandler$ReloadableResourceManagerLogger",
