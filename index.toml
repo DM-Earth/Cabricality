@@ -141,6 +141,10 @@ file = "config/splasher/zh_cn.txt"
 hash = "d868560ae52763e97b3ec7a6eb9b784f325f9f549e4e1b35ad91d7d024676542"
 
 [[files]]
+file = "config/tapestop.toml"
+hash = "0491f877090c7da2a41ded2f192ebb37abd08dd0850503913dcd20fbaf31d7c4"
+
+[[files]]
 file = "config/tconstruct-client.toml"
 hash = "78b9a13c7cae6b3106053dbf3d6561457d7ca4dd439fdd3cf865eb604858ec23"
 
@@ -436,11 +440,6 @@ metafile = true
 [[files]]
 file = "mods/structures-compass.pw.toml"
 hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
-metafile = true
-
-[[files]]
-file = "mods/tape-stop.pw.toml"
-hash = "ec2faf959a6748b0717adbbaef354d48a651744a4e8206194f7610c7b8862a41"
 metafile = true
 
 [[files]]
