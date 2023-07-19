@@ -60,7 +60,9 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Sounds {
-		public static final SoundEvent FINISH_LOADING = SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE;
+		public static final SoundEvent[] FINISH_LOADING = {
+				SoundEvents.BLOCK_BEACON_ACTIVATE, SoundEvents.BLOCK_BELL_RESONATE
+		};
 	}
 
 	public static class ItemGroups {

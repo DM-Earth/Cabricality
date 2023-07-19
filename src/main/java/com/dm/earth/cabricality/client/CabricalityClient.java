@@ -3,6 +3,8 @@ package com.dm.earth.cabricality.client;
 import java.util.Arrays;
 
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
@@ -37,7 +39,7 @@ public class CabricalityClient implements ClientModInitializer {
 	private static RotatingCubeMapRenderer cubeMapRenderer;
 
 	public static void finishLoading() {
-		SoundUtil.playSound(Cabricality.Sounds.FINISH_LOADING);
+		SoundUtil.playSounds(Cabricality.Sounds.FINISH_LOADING);
 		GLFW.glfwRequestWindowAttention(MinecraftClient.getInstance().getWindow().getHandle());
 	}
 
