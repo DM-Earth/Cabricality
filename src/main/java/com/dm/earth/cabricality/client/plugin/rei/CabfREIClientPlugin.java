@@ -22,6 +22,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import me.shedaniel.rei.api.client.registry.screen.ExclusionZones;
 import org.quiltmc.loader.api.QuiltLoader;
 
 import com.dm.earth.cabricality.Cabricality;
@@ -44,6 +45,7 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import slimeknights.tconstruct.tables.client.inventory.TinkerStationScreen;
 
 @SuppressWarnings("UnstableApiUsage")
 public class CabfREIClientPlugin implements REIClientPlugin {
@@ -54,8 +56,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @param modEntry The mod entry to register the entry for.
 	 * @param tagPaths The tag's paths.
 	 */
-	private void registerCollapsibleEntryFromTag(CollapsibleEntryRegistry registry, ModEntry modEntry,
-			String... tagPaths) {
+	private void registerCollapsibleEntryFromTag(CollapsibleEntryRegistry registry, ModEntry modEntry, String... tagPaths) {
 		registry.group(modEntry.id(tagPaths), tag(modEntry.id(tagPaths)),
 				EntryIngredients.ofItemTag(modEntry.asItemTag(tagPaths)));
 	}
@@ -232,12 +233,13 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 									color -> AE2.asItem(joinAll(color, type, postfix))).collect(Collectors.toList()))));
 		}
 
-		if (QuiltLoader.isModLoaded(IF.getModid()))
+		if (QuiltLoader.isModLoaded(IF.getModid())) {
 			/*
 			 * Item Filters
 			 */
 			// Filters
 			registerCollapsibleEntryFromTag(registry, IF, "filters");
+		}
 
 		/*
 		 * Catwalks Inc.
@@ -476,5 +478,10 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 					prefix -> Arrays.stream(POSTFIX)
 							.forEach(postfix -> rule.hide(EntryIngredients.of(IR.asItem(joinAll(prefix, postfix))))));
 		}
+	}
+
+	@Override
+	public void registerExclusionZones(ExclusionZones zones) {
+		zones.register(TinkerStationScreen.class, new TinkersAnvilExclusionZones());
 	}
 }

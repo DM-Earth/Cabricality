@@ -207,7 +207,7 @@ metafile = true
 
 [[files]]
 file = "mods/bugjump.pw.toml"
-hash = "7ba5c5431478e67cb1f4359a2577b36224cc2c2e3748786eba2831dd1548ad46"
+hash = "6c2c751397115dbc1df2d367134f30f1d5df69a9264fc23444322342714790f4"
 metafile = true
 
 [[files]]
@@ -231,7 +231,7 @@ hash = "e51b7e48c7710b8aa78ca4862e26a238c53a95928587f8f93aa31f2ed4ff48fe"
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "77bd9b9ae2bf78481ba939cc78e5e4c0d9528516aa791305eecb39eb56e13125"
+hash = "f90a836fdbf3d3d66f5a670213022711aa4d1762edc8265a8e97b9606cd9b49e"
 metafile = true
 
 [[files]]
@@ -290,7 +290,7 @@ metafile = true
 
 [[files]]
 file = "mods/flash.pw.toml"
-hash = "472847198a4151f4c6d9cd376af47b0b745e8a797282321af8a6ffd49ca8acc3"
+hash = "869463b635b9fe2e0ba10a806b76f99fb1a91e87b72cf44843f3506a69ec6d04"
 metafile = true
 
 [[files]]
@@ -405,7 +405,7 @@ metafile = true
 
 [[files]]
 file = "mods/rei.pw.toml"
-hash = "9dff70d8d47e1a70bfc6a6a677e59d9528a61c0daab647902018b03587e262bb"
+hash = "fd5add2eaf114e28dd6c5c358c75bbe14c95f5820ddbfe0ff08614fe00b2c695"
 metafile = true
 
 [[files]]
@@ -420,7 +420,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "70dab83167cb3edb54f252ed6f74a6f94b69177bc5bce631fe2b92f06365c941"
+hash = "d497c372741f1841cd93941fcb76dfcc9d2526d3d4ae9864a4b7ef370e9fe923"
 metafile = true
 
 [[files]]
@@ -444,8 +444,13 @@ hash = "ec2faf959a6748b0717adbbaef354d48a651744a4e8206194f7610c7b8862a41"
 metafile = true
 
 [[files]]
+file = "mods/tapestop.pw.toml"
+hash = "ec2faf959a6748b0717adbbaef354d48a651744a4e8206194f7610c7b8862a41"
+metafile = true
+
+[[files]]
 file = "mods/taptab.pw.toml"
-hash = "00c85907f81c5993d891637eca069bb8f9516e2667064b0cc44c9771628a34f8"
+hash = "8abc1dfa3b3adf29e1d0eff71df82057195fddf2a9ec1a15492d3ec4d11cd35a"
 metafile = true
 
 [[files]]

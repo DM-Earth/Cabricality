@@ -1,0 +1,23 @@
+enabled = true
+timeoutMs = 25000
+
+[Trigger]
+whenMinimized = true
+# Tape stops when the game is minimized.
+
+whenLostFocus = true
+# Tape stops when the game loses focus.
+
+afterGUITimeout = true
+# Tape stops when the game is in a GUI screen(inventory, pause menu, etc.) and reaches the timeout specified above.
+
+afterGameTimeout = true
+# Tape stops when the game is not in a GUI screen and reaches the timeout specified above.
+
+[Debug]
+debug = true
+# Prints debug messages to the console.
+
+[Visual]
+panorama = false
+# Renders the panorama background while tape stopped.

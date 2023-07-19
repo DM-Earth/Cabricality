@@ -90,6 +90,7 @@ dependencies {
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
     modImplementation "curse.maven:catwalks-inc-554340:${project.catwalks_version}"
     modImplementation "curse.maven:malum-quilt-627875:${project.malum_version}"
+    implementation "curse.maven:hephaestus-667894:${project.hephaestus_version}"
 
     // - JitPack
     modImplementation "com.github.KrLite.Equator-v2:build:${project.minecraft_major_version}-${project.equator_version}"
