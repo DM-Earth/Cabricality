@@ -284,10 +284,6 @@ hash = "de9b5bac4165fb069bf6df9da2bb6028d50dd51fa0d294f0fb62d1d0c64b707b"
 metafile = true
 
 [[files]]
-file = "mods/faded-widgets-1.18.2-1.0.0.jar"
-hash = "913b6838eb10afb042c9ca18b9df00b3f220fb416559132ee09f527e15749ddc"
-
-[[files]]
 file = "mods/faded-widgets.pw.toml"
 hash = "97f759578eec61072f2601275ee3e859e31ba3f25b00b07db4e8025b93fb901e"
 metafile = true
