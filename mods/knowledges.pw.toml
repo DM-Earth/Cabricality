@@ -1,0 +1,13 @@
+name = "Knowledges"
+filename = "knowledges-1.18-1.2.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/kdZNMv3G/versions/s6yi3mGI/knowledges-1.18-1.2.1.jar"
+hash-format = "sha1"
+hash = "48a35f88a27f016c44d5496778882db0edb0c93d"
+
+[update]
+[update.modrinth]
+mod-id = "kdZNMv3G"
+version = "s6yi3mGI"

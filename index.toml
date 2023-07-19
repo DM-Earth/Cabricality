@@ -17,26 +17,6 @@ file = "config/customsplashscreen.json5"
 hash = "0c4ebb39d1bcd398d6c2c7b42c9f2ac641741294e0efe96c6f30a86a7934b8fa"
 
 [[files]]
-file = "config/customsplashscreen/background.png"
-hash = "67d20ac3afe9538286de7c2a44f6bea546bdccf116b5246d0f5d6ce2d9a8b0a0"
-
-[[files]]
-file = "config/customsplashscreen/mojangstudios.png"
-hash = "27b2ea2946ca5b00841ce7d1813b42dfb7e36b12ad50c7c9bea09053ac226cf3"
-
-[[files]]
-file = "config/customsplashscreen/mojank.png"
-hash = "bb2080abef56e6ec5ab6bd4576e9e3dc7e15817410e02051553475f4cd3fcd8d"
-
-[[files]]
-file = "config/customsplashscreen/progressbar.png"
-hash = "e2e0555e30fd677e05570551f36d3a95fd844dcadc62b15e4f901c3442a5e3c7"
-
-[[files]]
-file = "config/customsplashscreen/progressbar_background.png"
-hash = "6e2fa0adee9638b3e8f36e75ad048f0abb0de2d06b591961c6b2aff943fd46f2"
-
-[[files]]
 file = "config/entityculling.json"
 hash = "a7395d0ba0d91fad7d584e159dc5428a22554cbb9f4f2c5c5262edfe74362418"
 
@@ -103,10 +83,6 @@ hash = "bc46250afb2d07eece268a470c07094e2282be0a784fe739e78613d811e71ae7"
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e1c35b6eb83293aa6ff91a45e482679a945d16669d405a5feb41606a741cef1d"
-
-[[files]]
-file = "config/hudium-config.json"
-hash = "4995c850be45957633b2148f18683aa43413773ee2991bfced691348bd1c0e85"
 
 [[files]]
 file = "config/indrev/cables.json"
@@ -279,11 +255,6 @@ hash = "daeb1bc740f2e5dbedff29790e3339418b172cce29b674dbf8eb87fbd6f6d60c"
 metafile = true
 
 [[files]]
-file = "mods/custom-splash-screen.pw.toml"
-hash = "23e3c4cb4e2ee0ed4cd1d9a8e1960578cf3e49839813c7930c4809aba304a1f7"
-metafile = true
-
-[[files]]
 file = "mods/dawn.pw.toml"
 hash = "b60fc5c154d6ca0e07406638d53bfbaa751e3ef517ff553fcec8543847844728"
 metafile = true
@@ -309,9 +280,8 @@ hash = "de9b5bac4165fb069bf6df9da2bb6028d50dd51fa0d294f0fb62d1d0c64b707b"
 metafile = true
 
 [[files]]
-file = "mods/faded-widgets.pw.toml"
-hash = "18e1a0e9b8eed452608054c2e272af75499a3bca8c12cb417e6b003fe29ff13a"
-metafile = true
+file = "mods/faded-widgets-1.18.2-1.0.0.jar"
+hash = "913b6838eb10afb042c9ca18b9df00b3f220fb416559132ee09f527e15749ddc"
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
@@ -334,11 +304,6 @@ hash = "d7d04009eba5c1068bd9aa5214c7ef87dcf426c4f23229b3dbfa6996952fd7c5"
 metafile = true
 
 [[files]]
-file = "mods/hudium.pw.toml"
-hash = "a914336f1f601eeb58e3943f4646e4bb876339a5ffaeb33b336a75187ecdc955"
-metafile = true
-
-[[files]]
 file = "mods/indium.pw.toml"
 hash = "f5751b1f49dfd5d0a78a4573b334651748e02e65dfe093774ab0d0c0886d950c"
 metafile = true
@@ -354,8 +319,18 @@ hash = "7baba0d5b6448760f7a0ad285c82633842efeeda7714571daa477486a4899c50"
 metafile = true
 
 [[files]]
+file = "mods/ive-spoken.pw.toml"
+hash = "ed6d5eedf3de76bd89c18bded67eee7830033b56ba315f75e80708d38ad95d4b"
+metafile = true
+
+[[files]]
 file = "mods/kibe.pw.toml"
 hash = "0fd789b8973507de511c9ab3931934b8f4536e912c1127a10f77a0a80add3684"
+metafile = true
+
+[[files]]
+file = "mods/knowledges.pw.toml"
+hash = "7261e10db379c7b2a407c15c326490e448f098ae2ae6fdd22420ef8f58160998"
 metafile = true
 
 [[files]]
@@ -461,6 +436,11 @@ metafile = true
 [[files]]
 file = "mods/structures-compass.pw.toml"
 hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
+metafile = true
+
+[[files]]
+file = "mods/tape-stop.pw.toml"
+hash = "ec2faf959a6748b0717adbbaef354d48a651744a4e8206194f7610c7b8862a41"
 metafile = true
 
 [[files]]
