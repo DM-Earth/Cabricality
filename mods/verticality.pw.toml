@@ -1,0 +1,13 @@
+name = "Verticality"
+filename = "verticality-1.18-1.3.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/6wqzLv3V/versions/PQm1d4eF/verticality-1.18-1.3.0.jar"
+hash-format = "sha1"
+hash = "602ce38dc61191e0781a785eac63bf3ad8917280"
+
+[update]
+[update.modrinth]
+mod-id = "6wqzLv3V"
+version = "PQm1d4eF"
