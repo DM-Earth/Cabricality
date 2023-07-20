@@ -9,10 +9,8 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(ShapedRecipe.class)
 public class ShapedRecipeMixin {
-
 	@ModifyVariable(method = "<init>", at = @At("HEAD"), argsOnly = true)
 	private static ItemStack modifyOutput(ItemStack itemStack) {
 		return ProcessItemOutputCallback.process(itemStack);
 	}
-
 }

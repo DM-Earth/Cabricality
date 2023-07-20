@@ -3,8 +3,6 @@ package com.dm.earth.cabricality.client;
 import java.util.Arrays;
 
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
 import org.quiltmc.loader.api.ModContainer;
@@ -23,7 +21,6 @@ import com.dm.earth.cabricality.content.trading.util.ProfessionDebugHelper;
 import com.dm.earth.cabricality.lib.util.PushUtil;
 import com.dm.earth.cabricality.lib.util.ScreenUtil;
 import com.dm.earth.cabricality.lib.util.SoundUtil;
-import com.dm.earth.cabricality.lib.util.func.CabfBlur;
 import com.dm.earth.cabricality.network.CabfReceiver;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingEntry;
@@ -54,8 +51,6 @@ public class CabricalityClient implements ClientModInitializer {
 
 		ColorRegistryListener.load();
 		ProfessionDebugHelper.load();
-
-		CabfBlur.INSTANCE.init();
 
 		WoodCuttingEntry.checkAll();
 		OreProcessingEntry.checkAll();

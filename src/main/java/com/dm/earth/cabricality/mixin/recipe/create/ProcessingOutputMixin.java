@@ -9,10 +9,8 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(ProcessingOutput.class)
 public class ProcessingOutputMixin {
-
 	@ModifyVariable(method = "<init>(Lnet/minecraft/item/ItemStack;F)V", at = @At("HEAD"), argsOnly = true)
 	private static ItemStack modifyOutput(ItemStack itemStack) {
 		return ProcessItemOutputCallback.EVENT.invoker().processOutput(itemStack);
 	}
-
 }

@@ -9,10 +9,8 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(CookingRecipe.class)
 public class CookingRecipeMixin {
-
 	@ModifyVariable(method = "<init>(Lnet/minecraft/util/Identifier;Lnet/minecraft/recipe/Ingredient;Lnet/minecraft/item/ItemStack;S)V", at = @At("HEAD"), argsOnly = true)
 	private static ItemStack modifyOutput(ItemStack itemStack) {
 		return ProcessItemOutputCallback.process(itemStack);
 	}
-
 }

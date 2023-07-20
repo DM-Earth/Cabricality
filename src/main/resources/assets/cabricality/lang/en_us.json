@@ -467,12 +467,6 @@
   "config.cabricality.general.include_version_in_window_title"        : "Include Version in Window Title",
   "config.cabricality.general.include_version_in_window_title.tooltip": "§7Whether to include version components in the window title\n§cYou may need to close this config screen to see changes",
 
-  "config.cabricality.general.background_blur"        : "Background Blur",
-  "config.cabricality.general.background_blur.tooltip": "§7Whether to blur the background of the GUIs",
-
-  "config.cabricality.general.background_blur_darken"        : "Background Blur Darken",
-  "config.cabricality.general.background_blur_darken.tooltip": "§7Whether to darken the background of the GUIs when blurring",
-
   "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
   "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
 

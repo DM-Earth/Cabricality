@@ -467,12 +467,6 @@
   "config.cabricality.general.include_version_in_window_title"        : "窗口标题显示整合包版本",
   "config.cabricality.general.include_version_in_window_title.tooltip": "§7是否在窗口标题中显示整合包版版本\n§c你需要关闭此设置界面以使改动生效",
 
-  "config.cabricality.general.background_blur"        : "背景模糊",
-  "config.cabricality.general.background_blur.tooltip": "§7是否启用背景模糊效果",
-
-  "config.cabricality.general.background_blur_darken"        : "背景模糊时降低亮度",
-  "config.cabricality.general.background_blur_darken.tooltip": "§7是否在背景模糊时降低亮度",
-
   "config.cabricality.general.background_blur_radius"        : "背景模糊半径",
   "config.cabricality.general.background_blur_radius.tooltip": "§7背景模糊的半径大小（像素）",
 

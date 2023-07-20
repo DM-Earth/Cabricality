@@ -30,12 +30,21 @@ repositories {
         url "https://jitpack.io/"
     }
 
-    maven { url "https://ladysnake.jfrog.io/artifactory/mods" }
+    maven {
+        name = "Ladysnake Mods"
+        url = "https://maven.ladysnake.org/releases"
+        content {
+            includeGroup "io.github.ladysnake"
+            includeGroup "org.ladysnake"
+            includeGroupByRegex "dev\\.onyxstudios.*"
+        }
+    }
+
     maven { url "https://mvn.devos.one/snapshots/" }
     maven { url "https://maven.parchmentmc.org" }
     maven { url "https://maven.fabricmc.net/" }
-    maven { url "https://maven.tterrag.com/" }
     maven { url "https://storage.googleapis.com/devan-maven/" }
+    maven { url "https://maven.tterrag.com/" }
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://aperlambda.github.io/maven" }
     maven { url "https://maven.kotlindiscord.com/repository/terraformers/" }
@@ -67,17 +76,17 @@ dependencies {
 
     // Create
     modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}+mc${project.minecraft_version}") {
-        exclude group:"com.github.AlphaMode"
+        exclude group: "com.github.AlphaMode"
     }
 
     // Implemented Mods
     // - Miscellaneous
-    modImplementation ("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}") {
-        exclude group:"com.github.AlphaMode"
+    modImplementation("slimeknights.mantle:Mantle:${project.minecraft_version}-${project.mantle_version}") {
+        exclude group: "com.github.AlphaMode"
     }
 
     // - Modrinth Maven
-    modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}-${project.minecraft_version}"
+    modImplementation "maven.modrinth:ad-astra:${project.ad_astra_version}"
     modImplementation "maven.modrinth:architectury-api:${project.architectury_version}+fabric"
     modImplementation "maven.modrinth:bits-and-chisels:${project.bits_and_chisels_version}"
     modImplementation "maven.modrinth:farmers-delight-fabric:${project.farmers_delight_version}"
@@ -90,7 +99,7 @@ dependencies {
     modImplementation "curse.maven:ftb-library-fabric-438495:${project.ftb_library_version}"
     modImplementation "curse.maven:catwalks-inc-554340:${project.catwalks_version}"
     modImplementation "curse.maven:malum-quilt-627875:${project.malum_version}"
-    implementation "curse.maven:hephaestus-667894:${project.hephaestus_version}"
+    implementation "curse.maven:hephaestus-667894:${project.hephaestus_version}" // Toxic
 
     // - JitPack
     modImplementation "com.github.KrLite.Equator-v2:build:${project.minecraft_major_version}-${project.equator_version}"
@@ -101,8 +110,7 @@ dependencies {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
-    // Included Mods
-    modImplementation include("io.github.ladysnake:satin:${project.satin_version}")
+    // Included
     modImplementation include("com.github.DM-Earth:Tags-Binder:${project.tags_binder_version}")
     modImplementation include("maven.modrinth:brrp:${project.brrp_version}-mc${project.minecraft_version}-fabric")
 
@@ -111,7 +119,7 @@ dependencies {
     implementation include("com.github.davidmoten:word-wrap:${project.word_wrap_version}")
     implementation include("com.github.davidmoten:guava-mini:${project.guava_mini_version}")
 
-    // Development Environments
+    // Development
     compileOnlyApi "org.apiguardian:apiguardian-api:${project.apiguardian_version}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 

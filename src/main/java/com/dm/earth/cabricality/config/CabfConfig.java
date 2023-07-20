@@ -25,28 +25,6 @@ public class CabfConfig extends Pierced {
 		save();
 	}
 
-	private boolean backgroundBlur = false;
-
-	public boolean backgroundBlur() {
-		return backgroundBlur;
-	}
-
-	public void backgroundBlur(boolean backgroundBlur) {
-		this.backgroundBlur = backgroundBlur;
-		save();
-	}
-
-	private boolean backgroundBlurDarken = true;
-
-	public boolean backgroundBlurDarken() {
-		return backgroundBlurDarken;
-	}
-
-	public void backgroundBlurDarken(boolean backgroundBlurDarken) {
-		this.backgroundBlurDarken = backgroundBlurDarken;
-		save();
-	}
-
 	private float backgroundBlurRadius = 9;
 
 	public float backgroundBlurRadius() {

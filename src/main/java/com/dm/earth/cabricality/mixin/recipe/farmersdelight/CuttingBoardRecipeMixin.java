@@ -15,7 +15,6 @@ import net.minecraft.util.collection.DefaultedList;
 
 @Mixin(CuttingBoardRecipe.class)
 public class CuttingBoardRecipeMixin {
-
 	@Shadow
 	@Final
 	private DefaultedList<ChanceResult> resultList;
@@ -25,5 +24,4 @@ public class CuttingBoardRecipeMixin {
 		if (this.resultList.size() == 0)
 			cir.setReturnValue(ItemStack.EMPTY);
 	}
-
 }
