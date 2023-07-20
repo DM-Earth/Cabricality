@@ -1,11 +1,11 @@
 name = "Cabricality"
-filename = "cabricality-0.3.0.jar"
+filename = "cabricality-0.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/BHRmiEC5/versions/gtyuUas3/cabricality-0.3.0.jar"
+url = "https://cdn.modrinth.com/data/BHRmiEC5/versions/gtyuUas3/cabricality-0.3.jar"
 hash-format = "sha1"
-hash = "2fee9a05a82b181fdc253a4b1b23e753deae1711"
+hash = "e8303f1b1315e439d7fd37b8eccf24bc51e0efce"
 
 [update]
 [update.modrinth]
