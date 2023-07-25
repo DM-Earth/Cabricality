@@ -13,11 +13,9 @@ public class CabricalityPreInit implements PreLaunchEntrypoint {
 	public void onPreLaunch(ModContainer mod) {
 		CabfModConflict.checkAndExit();
 
-		/*
-		if (Arrays.stream(QuiltLoader.getLaunchArguments(false))
-				.anyMatch(str -> str.contains("launcher.brand") && str.contains("PCL2")))
-			throw new RuntimeException("PCL2 is not allowed!");
-
-		 */
+		String launcherBrand = System.getProperty("minecraft.launcher.brand");
+		if (launcherBrand.contains("PCL")) {
+			throw new RuntimeException("PCL2 is not suportted.");
+		}
 	}
 }
