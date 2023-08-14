@@ -25,17 +25,6 @@ public class CabfConfig extends Pierced {
 		save();
 	}
 
-	private float backgroundBlurRadius = 9;
-
-	public float backgroundBlurRadius() {
-		return backgroundBlurRadius;
-	}
-
-	public void backgroundBlurRadius(float backgroundBlurRadius) {
-		this.backgroundBlurRadius = backgroundBlurRadius;
-		save();
-	}
-
 	@Table("debug")
 	private boolean debugInfo = false;
 
