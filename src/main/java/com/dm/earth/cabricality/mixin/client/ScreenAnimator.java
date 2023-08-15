@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.mixin.client;
 
+import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.PushUtil;
 import com.dm.earth.cabricality.lib.util.ScreenUtil;
 import net.krlite.equator.math.algebra.Curves;
@@ -33,12 +34,14 @@ public class ScreenAnimator {
 			)
 	)
 	private void fadeIn(Args args) {
-		PushUtil.SCREEN.pull(opacity::replay);
+		if (Cabricality.CONFIG.fadeScreenBackground()) {
+			PushUtil.SCREEN.pull(opacity::replay);
 
-		int upper = args.get(5), lower = args.get(6);
+			int upper = args.get(5), lower = args.get(6);
 
-		args.set(5, AccurateColor.fromARGB(upper).opacity(opacity.value()).toInt());
-		args.set(6, AccurateColor.fromARGB(lower).opacity(opacity.value()).toInt());
+			args.set(5, AccurateColor.fromARGB(upper).opacity(opacity.value() * 0xC0 / 0xFF).toInt());
+			args.set(6, AccurateColor.fromARGB(lower).opacity(opacity.value() * 0xC0 / 0xFF).toInt());
+		}
 	}
 }
 
@@ -56,15 +59,17 @@ class PostScreenAnimator {
 			)
 	)
 	private void fadeOut(float tickDelta, long startTime, boolean tick, CallbackInfo ci) {
-		PushUtil.POST_SCREEN.pull(opacity::replay);
+		if (Cabricality.CONFIG.fadeScreenBackground()) {
+			PushUtil.POST_SCREEN.pull(opacity::replay);
 
-		if (opacity.isPlaying()) {
-			FrameInfo.scaled().render(new MatrixStack(),
-					flat -> flat.new Rectangle()
-									.colorTop(AccurateColor.fromARGB(0xC0101010L))
-									.colorBottom(AccurateColor.fromARGB(0xD0101010L))
-									.opacityMultiplier(opacity.value())
-			);
+			if (opacity.isPlaying()) {
+				FrameInfo.scaled().render(new MatrixStack(),
+						flat -> flat.new Rectangle()
+										.colorTop(AccurateColor.fromARGB(0xC0101010L))
+										.colorBottom(AccurateColor.fromARGB(0xD0101010L))
+										.opacityMultiplier(opacity.value())
+				);
+			}
 		}
 	}
 }
@@ -77,7 +82,9 @@ class PostScreenTriggerer {
 
 	@Inject(method = "setScreen", at = @At("HEAD"))
 	private void setScreen(@Nullable Screen screen, CallbackInfo ci) {
-		if (screen != null && !ScreenUtil.isUnextendedScreen(screen.getClass())) PushUtil.SCREEN.push();
-		if (screen == null && (currentScreen != null && !ScreenUtil.isUnextendedScreen(currentScreen.getClass()))) PushUtil.POST_SCREEN.push();
+		if (Cabricality.CONFIG.fadeScreenBackground()) {
+			if (currentScreen == null && screen != null && !ScreenUtil.isUnextendedScreen(screen.getClass())) PushUtil.SCREEN.push();
+			if (currentScreen != null && screen == null && !ScreenUtil.isUnextendedScreen(currentScreen.getClass())) PushUtil.POST_SCREEN.push();
+		}
 	}
 }

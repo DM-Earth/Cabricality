@@ -39,6 +39,12 @@ public class CabfConfigScreen {
 								 .setSaveConsumer(CONFIG::includeVersionInWindowTitle)
 								 .build());
 
+		general.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "general", "fade_screen_background"), CONFIG.fadeScreenBackground())
+								 .setDefaultValue(true)
+								 .setTooltip(Cabricality.genTranslatableText("config", "general", "fade_screen_background", "tooltip"))
+								 .setSaveConsumer(CONFIG::fadeScreenBackground)
+								 .build());
+
 		// Debug
 		debug.addEntry(entryBuilder.startBooleanToggle(Cabricality.genTranslatableText("config", "debug", "debug_info"), CONFIG.debugInfo())
 							   .setDefaultValue(false)

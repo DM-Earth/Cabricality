@@ -38,7 +38,7 @@ body:
       label: "Cabricality Version Check"
       description: "Are you playing with an up-to-date version of Cabricality? If not, your report might be ignored."
       options:
-        - Yes, I'm playing with Cabricality 0.3
+        - Yes, I'm playing with **Cabricality 0.3.1**
         - No, I'm playing with an outdated version
     validations:
       required: true

@@ -467,8 +467,8 @@
   "config.cabricality.general.include_version_in_window_title"        : "Include Version in Window Title",
   "config.cabricality.general.include_version_in_window_title.tooltip": "§7Whether to include version components in the window title\n§cYou may need to close this config screen to see changes",
 
-  "config.cabricality.general.background_blur_radius"        : "Background Blur Radius",
-  "config.cabricality.general.background_blur_radius.tooltip": "§7The radius of the blur effect(pixels)",
+  "config.cabricality.general.fade_screen_background"        : "Fade Screen Background",
+  "config.cabricality.general.fade_screen_background.tooltip": "§7Whether to fade screen backgrounds when you open or close\na GUI screen",
 
   "config.cabricality.category.debug": "Debug",
 

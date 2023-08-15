@@ -26,6 +26,17 @@ public class CabfConfig extends Pierced {
 		save();
 	}
 
+	private boolean fadeScreenBackground = true;
+
+	public boolean fadeScreenBackground() {
+		return fadeScreenBackground;
+	}
+
+	public void fadeScreenBackground(boolean fadeScreenBackground) {
+		this.fadeScreenBackground = fadeScreenBackground;
+		save();
+	}
+
 	@Table("debug")
 	private boolean debugInfo = false;
 

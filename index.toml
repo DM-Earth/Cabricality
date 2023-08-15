@@ -325,7 +325,7 @@ metafile = true
 
 [[files]]
 file = "mods/ive-spoken.pw.toml"
-hash = "ed6d5eedf3de76bd89c18bded67eee7830033b56ba315f75e80708d38ad95d4b"
+hash = "ef6a75b1a2e53706ead9d184b2e98fab07109db5f429f41bdfda6c1c4c3c2b93"
 metafile = true
 
 [[files]]
@@ -410,7 +410,7 @@ metafile = true
 
 [[files]]
 file = "mods/rei.pw.toml"
-hash = "fd5add2eaf114e28dd6c5c358c75bbe14c95f5820ddbfe0ff08614fe00b2c695"
+hash = "4041d3643e661a89b6fe03d4aed57dff878f303e628cd64a201c6f2242c51446"
 metafile = true
 
 [[files]]
