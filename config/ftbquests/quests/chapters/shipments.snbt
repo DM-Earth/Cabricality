@@ -15,43 +15,14 @@
 			x: -4.0d
 			y: 2.0d
 			shape: "hexagon"
-			id: "301AE8BDD81B9D12"
-			tasks: [{
-				id: "7E3B5BA45C408CE7"
-				type: "checkmark"
-			}]
-			rewards: [
-				{
-					id: "7AC27C7E7D02DD06"
-					type: "item"
-					auto: "enabled"
-					item: "cabricality:profession_card_563660456"
-				}
-				{
-					id: "6BC0C07AAC3E5336"
-					type: "custom"
-					title: "{market.cabricality.shipments.repeatable}"
-					icon: "indrev:module_charger"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "{profession.cabricality.exchange}"
-			icon: "cabricality:profession_card_563660456"
-			disable_toast: true
-			x: -4.0d
-			y: 2.0d
-			shape: "hexagon"
 			repeatable: true
-			id: "61CC7E1AD50001AA"
+			id: "0C3E0442A35A5700"
 			tasks: [{
-				id: "0AF2A076AC0F8A10"
+				id: "5CC26988A31AD1C9"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "5F443BAE328CA22F"
+				id: "78ABDE7BCB611641"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_563660456"
@@ -66,16 +37,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "0EE96EF3838768B6"
+			id: "593585640693017C"
 			tasks: [{
-				id: "369A19D8F0249654"
+				id: "131D5EDEA03B99D3"
 				type: "item"
 				icon: "cabricality:silver_coin"
 				item: "cabricality:silver_coin"
 				count: 16L
 			}]
 			rewards: [{
-				id: "14BF868F17324E4E"
+				id: "31CA520127066F74"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x716460792"
@@ -90,15 +61,15 @@
 			shape: "hexagon"
 			subtitle: "16 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "28767AD8C8A091F2"
+			id: "4B3088FCDFA44439"
 			tasks: [{
-				id: "619A607DBAE365B8"
+				id: "7C2A3CA6AE414C0E"
 				type: "item"
 				icon: "cabricality:gold_coin"
 				item: "cabricality:gold_coin"
 			}]
 			rewards: [{
-				id: "302CE0195240D092"
+				id: "13FEBFF83F7BB894"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1582914453"
@@ -112,13 +83,13 @@
 			y: 4.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "1BD3DB1A2966E534"
+			id: "7713E77D2CFB268A"
 			tasks: [{
-				id: "0A0FF4A071F905A7"
+				id: "025611C6A984CCE1"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "3981D095F57B20D1"
+				id: "07983B1B784AA5C3"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_1790608497"
@@ -133,16 +104,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "3925422E65E85328"
+			id: "56F6EBE81CEBFFFC"
 			tasks: [{
-				id: "7C9DD07A61EF6E30"
+				id: "45CCC531099B438F"
 				type: "item"
 				icon: "minecraft:carrot"
 				item: "minecraft:carrot"
 				count: 9L
 			}]
 			rewards: [{
-				id: "4C6F87EF756A910A"
+				id: "2FB0FA917D47F168"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1295157898"
@@ -157,16 +128,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7EF09CEF2BECDCD7"
+			id: "6AD3C2D146BDBF2D"
 			tasks: [{
-				id: "4904A00EB13F779C"
+				id: "70A8CC098AAE3ABC"
 				type: "item"
 				icon: "minecraft:apple"
 				item: "minecraft:apple"
 				count: 9L
 			}]
 			rewards: [{
-				id: "78CD17F9B7969357"
+				id: "556C9E6B5064B694"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_165461837"
@@ -181,16 +152,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7D6F574A9BB94CDE"
+			id: "03025549B73E06AF"
 			tasks: [{
-				id: "43751BB86AAE89D5"
+				id: "719FE055DE0DEC5F"
 				type: "item"
 				icon: "minecraft:beetroot"
 				item: "minecraft:beetroot"
 				count: 9L
 			}]
 			rewards: [{
-				id: "68EF97356206337C"
+				id: "2F1E582AEBE78662"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1514891271"
@@ -205,16 +176,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7165AFEC9D4BE1C9"
+			id: "45CDC3B732B03817"
 			tasks: [{
-				id: "58C0FDD1628D08DC"
+				id: "549142319CE66557"
 				type: "item"
 				icon: "minecraft:potato"
 				item: "minecraft:potato"
 				count: 9L
 			}]
 			rewards: [{
-				id: "155CEED8AF9B796A"
+				id: "2FAFE3AAFA5548CA"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x910006246"
@@ -229,16 +200,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "54749979CF164D39"
+			id: "3DC1F722E2E2ADB8"
 			tasks: [{
-				id: "2B6CBEE71AFA6966"
+				id: "7B8D98EBE40BB4EE"
 				type: "item"
 				icon: "minecraft:sweet_berries"
 				item: "minecraft:sweet_berries"
 				count: 12L
 			}]
 			rewards: [{
-				id: "429091FF86BFF651"
+				id: "327F2E2125F5CB41"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1971378216"
@@ -253,16 +224,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "33E480D36DC3A57E"
+			id: "100CF5227E15717A"
 			tasks: [{
-				id: "40AB83A12C6960F3"
+				id: "1F3102E97DE8053F"
 				type: "item"
 				icon: "minecraft:cocoa_beans"
 				item: "minecraft:cocoa_beans"
 				count: 16L
 			}]
 			rewards: [{
-				id: "60A2CBFF94228618"
+				id: "3C55963388788DC5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1734278016"
@@ -277,16 +248,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5AEB2E3C3BA9C6A0"
+			id: "30E5F19334BF5FF1"
 			tasks: [{
-				id: "23ADDDE72AC8691D"
+				id: "28DF9CF9786E6E27"
 				type: "item"
 				icon: "minecraft:honey_bottle"
 				item: "minecraft:honey_bottle"
 				count: 8L
 			}]
 			rewards: [{
-				id: "496F7A025D4843DB"
+				id: "31691F1F5FCE1A57"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1835000003"
@@ -301,16 +272,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2F606C5D1E9AB460"
+			id: "44C234A3F6037EB2"
 			tasks: [{
-				id: "18C1F6B223BFE642"
+				id: "1F5C76E0A6877D93"
 				type: "item"
 				icon: "minecraft:honeycomb"
 				item: "minecraft:honeycomb"
 				count: 4L
 			}]
 			rewards: [{
-				id: "1AC24341B0F06FBA"
+				id: "7BD85D3F9FB9139F"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1193312081"
@@ -325,16 +296,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "18600673D7917EAF"
+			id: "1A5104259F6A5126"
 			tasks: [{
-				id: "40B4F4A88690D4B9"
+				id: "577FB0802E9AFE99"
 				type: "item"
 				icon: "minecraft:wheat"
 				item: "minecraft:wheat"
 				count: 16L
 			}]
 			rewards: [{
-				id: "198FE11DA299C34C"
+				id: "6FFF34F054944A27"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_185530074"
@@ -349,16 +320,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7EF62A7EE04021C9"
+			id: "1F3C30018DBD84F8"
 			tasks: [{
-				id: "1CE8EEB39740788B"
+				id: "4903704DD99A9B48"
 				type: "item"
 				icon: "minecraft:kelp"
 				item: "minecraft:kelp"
 				count: 64L
 			}]
 			rewards: [{
-				id: "687266663DB5FACA"
+				id: "2766638249E0548E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_75720785"
@@ -373,16 +344,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0DA797F965F9C7DF"
+			id: "70772DD7EEE837CB"
 			tasks: [{
-				id: "4A9BA1B21F959342"
+				id: "512CB01BC76849DC"
 				type: "item"
 				icon: "minecraft:melon_slice"
 				item: "minecraft:melon_slice"
 				count: 64L
 			}]
 			rewards: [{
-				id: "18D238CCDE9018E3"
+				id: "24E686B046DCD4A6"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x977446663"
@@ -397,16 +368,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "07208A5F79CD8EDA"
+			id: "7AF91595EFD35173"
 			tasks: [{
-				id: "6792A3B34ACD2EB6"
+				id: "26EE8ED79F01A0C2"
 				type: "item"
 				icon: "minecraft:white_wool"
 				item: "minecraft:white_wool"
 				count: 64L
 			}]
 			rewards: [{
-				id: "35257CC8E614460A"
+				id: "6A7E0B8CC9247CF3"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_331096318"
@@ -421,16 +392,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6D121EA8C239A78B"
+			id: "64A2722C61C0E78F"
 			tasks: [{
-				id: "0EE093972DC5259B"
+				id: "1E8A57485A54AD96"
 				type: "item"
 				icon: "minecraft:cactus"
 				item: "minecraft:cactus"
 				count: 16L
 			}]
 			rewards: [{
-				id: "2AF4AF3D1CA50BB8"
+				id: "5AE111630F92F54F"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1295602656"
@@ -445,16 +416,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2FAFB4744C808A20"
+			id: "2561857BA14671EB"
 			tasks: [{
-				id: "284BB98C4B0E2E83"
+				id: "43B2D915D0AE0E5E"
 				type: "item"
 				icon: "farmersdelight:rice"
 				item: "farmersdelight:rice"
 				count: 9L
 			}]
 			rewards: [{
-				id: "7BE3965D72285EDB"
+				id: "49717D327A68C2F1"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_845319092"
@@ -469,16 +440,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4A266EE0E2458181"
+			id: "4F13A8FDDF3D76F9"
 			tasks: [{
-				id: "7EEE2B5437BFAAC4"
+				id: "0FAE82B5CA566FF3"
 				type: "item"
 				icon: "farmersdelight:onion"
 				item: "farmersdelight:onion"
 				count: 9L
 			}]
 			rewards: [{
-				id: "788EEE65E11BEC89"
+				id: "6870D66DE417BE85"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_947711140"
@@ -493,16 +464,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "150963DEE0F89206"
+			id: "47C990E6A8D1F39E"
 			tasks: [{
-				id: "231E46404E7657FE"
+				id: "3DCB277DEA1E61C9"
 				type: "item"
 				icon: "farmersdelight:tomato"
 				item: "farmersdelight:tomato"
 				count: 9L
 			}]
 			rewards: [{
-				id: "2AEAFA3CF4FA9B67"
+				id: "05B707D28B00A9C3"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x26311963"
@@ -517,16 +488,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "103862B076F19EBF"
+			id: "7A44F83712F50186"
 			tasks: [{
-				id: "6F2B021630F7EE41"
+				id: "2E4DFC314B090A8D"
 				type: "item"
 				icon: "farmersdelight:cabbage"
 				item: "farmersdelight:cabbage"
 				count: 9L
 			}]
 			rewards: [{
-				id: "4B7BDF230222F4CE"
+				id: "01D8002990EAE43D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1380918780"
@@ -541,16 +512,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6C4306312225A488"
+			id: "3CD263F76B1954FC"
 			tasks: [{
-				id: "1DD2CEF8381C3E9C"
+				id: "5CDC342CDCF9FDCA"
 				type: "item"
 				icon: "farmersdelight:canvas"
 				item: "farmersdelight:canvas"
 				count: 9L
 			}]
 			rewards: [{
-				id: "60FC63D8414892BE"
+				id: "00F3387FC4F38E4B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x525887437"
@@ -565,16 +536,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "373D0AA0D86FB9B2"
+			id: "328C6359497B8933"
 			tasks: [{
-				id: "3A6D2014EAE0CE30"
+				id: "2E6D6BB827123AFF"
 				type: "item"
 				icon: "farmersdelight:pumpkin_slice"
 				item: "farmersdelight:pumpkin_slice"
 				count: 32L
 			}]
 			rewards: [{
-				id: "453B5E786F9B2590"
+				id: "53C72F38B289284C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1287195862"
@@ -589,16 +560,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2533603F1A689F7B"
+			id: "6EBFDAA69752E117"
 			tasks: [{
-				id: "27A15856FBE76328"
+				id: "50A6ED6CE1CC7629"
 				type: "item"
 				icon: "promenade:blueberries"
 				item: "promenade:blueberries"
 				count: 12L
 			}]
 			rewards: [{
-				id: "062A1467F4305E65"
+				id: "07513DE05B4FD2CC"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x361274431"
@@ -612,13 +583,13 @@
 			y: 11.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "39A7443135842123"
+			id: "72BDF2F8B8B32378"
 			tasks: [{
-				id: "624AF265CD6D643C"
+				id: "6DBEAF87A750BF63"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "731F603171CB76D1"
+				id: "2862A1B7676FC63C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_x1322231973"
@@ -633,16 +604,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "565AE1D9836AA253"
+			id: "12B53C693FA3CE22"
 			tasks: [{
-				id: "79FBCD219160F2A4"
+				id: "30F56B4D667AED05"
 				type: "item"
 				icon: "minecraft:oak_log"
 				item: "minecraft:oak_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "42530217048B9792"
+				id: "49F5084A39743C42"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1615092015"
@@ -657,16 +628,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6AB33DBF130F4E02"
+			id: "38B16CD8C81C2854"
 			tasks: [{
-				id: "2476512F702D5D3E"
+				id: "4FE0E8239F982A94"
 				type: "item"
 				icon: "minecraft:spruce_log"
 				item: "minecraft:spruce_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "0C8C601455683D48"
+				id: "624F4DBB9A587B66"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1117091014"
@@ -681,16 +652,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2DAE259F1321093F"
+			id: "43C8C18CCC9A7029"
 			tasks: [{
-				id: "0DA84100AB854E97"
+				id: "69FA70EDEF9323AB"
 				type: "item"
 				icon: "minecraft:jungle_log"
 				item: "minecraft:jungle_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "3DFA3AECA7BCE512"
+				id: "0FAD90B4F653E8AD"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1754568523"
@@ -705,16 +676,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "33C200D357CB8D90"
+			id: "7A1A57D5DA6F41A6"
 			tasks: [{
-				id: "3BFED78CABD1C611"
+				id: "0EA8C5B5F3081104"
 				type: "item"
 				icon: "minecraft:dark_oak_log"
 				item: "minecraft:dark_oak_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "4271D6339BFB7E6D"
+				id: "19E369BAC1B05887"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1504077576"
@@ -729,16 +700,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5C1BE97B30F560BE"
+			id: "734EE0962249FC32"
 			tasks: [{
-				id: "0284D76FAEA6EB27"
+				id: "66EFF0C4C27424A8"
 				type: "item"
 				icon: "minecraft:acacia_log"
 				item: "minecraft:acacia_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "5BF6822147700756"
+				id: "55C11B587F16D378"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1957135444"
@@ -753,16 +724,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6C214D61D4AB4981"
+			id: "3DA4A9111FF6B394"
 			tasks: [{
-				id: "754261A5784DC1A7"
+				id: "29FE622899806802"
 				type: "item"
 				icon: "minecraft:birch_log"
 				item: "minecraft:birch_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "054BBFC6517B4E5A"
+				id: "1C29CFDE9878E6F0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1623480024"
@@ -777,16 +748,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1D855A5B88951F6F"
+			id: "4C9AD422B7BE624B"
 			tasks: [{
-				id: "1BD57797D9B772FE"
+				id: "5A21C360B2399735"
 				type: "item"
 				icon: "minecraft:crimson_stem"
 				item: "minecraft:crimson_stem"
 				count: 32L
 			}]
 			rewards: [{
-				id: "24DDFB23697ECB35"
+				id: "3F44B785C30AEE2A"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x96526308"
@@ -801,16 +772,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1C7F2AC38552FAD1"
+			id: "7A30942E1AB1E319"
 			tasks: [{
-				id: "2DB093BBE818ABC8"
+				id: "0F38FCB51303BABE"
 				type: "item"
 				icon: "minecraft:warped_stem"
 				item: "minecraft:warped_stem"
 				count: 32L
 			}]
 			rewards: [{
-				id: "21CF241B2B7D76B4"
+				id: "28344CF1AF803BD0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x765722924"
@@ -825,16 +796,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1B87423AF82BD412"
+			id: "1C7E8472B646B4A2"
 			tasks: [{
-				id: "46B8FE5A0646B047"
+				id: "432A88D64DDE7905"
 				type: "item"
 				icon: "promenade:palm_log"
 				item: "promenade:palm_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "154AC07955B087D6"
+				id: "6B218737798A66B0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1712460766"
@@ -849,16 +820,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2F4C15C736EB90A9"
+			id: "392E7B5301CC4F69"
 			tasks: [{
-				id: "25213B730E9D4782"
+				id: "2BFF238D94AFC79A"
 				type: "item"
 				icon: "promenade:cherry_oak_log"
 				item: "promenade:cherry_oak_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "4D96F84FB06F671A"
+				id: "7C4996E370224E14"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1009900193"
@@ -873,16 +844,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4A5D92F77801FD60"
+			id: "0A3465B17A851136"
 			tasks: [{
-				id: "7C8BF6A3E87FE70A"
+				id: "0F2145D9E0815A0A"
 				type: "item"
 				icon: "promenade:dark_amaranth_stem"
 				item: "promenade:dark_amaranth_stem"
 				count: 24L
 			}]
 			rewards: [{
-				id: "688E4B06679F87AE"
+				id: "5A86DAC2FD747656"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1346687416"
@@ -897,16 +868,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7A16356F97835123"
+			id: "6D7096D17BA2009F"
 			tasks: [{
-				id: "38E754634203BBCE"
+				id: "411AC7ED859DD312"
 				type: "item"
 				icon: "malum:runewood_log"
 				item: "malum:runewood_log"
 				count: 24L
 			}]
 			rewards: [{
-				id: "404E57D8FC681A24"
+				id: "2D95C8E2A3AE26EA"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1403963396"
@@ -921,16 +892,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0DF8EBE177F4F133"
+			id: "03753A28FF1B33B1"
 			tasks: [{
-				id: "246813EF6AB07A6B"
+				id: "755EADFA3E4D3481"
 				type: "item"
 				icon: "malum:exposed_runewood_log"
 				item: "malum:exposed_runewood_log"
 				count: 16L
 			}]
 			rewards: [{
-				id: "54AD8FA06AC5E329"
+				id: "758CAAD250489A6B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x170094405"
@@ -945,16 +916,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0BBCC8D6EC15BCBB"
+			id: "1D87D8FE5B3A6F5C"
 			tasks: [{
-				id: "6C7E6562B0E3B3EC"
+				id: "2443F829C90D4867"
 				type: "item"
 				icon: "malum:soulwood_log"
 				item: "malum:soulwood_log"
 				count: 16L
 			}]
 			rewards: [{
-				id: "1C8C27D877F22404"
+				id: "6A66CBAC5BF4E67A"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x225981003"
@@ -969,16 +940,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4350993D2D67AA2D"
+			id: "35934BFC91F2ADEE"
 			tasks: [{
-				id: "2851CD2F83E4A7AE"
+				id: "6D975A634D5841E9"
 				type: "item"
 				icon: "terrestria:redwood_log"
 				item: "terrestria:redwood_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "1C5710F9D0B7654F"
+				id: "778CC00A935A5947"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1630067566"
@@ -993,16 +964,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "59E35037849CC96B"
+			id: "6CC2AD7A71220902"
 			tasks: [{
-				id: "407CEF2848C97290"
+				id: "64A42856880A7D20"
 				type: "item"
 				icon: "terrestria:hemlock_log"
 				item: "terrestria:hemlock_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "42F3F3A5EC52C218"
+				id: "2585B370E37DE6E7"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1004361323"
@@ -1017,16 +988,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1DA759129FCE5AEC"
+			id: "00C35C6F2E6E186B"
 			tasks: [{
-				id: "76D963E32D27D91F"
+				id: "3B6142A1A0ABDF3F"
 				type: "item"
 				icon: "terrestria:rubber_log"
 				item: "terrestria:rubber_log"
 				count: 24L
 			}]
 			rewards: [{
-				id: "1065AD6E24212FCE"
+				id: "617C4DF06379740C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_237142368"
@@ -1041,16 +1012,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6AE206E316D014B2"
+			id: "07FFC0F1F865D807"
 			tasks: [{
-				id: "79CD6C5DFE3F18EE"
+				id: "470C3D41F19E8076"
 				type: "item"
 				icon: "terrestria:cypress_log"
 				item: "terrestria:cypress_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "3349DAF22B6F152D"
+				id: "159E4FE31CE16C04"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1611202883"
@@ -1065,16 +1036,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7B4FF63908DDA5C2"
+			id: "18973644F626CBD8"
 			tasks: [{
-				id: "6660A6A3AEA73035"
+				id: "008BA2AA4C329805"
 				type: "item"
 				icon: "terrestria:willow_log"
 				item: "terrestria:willow_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "58990D6FA16FBDCD"
+				id: "68B5E88111DD2786"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_293437418"
@@ -1089,16 +1060,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "691C704352697E18"
+			id: "79DC79BDED005D13"
 			tasks: [{
-				id: "47F1A36EE303C294"
+				id: "03B02CF00AD39F22"
 				type: "item"
 				icon: "terrestria:japanese_maple_log"
 				item: "terrestria:japanese_maple_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "24BD7B7103DCB477"
+				id: "3B40400275E54BDA"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x583301641"
@@ -1113,16 +1084,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6802571D0D2DC531"
+			id: "3CF95E4766D70DB2"
 			tasks: [{
-				id: "2124E2CF8D30A730"
+				id: "4888315D8ACD7E55"
 				type: "item"
 				icon: "terrestria:rainbow_eucalyptus_log"
 				item: "terrestria:rainbow_eucalyptus_log"
 				count: 24L
 			}]
 			rewards: [{
-				id: "1159F8BBD66094E1"
+				id: "1F774D68F544D57D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_619215894"
@@ -1137,16 +1108,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1B0BCFCA4DA4B5D0"
+			id: "53537C1CAA443B49"
 			tasks: [{
-				id: "3104F16C9AA56579"
+				id: "7C4F45EA609B4638"
 				type: "item"
 				icon: "terrestria:sakura_log"
 				item: "terrestria:sakura_log"
 				count: 24L
 			}]
 			rewards: [{
-				id: "1B6440D80238824B"
+				id: "26276796683601F8"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_374583447"
@@ -1161,16 +1132,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6023980E40796639"
+			id: "7BFF2D000E3EFF31"
 			tasks: [{
-				id: "6A7618BC05F7A668"
+				id: "7E30A08695C57541"
 				type: "item"
 				icon: "terrestria:yucca_palm_log"
 				item: "terrestria:yucca_palm_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "1DB52162218B6F57"
+				id: "7DA6AE1B16EB599C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x296714884"
@@ -1185,16 +1156,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5A870A5FB66E8D30"
+			id: "6D7EDDDC53806EDF"
 			tasks: [{
-				id: "38BF79E6928B5A5E"
+				id: "7CBE234829B388EE"
 				type: "item"
 				icon: "terrestria:small_oak_log"
 				item: "terrestria:small_oak_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "7DE4BD0134D4C29C"
+				id: "641B1C72DB5F347B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1694529745"
@@ -1209,16 +1180,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7759D5EC6BAFB013"
+			id: "213039DEAE23C67C"
 			tasks: [{
-				id: "5D21B34D7F5327FE"
+				id: "436C942A0226FCE5"
 				type: "item"
 				icon: "terrestria:redwood_quarter_log"
 				item: "terrestria:redwood_quarter_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "77923ED2F845A213"
+				id: "0E8B1ED8680D75D8"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1327822757"
@@ -1233,16 +1204,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7C7ACE2F19DC94FF"
+			id: "45548A16DECB1C08"
 			tasks: [{
-				id: "75DE670BA8C4C1D5"
+				id: "56C4A3D41D63B2F2"
 				type: "item"
 				icon: "terrestria:hemlock_quarter_log"
 				item: "terrestria:hemlock_quarter_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "2EAC52609E74B282"
+				id: "3E1480721AF56047"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1139329448"
@@ -1257,16 +1228,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "31BFD9F8CDA514FA"
+			id: "2AEFD7191C92DA16"
 			tasks: [{
-				id: "5DB6C54D2A49F905"
+				id: "3EBC2FBB42F49C86"
 				type: "item"
 				icon: "terrestria:cypress_quarter_log"
 				item: "terrestria:cypress_quarter_log"
 				count: 32L
 			}]
 			rewards: [{
-				id: "5F17F24DEC6B59A9"
+				id: "651A28D8957E474A"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1576299690"
@@ -1281,16 +1252,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6C165F464328AA4D"
+			id: "31B3C9405365D431"
 			tasks: [{
-				id: "39FC3F8970A07CB7"
+				id: "004777F526D88A78"
 				type: "item"
 				icon: "terrestria:rainbow_eucalyptus_quarter_log"
 				item: "terrestria:rainbow_eucalyptus_quarter_log"
 				count: 24L
 			}]
 			rewards: [{
-				id: "7DEC473C98A80558"
+				id: "63E13D4A73AEA3F8"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1474527491"
@@ -1304,13 +1275,13 @@
 			y: 16.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "4ABBCAF28CA76230"
+			id: "66B80AF1F4ABC364"
 			tasks: [{
-				id: "2A5E695268FC7D37"
+				id: "0743C7F6D6B405B6"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "0A5193B99135B8E2"
+				id: "629F4D51068175B4"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_1794814165"
@@ -1325,19 +1296,19 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "75E49F45DE8C146F"
+			id: "370D81404FD25B92"
 			tasks: [{
-				id: "39E62B4873A9F5C0"
+				id: "799A75B27C22C9EC"
 				type: "item"
 				icon: "create:crushed_raw_iron"
 				item: "create:crushed_raw_iron"
 				count: 3L
 			}]
 			rewards: [{
-				id: "4277687F09D000DE"
+				id: "0BB52AB04894AE34"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_430404468"
+				item: "cabricality:trade_card_1243616008"
 			}]
 		}
 		{
@@ -1349,19 +1320,19 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "272DC637E954CBF9"
+			id: "15AC029229B65A2E"
 			tasks: [{
-				id: "555F126B733A022E"
+				id: "729DB9463DBA4A46"
 				type: "item"
 				icon: "create:crushed_raw_copper"
 				item: "create:crushed_raw_copper"
 				count: 3L
 			}]
 			rewards: [{
-				id: "60F5FAF6073E198B"
+				id: "0BAB0B4AAFA89955"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_x859532795"
+				item: "cabricality:trade_card_1369845849"
 			}]
 		}
 		{
@@ -1373,19 +1344,19 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "51BB9B71FB80FE24"
+			id: "32B93502DEDCC90E"
 			tasks: [{
-				id: "50048128B7A21784"
+				id: "4101B8E178A485B3"
 				type: "item"
 				icon: "create:crushed_raw_zinc"
 				item: "create:crushed_raw_zinc"
 				count: 3L
 			}]
 			rewards: [{
-				id: "1D7DA046F9BCDB61"
+				id: "4CB834513B2E2FC0"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_557022672"
+				item: "cabricality:trade_card_1244113764"
 			}]
 		}
 		{
@@ -1397,19 +1368,19 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4E8070F429C7A088"
+			id: "082B0762341CFE79"
 			tasks: [{
-				id: "17D7004619F39E4F"
+				id: "4576723CC6CCD4F4"
 				type: "item"
 				icon: "create:crushed_raw_gold"
 				item: "create:crushed_raw_gold"
 				count: 3L
 			}]
 			rewards: [{
-				id: "6195ECD810ED7B11"
+				id: "1C8C7255EC757827"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_x1517882612"
+				item: "cabricality:trade_card_1243553440"
 			}]
 		}
 		{
@@ -1421,19 +1392,19 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2510F92835D4D608"
+			id: "27A14F032FB76D97"
 			tasks: [{
-				id: "10AE84D84D3D75A1"
+				id: "24B9798E21B03D13"
 				type: "item"
 				icon: "create:crushed_raw_nickel"
 				item: "create:crushed_raw_nickel"
 				count: 3L
 			}]
 			rewards: [{
-				id: "1999C2C04FFF20DA"
+				id: "6557868384E7B07B"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_x2096179274"
+				item: "cabricality:trade_card_1678833290"
 			}]
 		}
 		{
@@ -1445,19 +1416,19 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "111846F674E3D720"
+			id: "13E956522D494C8D"
 			tasks: [{
-				id: "7B5D1446A60C082D"
+				id: "25E5F2A53E882A1A"
 				type: "item"
 				icon: "create:crushed_raw_lead"
 				item: "create:crushed_raw_lead"
 				count: 3L
 			}]
 			rewards: [{
-				id: "095BBF41E3795255"
+				id: "5E09B023CD4277BD"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_x1993788408"
+				item: "cabricality:trade_card_1243692444"
 			}]
 		}
 		{
@@ -1469,19 +1440,19 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "49CFE14AFAB62320"
+			id: "53C4AF95A8C5DDC8"
 			tasks: [{
-				id: "28A6F51C780AF412"
+				id: "739963098B8CD3E7"
 				type: "item"
 				icon: "create:crushed_raw_tin"
 				item: "create:crushed_raw_tin"
 				count: 3L
 			}]
 			rewards: [{
-				id: "576680288ADC06D9"
+				id: "6F5885DD83B83469"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_260279835"
+				item: "cabricality:trade_card_x1735444511"
 			}]
 		}
 		{
@@ -1493,18 +1464,18 @@
 			shape: "hexagon"
 			subtitle: "5 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "50666CB1B24EAB16"
+			id: "688C314E694C0B0E"
 			tasks: [{
-				id: "3F8536FBB821DBAE"
+				id: "0F1EB592E6E6A3C8"
 				type: "item"
 				icon: "cabricality:crushed_raw_calorite"
 				item: "cabricality:crushed_raw_calorite"
 			}]
 			rewards: [{
-				id: "64BAA092015A3527"
+				id: "1E9995187DBA0EA5"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_954864246"
+				item: "cabricality:trade_card_482273034"
 			}]
 		}
 		{
@@ -1516,18 +1487,18 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2C6F7169EF689A79"
+			id: "398B7F5753A2CB9B"
 			tasks: [{
-				id: "2B878C6B548BD8E4"
+				id: "0554D7A8BC877F24"
 				type: "item"
 				icon: "cabricality:crushed_raw_ostrum"
 				item: "cabricality:crushed_raw_ostrum"
 			}]
 			rewards: [{
-				id: "509DFDD124D392DC"
+				id: "00F09C7973DE6F87"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_592483303"
+				item: "cabricality:trade_card_x737457477"
 			}]
 		}
 		{
@@ -1539,18 +1510,18 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "3178C633CE3D848B"
+			id: "473218F3E851C54D"
 			tasks: [{
-				id: "074E78F9082905A0"
+				id: "73983D292FC480C9"
 				type: "item"
 				icon: "cabricality:crushed_raw_desh"
 				item: "cabricality:crushed_raw_desh"
 			}]
 			rewards: [{
-				id: "0BC411257E6A9E2F"
+				id: "16C1E29F62B6A208"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_x692051901"
+				item: "cabricality:trade_card_x1211214121"
 			}]
 		}
 		{
@@ -1562,19 +1533,19 @@
 			shape: "hexagon"
 			subtitle: "3 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5F5BBDA303DA5FB1"
+			id: "78C0229D3AB35054"
 			tasks: [{
-				id: "41CFBF555E9BA272"
+				id: "3A0399C80D5128DE"
 				type: "item"
 				icon: "cabricality:crushed_raw_cobalt"
 				item: "cabricality:crushed_raw_cobalt"
 				count: 2L
 			}]
 			rewards: [{
-				id: "2E7309E095AF1E78"
+				id: "13803A8A8C0CFBC9"
 				type: "item"
 				auto: "enabled"
-				item: "cabricality:trade_card_2125822560"
+				item: "cabricality:trade_card_x1085254220"
 			}]
 		}
 		{
@@ -1586,15 +1557,15 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "3213BA7B8221BD53"
+			id: "5B652146ECAF8814"
 			tasks: [{
-				id: "3E2EABA9E4B5D15B"
+				id: "3C3C7B91B3EEF9D7"
 				type: "item"
 				icon: "malum:crushed_soulstone"
 				item: "malum:crushed_soulstone"
 			}]
 			rewards: [{
-				id: "7CECDDE011BEDE66"
+				id: "38B60123568FD86D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1013988605"
@@ -1609,16 +1580,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "07401072D393DBFA"
+			id: "15C825440CEFE8B5"
 			tasks: [{
-				id: "3356F011F5CCFB0A"
+				id: "42017825654A613E"
 				type: "item"
 				icon: "minecraft:andesite"
 				item: "minecraft:andesite"
 				count: 64L
 			}]
 			rewards: [{
-				id: "1A7C8609C19BB749"
+				id: "41490AC78A8835FD"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x872778328"
@@ -1633,16 +1604,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0463AE7DB0917A8B"
+			id: "4D0166A97953A5EA"
 			tasks: [{
-				id: "2399A56C2E2E7CA4"
+				id: "1658E1B652D0C9B0"
 				type: "item"
 				icon: "minecraft:granite"
 				item: "minecraft:granite"
 				count: 64L
 			}]
 			rewards: [{
-				id: "7BE032B0D3B5DFBF"
+				id: "1FB72D9F24E02C04"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_352717621"
@@ -1657,16 +1628,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4B546909BAACFE32"
+			id: "2C1B42F49845F0DC"
 			tasks: [{
-				id: "50B74FF2BC8B7531"
+				id: "63D810ABD6416CCB"
 				type: "item"
 				icon: "minecraft:diorite"
 				item: "minecraft:diorite"
 				count: 64L
 			}]
 			rewards: [{
-				id: "491A2D5F4AE66846"
+				id: "130B90668FA255D2"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1740559973"
@@ -1681,16 +1652,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "32062CC3133E12E9"
+			id: "661895EE7601AB64"
 			tasks: [{
-				id: "4342230C8B4A32AD"
+				id: "61B83CBF66379213"
 				type: "item"
 				icon: "minecraft:tuff"
 				item: "minecraft:tuff"
 				count: 48L
 			}]
 			rewards: [{
-				id: "4C0C648C935C942F"
+				id: "3233833B4634AE46"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_76004084"
@@ -1705,16 +1676,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5E693F45E9375347"
+			id: "51256CD8DA5B13C2"
 			tasks: [{
-				id: "29499B2C42309464"
+				id: "6A2BD564BB0BBF1B"
 				type: "item"
 				icon: "minecraft:calcite"
 				item: "minecraft:calcite"
 				count: 48L
 			}]
 			rewards: [{
-				id: "2DF24E6CF17385D8"
+				id: "4677B1D4504A033F"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_620805656"
@@ -1729,16 +1700,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "163765355934C0A5"
+			id: "68497AE296C11B6C"
 			tasks: [{
-				id: "23A20CFBBE2EBD20"
+				id: "57263F43D859A656"
 				type: "item"
 				icon: "minecraft:sandstone"
 				item: "minecraft:sandstone"
 				count: 64L
 			}]
 			rewards: [{
-				id: "4A2F758B83D292AF"
+				id: "0507BC9B2C3534F8"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1736320596"
@@ -1753,16 +1724,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "29696AA747A41128"
+			id: "772C53D5075F116B"
 			tasks: [{
-				id: "7221E53445976857"
+				id: "4B7C245766D820EE"
 				type: "item"
 				icon: "create:limestone"
 				item: "create:limestone"
 				count: 64L
 			}]
 			rewards: [{
-				id: "2CEE5BC279AABEDE"
+				id: "3BE428208184F417"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1636539340"
@@ -1777,16 +1748,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4CFD632789E36C87"
+			id: "351D3FD78A849EA0"
 			tasks: [{
-				id: "5D7A2320D560F31C"
+				id: "68524AF3D992E4FF"
 				type: "item"
 				icon: "promenade:blunite"
 				item: "promenade:blunite"
 				count: 64L
 			}]
 			rewards: [{
-				id: "0A29EBAE956C448A"
+				id: "3576B7AAA1E1044C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_686567550"
@@ -1801,16 +1772,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "24A7F34531CBD65C"
+			id: "48967AB18C4C4BC6"
 			tasks: [{
-				id: "0D4B19A6F14856EE"
+				id: "2CA1C74B41783387"
 				type: "item"
 				icon: "promenade:carbonite"
 				item: "promenade:carbonite"
 				count: 64L
 			}]
 			rewards: [{
-				id: "6D6E7FA651C2A959"
+				id: "24426F508C699216"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_414437172"
@@ -1825,16 +1796,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7708DA5693D5B1AF"
+			id: "0B7CB32F0E917032"
 			tasks: [{
-				id: "31ECCA912A720AD9"
+				id: "0FB30C08D53BCFB3"
 				type: "item"
 				icon: "create:scoria"
 				item: "create:scoria"
 				count: 16L
 			}]
 			rewards: [{
-				id: "3A48C5E42E152B52"
+				id: "2C66207EF2818E3E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_120787727"
@@ -1849,16 +1820,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "3A44C700C2F547E2"
+			id: "190D2FB5CB7ABEB2"
 			tasks: [{
-				id: "04EF716A103690B6"
+				id: "6A73D8905DB45713"
 				type: "item"
 				icon: "create:veridium"
 				item: "create:veridium"
 				count: 16L
 			}]
 			rewards: [{
-				id: "733D37B46AAC01D0"
+				id: "0FC187474A9B3ACC"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x965888377"
@@ -1873,16 +1844,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4BA1F9F538D9A1B0"
+			id: "7F9D7135997D9239"
 			tasks: [{
-				id: "60DD69E42B16DC57"
+				id: "627150AF58639A38"
 				type: "item"
 				icon: "create:ochrum"
 				item: "create:ochrum"
 				count: 16L
 			}]
 			rewards: [{
-				id: "0C95BD03B5EF0CCB"
+				id: "140C200DAFF6CAE8"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_6062970"
@@ -1897,16 +1868,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "068632E047BCEAE2"
+			id: "6504378D6139DB57"
 			tasks: [{
-				id: "7B519FC24D9B649E"
+				id: "7FD22053EC4EF691"
 				type: "item"
 				icon: "create:crimsite"
 				item: "create:crimsite"
 				count: 16L
 			}]
 			rewards: [{
-				id: "6FD5564B7C09D761"
+				id: "3FE4D19405A0F657"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1320421858"
@@ -1921,16 +1892,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "743C18AE3F5FD43E"
+			id: "6BF19CC7A08A6DC7"
 			tasks: [{
-				id: "6F7B299FCA045C61"
+				id: "2663DD8782560546"
 				type: "item"
 				icon: "create:asurine"
 				item: "create:asurine"
 				count: 16L
 			}]
 			rewards: [{
-				id: "0FF8B89CE7E2878E"
+				id: "73D16F4E60BC0EC0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_326003125"
@@ -1945,16 +1916,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "40B11F49747E20A6"
+			id: "60934EB3B4092A99"
 			tasks: [{
-				id: "028BFF94B8E473B6"
+				id: "4E529B4D75C85B82"
 				type: "item"
 				icon: "indrev:sulfur_crystal"
 				item: "indrev:sulfur_crystal"
 				count: 4L
 			}]
 			rewards: [{
-				id: "51F9F9E56495F700"
+				id: "5B4471B27D012C4E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x176635892"
@@ -1969,16 +1940,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "411A741353E32F5B"
+			id: "113D2B9BE949AFA8"
 			tasks: [{
-				id: "6B481C1B07E5AE29"
+				id: "36EAC129C5CBD9B9"
 				type: "item"
 				icon: "minecraft:lapis_lazuli"
 				item: "minecraft:lapis_lazuli"
 				count: 6L
 			}]
 			rewards: [{
-				id: "7BDAD7FA265DD28A"
+				id: "6946EE0D4AC6CF08"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1737517658"
@@ -1993,15 +1964,15 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "345C78E9C7AB0714"
+			id: "6569AE3C0037C205"
 			tasks: [{
-				id: "46D33079EED6861B"
+				id: "2C50C4AC8F19A0F3"
 				type: "item"
 				icon: "minecraft:diamond"
 				item: "minecraft:diamond"
 			}]
 			rewards: [{
-				id: "7FD29AC89881173F"
+				id: "2405066B0846C91E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1727487303"
@@ -2016,16 +1987,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1B4975E1F33D7C35"
+			id: "34FF2B5C733AFEF1"
 			tasks: [{
-				id: "4C3C86F0BC6303B5"
+				id: "6EA32925E408DC44"
 				type: "item"
 				icon: "minecraft:coal"
 				item: "minecraft:coal"
 				count: 16L
 			}]
 			rewards: [{
-				id: "366B8747519F132A"
+				id: "2A34958BDE3BC516"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_75491722"
@@ -2040,16 +2011,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "52F5BF9573E9B4CD"
+			id: "29F8344589B6FFA1"
 			tasks: [{
-				id: "194D65C5A900060C"
+				id: "1E149ADABCC7E734"
 				type: "item"
 				icon: "minecraft:redstone"
 				item: "minecraft:redstone"
 				count: 24L
 			}]
 			rewards: [{
-				id: "702793674537CD9A"
+				id: "453365851C5BBBF5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x694407577"
@@ -2063,13 +2034,13 @@
 			y: 21.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "0AE5FFAA7CD00931"
+			id: "7651EA102B6B97B0"
 			tasks: [{
-				id: "2EEEE8E48EF5F910"
+				id: "5B979D51CE0C293D"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "683EF280B85E4158"
+				id: "13466D07FB68E75D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_x585812278"
@@ -2084,16 +2055,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "70DC01D0C2922045"
+			id: "4642B1BB8D27BBC7"
 			tasks: [{
-				id: "4178D627C41BF670"
+				id: "2644E89A243D48AB"
 				type: "item"
 				icon: "architects_palette:basalt_tiles"
 				item: "architects_palette:basalt_tiles"
 				count: 12L
 			}]
 			rewards: [{
-				id: "2A14B03CCAC439E8"
+				id: "1CB16AB706D90E72"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1010335551"
@@ -2108,16 +2079,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1D0B51AC83ADD973"
+			id: "1F88066BE66BF86C"
 			tasks: [{
-				id: "416F395F6D7553B3"
+				id: "7E9D179B2FB22A7E"
 				type: "item"
 				icon: "architects_palette:sunmetal_block"
 				item: "architects_palette:sunmetal_block"
 				count: 8L
 			}]
 			rewards: [{
-				id: "00443B8B0BF0C6DA"
+				id: "7330A49B9BAE27FB"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_428618863"
@@ -2132,16 +2103,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "117CC7A362E8EBB9"
+			id: "31B5388866DA7882"
 			tasks: [{
-				id: "0F3740E20A59F6C2"
+				id: "227BBE430FF09069"
 				type: "item"
 				icon: "architects_palette:osseous_bricks"
 				item: "architects_palette:osseous_bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "3F0EBCE917597AB3"
+				id: "1171D6EC02CC8909"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x140042720"
@@ -2156,16 +2127,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "68B8BC7F673C7754"
+			id: "05C9C98602BD9D88"
 			tasks: [{
-				id: "053AB285AE6EE8D5"
+				id: "401EC896BD50944F"
 				type: "item"
 				icon: "architects_palette:packed_ice_pillar"
 				item: "architects_palette:packed_ice_pillar"
 				count: 12L
 			}]
 			rewards: [{
-				id: "6B628865D8F580AA"
+				id: "40562743FE4DF574"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_960405099"
@@ -2180,16 +2151,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "294BA22C7137F199"
+			id: "2F694BEF45BD66E3"
 			tasks: [{
-				id: "527542F6621F1779"
+				id: "5B299AAD4504573E"
 				type: "item"
 				icon: "architects_palette:flint_tiles"
 				item: "architects_palette:flint_tiles"
 				count: 12L
 			}]
 			rewards: [{
-				id: "0829EA3317B29C4F"
+				id: "1AC0AB12D35C03CA"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_2116119061"
@@ -2204,16 +2175,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "686B0850E79F7A32"
+			id: "2718C405B9A2888D"
 			tasks: [{
-				id: "6668E82A123635C2"
+				id: "2C5F9A445AE68C2A"
 				type: "item"
 				icon: "architects_palette:abyssaline_bricks"
 				item: "architects_palette:abyssaline_bricks"
 				count: 8L
 			}]
 			rewards: [{
-				id: "61B94034E8D97C78"
+				id: "42FC6820984D60CE"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x203249222"
@@ -2228,16 +2199,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1BD0F7FFFE368EEC"
+			id: "6574472A11649F68"
 			tasks: [{
-				id: "7AE1926831D6005D"
+				id: "21B8AE84F776DB36"
 				type: "item"
 				icon: "architects_palette:gilded_sandstone"
 				item: "architects_palette:gilded_sandstone"
 				count: 8L
 			}]
 			rewards: [{
-				id: "3D030831A32873F6"
+				id: "1232A433B27B0B9C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1450758785"
@@ -2252,16 +2223,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "77E9DD05794C36B4"
+			id: "2EDCD54910C3A275"
 			tasks: [{
-				id: "4AB45E56AF118629"
+				id: "1842861259D2A26E"
 				type: "item"
 				icon: "architects_palette:olivestone_bricks"
 				item: "architects_palette:olivestone_bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "407A4E707CC7633F"
+				id: "03E872EEA8859602"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_351515565"
@@ -2276,16 +2247,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "03C972BF3B70550C"
+			id: "58E6F840F8792848"
 			tasks: [{
-				id: "4757E632E6B84443"
+				id: "315B8DC3C644C83E"
 				type: "item"
 				icon: "architects_palette:algal_bricks"
 				item: "architects_palette:algal_bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "31F0456E9A4D2FE0"
+				id: "526259429B490960"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1553439152"
@@ -2300,16 +2271,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0749FC166D6B220A"
+			id: "257036BCD2B23239"
 			tasks: [{
-				id: "6C797AE1476CF3E5"
+				id: "652BC16E6299F5FB"
 				type: "item"
 				icon: "architects_palette:myonite_bricks"
 				item: "architects_palette:myonite_bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "03D936F06F0C6C90"
+				id: "271D568FEC586093"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x336340152"
@@ -2324,16 +2295,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4BCBABC2415FE535"
+			id: "402DDBE048F8B407"
 			tasks: [{
-				id: "50282A6CD29793D1"
+				id: "5256DBAF42D497CA"
 				type: "item"
 				icon: "create:ornate_iron_window"
 				item: "create:ornate_iron_window"
 				count: 8L
 			}]
 			rewards: [{
-				id: "04257F9E17B29A8C"
+				id: "6AAB2CB2F43A79CD"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x477282989"
@@ -2348,16 +2319,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "77669FF17BBB553A"
+			id: "18BFD1282F929C66"
 			tasks: [{
-				id: "12C78ED9B0356487"
+				id: "3045221A64858782"
 				type: "item"
 				icon: "tconstruct:seared_bricks"
 				item: "tconstruct:seared_bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "0186ECE4305FCFA0"
+				id: "3819BF313B75DB5E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_800541644"
@@ -2372,16 +2343,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "38163813C6F7F43D"
+			id: "794596F85BD4309F"
 			tasks: [{
-				id: "69B34EAFDE0E1FD2"
+				id: "1C5FC0B3789CABBA"
 				type: "item"
 				icon: "tconstruct:scorched_bricks"
 				item: "tconstruct:scorched_bricks"
 				count: 8L
 			}]
 			rewards: [{
-				id: "7373A64C59C7BDA9"
+				id: "3D83101AC433B06F"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_787563927"
@@ -2396,16 +2367,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "1D55EA6FBE3D3A72"
+			id: "3E6DDAC7F6E75D29"
 			tasks: [{
-				id: "374B4C701FF85B8F"
+				id: "110FE98C9A83EED0"
 				type: "item"
 				icon: "tconstruct:mud_bricks"
 				item: "tconstruct:mud_bricks"
 				count: 4L
 			}]
 			rewards: [{
-				id: "32EAAF2914B7E121"
+				id: "1BCB9A13218853F1"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_368386226"
@@ -2420,16 +2391,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4B6FB3BD06944A15"
+			id: "541E85299CE84D36"
 			tasks: [{
-				id: "05CB490A92BA6C47"
+				id: "0ACF2B48C9EA82DC"
 				type: "item"
 				icon: "minecraft:bricks"
 				item: "minecraft:bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "78118B41EAFBA72F"
+				id: "241EB18E2AF6400B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1308369851"
@@ -2444,16 +2415,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "33343241A1865EC0"
+			id: "1D027542CD410AD6"
 			tasks: [{
-				id: "24357C0BDB42D8EA"
+				id: "7F46A7A0418AB7BE"
 				type: "item"
 				icon: "minecraft:nether_bricks"
 				item: "minecraft:nether_bricks"
 				count: 12L
 			}]
 			rewards: [{
-				id: "491129FEB17FD8A7"
+				id: "36B48A4FF7D3AF67"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1335074316"
@@ -2468,16 +2439,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "58872AA6481A0BBE"
+			id: "37DE13FA99119F6A"
 			tasks: [{
-				id: "2E9135D46B7714FD"
+				id: "1B143568B2952096"
 				type: "item"
 				icon: "minecraft:quartz_bricks"
 				item: "minecraft:quartz_bricks"
 				count: 8L
 			}]
 			rewards: [{
-				id: "27BED259DDF529D8"
+				id: "51CACC9523A90E0A"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_52958825"
@@ -2492,16 +2463,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "309C6FD6ABB7DB95"
+			id: "73BEA2B96C6F4723"
 			tasks: [{
-				id: "59813F1437BFD304"
+				id: "16D0634DE7F02CCE"
 				type: "item"
 				icon: "minecraft:mossy_cobblestone"
 				item: "minecraft:mossy_cobblestone"
 				count: 12L
 			}]
 			rewards: [{
-				id: "7827B1AC6B2BFFA3"
+				id: "72E3480669A244B4"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1599800245"
@@ -2515,13 +2486,13 @@
 			y: 25.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "7A73F878A28543D0"
+			id: "52CC188BB261224E"
 			tasks: [{
-				id: "4428BDCA788E087B"
+				id: "5A769EDDA79873FC"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "253FEAEEB7AFBF9D"
+				id: "3D8EB9179C6E8F7B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_x160253964"
@@ -2536,15 +2507,15 @@
 			shape: "hexagon"
 			subtitle: "8 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6967C62A84AB6914"
+			id: "7699CE0F6C37C719"
 			tasks: [{
-				id: "4AA3E1ED45E1F5E4"
+				id: "21D86999005C203B"
 				type: "item"
 				icon: "minecraft:phantom_membrane"
 				item: "minecraft:phantom_membrane"
 			}]
 			rewards: [{
-				id: "17FB7B80CDFF7A0B"
+				id: "424EF65AB180283D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_876509112"
@@ -2559,15 +2530,15 @@
 			shape: "hexagon"
 			subtitle: "8 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4C104BD43C0D8D61"
+			id: "0AA3FEE6B4344FCB"
 			tasks: [{
-				id: "72A710CA31CA990F"
+				id: "6526E99416E33F70"
 				type: "item"
 				icon: "minecraft:rabbit_foot"
 				item: "minecraft:rabbit_foot"
 			}]
 			rewards: [{
-				id: "07F4255A1C8E70EA"
+				id: "66549A3B8FF510B6"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x433219226"
@@ -2582,15 +2553,15 @@
 			shape: "hexagon"
 			subtitle: "6 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "11E2EEB28B5FF30E"
+			id: "58A1BA050D884955"
 			tasks: [{
-				id: "4E821845E8244D92"
+				id: "35A5B282CE885349"
 				type: "item"
 				icon: "minecraft:nether_star"
 				item: "minecraft:nether_star"
 			}]
 			rewards: [{
-				id: "62D8F2A655D9F0EB"
+				id: "04921786123D34B5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1759168972"
@@ -2605,15 +2576,15 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6216648857471E6F"
+			id: "6A440DB0FD5612BE"
 			tasks: [{
-				id: "42371A05B85C3B6D"
+				id: "59B0F99DF8668FAB"
 				type: "item"
 				icon: "minecraft:dragon_breath"
 				item: "minecraft:dragon_breath"
 			}]
 			rewards: [{
-				id: "788AE7CD46026A5F"
+				id: "4353509F4974D771"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1940006913"
@@ -2628,15 +2599,15 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7D6B1DB8EFDD8A7B"
+			id: "4AAC61760E98B4A4"
 			tasks: [{
-				id: "33A689D761347637"
+				id: "7101F54C44A1FBD1"
 				type: "item"
 				icon: "minecraft:ghast_tear"
 				item: "minecraft:ghast_tear"
 			}]
 			rewards: [{
-				id: "63023E19FD9D4C7A"
+				id: "3EC7462B41403A74"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1959565779"
@@ -2651,15 +2622,15 @@
 			shape: "hexagon"
 			subtitle: "16 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "419F0ACB66DE89CB"
+			id: "45D813C87FD22AE0"
 			tasks: [{
-				id: "08ECDDFEF837AB45"
+				id: "3CEFEFA0951AB8C3"
 				type: "item"
 				icon: "minecraft:dragon_egg"
 				item: "minecraft:dragon_egg"
 			}]
 			rewards: [{
-				id: "39FF1D9B2C00979D"
+				id: "5FE2810F6884DB89"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x535597108"
@@ -2673,13 +2644,13 @@
 			y: 27.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "184F6100C74A6EA8"
+			id: "33D4BB2EC60BD675"
 			tasks: [{
-				id: "79FEE6DE3E84C39E"
+				id: "447AB81289E9EBF3"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "507ED5FA26970705"
+				id: "204DB24BBF462FB7"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_2020416271"
@@ -2694,16 +2665,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7CAF0D12C70F49B6"
+			id: "02E2AC665518BB48"
 			tasks: [{
-				id: "21B62CCA92D31D98"
+				id: "4893EF0A27D5EB66"
 				type: "item"
 				icon: "minecraft:cod"
 				item: "minecraft:cod"
 				count: 8L
 			}]
 			rewards: [{
-				id: "59F25150DD6923B5"
+				id: "6DA7414D70B4504E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_72531307"
@@ -2718,16 +2689,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "083234D172852DD6"
+			id: "73FE28B390FCFB40"
 			tasks: [{
-				id: "22697B6B702C73B4"
+				id: "57C465D4A62260A0"
 				type: "item"
 				icon: "minecraft:salmon"
 				item: "minecraft:salmon"
 				count: 8L
 			}]
 			rewards: [{
-				id: "1646D604DCB836F2"
+				id: "5E94AEF04B142841"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x837275039"
@@ -2742,16 +2713,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5680E1D09B0B3381"
+			id: "37B185AE2792B430"
 			tasks: [{
-				id: "5E157D5925C95BAC"
+				id: "47716F807AAE9739"
 				type: "item"
 				icon: "minecraft:pufferfish"
 				item: "minecraft:pufferfish"
 				count: 8L
 			}]
 			rewards: [{
-				id: "02AD94A2B809A18B"
+				id: "6E4DEFBD64CD3B3E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x771959235"
@@ -2766,16 +2737,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "06FAAEF47731A3C7"
+			id: "26A79B48F7317747"
 			tasks: [{
-				id: "28AD6C44D6D17590"
+				id: "10C4F9E2D92158E9"
 				type: "item"
 				icon: "minecraft:tropical_fish"
 				item: "minecraft:tropical_fish"
 				count: 8L
 			}]
 			rewards: [{
-				id: "1C6F5290C45FD524"
+				id: "06F8BBACA50C5DE6"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1188087418"
@@ -2789,13 +2760,13 @@
 			y: 29.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "12CD7A5C160C4E01"
+			id: "3577841AFA5012B2"
 			tasks: [{
-				id: "41193D42E5D200C9"
+				id: "4645E2BF7DF0E4E9"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "664033B131E65E1A"
+				id: "3CC517A7DE6E973B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_x473924577"
@@ -2810,16 +2781,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "39AEE5184CD0AB4C"
+			id: "34C5DD3CA1E79378"
 			tasks: [{
-				id: "7C6E2BA54F3A96CD"
+				id: "4783785C3E90A276"
 				type: "item"
 				icon: "create:bar_of_chocolate"
 				item: "create:bar_of_chocolate"
 				count: 4L
 			}]
 			rewards: [{
-				id: "4D040C91C916419E"
+				id: "6D37694A7BDCE43E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_873868548"
@@ -2834,16 +2805,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "11BC621D01239F56"
+			id: "5C3142F3D74B92EE"
 			tasks: [{
-				id: "4541B836E4A455E2"
+				id: "5A04B540B4AB5402"
 				type: "item"
 				icon: "create:honeyed_apple"
 				item: "create:honeyed_apple"
 				count: 4L
 			}]
 			rewards: [{
-				id: "73710EF39D9CD0F0"
+				id: "144D84BE41865666"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_898924153"
@@ -2858,16 +2829,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "408D7D4FD73114F6"
+			id: "608A6C7568486511"
 			tasks: [{
-				id: "14320E757A68A08C"
+				id: "5F4430311DC416CD"
 				type: "item"
 				icon: "create:builders_tea"
 				item: "create:builders_tea"
 				count: 4L
 			}]
 			rewards: [{
-				id: "222C3919AA1E97EE"
+				id: "17715F911572817C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_917018125"
@@ -2882,16 +2853,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4C328A037FE8B223"
+			id: "62D318A5CCA87718"
 			tasks: [{
-				id: "12AD767AF37668C3"
+				id: "28F9ADA122353081"
 				type: "item"
 				icon: "create:sweet_roll"
 				item: "create:sweet_roll"
 				count: 4L
 			}]
 			rewards: [{
-				id: "6EF17507F8AC8C9A"
+				id: "71C61BAD015003D7"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1943380240"
@@ -2906,16 +2877,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5BCB10BE80CEE0FF"
+			id: "79E89E9EA993F89B"
 			tasks: [{
-				id: "2D575FA1EF54A351"
+				id: "1D01CBFD7DD9A7B4"
 				type: "item"
 				icon: "minecraft:bread"
 				item: "minecraft:bread"
 				count: 3L
 			}]
 			rewards: [{
-				id: "3B6F3FFD5711AD61"
+				id: "6E926F2D3B53C517"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_166434027"
@@ -2930,15 +2901,15 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "61C33FF46E2C4F8E"
+			id: "34F17BC1E5966FA5"
 			tasks: [{
-				id: "60C57615FAAB85F5"
+				id: "2A419140E72CABD6"
 				type: "item"
 				icon: "minecraft:cake"
 				item: "minecraft:cake"
 			}]
 			rewards: [{
-				id: "6CFBEA7854425E0C"
+				id: "42FDFE41808BE8F5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_75478571"
@@ -2953,16 +2924,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4C83CE4E2A506DC9"
+			id: "05D82ED5566D50B6"
 			tasks: [{
-				id: "383A601715622999"
+				id: "067962530F9360BD"
 				type: "item"
 				icon: "minecraft:cookie"
 				item: "minecraft:cookie"
 				count: 8L
 			}]
 			rewards: [{
-				id: "149AB686353ECD3D"
+				id: "7BEB1742D4E73D0D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1282324905"
@@ -2977,16 +2948,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5DC4BC8CCF9FD615"
+			id: "69954754EC4972D7"
 			tasks: [{
-				id: "1657EAB1F27CA533"
+				id: "362A5F5CB14A9866"
 				type: "item"
 				icon: "minecraft:pumpkin_pie"
 				item: "minecraft:pumpkin_pie"
 				count: 4L
 			}]
 			rewards: [{
-				id: "39A9F4A69465E4AA"
+				id: "7E89147E1A8C52E2"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_926523432"
@@ -3001,16 +2972,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4034B83E570023DB"
+			id: "7D234165E2915E04"
 			tasks: [{
-				id: "616C513DDF142D27"
+				id: "725FF387CA9227F6"
 				type: "item"
 				icon: "farmersdelight:apple_pie"
 				item: "farmersdelight:apple_pie"
 				count: 4L
 			}]
 			rewards: [{
-				id: "1072B2697A4392C7"
+				id: "74B8AC6C49F5F3DE"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1251980798"
@@ -3025,16 +2996,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "601DC49B8431EBD1"
+			id: "5B6D8C10FA347CDA"
 			tasks: [{
-				id: "3BA79DC152568D24"
+				id: "6077042243AF971B"
 				type: "item"
 				icon: "farmersdelight:sweet_berry_cheesecake"
 				item: "farmersdelight:sweet_berry_cheesecake"
 				count: 4L
 			}]
 			rewards: [{
-				id: "6D009FAA285BC710"
+				id: "12C33D81725CA446"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x658171742"
@@ -3049,16 +3020,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6A7FBC09F0C6EECE"
+			id: "6E1F64AD88866B08"
 			tasks: [{
-				id: "67BAC6B966C50551"
+				id: "5B51906F4B5FD20B"
 				type: "item"
 				icon: "farmersdelight:chocolate_pie"
 				item: "farmersdelight:chocolate_pie"
 				count: 4L
 			}]
 			rewards: [{
-				id: "52216BC6046B6497"
+				id: "104888D4B9A088BA"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1976965148"
@@ -3073,16 +3044,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "106B266151A4039F"
+			id: "65886CA5F642073F"
 			tasks: [{
-				id: "27C589B70B22DB3F"
+				id: "6C8B8ABF74ED90C6"
 				type: "item"
 				icon: "farmersdelight:roast_chicken_block"
 				item: "farmersdelight:roast_chicken_block"
 				count: 2L
 			}]
 			rewards: [{
-				id: "00C13A25A4F5A1FE"
+				id: "46078147003A3AFB"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1358368572"
@@ -3097,16 +3068,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "50DB391ADA45C29E"
+			id: "15933518FF1F8E0C"
 			tasks: [{
-				id: "56A294A68D4911AB"
+				id: "3BB5E18013FDC746"
 				type: "item"
 				icon: "farmersdelight:stuffed_pumpkin_block"
 				item: "farmersdelight:stuffed_pumpkin_block"
 				count: 2L
 			}]
 			rewards: [{
-				id: "11BF373AE078CA3B"
+				id: "02578E74515B6B51"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1209144869"
@@ -3121,16 +3092,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "28A0310F1042E43C"
+			id: "6AEE203792BA8FDA"
 			tasks: [{
-				id: "3AC257888400A628"
+				id: "751F5FA40E6BAAE7"
 				type: "item"
 				icon: "farmersdelight:honey_glazed_ham_block"
 				item: "farmersdelight:honey_glazed_ham_block"
 				count: 2L
 			}]
 			rewards: [{
-				id: "56727E920468CE2F"
+				id: "2730258533FEC5F2"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1540781503"
@@ -3145,16 +3116,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4C5BBC754B37A529"
+			id: "7BEDBB10FFEE1A38"
 			tasks: [{
-				id: "16935E880F3C441E"
+				id: "4FAEC51FE645762A"
 				type: "item"
 				icon: "farmersdelight:shepherds_pie_block"
 				item: "farmersdelight:shepherds_pie_block"
 				count: 2L
 			}]
 			rewards: [{
-				id: "2D1736CFC05B3A6C"
+				id: "4EE18A126C85644B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1392807194"
@@ -3169,16 +3140,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "75F62C47B829648A"
+			id: "3508538EF2B5CD2E"
 			tasks: [{
-				id: "778A5E299C932D26"
+				id: "0F04EE042325CE84"
 				type: "item"
 				icon: "farmersdelight:sweet_berry_cookie"
 				item: "farmersdelight:sweet_berry_cookie"
 				count: 6L
 			}]
 			rewards: [{
-				id: "651534407F53429F"
+				id: "6F02052F0EBDECFD"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_896533367"
@@ -3193,16 +3164,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "22DCA830C3BD9471"
+			id: "41F812D7F06A1E43"
 			tasks: [{
-				id: "018BB25576072B1D"
+				id: "02A336D59A9B22B6"
 				type: "item"
 				icon: "farmersdelight:honey_cookie"
 				item: "farmersdelight:honey_cookie"
 				count: 6L
 			}]
 			rewards: [{
-				id: "2A533336BF69A2D2"
+				id: "19FAF3D13CDE3847"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1037142333"
@@ -3217,16 +3188,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7999E5D19AE6C36D"
+			id: "2B0C0BD7A9676FA4"
 			tasks: [{
-				id: "7D63EE19AAF85F78"
+				id: "5E031653F87C723C"
 				type: "item"
 				icon: "farmersdelight:hot_cocoa"
 				item: "farmersdelight:hot_cocoa"
 				count: 4L
 			}]
 			rewards: [{
-				id: "1B1AAAB049EE67BA"
+				id: "1FED0F28F6E82ED9"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_414382578"
@@ -3241,16 +3212,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "71BD6C5FC1A486E7"
+			id: "1F0BDD40A2CFA7D1"
 			tasks: [{
-				id: "09E2BBD8602C75C0"
+				id: "28999D13B17B6C45"
 				type: "item"
 				icon: "farmersdelight:apple_cider"
 				item: "farmersdelight:apple_cider"
 				count: 4L
 			}]
 			rewards: [{
-				id: "322C92A5DD403FCF"
+				id: "083ED7F674F7F8AC"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1266945119"
@@ -3265,16 +3236,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "056685958CE8A244"
+			id: "3AED1396242F1599"
 			tasks: [{
-				id: "4A7ED5AA201250BD"
+				id: "0245D8FDE5D90ACA"
 				type: "item"
 				icon: "farmersdelight:melon_juice"
 				item: "farmersdelight:melon_juice"
 				count: 4L
 			}]
 			rewards: [{
-				id: "0663AA550998DA68"
+				id: "59FD484CDA01217B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x216104017"
@@ -3289,16 +3260,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "73EB1523F3FA95AE"
+			id: "26A273E294680456"
 			tasks: [{
-				id: "1B7C9E3F0927E087"
+				id: "6542E2F23B5414CB"
 				type: "item"
 				icon: "farmersdelight:fruit_salad"
 				item: "farmersdelight:fruit_salad"
 				count: 4L
 			}]
 			rewards: [{
-				id: "5FCE91A67F39C611"
+				id: "7067C5E28F07B84E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1301570417"
@@ -3313,16 +3284,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "358026D62FB79DBB"
+			id: "1B01520355053A06"
 			tasks: [{
-				id: "6F6EAC70E8F87AA5"
+				id: "6B046A1CD297869A"
 				type: "item"
 				icon: "farmersdelight:mixed_salad"
 				item: "farmersdelight:mixed_salad"
 				count: 4L
 			}]
 			rewards: [{
-				id: "7F2A3D4DC065241F"
+				id: "4CB8EC9E655F809D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1742392808"
@@ -3337,16 +3308,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "78EEA1E7FCE17E48"
+			id: "024B005D2D2848D4"
 			tasks: [{
-				id: "279EBCA22DFDDCCC"
+				id: "27A8AF4602897250"
 				type: "item"
 				icon: "farmersdelight:nether_salad"
 				item: "farmersdelight:nether_salad"
 				count: 4L
 			}]
 			rewards: [{
-				id: "4899CB1238C95F58"
+				id: "2A21E1CDE0F63694"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1590482101"
@@ -3361,16 +3332,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "64BCEF96C6C5817F"
+			id: "18544DC8335A2005"
 			tasks: [{
-				id: "72338204FD7CA87A"
+				id: "30FE965B80D5722B"
 				type: "item"
 				icon: "farmersdelight:barbecue_stick"
 				item: "farmersdelight:barbecue_stick"
 				count: 4L
 			}]
 			rewards: [{
-				id: "0864421921EFC977"
+				id: "62C58BC9BD61B688"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_775458697"
@@ -3385,16 +3356,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "37DE9F52A53FBEF2"
+			id: "593D43FCB1584424"
 			tasks: [{
-				id: "5EBEFF422DC3E719"
+				id: "4456D0F1EB059ECF"
 				type: "item"
 				icon: "farmersdelight:egg_sandwich"
 				item: "farmersdelight:egg_sandwich"
 				count: 4L
 			}]
 			rewards: [{
-				id: "7E50CDC541334C6C"
+				id: "26F0CE7D7F0DED21"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x385183984"
@@ -3409,16 +3380,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "31527389ADE18797"
+			id: "79CB3E21C2DA6A9D"
 			tasks: [{
-				id: "421E920A955E683E"
+				id: "1191A807BE5F3972"
 				type: "item"
 				icon: "farmersdelight:chicken_sandwich"
 				item: "farmersdelight:chicken_sandwich"
 				count: 4L
 			}]
 			rewards: [{
-				id: "577BF19836ECBA6F"
+				id: "1EC73CE5CA41CB24"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_949768032"
@@ -3433,16 +3404,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "29B4FA3958F9F4C9"
+			id: "1C0D9E7426CB327A"
 			tasks: [{
-				id: "504969FEE6B9722A"
+				id: "41403F75BE03E656"
 				type: "item"
 				icon: "farmersdelight:beef_stew"
 				item: "farmersdelight:beef_stew"
 				count: 4L
 			}]
 			rewards: [{
-				id: "6315EDE808E48CD3"
+				id: "6813B153E79009C2"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x2104834839"
@@ -3457,16 +3428,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2851ADBC39B115C3"
+			id: "0BF73367E5804FC4"
 			tasks: [{
-				id: "3B827A7C012A7106"
+				id: "7F6443425D0DE626"
 				type: "item"
 				icon: "farmersdelight:hamburger"
 				item: "farmersdelight:hamburger"
 				count: 4L
 			}]
 			rewards: [{
-				id: "3EBD7C1DBC1CD105"
+				id: "2D424565097FE53D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x30113052"
@@ -3481,16 +3452,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "59EA57D5FA07DDE6"
+			id: "2BA57B291EEB670D"
 			tasks: [{
-				id: "54F78E9C151D779D"
+				id: "4C3A3493A02ADAE8"
 				type: "item"
 				icon: "farmersdelight:bacon_sandwich"
 				item: "farmersdelight:bacon_sandwich"
 				count: 4L
 			}]
 			rewards: [{
-				id: "1035768D341BC564"
+				id: "083091DCAE8AA6C2"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_89888754"
@@ -3505,16 +3476,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2870445C4D0349FC"
+			id: "13E940ACA4C2FDC8"
 			tasks: [{
-				id: "76D49FC5CBB80569"
+				id: "20A1EE8DE456B302"
 				type: "item"
 				icon: "farmersdelight:mutton_wrap"
 				item: "farmersdelight:mutton_wrap"
 				count: 4L
 			}]
 			rewards: [{
-				id: "32A3461351157BDE"
+				id: "306730A6EB0D35E8"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_790880861"
@@ -3529,16 +3500,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "04244B84D0C15C04"
+			id: "05D9833909787480"
 			tasks: [{
-				id: "7C28164F98A9476C"
+				id: "1E0E4A3B6F4FA628"
 				type: "item"
 				icon: "farmersdelight:dumplings"
 				item: "farmersdelight:dumplings"
 				count: 4L
 			}]
 			rewards: [{
-				id: "172C8D85545D7A80"
+				id: "652448FB06CD8C7A"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x501526364"
@@ -3553,16 +3524,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "250D39A526F6BA58"
+			id: "1FA016017BF7C23F"
 			tasks: [{
-				id: "08AFADD352D5423F"
+				id: "0D377A1E09EEE32B"
 				type: "item"
 				icon: "farmersdelight:stuffed_potato"
 				item: "farmersdelight:stuffed_potato"
 				count: 4L
 			}]
 			rewards: [{
-				id: "6E1D7F466F209436"
+				id: "77CB8AEE6B320737"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1654063918"
@@ -3577,16 +3548,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "546FFBFBF6719A40"
+			id: "078628D5293E1D34"
 			tasks: [{
-				id: "0447A7D1EACCDAF1"
+				id: "706AFD525CC52CA3"
 				type: "item"
 				icon: "farmersdelight:cabbage_rolls"
 				item: "farmersdelight:cabbage_rolls"
 				count: 4L
 			}]
 			rewards: [{
-				id: "0030363F2CCB7DC2"
+				id: "07ADE935CEFAFFB0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1573223379"
@@ -3601,16 +3572,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "437945CF5A991700"
+			id: "0D04D48F2BCF0D4D"
 			tasks: [{
-				id: "0A75A76BCB10470A"
+				id: "084239E09F9A9EA6"
 				type: "item"
 				icon: "farmersdelight:chicken_soup"
 				item: "farmersdelight:chicken_soup"
 				count: 4L
 			}]
 			rewards: [{
-				id: "5F83E21E1FF279CC"
+				id: "7152A8DC2D824D98"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1014492444"
@@ -3625,16 +3596,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "20B5D7F06DB53CF5"
+			id: "3D5A7AEC16A2095F"
 			tasks: [{
-				id: "7EDE806904A79FE5"
+				id: "359BE0EA60AAB965"
 				type: "item"
 				icon: "farmersdelight:vegetable_soup"
 				item: "farmersdelight:vegetable_soup"
 				count: 4L
 			}]
 			rewards: [{
-				id: "28A03239136FC10D"
+				id: "633FD1EC5829E89B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x450800080"
@@ -3649,16 +3620,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "782E63D39453D9A2"
+			id: "41E6C333E1A548E4"
 			tasks: [{
-				id: "4424282D9CE4694B"
+				id: "66D0590D118F0E4B"
 				type: "item"
 				icon: "farmersdelight:fish_stew"
 				item: "farmersdelight:fish_stew"
 				count: 4L
 			}]
 			rewards: [{
-				id: "24DD5FB1D34691BA"
+				id: "65FF4DCD35C3EC14"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1528963893"
@@ -3673,16 +3644,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "77E34FED80CAEFC0"
+			id: "03D6326DC9FC645E"
 			tasks: [{
-				id: "3218608EF184A99C"
+				id: "079210BEDB8FE82A"
 				type: "item"
 				icon: "farmersdelight:fried_rice"
 				item: "farmersdelight:fried_rice"
 				count: 4L
 			}]
 			rewards: [{
-				id: "3AB03EED79DF5B2E"
+				id: "5DCD58C2A4CD0F46"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1204868201"
@@ -3697,16 +3668,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5F4695885176FE51"
+			id: "3CDD3A2AE09C0A11"
 			tasks: [{
-				id: "2F18C58B160E30EB"
+				id: "31A4E309B7F3AD99"
 				type: "item"
 				icon: "farmersdelight:pumpkin_soup"
 				item: "farmersdelight:pumpkin_soup"
 				count: 4L
 			}]
 			rewards: [{
-				id: "48406DFC515BD7D4"
+				id: "18ABCEC68D2C8FC6"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1548925769"
@@ -3721,16 +3692,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2D6D96580F46916E"
+			id: "02D6C85AE3102D2F"
 			tasks: [{
-				id: "6A9360C3646A465D"
+				id: "1C97AB5DFB60BFD9"
 				type: "item"
 				icon: "farmersdelight:baked_cod_stew"
 				item: "farmersdelight:baked_cod_stew"
 				count: 4L
 			}]
 			rewards: [{
-				id: "67A3A50A2616119D"
+				id: "05A8DB0224A927C0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1011300393"
@@ -3745,16 +3716,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5E5F97CDD3352725"
+			id: "3FAB912C817202BD"
 			tasks: [{
-				id: "1B2506C5D74AA32C"
+				id: "283B266FC2CD257A"
 				type: "item"
 				icon: "farmersdelight:noodle_soup"
 				item: "farmersdelight:noodle_soup"
 				count: 4L
 			}]
 			rewards: [{
-				id: "04D3B848FCF5B4B5"
+				id: "0454667B1EE7BEFB"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x120140862"
@@ -3769,16 +3740,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "59D670E189116BB4"
+			id: "28E314E6866850C6"
 			tasks: [{
-				id: "608E497D632D69FF"
+				id: "0EEEEB7A3A7D7AA3"
 				type: "item"
 				icon: "farmersdelight:bacon_and_eggs"
 				item: "farmersdelight:bacon_and_eggs"
 				count: 4L
 			}]
 			rewards: [{
-				id: "0B6BAE96FDCDDBB2"
+				id: "44C02FD01D8F197B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1440239917"
@@ -3793,16 +3764,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "34198EED50253D95"
+			id: "75F38CFB1EA0C36E"
 			tasks: [{
-				id: "37AA2F8631F9B35B"
+				id: "004B1F9A7BAE6270"
 				type: "item"
 				icon: "farmersdelight:pasta_with_meatballs"
 				item: "farmersdelight:pasta_with_meatballs"
 				count: 4L
 			}]
 			rewards: [{
-				id: "5E8157C45FAA1E4E"
+				id: "1C20546B4BE3CDD7"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x2013865029"
@@ -3817,16 +3788,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7DEC452F95F89F68"
+			id: "1A2DFAA17C120BDE"
 			tasks: [{
-				id: "6FF00D4BE24EFA64"
+				id: "0C325593163C4FC8"
 				type: "item"
 				icon: "farmersdelight:pasta_with_mutton_chop"
 				item: "farmersdelight:pasta_with_mutton_chop"
 				count: 4L
 			}]
 			rewards: [{
-				id: "64F46EE4DEB77485"
+				id: "2F5919EF26DCA92D"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1195118800"
@@ -3841,16 +3812,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "14B01EBF1F9DF32D"
+			id: "797E7B345920F0BF"
 			tasks: [{
-				id: "2C654F02176381E1"
+				id: "6693A8B7AE395292"
 				type: "item"
 				icon: "farmersdelight:roasted_mutton_chops"
 				item: "farmersdelight:roasted_mutton_chops"
 				count: 4L
 			}]
 			rewards: [{
-				id: "62CB71EF085D57D8"
+				id: "36168FFB490183ED"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1147340971"
@@ -3865,16 +3836,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "440A37EA1A490075"
+			id: "7DA3533295C31DE2"
 			tasks: [{
-				id: "58178C7AFB7735D3"
+				id: "7793648656065641"
 				type: "item"
 				icon: "farmersdelight:vegetable_noodles"
 				item: "farmersdelight:vegetable_noodles"
 				count: 4L
 			}]
 			rewards: [{
-				id: "7CB5F33B680A54EB"
+				id: "46050D1B6EDD7F54"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_959916993"
@@ -3889,16 +3860,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "31F507BE2D52B845"
+			id: "7627DB1677E71562"
 			tasks: [{
-				id: "7D7DF1FB1D014B38"
+				id: "0EC5C15F4B1C5A9C"
 				type: "item"
 				icon: "farmersdelight:steak_and_potatoes"
 				item: "farmersdelight:steak_and_potatoes"
 				count: 4L
 			}]
 			rewards: [{
-				id: "1054C407527D428A"
+				id: "0F28E1373492AB4B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x2043580759"
@@ -3913,16 +3884,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4081096DE7AEC687"
+			id: "1478B35C3968D107"
 			tasks: [{
-				id: "7CA1EEEBBC15B096"
+				id: "08F8E3D19AEFB382"
 				type: "item"
 				icon: "farmersdelight:ratatouille"
 				item: "farmersdelight:ratatouille"
 				count: 4L
 			}]
 			rewards: [{
-				id: "6E99C984BC4B06D8"
+				id: "53EA0FE269BE6037"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1468778677"
@@ -3937,16 +3908,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "3C34296B1BDDBD53"
+			id: "230511E2C7336984"
 			tasks: [{
-				id: "3B94A5AF04A768C7"
+				id: "39A110E1434E36FC"
 				type: "item"
 				icon: "farmersdelight:squid_ink_pasta"
 				item: "farmersdelight:squid_ink_pasta"
 				count: 4L
 			}]
 			rewards: [{
-				id: "13682B1AA8EDE656"
+				id: "1B4D738F7C9DF608"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1954254084"
@@ -3961,16 +3932,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5FA46BB624946398"
+			id: "02F7178384580C0F"
 			tasks: [{
-				id: "5F88F955B2CC31AA"
+				id: "3ECA8CA44D5CFF95"
 				type: "item"
 				icon: "farmersdelight:grilled_salmon"
 				item: "farmersdelight:grilled_salmon"
 				count: 4L
 			}]
 			rewards: [{
-				id: "0419937579A8A4EF"
+				id: "1DFAEA96E20295FB"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x834509877"
@@ -3985,16 +3956,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "7B1AF4922F43DB79"
+			id: "27F225213D7F8359"
 			tasks: [{
-				id: "4DE4BCBE2414DD94"
+				id: "7A64F4E3104EFF6B"
 				type: "item"
 				icon: "farmersdelight:roast_chicken"
 				item: "farmersdelight:roast_chicken"
 				count: 4L
 			}]
 			rewards: [{
-				id: "4BEAA1D1DBF3E0C0"
+				id: "06434AD8B0E1A3D5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x834967178"
@@ -4009,16 +3980,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4D194166D110D228"
+			id: "45467BC4BE6D0BC8"
 			tasks: [{
-				id: "323049F713083EEC"
+				id: "1E5C4233E5197332"
 				type: "item"
 				icon: "farmersdelight:stuffed_pumpkin"
 				item: "farmersdelight:stuffed_pumpkin"
 				count: 4L
 			}]
 			rewards: [{
-				id: "4F7CC7B9E0337171"
+				id: "6476A22C0DC3B3A0"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_417360791"
@@ -4033,16 +4004,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "356A83958FEEDB22"
+			id: "1313A4D15D789589"
 			tasks: [{
-				id: "17F1C99579847EDC"
+				id: "73045B89755D4BE8"
 				type: "item"
 				icon: "farmersdelight:honey_glazed_ham"
 				item: "farmersdelight:honey_glazed_ham"
 				count: 4L
 			}]
 			rewards: [{
-				id: "49B219B42B989F54"
+				id: "464063CBD67A6B8C"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x253557071"
@@ -4056,13 +4027,13 @@
 			y: 36.0d
 			shape: "hexagon"
 			repeatable: true
-			id: "0D28860538C035FF"
+			id: "4FFE209C0AA4EC28"
 			tasks: [{
-				id: "4D19EBDB919F201A"
+				id: "721656EEBC4D6152"
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "6A3FA2DC859D5E5D"
+				id: "7CD9FF54E4FE6D59"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:profession_card_x1796343420"
@@ -4077,16 +4048,16 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4362177C3A663410"
+			id: "67D7D2CEF5E1F207"
 			tasks: [{
-				id: "5BC2BA0DA7D91F94"
+				id: "5B21949174F90F38"
 				type: "item"
 				icon: "minecraft:arrow"
 				item: "minecraft:arrow"
 				count: 12L
 			}]
 			rewards: [{
-				id: "57F9F8C23DD03B3A"
+				id: "24AA9DC9153C6D76"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_165523452"
@@ -4107,9 +4078,9 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "2F0F3F69DBAED7F1"
+			id: "1F19209652C927ED"
 			tasks: [{
-				id: "3A59E2BED0A6196A"
+				id: "07EC39A3001423BF"
 				type: "item"
 				icon: {
 					id: "minecraft:iron_sword"
@@ -4127,7 +4098,7 @@
 				}
 			}]
 			rewards: [{
-				id: "6DD2A64B1766D259"
+				id: "689D209861A64C9F"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1423789127"
@@ -4148,9 +4119,9 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "6C524EEF7CC830D3"
+			id: "59EB719DA36CB1C7"
 			tasks: [{
-				id: "6487CE273C12FD9C"
+				id: "1DE4750698EDE7D3"
 				type: "item"
 				icon: {
 					id: "minecraft:iron_axe"
@@ -4168,7 +4139,7 @@
 				}
 			}]
 			rewards: [{
-				id: "2E904C26E787DCA8"
+				id: "1BA968888319ACD2"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x237521142"
@@ -4189,9 +4160,9 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "79F97FA79BFE43CB"
+			id: "1854DF612EF4A677"
 			tasks: [{
-				id: "0303F79CED6F7E91"
+				id: "59E0C856C9CDF6A7"
 				type: "item"
 				icon: {
 					id: "minecraft:iron_helmet"
@@ -4209,7 +4180,7 @@
 				}
 			}]
 			rewards: [{
-				id: "491990B89C611120"
+				id: "490193D2F46382EB"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_602560439"
@@ -4230,9 +4201,9 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "5D05321D56E3C243"
+			id: "7C4A203F38B6C8E0"
 			tasks: [{
-				id: "7CFCC4A4294DD548"
+				id: "6423FB22115B30BD"
 				type: "item"
 				icon: {
 					id: "minecraft:iron_chestplate"
@@ -4250,7 +4221,7 @@
 				}
 			}]
 			rewards: [{
-				id: "5C023C6E7881C0D3"
+				id: "225173F747414991"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1378026369"
@@ -4271,9 +4242,9 @@
 			shape: "hexagon"
 			subtitle: "3 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "53E4DBBE6B22BFAB"
+			id: "675DE326953DC4E8"
 			tasks: [{
-				id: "57C82108564E9687"
+				id: "712E9C1EC489FF1E"
 				type: "item"
 				icon: {
 					id: "minecraft:iron_leggings"
@@ -4291,7 +4262,7 @@
 				}
 			}]
 			rewards: [{
-				id: "73D2EFEB89A9BB99"
+				id: "42F79957BC1255DF"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_951855604"
@@ -4312,9 +4283,9 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0601CFFA09871376"
+			id: "3B5B6A92DA2B8219"
 			tasks: [{
-				id: "64BB6A98FB40843E"
+				id: "427C62A82E9C881D"
 				type: "item"
 				icon: {
 					id: "minecraft:iron_boots"
@@ -4332,7 +4303,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0E1ABCF10313F8EF"
+				id: "3240FA2129F5D113"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1439727235"
@@ -4353,9 +4324,9 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "4A9BC3C3789B48EB"
+			id: "670120BBFFC47DCD"
 			tasks: [{
-				id: "61F944C56EFA8BF4"
+				id: "0CDD3ED09FB8FDDE"
 				type: "item"
 				icon: {
 					id: "minecraft:golden_sword"
@@ -4373,7 +4344,7 @@
 				}
 			}]
 			rewards: [{
-				id: "7C2DCB2C7F3887DF"
+				id: "029B2B83AB3DDCC4"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_85475130"
@@ -4394,9 +4365,9 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "10E2F92333E46A5F"
+			id: "776CCF796CC76A0E"
 			tasks: [{
-				id: "2DF5D9F342FE2AA3"
+				id: "2E05B3E88B7C2E71"
 				type: "item"
 				icon: {
 					id: "minecraft:golden_axe"
@@ -4414,7 +4385,7 @@
 				}
 			}]
 			rewards: [{
-				id: "28EE69685A6296C4"
+				id: "196C8295E3A107A4"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x955502901"
@@ -4435,9 +4406,9 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "14ABD647FFCF80EC"
+			id: "1B170ADE531CCC7A"
 			tasks: [{
-				id: "7D607C0E4D695917"
+				id: "25D29E114EC12F3E"
 				type: "item"
 				icon: {
 					id: "minecraft:golden_helmet"
@@ -4455,7 +4426,7 @@
 				}
 			}]
 			rewards: [{
-				id: "7B376FB76D8AE42B"
+				id: "41FFD4CA25D8F46E"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_145112150"
@@ -4476,9 +4447,9 @@
 			shape: "hexagon"
 			subtitle: "8 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "0B26E5AE4745547D"
+			id: "151B964E39096671"
 			tasks: [{
-				id: "10F36FC545FC4734"
+				id: "1775857CB34817C7"
 				type: "item"
 				icon: {
 					id: "minecraft:golden_chestplate"
@@ -4496,7 +4467,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0A2C72170CCA2079"
+				id: "065332F8520A83F5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_1388804510"
@@ -4517,9 +4488,9 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "3BAF05166ED267CD"
+			id: "63C1E716AB12E223"
 			tasks: [{
-				id: "4973F209AAB0960B"
+				id: "2188CA2F4287FB76"
 				type: "item"
 				icon: {
 					id: "minecraft:golden_leggings"
@@ -4537,7 +4508,7 @@
 				}
 			}]
 			rewards: [{
-				id: "625168BA420F9F2D"
+				id: "5CCB6E8A2C99F872"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x569285933"
@@ -4558,9 +4529,9 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.silver_coin}"
 			repeatable: true
-			id: "020F9BFAE2A8B587"
+			id: "24F84529BD158FE9"
 			tasks: [{
-				id: "10E9DC504DE1C376"
+				id: "657993BF901B0B62"
 				type: "item"
 				icon: {
 					id: "minecraft:golden_boots"
@@ -4578,7 +4549,7 @@
 				}
 			}]
 			rewards: [{
-				id: "54F73647C898D9F4"
+				id: "71CC55A9C4CDEB39"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_69537022"
@@ -4599,9 +4570,9 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "53A3A2F1B3558448"
+			id: "275038118C910E94"
 			tasks: [{
-				id: "2EB82079E6FDB1DE"
+				id: "49C30ACF9F87288B"
 				type: "item"
 				icon: {
 					id: "minecraft:netherite_sword"
@@ -4619,7 +4590,7 @@
 				}
 			}]
 			rewards: [{
-				id: "515FC0EF5724CD3E"
+				id: "5271D16C48EAE015"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x517313357"
@@ -4640,9 +4611,9 @@
 			shape: "hexagon"
 			subtitle: "1 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "6E0B9653FDE4AA76"
+			id: "130F082AAEE526C9"
 			tasks: [{
-				id: "1A98E88A3DD5D2EA"
+				id: "797D2DC08BE6E5CC"
 				type: "item"
 				icon: {
 					id: "minecraft:netherite_axe"
@@ -4660,7 +4631,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0EFEAFA7FF9E9E11"
+				id: "1B0B8D41AD5FB37A"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_2123196036"
@@ -4681,9 +4652,9 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "3D63384FA249BB30"
+			id: "13F36EEDB49299B2"
 			tasks: [{
-				id: "64403627A82840A4"
+				id: "20E584F519C534D5"
 				type: "item"
 				icon: {
 					id: "minecraft:netherite_helmet"
@@ -4701,7 +4672,7 @@
 				}
 			}]
 			rewards: [{
-				id: "22B78F9C0E333B68"
+				id: "590F68D45C3B794B"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x1361461763"
@@ -4722,9 +4693,9 @@
 			shape: "hexagon"
 			subtitle: "4 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "74525AA06939F908"
+			id: "2F930DF2E40B8F45"
 			tasks: [{
-				id: "6FB075557B028859"
+				id: "16B5AA37B1E9F0B7"
 				type: "item"
 				icon: {
 					id: "minecraft:netherite_chestplate"
@@ -4742,7 +4713,7 @@
 				}
 			}]
 			rewards: [{
-				id: "60F0E2510AB065AF"
+				id: "6445479BCC613702"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x897331259"
@@ -4763,9 +4734,9 @@
 			shape: "hexagon"
 			subtitle: "3 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "3290C9856C6BAA18"
+			id: "564F2ED75DADFF37"
 			tasks: [{
-				id: "6BF7F005C57A5E1D"
+				id: "37CB56E186638B95"
 				type: "item"
 				icon: {
 					id: "minecraft:netherite_leggings"
@@ -4783,7 +4754,7 @@
 				}
 			}]
 			rewards: [{
-				id: "76EEA6446FBAC9AA"
+				id: "7097711E3EAB6BA7"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x982837574"
@@ -4804,9 +4775,9 @@
 			shape: "hexagon"
 			subtitle: "2 x {item.cabricality.gold_coin}"
 			repeatable: true
-			id: "58F50BD10540C882"
+			id: "2FB67CF046B4D762"
 			tasks: [{
-				id: "7FA3794028E3617F"
+				id: "6D618074826B02C6"
 				type: "item"
 				icon: {
 					id: "minecraft:netherite_boots"
@@ -4824,7 +4795,7 @@
 				}
 			}]
 			rewards: [{
-				id: "56EB05D687DE7FD8"
+				id: "312E69EB3FB144A5"
 				type: "item"
 				auto: "enabled"
 				item: "cabricality:trade_card_x533251465"
