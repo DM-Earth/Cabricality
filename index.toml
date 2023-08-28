@@ -299,6 +299,10 @@ hash = "869463b635b9fe2e0ba10a806b76f99fb1a91e87b72cf44843f3506a69ec6d04"
 metafile = true
 
 [[files]]
+file = "mods/flywheel-fabric-1.18.2-0.6.9-38.jar"
+hash = "ad187830c0b6d5979cdb7868d23fb7149cff6fd70aa07d62f47630f21efd6ed2"
+
+[[files]]
 file = "mods/hephaestus.pw.toml"
 hash = "6050b847bd07bbcd6ed9c5801149cde8a4f2393ba308fc7b86dc3c5ccabfa414"
 metafile = true
