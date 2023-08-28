@@ -46,7 +46,7 @@ hash = "cb36119bdcf903adbdd825ca947f4f1437d80173bbf88a9a52a0cad56bff1a46"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/shipments.snbt"
-hash = "e7ec16207ee6fe5f4e1a10ed9ffd8288c0cb6c7cfedec0d2db6730c50a29e1f3"
+hash = "644a220cf56a782d850b714a390a25f44fc065874ae50a7fb7c8f9a0d8dcc3d7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stage_1.snbt"
@@ -171,7 +171,7 @@ metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "c3cc484f345ff3d0c11a18186dead561a26f57350eda1b175dda7e5a5d449a67"
+hash = "50438f26c3f057263578b0a9b5fd27fa36748747fe0a7e0a4460a92cbf630496"
 metafile = true
 
 [[files]]
@@ -196,7 +196,7 @@ metafile = true
 
 [[files]]
 file = "mods/bookshelf.pw.toml"
-hash = "29903f1747d58ec24e78f6a2118a9f132c8c7f67d25d50f3b7a3f1f0c1f1f141"
+hash = "43b267ab1abf43db08d5b1b57d24e1a090fcd5c7df6673a105013a9015d956ad"
 metafile = true
 
 [[files]]
@@ -250,7 +250,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "162cc4db9177cd873c39629c0f25d3b061fa4c8aaec08f5cab74032896752475"
+hash = "19fb1ff2865908f45e3dee2d69ade22114cbe7216da881486296c7b377760dec"
 metafile = true
 
 [[files]]
@@ -280,7 +280,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "ff4a66502e802341a84fbb8eceed65156b14436769b1f7e27a68b22fb59c1dae"
+hash = "6f95b9e670d557f852a798489d7b5ec48ed8ddc7e8e1809ff06d4b187d17aac9"
 metafile = true
 
 [[files]]
@@ -425,7 +425,7 @@ metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "d497c372741f1841cd93941fcb76dfcc9d2526d3d4ae9864a4b7ef370e9fe923"
+hash = "b55ad1d3ab653231d0ef33e271539802147e9038462580be186366da0ba6f6ed"
 metafile = true
 
 [[files]]
@@ -435,17 +435,12 @@ metafile = true
 
 [[files]]
 file = "mods/stenographer.pw.toml"
-hash = "9fcde313a87692ef831a450618793f39de69e10805a79e498006840e0cc68914"
+hash = "5c411f588dd6f97f0fbbfe59b8153290b45398e9ad9986e631e7dd96f011c6ee"
 metafile = true
 
 [[files]]
 file = "mods/structures-compass.pw.toml"
 hash = "d616bf7ef5886127a1baa048ac6567267be2c37ef6d2285645ce94871c079793"
-metafile = true
-
-[[files]]
-file = "mods/tapestop.pw.toml"
-hash = "ec2faf959a6748b0717adbbaef354d48a651744a4e8206194f7610c7b8862a41"
 metafile = true
 
 [[files]]
@@ -460,7 +455,7 @@ metafile = true
 
 [[files]]
 file = "mods/verticality.pw.toml"
-hash = "4fa6eacbfed0b6110764d13832288a00db63fe641fc3b2d2b1aaaeefb6dd51a9"
+hash = "57a218cc192f663920d9ca52e82d128906f801feb9290ba57b93736693cd0a12"
 metafile = true
 
 [[files]]
