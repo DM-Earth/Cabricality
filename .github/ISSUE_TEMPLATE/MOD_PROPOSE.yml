@@ -10,8 +10,8 @@ body:
   - type: input
     id: mod-link
     attributes:
-      label: "Mod Link"
-      description: "Put the mod's link here."
+      label: Mod Link
+      description: What's the mod's link?
       placeholder: E.g., https://modrinth.com/mod/fabric-api
     validations:
       required: true
