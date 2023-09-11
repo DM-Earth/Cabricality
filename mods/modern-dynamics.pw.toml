@@ -1,0 +1,13 @@
+name = "Modern Dynamics"
+filename = "Modern-Dynamics-0.2.6-beta.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fMpvLrnF/versions/pVb5b9Mx/Modern-Dynamics-0.2.6-beta.jar"
+hash-format = "sha1"
+hash = "f154c30a19d2dfefde3732f0e15c459321f7d788"
+
+[update]
+[update.modrinth]
+mod-id = "fMpvLrnF"
+version = "pVb5b9Mx"
