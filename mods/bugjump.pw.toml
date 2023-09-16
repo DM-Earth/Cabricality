@@ -1,13 +1,13 @@
 name = "BugJump"
-filename = "BugJump-1.2.0-1.18.2.jar"
+filename = "BugJump-1.2.0-1.20.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/X7tPVQze/versions/GjiHc5lY/BugJump-1.2.0-1.18.2.jar"
+url = "https://cdn.modrinth.com/data/X7tPVQze/versions/YFkM6ada/BugJump-1.2.0-1.20.1.jar"
 hash-format = "sha1"
-hash = "382f78adfbc379305dda8d4f31436c6b9f1b3223"
+hash = "a02f1af951db283a6652138c228fc268b76478a9"
 
 [update]
 [update.modrinth]
 mod-id = "X7tPVQze"
-version = "GjiHc5lY"
+version = "YFkM6ada"

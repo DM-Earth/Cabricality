@@ -1,0 +1,13 @@
+name = "CreateFabric&REIBugFix"
+filename = "CreateFabricREIBugFix-0.1.0-create0.5.1-mc1.20.x.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/lSw4RpVn/versions/ngfhxCc2/CreateFabricREIBugFix-0.1.0-create0.5.1-mc1.20.x.jar"
+hash-format = "sha1"
+hash = "74f94084743cb40a3342a8d3765f88dc70c91841"
+
+[update]
+[update.modrinth]
+mod-id = "lSw4RpVn"
+version = "ngfhxCc2"

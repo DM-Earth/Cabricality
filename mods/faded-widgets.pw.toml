@@ -1,13 +1,13 @@
 name = "Faded Widgets"
-filename = "faded-widgets-1.18-1.1.0.jar"
+filename = "faded-widgets-1.20-1.1.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/uV6OSNDy/versions/tHbcJvdy/faded-widgets-1.18-1.1.0.jar"
+url = "https://cdn.modrinth.com/data/uV6OSNDy/versions/uixPJ7tv/faded-widgets-1.20-1.1.0.jar"
 hash-format = "sha1"
-hash = "89e6db32b82bc6e3ae0492faba4bf18b6ed56d0e"
+hash = "9baf75adfca68c831cc4666b36f751b0bf752f96"
 
 [update]
 [update.modrinth]
 mod-id = "uV6OSNDy"
-version = "tHbcJvdy"
+version = "uixPJ7tv"

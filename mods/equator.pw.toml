@@ -1,13 +1,13 @@
 name = "Equator"
-filename = "equator-1.18-2.5.3.jar"
+filename = "equator-1.20-2.5.4.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/XUTlQITd/versions/7yhIAm3o/equator-1.18-2.5.3.jar"
+url = "https://cdn.modrinth.com/data/XUTlQITd/versions/IlOaSy35/equator-1.20-2.5.4.jar"
 hash-format = "sha1"
-hash = "2dff7404b48418e6853350a95d8e8b97b33b1a76"
+hash = "b22bbab79c2917331c730d4228f8358a4199332f"
 
 [update]
 [update.modrinth]
 mod-id = "XUTlQITd"
-version = "7yhIAm3o"
+version = "IlOaSy35"

@@ -1,13 +1,13 @@
 name = "Knowledges"
-filename = "knowledges-1.18-1.2.1.jar"
+filename = "knowledges-1.20-1.2.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/kdZNMv3G/versions/s6yi3mGI/knowledges-1.18-1.2.1.jar"
+url = "https://cdn.modrinth.com/data/kdZNMv3G/versions/cOdmDeXA/knowledges-1.20-1.2.1.jar"
 hash-format = "sha1"
-hash = "48a35f88a27f016c44d5496778882db0edb0c93d"
+hash = "15ad8bdd2311cfe67454e3425a3368a694124400"
 
 [update]
 [update.modrinth]
 mod-id = "kdZNMv3G"
-version = "s6yi3mGI"
+version = "cOdmDeXA"

@@ -1,13 +1,13 @@
 name = "Coxinha Utilities"
-filename = "coxinhautilities-1.4.2+1.18.2.jar"
+filename = "coxinhautilities-1.4.10+1.20.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/NXqpbY3F/versions/1.4.2+1.18.2/coxinhautilities-1.4.2%2B1.18.2.jar"
+url = "https://cdn.modrinth.com/data/NXqpbY3F/versions/rW21He2h/coxinhautilities-1.4.10%2B1.20.jar"
 hash-format = "sha1"
-hash = "8af070668c1d8e5924c2b31bfad24667a4c5fe00"
+hash = "855d0f3958d7c09d62af9a717cbcfaec88c0d256"
 
 [update]
 [update.modrinth]
 mod-id = "NXqpbY3F"
-version = "zv4dtII9"
+version = "rW21He2h"

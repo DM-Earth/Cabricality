@@ -1,13 +1,13 @@
 name = "Better Runtime Resource Pack (BRRP)"
-filename = "brrp-fabric-1.0.1-1.18.2.jar"
+filename = "brrp-fabric-1.0.1-1.20.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/JnrDtPAE/versions/GPFTSix5/brrp-fabric-1.0.1-1.18.2.jar"
+url = "https://cdn.modrinth.com/data/JnrDtPAE/versions/67aRXMZe/brrp-fabric-1.0.1-1.20.1.jar"
 hash-format = "sha1"
-hash = "9bc200fcfa0b25635bde59a3b7e0c7c4f8da94a6"
+hash = "9ab47efbad81fa0f6f72bb395452970250a0c69d"
 
 [update]
 [update.modrinth]
 mod-id = "JnrDtPAE"
-version = "GPFTSix5"
+version = "67aRXMZe"
