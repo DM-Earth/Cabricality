@@ -109,7 +109,6 @@ dependencies {
     modImplementation("curse.maven:industrial-revolution-391708:${property("indrev_version")}")
     modImplementation("curse.maven:ftb-quests-fabric-438496:${property("ftb_quests_version")}")
     modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftb_library_version")}")
-    //modImplementation("curse.maven:catwalks-inc-554340:${property("catwalks_version")}")
     //modImplementation("curse.maven:malum-quilt-627875:${property("malum_version")}")
 
     // - JitPack
