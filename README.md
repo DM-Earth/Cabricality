@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Due to licensing reasons, please install **[FTB Library,](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)** **[FTB Quests,](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)** **[FTB Teams,](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)** **[Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)** and **[Quests Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric)** manually!
+
 <blockquote>
   <details>
     <summary>
@@ -16,33 +19,10 @@
   </details>
 </blockquote>
 
-<h4 align="center">
-  <sup>
-    Please Install&ensp;
-    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric">
-      FTB Quests ｜
-    </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric">
-      FTB Teams ｜
-    </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric">
-      FTB Library ｜
-    </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/item-filters">
-      Item Filters ｜
-    </a>
-    <a href="https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric">
-      Quests Additions
-    </a>
-    &ensp;Manually!
-  </sup>
-  <br />
-</h4>
-
 <div align="center">
-  <br />
+  <br /><br />
   <img src="/assets/banner/banner_full.png?raw=true" width="575" alt="Cabricality" />
-  <br />
+  <br /><br />
 </div>
 
 <div align="center">
@@ -56,8 +36,8 @@
   <br />
 </div>
 
-<h1 align="center">
-  Cabricality
+<h1>
+  <p align="center">Cabricality</p>
 </h1>
 
 **Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
