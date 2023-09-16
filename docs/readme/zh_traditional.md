@@ -38,7 +38,7 @@
 
 <div align="center">
   <br />
-  <img src="/assets/cabricality_banner.png?raw=true" width="575" alt="Cabricality" />
+  <img src="/assets/banner/banner_full.png?raw=true" width="575" alt="Cabricality" />
   <br />
 </div>
 
