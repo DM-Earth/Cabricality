@@ -1,4 +1,4 @@
-> [!NOTE]
+> [!IMPORTANT]
 > Due to licensing reasons, please install **[FTB Library,](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)** **[FTB Quests,](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)** **[FTB Teams,](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)** **[Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)** and **[Quests Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric)** manually!
 
 <blockquote>
