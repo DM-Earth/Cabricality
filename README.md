@@ -37,7 +37,7 @@
   <br />
 </h1>
 
-**Cabricality is a *Create centered* challengable Minecraft Modpack for *Quilt 1.18.2.***
+**Cabricality is a *Create centered* challengable Minecraft Modpack featuring *Quilt 1.20.1.***
 
 With **Cabricality,** you can follow the quests and build your own factory along with **[Create](https://github.com/Fabricators-of-Create/Create)** and **[Industrial Revolution](https://github.com/GabrielOlvH/Industrial-Revolution).** From shoveling clays under valleys to voyaging inside space stations, you can develop the technologies diversely as you want.
 
