@@ -103,16 +103,16 @@ dependencies {
     modImplementation("maven.modrinth:architectury-api:${property("architectury_version")}+fabric")
     modImplementation("maven.modrinth:bits-and-chisels:${property("bits_and_chisels_version")}")
     modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmers_delight_version")}")
-    modImplementation("maven.modrinth:led:${property("led_version")}")
-    modImplementation("maven.modrinth:interference:${property("interference_version")}")
+    //modImplementation("maven.modrinth:led:${property("led_version")}")
+    //modImplementation("maven.modrinth:interference:${property("interference_version")}")
+    implementation("maven.modrinth:hephaestus:${property("minecraft_version")}-${property("hephaestus_version")}")
 
     // - Curse Maven
     modImplementation("curse.maven:industrial-revolution-391708:${property("indrev_version")}")
     modImplementation("curse.maven:ftb-quests-fabric-438496:${property("ftb_quests_version")}")
     modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftb_library_version")}")
-    modImplementation("curse.maven:catwalks-inc-554340:${property("catwalks_version")}")
-    modImplementation("curse.maven:malum-quilt-627875:${property("malum_version")}")
-    implementation("curse.maven:hephaestus-667894:${property("hephaestus_version")}") // Toxic
+    //modImplementation("curse.maven:catwalks-inc-554340:${property("catwalks_version")}")
+    //modImplementation("curse.maven:malum-quilt-627875:${property("malum_version")}")
 
     // - JitPack
     modImplementation("com.github.KrLite.Equator-v2:build:${property("minecraft_major_version")}-${property("equator_version")}")
