@@ -13,7 +13,7 @@ public abstract class ColoredFernItem extends Item {
 	public final int tint;
 
 	public ColoredFernItem(int tint) {
-		super(CabfItems.Properties.DEFAULT.get());
+		super(CabfItems.Suppliers.DEFAULT.get());
 		this.tint = tint;
 	}
 

@@ -7,6 +7,7 @@
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
     "FluidBlockMixin",
+    "ItemMixin",
     "LavaFluidMixin",
     "WrenchItemMixin",
     "porting_lib.FluidTankMixin",

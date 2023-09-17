@@ -1,14 +1,12 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
-import net.minecraft.text.MutableText;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.lib.core.BlockItemSettable;
-
 import net.minecraft.item.Item;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 
 public abstract class SubstrateJarBlock extends JarBlock implements BlockItemSettable {
@@ -39,6 +37,6 @@ public abstract class SubstrateJarBlock extends JarBlock implements BlockItemSet
 
 	@Override
 	public Item.Settings getSettings() {
-		return CabfItems.Properties.JAR.get();
+		return CabfItems.Suppliers.DEFAULT_QUARTER.get();
 	}
 }

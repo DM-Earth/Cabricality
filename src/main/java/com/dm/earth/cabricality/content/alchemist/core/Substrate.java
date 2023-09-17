@@ -1,19 +1,17 @@
 package com.dm.earth.cabricality.content.alchemist.core;
 
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
 import com.dm.earth.cabricality.lib.core.HashStringable;
-
 import net.minecraft.block.Block;
+import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public abstract class Substrate implements HashStringable {
 	private final Identifier id;
@@ -59,11 +57,11 @@ public abstract class Substrate implements HashStringable {
 	}
 
 	public SubstrateJarBlock getJarBlock() {
-		return (SubstrateJarBlock) Registry.BLOCK.get(Cabricality.id(this.getType() + "_jar_" + this.hashString()));
+		return (SubstrateJarBlock) Registries.BLOCK.get(Cabricality.id(this.getType() + "_jar_" + this.hashString()));
 	}
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {
-		return Registry.BLOCK.getEntries().stream()
+		return Registries.BLOCK.getEntries().stream()
 				.filter(entry -> entry.getValue() instanceof SubstrateJarBlock
 						|| (includeBlank && entry.getValue() instanceof JarBlock))
 				.map(Map.Entry::getValue).collect(Collectors.toList());
