@@ -284,7 +284,7 @@ public class FluixThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(AE2.predicateOutput(false, "silicon"));
-		handler.removeIf(AE2.predicateOutput(false, "controller"));
+		handler.removeIf(AE2.predicateOutput(handler.getRegistryManager(), false, "silicon"));
+		handler.removeIf(AE2.predicateOutput(handler.getRegistryManager(), false, "controller"));
 	}
 }
