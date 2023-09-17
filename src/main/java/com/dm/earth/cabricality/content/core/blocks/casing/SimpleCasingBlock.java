@@ -23,7 +23,7 @@ public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 
 	@Override
 	public @Nullable BlockStateSupplier getBlockStates() {
-		return BlockStatesGenerator.simple(getBlockModelId());
+		return BlockStatesGenerator.simple(getBaseBlock(), getBlockModelId());
 	}
 
 	@Override

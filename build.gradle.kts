@@ -64,6 +64,7 @@ repositories {
     maven { url = uri("https://maven.wispforest.io") }
     maven { url = uri("https://modmaven.dev") }
     maven { url = uri("https://mvn.devos.one/snapshots/") }
+    maven { url = uri("https://raw.githubusercontent.com/SolidBlock-cn/mvn-repo/main") }
     maven { url = uri("https://storage.googleapis.com/devan-maven/") }
 
     mavenCentral()
@@ -109,7 +110,6 @@ dependencies {
     modImplementation("curse.maven:industrial-revolution-391708:${property("indrev_version")}")
     modImplementation("curse.maven:ftb-quests-fabric-438496:${property("ftb_quests_version")}")
     modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftb_library_version")}")
-    //modImplementation("curse.maven:malum-quilt-627875:${property("malum_version")}")
 
     // - JitPack
     modImplementation("com.github.KrLite.Equator-v2:build:${property("minecraft_major_version")}-${property("equator_version")}")
@@ -122,7 +122,7 @@ dependencies {
 
     // Included
     modImplementation(include("com.github.DM-Earth:Tags-Binder:${property("tags_binder_version")}")!!)
-    modImplementation(include("maven.modrinth:brrp:${property("brrp_version")}-mc${property("minecraft_version")}-fabric")!!)
+    modImplementation(include("pers.solid:brrp-fabric:${property("brrp_version")}-${property("minecraft_version")}")!!)
 
     implementation(include("net.objecthunter:exp4j:${property("exp4j_version")}")!!)
     implementation(include("com.github.KrLite:Pierced:${property("pierced_version")}")!!)

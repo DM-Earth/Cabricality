@@ -6,6 +6,7 @@ import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.lib.math.VoxelShapeUtil;
 import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
+import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -77,7 +78,7 @@ public class JarBlock extends Block implements ResourcedBlock {
 
 	@Override
 	public @Nullable BlockStateSupplier getBlockStates() {
-		return JBlockStates.simple(this.getBlockModelId());
+		return BlockStatesGenerator.simple(getBaseBlock(), getBlockModelId());
 	}
 
 	@Override

@@ -15,6 +15,7 @@ import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -75,9 +76,8 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 	}
 
 	private static void registerFluid(Identifier id, Identifier stillId, Fluid fluid) {
-		Registry.register(Registry.FLUID, id, fluid);
-		if (!fluid.isStill(null))
-			CabfBlocks.registerFluidBlock(stillId, (FlowableFluid) fluid);
+		Registry.register(Registries.FLUID, id, fluid);
+		if (!fluid.isSource(null)) CabfBlocks.registerFluidBlock(stillId, (FlowableFluid) fluid);
 	}
 
 	private static void registerIFluid(Fluid fluid) {

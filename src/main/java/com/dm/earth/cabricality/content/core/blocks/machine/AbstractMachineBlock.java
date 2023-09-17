@@ -56,8 +56,8 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
     @Override
     public BlockStateSupplier getBlockStates() {
         return this.isFull()
-				? BlockStatesGenerator.simple(this.getBlockModelId())
-                : BlockStatesGenerator.fourDirections(this.getBlockModelId());
+				? BlockStatesGenerator.simple(getBaseBlock(), getBlockModelId())
+                : BlockStatesGenerator.fourDirections(getBaseBlock(), getBlockModelId());
     }
 
     @Override
