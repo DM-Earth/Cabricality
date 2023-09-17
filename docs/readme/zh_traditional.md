@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> 因证书不允许，请手动安装 **[FTB Library、](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)** **[FTB Quests、](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)** **[FTB Teams、](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)** **[Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)** 和 **[Quests Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric)** 模组！
+> 因開源協議不允許，請手動安裝 **[FTB Library、](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)** **[FTB Quests、](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)** **[FTB Teams、](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)** **[Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)** 和 **[Quests Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric)** 模組！
 
 <blockquote>
   <details>
@@ -7,7 +7,7 @@
       <code>あ ←→ A</code>
     </summary>
     <!--Head-->
-    &emsp;&ensp;<sub><b>永无止境：重缝</b>支持以下语言。<a href="/docs/add_a_localization.md"><code>↗ 添加一种语言</code></a></sub>
+    &emsp;&ensp;<sub><b>永無止境：重縫</b>支援以下語言。<a href="/docs/add_a_localization.md"><code>↗ 新增一種語言</code></a></sub>
     <br />
     <!--Body-->
     <br />
@@ -37,11 +37,11 @@
   <br />
 </h1>
 
-**永无止境：重缝是一个以*机械动力*为中心的Minecraft整合包，运行于*Quilt 1.20.1。***
+**永無止境：重逢是一個以*動力機械*為中心的Minecraft模組包，運行於*Quilt 1.20.1***
 
-在這裡，你可以跟隨任務的指引，通過<b>[機械動力](https://github.com/Fabricators-of-Create/Create)</b>和<b>[工業革命](https://github.com/GabrielOlvH/Industrial-Revolution)</b>模組建造屬於自己的工廠！從山谷中徘徊走向空間站裡遨遊，科技發展的可能性由你决定！
+在這裡，你可以跟隨任務的指引，通過<b>[動力機械](https://github.com/Fabricators-of-Create/Create)</b>和<b>[工業革命](https://github.com/GabrielOlvH/Industrial-Revolution)</b>模組建造屬於自己的工廠！從山谷中徘徊走向空間站裡遨遊，科技發展的可能性由你决定！
 
-> ***永無止境：重縫**在<b>[機械動力：永無止境](https://github.com/simibubi/Above-and-Beyond)</b>的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
+> ***永無止境：重縫**在<b>[動力機械：永無止境](https://github.com/simibubi/Above-and-Beyond)</b>的啟發下，重新設計並實現了全部的遊戲流程。我們歡迎每一個挑戰者，並發自內心地希望你們徜徉在Minecraft的遊戲世界中[^wiki]！*
 
 [^wiki]: 隨時歡迎翻閱<b>[永無止境：重縫 Wiki！](https://github.com/DM-Earth/Cabricality/wiki)</b>
 
