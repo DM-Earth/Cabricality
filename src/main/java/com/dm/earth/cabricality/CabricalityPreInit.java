@@ -17,7 +17,7 @@ public class CabricalityPreInit implements PreLaunchEntrypoint {
 		// Prevents PCL2 from launching this modpack
 		@Nullable String launcherBrand = System.getProperty("minecraft.launcher.brand");
 		if (launcherBrand != null && launcherBrand.contains("PCL")) {
-			throw new RuntimeException("PCL2 is not suportted. Have a hug.");
+			throw new RuntimeException("PCL2 is not supported. Have a hug.");
 		}
 	}
 }

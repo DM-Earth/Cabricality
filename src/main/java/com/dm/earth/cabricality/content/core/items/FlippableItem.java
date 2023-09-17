@@ -11,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -49,7 +50,7 @@ public class FlippableItem extends Item {
 		// Send message to client
 		if (world.isClient())
 			MinecraftClient.getInstance().inGameHud.setOverlayMessage(
-					new TranslatableText(Cabricality.genTranslationKey("event", "coin_flip"),
+					Text.translatable(Cabricality.genTranslationKey("event", "coin_flip"),
 							ModEntry.CABF.asItem(name).getName().getString(), ModEntry.CABF
 									.asItem(name + (side ? "_top" : "_bottom")).getName().getString()),
 					false);

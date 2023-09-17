@@ -55,7 +55,7 @@ public class MissingModScreen extends Screen {
 		super(
 				CabfModDeps.getAllMissing().size() == 1
 						? Cabricality.genTranslatableText("screen", "missing_mod", "title")
-						: new TranslatableText(
+						: Text.translatable(
 								Cabricality.genTranslationKey("screen", "missing_mod", "title_plural"),
 								CabfModDeps.getAllMissing().size()
 				)

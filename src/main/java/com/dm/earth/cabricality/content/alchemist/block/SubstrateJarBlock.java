@@ -7,6 +7,7 @@ import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.lib.core.BlockItemSettable;
 
 import net.minecraft.item.Item;
+import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 
@@ -23,7 +24,7 @@ public abstract class SubstrateJarBlock extends JarBlock implements BlockItemSet
 
 	@Override
 	public MutableText getName() {
-		return new TranslatableText(this.getSubstrate().getTranslationKey())
+		return Text.translatable(this.getSubstrate().getTranslationKey())
 					   .append(Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_jar"));
 	}
 

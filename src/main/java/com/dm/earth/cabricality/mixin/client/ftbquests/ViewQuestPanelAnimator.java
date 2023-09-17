@@ -8,6 +8,7 @@ import dev.ftb.mods.ftblibrary.ui.BlankPanel;
 import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.Widget;
+import dev.ftb.mods.ftbquests.client.gui.quests.ViewQuestPanel;
 import dev.ftb.mods.ftbquests.gui.quests.ViewQuestPanel;
 import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
 import net.krlite.equator.math.algebra.Curves;
@@ -17,6 +18,7 @@ import net.krlite.equator.render.renderer.Flat;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.krlite.equator.visual.animation.base.Animation;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -36,7 +38,7 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 @Mixin(ViewQuestPanel.class)
 public abstract class ViewQuestPanelAnimator extends Widget {
 	@Shadow(remap = false)
-	public BlankPanel panelText;
+	private BlankPanel panelText;
 
 	public ViewQuestPanelAnimator(Panel panel) {
 		super(panel);
@@ -45,14 +47,28 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 	@Unique
 	private static final AnimatedDouble animation = new AnimatedDouble(0, 1, 720, Curves.Sinusoidal.EASE);
 
-	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setWidth(I)V"), remap = false)
+	@ModifyArg(
+			method = "addWidgets",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftbquests/client/gui/quests/ViewQuestPanel;setWidth(I)V"
+			),
+			remap = false
+	)
 	private int modifyWidth(int width) {
 		return width + 16;
 	}
 
-	@ModifyArg(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setHeight(I)V"), remap = false)
+	@ModifyArg(
+			method = "addWidgets",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftbquests/client/gui/quests/ViewQuestPanel;setHeight(I)V"
+			),
+			remap = false
+	)
 	private int modifyHeight(int height) {
-		return height + (this.panelText.widgets.isEmpty() ? 18 : 12);
+		return height + (this.panelText.getWidgets().isEmpty() ? 18 : 12);
 	}
 
 	@Unique
@@ -61,33 +77,70 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		args.set(yIndex, (int) args.get(yIndex) + 6);
 	}
 
-	@ModifyArgs(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/TextField;setPosAndSize(IIII)Ldev/ftb/mods/ftblibrary/ui/Widget;", ordinal = 0), remap = false)
+	@ModifyArgs(
+			method = "addWidgets",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/ui/TextField;setPosAndSize(IIII)Ldev/ftb/mods/ftblibrary/ui/Widget;",
+					ordinal = 0
+			),
+			remap = false
+	)
 	private void modifyTitlePos(Args args) {
 		modifyPos(args, 0, 1);
 	}
 
-	@ModifyArgs(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/Button;setPosAndSize(IIII)Ldev/ftb/mods/ftblibrary/ui/Widget;"), remap = false)
+	@ModifyArgs(
+			method = "addWidgets",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/ui/Button;setPosAndSize(IIII)Ldev/ftb/mods/ftblibrary/ui/Widget;"
+			),
+			remap = false
+	)
 	private void modifyButtonPos(Args args) {
 		modifyPos(args, 0, 1);
 	}
 
-	@ModifyArgs(method = "addWidgets", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/BlankPanel;setPosAndSize(IIII)Ldev/ftb/mods/ftblibrary/ui/Widget;", ordinal = 0), remap = false)
+	@ModifyArgs(
+			method = "addWidgets",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/ui/BlankPanel;setPosAndSize(IIII)Ldev/ftb/mods/ftblibrary/ui/Widget;",
+					ordinal = 0
+			),
+			remap = false
+	)
 	private void modifyContentPanelPos(Args args) {
 		modifyPos(args, 0, 1);
 	}
 
-	@ModifyArgs(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 1))
+	@ModifyArgs(
+			method = "drawBackground",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/gui/GuiGraphics;IIII)V",
+					ordinal = 1
+			)
+	)
 	private void modifyQuestPanelIconPos(Args args) {
 		modifyPos(args, 1, 2);
 		args.set(1, (int) args.get(1) - 3); // Fix x position
 	}
 
-	@Inject(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
-	private void drawQuestPanelBackground(MatrixStack matrixStack, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
+	@Inject(
+			method = "drawBackground",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/gui/GuiGraphics;IIII)V",
+					ordinal = 0
+			)
+	)
+	private void drawQuestPanelBackground(GuiGraphics graphics, Theme theme, int x, int y, int w, int h, CallbackInfo ci) {
 		PushUtil.ANIMATE_VIEW_QUEST_PANEL.pull(animation::replay);
 		double lerp = Math.pow(animation.value(), 1 / 3.0);
 
-		Box.fromCartesian(x, y, w, h).render(matrixStack,
+		Box.fromCartesian(x, y, w, h).render(graphics,
 				flat -> flat.new Rectangle()
 								.colorTop(Cabricality.Colors.CABF_PURPLE)
 								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)
@@ -97,11 +150,25 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		);
 	}
 
-	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 0))
-	private void drawQuestPanelBackgroundTexture(Icon icon, MatrixStack matrixStack, int x, int y, int w, int h) {}
+	@Redirect(
+			method = "drawBackground",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/gui/GuiGraphics;IIII)V",
+					ordinal = 0
+			)
+	)
+	private void drawQuestPanelBackgroundTexture(Icon icon, GuiGraphics guiGraphics, int i, int i, int i, int i) {}
 
-	@Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/util/math/MatrixStack;IIII)V", ordinal = 1))
-	private void drawQuestPanelBorder(Color4I color4I, MatrixStack matrixStack, int x, int y, int w, int h) {}
+	@Redirect(
+			method = "drawBackground",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/gui/GuiGraphics;IIII)V",
+					ordinal = 1
+			)
+	)
+	private void drawQuestPanelBorder(Color4I color4I, GuiGraphics graphics, int x, int y, int w, int h) {}
 
 	@Redirect(
 			method = "addWidgets",
@@ -111,7 +178,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 			),
 			slice = @Slice(
 					from = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/SimpleTextButton;setHeight(I)V"),
-					to = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/gui/quests/ViewQuestPanel;setPos(II)V")
+					to = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/client/gui/quests/ViewQuestPanel;setPos(II)V")
 			), remap = false
 	)
 	private void drawBorder(BlankPanel panel, Widget widget) {}

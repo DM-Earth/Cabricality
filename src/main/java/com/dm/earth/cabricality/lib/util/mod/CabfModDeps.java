@@ -13,27 +13,26 @@ import org.quiltmc.loader.api.QuiltLoader;
 import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
 
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Util;
 
 public enum CabfModDeps {
-	FTB_LIBRARY("ftblibrary", new TranslatableText("mod.ftblibrary.name"),
+	FTB_LIBRARY("ftblibrary", Text.translatable("mod.ftblibrary.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric/download/4396791/file",
 			false, false),
 
-	FTB_QUESTS("ftbquests", new TranslatableText("mod.ftbquests.name"),
+	FTB_QUESTS("ftbquests", Text.translatable("mod.ftbquests.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric/download/4398374/file",
 			false, false),
 
-	FTB_TEAMS("ftbteams", new TranslatableText("mod.ftbteams.name"),
+	FTB_TEAMS("ftbteams", Text.translatable("mod.ftbteams.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric/download/4579980/file",
 			false, false),
 
-	QUESTS_ADDITIONS("questsadditions", new TranslatableText("mod.questsadditions.name"),
+	QUESTS_ADDITIONS("questsadditions", Text.translatable("mod.questsadditions.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric/download/4269973/file",
 			false, false),
 
-	ITEM_FILTERS("itemfilters", new TranslatableText("mod.itemfilters.name"),
+	ITEM_FILTERS("itemfilters", Text.translatable("mod.itemfilters.name"),
 			"https://www.curseforge.com/minecraft/mc-mods/item-filters/download/4553321/file",
 			false, false);
 

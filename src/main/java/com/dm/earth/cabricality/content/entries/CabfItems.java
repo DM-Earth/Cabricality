@@ -40,14 +40,14 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	public static final class Properties {
 		// Default
 		public static final Supplier<Item.Settings> DEFAULT = () -> new QuiltItemSettings()
-				.group(Cabricality.ItemGroups.MAIN_GROUP);
+				.group(Cabricality.ItemGroups.GENERAL);
 		public static final Supplier<Item.Settings> DEFAULT_SINGLE = () -> DEFAULT.get().maxCount(1);
 		public static final Supplier<Item.Settings> DEFAULT_QUARTER = () -> DEFAULT.get().maxCount(16);
 
 		// Specialized
 		public static final Supplier<Item.Settings> CARD = () -> new QuiltItemSettings().maxCount(1);
 		public static final Supplier<Item.Settings> JAR = () -> new QuiltItemSettings()
-				.group(Cabricality.ItemGroups.SUBSTRATES_GROUP).maxCount(16);
+				.group(Cabricality.ItemGroups.SUBSTRATES).maxCount(16);
 	}
 
 	public static final Item SAW_BLADE = registerItemModeled("saw_blade",
@@ -106,11 +106,11 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 			ItemModelGenerator.generated("item", "dye_entangled_singularity"));
 	public static final Item CHROMATIC_RESONATOR = registerItemModeled("chromatic_resonator",
 			new Item(new QuiltItemSettings().maxDamage(512)
-					.group(Cabricality.ItemGroups.MAIN_GROUP)),
+					.group(Cabricality.ItemGroups.GENERAL)),
 			ItemModelGenerator.generated("item", "chromatic_resonator"));
 	public static final Item FLASH_DRIVE = registerItemModeled("flash_drive",
 			new Item(new QuiltItemSettings().maxDamage(512)
-					.group(Cabricality.ItemGroups.MAIN_GROUP)),
+					.group(Cabricality.ItemGroups.GENERAL)),
 			ItemModelGenerator.generated("item", "boot_medium"));
 	public static final Item CIRCUIT_SCRAP = registerItemModeled("circuit_scrap",
 			new Item(Properties.DEFAULT.get()),
