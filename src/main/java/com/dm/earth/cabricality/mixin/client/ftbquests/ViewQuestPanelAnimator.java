@@ -9,17 +9,14 @@ import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.Widget;
 import dev.ftb.mods.ftbquests.client.gui.quests.ViewQuestPanel;
-import dev.ftb.mods.ftbquests.gui.quests.ViewQuestPanel;
 import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.math.geometry.flat.Vector;
 import net.krlite.equator.render.renderer.Flat;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
-import net.krlite.equator.visual.animation.base.Animation;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
@@ -158,7 +155,7 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 					ordinal = 0
 			)
 	)
-	private void drawQuestPanelBackgroundTexture(Icon icon, GuiGraphics guiGraphics, int i, int i, int i, int i) {}
+	private void drawQuestPanelBackgroundTexture(Icon icon, GuiGraphics guiGraphics, int xy,int y, int w, int h) {}
 
 	@Redirect(
 			method = "drawBackground",
@@ -177,17 +174,29 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 					target = "Ldev/ftb/mods/ftblibrary/ui/BlankPanel;add(Ldev/ftb/mods/ftblibrary/ui/Widget;)V"
 			),
 			slice = @Slice(
-					from = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/ui/SimpleTextButton;setHeight(I)V"),
+					from = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/client/gui/quests/ViewQuestPanel;addButtonBar(Z)V"),
 					to = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/client/gui/quests/ViewQuestPanel;setPos(II)V")
 			), remap = false
 	)
 	private void drawBorder(BlankPanel panel, Widget widget) {}
 
-	@SuppressWarnings("all")
-	@Redirect(method = "tick", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/icon/Icon;withTint(Ldev/ftb/mods/ftblibrary/icon/Color4I;)Ldev/ftb/mods/ftblibrary/icon/Icon;"), remap = false)
+	@Redirect(
+			method = "tick",
+			at = @At(
+					value = "INVOKE",
+					target = "Ldev/ftb/mods/ftblibrary/icon/Icon;withTint(Ldev/ftb/mods/ftblibrary/icon/Color4I;)Ldev/ftb/mods/ftblibrary/icon/Icon;"
+			),
+			remap = false
+	)
 	private Icon tintLeftArrow(Icon icon, Color4I color4I) {
+		long time = System.currentTimeMillis();
+		if (MinecraftClient.getInstance().world != null) time = MinecraftClient.getInstance().world.getTime();
+
 		Color4I color = ThemeProperties.QUEST_VIEW_TITLE.get()
-							   .withAlphaf((float) sinusoidal((Math.abs(MinecraftClient.getInstance().world.getTime() % 40 - 20) - 6) / 8.0, 0.03, 0.97));
+							   .withAlphaf((float) sinusoidal(
+									   (Math.abs(time % 40 - 20) - 6) / 8.0,
+									   0.03, 0.97)
+							   );
 		return icon.withColor(color);
 	}
 

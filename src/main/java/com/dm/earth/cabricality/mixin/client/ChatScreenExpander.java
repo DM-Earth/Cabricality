@@ -17,7 +17,13 @@ public class ChatScreenExpander extends Screen {
 		super(title);
 	}
 
-	@ModifyArgs(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/ChatScreen;fill(Lnet/minecraft/client/util/math/MatrixStack;IIIII)V"))
+	@ModifyArgs(
+			method = "render",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/client/gui/GuiGraphics;fill(IIIII)V"
+			)
+	)
 	private void renderChatArea(Args args) {
 		args.set(1, 0); // X1
 		args.set(2, this.height - 16); // Y1

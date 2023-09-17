@@ -20,16 +20,26 @@ import static com.dm.earth.cabricality.Cabricality.CONFIG;
 
 @Mixin(MinecraftClient.class)
 public abstract class MinecraftClientModifier {
-	@Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/MinecraftClient;setScreen(Lnet/minecraft/client/gui/screen/Screen;)V"))
+	@Redirect(
+			method = "<init>",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/client/MinecraftClient;setScreen(Lnet/minecraft/client/gui/screen/Screen;)V"
+			)
+	)
 	private void checkMods(MinecraftClient client, Screen screen) {
 		if (!CabfModDeps.isAllLoaded())
-			// If not full loaded, set screen to MissingModScreen
+			// If not fully loaded, set screen to MissingModScreen
 			client.setScreen(new MissingModScreen(CabfModDeps.getAllMissing(), CabfModDeps.isLoaded(true, false) ? screen : null));
 		else
 			client.setScreen(screen);
 	}
 
-	@Inject(method = "getWindowTitle", at = @At("HEAD"), cancellable = true)
+	@Inject(
+			method = "getWindowTitle",
+			at = @At("HEAD"),
+			cancellable = true
+	)
 	private void modifyWindowTitle(CallbackInfoReturnable<String> cir) {
 		ModContainer container = QuiltLoader.getModContainer(Cabricality.ID).orElseThrow();
 		cir.setReturnValue(container.metadata().name() + (CONFIG.includeVersionInWindowTitle() ? (" " + container.metadata().version().raw()) : ""));
