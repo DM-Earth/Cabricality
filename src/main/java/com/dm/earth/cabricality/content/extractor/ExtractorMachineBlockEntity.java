@@ -1,16 +1,8 @@
 package com.dm.earth.cabricality.content.extractor;
 
-import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
-
-import java.util.Arrays;
-import java.util.List;
-
-import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
-import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
-
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
-
+import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
@@ -21,12 +13,18 @@ import net.minecraft.block.PillarBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.tag.BlockTags;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static com.dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
 
 @SuppressWarnings("UnstableApiUsage")
 public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGoggleInformation {
@@ -136,13 +134,13 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 
 	private static boolean isVecLog(BlockState blockState) {
 		return blockState.getBlock() instanceof PillarBlock block
-				&& Registry.BLOCK.getTag(BlockTags.LOGS).get().stream()
+				&& Registries.BLOCK.getTag(BlockTags.LOGS).get().stream()
 						.anyMatch(blockHolder -> blockHolder.value() == block)
 				&& blockState.get(PillarBlock.AXIS) == Direction.Axis.Y;
 	}
 
 	private static boolean isRubberTree(BlockState state) {
-		return Registry.BLOCK.getId(state.getBlock()).getPath().contains("rubber");
+		return Registries.BLOCK.getId(state.getBlock()).getPath().contains("rubber");
 	}
 
 	@Override

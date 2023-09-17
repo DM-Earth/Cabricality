@@ -8,7 +8,6 @@ import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
 

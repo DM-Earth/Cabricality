@@ -5,7 +5,6 @@ import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
 import dev.architectury.fluid.FluidStack;
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 

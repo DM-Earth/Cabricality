@@ -9,6 +9,8 @@
     "FluidBlockMixin",
     "ItemMixin",
     "LavaFluidMixin",
+    "StackEntryAccessor",
+    "TagEntryAccessor",
     "WrenchItemMixin",
     "porting_lib.FluidTankMixin",
     "porting_lib.ItemStackHandlerMixin",

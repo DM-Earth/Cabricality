@@ -2,11 +2,10 @@ package com.dm.earth.cabricality.content.trading.core;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.core.HashStringable;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class TradingEntry implements HashStringable {
 	private final Identifier item;
@@ -37,7 +36,7 @@ public class TradingEntry implements HashStringable {
 	}
 
 	public Item getItem() {
-		return Registry.ITEM.get(this.getItemId());
+		return Registries.ITEM.get(this.getItemId());
 	}
 
 	public int getItemCount() {
@@ -53,7 +52,7 @@ public class TradingEntry implements HashStringable {
 	}
 
 	public Item getCoin() {
-		return Registry.ITEM.get(this.getCoinId());
+		return Registries.ITEM.get(this.getCoinId());
 	}
 
 	public int getCoinCount() {

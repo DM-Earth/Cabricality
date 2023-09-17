@@ -1,18 +1,15 @@
 package com.dm.earth.cabricality.tweak.base;
 
+import com.dm.earth.cabricality.lib.resource.data.recipe.ProcessItemOutputCallback;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import org.jetbrains.annotations.Nullable;
+
 import java.util.Arrays;
 import java.util.function.Supplier;
 
-import org.jetbrains.annotations.Nullable;
-
-import com.dm.earth.cabricality.lib.resource.data.recipe.ProcessItemOutputCallback;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.registry.Registry;
-
 public interface TagUnifyEntry<T> {
-
 	T getInstance();
 
 	boolean test(T object);
@@ -26,7 +23,6 @@ public interface TagUnifyEntry<T> {
 	}
 
 	class ItemStackCallback implements ProcessItemOutputCallback {
-
 		protected final TagUnifyEntry<Item> entry;
 
 		public ItemStackCallback(TagUnifyEntry<Item> itemEntry) {
@@ -39,11 +35,9 @@ public interface TagUnifyEntry<T> {
 				return new ItemStack(entry.getInstance(), stack.getCount());
 			return null;
 		}
-
 	}
 
 	record StringArrayItemTagUnifyEntry(Supplier<Item> instance, String[] tokens) implements TagUnifyEntry<Item> {
-
 		@Override
 		public Item getInstance() {
 			return instance().get();
@@ -51,9 +45,7 @@ public interface TagUnifyEntry<T> {
 
 		@Override
 		public boolean test(Item object) {
-			return Arrays.stream(tokens).anyMatch(s -> s.equals(Registry.ITEM.getId(object).getPath()));
+			return Arrays.stream(tokens).anyMatch(s -> s.equals(Registries.ITEM.getId(object).getPath()));
 		}
-
 	}
-
 }

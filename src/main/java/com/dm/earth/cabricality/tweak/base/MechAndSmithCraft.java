@@ -1,30 +1,27 @@
 package com.dm.earth.cabricality.tweak.base;
 
-import java.util.ArrayList;
-
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.ModEntry;
+import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.StonecuttingRecipe;
+import net.minecraft.recipe.TransformSmithingRecipe;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.ModEntry;
-import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
-
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.SmithingRecipe;
-import net.minecraft.recipe.StonecuttingRecipe;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import java.util.ArrayList;
 
 public class MechAndSmithCraft {
 	private static final ArrayList<Entry> entries = new ArrayList<>();
 
 	/**
 	 * Add a MechAndSmithCraft entry for the given item.
-	 *
 	 * @param entry the entry to add
 	 */
 	public static void addEntry(Entry entry) {
@@ -34,33 +31,43 @@ public class MechAndSmithCraft {
 	public static void register(AddRecipesCallback.RecipeHandler handler) {
 		entries.forEach(entry -> {
 			if (entry.isSmithing()) {
-				handler.register(createId(entry, "smithing"),
-						id -> new SmithingRecipe(id, Ingredient.ofItems(entry.getInputItem()),
-								Ingredient.ofItems(entry.getOtherItem()), entry.getOutputStack()));
-				handler.register(createId(entry, "mechanical_crafting"),
-						id -> RecipeBuilderUtil
-								.mechanicalFromShaped(
-										VanillaRecipeBuilders.shapedRecipe("AB")
-												.ingredient('A',
-														Ingredient.ofItems(entry.getInputItem()))
-												.ingredient('B',
-														Ingredient.ofItems(entry.getOtherItem()))
-												.output(entry.getOutputStack()).build(id, ""),
-										true));
+				handler.register(
+						id(entry, "smithing"),
+						id -> new TransformSmithingRecipe(id,
+								Ingredient.EMPTY,
+								Ingredient.ofItems(entry.getInputItem()),
+								Ingredient.ofItems(entry.getOtherItem()),
+								entry.getOutputStack())
+				);
+				handler.register(
+						id(entry, "mechanical_crafting"),
+						id -> RecipeBuilderUtil.mechanicalFromShaped(VanillaRecipeBuilders
+										.shapedRecipe("AB")
+										.ingredient('A', Ingredient.ofItems(entry.getInputItem()))
+										.ingredient('B', Ingredient.ofItems(entry.getOtherItem()))
+										.output(entry.getOutputStack())
+										.build(id, ""),
+								true)
+				);
 			} else
-				handler.register(createId(entry, "stonecutting"), id -> new StonecuttingRecipe(id,
-						"", Ingredient.ofItems(entry.getInputItem()), entry.getOutputStack()));
+				handler.register(
+						id(entry, "stonecutting"),
+						id -> new StonecuttingRecipe(id, "",
+								Ingredient.ofItems(entry.getInputItem()),
+								entry.getOutputStack())
+				);
 		});
 	}
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
-		entries.forEach(entry -> handler.removeIf(
-				p -> !ModEntry.CABF.checkContains(p) && p.getOutput().isOf(entry.getOutputItem())));
+		entries.forEach(entry -> handler.removeIf(p ->
+				!ModEntry.CABF.checkContains(p)
+						&& p.getResult(handler.getRegistryManager()).isOf(entry.getOutputItem())
+		));
 	}
 
-	private static Identifier createId(Entry entry, String type) {
-		return Cabricality
-				.id("threads", entry.level(), "tweak", type, entry.output().getPath());
+	private static Identifier id(Entry entry, String type) {
+		return Cabricality.id("threads", entry.level(), "tweak", type, entry.output().getPath());
 	}
 
 	public static Entry entry(String level, Identifier input, Identifier output, int count, @Nullable Identifier other) {
@@ -73,15 +80,15 @@ public class MechAndSmithCraft {
 		}
 
 		public Item getInputItem() {
-			return Registry.ITEM.get(input);
+			return Registries.ITEM.get(input);
 		}
 
 		public Item getOutputItem() {
-			return Registry.ITEM.get(output);
+			return Registries.ITEM.get(output);
 		}
 
 		public Item getOtherItem() {
-			return Registry.ITEM.get(other);
+			return Registries.ITEM.get(other);
 		}
 
 		public ItemStack getOutputStack() {

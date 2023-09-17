@@ -1,32 +1,28 @@
 package com.dm.earth.cabricality.content.alchemist.laser;
 
-import java.util.ArrayList;
-import java.util.Objects;
-
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.TagKey;
-import org.jetbrains.annotations.NotNull;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
-
 import net.darktree.led.block.DirectionalDiodeLampBlock;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
-import net.minecraft.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 	@Override

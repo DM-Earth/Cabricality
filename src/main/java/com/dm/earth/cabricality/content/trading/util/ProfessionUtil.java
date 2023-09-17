@@ -1,24 +1,22 @@
 package com.dm.earth.cabricality.content.trading.util;
 
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.Optional;
-
-import org.jetbrains.annotations.Nullable;
-
 import com.dm.earth.cabricality.content.trading.Professions;
 import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
-
 import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.Optional;
 
 public class ProfessionUtil {
 	@Nullable
 	public static Profession fromItem(Item item) {
 		Optional<Professions> professions = Arrays.stream(Professions.values())
-				.filter(p -> Objects.equals(p.get().hashString(), getHashString(Registry.ITEM.getId(item))))
+				.filter(p -> Objects.equals(p.get().hashString(), getHashString(Registries.ITEM.getId(item))))
 				.findFirst();
 		return professions.map(Professions::get).orElse(null);
 	}

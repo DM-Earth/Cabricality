@@ -5,14 +5,15 @@ import com.dm.earth.cabricality.content.trading.core.Profession;
 import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.core.TradingEntryRegistry;
 import com.dm.earth.cabricality.content.trading.util.ProfessionUtil;
-
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+
+import java.util.Objects;
 
 public class ProfessionCardItem extends AbstractTradeCardItem {
 	public ProfessionCardItem(Settings settings) {
@@ -20,9 +21,11 @@ public class ProfessionCardItem extends AbstractTradeCardItem {
 	}
 
 	@Override
-	@SuppressWarnings("ConstantConditions")
 	public String getContentString() {
-		return Cabricality.genTranslatableText("profession", ProfessionUtil.fromItem(this).id().getPath()).getString();
+		return Cabricality.genTranslatableText(
+				"profession",
+				Objects.requireNonNull(ProfessionUtil.fromItem(this)).id().getPath()
+		).getString();
 	}
 
 	@Override
@@ -38,7 +41,7 @@ public class ProfessionCardItem extends AbstractTradeCardItem {
 		ItemStack stack = player.getStackInHand(Hand.OFF_HAND);
 		Profession profession = ProfessionUtil.fromItem(cardStack.getItem());
 
-		Identifier itemId = Registry.ITEM.getId(stack.getItem());
+		Identifier itemId = Registries.ITEM.getId(stack.getItem());
 		assert profession != null;
 		TradingEntry entry = TradingEntryRegistry
 				.fromHashString(String.valueOf(itemId.hashCode()).replaceAll("-", "x"));

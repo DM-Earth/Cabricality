@@ -1,35 +1,27 @@
 package com.dm.earth.cabricality.client.screen;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import com.dm.earth.cabricality.client.CabricalityClient;
-import net.krlite.equator.render.frame.FrameInfo;
-import net.krlite.equator.visual.color.Palette;
-import net.krlite.equator.visual.text.Paragraph;
-import net.krlite.equator.visual.text.Section;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.screen.TitleScreen;
-import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.util.Window;
-import net.minecraft.text.MutableText;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.math.Matrix4f;
-import org.jetbrains.annotations.Nullable;
-import org.quiltmc.loader.api.QuiltLoader;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.client.CabricalityClient;
 import com.dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.krlite.equator.render.frame.FrameInfo;
+import net.krlite.equator.visual.text.Paragraph;
+import net.krlite.equator.visual.text.Section;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.PlainTextButtonWidget;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Util;
+import org.jetbrains.annotations.Nullable;
+import org.quiltmc.loader.api.QuiltLoader;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @ClientOnly
 @SuppressWarnings("all")

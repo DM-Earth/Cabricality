@@ -1,8 +1,8 @@
 package com.dm.earth.cabricality.content.trading.core;
 
 import com.dm.earth.cabricality.content.trading.item.AbstractTradeCardItem;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -34,7 +34,7 @@ public class TradingEntryRegistry {
 	}
 
 	public static TradingEntry fromItem(AbstractTradeCardItem item) {
-		Identifier id = Registry.ITEM.getId(item);
+		Identifier id = Registries.ITEM.getId(item);
 		return fromHashString(id.getPath().replaceAll(item.getType() + "_", ""));
 	}
 }

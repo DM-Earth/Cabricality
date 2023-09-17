@@ -1,31 +1,5 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.AD;
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.BC;
-import static com.dm.earth.cabricality.ModEntry.C;
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.CI;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IR;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.TC;
-
-import java.util.Arrays;
-import java.util.Collection;
-
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe;
-import com.simibubi.create.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create.content.processing.recipe.HeatCondition;
-import io.github.fabricators_of_create.porting_lib.tags.Tags;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.TagKey;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
@@ -36,13 +10,15 @@ import com.dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import com.dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.google.common.collect.ImmutableList;
 import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe;
+import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
 import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
+import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-
-import me.alphamode.forgetags.Tags;
+import io.github.fabricators_of_create.porting_lib.tags.Tags;
 import me.steven.indrev.blocks.machine.pipes.FluidPipeBlock;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.BlockItem;
@@ -51,9 +27,29 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.recipe.SmithingRecipe;
-import net.minecraft.tag.TagKey;
+import net.minecraft.recipe.TransformSmithingRecipe;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import static com.dm.earth.cabricality.ModEntry.AD;
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.BC;
+import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CI;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(
@@ -216,7 +212,8 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 
 		handler.register(
 				recipeId("smithing", "netherite_saw"),
-				id -> new SmithingRecipe(id,
+				id -> new TransformSmithingRecipe(id,
+						Ingredient.EMPTY,
 						CABF.asIngredient("diamond_saw"),
 						MC.asIngredient("netherite_ingot"),
 						CABF.asStack("netherite_saw"))

@@ -1,8 +1,5 @@
 package com.dm.earth.cabricality.content.entries;
 
-import static com.dm.earth.cabricality.ModEntry.C;
-import java.util.ArrayList;
-import java.util.List;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.fluids.MoltenMetalFluid;
 import com.dm.earth.cabricality.content.fluids.NumberFluid;
@@ -17,7 +14,11 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.dm.earth.cabricality.ModEntry.C;
 
 public class CabfFluids implements LoadTagsCallback<Fluid> {
 	// Fluids

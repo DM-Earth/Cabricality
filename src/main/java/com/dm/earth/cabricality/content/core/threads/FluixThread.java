@@ -1,25 +1,5 @@
 package com.dm.earth.cabricality.content.core.threads;
 
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.TC;
-
-import com.simibubi.create.content.fluids.transfer.EmptyingRecipe;
-import com.simibubi.create.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create.content.processing.recipe.HeatCondition;
-import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagKey;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.content.entries.CabfItems;
@@ -27,15 +7,17 @@ import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.lib.util.ArrayUtil;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
+import com.simibubi.create.content.fluids.transfer.EmptyingRecipe;
+import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
 import com.simibubi.create.content.kinetics.fan.SplashingRecipe;
 import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
+import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
+import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import me.steven.indrev.recipes.machines.FluidInfuserRecipe;
 import me.steven.indrev.recipes.machines.entries.InputEntry;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
@@ -44,10 +26,21 @@ import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.fabricmc.fabric.api.transfer.v1.storage.base.ResourceAmount;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 public class FluixThread implements TechThread {
 	@Override

@@ -1,22 +1,5 @@
 package com.dm.earth.cabricality.client.screen;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.nio.charset.StandardCharsets;
-import java.util.List;
-
-import com.mojang.blaze3d.vertex.BufferBuilder;
-import com.mojang.blaze3d.vertex.Tessellator;
-import com.mojang.blaze3d.vertex.VertexFormat;
-import com.mojang.blaze3d.vertex.VertexFormats;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.LogoRenderer;
-import net.minecraft.entity.player.PlayerEntity;
-import org.apache.commons.io.IOUtils;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
 import com.google.common.collect.Lists;
@@ -25,23 +8,29 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.vertex.Tessellator;
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.vertex.VertexFormats;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import it.unimi.dsi.fastutil.ints.IntSet;
-import net.minecraft.client.gui.DrawableHelper;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.LogoRenderer;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.render.BufferBuilder;
 import net.minecraft.client.render.GameRenderer;
-import net.minecraft.client.render.Tessellator;
-import net.minecraft.client.render.VertexFormat;
-import net.minecraft.client.render.VertexFormats;
-import net.minecraft.client.util.NarratorManager;
-import net.minecraft.resource.Resource;
-import net.minecraft.text.LiteralText;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.OrderedText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.List;
 
 @ClientOnly
 public class CabfCreditsScreen extends Screen {

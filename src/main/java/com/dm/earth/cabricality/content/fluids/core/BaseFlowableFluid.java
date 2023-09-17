@@ -13,12 +13,13 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
@@ -64,21 +65,16 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	}
 
 	@Override
-	protected boolean isInfinite() {
+	protected boolean isInfinite(World world) {
 		return false;
 	}
 
 	@Override
 	protected BlockState toBlockState(FluidState state) {
-		Block block = Registry.BLOCK.get(((IFluid) this.getTypical()).getId());
+		Block block = Registries.BLOCK.get(((IFluid) this.getTypical()).getId());
 		if (block == Blocks.AIR)
 			return Blocks.AIR.getDefaultState();
 		return block.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
-	}
-
-	@Override
-	public Identifier getRegistryName() {
-		return this.getId();
 	}
 
 	@Override
@@ -98,7 +94,7 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 
 	@Override
 	public void setupRendering() {
-		if (this.isStill(null))
+		if (this.isSource(null))
 			FluidRendererRegistry.register(this.getName(), this.getTextureName(), this.getTypical(), this.getFlowing(),
 					true);
 	}
@@ -109,7 +105,7 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	}
 
 	@Override
-	public boolean isStill(FluidState state) {
+	public boolean isSource(FluidState state) {
 		return this.isStill;
 	}
 
@@ -121,8 +117,8 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	@Override
 	public Item getBucketItem() {
 		Identifier id = Cabricality.id(this.getName() + "_bucket");
-		if (Registry.ITEM.containsId(id))
-			return Registry.ITEM.get(id);
+		if (Registries.ITEM.containsId(id))
+			return Registries.ITEM.get(id);
 		return Items.AIR;
 	}
 
@@ -140,22 +136,22 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 
 	@Override
 	public int getLevel(FluidState state) {
-		if (!this.isStill(null))
+		if (!this.isSource(null))
 			return 8;
 		return state.get(LEVEL);
 	}
 
 	@Override
 	public Fluid getFlowing() {
-		if (!this.isStill(null))
+		if (!this.isSource(null))
 			return this;
-		return Registry.FLUID.get(Cabricality.id(this.getName() + "_flowing"));
+		return Registries.FLUID.get(Cabricality.id(this.getName() + "_flowing"));
 	}
 
 	@Override
 	public Fluid getStill() {
-		if (this.isStill(null))
+		if (this.isSource(null))
 			return this;
-		return Registry.FLUID.get(Cabricality.id(this.getName()));
+		return Registries.FLUID.get(Cabricality.id(this.getName()));
 	}
 }

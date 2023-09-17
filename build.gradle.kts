@@ -30,6 +30,8 @@ repositories {
         }
     }
 
+    maven { url = uri("https://mvn.devos.one/snapshots/") }
+
     maven {
         name = "JitPack"
         url = uri("https://jitpack.io/")
@@ -63,7 +65,6 @@ repositories {
     maven { url = uri("https://maven.tterrag.com/") }
     maven { url = uri("https://maven.wispforest.io") }
     maven { url = uri("https://modmaven.dev") }
-    maven { url = uri("https://mvn.devos.one/snapshots/") }
     maven { url = uri("https://raw.githubusercontent.com/SolidBlock-cn/mvn-repo/main") }
     maven { url = uri("https://storage.googleapis.com/devan-maven/") }
 
