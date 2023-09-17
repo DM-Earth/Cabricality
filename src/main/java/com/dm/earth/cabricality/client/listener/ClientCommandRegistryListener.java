@@ -3,6 +3,8 @@ package com.dm.earth.cabricality.client.listener;
 import static org.quiltmc.qsl.command.api.client.ClientCommandManager.literal;
 
 import com.dm.earth.cabricality.client.CabricalityClient;
+import net.minecraft.command.CommandBuildContext;
+import net.minecraft.server.command.CommandManager;
 import org.quiltmc.qsl.command.api.client.ClientCommandRegistrationCallback;
 import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 import com.dm.earth.cabricality.client.command.HeldItemInfoCommand;
@@ -11,7 +13,11 @@ import com.mojang.brigadier.CommandDispatcher;
 
 public class ClientCommandRegistryListener implements ClientCommandRegistrationCallback {
 	@Override
-	public void registerCommands(CommandDispatcher<QuiltClientCommandSource> dispatcher) {
+	public void registerCommands(
+			CommandDispatcher<QuiltClientCommandSource> dispatcher,
+			CommandBuildContext commandBuildContext,
+			CommandManager.RegistrationEnvironment registrationEnvironment
+	) {
 		dispatcher.register(
 				literal(CabricalityClient.ID)
 						.then(literal("genTradingQuests").executes(new GenTradingQuestsCommand()))

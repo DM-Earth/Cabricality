@@ -1,30 +1,30 @@
 package com.dm.earth.cabricality.content.alchemist;
 
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IR;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.*;
-import static com.dm.earth.cabricality.ModEntry.PM;
-import static com.dm.earth.cabricality.content.alchemist.core.Reagent.of;
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
+import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
+import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
+import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
+import com.dm.earth.cabricality.content.alchemist.core.Reagent;
+import net.minecraft.block.Block;
+import net.minecraft.registry.Registries;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.dm.earth.cabricality.content.alchemist.block.JarBlock;
-
-import net.minecraft.block.Block;
-
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
-import com.dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
-import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
-import com.dm.earth.cabricality.content.alchemist.core.Reagent;
-import net.minecraft.util.registry.Registry;
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.MLM;
+import static com.dm.earth.cabricality.ModEntry.PM;
+import static com.dm.earth.cabricality.content.alchemist.core.Reagent.of;
 
 public enum Reagents {
 	IGNEOUS("igneous", 0x6C8191, 16, true,
@@ -111,36 +111,44 @@ public enum Reagents {
 
 	@NotNull
 	public static Reagent getReagentFromBlock(ReagentJarBlock block) {
-		Reagent reagent = getReagentFromHash(Registry.BLOCK.getId(block).getPath()
+		Reagent reagent = getReagentFromHash(Registries.BLOCK.getId(block).getPath()
 				.replaceAll(block.getDefaultBlockId().getPath() + "_", ""));
+
 		// Check Content Validity
 		if (reagent == null) {
-			Cabricality.LOGGER.error("Invalid Reagent " + Registry.BLOCK.getId(block)
+			Cabricality.LOGGER.error("Invalid Reagent " + Registries.BLOCK.getId(block)
 					+ "! Valid Reagents:"
 					+ Arrays.stream(Reagents.values())
 							.map(reagents -> reagents.getReagents().stream()
 									.map(value -> "\n" + value.getName().getString())
 									.collect(Collectors.joining()))
 							.collect(Collectors.joining()));
-			throw new EnumConstantNotPresentException(Reagents.class,
-					Registry.BLOCK.getId(block).toString());
+
+			throw new EnumConstantNotPresentException(
+					Reagents.class,
+					Registries.BLOCK.getId(block).toString()
+			);
 		}
 		return reagent;
 	}
 
 	@NotNull
 	public static Catalyst getCatalystFromBlock(CatalystJarBlock block) {
-		Catalyst catalyst = getCatalystFromHash(Registry.BLOCK.getId(block).getPath()
+		Catalyst catalyst = getCatalystFromHash(Registries.BLOCK.getId(block).getPath()
 				.replaceAll(block.getDefaultBlockId().getPath() + "_", ""));
+
 		// Check Content Validity
 		if (catalyst == null) {
 			Cabricality.LOGGER
-					.error("Invalid Catalyst" + Registry.BLOCK.getId(block) + "! Valid Catalysts:"
+					.error("Invalid Catalyst" + Registries.BLOCK.getId(block) + "! Valid Catalysts:"
 							+ Arrays.stream(Reagents.values())
 									.map(value -> "\n" + value.getCatalyst().toString())
 									.collect(Collectors.joining()));
-			throw new EnumConstantNotPresentException(Reagents.class,
-					Registry.BLOCK.getId(block).toString());
+
+			throw new EnumConstantNotPresentException(
+					Reagents.class,
+					Registries.BLOCK.getId(block).toString()
+			);
 		}
 		return catalyst;
 	}
@@ -176,25 +184,26 @@ public enum Reagents {
 	}
 
 	public static List<Block> getJarBlocks(boolean includeBlank) {
-		return Registry.BLOCK.getEntries().stream()
-				.filter(
-						entry -> entry.getValue() instanceof ReagentJarBlock
+		return Registries.BLOCK.getEntries().stream()
+				.filter(entry ->
+						entry.getValue() instanceof ReagentJarBlock
 								|| includeBlank && entry.getValue() instanceof JarBlock)
 				.map(Map.Entry::getValue).collect(Collectors.toList());
 	}
 
 	@Nullable
 	public static Reagents get(Catalyst catalyst) {
-		return Arrays.stream(values()).filter(value -> value.getCatalyst().equals(catalyst))
+		return Arrays.stream(values())
+				.filter(value -> value.getCatalyst().equals(catalyst))
 				.findFirst().orElse(null);
 	}
 
 	@Nullable
 	public static Reagents get(Reagent reagent) {
-		return Arrays.stream(values()).filter(value -> value.getReagents().contains(reagent))
+		return Arrays.stream(values())
+				.filter(value -> value.getReagents().contains(reagent))
 				.findFirst().orElse(null);
 	}
 
-	public static void load() {
-	}
+	public static void load() {}
 }

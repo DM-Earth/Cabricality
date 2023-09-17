@@ -1,9 +1,5 @@
 package com.dm.earth.cabricality.client.listener;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.Objects;
 import com.dm.earth.cabricality.content.alchemist.block.SubstrateJarBlock;
 import com.dm.earth.cabricality.content.alchemist.core.Substrate;
 import com.dm.earth.cabricality.content.core.items.ColoredFernItem;
@@ -12,13 +8,17 @@ import com.dm.earth.cabricality.content.trading.item.AbstractTradeCardItem;
 import com.dm.earth.cabricality.content.trading.item.ProfessionCardItem;
 import com.dm.earth.cabricality.content.trading.item.TradeCardItem;
 import com.dm.earth.cabricality.content.trading.util.ProfessionUtil;
-
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Objects;
 
 public class ColorRegistryListener {
 	public static void load() {
@@ -55,7 +55,7 @@ public class ColorRegistryListener {
 
 	private static Item[] getItems() {
 		ArrayList<Item> list = new ArrayList<>();
-		for (Map.Entry<RegistryKey<Item>, Item> set : Registry.ITEM.getEntries()) {
+		for (Map.Entry<RegistryKey<Item>, Item> set : Registries.ITEM.getEntries()) {
 			Item item = set.getValue();
 			if (item instanceof AbstractTradeCardItem)
 				list.add(item);

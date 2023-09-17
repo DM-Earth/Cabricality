@@ -1,5 +1,36 @@
 package com.dm.earth.cabricality.client.plugin.rei;
 
+import com.dm.earth.cabricality.Cabricality;
+import com.dm.earth.cabricality.ModEntry;
+import com.dm.earth.cabricality.content.entries.CabfItemTags;
+import com.dm.earth.cabricality.content.entries.CabfItems;
+import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
+import com.dm.earth.cabricality.tweak.RecipeTweaks;
+import com.google.common.collect.ImmutableList;
+import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
+import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
+import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
+import me.shedaniel.rei.api.client.registry.screen.ExclusionZones;
+import me.shedaniel.rei.api.common.entry.EntryStack;
+import me.shedaniel.rei.api.common.entry.type.EntryType;
+import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
+import me.shedaniel.rei.api.common.util.EntryIngredients;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Identifier;
+import org.quiltmc.loader.api.QuiltLoader;
+import slimeknights.tconstruct.tables.client.inventory.TinkerStationScreen;
+
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import static com.dm.earth.cabricality.ModEntry.AD;
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.C;
@@ -16,43 +47,10 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 import static com.dm.earth.cabricality.ModEntry.PM;
 import static com.dm.earth.cabricality.ModEntry.TC;
 
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import me.shedaniel.rei.api.client.registry.screen.ExclusionZones;
-import net.minecraft.registry.Registries;
-import net.minecraft.text.Text;
-import org.quiltmc.loader.api.QuiltLoader;
-
-import com.dm.earth.cabricality.Cabricality;
-import com.dm.earth.cabricality.ModEntry;
-import com.dm.earth.cabricality.content.entries.CabfItemTags;
-import com.dm.earth.cabricality.content.entries.CabfItems;
-import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
-import com.dm.earth.cabricality.tweak.RecipeTweaks;
-import com.google.common.collect.ImmutableList;
-
-import me.shedaniel.rei.api.client.entry.filtering.base.BasicFilteringRule;
-import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
-import me.shedaniel.rei.api.client.registry.entry.CollapsibleEntryRegistry;
-import me.shedaniel.rei.api.common.entry.EntryStack;
-import me.shedaniel.rei.api.common.entry.type.EntryType;
-import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
-import me.shedaniel.rei.api.common.util.EntryIngredients;
-import net.minecraft.item.Items;
-import net.minecraft.tag.TagKey;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import slimeknights.tconstruct.tables.client.inventory.TinkerStationScreen;
-
 @SuppressWarnings("UnstableApiUsage")
 public class CabfREIClientPlugin implements REIClientPlugin {
 	/**
-	 * Registers a collapsible entry from the given {@link TagKey}.
+	 * Registers a collapsible entry from the given {@link net.minecraft.registry.tag.TagKey}.
 	 *
 	 * @param registry The registry to register the entry to.
 	 * @param modEntry The mod entry to register the entry for.
@@ -95,7 +93,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	}
 
 	/**
-	 * Gets a {@link TranslatableText} from the given {@link Identifier}, prefixed
+	 * Gets a {@link Text} from the given {@link Identifier}, prefixed
 	 * with <code>"tag"</code>.
 	 *
 	 * @param identifier The identifier.
@@ -106,7 +104,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	}
 
 	/**
-	 * Gets a {@link TranslatableText} from the given {@link Identifier}, prefixed
+	 * Gets a {@link Text} from the given {@link Identifier}, prefixed
 	 * with <code>"col"</code>.
 	 *
 	 * @param identifier The identifier.
@@ -140,8 +138,10 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * C
 		 */
+
 		// Shulker boxes
 		registerCollapsibleEntryFromTag(registry, C, "shulker_boxes");
+
 		// Glass
 		registry.group(C.id("glass"),
 				tag(C.id("glass")),
@@ -149,41 +149,42 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 						(entryStack.getType() != VanillaEntryTypes.FLUID &&
 								(TC.checkContains(entryStack.getIdentifier())
 										|| AE2.checkContains(entryStack.getIdentifier()))
-								&&
-								entryStack.getIdentifier().getPath().endsWith("glass"))); // Special case for glass in
-																							// TC and AE2
+								&& entryStack.getIdentifier().getPath().endsWith("glass"))); // Special case for glass in TC & AE2
 		// Glass panes
 		registry.group(C.id("glass_panes"),
 				tag(C.id("glass_panes")),
 				entryStack -> entryStack.getTagsFor().anyMatch(tag -> tag.equals(C.asItemTag("glass_panes"))) ||
 						(entryStack.getType() != VanillaEntryTypes.FLUID &&
 								TC.checkContains(entryStack.getIdentifier()) &&
-								entryStack.getIdentifier().getPath().endsWith("glass_pane"))); // Special case for glass
-																								// panes in TC
+								entryStack.getIdentifier().getPath().endsWith("glass_pane"))); // Special case for glass panes in TC
 
 		/*
 		 * Minecraft
 		 */
+
 		// Enchanted books
 		registry.group(MC.id("enchanted_books"),
 				col(MC.id("enchanted_books")),
 				predicateIds(Registries.ITEM.getId(Items.ENCHANTED_BOOK)));
+
 		// Potions
 		Arrays.stream(new String[] { null, "lingering", "splash" }).forEach(
 				prefix -> registry.group(MC.id(joinAll(prefix, "potions")),
 						col(MC.id(joinAll(prefix, "potions"))),
 						predicateIds(MC.id(joinAll(prefix, "potion")))));
+
 		// Tipped arrows
 		registry.group(MC.id("tipped_arrows"),
 				col(MC.id("tipped_arrows")),
 				predicateIds(Registries.ITEM.getId(Items.TIPPED_ARROW)));
-		// Glazed terracottas
+
+		// Glazed terracotta
 		registry.group(MC.id("glazed_terracottas"),
 				col(MC.id("glazed_terracottas")),
 				EntryIngredients.ofItems(Arrays.stream(COLORS).map(
 						color -> MC.asItem(color + "_glazed_terracotta")).collect(Collectors.toList())));
-		// Music discs & carpets & banners & candles & beds & signs & leaves & logs &
-		// planks & stairs & slabs
+
+		// Music discs & carpets & banners & candles & beds & signs & leaves & logs & planks & stairs & slabs
 		Arrays.stream(new String[] {
 				"music_discs", "carpets", "banners", "candles", "beds",
 				"signs", "leaves", "logs", "planks", "stairs", "slabs"
@@ -192,6 +193,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Cabricality
 		 */
+
 		// Alchemist Jars
 		registry.group(Cabricality.id("catalyst_jars"),
 				Cabricality.genTranslatableText("tag",
@@ -211,11 +213,13 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				Cabricality.genTranslatableText("tag",
 						CabfItemTags.PROFESSION_CARDS.id().getPath()),
 				EntryIngredients.ofItemTag(CabfItemTags.PROFESSION_CARDS));
+
 		// Numbers
 		registry.group(Cabricality.id("numbers"),
 				Cabricality.genTranslatableText("col", "numbers"),
 				EntryIngredients.ofItems(Stream.concat(CabfItems.NUMBERS.stream().map(n -> CABF.asItem("number_" + n)),
 						CabfItems.OPERATORS.keySet().stream().map(CABF::asItem)).collect(Collectors.toList())));
+
 		// Math casts
 		registry.group(Cabricality.id("math_casts"),
 				Cabricality.genTranslatableText("col", "math_casts"),
@@ -225,6 +229,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * AE2
 		 */
+
 		// Paint balls
 		{
 			final String postfix = "paint_ball";
@@ -239,6 +244,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 			/*
 			 * Item Filters
 			 */
+
 			// Filters
 			registerCollapsibleEntryFromTag(registry, IF, "filters");
 		}
@@ -246,6 +252,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Catwalks Inc.
 		 */
+
 		// Paint rollers
 		registry.group(CI.id("filled_paint_rollers"),
 				tag(CI.id("filled_paint_rollers")),
@@ -256,6 +263,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Create
 		 */
+
 		// Stone types
 		Arrays.stream(new String[] {
 				"veridium", "scorchia", "scoria", "ochrum", "limestone",
@@ -266,12 +274,14 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				entryStack -> CR.checkContains(entryStack.getIdentifier()) &&
 						(entryStack.getTagsFor().anyMatch(tag -> tag.equals(CR.asItemTag("stone_types", type))) ||
 								entryStack.getIdentifier().getPath().contains(type))));
+
 		// Copper tiles & shingles
 		Arrays.stream(new String[] { "tile", "shingle" }).forEach(
 				type -> registry.group(CR.id("blocks", joinAll("copper", type)),
 						col(CR.id("blocks", joinAll("copper", type))),
 						entryStack -> CR.checkContains(entryStack.getIdentifier())
 								&& entryStack.getIdentifier().getPath().contains(joinAll("copper", type))));
+
 		// Toolboxes & seats
 		Arrays.stream(new String[] { "toolboxes", "seats" }).forEach(
 				tag -> registerCollapsibleEntryFromTag(registry, CR, tag));
@@ -279,17 +289,20 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Farmer's Delight
 		 */
+
 		// Canvas signs
 		registerCollapsibleEntryFromTag(registry, FD, "canvas_signs");
 
 		/*
 		 * Promenade
 		 */
+
 		// Piles
 		registry.group(PM.id("piles"),
 				col(PM.id("piles")),
 				entryStack -> PM.checkContains(entryStack.getIdentifier())
 						&& entryStack.getIdentifier().getPath().endsWith("pile"));
+
 		// Mushrooms & mushroom blocks
 		Arrays.stream(new String[] { null, "block" }).forEach(
 				type -> registry.group(PM.id("blocks", joinAll("mushroom", type)),
@@ -300,6 +313,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Kibe
 		 */
+
 		// Colorful blocks
 		Arrays.stream(new String[] { "sleeping_bag", "glider", "rune", "elevator" }).forEach(
 				type -> registry.group(KB.id("things", type),
@@ -314,18 +328,22 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Hephaestus
 		 */
+
 		// Modifiers
 		registry.group(TC.id("modifiers"),
 				col(TC.id("modifiers")),
 				EntryType.deferred(TC.id("modifier_entry")),
 				entryStack -> TC.checkContains(entryStack.getIdentifier()));
+
 		// Slime helmets
 		registry.group(TC.id("slime_helmets"),
 				col(TC.id("slime_helmets")),
 				predicateIds(TC.id("slime_helmet")));
+
 		// Casts
 		Arrays.stream(new String[] { "red_sand", "sand", "gold" }).forEach(
 				cast -> registerCollapsibleEntryFromTag(registry, TC, "casts", cast));
+
 		// Tools
 		Arrays.stream(new String[] {
 				"cleaver", "sword", "dagger", "scythe", "kama",
@@ -334,6 +352,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		}).forEach(tool -> registry.group(TC.id("tools", tool),
 				col(TC.id("tools", tool)),
 				predicateIds(TC.id(tool))));
+
 		// Parts
 		Arrays.stream(new String[] {
 				"tough_handle", "tool_handle", "tool_binding",
@@ -355,6 +374,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				station -> registry.group(TC.id("stations", station),
 						col(TC.id("stations", station)),
 						predicateIds(TC.id(station))));
+
 		// Foundries & Smelteries
 		Arrays.stream(new String[] { "foundry", "smeltery" }).forEach(
 				type -> registry.group(TC.id("blocks", type),
@@ -363,31 +383,29 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 
 		// Buckets
 		registry.group(MC.id("buckets"),
-				col(MC.id("buckets")), entryStack -> ((MC.checkContains(entryStack.getIdentifier()) ||
-						CABF.checkContains(entryStack.getIdentifier()) /* Also including CABF's buckets */ ||
-						TC.checkContains(entryStack.getIdentifier()) /* Also including TC's buckets */ ||
-						CR.checkContains(entryStack.getIdentifier()) /* Also including CR's buckets */ ||
-						IR.checkContains(entryStack.getIdentifier()) /* Also including IR's buckets */ ||
-						AD.checkContains(entryStack.getIdentifier()) /* Also including AD's buckets */ ) &&
-						entryStack.getIdentifier().getPath().endsWith("bucket") &&
-						// Avoid including potion buckets
-						!entryStack.getIdentifier().getPath().equals("potion_bucket")) /*
-																						 * Avoid including potion
-																						 * buckets
-																						 */ ||
-				// Also including KB's liquid xp bucket
-						entryStack.getIdentifier().equals(KB.id("liquid_xp_bucket")));
+				col(MC.id("buckets")), entryStack -> ((MC.checkContains(entryStack.getIdentifier())
+						|| CABF.checkContains(entryStack.getIdentifier()) /* Also including CABF's buckets */
+						|| TC.checkContains(entryStack.getIdentifier()) /* Also including TC's buckets */
+						|| CR.checkContains(entryStack.getIdentifier()) /* Also including CR's buckets */
+						|| IR.checkContains(entryStack.getIdentifier()) /* Also including IR's buckets */
+						|| AD.checkContains(entryStack.getIdentifier()) /* Also including AD's buckets */ )
+						&& entryStack.getIdentifier().getPath().endsWith("bucket")
+						&& !entryStack.getIdentifier().getPath().equals("potion_bucket")) /* Avoid including potion buckets */
+						|| entryStack.getIdentifier().equals(KB.id("liquid_xp_bucket"))); /* Also including KB's liquid xp bucket */
+
 		// Potion buckets
 		registry.group(TC.id("buckets", "potion"),
 				col(TC.id("buckets", "potion")),
 				predicateIds(TC.id("potion_bucket")));
+
 		// Slime grasses
 		Arrays.stream(new String[] { "ichor", "ender", "sky", "earth", "vanilla" }).forEach(
 				type -> registry.group(TC.id("slime_grasses", type),
 						col(TC.id("slime_grasses", type)),
 						entryStack -> TC.checkContains(entryStack.getIdentifier()) &&
 								entryStack.getIdentifier().getPath().endsWith(joinAll(type, "slime_grass"))));
-		// Slime dirts & congealed slimes & slimes
+
+		// Slime dirt & congealed slimes & slimes
 		Arrays.stream(new String[] { "slime_dirt", "congealed_slime", "slime" }).forEach(
 				suffix -> registry.group(TC.id("blocks", suffix),
 						col(TC.id("blocks", suffix)),
@@ -397,6 +415,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Ad Astra!
 		 */
+
 		// Flags
 		registry.group(AD.id("flags"),
 				col(AD.id("flags")),
@@ -406,6 +425,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Indrev
 		 */
+
 		// Modules
 		registry.group(IR.id("modules"),
 				col(IR.id("modules")),
@@ -415,12 +435,14 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * LED
 		 */
+
 		// Functional blocks
 		Arrays.stream(new String[] { "switch", "button" }).forEach(
 				block -> registry.group(LED.id("blocks", block),
 						col(LED.id("blocks", block)),
 						EntryIngredients.ofItems(Arrays.stream(COLORS).map(
 								color -> LED.asItem(joinAll(block, color))).collect(Collectors.toList()))));
+
 		// Lamps
 		Arrays.stream(new String[] { null, "shaded", "reinforced", "shaded_reinforced" }).forEach(
 				prefix -> {
@@ -434,6 +456,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 												color -> LED.asItem(joinAll(prefix, size, POSTFIX, color)))
 												.collect(Collectors.toList()))));
 					}
+
 					// Clear full blocks
 					{
 						final String POSTFIX = "clear_full";
@@ -448,10 +471,12 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		/*
 		 * Computer Craft
 		 */
+
 		// Disks
 		registry.group(CC.id("disks"), col(CC.id("disks")), predicateIds(CC.id("disk")));
 		{
 			final String[] POSTFIX = { "advanced", "normal" };
+
 			// Turtles and pocket computers
 			Arrays.stream(new String[] { "turtle", "pocket_computer" }).forEach(
 					thing -> registry.group(CC.id("things", thing), col(CC.id("things", thing)),

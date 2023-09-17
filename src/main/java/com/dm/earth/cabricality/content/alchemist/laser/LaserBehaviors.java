@@ -1,6 +1,8 @@
 package com.dm.earth.cabricality.content.alchemist.laser;
 
 import java.util.ArrayList;
+
+import net.minecraft.client.MinecraftClient;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -31,54 +33,68 @@ public class LaserBehaviors {
 		float len = power * 2.5F;
 		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
 		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving)
-				.forEach(entity -> entity.damage(DamageSource.GENERIC,
-						(float) (Math.max(Math.max(0, entity.getBlockPos().getSquaredDistance(pos) / len), 1)
-								* power)));
+				.forEach(entity -> entity.damage(
+						MinecraftClient.getInstance().world.getDamageSources().generic(),
+						(float) (Math.max(Math.max(0, entity.getBlockPos().getSquaredDistance(pos) / len), 1) * power)
+				));
 	}
 
 	// pos should be the lamp's blockPos
-	public static ActionResult process(ServerWorld world, BlockPos pos, Direction direction,
-			@NotNull LaserProperties properties) {
+	public static ActionResult process(ServerWorld world, BlockPos pos, Direction direction, @NotNull LaserProperties properties) {
 		ActionResult returnResult = ActionResult.FAIL;
-
 		ArrayList<HopperMinecartEntity> minecarts = new ArrayList<>();
+
 		for (int i = 0; i < properties.length(); i++)
-			minecarts.addAll(world.getEntitiesByClass(HopperMinecartEntity.class,
+			minecarts.addAll(world.getEntitiesByClass(
+					HopperMinecartEntity.class,
 					Box.of(PositionUtil.fromBlockPos(pos.offset(direction, i)), 1, 1, 1),
-					minecart -> !minecart.isEmpty()));
+					minecart -> !minecart.isEmpty()
+			));
+
 		for (HopperMinecartEntity cart : minecarts) {
 			double subPower = properties.power() / Math.sqrt(minecarts.size());
+
 			// Generic Recipe Processing
 			int capability = (int) Math.pow(subPower, 3);
 			for (int i = 0; i < 5; i++) {
 				ItemStack stack = cart.getStack(i);
-				if (stack.isEmpty())
-					continue;
+				if (stack.isEmpty()) continue;
+
 				LaserRecipe laserRecipe = getGenericRecipe(stack.getItem());
+
 				if (laserRecipe != null && stack.getCount() <= capability) {
 					ItemStack result = new ItemStack(laserRecipe.output(), stack.getCount());
+
 					cart.setStack(i, result);
 					capability -= stack.getCount();
+
 					returnResult = ActionResult.SUCCESS;
 					laserRecipe.spawnParticles(world, cart.getPos());
-				} else if (laserRecipe != null && capability > 0) {
+				}
+
+				else if (laserRecipe != null && capability > 0) {
 					ItemStack result = new ItemStack(laserRecipe.output(), capability);
+
 					for (int p = 0; p < 5; p++)
 						if (cart.getStack(p).isEmpty()) {
 							stack.decrement(capability);
 							cart.setStack(i, stack);
 							cart.setStack(p, result);
+
 							returnResult = ActionResult.SUCCESS;
 							laserRecipe.spawnParticles(world, cart.getPos());
+
 							break;
 						}
 					break;
-				} else if (capability <= 0)
-					break;
+				}
+
+				else if (capability <= 0) break;
 			}
+
 			Alchemist.processChaoticRecipe(cart, properties);
 			attackNearby(world, cart.getBlockPos(), (float) subPower);
-			cart.damage(DamageSource.MAGIC, (float) (subPower / 5.0F));
+			cart.damage(MinecraftClient.getInstance().world.getDamageSources().magic(), (float) (subPower / 5.0F));
 		}
 		return returnResult;
 	}
@@ -99,8 +115,15 @@ public class LaserBehaviors {
 
 	public record LaserRecipe(@NotNull Item output, @Nullable ParticleEffect effect) {
 		public void spawnParticles(ServerWorld world, Vec3d pos) {
-			if (effect != null)
-				world.spawnParticles(effect, pos.getX(), pos.getY(), pos.getZ(), 10, 0, 0, 0, 1.D);
+			if (effect != null) {
+				world.spawnParticles(
+						effect,
+						pos.getX(), pos.getY(), pos.getZ(),
+						10,
+						0, 0, 0,
+						1D
+				);
+			}
 		}
 	}
 }

@@ -54,7 +54,7 @@ public class HeldItemInfoReceiver implements ServerPlayNetworking.ChannelReceive
 		server.execute(() -> server.getPlayerManager().getPlayerList().stream().filter(p -> p != player).forEach(
 				new BroadcastContent(
 						player,
-						((MutableText) Cabricality.genTranslatableText("command", "held_item_info", "showing"))
+						Cabricality.genTranslatableText("command", "held_item_info", "showing")
 								.append(stack.toHoverableText())
 				)
 		));

@@ -3,10 +3,17 @@ package com.dm.earth.cabricality.client.screen;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.vertex.Tessellator;
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.vertex.VertexFormats;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.LogoRenderer;
 import net.minecraft.entity.player.PlayerEntity;
 import org.apache.commons.io.IOUtils;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
@@ -28,7 +35,6 @@ import net.minecraft.client.render.Tessellator;
 import net.minecraft.client.render.VertexFormat;
 import net.minecraft.client.render.VertexFormats;
 import net.minecraft.client.util.NarratorManager;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.resource.Resource;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.OrderedText;
@@ -40,8 +46,7 @@ import net.minecraft.util.JsonHelper;
 @ClientOnly
 public class CabfCreditsScreen extends Screen {
 	private static final Identifier VIGNETTE_TEXTURE = new Identifier("textures/misc/vignette.png");
-	private static final Text SEPARATOR_LINE =
-			new LiteralText("============").formatted(Formatting.WHITE);
+	private static final Text SEPARATOR_LINE = Text.literal("============").formatted(Formatting.WHITE);
 	private final Runnable finishAction;
 	private int creditsHeight;
 	private float time;
@@ -51,9 +56,10 @@ public class CabfCreditsScreen extends Screen {
 	private IntSet centeredLines;
 	private boolean spaceKeyPressed;
 	private final IntSet pressedCtrlKeys = new IntOpenHashSet();
+	private final LogoRenderer logoRenderer = new LogoRenderer(false);
 
 	public CabfCreditsScreen(Runnable finishAction) {
-		super(NarratorManager.EMPTY);
+		super(Text.empty());
 		this.finishAction = finishAction;
 		this.speed = this.baseSpeed = 0.35F;
 	}
@@ -111,54 +117,47 @@ public class CabfCreditsScreen extends Screen {
 		if (this.credits == null) {
 			this.credits = Lists.newArrayList();
 			this.centeredLines = new IntOpenHashSet();
-			this.load("credits.json", this::addCreditsFile);
-			this.load("postcredits.txt", this::addPostCreditsFile);
+			this.load("credits.json", this::readCredits);
+			this.load("postcredits.txt", this::readPostCredits);
 			this.creditsHeight = this.credits.size() * 12;
 		}
 		CabfLogger.logInfo("Showing credits...");
 	}
 
-	public void render(MatrixStack matrixStack, int mouseX, int mouseY, float delta) {
+	@Override
+	public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
 		this.time += delta * this.speed;
 		this.renderBackground();
 
 		int width = this.width / 2 - 137;
 		int height = this.height + 50;
 
-		matrixStack.push();
-		matrixStack.translate(0.0, -this.time, 0.0);
+		graphics.getMatrices().push();
+		graphics.getMatrices().translate(0.0, -this.time, 0.0);
 
-		RenderSystem.setShaderTexture(0, Cabricality.Textures.CABRICALITY_TITLE.identifier());
-		RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-		RenderSystem.enableBlend();
-
-		this.drawWithOutline(width, height, (x, y) -> {
-			this.drawTexture(matrixStack, x, y, 0, 0, 155, 44);
-			this.drawTexture(matrixStack, x + 155, y, 0, 45, 155, 44);
-		});
-
-		RenderSystem.disableBlend();
-		RenderSystem.setShaderTexture(0, Cabricality.Textures.MINECRAFT_SUBTITLE.identifier());
-
-		drawTexture(matrixStack, width + 88, height + 37, 0.0F, 0.0F, 98, 14, 128, 16);
+		logoRenderer.draw(graphics, this.width, 1.0f, height + 50);
 
 		int y = height + 100;
 		for (int line = 0; line < this.credits.size(); ++line) {
 			if (line == this.credits.size() - 1) {
 				float scale = y - this.time - (this.height / 2.0F - 6);
-				if (scale < 0.0F) {
-					matrixStack.translate(0.0, -scale, 0.0);
-				}
+				if (scale < 0.0F) graphics.getMatrices().translate(0.0, -scale, 0.0);
 			}
 
 			if (y - this.time + 12.0F + 8.0F > 0.0F && y - this.time < this.height) {
 				OrderedText orderedText = this.credits.get(line);
 				if (this.centeredLines.contains(line)) {
-					this.textRenderer.drawWithShadow(matrixStack, orderedText,
-							width + (274 - this.textRenderer.getWidth(orderedText)) / 2.0F, y,
-							0xFFFFFF);
+					graphics.drawText(
+							this.textRenderer, orderedText,
+                            (int) (width + (274 - this.textRenderer.getWidth(orderedText)) / 2F), y,
+							0xFFFFFF, true
+					);
 				} else {
-					this.textRenderer.drawWithShadow(matrixStack, orderedText, width, y, 0xFFFFFF);
+					graphics.drawText(
+							this.textRenderer, orderedText,
+							width, y,
+							0xFFFFFF, true
+					);
 				}
 			}
 
@@ -166,37 +165,50 @@ public class CabfCreditsScreen extends Screen {
 			y += 12;
 		}
 
-		matrixStack.pop();
+		graphics.getMatrices().pop();
 
 		RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
 		RenderSystem.setShaderTexture(0, VIGNETTE_TEXTURE);
 		RenderSystem.enableBlend();
-		RenderSystem.blendFunc(GlStateManager.SourceFactor.ZERO,
-				GlStateManager.DestFactor.ONE_MINUS_SRC_COLOR);
+		RenderSystem.blendFunc(GlStateManager.SourceFactor.ZERO, GlStateManager.DestFactor.ONE_MINUS_SRC_COLOR);
 
 		Tessellator tessellator = Tessellator.getInstance();
-		BufferBuilder bufferBuilder = tessellator.getBuffer();
+		BufferBuilder bufferBuilder = tessellator.getBufferBuilder();
 		bufferBuilder.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_TEXTURE_COLOR);
 
-		bufferBuilder.vertex(0, this.height, this.getZOffset()).texture(0, 1).color(1, 1, 1, 1)
+		bufferBuilder
+				.vertex(0, this.height, 0)
+				.uv(0, 1)
+				.color(1, 1, 1, 1)
 				.next();
 
-		bufferBuilder.vertex(this.width, this.height, this.getZOffset()).texture(1, 1)
-				.color(1, 1, 1, 1).next();
-
-		bufferBuilder.vertex(this.width, 0, this.getZOffset()).texture(1, 0).color(1, 1, 1, 1)
+		bufferBuilder
+				.vertex(this.width, this.height, 0)
+				.uv(1, 1)
+				.color(1, 1, 1, 1)
 				.next();
 
-		bufferBuilder.vertex(0, 0, this.getZOffset()).texture(0, 0).color(1, 1, 1, 1).next();
+		bufferBuilder
+				.vertex(this.width, 0, 0)
+				.uv(1, 0)
+				.color(1, 1, 1, 1)
+				.next();
+
+		bufferBuilder
+				.vertex(0, 0, 0)
+				.uv(0, 0)
+				.color(1, 1, 1, 1)
+				.next();
 
 		tessellator.draw();
 		RenderSystem.disableBlend();
-		super.render(matrixStack, mouseX, mouseY, delta);
+
+		super.render(graphics, mouseX, mouseY, delta);
 	}
 
 	private void renderBackground() {
 		RenderSystem.setShader(GameRenderer::getPositionTexColorShader);
-		RenderSystem.setShaderTexture(0, DrawableHelper.OPTIONS_BACKGROUND_TEXTURE);
+		RenderSystem.setShaderTexture(0, OPTIONS_BACKGROUND_TEXTURE);
 		float multiplier = 0.015625F;
 		float color = (float) Math.pow(Math.min(this.time / this.baseSpeed * 0.02F,
 				Math.min(1,
@@ -205,83 +217,97 @@ public class CabfCreditsScreen extends Screen {
 				2) * 96.0F / 255.0F;
 
 		Tessellator tessellator = Tessellator.getInstance();
-		BufferBuilder bufferBuilder = tessellator.getBuffer();
+		BufferBuilder bufferBuilder = tessellator.getBufferBuilder();
 		bufferBuilder.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_TEXTURE_COLOR);
 
-		bufferBuilder.vertex(0, this.height, this.getZOffset())
-				.texture(0, -this.time * 0.5F * multiplier).color(color, color, color, 1).next();
+		bufferBuilder
+				.vertex(0, this.height, 0)
+				.uv(0, -this.time * 0.5F * multiplier)
+				.color(color, color, color, 1)
+				.next();
 
-		bufferBuilder.vertex(this.width, this.height, this.getZOffset())
-				.texture((float) this.width * multiplier, -this.time * 0.5F * multiplier)
-				.color(color, color, color, 1).next();
+		bufferBuilder
+				.vertex(this.width, this.height, 0)
+				.uv((float) this.width * multiplier, -this.time * 0.5F * multiplier)
+				.color(color, color, color, 1)
+				.next();
 
-		bufferBuilder.vertex(this.width, 0, this.getZOffset())
-				.texture((float) this.width * multiplier,
-						(this.height - 0.5F * this.time) * multiplier)
-				.color(color, color, color, 1).next();
+		bufferBuilder
+				.vertex(this.width, 0, 0)
+				.uv((float) this.width * multiplier, (this.height - 0.5F * this.time) * multiplier)
+				.color(color, color, color, 1)
+				.next();
 
-		bufferBuilder.vertex(0, 0, this.getZOffset())
-				.texture(0, (this.height - 0.5F * this.time) * multiplier)
-				.color(color, color, color, 1).next();
+		bufferBuilder
+				.vertex(0, 0, 0)
+				.uv(0, (this.height - 0.5F * this.time) * multiplier)
+				.color(color, color, color, 1)
+				.next();
 
 		tessellator.draw();
 	}
 
 	private void load(String fileName, CreditsReader reader) {
-		Resource resource = null;
-
-		if (client != null) {
-			try {
-				resource = this.client.getResourceManager()
-						.getResource(Cabricality.id("texts", fileName));
-				InputStreamReader inputStreamReader =
-						new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8);
-				reader.read(inputStreamReader);
+		if (this.client != null) {
+			try (BufferedReader bufferedReader = this.client
+					.getResourceManager()
+					.openAsReader(Cabricality.id("texts", fileName))
+			){
+				reader.read(bufferedReader);
 			} catch (Exception exception) {
-				CabfLogger.logError("Couldn't load credits", exception);
-			} finally {
-				IOUtils.closeQuietly(resource);
+				Cabricality.LOGGER.error("Couldn't load credits", exception);
 			}
 		}
 	}
 
-	private void addPostCreditsFile(InputStreamReader reader) throws IOException {
+	private void readPostCredits(Reader reader) throws IOException {
 		BufferedReader bufferedReader = new BufferedReader(reader);
 		String string;
+
 		while ((string = bufferedReader.readLine()) != null) {
 			this.addText(string);
 			this.addEmptyLine();
 		}
-		for (int i = 0; i < 8; ++i)
-			this.addEmptyLine();
+
+		for (int i = 0; i < 8; ++i) this.addEmptyLine();
 	}
 
-	private void addCreditsFile(InputStreamReader reader) {
-		// Implemented from CreditsScreen so it may be a mess
-		JsonArray jsonArray = JsonHelper.m_lxlopfmi(reader);
+	private void readCredits(Reader reader) {
+		JsonArray sectionElements = JsonHelper.deserializeArray(reader);
 
-		for (JsonElement jsonElement : jsonArray) {
-			JsonObject jsonObject = jsonElement.getAsJsonObject();
-			String string = jsonObject.get("section").getAsString();
+		for (JsonElement sectionElement : sectionElements) {
+			JsonObject sectionObject = sectionElement.getAsJsonObject();
+			String section = sectionObject.get("section").getAsString();
+
 			this.addText(SEPARATOR_LINE, true);
-			this.addText((new LiteralText(string)).formatted(Formatting.YELLOW), true);
+			this.addText((Text.literal(section))
+					.formatted(Formatting.YELLOW),
+					true);
 			this.addText(SEPARATOR_LINE, true);
+
 			this.addEmptyLine();
 			this.addEmptyLine();
-			JsonArray jsonArray2 = jsonObject.getAsJsonArray("titles");
 
-			for (JsonElement jsonElement2 : jsonArray2) {
-				JsonObject jsonObject2 = jsonElement2.getAsJsonObject();
-				String string2 = jsonObject2.get("title").getAsString();
-				JsonArray jsonArray3 = jsonObject2.getAsJsonArray("names");
-				this.addText((new LiteralText(string2)).formatted(Formatting.GRAY), false);
+			JsonArray titleElements = sectionObject.getAsJsonArray("titles");
+			for (JsonElement titleElement : titleElements) {
+				JsonObject titleObject = titleElement.getAsJsonObject();
+				String title = titleObject.get("title").getAsString();
 
-				for (JsonElement jsonElement3 : jsonArray3) {
+
+				this.addText((Text.literal(title))
+						.formatted(Formatting.GRAY),
+						false);
+
+				JsonArray nameElements = titleObject.getAsJsonArray("names");
+				for (JsonElement nameElement : nameElements) {
 					PlayerEntity player = MinecraftClient.getInstance().player;
-					String string3 = jsonElement3.getAsString();
-					if (player != null) string3 = string3.replaceAll("PLAYERNAME", player.getName().asString());
-					this.addText((new LiteralText("           ")).append(string3)
-							.formatted(Formatting.WHITE), false);
+					String name = nameElement.getAsString();
+
+					if (player != null) name = name.replaceAll("PLAYERNAME", player.getName().getString());
+					this.addText((Text.literal("           "))
+							.append(name)
+							.formatted(Formatting.WHITE),
+							false);
 				}
 
 				this.addEmptyLine();
@@ -296,7 +322,7 @@ public class CabfCreditsScreen extends Screen {
 
 	private void addText(String text) {
 		if (this.client != null)
-			this.credits.addAll(this.client.textRenderer.wrapLines(new LiteralText(text), 274));
+			this.credits.addAll(this.client.textRenderer.wrapLines(Text.literal(text), 274));
 	}
 
 	private void addText(Text text, boolean centered) {
@@ -309,6 +335,6 @@ public class CabfCreditsScreen extends Screen {
 	@FunctionalInterface
 	@ClientOnly
 	private interface CreditsReader {
-		void read(InputStreamReader inputStreamReader) throws IOException;
+		void read(Reader reader) throws IOException;
 	}
 }

@@ -6,6 +6,7 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.math.PositionUtil;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
@@ -29,7 +30,14 @@ public class ChaoticCatalystJarBlock extends CatalystJarBlock {
         Random random = new Random();
         if (random.nextInt(2) == 0) {
             Vec3d vec3d = PositionUtil.fromBlockPos(pos);
-            world.createExplosion(null, DamageSource.MAGIC, null, vec3d.getX(), vec3d.getY(), vec3d.getZ(), random.nextFloat(0.1F, 7.5F), false, DestructionType.DESTROY);
+            world.createExplosion(
+					null,
+					MinecraftClient.getInstance().world.getDamageSources().magic(),
+					null,
+					vec3d.getX(), vec3d.getY(), vec3d.getZ(),
+					random.nextFloat(0.1F, 7.5F),
+					false, World.ExplosionSourceType.TNT
+			);
         }
         super.onBreak(world, pos, state, player);
     }

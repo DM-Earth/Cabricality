@@ -9,6 +9,7 @@ import net.krlite.equator.render.frame.FrameInfo;
 import net.krlite.equator.visual.color.Palette;
 import net.krlite.equator.visual.text.Paragraph;
 import net.krlite.equator.visual.text.Section;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.util.Window;
@@ -86,45 +87,63 @@ public class MissingModScreen extends Screen {
 			AtomicInteger index = new AtomicInteger(0);
 
 			missingMods.forEach(mod -> {
-				Text text = new LiteralText(mod.getRawName())
+				Text text = Text.literal(mod.getRawName())
 						.formatted(mod.hasUrl() ? Formatting.RESET : Formatting.STRIKETHROUGH)
 						.formatted(mod.isRequired() ? Formatting.RED : Formatting.LIGHT_PURPLE);
 				int y = 60 + (height - 90) * index.incrementAndGet() / ((int) missingMods.size() + 1);
+
 				// Brackets
-				modDownloadButton(mod, new LiteralText(brackets).formatted(Formatting.DARK_PURPLE), y);
+				modDownloadButton(mod, Text.literal(brackets).formatted(Formatting.DARK_PURPLE), y);
 				// Names
 				modDownloadButton(mod, text, y);
 			});
 
 			if (this.shouldCloseOnEsc()) {
-				Text blank = new LiteralText(" ".repeat(widest / 2 - 2));
-				Text quit = new LiteralText("[").append(blank).append("×").append(blank).append("]")
+				Text blank = Text.literal(" ".repeat(widest / 2 - 2));
+				Text quit = Text.literal("[")
+						.append(blank)
+						.append("×")
+						.append(blank)
+						.append("]")
 						.formatted(Formatting.RED);
-				Text skip = new LiteralText("[").append(blank).append("→").append(blank).append("]")
+				Text skip = Text.literal("[")
+						.append(blank)
+						.append("→")
+						.append(blank)
+						.append("]")
 						.formatted(Formatting.WHITE);
+
 				// Bracketed icons
 				skipAndQuitButton(quit, skip, this.height - 30, this.textRenderer.getWidth(brackets));
 			} else {
 				// Brackets
-				quitButton(new LiteralText(brackets).formatted(Formatting.RED), this.height - 30);
+				quitButton(Text.literal(brackets).formatted(Formatting.RED), this.height - 30);
 				// Icon
-				quitButton(new LiteralText("×").formatted(Formatting.RED), this.height - 30);
+				quitButton(Text.literal("×").formatted(Formatting.RED), this.height - 30);
 			}
-		} else {
-			this.client.setScreen(parent);
 		}
+
+		else this.client.setScreen(parent);
 	}
 
-	public void render(MatrixStack matrixStack, int mouseX, int mouseY, float delta) {
-		if (this.renderBackgroundTexture) this.renderBackground(matrixStack);
+	@Override
+	public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
+		if (this.renderBackgroundTexture) this.renderBackground(graphics);
 
-		super.render(matrixStack, mouseX, mouseY, delta);
+		super.render(graphics, mouseX, mouseY, delta);
 
-		MutableText title = new LiteralText(this.title.getString()).formatted(Formatting.BOLD);
-		MutableText subtitle = Cabricality.genTranslatableText("screen", "missing_mod", "subtitle" + (missingMods.size() == 1 ? "" : "_plural"));
-		MutableText description = Cabricality.genTranslatableText("screen", "missing_mod", "description");
+		MutableText title = Text.literal(this.title.getString()).formatted(Formatting.BOLD);
+		MutableText subtitle = (MutableText) Cabricality.genTranslatableText(
+				"screen",
+				"missing_mod", "subtitle" + (missingMods.size() == 1 ? "" : "_plural")
+		);
+		MutableText description = (MutableText) Cabricality.genTranslatableText(
+				"screen",
+				"missing_mod", "description"
+		);
 
-		FrameInfo.scaled().translate(0, -0.7).render(matrixStack,
+		FrameInfo.scaled().translate(0, -0.7).render(
+				graphics,
 				flat -> flat.new Text(
 						section -> section
 										   .appendTitle(title)
@@ -134,20 +153,21 @@ public class MissingModScreen extends Screen {
 		);
 	}
 
-	public void renderBackground(MatrixStack matrixStack) {
+	@Override
+	public void renderBackground(GuiGraphics graphics) {
 		if (CabricalityClient.cubeMapRenderer() != null) {
-			matrixStack.push();
-			matrixStack.loadIdentity();
-			matrixStack.translate(0.0F, 0.0F, -2000.0F);
+			graphics.getMatrices().push();
+			graphics.getMatrices().loadIdentity();
+			graphics.getMatrices().translate(0.0F, 0.0F, -2000.0F);
 			RenderSystem.applyModelViewMatrix();
 
 			CabricalityClient.cubeMapRenderer().render(MinecraftClient.getInstance().getLastFrameDuration(), 1);
 
-			matrixStack.pop();
+			graphics.getMatrices().pop();
 			RenderSystem.applyModelViewMatrix();
-		} else {
-			super.renderBackground(matrixStack);
 		}
+
+		else super.renderBackground(graphics);
 	}
 
 	private void modDownloadButton(CabfModDeps mod, Text text, int y) {
@@ -165,12 +185,12 @@ public class MissingModScreen extends Screen {
 		this.addDrawableChild(
 				new PlainTextButtonWidget(
 						this.width / 2 - wideness / 2, y,
-						this.textRenderer.getWidth(quit), 10, quit, buttonWidget -> {
-					// Open mods folder
-					Util.getOperatingSystem()
-							.open(QuiltLoader.getGameDir().resolve("mods").toFile());
-					if (this.client != null) client.stop();
-				}, this.textRenderer
+						this.textRenderer.getWidth(quit), 10,
+						quit, buttonWidget -> {
+							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile());
+							if (this.client != null) client.stop();
+							},
+						this.textRenderer
 				)
 		);
 
@@ -188,12 +208,12 @@ public class MissingModScreen extends Screen {
 		this.addDrawableChild(
 				new PlainTextButtonWidget(
 						this.width / 2 - this.textRenderer.getWidth(quit) / 2, y,
-						this.textRenderer.getWidth(quit), 10, quit, buttonWidget -> {
-					// Open mods folder
-					Util.getOperatingSystem()
-							.open(QuiltLoader.getGameDir().resolve("mods").toFile());
-					if (this.client != null) client.stop();
-				}, this.textRenderer
+						this.textRenderer.getWidth(quit), 10,
+						quit, buttonWidget -> {
+							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile());
+							if (this.client != null) client.stop();
+							},
+						this.textRenderer
 				)
 		);
 	}

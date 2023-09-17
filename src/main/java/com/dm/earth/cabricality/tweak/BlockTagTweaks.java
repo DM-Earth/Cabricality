@@ -1,14 +1,13 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.PM;
-import static com.dm.earth.cabricality.ModEntry.TRE;
-
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+
+import static com.dm.earth.cabricality.ModEntry.PM;
+import static com.dm.earth.cabricality.ModEntry.TRE;
 
 public class BlockTagTweaks implements LoadTagsCallback<Block> {
 
@@ -17,7 +16,7 @@ public class BlockTagTweaks implements LoadTagsCallback<Block> {
 	}
 
 	@Override
-	public void load(TagHandler<Block> handler) {
+	public void onTagsLoad(TagHandler<Block> handler) {
 		// Promenade
 		compatLeaves(handler, PM.asBlock("autumn_birch_leaves"), Blocks.BIRCH_LOG);
 		compatLeaves(handler, PM.asBlock("autumn_oak_leaves"), Blocks.OAK_LOG);
@@ -44,7 +43,7 @@ public class BlockTagTweaks implements LoadTagsCallback<Block> {
 	}
 
 	private void compatLeaves(TagHandler<Block> handler, Block leaves, Block... logs) {
-		Identifier leaf = Registry.BLOCK.getId(leaves);
+		Identifier leaf = Registries.BLOCK.getId(leaves);
 		handler.register(new Identifier(leaf.getNamespace(), "leaves_groups/" + leaf.getPath()), logs);
 	}
 

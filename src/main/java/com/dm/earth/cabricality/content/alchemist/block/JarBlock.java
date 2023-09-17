@@ -7,7 +7,6 @@ import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.lib.math.VoxelShapeUtil;
 import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
 import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
-import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

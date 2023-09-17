@@ -1,14 +1,12 @@
 package com.dm.earth.cabricality.content.alchemist.core;
 
-import java.util.Objects;
-
+import com.dm.earth.cabricality.Cabricality;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 
-import com.dm.earth.cabricality.Cabricality;
-
-import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import java.util.Objects;
 
 public class Reagent extends Substrate {
 	private final Identifier item;
@@ -38,6 +36,6 @@ public class Reagent extends Substrate {
 	}
 
 	public Item getItem() {
-		return Objects.requireNonNull(Registry.ITEM.get(this.getItemId()));
+		return Objects.requireNonNull(Registries.ITEM.get(this.getItemId()));
 	}
 }

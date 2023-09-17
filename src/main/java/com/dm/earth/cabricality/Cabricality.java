@@ -28,6 +28,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
@@ -110,7 +111,7 @@ public class Cabricality implements ModInitializer {
 	}
 
 	@Contract("_,_ -> new")
-	public static @NotNull Text genTranslatableText(String type, String... path) {
+	public static @NotNull MutableText genTranslatableText(String type, String... path) {
 		return Text.translatable(genTranslationKey(type, path));
 	}
 

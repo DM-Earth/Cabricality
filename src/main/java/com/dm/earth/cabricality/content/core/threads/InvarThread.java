@@ -304,11 +304,11 @@ public class InvarThread implements TechThread {
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
 		handler.remove(CR.id("mechanical_crafting", "crushing_wheel"));
-		handler.removeIf(IR.predicateOutput(false, "machine_block"));
+		handler.removeIf(IR.predicateOutput(handler.getRegistryManager(), false, "machine_block"));
 		handler.removeIf(
 				p -> !CABF.checkContains(p)
 						&& REMOVE_OUTPUTS.stream()
-						.anyMatch(id -> id.equals(Registries.ITEM.getId(p.getResult(null).getItem())))
+						.anyMatch(id -> id.equals(Registries.ITEM.getId(p.getResult(handler.getRegistryManager()).getItem())))
 		);
 	}
 }

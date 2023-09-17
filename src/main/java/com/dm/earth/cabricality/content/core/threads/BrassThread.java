@@ -128,7 +128,7 @@ public class BrassThread implements TechThread {
 	}
 
 	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
-		handler.register(recipeId("milling", Registries.ITEM.getKey(crystal).get().getRegistry().getPath()),
+		handler.register(recipeId("milling", Registries.ITEM.getId(crystal).getPath()),
 				id -> new MillingRecipe(
 						new FreePRP(id)
 								.setIngredient(Ingredient.ofItems(crystal))
@@ -137,7 +137,7 @@ public class BrassThread implements TechThread {
 				)
 		);
 
-		handler.register(recipeId("mechanical_crafting", Registries.ITEM.getKey(seed).get().getRegistry().getPath()),
+		handler.register(recipeId("mechanical_crafting", Registries.ITEM.getId(seed).getPath()),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
 						VanillaRecipeBuilders
 								.shapedRecipe("x")
@@ -151,7 +151,7 @@ public class BrassThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(AE2.predicateOutput(false, "sky_dust"));
+		handler.removeIf(AE2.predicateOutput(handler.getRegistryManager(), false, "sky_dust"));
 		handler.remove(CR.id("crafting", "materials", "electron_tube"));
 		handler.remove(CR.id("crafting", "materials", "rose_quartz"));
 		handler.remove(CR.id("sequenced_assembly", "precision_mechanism"));

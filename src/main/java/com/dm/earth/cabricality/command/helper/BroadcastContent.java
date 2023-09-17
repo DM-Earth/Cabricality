@@ -2,6 +2,7 @@ package com.dm.earth.cabricality.command.helper;
 
 import net.krlite.equator.visual.color.AccurateColor;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -33,6 +34,6 @@ public record BroadcastContent(
 	@Override
 	public void accept(ServerPlayerEntity player) {
 		if (!exclude || player != sender)
-			player.sendMessage(sender.getDisplayName().shallowCopy().append(message).setStyle(style), actionBar);
+			player.sendMessage(((MutableText) sender.getDisplayName()).append(message).setStyle(style), actionBar);
 	}
 }

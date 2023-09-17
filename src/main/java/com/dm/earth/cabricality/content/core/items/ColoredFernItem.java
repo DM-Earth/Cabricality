@@ -1,13 +1,12 @@
 package com.dm.earth.cabricality.content.core.items;
 
+import com.dm.earth.cabricality.content.entries.CabfItems;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
+
 import static com.dm.earth.cabricality.ModEntry.AE2;
 import static com.dm.earth.cabricality.ModEntry.MC;
-
-import com.dm.earth.cabricality.content.entries.CabfItems;
-
-import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public abstract class ColoredFernItem extends Item {
 	public final int tint;
@@ -61,7 +60,7 @@ public abstract class ColoredFernItem extends Item {
 		}
 
 		public Item getOutputItem() {
-			return Registry.ITEM.get(output);
+			return Registries.ITEM.get(output);
 		}
 	}
 }

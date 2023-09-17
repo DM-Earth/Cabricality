@@ -1,22 +1,21 @@
 package com.dm.earth.cabricality.content.core.items;
 
-import java.util.Random;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.ModEntry;
 import com.dm.earth.cabricality.content.entries.CabfSounds;
 import com.dm.earth.cabricality.lib.util.debug.CabfLogger;
-
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class FlippableItem extends Item {
 
@@ -34,7 +33,7 @@ public class FlippableItem extends Item {
 
 			if (world.isClient())
 				MinecraftClient.getInstance().gameRenderer.showFloatingItem(ModEntry.CABF
-						.asItem(Registry.ITEM.getId(this).getPath() + (side ? "_top" : "_bottom"))
+						.asItem(Registries.ITEM.getId(this).getPath() + (side ? "_top" : "_bottom"))
 						.getDefaultStack());
 			flip(world, player, side);
 
@@ -45,7 +44,7 @@ public class FlippableItem extends Item {
 
 	@SuppressWarnings("all")
 	private void flip(World world, PlayerEntity player, boolean side) {
-		String name = Registry.ITEM.getId(this).getPath();
+		String name = Registries.ITEM.getId(this).getPath();
 
 		// Send message to client
 		if (world.isClient())

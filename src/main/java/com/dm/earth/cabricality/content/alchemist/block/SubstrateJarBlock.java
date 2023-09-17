@@ -22,8 +22,9 @@ public abstract class SubstrateJarBlock extends JarBlock implements BlockItemSet
 
 	@Override
 	public MutableText getName() {
-		return Text.translatable(this.getSubstrate().getTranslationKey())
-					   .append(Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_jar"));
+		return Text
+				.translatable(this.getSubstrate().getTranslationKey())
+				.append(Cabricality.genTranslatableText("block", this.getSubstrate().getType() + "_jar"));
 	}
 
 	public abstract Substrate getSubstrate();
