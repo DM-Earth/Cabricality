@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> 因開源協議不允許，請手動安裝 **[FTB Library、](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)** **[FTB Quests、](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)** **[FTB Teams、](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)** **[Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)** 和 **[Quests Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric)** 模組！
+> 因協議不允許，請手動安裝 **[FTB Library、](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)** **[FTB Quests、](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)** **[FTB Teams、](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)** **[Item Filters](https://www.curseforge.com/minecraft/mc-mods/item-filters)** 和 **[Quests Additions](https://www.curseforge.com/minecraft/mc-mods/quests-additions-fabric)** 模組！
 
 <blockquote>
   <details>
