@@ -8,6 +8,7 @@ import net.krlite.equator.render.frame.FrameInfo;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.krlite.equator.visual.color.AccurateColor;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.util.math.MatrixStack;
@@ -27,10 +28,10 @@ public class ScreenAnimator {
 	private static final AnimatedDouble opacity = new AnimatedDouble(0, 1, 450, Curves.Exponential.Quadratic.OUT);
 
 	@ModifyArgs(
-			method = "renderBackground(Lnet/minecraft/client/util/math/MatrixStack;I)V",
+			method = "renderBackground",
 			at = @At(
 					value = "INVOKE",
-					target = "Lnet/minecraft/client/gui/screen/Screen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"
+					target = "Lnet/minecraft/client/gui/GuiGraphics;fillGradient(IIIIII)V"
 			)
 	)
 	private void fadeIn(Args args) {
@@ -54,7 +55,7 @@ class PostScreenAnimator {
 			method = "render",
 			at = @At(
 					value = "INVOKE",
-					target = "Lnet/minecraft/client/gui/hud/InGameHud;render(Lnet/minecraft/client/util/math/MatrixStack;F)V",
+					target = "Lnet/minecraft/client/gui/hud/InGameHud;render(Lnet/minecraft/client/gui/GuiGraphics;F)V",
 					shift = At.Shift.AFTER
 			)
 	)
@@ -63,7 +64,7 @@ class PostScreenAnimator {
 			PushUtil.POST_SCREEN.pull(opacity::replay);
 
 			if (opacity.isPlaying()) {
-				FrameInfo.scaled().render(new MatrixStack(),
+				FrameInfo.scaled().render(new GuiGraphics(MinecraftClient.getInstance(), MinecraftClient.getInstance().getBufferBuilders().getEntityVertexConsumers()),
 						flat -> flat.new Rectangle()
 										.colorTop(AccurateColor.fromARGB(0xC0101010L))
 										.colorBottom(AccurateColor.fromARGB(0xD0101010L))

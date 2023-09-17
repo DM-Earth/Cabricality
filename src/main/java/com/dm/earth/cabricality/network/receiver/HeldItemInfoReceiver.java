@@ -1,5 +1,6 @@
 package com.dm.earth.cabricality.network.receiver;
 
+import net.minecraft.text.MutableText;
 import org.quiltmc.qsl.networking.api.PacketSender;
 import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
 
@@ -51,7 +52,11 @@ public class HeldItemInfoReceiver implements ServerPlayNetworking.ChannelReceive
 			PacketByteBuf buf, PacketSender responseSender) {
 		ItemStack stack = buf.readItemStack();
 		server.execute(() -> server.getPlayerManager().getPlayerList().stream().filter(p -> p != player).forEach(
-				new BroadcastContent(player, Cabricality.genTranslatableText("command", "held_item_info", "showing")
-						.append(stack.toHoverableText()))));
+				new BroadcastContent(
+						player,
+						((MutableText) Cabricality.genTranslatableText("command", "held_item_info", "showing"))
+								.append(stack.toHoverableText())
+				)
+		));
 	}
 }

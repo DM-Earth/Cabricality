@@ -12,8 +12,11 @@ import net.krlite.equator.visual.animation.base.Interpolation;
 import net.krlite.equator.visual.animation.interpolated.InterpolatedVector;
 import net.krlite.equator.visual.color.Palette;
 import net.krlite.equator.visual.color.base.ColorStandard;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.SplashOverlay;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -55,7 +58,14 @@ public class SplashModifier {
 		});
 	}
 
-	@ModifyArgs(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/GlStateManager;_clearColor(FFFF)V", remap = false))
+	@ModifyArgs(
+			method = "render",
+			at = @At(
+					value = "INVOKE",
+					target = "Lcom/mojang/blaze3d/platform/GlStateManager;_clearColor(FFFF)V",
+					remap = false
+			)
+	)
 	private void renderStaticBackground(Args args) {
 		float
 				red = Cabricality.Colors.CABF_DIM_PURPLE.redAsFloat(),
@@ -69,8 +79,15 @@ public class SplashModifier {
 		args.set(3, alpha);
 	}
 
-	@Inject(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/util/Identifier;)V"))
-	private void renderLogo(MatrixStack matrixStack, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+	@Inject(
+			method = "render",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/client/gui/GuiGraphics;setShaderColor(FFFF)V",
+					ordinal = 0
+			)
+	)
+	private void renderLogo(GuiGraphics graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
 		double
 				complete = reloadCompleteTime > -1 ? (float) (Util.getMeasuringTimeMs() - reloadCompleteTime) / 1000 : -1,
 				start = reloadStartTime > -1 ? (float) (Util.getMeasuringTimeMs() - reloadStartTime) / 500 : -1;
@@ -91,7 +108,7 @@ public class SplashModifier {
 		// Background
 		background: {
 			FrameInfo.scaled()
-					.render(matrixStack,
+					.render(graphics,
 							flat -> flat.new Rectangle()
 											.colors(Cabricality.Colors.CABF_DIM_PURPLE)
 											.opacityMultiplier(opacity)
@@ -107,7 +124,7 @@ public class SplashModifier {
 					.squareInner()
 					.scaleCenter(0.8)
 					.shift(shift.scale(-0.05))
-					.render(matrixStack,
+					.render(graphics,
 							flat -> flat.new Oval()
 											.offset(offset)
 											.radians(radians)
@@ -128,7 +145,7 @@ public class SplashModifier {
 					.scaleCenter(0.7)
 					.scaleCenter(1 + 1.1 * Math.pow(1 - logoOpacity, 1D / 2D))
 					.shift(shift.scale(0.05))
-					.render(matrixStack,
+					.render(graphics,
 							flat -> flat.new Oval()
 											.colorCenter(Cabricality.Colors.CABF_MID_PURPLE)
 											.opacityMultiplier(logoOpacity)
@@ -143,7 +160,7 @@ public class SplashModifier {
 					.scaleCenter(0.55)
 					.scaleCenter(1 + 0.1 * shifting.value().magnitude() / (FrameInfo.scaled().d() / 2))
 					.shift(shift)
-					.render(matrixStack,
+					.render(graphics,
 							flat -> flat.new Rectangle()
 											.texture(Cabricality.Textures.CABRICALITY_LOGO_NEON)
 					);
@@ -152,18 +169,36 @@ public class SplashModifier {
 		}
 	}
 
-	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/SplashOverlay;fill(Lnet/minecraft/client/util/math/MatrixStack;IIIII)V"))
-	private void clearBackground(MatrixStack matrixStack, int xBegin, int yBegin, int xEnd, int yEnd, int color) {
+	@Redirect(
+			method = "render",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/client/gui/GuiGraphics;fill(Lnet/minecraft/client/render/RenderLayer;IIIII)V"
+			)
+	)
+	private void clearBackground(GuiGraphics graphics, RenderLayer layer, int x1, int y1, int x2, int y2, int color) {
 		// Do nothing
 	}
 
-	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/SplashOverlay;drawTexture(Lnet/minecraft/client/util/math/MatrixStack;IIIIFFIIII)V"))
-	private void clearMojangLogo(MatrixStack matrixStack, int x, int y, int width, int height, float u, float v, int regionWidth, int regionHeight, int textureWidth, int textureHeight) {
+	@Redirect(
+			method = "render",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/client/gui/GuiGraphics;drawTexture(Lnet/minecraft/util/Identifier;IIIIFFIIII)V"
+			)
+	)
+	private void clearMojangLogo(GuiGraphics graphics, Identifier texture, int x, int y, int width, int height, float u, float v, int regionWidth, int regionHeight, int textureWidth, int textureHeight) {
 		// Do nothing
 	}
 
-	@Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/SplashOverlay;renderProgressBar(Lnet/minecraft/client/util/math/MatrixStack;IIIIF)V"))
-	private void clearProgressBar(SplashOverlay splashOverlay, MatrixStack matrixStack, int xMin, int yMin, int xMax, int yMax, float opacity) {
+	@Redirect(
+			method = "render",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/client/gui/screen/SplashOverlay;renderProgressBar(Lnet/minecraft/client/gui/GuiGraphics;IIIIF)V"
+			)
+	)
+	private void clearProgressBar(SplashOverlay splashOverlay, GuiGraphics graphics, int minX, int minY, int maxX, int maxY, float opacity) {
 		// Do nothing
 	}
 

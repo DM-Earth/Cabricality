@@ -1,17 +1,17 @@
 package com.dm.earth.cabricality.lib.resource.data.core;
 
-import java.util.Optional;
-
 import com.dm.earth.cabricality.lib.resource.data.recipe.ProcessItemOutputCallback;
-import org.jetbrains.annotations.NotNull;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tag.TagKey;
-import net.minecraft.util.HolderSet;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.HolderSet;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.TagKey;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.mantle.recipe.helper.ItemOutput;
+
+import java.util.Optional;
 
 public class TaggedItemOutput extends ItemOutput {
 
@@ -25,7 +25,7 @@ public class TaggedItemOutput extends ItemOutput {
 
 	@Override
 	public @NotNull ItemStack get() {
-		Optional<HolderSet.NamedSet<Item>> set = Registry.ITEM.getTag(this.tagKey);
+		Optional<HolderSet.NamedSet<Item>> set = Registries.ITEM.getTag(this.tagKey);
 		if (set.isPresent() && set.get().size() > 0) {
 			return ProcessItemOutputCallback.process(new ItemStack(set.get().get(0).value(), this.count));
 		}

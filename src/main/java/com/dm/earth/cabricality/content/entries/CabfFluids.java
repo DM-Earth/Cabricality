@@ -14,6 +14,8 @@ import com.dm.earth.cabricality.lib.resource.assets.gen.fluid.FluidModelGenerato
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -74,25 +76,28 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 	}
 
 	private static void registerFluid(Identifier id, Identifier stillId, Fluid fluid) {
-		Registry.register(Registry.FLUID, id, fluid);
-		if (!fluid.isStill(null))
-			CabfBlocks.registerFluidBlock(stillId, (FlowableFluid) fluid);
+		Registry.register(Registries.FLUID, id, fluid);
+		if (!fluid.isSource(null)) CabfBlocks.registerFluidBlock(stillId, (FlowableFluid) fluid);
 	}
 
 	private static void registerIFluid(Fluid fluid) {
 		IFluid iFluid = (IFluid) fluid;
 		registerFluid(iFluid.getId(), ((IFluid) iFluid.getTypical()).getId(), fluid);
-		iFluid.registerBucketItem(Registry.ITEM);
-		if (fluid.isStill(null)) {
+		iFluid.registerBucketItem(Registries.ITEM);
+		if (fluid.isSource(null)) {
 			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
-					FluidBlockStatesGenerator.simple(iFluid.getName()), iFluid.getId());
+					iFluid.getId(),
+					FluidBlockStatesGenerator.simple(iFluid.getName())
+			);
 			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
-					FluidBlockStatesGenerator.simple(iFluid.getName()),
-					Cabricality.id(iFluid.getName() + "_flowing"));
+					Cabricality.id(iFluid.getName() + "_flowing"),
+					FluidBlockStatesGenerator.simple(iFluid.getName())
+			);
 			Cabricality.RRPs.CLIENT_RESOURCES.addModel(
+					Cabricality.id("block/fluid/" + iFluid.getName()),
 					FluidModelGenerator.simple(iFluid.getTextureName() + "_still",
-							iFluid.getTextureName()),
-					Cabricality.id("block/fluid/" + iFluid.getName()));
+							iFluid.getTextureName())
+			);
 		}
 	}
 

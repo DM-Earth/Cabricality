@@ -1,11 +1,10 @@
 package com.dm.earth.cabricality.lib.resource.assets.gen.fluid;
 
 import com.dm.earth.cabricality.Cabricality;
-
-import net.devtech.arrp.json.models.JModel;
+import pers.solid.brrp.v1.model.ModelJsonBuilder;
 
 public class FluidModelGenerator {
-	public static JModel simple(String id, String rawId) {
-		return new JModel().addTexture("particle", Cabricality.id("fluid/" + rawId + "/" + id).toString());
+	public static ModelJsonBuilder simple(String id, String rawId) {
+		return new ModelJsonBuilder().addTexture("particle", Cabricality.id("fluid/" + rawId + "/" + id).toString());
 	}
 }

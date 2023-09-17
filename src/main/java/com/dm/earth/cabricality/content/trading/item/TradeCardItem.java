@@ -4,6 +4,7 @@ import com.dm.earth.cabricality.content.trading.core.TradingEntry;
 import com.dm.earth.cabricality.content.trading.core.TradingEntryRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -16,7 +17,7 @@ public class TradeCardItem extends AbstractTradeCardItem {
 
 	@Override
 	public String getContentString() {
-		return new TranslatableText(TradingEntryRegistry.fromItem(this).getItem().getTranslationKey()).getString();
+		return Text.translatable(TradingEntryRegistry.fromItem(this).getItem().getTranslationKey()).getString();
 	}
 
 	@Override

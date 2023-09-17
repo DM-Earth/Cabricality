@@ -23,6 +23,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import me.shedaniel.rei.api.client.registry.screen.ExclusionZones;
+import net.minecraft.registry.Registries;
+import net.minecraft.text.Text;
 import org.quiltmc.loader.api.QuiltLoader;
 
 import com.dm.earth.cabricality.Cabricality;
@@ -88,8 +90,8 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 				.orElse(subs[0]);
 	}
 
-	private TranslatableText convertToTranslatableText(String prefix, Identifier identifier) {
-		return new TranslatableText(prefix + "." + identifier.getNamespace() + "." + String.join(".", identifier.getPath()));
+	private Text convertToTranslatableText(String prefix, Identifier identifier) {
+		return Text.translatable(prefix + "." + identifier.getNamespace() + "." + String.join(".", identifier.getPath()));
 	}
 
 	/**
@@ -99,7 +101,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @param identifier The identifier.
 	 * @return The tagged text.
 	 */
-	private TranslatableText tag(Identifier identifier) {
+	private Text tag(Identifier identifier) {
 		return convertToTranslatableText("tag", identifier);
 	}
 
@@ -110,7 +112,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 	 * @param identifier The identifier.
 	 * @return The coled text.
 	 */
-	private TranslatableText col(Identifier identifier) {
+	private Text col(Identifier identifier) {
 		return convertToTranslatableText("col", identifier);
 	}
 
@@ -165,7 +167,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		// Enchanted books
 		registry.group(MC.id("enchanted_books"),
 				col(MC.id("enchanted_books")),
-				predicateIds(Registry.ITEM.getId(Items.ENCHANTED_BOOK)));
+				predicateIds(Registries.ITEM.getId(Items.ENCHANTED_BOOK)));
 		// Potions
 		Arrays.stream(new String[] { null, "lingering", "splash" }).forEach(
 				prefix -> registry.group(MC.id(joinAll(prefix, "potions")),
@@ -174,7 +176,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 		// Tipped arrows
 		registry.group(MC.id("tipped_arrows"),
 				col(MC.id("tipped_arrows")),
-				predicateIds(Registry.ITEM.getId(Items.TIPPED_ARROW)));
+				predicateIds(Registries.ITEM.getId(Items.TIPPED_ARROW)));
 		// Glazed terracottas
 		registry.group(MC.id("glazed_terracottas"),
 				col(MC.id("glazed_terracottas")),

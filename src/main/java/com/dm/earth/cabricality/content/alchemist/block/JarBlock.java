@@ -1,22 +1,21 @@
 package com.dm.earth.cabricality.content.alchemist.block;
 
 import com.dm.earth.cabricality.Cabricality;
-
-import org.jetbrains.annotations.Nullable;
-
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Reagent;
 import com.dm.earth.cabricality.content.entries.CabfBlocks;
 import com.dm.earth.cabricality.lib.math.VoxelShapeUtil;
 import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
-
+import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
 import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.data.client.model.BlockStateSupplier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -24,13 +23,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
+import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
 public class JarBlock extends Block implements ResourcedBlock {
@@ -74,12 +73,12 @@ public class JarBlock extends Block implements ResourcedBlock {
 
 	@Override
 	public boolean doItemModel() {
-		return true;
-	}
+        return ResourcedBlock.super.doItemModel();
+    }
 
 	@Override
-	public @Nullable JBlockStates getBlockStates() {
-		return JBlockStates.simple(this.getBlockModelId());
+	public @Nullable BlockStateSupplier getBlockStates() {
+		return BlockStatesGenerator.simple(getBaseBlock(), getBlockModelId());
 	}
 
 	@Override
@@ -114,7 +113,7 @@ public class JarBlock extends Block implements ResourcedBlock {
 		stack.decrement(1);
 		player.setStackInHand(Hand.MAIN_HAND, stack);
 		world.setBlockState(pos,
-				Registry.BLOCK.get(Cabricality.id("reagent_jar_" + reagent.hashString())).getDefaultState());
+				Registries.BLOCK.get(Cabricality.id("reagent_jar_" + reagent.hashString())).getDefaultState());
 		return ActionResult.SUCCESS;
 	}
 }

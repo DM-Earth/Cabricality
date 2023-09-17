@@ -1,18 +1,5 @@
 package com.dm.earth.cabricality;
 
-import net.krlite.equator.visual.color.AccurateColor;
-import net.krlite.equator.visual.texture.Texture;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
-import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
-import org.quiltmc.qsl.item.group.api.QuiltItemGroup;
-import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
-import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.dm.earth.cabricality.config.CabfConfig;
 import com.dm.earth.cabricality.content.alchemist.Alchemist;
 import com.dm.earth.cabricality.content.core.TechThread;
@@ -28,17 +15,34 @@ import com.dm.earth.cabricality.listener.UseEntityListener;
 import com.dm.earth.cabricality.network.CabfReceiver;
 import com.dm.earth.cabricality.tweak.BlockTagTweaks;
 import com.dm.earth.cabricality.tweak.ItemTagTweaks;
-
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
-import net.devtech.arrp.api.RRPCallback;
-import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.EnvType;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.krlite.equator.visual.color.AccurateColor;
+import net.krlite.equator.visual.texture.Texture;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.loader.api.minecraft.ClientOnly;
+import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
+import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
+import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import pers.solid.brrp.v1.api.RuntimeResourcePack;
+import pers.solid.brrp.v1.fabric.api.RRPCallback;
+
+import java.util.function.Supplier;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
@@ -53,8 +57,6 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
-		public static final Texture CABRICALITY_TITLE = texture("gui", "title", "cabricality");
-		public static final Texture MINECRAFT_SUBTITLE = texture("gui", "title", "minecraft");
 		public static final Texture CABRICALITY_LOGO = texture("gui", "title", "logo");
 		public static final Texture CABRICALITY_LOGO_NEON = texture("gui", "title", "logo_neon");
 	}
@@ -66,10 +68,18 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class ItemGroups {
-		public static ItemGroup MAIN_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("main"),
-				() -> Registry.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
-		public static ItemGroup SUBSTRATES_GROUP = QuiltItemGroup.createWithIcon(Cabricality.id("substrates"),
-				() -> Registry.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+		public static ItemGroup GENERAL = create(Cabricality.id("main"),
+				() -> Registries.ITEM.get(Cabricality.id("andesite_machine")).getDefaultStack());
+		public static ItemGroup SUBSTRATES = create(Cabricality.id("substrates"),
+				() -> Registries.ITEM.get(Cabricality.id("jar")).getDefaultStack());
+
+		private static ItemGroup create(Identifier identifier, Supplier<ItemStack> icon) {
+			RegistryKey<ItemGroup> key = RegistryKey.of(RegistryKeys.ITEM_GROUP, identifier);
+
+			return Registry.register(Registries.ITEM_GROUP, key, FabricItemGroup.builder()
+					.icon(icon)
+					.build());
+		}
 	}
 
 	public static class RRPs {
@@ -79,8 +89,7 @@ public class Cabricality implements ModInitializer {
 				.create(id("server_resources"));
 	}
 
-	public static final String NAME = "Cabricality";
-	public static final String ID = "cabricality";
+	public static final String ID = "cabricality", NAME = "Cabricality";
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 	public static final CabfConfig CONFIG = new CabfConfig();
 	private static long initTime = -1;
@@ -101,8 +110,8 @@ public class Cabricality implements ModInitializer {
 	}
 
 	@Contract("_,_ -> new")
-	public static @NotNull TranslatableText genTranslatableText(String type, String... path) {
-		return new TranslatableText(genTranslationKey(type, path));
+	public static @NotNull Text genTranslatableText(String type, String... path) {
+		return Text.translatable(genTranslationKey(type, path));
 	}
 
 	@ClientOnly
@@ -144,11 +153,8 @@ public class Cabricality implements ModInitializer {
 		if (initTime != -1) {
 			double millis = System.currentTimeMillis() - initTime;
 
-			Cabricality.LOGGER.info(
-					"⚙️ " + NAME + " has initialized in "
-							+ (millis >= 1000 ? (millis / 1000.0 + "s") : (millis + "ms"))
-							+ "!"
-			);
+			Cabricality.LOGGER.info("⚙️ " + NAME + " has initialized in "
+					+ (millis >= 1000 ? (millis / 1000.0 + "s") : (millis + "ms")) + "!");
 
 			initTime = -1;
 		}

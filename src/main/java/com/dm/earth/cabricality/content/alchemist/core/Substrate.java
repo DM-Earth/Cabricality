@@ -37,7 +37,7 @@ public abstract class Substrate implements HashStringable {
 	}
 
 	public Text getName() {
-		return new TranslatableText(this.getTranslationKey());
+		return Text.translatable(this.getTranslationKey());
 	}
 
 	public abstract String getType();

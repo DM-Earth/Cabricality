@@ -7,21 +7,13 @@
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
     "FluidBlockMixin",
-    "ItemStackMixin",
     "LavaFluidMixin",
     "WrenchItemMixin",
-    "ad_astra.VehicleEntityMixin",
-    "led.DiodeLampBlockAccessor",
-    "log.Slf4jHandler$MinecraftServerLogger",
-    "log.Slf4jHandler$ReloadableResourceManagerLogger",
-    "log.Slf4jHandler$UtilLogger",
-    "malum.EldritchInfernalRiteFixer",
     "porting_lib.FluidTankMixin",
     "porting_lib.ItemStackHandlerMixin",
     "recipe.AbstractCookingRecipeMixin",
     "recipe.ShapedRecipeMixin",
     "recipe.ShapelessRecipeMixin",
-    "recipe.ad_astra.CookingRecipeMixin",
     "recipe.create.ProcessingOutputMixin",
     "recipe.farmersdelight.ChanceResultMixin",
     "recipe.farmersdelight.CuttingBoardRecipeMixin",
@@ -50,12 +42,11 @@
     "client.ftbquests.ClientQuestFileAnimator",
     "client.ftbquests.ContextMenuAnimator",
     "client.ftbquests.CreditsTrigger",
-    "client.ftbquests.ModpackButtonAnimator",
+    "client.ftbquests.ModPackButtonAnimator",
     "client.ftbquests.QuestObjectAnimator",
     "client.ftbquests.QuestPanelAnimator",
     "client.ftbquests.QuestScreenAnimator",
-    "client.ftbquests.ViewQuestPanelAnimator",
-    "client.malum.ProgressionBookScreenTextWrapper"
+    "client.ftbquests.ViewQuestPanelAnimator"
   ],
   "injectors": {
     "defaultRequire": 0

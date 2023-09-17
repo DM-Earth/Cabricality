@@ -9,11 +9,11 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -68,7 +68,7 @@ public class BaseFluid extends Fluid implements IFluid {
 	}
 
 	@Override
-	public boolean isStill(FluidState state) {
+	public boolean isSource(FluidState state) {
 		return true;
 	}
 
@@ -80,11 +80,6 @@ public class BaseFluid extends Fluid implements IFluid {
 	@Override
 	public VoxelShape getShape(FluidState state, BlockView world, BlockPos pos) {
 		return VoxelShapes.empty();
-	}
-
-	@Override
-	public Identifier getRegistryName() {
-		return this.getId();
 	}
 
 	@Override
@@ -121,8 +116,8 @@ public class BaseFluid extends Fluid implements IFluid {
 	@Override
 	public Item getBucketItem() {
 		Identifier id = Cabricality.id(this.getName() + "_bucket");
-		if (Registry.ITEM.containsId(id))
-			return Registry.ITEM.get(id);
+		if (Registries.ITEM.containsId(id))
+			return Registries.ITEM.get(id);
 		return Items.AIR;
 	}
 }

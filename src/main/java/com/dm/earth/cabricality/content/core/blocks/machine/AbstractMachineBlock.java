@@ -4,24 +4,23 @@ import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.math.VoxelShapeUtil;
 import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
 import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
-
-import net.devtech.arrp.json.blockstate.JBlockStates;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.Waterloggable;
+import net.minecraft.data.client.model.BlockStateSupplier;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.registry.Registries;
 import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
@@ -41,7 +40,7 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
 
     @Override
     public boolean doItemModel() {
-        return true;
+        return ResourcedBlock.super.doItemModel();
     }
 
     @Override
@@ -51,13 +50,14 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
 
     @Override
     public Identifier getBlockModelId() {
-        return Cabricality.id("block", "machine", Registry.BLOCK.getId(this).getPath());
+        return Cabricality.id("block", "machine", Registries.BLOCK.getId(this).getPath());
     }
 
     @Override
-    public JBlockStates getBlockStates() {
-        return this.isFull() ? BlockStatesGenerator.simple(this.getBlockModelId())
-                : BlockStatesGenerator.fourDirections(this.getBlockModelId());
+    public BlockStateSupplier getBlockStates() {
+        return this.isFull()
+				? BlockStatesGenerator.simple(getBaseBlock(), getBlockModelId())
+                : BlockStatesGenerator.fourDirections(getBaseBlock(), getBlockModelId());
     }
 
     @Override

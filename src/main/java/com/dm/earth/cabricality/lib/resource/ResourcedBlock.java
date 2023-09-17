@@ -1,6 +1,6 @@
 package com.dm.earth.cabricality.lib.resource;
 
-import net.devtech.arrp.generator.BlockResourceGenerator;
+import pers.solid.brrp.v1.generator.BlockResourceGenerator;
 
 public interface ResourcedBlock extends BlockResourceGenerator {
 	default boolean doLootTable() {
