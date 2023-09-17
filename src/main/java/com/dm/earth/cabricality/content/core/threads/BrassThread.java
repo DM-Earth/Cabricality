@@ -19,6 +19,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -87,48 +88,65 @@ public class BrassThread implements TechThread {
 								FluidConstants.BOTTLE)))
 		);
 
-		handler.register(recipeId("mixing", "redstone"), id -> new MixingRecipe(new FreePRP(id)
-				.setFluidIngredient(
-						FluidIngredient.fromFluid(CabfFluids.SKY_STONE, FluidConstants.INGOT * 2))
-				.setIngredient(Ingredient.ofItems(AE2.asItem("charged_certus_quartz_crystal")))
-				.setFluidResult(new FluidStack(FluidVariant.of(CabfFluids.REDSTONE),
-						FluidConstants.INGOT * 2))
-				.setResult(new ProcessingOutput(
-						AE2.asItem("certus_quartz_crystal").getDefaultStack(), 1))));
-
-		handler.register(recipeId("mixing", "polished_rose_quartz"),
+		handler.register(
+				recipeId("mixing", "redstone"),
 				id -> new MixingRecipe(new FreePRP(id)
-						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE,
-								FluidConstants.INGOT))
-						.setIngredient(Ingredient.ofItems(AE2.asItem("certus_quartz_crystal")))
-						.setResult(new ProcessingOutput(
-								CR.asItem("polished_rose_quartz").getDefaultStack(), 1))));
+				.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.SKY_STONE, FluidConstants.INGOT * 2))
+				.setIngredient(Ingredient.ofItems(AE2.asItem("charged_certus_quartz_crystal")))
+				.setFluidResult(new FluidStack(
+						FluidVariant.of(CabfFluids.REDSTONE),
+						FluidConstants.INGOT * 2))
+				.setResult(new ProcessingOutput(AE2.asItem("certus_quartz_crystal").getDefaultStack(), 1)))
+		);
 
-		handler.register(recipeId("filling", "electron_tube"),
+		handler.register(
+				recipeId("mixing", "polished_rose_quartz"),
+				id -> new MixingRecipe(new FreePRP(id)
+						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE, FluidConstants.INGOT))
+						.setIngredient(Ingredient.ofItems(AE2.asItem("certus_quartz_crystal")))
+						.setResult(new ProcessingOutput(CR.asItem("polished_rose_quartz").getDefaultStack(), 1)))
+		);
+
+		handler.register(
+				recipeId("filling", "electron_tube"),
 				id -> new FillingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(CR.asItem("polished_rose_quartz")))
-						.setFluidIngredient(FluidIngredient.fromFluid(TC.asFluid("molten_iron"),
-								FluidConstants.NUGGET))
-						.setResult(new ProcessingOutput(
-								CR.asItem("electron_tube").getDefaultStack(), 1))));
+						.setFluidIngredient(FluidIngredient.fromFluid(TC.asFluid("molten_iron"), FluidConstants.NUGGET))
+						.setResult(new ProcessingOutput(CR.asItem("electron_tube").getDefaultStack(), 1)))
+		);
 
-		handler.register(recipeId("crafting", "brass_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(id, CR.asItem("brass_casing"),
-						CR.asItem("precision_mechanism"), CABF.asItem("brass_machine"), 1));
+		handler.register(
+				recipeId("crafting", "brass_machine"),
+				id -> RecipeBuilderUtil.donutRecipe(
+						id,
+						CR.asItem("brass_casing"),
+						CR.asItem("precision_mechanism"),
+						CABF.asItem("brass_machine"),
+						1
+				)
+		);
 	}
 
 	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
-		handler.register(recipeId("milling", crystal.getRegistryName().getPath()),
+		handler.register(recipeId("milling", Registries.ITEM.getKey(crystal).get().getRegistry().getPath()),
 				id -> new MillingRecipe(
-						new FreePRP(id).setIngredient(Ingredient.ofItems(crystal))
+						new FreePRP(id)
+								.setIngredient(Ingredient.ofItems(crystal))
 								.setResult(new ProcessingOutput(dust.getDefaultStack(), 1))
-								.setProcessingTime(200)));
+								.setProcessingTime(200)
+				)
+		);
 
-		handler.register(recipeId("mechanical_crafting", seed.getRegistryName().getPath()),
+		handler.register(recipeId("mechanical_crafting", Registries.ITEM.getKey(seed).get().getRegistry().getPath()),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
-						VanillaRecipeBuilders.shapedRecipe("x").ingredient('x', crystal)
-								.output(new ItemStack(seed, 2)).build(id, ""),
-						false));
+						VanillaRecipeBuilders
+								.shapedRecipe("x")
+								.ingredient('x', crystal)
+								.output(new ItemStack(seed, 2))
+								.build(id, ""),
+						false
+				)
+		);
 	}
 
 	@Override
