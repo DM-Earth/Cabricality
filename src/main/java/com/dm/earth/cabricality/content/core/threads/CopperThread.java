@@ -13,8 +13,9 @@ import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.CookingCategory;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -34,44 +35,75 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 public class CopperThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.register(recipeId("crafting", "belt_connector"),
-				id -> VanillaRecipeBuilders.shapedRecipe("XXX", "XXX")
+		handler.register(
+				recipeId("crafting", "belt_connector"),
+				id -> VanillaRecipeBuilders
+						.shapedRecipe("XXX", "XXX")
 						.ingredient('X', CabfItems.CURED_RUBBER)
-						.output(new ItemStack(CR.asItem("belt_connector"), 3)).build(id, ""));
+						.output(new ItemStack(CR.asItem("belt_connector"), 3))
+						.build(id, "")
+		);
 
-		handler.register(recipeId("smelting", "cured_rubber"),
-				id -> VanillaRecipeBuilders.smeltingRecipe(id, "",
+		handler.register(
+				recipeId("smelting", "cured_rubber"),
+				id -> VanillaRecipeBuilders.smeltingRecipe(
+						id, "",
 						Ingredient.ofItems(CabfItems.RUBBER),
-						CabfItems.CURED_RUBBER.getDefaultStack(), 0.1F, 120));
+						CookingCategory.MISC,
+						CabfItems.CURED_RUBBER.getDefaultStack(),
+						0.1F, 120
+				)
+		);
 
-		handler.register(recipeId("crafting", "sealed_mechanism"),
-				id -> VanillaRecipeBuilders.shapedRecipe("XOX")
+		handler.register(
+				recipeId("crafting", "sealed_mechanism"),
+				id -> VanillaRecipeBuilders
+						.shapedRecipe("XOX")
 						.ingredient('X', Ingredient.ofItems(CabfItems.CURED_RUBBER))
 						.ingredient('O', Ingredient.ofItems(CABF.asItem("kinetic_mechanism")))
-						.output(CABF.asItem("sealed_mechanism").getDefaultStack()).build(id, ""));
+						.output(CABF.asItem("sealed_mechanism").getDefaultStack())
+						.build(id, "")
+		);
 
-		handler.register(recipeId("crafting", "copper_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(id, CR.asItem("copper_casing"),
-						CABF.asItem("sealed_mechanism"), CABF.asItem("copper_machine"), 1));
+		handler.register(
+				recipeId("crafting", "copper_machine"),
+				id -> RecipeBuilderUtil.donutRecipe(
+						id,
+						CR.asItem("copper_casing"),
+						CABF.asItem("sealed_mechanism"),
+						CABF.asItem("copper_machine"),
+						1
+				)
+		);
 
-		handler.register(recipeId("compacting", "rubber"),
+		handler.register(
+				recipeId("compacting", "rubber"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.RESIN, FluidConstants.BOTTLE))
-						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1))));
+						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1)))
+		);
 
-		handler.register(recipeId("compacting", "rubber_from_flower"),
+		handler.register(
+				recipeId("compacting", "rubber_from_flower"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
-						.setIngredient(Ingredient.ofTag(ItemTags.FLOWERS), Ingredient.ofTag(ItemTags.FLOWERS),
-								Ingredient.ofTag(ItemTags.FLOWERS), Ingredient.ofTag(ItemTags.FLOWERS))
-						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1))));
+						.setIngredient(
+								Ingredient.ofTag(ItemTags.FLOWERS), Ingredient.ofTag(ItemTags.FLOWERS),
+								Ingredient.ofTag(ItemTags.FLOWERS), Ingredient.ofTag(ItemTags.FLOWERS)
+						)
+						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1)))
+		);
 
-		handler.register(recipeId("compacting", "rubber_from_vine"),
+		handler.register(
+				recipeId("compacting", "rubber_from_vine"),
 				id -> new CompactingRecipe(new FreePRP(id)
 						.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
-						.setIngredient(Ingredient.ofItems(Items.VINE), Ingredient.ofItems(Items.VINE),
-								Ingredient.ofItems(Items.VINE), Ingredient.ofItems(Items.VINE))
-						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1))));
+						.setIngredient(
+								Ingredient.ofItems(Items.VINE), Ingredient.ofItems(Items.VINE),
+								Ingredient.ofItems(Items.VINE), Ingredient.ofItems(Items.VINE)
+						)
+						.setResult(new ProcessingOutput(CabfItems.RUBBER.getDefaultStack(), 1)))
+		);
 	}
 
 	@Override

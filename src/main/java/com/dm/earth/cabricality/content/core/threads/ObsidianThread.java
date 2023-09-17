@@ -16,9 +16,16 @@ import static com.dm.earth.cabricality.ModEntry.MC;
 public class ObsidianThread implements TechThread {
 	@Override
 	public void addRecipes(RecipeHandler handler) {
-		handler.register(recipeId("crafting", "obsidian_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(id, CR.asItem("railway_casing"),
-						CABF.asItem("sturdy_mechanism"), CABF.asItem("obsidian_machine"), 1));
+		handler.register(
+				recipeId("crafting", "obsidian_machine"),
+				id -> RecipeBuilderUtil.donutRecipe(
+						id,
+						CR.asItem("railway_casing"),
+						CABF.asItem("sturdy_mechanism"),
+						CABF.asItem("obsidian_machine"),
+						1
+				)
+		);
 	}
 
 	@Override

@@ -7,11 +7,11 @@ import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
+import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -31,21 +31,37 @@ import static com.dm.earth.cabricality.ModEntry.TC;
 public class ZincThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.register(recipeId("mixing", "liquid_soul"), id -> new MixingRecipe(new FreePRP(id)
-				.setIngredient(Ingredient.ofItems(Items.WEEPING_VINES),
-						Ingredient.ofItems(Items.TWISTING_VINES))
-				.setFluidResult(new FluidStack(TC.asFluid("liquid_soul"), FluidConstants.BOTTLE))
-				.setHeatRequirement(HeatCondition.HEATED)));
+		handler.register(
+				recipeId("mixing", "liquid_soul"),
+				id -> new MixingRecipe(new FreePRP(id)
+						.setIngredient(
+								Ingredient.ofItems(Items.WEEPING_VINES),
+								Ingredient.ofItems(Items.TWISTING_VINES)
+						)
+						.setFluidResult(new FluidStack(TC.asFluid("liquid_soul"), FluidConstants.BOTTLE))
+						.setHeatRequirement(HeatCondition.HEATED))
+		);
 
-		handler.register(recipeId("crafting", "zinc_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(id, CABF.asItem("zinc_casing"),
-						CABF.asItem("infernal_mechanism"), CABF.asItem("zinc_machine"), 1));
+		handler.register(
+				recipeId("crafting", "zinc_machine"),
+				id -> RecipeBuilderUtil.donutRecipe(
+						id,
+						CABF.asItem("zinc_casing"),
+						CABF.asItem("infernal_mechanism"),
+						CABF.asItem("zinc_machine"),
+						1
+				)
+		);
 
-		handler.register(recipeId("item_application", "zinc_casing"),
+		handler.register(
+				recipeId("item_application", "zinc_casing"),
 				id -> new ManualApplicationRecipe(new FreePRP(id)
-						.setIngredient(Ingredient.ofTag(ItemTags.STONE_CRAFTING_MATERIALS),
-								CABF.asIngredient("zinc_sheet"))
-						.setResult(CABF.asProcessingOutput("zinc_casing"))));
+						.setIngredient(
+								Ingredient.ofTag(ItemTags.STONE_CRAFTING_MATERIALS),
+								CABF.asIngredient("zinc_sheet")
+						)
+						.setResult(CABF.asProcessingOutput("zinc_casing")))
+		);
 	}
 
 	@Override

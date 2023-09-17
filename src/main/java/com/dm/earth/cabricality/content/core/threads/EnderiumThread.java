@@ -35,21 +35,32 @@ public class EnderiumThread implements TechThread {
 
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
-		handler.register(recipeId("crafting", "enderium_machine"),
-				id -> VanillaRecipeBuilders.shapedRecipe("SSS", "SCS", "SSS")
+		handler.register(
+				recipeId("crafting", "enderium_machine"),
+				id -> VanillaRecipeBuilders
+						.shapedRecipe("SSS", "SCS", "SSS")
 						.ingredient('S', CABF.asIngredient("abstruse_mechanism"))
 						.ingredient('C', CABF.asIngredient("enderium_casing"))
-						.output(CABF.asStack("enderium_machine")).build(id, ""));
+						.output(CABF.asStack("enderium_machine"))
+						.build(id, "")
+		);
 
-		handler.register(recipeId("melting", "dark_amaranth_fungus"),
-				id -> RecipeManager.deserialize(id,
-						RecipeBuilderUtil.generateMelting(PM.id("dark_amaranth_fungus"),
-								TC.id("ender_slime"), FluidConstants.BOTTLE, null, 0, 100, 10)));
+		handler.register(
+				recipeId("melting", "dark_amaranth_fungus"),
+				id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(
+						PM.id("dark_amaranth_fungus"),
+						TC.id("ender_slime"),
+						FluidConstants.BOTTLE,
+						null, 0, 100, 10
+				))
+		);
 
-		handler.register(recipeId("item_application", "enderium_casing"),
+		handler.register(
+				recipeId("item_application", "enderium_casing"),
 				id -> new ManualApplicationRecipe(new FreePRP(id)
 						.setIngredient(MC.asIngredient("obsidian"), CABF.asIngredient("enderium_ingot"))
-						.setResult(CABF.asProcessingOutput("enderium_casing"))));
+						.setResult(CABF.asProcessingOutput("enderium_casing")))
+		);
 	}
 
 	@Override
