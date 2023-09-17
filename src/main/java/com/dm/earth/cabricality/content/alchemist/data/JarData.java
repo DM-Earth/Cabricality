@@ -1,15 +1,5 @@
 package com.dm.earth.cabricality.content.alchemist.data;
 
-import static com.dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
-import static com.dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
-
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.alchemist.Reagents;
 import com.dm.earth.cabricality.content.alchemist.core.Catalyst;
@@ -19,12 +9,20 @@ import com.dm.earth.cabricality.lib.math.RandomMathUtil;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
 import net.minecraft.recipe.RecipeManager;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import static com.dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
+import static com.dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
 public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 	public static void load() {
@@ -88,16 +86,16 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		Arrays.stream(Reagents.values()).forEach(reagents -> {
 			Identifier catalystId = Cabricality.id("catalyst_jar_" + reagents.getCatalyst().hashString());
-			handler.register(CabfItemTags.JARS, Registry.ITEM.get(catalystId));
-			handler.register(CabfItemTags.CATALYST_JARS, Registry.ITEM.get(catalystId));
+			handler.register(CabfItemTags.JARS, Registries.ITEM.get(catalystId));
+			handler.register(CabfItemTags.CATALYST_JARS, Registries.ITEM.get(catalystId));
 
 			reagents.getReagents().forEach(reagent -> {
 				Identifier reagentId = Cabricality.id("reagent_jar_" + reagent.hashString());
-				handler.register(CabfItemTags.JARS, Registry.ITEM.get(reagentId));
-				handler.register(CabfItemTags.REAGENT_JARS, Registry.ITEM.get(reagentId));
+				handler.register(CabfItemTags.JARS, Registries.ITEM.get(reagentId));
+				handler.register(CabfItemTags.REAGENT_JARS, Registries.ITEM.get(reagentId));
 			});
 		});
 	}

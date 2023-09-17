@@ -460,7 +460,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	}
 
 	@Override
-	public ActionResult apply(TagKey<Item> key) {
+	public ActionResult resourceConditionCheckTag(TagKey<Item> key) {
 		Identifier id = key.id();
 		if (id.getNamespace().equals("c")) {
 			String name = id.getPath();
@@ -483,7 +483,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		Arrays.stream(TradingEntry.CoinTypes.values())
 				.forEach(coinType -> {
 					handler.register(

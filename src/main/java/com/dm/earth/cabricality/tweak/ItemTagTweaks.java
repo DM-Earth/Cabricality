@@ -1,23 +1,22 @@
 package com.dm.earth.cabricality.tweak;
 
-import static com.dm.earth.cabricality.ModEntry.C;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.*;
-
 import com.dm.earth.cabricality.content.entries.CabfItemTags;
 import com.dm.earth.cabricality.tweak.base.TagUnifyEntry;
 import com.dm.earth.cabricality.tweak.cutting.WoodCuttingEntry;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
-
 import net.minecraft.item.Item;
-import net.minecraft.tag.TagKey;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
-public class ItemTagTweaks
-		implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
+import static com.dm.earth.cabricality.ModEntry.AD;
+import static com.dm.earth.cabricality.ModEntry.C;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+
+public class ItemTagTweaks implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 
 	private static final ItemTagTweaks INSTANCE = new ItemTagTweaks();
 	private static final String[] COMPRESSED_TO_PLATE_CONVERSION = { "desh", "ostrum", "calorite" };
@@ -40,7 +39,7 @@ public class ItemTagTweaks
 	}
 
 	@Override
-	public ActionResult apply(TagKey<Item> arg0) {
+	public ActionResult resourceConditionCheckTag(TagKey<Item> arg0) {
 		Identifier rid = arg0.id();
 		if (!rid.getNamespace().equals("c"))
 			return ActionResult.PASS;
@@ -62,14 +61,14 @@ public class ItemTagTweaks
 	}
 
 	@Override
-	public void load(TagHandler<Item> handler) {
+	public void onTagsLoad(TagHandler<Item> handler) {
 		for (WoodCuttingEntry entry : WoodCuttingEntry.values()) {
 			if (entry.isStrippedLogExist())
 				handler.register(CabfItemTags.STRIPPED_LOGS,
-						Registry.ITEM.get(entry.getStrippedLogId()));
+						Registries.ITEM.get(entry.getStrippedLogId()));
 			if (entry.isStrippedWoodExist())
 				handler.register(CabfItemTags.STRIPPED_WOODS,
-						Registry.ITEM.get(entry.getStrippedWoodId()));
+						Registries.ITEM.get(entry.getStrippedWoodId()));
 		}
 
 		handler.register(C.id("compressed_steel"), IR.asItem("steel_plate"));

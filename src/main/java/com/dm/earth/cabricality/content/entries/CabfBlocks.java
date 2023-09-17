@@ -128,7 +128,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 	}
 
 	@Override
-	public void load(TagHandler<Block> handler) {
+	public void onTagsLoad(TagHandler<Block> handler) {
 		Arrays.stream(MachineBlockEntry.values()).forEach(entry -> handler
 				.register(AllBlockTags.WRENCH_PICKUP.tag, Registries.BLOCK.get(entry.getId())));
 
