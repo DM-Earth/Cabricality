@@ -1,32 +1,17 @@
 package com.dm.earth.cabricality.content.core.threads;
 
-import static com.dm.earth.cabricality.ModEntry.AE2;
-import static com.dm.earth.cabricality.ModEntry.CABF;
-import static com.dm.earth.cabricality.ModEntry.CR;
-import static com.dm.earth.cabricality.ModEntry.IR;
-import static com.dm.earth.cabricality.ModEntry.MC;
-import static com.dm.earth.cabricality.ModEntry.TC;
-
-import com.simibubi.create.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
-
 import com.dm.earth.cabricality.content.core.TechThread;
 import com.dm.earth.cabricality.content.entries.CabfFluids;
 import com.dm.earth.cabricality.lib.math.ListUtil;
 import com.dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import com.dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.dm.earth.cabricality.tweak.base.MechAndSmithCraft;
+import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
+import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
-
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
+import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.minecraft.fluid.Fluids;
@@ -35,40 +20,72 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
+import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
+
+import static com.dm.earth.cabricality.ModEntry.AE2;
+import static com.dm.earth.cabricality.ModEntry.CABF;
+import static com.dm.earth.cabricality.ModEntry.CR;
+import static com.dm.earth.cabricality.ModEntry.IR;
+import static com.dm.earth.cabricality.ModEntry.MC;
+import static com.dm.earth.cabricality.ModEntry.TC;
 
 @SuppressWarnings("UnstableApiUsage")
 public class BrassThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
-		handler.register(recipeId("milling", "sky_stone_block"),
+		handler.register(
+				recipeId("milling", "sky_stone_block"),
 				id -> new MillingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(AE2.asItem("sky_stone_block")))
-						.setResult(
-								new ProcessingOutput(
-										AE2.asItem("sky_stone_block").getDefaultStack(), 1),
-								new ProcessingOutput(AE2.asItem("sky_dust").getDefaultStack(), 1))
-						.setProcessingTime(350)));
+						.setResult(new ProcessingOutput(
+								AE2.asItem("sky_stone_block").getDefaultStack(), 1),
+								new ProcessingOutput(AE2.asItem("sky_dust").getDefaultStack(), 1)
+						).setProcessingTime(350))
+		);
 
 		Item redstone = Items.REDSTONE;
-		handler.register(recipeId("crafting", "rose_quartz"),
+		handler.register(
+				recipeId("crafting", "rose_quartz"),
 				id -> VanillaRecipeBuilders
 						.shapelessRecipe(CR.asItem("rose_quartz").getDefaultStack())
-						.ingredient(Items.QUARTZ, AE2.asItem("certus_quartz_crystal"),
-								AE2.asItem("charged_certus_quartz_crystal"))
-						.ingredient(redstone).ingredient(redstone).ingredient(redstone)
-						.build(id, ""));
+						.ingredient(
+								Items.QUARTZ, AE2.asItem("certus_quartz_crystal"),
+								AE2.asItem("charged_certus_quartz_crystal")
+						)
+						.ingredient(redstone)
+						.ingredient(redstone)
+						.ingredient(redstone)
+						.build(id, "")
+		);
 
-		registerCrystalProcess(handler, AE2.asItem("certus_quartz_crystal"), AE2.asItem("certus_crystal_seed"),
-				AE2.asItem("certus_quartz_dust"));
+		registerCrystalProcess(
+				handler,
+				AE2.asItem("certus_quartz_crystal"),
+				AE2.asItem("certus_crystal_seed"),
+				AE2.asItem("certus_quartz_dust")
+		);
 
-		registerCrystalProcess(handler, AE2.asItem("fluix_crystal"), AE2.asItem("fluix_crystal_seed"),
-				AE2.asItem("fluix_dust"));
+		registerCrystalProcess(
+				handler,
+				AE2.asItem("fluix_crystal"),
+				AE2.asItem("fluix_crystal_seed"),
+				AE2.asItem("fluix_dust")
+		);
 
-		handler.register(recipeId("mixing", "sky_stone"), id -> new MixingRecipe(new FreePRP(id)
-				.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
-				.setIngredient(ListUtil.loop(Ingredient.ofItems(AE2.asItem("sky_dust")), 3))
-				.setFluidResult(new FluidStack(FluidVariant.of(CabfFluids.SKY_STONE),
-						FluidConstants.BOTTLE))));
+		handler.register(
+				recipeId("mixing", "sky_stone"),
+				id -> new MixingRecipe(new FreePRP(id)
+						.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE))
+						.setIngredient(ListUtil.loop(Ingredient.ofItems(AE2.asItem("sky_dust")), 3))
+						.setFluidResult(new FluidStack(
+								FluidVariant.of(CabfFluids.SKY_STONE),
+								FluidConstants.BOTTLE)))
+		);
 
 		handler.register(recipeId("mixing", "redstone"), id -> new MixingRecipe(new FreePRP(id)
 				.setFluidIngredient(
