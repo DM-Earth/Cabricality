@@ -3,13 +3,10 @@ package com.dm.earth.cabricality.content.core.blocks.casing;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.resource.ResourcedBlock;
 import com.dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
-
-import org.jetbrains.annotations.Nullable;
-
 import com.simibubi.create.content.decoration.encasing.CasingBlock;
-
-import net.devtech.arrp.json.blockstate.JBlockStates;
+import net.minecraft.data.client.model.BlockStateSupplier;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 	public final String name;
@@ -25,7 +22,7 @@ public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 	}
 
 	@Override
-	public @Nullable JBlockStates getBlockStates() {
+	public @Nullable BlockStateSupplier getBlockStates() {
 		return BlockStatesGenerator.simple(getBlockModelId());
 	}
 
@@ -36,8 +33,8 @@ public class SimpleCasingBlock extends CasingBlock implements ResourcedBlock {
 
 	@Override
 	public boolean doItemModel() {
-		return true;
-	}
+        return ResourcedBlock.super.doItemModel();
+    }
 
 	@Override
 	public boolean doLootTable() {

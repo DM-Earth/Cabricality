@@ -107,6 +107,7 @@ class ChapterButtonAnimator extends Widget {
 	}
 }
 
+@ClientOnly
 @Mixin(ChapterPanel.ModpackButton.class)
 class ModPackButtonAnimator {
 	@Redirect(method = "addMouseOverText", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/util/TooltipList;string(Ljava/lang/String;)V"), remap = false)

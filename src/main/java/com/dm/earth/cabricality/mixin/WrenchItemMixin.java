@@ -1,20 +1,16 @@
 package com.dm.earth.cabricality.mixin;
 
-import com.github.reoseah.catwalksinc.CIncSoundEvents;
+import com.simibubi.create.content.equipment.wrench.WrenchItem;
+import earth.terrarium.ad_astra.common.block.Wrenchable;
+import io.github.coolmineman.bitsandchisels.BitsAndChisels;
+import io.github.coolmineman.bitsandchisels.BitsBlockEntity;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction.Axis;
 import net.minecraft.world.World;
-
-import com.simibubi.create.content.equipment.wrench.WrenchItem;
-import io.github.coolmineman.bitsandchisels.BitsAndChisels;
-import io.github.coolmineman.bitsandchisels.BitsBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -30,30 +26,12 @@ public class WrenchItemMixin {
 		World world = context.getWorld();
 		BlockPos pos = context.getBlockPos();
 		BlockState state = world.getBlockState(pos);
-		PlayerEntity player = context.getPlayer();
-		Hand hand = context.getHand();
 
 		// Ad Astra!
-		if (state.getBlock() instanceof com.github.alexnijjar.ad_astra.blocks.pipes.Wrenchable wrenchable) {
+		if (state.getBlock() instanceof Wrenchable wrenchable) {
 			wrenchable.handleWrench(world, context.getBlockPos(), world.getBlockState(context.getBlockPos()),
 					context.getSide(), context.getPlayer(), context.getHitPos());
 			cir.setReturnValue(ActionResult.SUCCESS);
-		}
-
-		// Catwalks Inc.
-		if (state.getBlock() instanceof com.github.reoseah.catwalksinc.block.Wrenchable wrenchable) {
-			if (wrenchable.useWrench(state, world, pos, context.getSide(), player, hand, context.getHitPos())) {
-				if (player != null) {
-					context.getStack().damage(1, player, playerEntity -> playerEntity.sendToolBreakStatus(hand));
-					world.playSound(
-							null, player.getX(), player.getY(), player.getZ(),
-							CIncSoundEvents.WRENCH_USE, SoundCategory.PLAYERS,
-							1.0F, 1.0F / (world.getRandom().nextFloat() * 0.4F + 1.2F)
-					);
-				}
-
-				cir.setReturnValue(ActionResult.SUCCESS);
-			}
 		}
 
 		// Bits and Chisels

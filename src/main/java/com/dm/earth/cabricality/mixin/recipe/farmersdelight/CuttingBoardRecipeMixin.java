@@ -19,9 +19,9 @@ public class CuttingBoardRecipeMixin {
 	@Final
 	private DefaultedList<ChanceResult> resultList;
 
-	@Inject(method = "getOutput", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "getResult", at = @At("HEAD"), cancellable = true)
 	private void getOutput(CallbackInfoReturnable<ItemStack> cir) {
-		if (this.resultList.size() == 0)
+		if (this.resultList.isEmpty())
 			cir.setReturnValue(ItemStack.EMPTY);
 	}
 }
