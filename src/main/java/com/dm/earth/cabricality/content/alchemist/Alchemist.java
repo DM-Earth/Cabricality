@@ -76,6 +76,7 @@ public class Alchemist {
 
 			Map<Catalyst, ArrayList<Reagent>> possibleReagentMap = possibleReagentMap(world);
 			Catalyst catalystTargetTemp = getMatchedCatalyst(reagentsList, possibleReagentMap);
+
 			debug(reagentsList.toString());
 
 			if (catalystTargetTemp != null) {
