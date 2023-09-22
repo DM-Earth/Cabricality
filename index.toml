@@ -6,7 +6,7 @@ hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = "build.gradle.kts"
-hash = "384620cfa7e4ee47ca894845b14c1ee28664f061017d02da5f72ad177058d907"
+hash = "72a46a92222875c75f75ec2ec9ae80b56a5954f9a57e39c0e99c0a99b5154818"
 
 [[files]]
 file = "config/architects_palette.json5"
@@ -221,6 +221,11 @@ hash = "b716fa3e573f83a01500ab05a530e8f9146ffe72b3af2f0980ba73bd51e469d4"
 metafile = true
 
 [[files]]
+file = "mods/catwalks-llc.pw.toml"
+hash = "f01787a947f657874093ab067e4f00a0f94fb9e9660f7746675a5cdb40c18173"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "c5273660430701af5eb1cb8cc298db8266756bb8bb5c87a6031ce96b33cd8ffc"
 metafile = true
@@ -362,7 +367,7 @@ metafile = true
 
 [[files]]
 file = "mods/modern-dynamics.pw.toml"
-hash = "6ed4f74b5a5189086b3d8797162fa27513e72070389e5fe6c80df24ff757f507"
+hash = "05375196fd872971a01edda09dad35f671de80df363ee68a6abd96557b62e337"
 metafile = true
 
 [[files]]

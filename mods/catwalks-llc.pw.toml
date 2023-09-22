@@ -1,0 +1,13 @@
+name = "Catwalks LLC"
+filename = "catwalks-inc-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/sMLAOGUY/versions/vhE3gbyg/catwalks-inc-2.1.0.jar"
+hash-format = "sha1"
+hash = "80da9f4fc13639c0e76a83cb6b501976cc8e1dfc"
+
+[update]
+[update.modrinth]
+mod-id = "sMLAOGUY"
+version = "vhE3gbyg"
