@@ -113,7 +113,7 @@ dependencies {
     modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftb_library_version")}")
 
     // - JitPack
-    modImplementation("com.github.KrLite.Equator-v2:build:${property("minecraft_major_version")}-${property("equator_version")}")
+    modImplementation("com.github.KrLite.Equator-v2:build:${property("equator_version")}-mc${property("minecraft_major_version")}")
 
     // Mod Apis
     modApi("com.terraformersmc:modmenu:${property("modmenu_version")}")

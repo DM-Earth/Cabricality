@@ -6,7 +6,7 @@ hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = "build.gradle.kts"
-hash = "72a46a92222875c75f75ec2ec9ae80b56a5954f9a57e39c0e99c0a99b5154818"
+hash = "761bb2ab11c7404d3aceff2bf8c0dff8df436242201b94bdc09d619cdc1538f3"
 
 [[files]]
 file = "config/architects_palette.json5"
@@ -176,11 +176,6 @@ hash = "16ce27183f78f23c8606787ab2bbbaf01d290b569a4c6d5a6f91b30802ebabd9"
 metafile = true
 
 [[files]]
-file = "mods/architects-palette-fabric.pw.toml"
-hash = "5d068ee053bfe3b7815d9b28b12144aaf65f9253247eff40480aacf3c2a8e02e"
-metafile = true
-
-[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "a243675bc757485925b293932ee289b9fbcfb3b75bd3ba74eca7603f191cedad"
 metafile = true
@@ -213,11 +208,6 @@ metafile = true
 [[files]]
 file = "mods/bugjump.pw.toml"
 hash = "a43ba8d91fcfae5eb51294bb1a5901b80c5d900c6ea7e48aa8f1414801e236ca"
-metafile = true
-
-[[files]]
-file = "mods/cabricality-mod.pw.toml"
-hash = "b716fa3e573f83a01500ab05a530e8f9146ffe72b3af2f0980ba73bd51e469d4"
 metafile = true
 
 [[files]]
@@ -353,11 +343,6 @@ metafile = true
 [[files]]
 file = "mods/lootr-fabric.pw.toml"
 hash = "53786f23c772395f44842146accd33b2f05bc8113c53dde5ae8c02a98706e83f"
-metafile = true
-
-[[files]]
-file = "mods/malum-quilt.pw.toml"
-hash = "58168b0555e2ff4977a482707eb58fe2c38fd10322ba7a27b00b2866e19a481e"
 metafile = true
 
 [[files]]
