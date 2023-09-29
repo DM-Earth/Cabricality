@@ -322,7 +322,7 @@ metafile = true
 
 [[files]]
 file = "mods/knowledges.pw.toml"
-hash = "021094e4e56a1368d372c736f1fc9fc08900bfdd8d4350daa37b0ed1f3b1faa8"
+hash = "90ead38f9ca618e0e7bdea19e5a71fa8b52ced19737e345524b33aee58431e71"
 metafile = true
 
 [[files]]
