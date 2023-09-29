@@ -1,13 +1,13 @@
 name = "Athena"
-filename = "athena-fabric-1.20.1-3.1.0.jar"
+filename = "athena-fabric-1.20.1-3.1.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/AusdtnY3/athena-fabric-1.20.1-3.1.0.jar"
+url = "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/Jy8DnzcO/athena-fabric-1.20.1-3.1.1.jar"
 hash-format = "sha1"
-hash = "4e6fb9f4ba2e3607e6b1d30f0013a69025c4357b"
+hash = "4ec2e1e1450180a0d4a985bcddb5349f4d135ffe"
 
 [update]
 [update.modrinth]
 mod-id = "b1ZV3DIJ"
-version = "AusdtnY3"
+version = "Jy8DnzcO"

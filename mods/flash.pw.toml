@@ -1,13 +1,13 @@
 name = "Flash"
-filename = "flash-1.20-1.2.0.jar"
+filename = "flash-1.20-2.0.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/Zmu8jXWA/versions/8cRTQ7SL/flash-1.20-1.2.0.jar"
+url = "https://cdn.modrinth.com/data/Zmu8jXWA/versions/Fpenf1R6/flash-1.20-2.0.0.jar"
 hash-format = "sha1"
-hash = "1853b22faa6b4cda225786d625b798cb02d122f1"
+hash = "452383c00881defb4a84f0b04db35cfd500e896d"
 
 [update]
 [update.modrinth]
 mod-id = "Zmu8jXWA"
-version = "8cRTQ7SL"
+version = "Fpenf1R6"
