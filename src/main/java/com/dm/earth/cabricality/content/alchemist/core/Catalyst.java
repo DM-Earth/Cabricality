@@ -19,7 +19,7 @@ public class Catalyst extends Substrate {
 	}
 
 	@Override
-	public boolean consumeable() {
+	public boolean isConsumable() {
 		return false;
 	}
 }

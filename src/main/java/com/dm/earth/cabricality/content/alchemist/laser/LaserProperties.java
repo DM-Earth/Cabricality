@@ -1,8 +1,5 @@
 package com.dm.earth.cabricality.content.alchemist.laser;
 
-import com.dm.earth.cabricality.mixin.led.DiodeLampBlockAccessor;
-import net.darktree.led.block.DirectionalDiodeLampBlock;
-import net.darktree.led.util.DiodeVariant;
 import net.minecraft.block.BlockState;
 import net.minecraft.particle.DustParticleEffect;
 import net.minecraft.registry.Registries;
@@ -28,6 +25,7 @@ public record LaserProperties(int tint, int length, float power) {
 		);
 	}
 
+	/*
 	@Nullable
 	public static LaserProperties generate(BlockState state, DirectionalDiodeLampBlock block, int count) {
 		DiodeVariant variant = ((DiodeLampBlockAccessor) block).getVariant();
@@ -43,4 +41,6 @@ public record LaserProperties(int tint, int length, float power) {
 						DEFAULT_POWER * (variant.getLightLevel() / (4F * count))))
 				.findFirst().orElse(null);
 	}
+
+	 */
 }

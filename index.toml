@@ -6,7 +6,7 @@ hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = "build.gradle.kts"
-hash = "761bb2ab11c7404d3aceff2bf8c0dff8df436242201b94bdc09d619cdc1538f3"
+hash = "799bca1a8d5d4057bb5b3fed42a5197acaeea1d5860a54cf1685c81c309e9df4"
 
 [[files]]
 file = "config/architects_palette.json5"
@@ -177,7 +177,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "a243675bc757485925b293932ee289b9fbcfb3b75bd3ba74eca7603f191cedad"
+hash = "a3caf4dd0a0d0a739c8f00a7d81b74c9ae7fdb58b250ddc9b466213dbd385a80"
 metafile = true
 
 [[files]]
@@ -202,7 +202,7 @@ metafile = true
 
 [[files]]
 file = "mods/brrp.pw.toml"
-hash = "b133b5ca4007f772467d0b6fcc1baedcb287bc46d7a2864a83b0e038a51954dd"
+hash = "43c74c08ec25d19c365c72f8546edd2e01aa10c3b4cef39a4cbc9d09cb5b1562"
 metafile = true
 
 [[files]]
@@ -222,7 +222,7 @@ metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "b6348f94ec939f563285dc96683e61da8fc17ab2f2897be2751fa24789513691"
+hash = "1fc52599bb002e467661afaa4b844c517fb549ad14eb6f552bf11dfb5c8b535e"
 metafile = true
 
 [[files]]
@@ -327,7 +327,7 @@ metafile = true
 
 [[files]]
 file = "mods/krypton.pw.toml"
-hash = "71ef7cc16632c0039fe194183b5885968c6d740aaa67a58000653ae0cb40b882"
+hash = "f999930809222b57898da25a30aad2135b02894f42c0e1d2832c4670272fbd1d"
 metafile = true
 
 [[files]]
@@ -337,7 +337,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "c239c951796882b9c93e649a0dba4f2d95804441faaed707b686381b7a5c67da"
+hash = "ed27ecb297016accc41e9894b6e11d6c46b455211e358afa6218ce629ef56978"
 metafile = true
 
 [[files]]
@@ -357,12 +357,12 @@ metafile = true
 
 [[files]]
 file = "mods/modmenu.pw.toml"
-hash = "4cd171d3f5f3e1d2948cb1b0062e742a5e85110c9e9a668f9aed5b0cebcb9c97"
+hash = "b136ca50e7d8239319f528ceb521e3482f753b25d768afaf39fa6ea81e549f2e"
 metafile = true
 
 [[files]]
 file = "mods/natures-compass.pw.toml"
-hash = "cb38b82b931ae3c33bf9c21ad0934fcebaebcfe065838ade56a0661e283ee7d6"
+hash = "89b3552559d8729ce9d7ac46cb336056347a36776ab6a4ad19b0b5c3266e7a2b"
 metafile = true
 
 [[files]]
@@ -387,22 +387,22 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "44b0a2294e1693230308e53b529d671a0303e94b623ba2c2650cdf5760a5a335"
+hash = "19a098ab3131eb6daf0033199744d33dbb31a4ce9b20b9fc6eb709ab1272aa7e"
 metafile = true
 
 [[files]]
 file = "mods/rei.pw.toml"
-hash = "c12fa322ffe32fb95d08020e823084c4da6ba7714327cb082982f158d8631fd9"
+hash = "d1a2ca6f7e7d0a999f0b28ff429a38dc38ff6e0a9c176a86356b8cf6472147a7"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "4e691c86059e755a026b8cae8cf0c66396dc39bf47b6c71980589101803ecd36"
+hash = "7e39ba5b471407bf43c212fae99856276bf4411046aa3a5df5a7d27e76c7a2b3"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "9a927c3e0830ba32e1b8a2e543597781724462595b8cce58f676962b442bb52b"
+hash = "ff614f50beb3bc29a699dbcc0a61f65bd6c6154cd374f2763ee57cf578045a8f"
 metafile = true
 
 [[files]]
@@ -412,7 +412,7 @@ metafile = true
 
 [[files]]
 file = "mods/starlight.pw.toml"
-hash = "218f67d6bcaae849582618cd3e5eb1d4cac0fd6045115f64340620300e160c11"
+hash = "0a78a506125c0edc97d2292d26c6eab310106c60a5a4e64d73ff67bb619f5a4c"
 metafile = true
 
 [[files]]
@@ -427,12 +427,12 @@ metafile = true
 
 [[files]]
 file = "mods/terrestria.pw.toml"
-hash = "1c43a497cc911474b50a0706b05f1e6040179f1443a59112f2c56157f12c7165"
+hash = "2099b69364356b7e620a08ed91471031f88b7723d9a21b18209dc99542bdb617"
 metafile = true
 
 [[files]]
 file = "mods/trinkets.pw.toml"
-hash = "b2e02d1210f025b905299bfc88f895058640158343322641aca2c4875622c992"
+hash = "44ab19941b58049d859553df1a1a9d31e5eaf0eb98a8b7c4d3f79d9b39e1c368"
 metafile = true
 
 [[files]]

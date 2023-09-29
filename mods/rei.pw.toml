@@ -1,13 +1,13 @@
 name = "Roughly Enough Items (REI)"
-filename = "RoughlyEnoughItems-12.0.659.jar"
+filename = "RoughlyEnoughItems-13.0.661.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/nfn13YXA/versions/bkWECOQH/RoughlyEnoughItems-12.0.659.jar"
+url = "https://cdn.modrinth.com/data/nfn13YXA/versions/LnN2sdXj/RoughlyEnoughItems-13.0.661.jar"
 hash-format = "sha1"
-hash = "a8e8209e68216650855139bad1a0794bccf4210f"
+hash = "2b5bbc3e98e594823b3bad53193ae4cdc6d6e5b2"
 
 [update]
 [update.modrinth]
 mod-id = "nfn13YXA"
-version = "bkWECOQH"
+version = "LnN2sdXj"

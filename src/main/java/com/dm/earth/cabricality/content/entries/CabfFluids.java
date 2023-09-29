@@ -113,7 +113,7 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 	}
 
 	@Override
-	public void load(TagHandler<Fluid> handler) {
+	public void onTagsLoad(TagHandler<Fluid> handler) {
 		handler.register(C.id("molten_desh"), MOLTEN_DESH);
 		handler.register(C.id("molten_ostrum"), MOLTEN_OSTRUM);
 		handler.register(C.id("molten_calorite"), MOLTEN_CALORITE);

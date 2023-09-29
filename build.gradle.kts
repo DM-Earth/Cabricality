@@ -122,13 +122,13 @@ dependencies {
     }
 
     // Included
-    modImplementation(include("com.github.DM-Earth:Tags-Binder:${property("tags_binder_version")}")!!)
-    modImplementation(include("pers.solid:brrp-fabric:${property("brrp_version")}-${property("minecraft_version")}")!!)
+    modImplementation(include("com.github.DM-Earth:Tags-Binder:${property("tags_binder_version")}") ?: return@dependencies)
+    modImplementation(include("pers.solid:brrp-fabric:${property("brrp_version")}-${property("minecraft_version")}") ?: return@dependencies)
 
-    implementation(include("net.objecthunter:exp4j:${property("exp4j_version")}")!!)
-    implementation(include("com.github.KrLite:Pierced:${property("pierced_version")}")!!)
-    implementation(include("com.github.davidmoten:word-wrap:${property("word_wrap_version")}")!!)
-    implementation(include("com.github.davidmoten:guava-mini:${property("guava_mini_version")}")!!)
+    implementation(include("net.objecthunter:exp4j:${property("exp4j_version")}") ?: return@dependencies)
+    implementation(include("com.github.KrLite:Pierced:${property("pierced_version")}") ?: return@dependencies)
+    implementation(include("com.github.davidmoten:word-wrap:${property("word_wrap_version")}") ?: return@dependencies)
+    implementation(include("com.github.davidmoten:guava-mini:${property("guava_mini_version")}") ?: return@dependencies)
 
     // Development
     compileOnlyApi("org.apiguardian:apiguardian-api:${property("apiguardian_version")}")

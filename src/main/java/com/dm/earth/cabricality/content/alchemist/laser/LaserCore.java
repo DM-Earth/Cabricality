@@ -2,7 +2,6 @@ package com.dm.earth.cabricality.content.alchemist.laser;
 
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.lib.util.debug.CabfDebugger;
-import net.darktree.led.block.DirectionalDiodeLampBlock;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.BlockState;
@@ -40,6 +39,7 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 
 		CabfDebugger.debug("Laser source detected");
 
+		/*
 		ArrayList<Direction> availableDirections = new ArrayList<>();
 		for (Direction director : Direction.values()) {
 			if (director == direction) continue;
@@ -84,6 +84,8 @@ public class LaserCore implements AttackBlockCallback, UseBlockCallback {
 					SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.BLOCKS, 0.55F, 0.5F
 			);
 		}
+
+		 */
 
 		return ActionResult.SUCCESS;
 	}

@@ -9,7 +9,6 @@ import com.dm.earth.cabricality.content.alchemist.data.JarData;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import com.dm.earth.cabricality.content.alchemist.laser.LaserProperties;
 import com.dm.earth.cabricality.lib.math.RandomMathUtil;
-import net.darktree.led.LED;
 import net.minecraft.block.Block;
 import net.minecraft.entity.vehicle.HopperMinecartEntity;
 import net.minecraft.item.BlockItem;
@@ -113,11 +112,14 @@ public class Alchemist {
 
 					if (correct > 0)
 						addSlots.put(tempList.get(0), new ItemStack(Items.REDSTONE, correct));
+					/*
 					if (wrongPos > 0)
 						addSlots.put(
 								tempList.get(correct > 0 ? 1 : 0),
 								new ItemStack(LED.SHADE, wrongPos)
 						);
+
+					 */
 					success = true;
 				}
 			}
@@ -151,11 +153,14 @@ public class Alchemist {
 
 				if (correct > 0)
 					addSlots.put(tempList.get(0), new ItemStack(Items.REDSTONE, correct));
+				/*
 				if (wrongPos > 0)
 					addSlots.put(
 							tempList.get(correct > 0 ? 1 : 0),
 							new ItemStack(LED.SHADE, wrongPos)
 					);
+
+				 */
 				success = true;
 			}
 
