@@ -105,7 +105,8 @@ dependencies {
     modImplementation("maven.modrinth:architectury-api:${property("architectury_version")}+fabric")
     modImplementation("maven.modrinth:bits-and-chisels:${property("bits_and_chisels_version")}")
     modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmers_delight_version")}")
-    implementation("maven.modrinth:hephaestus:${property("minecraft_version")}-${property("hephaestus_version")}")
+    modImplementation("maven.modrinth:hephaestus:${property("minecraft_version")}-${property("hephaestus_version")}")
+    modImplementation("maven.modrinth:let:${property("let_version")}-mc${property("minecraft_version")}")
 
     // - Curse Maven
     modImplementation("curse.maven:industrial-revolution-391708:${property("indrev_version")}")
@@ -122,11 +123,11 @@ dependencies {
     }
 
     // Included
-    modImplementation(include("com.github.DM-Earth:Tags-Binder:${property("tags_binder_version")}") ?: return@dependencies)
-    modImplementation(include("pers.solid:brrp-fabric:${property("brrp_version")}-${property("minecraft_version")}") ?: return@dependencies)
+    modApi(include("com.github.DM-Earth:Tags-Binder:${property("tags_binder_version")}") ?: return@dependencies)
+    modApi(include("pers.solid:brrp-fabric:${property("brrp_version")}-${property("minecraft_version")}") ?: return@dependencies)
 
     implementation(include("net.objecthunter:exp4j:${property("exp4j_version")}") ?: return@dependencies)
-    implementation(include("com.github.KrLite:Pierced:${property("pierced_version")}") ?: return@dependencies)
+    api(include("com.github.KrLite:Pierced:${property("pierced_version")}") ?: return@dependencies)
     implementation(include("com.github.davidmoten:word-wrap:${property("word_wrap_version")}") ?: return@dependencies)
     implementation(include("com.github.davidmoten:guava-mini:${property("guava_mini_version")}") ?: return@dependencies)
 
