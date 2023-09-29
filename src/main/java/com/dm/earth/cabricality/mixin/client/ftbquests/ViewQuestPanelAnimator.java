@@ -139,8 +139,8 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 
 		Box.fromCartesian(x, y, w, h).render(graphics,
 				flat -> flat.new Rectangle()
-								.colorTop(Cabricality.Colors.CABF_PURPLE)
-								.colorBottom(Cabricality.Colors.CABF_MID_PURPLE)
+								.colorTop(Cabricality.Colors.OLD_CABF_PURPLE)
+								.colorBottom(Cabricality.Colors.OLD_CABF_MID_PURPLE)
 								.new Outlined(Vector.fromCartesian(240 * lerp, 240 * lerp),
 						Flat.Rectangle.Outlined.OutliningMode.NORMAL,
 						Flat.Rectangle.Outlined.OutliningStyle.EDGE_FADED)

@@ -54,7 +54,7 @@ public class ContextMenuAnimator {
 	private void drawBackground(Theme theme, GuiGraphics graphics, int x, int y, int w, int h) {
 		Box.fromCartesian(x, y, w, h).scaleCenter(1 + 1.2 * (1 - animation.value()))
 				.render(graphics,
-						flat -> flat.new Rectangle(Cabricality.Colors.CABF_DIM_PURPLE.opacity(Math.min(1, 0.75 * Math.pow(animation.value(), 2))))
+						flat -> flat.new Rectangle(Cabricality.Colors.OLD_CABF_DIM_PURPLE.opacity(Math.min(1, 0.75 * Math.pow(animation.value(), 2))))
 				);
 	}
 }

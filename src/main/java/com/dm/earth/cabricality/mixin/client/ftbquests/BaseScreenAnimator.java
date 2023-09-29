@@ -8,16 +8,12 @@ import dev.ftb.mods.ftblibrary.ui.WidgetType;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
-import net.krlite.equator.visual.animation.base.Animation;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.util.math.MatrixStack;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @ClientOnly
 @Mixin(BaseScreen.class)
@@ -36,7 +32,7 @@ public class BaseScreenAnimator {
 		PushUtil.ANIMATE_BASE_SCREEN.pull(() -> PushUtil.ANIMATE_CHAPTER_PANEL.push(animation::replay));
 
 		Box.fromCartesian(x, y, w, h).render(graphics,
-				flat -> flat.new Rectangle(Cabricality.Colors.CABF_GRAY_PURPLE.opacity(0.85 * Math.pow(animation.value(), 1 / 3.0)))
+				flat -> flat.new Rectangle(Cabricality.Colors.OLD_CABF_GRAY_PURPLE.opacity(0.85 * Math.pow(animation.value(), 1 / 3.0)))
 		);
 	}
 }

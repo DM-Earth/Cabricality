@@ -47,14 +47,27 @@ import java.util.function.Supplier;
 
 public class Cabricality implements ModInitializer {
 	public static class Colors {
-		public static final AccurateColor CABF_PURPLE = AccurateColor.fromARGB(0x6117DE);
-		public static final AccurateColor CABF_MID_PURPLE = AccurateColor.fromARGB(0x3A1677);
-		public static final AccurateColor CABF_DIM_PURPLE = AccurateColor.fromARGB(0x1B1329);
-		public static final AccurateColor CABF_GRAY_PURPLE = AccurateColor.fromARGB(0x2F2939);
-		public static final AccurateColor CABF_BRIGHT_PURPLE = AccurateColor.fromARGB(0xE0DBE8);
-		public static final AccurateColor CABF_BLACK = AccurateColor.fromARGB(0x0D0C0E);
+		public static final AccurateColor OLD_CABF_PURPLE = AccurateColor.fromARGB(0x6117DE);
+		public static final AccurateColor OLD_CABF_MID_PURPLE = AccurateColor.fromARGB(0x3A1677);
+		public static final AccurateColor OLD_CABF_DIM_PURPLE = AccurateColor.fromARGB(0x1B1329);
+		public static final AccurateColor OLD_CABF_GRAY_PURPLE = AccurateColor.fromARGB(0x2F2939);
+		public static final AccurateColor OLD_CABF_BRIGHT_PURPLE = AccurateColor.fromARGB(0xE0DBE8);
+		public static final AccurateColor OLD_CABF_BLACK = AccurateColor.fromARGB(0x0D0C0E);
 		public static final AccurateColor QUEST_DEPENDENCY = AccurateColor.fromARGB(0x4BFE90);
 		public static final AccurateColor QUEST_DEPENDENT = AccurateColor.fromARGB(0x7B62FF);
+
+		// assets/brand.png
+		public static final AccurateColor WHITE = AccurateColor.fromARGB(0xF6F8FF);
+		public static final AccurateColor WHITESMOKE = AccurateColor.fromARGB(0xC8C7FF);
+		public static final AccurateColor TURQUOISE = AccurateColor.fromARGB(0x3CFFCE);
+		public static final AccurateColor BLACK = AccurateColor.fromARGB(0x001011);
+		public static final AccurateColor PURPLE_BRIGHTEST = AccurateColor.fromARGB(0x7769FF);
+		public static final AccurateColor PURPLE_BRIGHTER = AccurateColor.fromARGB(0x5D43FF);
+		public static final AccurateColor PURPLE_BRIGHT = AccurateColor.fromARGB(0x4F27FF);
+		public static final AccurateColor PURPLE = AccurateColor.fromARGB(0x4D00FF);
+		public static final AccurateColor PURPLE_DIM = AccurateColor.fromARGB(0x3C0FAA);
+		public static final AccurateColor PURPLE_DIMMER = AccurateColor.fromARGB(0x380B9C);
+		public static final AccurateColor PURPLE_DIMMEST = AccurateColor.fromARGB(0x300680);
 	}
 
 	public static class Textures {

@@ -8,14 +8,12 @@ import net.krlite.equator.math.algebra.Theory;
 import net.krlite.equator.math.geometry.flat.Vector;
 import net.krlite.equator.render.frame.FrameInfo;
 import net.krlite.equator.render.renderer.Flat;
-import net.krlite.equator.visual.animation.base.Interpolation;
 import net.krlite.equator.visual.animation.interpolated.InterpolatedVector;
 import net.krlite.equator.visual.color.Palette;
 import net.krlite.equator.visual.color.base.ColorStandard;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.SplashOverlay;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import org.spongepowered.asm.mixin.Final;
@@ -68,10 +66,10 @@ public class SplashModifier {
 	)
 	private void renderStaticBackground(Args args) {
 		float
-				red = Cabricality.Colors.CABF_DIM_PURPLE.redAsFloat(),
-				green = Cabricality.Colors.CABF_DIM_PURPLE.greenAsFloat(),
-				blue = Cabricality.Colors.CABF_DIM_PURPLE.blueAsFloat(),
-				alpha = Cabricality.Colors.CABF_DIM_PURPLE.opacityAsFloat();
+				red = Cabricality.Colors.OLD_CABF_DIM_PURPLE.redAsFloat(),
+				green = Cabricality.Colors.OLD_CABF_DIM_PURPLE.greenAsFloat(),
+				blue = Cabricality.Colors.OLD_CABF_DIM_PURPLE.blueAsFloat(),
+				alpha = Cabricality.Colors.OLD_CABF_DIM_PURPLE.opacityAsFloat();
 
 		args.set(0, red);
 		args.set(1, green);
@@ -110,7 +108,7 @@ public class SplashModifier {
 			FrameInfo.scaled()
 					.render(graphics,
 							flat -> flat.new Rectangle()
-											.colors(Cabricality.Colors.CABF_DIM_PURPLE)
+											.colors(Cabricality.Colors.OLD_CABF_DIM_PURPLE)
 											.opacityMultiplier(opacity)
 					);
 		}
@@ -133,7 +131,7 @@ public class SplashModifier {
 											.mixMode(ColorStandard.MixMode.PIGMENT)
 
 											.addColor(0, Palette.TRANSPARENT)
-											.addColor(radians, Cabricality.Colors.CABF_MID_PURPLE)
+											.addColor(radians, Cabricality.Colors.OLD_CABF_MID_PURPLE)
 											.opacityMultiplier(opacityMultiplier * (1 - Theory.clamp(complete, 0, 1)))
 					);
 		}
@@ -147,7 +145,7 @@ public class SplashModifier {
 					.shift(shift.scale(0.05))
 					.render(graphics,
 							flat -> flat.new Oval()
-											.colorCenter(Cabricality.Colors.CABF_MID_PURPLE)
+											.colorCenter(Cabricality.Colors.OLD_CABF_MID_PURPLE)
 											.opacityMultiplier(logoOpacity)
 					);
 

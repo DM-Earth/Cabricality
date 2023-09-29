@@ -54,14 +54,14 @@ public abstract class ChapterPanelAnimator {
 
 		chapterBox.render(graphics,
 				flat -> flat.new Rectangle()
-								.colors(Cabricality.Colors.CABF_BLACK)
+								.colors(Cabricality.Colors.OLD_CABF_BLACK)
 								.opacityMultiplier(0.73)
 		);
 
 		chapterBox.render(graphics,
 				flat -> flat.new Rectangle()
-								.colorLeft(Cabricality.Colors.CABF_PURPLE.opacity(0.2))
-								.colorRight(Cabricality.Colors.CABF_MID_PURPLE.opacity(1 - animation.value()))
+								.colorLeft(Cabricality.Colors.OLD_CABF_PURPLE.opacity(0.2))
+								.colorRight(Cabricality.Colors.OLD_CABF_MID_PURPLE.opacity(1 - animation.value()))
 		);
 	}
 }
