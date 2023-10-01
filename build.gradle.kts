@@ -6,11 +6,11 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.8.0"
 }
 
-group = property("maven_group").toString()
-version = property("modpack_version").toString()
+group = property("mavenGroup").toString()
+version = property("modpackVersion").toString()
 
 base {
-    archivesName.set(rootProject.property("archives_name").toString())
+    archivesName.set(rootProject.property("archivesName").toString())
 }
 
 repositories {
@@ -87,62 +87,69 @@ dependencies {
     // Create
     modImplementation(
         "com.simibubi.create:create-fabric-" +
-                "${property("minecraft_version")}" + ":" +
-                "${property("create_version")}" +
-                "+mc" + "${property("minecraft_version")}"
+                "${property("minecraftVersion")}" + ":" +
+                "${property("createVersion")}" +
+                "+mc" + "${property("minecraftVersion")}"
     ) { exclude(group = "com.github.AlphaMode") }
 
     // Implemented Mods
     // - Miscellaneous
     modImplementation(
         "slimeknights.mantle:Mantle:" +
-                "${property("minecraft_version")}" + "-" +
-                "${property("mantle_version")}"
+                "${property("minecraftVersion")}" + "-" +
+                "${property("mantleVersion")}"
     ) { exclude(group = "com.github.AlphaMode") }
 
     // - Modrinth Maven
-    modImplementation("maven.modrinth:ad-astra:${property("ad_astra_version")}")
-    modImplementation("maven.modrinth:architectury-api:${property("architectury_version")}+fabric")
-    modImplementation("maven.modrinth:bits-and-chisels:${property("bits_and_chisels_version")}")
-    modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmers_delight_version")}")
-    modImplementation("maven.modrinth:hephaestus:${property("minecraft_version")}-${property("hephaestus_version")}")
-    modImplementation("maven.modrinth:let:${property("let_version")}-mc${property("minecraft_version")}")
+    modImplementation("maven.modrinth:ad-astra:${property("adAstraVersion")}")
+    modImplementation("maven.modrinth:architectury-api:${property("architecturyVersion")}+fabric")
+    modImplementation("maven.modrinth:bits-and-chisels:${property("bitsAndChiselsVersion")}")
+    modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmersDelightVersion")}")
+    modImplementation("maven.modrinth:hephaestus:${property("minecraftVersion")}-${property("hephaestusVersion")}")
+    modImplementation("maven.modrinth:let:${property("letVersion")}-mc${property("minecraftVersion")}")
 
     // - Curse Maven
-    modImplementation("curse.maven:industrial-revolution-391708:${property("indrev_version")}")
-    modImplementation("curse.maven:ftb-quests-fabric-438496:${property("ftb_quests_version")}")
-    modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftb_library_version")}")
+    modImplementation("curse.maven:industrial-revolution-391708:${property("indrevVersion")}")
+    modImplementation("curse.maven:ftb-quests-fabric-438496:${property("ftbQuestsVersion")}")
+    modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftbLibraryVersion")}")
 
     // - JitPack
-    modImplementation("com.github.KrLite.Equator-v2:build:${property("equator_version")}-mc${property("minecraft_major_version")}")
+    modImplementation("com.github.KrLite.Equator-v2:build:${property("equatorVersion")}-mc${property("minecraftMajorVersion")}")
 
     // Mod Apis
-    modApi("com.terraformersmc:modmenu:${property("modmenu_version")}")
-    modApi("me.shedaniel.cloth:cloth-config-fabric:${property("cloth_config_version")}") {
+    modApi("com.terraformersmc:modmenu:${property("modmenuVersion")}")
+    modApi("me.shedaniel.cloth:cloth-config-fabric:${property("clothConfigVersion")}") {
         exclude(group = "net.fabricmc.fabric-api")
     }
 
     // Included
-    modApi(include("com.github.DM-Earth:Tags-Binder:${property("tags_binder_version")}") ?: return@dependencies)
-    modApi(include("pers.solid:brrp-fabric:${property("brrp_version")}-${property("minecraft_version")}") ?: return@dependencies)
+    include("com.github.DM-Earth:Tags-Binder:${property("tagsBinderVersion")}")?.let {
+        modApi(it)
+    }
 
-    implementation(include("net.objecthunter:exp4j:${property("exp4j_version")}") ?: return@dependencies)
-    api(include("com.github.KrLite:Pierced:${property("pierced_version")}") ?: return@dependencies)
-    implementation(include("com.github.davidmoten:word-wrap:${property("word_wrap_version")}") ?: return@dependencies)
-    implementation(include("com.github.davidmoten:guava-mini:${property("guava_mini_version")}") ?: return@dependencies)
+    include("pers.solid:brrp-fabric:${property("brrpVersion")}-${property("minecraftVersion")}")?.let {
+        modApi(it)
+    }
+
+    include("com.github.KrLite:Pierced:${property("piercedVersion")}")?.let {
+        api(it)
+    }
+
+    include("net.objecthunter:exp4j:${property("exp4jVersion")}")?.let {
+        implementation(it)
+    }
 
     // Development
-    compileOnlyApi("org.apiguardian:apiguardian-api:${property("apiguardian_version")}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${property("rei_version")}")
-    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("rei_version")}")
-    modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${property("rei_version")}")
+    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${property("reiVersion")}")
+    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("reiVersion")}")
+    modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${property("reiVersion")}")
 }
 
 tasks {
     processResources {
-        inputs.property("modpack_version", version)
+        inputs.property("modpackVersion", version)
 
         filesMatching("quilt.mod.json") {
             expand(mapOf("modpack_version" to version))
