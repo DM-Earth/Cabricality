@@ -141,7 +141,7 @@ public class InvarThread implements TechThread {
 			handler.register(
 					recipeId("campfire_cooking", paste),
 					id -> new CampfireCookingRecipe(
-							id, "",
+							"",
 							CookingCategory.MISC,
 							CABF.asIngredient(paste),
 							entry.getOutputItem().getDefaultStack(),
@@ -152,7 +152,7 @@ public class InvarThread implements TechThread {
 		handler.register(
 				recipeId("campfire_cooking", "stick"),
 				id -> new CampfireCookingRecipe(
-						id, "",
+						"",
 						CookingCategory.MISC,
 						MC.asIngredient("stick"),
 						MC.asStack("torch"),
@@ -210,6 +210,7 @@ public class InvarThread implements TechThread {
 						.setProcessingTime(50))
 		);
 
+		/*
 		for (Item item : balls) {
 			int index = balls.indexOf(item);
 			Item output = index < balls.size() - 1
@@ -224,6 +225,8 @@ public class InvarThread implements TechThread {
 							.setResult(new ProcessingOutput(output.getDefaultStack(), 1)))
 			);
 		}
+
+		 */
 
 		handler.register(
 				recipeId("pressing", "refined_radiance"),
@@ -287,7 +290,7 @@ public class InvarThread implements TechThread {
 				id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(
 						AE2.id("ender_dust"), TC.id("molten_ender"),
 						FluidConstants.INGOT,
-						null, 0, 350, 35))
+						null, 0, 350, 35)).value()
 		);
 	}
 
@@ -304,9 +307,9 @@ public class InvarThread implements TechThread {
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
 		handler.remove(CR.id("mechanical_crafting", "crushing_wheel"));
-		handler.removeIf(IR.predicateOutput(handler.getRegistryManager(), false, "machine_block"));
+		handler.removeIf(IR.predicateOutput(handler, false, "machine_block"));
 		handler.removeIf(
-				p -> !CABF.checkContains(p)
+				p -> !CABF.checkContains(handler, p)
 						&& REMOVE_OUTPUTS.stream()
 						.anyMatch(id -> id.equals(Registries.ITEM.getId(p.getResult(handler.getRegistryManager()).getItem())))
 		);

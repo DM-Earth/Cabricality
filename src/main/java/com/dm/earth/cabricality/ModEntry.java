@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.Recipe;
+import net.minecraft.recipe.RecipeManager;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKeys;
@@ -15,7 +16,9 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 
+import java.util.Map;
 import java.util.function.Predicate;
 
 public enum ModEntry {
@@ -79,8 +82,13 @@ public enum ModEntry {
 		return checkContains(Registries.ITEM.getId(item));
 	}
 
-	public boolean checkContains(@NotNull Recipe<?> recipe) {
-		return checkContains(recipe.getId());
+	public boolean checkContains(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler, @NotNull Recipe<?> recipe) {
+		return handler.getRecipes().get(recipe.getType()).entrySet().stream()
+				.filter(entry -> entry.getValue().equals(recipe))
+				.map(Map.Entry::getKey)
+				.findFirst()
+				.map(this::checkContains)
+				.orElse(false);
 	}
 
 	public Identifier id(String... path) {
@@ -131,30 +139,48 @@ public enum ModEntry {
 		return Registries.SOUND_EVENT.get(id(paths));
 	}
 
-	public Predicate<Recipe<?>> predicateOutput(DynamicRegistryManager registryManager, boolean containsCabf, int count, String... paths) {
-		return recipe -> recipe.getResult(registryManager).equals(asStack(count, paths))
-				&& (containsCabf || !CABF.checkContains(recipe.getId()));
+	public Predicate<Recipe<?>> predicateOutput(
+			RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler,
+			boolean containsCabf, int count, String... paths
+	) {
+		return recipe -> recipe.getResult(handler.getRegistryManager()).equals(asStack(count, paths))
+				&& (containsCabf || !CABF.checkContains(handler, recipe));
 	}
 
-	public Predicate<Recipe<?>> predicateOutput(DynamicRegistryManager registryManager, boolean containsCabf, String... paths) {
-		return predicateOutput(registryManager, containsCabf, 1, paths);
+	public Predicate<Recipe<?>> predicateOutput(
+			RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler,
+			boolean containsCabf, String... paths
+	) {
+		return predicateOutput(handler, containsCabf, 1, paths);
 	}
 
-	public Predicate<Recipe<?>> predicateOutput(DynamicRegistryManager registryManager, String... paths) {
-		return predicateOutput(registryManager, false, paths);
+	public Predicate<Recipe<?>> predicateOutput(
+			RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler,
+			String... paths
+	) {
+		return predicateOutput(handler, false, paths);
 	}
 
-	public static Predicate<Recipe<?>> predicateOutput(DynamicRegistryManager registryManager, ItemStack stack) {
-		return recipe -> recipe.getResult(registryManager).equals(stack);
+	public static Predicate<Recipe<?>> predicateOutput(
+			RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler,
+			ItemStack stack
+	) {
+		return recipe -> recipe.getResult(handler.getRegistryManager()).equals(stack);
 	}
 
-	public Predicate<Recipe<?>> predicateIngredient(boolean containsCabf, String... paths) {
+	public Predicate<Recipe<?>> predicateIngredient(
+			RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler,
+			boolean containsCabf, String... paths
+	) {
 		return recipe -> recipe.getIngredients().stream().anyMatch(asIngredient(paths)::equals)
-				&& (containsCabf || !CABF.checkContains(recipe.getId()));
+				&& (containsCabf || !CABF.checkContains(handler, recipe));
 	}
 
-	public Predicate<Recipe<?>> predicateIngredient(String... paths) {
-		return predicateIngredient(false, paths);
+	public Predicate<Recipe<?>> predicateIngredient(
+			RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler,
+			String... paths
+	) {
+		return predicateIngredient(handler, false, paths);
 	}
 
 	public static Predicate<Recipe<?>> predicateIngredient(Item item) {

@@ -87,16 +87,16 @@ dependencies {
     // Create
     modImplementation(
         "com.simibubi.create:create-fabric-" +
-                "${property("minecraftVersion")}" + ":" +
+                "${property("minecraftTemporaryVersion")}" + ":" +
                 "${property("createVersion")}" +
-                "+mc" + "${property("minecraftVersion")}"
+                "+mc" + "${property("minecraftTemporaryVersion")}"
     ) { exclude(group = "com.github.AlphaMode") }
 
     // Implemented Mods
     // - Miscellaneous
     modImplementation(
         "slimeknights.mantle:Mantle:" +
-                "${property("minecraftVersion")}" + "-" +
+                "${property("minecraftTemporaryVersion")}" + "-" +
                 "${property("mantleVersion")}"
     ) { exclude(group = "com.github.AlphaMode") }
 
@@ -105,8 +105,8 @@ dependencies {
     modImplementation("maven.modrinth:architectury-api:${property("architecturyVersion")}+fabric")
     modImplementation("maven.modrinth:bits-and-chisels:${property("bitsAndChiselsVersion")}")
     modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmersDelightVersion")}")
-    modImplementation("maven.modrinth:hephaestus:${property("minecraftVersion")}-${property("hephaestusVersion")}")
-    modImplementation("maven.modrinth:let:${property("letVersion")}-mc${property("minecraftVersion")}")
+    modImplementation("maven.modrinth:hephaestus:${property("minecraftTemporaryVersion")}-${property("hephaestusVersion")}")
+    modImplementation("maven.modrinth:let:${property("letVersion")}-mc${property("minecraftMajorVersion")}")
 
     // - Curse Maven
     modImplementation("curse.maven:industrial-revolution-391708:${property("indrevVersion")}")
