@@ -188,8 +188,8 @@ public class AndesiteThread implements TechThread {
 
 		handler.removeIf(p ->
 				p instanceof AbstractCookingRecipe
-						&& AP.predicateOutput(handler.getRegistryManager(), false, "algal_brick").test(p));
-		handler.removeIf(IR.predicateOutput(handler.getRegistryManager(), false, "iron_drill_head"));
+						&& AP.predicateOutput(handler, false, "algal_brick").test(p));
+		handler.removeIf(IR.predicateOutput(handler, false, "iron_drill_head"));
 		handler.remove(AP.id("algal_blend_shapeless"));
 	}
 

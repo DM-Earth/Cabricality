@@ -52,7 +52,7 @@ public class EnderiumThread implements TechThread {
 						TC.id("ender_slime"),
 						FluidConstants.BOTTLE,
 						null, 0, 100, 10
-				))
+				)).value()
 		);
 
 		handler.register(

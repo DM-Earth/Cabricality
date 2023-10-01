@@ -3,7 +3,10 @@ package com.dm.earth.cabricality.content.fluids.core;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.content.entries.CabfItems;
 import com.dm.earth.cabricality.lib.resource.assets.gen.item.ItemModelGenerator;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
@@ -22,6 +25,14 @@ public interface IFluid {
 	Fluid getFlowing();
 
 	String getName();
+
+	BlockState toBlockState(FluidState state);
+
+	BlockState toBlockState();
+
+	Block toBlock(FluidState state);
+
+	Block toBlock();
 
 	default void registerBucketItem(Registry<Item> registry) {
 		if (this.getTypical() != this || !this.hasBucketItem()) return;

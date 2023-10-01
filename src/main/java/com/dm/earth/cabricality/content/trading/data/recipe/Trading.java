@@ -49,14 +49,14 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		CabfDebugger.debug("Removing infuse recipes!");
 		handler.removeIf(Registries.RECIPE_TYPE.get(new Identifier("indrev", "infuse")),
-				p -> !CABF.checkContains(p));
+				p -> !CABF.checkContains(handler, p));
 	}
 
 	private static ShapelessRecipe genDupeRecipe(Item item, Identifier id) {
 		DefaultedList<Ingredient> ingredients = DefaultedList.of();
 		ingredients.add(Ingredient.ofItems(item));
 		return new ShapelessRecipe(
-				id, "cabricality_dupe",
+				"cabricality_dupe",
 				CraftingCategory.MISC,
 				new ItemStack(item, 2),
 				ingredients

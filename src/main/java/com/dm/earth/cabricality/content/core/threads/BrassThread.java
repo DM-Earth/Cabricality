@@ -78,6 +78,7 @@ public class BrassThread implements TechThread {
 				AE2.asItem("fluix_dust")
 		);
 
+		/*
 		handler.register(
 				recipeId("mixing", "sky_stone"),
 				id -> new MixingRecipe(new FreePRP(id)
@@ -98,6 +99,8 @@ public class BrassThread implements TechThread {
 						FluidConstants.INGOT * 2))
 				.setResult(new ProcessingOutput(AE2.asItem("certus_quartz_crystal").getDefaultStack(), 1)))
 		);
+
+		 */
 
 		handler.register(
 				recipeId("mixing", "polished_rose_quartz"),
@@ -151,7 +154,7 @@ public class BrassThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(AE2.predicateOutput(handler.getRegistryManager(), false, "sky_dust"));
+		handler.removeIf(AE2.predicateOutput(handler, false, "sky_dust"));
 		handler.remove(CR.id("crafting", "materials", "electron_tube"));
 		handler.remove(CR.id("crafting", "materials", "rose_quartz"));
 		handler.remove(CR.id("sequenced_assembly", "precision_mechanism"));

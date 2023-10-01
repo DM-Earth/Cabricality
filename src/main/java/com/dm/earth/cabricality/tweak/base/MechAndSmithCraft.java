@@ -33,7 +33,7 @@ public class MechAndSmithCraft {
 			if (entry.isSmithing()) {
 				handler.register(
 						id(entry, "smithing"),
-						id -> new TransformSmithingRecipe(id,
+						id -> new TransformSmithingRecipe(
 								Ingredient.EMPTY,
 								Ingredient.ofItems(entry.getInputItem()),
 								Ingredient.ofItems(entry.getOtherItem()),
@@ -52,7 +52,7 @@ public class MechAndSmithCraft {
 			} else
 				handler.register(
 						id(entry, "stonecutting"),
-						id -> new StonecuttingRecipe(id, "",
+						id -> new StonecuttingRecipe("",
 								Ingredient.ofItems(entry.getInputItem()),
 								entry.getOutputStack())
 				);
@@ -61,7 +61,7 @@ public class MechAndSmithCraft {
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
 		entries.forEach(entry -> handler.removeIf(p ->
-				!ModEntry.CABF.checkContains(p)
+				!ModEntry.CABF.checkContains(handler, p)
 						&& p.getResult(handler.getRegistryManager()).isOf(entry.getOutputItem())
 		));
 	}

@@ -88,11 +88,11 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 		if (fluid.isSource(null)) {
 			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
 					iFluid.getId(),
-					FluidBlockStatesGenerator.simple(iFluid.getName())
+					FluidBlockStatesGenerator.simple(iFluid.toBlock(), iFluid.getName())
 			);
 			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
 					Cabricality.id(iFluid.getName() + "_flowing"),
-					FluidBlockStatesGenerator.simple(iFluid.getName())
+					FluidBlockStatesGenerator.simple(iFluid.toBlock(), iFluid.getName())
 			);
 			Cabricality.RRPs.CLIENT_RESOURCES.addModel(
 					Cabricality.id("block/fluid/" + iFluid.getName()),

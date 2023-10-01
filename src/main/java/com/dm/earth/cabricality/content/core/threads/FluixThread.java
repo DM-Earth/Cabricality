@@ -182,6 +182,7 @@ public class FluixThread implements TechThread {
 		);
 
 		// Coke Processing
+		/*
 		handler.register(
 				recipeId("compacting", "coal"),
 				id -> new CompactingRecipe(new FreePRP(id)
@@ -189,6 +190,8 @@ public class FluixThread implements TechThread {
 						.setFluidResult(new FluidStack(CabfFluids.COKE, FluidConstants.INGOT))
 						.setHeatRequirement(HeatCondition.HEATED))
 		);
+
+		 */
 
 		handler.register(
 				recipeId("filling", "coal"),
@@ -206,6 +209,7 @@ public class FluixThread implements TechThread {
 						.setResult(MC.asProcessingOutput("coal")))
 		);
 
+		/*
 		handler.register(
 				recipeId("emptying", "sand_ball"),
 				id -> new EmptyingRecipe(new FreePRP(id)
@@ -213,6 +217,8 @@ public class FluixThread implements TechThread {
 						.setResult(CABF.asProcessingOutput("rough_sand"))
 						.setFluidResult(new FluidStack(CabfFluids.FINE_SAND, FluidConstants.BUCKET / 2)))
 		);
+
+		 */
 
 		handler.register(
 				recipeId("compacting", "silicon_compound"),
@@ -277,7 +283,7 @@ public class FluixThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
-		handler.removeIf(AE2.predicateOutput(handler.getRegistryManager(), false, "silicon"));
-		handler.removeIf(AE2.predicateOutput(handler.getRegistryManager(), false, "controller"));
+		handler.removeIf(AE2.predicateOutput(handler, false, "silicon"));
+		handler.removeIf(AE2.predicateOutput(handler, false, "controller"));
 	}
 }

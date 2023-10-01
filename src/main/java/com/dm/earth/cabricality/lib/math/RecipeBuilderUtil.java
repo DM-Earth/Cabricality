@@ -4,7 +4,9 @@ import static com.dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
 import static com.dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
 import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
+import net.minecraft.registry.DynamicRegistryManager;
 import org.jetbrains.annotations.Nullable;
+import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.google.gson.JsonArray;
@@ -25,9 +27,12 @@ public class RecipeBuilderUtil {
 				.ingredient('O', Ingredient.ofItems(other)).output(new ItemStack(output, count)).build(id, "");
 	}
 
-	public static MechanicalCraftingRecipe mechanicalFromShaped(ShapedRecipe recipe, boolean acceptMirrored) {
-		return new MechanicalCraftingRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
-				recipe.getIngredients(), recipe.getOutput(), acceptMirrored);
+	public static MechanicalCraftingRecipe mechanicalFromShaped(
+			DynamicRegistryManager registryManager,
+			ShapedRecipe recipe, boolean acceptMirrored
+	) {
+		return new MechanicalCraftingRecipe(recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
+				recipe.getIngredients(), recipe.getResult(registryManager), acceptMirrored);
 	}
 
 	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount,

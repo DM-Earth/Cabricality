@@ -3,8 +3,11 @@ package com.dm.earth.cabricality.content.fluids.core;
 import com.dm.earth.cabricality.Cabricality;
 import com.dm.earth.cabricality.client.FluidColorRegistry;
 import com.dm.earth.cabricality.client.FluidRendererRegistry;
+import com.dm.earth.cabricality.content.entries.CabfBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
@@ -63,8 +66,26 @@ public class BaseFluid extends Fluid implements IFluid {
 	}
 
 	@Override
-	protected BlockState toBlockState(FluidState state) {
-		return Blocks.AIR.getDefaultState();
+	public BlockState toBlockState(FluidState state) {
+		Block block = Registries.BLOCK.get(((IFluid) this.getTypical()).getId());
+		if (block == Blocks.AIR)
+			return Blocks.AIR.getDefaultState();
+		return Registries.BLOCK.get(getId()).getDefaultState().with(FluidBlock.LEVEL, getLevel(state));
+	}
+
+	@Override
+	public BlockState toBlockState() {
+		return toBlockState(getDefaultState());
+	}
+
+	@Override
+	public Block toBlock(FluidState state) {
+		return toBlockState(getDefaultState()).getBlock();
+	}
+
+	@Override
+	public Block toBlock() {
+		return toBlockState().getBlock();
 	}
 
 	@Override

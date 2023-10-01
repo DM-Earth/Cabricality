@@ -20,8 +20,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 public class CalculationRecipe extends SpecialCraftingRecipe {
-	public CalculationRecipe(Identifier id, CraftingCategory category) {
-		super(id, category);
+	public CalculationRecipe(CraftingCategory category) {
+		super(category);
 	}
 
 	@Override

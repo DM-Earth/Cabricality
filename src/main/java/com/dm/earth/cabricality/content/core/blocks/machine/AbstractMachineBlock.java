@@ -10,6 +10,7 @@ import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.Waterloggable;
 import net.minecraft.data.client.model.BlockStateSupplier;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
@@ -24,6 +25,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
+import org.jetbrains.annotations.Nullable;
 
 public abstract class AbstractMachineBlock extends HorizontalFacingBlock implements ResourcedBlock, Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
@@ -57,7 +59,7 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
     public BlockStateSupplier getBlockStates() {
         return this.isFull()
 				? BlockStatesGenerator.simple(getBaseBlock(), getBlockModelId())
-                : BlockStatesGenerator.fourDirections(getBaseBlock(), getBlockModelId());
+                : BlockStatesGenerator.northDefaultHorizontal(getBaseBlock(), getBlockModelId());
     }
 
     @Override
@@ -85,11 +87,11 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
     }
 
     @Override
-    public boolean canFillWithFluid(BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
-        return this.isWaterLoggable() && Waterloggable.super.canFillWithFluid(world, pos, state, fluid);
+    public boolean canFillWithFluid(@Nullable PlayerEntity playerEntity, BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
+        return this.isWaterLoggable() && Waterloggable.super.canFillWithFluid(playerEntity, world, pos, state, fluid);
     }
 
-    @Override
+	@Override
     protected void appendProperties(Builder<Block, BlockState> builder) {
         builder.add(Properties.HORIZONTAL_FACING, WATERLOGGED);
     }

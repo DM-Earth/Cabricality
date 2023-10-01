@@ -110,9 +110,9 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 				if (reagentsT.isLinked())
 					reagents.add(reagent);
 				handler.register(Cabricality.id("alchemist", "fluid_infuse", "reagent_jar", reagent.hashString()),
-						id -> RecipeManager.deserialize(id, generateInfuse(reagent)));
+						id -> RecipeManager.deserialize(id, generateInfuse(reagent)).value());
 				handler.register(Cabricality.id("alchemist", "sawmill", "reagent_jar", reagent.hashString()),
-						id -> RecipeManager.deserialize(id, generateReagentToItem(reagent)));
+						id -> RecipeManager.deserialize(id, generateReagentToItem(reagent)).value());
 			}
 
 		// Alchemist Recipes
@@ -124,7 +124,7 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 						r.getCatalyst().hashString() + "/" + reagent.hashString());
 				var recipe = RecipeManager.deserialize(recipeId,
 						generateAlchemistProcess(reagent, reagents, smelt.get()));
-				handler.register(recipeId, id -> recipe);
+				handler.register(recipeId, id -> recipe.value());
 			});
 			smelt.set(!smelt.get());
 		});

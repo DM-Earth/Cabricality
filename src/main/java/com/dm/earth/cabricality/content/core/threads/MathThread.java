@@ -18,7 +18,7 @@ import static com.dm.earth.cabricality.ModEntry.CR;
 public class MathThread implements TechThread {
 	@Override
 	public void addRecipes(RecipeHandler handler) {
-		handler.register(recipeId("crafting", "calculation"), CalculationRecipe::new);
+		// handler.register(recipeId("crafting", "calculation"), CalculationRecipe::new);
 
 		CabfItems.MATH_CASTS.forEach(str -> handler.register(
 				recipeId("stonecutting", str + "_cast"),
@@ -36,7 +36,7 @@ public class MathThread implements TechThread {
 								Registries.ITEM.get(Cabricality.id(NumberItem.getNumberItemName(num)))
 						).getFluid()),
 						FluidConstants.DROPLET,
-						null, 0, 200, 20))
+						null, 0, 200, 20)).value()
 		));
 
 		handler.register(
@@ -45,7 +45,7 @@ public class MathThread implements TechThread {
 						Cabricality.id("calculation_mechanism"),
 						Cabricality.id("raw_logic"),
 						FluidConstants.NUGGET * 3,
-						null, 0, 200, 20))
+						null, 0, 200, 20)).value()
 		);
 	}
 
