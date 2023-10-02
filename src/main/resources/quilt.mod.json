@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "quilt_loader": {
-    "group": "com.dm.earth",
+    "group": "dm.earth",
     "id": "cabricality",
     "provides": [
       {
@@ -23,20 +23,20 @@
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
-      "init": "com.dm.earth.cabricality.Cabricality",
-      "pre_launch": "com.dm.earth.cabricality.CabricalityPreInit",
-      "client_init": "com.dm.earth.cabricality.client.CabricalityClient",
-      "server_init": "com.dm.earth.cabricality.server.CabricalityServer",
+      "init": "dm.earth.cabricality.Cabricality",
+      "pre_launch": "dm.earth.cabricality.CabricalityPreInit",
+      "client_init": "dm.earth.cabricality.client.CabricalityClient",
+      "server_init": "dm.earth.cabricality.server.CabricalityServer",
       "client_events": [
-        "com.dm.earth.cabricality.client.listener.ClientCommandRegistryListener"
+        "dm.earth.cabricality.client.listener.ClientCommandRegistryListener"
       ],
       "events": [
-        "com.dm.earth.cabricality.listener.CommandRegistryListener",
-        "com.dm.earth.cabricality.tweak.RecipeTweaks",
-        "com.dm.earth.cabricality.content.trading.data.recipe.Trading"
+        "dm.earth.cabricality.listener.CommandRegistryListener",
+        "dm.earth.cabricality.tweak.RecipeTweaks",
+        "dm.earth.cabricality.content.trading.data.recipe.Trading"
       ],
-      "rei_client": "com.dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin",
-      "modmenu": "com.dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
+      "rei_client": "dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin",
+      "modmenu": "dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
     },
     "accessWidener": "cabricality.accesswidener",
     "depends": [

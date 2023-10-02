@@ -106,7 +106,7 @@ dependencies {
     modImplementation("maven.modrinth:bits-and-chisels:${property("bitsAndChiselsVersion")}")
     modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmersDelightVersion")}")
     modImplementation("maven.modrinth:hephaestus:${property("minecraftVersion")}-${property("hephaestusVersion")}")
-    modImplementation("maven.modrinth:let:${property("letVersion")}-mc${property("minecraftVersion")}")
+    modImplementation("maven.modrinth:let:${property("letVersion")}-mc${property("minecraftMajorVersion")}")
 
     // - Curse Maven
     modImplementation("curse.maven:industrial-revolution-391708:${property("indrevVersion")}")
