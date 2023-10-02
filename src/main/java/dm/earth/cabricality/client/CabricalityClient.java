@@ -1,15 +1,13 @@
-package dm.earth.cabricality;
+package dm.earth.cabricality.client;
 
 import java.util.Arrays;
 
-import dm.earth.cabricality.client.FluidRendererRegistry;
+import dm.earth.cabricality.Cabricality;
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
-import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
-import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import dm.earth.cabricality.client.listener.ColorRegistryListener;
@@ -29,7 +27,6 @@ import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
 
-@ClientOnly
 public class CabricalityClient implements ClientModInitializer {
 	public static String ID = Cabricality.ID + "Client";
 	@Nullable
@@ -41,7 +38,7 @@ public class CabricalityClient implements ClientModInitializer {
 	}
 
 	@Override
-	public void onInitializeClient(ModContainer mod) {
+	public void onInitializeClient() {
 		CabfReceiver.registerClient();
 
 		PushUtil.register();
@@ -55,14 +52,15 @@ public class CabricalityClient implements ClientModInitializer {
 		WoodCuttingEntry.checkAll();
 		OreProcessingEntry.checkAll();
 
-		BlockRenderLayerMap.put(RenderLayer.getCutout(),
-				Substrate.getJarBlocks(true).toArray(new Block[0]));
+		Arrays.stream(Substrate.getJarBlocks(true).toArray(Block[]::new))
+						.forEach(block -> BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout()));
 
 		Arrays.stream(MachineBlockEntry.values())
-				.forEach(entry -> BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock()));
+				.forEach(entry -> BlockRenderLayerMap.INSTANCE.putBlock(entry.getBlock(), entry.getLayer()));
 		Arrays.stream(CasingBlockEntry.values())
-				.forEach(entry -> BlockRenderLayerMap.put(entry.getLayer(), entry.getBlock()));
+				.forEach(entry -> BlockRenderLayerMap.INSTANCE.putBlock(entry.getBlock(), entry.getLayer()));
 
+		// TODO: Resource loader api
 		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
 				ResourcePackActivationType.DEFAULT_ENABLED,
 				Cabricality.genTranslatableText("pack", "asset_edits"));

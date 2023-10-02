@@ -30,12 +30,15 @@
     "server": [
       "dm.earth.cabricality.server.CabricalityServer"
     ],
+    "preLaunch": [
+      "dm.earth.cabricality.CabricalityPreLaunch"
+    ],
 
     "rei_client": [
       "dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin"
     ],
     "modmenu": [
-      "dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
+      "dm.earth.cabricality.config.modmenu.CabfModMenuIntegration"
     ]
   },
   "mixins": [

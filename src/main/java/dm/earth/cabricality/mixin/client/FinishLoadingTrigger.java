@@ -1,7 +1,7 @@
 package dm.earth.cabricality.mixin.client;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.CabricalityClient;
+import dm.earth.cabricality.client.CabricalityClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.SplashOverlay;

@@ -17,6 +17,7 @@ import dm.earth.cabricality.tweak.BlockTagTweaks;
 import dm.earth.cabricality.tweak.ItemTagTweaks;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.EnvType;
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.krlite.equator.visual.color.AccurateColor;
 import net.krlite.equator.visual.texture.Texture;
@@ -33,9 +34,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
-import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
@@ -128,13 +126,12 @@ public class Cabricality implements ModInitializer {
 		return Text.translatable(genTranslationKey(type, path));
 	}
 
-	@ClientOnly
 	private static void initClientAssets() {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 
 	@Override
-	public void onInitialize(ModContainer mod) {
+	public void onInitialize() {
 		CONFIG.save();
 		LOGGER.info("📦 Initializing " + NAME + "...");
 		initTime = System.currentTimeMillis();
@@ -159,6 +156,7 @@ public class Cabricality implements ModInitializer {
 		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> Cabricality::initClientAssets);
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
+		// TODO: Resource loader api
 		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
 				ResourcePackActivationType.ALWAYS_ENABLED);
 	}

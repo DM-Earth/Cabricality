@@ -19,6 +19,7 @@ import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 import java.util.Map;
 import java.util.function.Predicate;
 
+// TODO: Recipe api
 public enum ModEntry {
 	MC("minecraft"),
 

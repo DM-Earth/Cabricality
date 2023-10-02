@@ -1,7 +1,7 @@
 package dm.earth.cabricality.mixin.client;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.CabricalityClient;
+import dm.earth.cabricality.client.CabricalityClient;
 import dm.earth.cabricality.client.screen.MissingModScreen;
 import dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import net.minecraft.client.gui.GuiGraphics;
