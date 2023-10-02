@@ -1,16 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "let",
-  "version": "${version}",
+  "id": "cabricality",
+  "version": "${modpack_version}",
+  "provides": [
+    "kubejs"
+  ],
 
-  "name": "Light Emitting Triode",
-  "description": "...And God Said, Let There Be Light; Then There were Redstone Lamps.",
+  "name": "Cabricality",
+  "description": "",
   "authors": [
-    "Kessoku Tea Time"
+    "DM Earth"
   ],
   "contact": {
-    "homepage": "https://github.com/KessokuTeaTime",
-    "sources": "https://github.com/KessokuTeaTime/Light-Emitting-Triode"
+    "homepage": "https://github.com/DM-Earth",
+    "sources": "https://github.com/DM-Earth/Cabricality"
   },
 
   "license": "GPL-3.0",
@@ -19,20 +22,33 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "band.kessokuteatime.lightemittingtriode.LightEmittingTriode"
+      "dm.earth.cabricality.Cabricality"
     ],
-    "fabric-datagen": [
-      "band.kessokuteatime.lightemittingtriode.datagen.ModDataGenerator"
+    "client": [
+      "dm.earth.cabricality.client.CabricalityClient"
+    ],
+    "server": [
+      "dm.earth.cabricality.server.CabricalityServer"
+    ],
+
+    "rei_client": [
+      "dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin"
+    ],
+    "modmenu": [
+      "dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
     ]
   },
   "mixins": [
     "cabricality.mixins.json"
   ],
+  "accessWidener" : "cabricality.accesswidener",
 
   "depends": {
     "fabricloader": "*",
     "fabric-api": "*",
-    "minecraft": "1.20.x"
+    "fabric-key-binding-api-v1": "*",
+    "minecraft": "1.20.1",
+    "equator": ">=2.6.0"
   },
   "suggests": {
   }

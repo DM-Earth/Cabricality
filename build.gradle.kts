@@ -2,7 +2,7 @@ plugins {
     base
     java
     `maven-publish`
-    alias(libs.plugins.quilt.loom)
+    alias(libs.plugins.fabric.loom)
     id("org.jetbrains.kotlin.jvm") version "1.8.0"
 }
 
@@ -78,10 +78,10 @@ dependencies {
 
     // Mappings
     mappings(
-        variantOf(libs.yarn.mappings) { classifier("v2") }
+        variantOf(libs.quilt.mappings) { classifier("intermediary-v2") }
     )
 
-    // Quilt
+    // Fabric
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.api)
 
@@ -118,14 +118,6 @@ dependencies {
     modCompileOnlyApi("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("reiVersion")}")
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${property("reiVersion")}")
 }
-
-/*
-project.configurations.configureEach {
-    exclude(group = "net.fabricmc", module = "fabric-loader")
-    // exclude(group = "net.fabricmc.fabric-api")
-}
-
- */
 
 tasks {
     processResources {

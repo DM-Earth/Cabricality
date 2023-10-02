@@ -1,7 +1,7 @@
 [versions]
 # The latest versions are available at https://lambdaurora.dev/tools/import_quilt.html
 minecraft = "1.20.1"
-yarn_mappings = "1.20.1+build.10"
+quilt_mappings = "1.20.1+build.23"
 fabric_loader = "0.14.22"
 
 fabric_api = "0.89.3+1.20.1"
@@ -33,13 +33,13 @@ cloth_config = "12.0.109"
 
 # Included
 tags_binder = "0.3"
-brrp = "1.0.1-1.20.2"
+brrp = "1.0.1-1.20.1"
 pierced = "v1.2"
 exp4j = "0.4.8"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
-yarn_mappings = { module = "net.fabricmc:yarn", version.ref = "yarn_mappings" }
+quilt_mappings = { module = "org.quiltmc:quilt-mappings", version.ref = "quilt_mappings" }
 
 fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
 fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
@@ -96,4 +96,4 @@ jitpack = [
 ]
 
 [plugins]
-quilt_loom = { id = "fabric-loom", version = "1.4-SNAPSHOT" }
+fabric_loom = { id = "fabric-loom", version = "1.3-SNAPSHOT" }
