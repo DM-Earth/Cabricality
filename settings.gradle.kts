@@ -14,4 +14,3 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-include("Visual")
