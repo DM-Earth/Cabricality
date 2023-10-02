@@ -84,7 +84,7 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 
 	@Override
 	public Identifier getId() {
-		return Cabricality.id(this.isStill(null) ? this.getName() : (this.getName() + "_flowing"));
+		return Cabricality.id(this.isSource(null) ? this.getName() : (this.getName() + "_flowing"));
 	}
 
 	@Override
@@ -130,7 +130,7 @@ public class BaseFlowableFluid extends FlowableFluid implements IFluid {
 	@Override
 	protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
 		super.appendProperties(builder);
-		if (!this.isStill(null))
+		if (!this.isSource(null))
 			builder.add(LEVEL);
 	}
 

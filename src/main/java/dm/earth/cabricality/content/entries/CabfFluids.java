@@ -85,6 +85,7 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 		IFluid iFluid = (IFluid) fluid;
 		registerFluid(iFluid.getId(), ((IFluid) iFluid.getTypical()).getId(), fluid);
 		iFluid.registerBucketItem(Registries.ITEM);
+		/*
 		if (fluid.isSource(null)) {
 			Cabricality.RRPs.CLIENT_RESOURCES.addBlockState(
 					iFluid.getId(),
@@ -100,6 +101,8 @@ public class CabfFluids implements LoadTagsCallback<Fluid> {
 							iFluid.getTextureName())
 			);
 		}
+
+		 */
 	}
 
 	private static void registerIFluids(Fluid... fluids) {

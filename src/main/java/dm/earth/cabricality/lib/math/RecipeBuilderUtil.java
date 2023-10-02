@@ -4,6 +4,7 @@ import static dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
 import static dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
 import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
+import net.minecraft.registry.DynamicRegistryManager;
 import org.jetbrains.annotations.Nullable;
 import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
@@ -25,9 +26,12 @@ public class RecipeBuilderUtil {
 				.ingredient('O', Ingredient.ofItems(other)).output(new ItemStack(output, count)).build(id, "");
 	}
 
-	public static MechanicalCraftingRecipe mechanicalFromShaped(ShapedRecipe recipe, boolean acceptMirrored) {
+	public static MechanicalCraftingRecipe mechanicalFromShaped(
+			DynamicRegistryManager registryManager,
+			ShapedRecipe recipe, boolean acceptMirrored
+	) {
 		return new MechanicalCraftingRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
-				recipe.getIngredients(), recipe.getOutput(), acceptMirrored);
+				recipe.getIngredients(), recipe.getResult(registryManager), acceptMirrored);
 	}
 
 	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount,
@@ -56,44 +60,61 @@ public class RecipeBuilderUtil {
 	}
 
 	@Deprecated
-	public static Recipe<?> swapRecipeIngredient(Recipe<?> recipe, Ingredient from, Ingredient to) {
+	public static Recipe<?> swapRecipeIngredient(
+			DynamicRegistryManager registryManager,
+			Recipe<?> recipe, Ingredient from, Ingredient to
+	) {
 		if (recipe instanceof ShapelessRecipe)
-			return swapShapelessRecipeIngredient((ShapelessRecipe) recipe, from, to);
+			return swapShapelessRecipeIngredient(registryManager, (ShapelessRecipe) recipe, from, to);
 		if (recipe instanceof ShapedRecipe)
-			return swapShapedRecipeIngredient((ShapedRecipe) recipe, from, to);
+			return swapShapedRecipeIngredient(registryManager, (ShapedRecipe) recipe, from, to);
 		return recipe;
 	}
 
 	public static ShapelessRecipe swapShapelessRecipeOutput(ShapelessRecipe recipe, ItemStack output) {
-		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), output, recipe.getIngredients());
+		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), recipe.getCategory(), output, recipe.getIngredients());
 	}
 
 	@Deprecated
-	public static ShapelessRecipe swapShapelessRecipeIngredient(ShapelessRecipe recipe, Ingredient from,
-			Ingredient to) {
+	public static ShapelessRecipe swapShapelessRecipeIngredient(
+			DynamicRegistryManager registryManager,
+			ShapelessRecipe recipe, Ingredient from, Ingredient to
+	) {
 		DefaultedList<Ingredient> ingredients = recipe.getIngredients();
 		for (int i = 0; i < ingredients.size(); i++) {
 			if (ingredients.get(i).equals(from)) {
 				ingredients.set(i, to);
 			}
 		}
-		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), recipe.getOutput(), ingredients);
+		return new ShapelessRecipe(
+				recipe.getId(), recipe.getGroup(), recipe.getCategory(),
+				recipe.getResult(registryManager), ingredients
+		);
 	}
 
 	public static ShapedRecipe swapShapedRecipeOutput(ShapedRecipe recipe, ItemStack output) {
-		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
-				recipe.getIngredients(), output);
+		return new ShapedRecipe(
+				recipe.getId(), recipe.getGroup(), recipe.getCategory(),
+				recipe.getWidth(), recipe.getHeight(),
+				recipe.getIngredients(), output
+		);
 	}
 
 	@Deprecated
-	public static ShapedRecipe swapShapedRecipeIngredient(ShapedRecipe recipe, Ingredient from, Ingredient to) {
+	public static ShapedRecipe swapShapedRecipeIngredient(
+			DynamicRegistryManager registryManager,
+			ShapedRecipe recipe, Ingredient from, Ingredient to
+	) {
 		DefaultedList<Ingredient> ingredients = recipe.getIngredients();
 		for (int i = 0; i < ingredients.size(); i++) {
 			if (ingredients.get(i).equals(from)) {
 				ingredients.set(i, to);
 			}
 		}
-		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), ingredients,
-				recipe.getOutput());
+		return new ShapedRecipe(
+				recipe.getId(), recipe.getGroup(), recipe.getCategory(),
+				recipe.getWidth(), recipe.getHeight(),
+				ingredients, recipe.getResult(registryManager)
+		);
 	}
 }

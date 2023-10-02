@@ -43,7 +43,7 @@ public class FreePRP extends ProcessingRecipeBuilder.ProcessingRecipeParams {
 	}
 
 	public FreePRP setFluidResult(List<FluidStack> results) {
-		this.fluidResults.addAll(results);
+		// this.fluidResults.addAll(results);
 		return this;
 	}
 

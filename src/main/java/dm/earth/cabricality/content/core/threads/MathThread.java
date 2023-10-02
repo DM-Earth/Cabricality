@@ -18,7 +18,7 @@ import static dm.earth.cabricality.ModEntry.CR;
 public class MathThread implements TechThread {
 	@Override
 	public void addRecipes(RecipeHandler handler) {
-		handler.register(recipeId("crafting", "calculation"), CalculationRecipe::new);
+		// handler.register(recipeId("crafting", "calculation"), CalculationRecipe::new);
 
 		CabfItems.MATH_CASTS.forEach(str -> handler.register(
 				recipeId("stonecutting", str + "_cast"),

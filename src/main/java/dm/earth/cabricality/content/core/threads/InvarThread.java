@@ -85,6 +85,7 @@ public class InvarThread implements TechThread {
 		handler.register(
 				recipeId("mechanical_crafting", "crushing_wheel"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
+						handler.getRegistryManager(),
 						VanillaRecipeBuilders
 								.shapedRecipe(" AAA ", "AABAA", "ABBBA", "AABAA", " AAA")
 								.ingredient('A', Tags.Items.COBBLESTONE)
@@ -216,6 +217,7 @@ public class InvarThread implements TechThread {
 					? balls.get(index + 1)
 					: AE2.asItem("black_paint_ball");
 
+			/*
 			handler.register(
 					recipeId("emptying", Registries.ITEM.getId(item).getPath()),
 					id -> new EmptyingRecipe(new FreePRP(id)
@@ -223,6 +225,8 @@ public class InvarThread implements TechThread {
 							.setFluidResult(new FluidStack(CabfFluids.WASTE, FluidConstants.BOTTLE))
 							.setResult(new ProcessingOutput(output.getDefaultStack(), 1)))
 			);
+
+			 */
 		}
 
 		handler.register(
@@ -235,6 +239,7 @@ public class InvarThread implements TechThread {
 		handler.register(
 				recipeId("mechanical_crafting", "radiant_coil"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
+						handler.getRegistryManager(),
 						VanillaRecipeBuilders
 								.shapedRecipe("A")
 								.ingredient('A', CabfItems.RADIANT_SHEET)
@@ -246,12 +251,13 @@ public class InvarThread implements TechThread {
 		handler.register(
 				recipeId("mechanical_crafting", "chromatic_compound"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
-								VanillaRecipeBuilders
-										.shapedRecipe("AA", "AA")
-										.ingredient('A', AE2.asIngredient("magenta_paint_ball"))
-										.output(CR.asStack("chromatic_compound"))
-										.build(id, ""),
-								false)
+						handler.getRegistryManager(),
+						VanillaRecipeBuilders
+								.shapedRecipe("AA", "AA")
+								.ingredient('A', AE2.asIngredient("magenta_paint_ball"))
+								.output(CR.asStack("chromatic_compound"))
+								.build(id, ""),
+						false)
 		);
 
 		handler.register(

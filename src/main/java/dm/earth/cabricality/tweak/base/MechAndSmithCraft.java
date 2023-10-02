@@ -41,7 +41,9 @@ public class MechAndSmithCraft {
 				);
 				handler.register(
 						id(entry, "mechanical_crafting"),
-						id -> RecipeBuilderUtil.mechanicalFromShaped(VanillaRecipeBuilders
+						id -> RecipeBuilderUtil.mechanicalFromShaped(
+								handler.getRegistryManager(),
+								VanillaRecipeBuilders
 										.shapedRecipe("AB")
 										.ingredient('A', Ingredient.ofItems(entry.getInputItem()))
 										.ingredient('B', Ingredient.ofItems(entry.getOtherItem()))

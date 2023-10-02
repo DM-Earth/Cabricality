@@ -31,6 +31,7 @@ import static dm.earth.cabricality.ModEntry.TC;
 public class ZincThread implements TechThread {
 	@Override
 	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
+		/*
 		handler.register(
 				recipeId("mixing", "liquid_soul"),
 				id -> new MixingRecipe(new FreePRP(id)
@@ -41,6 +42,8 @@ public class ZincThread implements TechThread {
 						.setFluidResult(new FluidStack(TC.asFluid("liquid_soul"), FluidConstants.BOTTLE))
 						.setHeatRequirement(HeatCondition.HEATED))
 		);
+
+		 */
 
 		handler.register(
 				recipeId("crafting", "zinc_machine"),
