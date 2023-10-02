@@ -1,10 +1,41 @@
 [versions]
 # The latest versions are available at https://lambdaurora.dev/tools/import_quilt.html
 minecraft = "1.20.2"
-quilt_mappings = "1.20.2+build.2"
-quilt_loader = "0.21.0-beta.5"
+quilt_mappings = "1.20.2+build.3"
+quilt_loader = "0.21.0-beta.4"
 
 quilted_fabric_api = "7.3.0+0.89.0-1.20.1"
+
+# Implemented Mods
+# - AlphaMode
+create = "0.5.1-d-build.1161+mc1.20.1"
+mantle = "1.20.1-1.9.254"
+
+# - Modrinth Maven
+ad_astra = "1.15.3"
+architectury_api = "10.0.8+fabric"
+bits_and_chisels = "2.7.3"
+farmers_delight = "1.4.2"
+hephaestus = "1.20.1-3.6.3.232"
+let = "2.0.0-mc1.20"
+
+# - Curse Maven
+industrial_revolution = "4742613"
+ftb_quests = "4774299"
+ftb_library = "4720055"
+
+# - JitPack
+equator = "2.6.0-mc1.20"
+
+# Mod Apis
+modmenu = "8.0.0-beta.2"
+cloth_config = "12.0.109"
+
+# Included
+tags_binder = "0.3"
+brrp = "1.0.1-1.20.2"
+pierced = "v1.2"
+exp4j = "0.4.8"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -13,9 +44,56 @@ quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loade
 
 quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
 
-# If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
-# [bundles]
-# example = ["example-a", "example-b", "example-c"]
+# Implemented Mods
+# - AlphaMode
+create = { module = "com.simibubi.create:create-fabric-1.20.1", version.ref = "create" }
+mantle = { module = "slimeknights.mantle:Mantle", version.ref = "mantle" }
+
+# - Modrinth Maven
+ad_astra = { module = "maven.modrinth:ad-astra", version.ref = "ad_astra" }
+architectury_api = { module = "maven.modrinth:architectury-api", version.ref = "architectury_api" }
+bits_and_chisels = { module = "maven.modrinth:bits-and-chisels", version.ref = "bits_and_chisels" }
+farmers_delight = { module = "maven.modrinth:farmers-delight-fabric", version.ref = "farmers_delight" }
+hephaestus = { module = "maven.modrinth:hephaestus", version.ref = "hephaestus" }
+let = { module = "maven.modrinth:let", version.ref = "let" }
+
+# - Curse Maven
+industrial_revolution = { module = "curse.maven:industrial-revolution-391708" , version.ref = "industrial_revolution" }
+ftb_quests = { module = "curse.maven:ftb-quests-fabric-438496", version.ref = "ftb_quests" }
+ftb_library = { module = "curse.maven:ftb-library-fabric-438495", version.ref = "ftb_library" }
+
+# - JitPack
+equator = { module = "com.github.KrLite.Equator-v2:build", version.ref = "equator" }
+
+# Mod Apis
+modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
+cloth_config = { module = "me.shedaniel.cloth:cloth-config-fabric", version.ref = "cloth_config" }
+
+# Included
+tags_binder = { module = "com.github.DM-Earth:Tags-Binder", version.ref = "tags_binder" }
+brrp = { module = "pers.solid:brrp-fabric", version.ref = "brrp" }
+pierced = { module = "com.github.KrLite:Pierced", version.ref = "pierced" }
+exp4j = { module = "net.objecthunter:exp4j", version.ref = "exp4j" }
+
+[bundles]
+# Implemented Mods
+alphamode = ["create", "mantle"]
+modrinth_maven = [
+    "ad_astra",
+    "architectury_api",
+    "bits_and_chisels",
+    "farmers_delight",
+    "hephaestus",
+    "let"
+]
+curse_maven = [
+    "industrial_revolution",
+    "ftb_quests",
+    "ftb_library"
+]
+jitpack = [
+    "equator"
+]
 
 [plugins]
 quilt_loom = { id = "org.quiltmc.loom", version = "1.3+" }

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dm.earth.cabricality.visual.mixin",
+  "plugin": "dm.earth.cabricality.visual.plugin.CabfMixinConfigPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

@@ -84,66 +84,29 @@ dependencies {
     modImplementation(libs.quilt.loader)
     modImplementation(libs.quilted.fabric.api)
 
-    // Create
-    modImplementation(
-        "com.simibubi.create:create-fabric-" +
-                "${property("minecraftTemporaryVersion")}" + ":" +
-                "${property("createVersion")}" +
-                "+mc" + "${property("minecraftTemporaryVersion")}"
-    ) { exclude(group = "com.github.AlphaMode") }
-
     // Implemented Mods
-    // - Miscellaneous
-    modImplementation(
-        "slimeknights.mantle:Mantle:" +
-                "${property("minecraftTemporaryVersion")}" + "-" +
-                "${property("mantleVersion")}"
-    ) { exclude(group = "com.github.AlphaMode") }
-
-    // - Modrinth Maven
-    modImplementation("maven.modrinth:ad-astra:${property("adAstraVersion")}")
-    modImplementation("maven.modrinth:architectury-api:${property("architecturyVersion")}+fabric")
-    modImplementation("maven.modrinth:bits-and-chisels:${property("bitsAndChiselsVersion")}")
-    modImplementation("maven.modrinth:farmers-delight-fabric:${property("farmersDelightVersion")}")
-    modImplementation("maven.modrinth:hephaestus:${property("minecraftTemporaryVersion")}-${property("hephaestusVersion")}")
-    modImplementation("maven.modrinth:let:${property("letVersion")}-mc${property("minecraftMajorVersion")}")
-
-    // - Curse Maven
-    modImplementation("curse.maven:industrial-revolution-391708:${property("indrevVersion")}")
-    modImplementation("curse.maven:ftb-quests-fabric-438496:${property("ftbQuestsVersion")}")
-    modImplementation("curse.maven:ftb-library-fabric-438495:${property("ftbLibraryVersion")}")
-
-    // - JitPack
-    modImplementation("com.github.KrLite.Equator-v2:build:${property("equatorVersion")}-mc${property("minecraftMajorVersion")}")
+    modImplementation(libs.bundles.alphamode) { exclude(group = "com.github.AlphaMode") }
+    modImplementation(libs.bundles.modrinth.maven)
+    modImplementation(libs.bundles.curse.maven)
+    modImplementation(libs.bundles.jitpack)
 
     // Mod Apis
-    modApi("com.terraformersmc:modmenu:${property("modmenuVersion")}")
-    modApi("me.shedaniel.cloth:cloth-config-fabric:${property("clothConfigVersion")}") {
+    modApi(libs.modmenu)
+    modApi(libs.cloth.config) {
         exclude(group = "net.fabricmc.fabric-api")
     }
 
     // Included
-    include("com.github.DM-Earth:Tags-Binder:${property("tagsBinderVersion")}")?.let {
-        modApi(it)
-    }
-
-    include("pers.solid:brrp-fabric:${property("brrpVersion")}-${property("minecraftVersion")}")?.let {
-        modApi(it)
-    }
-
-    include("com.github.KrLite:Pierced:${property("piercedVersion")}")?.let {
-        api(it)
-    }
-
-    include("net.objecthunter:exp4j:${property("exp4jVersion")}")?.let {
-        implementation(it)
-    }
+    include(libs.tags.binder)?.let { modApi(it) }
+    include(libs.brrp)?.let { modApi(it) }
+    include(libs.pierced)?.let { api(it) }
+    include(libs.exp4j)?.let { api(it) }
 
     // Development
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${property("reiVersion")}")
-    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("reiVersion")}")
+    modCompileOnlyApi("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${property("reiVersion")}")
+    modCompileOnlyApi("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("reiVersion")}")
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${property("reiVersion")}")
 }
 
