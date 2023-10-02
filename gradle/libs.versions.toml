@@ -1,10 +1,10 @@
 [versions]
 # The latest versions are available at https://lambdaurora.dev/tools/import_quilt.html
 minecraft = "1.20.1"
-quilt_mappings = "1.20.1+build.23"
-quilt_loader = "0.21.0-beta.4"
+yarn_mappings = "1.20.1+build.10"
+fabric_loader = "0.14.22"
 
-quilted_fabric_api = "7.3.1+0.89.3-1.20.1"
+fabric_api = "0.89.3+1.20.1"
 
 # Implemented Mods
 # - AlphaMode
@@ -39,10 +39,10 @@ exp4j = "0.4.8"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
-quilt_mappings = { module = "org.quiltmc:quilt-mappings", version.ref = "quilt_mappings" }
+yarn_mappings = { module = "net.fabricmc:yarn", version.ref = "yarn_mappings" }
 
-quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loader" }
-quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
+fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
+fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
 
 # Implemented Mods
 # - AlphaMode

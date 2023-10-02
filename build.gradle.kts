@@ -78,12 +78,12 @@ dependencies {
 
     // Mappings
     mappings(
-        variantOf(libs.quilt.mappings) { classifier("intermediary-v2") }
+        variantOf(libs.yarn.mappings) { classifier("v2") }
     )
 
     // Quilt
-    modImplementation(libs.quilt.loader)
-    modImplementation(libs.quilted.fabric.api)
+    modImplementation(libs.fabric.loader)
+    modImplementation(libs.fabric.api)
 
     // Implemented Mods
     modImplementation(libs.bundles.alphamode) { exclude(group = "com.github.AlphaMode") }
