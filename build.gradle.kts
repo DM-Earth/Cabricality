@@ -99,10 +99,18 @@ dependencies {
     }
 
     // Included
-    include(libs.tags.binder)?.let { modApi(it) }
-    include(libs.brrp)?.let { modApi(it) }
-    include(libs.pierced)?.let { api(it) }
-    include(libs.exp4j)?.let { api(it) }
+    modApi(libs.tags.binder)?.let {
+        include(it)
+    }
+    modApi(libs.brrp)?.let {
+        include(it)
+    }
+    api(libs.pierced)?.let {
+        include(it)
+    }
+    api(libs.exp4j)?.let {
+        include(it)
+    }
 
     // Development
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -130,8 +138,8 @@ tasks {
 
 java {
     withSourcesJar()
-    setSourceCompatibility(JavaVersion.VERSION_17)
-    setTargetCompatibility(JavaVersion.VERSION_17)
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 publishing {

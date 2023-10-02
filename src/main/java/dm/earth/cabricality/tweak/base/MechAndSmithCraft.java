@@ -29,6 +29,7 @@ public class MechAndSmithCraft {
 	}
 
 	public static void register(AddRecipesCallback.RecipeHandler handler) {
+		/*
 		entries.forEach(entry -> {
 			if (entry.isSmithing()) {
 				handler.register(
@@ -57,6 +58,8 @@ public class MechAndSmithCraft {
 								entry.getOutputStack())
 				);
 		});
+
+		 */
 	}
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {

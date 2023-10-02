@@ -1,7 +1,7 @@
 package dm.earth.cabricality.client.screen;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.client.CabricalityClient;
+import dm.earth.cabricality.CabricalityClient;
 import dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.krlite.equator.render.frame.FrameInfo;

@@ -27,6 +27,7 @@ public class MathThread implements TechThread {
 						CABF.asStack(str + "_cast"))
 		));
 
+		/*
 		CabfItems.NUMBERS.forEach(num -> handler.register(
 				recipeId("melting", NumberItem.getNumberItemName(num)),
 				id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(
@@ -46,6 +47,8 @@ public class MathThread implements TechThread {
 						FluidConstants.NUGGET * 3,
 						null, 0, 200, 20)).value()
 		);
+
+		 */
 	}
 
 	@Override

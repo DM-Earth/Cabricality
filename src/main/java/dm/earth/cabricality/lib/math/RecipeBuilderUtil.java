@@ -31,8 +31,12 @@ public class RecipeBuilderUtil {
 			DynamicRegistryManager registryManager,
 			ShapedRecipe recipe, boolean acceptMirrored
 	) {
+		/*
 		return new MechanicalCraftingRecipe(recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
 				recipe.getIngredients(), recipe.getResult(registryManager), acceptMirrored);
+
+		 */
+		return null;
 	}
 
 	public static JsonObject generateMelting(Identifier input, Identifier fluid, long amount,
@@ -70,7 +74,8 @@ public class RecipeBuilderUtil {
 	}
 
 	public static ShapelessRecipe swapShapelessRecipeOutput(ShapelessRecipe recipe, ItemStack output) {
-		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), output, recipe.getIngredients());
+		//return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), output, recipe.getIngredients());
+		return null;
 	}
 
 	@Deprecated
@@ -82,12 +87,17 @@ public class RecipeBuilderUtil {
 				ingredients.set(i, to);
 			}
 		}
-		return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), recipe.getOutput(), ingredients);
+		// return new ShapelessRecipe(recipe.getId(), recipe.getGroup(), recipe.getOutput(), ingredients);
+		return null;
 	}
 
 	public static ShapedRecipe swapShapedRecipeOutput(ShapedRecipe recipe, ItemStack output) {
+		/*
 		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(),
 				recipe.getIngredients(), output);
+
+		 */
+		return null;
 	}
 
 	@Deprecated
@@ -98,7 +108,11 @@ public class RecipeBuilderUtil {
 				ingredients.set(i, to);
 			}
 		}
+		/*
 		return new ShapedRecipe(recipe.getId(), recipe.getGroup(), recipe.getWidth(), recipe.getHeight(), ingredients,
 				recipe.getOutput());
+
+		 */
+		return null;
 	}
 }

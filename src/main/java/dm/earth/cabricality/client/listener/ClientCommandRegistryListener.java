@@ -2,7 +2,7 @@ package dm.earth.cabricality.client.listener;
 
 import static org.quiltmc.qsl.command.api.client.ClientCommandManager.literal;
 
-import dm.earth.cabricality.client.CabricalityClient;
+import dm.earth.cabricality.CabricalityClient;
 import net.minecraft.command.CommandBuildContext;
 import net.minecraft.server.command.CommandManager;
 import org.quiltmc.qsl.command.api.client.ClientCommandRegistrationCallback;

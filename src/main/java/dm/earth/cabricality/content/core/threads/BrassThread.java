@@ -136,6 +136,7 @@ public class BrassThread implements TechThread {
 				)
 		);
 
+		/*
 		handler.register(recipeId("mechanical_crafting", Registries.ITEM.getId(seed).getPath()),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
 						VanillaRecipeBuilders
@@ -146,6 +147,8 @@ public class BrassThread implements TechThread {
 						false
 				)
 		);
+
+		 */
 	}
 
 	@Override

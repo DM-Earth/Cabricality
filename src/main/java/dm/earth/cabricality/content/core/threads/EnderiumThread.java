@@ -45,6 +45,7 @@ public class EnderiumThread implements TechThread {
 						.build(id, "")
 		);
 
+		/*
 		handler.register(
 				recipeId("melting", "dark_amaranth_fungus"),
 				id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(
@@ -54,6 +55,8 @@ public class EnderiumThread implements TechThread {
 						null, 0, 100, 10
 				)).value()
 		);
+
+		 */
 
 		handler.register(
 				recipeId("item_application", "enderium_casing"),

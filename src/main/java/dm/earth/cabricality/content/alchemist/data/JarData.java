@@ -104,6 +104,7 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 	public void addRecipes(RecipeHandler handler) {
 		ArrayList<Reagent> reagents = new ArrayList<>();
 
+		/*
 		// Scan substrates
 		for (Reagents reagentsT : Reagents.values())
 			for (Reagent reagent : reagentsT.getReagents()) {
@@ -128,5 +129,7 @@ public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
 			});
 			smelt.set(!smelt.get());
 		});
+
+		 */
 	}
 }

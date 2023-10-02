@@ -9,10 +9,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
 public class CabfRecipeSerializers {
-
+	/*
 	public static final SpecialRecipeSerializer<CalculationRecipe> CALCULATION = registerSerializer(
 			"crafting_special_calculation", new SpecialRecipeSerializer<>(CalculationRecipe::new)
 	);
+	
+	 */
 
 	private static <S extends RecipeSerializer<T>, T extends Recipe<?>> S registerSerializer(String name, S serializer) {
 		return Registry.register(Registries.RECIPE_SERIALIZER, Cabricality.id(name), serializer);

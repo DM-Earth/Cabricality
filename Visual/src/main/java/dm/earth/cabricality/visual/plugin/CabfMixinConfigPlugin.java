@@ -1,6 +1,6 @@
 package dm.earth.cabricality.visual.plugin;
 
-import dm.earth.cabricality.Cabricality;
+import dm.earth.cabricality.visual.CabricalityVisualClient;
 import org.objectweb.asm.tree.ClassNode;
 import org.quiltmc.loader.api.QuiltLoader;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -25,7 +25,7 @@ public class CabfMixinConfigPlugin implements IMixinConfigPlugin {
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 		final AtomicBoolean shouldApply = new AtomicBoolean(true);
 
-		if (mixinClassName.startsWith("com.dm.earth.cabricality")) {
+		if (mixinClassName.startsWith(CabricalityVisualClient.class.getPackageName())) {
 			// FTB
 			String[] modIds = { "ftbquests", "ftblibrary" };
 			Arrays.stream(modIds).forEach(id -> {

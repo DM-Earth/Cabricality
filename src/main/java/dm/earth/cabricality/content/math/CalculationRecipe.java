@@ -15,12 +15,20 @@ import net.minecraft.recipe.CraftingCategory;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.registry.DynamicRegistryManager;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 public class CalculationRecipe extends SpecialCraftingRecipe {
+	public CalculationRecipe(Identifier id, CraftingCategory category) {
+		super(id, category);
+	}
+
+	/*
 	public CalculationRecipe(CraftingCategory category) {
 		super(category);
 	}
+
+	 */
 
 	@Override
 	public ItemStack craft(RecipeInputInventory inventory, DynamicRegistryManager registryManager) {
@@ -49,7 +57,8 @@ public class CalculationRecipe extends SpecialCraftingRecipe {
 
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return CabfRecipeSerializers.CALCULATION;
+		// return CabfRecipeSerializers.CALCULATION;
+		return null;
 	}
 
 	@Override

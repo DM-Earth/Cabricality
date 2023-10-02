@@ -138,6 +138,7 @@ public class OreProcessingTweaks {
 
 	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
 		for (OreProcessingEntry entry : OreProcessingEntry.values()) {
+			/*
 			handler.removeIf(
 					Registries.RECIPE_TYPE.get(new Identifier("tconstruct", "melting")),
 					p -> !ModEntry.CABF.checkContains(p)
@@ -162,6 +163,8 @@ public class OreProcessingTweaks {
 
 			Identifier dustSmelt = ModEntry.TC.id("smeltery", "melting", "metal", entry.getId().getPath(), "dust");
 			handler.remove(dustSmelt);
+
+			 */
 		}
 	}
 

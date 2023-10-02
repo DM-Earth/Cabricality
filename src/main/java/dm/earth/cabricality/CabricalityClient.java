@@ -1,7 +1,8 @@
-package dm.earth.cabricality.client;
+package dm.earth.cabricality;
 
 import java.util.Arrays;
 
+import dm.earth.cabricality.client.FluidRendererRegistry;
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
@@ -11,7 +12,6 @@ import org.quiltmc.qsl.base.api.entrypoint.client.ClientModInitializer;
 import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
 import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
 import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
-import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.client.listener.ColorRegistryListener;
 import dm.earth.cabricality.config.key.CabfKeyBinds;
 import dm.earth.cabricality.content.alchemist.core.Substrate;

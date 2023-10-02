@@ -26,8 +26,7 @@ dependencies {
     modImplementation(libs.quilt.loader)
     modImplementation(libs.quilted.fabric.api)
 
-    // Parent
-    implementation(rootProject)
+    modImplementation("com.github.KrLite.Equator-v2:build:2.6.0-mc1.20")
 }
 
 tasks {
@@ -48,8 +47,8 @@ tasks {
 
 java {
     withSourcesJar()
-    setSourceCompatibility(JavaVersion.VERSION_17)
-    setTargetCompatibility(JavaVersion.VERSION_17)
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 publishing {

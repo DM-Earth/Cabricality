@@ -86,10 +86,13 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
         return state;
     }
 
+	/*
     @Override
     public boolean canFillWithFluid(@Nullable PlayerEntity playerEntity, BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
         return this.isWaterLoggable() && Waterloggable.super.canFillWithFluid(playerEntity, world, pos, state, fluid);
     }
+
+	 */
 
 	@Override
     protected void appendProperties(Builder<Block, BlockState> builder) {

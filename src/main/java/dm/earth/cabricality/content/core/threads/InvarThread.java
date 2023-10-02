@@ -79,6 +79,7 @@ public class InvarThread implements TechThread {
 
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+		/*
 		handler.register(
 				recipeId("mechanical_crafting", "crushing_wheel"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
@@ -91,6 +92,8 @@ public class InvarThread implements TechThread {
 						false
 				)
 		);
+
+		 */
 
 		for (ColoredFernItem.Entry entry : ColoredFernItem.Entry.values()) {
 			String fern = entry.name + "_slime_fern";
@@ -135,6 +138,7 @@ public class InvarThread implements TechThread {
 							.setProcessingTime(70))
 			);
 
+			/*
 			handler.register(
 					recipeId("campfire_cooking", paste),
 					id -> new CampfireCookingRecipe(
@@ -144,8 +148,11 @@ public class InvarThread implements TechThread {
 							entry.getOutputItem().getDefaultStack(),
 							0, 300)
 			);
+
+			 */
 		}
 
+		/*
 		handler.register(
 				recipeId("campfire_cooking", "stick"),
 				id -> new CampfireCookingRecipe(
@@ -156,6 +163,8 @@ public class InvarThread implements TechThread {
 						0, 20
 				)
 		);
+
+		 */
 
 		handler.register(
 				recipeId("blasting", "nickel_compound"),
@@ -232,6 +241,7 @@ public class InvarThread implements TechThread {
 						.setResult(CABF.asProcessingOutput("radiant_sheet")))
 		);
 
+		/*
 		handler.register(
 				recipeId("mechanical_crafting", "radiant_coil"),
 				id -> RecipeBuilderUtil.mechanicalFromShaped(
@@ -253,6 +263,8 @@ public class InvarThread implements TechThread {
 										.build(id, ""),
 								false)
 		);
+
+		 */
 
 		handler.register(
 				recipeId("crafting", "chromatic_resonator"),
@@ -282,6 +294,7 @@ public class InvarThread implements TechThread {
 						.setResult(CABF.asProcessingOutput("invar_casing")))
 		);
 
+		/*
 		handler.register(
 				recipeId("melting", "ender_dust"),
 				id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(
@@ -289,6 +302,8 @@ public class InvarThread implements TechThread {
 						FluidConstants.INGOT,
 						null, 0, 350, 35)).value()
 		);
+
+		 */
 	}
 
 	@Override

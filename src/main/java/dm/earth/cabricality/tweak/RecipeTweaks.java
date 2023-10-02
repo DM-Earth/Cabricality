@@ -66,6 +66,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 	@SuppressWarnings("UnstableApiUsage")
 	@Override
 	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+		/*
 		TechThread.THREADS.forEach(thread -> thread.addRecipes(handler));
 
 		CuttingRecipeTweaks.register(handler);
@@ -274,15 +275,18 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 						null, 0, 250, 135
 				))
 		);
+
+		 */
 	}
 
 	@Override
 	public void modifyRecipes(ModifyRecipesCallback.RecipeHandler handler) {
-		TechThread.THREADS.forEach(thread -> thread.modifyRecipes(handler));
+		// TechThread.THREADS.forEach(thread -> thread.modifyRecipes(handler));
 	}
 
 	@Override
 	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
+		/*
 		TechThread.THREADS.forEach(thread -> thread.removeRecipes(handler));
 
 		OreProcessingTweaks.register(handler);
@@ -334,6 +338,8 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.remove(IR.id("shaped/coal_generator_mk1"));
 		handler.remove(IR.id("shaped/solar_generator_mk1"));
 		handler.remove(IR.id("shaped/solar_generator_mk3"));
+
+		 */
 	}
 
 	private static Identifier recipeId(String type, String name) {

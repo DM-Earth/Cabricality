@@ -55,12 +55,16 @@ public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
 	private static ShapelessRecipe genDupeRecipe(Item item, Identifier id) {
 		DefaultedList<Ingredient> ingredients = DefaultedList.of();
 		ingredients.add(Ingredient.ofItems(item));
+		/*
 		return new ShapelessRecipe(
 				"cabricality_dupe",
 				CraftingCategory.MISC,
 				new ItemStack(item, 2),
 				ingredients
 		);
+
+		 */
+		return null;
 	}
 
 	public static void load() {
