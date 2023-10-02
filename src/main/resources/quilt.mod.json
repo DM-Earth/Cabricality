@@ -38,7 +38,6 @@
       "rei_client": "dm.earth.cabricality.client.plugin.rei.CabfREIClientPlugin",
       "modmenu": "dm.earth.cabricality.config.modmenu.CabfModMenuImpl"
     },
-    "accessWidener": "cabricality.accesswidener",
     "depends": [
       {
         "id": "quilt_loader",
