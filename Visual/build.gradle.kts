@@ -13,64 +13,6 @@ base {
     archivesName.set("${property("archivesName")}-${property("moduleBaseName")}")
 }
 
-repositories {
-    maven {
-        name = "Modrinth Maven"
-        url = uri("https://api.modrinth.com/maven")
-        content {
-            includeGroup("maven.modrinth")
-        }
-    }
-
-    maven {
-        name = "Curse Maven"
-        url = uri("https://cursemaven.com")
-        content {
-            includeGroup("curse.maven")
-        }
-    }
-
-    maven { url = uri("https://mvn.devos.one/snapshots/") }
-
-    maven {
-        name = "JitPack"
-        url = uri("https://jitpack.io/")
-    }
-
-    maven {
-        url = uri("https://maven.ladysnake.org/releases")
-        content {
-            includeGroup("io.github.ladysnake")
-            includeGroup("org.ladysnake")
-            includeGroupByRegex("dev\\.onyxstudios.*")
-        }
-    }
-
-    maven {
-        url = uri("https://maven.jamieswhiteshirt.com/libs-release")
-        content {
-            includeGroup("com.jamieswhiteshirt")
-        }
-    }
-
-    maven { url = uri("https://aperlambda.github.io/maven") }
-    maven { url = uri("https://dvs1.progwml6.com/files/maven/") }
-    maven { url = uri("https://maven.cafeteria.dev/releases/") }
-    maven { url = uri("https://maven.fabricmc.net/") }
-    maven { url = uri("https://maven.gegy.dev") }
-    maven { url = uri("https://maven.kotlindiscord.com/repository/terraformers/") }
-    maven { url = uri("https://maven.parchmentmc.org") }
-    maven { url = uri("https://maven.shedaniel.me/") }
-    maven { url = uri("https://maven.terraformersmc.com/releases/") }
-    maven { url = uri("https://maven.tterrag.com/") }
-    maven { url = uri("https://maven.wispforest.io") }
-    maven { url = uri("https://modmaven.dev") }
-    maven { url = uri("https://raw.githubusercontent.com/SolidBlock-cn/mvn-repo/main") }
-    maven { url = uri("https://storage.googleapis.com/devan-maven/") }
-
-    mavenCentral()
-}
-
 dependencies {
     // Minecraft
     minecraft(libs.minecraft)
