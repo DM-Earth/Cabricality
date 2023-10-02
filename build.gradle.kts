@@ -53,20 +53,21 @@ repositories {
         }
     }
 
+    maven { url = uri("https://maven.quiltmc.org/repository/release") }
     maven { url = uri("https://aperlambda.github.io/maven") }
-    maven { url = uri("https://dvs1.progwml6.com/files/maven/") }
-    maven { url = uri("https://maven.cafeteria.dev/releases/") }
-    maven { url = uri("https://maven.fabricmc.net/") }
+    maven { url = uri("https://dvs1.progwml6.com/files/maven") }
+    maven { url = uri("https://maven.cafeteria.dev/releases") }
+    maven { url = uri("https://maven.fabricmc.net") }
     maven { url = uri("https://maven.gegy.dev") }
-    maven { url = uri("https://maven.kotlindiscord.com/repository/terraformers/") }
+    maven { url = uri("https://maven.kotlindiscord.com/repository/terraformers") }
     maven { url = uri("https://maven.parchmentmc.org") }
-    maven { url = uri("https://maven.shedaniel.me/") }
-    maven { url = uri("https://maven.terraformersmc.com/releases/") }
-    maven { url = uri("https://maven.tterrag.com/") }
+    maven { url = uri("https://maven.shedaniel.me") }
+    maven { url = uri("https://maven.terraformersmc.com/releases") }
+    maven { url = uri("https://maven.tterrag.com") }
     maven { url = uri("https://maven.wispforest.io") }
     maven { url = uri("https://modmaven.dev") }
     maven { url = uri("https://raw.githubusercontent.com/SolidBlock-cn/mvn-repo/main") }
-    maven { url = uri("https://storage.googleapis.com/devan-maven/") }
+    maven { url = uri("https://storage.googleapis.com/devan-maven") }
 
     mavenCentral()
 }
@@ -117,6 +118,14 @@ dependencies {
     modCompileOnlyApi("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("reiVersion")}")
     modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${property("reiVersion")}")
 }
+
+/*
+project.configurations.configureEach {
+    exclude(group = "net.fabricmc", module = "fabric-loader")
+    // exclude(group = "net.fabricmc.fabric-api")
+}
+
+ */
 
 tasks {
     processResources {

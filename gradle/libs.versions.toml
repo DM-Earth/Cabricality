@@ -96,4 +96,4 @@ jitpack = [
 ]
 
 [plugins]
-quilt_loom = { id = "org.quiltmc.loom", version = "1.2.+" }
+quilt_loom = { id = "fabric-loom", version = "1.4-SNAPSHOT" }
