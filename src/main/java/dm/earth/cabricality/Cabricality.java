@@ -108,7 +108,7 @@ public class Cabricality implements ModInitializer {
 	public static final CabfConfig CONFIG = new CabfConfig();
 	private static long initTime = -1;
 
-	public static final ModContainer CABF_MODCONTAINER = FabricLoader.getInstance().getModContainer(ID).orElseThrow();
+	public static final ModContainer MODCONTAINER = FabricLoader.getInstance().getModContainer(ID).orElseThrow();
 
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
@@ -161,7 +161,7 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
 		ResourceManagerHelper.registerBuiltinResourcePack(id("data_overrides"),
-				CABF_MODCONTAINER,
+				MODCONTAINER,
 				ResourcePackActivationType.ALWAYS_ENABLED
 		);
 	}

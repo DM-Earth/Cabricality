@@ -61,12 +61,12 @@ public class CabricalityClient implements ClientModInitializer {
 				.forEach(entry -> BlockRenderLayerMap.INSTANCE.putBlock(entry.getBlock(), entry.getLayer()));
 
 		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
-				Cabricality.CABF_MODCONTAINER,
+				Cabricality.MODCONTAINER,
 				Cabricality.genTranslatableText("pack", "asset_edits"),
 				ResourcePackActivationType.DEFAULT_ENABLED
 		);
 		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
-				Cabricality.CABF_MODCONTAINER,
+				Cabricality.MODCONTAINER,
 				Cabricality.genTranslatableText("pack", "quests_lang"),
 				ResourcePackActivationType.ALWAYS_ENABLED
 		);
