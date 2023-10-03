@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
+import net.fabricmc.loader.api.FabricLoader;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.loader.api.QuiltLoader;
 
 import dm.earth.cabricality.lib.util.debug.CabfLogger;
 
@@ -83,7 +83,7 @@ public enum CabfModDeps {
 	}
 
 	public boolean isLoaded() {
-		return QuiltLoader.isModLoaded(modId);
+		return FabricLoader.getInstance().isModLoaded(modId);
 	}
 
 	public void openUrl() {

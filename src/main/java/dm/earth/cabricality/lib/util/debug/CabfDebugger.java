@@ -1,13 +1,13 @@
 package dm.earth.cabricality.lib.util.debug;
 
 import dm.earth.cabricality.Cabricality;
-import org.quiltmc.loader.api.QuiltLoader;
+import net.fabricmc.loader.api.FabricLoader;
 
 public class CabfDebugger {
 	public static boolean enabled = false;
 
 	public static void debug(String bug) {
-		if (enabled || QuiltLoader.isDevelopmentEnvironment())
+		if (enabled || FabricLoader.getInstance().isDevelopmentEnvironment())
 			Cabricality.LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + bug);
 	}
 }

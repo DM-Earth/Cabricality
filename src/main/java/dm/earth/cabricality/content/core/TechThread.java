@@ -3,9 +3,6 @@ package dm.earth.cabricality.content.core;
 import java.util.List;
 
 import dm.earth.cabricality.Cabricality;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 import dm.earth.cabricality.content.core.threads.AndesiteThread;
 import dm.earth.cabricality.content.core.threads.BrassThread;
 import dm.earth.cabricality.content.core.threads.CopperThread;
@@ -15,6 +12,7 @@ import dm.earth.cabricality.content.core.threads.InvarThread;
 import dm.earth.cabricality.content.core.threads.MathThread;
 import dm.earth.cabricality.content.core.threads.ObsidianThread;
 import dm.earth.cabricality.content.core.threads.ZincThread;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.util.Identifier;
 
 public interface TechThread {
@@ -30,11 +28,11 @@ public interface TechThread {
 			new MathThread()
 	);
 
-	default void addRecipes(AddRecipesCallback.RecipeHandler handler) {}
+	default void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {}
 
-	default void modifyRecipes(ModifyRecipesCallback.RecipeHandler handler) {}
+	default void modifyRecipes(RecipeLoadingEvents.ModifyRecipesCallback.RecipeHandler handler) {}
 
-	default void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {}
+	default void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {}
 
 	default void load() {};
 

@@ -11,9 +11,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Map;
 
+import net.fabricmc.loader.api.FabricLoader;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.loader.api.QuiltLoader;
 
 import dm.earth.cabricality.lib.util.debug.CabfLogger;
 
@@ -62,7 +62,7 @@ public class ModDownloader {
 		@Override
 		public void start() {
 			try {
-				File file = QuiltLoader.getGameDir().resolve("mods").resolve(mod + ".jar").toFile();
+				File file = FabricLoader.getInstance().getGameDir().resolve("mods").resolve(mod + ".jar").toFile();
 				if (!file.getParentFile().exists())
 					file.getParentFile().mkdirs();
 

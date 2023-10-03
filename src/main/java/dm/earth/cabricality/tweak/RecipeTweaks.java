@@ -18,6 +18,7 @@ import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import io.github.fabricators_of_create.porting_lib.tags.Tags;
 import me.steven.indrev.blocks.machine.pipes.FluidPipeBlock;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
@@ -31,10 +32,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.ModifyRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -50,7 +47,7 @@ import static dm.earth.cabricality.ModEntry.IR;
 import static dm.earth.cabricality.ModEntry.MC;
 import static dm.earth.cabricality.ModEntry.TC;
 
-public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, RemoveRecipesCallback {
+public class RecipeTweaks implements RecipeLoadingEvents.AddRecipesCallback, RecipeLoadingEvents.ModifyRecipesCallback, RecipeLoadingEvents.RemoveRecipesCallback {
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(
 			// Wrenches
 			AD.asItem("wrench"), IR.asItem("wrench"), CI.asItem("wrench"), BC.asItem("wrench"),
@@ -65,7 +62,7 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 
 	@SuppressWarnings("UnstableApiUsage")
 	@Override
-	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		/*
 		TechThread.THREADS.forEach(thread -> thread.addRecipes(handler));
 
@@ -280,13 +277,12 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 	}
 
 	@Override
-	public void modifyRecipes(ModifyRecipesCallback.RecipeHandler handler) {
-		// TechThread.THREADS.forEach(thread -> thread.modifyRecipes(handler));
+	public void modifyRecipes(RecipeLoadingEvents.ModifyRecipesCallback.RecipeHandler handler) {
+		TechThread.THREADS.forEach(thread -> thread.modifyRecipes(handler));
 	}
 
 	@Override
-	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
-		/*
+	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		TechThread.THREADS.forEach(thread -> thread.removeRecipes(handler));
 
 		OreProcessingTweaks.register(handler);
@@ -307,30 +303,30 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		);
 
 		// Remove wrenches except Create's and AE2's
-		handler.removeIf(r ->
-				!CR.checkContains(r) && !AE2.checkContains(r)
-						&& Registries.ITEM.getId(r.getResult(handler.getRegistryManager()).getItem()).getPath().contains("wrench")
+		handler.removeIf(recipe ->
+				!CR.checkContains(handler, recipe) && !AE2.checkContains(handler, recipe)
+						&& Registries.ITEM.getId(recipe.getResult(handler.getRegistryManager()).getItem()).getPath().contains("wrench")
 		);
-		handler.removeIf(IR.predicateOutput(handler.getRegistryManager(), "controller"));
+		handler.removeIf(IR.predicateOutput(handler, "controller"));
 
 		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
-				type -> handler.removeIf(AD.predicateOutput(handler.getRegistryManager(), material + "_" + type))
+				type -> handler.removeIf(AD.predicateOutput(handler, material + "_" + type))
 		));
 		handler.remove(AD.id("recipes/nasa_workbench"));
 
 		// AE2
-		handler.removeIf(AllRecipeTypes.MILLING.getType(), AE2.predicateOutput(handler.getRegistryManager(), "certus_quartz_dust").and(
-				AE2.predicateIngredient("certus_quartz_crystal").negate()
+		handler.removeIf(AllRecipeTypes.MILLING.getType(), AE2.predicateOutput(handler, "certus_quartz_dust").and(
+				AE2.predicateIngredient(handler, "certus_quartz_crystal").negate()
 		));
 
 		// Indrev
-		handler.removeIf(r ->
-				IR.checkContains(r)
-						&& Registries.ITEM.getId(r.getResult(handler.getRegistryManager()).getItem()).getPath()
+		handler.removeIf(recipe ->
+				IR.checkContains(handler, recipe)
+						&& Registries.ITEM.getId(recipe.getResult(handler.getRegistryManager()).getItem()).getPath()
 						.matches(".*_(pickaxe|axe|shovel|hoe|sword)$")
 		);
-		handler.removeIf(IR.predicateIngredient("fan"));
+		handler.removeIf(IR.predicateIngredient(handler, "fan"));
 		handler.removeIf(recipe ->
 				recipe.getResult(handler.getRegistryManager()).getItem() instanceof BlockItem blockItem
 						&& blockItem.getBlock() instanceof FluidPipeBlock
@@ -338,8 +334,6 @@ public class RecipeTweaks implements AddRecipesCallback, ModifyRecipesCallback, 
 		handler.remove(IR.id("shaped/coal_generator_mk1"));
 		handler.remove(IR.id("shaped/solar_generator_mk1"));
 		handler.remove(IR.id("shaped/solar_generator_mk3"));
-
-		 */
 	}
 
 	private static Identifier recipeId(String type, String name) {

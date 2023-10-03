@@ -5,6 +5,8 @@ import dm.earth.cabricality.network.CabfNetworking;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
 import io.netty.buffer.Unpooled;
+import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
@@ -15,13 +17,11 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
-import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
-import org.quiltmc.qsl.networking.api.client.ClientPlayNetworking;
 
-public class HeldItemInfoCommand implements Command<QuiltClientCommandSource> {
+public class HeldItemInfoCommand implements Command<FabricClientCommandSource> {
 	@Override
 	@SuppressWarnings("all")
-	public int run(CommandContext<QuiltClientCommandSource> context) {
+	public int run(CommandContext<FabricClientCommandSource> context) {
 		ItemStack stack = context.getSource().getPlayer().getMainHandStack();
 		Identifier itemId = Registries.ITEM.getId(stack.getItem());
 

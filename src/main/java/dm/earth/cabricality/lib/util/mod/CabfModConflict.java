@@ -1,7 +1,8 @@
 package dm.earth.cabricality.lib.util.mod;
 
 import java.util.stream.Stream;
-import org.quiltmc.loader.api.QuiltLoader;
+
+import net.fabricmc.loader.api.FabricLoader;
 
 public enum CabfModConflict {
 	ESSENTIAL("essential-loader");
@@ -17,7 +18,7 @@ public enum CabfModConflict {
 	}
 
 	public boolean isLoaded() {
-		return QuiltLoader.isModLoaded(modId);
+		return FabricLoader.getInstance().isModLoaded(modId);
 	}
 
 	public static boolean isAnyLoaded() {

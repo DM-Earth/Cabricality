@@ -32,6 +32,8 @@ repositories {
 
     maven { url = uri("https://mvn.devos.one/snapshots/") }
 
+    maven { url = uri("https://maven.saps.dev/releases/") }
+
     maven {
         name = "JitPack"
         url = uri("https://jitpack.io/")
@@ -66,7 +68,6 @@ repositories {
     maven { url = uri("https://maven.tterrag.com") }
     maven { url = uri("https://maven.wispforest.io") }
     maven { url = uri("https://modmaven.dev") }
-    maven { url = uri("https://raw.githubusercontent.com/SolidBlock-cn/mvn-repo/main") }
     maven { url = uri("https://storage.googleapis.com/devan-maven") }
 
     mavenCentral()
@@ -87,8 +88,8 @@ dependencies {
 
     // Implemented Mods
     modImplementation(libs.bundles.alphamode) { exclude(group = "com.github.AlphaMode") }
+    modImplementation(libs.bundles.ftb.mods)
     modImplementation(libs.bundles.modrinth.maven)
-    modImplementation(libs.bundles.curse.maven)
     modImplementation(libs.bundles.jitpack)
 
     // Mod Apis

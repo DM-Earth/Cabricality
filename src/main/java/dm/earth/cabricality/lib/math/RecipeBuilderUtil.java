@@ -5,9 +5,9 @@ import static dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
 import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
 import dm.earth.cabricality.lib.util.JRecipeUtil;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import net.minecraft.registry.DynamicRegistryManager;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

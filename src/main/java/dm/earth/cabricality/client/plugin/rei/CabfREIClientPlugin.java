@@ -15,11 +15,11 @@ import me.shedaniel.rei.api.common.entry.EntryStack;
 import me.shedaniel.rei.api.common.entry.type.EntryType;
 import me.shedaniel.rei.api.common.entry.type.VanillaEntryTypes;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import org.quiltmc.loader.api.QuiltLoader;
 import slimeknights.tconstruct.tables.client.inventory.TinkerStationScreen;
 
 import java.util.Arrays;
@@ -237,7 +237,7 @@ public class CabfREIClientPlugin implements REIClientPlugin {
 									color -> AE2.asItem(joinAll(color, type, postfix))).collect(Collectors.toList()))));
 		}
 
-		if (QuiltLoader.isModLoaded(IF.getModid())) {
+		if (FabricLoader.getInstance().isModLoaded(IF.getModid())) {
 			/*
 			 * Item Filters
 			 */

@@ -16,6 +16,8 @@ import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import io.github.fabricators_of_create.porting_lib.tags.Tags;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
@@ -32,9 +34,6 @@ import net.minecraft.util.collection.DefaultedList;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import java.util.List;
 
@@ -78,7 +77,7 @@ public class InvarThread implements TechThread {
 	}
 
 	@Override
-	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		/*
 		handler.register(
 				recipeId("mechanical_crafting", "crushing_wheel"),
@@ -317,7 +316,7 @@ public class InvarThread implements TechThread {
 	}
 
 	@Override
-	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
+	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		handler.remove(CR.id("mechanical_crafting", "crushing_wheel"));
 		handler.removeIf(IR.predicateOutput(handler, false, "machine_block"));
 		handler.removeIf(

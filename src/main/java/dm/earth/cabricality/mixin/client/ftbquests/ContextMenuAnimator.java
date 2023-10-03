@@ -6,11 +6,12 @@ import dev.ftb.mods.ftblibrary.ui.ContextMenu;
 import dev.ftb.mods.ftblibrary.ui.ContextMenuItem;
 import dev.ftb.mods.ftblibrary.ui.Panel;
 import dev.ftb.mods.ftblibrary.ui.Theme;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.minecraft.client.gui.GuiGraphics;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,7 +21,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(ContextMenu.class)
 public class ContextMenuAnimator {
 	@Unique

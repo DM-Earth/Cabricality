@@ -4,16 +4,17 @@ import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.lib.util.PushUtil;
 import dev.ftb.mods.ftblibrary.icon.Color4I;
 import dev.ftb.mods.ftbquests.client.gui.quests.QuestScreen;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.minecraft.client.gui.GuiGraphics;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(QuestScreen.class)
 public class QuestScreenAnimator {
 	@Inject(

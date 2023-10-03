@@ -1,14 +1,15 @@
 package dm.earth.cabricality.mixin.client.ftblibrary;
 
 import dev.ftb.mods.ftblibrary.config.Tristate;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.text.Text;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(Tristate.class)
 public class TristateTranslator {
 	@Inject(method = "lambda$static$1", at = @At("HEAD"), cancellable = true, remap = false)

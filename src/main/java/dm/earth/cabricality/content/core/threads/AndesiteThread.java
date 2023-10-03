@@ -12,6 +12,8 @@ import com.simibubi.create.content.kinetics.saw.CuttingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemStack;
@@ -24,9 +26,6 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import static dm.earth.cabricality.ModEntry.AD;
 import static dm.earth.cabricality.ModEntry.AE2;
@@ -48,7 +47,7 @@ public class AndesiteThread implements TechThread {
 	}
 
 	@Override
-	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.register(
 				recipeId("smelting", "algal_blend"),
 				id -> VanillaRecipeBuilders.smeltingRecipe(
@@ -180,7 +179,7 @@ public class AndesiteThread implements TechThread {
 	}
 
 	@Override
-	public void removeRecipes(RemoveRecipesCallback.@NotNull RecipeHandler handler) {
+	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.@NotNull RecipeHandler handler) {
 		handler.remove(CR.id("crafting", "materials", "andesite_alloy"));
 		handler.remove(CR.id("crafting", "materials", "andesite_alloy_from_zinc"));
 		handler.remove(CR.id("mixing", "andesite_alloy"));

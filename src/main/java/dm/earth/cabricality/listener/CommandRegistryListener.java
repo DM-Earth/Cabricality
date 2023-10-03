@@ -7,9 +7,9 @@ import java.util.function.Predicate;
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.command.AlchemistInfoCommand;
 import dm.earth.cabricality.command.DebugCommand;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.command.CommandBuildContext;
 import net.minecraft.server.command.CommandManager;
-import org.quiltmc.qsl.command.api.CommandRegistrationCallback;
 
 import com.mojang.brigadier.CommandDispatcher;
 
@@ -17,7 +17,7 @@ import net.minecraft.server.command.ServerCommandSource;
 
 public class CommandRegistryListener implements CommandRegistrationCallback {
     @Override
-    public void registerCommands(
+    public void register(
 			CommandDispatcher<ServerCommandSource> dispatcher,
 			CommandBuildContext commandBuildContext,
 			CommandManager.RegistrationEnvironment registrationEnvironment

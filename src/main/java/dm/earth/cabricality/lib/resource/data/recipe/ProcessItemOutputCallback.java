@@ -1,14 +1,14 @@
 package dm.earth.cabricality.lib.resource.data.recipe;
 
+import jdk.jfr.EventFactory;
+import net.fabricmc.fabric.api.event.Event;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.base.api.event.Event;
-import org.quiltmc.qsl.base.api.event.EventAwareListener;
 
 import net.minecraft.item.ItemStack;
 
 import java.util.Objects;
 
-public interface ProcessItemOutputCallback extends EventAwareListener {
+public interface ProcessItemOutputCallback {
 
 	/**
 	 * Process an {@code ItemStack} output of a recipe.
@@ -18,7 +18,7 @@ public interface ProcessItemOutputCallback extends EventAwareListener {
 	@Nullable
 	ItemStack processOutput(ItemStack stack);
 
-	Event<ProcessItemOutputCallback> EVENT = Event.create(ProcessItemOutputCallback.class,
+	Event<ProcessItemOutputCallback> EVENT = EventFactory.create(ProcessItemOutputCallback.class,
 			listeners -> stack -> {
 				ItemStack ret = stack == null ? ItemStack.EMPTY : stack;
 				for (var listener : listeners) {

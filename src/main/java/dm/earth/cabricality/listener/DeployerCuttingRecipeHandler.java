@@ -6,10 +6,10 @@ import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
 import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.RecipeManagerHelper;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
-import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

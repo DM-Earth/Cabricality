@@ -1,14 +1,15 @@
 package dm.earth.cabricality.mixin.client.ftblibrary;
 
 import dev.ftb.mods.ftblibrary.config.BooleanConfig;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.text.Text;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 // Toxic FTB Library localizations
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(BooleanConfig.class)
 public class BooleanConfigTranslator {
 	@Redirect(

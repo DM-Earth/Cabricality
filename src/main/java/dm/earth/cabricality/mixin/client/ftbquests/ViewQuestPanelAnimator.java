@@ -10,6 +10,8 @@ import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.Widget;
 import dev.ftb.mods.ftbquests.client.gui.quests.ViewQuestPanel;
 import dev.ftb.mods.ftbquests.quest.theme.property.ThemeProperties;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.math.geometry.flat.Vector;
@@ -18,7 +20,6 @@ import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.util.math.MathHelper;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -31,7 +32,7 @@ import org.spongepowered.asm.mixin.injection.Slice;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(ViewQuestPanel.class)
 public abstract class ViewQuestPanelAnimator extends Widget {
 	@Shadow(remap = false)

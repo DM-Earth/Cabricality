@@ -16,6 +16,8 @@ import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import me.steven.indrev.recipes.machines.FluidInfuserRecipe;
 import me.steven.indrev.recipes.machines.entries.InputEntry;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
@@ -31,9 +33,6 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.CABF;
@@ -57,7 +56,7 @@ public class FluixThread implements TechThread {
 
 	@SuppressWarnings("UnstableApiUsage")
 	@Override
-	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		handler.register(
 				recipeId("crafting", "flash_drive"),
 				id -> VanillaRecipeBuilders
@@ -280,7 +279,7 @@ public class FluixThread implements TechThread {
 	}
 
 	@Override
-	public void removeRecipes(RemoveRecipesCallback.RecipeHandler handler) {
+	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		handler.removeIf(AE2.predicateOutput(handler, false, "silicon"));
 		handler.removeIf(AE2.predicateOutput(handler, false, "controller"));
 	}

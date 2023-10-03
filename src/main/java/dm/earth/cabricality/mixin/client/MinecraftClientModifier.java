@@ -1,8 +1,8 @@
 package dm.earth.cabricality.mixin.client;
 
 import dm.earth.cabricality.client.screen.MissingModScreen;
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.loader.api.QuiltLoader;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -39,7 +39,7 @@ public abstract class MinecraftClientModifier {
 			cancellable = true
 	)
 	private void modifyWindowTitle(CallbackInfoReturnable<String> cir) {
-		ModContainer container = QuiltLoader.getModContainer(Cabricality.ID).orElseThrow();
-		cir.setReturnValue(container.metadata().name() + (CONFIG.includeVersionInWindowTitle() ? (" " + container.metadata().version().raw()) : ""));
+		ModContainer container = FabricLoader.getInstance().getModContainer(Cabricality.ID).orElseThrow();
+		cir.setReturnValue(container.getMetadata().getName() + (CONFIG.includeVersionInWindowTitle() ? (" " + container.getMetadata().getVersion().getFriendlyString()) : ""));
 	}
 }

@@ -6,8 +6,8 @@ import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.trading.Professions;
 import dm.earth.cabricality.content.trading.core.Profession;
 import dm.earth.cabricality.content.trading.core.TradingEntry;
+import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import org.jetbrains.annotations.NotNull;
-import org.quiltmc.qsl.command.api.client.QuiltClientCommandSource;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.context.CommandContext;
@@ -15,7 +15,7 @@ import com.mojang.brigadier.context.CommandContext;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.Formatting;
 
-public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource> {
+public class GenTradingQuestsCommand implements Command<FabricClientCommandSource> {
 	@NotNull
 	private static String generateQuest(int x, int y, @NotNull TradingEntry entry) {
 		return "{\n" +
@@ -51,7 +51,7 @@ public class GenTradingQuestsCommand implements Command<QuiltClientCommandSource
 	}
 
 	@Override
-	public int run(CommandContext<QuiltClientCommandSource> context) {
+	public int run(CommandContext<FabricClientCommandSource> context) {
 		ArrayList<String> list = new ArrayList<>();
 
 		int group = 0;

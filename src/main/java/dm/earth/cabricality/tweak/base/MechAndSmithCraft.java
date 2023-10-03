@@ -3,6 +3,7 @@ package dm.earth.cabricality.tweak.base;
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.ModEntry;
 import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -11,9 +12,6 @@ import net.minecraft.recipe.TransformSmithingRecipe;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import java.util.ArrayList;
 
@@ -28,7 +26,7 @@ public class MechAndSmithCraft {
 		entries.add(entry);
 	}
 
-	public static void register(AddRecipesCallback.RecipeHandler handler) {
+	public static void register(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		/*
 		entries.forEach(entry -> {
 			if (entry.isSmithing()) {
@@ -62,7 +60,7 @@ public class MechAndSmithCraft {
 		 */
 	}
 
-	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
+	public static void register(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		entries.forEach(entry -> handler.removeIf(p ->
 				!ModEntry.CABF.checkContains(handler, p)
 						&& p.getResult(handler.getRegistryManager()).isOf(entry.getOutputItem())

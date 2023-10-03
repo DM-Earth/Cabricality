@@ -10,6 +10,8 @@ import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.foundation.fluid.FluidIngredient;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -20,9 +22,6 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.CABF;
@@ -34,7 +33,7 @@ import static dm.earth.cabricality.ModEntry.TC;
 @SuppressWarnings("UnstableApiUsage")
 public class BrassThread implements TechThread {
 	@Override
-	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		handler.register(
 				recipeId("milling", "sky_stone_block"),
 				id -> new MillingRecipe(new FreePRP(id)
@@ -126,7 +125,7 @@ public class BrassThread implements TechThread {
 		);
 	}
 
-	private void registerCrystalProcess(AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
+	private void registerCrystalProcess(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler, Item crystal, Item seed, Item dust) {
 		handler.register(recipeId("milling", Registries.ITEM.getId(crystal).getPath()),
 				id -> new MillingRecipe(
 						new FreePRP(id)

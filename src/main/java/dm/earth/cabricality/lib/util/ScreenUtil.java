@@ -1,14 +1,15 @@
 package dm.earth.cabricality.lib.util;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.gui.screen.ChatScreen;
 import net.minecraft.client.gui.screen.GameModeSelectionScreen;
 import net.minecraft.client.gui.screen.Screen;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
-import org.quiltmc.qsl.lifecycle.api.client.event.ClientTickEvents;
 import slimeknights.mantle.client.screen.book.BookScreen;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 public class ScreenUtil {
 	public static final Class<?>[] UNEXTENDED_SCREENS = {
 			ChatScreen.class, GameModeSelectionScreen.class, BookScreen.class
@@ -27,7 +28,7 @@ public class ScreenUtil {
 	}
 
 	public static void registerEvents() {
-		ClientTickEvents.START.register(client -> {
+		ClientTickEvents.START_CLIENT_TICK.register(client -> {
 			if (client.world != null && client.currentScreen == null && nextScreen != null) {
 				client.setScreen(nextScreen);
 				nextScreen = null;

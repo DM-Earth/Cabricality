@@ -1,16 +1,17 @@
 package dm.earth.cabricality.mixin.client.ftblibrary;
 
 import dev.ftb.mods.ftblibrary.config.ConfigValue;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(ConfigValue.class)
 public abstract class ConfigValueTranslator {
 	@Inject(

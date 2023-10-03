@@ -10,6 +10,8 @@ import dev.ftb.mods.ftblibrary.util.TooltipList;
 import dev.ftb.mods.ftbquests.client.ClientQuestFile;
 import dev.ftb.mods.ftbquests.client.gui.quests.ChapterPanel;
 import dev.ftb.mods.ftbquests.client.gui.quests.QuestScreen;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
@@ -19,7 +21,6 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -29,7 +30,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(ChapterPanel.class)
 public abstract class ChapterPanelAnimator {
 	@Shadow(remap = false)
@@ -107,7 +108,7 @@ class ChapterButtonAnimator extends Widget {
 	}
 }
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(ChapterPanel.ModpackButton.class)
 class ModPackButtonAnimator {
 	@Redirect(method = "addMouseOverText", at = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftblibrary/util/TooltipList;string(Ljava/lang/String;)V"), remap = false)

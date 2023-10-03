@@ -1,8 +1,7 @@
 package dm.earth.cabricality.lib.core;
 
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
-import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
-
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -18,7 +17,7 @@ public interface IncompleteVariant {
     }
 
     default Item.Settings incompleteSettings(Rarity rarity) {
-        return new QuiltItemSettings().rarity(rarity);
+        return new FabricItemSettings().rarity(rarity);
     }
 
     Identifier getIncompleteTextureId();

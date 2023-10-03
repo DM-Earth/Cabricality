@@ -5,16 +5,16 @@ import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.simibubi.create.content.kinetics.saw.CuttingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import dm.earth.cabricality.ModEntry;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 
 import java.util.Arrays;
 
 public class CuttingRecipeTweaks {
-	public static void register(AddRecipesCallback.RecipeHandler handler) {
+	public static void register(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		Arrays.stream(WoodCuttingEntry.values()).forEach(entry -> {
 			if (entry.isLogExist() && entry.isStrippedLogExist() && entry.getLogId() != null) {
 				handler.register(createId(entry.getLogId()),

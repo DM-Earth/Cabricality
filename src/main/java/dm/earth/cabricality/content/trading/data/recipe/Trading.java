@@ -7,6 +7,7 @@ import dm.earth.cabricality.content.trading.core.TradingEntry;
 import dm.earth.cabricality.content.trading.data.tag.TradeTags;
 import dm.earth.cabricality.content.trading.util.ProfessionUtil;
 import dm.earth.cabricality.lib.util.debug.CabfDebugger;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import me.steven.indrev.recipes.machines.InfuserRecipe;
 import me.steven.indrev.recipes.machines.entries.InputEntry;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
@@ -18,13 +19,10 @@ import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
 import static dm.earth.cabricality.ModEntry.CABF;
 
-public class Trading implements AddRecipesCallback, RemoveRecipesCallback {
+public class Trading implements RecipeLoadingEvents.AddRecipesCallback, RecipeLoadingEvents.RemoveRecipesCallback {
 
 	@Override
 	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {

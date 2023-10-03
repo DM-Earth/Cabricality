@@ -11,6 +11,7 @@ import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
 import dm.earth.cabricality.ModEntry;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import me.steven.indrev.recipes.machines.PulverizerRecipe;
 import me.steven.indrev.recipes.machines.entries.InputEntry;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
@@ -26,8 +27,6 @@ import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.RemoveRecipesCallback;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,7 +36,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 @SuppressWarnings("UnstableApiUsage")
 public class OreProcessingTweaks {
-	public static void register(AddRecipesCallback.RecipeHandler handler) {
+	public static void register(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		for (OreProcessingEntry entry : OreProcessingEntry.values()) {
 			// Crushed -> Nugget
 			handler.register(
@@ -136,7 +135,7 @@ public class OreProcessingTweaks {
 		}
 	}
 
-	public static void register(RemoveRecipesCallback.RecipeHandler handler) {
+	public static void register(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		for (OreProcessingEntry entry : OreProcessingEntry.values()) {
 			/*
 			handler.removeIf(

@@ -1,5 +1,7 @@
 package dm.earth.cabricality.lib.util;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.sound.SoundInstance;
@@ -7,9 +9,7 @@ import net.minecraft.sound.SoundEvent;
 
 import java.util.Random;
 
-import org.quiltmc.loader.api.minecraft.ClientOnly;
-
-@ClientOnly
+@Environment(EnvType.CLIENT)
 public class SoundUtil {
 	public static void playSound(SoundInstance sound) {
 		if (MinecraftClient.getInstance() != null)

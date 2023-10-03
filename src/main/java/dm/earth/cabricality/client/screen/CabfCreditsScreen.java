@@ -14,6 +14,8 @@ import com.mojang.blaze3d.vertex.VertexFormat;
 import com.mojang.blaze3d.vertex.VertexFormats;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import it.unimi.dsi.fastutil.ints.IntSet;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.LogoRenderer;
@@ -25,14 +27,13 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.List;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 public class CabfCreditsScreen extends Screen {
 	private static final Identifier VIGNETTE_TEXTURE = new Identifier("textures/misc/vignette.png");
 	private static final Text SEPARATOR_LINE = Text.literal("============").formatted(Formatting.WHITE);
@@ -322,7 +323,7 @@ public class CabfCreditsScreen extends Screen {
 	}
 
 	@FunctionalInterface
-	@ClientOnly
+	@Environment(EnvType.CLIENT)
 	private interface CreditsReader {
 		void read(Reader reader) throws IOException;
 	}

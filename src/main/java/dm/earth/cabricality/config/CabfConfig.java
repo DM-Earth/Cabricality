@@ -1,14 +1,14 @@
 package dm.earth.cabricality.config;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.krlite.pierced.annotation.Silent;
 import net.krlite.pierced.annotation.Table;
 import net.krlite.pierced.config.Pierced;
-import org.quiltmc.loader.api.QuiltLoader;
 
 import java.io.File;
 
 public class CabfConfig extends Pierced {
-	private static @Silent final File file = QuiltLoader.getConfigDir().resolve("cabricality.toml").toFile();
+	private static @Silent final File file = FabricLoader.getInstance().getConfigDir().resolve("cabricality.toml").toFile();
 
 	public CabfConfig() {
 		super(CabfConfig.class, file);

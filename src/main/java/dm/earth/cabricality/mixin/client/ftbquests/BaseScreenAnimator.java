@@ -5,17 +5,18 @@ import dm.earth.cabricality.lib.util.PushUtil;
 import dev.ftb.mods.ftblibrary.ui.BaseScreen;
 import dev.ftb.mods.ftblibrary.ui.Theme;
 import dev.ftb.mods.ftblibrary.ui.WidgetType;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.krlite.equator.math.algebra.Curves;
 import net.krlite.equator.math.geometry.flat.Box;
 import net.krlite.equator.visual.animation.animated.AnimatedDouble;
 import net.minecraft.client.gui.GuiGraphics;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @Mixin(BaseScreen.class)
 public class BaseScreenAnimator {
 	@Unique

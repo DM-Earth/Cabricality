@@ -2,8 +2,8 @@ package dm.earth.cabricality.network.receiver;
 
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.command.helper.BroadcastContent;
-import org.quiltmc.qsl.networking.api.PacketSender;
-import org.quiltmc.qsl.networking.api.ServerPlayNetworking;
+import net.fabricmc.fabric.api.networking.v1.PacketSender;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 
 import io.netty.channel.EventLoop;
 import net.minecraft.item.ItemStack;
@@ -13,7 +13,7 @@ import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.thread.ThreadExecutor;
 
-public class HeldItemInfoReceiver implements ServerPlayNetworking.ChannelReceiver {
+public class HeldItemInfoReceiver implements ServerPlayNetworking.PlayChannelHandler {
 	/**
 	 * Receives an incoming packet.
 	 * <p>

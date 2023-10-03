@@ -1,6 +1,7 @@
 package dm.earth.cabricality;
 
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
@@ -14,7 +15,6 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents;
 
 import java.util.Map;
 import java.util.function.Predicate;
