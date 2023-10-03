@@ -19,6 +19,10 @@ import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
 import net.krlite.equator.visual.color.AccurateColor;
 import net.krlite.equator.visual.texture.Texture;
 import net.minecraft.item.ItemGroup;
@@ -34,8 +38,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
-import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
-import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pers.solid.brrp.v1.api.RuntimeResourcePack;
@@ -106,6 +108,8 @@ public class Cabricality implements ModInitializer {
 	public static final CabfConfig CONFIG = new CabfConfig();
 	private static long initTime = -1;
 
+	public static final ModContainer CABF_MODCONTAINER = FabricLoader.getInstance().getModContainer(ID).orElseThrow();
+
 	@Contract("_ -> new")
 	public static @NotNull Identifier id(String... paths) {
 		return new Identifier(ID, String.join("/", paths));
@@ -157,8 +161,10 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
 		// TODO: Resource loader api
-		ResourceLoader.registerBuiltinResourcePack(id("data_overrides"),
-				ResourcePackActivationType.ALWAYS_ENABLED);
+		ResourceManagerHelper.registerBuiltinResourcePack(id("data_overrides"),
+				CABF_MODCONTAINER,
+				ResourcePackActivationType.ALWAYS_ENABLED
+		);
 	}
 
 	public static void finishLoading() {

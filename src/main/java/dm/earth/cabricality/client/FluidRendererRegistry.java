@@ -2,8 +2,11 @@ package dm.earth.cabricality.client;
 
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.fluids.core.IFluid;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandler;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.texture.Sprite;
@@ -17,9 +20,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockRenderView;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
-import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
-import org.quiltmc.qsl.resource.loader.api.reloader.SimpleSynchronousResourceReloader;
 
 import java.util.List;
 import java.util.function.Function;
@@ -58,7 +58,12 @@ public class FluidRendererRegistry {
 		 */
 
 		Sprite[] fluidSprites = {null, null};
-		ResourceLoader.get(ResourceType.CLIENT_RESOURCES).registerReloader(new SimpleSynchronousResourceReloader() {
+		ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
+			@Override
+			public @NotNull Identifier getFabricId() {
+				return Cabricality.id(name + "_fluid_renderer_reloader");
+			}
+
 			@Override
 			public void reload(ResourceManager manager) {
 				final Function<Identifier, Sprite> atlas = MinecraftClient.getInstance()
@@ -66,11 +71,6 @@ public class FluidRendererRegistry {
 				fluidSprites[0] = atlas.apply(stillId);
 				fluidSprites[1] = atlas.apply(flowingId);
 			}
-
-			@Override
-			public @NotNull Identifier getQuiltId() {
-						return Cabricality.id(name + "_fluid_renderer_reloader");
-					}
 		});
 
 		FluidRenderHandler handler = new FluidRenderHandler() {
@@ -87,9 +87,9 @@ public class FluidRendererRegistry {
 
 		FluidRenderHandlerRegistry.INSTANCE.register(still, flowing, handler);
 		if (flow)
-			BlockRenderLayerMap.put(RenderLayer.getTranslucent(), still, flowing);
+			BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), still, flowing);
 		else
-			BlockRenderLayerMap.put(RenderLayer.getTranslucent(), still);
+			BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), still);
 	}
 
 	public static void register(String name, Fluid still, Fluid flowing, boolean flow) {

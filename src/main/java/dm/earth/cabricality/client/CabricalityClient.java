@@ -5,11 +5,11 @@ import java.util.Arrays;
 import dm.earth.cabricality.Cabricality;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
-import org.quiltmc.qsl.resource.loader.api.ResourceLoader;
-import org.quiltmc.qsl.resource.loader.api.ResourcePackActivationType;
 import dm.earth.cabricality.client.listener.ColorRegistryListener;
 import dm.earth.cabricality.config.key.CabfKeyBinds;
 import dm.earth.cabricality.content.alchemist.core.Substrate;
@@ -61,12 +61,16 @@ public class CabricalityClient implements ClientModInitializer {
 				.forEach(entry -> BlockRenderLayerMap.INSTANCE.putBlock(entry.getBlock(), entry.getLayer()));
 
 		// TODO: Resource loader api
-		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
-				ResourcePackActivationType.DEFAULT_ENABLED,
-				Cabricality.genTranslatableText("pack", "asset_edits"));
-		ResourceLoader.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
-				ResourcePackActivationType.ALWAYS_ENABLED,
-				Cabricality.genTranslatableText("pack", "quests_lang"));
+		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
+				Cabricality.CABF_MODCONTAINER,
+				Cabricality.genTranslatableText("pack", "asset_edits"),
+				ResourcePackActivationType.DEFAULT_ENABLED
+		);
+		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
+				Cabricality.CABF_MODCONTAINER,
+				Cabricality.genTranslatableText("pack", "quests_lang"),
+				ResourcePackActivationType.ALWAYS_ENABLED
+		);
 	}
 
 	public static void cubeMapRenderer(RotatingCubeMapRenderer cubeMapRenderer) {
