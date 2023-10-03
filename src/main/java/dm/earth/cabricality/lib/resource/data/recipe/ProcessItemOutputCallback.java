@@ -1,7 +1,7 @@
 package dm.earth.cabricality.lib.resource.data.recipe;
 
-import jdk.jfr.EventFactory;
 import net.fabricmc.fabric.api.event.Event;
+import net.fabricmc.fabric.api.event.EventFactory;
 import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.item.ItemStack;
@@ -18,7 +18,7 @@ public interface ProcessItemOutputCallback {
 	@Nullable
 	ItemStack processOutput(ItemStack stack);
 
-	Event<ProcessItemOutputCallback> EVENT = EventFactory.create(ProcessItemOutputCallback.class,
+	Event<ProcessItemOutputCallback> EVENT = EventFactory.createArrayBacked(ProcessItemOutputCallback.class,
 			listeners -> stack -> {
 				ItemStack ret = stack == null ? ItemStack.EMPTY : stack;
 				for (var listener : listeners) {
