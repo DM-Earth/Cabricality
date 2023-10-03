@@ -60,7 +60,6 @@ public class CabricalityClient implements ClientModInitializer {
 		Arrays.stream(CasingBlockEntry.values())
 				.forEach(entry -> BlockRenderLayerMap.INSTANCE.putBlock(entry.getBlock(), entry.getLayer()));
 
-		// TODO: Resource loader api
 		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
 				Cabricality.CABF_MODCONTAINER,
 				Cabricality.genTranslatableText("pack", "asset_edits"),

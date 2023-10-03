@@ -160,7 +160,6 @@ public class Cabricality implements ModInitializer {
 		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> Cabricality::initClientAssets);
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.SERVER_RESOURCES));
 
-		// TODO: Resource loader api
 		ResourceManagerHelper.registerBuiltinResourcePack(id("data_overrides"),
 				CABF_MODCONTAINER,
 				ResourcePackActivationType.ALWAYS_ENABLED

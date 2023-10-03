@@ -19,7 +19,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Map;
 import java.util.function.Predicate;
 
-// TODO: Recipe api
 public enum ModEntry {
 	MC("minecraft"),
 
