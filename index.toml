@@ -6,7 +6,7 @@ hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = "build.gradle.kts"
-hash = "799bca1a8d5d4057bb5b3fed42a5197acaeea1d5860a54cf1685c81c309e9df4"
+hash = "1b61e5fb297b4132e42088b7214218acfed3da503defd82fc7e64ee07624191d"
 
 [[files]]
 file = "config/architects_palette.json5"
@@ -342,7 +342,7 @@ metafile = true
 
 [[files]]
 file = "mods/let.pw.toml"
-hash = "304033252734445fbcb9ced2fd0ba0c32f4a47cadf8182719481c48b96ee289e"
+hash = "608a34119a605a21e90a50aa7b5ca5b7464cf0cbecbdc32f0d494b9cd0d2d34e"
 metafile = true
 
 [[files]]
@@ -457,4 +457,4 @@ metafile = true
 
 [[files]]
 file = "settings.gradle.kts"
-hash = "d0cb0e2215e679f1320f9e6c33bb2b456b0794d9e4d6b712e229b6d8d2cff73a"
+hash = "32c850973bf67791b50675a1b0865ad35f28cffca54b3b09daa0265842a1c01b"

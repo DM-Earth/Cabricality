@@ -1,13 +1,13 @@
 name = "Light Emitting Triode"
-filename = "let-1.20-2.0.0.jar"
+filename = "let-1.20-2.1.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Ta96h8jB/versions/PnBtMSy3/let-1.20-2.0.0.jar"
+url = "https://cdn.modrinth.com/data/Ta96h8jB/versions/BomCtXKJ/let-1.20-2.1.0.jar"
 hash-format = "sha1"
-hash = "cb8142996531f920f1c2455ccc4345d8e825b746"
+hash = "3cd7ab87e2aa62da6b1f2882a583578c610895be"
 
 [update]
 [update.modrinth]
 mod-id = "Ta96h8jB"
-version = "PnBtMSy3"
+version = "BomCtXKJ"
