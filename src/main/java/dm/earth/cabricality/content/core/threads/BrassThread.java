@@ -14,7 +14,6 @@ import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
@@ -25,8 +24,8 @@ import org.jetbrains.annotations.Nullable;
 
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.IR;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.INDREV;
 import static dm.earth.cabricality.ModEntry.MC;
 import static dm.earth.cabricality.ModEntry.TC;
 
@@ -48,7 +47,7 @@ public class BrassThread implements TechThread {
 		handler.register(
 				recipeId("crafting", "rose_quartz"),
 				id -> VanillaRecipeBuilders
-						.shapelessRecipe(CR.asItem("rose_quartz").getDefaultStack())
+						.shapelessRecipe(CREATE.asItem("rose_quartz").getDefaultStack())
 						.ingredient(
 								Items.QUARTZ, AE2.asItem("certus_quartz_crystal"),
 								AE2.asItem("charged_certus_quartz_crystal")
@@ -102,23 +101,23 @@ public class BrassThread implements TechThread {
 				id -> new MixingRecipe(new FreePRP(id)
 						.setFluidIngredient(FluidIngredient.fromFluid(CabfFluids.REDSTONE, FluidConstants.INGOT))
 						.setIngredient(Ingredient.ofItems(AE2.asItem("certus_quartz_crystal")))
-						.setResult(new ProcessingOutput(CR.asItem("polished_rose_quartz").getDefaultStack(), 1)))
+						.setResult(new ProcessingOutput(CREATE.asItem("polished_rose_quartz").getDefaultStack(), 1)))
 		);
 
 		handler.register(
 				recipeId("filling", "electron_tube"),
 				id -> new FillingRecipe(new FreePRP(id)
-						.setIngredient(Ingredient.ofItems(CR.asItem("polished_rose_quartz")))
+						.setIngredient(Ingredient.ofItems(CREATE.asItem("polished_rose_quartz")))
 						.setFluidIngredient(FluidIngredient.fromFluid(TC.asFluid("molten_iron"), FluidConstants.NUGGET))
-						.setResult(new ProcessingOutput(CR.asItem("electron_tube").getDefaultStack(), 1)))
+						.setResult(new ProcessingOutput(CREATE.asItem("electron_tube").getDefaultStack(), 1)))
 		);
 
 		handler.register(
 				recipeId("crafting", "brass_machine"),
 				id -> RecipeBuilderUtil.donutRecipe(
 						id,
-						CR.asItem("brass_casing"),
-						CR.asItem("precision_mechanism"),
+						CREATE.asItem("brass_casing"),
+						CREATE.asItem("precision_mechanism"),
 						CABF.asItem("brass_machine"),
 						1
 				)
@@ -153,24 +152,24 @@ public class BrassThread implements TechThread {
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
 		handler.removeIf(AE2.predicateOutput(handler, false, "sky_dust"));
-		handler.remove(CR.id("crafting", "materials", "electron_tube"));
-		handler.remove(CR.id("crafting", "materials", "rose_quartz"));
-		handler.remove(CR.id("sequenced_assembly", "precision_mechanism"));
+		handler.remove(CREATE.id("crafting", "materials", "electron_tube"));
+		handler.remove(CREATE.id("crafting", "materials", "rose_quartz"));
+		handler.remove(CREATE.id("sequenced_assembly", "precision_mechanism"));
 	}
 
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_crafter"), 3, MC.id("crafting_table")));
-		MechAndSmithCraft.addEntry(entry(CR.id("sequenced_gearshift"), 2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("rotation_speed_controller"), 1, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_arm"), 1, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("stockpile_switch"), 2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("content_observer"), 2, null));
-		MechAndSmithCraft.addEntry(entry(IR.id("solid_infuser_mk1"), 1, MC.id("dropper")));
-		MechAndSmithCraft.addEntry(entry(IR.id("biomass_generator_mk3"), 1, IR.id("heat_coil")));
-		MechAndSmithCraft.addEntry(entry(CR.id("brass_funnel"), 4, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("brass_tunnel"), 4, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("elevator_pulley"), 1, MC.id("dried_kelp_block")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_crafter"), 3, MC.id("crafting_table")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("sequenced_gearshift"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("rotation_speed_controller"), 1, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_arm"), 1, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("stockpile_switch"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("content_observer"), 2, null));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("solid_infuser_mk1"), 1, MC.id("dropper")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("biomass_generator_mk3"), 1, INDREV.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("brass_funnel"), 4, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("brass_tunnel"), 4, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("elevator_pulley"), 1, MC.id("dried_kelp_block")));
 	}
 
 	@Override

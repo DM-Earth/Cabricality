@@ -13,12 +13,12 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static dm.earth.cabricality.ModEntry.AD;
+import static dm.earth.cabricality.ModEntry.AD_ASTRA;
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.ED;
-import static dm.earth.cabricality.ModEntry.IR;
-import static dm.earth.cabricality.ModEntry.KB;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.EXT_DRAWERS;
+import static dm.earth.cabricality.ModEntry.INDREV;
+import static dm.earth.cabricality.ModEntry.KIBE;
 import static dm.earth.cabricality.ModEntry.MC;
 
 @SuppressWarnings("UnstableApiUsage")
@@ -63,14 +63,14 @@ public class ZincThread implements TechThread {
 
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(KB.id("cobblestone_generator_mk1"), 1, MC.id("piston")));
-		MechAndSmithCraft.addEntry(entry(KB.id("basalt_generator_mk1"), 1, MC.id("blue_ice")));
-		MechAndSmithCraft.addEntry(entry(KB.id("trash_can"), 1, MC.id("lava_bucket")));
-		MechAndSmithCraft.addEntry(entry(KB.id("vacuum_hopper"), 1, CR.id("nozzle")));
-		MechAndSmithCraft.addEntry(entry(KB.id("big_torch"), 1, MC.id("torch")));
-		MechAndSmithCraft.addEntry(entry(AD.id("solar_panel"), 1, MC.id("glass")));
-		MechAndSmithCraft.addEntry(entry(IR.id("tier_upgrade_mk3"), 1, MC.id("redstone")));
-		MechAndSmithCraft.addEntry(entry(ED.id("controller"), 1, ED.id("connector")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("cobblestone_generator_mk1"), 1, MC.id("piston")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("basalt_generator_mk1"), 1, MC.id("blue_ice")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("trash_can"), 1, MC.id("lava_bucket")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("vacuum_hopper"), 1, CREATE.id("nozzle")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("big_torch"), 1, MC.id("torch")));
+		MechAndSmithCraft.addEntry(entry(AD_ASTRA.id("solar_panel"), 1, MC.id("glass")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("tier_upgrade_mk3"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(EXT_DRAWERS.id("controller"), 1, EXT_DRAWERS.id("connector")));
 	}
 
 	@Override

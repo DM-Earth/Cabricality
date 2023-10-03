@@ -2,6 +2,7 @@ package dm.earth.cabricality;
 
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
@@ -24,56 +25,56 @@ public enum ModEntry {
 
 	C("c"),
 
-	CR("create"),
+	CREATE("create"),
 
 	CABF(Cabricality.ID),
 
-	PM("promenade"),
+	PROMENADE("promenade"),
 
-	IR("indrev"),
+	INDREV("indrev"),
 
-	FD("farmersdelight"),
-
-	AP("architects_palette"),
+	FARMERS_DELIGHT("farmersdelight"),
 
 	TC("tconstruct"),
 
-	MLM("malum"),
-
 	AE2("ae2"),
 
-	TRE("terrestria"),
+	TERRESTRIA("terrestria"),
 
-	AD("ad_astra"),
+	AD_ASTRA("ad_astra"),
 
-	KB("kibe"),
+	KIBE("kibe"),
 
-	CX("coxinhautilities"),
+	COXINHA("coxinhautilities"),
 
-	ED("extended_drawers"),
+	EXT_DRAWERS("extended_drawers"),
 
-	LED("led"),
+	LET("let"),
 
 	CC("computercraft"),
 
-	IF("itemfilters"),
+	ITEM_FILTERS("itemfilters"),
 
-	CI("catwalksinc"),
+	CATWALKS("catwalksllc"),
 
-	BC("bitsandchisels");
+	BNC("bitsandchisels");
 
 	final String modid;
-
-	public String getModid() {
-		return modid;
-	}
 
 	ModEntry(String modid) {
 		this.modid = modid;
 	}
 
+	public String modid() {
+		return modid;
+	}
+
+	public boolean isLoaded() {
+		return FabricLoader.getInstance().isModLoaded(modid());
+	}
+
 	public boolean checkContains(@Nullable Identifier id) {
-		return id != null && id.getNamespace().equals(modid);
+		return id != null && id.getNamespace().equals(modid());
 	}
 
 	public boolean checkContains(@NotNull Item item) {
@@ -90,7 +91,7 @@ public enum ModEntry {
 	}
 
 	public Identifier id(String... path) {
-		return new Identifier(this.modid, String.join("/", path));
+		return new Identifier(modid(), String.join("/", path));
 	}
 
 	public Item asItem(String... paths) {

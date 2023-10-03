@@ -11,10 +11,10 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 
-import static dm.earth.cabricality.ModEntry.AD;
+import static dm.earth.cabricality.ModEntry.AD_ASTRA;
 import static dm.earth.cabricality.ModEntry.C;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.IR;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.INDREV;
 
 public class ItemTagTweaks implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 
@@ -28,14 +28,14 @@ public class ItemTagTweaks implements LoadTagsCallback<Item>, ResourceConditionC
 	}
 
 	private static void unifyTags() {
-		TagUnifyEntry.register(() -> CR.asItem("iron_sheet"), "iron_plate");
-		TagUnifyEntry.register(() -> AD.asItem("steel_block"), "steel_block");
-		TagUnifyEntry.register(() -> AD.asItem("steel_nugget"), "steel_nugget");
-		TagUnifyEntry.register(() -> CR.asItem("gold_sheet"), "gold_plate");
-		TagUnifyEntry.register(() -> CR.asItem("copper_sheet"), "copper_plate");
-		TagUnifyEntry.register(() -> IR.asItem("steel_ingot"), "steel_ingot");
-		TagUnifyEntry.register(() -> IR.asItem("steel_plate"), "steel_plate", "compressed_steel");
-		TagUnifyEntry.register(() -> CR.asItem("copper_nugget"), "copper_nugget");
+		TagUnifyEntry.register(() -> CREATE.asItem("iron_sheet"), "iron_plate");
+		TagUnifyEntry.register(() -> AD_ASTRA.asItem("steel_block"), "steel_block");
+		TagUnifyEntry.register(() -> AD_ASTRA.asItem("steel_nugget"), "steel_nugget");
+		TagUnifyEntry.register(() -> CREATE.asItem("gold_sheet"), "gold_plate");
+		TagUnifyEntry.register(() -> CREATE.asItem("copper_sheet"), "copper_plate");
+		TagUnifyEntry.register(() -> INDREV.asItem("steel_ingot"), "steel_ingot");
+		TagUnifyEntry.register(() -> INDREV.asItem("steel_plate"), "steel_plate", "compressed_steel");
+		TagUnifyEntry.register(() -> CREATE.asItem("copper_nugget"), "copper_nugget");
 	}
 
 	@Override
@@ -71,10 +71,10 @@ public class ItemTagTweaks implements LoadTagsCallback<Item>, ResourceConditionC
 						Registries.ITEM.get(entry.getStrippedWoodId()));
 		}
 
-		handler.register(C.id("compressed_steel"), IR.asItem("steel_plate"));
-		handler.register(C.id("desh_plates"), AD.asItem("compressed_desh"));
-		handler.register(C.id("ostrum_plates"), AD.asItem("compressed_ostrum"));
-		handler.register(C.id("calorite_plates"), AD.asItem("compressed_calorite"));
+		handler.register(C.id("compressed_steel"), INDREV.asItem("steel_plate"));
+		handler.register(C.id("desh_plates"), AD_ASTRA.asItem("compressed_desh"));
+		handler.register(C.id("ostrum_plates"), AD_ASTRA.asItem("compressed_ostrum"));
+		handler.register(C.id("calorite_plates"), AD_ASTRA.asItem("compressed_calorite"));
 	}
 
 }

@@ -1,14 +1,11 @@
 package dm.earth.cabricality.content.core.threads;
 
 import dm.earth.cabricality.content.core.TechThread;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
-import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -16,19 +13,17 @@ import org.jetbrains.annotations.Nullable;
 
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.IR;
-import static dm.earth.cabricality.ModEntry.KB;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.INDREV;
+import static dm.earth.cabricality.ModEntry.KIBE;
 import static dm.earth.cabricality.ModEntry.MC;
-import static dm.earth.cabricality.ModEntry.PM;
-import static dm.earth.cabricality.ModEntry.TC;
 
 public class EnderiumThread implements TechThread {
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(KB.id("entangled_chest"), 1, MC.id("chest")));
-		MechAndSmithCraft.addEntry(entry(KB.id("entangled_tank"), 1, CR.id("fluid_tank")));
-		MechAndSmithCraft.addEntry(entry(IR.id("tier_upgrade_mk4"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("entangled_chest"), 1, MC.id("chest")));
+		MechAndSmithCraft.addEntry(entry(KIBE.id("entangled_tank"), 1, CREATE.id("fluid_tank")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("tier_upgrade_mk4"), 1, MC.id("redstone")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("quantum_ring"), 1, AE2.id("energy_cell")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("quantum_link"), 1, AE2.id("fluix_pearl")));
 	}

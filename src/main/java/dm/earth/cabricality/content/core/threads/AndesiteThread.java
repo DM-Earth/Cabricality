@@ -27,12 +27,12 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static dm.earth.cabricality.ModEntry.AD;
+import static dm.earth.cabricality.ModEntry.AD_ASTRA;
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.AP;
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.IR;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.INDREV;
 import static dm.earth.cabricality.ModEntry.MC;
 
 public class AndesiteThread implements TechThread {
@@ -85,7 +85,7 @@ public class AndesiteThread implements TechThread {
 						.shapedRecipe("SS", "AA")
 						.ingredient('A', Items.ANDESITE)
 						.ingredient('S', AP.asItem("algal_brick"))
-						.output(CR.asStack(2, "andesite_alloy"))
+						.output(CREATE.asStack(2, "andesite_alloy"))
 						.build(id, "")
 		);
 
@@ -95,7 +95,7 @@ public class AndesiteThread implements TechThread {
 						.shapedRecipe("AA", "SS")
 						.ingredient('A', Items.ANDESITE)
 						.ingredient('S', AP.asItem("algal_brick"))
-						.output(CR.asStack(2, "andesite_alloy"))
+						.output(CREATE.asStack(2, "andesite_alloy"))
 						.build(id, "")
 		);
 
@@ -111,7 +111,7 @@ public class AndesiteThread implements TechThread {
 				recipeId("mixing", "andesite_alloy"),
 				id -> new MixingRecipe(new FreePRP(id)
 						.setIngredient(Ingredient.ofItems(AP.asItem("algal_brick")), Ingredient.ofItems(Items.ANDESITE))
-						.setResult(new ProcessingOutput(new ItemStack(CR.asItem("andesite_alloy")), 2))
+						.setResult(new ProcessingOutput(new ItemStack(CREATE.asItem("andesite_alloy")), 2))
 				)
 		);
 
@@ -119,8 +119,8 @@ public class AndesiteThread implements TechThread {
 				recipeId("crafting", "kinetic_mechanism"),
 				id -> VanillaRecipeBuilders
 						.shapelessRecipe(CABF.asItem("kinetic_mechanism").getDefaultStack())
-						.ingredient(CR.asItem("cogwheel"))
-						.ingredient(CR.asItem("andesite_alloy"))
+						.ingredient(CREATE.asItem("cogwheel"))
+						.ingredient(CREATE.asItem("andesite_alloy"))
 						.ingredient(ItemTags.LOGS).ingredient(CabfItemTags.SAWS)
 						.build(id, "")
 		);
@@ -129,7 +129,7 @@ public class AndesiteThread implements TechThread {
 				recipeId("crafting", "andesite_machine"),
 				id -> RecipeBuilderUtil.donutRecipe(
 						id,
-						CR.asItem("andesite_casing"),
+						CREATE.asItem("andesite_casing"),
 						CABF.asItem("kinetic_mechanism"),
 						CABF.asItem("andesite_machine"),
 						1
@@ -139,7 +139,7 @@ public class AndesiteThread implements TechThread {
 		handler.register(
 				recipeId("compacting", "dripstone_block"),
 				id -> new CompactingRecipe(new FreePRP(id)
-						.setIngredient(Ingredient.ofItems(CR.asItem("limestone")))
+						.setIngredient(Ingredient.ofItems(CREATE.asItem("limestone")))
 						.setFluidIngredient(FluidIngredient.fromFluid(Fluids.WATER, FluidConstants.BOTTLE * 2))
 						.setResult(new ProcessingOutput(MC.asItem("dripstone_block").getDefaultStack(), 1)))
 		);
@@ -150,8 +150,8 @@ public class AndesiteThread implements TechThread {
 						.require(ItemTags.WOODEN_SLABS)
 						.transitionTo(CABF.asItem("incomplete_kinetic_mechanism"))
 						.addOutput(CABF.asItem("kinetic_mechanism"), 1.0F).loops(1)
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
-						.addStep(DeployerApplicationRecipe::new, r -> r.require(CR.asItem("andesite_alloy")))
+						.addStep(DeployerApplicationRecipe::new, r -> r.require(CREATE.asItem("andesite_alloy")))
+						.addStep(DeployerApplicationRecipe::new, r -> r.require(CREATE.asItem("andesite_alloy")))
 						.addStep(CuttingRecipe::new, r -> r)
 						.build()
 		);
@@ -161,8 +161,8 @@ public class AndesiteThread implements TechThread {
 				id -> VanillaRecipeBuilders
 						.shapedRecipe("NPN", "PLP", "NPN")
 						.ingredient('N', MC.asIngredient("iron_nugget"))
-						.ingredient('P', CR.asIngredient("iron_sheet"))
-						.ingredient('L', IR.asIngredient("lead_ingot"))
+						.ingredient('P', CREATE.asIngredient("iron_sheet"))
+						.ingredient('L', INDREV.asIngredient("lead_ingot"))
 						.output(CABF.asStack("saw_blade"))
 						.build(id, ""));
 
@@ -171,44 +171,44 @@ public class AndesiteThread implements TechThread {
 				id -> VanillaRecipeBuilders
 						.shapedRecipe("NN ", "NLP", " PL")
 						.ingredient('N', MC.asIngredient("iron_nugget"))
-						.ingredient('P', CR.asIngredient("iron_sheet"))
-						.ingredient('L', IR.asIngredient("lead_ingot"))
-						.output(IR.asStack("iron_drill_head"))
+						.ingredient('P', CREATE.asIngredient("iron_sheet"))
+						.ingredient('L', INDREV.asIngredient("lead_ingot"))
+						.output(INDREV.asStack("iron_drill_head"))
 						.build(id, "")
 		);
 	}
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.remove(CR.id("crafting", "materials", "andesite_alloy"));
-		handler.remove(CR.id("crafting", "materials", "andesite_alloy_from_zinc"));
-		handler.remove(CR.id("mixing", "andesite_alloy"));
-		handler.remove(CR.id("mixing", "andesite_alloy_from_zinc"));
+		handler.remove(CREATE.id("crafting", "materials", "andesite_alloy"));
+		handler.remove(CREATE.id("crafting", "materials", "andesite_alloy_from_zinc"));
+		handler.remove(CREATE.id("mixing", "andesite_alloy"));
+		handler.remove(CREATE.id("mixing", "andesite_alloy_from_zinc"));
 
 		handler.removeIf(p ->
 				p instanceof AbstractCookingRecipe
 						&& AP.predicateOutput(handler, false, "algal_brick").test(p));
-		handler.removeIf(IR.predicateOutput(handler, false, "iron_drill_head"));
+		handler.removeIf(INDREV.predicateOutput(handler, false, "iron_drill_head"));
 		handler.remove(AP.id("algal_blend_shapeless"));
 	}
 
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_press"), 				1, MC.id("iron_block")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_mixer"), 				1, CR.id("whisk")));
-		MechAndSmithCraft.addEntry(entry(CR.id("encased_fan"), 					1, IR.id("fan")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_drill"), 				1, IR.id("iron_drill_head")));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_saw"), 				1, CABF.id("saw_blade")));
-		MechAndSmithCraft.addEntry(entry(CR.id("deployer"), 						1, CR.id("brass_hand")));
-		MechAndSmithCraft.addEntry(entry(CR.id("andesite_tunnel"), 				4, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("andesite_funnel"), 				4, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_harvester"), 			2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_plough"), 			2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("portable_storage_interface"), 	2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_press"), 				1, MC.id("iron_block")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_mixer"), 				1, CREATE.id("whisk")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("encased_fan"), 					1, INDREV.id("fan")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_drill"), 				1, INDREV.id("iron_drill_head")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_saw"), 				1, CABF.id("saw_blade")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("deployer"), 						1, CREATE.id("brass_hand")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("andesite_tunnel"), 				4, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("andesite_funnel"), 				4, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_harvester"), 			2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_plough"), 			2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("portable_storage_interface"), 	2, null));
 		MechAndSmithCraft.addEntry(entry(CABF.id("extractor_machine"), 			1, MC.id("bucket")));
-		MechAndSmithCraft.addEntry(entry(AD.id("coal_generator"), 				1, IR.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(AD_ASTRA.id("coal_generator"), 				1, INDREV.id("heat_coil")));
 		MechAndSmithCraft.addEntry(entry(AE2.id("charger"), 						1, AE2.id("fluix_crystal")));
-		MechAndSmithCraft.addEntry(entry(CR.id("contraption_controls"), 			2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("mechanical_roller"), 			1, CR.id("crushing_wheel")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("contraption_controls"), 			2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("mechanical_roller"), 			1, CREATE.id("crushing_wheel")));
 	}
 }

@@ -2,8 +2,6 @@ package dm.earth.cabricality.content.core.threads;
 
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.core.items.ColoredFernItem;
-import dm.earth.cabricality.content.entries.CabfItems;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
@@ -19,13 +17,9 @@ import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import io.github.fabricators_of_create.porting_lib.tags.Tags;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.CookingCategory;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.RecipeManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
@@ -40,40 +34,40 @@ import java.util.List;
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.C;
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.CX;
-import static dm.earth.cabricality.ModEntry.IR;
-import static dm.earth.cabricality.ModEntry.KB;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.COXINHA;
+import static dm.earth.cabricality.ModEntry.INDREV;
+import static dm.earth.cabricality.ModEntry.KIBE;
 import static dm.earth.cabricality.ModEntry.MC;
 import static dm.earth.cabricality.ModEntry.TC;
 
 public class InvarThread implements TechThread {
 	private static final List<Identifier> REMOVE_OUTPUTS = List.of(
-			IR.id("compressor_mk1"),
-			IR.id("chopper_mk1"),
-			IR.id("farmer_mk1"),
-			IR.id("slaughter_mk1"),
-			IR.id("rancher_mk1"),
-			IR.id("pump_mk1"),
-			IR.id("mining_rig_mk4"),
-			IR.id("data_card_writer_mk4"),
-			IR.id("drain_mk1")
+			INDREV.id("compressor_mk1"),
+			INDREV.id("chopper_mk1"),
+			INDREV.id("farmer_mk1"),
+			INDREV.id("slaughter_mk1"),
+			INDREV.id("rancher_mk1"),
+			INDREV.id("pump_mk1"),
+			INDREV.id("mining_rig_mk4"),
+			INDREV.id("data_card_writer_mk4"),
+			INDREV.id("drain_mk1")
 	);
 
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(IR.id("electric_furnace_mk1"), 		1, MC.id("furnace")));
-		MechAndSmithCraft.addEntry(entry(IR.id("compressor_mk1"), 			1, MC.id("iron_block")));
-		MechAndSmithCraft.addEntry(entry(IR.id("smelter_mk4"), 				1, MC.id("blast_furnace")));
-		MechAndSmithCraft.addEntry(entry(IR.id("pulverizer_mk1"), 			1, MC.id("flint")));
-		MechAndSmithCraft.addEntry(entry(IR.id("sawmill_mk1"), 				1, CABF.id("saw_blade")));
-		MechAndSmithCraft.addEntry(entry(IR.id("recycler_mk2"), 				1, MC.id("composter")));
-		MechAndSmithCraft.addEntry(entry(IR.id("condenser_mk4"), 			1, MC.id("packed_ice")));
-		MechAndSmithCraft.addEntry(entry(IR.id("fluid_infuser_mk1"), 		1, CR.id("whisk")));
-		MechAndSmithCraft.addEntry(entry(IR.id("modular_workbench_mk4"), 	1, MC.id("crafting_table")));
-		MechAndSmithCraft.addEntry(entry(IR.id("lazuli_flux_container_mk1"), 1, MC.id("redstone_block")));
-		MechAndSmithCraft.addEntry(entry(IR.id("laser_emitter_mk4"), 		1, MC.id("lightning_rod")));
-		MechAndSmithCraft.addEntry(entry(CX.id("energy_trash_can"), 			1, KB.id("trash_can")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("electric_furnace_mk1"), 		1, MC.id("furnace")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("compressor_mk1"), 			1, MC.id("iron_block")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("smelter_mk4"), 				1, MC.id("blast_furnace")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("pulverizer_mk1"), 			1, MC.id("flint")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("sawmill_mk1"), 				1, CABF.id("saw_blade")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("recycler_mk2"), 				1, MC.id("composter")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("condenser_mk4"), 			1, MC.id("packed_ice")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("fluid_infuser_mk1"), 		1, CREATE.id("whisk")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("modular_workbench_mk4"), 	1, MC.id("crafting_table")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("lazuli_flux_container_mk1"), 1, MC.id("redstone_block")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("laser_emitter_mk4"), 		1, MC.id("lightning_rod")));
+		MechAndSmithCraft.addEntry(entry(COXINHA.id("energy_trash_can"), 			1, KIBE.id("trash_can")));
 	}
 
 	@Override
@@ -179,7 +173,7 @@ public class InvarThread implements TechThread {
 		handler.register(
 				recipeId("crushing", "crushing_wheel"),
 				id -> new CrushingRecipe(new FreePRP(id)
-						.setIngredient(CR.asIngredient("crushing_wheel"))
+						.setIngredient(CREATE.asIngredient("crushing_wheel"))
 						.setResult(AE2.asProcessingOutput("singularity"))
 						.setProcessingTime(250))
 		);
@@ -236,7 +230,7 @@ public class InvarThread implements TechThread {
 		handler.register(
 				recipeId("pressing", "refined_radiance"),
 				id -> new PressingRecipe(new FreePRP(id)
-						.setIngredient(Ingredient.ofItems(CR.asItem("refined_radiance")))
+						.setIngredient(Ingredient.ofItems(CREATE.asItem("refined_radiance")))
 						.setResult(CABF.asProcessingOutput("radiant_sheet")))
 		);
 
@@ -270,7 +264,7 @@ public class InvarThread implements TechThread {
 				id -> VanillaRecipeBuilders
 						.shapedRecipe(" R ", "R S", "LS ")
 						.ingredient('R', CABF.asItem("ruby"))
-						.ingredient('L', IR.asItem("lead_ingot"))
+						.ingredient('L', INDREV.asItem("lead_ingot"))
 						.ingredient('S', CABF.asItem("sapphire"))
 						.output(CABF.asStack("chromatic_resonator"))
 						.build(id, "")
@@ -282,7 +276,7 @@ public class InvarThread implements TechThread {
 						.shapedRecipe("SSS", "SCS", "SSS")
 						.ingredient('C', CABF.asItem("invar_casing"))
 						.ingredient('S', CABF.asItem("inductive_mechanism"))
-						.output(IR.asStack("machine_block"))
+						.output(INDREV.asStack("machine_block"))
 						.build(id, "")
 		);
 
@@ -312,13 +306,13 @@ public class InvarThread implements TechThread {
 
 	@Contract("_, _, _ -> new")
 	private MechAndSmithCraft.@NotNull Entry entry(Identifier output, int count, @Nullable Identifier other) {
-		return MechAndSmithCraft.entry(this.getLevel(), IR.id("machine_block"), output, count, other);
+		return MechAndSmithCraft.entry(this.getLevel(), INDREV.id("machine_block"), output, count, other);
 	}
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.RecipeHandler handler) {
-		handler.remove(CR.id("mechanical_crafting", "crushing_wheel"));
-		handler.removeIf(IR.predicateOutput(handler, false, "machine_block"));
+		handler.remove(CREATE.id("mechanical_crafting", "crushing_wheel"));
+		handler.removeIf(INDREV.predicateOutput(handler, false, "machine_block"));
 		handler.removeIf(
 				p -> !CABF.checkContains(handler, p)
 						&& REMOVE_OUTPUTS.stream()

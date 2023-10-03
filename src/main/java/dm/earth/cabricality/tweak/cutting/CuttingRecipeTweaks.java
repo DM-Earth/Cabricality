@@ -42,10 +42,10 @@ public class CuttingRecipeTweaks {
 			}
 		});
 
-		handler.register(createId(ModEntry.TRE.id("small_oak_log")),
-				id -> createRecipe(id, ModEntry.TRE.id("small_oak_log"), ModEntry.TRE.id("stripped_small_oak_log"), 1, 50));
-		handler.register(createId(ModEntry.TRE.id("stripped_small_oak_log")),
-				id -> createRecipe(id, ModEntry.TRE.id("stripped_small_oak_log"), ModEntry.MC.id("oak_planks"), 6, 50));
+		handler.register(createId(ModEntry.TERRESTRIA.id("small_oak_log")),
+				id -> createRecipe(id, ModEntry.TERRESTRIA.id("small_oak_log"), ModEntry.TERRESTRIA.id("stripped_small_oak_log"), 1, 50));
+		handler.register(createId(ModEntry.TERRESTRIA.id("stripped_small_oak_log")),
+				id -> createRecipe(id, ModEntry.TERRESTRIA.id("stripped_small_oak_log"), ModEntry.MC.id("oak_planks"), 6, 50));
 	}
 
 	private static CuttingRecipe createRecipe(

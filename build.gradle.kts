@@ -87,10 +87,10 @@ dependencies {
     modImplementation(libs.fabric.api)
 
     // Implemented Mods
-    modImplementation(libs.bundles.alphamode) { exclude(group = "com.github.AlphaMode") }
-    modImplementation(libs.bundles.ftb.mods)
-    modImplementation(libs.bundles.modrinth.maven)
-    modImplementation(libs.bundles.jitpack)
+    modImplementation(libs.bundles.mods.from.alphamode) { exclude(group = "com.github.AlphaMode") }
+    modImplementation(libs.bundles.mods.from.ftb)
+    modImplementation(libs.bundles.maven.modrinth)
+    modImplementation(libs.bundles.maven.jitpack)
 
     // Mod Apis
     modApi(libs.modmenu)

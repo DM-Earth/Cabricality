@@ -1,7 +1,7 @@
 package dm.earth.cabricality.lib.util;
 
 import static dm.earth.cabricality.ModEntry.AP;
-import static dm.earth.cabricality.ModEntry.CR;
+import static dm.earth.cabricality.ModEntry.CREATE;
 
 import java.util.Map;
 import java.util.Random;
@@ -16,7 +16,7 @@ import net.minecraft.world.WorldAccess;
 public class CobbleGenUtil {
 	private static final Map<Block, Block> COBBLE_GEN_BLOCK_MAP = Map.of(Blocks.PACKED_ICE, Blocks.ANDESITE,
 			AP.asBlock("polished_packed_ice"), Blocks.GRANITE, AP.asBlock("chiseled_packed_ice"), Blocks.DIORITE,
-			AP.asBlock("packed_ice_pillar"), CR.asBlock("limestone"));
+			AP.asBlock("packed_ice_pillar"), CREATE.asBlock("limestone"));
 
 	public static BlockState getBlock(WorldAccess world, BlockPos pos) {
 		BlockState upState = world.getBlockState(pos.offset(Direction.UP));

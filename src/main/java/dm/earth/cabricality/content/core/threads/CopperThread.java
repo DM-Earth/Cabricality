@@ -24,10 +24,10 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.CX;
-import static dm.earth.cabricality.ModEntry.IR;
-import static dm.earth.cabricality.ModEntry.KB;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.COXINHA;
+import static dm.earth.cabricality.ModEntry.INDREV;
+import static dm.earth.cabricality.ModEntry.KIBE;
 import static dm.earth.cabricality.ModEntry.MC;
 
 @SuppressWarnings("UnstableApiUsage")
@@ -39,7 +39,7 @@ public class CopperThread implements TechThread {
 				id -> VanillaRecipeBuilders
 						.shapedRecipe("XXX", "XXX")
 						.ingredient('X', CabfItems.CURED_RUBBER)
-						.output(new ItemStack(CR.asItem("belt_connector"), 3))
+						.output(new ItemStack(CREATE.asItem("belt_connector"), 3))
 						.build(id, "")
 		);
 
@@ -68,7 +68,7 @@ public class CopperThread implements TechThread {
 				recipeId("crafting", "copper_machine"),
 				id -> RecipeBuilderUtil.donutRecipe(
 						id,
-						CR.asItem("copper_casing"),
+						CREATE.asItem("copper_casing"),
 						CABF.asItem("sealed_mechanism"),
 						CABF.asItem("copper_machine"),
 						1
@@ -107,22 +107,22 @@ public class CopperThread implements TechThread {
 
 	@Override
 	public void removeRecipes(RecipeLoadingEvents.RemoveRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.remove(CR.id("crafting", "kinetics", "belt_connector"));
+		handler.remove(CREATE.id("crafting", "kinetics", "belt_connector"));
 	}
 
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(CR.id("copper_backtank"), 1, MC.id("copper_block")));
-		MechAndSmithCraft.addEntry(entry(CR.id("portable_fluid_interface"), 2, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("spout"), 1, KB.id("fluid_hopper")));
-		MechAndSmithCraft.addEntry(entry(IR.id("tier_upgrade_mk2"), 1, MC.id("redstone")));
-		MechAndSmithCraft.addEntry(entry(CR.id("hose_pulley"), 1, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("item_drain"), 1, MC.id("iron_bars")));
-		MechAndSmithCraft.addEntry(entry(IR.id("heat_generator_mk4"), 1, IR.id("heat_coil")));
-		MechAndSmithCraft.addEntry(entry(IR.id("fisher_mk2"), 1, MC.id("bucket")));
-		MechAndSmithCraft.addEntry(entry(CR.id("steam_engine"), 2, MC.id("piston")));
-		MechAndSmithCraft.addEntry(entry(CR.id("smart_fluid_pipe"), 2, CR.id("electron_tube")));
-		MechAndSmithCraft.addEntry(entry(CX.id("fluid_trash_can"), 2, KB.id("trash_can")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("copper_backtank"), 1, MC.id("copper_block")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("portable_fluid_interface"), 2, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("spout"), 1, KIBE.id("fluid_hopper")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("tier_upgrade_mk2"), 1, MC.id("redstone")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("hose_pulley"), 1, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("item_drain"), 1, MC.id("iron_bars")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("heat_generator_mk4"), 1, INDREV.id("heat_coil")));
+		MechAndSmithCraft.addEntry(entry(INDREV.id("fisher_mk2"), 1, MC.id("bucket")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("steam_engine"), 2, MC.id("piston")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("smart_fluid_pipe"), 2, CREATE.id("electron_tube")));
+		MechAndSmithCraft.addEntry(entry(COXINHA.id("fluid_trash_can"), 2, KIBE.id("trash_can")));
 	}
 
 	@Override

@@ -9,7 +9,6 @@ public class CabricalityPreLaunch implements PreLaunchEntrypoint {
 	public void onPreLaunch() {
 		CabfModConflict.checkAndExit();
 
-		// Prevents PCL2 from launching
 		@Nullable String launcherBrand = System.getProperty("minecraft.launcher.brand");
 		if (launcherBrand != null && launcherBrand.contains("PCL")) {
 			throw new RuntimeException("PCL2 is not supported. Have a hug.");

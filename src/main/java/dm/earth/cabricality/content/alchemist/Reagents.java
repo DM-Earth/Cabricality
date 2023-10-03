@@ -19,11 +19,11 @@ import java.util.stream.Collectors;
 
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.IR;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.INDREV;
 import static dm.earth.cabricality.ModEntry.MC;
 import static dm.earth.cabricality.ModEntry.MLM;
-import static dm.earth.cabricality.ModEntry.PM;
+import static dm.earth.cabricality.ModEntry.PROMENADE;
 
 public enum Reagents {
 	IGNEOUS("igneous", 0x6C8191, 16, true,
@@ -33,10 +33,10 @@ public enum Reagents {
 			Reagent.of("cobblestone", MC.id("cobblestone"), 0xA6A6A6),
 			Reagent.of("basalt", MC.id("basalt"), 0x32333D),
 			Reagent.of("tuff", MC.id("tuff"), 0x85837B),
-			Reagent.of("limestone", CR.id("limestone"), 0xBBB6A9),
-			Reagent.of("scoria", CR.id("scoria"), 0x493A34),
-			Reagent.of("blunite", PM.id("blunite"), 0x5F6874),
-			Reagent.of("carbonite", PM.id("carbonite"), 0x514E52)),
+			Reagent.of("limestone", CREATE.id("limestone"), 0xBBB6A9),
+			Reagent.of("scoria", CREATE.id("scoria"), 0x493A34),
+			Reagent.of("blunite", PROMENADE.id("blunite"), 0x5F6874),
+			Reagent.of("carbonite", PROMENADE.id("carbonite"), 0x514E52)),
 
 	HERBAL("herbal", 0xB5CDA3, 1, true,
 			Reagent.of("white", MC.id("lily_of_the_valley"), 0xE8E8E8),
@@ -54,30 +54,30 @@ public enum Reagents {
 			Reagent.of("blaze", MC.id("blaze_powder"), 0xFDA228),
 			Reagent.of("slime", MC.id("slime_ball"), 0x8CD382),
 			Reagent.of("nether", MC.id("nether_wart"), 0xA42733),
-			Reagent.of("obsidian", CR.id("powdered_obsidian"), 0x271F3C),
+			Reagent.of("obsidian", CREATE.id("powdered_obsidian"), 0x271F3C),
 			Reagent.of("gunpowder", MC.id("gunpowder"), 0x727272),
 			Reagent.of("prismarine", MC.id("prismarine_shard"), 0xA5D1C2),
 			Reagent.of("hex", MLM.id("hex_ash"), 0xA235BC),
 			Reagent.of("ender", AE2.id("ender_dust"), 0x38CCB1)),
 
 	CRYSTAL("crystal", 0xffb037, 1, true,
-			Reagent.of("sulfur", IR.id("sulfur_dust"), 0xc7a94a),
+			Reagent.of("sulfur", INDREV.id("sulfur_dust"), 0xc7a94a),
 			Reagent.of("certus_quartz", AE2.id("certus_quartz_dust"), 0xbbdcfd),
 			Reagent.of("cinnabar", MC.id("redstone"), 0xe8364f),
 			Reagent.of("blazing_quartz", MLM.id("blazing_quartz"), 0xfee568),
 			Reagent.of("nether_quartz", MC.id("quartz"), 0xddd4c7)),
 
 	METAL("metal", 0xc9c9c9, 1, true,
-			Reagent.of("iron", IR.id("iron_dust"), 0xd1d1d1),
-			Reagent.of("gold", IR.id("gold_dust"), 0xeed73c),
-			Reagent.of("copper", IR.id("copper_dust"), 0xe7763a),
-			Reagent.of("tin", IR.id("tin_dust"), 0xb6b9ba),
-			Reagent.of("lead", IR.id("lead_dust"), 0x313150),
+			Reagent.of("iron", INDREV.id("iron_dust"), 0xd1d1d1),
+			Reagent.of("gold", INDREV.id("gold_dust"), 0xeed73c),
+			Reagent.of("copper", INDREV.id("copper_dust"), 0xe7763a),
+			Reagent.of("tin", INDREV.id("tin_dust"), 0xb6b9ba),
+			Reagent.of("lead", INDREV.id("lead_dust"), 0x313150),
 			Reagent.of("zinc", CABF.id("zinc_dust"), 0xaecbb9),
 			Reagent.of("nickel", CABF.id("nickel_dust"), 0xd9b669)),
 
 	CHAOTIC("chaos", 0xb200ed, 1, false,
-			Reagent.of("silver", IR.id("silver_dust"), 0x9fadb4),
+			Reagent.of("silver", INDREV.id("silver_dust"), 0x9fadb4),
 			Reagent.of("silicon", AE2.id("silicon"), 0x85837b));
 
 	private final String name;

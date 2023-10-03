@@ -4,13 +4,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
-import static dm.earth.cabricality.ModEntry.AD;
+import static dm.earth.cabricality.ModEntry.AD_ASTRA;
 import static dm.earth.cabricality.ModEntry.AP;
 import static dm.earth.cabricality.ModEntry.MC;
 import static dm.earth.cabricality.ModEntry.MLM;
-import static dm.earth.cabricality.ModEntry.PM;
+import static dm.earth.cabricality.ModEntry.PROMENADE;
 import static dm.earth.cabricality.ModEntry.TC;
-import static dm.earth.cabricality.ModEntry.TRE;
+import static dm.earth.cabricality.ModEntry.TERRESTRIA;
 
 public enum WoodCuttingEntry {
 	OAK(
@@ -70,14 +70,14 @@ public enum WoodCuttingEntry {
 	),
 
 	CHERRY_OAK(
-			PM.id("cherry_oak"),
+			PROMENADE.id("cherry_oak"),
 			"cherry_oak_planks", "cherry_oak_slab",
 			"cherry_oak_log", "stripped_cherry_oak_log",
 			"cherry_oak_wood", "stripped_cherry_oak_wood"
 	),
 
 	PALM(
-			PM.id("palm"),
+			PROMENADE.id("palm"),
 			"palm_planks", "palm_slab",
 			"palm_log", "stripped_palm_log",
 			"palm_wood", "stripped_palm_wood"
@@ -119,7 +119,7 @@ public enum WoodCuttingEntry {
 	),
 
 	GLACIAN(
-			AD.id("glacian"),
+			AD_ASTRA.id("glacian"),
 			"glacian_planks", "glacian_slab",
 			"glacian_log", "stripped_glacian_log",
 			null, null
@@ -133,77 +133,77 @@ public enum WoodCuttingEntry {
 	),
 
 	RAINBOW_EUCALYPTUS(
-			TRE.id("rainbow_eucalyptus"),
+			TERRESTRIA.id("rainbow_eucalyptus"),
 			"rainbow_eucalyptus_planks", "rainbow_eucalyptus_slab",
 			"rainbow_eucalyptus_log", "stripped_rainbow_eucalyptus_log",
 			"rainbow_eucalyptus_wood", "stripped_rainbow_eucalyptus_wood"
 	),
 
 	RAINBOW_EUCALYPTUS_QUARTER(
-			TRE.id("rainbow_eucalyptus_quarter"),
+			TERRESTRIA.id("rainbow_eucalyptus_quarter"),
 			"rainbow_eucalyptus_planks", null,
 			"rainbow_eucalyptus_quarter_log", "stripped_rainbow_eucalyptus_quarter_log",
 			null, null
 	),
 
 	CYPRESS(
-			TRE.id("cypress"),
+			TERRESTRIA.id("cypress"),
 			"cypress_planks", "cypress_slab",
 			"cypress_log", "stripped_cypress_log",
 			"cypress_wood", "stripped_cypress_wood"
 	),
 
 	CYPRESS_QUARTER(
-			TRE.id("cypress_quarter"),
+			TERRESTRIA.id("cypress_quarter"),
 			"cypress_planks", "cypress_planks",
 			"cypress_quarter_log", "stripped_cypress_quarter_log",
 			null, null
 	),
 
 	HEMLOCK(
-			TRE.id("hemlock"),
+			TERRESTRIA.id("hemlock"),
 			"hemlock_planks", "hemlock_slab",
 			"hemlock_log", "stripped_hemlock_log",
 			"hemlock_wood", "stripped_hemlock_wood"
 	),
 
 	HEMLOCK_QUARTER(
-			TRE.id("hemlock_quarter"),
+			TERRESTRIA.id("hemlock_quarter"),
 			"hemlock_planks", null,
 			"hemlock_quarter_log", "stripped_hemlock_quarter_log",
 			null, null
 	),
 
 	REDWOOD(
-			TRE.id("redwood"),
+			TERRESTRIA.id("redwood"),
 			"redwood_planks", "redwood_slab",
 			"redwood_log", "stripped_redwood_log",
 			"redwood_wood", "stripped_redwood_wood"
 	),
 
 	REDWOOD_QUARTER(
-			TRE.id("redwood_quarter"),
+			TERRESTRIA.id("redwood_quarter"),
 			"redwood_planks", null,
 			"redwood_quarter_log", "stripped_redwood_quarter_log",
 			null, null
 	),
 
 	JAPANESE_MAPLE(
-			TRE.id("japanese_maple"),
+			TERRESTRIA.id("japanese_maple"),
 			"japanese_maple_planks", "japanese_maple_slab",
 			"japanese_maple_log", "stripped_japanese_maple_log",
 			"japanese_maple_wood", "stripped_japanese_maple_wood"
 	),
 
 	WILLOW(
-			TRE.id("willow"),
+			TERRESTRIA.id("willow"),
 			"willow_planks", "willow_slab",
 			"willow_log", "stripped_willow_log",
 			"willow_wood", "stripped_willow_wood"
 	),
 
 	RUBBER(
-			TRE.id("rubber"),
+			TERRESTRIA.id("rubber"),
 			"rubber_planks", "rubber_slab",
 			"rubber_log", "stripped_rubber_log",
 			"rubber_wood", "stripped_rubber_wood"

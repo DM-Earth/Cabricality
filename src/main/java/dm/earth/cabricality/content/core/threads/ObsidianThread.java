@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
+import static dm.earth.cabricality.ModEntry.CREATE;
 import static dm.earth.cabricality.ModEntry.MC;
 
 public class ObsidianThread implements TechThread {
@@ -20,7 +20,7 @@ public class ObsidianThread implements TechThread {
 				recipeId("crafting", "obsidian_machine"),
 				id -> RecipeBuilderUtil.donutRecipe(
 						id,
-						CR.asItem("railway_casing"),
+						CREATE.asItem("railway_casing"),
 						CABF.asItem("sturdy_mechanism"),
 						CABF.asItem("obsidian_machine"),
 						1
@@ -30,10 +30,10 @@ public class ObsidianThread implements TechThread {
 
 	@Override
 	public void load() {
-		MechAndSmithCraft.addEntry(entry(CR.id("track_station"), 1, null));
-		MechAndSmithCraft.addEntry(entry(CR.id("track_signal"), 1, CR.id("electron_tube")));
-		MechAndSmithCraft.addEntry(entry(CR.id("track_observer"), 1, MC.id("observer")));
-		MechAndSmithCraft.addEntry(entry(CR.id("controls"), 1, MC.id("lever")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("track_station"), 1, null));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("track_signal"), 1, CREATE.id("electron_tube")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("track_observer"), 1, MC.id("observer")));
+		MechAndSmithCraft.addEntry(entry(CREATE.id("controls"), 1, MC.id("lever")));
 	}
 
 	@Override

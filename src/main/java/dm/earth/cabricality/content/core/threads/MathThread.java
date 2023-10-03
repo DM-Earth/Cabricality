@@ -1,18 +1,12 @@
 package dm.earth.cabricality.content.core.threads;
 
-import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.entries.CabfItems;
-import dm.earth.cabricality.content.math.item.NumberItem;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.registry.Registries;
 
 import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CR;
+import static dm.earth.cabricality.ModEntry.CREATE;
 
 public class MathThread implements TechThread {
 	@Override
@@ -23,7 +17,7 @@ public class MathThread implements TechThread {
 				recipeId("stonecutting", str + "_cast"),
 				id -> VanillaRecipeBuilders.stonecuttingRecipe(
 						id, "",
-						CR.asIngredient("copper_sheet"),
+						CREATE.asIngredient("copper_sheet"),
 						CABF.asStack(str + "_cast"))
 		));
 

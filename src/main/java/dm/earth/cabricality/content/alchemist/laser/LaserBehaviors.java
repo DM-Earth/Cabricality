@@ -104,10 +104,10 @@ public class LaserBehaviors {
 			return new LaserRecipe(CabfItems.BASALZ_SHARD, ParticleTypes.FLAME);
 		if (item == Items.SNOWBALL)
 			return new LaserRecipe(CabfItems.BLIZZ_CUBE, ParticleTypes.SNOWFLAKE);
-		if (item == ModEntry.IR.asItem("nikolite_ingot"))
-			return new LaserRecipe(ModEntry.IR.asItem("enriched_nikolite_ingot"), ParticleTypes.ELECTRIC_SPARK);
-		if (item == ModEntry.IR.asItem("nikolite_dust"))
-			return new LaserRecipe(ModEntry.IR.asItem("enriched_nikolite_dust"), ParticleTypes.ELECTRIC_SPARK);
+		if (item == ModEntry.INDREV.asItem("nikolite_ingot"))
+			return new LaserRecipe(ModEntry.INDREV.asItem("enriched_nikolite_ingot"), ParticleTypes.ELECTRIC_SPARK);
+		if (item == ModEntry.INDREV.asItem("nikolite_dust"))
+			return new LaserRecipe(ModEntry.INDREV.asItem("enriched_nikolite_dust"), ParticleTypes.ELECTRIC_SPARK);
 		return null;
 	}
 

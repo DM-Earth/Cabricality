@@ -2,61 +2,38 @@ package dm.earth.cabricality.tweak;
 
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.core.TechThread;
-import dm.earth.cabricality.content.entries.CabfFluids;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
-import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
-import dm.earth.cabricality.tweak.cutting.CuttingRecipeTweaks;
 import dm.earth.cabricality.tweak.ore_processing.OreProcessingTweaks;
 import com.google.common.collect.ImmutableList;
 import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperPolishingRecipe;
-import com.simibubi.create.content.fluids.transfer.FillingRecipe;
-import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
-import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
-import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
-import com.simibubi.create.content.kinetics.press.PressingRecipe;
-import com.simibubi.create.content.processing.recipe.HeatCondition;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
-import io.github.fabricators_of_create.porting_lib.tags.Tags;
 import me.steven.indrev.blocks.machine.pipes.FluidPipeBlock;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.recipe.TransformSmithingRecipe;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import static dm.earth.cabricality.ModEntry.AD;
+import static dm.earth.cabricality.ModEntry.AD_ASTRA;
 import static dm.earth.cabricality.ModEntry.AE2;
-import static dm.earth.cabricality.ModEntry.BC;
-import static dm.earth.cabricality.ModEntry.C;
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CI;
-import static dm.earth.cabricality.ModEntry.CR;
-import static dm.earth.cabricality.ModEntry.IR;
-import static dm.earth.cabricality.ModEntry.MC;
+import static dm.earth.cabricality.ModEntry.BNC;
+import static dm.earth.cabricality.ModEntry.CATWALKS;
+import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.ModEntry.INDREV;
 import static dm.earth.cabricality.ModEntry.TC;
 
 public class RecipeTweaks implements RecipeLoadingEvents.AddRecipesCallback, RecipeLoadingEvents.ModifyRecipesCallback, RecipeLoadingEvents.RemoveRecipesCallback {
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(
 			// Wrenches
-			AD.asItem("wrench"), IR.asItem("wrench"), CI.asItem("wrench"), BC.asItem("wrench"),
+			AD_ASTRA.asItem("wrench"), INDREV.asItem("wrench"), CATWALKS.asItem("wrench"), BNC.asItem("wrench"),
 			// Hammers
-			AD.asItem("hammer"), IR.asItem("hammer"),
+			AD_ASTRA.asItem("hammer"), INDREV.asItem("hammer"),
 			// Indrev
-			IR.asItem("gold_plate"), IR.asItem("iron_plate"), IR.asItem("copper_plate"), IR.asItem("fan"),
+			INDREV.asItem("gold_plate"), INDREV.asItem("iron_plate"), INDREV.asItem("copper_plate"), INDREV.asItem("fan"),
 			// Ad Astra
-			AD.asItem("compressed_steel"), AD.asItem("iron_plate"));
+			AD_ASTRA.asItem("compressed_steel"), AD_ASTRA.asItem("iron_plate"));
 	private static final String[] AD_ASTRA_MATERIALS = { "steel", "desh", "ostrum", "calorite", "iron" };
 	private static final String[] AD_ASTRA_DECOR_TYPES = { "pillar", "plating" };
 
@@ -298,22 +275,22 @@ public class RecipeTweaks implements RecipeLoadingEvents.AddRecipesCallback, Rec
 		handler.remove(TC.id("smeltery", "alloys", "molten_invar"));
 
 		handler.removeIf(r ->
-				r.getId().getNamespace().equals(TC.getModid())
+				r.getId().getNamespace().equals(TC.modid())
 						&& r.getId().getPath().startsWith("compat/create")
 		);
 
 		// Remove wrenches except Create's and AE2's
 		handler.removeIf(recipe ->
-				!CR.checkContains(handler, recipe) && !AE2.checkContains(handler, recipe)
+				!CREATE.checkContains(handler, recipe) && !AE2.checkContains(handler, recipe)
 						&& Registries.ITEM.getId(recipe.getResult(handler.getRegistryManager()).getItem()).getPath().contains("wrench")
 		);
-		handler.removeIf(IR.predicateOutput(handler, "controller"));
+		handler.removeIf(INDREV.predicateOutput(handler, "controller"));
 
 		// Ad Astra!
 		Arrays.stream(AD_ASTRA_MATERIALS).forEach(material -> Arrays.stream(AD_ASTRA_DECOR_TYPES).forEach(
-				type -> handler.removeIf(AD.predicateOutput(handler, material + "_" + type))
+				type -> handler.removeIf(AD_ASTRA.predicateOutput(handler, material + "_" + type))
 		));
-		handler.remove(AD.id("recipes/nasa_workbench"));
+		handler.remove(AD_ASTRA.id("recipes/nasa_workbench"));
 
 		// AE2
 		handler.removeIf(AllRecipeTypes.MILLING.getType(), AE2.predicateOutput(handler, "certus_quartz_dust").and(
@@ -322,18 +299,18 @@ public class RecipeTweaks implements RecipeLoadingEvents.AddRecipesCallback, Rec
 
 		// Indrev
 		handler.removeIf(recipe ->
-				IR.checkContains(handler, recipe)
+				INDREV.checkContains(handler, recipe)
 						&& Registries.ITEM.getId(recipe.getResult(handler.getRegistryManager()).getItem()).getPath()
 						.matches(".*_(pickaxe|axe|shovel|hoe|sword)$")
 		);
-		handler.removeIf(IR.predicateIngredient(handler, "fan"));
+		handler.removeIf(INDREV.predicateIngredient(handler, "fan"));
 		handler.removeIf(recipe ->
 				recipe.getResult(handler.getRegistryManager()).getItem() instanceof BlockItem blockItem
 						&& blockItem.getBlock() instanceof FluidPipeBlock
 		);
-		handler.remove(IR.id("shaped/coal_generator_mk1"));
-		handler.remove(IR.id("shaped/solar_generator_mk1"));
-		handler.remove(IR.id("shaped/solar_generator_mk3"));
+		handler.remove(INDREV.id("shaped/coal_generator_mk1"));
+		handler.remove(INDREV.id("shaped/solar_generator_mk1"));
+		handler.remove(INDREV.id("shaped/solar_generator_mk3"));
 	}
 
 	private static Identifier recipeId(String type, String name) {

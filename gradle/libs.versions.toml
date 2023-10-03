@@ -79,12 +79,15 @@ exp4j = { module = "net.objecthunter:exp4j", version.ref = "exp4j" }
 
 [bundles]
 # Implemented Mods
-alphamode = ["create", "mantle"]
-ftb_mods = [
+mods_from_alphamode = [
+    "create",
+    "mantle"
+]
+mods_from_ftb = [
     "ftb_quests",
     "ftb_library"
 ]
-modrinth_maven = [
+maven_modrinth = [
     "ad_astra",
     "architectury_api",
     "bits_and_chisels",
@@ -93,7 +96,7 @@ modrinth_maven = [
     "let",
     "industrial_revolution"
 ]
-jitpack = [
+maven_jitpack = [
     "equator",
     "rip"
 ]

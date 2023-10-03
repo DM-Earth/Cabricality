@@ -9,8 +9,8 @@ public class CabricalityServer implements DedicatedServerModInitializer {
 	@Override
 	public void onInitializeServer() {
 		if (!CabfModDeps.isLoaded(true, true))
-			throw new RuntimeException(CabfModDeps.asString(true, true) + " is missing for " + Cabricality.NAME + "!");
+			throw new RuntimeException("Required mods " + CabfModDeps.asString(true, true) + " are missing for " + Cabricality.NAME + "!");
 		else if (!CabfModDeps.isLoaded(false, true))
-			CabfLogger.logWarn("Recommended mods " + CabfModDeps.asString(false, true) + " is missing for " + Cabricality.NAME + "!");
+			CabfLogger.logWarn("Recommended mods " + CabfModDeps.asString(false, true) + " are missing for " + Cabricality.NAME + "!");
 	}
 }
