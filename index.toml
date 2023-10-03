@@ -6,7 +6,7 @@ hash = "82782271d3e3a34d29ddaa4dcbad17c5f516fafddbc58202c47333f8658a5602"
 
 [[files]]
 file = "build.gradle.kts"
-hash = "1b61e5fb297b4132e42088b7214218acfed3da503defd82fc7e64ee07624191d"
+hash = "e38a904dcfce925c2f5e3bff0b75e7b337ae2b47101cff1da4e77af591939559"
 
 [[files]]
 file = "config/architects_palette.json5"
@@ -388,11 +388,6 @@ metafile = true
 [[files]]
 file = "mods/promenade.pw.toml"
 hash = "822cb71ea6d0986f90f01d1df5eee941334073cddc7b9abbe0398ba76c31fdaf"
-metafile = true
-
-[[files]]
-file = "mods/qsl.pw.toml"
-hash = "6c7c8c7f424804a1efcfa2a6828d365c3a68eb38016e31f48967f45172de47ee"
 metafile = true
 
 [[files]]
