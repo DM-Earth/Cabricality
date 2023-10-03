@@ -3,11 +3,11 @@ package dm.earth.cabricality.content.core.threads;
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback.RecipeHandler;
 
 import static dm.earth.cabricality.ModEntry.CABF;
 import static dm.earth.cabricality.ModEntry.CR;
@@ -15,7 +15,7 @@ import static dm.earth.cabricality.ModEntry.MC;
 
 public class ObsidianThread implements TechThread {
 	@Override
-	public void addRecipes(RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		handler.register(
 				recipeId("crafting", "obsidian_machine"),
 				id -> RecipeBuilderUtil.donutRecipe(

@@ -5,32 +5,32 @@ import dm.earth.cabricality.content.core.blocks.machine.AbstractMachineBlock;
 import dm.earth.cabricality.content.core.blocks.machine.ComplexMachineBlock;
 import dm.earth.cabricality.content.core.blocks.machine.CutoffMachineBlock;
 import dm.earth.cabricality.content.core.blocks.machine.SolidMachineBlock;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.MapColor;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 import java.util.function.Supplier;
 
 public enum MachineBlockEntry {
 	ANDESITE(
 			"andesite", () -> RenderLayer.getSolid(),
-			new ComplexMachineBlock(QuiltBlockSettings.create()
+			new ComplexMachineBlock(FabricBlockSettings.create()
 					.mapColor(MapColor.BROWN)
 					.strength(1.5F, 6.0F))
 	),
 
 	BRASS(
 			"brass", () -> RenderLayer.getTranslucent(),
-			new ComplexMachineBlock(QuiltBlockSettings.create()
+			new ComplexMachineBlock(FabricBlockSettings.create()
 					.mapColor(MapColor.YELLOW)
 					.strength(3.0F, 6.0F))
 	),
 
 	COPPER(
 			"copper", () -> RenderLayer.getCutout(),
-			new ComplexMachineBlock(QuiltBlockSettings.create()
+			new ComplexMachineBlock(FabricBlockSettings.create()
 					.mapColor(MapColor.ORANGE)
 					.strength(3.0F, 6.0F)
 					.sounds(BlockSoundGroup.COPPER))
@@ -38,21 +38,21 @@ public enum MachineBlockEntry {
 
 	ZINC(
 			"zinc", () -> RenderLayer.getSolid(),
-			new SolidMachineBlock(QuiltBlockSettings.create()
+			new SolidMachineBlock(FabricBlockSettings.create()
 					.mapColor(MapColor.LIME_TERRACOTTA)
 					.strength(3.0F, 6.0F))
 	),
 
 	OBSIDIAN(
 			"obsidian", () -> RenderLayer.getTranslucent(),
-			new ComplexMachineBlock(QuiltBlockSettings.create()
+			new ComplexMachineBlock(FabricBlockSettings.create()
 					.mapColor(MapColor.BLACK)
 					.strength(3.0F, 6.0F))
 	),
 
 	ENDERIUM(
 			"enderium", () -> RenderLayer.getCutout(),
-			new CutoffMachineBlock(QuiltBlockSettings.create()
+			new CutoffMachineBlock(FabricBlockSettings.create()
 					.mapColor(MapColor.WARPED_STEM)
 					.strength(3.0F, 6.0F))
 	);

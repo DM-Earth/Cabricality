@@ -19,6 +19,7 @@ import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.dm.earth.tags_binder.api.ResourceConditionCheckTagCallback;
 import com.simibubi.create.AllTags.AllItemTags;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -29,7 +30,6 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 import pers.solid.brrp.v1.model.ModelJsonBuilder;
 
 import java.util.AbstractMap;
@@ -47,7 +47,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 	private static final HashMap<Optional<RegistryKey<Item>>, Optional<RegistryKey<ItemGroup>>> ITEM_GROUPING_MAP = new HashMap<java.util.Optional<RegistryKey<Item>>, java.util.Optional<RegistryKey<ItemGroup>>>();
 
 	public static final class Suppliers {
-		public static final Supplier<Item.Settings> DEFAULT = QuiltItemSettings::new;
+		public static final Supplier<Item.Settings> DEFAULT = FabricItemSettings::new;
 		public static final Supplier<Item.Settings> DEFAULT_SINGLE = () -> DEFAULT.get().maxCount(1);
 		public static final Supplier<Item.Settings> DEFAULT_QUARTER = () -> DEFAULT.get().maxCount(16);
 	}
@@ -408,7 +408,7 @@ public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheck
 		// Incomplete Processors
 		PROCESSORS.forEach(type -> registerItemModeled(
 				"incomplete_" + type + "_processor",
-				new SequencedAssemblyItem(new QuiltItemSettings()),
+				new SequencedAssemblyItem(new FabricItemSettings()),
 				ItemModelGenerator.generated("item/processor", "incomplete_" + type + "_processor")
 		));
 

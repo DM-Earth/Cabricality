@@ -3,6 +3,8 @@ package dm.earth.cabricality.content.fluids.core;
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.entries.CabfItems;
 import dm.earth.cabricality.lib.resource.assets.gen.item.ItemModelGenerator;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
@@ -11,10 +13,10 @@ import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 
 public interface IFluid {
-	@ClientOnly void setupRendering();
+	@Environment(EnvType.CLIENT)
+	void setupRendering();
 
 	boolean hasBucketItem();
 

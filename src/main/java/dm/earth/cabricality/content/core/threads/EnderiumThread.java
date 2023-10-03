@@ -5,14 +5,14 @@ import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import static dm.earth.cabricality.ModEntry.AE2;
 import static dm.earth.cabricality.ModEntry.CABF;
@@ -34,7 +34,7 @@ public class EnderiumThread implements TechThread {
 	}
 
 	@Override
-	public void addRecipes(AddRecipesCallback.RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		handler.register(
 				recipeId("crafting", "enderium_machine"),
 				id -> VanillaRecipeBuilders

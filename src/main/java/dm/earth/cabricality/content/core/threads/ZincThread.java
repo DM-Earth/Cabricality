@@ -5,13 +5,13 @@ import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
 
 import static dm.earth.cabricality.ModEntry.AD;
 import static dm.earth.cabricality.ModEntry.CABF;
@@ -24,7 +24,7 @@ import static dm.earth.cabricality.ModEntry.MC;
 @SuppressWarnings("UnstableApiUsage")
 public class ZincThread implements TechThread {
 	@Override
-	public void addRecipes(AddRecipesCallback.@NotNull RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.@NotNull RecipeHandler handler) {
 		/*
 		handler.register(
 				recipeId("mixing", "liquid_soul"),

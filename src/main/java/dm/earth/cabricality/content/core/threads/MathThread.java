@@ -5,18 +5,18 @@ import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.entries.CabfItems;
 import dm.earth.cabricality.content.math.item.NumberItem;
 import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.registry.Registries;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback.RecipeHandler;
-import org.quiltmc.qsl.recipe.api.builder.VanillaRecipeBuilders;
 
 import static dm.earth.cabricality.ModEntry.CABF;
 import static dm.earth.cabricality.ModEntry.CR;
 
 public class MathThread implements TechThread {
 	@Override
-	public void addRecipes(RecipeHandler handler) {
+	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		// handler.register(recipeId("crafting", "calculation"), CalculationRecipe::new);
 
 		CabfItems.MATH_CASTS.forEach(str -> handler.register(

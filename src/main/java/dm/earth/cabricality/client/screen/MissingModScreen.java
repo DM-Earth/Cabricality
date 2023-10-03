@@ -4,6 +4,9 @@ import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.client.CabricalityClient;
 import dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.fabricmc.loader.api.FabricLoader;
 import net.krlite.equator.render.frame.FrameInfo;
 import net.krlite.equator.visual.text.Paragraph;
 import net.krlite.equator.visual.text.Section;
@@ -16,14 +19,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Util;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.loader.api.QuiltLoader;
-import org.quiltmc.loader.api.minecraft.ClientOnly;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 
-@ClientOnly
+@Environment(EnvType.CLIENT)
 @SuppressWarnings("all")
 public class MissingModScreen extends Screen {
 	@Nullable
@@ -179,7 +180,7 @@ public class MissingModScreen extends Screen {
 						this.width / 2 - wideness / 2, y,
 						this.textRenderer.getWidth(quit), 10,
 						quit, buttonWidget -> {
-							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile());
+							Util.getOperatingSystem().open(FabricLoader.getInstance().getGameDir().resolve("mods").toFile());
 							if (this.client != null) client.stop();
 							},
 						this.textRenderer
@@ -202,7 +203,7 @@ public class MissingModScreen extends Screen {
 						this.width / 2 - this.textRenderer.getWidth(quit) / 2, y,
 						this.textRenderer.getWidth(quit), 10,
 						quit, buttonWidget -> {
-							Util.getOperatingSystem().open(QuiltLoader.getGameDir().resolve("mods").toFile());
+							Util.getOperatingSystem().open(FabricLoader.getInstance().getGameDir().resolve("mods").toFile());
 							if (this.client != null) client.stop();
 							},
 						this.textRenderer

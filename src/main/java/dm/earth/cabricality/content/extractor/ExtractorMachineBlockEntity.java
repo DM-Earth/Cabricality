@@ -4,6 +4,7 @@ import dm.earth.cabricality.content.entries.CabfBlocks;
 import dm.earth.cabricality.content.entries.CabfFluids;
 import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.fabricmc.fabric.api.transfer.v1.storage.base.SingleVariantStorage;
@@ -19,7 +20,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import org.quiltmc.qsl.block.entity.api.QuiltBlockEntityTypeBuilder;
 
 import java.util.Arrays;
 import java.util.List;
@@ -47,7 +47,7 @@ public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGog
 
 	public int ticks = 0;
 
-	public static final BlockEntityType<ExtractorMachineBlockEntity> TYPE = QuiltBlockEntityTypeBuilder
+	public static final BlockEntityType<ExtractorMachineBlockEntity> TYPE = FabricBlockEntityTypeBuilder
 			.create(ExtractorMachineBlockEntity::new, CabfBlocks.EXTRACTOR).build();
 
 	public ExtractorMachineBlockEntity(BlockPos blockPos, BlockState blockState) {

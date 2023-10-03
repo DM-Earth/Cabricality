@@ -9,13 +9,13 @@ import dm.earth.cabricality.lib.math.RandomMathUtil;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
+import ho.artisan.lib.recipe.api.RecipeManagerHelper;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import org.quiltmc.qsl.recipe.api.RecipeLoadingEvents.AddRecipesCallback;
-import org.quiltmc.qsl.recipe.api.RecipeManagerHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,7 +24,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import static dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
 import static dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
 
-public class JarData implements AddRecipesCallback, LoadTagsCallback<Item> {
+public class JarData implements RecipeLoadingEvents.AddRecipesCallback, LoadTagsCallback<Item> {
 	public static void load() {
 		JarData thisL = new JarData();
 		LoadTagsCallback.ITEM.register(thisL);

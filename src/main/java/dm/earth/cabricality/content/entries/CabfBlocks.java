@@ -14,6 +14,7 @@ import dm.earth.cabricality.lib.resource.ResourcedBlock;
 import com.dm.earth.tags_binder.api.LoadTagsCallback;
 import com.simibubi.create.AllTags.AllBlockTags;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -28,7 +29,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
-import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 import java.util.Arrays;
 
@@ -41,7 +41,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 	);
 	public static Block JAR = registerBlock(
 			"jar",
-			new JarBlock(QuiltBlockSettings.copyOf(Blocks.GLASS)
+			new JarBlock(FabricBlockSettings.copyOf(Blocks.GLASS)
 					.mapColor(MapColor.BROWN))
 	);
 
@@ -51,7 +51,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 			if (reagents == Reagents.CHAOTIC)
 				registerBlock(
 						"catalyst_jar_" + reagents.getCatalyst().hashString(),
-						new ChaoticCatalystJarBlock(QuiltBlockSettings.copyOf(Blocks.GLASS)
+						new ChaoticCatalystJarBlock(FabricBlockSettings.copyOf(Blocks.GLASS)
 								.mapColor(MapColor.BLACK)
 								.strength(1F)),
 						Cabricality.ItemGroups.SUBSTRATES
@@ -59,7 +59,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 			else
 				registerBlock(
 						"catalyst_jar_" + reagents.getCatalyst().hashString(),
-						new CatalystJarBlock(QuiltBlockSettings.copyOf(Blocks.GLASS)
+						new CatalystJarBlock(FabricBlockSettings.copyOf(Blocks.GLASS)
 								.mapColor(MapColor.GOLD)
 								.strength(0.4F)),
 						Cabricality.ItemGroups.SUBSTRATES
@@ -67,7 +67,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 			reagents.getReagents()
 					.forEach(reagent -> registerBlock(
 							"reagent_jar_" + reagent.hashString(),
-							new ReagentJarBlock(QuiltBlockSettings.copyOf(Blocks.GLASS)
+							new ReagentJarBlock(FabricBlockSettings.copyOf(Blocks.GLASS)
 									.mapColor(MapColor.BROWN)
 									.strength(0.4F)),
 									Cabricality.ItemGroups.SUBSTRATES
@@ -86,7 +86,7 @@ public class CabfBlocks implements LoadTagsCallback<Block> {
 	public static FluidBlock registerFluidBlock(Identifier id, FlowableFluid fluid) {
 		return Registry.register(
 				Registries.BLOCK, id,
-				new FluidBlock(fluid, QuiltBlockSettings.copy(Blocks.WATER))
+				new FluidBlock(fluid, FabricBlockSettings.copy(Blocks.WATER))
 		);
 	}
 
