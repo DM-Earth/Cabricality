@@ -30,10 +30,6 @@ repositories {
         }
     }
 
-    maven { url = uri("https://mvn.devos.one/snapshots/") }
-
-    maven { url = uri("https://maven.saps.dev/releases/") }
-
     maven {
         name = "JitPack"
         url = uri("https://jitpack.io/")
@@ -56,6 +52,8 @@ repositories {
     }
 
     maven { url = uri("https://maven.quiltmc.org/repository/release") }
+    maven { url = uri("https://mvn.devos.one/snapshots/") }
+    maven { url = uri("https://maven.saps.dev/releases/") }
     maven { url = uri("https://aperlambda.github.io/maven") }
     maven { url = uri("https://dvs1.progwml6.com/files/maven") }
     maven { url = uri("https://maven.cafeteria.dev/releases") }
