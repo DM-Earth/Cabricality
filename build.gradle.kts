@@ -124,7 +124,7 @@ tasks {
     processResources {
         inputs.property("modpackVersion", version)
 
-        filesMatching("quilt.mod.json") {
+        filesMatching("fabric.mod.json") {
             expand(mapOf("modpack_version" to version))
         }
     }
