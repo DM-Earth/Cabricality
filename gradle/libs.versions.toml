@@ -89,7 +89,7 @@ modrinth_maven = [
     "architectury_api",
     "bits_and_chisels",
     "farmers_delight",
-    "hephaestus",
+  # "hephaestus",
     "let",
     "industrial_revolution"
 ]
