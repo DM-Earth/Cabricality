@@ -2,7 +2,7 @@ package dm.earth.cabricality.content.core.threads;
 
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.entries.CabfItemTags;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
@@ -127,7 +127,7 @@ public class AndesiteThread implements TechThread {
 
 		handler.register(
 				recipeId("crafting", "andesite_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(
+				id -> RecipeUtil.donutRecipe(
 						id,
 						CREATE.asItem("andesite_casing"),
 						CABF.asItem("kinetic_mechanism"),

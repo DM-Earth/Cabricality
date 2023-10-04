@@ -1,7 +1,7 @@
 package dm.earth.cabricality.content.core.threads;
 
 import dm.earth.cabricality.content.core.TechThread;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.util.Identifier;
@@ -18,7 +18,7 @@ public class ObsidianThread implements TechThread {
 	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.RecipeHandler handler) {
 		handler.register(
 				recipeId("crafting", "obsidian_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(
+				id -> RecipeUtil.donutRecipe(
 						id,
 						CREATE.asItem("railway_casing"),
 						CABF.asItem("sturdy_mechanism"),

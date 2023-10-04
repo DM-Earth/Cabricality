@@ -10,6 +10,7 @@ import dm.earth.cabricality.content.entries.CabfItems;
 import dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import dm.earth.cabricality.content.entries.CabfSounds;
 import dm.earth.cabricality.content.trading.data.recipe.Trading;
+import dm.earth.cabricality.lib.util.ConfettiUtil;
 import dm.earth.cabricality.lib.util.log.CabfLogger;
 import dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import dm.earth.cabricality.listener.UseEntityListener;
@@ -77,7 +78,9 @@ public class Cabricality implements ModInitializer {
 	}
 
 	public static class Textures {
+		@Deprecated
 		public static final Texture CABRICALITY_LOGO = texture("gui", "title", "logo");
+		@Deprecated
 		public static final Texture CABRICALITY_LOGO_NEON = texture("gui", "title", "logo_neon");
 	}
 
@@ -143,7 +146,7 @@ public class Cabricality implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		CabfConfig.override();
-		CabfLogger.info("📦 Initializing " + NAME + "...");
+		ConfettiUtil.startLoading();
 
 		CabfReceiver.registerServer();
 

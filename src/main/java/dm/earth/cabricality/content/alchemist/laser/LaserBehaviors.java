@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import dm.earth.cabricality.Mod;
 import dm.earth.cabricality.content.alchemist.Alchemist;
 import dm.earth.cabricality.content.entries.CabfItems;
-import dm.earth.cabricality.lib.math.PositionUtil;
+import dm.earth.cabricality.lib.math.PositionMath;
 import net.minecraft.client.MinecraftClient;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -29,7 +29,7 @@ import net.minecraft.util.math.Vec3d;
 public class LaserBehaviors {
 	public static void attackNearby(@NotNull ServerWorld world, BlockPos pos, float power) {
 		float len = power * 2.5F;
-		Box box = Box.of(PositionUtil.fromBlockPos(pos), len, len, len);
+		Box box = Box.of(PositionMath.fromBlockPos(pos), len, len, len);
 		world.getEntitiesByClass(LivingEntity.class, box, Entity::isLiving)
 				.forEach(entity -> entity.damage(
 						MinecraftClient.getInstance().world.getDamageSources().generic(),
@@ -45,7 +45,7 @@ public class LaserBehaviors {
 		for (int i = 0; i < properties.length(); i++)
 			minecarts.addAll(world.getEntitiesByClass(
 					HopperMinecartEntity.class,
-					Box.of(PositionUtil.fromBlockPos(pos.offset(direction, i)), 1, 1, 1),
+					Box.of(PositionMath.fromBlockPos(pos.offset(direction, i)), 1, 1, 1),
 					minecart -> !minecart.isEmpty()
 			));
 

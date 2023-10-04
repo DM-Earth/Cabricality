@@ -8,7 +8,7 @@ import dm.earth.cabricality.content.alchemist.core.Reagent;
 import dm.earth.cabricality.content.alchemist.data.JarData;
 import dm.earth.cabricality.content.alchemist.laser.LaserCore;
 import dm.earth.cabricality.content.alchemist.laser.LaserProperties;
-import dm.earth.cabricality.lib.math.RandomMathUtil;
+import dm.earth.cabricality.lib.math.RandomMath;
 import net.minecraft.block.Block;
 import net.minecraft.entity.vehicle.HopperMinecartEntity;
 import net.minecraft.item.BlockItem;
@@ -230,7 +230,7 @@ public class Alchemist {
 	}
 
 	public static @NotNull ArrayList<Catalyst> possibleChaoticCatalystList(ServerWorld world) {
-		return RandomMathUtil.randomSelect(
+		return RandomMath.randomSelect(
 				Arrays.stream(Reagents.values())
 						.filter(Reagents::isLinked)
 						.map(Reagents::getCatalyst)
@@ -253,7 +253,7 @@ public class Alchemist {
 				.filter(Reagents::isLinked)
 				.collect(Collectors.toMap(Reagents::getCatalyst, reagentsT -> {
 					List<Reagent> reagents = reagentsT.getReagents();
-					return RandomMathUtil.randomSelect(reagents, MAX_REAGENT_JARS, world.getSeed());
+					return RandomMath.randomSelect(reagents, MAX_REAGENT_JARS, world.getSeed());
 				}));
 	}
 }

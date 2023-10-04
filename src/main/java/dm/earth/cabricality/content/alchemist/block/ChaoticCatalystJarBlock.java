@@ -3,7 +3,7 @@ package dm.earth.cabricality.content.alchemist.block;
 import java.util.Random;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.lib.math.PositionUtil;
+import dm.earth.cabricality.lib.math.PositionMath;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.client.MinecraftClient;
@@ -27,7 +27,7 @@ public class ChaoticCatalystJarBlock extends CatalystJarBlock {
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         Random random = new Random();
         if (random.nextInt(2) == 0) {
-            Vec3d vec3d = PositionUtil.fromBlockPos(pos);
+            Vec3d vec3d = PositionMath.fromBlockPos(pos);
             world.createExplosion(
 					null,
 					MinecraftClient.getInstance().world.getDamageSources().magic(),

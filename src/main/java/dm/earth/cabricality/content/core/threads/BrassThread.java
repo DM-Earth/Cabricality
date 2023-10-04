@@ -2,7 +2,7 @@ package dm.earth.cabricality.content.core.threads;
 
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.entries.CabfFluids;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.fluids.transfer.FillingRecipe;
@@ -114,7 +114,7 @@ public class BrassThread implements TechThread {
 
 		handler.register(
 				recipeId("crafting", "brass_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(
+				id -> RecipeUtil.donutRecipe(
 						id,
 						CREATE.asItem("brass_casing"),
 						CREATE.asItem("precision_mechanism"),

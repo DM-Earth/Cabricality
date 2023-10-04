@@ -1,7 +1,7 @@
 package dm.earth.cabricality.tweak.ore_processing;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.mixin.StackEntryAccessor;
 import dm.earth.cabricality.mixin.TagEntryAccessor;
@@ -114,7 +114,7 @@ public class OreProcessingTweaks {
 			// Dust -> Molten Metal
 			handler.register(
 					id(entry, entry.getMoltenMetal(), "melting"),
-					id -> RecipeManager.deserialize(id, RecipeBuilderUtil.generateMelting(entry.getDust(),
+					id -> RecipeManager.deserialize(id, RecipeUtil.generateMelting(entry.getDust(),
 							entry.getMoltenMetal(),
 							FluidConstants.NUGGET * 3,
 							getByProduct(entry).getMoltenMetal(),

@@ -9,6 +9,7 @@ public class ConfettiUtil {
 	private static long initTime = -1;
 
 	public static void startLoading() {
+		CabfLogger.info("📦 Initializing " + Cabricality.NAME + "...");
 		initTime = System.currentTimeMillis();
 	}
 

@@ -4,7 +4,7 @@ import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.alchemist.Reagents;
 import dm.earth.cabricality.content.alchemist.core.Reagent;
 import dm.earth.cabricality.content.entries.CabfBlocks;
-import dm.earth.cabricality.lib.math.VoxelShapeUtil;
+import dm.earth.cabricality.lib.math.VoxelShapeMath;
 import dm.earth.cabricality.lib.resource.ResourcedBlock;
 import dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
 import net.minecraft.block.Block;
@@ -38,13 +38,13 @@ public class JarBlock extends Block implements ResourcedBlock {
 
 	@Override
 	public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-		return VoxelShapeUtil.simpleBox(4, 0, 4, 12, 14, 12);
+		return VoxelShapeMath.simpleBox(4, 0, 4, 12, 14, 12);
 	}
 
 	@Override
 	public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-		return VoxelShapes.union(VoxelShapeUtil.simpleBox(4, 0, 4, 12, 12, 12),
-				VoxelShapeUtil.simpleBox(5, 12, 5, 11, 14, 11));
+		return VoxelShapes.union(VoxelShapeMath.simpleBox(4, 0, 4, 12, 12, 12),
+				VoxelShapeMath.simpleBox(5, 12, 5, 11, 14, 11));
 	}
 
 	@Override

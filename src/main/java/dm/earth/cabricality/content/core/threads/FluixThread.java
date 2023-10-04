@@ -3,7 +3,7 @@ package dm.earth.cabricality.content.core.threads;
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.entries.CabfFluids;
 import dm.earth.cabricality.content.entries.CabfItems;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.lib.util.ArrayUtil;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
@@ -70,7 +70,7 @@ public class FluixThread implements TechThread {
 
 		handler.register(
 				recipeId("crafting", "controller"),
-				id -> RecipeBuilderUtil.donutRecipe(
+				id -> RecipeUtil.donutRecipe(
 						id, CABF.asItem("fluix_casing"),
 						CABF.asItem("calculation_mechanism"),
 						AE2.asItem("controller"), 1)

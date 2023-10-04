@@ -1,7 +1,7 @@
 package dm.earth.cabricality.content.core.blocks.machine;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.lib.math.VoxelShapeUtil;
+import dm.earth.cabricality.lib.math.VoxelShapeMath;
 import dm.earth.cabricality.lib.resource.ResourcedBlock;
 import dm.earth.cabricality.lib.resource.assets.gen.block.BlockStatesGenerator;
 import net.minecraft.block.Block;
@@ -10,8 +10,6 @@ import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.Waterloggable;
 import net.minecraft.data.client.model.BlockStateSupplier;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -25,7 +23,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
-import org.jetbrains.annotations.Nullable;
 
 public abstract class AbstractMachineBlock extends HorizontalFacingBlock implements ResourcedBlock, Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
@@ -75,7 +72,7 @@ public abstract class AbstractMachineBlock extends HorizontalFacingBlock impleme
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return VoxelShapeUtil.simpleBox(1, 0, 1, 15, this.isFull() ? 16 : 14, 15);
+        return VoxelShapeMath.simpleBox(1, 0, 1, 15, this.isFull() ? 16 : 14, 15);
     }
 
     @Override

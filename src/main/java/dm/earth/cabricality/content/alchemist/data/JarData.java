@@ -1,28 +1,26 @@
 package dm.earth.cabricality.content.alchemist.data;
 
+import com.dm.earth.tags_binder.api.LoadTagsCallback;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.alchemist.Reagents;
 import dm.earth.cabricality.content.alchemist.core.Catalyst;
 import dm.earth.cabricality.content.alchemist.core.Reagent;
 import dm.earth.cabricality.content.entries.CabfItemTags;
-import dm.earth.cabricality.lib.math.RandomMathUtil;
-import com.dm.earth.tags_binder.api.LoadTagsCallback;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
+import dm.earth.cabricality.lib.math.RandomMath;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.RecipeManagerHelper;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.item.Item;
-import net.minecraft.recipe.RecipeManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicBoolean;
 
-import static dm.earth.cabricality.lib.util.JRecipeUtil.fluidEntry;
-import static dm.earth.cabricality.lib.util.JRecipeUtil.itemEntry;
+import static dm.earth.cabricality.lib.util.RecipeUtil.JsonBuilder.fluidEntry;
+import static dm.earth.cabricality.lib.util.RecipeUtil.JsonBuilder.itemEntry;
 
 public class JarData implements RecipeLoadingEvents.AddRecipesCallback, LoadTagsCallback<Item> {
 	public static void load() {
@@ -37,8 +35,8 @@ public class JarData implements RecipeLoadingEvents.AddRecipesCallback, LoadTags
 		long seed = reagent.hashCode();
 		reagents.stream().filter(r -> !targetReagents.getReagents().contains(r)).forEach(reagentsList::add);
 
-		Reagent reagentFirst = RandomMathUtil.randomSelect(reagentsList, 1, seed - 1).get(0);
-		Reagent reagentSecond = RandomMathUtil.randomSelect(reagentsList, 1, seed + 1).get(0);
+		Reagent reagentFirst = RandomMath.randomSelect(reagentsList, 1, seed - 1).get(0);
+		Reagent reagentSecond = RandomMath.randomSelect(reagentsList, 1, seed + 1).get(0);
 		Catalyst catalyst = targetReagents.getCatalyst();
 		int count = targetReagents.getPrice();
 

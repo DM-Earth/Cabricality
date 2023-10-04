@@ -1,7 +1,7 @@
 package dm.earth.cabricality.content.core.threads;
 
 import dm.earth.cabricality.content.core.TechThread;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
@@ -41,7 +41,7 @@ public class ZincThread implements TechThread {
 
 		handler.register(
 				recipeId("crafting", "zinc_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(
+				id -> RecipeUtil.donutRecipe(
 						id,
 						CABF.asItem("zinc_casing"),
 						CABF.asItem("infernal_mechanism"),

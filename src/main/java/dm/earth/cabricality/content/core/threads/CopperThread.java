@@ -3,7 +3,7 @@ package dm.earth.cabricality.content.core.threads;
 import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.entries.CabfFluids;
 import dm.earth.cabricality.content.entries.CabfItems;
-import dm.earth.cabricality.lib.math.RecipeBuilderUtil;
+import dm.earth.cabricality.lib.util.RecipeUtil;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
 import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
@@ -66,7 +66,7 @@ public class CopperThread implements TechThread {
 
 		handler.register(
 				recipeId("crafting", "copper_machine"),
-				id -> RecipeBuilderUtil.donutRecipe(
+				id -> RecipeUtil.donutRecipe(
 						id,
 						CREATE.asItem("copper_casing"),
 						CABF.asItem("sealed_mechanism"),
