@@ -7,7 +7,6 @@ import org.jetbrains.annotations.Nullable;
 import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
 import static dm.earth.cabricality.Mod.Entry.AP;
 import static dm.earth.cabricality.Mod.Entry.MC;
-import static dm.earth.cabricality.Mod.Entry.MLM;
 import static dm.earth.cabricality.Mod.Entry.PROMENADE;
 import static dm.earth.cabricality.Mod.Entry.TC;
 import static dm.earth.cabricality.Mod.Entry.TERRESTRIA;
@@ -83,6 +82,7 @@ public enum WoodCuttingEntry {
 			"palm_wood", "stripped_palm_wood"
 	),
 
+	/*
 	RUNEWOOD(
 			MLM.id("runewood"),
 			"runewood_planks", "runewood_planks_slab",
@@ -96,6 +96,8 @@ public enum WoodCuttingEntry {
 			"soulwood_log", "stripped_soulwood_log",
 			"soulwood", "stripped_soulwood"
 	),
+
+	 */
 
 	BLOODSHROOM(
 			TC.id("bloodshroom"),

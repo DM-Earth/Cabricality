@@ -6,7 +6,6 @@ import static dm.earth.cabricality.Mod.Entry.CREATE;
 import static dm.earth.cabricality.Mod.Entry.FARMERS_DELIGHT;
 import static dm.earth.cabricality.Mod.Entry.INDREV;
 import static dm.earth.cabricality.Mod.Entry.MC;
-import static dm.earth.cabricality.Mod.Entry.MLM;
 import static dm.earth.cabricality.Mod.Entry.PROMENADE;
 import static dm.earth.cabricality.Mod.Entry.TC;
 import static dm.earth.cabricality.Mod.Entry.TERRESTRIA;
@@ -54,9 +53,9 @@ public enum Professions {
 			of(PROMENADE.id("palm_log"), 32, SILVER, 1, 0x4d433a),
 			of(PROMENADE.id("cherry_oak_log"), 32, SILVER, 1, 0x401c15),
 			of(PROMENADE.id("dark_amaranth_stem"), 24, SILVER, 1, 0x4e4053),
-			of(MLM.id("runewood_log"), 24, SILVER, 1, 0x583434),
-			of(MLM.id("exposed_runewood_log"), 16, SILVER, 1, 0x683a30),
-			of(MLM.id("soulwood_log"), 16, SILVER, 1, 0x34232e),
+			// of(MLM.id("runewood_log"), 24, SILVER, 1, 0x583434),
+			// of(MLM.id("exposed_runewood_log"), 16, SILVER, 1, 0x683a30),
+			// of(MLM.id("soulwood_log"), 16, SILVER, 1, 0x34232e),
 			// terrestria
 			of(TERRESTRIA.id("redwood_log"), 32, SILVER, 1, 0x482a22),
 			of(TERRESTRIA.id("hemlock_log"), 32, SILVER, 1, 0x28281c),
@@ -84,7 +83,7 @@ public enum Professions {
 			of(CABF.id("crushed_raw_ostrum"), 1, SILVER, 4, 0x644a59),
 			of(CABF.id("crushed_raw_desh"), 1, SILVER, 2, 0xdfa562),
 			of(CABF.id("crushed_raw_cobalt"), 2, SILVER, 3, 0x2a79da),
-			of(MLM.id("crushed_soulstone"), 1, SILVER, 1, 0x734c77),
+			// of(MLM.id("crushed_soulstone"), 1, SILVER, 1, 0x734c77),
 			of(MC.id("andesite"), 64, SILVER, 1, 0x868887),
 			of(MC.id("granite"), 64, SILVER, 1, 0x9e6b5a),
 			of(MC.id("diorite"), 64, SILVER, 1, 0xe6e2e6),
