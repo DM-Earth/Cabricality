@@ -5,8 +5,8 @@ import dm.earth.cabricality.content.entries.CabfItems;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.builder.VanillaRecipeBuilders;
 
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
 
 public class MathThread implements TechThread {
 	@Override

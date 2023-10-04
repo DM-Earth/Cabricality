@@ -1,15 +1,15 @@
 package dm.earth.cabricality.content.trading;
 
-import static dm.earth.cabricality.ModEntry.AP;
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.FARMERS_DELIGHT;
-import static dm.earth.cabricality.ModEntry.INDREV;
-import static dm.earth.cabricality.ModEntry.MC;
-import static dm.earth.cabricality.ModEntry.MLM;
-import static dm.earth.cabricality.ModEntry.PROMENADE;
-import static dm.earth.cabricality.ModEntry.TC;
-import static dm.earth.cabricality.ModEntry.TERRESTRIA;
+import static dm.earth.cabricality.Mod.Entry.AP;
+import static dm.earth.cabricality.Mod.Entry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.FARMERS_DELIGHT;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.MC;
+import static dm.earth.cabricality.Mod.Entry.MLM;
+import static dm.earth.cabricality.Mod.Entry.PROMENADE;
+import static dm.earth.cabricality.Mod.Entry.TC;
+import static dm.earth.cabricality.Mod.Entry.TERRESTRIA;
 import static dm.earth.cabricality.content.trading.core.TradingEntry.of;
 import static dm.earth.cabricality.content.trading.core.TradingEntry.CoinTypes.GOLD;
 import static dm.earth.cabricality.content.trading.core.TradingEntry.CoinTypes.SILVER;

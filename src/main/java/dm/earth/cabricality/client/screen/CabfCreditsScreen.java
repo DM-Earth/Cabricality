@@ -1,7 +1,7 @@
 package dm.earth.cabricality.client.screen;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.lib.util.debug.CabfLogger;
+import dm.earth.cabricality.lib.util.log.CabfLogger;
 import com.google.common.collect.Lists;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -111,7 +111,7 @@ public class CabfCreditsScreen extends Screen {
 			this.load("postcredits.txt", this::readPostCredits);
 			this.creditsHeight = this.credits.size() * 12;
 		}
-		CabfLogger.logInfo("Showing credits...");
+		CabfLogger.info("Showing credits...");
 	}
 
 	@Override
@@ -245,7 +245,7 @@ public class CabfCreditsScreen extends Screen {
 			){
 				reader.read(bufferedReader);
 			} catch (Exception exception) {
-				Cabricality.LOGGER.error("Couldn't load credits", exception);
+				CabfLogger.error("Couldn't load credits", exception);
 			}
 		}
 	}

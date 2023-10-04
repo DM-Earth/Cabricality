@@ -2,7 +2,7 @@ package dm.earth.cabricality.content.alchemist.laser;
 
 import java.util.ArrayList;
 
-import dm.earth.cabricality.ModEntry;
+import dm.earth.cabricality.Mod;
 import dm.earth.cabricality.content.alchemist.Alchemist;
 import dm.earth.cabricality.content.entries.CabfItems;
 import dm.earth.cabricality.lib.math.PositionUtil;
@@ -104,10 +104,10 @@ public class LaserBehaviors {
 			return new LaserRecipe(CabfItems.BASALZ_SHARD, ParticleTypes.FLAME);
 		if (item == Items.SNOWBALL)
 			return new LaserRecipe(CabfItems.BLIZZ_CUBE, ParticleTypes.SNOWFLAKE);
-		if (item == ModEntry.INDREV.asItem("nikolite_ingot"))
-			return new LaserRecipe(ModEntry.INDREV.asItem("enriched_nikolite_ingot"), ParticleTypes.ELECTRIC_SPARK);
-		if (item == ModEntry.INDREV.asItem("nikolite_dust"))
-			return new LaserRecipe(ModEntry.INDREV.asItem("enriched_nikolite_dust"), ParticleTypes.ELECTRIC_SPARK);
+		if (item == Mod.Entry.INDREV.asItem("nikolite_ingot"))
+			return new LaserRecipe(Mod.Entry.INDREV.asItem("enriched_nikolite_ingot"), ParticleTypes.ELECTRIC_SPARK);
+		if (item == Mod.Entry.INDREV.asItem("nikolite_dust"))
+			return new LaserRecipe(Mod.Entry.INDREV.asItem("enriched_nikolite_dust"), ParticleTypes.ELECTRIC_SPARK);
 		return null;
 	}
 

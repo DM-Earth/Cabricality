@@ -8,56 +8,49 @@ import net.krlite.pierced.config.Pierced;
 import java.io.File;
 
 public class CabfConfig extends Pierced {
-	private static @Silent final File file = FabricLoader.getInstance().getConfigDir().resolve("cabricality.toml").toFile();
+	private static @Silent final File FILE = FabricLoader.getInstance().getConfigDir().resolve("cabricality.toml").toFile();
+	private static @Silent final CabfConfig INSTANCE = new CabfConfig();
 
-	public CabfConfig() {
-		super(CabfConfig.class, file);
+	private CabfConfig() {
+		super(CabfConfig.class, FILE);
 		load();
+	}
+
+	public static void override() {
+		INSTANCE.save();
 	}
 
 	private boolean includeVersionInWindowTitle = false;
 
-	public boolean includeVersionInWindowTitle() {
-		return includeVersionInWindowTitle;
+	public static boolean includeVersionInWindowTitle() {
+		return INSTANCE.includeVersionInWindowTitle;
 	}
 
-	public void includeVersionInWindowTitle(boolean includeVersionInGameTitle) {
-		this.includeVersionInWindowTitle = includeVersionInGameTitle;
-		save();
+	public static void includeVersionInWindowTitle(boolean includeVersionInGameTitle) {
+		INSTANCE.includeVersionInWindowTitle = includeVersionInGameTitle;
+		INSTANCE.save();
 	}
 
 	private boolean fadeScreenBackground = true;
 
-	public boolean fadeScreenBackground() {
-		return fadeScreenBackground;
+	public static boolean fadeScreenBackground() {
+		return INSTANCE.fadeScreenBackground;
 	}
 
-	public void fadeScreenBackground(boolean fadeScreenBackground) {
-		this.fadeScreenBackground = fadeScreenBackground;
-		save();
+	public static void fadeScreenBackground(boolean fadeScreenBackground) {
+		INSTANCE.fadeScreenBackground = fadeScreenBackground;
+		INSTANCE.save();
 	}
 
 	@Table("debug")
 	private boolean debugInfo = false;
 
-	public boolean debugInfo() {
-		return debugInfo;
+	public static boolean debugInfo() {
+		return INSTANCE.debugInfo;
 	}
 
-	public void debugInfo(boolean debugInfo) {
-		this.debugInfo = debugInfo;
-		save();
-	}
-
-	@Table("debug")
-	private boolean cleanerLog = true;
-
-	public boolean cleanerLog() {
-		return cleanerLog;
-	}
-
-	public void cleanerLog(boolean cleanerLog) {
-		this.cleanerLog = cleanerLog;
-		save();
+	public static void debugInfo(boolean debugInfo) {
+		INSTANCE.debugInfo = debugInfo;
+		INSTANCE.save();
 	}
 }

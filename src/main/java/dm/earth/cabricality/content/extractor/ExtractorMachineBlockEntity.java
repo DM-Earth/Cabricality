@@ -24,7 +24,7 @@ import net.minecraft.world.World;
 import java.util.Arrays;
 import java.util.List;
 
-import static dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
+import static dm.earth.cabricality.lib.util.log.CabfDebugger.debug;
 
 @SuppressWarnings("UnstableApiUsage")
 public class ExtractorMachineBlockEntity extends BlockEntity implements IHaveGoggleInformation {

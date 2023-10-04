@@ -22,12 +22,12 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static dm.earth.cabricality.ModEntry.AE2;
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.INDREV;
-import static dm.earth.cabricality.ModEntry.MC;
-import static dm.earth.cabricality.ModEntry.TC;
+import static dm.earth.cabricality.Mod.Entry.AE2;
+import static dm.earth.cabricality.Mod.Entry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.MC;
+import static dm.earth.cabricality.Mod.Entry.TC;
 
 @SuppressWarnings("UnstableApiUsage")
 public class BrassThread implements TechThread {

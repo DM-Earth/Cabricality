@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 
 import net.minecraft.util.Identifier;
 
+@Deprecated
 public class JRecipeUtil {
     public static JsonObject itemEntry(Identifier id, int count) {
 		JsonObject json = new JsonObject();

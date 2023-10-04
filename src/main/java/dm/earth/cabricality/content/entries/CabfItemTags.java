@@ -6,7 +6,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
-import static dm.earth.cabricality.ModEntry.C;
+import static dm.earth.cabricality.Mod.Entry.C;
 
 public class CabfItemTags {
 	public static final TagKey<Item> SAWS = TagKey.of(RegistryKeys.ITEM, new Identifier("c", "saws"));

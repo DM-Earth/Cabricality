@@ -6,21 +6,20 @@ import dm.earth.cabricality.content.trading.core.Profession;
 import dm.earth.cabricality.content.trading.core.TradingEntry;
 import dm.earth.cabricality.content.trading.data.tag.TradeTags;
 import dm.earth.cabricality.content.trading.util.ProfessionUtil;
-import dm.earth.cabricality.lib.util.debug.CabfDebugger;
+import dm.earth.cabricality.lib.util.log.CabfDebugger;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import me.steven.indrev.recipes.machines.InfuserRecipe;
 import me.steven.indrev.recipes.machines.entries.InputEntry;
 import me.steven.indrev.recipes.machines.entries.OutputEntry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.CraftingCategory;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 
-import static dm.earth.cabricality.ModEntry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CABF;
 
 public class Trading implements RecipeLoadingEvents.AddRecipesCallback, RecipeLoadingEvents.RemoveRecipesCallback {
 

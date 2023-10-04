@@ -8,6 +8,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Legacy class for pushing a flag.
  * Implemented from Equator Utils v1.1.15.
  */
+@Deprecated
 public class Pusher {
 	/**
 	 * The disposable flag.

@@ -1,11 +1,11 @@
 package dm.earth.cabricality.content.alchemist;
 
-import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.content.alchemist.block.CatalystJarBlock;
 import dm.earth.cabricality.content.alchemist.block.JarBlock;
 import dm.earth.cabricality.content.alchemist.block.ReagentJarBlock;
 import dm.earth.cabricality.content.alchemist.core.Catalyst;
 import dm.earth.cabricality.content.alchemist.core.Reagent;
+import dm.earth.cabricality.lib.util.log.CabfLogger;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import org.jetbrains.annotations.Contract;
@@ -17,13 +17,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static dm.earth.cabricality.ModEntry.AE2;
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.INDREV;
-import static dm.earth.cabricality.ModEntry.MC;
-import static dm.earth.cabricality.ModEntry.MLM;
-import static dm.earth.cabricality.ModEntry.PROMENADE;
+import static dm.earth.cabricality.Mod.Entry.AE2;
+import static dm.earth.cabricality.Mod.Entry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.MC;
+import static dm.earth.cabricality.Mod.Entry.MLM;
+import static dm.earth.cabricality.Mod.Entry.PROMENADE;
 
 public enum Reagents {
 	IGNEOUS("igneous", 0x6C8191, 16, true,
@@ -115,7 +115,7 @@ public enum Reagents {
 
 		// Check Content Validity
 		if (reagent == null) {
-			Cabricality.LOGGER.error("Invalid Reagent " + Registries.BLOCK.getId(block)
+			CabfLogger.error("Invalid Reagent " + Registries.BLOCK.getId(block)
 					+ "! Valid Reagents:"
 					+ Arrays.stream(Reagents.values())
 							.map(reagents -> reagents.getReagents().stream()
@@ -138,11 +138,14 @@ public enum Reagents {
 
 		// Check Content Validity
 		if (catalyst == null) {
-			Cabricality.LOGGER
-					.error("Invalid Catalyst" + Registries.BLOCK.getId(block) + "! Valid Catalysts:"
+			CabfLogger.error(
+					"Invalid Catalyst"
+							+ Registries.BLOCK.getId(block)
+							+ "! Valid Catalysts:"
 							+ Arrays.stream(Reagents.values())
 									.map(value -> "\n" + value.getCatalyst().toString())
-									.collect(Collectors.joining()));
+									.collect(Collectors.joining())
+			);
 
 			throw new EnumConstantNotPresentException(
 					Reagents.class,

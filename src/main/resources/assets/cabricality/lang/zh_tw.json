@@ -316,7 +316,6 @@
   "config.cabricality.category.debug": "調試",
 
   "config.cabricality.debug.debug_info" : "調試信息",
-  "config.cabricality.debug.cleaner_log": "日誌清理",
 
 
 
@@ -346,8 +345,8 @@
   "command.cabricality.debug.disabled": "調試已禁用",
   "command.cabricality.debug.enabled" : "調試已啟用",
 
-  "command.cabricality.debug_info.disabled": "禁用了調試",
-  "command.cabricality.debug_info.enabled" : "啟用了調試",
+  "command.cabricality.debug_info.disabled": "隐藏了调试信息",
+  "command.cabricality.debug_info.enabled" : "显示了调试信息",
 
   "command.cabricality.held_item_info.tag_prefix": "#",
   "command.cabricality.held_item_info.showing"   : "正在展示",

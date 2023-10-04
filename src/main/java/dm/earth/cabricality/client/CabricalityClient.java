@@ -32,11 +32,6 @@ public class CabricalityClient implements ClientModInitializer {
 	@Nullable
 	private static RotatingCubeMapRenderer cubeMapRenderer;
 
-	public static void finishLoading() {
-		SoundUtil.playSounds(Cabricality.Sounds.FINISH_LOADING);
-		GLFW.glfwRequestWindowAttention(MinecraftClient.getInstance().getWindow().getHandle());
-	}
-
 	@Override
 	public void onInitializeClient() {
 		CabfReceiver.registerClient();
@@ -61,12 +56,12 @@ public class CabricalityClient implements ClientModInitializer {
 				.forEach(entry -> BlockRenderLayerMap.INSTANCE.putBlock(entry.getBlock(), entry.getLayer()));
 
 		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("asset_edits"),
-				Cabricality.MODCONTAINER,
+				Cabricality.MOD_CONTAINER,
 				Cabricality.genTranslatableText("pack", "asset_edits"),
 				ResourcePackActivationType.DEFAULT_ENABLED
 		);
 		ResourceManagerHelper.registerBuiltinResourcePack(Cabricality.id("quests_lang"),
-				Cabricality.MODCONTAINER,
+				Cabricality.MOD_CONTAINER,
 				Cabricality.genTranslatableText("pack", "quests_lang"),
 				ResourcePackActivationType.ALWAYS_ENABLED
 		);

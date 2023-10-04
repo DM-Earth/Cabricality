@@ -16,13 +16,13 @@ import net.minecraft.util.Identifier;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static dm.earth.cabricality.ModEntry.AD_ASTRA;
-import static dm.earth.cabricality.ModEntry.AE2;
-import static dm.earth.cabricality.ModEntry.BNC;
-import static dm.earth.cabricality.ModEntry.CATWALKS;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.INDREV;
-import static dm.earth.cabricality.ModEntry.TC;
+import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
+import static dm.earth.cabricality.Mod.Entry.AE2;
+import static dm.earth.cabricality.Mod.Entry.BNC;
+import static dm.earth.cabricality.Mod.Entry.CATWALKS;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.TC;
 
 public class RecipeTweaks implements RecipeLoadingEvents.AddRecipesCallback, RecipeLoadingEvents.ModifyRecipesCallback, RecipeLoadingEvents.RemoveRecipesCallback {
 	public static final Collection<ItemConvertible> DEPRECATED_ITEMS = ImmutableList.of(

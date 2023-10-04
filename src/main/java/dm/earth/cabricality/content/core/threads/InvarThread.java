@@ -31,15 +31,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-import static dm.earth.cabricality.ModEntry.AE2;
-import static dm.earth.cabricality.ModEntry.C;
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.COXINHA;
-import static dm.earth.cabricality.ModEntry.INDREV;
-import static dm.earth.cabricality.ModEntry.KIBE;
-import static dm.earth.cabricality.ModEntry.MC;
-import static dm.earth.cabricality.ModEntry.TC;
+import static dm.earth.cabricality.Mod.Entry.AE2;
+import static dm.earth.cabricality.Mod.Entry.C;
+import static dm.earth.cabricality.Mod.Entry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.COXINHA;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.KIBE;
+import static dm.earth.cabricality.Mod.Entry.MC;
+import static dm.earth.cabricality.Mod.Entry.TC;
 
 public class InvarThread implements TechThread {
 	private static final List<Identifier> REMOVE_OUTPUTS = List.of(

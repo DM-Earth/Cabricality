@@ -13,13 +13,13 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static dm.earth.cabricality.ModEntry.AD_ASTRA;
-import static dm.earth.cabricality.ModEntry.CABF;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.EXT_DRAWERS;
-import static dm.earth.cabricality.ModEntry.INDREV;
-import static dm.earth.cabricality.ModEntry.KIBE;
-import static dm.earth.cabricality.ModEntry.MC;
+import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
+import static dm.earth.cabricality.Mod.Entry.CABF;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.EXT_DRAWERS;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.KIBE;
+import static dm.earth.cabricality.Mod.Entry.MC;
 
 @SuppressWarnings("UnstableApiUsage")
 public class ZincThread implements TechThread {

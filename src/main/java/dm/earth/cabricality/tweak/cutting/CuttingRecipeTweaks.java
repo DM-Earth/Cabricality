@@ -1,10 +1,10 @@
 package dm.earth.cabricality.tweak.cutting;
 
 import dm.earth.cabricality.Cabricality;
+import dm.earth.cabricality.Mod;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import com.simibubi.create.content.kinetics.saw.CuttingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import dm.earth.cabricality.ModEntry;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -42,10 +42,10 @@ public class CuttingRecipeTweaks {
 			}
 		});
 
-		handler.register(createId(ModEntry.TERRESTRIA.id("small_oak_log")),
-				id -> createRecipe(id, ModEntry.TERRESTRIA.id("small_oak_log"), ModEntry.TERRESTRIA.id("stripped_small_oak_log"), 1, 50));
-		handler.register(createId(ModEntry.TERRESTRIA.id("stripped_small_oak_log")),
-				id -> createRecipe(id, ModEntry.TERRESTRIA.id("stripped_small_oak_log"), ModEntry.MC.id("oak_planks"), 6, 50));
+		handler.register(createId(Mod.Entry.TERRESTRIA.id("small_oak_log")),
+				id -> createRecipe(id, Mod.Entry.TERRESTRIA.id("small_oak_log"), Mod.Entry.TERRESTRIA.id("stripped_small_oak_log"), 1, 50));
+		handler.register(createId(Mod.Entry.TERRESTRIA.id("stripped_small_oak_log")),
+				id -> createRecipe(id, Mod.Entry.TERRESTRIA.id("stripped_small_oak_log"), Mod.Entry.MC.id("oak_planks"), 6, 50));
 	}
 
 	private static CuttingRecipe createRecipe(

@@ -30,7 +30,7 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import static dm.earth.cabricality.lib.util.debug.CabfDebugger.debug;
+import static dm.earth.cabricality.lib.util.log.CabfDebugger.debug;
 
 public class Alchemist {
 	public static final int MAX_REAGENT_JARS = 3;

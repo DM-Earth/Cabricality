@@ -1,8 +1,8 @@
 package dm.earth.cabricality.client.screen;
 
 import dm.earth.cabricality.Cabricality;
+import dm.earth.cabricality.Mod;
 import dm.earth.cabricality.client.CabricalityClient;
-import dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -28,30 +28,30 @@ import java.util.concurrent.atomic.AtomicInteger;
 @SuppressWarnings("all")
 public class MissingModScreen extends Screen {
 	@Nullable
-	private final ArrayList<CabfModDeps> missingMods;
+	private final ArrayList<Mod.Dependency> missingMods;
 	@Nullable
 	private final Screen parent;
 	private final boolean renderBackgroundTexture;
 
-	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods) {
+	public MissingModScreen(@Nullable ArrayList<Mod.Dependency> missingMods) {
 		this(missingMods, null, MinecraftClient.getInstance().world == null);
 	}
 
-	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods, @Nullable Screen parent) {
+	public MissingModScreen(@Nullable ArrayList<Mod.Dependency> missingMods, @Nullable Screen parent) {
 		this(missingMods, parent, MinecraftClient.getInstance().world == null);
 	}
 
-	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods, boolean renderBackgroundTexture) {
+	public MissingModScreen(@Nullable ArrayList<Mod.Dependency> missingMods, boolean renderBackgroundTexture) {
 		this(missingMods, null, renderBackgroundTexture);
 	}
 
-	public MissingModScreen(@Nullable ArrayList<CabfModDeps> missingMods, @Nullable Screen parent, boolean renderBackgroundTexture) {
+	public MissingModScreen(@Nullable ArrayList<Mod.Dependency> missingMods, @Nullable Screen parent, boolean renderBackgroundTexture) {
 		super(
-				CabfModDeps.getAllMissing().size() == 1
+				Mod.Dependency.getAllMissing().size() == 1
 						? Cabricality.genTranslatableText("screen", "missing_mod", "title")
 						: Text.translatable(
 								Cabricality.genTranslationKey("screen", "missing_mod", "title_plural"),
-								CabfModDeps.getAllMissing().size()
+								Mod.Dependency.getAllMissing().size()
 				)
 		);
 		this.missingMods = missingMods;
@@ -74,13 +74,13 @@ public class MissingModScreen extends Screen {
 
 	protected void init() {
 		if (missingMods != null && !missingMods.isEmpty()) {
-			int widest = missingMods.stream().map(mod -> mod.getRawName().length())
+			int widest = missingMods.stream().map(mod -> mod.getNameAsString().length())
 								 .max(Comparator.naturalOrder()).orElse(0);
 			String brackets = "[" + " ".repeat(widest + 17) + "]";
 			AtomicInteger index = new AtomicInteger(0);
 
 			missingMods.forEach(mod -> {
-				Text text = Text.literal(mod.getRawName())
+				Text text = Text.literal(mod.getNameAsString())
 						.formatted(mod.hasUrl() ? Formatting.RESET : Formatting.STRIKETHROUGH)
 						.formatted(mod.isRequired() ? Formatting.RED : Formatting.LIGHT_PURPLE);
 				int y = 60 + (height - 90) * index.incrementAndGet() / ((int) missingMods.size() + 1);
@@ -163,7 +163,7 @@ public class MissingModScreen extends Screen {
 		else super.renderBackground(graphics);
 	}
 
-	private void modDownloadButton(CabfModDeps mod, Text text, int y) {
+	private void modDownloadButton(Mod.Dependency mod, Text text, int y) {
 		this.addDrawableChild(
 				new PlainTextButtonWidget(
 						this.width / 2 - this.textRenderer.getWidth(text) / 2, y,

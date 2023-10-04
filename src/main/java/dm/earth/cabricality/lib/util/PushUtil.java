@@ -2,6 +2,7 @@ package dm.earth.cabricality.lib.util;
 
 import dm.earth.cabricality.lib.util.func.Pusher;
 
+@Deprecated
 public class PushUtil {
 	public static final Pusher ANIMATE_BASE_SCREEN = new Pusher();
 	public static final Pusher ANIMATE_CHAPTER_PANEL = new Pusher();

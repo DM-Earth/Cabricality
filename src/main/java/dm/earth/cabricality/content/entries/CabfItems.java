@@ -41,7 +41,7 @@ import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-import static dm.earth.cabricality.ModEntry.C;
+import static dm.earth.cabricality.Mod.Entry.C;
 
 public class CabfItems implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 	private static final HashMap<Optional<RegistryKey<Item>>, Optional<RegistryKey<ItemGroup>>> ITEM_GROUPING_MAP = new HashMap<java.util.Optional<RegistryKey<Item>>, java.util.Optional<RegistryKey<ItemGroup>>>();

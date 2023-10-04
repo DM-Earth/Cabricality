@@ -4,13 +4,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
-import static dm.earth.cabricality.ModEntry.AD_ASTRA;
-import static dm.earth.cabricality.ModEntry.AP;
-import static dm.earth.cabricality.ModEntry.MC;
-import static dm.earth.cabricality.ModEntry.MLM;
-import static dm.earth.cabricality.ModEntry.PROMENADE;
-import static dm.earth.cabricality.ModEntry.TC;
-import static dm.earth.cabricality.ModEntry.TERRESTRIA;
+import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
+import static dm.earth.cabricality.Mod.Entry.AP;
+import static dm.earth.cabricality.Mod.Entry.MC;
+import static dm.earth.cabricality.Mod.Entry.MLM;
+import static dm.earth.cabricality.Mod.Entry.PROMENADE;
+import static dm.earth.cabricality.Mod.Entry.TC;
+import static dm.earth.cabricality.Mod.Entry.TERRESTRIA;
 
 public enum WoodCuttingEntry {
 	OAK(

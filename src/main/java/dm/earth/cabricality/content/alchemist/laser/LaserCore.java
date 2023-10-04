@@ -1,7 +1,7 @@
 package dm.earth.cabricality.content.alchemist.laser;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.lib.util.debug.CabfDebugger;
+import dm.earth.cabricality.lib.util.log.CabfDebugger;
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.BlockState;

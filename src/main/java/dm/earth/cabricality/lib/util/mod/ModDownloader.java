@@ -15,8 +15,9 @@ import net.fabricmc.loader.api.FabricLoader;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import dm.earth.cabricality.lib.util.debug.CabfLogger;
+import dm.earth.cabricality.lib.util.log.CabfLogger;
 
+@Deprecated
 public class ModDownloader {
 	private final Map<String, String> urls;
 	private final ArrayList<String> succeed = new ArrayList<>();
@@ -29,15 +30,15 @@ public class ModDownloader {
 	public ArrayList<String> download() {
 		urls.forEach((key, value) -> {
 			try {
-				CabfLogger.logInfo("Downloading " + key + "...");
+				CabfLogger.info("Downloading " + key + "...");
 				DownloadThread thread = new DownloadThread(key, new URL(value));
 				while (thread.isAlive()) {
-					CabfLogger.logDebug("Downloading " + key + "...");
+					CabfLogger.debug("Downloading " + key + "...");
 				}
 				succeed.addAll(thread.getSucceed());
 			} catch (MalformedURLException malformedURLException) {
-				CabfLogger.logError("Failed to download mod " + key + ", url is malformed!");
-				CabfLogger.logDebug("Failed to download mod " + key + ", url is malformed!",
+				CabfLogger.error("Failed to download mod " + key + ", url is malformed!");
+				CabfLogger.debug("Failed to download mod " + key + ", url is malformed!",
 						malformedURLException);
 			}
 		});
@@ -79,8 +80,8 @@ public class ModDownloader {
 				inputStream.close();
 				succeed.add(mod);
 			} catch (IOException ioException) {
-				CabfLogger.logError("Failed to download mod " + mod + ", connection failed!");
-				CabfLogger.logDebug("Failed to download mod " + mod + ", connection failed!",
+				CabfLogger.error("Failed to download mod " + mod + ", connection failed!");
+				CabfLogger.debug("Failed to download mod " + mod + ", connection failed!",
 						ioException);
 			}
 		}

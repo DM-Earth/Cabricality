@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "dm.earth.cabricality.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "dm.earth.cabricality.plugin.mixin.CabfMixinConfigPlugin",
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
     "FluidBlockMixin",

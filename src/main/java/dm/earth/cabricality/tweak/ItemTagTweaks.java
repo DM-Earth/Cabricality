@@ -11,10 +11,10 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 
-import static dm.earth.cabricality.ModEntry.AD_ASTRA;
-import static dm.earth.cabricality.ModEntry.C;
-import static dm.earth.cabricality.ModEntry.CREATE;
-import static dm.earth.cabricality.ModEntry.INDREV;
+import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
+import static dm.earth.cabricality.Mod.Entry.C;
+import static dm.earth.cabricality.Mod.Entry.CREATE;
+import static dm.earth.cabricality.Mod.Entry.INDREV;
 
 public class ItemTagTweaks implements LoadTagsCallback<Item>, ResourceConditionCheckTagCallback<Item> {
 

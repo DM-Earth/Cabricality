@@ -1,9 +1,9 @@
 package dm.earth.cabricality.mixin.client;
 
 import dm.earth.cabricality.Cabricality;
+import dm.earth.cabricality.Mod;
 import dm.earth.cabricality.client.CabricalityClient;
 import dm.earth.cabricality.client.screen.MissingModScreen;
-import dm.earth.cabricality.lib.util.mod.CabfModDeps;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
 import net.minecraft.client.gui.screen.Screen;
@@ -32,12 +32,12 @@ public class TitleScreenWidgets extends Screen {
 	// Redirects the title screen to the missing mod screen if mods are missing
 	@Inject(method = "init", at = @At("TAIL"))
 	private void init(CallbackInfo ci) {
-		if (!CabfModDeps.isAllLoaded()) {
-			Text warning = ((MutableText) (CabfModDeps.getAllMissing().size() == 1
+		if (!Mod.Dependency.isAllLoaded()) {
+			Text warning = ((MutableText) (Mod.Dependency.getAllMissing().size() == 1
 					? Cabricality.genTranslatableText("screen", "title_screen", "warning_missing_mod")
 					: Text.translatable(
 							Cabricality.genTranslationKey("screen", "title_screen", "warning_missing_mod_plural"),
-							CabfModDeps.getAllMissing().size()
+							Mod.Dependency.getAllMissing().size()
 			))).formatted(Formatting.RED);
 
 			this.addDrawableChild(
@@ -46,7 +46,7 @@ public class TitleScreenWidgets extends Screen {
 							this.textRenderer.getWidth(warning), 10, warning,
 							buttonWidget -> {
 								if (this.client != null)
-									this.client.setScreen(new MissingModScreen(CabfModDeps.getAllMissing(),
+									this.client.setScreen(new MissingModScreen(Mod.Dependency.getAllMissing(),
 											this.client.currentScreen));
 							}, this.textRenderer));
 		}

@@ -18,7 +18,7 @@ import net.minecraft.util.Identifier;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dm.earth.cabricality.ModEntry.C;
+import static dm.earth.cabricality.Mod.Entry.C;
 
 public class CabfFluids implements LoadTagsCallback<Fluid> {
 	// Fluids

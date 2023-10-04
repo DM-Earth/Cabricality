@@ -2,6 +2,7 @@ package dm.earth.cabricality.mixin.client;
 
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.client.CabricalityClient;
+import dm.earth.cabricality.lib.util.ConfettiUtil;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.SplashOverlay;
@@ -16,8 +17,7 @@ public class FinishLoadingTrigger {
 	static class MinecraftClientGameMixin {
 		@Inject(method = "onGameLoaded", at = @At("HEAD"))
 		private void onGameLoaded(CallbackInfo ci) {
-			CabricalityClient.finishLoading();
-			Cabricality.finishLoading();
+			ConfettiUtil.finishLoading();
 		}
 	}
 
@@ -32,7 +32,7 @@ public class FinishLoadingTrigger {
 				remap = false
 		)
 		private void onWorldOptimized(CallbackInfo ci) {
-			CabricalityClient.finishLoading();
+			ConfettiUtil.finishLoading();
 		}
 	}
 
@@ -46,7 +46,7 @@ public class FinishLoadingTrigger {
 				)
 		)
 		private void onResourceReloaded(GuiGraphics graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-			CabricalityClient.finishLoading();
+			ConfettiUtil.finishLoading();
 		}
 	}
 }

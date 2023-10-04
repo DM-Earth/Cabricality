@@ -1,9 +1,9 @@
 package dm.earth.cabricality.content.core.items;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.ModEntry;
+import dm.earth.cabricality.Mod;
 import dm.earth.cabricality.content.entries.CabfSounds;
-import dm.earth.cabricality.lib.util.debug.CabfLogger;
+import dm.earth.cabricality.lib.util.log.CabfLogger;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -32,7 +32,7 @@ public class FlippableItem extends Item {
 			player.getItemCooldownManager().set(this, 41);
 
 			if (world.isClient())
-				MinecraftClient.getInstance().gameRenderer.showFloatingItem(ModEntry.CABF
+				MinecraftClient.getInstance().gameRenderer.showFloatingItem(Mod.Entry.CABF
 						.asItem(Registries.ITEM.getId(this).getPath() + (side ? "_top" : "_bottom"))
 						.getDefaultStack());
 			flip(world, player, side);
@@ -50,7 +50,7 @@ public class FlippableItem extends Item {
 		if (world.isClient())
 			MinecraftClient.getInstance().inGameHud.setOverlayMessage(
 					Text.translatable(Cabricality.genTranslationKey("event", "coin_flip"),
-							ModEntry.CABF.asItem(name).getName().getString(), ModEntry.CABF
+							Mod.Entry.CABF.asItem(name).getName().getString(), Mod.Entry.CABF
 									.asItem(name + (side ? "_top" : "_bottom")).getName().getString()),
 					false);
 		else
@@ -58,7 +58,7 @@ public class FlippableItem extends Item {
 					1, new Random().nextFloat(0.7F, 1.3F));
 
 		// Log to debug
-		CabfLogger.logDebug("Flipped a " + name + " and got " + (side ? "top" : "bottom") + ".");
+		CabfLogger.debug("Flipped a " + name + " and got " + (side ? "top" : "bottom") + ".");
 	}
 
 }

@@ -1,6 +1,6 @@
 package dm.earth.cabricality.mixin.client;
 
-import dm.earth.cabricality.Cabricality;
+import dm.earth.cabricality.config.CabfConfig;
 import dm.earth.cabricality.lib.util.PushUtil;
 import dm.earth.cabricality.lib.util.ScreenUtil;
 import net.krlite.equator.math.algebra.Curves;
@@ -34,7 +34,7 @@ public class ScreenAnimator {
 			)
 	)
 	private void fadeIn(Args args) {
-		if (Cabricality.CONFIG.fadeScreenBackground()) {
+		if (CabfConfig.fadeScreenBackground()) {
 			PushUtil.SCREEN.pull(opacity::replay);
 
 			int upper = args.get(5), lower = args.get(6);
@@ -59,7 +59,7 @@ class PostScreenAnimator {
 			)
 	)
 	private void fadeOut(float tickDelta, long startTime, boolean tick, CallbackInfo ci) {
-		if (Cabricality.CONFIG.fadeScreenBackground()) {
+		if (CabfConfig.fadeScreenBackground()) {
 			PushUtil.POST_SCREEN.pull(opacity::replay);
 
 			if (opacity.isPlaying()) {
@@ -82,7 +82,7 @@ class PostScreenTriggerer {
 
 	@Inject(method = "setScreen", at = @At("HEAD"))
 	private void setScreen(@Nullable Screen screen, CallbackInfo ci) {
-		if (Cabricality.CONFIG.fadeScreenBackground()) {
+		if (CabfConfig.fadeScreenBackground()) {
 			if (currentScreen == null && screen != null && !ScreenUtil.isUnextendedScreen(screen.getClass())) PushUtil.SCREEN.push();
 			if (currentScreen != null && screen == null && !ScreenUtil.isUnextendedScreen(currentScreen.getClass())) PushUtil.POST_SCREEN.push();
 		}

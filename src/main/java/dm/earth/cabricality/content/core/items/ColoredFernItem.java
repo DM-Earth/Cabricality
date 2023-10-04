@@ -5,8 +5,8 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
-import static dm.earth.cabricality.ModEntry.AE2;
-import static dm.earth.cabricality.ModEntry.MC;
+import static dm.earth.cabricality.Mod.Entry.AE2;
+import static dm.earth.cabricality.Mod.Entry.MC;
 
 public abstract class ColoredFernItem extends Item {
 	public final int tint;

@@ -6,8 +6,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
-import static dm.earth.cabricality.ModEntry.PROMENADE;
-import static dm.earth.cabricality.ModEntry.TERRESTRIA;
+import static dm.earth.cabricality.Mod.Entry.PROMENADE;
+import static dm.earth.cabricality.Mod.Entry.TERRESTRIA;
 
 public class BlockTagTweaks implements LoadTagsCallback<Block> {
 
