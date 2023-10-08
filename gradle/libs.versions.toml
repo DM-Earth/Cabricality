@@ -7,6 +7,9 @@ fabric_loader = "0.14.22"
 fabric_api = "0.89.3+1.20.1"
 
 # Implemented Mods
+# - DM-Earth
+create_dme = "0.5.1-d-build.8+mc1.20.1"
+
 # - AlphaMode
 create = "0.5.1-d-build.1161+mc1.20.1"
 mantle = "1.20.1-1.9.254"
@@ -46,6 +49,9 @@ fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_l
 fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
 
 # Implemented Mods
+# - DM-Earth
+create_dme = { module = "maven.modrinth:create-fabric-dme-edition", version.ref = "create_dme" }
+
 # - AlphaMode
 create = { module = "com.simibubi.create:create-fabric-1.20.1", version.ref = "create" }
 mantle = { module = "slimeknights.mantle:Mantle", version.ref = "mantle" }
@@ -79,8 +85,11 @@ exp4j = { module = "net.objecthunter:exp4j", version.ref = "exp4j" }
 
 [bundles]
 # Implemented Mods
+mods_from_dmearth = [
+    "create_dme"
+]
 mods_from_alphamode = [
-    "create",
+   # "create",
     "mantle"
 ]
 mods_from_ftb = [
@@ -92,7 +101,7 @@ maven_modrinth = [
     "architectury_api",
     "bits_and_chisels",
     "farmers_delight",
-    # "hephaestus",
+    "hephaestus",
     "let",
     "industrial_revolution"
 ]

@@ -23,14 +23,6 @@ repositories {
     }
 
     maven {
-        name = "Curse Maven"
-        url = uri("https://cursemaven.com")
-        content {
-            includeGroup("curse.maven")
-        }
-    }
-
-    maven {
         name = "JitPack"
         url = uri("https://jitpack.io/")
     }
@@ -85,6 +77,7 @@ dependencies {
     modImplementation(libs.fabric.api)
 
     // Implemented Mods
+    modImplementation(libs.bundles.mods.from.dmearth)
     modImplementation(libs.bundles.mods.from.alphamode) { exclude(group = "com.github.AlphaMode") }
     modImplementation(libs.bundles.mods.from.ftb)
     modImplementation(libs.bundles.maven.modrinth)
