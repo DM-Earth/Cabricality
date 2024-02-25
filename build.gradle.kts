@@ -23,11 +23,6 @@ repositories {
     }
 
     maven {
-        name = "JitPack"
-        url = uri("https://jitpack.io/")
-    }
-
-    maven {
         url = uri("https://maven.ladysnake.org/releases")
         content {
             includeGroup("io.github.ladysnake")
@@ -43,18 +38,20 @@ repositories {
         }
     }
 
-    maven { url = uri("https://maven.quiltmc.org/repository/release") }
-    maven { url = uri("https://mvn.devos.one/snapshots/") }
-    maven { url = uri("https://maven.saps.dev/releases/") }
+
+    maven { url = uri("https://jitpack.io") }
+    maven { url = uri("https://maven.fabricmc.net") } // Fabric
+    maven { url = uri("https://maven.quiltmc.org/repository/release") } // Quilt Mappings...
+    maven { url = uri("https://mvn.devos.one/snapshots") } // Create...
+    maven { url = uri("https://maven.saps.dev/releases") }
     maven { url = uri("https://aperlambda.github.io/maven") }
     maven { url = uri("https://dvs1.progwml6.com/files/maven") }
     maven { url = uri("https://maven.cafeteria.dev/releases") }
-    maven { url = uri("https://maven.fabricmc.net") }
     maven { url = uri("https://maven.gegy.dev") }
     maven { url = uri("https://maven.kotlindiscord.com/repository/terraformers") }
     maven { url = uri("https://maven.parchmentmc.org") }
-    maven { url = uri("https://maven.shedaniel.me") }
-    maven { url = uri("https://maven.terraformersmc.com/releases") }
+    maven { url = uri("https://maven.shedaniel.me") } // Cloth Config, REI
+    maven { url = uri("https://maven.terraformersmc.com/releases") } // Mod Menu
     maven { url = uri("https://maven.tterrag.com") }
     maven { url = uri("https://maven.wispforest.io") }
     maven { url = uri("https://modmaven.dev") }

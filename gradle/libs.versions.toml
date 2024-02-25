@@ -3,17 +3,16 @@ maven-group = "dm.earth"
 archives-name = "cabricality"
 modpack = "1.0-alpha.1"
 
-# The latest versions are available at https://lambdaurora.dev/tools/import-quilt.html
-minecraft = "1.20.1"
-quilt-mappings = "1.20.1+build.23"
+minecraft = "1.20.4"
+quilt-mappings = "1.20.4+build.3"
 fabric-loader = "0.15.7"
 
-fabric-api = "0.89.3+1.20.1"
+fabric-api = "0.96.3+1.20.4"
 
 # Implemented Mods
-modmenu = "8.0.0-beta.2"
-cloth-config = "12.0.109"
-rei = "13.0.661"
+modmenu = "9.0.0"
+cloth-config = "13.0.121"
+rei = "14.0.688"
 
 # - DM-Earth
 create-dme = "0.5.1-d-build.10+mc1.20.1"
@@ -36,7 +35,7 @@ let = "2.0.0-mc1.20"
 industrial-revolution = "1.16.5-BETA"
 
 # - JitPack
-equator = "2.6.0-mc1.20"
+equator = "2.6.2-mc1.20"
 rip = "1.0.0-1.20.x"
 
 # Included
@@ -88,10 +87,10 @@ exp4j = { group = "net.objecthunter", name = "exp4j", version.ref = "exp4j" }
 [bundles]
 # Implemented Mods
 mods-from-dmearth = [
-    "create-dme"
+    #"create-dme"
 ]
 mods-from-alphamode = [
-    #"create",
+    "create",
     "mantle"
 ]
 mods-from-ftb = [
