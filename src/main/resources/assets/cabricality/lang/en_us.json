@@ -305,17 +305,12 @@
 
   "comment_config": "Configs",
 
-  "config.cabricality.category.general": "General",
+  "text.autoconfig.cabricality.title": "Cabricality",
 
-  "config.cabricality.general.include_version_in_window_title"        : "Include Version in Window Title",
-  "config.cabricality.general.include_version_in_window_title.tooltip": "§7Whether to include version components in the window title\n§cYou may need to close this config screen to see changes",
+  "text.autoconfig.cabricality.option.includesVersionInWindowTitle"        : "Includes Version in Window Title",
+  "text.autoconfig.cabricality.option.includesVersionInWindowTitle.@Tooltip": "Whether to include version components in the window title\n§cYou may need to close this config screen to see changes",
 
-  "config.cabricality.general.fade_screen_background"        : "Fade Screen Background",
-  "config.cabricality.general.fade_screen_background.tooltip": "§7Whether to fade screen backgrounds when you open or close\na GUI screen",
-
-  "config.cabricality.category.debug": "Debug",
-
-  "config.cabricality.debug.debug_info" : "Debug Info",
+  "text.autoconfig.cabricality.option.debugInfoEnabled" : "Prints Debug Info",
 
 
 
@@ -329,8 +324,8 @@
 
   "comment_event": "Events",
 
-  "event.cabricality.coin_flip": "You Flipped a %s    It Was %s",
-  "event.cabricality.dice_roll": "You Rolled a %s    It Was %s",
+  "event.cabricality.coin_flip": "You flipped your %1$s, the result is %2$s",
+  "event.cabricality.dice_roll": "You rolled your %1$s, the result is %2$s",
 
 
 
@@ -366,8 +361,6 @@
   "mod.ftbteams.name"       : "FTB Teams",
   "mod.questsadditions.name": "Quests Additions",
   "mod.itemfilters.name"    : "Item Filters",
-
-  "screen.cabricality.config.title": "Cabricality",
 
   "screen.cabricality.missing_mod.title"          : "§lYou Need to Download §c§l1§r§l Mod Manually",
   "screen.cabricality.missing_mod.title_plural"   : "§lYou Need to Download §c§l%d§r§l Mods Manually",

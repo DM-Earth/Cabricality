@@ -1,7 +1,6 @@
 package dm.earth.cabricality.config.key;
 
 import dm.earth.cabricality.Cabricality;
-import dm.earth.cabricality.config.modmenu.CabfConfigScreen;
 import com.mojang.blaze3d.platform.InputUtil;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;

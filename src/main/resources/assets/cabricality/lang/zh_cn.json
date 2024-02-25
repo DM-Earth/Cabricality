@@ -1,4 +1,6 @@
 {
+  "modmenu.descriptionTranslation.cabricality": "一个以机械动力为中心的冒险整合包，基于《机械动力：永无止境》而设计。",
+
   "comment_item": "物品",
 
   "item.cabricality.kinetic_mechanism"    : "动力构件",
@@ -305,17 +307,12 @@
 
   "comment_config": "设置",
 
-  "config.cabricality.category.general": "通用",
+  "text.autoconfig.cabricality.title": "永无止境：重缝",
 
-  "config.cabricality.general.include_version_in_window_title"        : "窗口标题显示整合包版本",
-  "config.cabricality.general.include_version_in_window_title.tooltip": "§7是否在窗口标题中显示整合包版本\n§c你需要关闭此设置界面以使改动生效",
+  "text.autoconfig.cabricality.option.includesVersionInWindowTitle"        : "窗口标题显示整合包版本",
+  "text.autoconfig.cabricality.option.includesVersionInWindowTitle.@Tooltip": "是否在窗口标题中显示整合包版本\n§c你需要关闭此设置界面以使改动生效",
 
-  "config.cabricality.general.fade_screen_background"        : "渐隐GUI背景",
-  "config.cabricality.general.fade_screen_background.tooltip": "§7是否在打开或关闭GUI时渐隐背景",
-
-  "config.cabricality.category.debug": "调试",
-
-  "config.cabricality.debug.debug_info" : "调试信息",
+  "text.autoconfig.cabricality.option.debugInfoEnabled" : "调试信息",
 
 
 
@@ -329,8 +326,8 @@
 
   "comment_event": "事件",
 
-  "event.cabricality.coin_flip": "你翻转了一枚%s    结果是%s",
-  "event.cabricality.dice_roll": "你掷出了一枚%s    结果是%s",
+  "event.cabricality.coin_flip": "你翻转了你的%1$s，结果是%2$s",
+  "event.cabricality.dice_roll": "你掷出了你的%1$s，结果是%2$s",
 
 
 
@@ -366,8 +363,6 @@
   "mod.ftbteams.name"       : "FTB Teams 模组",
   "mod.questsadditions.name": "Quests Additions 模组",
   "mod.itemfilters.name"    : "Item Filters 模组",
-
-  "screen.cabricality.config.title": "永无止境：重缝",
 
   "screen.cabricality.missing_mod.title"          : "§l你需要手动下载以下模组",
   "screen.cabricality.missing_mod.title_plural"   : "§l你需要手动下载以下§c§l%d个§r§l模组",

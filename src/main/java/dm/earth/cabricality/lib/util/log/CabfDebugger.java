@@ -12,7 +12,7 @@ public class CabfDebugger {
 	private static final String PREFIX = "[" + Cabricality.NAME + "/DEBUG] ";
 
 	public static void debug(@NotNull String message) {
-		if (CabfConfig.debugInfo() || FabricLoader.getInstance().isDevelopmentEnvironment())
+		if (Cabricality.CONFIG.debugInfoEnabled || FabricLoader.getInstance().isDevelopmentEnvironment())
 			LOGGER.info("[" + Cabricality.NAME + "/DEBUG] " + message);
 	}
 }

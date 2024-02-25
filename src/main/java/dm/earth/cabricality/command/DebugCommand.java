@@ -13,10 +13,11 @@ import net.minecraft.util.Formatting;
 public class DebugCommand implements Command<ServerCommandSource> {
 	@Override
 	public int run(CommandContext<ServerCommandSource> context) {
-		CabfConfig.debugInfo(!CabfConfig.debugInfo());
+		Cabricality.CONFIG.debugInfoEnabled = !Cabricality.CONFIG.debugInfoEnabled;
+		Cabricality.CONFIG_HOLDER.save();
 
 		context.getSource().sendFeedback(
-				() -> Cabricality.genTranslatableText("command", "debug", CabfConfig.debugInfo() ? "enabled" : "disabled")
+				() -> Cabricality.genTranslatableText("command", "debug", Cabricality.CONFIG.debugInfoEnabled ? "enabled" : "disabled")
 						.formatted(Formatting.GRAY, Formatting.ITALIC),
 				false
 		);
@@ -27,7 +28,7 @@ public class DebugCommand implements Command<ServerCommandSource> {
 					player,
 					Cabricality.genTranslatableText(
 							"command", "debug_info",
-							CabfConfig.debugInfo() ? "enabled" : "disabled"
+							Cabricality.CONFIG.debugInfoEnabled ? "enabled" : "disabled"
 					)
 			));
 		}

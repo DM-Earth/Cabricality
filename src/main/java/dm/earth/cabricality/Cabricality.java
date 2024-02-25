@@ -11,13 +11,15 @@ import dm.earth.cabricality.content.entries.CabfRecipeSerializers;
 import dm.earth.cabricality.content.entries.CabfSounds;
 import dm.earth.cabricality.content.trading.data.recipe.Trading;
 import dm.earth.cabricality.lib.util.ConfettiUtil;
-import dm.earth.cabricality.lib.util.log.CabfLogger;
 import dm.earth.cabricality.listener.DeployerCuttingRecipeHandler;
 import dm.earth.cabricality.listener.UseEntityListener;
 import dm.earth.cabricality.network.CabfReceiver;
 import dm.earth.cabricality.tweak.BlockTagTweaks;
 import dm.earth.cabricality.tweak.ItemTagTweaks;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.ConfigHolder;
+import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -143,9 +145,17 @@ public class Cabricality implements ModInitializer {
 		RRPCallback.AFTER_VANILLA.register(list -> list.add(RRPs.CLIENT_RESOURCES));
 	}
 
+	public static final ConfigHolder<CabfConfig> CONFIG_HOLDER;
+	public static final CabfConfig CONFIG;
+
+	static {
+		AutoConfig.register(CabfConfig.class, Toml4jConfigSerializer::new);
+		CONFIG_HOLDER = AutoConfig.getConfigHolder(CabfConfig.class);
+		CONFIG = CONFIG_HOLDER.get();
+	}
+
 	@Override
 	public void onInitialize() {
-		CabfConfig.override();
 		ConfettiUtil.startLoading();
 
 		CabfReceiver.registerServer();

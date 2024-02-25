@@ -44,7 +44,7 @@ public abstract class MinecraftClientModifier {
 		ModContainer container = FabricLoader.getInstance().getModContainer(Cabricality.ID).orElseThrow();
 		cir.setReturnValue(
 				container.getMetadata().getName() + (
-						CabfConfig.includeVersionInWindowTitle()
+						Cabricality.CONFIG.includesVersionInWindowTitle
 								? (" " + container.getMetadata().getVersion().getFriendlyString())
 								: ""
 				)
