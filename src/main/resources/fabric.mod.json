@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "cabricality",
-  "version": "${modpack_version}",
+  "version": "${version}",
   "provides": [
     "kubejs"
   ],
@@ -51,6 +51,7 @@
     "fabric-api": "*",
     "fabric-key-binding-api-v1": "*",
     "minecraft": "1.20.1",
+    "cloth-config": "*",
     "equator": ">=2.6.0"
   },
   "suggests": {

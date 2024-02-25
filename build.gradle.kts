@@ -6,11 +6,11 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.8.0"
 }
 
-group = property("mavenGroup").toString()
-version = property("modpackVersion").toString()
+group = libs.versions.maven.group.get()
+version = libs.versions.modpack.get()
 
 base {
-    archivesName.set(rootProject.property("archivesName").toString())
+    archivesName.set(libs.versions.archives.name)
 }
 
 repositories {
@@ -83,11 +83,9 @@ dependencies {
     modImplementation(libs.bundles.maven.modrinth)
     modImplementation(libs.bundles.maven.jitpack)
 
-    // Mod Apis
     modApi(libs.modmenu)
-    modApi(libs.cloth.config) {
-        exclude(group = "net.fabricmc.fabric-api")
-    }
+    modApi(libs.cloth.config)
+    modApi(libs.rei)
 
     // Included
     modApi(libs.tags.binder)?.let {
@@ -96,27 +94,20 @@ dependencies {
     modApi(libs.brrp)?.let {
         include(it)
     }
-    api(libs.pierced)?.let {
-        include(it)
-    }
     api(libs.exp4j)?.let {
         include(it)
     }
 
     // Development
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-
-    modCompileOnlyApi("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${property("reiVersion")}")
-    modCompileOnlyApi("me.shedaniel:RoughlyEnoughItems-api-fabric:${property("reiVersion")}")
-    modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${property("reiVersion")}")
 }
 
 tasks {
     processResources {
-        inputs.property("modpackVersion", version)
+        inputs.property("version", libs.versions.modpack.get())
 
         filesMatching("fabric.mod.json") {
-            expand(mapOf("modpack_version" to version))
+            expand(mapOf("version" to libs.versions.modpack.get()))
         }
     }
 
@@ -133,6 +124,10 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 
+loom {
+    accessWidenerPath.set(file("src/main/resources/cabricality.accesswidener"))
+}
+
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
@@ -142,8 +137,4 @@ publishing {
 
     repositories {
     }
-}
-
-loom {
-    accessWidenerPath.set(file("src/main/resources/cabricality.accesswidener"))
 }
