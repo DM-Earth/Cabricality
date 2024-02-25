@@ -13,9 +13,9 @@
     <br />
     &emsp;&ensp;<a href="https://github.com/DM-Earth/Cabricality">English</a>
     <br />
-    &emsp;&ensp;简体中文
+    &emsp;&ensp;<a href="/docs/readme/zh_simplified.md">简体中文</a>
     <br />
-    &emsp;&ensp;<a href="/docs/readme/zh_traditional.md">繁體中文</a>
+    &emsp;&ensp;繁體中文
   </details>
 </blockquote>
 
