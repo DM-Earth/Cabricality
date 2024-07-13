@@ -28,3 +28,4 @@
 *.gradle
 /gradle.properties
 *.bat
+/mappings/

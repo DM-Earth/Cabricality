@@ -1,13 +1,13 @@
 name = "Stenographer"
-filename = "stenographer-1.20-3.0.0.jar"
+filename = "stenographer-3.1.0-fabric1.20.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/cu290YRp/versions/YA4fWzHH/stenographer-1.20-3.0.0.jar"
+url = "https://cdn.modrinth.com/data/cu290YRp/versions/zdFClpyU/stenographer-3.1.0-fabric1.20.jar"
 hash-format = "sha1"
-hash = "33f3ca548b5ad2912e64f6b39ca51387b08b346e"
+hash = "f4e25cdca3925a5d22d7bc636bf8972aa341a470"
 
 [update]
 [update.modrinth]
 mod-id = "cu290YRp"
-version = "YA4fWzHH"
+version = "zdFClpyU"

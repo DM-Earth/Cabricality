@@ -2,14 +2,14 @@ package dm.earth.cabricality.listener;
 
 import dm.earth.cabricality.Cabricality;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
-import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
-import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;
 import ho.artisan.lib.recipe.api.RecipeManagerHelper;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipe;
+import vectorwing.farmersdelight.common.crafting.ingredient.ChanceResult;
 
 import java.util.ArrayList;
 import java.util.Arrays;

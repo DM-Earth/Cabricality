@@ -7,21 +7,20 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
-import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
-
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.collection.DefaultedList;
+import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipe;
+import vectorwing.farmersdelight.common.crafting.ingredient.ChanceResult;
 
 @Mixin(CuttingBoardRecipe.class)
 public class CuttingBoardRecipeMixin {
 	@Shadow
 	@Final
-	private DefaultedList<ChanceResult> resultList;
+	private DefaultedList<ChanceResult> results;
 
 	@Inject(method = "getResult", at = @At("HEAD"), cancellable = true)
 	private void getOutput(CallbackInfoReturnable<ItemStack> cir) {
-		if (this.resultList.isEmpty())
+		if (this.results.isEmpty())
 			cir.setReturnValue(ItemStack.EMPTY);
 	}
 }

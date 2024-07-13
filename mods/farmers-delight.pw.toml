@@ -1,13 +1,13 @@
 name = "Farmer's Delight"
-filename = "farmers-delight-fabric-mc1.20.1-1.4.2.jar"
+filename = "farmers-delight-fabric-1.4.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/4EakbH8e/versions/rlm3hWGx/farmers-delight-fabric-mc1.20.1-1.4.2.jar"
+url = "https://cdn.modrinth.com/data/4EakbH8e/versions/QXYNitXw/farmers-delight-fabric-1.4.3.jar"
 hash-format = "sha1"
-hash = "2f9604b3f0328478598d8d35a298de206d764efc"
+hash = "758d7931e769dc4a78ff6642976cffbe75a522cb"
 
 [update]
 [update.modrinth]
 mod-id = "4EakbH8e"
-version = "rlm3hWGx"
+version = "QXYNitXw"

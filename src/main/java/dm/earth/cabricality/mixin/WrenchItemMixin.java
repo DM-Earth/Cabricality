@@ -1,7 +1,7 @@
 package dm.earth.cabricality.mixin;
 
 import com.simibubi.create.content.equipment.wrench.WrenchItem;
-import earth.terrarium.ad_astra.common.block.Wrenchable;
+import earth.terrarium.adastra.common.blocks.base.Wrenchable;
 import io.github.coolmineman.bitsandchisels.BitsAndChisels;
 import io.github.coolmineman.bitsandchisels.BitsBlockEntity;
 import net.minecraft.block.BlockState;
@@ -29,7 +29,7 @@ public class WrenchItemMixin {
 
 		// Ad Astra!
 		if (state.getBlock() instanceof Wrenchable wrenchable) {
-			wrenchable.handleWrench(world, context.getBlockPos(), world.getBlockState(context.getBlockPos()),
+			wrenchable.onWrench(world, context.getBlockPos(), world.getBlockState(context.getBlockPos()),
 					context.getSide(), context.getPlayer(), context.getHitPos());
 			cir.setReturnValue(ActionResult.SUCCESS);
 		}

@@ -1,56 +1,53 @@
 package dm.earth.cabricality.config;
 
-import net.fabricmc.loader.api.FabricLoader;
-import net.krlite.pierced.annotation.Silent;
-import net.krlite.pierced.annotation.Table;
-import net.krlite.pierced.config.Pierced;
+import dm.earth.cabricality.Cabricality;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.ConfigData;
+import me.shedaniel.autoconfig.annotation.Config;
+import me.shedaniel.autoconfig.annotation.ConfigEntry;
 
-import java.io.File;
-
-public class CabfConfig extends Pierced {
-	private static @Silent final File FILE = FabricLoader.getInstance().getConfigDir().resolve("cabricality.toml").toFile();
-	private static @Silent final CabfConfig INSTANCE = new CabfConfig();
-
-	private CabfConfig() {
-		super(CabfConfig.class, FILE);
-		load();
-	}
+@Config(name = Cabricality.ID)
+public class CabfConfig implements ConfigData {
 
 	public static void override() {
-		INSTANCE.save();
+		AutoConfig.getConfigHolder(CabfConfig.class).save();
 	}
 
 	private boolean includeVersionInWindowTitle = false;
 
 	public static boolean includeVersionInWindowTitle() {
-		return INSTANCE.includeVersionInWindowTitle;
+		return CabfConfig.getConfig().includeVersionInWindowTitle;
 	}
 
 	public static void includeVersionInWindowTitle(boolean includeVersionInGameTitle) {
-		INSTANCE.includeVersionInWindowTitle = includeVersionInGameTitle;
-		INSTANCE.save();
+		CabfConfig.getConfig().includeVersionInWindowTitle = includeVersionInGameTitle;
+		CabfConfig.override();
+	}
+
+	public static CabfConfig getConfig() {
+		return AutoConfig.getConfigHolder(CabfConfig.class).getConfig();
 	}
 
 	private boolean fadeScreenBackground = true;
 
 	public static boolean fadeScreenBackground() {
-		return INSTANCE.fadeScreenBackground;
+		return CabfConfig.getConfig().fadeScreenBackground;
 	}
 
 	public static void fadeScreenBackground(boolean fadeScreenBackground) {
-		INSTANCE.fadeScreenBackground = fadeScreenBackground;
-		INSTANCE.save();
+		CabfConfig.getConfig().fadeScreenBackground = fadeScreenBackground;
+		CabfConfig.override();
 	}
 
-	@Table("debug")
+	@ConfigEntry.Category("debug")
 	private boolean debugInfo = false;
 
 	public static boolean debugInfo() {
-		return INSTANCE.debugInfo;
+		return CabfConfig.getConfig().debugInfo;
 	}
 
 	public static void debugInfo(boolean debugInfo) {
-		INSTANCE.debugInfo = debugInfo;
-		INSTANCE.save();
+		CabfConfig.getConfig().debugInfo = debugInfo;
+		CabfConfig.override();
 	}
 }

@@ -1,6 +1,5 @@
 package dm.earth.cabricality.content.trading;
 
-import static dm.earth.cabricality.Mod.Entry.AP;
 import static dm.earth.cabricality.Mod.Entry.CABF;
 import static dm.earth.cabricality.Mod.Entry.CREATE;
 import static dm.earth.cabricality.Mod.Entry.FARMERS_DELIGHT;
@@ -103,16 +102,7 @@ public enum Professions {
 			of(MC.id("diamond"), 1, GOLD, 1, 0x54ecd9), of(MC.id("coal"), 16, SILVER, 1, 0x252525),
 			of(MC.id("redstone"), 24, SILVER, 1, 0xfc0d1b))),
 
-	MASONRY(Profession.of("masonry", 0xaf6250, of(AP.id("basalt_tiles"), 12, SILVER, 1, 0x747474),
-			of(AP.id("sunmetal_block"), 8, SILVER, 1, 0x613c3d),
-			of(AP.id("osseous_bricks"), 12, SILVER, 1, 0xe8e5d3),
-			of(AP.id("packed_ice_pillar"), 12, SILVER, 1, 0x7ea7f1),
-			of(AP.id("flint_tiles"), 12, SILVER, 1, 0x302d30),
-			of(AP.id("abyssaline_bricks"), 8, SILVER, 1, 0x534265),
-			of(AP.id("gilded_sandstone"), 8, SILVER, 1, 0xf8bc39),
-			of(AP.id("olivestone_bricks"), 12, SILVER, 1, 0x51523e),
-			of(AP.id("algal_bricks"), 12, SILVER, 1, 0x38423b),
-			of(AP.id("myonite_bricks"), 12, SILVER, 1, 0x867967),
+	MASONRY(Profession.of("masonry", 0xaf6250,
 			// Create
 			of(CREATE.id("ornate_iron_window"), 8, SILVER, 1, 0x7f786f),
 			// Tconstruct

@@ -1,13 +1,13 @@
 name = "Verticality"
-filename = "verticality-1.20-2.0.0.jar"
+filename = "verticality-4.1.3-fabric1.20.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/6wqzLv3V/versions/VWfKaaAY/verticality-1.20-2.0.0.jar"
+url = "https://cdn.modrinth.com/data/6wqzLv3V/versions/dsBZi6gT/verticality-4.1.3-fabric1.20.jar"
 hash-format = "sha1"
-hash = "feaa4bb71143592d0b54634d091e0977807812ac"
+hash = "d0598104805b815dd50252c9743f2d09b58088de"
 
 [update]
 [update.modrinth]
 mod-id = "6wqzLv3V"
-version = "VWfKaaAY"
+version = "dsBZi6gT"

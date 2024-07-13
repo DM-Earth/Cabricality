@@ -11,7 +11,7 @@ import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
-import com.simibubi.create.content.kinetics.fan.SplashingRecipe;
+import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe;
 import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.mixer.MixingRecipe;
 import com.simibubi.create.content.processing.recipe.HeatCondition;

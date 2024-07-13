@@ -1,0 +1,13 @@
+name = "Night Auto Config"
+filename = "nightautoconfig-1.0.3-fabric1.20.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HQpcCFZg/versions/cVIqoZ4o/nightautoconfig-1.0.3-fabric1.20.jar"
+hash-format = "sha1"
+hash = "915675c5d31ae6407709df8d99af94b76a7f3fb9"
+
+[update]
+[update.modrinth]
+mod-id = "HQpcCFZg"
+version = "cVIqoZ4o"

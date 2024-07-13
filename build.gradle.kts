@@ -1,9 +1,8 @@
 plugins {
     base
     java
-    `maven-publish`
     alias(libs.plugins.fabric.loom)
-    id("org.jetbrains.kotlin.jvm") version "1.8.0"
+    id("org.jetbrains.kotlin.jvm") version "2.0.20-Beta2"
 }
 
 group = libs.versions.maven.group.get()
@@ -15,50 +14,76 @@ base {
 
 repositories {
     maven {
+        name = "devOS Maven"// Porting Lib
+        url = uri("https://mvn.devos.one/releases/")
+    }
+    maven {
+        name = "devOS Maven snapshot"// Porting Lib
+        url = uri("https://mvn.devos.one/snapshots/")
+    }
+    maven {
         name = "Modrinth Maven"
         url = uri("https://api.modrinth.com/maven")
         content {
             includeGroup("maven.modrinth")
         }
     }
-
     maven {
-        name = "JitPack"
-        url = uri("https://jitpack.io/")
+        name = "TerraformersMC Maven"// Mod Menu
+        url = uri("https://maven.terraformersmc.com/releases")
     }
-
     maven {
-        url = uri("https://maven.ladysnake.org/releases")
-        content {
-            includeGroup("io.github.ladysnake")
-            includeGroup("org.ladysnake")
-            includeGroupByRegex("dev\\.onyxstudios.*")
-        }
+        name = "Shedaniel Maven"// Cloth Config API, REI
+        url = uri("https://maven.shedaniel.me")
     }
-
     maven {
+        name = "tterrag maven"// Create
+        url = uri("https://maven.tterrag.com/")
+    }
+    maven {
+        name = "Team Resourceful Maven"// Ad Astra!
+        url = uri("https://maven.teamresourceful.com/repository/maven-public/")
+    }
+    maven {
+        name = "Architectury Maven"// Architectury API
+        url = uri("https://maven.architectury.dev/")
+    }
+    maven {
+        name = "Greenhouse Maven"// Farmer's Delight Refabricated
+        url = uri("https://maven.greenhouseteam.dev/releases/")
+    }
+    maven {
+        // Porting Lib, Mantle
         url = uri("https://maven.jamieswhiteshirt.com/libs-release")
         content {
             includeGroup("com.jamieswhiteshirt")
         }
     }
-
-    maven { url = uri("https://maven.quiltmc.org/repository/release") }
-    maven { url = uri("https://mvn.devos.one/snapshots/") }
-    maven { url = uri("https://maven.saps.dev/releases/") }
-    maven { url = uri("https://aperlambda.github.io/maven") }
-    maven { url = uri("https://dvs1.progwml6.com/files/maven") }
-    maven { url = uri("https://maven.cafeteria.dev/releases") }
-    maven { url = uri("https://maven.fabricmc.net") }
-    maven { url = uri("https://maven.gegy.dev") }
-    maven { url = uri("https://maven.kotlindiscord.com/repository/terraformers") }
-    maven { url = uri("https://maven.parchmentmc.org") }
-    maven { url = uri("https://maven.shedaniel.me") }
-    maven { url = uri("https://maven.terraformersmc.com/releases") }
-    maven { url = uri("https://maven.tterrag.com") }
-    maven { url = uri("https://maven.wispforest.io") }
-    maven { url = uri("https://modmaven.dev") }
-    maven { url = uri("https://storage.googleapis.com/devan-maven") }
+    maven {
+        // FTB
+        url = uri("https://maven.saps.dev/releases/")
+    }
+    maven {
+        // Create
+        name = "Fuzs Mod Resources"
+        url = uri("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
+    }
+    maven {
+        // Mantle
+        name = "Ladysnake Mods"
+        url = uri("https://maven.ladysnake.org/releases")
+    }
+    maven {
+        name = "JitPack"
+        url = uri("https://jitpack.io/")
+        content {
+            includeGroup("com.github")
+        }
+    }
+    maven {
+        name = "Wisp Forest Maven"// Mantle
+        url = uri("https://maven.wispforest.io/releases")
+    }
 
     mavenCentral()
 }
@@ -68,35 +93,36 @@ dependencies {
     minecraft(libs.minecraft)
 
     // Mappings
-    mappings(
-        variantOf(libs.quilt.mappings) { classifier("intermediary-v2") }
-    )
+    mappings(loom.layered {
+        mappings(file("mappings/mappings-fix.tiny"))
+        mappings(variantOf(libs.quilt.mappings) { classifier("intermediary-v2") })
+    })
 
     // Fabric
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.api)
 
     // Implemented Mods
-    modImplementation(libs.bundles.mods.from.dmearth)
+    modImplementation(libs.ad.astra) { exclude(group = "net.fabricmc.fabric-api") }
+    modImplementation(libs.architectury.api) { exclude(group = "net.fabricmc.fabric-api") }
+    modImplementation(libs.farmers.delight) { exclude(group = "net.fabricmc.fabric-api") }
     modImplementation(libs.bundles.mods.from.alphamode) { exclude(group = "com.github.AlphaMode") }
-    modImplementation(libs.bundles.mods.from.ftb)
+    modImplementation(libs.bundles.mods.from.ftb) { exclude(group = "net.fabricmc.fabric-api") }
     modImplementation(libs.bundles.maven.modrinth)
-    modImplementation(libs.bundles.maven.jitpack)
+    modImplementation(libs.bundles.maven.jitpack) { exclude(group = "net.fabricmc.fabric-api") }
 
-    modApi(libs.modmenu)
-    modApi(libs.cloth.config)
-    modApi(libs.rei)
+    modApi(libs.modmenu) { exclude(group = "net.fabricmc.fabric-api") }
+    modApi(libs.cloth.config) { exclude(group = "net.fabricmc.fabric-api") }
+    modApi(libs.rei) { exclude(group = "net.fabricmc.fabric-api") }
+    modApi(libs.night.auto.config) { exclude(group = "net.fabricmc.fabric-api") }
 
     // Included
-    modApi(libs.tags.binder)?.let {
-        include(it)
-    }
-    modApi(libs.brrp)?.let {
-        include(it)
-    }
-    api(libs.exp4j)?.let {
-        include(it)
-    }
+    modApi(libs.tags.binder) { exclude(group = "net.fabricmc.fabric-api") }
+    include(libs.tags.binder)
+    modApi(libs.brrp) { exclude(group = "net.fabricmc.fabric-api") }
+    include(libs.brrp)
+    api(libs.exp4j)
+    include(libs.exp4j)
 
     // Development
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -126,15 +152,4 @@ java {
 
 loom {
     accessWidenerPath.set(file("src/main/resources/cabricality.accesswidener"))
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-        }
-    }
-
-    repositories {
-    }
 }

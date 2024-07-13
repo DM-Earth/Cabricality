@@ -6,7 +6,7 @@ import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.mixin.StackEntryAccessor;
 import dm.earth.cabricality.mixin.TagEntryAccessor;
 import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
-import com.simibubi.create.content.kinetics.fan.SplashingRecipe;
+import com.simibubi.create.content.kinetics.fan.processing.SplashingRecipe;
 import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import ho.artisan.lib.recipe.api.RecipeLoadingEvents;

@@ -29,7 +29,6 @@ import org.jetbrains.annotations.Nullable;
 
 import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
 import static dm.earth.cabricality.Mod.Entry.AE2;
-import static dm.earth.cabricality.Mod.Entry.AP;
 import static dm.earth.cabricality.Mod.Entry.CABF;
 import static dm.earth.cabricality.Mod.Entry.CREATE;
 import static dm.earth.cabricality.Mod.Entry.INDREV;
@@ -48,72 +47,6 @@ public class AndesiteThread implements TechThread {
 
 	@Override
 	public void addRecipes(RecipeLoadingEvents.AddRecipesCallback.@NotNull RecipeHandler handler) {
-		handler.register(
-				recipeId("smelting", "algal_blend"),
-				id -> VanillaRecipeBuilders.smeltingRecipe(
-						id, "",
-						Ingredient.ofItems(AP.asItem("algal_blend")),
-						CookingCategory.MISC,
-						AP.asItem("algal_brick").getDefaultStack(),
-						0, 120)
-
-		);
-
-		handler.register(
-				recipeId("crafting", "algal_blend"),
-				id -> VanillaRecipeBuilders
-						.shapedRecipe("SS", "AA")
-						.ingredient('A', Items.CLAY_BALL)
-						.ingredient('S', Items.KELP, Items.SEAGRASS)
-						.output(AP.asStack(2, "algal_blend"))
-						.build(id, "")
-		);
-
-		handler.register(
-				recipeId("crafting", "algal_blend_2"),
-				id -> VanillaRecipeBuilders
-						.shapedRecipe("AA", "SS")
-						.ingredient('A', Items.CLAY_BALL)
-						.ingredient('S', Items.KELP, Items.SEAGRASS)
-						.output(AP.asStack(2, "algal_blend"))
-						.build(id, "")
-		);
-
-		handler.register(
-				recipeId("crafting", "andesite_alloy"),
-				id -> VanillaRecipeBuilders
-						.shapedRecipe("SS", "AA")
-						.ingredient('A', Items.ANDESITE)
-						.ingredient('S', AP.asItem("algal_brick"))
-						.output(CREATE.asStack(2, "andesite_alloy"))
-						.build(id, "")
-		);
-
-		handler.register(
-				recipeId("crafting", "andesite_alloy_2"),
-				id -> VanillaRecipeBuilders
-						.shapedRecipe("AA", "SS")
-						.ingredient('A', Items.ANDESITE)
-						.ingredient('S', AP.asItem("algal_brick"))
-						.output(CREATE.asStack(2, "andesite_alloy"))
-						.build(id, "")
-		);
-
-		handler.register(
-				recipeId("mixing", "algal_blend"),
-				id -> new MixingRecipe(new FreePRP(id)
-						.setIngredient(Ingredient.ofItems(Items.CLAY_BALL), Ingredient.ofItems(Items.KELP, Items.SEAGRASS))
-						.setResult(new ProcessingOutput(new ItemStack(AP.asItem("algal_blend")), 2))
-				)
-		);
-
-		handler.register(
-				recipeId("mixing", "andesite_alloy"),
-				id -> new MixingRecipe(new FreePRP(id)
-						.setIngredient(Ingredient.ofItems(AP.asItem("algal_brick")), Ingredient.ofItems(Items.ANDESITE))
-						.setResult(new ProcessingOutput(new ItemStack(CREATE.asItem("andesite_alloy")), 2))
-				)
-		);
 
 		handler.register(
 				recipeId("crafting", "kinetic_mechanism"),
@@ -185,11 +118,7 @@ public class AndesiteThread implements TechThread {
 		handler.remove(CREATE.id("mixing", "andesite_alloy"));
 		handler.remove(CREATE.id("mixing", "andesite_alloy_from_zinc"));
 
-		handler.removeIf(p ->
-				p instanceof AbstractCookingRecipe
-						&& AP.predicateOutput(handler, false, "algal_brick").test(p));
 		handler.removeIf(INDREV.predicateOutput(handler, false, "iron_drill_head"));
-		handler.remove(AP.id("algal_blend_shapeless"));
 	}
 
 	@Override

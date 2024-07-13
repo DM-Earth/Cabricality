@@ -140,9 +140,9 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 
 		Box.fromCartesian(x, y, w, h).render(graphics,
 				flat -> flat.new Rectangle()
-								.colorTop(Cabricality.Colors.OLD_CABF_PURPLE)
-								.colorBottom(Cabricality.Colors.OLD_CABF_MID_PURPLE)
-								.new Outlined(Vector.fromCartesian(240 * lerp, 240 * lerp),
+						.colorTop(Cabricality.Colors.OLD_CABF_PURPLE)
+						.colorBottom(Cabricality.Colors.OLD_CABF_MID_PURPLE)
+						.new Outlined(Vector.fromCartesian(240 * lerp, 240 * lerp),
 						Flat.Rectangle.Outlined.OutliningMode.NORMAL,
 						Flat.Rectangle.Outlined.OutliningStyle.EDGE_FADED)
 		);
@@ -156,17 +156,19 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 					ordinal = 0
 			)
 	)
-	private void drawQuestPanelBackgroundTexture(Icon icon, GuiGraphics guiGraphics, int xy,int y, int w, int h) {}
+	private void drawQuestPanelBackgroundTexture(Icon icon, GuiGraphics guiGraphics, int xy, int y, int w, int h) {
+	}
 
 	@Redirect(
 			method = "drawBackground",
 			at = @At(
 					value = "INVOKE",
-					target = "Ldev/ftb/mods/ftblibrary/icon/Color4I;draw(Lnet/minecraft/client/gui/GuiGraphics;IIII)V",
+					target = "Ldev/ftb/mods/ftblibrary/icon/Icon;draw(Lnet/minecraft/client/gui/GuiGraphics;IIII)V",
 					ordinal = 1
 			)
 	)
-	private void drawQuestPanelBorder(Color4I color4I, GuiGraphics graphics, int x, int y, int w, int h) {}
+	private void drawQuestPanelBorder(Icon icon, GuiGraphics graphics, int x, int y, int w, int h) {
+	}
 
 	@Redirect(
 			method = "addWidgets",
@@ -179,7 +181,8 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 					to = @At(value = "INVOKE", target = "Ldev/ftb/mods/ftbquests/client/gui/quests/ViewQuestPanel;setPos(II)V")
 			), remap = false
 	)
-	private void drawBorder(BlankPanel panel, Widget widget) {}
+	private void drawBorder(BlankPanel panel, Widget widget) {
+	}
 
 	@Redirect(
 			method = "tick",
@@ -194,10 +197,10 @@ public abstract class ViewQuestPanelAnimator extends Widget {
 		if (MinecraftClient.getInstance().world != null) time = MinecraftClient.getInstance().world.getTime();
 
 		Color4I color = ThemeProperties.QUEST_VIEW_TITLE.get()
-							   .withAlphaf((float) sinusoidal(
-									   (Math.abs(time % 40 - 20) - 6) / 8.0,
-									   0.03, 0.97)
-							   );
+				.withAlphaf((float) sinusoidal(
+						(Math.abs(time % 40 - 20) - 6) / 8.0,
+						0.03, 0.97)
+				);
 		return icon.withColor(color);
 	}
 

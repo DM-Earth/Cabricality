@@ -1,11 +1,11 @@
 package dm.earth.cabricality.mixin.recipe.farmersdelight;
 
 import dm.earth.cabricality.lib.resource.data.recipe.ProcessItemOutputCallback;
-import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
+import vectorwing.farmersdelight.common.crafting.ingredient.ChanceResult;
 
 @Mixin(ChanceResult.class)
 public class ChanceResultMixin {

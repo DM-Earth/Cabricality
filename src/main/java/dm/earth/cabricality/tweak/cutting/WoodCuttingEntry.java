@@ -5,7 +5,6 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
 import static dm.earth.cabricality.Mod.Entry.AD_ASTRA;
-import static dm.earth.cabricality.Mod.Entry.AP;
 import static dm.earth.cabricality.Mod.Entry.MC;
 import static dm.earth.cabricality.Mod.Entry.PROMENADE;
 import static dm.earth.cabricality.Mod.Entry.TC;
@@ -125,13 +124,6 @@ public enum WoodCuttingEntry {
 			"glacian_planks", "glacian_slab",
 			"glacian_log", "stripped_glacian_log",
 			null, null
-	),
-
-	TWISTED(
-			AP.id("twisted"),
-			"twisted_planks", "twisted_slab",
-			"twisted_log", "stripped_twisted_log",
-			"twisted_wood", "stripped_twisted_wood"
 	),
 
 	RAINBOW_EUCALYPTUS(

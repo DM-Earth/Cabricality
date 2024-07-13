@@ -52,8 +52,7 @@
     "fabric-key-binding-api-v1": "*",
     "minecraft": "1.20.1",
     "cloth-config": "*",
+    "nightautoconfig": "*",
     "equator": ">=2.6.0"
-  },
-  "suggests": {
   }
 }

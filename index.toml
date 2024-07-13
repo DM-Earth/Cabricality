@@ -162,27 +162,27 @@ hash = "2e53e004da6b3e6d4858a6169c1ff6f1d90f54f35af3e6d784bcb718cdad6c4a"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "e298ef09aaef09fa9c5a1e329ec1c143d35d6ba6fe5ab1bf0e3ab9f2c13071b7"
+hash = "f21a1840f24bd6da9e7edaf8cf18add63ebfcd6ec47796d80db76b93d4b5c51f"
 metafile = true
 
 [[files]]
 file = "mods/ae2.pw.toml"
-hash = "e362dcd3d782835ef0473ba34e12f17a53d1d296e5f258596420964662fbf7c9"
+hash = "0c9015aa5398140bff02d2c2f8f837e5b903ac53ca7c2496afb98e30cf08285b"
 metafile = true
 
 [[files]]
 file = "mods/amecs.pw.toml"
-hash = "16ce27183f78f23c8606787ab2bbbaf01d290b569a4c6d5a6f91b30802ebabd9"
+hash = "d66bc9c3f81429f138de5eae6226dce25f620f90df864bf7f0f9121708bf0bcc"
 metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "a3caf4dd0a0d0a739c8f00a7d81b74c9ae7fdb58b250ddc9b466213dbd385a80"
+hash = "0cbcd58c49decc0ecbccd330fcc8326e3b8769e22e1740e229f09541acf3df7f"
 metafile = true
 
 [[files]]
 file = "mods/athena-ctm.pw.toml"
-hash = "ce1fe1e69721bf56e277be993505956c88c3036e8d826a85eb83d9a3cf8305aa"
+hash = "e5d87db8974fa2b69870d7ea2f0878ae7d9aabd5f6b1cadb0ea45cd641e89f24"
 metafile = true
 
 [[files]]
@@ -192,17 +192,17 @@ metafile = true
 
 [[files]]
 file = "mods/bookshelf.pw.toml"
-hash = "d3789633c883daf8aa4c2e5c2f42c0dcb0540eb806ebeee8a44833c25e2de813"
+hash = "e5739bf8e8668a5d94ae545f7ddabcffcdfec64b0e72d7d2d88d8f64f480977e"
 metafile = true
 
 [[files]]
 file = "mods/bounced.pw.toml"
-hash = "f73ea85893dc1f659ce389241382f21c26c4fb50d72eaaa63b1a30f8281149d9"
+hash = "0f770aa873be6fd23b6c78a8805bd7aa4d049fb173afad535f16ac6216232e77"
 metafile = true
 
 [[files]]
 file = "mods/brrp.pw.toml"
-hash = "43c74c08ec25d19c365c72f8546edd2e01aa10c3b4cef39a4cbc9d09cb5b1562"
+hash = "b133b5ca4007f772467d0b6fcc1baedcb287bc46d7a2864a83b0e038a51954dd"
 metafile = true
 
 [[files]]
@@ -217,27 +217,27 @@ metafile = true
 
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
-hash = "c5273660430701af5eb1cb8cc298db8266756bb8bb5c87a6031ce96b33cd8ffc"
+hash = "b79cc58d8f59edf82a64eac716b84f11911b2bc63c40529575dbaf67f4896efb"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "1fc52599bb002e467661afaa4b844c517fb549ad14eb6f552bf11dfb5c8b535e"
+hash = "a89dfcc985612a275975d4823a24fc3dceb244bacb2e8f81bd459283bf1b9fe9"
 metafile = true
 
 [[files]]
 file = "mods/continuity.pw.toml"
-hash = "2ff8353009122a86ac846dd8d48b2522d46f3b43111eb3a697d99cc42285a14f"
+hash = "acbde04e67f2f0970a6b81e3c818a5f8ed3eceab4f3a04330d80c70c24d03afe"
 metafile = true
 
 [[files]]
 file = "mods/coxinha-utilities.pw.toml"
-hash = "7665453af22db34c5d1b1438b5aa8d8f03473e3ea90391c3f9cad8b989d83255"
+hash = "317c1eee93a32ceec10a588292c583866d4b6179fd183608940068e5ed4d9884"
 metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "e5bbc96d6d5d6bffb8e36c89bbd1331d923e23fbb87be8bae208d206832adb1c"
+hash = "26394151533372bce2229f31c8df7f65e2deb751cc823f317cd30682381acc8f"
 metafile = true
 
 [[files]]
@@ -252,47 +252,52 @@ metafile = true
 
 [[files]]
 file = "mods/edgeless-cs.pw.toml"
-hash = "5bce499b3487d0fb3f7704989a20659582fe0cefb0b9cd3e3d633f8ec3d05562"
+hash = "c484b27e1c7af33f97cd8a2de843823f76a721171bff796c00ab0809595942cf"
 metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "625dddd14bf47324a945452cbd92e913877bb574883b086a73aa6fc07740ac44"
+hash = "dd6dcae2b3900f466f93387e57a213a18678dd3b366cb4037e2870dfcd892eb8"
 metafile = true
 
 [[files]]
 file = "mods/equator.pw.toml"
-hash = "0a0a0cab5b0aa6bc4bb5dadd3fb8b7bbbdde7fe0015bf943d0e184b732f8f4f7"
+hash = "c6c678e280e916c21f72628f6d28d70df35283dfc26f9117f8564c11242d08c9"
 metafile = true
 
 [[files]]
 file = "mods/extended-drawers.pw.toml"
-hash = "cdb7cd286ed6706a6481a3a07c5017635d322c175351720503f6d59ee38d4020"
+hash = "06859e85abd86899e44b38c090d53f5804550aca2a23924fbb6bb1867d0b859a"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "86698b1faa9bf449eab492509239372302311092104be467108d7e05127e91f1"
 metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "6f95b9e670d557f852a798489d7b5ec48ed8ddc7e8e1809ff06d4b187d17aac9"
+hash = "14e87ff6253d2bd02697e46b4a9b5060465d72b71663def5236f829e30bac6d6"
 metafile = true
 
 [[files]]
 file = "mods/faded-widgets.pw.toml"
-hash = "d603afd1489c18d1b7a0ce4b0cb5797aba7866990abcaac1c3f784c304bb7e92"
+hash = "eeea78d6bdc7f236aef6ea05a2be10646e5ab64d8a1c310feb66a5c7362962b5"
 metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "746344028104ece23ab00e1f73374ed271b492f654bd52ac0ea7c97aad5b362a"
+hash = "20dd3d2cb36dc6cce68071bf4797d4288b788fa0cf110cb25cebad72f7fad63c"
 metafile = true
 
 [[files]]
 file = "mods/flash.pw.toml"
-hash = "e303cd53b4bbde882ed639d7a1e8bf5c3fdbd4e34258b2dc17db390c1a3ac7b1"
+hash = "23e66fbf491e1cc21b16a5c642df04617b22100a53aac6454e7967cca36b8833"
 metafile = true
 
 [[files]]
 file = "mods/hephaestus.pw.toml"
-hash = "dd6d0c4565358f9aa55c9003c2b687c1e759dadb65be16d89a5293f62b51bfe8"
+hash = "d9a21276de16a0e50c83cc730e24e2794a6393b238cf22ca96753d118525bd74"
 metafile = true
 
 [[files]]
@@ -302,12 +307,12 @@ metafile = true
 
 [[files]]
 file = "mods/indium.pw.toml"
-hash = "0c5e71addef34c8dcd1c81dfc2ad851a3e274b9d8d3a7d388e1113d4139bf8d8"
+hash = "31278d67704a56eb32d93c240e4bfd9822e1ab6047ee14d752953dd0c24dca95"
 metafile = true
 
 [[files]]
 file = "mods/industrial-revolution.pw.toml"
-hash = "5a4ee8f354b74926638df717937223a71f7bbc57786215eec7f4f2efc1b8761a"
+hash = "adacdb4be2a9d80bc4854479961298015c595f65af74115198cb884c1fb4cddb"
 metafile = true
 
 [[files]]
@@ -317,7 +322,7 @@ metafile = true
 
 [[files]]
 file = "mods/ive-spoken.pw.toml"
-hash = "f17ffcb7987a4d404db3cba1f0c7f5b186edcdbc8cd8f4256e2bd1421c9525d0"
+hash = "ec3cc0296e021c793e020382d9ef59463f6ed82052a94cd094050e1ab5bd3da5"
 metafile = true
 
 [[files]]
@@ -327,12 +332,12 @@ metafile = true
 
 [[files]]
 file = "mods/knowledges.pw.toml"
-hash = "90ead38f9ca618e0e7bdea19e5a71fa8b52ced19737e345524b33aee58431e71"
+hash = "70b26d20e08b657c492ba75107a329bd58fdeb0f04a29d3eaf8584cd3eb6e50b"
 metafile = true
 
 [[files]]
 file = "mods/krypton.pw.toml"
-hash = "f999930809222b57898da25a30aad2135b02894f42c0e1d2832c4670272fbd1d"
+hash = "71ef7cc16632c0039fe194183b5885968c6d740aaa67a58000653ae0cb40b882"
 metafile = true
 
 [[files]]
@@ -347,12 +352,12 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "ed27ecb297016accc41e9894b6e11d6c46b455211e358afa6218ce629ef56978"
+hash = "c239c951796882b9c93e649a0dba4f2d95804441faaed707b686381b7a5c67da"
 metafile = true
 
 [[files]]
 file = "mods/lootr-fabric.pw.toml"
-hash = "53786f23c772395f44842146accd33b2f05bc8113c53dde5ae8c02a98706e83f"
+hash = "2beeb497828d72467d5d29dfc9567e06c63c6f1ddf54cb42b7d6a3babd603e0f"
 metafile = true
 
 [[files]]
@@ -367,12 +372,17 @@ metafile = true
 
 [[files]]
 file = "mods/modmenu.pw.toml"
-hash = "b136ca50e7d8239319f528ceb521e3482f753b25d768afaf39fa6ea81e549f2e"
+hash = "4cd171d3f5f3e1d2948cb1b0062e742a5e85110c9e9a668f9aed5b0cebcb9c97"
 metafile = true
 
 [[files]]
 file = "mods/natures-compass.pw.toml"
-hash = "89b3552559d8729ce9d7ac46cb336056347a36776ab6a4ad19b0b5c3266e7a2b"
+hash = "cb38b82b931ae3c33bf9c21ad0934fcebaebcfe065838ade56a0661e283ee7d6"
+metafile = true
+
+[[files]]
+file = "mods/night-auto-config.pw.toml"
+hash = "b314333b464ab56c95ef1685fca85f8031b68bc6cc151a9a881488d6f0b1c1a6"
 metafile = true
 
 [[files]]
@@ -387,42 +397,42 @@ metafile = true
 
 [[files]]
 file = "mods/promenade.pw.toml"
-hash = "822cb71ea6d0986f90f01d1df5eee941334073cddc7b9abbe0398ba76c31fdaf"
+hash = "4edb1d260abf93b2e69b319a44f2cbf26785850669dc28424bd678207c72f764"
 metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "19a098ab3131eb6daf0033199744d33dbb31a4ce9b20b9fc6eb709ab1272aa7e"
+hash = "0f9916dcded3aac68d56113e9617bbe3db5ec9036bd9bba784bc40a961b0c9f0"
 metafile = true
 
 [[files]]
 file = "mods/rei.pw.toml"
-hash = "d1a2ca6f7e7d0a999f0b28ff429a38dc38ff6e0a9c176a86356b8cf6472147a7"
+hash = "3a918ed8f788c9fdc80655da76c9499aaf60a468f5960bbf6e744ddf10231754"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "7e39ba5b471407bf43c212fae99856276bf4411046aa3a5df5a7d27e76c7a2b3"
+hash = "5379b1da9fa50def37ede26e66dd963de3ce6f8576cd60a6b117998e09a5597c"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "ff614f50beb3bc29a699dbcc0a61f65bd6c6154cd374f2763ee57cf578045a8f"
+hash = "245530bdbb5c4127a1286f3722778d71e478194a8dcee89388c8fd247b4a57da"
 metafile = true
 
 [[files]]
 file = "mods/splasher.pw.toml"
-hash = "dec9ffcf461ba0bad67761d6181916522c9a600d5509bd7ccdc322d2a93f52e8"
+hash = "a982b8fd5d0f0768dc220577334496b96b4a601e96e58cdb701909545b135836"
 metafile = true
 
 [[files]]
 file = "mods/starlight.pw.toml"
-hash = "0a78a506125c0edc97d2292d26c6eab310106c60a5a4e64d73ff67bb619f5a4c"
+hash = "218f67d6bcaae849582618cd3e5eb1d4cac0fd6045115f64340620300e160c11"
 metafile = true
 
 [[files]]
 file = "mods/stenographer.pw.toml"
-hash = "284bff9c2bd51723062cc1183fe873a338e0aaeb85f94dd97a8b22e5511f58af"
+hash = "0077f2f561f0099318503d6c100d2c95407bee8170a5aacb44456dd693f697e7"
 metafile = true
 
 [[files]]
@@ -432,22 +442,22 @@ metafile = true
 
 [[files]]
 file = "mods/terrestria.pw.toml"
-hash = "2099b69364356b7e620a08ed91471031f88b7723d9a21b18209dc99542bdb617"
+hash = "d88f78d490fbfe15149a92f5aa1c66f3349cbb35c9599cbf9c4bba88e5ffb53a"
 metafile = true
 
 [[files]]
 file = "mods/trinkets.pw.toml"
-hash = "44ab19941b58049d859553df1a1a9d31e5eaf0eb98a8b7c4d3f79d9b39e1c368"
+hash = "07619668821f2aad9dbd40084ad80f25595d8715a9ef204a4a9629225729a7d9"
 metafile = true
 
 [[files]]
 file = "mods/verticality.pw.toml"
-hash = "104b27fd52a21e4084b03741461c7557864afe6f9a394f517066d1ddf6c1f698"
+hash = "a43b55c71788733c15cf67aa5a89dfa06e91ca62dec53d39fe5128e572a2f919"
 metafile = true
 
 [[files]]
 file = "mods/xl-packets-fabric.pw.toml"
-hash = "bb48e2f46c2ab8c1f4b81cb086ffdf39b4cb5cf6267748d7fc094f42d4bd31c5"
+hash = "2c3859d6f191e9f1761b29fe6886635e0e84466681f0d526b08b16fa177a6a2f"
 metafile = true
 
 [[files]]

@@ -4,12 +4,10 @@ import dm.earth.cabricality.content.core.TechThread;
 import dm.earth.cabricality.content.core.items.ColoredFernItem;
 import dm.earth.cabricality.lib.resource.data.core.FreePRP;
 import dm.earth.cabricality.tweak.base.MechAndSmithCraft;
-import com.nhoryzon.mc.farmersdelight.recipe.CuttingBoardRecipe;
-import com.nhoryzon.mc.farmersdelight.recipe.ingredient.ChanceResult;
 import com.simibubi.create.content.kinetics.crusher.CrushingRecipe;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.kinetics.deployer.ManualApplicationRecipe;
-import com.simibubi.create.content.kinetics.fan.HauntingRecipe;
+import com.simibubi.create.content.kinetics.fan.processing.HauntingRecipe;
 import com.simibubi.create.content.kinetics.millstone.MillingRecipe;
 import com.simibubi.create.content.kinetics.mixer.CompactingRecipe;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
@@ -28,6 +26,8 @@ import net.minecraft.util.collection.DefaultedList;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipe;
+import vectorwing.farmersdelight.common.crafting.ingredient.ChanceResult;
 
 import java.util.List;
 

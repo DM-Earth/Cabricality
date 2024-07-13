@@ -1,6 +1,5 @@
 package dm.earth.cabricality.lib.util;
 
-import static dm.earth.cabricality.Mod.Entry.AP;
 import static dm.earth.cabricality.Mod.Entry.CREATE;
 
 import java.util.Map;
@@ -14,16 +13,13 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldAccess;
 
 public class CobbleGenUtil {
-	// TODO: Waiting for Architect's Palette
-	private static final Map<Block, Block> COBBLE_GEN_BLOCK_MAP = Map.of(Blocks.PACKED_ICE, Blocks.ANDESITE,
-			AP.asBlock("polished_packed_ice"), Blocks.GRANITE, AP.asBlock("chiseled_packed_ice"), Blocks.DIORITE,
-			AP.asBlock("packed_ice_pillar"), CREATE.asBlock("limestone"));
+	private static final Map<Block, Block> COBBLE_GEN_BLOCK_MAP = Map.of(Blocks.PACKED_ICE, Blocks.ANDESITE);
 
 	public static BlockState getBlock(WorldAccess world, BlockPos pos) {
 		BlockState upState = world.getBlockState(pos.offset(Direction.UP));
 		return COBBLE_GEN_BLOCK_MAP.containsKey(upState.getBlock())
 				? COBBLE_GEN_BLOCK_MAP.get(upState.getBlock()).getDefaultState()
 				: COBBLE_GEN_BLOCK_MAP.values().stream().toList()
-						.get((new Random()).nextInt(CobbleGenUtil.COBBLE_GEN_BLOCK_MAP.size())).getDefaultState();
+				.get((new Random()).nextInt(CobbleGenUtil.COBBLE_GEN_BLOCK_MAP.size())).getDefaultState();
 	}
 }

@@ -1,42 +1,40 @@
 [versions]
 maven-group = "dm.earth"
 archives-name = "cabricality"
-modpack = "1.0-alpha.1"
+modpack = "1.0.0-alpha.1"
 
 # The latest versions are available at https://lambdaurora.dev/tools/import-quilt.html
 minecraft = "1.20.1"
 quilt-mappings = "1.20.1+build.23"
-fabric-loader = "0.15.7"
+fabric-loader = "0.16.0"
 
-fabric-api = "0.89.3+1.20.1"
+fabric-api = "0.92.2+1.20.1"
+architectury-api = "9.2.14"
+night-auto-config = "1.0.3-fabric1.20"
 
 # Implemented Mods
-modmenu = "8.0.0-beta.2"
-cloth-config = "12.0.109"
-rei = "13.0.661"
-
-# - DM-Earth
-create-dme = "0.5.1-d-build.10+mc1.20.1"
+modmenu = "7.2.2"
+cloth-config = "11.1.118"
+rei = "12.1.725"
 
 # - AlphaMode
-create = "0.5.1-d-build.1161+mc1.20.1"
-mantle = "1.20.1-1.9.254"
+create = "0.5.1-f-build.1417+mc1.20.1"
+mantle = "1.20.1-1.9.269"
 
 # - FTB Mods
-ftb-quests = "2001.1.5"
-ftb-library = "2001.1.3"
+ftb-quests = "2001.4.6"
+ftb-library = "2001.2.2"
 
+ad-astra = "1.15.18"
 # - Modrinth Maven
-ad-astra = "1.15.3"
-architectury-api = "10.0.8+fabric"
 bits-and-chisels = "2.7.3"
-farmers-delight = "1.4.2"
-hephaestus = "1.20.1-3.6.3.232"
-let = "2.0.0-mc1.20"
+farmers-delight = "1.20.1-2.1.1"
+hephaestus = "1.20.1-3.6.4.274"
+let = "2.1.0-mc1.20"
 industrial-revolution = "1.16.5-BETA"
 
 # - JitPack
-equator = "2.6.0-mc1.20"
+equator = "2.6.4-mc1.20"
 rip = "1.0.0-1.20.x"
 
 # Included
@@ -56,9 +54,6 @@ modmenu = { group = "com.terraformersmc", name = "modmenu", version.ref = "modme
 cloth-config = { group = "me.shedaniel.cloth", name = "cloth-config-fabric", version.ref = "cloth-config" }
 rei = { group = "me.shedaniel", name = "RoughlyEnoughItems-fabric", version.ref = "rei" }
 
-# - DM-Earth
-create-dme = { group = "maven.modrinth", name = "create-fabric-dme-edition", version.ref = "create-dme" }
-
 # - AlphaMode
 create = { group = "com.simibubi.create", name = "create-fabric-1.20.1", version.ref = "create" }
 mantle = { group = "slimeknights.mantle", name = "Mantle", version.ref = "mantle" }
@@ -67,12 +62,14 @@ mantle = { group = "slimeknights.mantle", name = "Mantle", version.ref = "mantle
 ftb-quests = { group = "dev.ftb.mods", name = "ftb-quests-fabric", version.ref = "ftb-quests" }
 ftb-library = { group = "dev.ftb.mods", name = "ftb-library-fabric", version.ref = "ftb-library" }
 
+# Single Mods
+ad-astra = { group = "earth.terrarium.adastra", name = "ad_astra-fabric-1.20.1", version.ref = "ad-astra" }
+architectury-api = { group = "dev.architectury", name = "architectury-fabric", version.ref = "architectury-api" }
+farmers-delight = { group = "maven.modrinth", name = "farmers-delight-refabricated", version.ref = "farmers-delight" }
+
 # - Modrinth Maven
-ad-astra = { group = "maven.modrinth", name = "ad-astra", version.ref = "ad-astra" }
-architectury-api = { group = "maven.modrinth", name = "architectury-api", version.ref = "architectury-api" }
 bits-and-chisels = { group = "maven.modrinth", name = "bits-and-chisels", version.ref = "bits-and-chisels" }
-farmers-delight = { group = "maven.modrinth", name = "farmers-delight-fabric", version.ref = "farmers-delight" }
-hephaestus = { group = "maven.modrinth", name = "hephaestus", version.ref = "hephaestus" }
+hephaestus = { group = "slimeknights.tconstruct", name = "Hephaestus", version.ref = "hephaestus" }
 let = { group = "maven.modrinth", name = "let", version.ref = "let" }
 industrial-revolution = { group = "maven.modrinth", name = "industrial-revolution", version.ref = "industrial-revolution" }
 
@@ -84,14 +81,12 @@ rip = { group = "com.github.HO-Artisan", name = "RecipeInProgramming", version.r
 tags-binder = { group = "com.github.DM-Earth", name = "Tags-Binder", version.ref = "tags-binder" }
 brrp = { group = "maven.modrinth", name = "brrp", version.ref = "brrp" }
 exp4j = { group = "net.objecthunter", name = "exp4j", version.ref = "exp4j" }
+night-auto-config = { group = "com.github.KessokuTeaTime", name = "Night-Auto-Config", version.ref = "night-auto-config"}
 
 [bundles]
 # Implemented Mods
-mods-from-dmearth = [
-    "create-dme"
-]
 mods-from-alphamode = [
-    #"create",
+    "create",
     "mantle"
 ]
 mods-from-ftb = [
@@ -99,10 +94,7 @@ mods-from-ftb = [
     "ftb-library"
 ]
 maven-modrinth = [
-    "ad-astra",
-    "architectury-api",
     "bits-and-chisels",
-    "farmers-delight",
     "hephaestus",
     "let",
     "industrial-revolution"
@@ -113,4 +105,4 @@ maven-jitpack = [
 ]
 
 [plugins]
-fabric-loom = { id = "fabric-loom", version = "1.3-SNAPSHOT" }
+fabric-loom = { id = "fabric-loom", version = "1.7-SNAPSHOT" }

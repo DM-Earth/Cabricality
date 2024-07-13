@@ -116,7 +116,7 @@ public class SplashModifier {
 		// Progress ring
 		progressRing: {
 			double opacityMultiplier = mapToPower(progress, 2, 0.5);
-			double offset = -Math.PI / 2, radians = progress * 2 * Math.PI;
+			double offset = -Math.PI / 2, arc = progress * 2 * Math.PI;
 
 			FrameInfo.scaled()
 					.squareInner()
@@ -125,13 +125,13 @@ public class SplashModifier {
 					.render(graphics,
 							flat -> flat.new Oval()
 											.offset(offset)
-											.radians(radians)
+											.arc(arc)
 
 											.mode(Flat.Oval.OvalMode.FILL_GRADIANT_OUT)
 											.mixMode(ColorStandard.MixMode.PIGMENT)
 
 											.addColor(0, Palette.TRANSPARENT)
-											.addColor(radians, Cabricality.Colors.OLD_CABF_MID_PURPLE)
+											.addColor(arc, Cabricality.Colors.OLD_CABF_MID_PURPLE)
 											.opacityMultiplier(opacityMultiplier * (1 - Theory.clamp(complete, 0, 1)))
 					);
 		}
